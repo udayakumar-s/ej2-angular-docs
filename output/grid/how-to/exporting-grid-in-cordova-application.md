@@ -1,0 +1,28 @@
+---
+layout: post
+title: Exporting grid in cordova application in Angular Grid component | Syncfusion
+description: Learn here all about Exporting grid in cordova application in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Exporting grid in cordova application 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Exporting grid in cordova application in Angular Grid component
+
+Cordova application does not support direct file download. So we have to use the Blob stream to export the Grid.
+You can use corresponding exporting methods and exportComplete events to get the Blob stream.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/exporting-cs4/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/exporting-cs4/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/exporting-cs4/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs4/app/app.component.ts" % }

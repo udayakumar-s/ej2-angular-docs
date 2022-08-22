@@ -1,0 +1,160 @@
+---
+layout: post
+title: Getting started with Angular Pager component | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Pager component of Syncfusion Essential JS 2 and more details.
+control: Getting started 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Getting started in Angular Pager component
+
+This section explains you the steps required to create a simple Pager
+and demonstrate the basic usage of the Pager component in Angular environment.
+
+## Setup Angular Environment
+
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
+To install Angular CLI use the following command.
+
+```bash
+npm install -g @angular/cli
+```
+
+## Create an Angular Application
+
+Start a new Angular application using below Angular CLI command.
+
+```bash
+ng new my-app
+cd my-app
+```
+
+## Adding Syncfusion Pager package
+
+All the available Essential JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry.
+
+To install Angular Pager component, use the following command.
+
+```bash
+npm install @syncfusion/ej2-angular-grids --save
+```
+
+> The **--save** will instruct NPM to include the pager package inside of the **dependencies** section of the **package.json**.
+
+## Registering Pager Module
+
+Import Pager module into Angular application(app.module.ts) from the package **@syncfusion/ej2-angular-grids** [src/app/app.module.ts].
+
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { PagerModule} from '@syncfusion/ej2-angular-grids';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    PagerModule
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+## Adding CSS reference
+
+The CSS files are available in ../node_modules/@syncfusion package folder. This can be referenced in [src/styles.css] using following code..
+
+```css
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+```
+
+## Adding Pager component
+
+Modify the template in [src/app/app.component.ts] file to render the Angular pager component. Add the Angular pager by using `<ejs-pager>` selector in template section of the app.component.ts file.
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the Pager component
+  template: `<ejs-pager [totalRecordsCount]='20'>
+               </ejs-pager>`
+})
+export class AppComponent implements OnInit {
+     ngOnInit(): void {
+    }
+
+}
+```
+
+## Page Size
+
+`pageSize` value defines the number of records to be displayed per page. The default value for the `pageSize` is 12.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pager/pager-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pager/pager-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pager/pager-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs1/app/app.component.ts" % }
+
+## Page Count
+
+`pageCount` value defines the number of pages to be displayed in the pager component for navigation.
+The default value for `pageCount` is 10 and value will be updated based on [`totalRecordsCount`](../api/pager#totalrecordscount)
+and [`pageSize`](#page-size) values.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pager/pager-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pager/pager-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pager/pager-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs2/app/app.component.ts" % }
+
+## Run the application
+
+The quickstart project is configured to compile and run the application in browser. Use the following command to run the application.
+
+```javascript
+ng serve --open
+```
+
+Output will be appears as follows.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pager/pager-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pager/pager-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pager/pager-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs3/app/app.component.ts" % }
