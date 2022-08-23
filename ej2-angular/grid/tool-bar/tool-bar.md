@@ -1,0 +1,43 @@
+---
+layout: post
+title: Tool bar in Angular Grid component | Syncfusion
+description: Learn here all about Tool bar in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Tool bar 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Tool bar in Angular Grid component
+
+The Grid provides ToolBar support to handle grid actions. The [`toolbar`](../../api/grid/#toolbar)
+property accepts either the collection of built-in toolbar items and
+[`ItemModel`](../../api/toolbar/itemModel) objects for custom toolbar items or
+HTML element ID for toolbar template.
+
+To use Toolbar, you need to inject **ToolbarService** in the provider section of **AppModule**.
+
+## Enable or disable toolbar items
+
+You can enable/disable toolbar items by using the **enableItems** method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/toolbar-enable-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/toolbar-enable-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/toolbar-enable-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/toolbar-enable-cs1/app/app.component.ts" % }
+
+## See Also
+
+* [Toolbar Component](../../toolbar/getting-started)
+* [How to add a router link in the toolbar in Angular Grid](https://www.syncfusion.com/forums/154693/how-to-add-a-router-link-in-the-toolbar-in-angular-grid)
+* [How to show or hide the delete button in the toolbar in Angular Grid](https://www.syncfusion.com/forums/158052/how-to-show-or-hide-the-delete-button-in-the-toolbar-in-angular-grid)
+* [How to display column as radio button in dialog editing in Angular Grid](https://www.syncfusion.com/forums/153052/how-to-display-column-as-radio-button-in-dialog-editing-in-angular-grid)
