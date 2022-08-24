@@ -129,7 +129,6 @@ The below code illustrates the pdf export customization.
 {% include code-snippet/grid/exporting-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs5/app/app.component.ts" % }
 
@@ -150,6 +149,5 @@ In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQue
 {% include code-snippet/grid/exporting-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs6/app/app.component.ts" % }

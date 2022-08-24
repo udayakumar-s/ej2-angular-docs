@@ -26,7 +26,6 @@ To use autofit feature, you need to inject **ResizeService** in the provider sec
 {% include code-snippet/grid/resize-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/resize-cs1/app/app.component.ts" % }
 

@@ -26,7 +26,6 @@ In the below sample, we have set the background color for **Freight** column in 
 {% include code-snippet/grid/excel-exporting-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs2/app/app.component.ts" % }
 
@@ -47,7 +46,6 @@ To apply theme in exported Excel, define the [`theme`](../../api/grid/excelExpor
 {% include code-snippet/grid/excel-exporting-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs3/app/app.component.ts" % }
 

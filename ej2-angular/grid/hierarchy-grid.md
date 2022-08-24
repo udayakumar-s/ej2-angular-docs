@@ -28,7 +28,6 @@ To use hierarchical binding, inject the **DetailRowService** in the provider sec
 {% include code-snippet/grid/default-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs3/app/app.component.ts" % }
 > * Grid supports n level of child grids.
@@ -51,7 +50,6 @@ and collapse all grid rows by invoking the [`collapseAll`](../api/grid/detailRow
 {% include code-snippet/grid/default-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs4/app/app.component.ts" % }
 
@@ -71,7 +69,6 @@ You can expand a particular child grid at initial rendering by invoking the
 {% include code-snippet/grid/default-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs5/app/app.component.ts" % }
 
@@ -91,7 +88,6 @@ You can dynamically load child grid dataSource by using the
 {% include code-snippet/grid/default-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs6/app/app.component.ts" % }
 
@@ -112,7 +108,6 @@ In the below sample, we have bound the child and parent grid with different fiel
 {% include code-snippet/grid/default-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs7/app/app.component.ts" % }
 
@@ -136,7 +131,6 @@ with parent record's [`queryString`](../api/grid/#querystring) field value in th
 {% include code-snippet/grid/default-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs8/app/app.component.ts" % }
 
@@ -157,7 +151,6 @@ In the below sample, we have shown custom image in **Employee Image** column of 
 {% include code-snippet/grid/default-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs9/app/app.component.ts" % }
 

@@ -22,6 +22,5 @@ You can customize the group caption by using the groupSettings.captionTemplate p
 {% include code-snippet/grid/grouping1-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs1/app/app.component.ts" % }

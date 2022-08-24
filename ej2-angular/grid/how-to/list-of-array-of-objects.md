@@ -22,6 +22,5 @@ The following example shows how to set Complex field for datasource having Array
 {% include code-snippet/grid/complex-data-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/complex-data-cs1/app/app.component.ts" % }

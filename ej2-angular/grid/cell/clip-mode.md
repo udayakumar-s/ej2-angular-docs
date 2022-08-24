@@ -30,7 +30,6 @@ also it will display the tooltip while hover on ellipsis is applied.
 {% include code-snippet/grid/clipmode-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/clipmode-cs1/app/app.component.ts" % }
 

@@ -26,7 +26,6 @@ To use PDF export, inject **PdfExportService** in the provider section of **AppM
 {% include code-snippet/grid/exporting-cs18/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs18/app/app.component.ts" % }
 
@@ -51,7 +50,6 @@ In the below demo, we have rendered the default spinner component when exporting
 {% include code-snippet/grid/exporting-cs19/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs19/app/app.component.ts" % }
 
@@ -70,7 +68,6 @@ PDF export provides an option to define datasource dynamically before exporting.
 {% include code-snippet/grid/exporting-cs20/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs20/app/app.component.ts" % }
 
@@ -91,7 +88,6 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 {% include code-snippet/grid/exporting-cs21/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs21/app/app.component.ts" % }
 

@@ -34,7 +34,6 @@ The available built-in command buttons are:
 {% include code-snippet/grid/command-column-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/command-column-cs1/app/app.component.ts" % }
 
@@ -54,6 +53,5 @@ the action for the custom buttons can be defined using [`commandClick`](../../ap
 {% include code-snippet/grid/command-column-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/command-column-cs2/app/app.component.ts" % }

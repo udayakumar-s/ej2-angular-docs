@@ -49,7 +49,6 @@ Items| Description
 {% include code-snippet/grid/default-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs1/app/app.component.ts" % }
 
@@ -72,7 +71,6 @@ Actions for this customized items can be defined in the
 {% include code-snippet/grid/default-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs2/app/app.component.ts" % }
 

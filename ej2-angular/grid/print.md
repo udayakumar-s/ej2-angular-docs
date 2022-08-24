@@ -23,7 +23,6 @@ To print the Grid, use the [`print`](../api/grid/#print) method from grid instan
 {% include code-snippet/grid/print-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/print-cs2/app/app.component.ts" % }
 
@@ -52,7 +51,6 @@ To print the grid from an external button, invoke the [`Print`](../api/grid/#pri
 {% include code-snippet/grid/paging-api-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging-api-cs1/app/app.component.ts" % }
 
@@ -71,7 +69,6 @@ By default, the grid prints all the pages. To print the current page alone, set 
 {% include code-snippet/grid/print-api-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/print-api-cs1/app/app.component.ts" % }
 
@@ -96,7 +93,6 @@ By default, the grid will be print the master and expanded child grids alone. yo
 {% include code-snippet/grid/default-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs11/app/app.component.ts" % }
 
@@ -129,7 +125,6 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% include code-snippet/grid/print-api-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/print-api-cs2/app/app.component.ts" % }
 

@@ -30,7 +30,6 @@ you can get [`RowDataBoundEventArgs`](../../api/grid/rowDataBoundEventArgs) whic
 {% include code-snippet/grid/custom-cell-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs11/app/app.component.ts" % }
 
@@ -57,7 +56,6 @@ Please refer the following example.
 {% include code-snippet/grid/grid-cs22/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs22/app/app.component.ts" % }
 

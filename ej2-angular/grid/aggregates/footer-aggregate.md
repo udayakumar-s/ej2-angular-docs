@@ -23,7 +23,6 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
 {% include code-snippet/grid/aggregates-footer-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-footer-cs3/app/app.component.ts" % }
 
@@ -47,6 +46,5 @@ You can format the aggregate value result by using the
 {% include code-snippet/grid/aggregates-footer-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-footer-cs4/app/app.component.ts" % }

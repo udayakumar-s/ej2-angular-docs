@@ -22,7 +22,6 @@ The detail template provides additional information about a particular row by ex
 {% include code-snippet/grid/custom-cell-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs4/app/app.component.ts" % }
 
@@ -44,7 +43,6 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% include code-snippet/grid/custom-cell-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs5/app/app.component.ts" % }
 
@@ -63,6 +61,5 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% include code-snippet/grid/custom-cell-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs6/app/app.component.ts" % }

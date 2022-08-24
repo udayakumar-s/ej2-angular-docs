@@ -26,7 +26,6 @@ The excel export provides an option to export the current page into excel. To ex
 {% include code-snippet/grid/excel-exporting-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs4/app/app.component.ts" % }
 
@@ -47,7 +46,6 @@ In the below exporting demo, We can get the selected records using [`getSelected
 {% include code-snippet/grid/exporting-filtered-data-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-filtered-data-cs1/app/app.component.ts" % }
 
@@ -66,7 +64,6 @@ The excel export provides an option to export hidden columns of grid by defining
 {% include code-snippet/grid/excel-exporting-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs5/app/app.component.ts" % }
 
@@ -91,7 +88,6 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% include code-snippet/grid/excel-exporting-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs6/app/app.component.ts" % }
 
@@ -110,7 +106,6 @@ It requires the [`allowFiltering`](../../api/grid/#allowfiltering) to be true.
 {% include code-snippet/grid/excel-exporting-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs7/app/app.component.ts" % }
 
@@ -130,7 +125,6 @@ In grid, we have provided the outline option for the exported document when the 
 {% include code-snippet/grid/excel-exporting-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs8/app/app.component.ts" % }
 
@@ -149,6 +143,5 @@ You can assign the file name for the exported document by defining [`fileName`](
 {% include code-snippet/grid/excel-exporting-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs9/app/app.component.ts" % }

@@ -25,7 +25,6 @@ To use Reordering, you need to inject **ReorderService** in the provider section
 {% include code-snippet/grid/reorder-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reorder-cs1/app/app.component.ts" % }
 
@@ -46,7 +45,6 @@ Grid have option to reorder Columns either by Interaction or by using the [`reor
 {% include code-snippet/grid/reorder-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reorder-cs2/app/app.component.ts" % }
 
@@ -67,7 +65,6 @@ In the below sample, **Ship City** and **Ship Region** column is reordered to la
 {% include code-snippet/grid/reorder-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reorder-cs3/app/app.component.ts" % }
 
@@ -90,6 +87,5 @@ During the reorder action, the grid component triggers the below three events.
 {% include code-snippet/grid/reorder-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reorder-cs4/app/app.component.ts" % }

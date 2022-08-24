@@ -23,6 +23,5 @@ In this exported document, each grid will be exported to new page of document in
 {% include code-snippet/grid/exporting-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs7/app/app.component.ts" % }

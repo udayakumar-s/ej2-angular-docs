@@ -32,7 +32,6 @@ The Grid supports two types of filter, they are
 {% include code-snippet/grid/filtering1-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs8/app/app.component.ts" % }
 
@@ -57,7 +56,6 @@ To apply the filter at initial rendering, set the filter [`predicate`](../../api
 {% include code-snippet/grid/filtering1-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs9/app/app.component.ts" % }
 
@@ -99,7 +97,6 @@ In the following sample, type **aero** in **Name** column to filter diacritic ch
 {% include code-snippet/grid/filter-diacritics-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-diacritics-cs1/app/app.component.ts" % }
 
@@ -120,7 +117,6 @@ The following example demonstrates the way to use filter template for a column w
 {% include code-snippet/grid/filter-template-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-template-cs2/app/app.component.ts" % }
 
@@ -141,7 +137,6 @@ The following example demonstrates the way to use filter template for a column w
 {% include code-snippet/grid/filter-template-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-template-cs3/app/app.component.ts" % }
 

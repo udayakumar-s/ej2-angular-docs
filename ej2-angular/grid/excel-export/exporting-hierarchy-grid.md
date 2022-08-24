@@ -28,7 +28,6 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 {% include code-snippet/grid/excel-exporting-cs14/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs14/app/app.component.ts" % }
 

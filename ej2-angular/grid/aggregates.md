@@ -62,7 +62,6 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
 {% include code-snippet/grid/aggregates-footer-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-footer-cs1/app/app.component.ts" % }
 
@@ -86,7 +85,6 @@ You can format the aggregate value result by using the
 {% include code-snippet/grid/aggregates-footer-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-footer-cs2/app/app.component.ts" % }
 
@@ -109,7 +107,6 @@ if [`groupCaptionTemplate`](../api/grid/aggregateColumnDirective/#groupcaptionte
 {% include code-snippet/grid/aggregates-group-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-group-cs1/app/app.component.ts" % }
 
@@ -142,7 +139,6 @@ object.
 {% include code-snippet/grid/aggregates-custom-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-custom-cs1/app/app.component.ts" % }
 
@@ -165,7 +161,6 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 {% include code-snippet/grid/reactive-aggregates-inlineedit-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reactive-aggregates-inlineedit-cs1/app/app.component.ts" % }
 
@@ -186,7 +181,6 @@ In the following code, the input event for the Freight column editor has been re
 {% include code-snippet/grid/reactive-aggregates-inlineedit-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reactive-aggregates-inlineedit-cs2/app/app.component.ts" % }
 

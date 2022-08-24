@@ -24,7 +24,6 @@ To select a row at initial rendering, set the [`selectedRowIndex`](../../api/gri
 {% include code-snippet/grid/selection-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs6/app/app.component.ts" % }
 
@@ -43,7 +42,6 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](../.
 {% include code-snippet/grid/selection-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs7/app/app.component.ts" % }
 
@@ -62,7 +60,6 @@ You can select multiple rows by clicking on rows one by one. This will not desel
 {% include code-snippet/grid/selection-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs8/app/app.component.ts" % }
 
@@ -81,7 +78,6 @@ The Toggle selection allows to perform selection and unselection of the particul
 {% include code-snippet/grid/selection-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs9/app/app.component.ts" % }
 

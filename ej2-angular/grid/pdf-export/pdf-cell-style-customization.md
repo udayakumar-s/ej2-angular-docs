@@ -26,7 +26,6 @@ In the below sample, we have set the background color for **Freight** column in 
 {% include code-snippet/grid/exporting-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs9/app/app.component.ts" % }
 
@@ -47,7 +46,6 @@ To apply theme in exported PDF, define the [`theme`](../../api/grid/pdfExportPro
 {% include code-snippet/grid/exporting-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs10/app/app.component.ts" % }
 

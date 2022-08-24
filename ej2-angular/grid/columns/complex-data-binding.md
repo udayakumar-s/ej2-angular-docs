@@ -22,7 +22,6 @@ You can achieve complex data binding in the grid by using the dot(.) operator in
 {% include code-snippet/grid/grid-cs18/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs18/app/app.component.ts" % }
 

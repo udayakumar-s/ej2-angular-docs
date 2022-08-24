@@ -26,6 +26,5 @@ If you wish to restore all these column properties, then you can achieve it by c
 {% include code-snippet/grid/grouping1-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs8/app/app.component.ts" % }

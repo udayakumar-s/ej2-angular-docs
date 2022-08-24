@@ -27,7 +27,6 @@ To use Row Drag and Drop, you need to inject **RowDDService** in the provider se
 {% include code-snippet/grid/dragndrop-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/dragndrop-cs1/app/app.component.ts" % }
 
@@ -48,7 +47,6 @@ By setting the [targetID](../../api/grid/rowDropSettings/#targetid), the Grid wi
 {% include code-snippet/grid/dragndrop-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/dragndrop-cs2/app/app.component.ts" % }
 

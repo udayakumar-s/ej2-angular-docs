@@ -32,7 +32,6 @@ You can achieve this by destroying the grid after disabling the [`enablePersiste
 {% include code-snippet/grid/grouping1-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs10/app/app.component.ts" % }
 
@@ -55,7 +54,6 @@ method in the [`actionBegin`](../../api/grid/#actionbegin) event.
 {% include code-snippet/grid/grouping1-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs11/app/app.component.ts" % }
 
@@ -74,6 +72,5 @@ The Grid columns can be persisted when the [enablePersistence](../../api/grid/#e
 {% include code-snippet/grid/grouping1-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs12/app/app.component.ts" % }
