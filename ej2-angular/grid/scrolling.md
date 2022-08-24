@@ -36,7 +36,6 @@ of scroller in pixel, set the pixel value as number.
 {% include code-snippet/grid/scrolling-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-cs1/app/app.component.ts" % }
 
@@ -57,7 +56,6 @@ Setting the [`height`](../api/grid/#height) to **100%** requires the grid parent
 {% include code-snippet/grid/scrolling-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-cs2/app/app.component.ts" % }
 
@@ -77,7 +75,6 @@ You can scroll the grid content to the selected row position by using the
 {% include code-snippet/grid/scrolling-select-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-select-cs1/app/app.component.ts" % }
 
@@ -98,7 +95,6 @@ In the following sample, we have invoked the [`hideScroll`](../api/grid/#hidescr
 {% include code-snippet/grid/scrolling-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-cs3/app/app.component.ts" % }
 
@@ -119,6 +115,5 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 {% include code-snippet/grid/scrolling-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-cs4/app/app.component.ts" % }

@@ -133,7 +133,6 @@ The below example demonstrates the Grid in **Deutsch** culture.
 {% include code-snippet/grid/localization-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/localization-cs1/app/app.component.ts" % }
 
@@ -165,7 +164,6 @@ You need to load culture format files in **ngOnInit** function.
 {% include code-snippet/grid/localization-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/localization-cs2/app/app.component.ts" % }
 
@@ -189,7 +187,6 @@ To enable RTL in the Grid, set the [`enableRtl`](../api/grid/#enablertl) to true
 {% include code-snippet/grid/paging1-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs1/app/app.component.ts" % }
 

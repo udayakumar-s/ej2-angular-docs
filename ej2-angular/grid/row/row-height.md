@@ -25,7 +25,6 @@ In the below example, the [`rowHeight`](../../api/grid/#rowheight) is set as '60
 {% include code-snippet/grid/custom-cell-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs7/app/app.component.ts" % }
 
@@ -47,7 +46,6 @@ In the below example, the row height for the row with OrderID as '10249' is set 
 {% include code-snippet/grid/custom-cell-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs8/app/app.component.ts" % }
 

@@ -24,7 +24,6 @@ To enable Normal edit, set the [`editSettings.mode`](../../api/grid/editSettings
 {% include code-snippet/grid/edit-cs21/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs21/app/app.component.ts" % }
 
@@ -47,7 +46,6 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 {% include code-snippet/grid/edit-cs22/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs22/app/app.component.ts" % }
 
@@ -68,7 +66,6 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% include code-snippet/grid/edit-cs23/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs23/app/app.component.ts" % }
 
@@ -99,7 +96,6 @@ Grid methods can be used to perform CRUD operations programmatically. The [addRe
 {% include code-snippet/grid/edit-cs24/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs24/app/app.component.ts" % }
 
@@ -119,7 +115,6 @@ The delete confirm dialog can be shown when deleting a record by defining the
 {% include code-snippet/grid/edit-cs25/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs25/app/app.component.ts" % }
 
@@ -141,7 +136,6 @@ To set a default value for the particular column by defining the [`columns.defau
 {% include code-snippet/grid/edit-cs26/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs26/app/app.component.ts" % }
 
@@ -160,7 +154,6 @@ By default, a new row will be added at the top of the grid. You can change it by
 {% include code-snippet/grid/edit-cs27/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs27/app/app.component.ts" % }
 
@@ -184,7 +177,6 @@ The [recordDoubleClick](../../api/grid/#recordDoubleClick) event allows you to m
 {% include code-snippet/grid/edit-cs28/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs28/app/app.component.ts" % }
 >>>>>>> a61f632fe75e6a2b203935097fc72a57436bc6ca

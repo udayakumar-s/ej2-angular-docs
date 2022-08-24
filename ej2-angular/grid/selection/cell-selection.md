@@ -30,7 +30,6 @@ in between cells of rows within the range.
 {% include code-snippet/grid/selection-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs1/app/app.component.ts" % }
 
@@ -52,7 +51,6 @@ The Toggle selection allows to perform selection and unselection of the particul
 {% include code-snippet/grid/selection-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs2/app/app.component.ts" % }
 

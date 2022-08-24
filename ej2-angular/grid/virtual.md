@@ -37,7 +37,6 @@ The loaded data will be cached and reused when it is needed for next time.
 {% include code-snippet/grid/paging1-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs8/app/app.component.ts" % }
 
@@ -61,7 +60,6 @@ To setup the column virtualization, set the
 {% include code-snippet/grid/paging1-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs9/app/app.component.ts" % }
 

@@ -26,7 +26,6 @@ In the below sample, We have created the **FormGroup** with **FormControls** for
 {% include code-snippet/grid/reactive-form-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reactive-form-cs1/app/app.component.ts" % }
 
@@ -49,7 +48,6 @@ In the below sample, We have created the **FormGroup** by using **ngForm** direc
 {% include code-snippet/grid/dialogTemplate-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/dialogTemplate-cs1/app/app.component.ts" % }
 
@@ -215,6 +213,5 @@ The following example, we have rendered tab control inside the edit dialog. The 
 {% include code-snippet/grid/tablikeedit-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/tablikeedit-cs1/app/app.component.ts" % }

@@ -27,7 +27,6 @@ is set as **3**. Hence, the left two columns and top three rows are frozen.
 {% include code-snippet/grid/frozenrows-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/frozenrows-cs1/app/app.component.ts" % }
 
@@ -65,7 +64,6 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% include code-snippet/grid/frozenrows-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/frozenrows-cs2/app/app.component.ts" % }
 
@@ -106,7 +104,6 @@ Validation rules for the 'EmployeeID' and 'Freight' columns can be added in the 
 {% include code-snippet/grid/frozenrows-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/frozenrows-cs3/app/app.component.ts" % }
 

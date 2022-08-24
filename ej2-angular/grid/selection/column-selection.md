@@ -24,6 +24,5 @@ You can enable column selection by setting the [`selectionSettings.allowColumnSe
 {% include code-snippet/grid/selection-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs5/app/app.component.ts" % }

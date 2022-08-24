@@ -29,7 +29,6 @@ Interaction keys |Description
 {% include code-snippet/grid/grid-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs1/app/app.component.ts" % }
 
@@ -49,7 +48,6 @@ method.
 {% include code-snippet/grid/grid-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs2/app/app.component.ts" % }
 
@@ -68,7 +66,6 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% include code-snippet/grid/edit-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs1/app/app.component.ts" % }
 
@@ -95,7 +92,6 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 {% include code-snippet/grid/edit-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs2/app/app.component.ts" % }
 

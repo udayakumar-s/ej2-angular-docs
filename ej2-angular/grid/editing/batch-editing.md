@@ -25,7 +25,6 @@ To enable Batch edit, set the [`editSettings.mode`](../../api/grid/editSettings/
 {% include code-snippet/grid/edit-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs3/app/app.component.ts" % }
 
@@ -46,7 +45,6 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 {% include code-snippet/grid/edit-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs4/app/app.component.ts" % }
 
@@ -67,7 +65,6 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% include code-snippet/grid/edit-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs5/app/app.component.ts" % }
 
@@ -86,7 +83,6 @@ By default, grid will show the confirm dialog when saving or canceling or perfor
 {% include code-snippet/grid/edit-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs6/app/app.component.ts" % }
 

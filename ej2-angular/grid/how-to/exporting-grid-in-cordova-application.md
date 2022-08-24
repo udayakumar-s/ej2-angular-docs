@@ -23,6 +23,5 @@ You can use corresponding exporting methods and exportComplete events to get the
 {% include code-snippet/grid/exporting-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs4/app/app.component.ts" % }

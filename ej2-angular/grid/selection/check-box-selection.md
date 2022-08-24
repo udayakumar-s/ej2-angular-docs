@@ -25,7 +25,6 @@ column [`type`](../../api/grid/column/#type) property.
 {% include code-snippet/grid/selection-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs3/app/app.component.ts" % }
 
@@ -56,6 +55,5 @@ and hold CTRL key and click the desired rows. To select range of rows, press and
 {% include code-snippet/grid/selection-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs4/app/app.component.ts" % }

@@ -26,7 +26,6 @@ When we enable the [`enableAdaptiveUI`](../api/grid/#enableadaptiveui) property,
 {% include code-snippet/grid/adaptive-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/adaptive-cs1/app/app.component.ts" % }
 
@@ -45,7 +44,6 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% include code-snippet/grid/adaptive-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/adaptive-cs2/app/app.component.ts" % }
 

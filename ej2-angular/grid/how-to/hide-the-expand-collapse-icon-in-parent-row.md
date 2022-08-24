@@ -60,6 +60,5 @@ In the below demo, the expand/collapse icon in the row with **EmployeeID** as **
 {% include code-snippet/grid/template-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/template-cs4/app/app.component.ts" % }

@@ -24,7 +24,6 @@ declaration is empty or undefined while initializing the grid. All the columns i
 {% include code-snippet/grid/grid-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs3/app/app.component.ts" % }
 
@@ -49,7 +48,6 @@ If Primary key "column index" is known then refer the following code example
 {% include code-snippet/grid/grid-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs4/app/app.component.ts" % }
 
@@ -79,6 +77,5 @@ In the below example, [`width`](../api/grid/column/#width) is set for **OrderID*
 {% include code-snippet/grid/grid-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs5/app/app.component.ts" % }

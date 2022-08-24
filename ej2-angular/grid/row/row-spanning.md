@@ -26,7 +26,6 @@ Also Grid supports the spanning of rows and columns for same cells. **Lunch Brea
 {% include code-snippet/grid/spanning-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/spanning-cs2/app/app.component.ts" % }
 

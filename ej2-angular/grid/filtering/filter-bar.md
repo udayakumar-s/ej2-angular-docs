@@ -41,7 +41,6 @@ N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
 {% include code-snippet/grid/filtering1-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs1/app/app.component.ts" % }
 
@@ -65,7 +64,6 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% include code-snippet/grid/filtering1-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs2/app/app.component.ts" % }
 
@@ -85,6 +83,5 @@ we have changed the default operator for string typed columns as **contains** fr
 {% include code-snippet/grid/filtering1-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs3/app/app.component.ts" % }

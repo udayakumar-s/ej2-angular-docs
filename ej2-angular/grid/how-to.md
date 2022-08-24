@@ -47,7 +47,6 @@ Refresh the grid after the datasource change by using the [`refresh`](../../api/
 {% include code-snippet/grid/change-headertext-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/change-headertext-cs3/app/app.component.ts" % }
 
@@ -103,7 +102,6 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% include code-snippet/grid/edit-cs32/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs32/app/app.component.ts" % }
 
@@ -124,7 +122,6 @@ In the following example, we have printed expanded child grids form other pages.
 {% include code-snippet/grid/default-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs10/app/app.component.ts" % }
 
@@ -167,7 +164,6 @@ this.grid.refreshHeader();
 {% include code-snippet/grid/change-headertext-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/change-headertext-cs4/app/app.component.ts" % }
 
@@ -214,7 +210,6 @@ Add the custom css class to particular column by using [`customAttributes`](../.
 {% include code-snippet/grid/custom-column-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs2/app/app.component.ts" % }
 
@@ -246,7 +241,6 @@ tooltip (args: QueryCellInfoEventArgs) {
 {% include code-snippet/grid/custom-tooltip-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-tooltip-cs2/app/app.component.ts" % }
 
@@ -275,7 +269,6 @@ renders the custom component.
 {% include code-snippet/grid/column-sync-comp-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/column-sync-comp-cs2/app/app.component.ts" % }
 
@@ -331,7 +324,6 @@ setHeaderHeight(args) {
 {% include code-snippet/grid/header-orientation-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/header-orientation-cs2/app/app.component.ts" % }
 
@@ -358,7 +350,6 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% include code-snippet/grid/custom-column-menu-icon-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-menu-icon-cs2/app/app.component.ts" % }
 
@@ -381,7 +372,6 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% include code-snippet/grid/edit-cs33/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs33/app/app.component.ts" % }
 
@@ -402,7 +392,6 @@ In the below example, we have changed the dialog's header text for editing and a
 {% include code-snippet/grid/edit-cs34/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs34/app/app.component.ts" % }
 
@@ -427,7 +416,6 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% include code-snippet/grid/edit-cs35/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs35/app/app.component.ts" % }
 
@@ -448,7 +436,6 @@ In the below demo, Cascading DropDownList rendered for **ShipCountry** and **Shi
 {% include code-snippet/grid/edit-cs36/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs36/app/app.component.ts" % }
 
@@ -488,7 +475,6 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% include code-snippet/grid/edit-cs37/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs37/app/app.component.ts" % }
 
@@ -509,7 +495,6 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% include code-snippet/grid/wizardtemplate-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/wizardtemplate-cs2/app/app.component.ts" % }
 
@@ -596,7 +581,6 @@ The following example, we have rendered tab control inside the edit dialog. The 
 {% include code-snippet/grid/tablikeedit-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/tablikeedit-cs2/app/app.component.ts" % }
 
@@ -617,7 +601,6 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% include code-snippet/grid/edit-cs38/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs38/app/app.component.ts" % }
 
@@ -634,7 +617,6 @@ For batch mode of editing, you can use [`cellEdit`](../../api/grid/#celledit) ev
 {% include code-snippet/grid/edit-cs39/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs39/app/app.component.ts" % }
 
@@ -657,7 +639,6 @@ The following example demonstrates on **Adding** a new row when Enter key is pre
 {% include code-snippet/grid/edit-cs40/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs40/app/app.component.ts" % }
 
@@ -678,7 +659,6 @@ Bind the click event for the Grid and in the click event handler call the [`edit
 {% include code-snippet/grid/edit-cs41/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs41/app/app.component.ts" % }
 
@@ -720,7 +700,6 @@ In the below demo, click on the corresponding button to perform single-column or
 {% include code-snippet/grid/edit-cs42/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs42/app/app.component.ts" % }
 
@@ -764,7 +743,6 @@ In the below demo, click on the corresponding button to clear sort for particula
 {% include code-snippet/grid/edit-cs43/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs43/app/app.component.ts" % }
 
@@ -789,7 +767,6 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% include code-snippet/grid/foreignkey-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs6/app/app.component.ts" % }
 
@@ -815,7 +792,6 @@ In the following sample, we have customized string filter operators.
 {% include code-snippet/grid/filtering1-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs10/app/app.component.ts" % }
 
@@ -837,7 +813,6 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% include code-snippet/grid/foreignkey-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs7/app/app.component.ts" % }
 
@@ -861,7 +836,6 @@ This column header shows the custom filter bar template and you can select filte
 {% include code-snippet/grid/foreignkey-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs8/app/app.component.ts" % }
 
@@ -884,7 +858,6 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% include code-snippet/grid/foreignkey-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs9/app/app.component.ts" % }
 
@@ -903,7 +876,6 @@ When editing, you can bind foreign key datasource to a dropdown list by using [`
 {% include code-snippet/grid/foreignkey-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs10/app/app.component.ts" % }
 
@@ -927,7 +899,6 @@ You can use corresponding exporting methods and exportComplete events to get the
 {% include code-snippet/grid/exporting-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs3/app/app.component.ts" % }
 
@@ -948,7 +919,6 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% include code-snippet/grid/exporting-filtered-data-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-filtered-data-cs2/app/app.component.ts" % }
 
@@ -969,7 +939,6 @@ To customize default values of pager dropdown, you need to define [`pageSizes`](
 {% include code-snippet/grid/custom-column-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs3/app/app.component.ts" % }
 
@@ -1026,6 +995,5 @@ In the below demo, the expand/collapse icon in the row with **EmployeeID** as **
 {% include code-snippet/grid/template-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/template-cs3/app/app.component.ts" % }

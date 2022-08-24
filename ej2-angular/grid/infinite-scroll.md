@@ -26,7 +26,6 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 {% include code-snippet/grid/paging1-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs2/app/app.component.ts" % }
 
@@ -47,7 +46,6 @@ In the below demo, we have changed this property value to load five page records
 {% include code-snippet/grid/paging1-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs3/app/app.component.ts" % }
 
@@ -68,7 +66,6 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% include code-snippet/grid/paging1-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs4/app/app.component.ts" % }
 

@@ -28,7 +28,6 @@ To use Grouping, you need to inject **GroupService** in the provider section of 
 {% include code-snippet/grid/grouping1-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs2/app/app.component.ts" % }
 
@@ -52,7 +51,6 @@ To apply group at initial rendering, set the column field name in the `groupSett
 {% include code-snippet/grid/grouping1-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs3/app/app.component.ts" % }
 
@@ -72,7 +70,6 @@ grouping, define the [`groupSettings.showDropArea`](../../api/grid/groupSettings
 {% include code-snippet/grid/grouping1-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs4/app/app.component.ts" % }
 
@@ -104,7 +101,6 @@ grid columns.
 {% include code-snippet/grid/grouping1-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs5/app/app.component.ts" % }
 
@@ -127,7 +123,6 @@ event triggers after the group action is completed. Using these events you can p
 {% include code-snippet/grid/grouping1-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs6/app/app.component.ts" % }
 
@@ -149,7 +144,6 @@ To collapse the selected grouped row from an external button by using the [`expa
 {% include code-snippet/grid/grouping1-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs7/app/app.component.ts" % }
 

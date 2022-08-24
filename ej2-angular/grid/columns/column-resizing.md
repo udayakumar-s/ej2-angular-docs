@@ -28,7 +28,6 @@ To use the column resize, inject **ResizeService** in the provider section of **
 {% include code-snippet/grid/resize-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/resize-cs2/app/app.component.ts" % }
 
@@ -54,7 +53,6 @@ In the below sample, **OrderID**, **Ship Name** and **Ship Country** columns are
 {% include code-snippet/grid/resize-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/resize-cs3/app/app.component.ts" % }
 
@@ -75,7 +73,6 @@ In this example, we have disabled resize for **Ship City** column.
 {% include code-snippet/grid/resize-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/resize-cs4/app/app.component.ts" % }
 
@@ -107,6 +104,5 @@ During the resizing action, the grid component triggers the below three events.
 {% include code-snippet/grid/resize-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/resize-cs5/app/app.component.ts" % }

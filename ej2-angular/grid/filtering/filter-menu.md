@@ -24,7 +24,6 @@ You can filter the records with different operators.
 {% include code-snippet/grid/filtering1-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs4/app/app.component.ts" % }
 
@@ -53,7 +52,6 @@ In the following sample, dropdown is used  as custom component in the OrderID co
 {% include code-snippet/grid/filtering1-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs5/app/app.component.ts" % }
 
@@ -79,7 +77,6 @@ In the following sample, we have customized string filter operators.
 {% include code-snippet/grid/filtering1-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs6/app/app.component.ts" % }
 
@@ -102,6 +99,5 @@ In the following sample menu filter is enabled by default and checkbox filter is
 {% include code-snippet/grid/filtering1-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs7/app/app.component.ts" % }

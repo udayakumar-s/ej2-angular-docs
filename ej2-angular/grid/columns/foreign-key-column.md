@@ -32,7 +32,6 @@ To use ForeignKeyColumn, you need to inject **ForeignKeyService** in the provide
 {% include code-snippet/grid/grid-cs19/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs19/app/app.component.ts" % }
 
@@ -59,7 +58,6 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% include code-snippet/grid/foreignkey-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs1/app/app.component.ts" % }
 
@@ -81,7 +79,6 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% include code-snippet/grid/foreignkey-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs2/app/app.component.ts" % }
 
@@ -105,7 +102,6 @@ This column header shows the custom filter bar template and you can select filte
 {% include code-snippet/grid/foreignkey-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs3/app/app.component.ts" % }
 
@@ -128,7 +124,6 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% include code-snippet/grid/foreignkey-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs4/app/app.component.ts" % }
 
@@ -149,6 +144,5 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 {% include code-snippet/grid/foreignkey-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs5/app/app.component.ts" % }

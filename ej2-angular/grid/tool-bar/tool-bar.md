@@ -31,7 +31,6 @@ You can enable/disable toolbar items by using the **enableItems** method.
 {% include code-snippet/grid/toolbar-enable-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/toolbar-enable-cs1/app/app.component.ts" % }
 

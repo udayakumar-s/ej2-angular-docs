@@ -24,7 +24,6 @@ To enable Dialog edit, set the [`editSettings.mode`](../../api/grid/editSettings
 {% include code-snippet/grid/edit-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs7/app/app.component.ts" % }
 
@@ -49,7 +48,6 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% include code-snippet/grid/edit-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs8/app/app.component.ts" % }
 
@@ -74,7 +72,6 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% include code-snippet/grid/edit-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs9/app/app.component.ts" % }
 
@@ -95,6 +92,5 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% include code-snippet/grid/wizardtemplate-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/wizardtemplate-cs1/app/app.component.ts" % }

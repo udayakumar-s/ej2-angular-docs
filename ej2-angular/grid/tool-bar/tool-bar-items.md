@@ -42,7 +42,6 @@ The following table shows Built-in toolbar items and its action.
 {% include code-snippet/grid/toolbar-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/toolbar-cs1/app/app.component.ts" % }
 
@@ -67,7 +66,6 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 {% include code-snippet/grid/custom-toolbar-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-toolbar-cs1/app/app.component.ts" % }
 
@@ -91,7 +89,6 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 {% include code-snippet/grid/edit-cs48/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs48/app/app.component.ts" % }
 
@@ -110,6 +107,5 @@ By default, Custom toolbar items are in the Left position. You can change the po
 {% include code-snippet/grid/custom-toolbar-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-toolbar-cs2/app/app.component.ts" % }

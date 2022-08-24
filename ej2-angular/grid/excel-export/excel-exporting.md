@@ -26,7 +26,6 @@ To use excel export, inject **ExcelExportService** in the provider section of **
 {% include code-snippet/grid/excel-exporting-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs10/app/app.component.ts" % }
 
@@ -51,7 +50,6 @@ In the below demo, we have rendered the default spinner component when exporting
 {% include code-snippet/grid/exporting-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs1/app/app.component.ts" % }
 
@@ -71,7 +69,6 @@ To export data dynamically, define the [`dataSource`](../../api/grid/excelExport
 {% include code-snippet/grid/excel-exporting-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs11/app/app.component.ts" % }
 
@@ -92,7 +89,6 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 {% include code-snippet/grid/exporting-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs2/app/app.component.ts" % }
 

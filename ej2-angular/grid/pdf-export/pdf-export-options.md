@@ -24,7 +24,6 @@ PDF export provides an option to export the current page into PDF. To export cur
 {% include code-snippet/grid/exporting-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs11/app/app.component.ts" % }
 
@@ -45,7 +44,6 @@ In the below exporting demo, We can get the selected records using [`getSelected
 {% include code-snippet/grid/exporting-filtered-data-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-filtered-data-cs3/app/app.component.ts" % }
 
@@ -66,7 +64,6 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% include code-snippet/grid/exporting-filtered-data-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-filtered-data-cs4/app/app.component.ts" % }
 
@@ -85,7 +82,6 @@ PDF export provides an option to export hidden columns of Grid by defining the [
 {% include code-snippet/grid/exporting-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs12/app/app.component.ts" % }
 
@@ -110,7 +106,6 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% include code-snippet/grid/exporting-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs13/app/app.component.ts" % }
 
@@ -129,7 +124,6 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% include code-snippet/grid/exporting-cs14/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs14/app/app.component.ts" % }
 
@@ -177,7 +171,6 @@ Supported page sizes are:
 {% include code-snippet/grid/exporting-cs15/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs15/app/app.component.ts" % }
 
@@ -196,7 +189,6 @@ You can assign the file name for the exported document by defining [`fileName`](
 {% include code-snippet/grid/exporting-cs16/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs16/app/app.component.ts" % }
 
@@ -247,7 +239,6 @@ In the following example, we have used Algeria font to export the grid.
 {% include code-snippet/grid/exporting-cs17/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs17/app/app.component.ts" % }
 

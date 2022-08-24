@@ -24,7 +24,6 @@ The column [`template`](../../api/grid/column/#template) has options to display 
 {% include code-snippet/grid/template-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/template-cs1/app/app.component.ts" % }
 
@@ -53,7 +52,6 @@ renders the custom component.
 {% include code-snippet/grid/column-sync-comp-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/column-sync-comp-cs1/app/app.component.ts" % }
 
@@ -85,7 +83,6 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 {% include code-snippet/grid/condition-template-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/condition-template-cs1/app/app.component.ts" % }
 
@@ -106,6 +103,5 @@ In the following sample, the button element is rendered in the Employee Data col
 {% include code-snippet/grid/template-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/template-cs2/app/app.component.ts" % }

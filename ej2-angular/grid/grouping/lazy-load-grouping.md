@@ -28,7 +28,6 @@ To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](
 {% include code-snippet/grid/lazy-load-grouping-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/lazy-load-grouping-cs1/app/app.component.ts" % }
 

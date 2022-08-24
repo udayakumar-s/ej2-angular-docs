@@ -24,7 +24,6 @@ To interact with remote data source,  provide the endpoint **url**.
 {% include code-snippet/grid/databinding-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs2/app/app.component.ts" % }
 
@@ -46,7 +45,6 @@ You can retrieve data from OData service using DataManager. You can refer to the
 {% include code-snippet/grid/databinding-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs3/app/app.component.ts" % }
 
@@ -68,7 +66,6 @@ To bind OData v4 service, use the **ODataV4Adaptor**.
 {% include code-snippet/grid/databinding-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs4/app/app.component.ts" % }
 
@@ -214,7 +211,6 @@ by overriding the built-in response processing using the **processResponse** met
 {% include code-snippet/grid/databinding-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs5/app/app.component.ts" % }
 

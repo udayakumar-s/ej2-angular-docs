@@ -23,6 +23,5 @@ The HTML tags can be displayed in the Grid header and content by enabling the
 {% include code-snippet/grid/custom-cell-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs3/app/app.component.ts" % }

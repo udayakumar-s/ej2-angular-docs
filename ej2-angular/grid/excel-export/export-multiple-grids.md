@@ -28,7 +28,6 @@ It have an option to provide blank rows between grids. These blank rows count ca
 {% include code-snippet/grid/excel-exporting-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs12/app/app.component.ts" % }
 
@@ -50,6 +49,5 @@ To export in new sheet, define  **multipleExport.type** as **NewSheet** in [`exc
 {% include code-snippet/grid/excel-exporting-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs13/app/app.component.ts" % }

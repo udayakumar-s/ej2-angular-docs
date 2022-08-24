@@ -26,6 +26,5 @@ The following example demonstrates on **Adding** a new row when Enter key is pre
 {% include code-snippet/grid/edit-cs47/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs47/app/app.component.ts" % }

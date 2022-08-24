@@ -59,6 +59,5 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% include code-snippet/grid/edit-cs45/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs45/app/app.component.ts" % }

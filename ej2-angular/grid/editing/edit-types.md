@@ -49,7 +49,6 @@ Component |Example
 {% include code-snippet/grid/edit-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs10/app/app.component.ts" % }
 
@@ -72,7 +71,6 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% include code-snippet/grid/prevent-decimalpoint-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/prevent-decimalpoint-cs1/app/app.component.ts" % }
 
@@ -112,7 +110,6 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% include code-snippet/grid/edit-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs11/app/app.component.ts" % }
 
@@ -139,7 +136,6 @@ The cell edit template is used to add a custom component for a particular column
 {% include code-snippet/grid/edit-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs12/app/app.component.ts" % }
 
@@ -158,6 +154,5 @@ The cell editor for a particular column can be specified using the content of th
 {% include code-snippet/grid/edit-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs13/app/app.component.ts" % }

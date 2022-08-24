@@ -30,7 +30,6 @@ In the following example, Employee Information with Employee Photo is presented 
 {% include code-snippet/grid/custom-cell-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs9/app/app.component.ts" % }
 
@@ -49,7 +48,6 @@ If the [rowTemplate](../../api/grid/#rowtemplate) is used, the value cannot be f
 {% include code-snippet/grid/custom-cell-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs10/app/app.component.ts" % }
 =======

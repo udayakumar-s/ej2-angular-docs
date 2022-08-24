@@ -150,7 +150,6 @@ Here, we have defined it for the conversion of numeric values to currency.
 {% include code-snippet/grid/paging-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging-cs1/app/app.component.ts" % }
 
@@ -186,7 +185,6 @@ The pager can be customized using [`pageSettings`](../api/grid/#pagesettings) pr
 {% include code-snippet/grid/paging-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging-cs2/app/app.component.ts" % }
 
@@ -209,7 +207,6 @@ Sorting feature can be customized using [`sortSettings`](../api/grid/#sortsettin
 {% include code-snippet/grid/sorting-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting-cs1/app/app.component.ts" % }
 
@@ -232,7 +229,6 @@ Filtering feature can be customized using [`filterSettings`](../api/grid/#filter
 {% include code-snippet/grid/filtering-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering-cs1/app/app.component.ts" % }
 
@@ -255,7 +251,6 @@ Grouping feature can be customized using [`groupSettings`](../api/grid/#groupset
 {% include code-snippet/grid/grouping-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping-cs1/app/app.component.ts" % }
 
@@ -280,7 +275,6 @@ The output will appear as follows.
 {% include code-snippet/grid/grouping-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping-cs2/app/app.component.ts" % }
 
