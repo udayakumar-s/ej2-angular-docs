@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Module in Angular Grid component | Syncfusion
-description: Learn here all about Module in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Module 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Module Injection"
+component: "Grid"
+description: "Learn what are the feature modules are available in EJ2 Grid."
 ---
 
-# Module in Angular Grid component
+# Feature Modules
 
 The following value providers should be injected to extend grid's functionality.
 

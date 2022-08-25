@@ -1,13 +1,4 @@
----
-layout: post
-title: Exporting grid in server in Angular Grid component | Syncfusion
-description: Learn here all about Exporting grid in server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Exporting grid in server 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Exporting grid in server in Angular Grid component
+# Exporting Grid in Server
 
 The Grid have an option to export the data to Excel in server side using Grid server export library.
 
@@ -100,7 +91,7 @@ export class AppComponent implements OnInit {
 
 ```
 
->Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Angular-EJ2-Grid-server-side-exporting).
+> **Note:** Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Angular-EJ2-Grid-server-side-exporting).
 
 ## CSV Export in server side
 
@@ -175,6 +166,38 @@ export class AppComponent implements OnInit {
             this.grid.serverCsvExport('Home/CsvGridExport');
         }
     }
+}
+
+```
+
+## Rotate a header text to a certain degree in the exported grid on the server side
+
+The DataGrid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported Excel file. To achieve this requirement, use the `ServerExcelHeaderQueryCellInfo` event of the Grid.
+
+The `ServerExcelHeaderQueryCellInfo` will be triggered when creating a column header for the excel document to be exported in the server side. Customize the column header in this event.
+
+In the following demo, using the `HeaderCellRotate` method of the `GridExcelExport` class in the `ServerExcelHeaderQueryCellInfo` event, you can rotate the header text of the column header in the excel exported document.
+
+```typescript
+public ActionResult ExcelExport(string gridModel)
+{
+    GridExcelExport exp = new GridExcelExport();
+    Grid gridProperty = ConvertGridObject(gridModel);
+    gridProperty.ServerExcelHeaderQueryCellInfo = ExcelHeaderQueryCellInfo;
+    IEnumerable data = Utils.DataTableToJson(dt);
+    var result = exp.ExcelExport<dynamic>(gridProperty, data);
+    return result;
+}
+private void ExcelHeaderQueryCellInfo(object excel)
+{
+    ServerExcelHeaderQueryCellInfoEventArgs name = (ServerExcelHeaderQueryCellInfoEventArgs)excel;
+    headerValues.Add(name.Column.HeaderText);
+    var longestString = headerValues.Where(s => s.Length == headerValues.Max(m => m.Length)).First();
+    GridExcelExport exp = new GridExcelExport();
+    var size = exp.ExcelTextSize(name.Style.Font.FontName, (float)name.Style.Font.Size, longestString);
+    name.Cell.RowHeight = size.Width;
+    exp.HeaderCellRotate(name, 45); // Give the rotate degree value by the user.  
+    name.Style.Borders.LineStyle = Syncfusion.XlsIO.ExcelLineStyle.None;
 }
 
 ```

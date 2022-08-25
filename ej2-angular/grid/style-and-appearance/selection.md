@@ -1,13 +1,4 @@
----
-layout: post
-title: Selection in Angular Grid component | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Selection 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Selection in Angular Grid component
+# Selection
 
 ## Customizing the row selection background
 

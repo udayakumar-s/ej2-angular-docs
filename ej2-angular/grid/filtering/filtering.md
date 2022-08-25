@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Filtering in Angular Grid component | Syncfusion
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Filtering 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Filtering"
+component: "Grid"
+description: "Learn how to filter rows in the DataGrid using the filter bar, menu, and Excel-like filtering. Also learn how to use custom filter components in the Essential JS 2 DataGrid control."
 ---
 
-# Filtering in Angular Grid component
+# Filtering
 
 Filtering allows you to view particular records based on filter criteria. To enable filtering in the Grid,
 set the [`allowFiltering`](../../api/grid/#allowfiltering) to true.
@@ -21,19 +18,34 @@ The Grid supports two types of filter, they are
 * Excel
 -->
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs8/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs8/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs8/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs8/app/app.component.ts" % }
+{% tab template="grid/filtering1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' height='273px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=100></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+```
+
+{% endtab %}
 
 > * You can apply and clear filtering, by using
 [`filterByColumn`](../../api/grid/filter/#filterbycolumn) and [`clearFiltering`](../../api/grid/filter/#clearfiltering) methods.
@@ -45,19 +57,41 @@ The Grid supports two types of filter, they are
 To apply the filter at initial rendering, set the filter [`predicate`](../../api/grid/predicate) object in
 [`filterSettings.columns`](../../api/grid/filterSettingsModel/#columns).
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs9/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs9/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs9/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs9/app/app.component.ts" % }
+{% tab template="grid/filtering1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' height='273px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=100></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public filterOptions: FilterSettingsModel;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.filterOptions = {
+            columns: [{ field: 'ShipCity', matchCase: false, operator: 'startswith', predicate: 'and', value: 'reims' },
+            { field: 'ShipName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Vins et alcools Chevalier' }]
+        };
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Filter operators
 
@@ -86,19 +120,40 @@ By default, grid ignores diacritic characters while filtering. To include diacri
 
 In the following sample, type **aero** in **Name** column to filter diacritic characters.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-diacritics-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-diacritics-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-diacritics-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-diacritics-cs1/app/app.component.ts" % }
+{% tab template="grid/filter-diacritics", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' >
+                <e-columns>
+                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=140></e-column>
+                    <e-column field='Name' headerText='Name' width=140></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=170></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=140></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public filterOptions: FilterSettingsModel;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.filterOptions = {
+           ignoreAccent: true
+        };
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Filter bar
 
@@ -106,19 +161,48 @@ You can customize default filter bar component of a column by custom component u
 
 The following example demonstrates the way to use filter template for a column when using filter bar. In the following example, the [`DropdownList`](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started/) component is used to filter **Name** column using filter template.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-template-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-template-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-template-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-template-cs2/app/app.component.ts" % }
+{% tab template="grid/filter-template", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { DataUtil } from '@syncfusion/ej2-data';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' >
+                <e-columns>
+                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=140></e-column>
+                    <e-column field='Name' headerText='Name' width=140>
+                        <ng-template #filterTemplate let-data>
+                            <ejs-dropdownlist id='dropdown' [(ngModel)]="data.Name" [enabled]="data.column.allowFiltering"
+                            (change)=onChange($event) [dataSource]='dropdata' [fields]='fields'[popupHeight]='height' ></ejs-dropdownlist>
+                       </ng-template>
+                    </e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=170></e-column>
+                    <e-column field='CustomerID' headerText='CustomerID' width=140></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    @ViewChild('grid') public grid: GridComponent;
+    public data: object[];
+    public fields: object = { text: 'Name', value: 'Name' };
+    public height = '220px';
+    public dropdata: string[] = DataUtil.distinct(data, 'Name') as string[];
+    public onChange(args: any): void {
+        this.grid.filterByColumn('Name', 'equal', args.value);
+    }
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Filter menu
 
@@ -126,19 +210,46 @@ You can customize default filter menu component of a column by custom component 
 
 The following example demonstrates the way to use filter template for a column when using filter menu. In the following example, the [`DropdownList`](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started/) component is used to filter **ShipName** column using filter template.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-template-cs3/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-template-cs3/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-template-cs3/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-template-cs3/app/app.component.ts" % }
+{% tab template="grid/filter-template", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { DataUtil } from '@syncfusion/ej2-data';
+import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' [filterSettings]='filterOption'>
+                <e-columns>
+                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=140></e-column>
+                    <e-column field='Name' headerText='Name' width=140></e-column>
+                    <e-column field='ShipName' headerText='ShipName' width=170>
+                        <ng-template #filterTemplate let-data>
+                            <ejs-dropdownlist id='dropdown' [(ngModel)]="data.ShipName" [dataSource]='dropdata'
+                             [fields]='fields' [popupHeight]='height' ></ejs-dropdownlist>
+                       </ng-template>
+                    </e-column>
+                    <e-column field='CustomerID' headerText='CustomerID' width=140></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public dropdata: string[] = DataUtil.distinct(data, 'ShipName') as string[];
+    public filterOption: FilterSettingsModel = { type: 'Menu' };
+    public fields: object = { text: 'CustomerID', value: 'CustomerID' };
+    public height = '220px';
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+
+```
+
+{% endtab %}
 
 ## See Also
 

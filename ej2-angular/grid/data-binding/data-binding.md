@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Data binding in Angular Grid component | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Data binding 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Data Binding"
+component: "Grid"
+description: "Learn how to bind local and remote data in the Essential JS 2 DataGrid control."
 ---
 
-# Data binding in Angular Grid component
+# Data Binding
 
 The Grid uses **DataManager** which supports both RESTful JSON data services binding and local JavaScript object array binding.
 The [`dataSource`](../../api/grid/#datasource) property can be assigned either with the instance of **DataManager** or
@@ -18,7 +15,7 @@ It supports two kinds of data binding methods:
 
 To learn about how to bind local, remote or observables data to Angular Grid, you can check on this video:
 
-{% youtube "https://www.youtube.com/watch?v=Xkq1tXOXL7k" %}
+`youtube:Xkq1tXOXL7k`
 
 ## Sending additional parameters to the server
 

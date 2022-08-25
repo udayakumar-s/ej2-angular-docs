@@ -44,5 +44,3 @@ export class AppComponent implements OnInit {
 
 
 
-<<<<<<< HEAD
-=======

@@ -23,14 +23,8 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data;
         this.filterOptions = {
-           type: 'Menu',
-           operators: {
-               stringOperator: [
-                   { value: 'startsWith', text: 'starts with' },
-                   { value: 'endsWith', text: 'ends with' },
-                   { value: 'contains', text: 'contains' }
-                ],
-            }
+            columns: [{ field: 'ShipCity', matchCase: false, operator: 'startswith', predicate: 'and', value: 'reims' },
+            { field: 'ShipName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Vins et alcools Chevalier' }]
         };
     }
 }

@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Excel exporting in Angular Grid component | Syncfusion
-description: Learn here all about Excel exporting in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Excel exporting 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Excel Export"
+component: "Grid"
+description: "Documentation on exporting DataGrid content to Excel and customizing the exported document with multi-export, headers and footers, and file name changes."
 ---
 
-# Excel exporting in Angular Grid component
+# Excel Export
 
 The excel export allows exporting Grid data to Excel document. You need to use the
  [`excelExport`](../../api/grid/#excelexport) method for exporting. To enable Excel export in the grid, set the
@@ -15,19 +12,48 @@ The excel export allows exporting Grid data to Excel document. You need to use t
 
 To use excel export, inject **ExcelExportService** in the provider section of **AppModule**.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs10/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs10/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs10/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs10/app/app.component.ts" % }
+{% tab template="grid/excel-exporting", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px'
+               [allowExcelExport]='true' (toolbarClick)='toolbarClick($event)'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public toolbarOptions: ToolbarItems[];
+    @ViewChild('grid') public grid: GridComponent;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.toolbarOptions = ['ExcelExport'];
+    }
+
+    toolbarClick(args: ClickEventArgs): void {
+        if (args.item.id === 'Grid_excelexport') { // 'Grid_excelexport' -> Grid component id + _ + toolbar item name
+            this.grid.excelExport();
+        }
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Show spinner while exporting
 
@@ -39,38 +65,114 @@ In the [`pdfExportComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 In the below demo, we have rendered the default spinner component when exporting the grid.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs1/app/app.component.ts" % }
+{% tab template="grid/exporting", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent, ToolbarItems, ExcelExportService } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [allowPaging]='true'
+    [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' [allowExcelExport]='true'
+    (excelExportComplete)='excelExportComplete()' (pdfExportComplete)='pdfExportComplete()'
+    (toolbarClick)='toolbarClick($event)'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' [visible]='false' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipCountry' headerText='ShipCountry' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`,
+    providers: [ExcelExportService]
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public toolbarOptions: ToolbarItems[];
+    @ViewChild('grid')  public grid: GridComponent;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.toolbarOptions = ['PdfExport', 'ExcelExport'];
+    }
+
+    toolbarClick(args: ClickEventArgs): void {
+        if (args.item.id === 'Grid_pdfexport') {
+            this.grid.showSpinner();
+            this.grid.pdfExport();
+        } else if (args.item.id === 'Grid_excelexport') {
+            this.grid.showSpinner();
+            this.grid.excelExport();
+        }
+    }
+
+    pdfExportComplete(): void {
+        this.grid.hideSpinner();
+    }
+    excelExportComplete(): void {
+        this.grid.hideSpinner();
+    }
+}
+
+
+```
+
+{% endtab %}
 
 ## Custom data source
 
 The excel export provides an option to define datasource dynamically before exporting.
 To export data dynamically, define the [`dataSource`](../../api/grid/excelExportProperties/#datasource) in [`excelExportProperties`](../../api/grid/excelExportProperties/).
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs11/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs11/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs11/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs11/app/app.component.ts" % }
+{% tab template="grid/excel-exporting", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent, ToolbarItems, ExcelExportProperties } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px'
+               [allowExcelExport]='true' (toolbarClick)='toolbarClick($event)'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public toolbarOptions: ToolbarItems[];
+    @ViewChild('grid') public grid: GridComponent;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.toolbarOptions = ['ExcelExport'];
+    }
+
+    toolbarClick(args: ClickEventArgs): void {
+        if (args.item.id === 'Grid_excelexport') { // 'Grid_excelexport' -> Grid component id + _ + toolbar item name
+            const excelExportProperties: ExcelExportProperties = {
+                dataSource: data
+            };
+            this.grid.excelExport(excelExportProperties);
+        }
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Passing additional parameters to the server when exporting
 
@@ -78,19 +180,66 @@ You can pass the additional parameter in the [`query`](../../api/grid/#query) pr
 
 In the below example, we have passed **recordcount** as **12** using **addParams** method
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs2/app/app.component.ts" % }
+{% tab template="grid/exporting", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent, ToolbarItems, ToolbarService, PdfExportService, ExcelExportService } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { Query } from '@syncfusion/ej2-data';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [allowPaging]='true'
+    [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' [allowExcelExport]='true'
+    (excelExportComplete)='excelExportComplete()' (pdfExportComplete)='pdfExportComplete()'
+    (toolbarClick)='toolbarClick($event)'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' [visible]='false' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipCountry' headerText='ShipCountry' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`,
+    providers: [ToolbarService, PdfExportService, ExcelExportService]
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public toolbarOptions: ToolbarItems[];
+    @ViewChild('grid') public grid: GridComponent;
+    public queryClone: any;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.toolbarOptions = ['PdfExport', 'ExcelExport'];
+    }
+
+    toolbarClick(args: ClickEventArgs): void {
+        if (args.item.id === 'Grid_pdfexport') {
+            this.queryClone = this.grid.query;
+            this.grid.query = new Query().addParams('recordcount', '12');
+            this.grid.pdfExport();
+        } else if (args.item.id === 'Grid_excelexport') {
+            this.queryClone = this.grid.query;
+            this.grid.query = new Query().addParams('recordcount', '12');
+            this.grid.excelExport();
+        }
+    }
+
+    pdfExportComplete(): void {
+        this.grid.query = this.queryClone;
+    }
+    excelExportComplete(): void {
+        this.grid.query = this.queryClone;
+    }
+}
+
+```
+
+{% endtab %}
 
 ## See Also
 

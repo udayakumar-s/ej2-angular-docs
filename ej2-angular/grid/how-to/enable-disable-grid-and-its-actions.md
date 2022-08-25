@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Enable disable grid and its actions in Angular Grid component | Syncfusion
-description: Learn here all about Enable disable grid and its actions in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Enable disable grid and its actions 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Enable/Disable Grid and its actions"
+component: "Grid"
+description: "Learn how to Enable/Disable Grid and its actions."
 ---
 
-# Enable disable grid and its actions in Angular Grid component
+# Enable/Disable Grid and its actions
 
 You can enable/disable the Grid and its actions by applying/removing corresponding CSS styles.
 
@@ -48,16 +45,51 @@ Add/Remove the CSS class to the Grid in the click event handler of Button.
 
 In the below demo, the button click will enable/disable the Grid and its actions.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs45/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs45/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs45/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs45/app/app.component.ts" % }
+{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<button ejs-button (click)="btnClick()"  cssClass="e-flat">Enable/Disable Grid</button>
+               <div id="GridParent">
+                    <ejs-grid #Grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
+                        <e-columns>
+                            <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
+                            <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                            <e-column field='Freight' headerText='Freight' textAlign= 'Right'
+                             editType= 'numericedit' width=120 format= 'C2'></e-column>
+                            <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
+                        </e-columns>
+                    </ejs-grid>
+               </div>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    @ViewChild('Grid') public Grid: GridComponent;
+    public editSettings: EditSettingsModel;
+    public toolbar: ToolbarItems[];
+
+    ngOnInit(): void {
+        this.data = data;
+        this.editSettings = { allowAdding: true, allowEditing: true, allowDeleting: true };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+    }
+    public btnClick(): void {
+        if (this.Grid.element.classList.contains('disablegrid')) {
+            this.Grid.element.classList.remove('disablegrid');
+            document.getElementById('GridParent').classList.remove('wrapper');
+        } else {
+            this.Grid.element.classList.add('disablegrid');
+            document.getElementById('GridParent').classList.add('wrapper');
+        }
+    }
+}
+
+```
+
+{% endtab %}

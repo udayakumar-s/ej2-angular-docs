@@ -1,31 +1,41 @@
----
-layout: post
-title: Remote data in Angular Grid component | Syncfusion
-description: Learn here all about Remote data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Remote data 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Remote data in Angular Grid component
+# Remote Data
 
 To bind remote data to grid component, assign service data as an instance of **DataManager** to the
 [`dataSource`](../../api/grid/#datasource) property.
 To interact with remote data source,  provide the endpoint **url**.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs2/app/app.component.ts" % }
+{% tab template="grid/databinding", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: DataManager;
+
+    ngOnInit(): void {
+        this.data = new DataManager({
+            url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders?$top=7',
+            adaptor: new ODataAdaptor()
+        });
+    }
+}
+
+```
+
+{% endtab %}
 
 > By default, **DataManager** uses **ODataAdaptor** for remote data-binding.
 
@@ -34,19 +44,39 @@ To interact with remote data source,  provide the endpoint **url**.
 [`OData`](http://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data.
 You can retrieve data from OData service using DataManager. You can refer to the following code example of remote data binding using OData service.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs3/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs3/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs3/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs3/app/app.component.ts" % }
+{% tab template="grid/databinding", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: DataManager;
+
+    ngOnInit(): void {
+        this.data = new DataManager({
+            url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders?$top=7',
+            adaptor: new ODataAdaptor(),
+            crossDomain: true
+        });
+    }
+}
+
+```
+
+{% endtab %}
 
 ## OData v4 adaptor - Binding OData v4 service
 
@@ -55,19 +85,38 @@ For more details on OData v4 services, refer to the
 [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197).
 To bind OData v4 service, use the **ODataV4Adaptor**.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs4/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs4/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs4/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs4/app/app.component.ts" % }
+{% tab template="grid/databinding", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: DataManager;
+
+    ngOnInit(): void {
+        this.data = new DataManager({
+            url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7',
+            adaptor: new ODataV4Adaptor()
+        });
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Web API adaptor
 
@@ -200,19 +249,50 @@ You can create your own adaptor by extending the built-in adaptors. For the sake
 we are going to see how to add a serial number for the records
 by overriding the built-in response processing using the **processResponse** method of the **ODataAdaptor**.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs5/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs5/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs5/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs5/app/app.component.ts" % }
+{% tab template="grid/databinding", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
+
+class SerialNoAdaptor extends ODataAdaptor {
+    processResponse() {
+        let i = 0;
+        const Sno = 'Sno';
+        // calling base class processResponse function
+        const original = super.processResponse.apply(this, arguments);
+        // Adding serial number
+        original.result.forEach((item) => item[Sno] = ++i);
+        return { result: original.result, count: original.count };
+    }
+}
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data'>
+                <e-columns>
+                    <e-column field='Sno' headerText='SNO' textAlign='Right' width=150></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: DataManager;
+
+    ngOnInit(): void {
+        this.data = new DataManager({
+            url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders?$top=7',
+            adaptor: new SerialNoAdaptor()
+        });
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Offline mode
 

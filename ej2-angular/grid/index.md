@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Index in Angular Grid component | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Index 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Overview"
+component: "Grid"
+description: "Documentation on the rich features of the Essential JS 2 DataGrid (DataTable) control, including built-in support for editing, filtering, grouping, paging, sorting, and exporting to Excel."
 ---
 
-# Index in Angular Grid component
+# Overview
 
 The Grid component is used to display and manipulate tabular data with configuration options to control the way the data is presented and manipulated.
 It will pull data from a data source, such as an array of JavaScript objects, **OData web services**, or **DataManager** and

@@ -1,12 +1,3 @@
----
-layout: post
-title: Summary in Angular Grid component | Syncfusion
-description: Learn here all about Summary in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Summary 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
 * [Getting Started](grid/getting-started.md)
 * [Feature Modules](grid/module.md)
 * [Data Binding](grid/data-binding/data-binding.md)
@@ -30,10 +21,7 @@ documentation: ug
 * [Row](grid/row/row.md)
 * [Row Height](grid/row/row-height.md)
 * [Row Template](grid/row/row-template.md)
-<<<<<<< HEAD
-=======
 * [Detail Template](grid/row/detail-template.md)
->>>>>>> a61f632fe75e6a2b203935097fc72a57436bc6ca
 * [Row Drag and Drop](grid/row/row-drag-and-drop.md)
 * [Row Spanning](grid/row/row-spanning.md)
 * [Cell](grid/cell/cell.md)

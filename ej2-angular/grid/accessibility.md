@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Accessibility in Angular Grid component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Accessibility"
+component: "Grid"
+description: "Documentation on accessibility in the Essential JS 2 DataGrid control, featuring WAI-ARIA standards and keyboard navigation."
 ---
 
-# Accessibility in Angular Grid component
+# Accessibility
 
 Accessibility is achieved in the Grid component through WAI-ARIA Standard and Keyboard Navigations.
 User can effectively access the Grid features through assistive technologies such as screen readers.

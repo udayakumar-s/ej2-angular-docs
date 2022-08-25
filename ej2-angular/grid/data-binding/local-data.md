@@ -1,31 +1,38 @@
----
-layout: post
-title: Local data in Angular Grid component | Syncfusion
-description: Learn here all about Local data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Local data 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Local data in Angular Grid component
+# Local Data
 
 To bind local data to the grid, you can assign a JavaScript object array to the
 [`dataSource`](../../api/grid/#datasource) property. The local data source can also be provided as an instance of the
 **DataManager**.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs1/app/app.component.ts" % }
+{% tab template="grid/databinding", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data.slice(0, 7);
+    }
+}
+
+```
+
+{% endtab %}
 
 > By default, **DataManager** uses **JsonAdaptor** for local data-binding.
 
@@ -56,16 +63,51 @@ Refresh the grid after the datasource change by using the [`refresh`](../../api/
 
 ```
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/change-headertext-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/change-headertext-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/change-headertext-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/change-headertext-cs2/app/app.component.ts" % }
+{% tab template="grid/change-headertext", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts"%}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { data } from './datasource';
+
+
+@Component({
+    selector: 'app-root',
+    template: `<button ej-button class='e-flat' (click)='add()'> Add </button>
+               <button ej-button class='e-flat' (click)='delete()'> Delete </button>
+                <ejs-grid #grid [dataSource]='data' [height]='280' >
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+                        <e-column field='ShipCity' headerText='Ship City' width=120 ></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    @ViewChild('grid') public grid: GridComponent;
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+    add(): void {
+        const rdata: object = { OrderID: 10247, CustomerID: 'ASDFG', Freight: 40.4, OrderDate: new Date(8367642e5) };
+        (this.grid.dataSource as object[]).unshift(rdata);
+        this.grid.refresh();
+    }
+    delete(): void {
+        const selectedRow: number = this.grid.getSelectedRowIndexes()[0];
+        if (this.grid.getSelectedRowIndexes().length) {
+            (this.grid.dataSource as object[]).splice(selectedRow, 1);
+        } else {
+            alert('No records selected for delete operation');
+        }
+        this.grid.refresh();
+    }
+}
+
+```
+
+{% endtab %}

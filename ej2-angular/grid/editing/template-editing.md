@@ -1,13 +1,4 @@
----
-layout: post
-title: Template editing in Angular Grid component | Syncfusion
-description: Learn here all about Template editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Template editing 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Template editing in Angular Grid component
+# Forms
 
 ## Reactive Forms
 
@@ -15,19 +6,94 @@ documentation: ug
 
 In the below sample, We have created the **FormGroup** with **FormControls** for each columns, in the [`actionBegin`](../../api/grid/#actionbegin)  event. While saving, we have validated the formgroup and updated the grid with the edited data from the FormGroup object.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/reactive-form-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reactive-form-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/reactive-form-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reactive-form-cs1/app/app.component.ts" % }
+{% tab template="grid/reactive-form", sourceFiles="app/app.component.ts,app/reactive-form.html,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { DialogEditEventArgs, SaveEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { DataUtil } from '@syncfusion/ej2-data';
+import { FormGroup, AbstractControl, FormControl, Validators } from '@angular/forms';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: `app/reactive-form.html`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public editSettings: EditSettingsModel;
+    public toolbar: ToolbarItems[];
+    public shipCountryDistinctData: object[];
+    public orderForm: FormGroup;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true );
+    }
+
+    createFormGroup(data1: IOrderModel): FormGroup {
+        return new FormGroup({
+            OrderID: new FormControl(data1.OrderID, Validators.required),
+            OrderDate: new FormControl(data1.OrderDate, Validators.required),
+            CustomerID: new FormControl(data1.CustomerID, Validators.required),
+            Freight: new FormControl(data1.Freight),
+            ShipCountry: new FormControl(data1.ShipCountry)
+        });
+    }
+
+
+    actionBegin(args: SaveEventArgs): void {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            this.orderForm = this.createFormGroup(args.rowData);
+        }
+        if (args.requestType === 'save') {
+            if (this.orderForm.valid) {
+                args.data = this.orderForm.value;
+            } else {
+                args.cancel = true;
+            }
+        }
+    }
+
+    actionComplete(args: DialogEditEventArgs): void {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            // Set initail Focus
+            if (args.requestType === 'beginEdit') {
+                (args.form.elements.namedItem('CustomerID') as HTMLInputElement).focus();
+            } else if (args.requestType === 'add') {
+                (args.form.elements.namedItem('OrderID') as HTMLInputElement).focus();
+            }
+        }
+    }
+
+    public focusIn(target: HTMLElement): void {
+        target.parentElement.classList.add('e-input-focus');
+    }
+
+    public focusOut(target: HTMLElement): void {
+        target.parentElement.classList.remove('e-input-focus');
+    }
+
+    get OrderID(): AbstractControl  { return this.orderForm.get('OrderID'); }
+
+    get CustomerID(): AbstractControl { return this.orderForm.get('CustomerID'); }
+
+}
+
+export interface IOrderModel {
+    OrderID?: number;
+    CustomerID?: string;
+    OrderDate?: Date;
+    Freight?: number;
+    ShipCountry?: string;
+}
+
+```
+
+{% endtab %}
 
 ## Template-driven forms
 
@@ -37,19 +103,74 @@ In some cases, you want to add new field editors in the dialog which are not pre
 
 In the below sample, We have created the **FormGroup** by using **ngForm** directive. While saving, we have validated the formgroup and updated the grid with the edited model data.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/dialogTemplate-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dialogTemplate-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/dialogTemplate-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/dialogTemplate-cs1/app/app.component.ts" % }
+{% tab template="grid/dialogTemplate", sourceFiles="app/app.component.ts,app/template-driven.html,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { DialogEditEventArgs, SaveEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { DataUtil } from '@syncfusion/ej2-data';
+import { FormGroup } from '@angular/forms';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: `app/template-driven.html`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public editSettings: EditSettingsModel;
+    public toolbar: ToolbarItems[];
+    public orderData: object;
+    @ViewChild('orderForm') public orderForm: FormGroup;
+    public shipCityDistinctData: object[];
+    public shipCountryDistinctData: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
+        this.toolbar = ['Add', 'Edit', 'Delete'];
+        this.shipCityDistinctData = DataUtil.distinct(data, 'ShipCity', true);
+        this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true );
+    }
+
+    actionBegin(args: SaveEventArgs): void {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            this.orderData = Object.assign({}, args.rowData);;
+        }
+        if (args.requestType === 'save') {
+            if (this.orderForm.valid) {
+                args.data = this.orderData;
+            } else {
+                args.cancel = true;
+            }
+        }
+    }
+
+    actionComplete(args: DialogEditEventArgs): void {
+        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
+            args.form.ej2_instances[0].rules = {};
+            // Set initail Focus
+            if (args.requestType === 'beginEdit') {
+                (args.form.elements.namedItem('CustomerID') as HTMLInputElement).focus();
+            }
+        }
+    }
+}
+
+export interface IOrderModel {
+    OrderID?: number;
+    CustomerID?: string;
+    ShipCity?: string;
+    OrderDate?: Date;
+    Freight?: number;
+    ShipCountry?: string;
+    ShipAddress?: string;
+}
+
+```
+
+{% endtab %}
 
 > The form editors should have **name** attribute.
 
@@ -202,16 +323,76 @@ the input elements.
 
 The following example, we have rendered tab control inside the edit dialog. The tab control has two tabs and once you fill the first tab and navigate to second one. The validation for first tab was done before navigate to second.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/tablikeedit-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/tablikeedit-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/tablikeedit-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/tablikeedit-cs1/app/app.component.ts" % }
+{% tab template="grid/tablikeedit", sourceFiles="app/app.component.ts,app/tablikeedit.html,app/app.module.ts,app/main.ts" %}
+
+```typescript
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { DataUtil } from '@syncfusion/ej2-data';
+import { data } from './datasource';
+import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: `./app/tablikeedit.html`
+})
+export class AppComponent implements OnInit {
+
+    public data: Object[];
+    public editSettings: EditSettingsModel;
+    public toolbar: ToolbarItems[];
+    public shipCountryDistinctData: Object;
+    @ViewChild('grid')
+    grid: GridComponent;
+    @ViewChild('orderForm')
+    orderForm: FormGroup
+    @ViewChild('tab')
+    tabObj: any;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
+        this.toolbar = ['Add', 'Edit', 'Delete'];
+        this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true );
+    }
+
+    actionComplete(args: DialogEditEventArgs) {
+        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
+            // Disable deafault valdation.
+            args.form.ej2_instances[0].rules = {};
+            // Set initail Focus
+            if (args.requestType === 'beginEdit') {
+                (args.form.elements.namedItem('CustomerID')as HTMLInputElement).focus();
+            }
+        }
+    }
+
+    nextBtn() {
+        this.moveNext();
+    }
+
+    selecting(e) {
+     if(e.isSwiped){
+       e.cancel = true;
+     }
+     if(e.selectingIndex === 1) {
+       e.cancel = !this.orderForm.valid;
+     }
+    }
+
+    moveNext() {
+        if (this.orderForm.valid)) {
+            this.tabObj.select(1);
+        }
+    }
+    submitBtn() {
+        if (this.orderForm.valid) {
+            this.grid.endEdit();
+        }
+    }
+}
+
+```
+
+{% endtab %}

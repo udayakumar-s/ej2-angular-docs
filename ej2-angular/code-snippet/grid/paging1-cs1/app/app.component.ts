@@ -20,8 +20,8 @@ L10n.load({
             lastPageTooltip: 'انتقل إلى الصفحة الأخيرة',
             nextPageTooltip: 'انتقل إلى الصفحة التالية',
             previousPageTooltip: 'انتقل إلى الصفحة السابقة',
-            nextPagerTooltip: 'الذهاب إلى بيجر المقبل',
-            previousPagerTooltip: 'الذهاب إلى بيجر السابقة'
+            nextPagerTooltip: 'انتقل إلى عناصر بيجر التالية',
+            previousPagerTooltip: 'للذهاب إلى عناصر بيجر السابقة'
         }
     }
 });

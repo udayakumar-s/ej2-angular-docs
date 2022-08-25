@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Getting started with Angular Pager component | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Pager component of Syncfusion Essential JS 2 and more details.
-control: Getting started 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Getting started"
+component: "Pager"
+description: "Learn how to add and customize the pager in the Essential JS 2."
 ---
 
-# Getting started in Angular Pager component
+# Getting started
 
 This section explains you the steps required to create a simple Pager
 and demonstrate the basic usage of the Pager component in Angular environment.
@@ -30,17 +27,41 @@ ng new my-app
 cd my-app
 ```
 
-## Adding Syncfusion Pager package
+## Installing Syncfusion Pager package
 
-All the available Essential JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry.
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-To install Angular Pager component, use the following command.
+Currently, Syncfusion provides two types of package structures for Angular components,
+1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+
+### Ivy library distribution package
+
+Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+
+Add [`@syncfusion/ej2-angular-grids`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 ```
 
-> The **--save** will instruct NPM to include the pager package inside of the **dependencies** section of the **package.json**.
+### Angular compatibility compiled package(ngcc)
+
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+
+Add [`@syncfusion/ej2-angular-grids@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38-ngcc) package to the application.
+
+```bash
+npm install @syncfusion/ej2-angular-grids@ngcc --save
+```
+
+To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+
+```bash
+@syncfusion/ej2-angular-grids:"20.2.38-ngcc"
+```
+
+>Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
 ## Registering Pager Module
 
@@ -98,19 +119,25 @@ export class AppComponent implements OnInit {
 
 `pageSize` value defines the number of records to be displayed per page. The default value for the `pageSize` is 12.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pager/pager-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pager/pager-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs1/app/app.component.ts" % }
+{% tab template="pager/pager", sourceFiles="app/**/*.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-pager [pageSize]= '1' [totalRecordsCount]='20'>
+                </ejs-pager>`
+})
+export class AppComponent implements OnInit{
+
+    ngOnInit(): void {
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Page Count
 
@@ -118,19 +145,25 @@ export class AppComponent implements OnInit {
 The default value for `pageCount` is 10 and value will be updated based on [`totalRecordsCount`](../api/pager#totalrecordscount)
 and [`pageSize`](#page-size) values.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pager/pager-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pager/pager-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs2/app/app.component.ts" % }
+{% tab template="pager/pager", sourceFiles="app/**/*.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-pager [pageSize]='1' [pageCount]='3' [totalRecordsCount]='20'>
+                </ejs-pager>`
+})
+export class AppComponent implements OnInit{
+
+    ngOnInit(): void {
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Run the application
 
@@ -142,16 +175,22 @@ ng serve --open
 
 Output will be appears as follows.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pager/pager-cs3/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs3/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pager/pager-cs3/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs3/app/app.component.ts" % }
+{% tab template="pager/pager", sourceFiles="app/**/*.ts", isDefaultActive=true %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-pager [pageSize]='8' [pageCount]='3' [totalRecordsCount]='20'>
+                </ejs-pager>`
+})
+export class AppComponent implements OnInit{
+
+    ngOnInit(): void {
+    }
+}
+
+```
+
+{% endtab %}

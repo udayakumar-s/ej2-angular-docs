@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Index in Angular Pager component | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Pager component of Syncfusion Essential JS 2 and more.
-control: Index 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Overview"
+component: "Pager"
+description: "Documentation on the Essential JS 2 Pager control."
 ---
 
-# Index in Angular Pager component
+# Overview
 
 The **Pager** component allows you to navigate between records which are sectioned into pages.
 The navigation between pages which is key functionality of Pager is done using built-in numeric and navigation buttons

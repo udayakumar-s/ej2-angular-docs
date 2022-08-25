@@ -1,13 +1,4 @@
----
-layout: post
-title: Adding header and footer in Angular Grid component | Syncfusion
-description: Learn here all about Adding header and footer in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Adding header and footer 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Adding header and footer in Angular Grid component
+# Adding Header and Footer
 
 You can customize text, page number, line, page size and changing orientation in header and footer.
 
@@ -118,19 +109,77 @@ const exportProperties: PdfExportProperties = {
 
 The below code illustrates the pdf export customization.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs5/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs5/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs5/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs5/app/app.component.ts" % }
+{% tab template="grid/exporting", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { image } from './image';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px'
+              [allowPaging]='true' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public toolbarOptions: ToolbarItems[];
+    @ViewChild('grid') public grid: GridComponent;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.toolbarOptions = ['PdfExport'];
+    }
+
+    toolbarClick(args: ClickEventArgs): void {
+        if (args.item.id === 'Grid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
+            const pdfExportProperties: PdfExportProperties = {
+                header: {
+                    fromTop: 0,
+                    height: 130,
+                    contents: [
+                        {
+                            type: 'Image',
+                            src: image,
+                            position: { x: 40, y: 10 },
+                            size: { height: 100, width: 250 },
+                        }
+                    ]
+                },
+                footer: {
+                    fromBottom: 160,
+                    height: 150,
+                    contents: [
+                        {
+                            type: 'PageNumber',
+                            pageNumberType: 'Arabic',
+                            format: 'Page {$current} of {$total}',
+                            position: { x: 0, y: 25 },
+                            style: { textBrushColor: '#ffff80', fontSize: 15 }
+                        }
+                    ]
+                }
+            };
+            this.grid.pdfExport(pdfExportProperties);
+        }
+    }
+}
+
+
+```
+
+{% endtab %}
 
 ## Repeat column header on every page
 
@@ -138,16 +187,52 @@ By default, column header will be placed on the first page of the pdf document b
 
 In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQueryCellInfo`](../../api/grid/#pdfheaderquerycellinfo) event to show the header on every page.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs6/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs6/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs6/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs6/app/app.component.ts" % }
+{% tab template="grid/exporting", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { purchaseData } from './datasource';
+import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px'
+             [allowPdfExport]='true' (pdfHeaderQueryCellInfo)='pdfHeaderQueryCellInfo($event)' (toolbarClick)='toolbarClick($event)'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='Freight' headerText='Freight' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public toolbarOptions: ToolbarItems[];
+    @ViewChild('grid')
+    public grid: GridComponent;
+
+    ngOnInit(): void {
+        this.data = purchaseData;
+        this.toolbarOptions = ['PdfExport'];
+    }
+
+    toolbarClick(args: ClickEventArgs): void {
+        if (args.item.id === 'Grid_pdfexport') {
+            this.grid.pdfExport();
+        }
+    }
+
+    pdfHeaderQueryCellInfo(args: any): void {
+         args.cell.row.pdfGrid.repeatHeader = true;
+    }
+
+}
+
+```
+
+{% endtab %}

@@ -1,26 +1,39 @@
----
-layout: post
-title: Caption template in Angular Grid component | Syncfusion
-description: Learn here all about Caption template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Caption template 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Caption template in Angular Grid component
+# Caption Template
 
 You can customize the group caption by using the groupSettings.captionTemplate property.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs1/app/app.component.ts" % }
+{% tab template="grid/grouping1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                <ng-template #groupSettingsCaptionTemplate let-data>
+                    <span class='groupHeader' style='color:blue'>{{data.field}}</span>
+                    <span class='groupItems' style='color:blue'>{{data.count}} Items</span>
+                </ng-template>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public groupOptions: GroupSettingsModel;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.groupOptions = { showDropArea: false, columns: ['CustomerID', 'ShipCity'] };
+    }
+}
+```
+
+{% endtab %}

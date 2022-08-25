@@ -6,7 +6,7 @@ import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [selectionSettings]='selectionOptions' height='315px'>
+    template: `<ejs-grid [dataSource]='data' height='315px' [selectionSettings]='selectionOptions'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.selectionOptions = { type: 'Multiple' };
+        this.selectionOptions = { type: 'Multiple', mode: 'Both' };
     }
 }
 

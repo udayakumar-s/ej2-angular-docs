@@ -1,26 +1,41 @@
 ---
-layout: post
-title: Customize pager drop down in Angular Grid component | Syncfusion
-description: Learn here all about Customize pager drop down in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Customize pager drop down 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Customize Pager DropDown"
+component: "Grid"
+description: "Learn how to Customize Pager DropDown."
 ---
 
-# Customize pager drop down in Angular Grid component
+# Customize Pager DropDown
 
 To customize default values of pager dropdown, you need to define [`pageSizes`](../../api/grid/pageSettingsModel/#pagesizes) as array of strings.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-column-cs4/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-cs4/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-column-cs4/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs4/app/app.component.ts" % }
+{% tab template="grid/custom-column", sourceFiles="app/**/*.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' allowPaging='true' [pageSettings]='initialPage'>
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+                        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public initialPage: object;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.initialPage = { pageSizes: ['5', '10', 'All'], };
+    }
+}
+
+```
+
+{% endtab %}

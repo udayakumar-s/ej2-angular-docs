@@ -1,55 +1,66 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { DatePicker } from '@syncfusion/ej2-calendars';
-import { data } from './datasource';
-import { Column, EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
+import { TimePicker } from '@syncfusion/ej2-calendars';
+import { enableRipple } from '@syncfusion/ej2-base';
+import { purchaseData } from './datasource';
+import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
+  selector: 'app-root',
+  template: `<ejs-grid #grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' [pageSettings]='pageOptions' [toolbar]='toolbar' height='273px'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='OrderDate' headerText='Order Date' type= 'date' format= 'yMd' [edit]='dpParams' width=150></e-column>
+                    <e-column field='OrderID' headerText='Order ID' type='number' textAlign='Right' isPrimaryKey='true' [validationRules]="orderidrules" width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' type='string' width=140></e-column>
+                    <e-column field='Freight' headerText='Freight' type= 'number' textAlign= 'Right'
+                     editType= 'numericedit' format= 'C2' width=120></e-column>
+                    <e-column field='OrderDate' headerText='Order Date' type= 'date' format= 'hh:mm' [edit]='dpParams' width=150></e-column>
                 </e-columns>
-                </ejs-grid>`
+               </ejs-grid>`,
+  providers: [ToolbarService, EditService, PageService],
 })
 export class AppComponent implements OnInit {
+  public data: object[];
+  @ViewChild('grid') public grid: GridComponent;
+  public editSettings: EditSettingsModel;
+  public pageOptions: PageSettingsModel;
+  public toolbar: ToolbarItems[];
+  public tpElem: HTMLElement;
+  public dpParams: IEditCell;
+  public timeObject: TimePicker;
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public elem: HTMLElement;
-    public datePickerObj: DatePicker;
-    public dpParams: IEditCell;
+  public createOrderDateFn() {
+    this.tpElem = document.createElement('input');
+    return this.tpElem;
+  }
+  public destroyOrderDateFn() {
+    this.timeObject.destroy();
+  }
+  public readOrderDateFn() {
+    return this.timeObject.value;
+  }
+  public writeOrderDateFn(args) {
+    enableRipple(true);
+    this.timeObject = new TimePicker({
+      value: args.rowData[args.column.field],
+      step: 60,
+    });
+    this.timeObject.appendTo(this.tpElem);
+  }
 
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.dpParams = {
-            create: () => {
-                this.elem = document.createElement('input');
-                return this.elem;
-            },
-            read: () => {
-                return this.datePickerObj.value;
-            },
-            destroy: () => {
-                this.datePickerObj.destroy();
-            },
-            write: (args: { rowData: object, column: Column }) => {
-                this.datePickerObj = new DatePicker({
-                    value: new Date(args.rowData[args.column.field]),
-                    floatLabelType: 'Never'
-                });
-                this.datePickerObj.appendTo(this.elem);
-            }
-        };
-    }
+  ngOnInit(): void {
+    this.data = purchaseData;
+    this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+    this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+    this.pageOptions = { pageSizes: true, pageSize: 8 };
+    this.dpParams = {
+      create: this.createOrderDateFn,
+      read: this.readOrderDateFn,
+      destroy: this.destroyOrderDateFn,
+      write: this.writeOrderDateFn,
+    };
+  }
 }
 
 

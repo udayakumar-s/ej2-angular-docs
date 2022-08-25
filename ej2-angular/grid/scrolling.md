@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Scrolling in Angular Grid component | Syncfusion
-description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Scrolling 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Scrolling"
+component: "Grid"
+description: "Learn how to set width and height for DataGrid content, display a scrollbar, freeze rows and columns, and make the DataGrid responsive with a parent container."
 ---
 
-# Scrolling in Angular Grid component
+# Scrolling
 
  The scrollbar will be displayed in the grid when content exceeds the element [`width`](../api/grid/#width) or
  [`height`](../api/grid/#height).
@@ -25,19 +22,37 @@ are used to set the grid height and width, respectively.
 To specify the [`width`](../api/grid/#width) and [`height`](../api/grid/#height)
 of scroller in pixel, set the pixel value as number.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-cs1/app/app.component.ts" % }
+{% tab template="grid/scrolling", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height=315 width=400>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+               </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Responsive with parent container
 
@@ -45,58 +60,37 @@ Specify the [`width`](../api/grid/#width) and [`height`](../api/grid/#height)
 as **100%** to make the grid element fill its parent container.
 Setting the [`height`](../api/grid/#height) to **100%** requires the grid parent element to have explicit height.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-cs2/app/app.component.ts" % }
+{% tab template="grid/scrolling", sourceFiles="app/app.component.ts,index.html,app/app.module.ts,app/main.ts" %}
 
-## Scroll To Selected Row
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
 
-You can scroll the grid content to the selected row position by using the
-[`rowSelected`](../api/grid/#rowselected) event.
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height='100%' width='100%'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+               </ejs-grid>`
+})
+export class AppComponent implements OnInit {
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-select-cs1/app/app.component.ts" % }
+    public data: object[];
 
-## Hide the scrollbar when the content is not overflown
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
 
-You can hide the scrollbar of Grid content by using the [`hideScroll`](../api/grid/#hidescroll) method when the content doesn't overflow its parent element.
+```
 
-In the following sample, we have invoked the [`hideScroll`](../api/grid/#hidescroll) method inside the [`dataBound`](../api/grid/#databound) event.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs3/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs3/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs3/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-cs3/app/app.component.ts" % }
+{% endtab %}
 
 ## Sticky Header
 
@@ -104,16 +98,128 @@ You can make the Grid column headers remain fixed while scrolling by using the [
 
 In the below demo, the Grid headers will be sticky while scrolling the Grid's parent div element.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs4/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs4/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs4/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/scrolling-cs4/app/app.component.ts" % }
+{% tab template="grid/scrolling", sourceFiles="app/app.component.ts,index.html,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<div style='height:350px;'>
+                <ejs-grid #grid [dataSource]='data' enableStickyHeader='true'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                </e-columns>
+               </ejs-grid>
+               </div>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    @ViewChild('grid')
+    public grid: GridComponent;
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+```
+
+{% endtab %}
+
+## Scroll To Selected Row
+
+You can scroll the grid content to the selected row position by using the
+[`rowSelected`](../api/grid/#rowselected) event.
+
+{% tab template="grid/scrolling-select", sourceFiles="app/app.component.ts,index.html,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { RowSelectEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-numerictextbox #numeric format='N' min='0' placeholder='Enter index to select a row'
+                width=200 [showSpinButton]='false' (change)='onchange($event)'></ejs-numerictextbox>
+    <ejs-grid #grid [dataSource]='data' height='315' width='100%' (rowSelected)='rowSelected($event)'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                </e-columns>
+               </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('numeric') public numeric;
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+    onchange() {
+        this.grid.selectionModule.selectRow(parseInt(this.numeric.getText(), 10));
+    }
+    rowSelected(args: RowSelectEventArgs) {
+        const rowHeight: number = this.grid.getRows()[this.grid.getSelectedRowIndexes()[0]].scrollHeight;
+        this.grid.getContent().children[0].scrollTop = rowHeight * this.grid.getSelectedRowIndexes()[0];
+    }
+}
+
+```
+
+{% endtab %}
+
+## Hide the scrollbar when the content is not overflown
+
+You can hide the scrollbar of Grid content by using the [`hideScroll`](../api/grid/#hidescroll) method when the content doesn't overflow its parent element.
+
+In the following sample, we have invoked the [`hideScroll`](../api/grid/#hidescroll) method inside the [`dataBound`](../api/grid/#databound) event.
+
+{% tab template="grid/scrolling", sourceFiles="app/app.component.ts,index.html,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid [dataSource]='data' height='315' width='100%' (dataBound)='dataBound($event)'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+               </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    @ViewChild('grid')
+    public grid: GridComponent;
+
+    ngOnInit(): void {
+        this.data = data.slice(0, 2);
+    }
+    dataBound(): void {
+        this.grid.hideScroll();
+    }
+}
+
+```
+
+{% endtab %}
