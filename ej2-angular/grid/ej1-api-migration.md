@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Ej1 api migration in Angular Grid component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Ej1 api migration 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Migration"
+component: "Grid"
+description: "Learn how to migrate the EJ2 data grid from EJ1 Grid."
 ---
 
-# Ej1 api migration in Angular Grid component
+# Migration from Essential JS 1
 
 This article describes the API migration process of Grid component from Essential JS 1 to Essential JS 2.
 

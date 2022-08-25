@@ -1,13 +1,4 @@
----
-layout: post
-title: Get or set local storage value in Angular Grid component | Syncfusion
-description: Learn here all about Get or set local storage value in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Get or set local storage value 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Get or set local storage value in Angular Grid component
+# Get or Set Local Storage Value
 
 If the [`enablePersistence`](../../api/grid/#enablepersistence) property set as true,
 The Grid property value is saved in the **window.localStorage** for reference. You can get/set the localStorage value by using the

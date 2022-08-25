@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Adaptive in Angular Grid component | Syncfusion
-description: Learn here all about Adaptive in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Adaptive 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Adaptive"
+component: "Grid"
+description: "Learn how to render the row elements, filter, sort, and edit dialogs adaptively in the Essential JS 2 DataGrid control."
 ---
 
-# Adaptive in Angular Grid component
+# Adaptive View
 
 The Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, and edit dialogs adaptively and have an option to render the grid row elements in the vertical direction.
 
@@ -15,37 +12,166 @@ The Grid user interface (UI) was redesigned to provide an optimal viewing experi
 
 When we enable the [`enableAdaptiveUI`](../api/grid/#enableadaptiveui) property, the grid will render the filter, sort, and edit dialogs in full screen for a better user experience. This behavior is demonstrated in the below demo.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/adaptive-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/adaptive-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/adaptive-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/adaptive-cs1/app/app.component.ts" % }
+{% tab template="grid/adaptive", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<div class="e-adaptive-demo e-bigger">
+                    <div class="e-mobile-layout">
+                        <div class="e-mobile-content">
+                           <ejs-grid #adaptive id="adaptivebrowser" [dataSource]='data' enableAdaptiveUI='true'
+                    height='100%' allowPaging='true' allowFiltering='true'
+                    allowSorting='true' [editSettings]='editSettings'
+                    [filterSettings]='filterSettings' [toolbar]='toolbar' (load)='onLoad($event)'>
+                    <e-columns>
+                        <e-column field='SNO' headerText='S NO' width='150' isPrimaryKey='true' [validationRules]='orderidrules'>
+                        </e-column>
+                        <e-column field='Model' headerText='Model' width='200' editType='dropdownedit'
+                            [validationRules]='customeridrules'>
+                        </e-column>
+                        <e-column field='Developer' headerText='Developer' width='200' [validationRules]='customeridrules' [filter]='menuFilter'></e-column>
+                        <e-column field='ReleaseDate' headerText='Released Date' width='200' type='date' format='yMMM' editType='datepickeredit'>
+                        <e-column field='AndroidVersion' headerText='Android Version' width='200' [validationRules]='customeridrules' [filter]='checkboxFilter'></e-column>
+                        </e-column>
+                    </e-columns>
+                </ejs-grid>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="datalink">Source:
+                  <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"
+                    target="_blank">Wikipedia: List of Android smartphones</a>
+                    </div>
+                </div>`
+})
+
+export class AppComponent implements OnInit {
+    @ViewChild('adaptive')
+    public grid: GridComponent;
+    public data: object[];
+    public editSettings: Object;
+    public toolbar: string[];
+    public orderidrules: Object;
+    public customeridrules: Object;
+    public filterSettings: Object;
+    public menuFilter: Object;
+    public checkboxFilter: Object;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'];
+        this.orderidrules = { required: true, number: true };
+        this.customeridrules = { required: true };
+        this.filterSettings = { type: 'Excel' };
+        this.menuFilter = {
+            type: 'Menu'
+        };
+        this.checkboxFilter = {
+            type: 'CheckBox'
+        };
+    }
+
+    public onLoad(): void {
+        this.grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
+    }
+}
+```
+
+{% endtab %}
 
 ## Vertical row rendering
 
 The grid will render the row elements in vertical order while setting the [`rowRenderingMode`](../api/grid/rowRenderingMode/) property value as **Vertical**.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/adaptive-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/adaptive-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/adaptive-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/adaptive-cs2/app/app.component.ts" % }
+{% tab template="grid/adaptive", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<div class="e-adaptive-demo e-bigger">
+                    <div class="e-mobile-layout">
+                        <div class="e-mobile-content">
+                           <ejs-grid #adaptive id="adaptivebrowser" [dataSource]='data' enableAdaptiveUI='true' [rowRenderingMode]="rowMode"
+                    height='100%' allowPaging='true' allowFiltering='true'
+                    allowSorting='true' [editSettings]='editSettings'
+                    [filterSettings]='filterSettings' [toolbar]='toolbar' (load)='onLoad($event)'>
+                    <e-columns>
+                        <e-column field='SNO' headerText='S NO' width='150' isPrimaryKey='true' [validationRules]='orderidrules'>
+                        </e-column>
+                        <e-column field='Model' headerText='Model' width='200' editType='dropdownedit'
+                            [validationRules]='customeridrules'>
+                        </e-column>
+                        <e-column field='Developer' headerText='Developer' width='200' [validationRules]='customeridrules' [filter]='menuFilter'></e-column>
+                        <e-column field='ReleaseDate' headerText='Released Date' width='200' type='date' format='yMMM' editType='datepickeredit'>
+                        <e-column field='AndroidVersion' headerText='Android Version' width='200' [validationRules]='customeridrules' [filter]='checkboxFilter'></e-column>
+                        </e-column>
+                    </e-columns>
+                    <e-aggregates>
+                        <e-aggregate>
+                            <e-columns>
+                                <e-column type="Count" field="Model" >
+                                    <ng-template #footerTemplate let-data>Total Models: {{data.Count}}</ng-template>
+                                </e-column>
+                            </e-columns>
+                        </e-aggregate>
+                    </e-aggregates>
+                </ejs-grid>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="datalink">Source:
+                  <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"
+                    target="_blank">Wikipedia: List of Android smartphones</a>
+                    </div>
+                </div>`
+})
+
+export class AppComponent implements OnInit {
+    @ViewChild('adaptive')
+    public grid: GridComponent;
+    public data: object[];
+    public editSettings: Object;
+    public toolbar: string[];
+    public orderidrules: Object;
+    public customeridrules: Object;
+    public filterSettings: Object;
+    public menuFilter: Object;
+    public checkboxFilter: Object;
+    public rowMode: string;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'];
+        this.orderidrules = { required: true, number: true };
+        this.customeridrules = { required: true };
+        this.filterSettings = { type: 'Excel' };
+        this.rowMode = 'Vertical';
+        this.menuFilter = {
+            type: 'Menu'
+        };
+        this.checkboxFilter = {
+            type: 'CheckBox'
+        };
+    }
+
+    public onLoad(): void {
+        this.grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
+    }
+}
+```
+
+{% endtab %}
 
 > * [`enableAdaptiveUI`](../api/grid/#enableadaptiveui) property must be enabled for vertical row rendering.
 

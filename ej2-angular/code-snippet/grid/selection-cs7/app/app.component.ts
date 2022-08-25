@@ -1,12 +1,12 @@
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
+import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' height='315px' (rowSelected)='rowSelected($event)'>
+    template: `<ejs-grid [dataSource]='data' [selectedRowIndex]=1 [selectionSettings]='selectionOptions' height='315px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
@@ -18,18 +18,11 @@ import { GridComponent, RowSelectEventArgs } from '@syncfusion/ej2-angular-grids
 export class AppComponent implements OnInit {
 
     public data: object[];
-
-    @ViewChild('grid')
-    public grid: GridComponent;
+    public selectionOptions: SelectionSettingsModel;
 
     ngOnInit(): void {
         this.data = data;
-    }
-
-    rowSelected(args: RowSelectEventArgs) {
-        const selectedrowindex: number[] = this.grid.getSelectedRowIndexes();  // Get the selected row indexes.
-        alert(selectedrowindex); // To alert the selected row indexes.
-        const selectedrecords: object[] = this.grid.getSelectedRecords();  // Get the selected records.
+        this.selectionOptions = { type: 'Multiple', mode: 'Both' };
     }
 }
 

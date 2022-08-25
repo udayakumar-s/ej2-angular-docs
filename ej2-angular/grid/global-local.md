@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Global local in Angular Grid component | Syncfusion
-description: Learn here all about Global local in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Global local 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Globalization"
+component: "Grid"
+description: "Learn how to apply localization (l10n), internationalization (i18n), and right-to-left (RTL) in Essential JS 2 DataGrid control."
 ---
 
-# Global local in Angular Grid component
+# Globalization
 
 ## Localization
 
@@ -110,8 +107,8 @@ firstPageTooltip | Go to first page
 lastPageTooltip | Go to last page
 nextPageTooltip | Go to next page
 previousPageTooltip | Go to previous page
-nextPagerTooltip | Go to next pager
-previousPagerTooltip | Go to previous pager
+nextPagerTooltip | Go to next pager items
+previousPagerTooltip | Go to previous pager items
 pagerDropDown | Items per page
 pagerAllDropDown | Items
 All | All
@@ -122,19 +119,65 @@ To load translation object in an application use **load** function of **L10n** c
 
 The below example demonstrates the Grid in **Deutsch** culture.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/localization-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/localization-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/localization-cs1/app/app.component.ts" % }
+{% tab template="grid/localization", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+setCulture('de-DE');
+
+L10n.load({
+    'de-DE': {
+        grid: {
+            EmptyRecord: 'Keine Aufzeichnungen angezeigt',
+            GroupDropArea: 'Ziehen Sie einen Spaltenkopf hier, um die Gruppe ihre Spalte',
+            UnGroup: 'Klicken Sie hier, um die Gruppierung aufheben',
+EmptyDataSourceError: 'DataSource darf bei der Erstauslastung nicht leer sein, da Spalten aus der dataSource im AutoGenerate Spaltenraster',
+            Item: 'Artikel',
+            Items: 'Artikel'
+        },
+        pager: {
+            currentPageInfo: '{0} von {1} Seiten',
+            totalItemsInfo: '({0} Beiträge)',
+            firstPageTooltip: 'Zur ersten Seite',
+            lastPageTooltip: 'Zur letzten Seite',
+            nextPageTooltip: 'Zur nächsten Seite',
+            previousPageTooltip: 'Zurück zur letzten Seit',
+            nextPagerTooltip: 'Gehen Sie zu den nächsten Pager-Elementen',
+            previousPagerTooltip: 'Gehen Sie zu vorherigen Pager-Elementen'
+        }
+    }
+});
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [locale]='de-DE' [allowGrouping]='true' [allowPaging]='true'
+             [pageSettings]='pageOptions' height='220px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+               </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public pageOptions: PageSettingsModel;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.pageOptions = { pageSize: 6 };
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Internationalization
 
@@ -153,19 +196,70 @@ declare module "*.json" {
 
 You need to load culture format files in **ngOnInit** function.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/localization-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/localization-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/localization-cs2/app/app.component.ts" % }
+{% tab template="grid/localization", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { L10n, loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+L10n.load({
+    'de-DE': {
+        grid: {
+            EmptyRecord: 'Keine Aufzeichnungen angezeigt',
+            GroupDropArea: 'Ziehen Sie einen Spaltenkopf hier, um die Gruppe ihre Spalte',
+            UnGroup: 'Klicken Sie hier, um die Gruppierung aufheben',
+EmptyDataSourceError: 'DataSource darf bei der Erstauslastung nicht leer sein, da Spalten aus der dataSource im AutoGenerate Spaltenraster',
+            Item: 'Artikel',
+            Items: 'Artikel'
+        },
+        pager: {
+            currentPageInfo: '{0} von {1} Seiten',
+            totalItemsInfo: '({0} Beiträge)',
+            firstPageTooltip: 'Zur ersten Seite',
+            lastPageTooltip: 'Zur letzten Seite',
+            nextPageTooltip: 'Zur nächsten Seite',
+            previousPageTooltip: 'Zurück zur letzten Seit',
+            nextPagerTooltip: 'Gehen Sie zu den nächsten Pager-Elementen',
+            previousPagerTooltip: 'Gehen Sie zu vorherigen Pager-Elementen'
+        }
+    }
+});
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [locale]='de-DE' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='Freight' headerText='Freight' [format]='formatOptions' textAlign='Right' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+               </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public formatOptions: object;
+
+    ngOnInit(): void {
+        setCulture('de-DE');
+        setCurrencyCode('EUR');
+
+        loadCldr('./currencies.json',
+            './numbers.json',
+            './ca-gregorian.json',
+            './timeZoneNames.json',
+            './numberingSystems.json');
+
+        this.data = data;
+        this.formatOptions = { format: 'C2', useGrouping: false, minimumSignificantDigits: 1, maximumSignificantDigits: 3, currency: 'EUR' }
+    }
+}
+
+```
+
+{% endtab %}
 
 > * In the above sample, **Freight** column is formatted by [`NumberFormatOptions`](../common/internationalization/#manipulating-numbers).
 > * By default, [`locale`](../api/grid/#locale) value is **en-US**. If you want to change **en-US** culture, then set the [`locale`](../api/grid/#locale).
@@ -176,19 +270,60 @@ RTL provides an option to switch the text direction and layout of Grid component
 It improves the user experiences and accessibility for users who use right-to-left languages(Arabic, Farsi, Urdu, etc).
 To enable RTL in the Grid, set the [`enableRtl`](../api/grid/#enablertl) to true.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging1-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs1/app/app.component.ts" % }
+{% tab template="grid/paging1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+setCulture('ar-AE');
+
+L10n.load({
+    'ar-AE': {
+        grid: {
+            EmptyRecord: 'لا سجلات لعرضها',
+            EmptyDataSourceError: 'يجب أن يكون مصدر البيانات فارغة في التحميل الأولي منذ يتم إنشاء الأعمدة من مصدر البيانات في أوتوجينيراتد عمود الشبكة'
+        },
+        pager: {
+            currentPageInfo: '{0} من {1} صفحة',
+            totalItemsInfo: '({0} العناصر)',
+            firstPageTooltip: 'انتقل إلى الصفحة الأولى',
+            lastPageTooltip: 'انتقل إلى الصفحة الأخيرة',
+            nextPageTooltip: 'انتقل إلى الصفحة التالية',
+            previousPageTooltip: 'انتقل إلى الصفحة السابقة',
+            nextPagerTooltip: 'انتقل إلى عناصر بيجر التالية',
+            previousPagerTooltip: 'للذهاب إلى عناصر بيجر السابقة'
+        }
+    }
+});
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [enableRtl]='true' [locale]='ar-AE' [allowPaging]='true' [pageSettings]='pageOptions'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+               </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public pageOptions: PageSettingsModel;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.pageOptions = { pageSize: 7 };
+    }
+}
+
+```
+
+{% endtab %}
 
 ## See Also
 

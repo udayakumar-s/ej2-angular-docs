@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Ngx translate pipe for header text in Angular Grid component | Syncfusion
-description: Learn here all about Ngx translate pipe for header text in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Ngx translate pipe for header text 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Add ngx-translate pipe for grid's header text"
+component: "Grid"
+description: "Learn how to add ngx-translate pipe for Grid's header text"
 ---
 
-# Ngx translate pipe for header text in Angular Grid component
+# Add ngx-translate pipe for grid's header text
 
 You can use the ngx-translate to translate the headerText of grid’s column. This can be achieved by using the translate pipe for **headerText** property.
 

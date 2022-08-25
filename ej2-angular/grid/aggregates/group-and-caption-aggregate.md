@@ -1,13 +1,4 @@
----
-layout: post
-title: Group and caption aggregate in Angular Grid component | Syncfusion
-description: Learn here all about Group and caption aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Group and caption aggregate 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Group and caption aggregate in Angular Grid component
+# Group and Caption Aggregate
 
 Group and caption aggregate values are calculated from the current group items.
 If [`groupFooterTemplate`](../../api/grid/aggregateColumnDirective/#groupfootertemplate) is provided then the aggregate values can be displayed
@@ -15,19 +6,29 @@ If [`groupFooterTemplate`](../../api/grid/aggregateColumnDirective/#groupfootert
 if [`groupCaptionTemplate`](../../api/grid/aggregateColumnDirective/#groupcaptiontemplate)
  is provided then aggregate values can be displayed in the group caption cells.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/aggregates-group-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-group-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/aggregates-group-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-group-cs2/app/app.component.ts" % }
+{% tab template="grid/aggregates-group", sourceFiles="app/app.component.ts,app/app.template.html,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: 'app/app.template.html'
+})
+export class AppComponent implements OnInit {
+
+    public data: Object[];
+    public groupOptions: GroupSettingsModel = { showDropArea: false, columns: ['ShipCountry'] };
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+```
+
+{% endtab %}
 
 > * Use the template reference variable name as **#groupFooterTemplate** to specify the group footer template
 and as **#groupCaptionTemplate** to specify the group caption template.

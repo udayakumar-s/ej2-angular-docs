@@ -1,28 +1,38 @@
----
-layout: post
-title: Column selection in Angular Grid component | Syncfusion
-description: Learn here all about Column selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Column selection 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Column selection in Angular Grid component
+# Column Selection
 
 Column selection can be done through simple mouse down or arrow keys.
 
 You can enable column selection by setting the [`selectionSettings.allowColumnSelection`](../../api/grid/selectionSettings/#allowcolumnselection) property as true.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs5/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs5/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs5/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs5/app/app.component.ts" % }
+{% tab template="grid/selection", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [selectionSettings]='selectionOptions' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public selectionOptions: SelectionSettingsModel;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.selectionOptions = { allowColumnSelection: true, type: 'Multiple' };
+    }
+}
+
+```
+
+{% endtab %}

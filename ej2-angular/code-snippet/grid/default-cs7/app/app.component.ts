@@ -2,12 +2,11 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
-import { DetailRowService, GridModel, GridComponent} from '@syncfusion/ej2-angular-grids';
-
+import { DetailRowService, GridModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid'>
+    template: `<ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid' (load)='onLoad($event)'>
                     <e-columns>
                         <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
                         <e-column field='FirstName' headerText='FirstName' width=150></e-column>
@@ -19,28 +18,28 @@ import { DetailRowService, GridModel, GridComponent} from '@syncfusion/ej2-angul
     providers: [DetailRowService]
 })
 export class AppComponent implements OnInit {
-    @ViewChild('grid') public grid: GridComponent;
+
     public pData: object[];
-    public childGrid: GridModel | GridComponent = {
-        queryString: 'ID',
-        dataSource: data,
+    public childGrid: GridModel = {
+        queryString: 'EmployeeID',
         columns: [
-            { field: 'ID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
+            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
             { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
             { field: 'ShipCity', headerText: 'Ship City', width: 150 },
             { field: 'ShipName', headerText: 'Ship Name', width: 150 }
         ],
-        load() {
-            const EmployeeID = 'EmployeeID';
-            (this as GridComponent).parentDetails.parentKeyFieldValue = (<{ EmployeeID?: string}>(this as GridComponent).parentDetails.parentRowData)[EmployeeID];
-        }
     };
+    @ViewChild('grid') public grid: GridComponent;
 
     ngOnInit(): void {
         this.pData = employeeData;
     }
-}
 
+    onLoad(): void {
+        this.grid.childGrid.dataSource = data; // assign data source for child grid.
+    }
+
+}
 
 
 

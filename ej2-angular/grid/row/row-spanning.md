@@ -1,13 +1,4 @@
----
-layout: post
-title: Row spanning in Angular Grid component | Syncfusion
-description: Learn here all about Row spanning in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Row spanning 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Row spanning in Angular Grid component
+# Row Spanning
 
 The grid has option to span row cells. To achieve this, You need to define the [`rowSpan`](../../api/grid/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [`QueryCellInfo`](../../api/grid/queryCellInfoEventArgs) event.
 
@@ -15,18 +6,145 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
 
 Also Grid supports the spanning of rows and columns for same cells. **Lunch Break** cell is spanned to two rows and three columns in the **1:00** column.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/spanning-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/spanning-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/spanning-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/spanning-cs2/app/app.component.ts" % }
+{% tab template="grid/spanning", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { QueryCellInfoEventArgs, GridLine } from '@syncfusion/ej2-angular-grids';
+import { columnSpanData, ColumnSpanDataType } from './datasource';
+import { EmitType } from '@syncfusion/ej2-base';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [height]='300' [width]='width' [gridLines]='gridLines'
+       [allowTextWrap]='textWrap' (queryCellInfo)='queryCellInfoEvent($event)'>
+        <e-columns>
+            <e-column field='EmployeeID' headerText='Employee ID' width='150' textAlign="Right" isPrimaryKey=true></e-column>
+            <e-column field='EmployeeName' headerText='Employee Name' width='200'></e-column>
+            <e-column field='9:00' headerText='9:00 AM' width='120'></e-column>
+            <e-column field='9:30' headerText='9:30 AM' width='120'></e-column>
+            <e-column field='10:00' headerText='10:00 AM' width='120'></e-column>
+            <e-column field='10:30' headerText='10:30 AM' width='120'></e-column>
+            <e-column field='11:00' headerText='11:00 AM' width='120'></e-column>
+            <e-column field='11:30' headerText='11:30 AM' width='120'></e-column>
+            <e-column field='12:00' headerText='12:00 PM' width='120'></e-column>
+            <e-column field='12:30' headerText='12:30 PM' width='120'></e-column>
+            <e-column field='1:00' headerText='1:00 PM' width='120'></e-column>
+            <e-column field='1:30' headerText='1:30 PM' width='120'></e-column>
+            <e-column field='2:00' headerText='2:00 PM' width='120'></e-column>
+            <e-column field='2:30' headerText='2:30 PM' width='120'></e-column>
+            <e-column field='3:00' headerText='3:00 PM' width='120'></e-column>
+            <e-column field='3:30' headerText='3:30 PM' width='120'></e-column>
+            <e-column field='4:00' headerText='4:00 PM' width='120'></e-column>
+            <e-column field='4:30' headerText='4:30 PM' width='120'></e-column>
+            <e-column field='5:00' headerText='5:00 PM' width='120'></e-column>
+        </e-columns>
+    </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public width: string | number;
+    public gridLines: GridLine;
+    public textWrap: boolean;
+    public queryCellInfoEvent: EmitType<QueryCellInfoEventArgs> = (args: QueryCellInfoEventArgs) => {
+    const data: ColumnSpanDataType = args.data as ColumnSpanDataType;
+    switch (data.EmployeeID) {
+        case 10001:
+            if (args.column.field === '9:00' || args.column.field === '2:30' || args.column.field === '4:30') {
+                args.colSpan = 2;
+            } else if (args.column.field === '11:00') {
+                args.colSpan = 3;
+            } else if (args.column.field === 'EmployeeName') {
+                args.rowSpan = 2;
+            } else if (args.column.field === '1:00') {
+                args.colSpan = 3;
+                args.rowSpan = 2;
+            }
+            break;
+        case 10002:
+            if (args.column.field === '9:30' || args.column.field === '2:30' ||
+                args.column.field === '4:30') {
+                args.colSpan = 3;
+            } else if (args.column.field === '11:00') {
+                args.colSpan = 4;
+            }
+            break;
+        case 10003:
+            if (args.column.field === '9:00' || args.column.field === '11:30') {
+                args.colSpan = 3;
+            } else if (args.column.field === '10:30' || args.column.field === '3:30' ||
+                args.column.field === '4:30' || args.column.field === '2:30') {
+                args.colSpan = 2;
+            }
+            break;
+        case 10004:
+            if (args.column.field === '9:00') {
+                args.colSpan = 3;
+            } else if (args.column.field === '11:00') {
+                args.colSpan = 4;
+            } else if (args.column.field === '4:00' || args.column.field === '2:30') {
+                args.colSpan = 2;
+            }
+            break;
+        case 10005:
+            if (args.column.field === '9:00') {
+                args.colSpan = 4;
+            } else if (args.column.field === '11:30') {
+                args.colSpan = 3;
+            } else if (args.column.field === '3:30' || args.column.field === '4:30' || args.column.field === '2:30') {
+                args.colSpan = 2;
+            }
+            break;
+        case 10006:
+            if (args.column.field === '9:00' || args.column.field === '4:30' ||
+                args.column.field === '2:30' || args.column.field === '3:30') {
+                args.colSpan = 2;
+            } else if (args.column.field === '10:00' || args.column.field === '11:30') {
+                args.colSpan = 3;
+            }
+            break;
+        case 10007:
+            if (args.column.field === '9:00' || args.column.field === '3:00' || args.column.field === '10:30') {
+                args.colSpan = 2;
+            } else if (args.column.field === '11:30' || args.column.field === '4:00') {
+                args.colSpan = 3;
+            }
+            break;
+        case 10008:
+            if (args.column.field === '9:00' || args.column.field === '10:30' || args.column.field === '2:30') {
+                args.colSpan = 3;
+            } else if (args.column.field === '4:00') {
+                args.colSpan = 2;
+            }
+            break;
+        case 10009:
+            if (args.column.field === '9:00' || args.column.field === '11:30') {
+                args.colSpan = 3;
+            } else if (args.column.field === '4:30' || args.column.field === '2:30') {
+                args.colSpan = 2;
+            }
+            break;
+        case 100010:
+            if (args.column.field === '9:00' || args.column.field === '2:30' ||
+                args.column.field === '4:00' || args.column.field === '11:30') {
+                args.colSpan = 3;
+            } else if (args.column.field === '10:30') {
+                args.colSpan = 2;
+            }
+            break;
+        }
+    }
+    ngOnInit(): void {
+        this.data = columnSpanData;
+        this.gridLines = 'Both';
+        this.width = 'auto';
+        this.textWrap = true;
+    }
+}
+
+```
+
+{% endtab %}
 
 > To disable the spanning for particular grid page, we need to use **requestType** from [`QueryCellInfo`](../../api/grid/queryCellInfoEventArgs) event argument.

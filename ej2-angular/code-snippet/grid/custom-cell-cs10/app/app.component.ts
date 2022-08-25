@@ -44,7 +44,6 @@ const instance: Internationalization = new Internationalization();
                             </tr>
                             <tr>
                                 <td class="CardHeader"> Hire Date </td>
->>>>>>> a61f632fe75e6a2b203935097fc72a57436bc6ca
                                 <td>{{format(data.HireDate)}}</td>
                             </tr>
                         </tbody>
@@ -73,4 +72,3 @@ export interface DateFormat extends Window {
 
 
 
-<<<<<<< HEAD

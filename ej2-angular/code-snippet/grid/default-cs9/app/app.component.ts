@@ -1,12 +1,12 @@
 
 
-import { Component, OnInit, ViewChild, ViewContainerRef, Inject, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
-import { DetailRowService, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { DetailRowService, EditService, ToolbarService, AddEventArgs, GridModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='pData' height='315px' [childGrid]='childGrid'>
+    template: `<ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid'>
                     <e-columns>
                         <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
                         <e-column field='FirstName' headerText='FirstName' width=150></e-column>
@@ -14,45 +14,35 @@ import { DetailRowService, GridComponent } from '@syncfusion/ej2-angular-grids';
                         <e-column field='City' headerText='City' width=150></e-column>
                     </e-columns>
                 </ejs-grid>
-                <ng-template #childtemplate let-data>
-                    <div class="image">
-                            <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
-                     </div>
-                </ng-template>
                 `,
-    providers: [DetailRowService]
+    providers: [DetailRowService, EditService, ToolbarService]
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit {
 
-    constructor(@Inject(ViewContainerRef) private viewContainerRef?: ViewContainerRef) {
-
-    }
     public pData: object[];
-    @ViewChild('childtemplate') public childtemplate: any;
+    public childGrid: GridModel = {
+        dataSource: data,
+        queryString: 'EmployeeID',
+        toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
+        editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+        columns: [
+            { field: 'OrderID', headerText: 'Order ID', isPrimaryKey: true, textAlign: 'Right', width: 120 },
+            { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', allowEditing: false, width: 120 },
+            { field: 'ShipCity', headerText: 'Ship City', width: 150 },
+            { field: 'ShipName', headerText: 'Ship Name', width: 150 }
+        ],
+        actionBegin(args: AddEventArgs) {
+            if (args.requestType === 'add') {
+                // `parentKeyFieldValue` refers to the queryString field value of the parent record.
+                const EmployeeID = 'EmployeeID';
+                (args.data as object)[EmployeeID] = this.parentDetails.parentKeyFieldValue;
+            }
+        }
+    };
     @ViewChild('grid') public grid: GridComponent;
-    public childGrid: any;
-
-    ngAfterViewInit() {
-        this.childtemplate.elementRef.nativeElement._viewContainerRef = this.viewContainerRef;
-        this.childtemplate.elementRef.nativeElement.propName = 'template';
-    }
 
     ngOnInit(): void {
         this.pData = employeeData;
-        this.childGrid = {
-            dataSource: data,
-            queryString: 'EmployeeID',
-            load() {
-                this.registeredTemplate = {};   // set registertemplate value as empty in load event
-            },
-            columns: [
-                { headerText: 'Employee Image', textAlign: 'Center', template: this.childtemplate, width: 150 },
-                { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-                { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
-                { field: 'ShipCity', headerText: 'Ship City', width: 150 },
-                { field: 'ShipName', headerText: 'Ship Name', width: 150 }
-            ],
-        };
     }
 }
 

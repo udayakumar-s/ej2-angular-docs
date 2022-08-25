@@ -1,13 +1,4 @@
----
-layout: post
-title: Prevent to persist in Angular Grid component | Syncfusion
-description: Learn here all about Prevent to persist in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Prevent to persist 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Prevent to persist in Angular Grid component
+# Prevent to Persist
 
 ## Prevent columns from persisting
 
@@ -17,16 +8,56 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 
 >**Note:** When the [enablePersistence](../../api/grid/#enablepersistence) property is set to true, the Grid properties such as column template, column formatter, header text, and value accessor will not persist.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs9/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs9/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs9/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs9/app/app.component.ts" % }
+{% tab template="grid/grouping1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { FilterService, PageService, GridComponent } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<button ej-button id='add' (click)='addColumn()'>Add Columns</button>
+               <button ej-button id='remove' (click)='removeColumn()'>Remove Columns</button>
+               <ejs-grid #grid id="Grid" [dataSource]='data' [enablePersistence]='true' [allowPaging]='true' height='210px' (dataBound)='dataBound()'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`,
+    providers: [FilterService, PageService]
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    @ViewChild('grid')
+    public grid: GridComponent;
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+    dataBound() {
+        let cloned = this.grid.addOnPersist;
+        this.grid.addOnPersist = function (key: any) {
+            key = key.filter((item: string)  => item !== "columns");
+            return cloned.call(this, key);
+        };
+    }
+
+    addColumn() {
+        let obj = { field: "Freight", headerText: 'Freight', width: 120 }
+        this.grid.columns.push(obj as any); //you can add the columns by using the Grid columns method
+        this.grid.refreshColumns();
+   }
+
+    removeColumn() {
+        this.grid.columns.pop();
+        this.grid.refreshColumns();
+   }
+}
+
+```
+
+{% endtab %}

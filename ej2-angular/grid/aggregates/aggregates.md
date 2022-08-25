@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Aggregates in Angular Grid component | Syncfusion
-description: Learn here all about Aggregates in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Aggregates 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Aggregates"
+component: "Grid"
+description: "Learn how to aggregate rows, apply custom aggregates, and format the aggregate values in the Essential JS 2 DataGrid control."
 ---
 
-# Aggregates in Angular Grid component
+# Aggregates
 
 Aggregate values are displayed in the footer, group footer and group caption of Grid. It can be configured through **e-aggregates** directive.
 The [`field`](../../api/grid/aggregateColumnDirective/#field) and [`type`](../../api/grid/aggregateColumnDirective/#type)

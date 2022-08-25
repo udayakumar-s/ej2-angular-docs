@@ -1,29 +1,36 @@
----
-layout: post
-title: Complex data binding in Angular Grid component | Syncfusion
-description: Learn here all about Complex data binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Complex data binding 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Complex data binding in Angular Grid component
+# Complex Data Binding
 
 You can achieve complex data binding in the grid by using the dot(.) operator in the [`column.field`](../../api/grid/column/#field).
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs18/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs18/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs18/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs18/app/app.component.ts" % }
+{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts"%}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { complexData } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid [dataSource]='data' [height]='315'>
+                    <e-columns>
+                        <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
+                        <e-column field='Name.FirstName' headerText='First Name' width=120></e-column>
+                        <e-column field='Name.LastName' headerText='Last Name' width=120></e-column>
+                        <e-column field='Title' headerText='Title' width=150></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = complexData;
+    }
+}
+
+```
+
+{% endtab %}
 
  For OData and ODataV4 adaptors, you need to add [`expand`](https://ej2.syncfusion.com/documentation/api/data/query/#expand) query to the [`query`](../../api/grid/#query) property (of Grid), to eager load the complex data.
 

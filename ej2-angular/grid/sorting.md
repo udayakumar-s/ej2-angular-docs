@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Sorting in Angular Grid component | Syncfusion
-description: Learn here all about Sorting in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Sorting 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Sorting"
+component: "Grid"
+description: "Learn how to sort rows in the Essential JS 2 DataGrid control, perform initial sorting, and customize sorting logic."
 ---
 
-# Sorting in Angular Grid component
+# Sorting
 
 The Grid component has support to sort data bound columns in **ascending** or **descending** order.
 This can be achieved by setting [`allowSorting`](../api/grid/#allowsorting) property as true.
@@ -17,19 +14,35 @@ The order switch between **Ascending** and **Descending** each time you click a 
 
 To use Sorting, you need to inject **SortService** in the provider section of **AppModule**.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs1/app/app.component.ts" % }
+{% tab template="grid/sorting1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowSorting]='true' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+```
+
+{% endtab %}
 
 > * Grid column sorted in **Ascending** order. If you click on an already sorted column, then toggles the sort direction.
 > * You can apply and clear sorting by invoking [`sortColumn`](../api/grid/#sortcolumn) and
@@ -43,19 +56,37 @@ By default, the Grid records are not sorted at initial rendering.
 To apply sort at initial rendering, set the [`field`](../api/grid/sortDescriptorModel/#field) and
 [`direction`](../api/grid/sortDescriptorModel/#direction) in [`sortSettings.columns`](../api/grid/sortSettings/#columns).
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs2/app/app.component.ts" % }
+{% tab template="grid/sorting1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowSorting]='true' [sortSettings]='sortOptions' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public sortOptions: object;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.sortOptions = { columns: [{ field: 'OrderID', direction: 'Ascending' }, { field: 'ShipCity', direction: 'Descending' }] };
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Multi-column sorting
 
@@ -66,19 +97,34 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 > The [`allowSorting`](../api/grid/#allowsorting) must be true while enabling multi-column sort.
 > Set [`allowMultiSorting`](../api/grid/#allowmultisorting) property as **false** to disable multi-column sorting.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs3/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs3/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs3/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs3/app/app.component.ts" % }
+{% tab template="grid/sorting1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowSorting]='true' [allowMultiSorting]='true' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+```
+
+{% endtab %}
 
 ## Sort order
 
@@ -183,19 +229,41 @@ triggers before the sort action start and
 [`actionComplete`](../api/grid/#actioncomplete) event
 triggers after the sort action complete. Using these events you can perform any actions.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs4/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs4/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs4/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs4/app/app.component.ts" % }
+{% tab template="grid/sorting1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { SortEventArgs } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' (actionComplete)='actionHandler($event)' (actionBegin)='actionHandler($event)'
+               [allowSorting]='true' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+
+    actionHandler(args: SortEventArgs) {
+        alert(args.requestType + ' ' + args.type); // custom Action
+    }
+}
+
+```
+
+{% endtab %}
 
 > [`args.requestType`](../api/grid/sortEventArgs/#requesttype) is current action name.
 For example in sorting, the [`args.requestType`](../api/grid/sortEventArgs/#requesttype) value is **sorting**.
@@ -208,19 +276,45 @@ The sort comparer function has the same functionality like
 
 In the following example, custom sort comparer function was defined in **Customer ID** column.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs5/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs5/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs5/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs5/app/app.component.ts" % }
+{% tab template="grid/sorting1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowSorting]='true' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' [sortComparer]='sortComparer' headerText='Customer ID' width=150></e-column>
+                    <e-column field='Freight' headerText='Freight' width=100 format='C2'></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    // The custom function
+    public sortComparer = (reference: string, comparer: string) => {
+        if (reference < comparer) {
+            return -1;
+        }
+        if (reference > comparer) {
+            return 1;
+        }
+        return 0;
+    }
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Touch Interaction
 

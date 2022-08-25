@@ -2,12 +2,6 @@
 
 import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
-<<<<<<< HEAD
-import { Internationalization } from '@syncfusion/ej2-base';
-
-const instance: Internationalization = new Internationalization();
-=======
->>>>>>> a61f632fe75e6a2b203935097fc72a57436bc6ca
 
 @Component({
     selector: 'app-root',
@@ -19,11 +13,7 @@ const instance: Internationalization = new Internationalization();
         <ng-template #rowTemplate let-data>
             <tr>
                 <td class="rowphoto">
-<<<<<<< HEAD
-                    <img src="https://ej2.syncfusion.com/angular/demos/src/grid/images/{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}" />
-=======
                   <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}" />
->>>>>>> a61f632fe75e6a2b203935097fc72a57436bc6ca
                 </td>
                 <td class="details">
                     <table class="CardTable" cellpadding="3" cellspacing="2">
@@ -45,14 +35,6 @@ const instance: Internationalization = new Internationalization();
 
                                 <td>{{data.Title}}</td>
                             </tr>
-<<<<<<< HEAD
-                            <tr>
-                                <td class="CardHeader">Birth Date</td>
-                                <td>{{format(data.BirthDate)}}</td>
-                            </tr>
-                            <tr>
-                                <td class="CardHeader">Hire Date</td>
-=======
                         </tbody>
                     </table>
                 </td>

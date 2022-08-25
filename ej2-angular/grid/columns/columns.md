@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Columns in Angular Grid component | Syncfusion
-description: Learn here all about Columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Columns 
-publishingplatform: ##Platform_Name##
-documentation: ug
+title: "Columns"
+component: "Grid"
+description: "Documentation on column reordering, resizing, header templates (custom header content), and column templates (custom cell content) in the Essential JS 2 DataGrid control."
 ---
 
-# Columns in Angular Grid component
+# Columns
 
 The column definitions are used as the **dataSource** schema in the Grid.
 This plays a vital role in rendering column values in the required format.
@@ -41,19 +38,45 @@ Grid column supports the following types:
 The [`valueAccessor`](../../api/grid/column/#valueaccessor) is used to access/manipulate the value of display data.
 You can achieve custom value formatting by using [`valueAccessor`](../../api/grid/column/#valueaccessor).
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs10/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs10/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs10/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs10/app/app.component.ts" % }
+{% tab template="grid/grid", sourceFiles="app/**/*.ts"%}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid [dataSource]='data' [height]='315'>
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                        <e-column field='Freight' headerText='Freight' textAlign='Right'
+                         [valueAccessor]='currencyFormatter' width=80></e-column>
+                        <e-column field='ShipCity' headerText='Ship City' width=130 [valueAccessor]='valueAccess' ></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public currencyFormatter = (field: string, data1: object, column: object) => {
+        const Freight = 'Freight';
+        return '€' + data1[Freight];
+    }
+
+    public valueAccess = (field: string, data1: object, column: object) => {
+        const ShipRegion = 'ShipRegion';
+        return data1[field] + '-' + data1[ShipRegion];
+    }
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+```
+
+{% endtab %}
 
 ### Display array type columns
 
@@ -61,37 +84,79 @@ You can bind an Array of Objects in a column by using [`valueAccessor`](../../ap
 In this example, The Name field has an array of two objects FirstName and LastName. These two objects are joined and bind to a column using
 [`valueAccessor`](../../api/grid/column/#valueaccessor).
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs11/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs11/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs11/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs11/app/app.component.ts" % }
+{% tab template="grid/grid", sourceFiles="app/**/*.ts"%}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { stringData } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid [dataSource]='data' [height]='315'>
+                    <e-columns>
+                        <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=90></e-column>
+                        <e-column field='Name' headerText='Full Name' [valueAccessor]= 'valueAccess' width=120></e-column>
+                        <e-column field='Title' headerText='Title' width=150></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public valueAccess = (field: string, data: object, column: object) => {
+        return data[field].map((s: { FirstName: string, LastName: string }) => {
+            return s.LastName || s.FirstName;
+         }).join(' ');
+    }
+
+    ngOnInit(): void {
+        this.data = stringData;
+    }
+}
+
+```
+
+{% endtab %}
 
 ### Expression column
 
 You can achieve the expression column by using [`valueAccessor`](../../api/grid/column/#valueaccessor) property.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/expression-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/expression-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/expression-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/expression-cs1/app/app.component.ts" % }
+{% tab template="grid/expression", sourceFiles="app/**/*.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { foodInformation } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [height]='315'>
+                    <e-columns>
+                        <e-column field='FoodName' headerText='Food Name' width=150></e-column>
+                        <e-column field='Protein' headerText='Protein' textAlign='Right' width=120></e-column>
+                        <e-column field='Fat' headerText='Fat' textAlign='Right' width=80></e-column>
+                        <e-column field='Carbohydrate' headerText='Carbohydrate' textAlign='Right' width=120></e-column>
+                        <e-column headerText='Calories Intake' textAlign='Right' [valueAccessor]='totalCalories' width=150></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    public totalCalories = (field: string, data: { Protein: number, Fat: number, Carbohydrate: number }, column: Object): number => {
+        return data.Protein * 4 + data.Fat * 9 + data.Carbohydrate * 4;
+    }
+
+    ngOnInit(): void {
+        this.data = foodInformation;
+    }
+}
+
+
+```
+
+{% endtab %}
 
 ## Format
 
@@ -100,19 +165,34 @@ property. The grid uses [`Internalization`](../../common/internationalization/) 
 [`date`](../../common/internationalization/#manipulating-datetime)
 values.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs12/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs12/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs12/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs12/app/app.component.ts" % }
+{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height="315px">
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                    <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+                    <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+```
+
+{% endtab %}
 
 > By default, the [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained ['here'](../../common/internationalization/)
 
@@ -144,55 +224,108 @@ Format | Formatted value
 { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/1996 12:00 AM
 { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/1996 12:00:00 AM
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs13/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs13/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs13/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs13/app/app.component.ts" % }
+{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height="315px">
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                    <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+                    <e-column field='OrderDate' [format]='formatOptions' headerText='Order Date' textAlign='Right' width=120></e-column>
+                    <e-column field='OrderDate' [format]='shipFormat' headerText='Ship Date' textAlign='Right' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public formatOptions: object;
+    public shipFormat: object;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.formatOptions = {type: 'date', format: 'dd/MM/yyyy'};
+        this.shipFormat = { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' };
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Render boolean value as checkbox
 
 To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../../api/grid/column/#displayascheckbox) property as **true**.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs14/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs14/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs14/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs14/app/app.component.ts" % }
+{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [height]='315'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                    <e-column field='Freight' headerText='Freight' textAlign= 'Right' width=120 format= 'C2'></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+                    <e-column field='Verified' headerText='Verified' [displayAsCheckBox]="true" width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Visibility
 
 You can hide any particular column in Grid before rendering by defining [`visible`](../../api/grid/column/#visible) property as false. In the below sample **ShipCity** column is defined as visible false.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs15/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs15/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs15/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs15/app/app.component.ts" % }
+{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=140></e-column>
+                    <e-column field='Freight' headerText='Freight' textAlign='Right' format='C' width=120></e-column>
+                    <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=140></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' [visible]='false' width=100></e-column>
+                </e-columns>
+               </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Lock columns
 
@@ -200,57 +333,120 @@ You can lock columns by using [`column.lockColumn`](../../api/grid/column/#lockc
 
 In the below example, Ship City column is locked and its reordering functionality is disabled.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/reorder-cs5/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reorder-cs5/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/reorder-cs5/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reorder-cs5/app/app.component.ts" % }
+{% tab template="grid/reorder", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowReordering]='true' [allowSelection]='false' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                    <e-column field='ShipCity' width=100 [lockColumn]='true' [customAttributes]='customAttributes'></e-column>
+                    <e-column field='ShipName'width=100></e-column>
+                    <e-column field='ShipPostalCode'width=80></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public customAttributes: object;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.customAttributes = {class: 'customcss'};
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Controlling Grid actions
 
 You can enable or disable grid action for a particular column by setting the [`allowFiltering`](../../api/grid/columnModel/#allowfiltering),
 [`allowGrouping`](../../api/grid/columnModel/#allowgrouping), [`allowSorting`](../../api/grid/columnModel/#allowsorting), [`allowReordering`](../../api/grid/columnModel/#allowreordering) and [`allowEditing`](../../api/grid/columnModel/#allowediting) properties.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/control-actions-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/control-actions-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/control-actions-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/control-actions-cs1/app/app.component.ts" % }
+{% tab template="grid/control-actions", sourceFiles="app/**/*.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { EditSettingsModel, ToolbarItems, IEditCell, ReorderService, EditService } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowReordering]="true" [editSettings]='editSettings'
+               [allowSorting]="true" [allowFiltering]="true" [allowGrouping]="true" height="220px">
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90 [allowGrouping]="false"></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                    <e-column field='Freight' headerText='Freight' textAlign='Right'
+                     format='C2' width=90 [allowFiltering]="false"></e-column>
+                    <e-column field='OrderDate' headerText='Order Date' textAlign='Right'
+                     format='yMd' width=120 [allowSorting]="false"></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public editSettings: EditSettingsModel;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Show or hide columns by external button
 
 You can show or hide the grid columns dynamically through external buttons by invoking the [`showColumns`](../../api/grid/#showcolumns)/[`hideColumns`](../../api/grid/#hidecolumns)
 methods.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs16/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs16/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs16/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs16/app/app.component.ts" % }
+{% tab template="grid/grid", sourceFiles="app/**/*.ts"%}
+
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+@Component({
+    selector: 'app-root',
+    template: ` <button id='show' ej-button class='e-flat' (click)='show()'> Show </button>
+                <button id='hide' ej-button class='e-flat' (click)='hide()'> Hide </button>
+                <ejs-grid #grid [dataSource]='data' [height]='280'>
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+                        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+    public data: object[];
+    @ViewChild('grid') public grid: GridComponent;
+    ngOnInit(): void {
+        this.data = data;
+    }
+    show() {
+        this.grid.showColumns(['Customer ID', 'Ship Name']); // show by HeaderText
+    }
+    hide() {
+        this.grid.hideColumns(['Customer ID', 'Ship Name']); // hide by HeaderText
+    }
+}
+```
+
+{% endtab %}
 
 ## Customize column styles
 
@@ -284,19 +480,37 @@ Create a css class with custom style to override the default style for rowcell a
 
 Add the custom css class to particular column by using [`customAttributes`](../../api/grid/column/#customattributes) property.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-column-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-column-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs1/app/app.component.ts" % }
+{% tab template="grid/custom-column", sourceFiles="app/**/*.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [height]='315'>
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' [customAttributes]='customAttributes' width=120></e-column>
+                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+                        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit{
+
+    public data: Object[];
+    public customAttributes: Object;
+
+    ngOnInit(): void{
+        this.data = data;
+        this.customAttributes = {class: 'customcss'};
+    }
+}
+
+```
+
+{% endtab %}
 
 ## Display custom tooltip for columns
 
@@ -315,19 +529,43 @@ tooltip (args: QueryCellInfoEventArgs) {
 
 ```
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-tooltip-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-tooltip-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-tooltip-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-tooltip-cs1/app/app.component.ts" % }
+{% tab template="grid/custom-tooltip", sourceFiles="app/**/*.ts"%}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Tooltip } from '@syncfusion/ej2-popups';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid [dataSource]='data' [height]='315' (queryCellInfo)='tooltip($event)' >
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+                        <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+    tooltip(args: QueryCellInfoEventArgs) {
+        const tooltip: Tooltip = new Tooltip({
+            content: args.data[args.column.field].toString()
+        }, args.cell as HTMLTableCellElement);
+    }
+}
+
+
+```
+
+{% endtab %}
 
 ## Align the text of Grid content and header
 
@@ -339,19 +577,34 @@ Grid column supports the following alignments:
 * Center
 * Justify
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs17/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs17/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs17/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs17/app/app.component.ts" % }
+{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height='315px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' type='number' textAlign='Right' headerTextAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' type='string' textAlign='Left' headerTextAlign='Left' width=90></e-column>
+                    <e-column field='OrderDate' headerText='Order Date' type='date'  textAlign='Center' headerTextAlign='Center' format='yMd' width=140></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' type='string' textAlign='Justify' headerTextAlign="Justify" width=120></e-column>
+                </e-columns>
+               </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+    public data: object[];
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+
+```
+
+{% endtab %}
 
 ## See Also
 

@@ -1,13 +1,4 @@
----
-layout: post
-title: Tool bar in Angular Grid component | Syncfusion
-description: Learn here all about Tool bar in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Tool bar 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Tool bar in Angular Grid component
+# Toolbar
 
 ## Customizing the toolbar root element
 

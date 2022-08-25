@@ -1,13 +1,4 @@
----
-layout: post
-title: Auto wrap in Angular Grid component | Syncfusion
-description: Learn here all about Auto wrap in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
-control: Auto wrap 
-publishingplatform: ##Platform_Name##
-documentation: ug
----
-
-# Auto wrap in Angular Grid component
+# Auto wrap
 
 The auto wrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the cell width. The Cell Content wrapping works based on the position of white space between words.
 To enable auto wrap, set the [`allowTextWrap`](../../api/grid/#allowtextwrap) property to **true**.
@@ -23,16 +14,35 @@ Note: When a column width is not specified, then auto wrap of columns will be ad
 
 In the below example, the [`textWrapSettings.wrapMode`](../../api/grid/textWrapSettings/#wrapmode) is set as **Content**.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/autowrap-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/autowrap-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/autowrap-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/autowrap-cs1/app/app.component.ts" % }
+{% tab template="grid/autowrap", sourceFiles="app/**/*.ts"%}
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { inventoryData } from './datasource';
+import { TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' allowPaging='true' allowTextWrap='true' [textWrapSettings]='wrapSettings' height='400'>
+        <e-columns>
+            <e-column field='Inventor' headerText='Inventor Name' width='180' textAlign="Right"></e-column>
+            <e-column field='NumberofPatentFamilies' headerText="Number of Patent Families" width='180' textAlign="Right"></e-column>
+            <e-column field='Country' headerText='Country' width='140'></e-column>
+            <e-column field='Active' width='120'></e-column>
+            <e-column field='Mainfieldsofinvention' headerText='Main fields of invention' width='200'></e-column>
+        </e-columns>
+    </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: object[];
+    public wrapSettings: TextWrapSettingsModel;
+    ngOnInit(): void {
+        this.data = inventoryData;
+        this.wrapSettings = { wrapMode: 'Content' };
+    }
+}
+
+```
+
+{% endtab %}

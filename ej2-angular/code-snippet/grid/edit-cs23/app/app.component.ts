@@ -1,55 +1,44 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { closest } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-root',
-    template: `<button (click)="btnClick($event)">Grid is Addable</button>
-                <ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='240px'>
-                  <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='Role' headerText='Role' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                  </e-columns>
+    template: `<ejs-grid  #grid [dataSource]='data' [editSettings]='editSettings' height='315px' (created)="created($event)">
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=120></e-column>
+                    <e-column field='OrderDate' headerText='Order Date' width=130 textAlign='Right' format='yMd'></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' width=140></e-column>
+                    <e-column field='Freight' headerText='Receipt Amount' textAlign= 'Right' width=150>
+                        <ng-template #template let-data>
+                            <input id='{{data.OrderID}}' value='{{data.Freight}}' class='custemp' type='text' style='width: 100%'>
+                        </ng-template>
+                </e-column>
+                </e-columns>
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 
     public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public isAddable: boolean = true;
+    @ViewChild('grid') public grid: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
-
-    actionBegin(args) {
-        if (args.requestType == 'beginEdit') {
-            if (args.rowData['Role'].toLowerCase() == 'employee') {
-                args.cancel = true;
+    created(args) {
+        this.grid.element.addEventListener('keyup', function (e) { // Bind the keyup event for the grid.
+            if ((e.target as any).classList.contains('custemp')) { // Based on this condition, you can find whether the target is an input element or not.
+                var row = parentsUntil(e.target as any, 'e-row');
+                var rowIndex = (row as any).rowIndex; // Get the row index.
+                var uid = row.getAttribute('data-uid');
+                var rowData = grid.getRowObjectFromUID(uid).data; // Get the row data.
+                (rowData as any).Freight = (e.target as any).value; // Update the new value for the corresponding column.
+                grid.updateRow(rowIndex, rowData); // Update the modified value in the row data.
             }
-        }
-        if (args.requestType == 'delete') {
-            if (args.data[0]['Role'].toLowerCase() == 'employee') {
-                args.cancel = true;
-            }
-        }
-        if (args.requestType == 'add') {
-            if (!this.isAddable) {
-                args.cancel = true;
-            }
-        }
-    }
-    btnClick(args) {
-        args.target.innerText == 'Grid is Addable' ? (args.target.innerText = 'Grid is Not Addable') : (args.target.innerText = 'Grid is Addable');
-        this.isAddable = !this.isAddable;
+        });
     }
 }
 

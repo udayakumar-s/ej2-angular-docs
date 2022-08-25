@@ -2,11 +2,11 @@
 
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { EditSettingsModel, ToolbarItems, CellEditArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
+    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (cellEdit)="cellEdit($event)" height='273px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
@@ -24,8 +24,14 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.editSettings = { allowEditing: true, mode: 'Batch' };
+        this.toolbar = ['Edit', 'Update', 'Cancel'];
+    }
+
+    cellEdit(args: CellEditArgs) {
+        if (args.value === 'France') {
+            args.cancel = true;
+        }
     }
 }
 

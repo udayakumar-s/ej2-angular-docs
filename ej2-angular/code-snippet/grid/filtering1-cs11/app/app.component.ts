@@ -6,24 +6,32 @@ import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' [filterSettings]='filterOption'>
+    template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' height='273px'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' [filter]='filterParams' textAlign='Right' width=90></e-column>
-                    <e-column field='Name' headerText='Name' width=140></e-column>
-                    <e-column field='ShipName' headerText='ShipName' width=140></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=100></e-column>
                 </e-columns>
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 
     public data: object[];
-    public filterParams: object;
-    public filterOption: FilterSettingsModel = { type: 'Menu'};
-    public height = '220px';
+    public filterOptions: FilterSettingsModel;
+
     ngOnInit(): void {
         this.data = data;
-        this.filterParams = { params: { showSpinButton: false } };
+        this.filterOptions = {
+           type: 'Menu',
+           operators: {
+               stringOperator: [
+                   { value: 'startsWith', text: 'starts with' },
+                   { value: 'endsWith', text: 'ends with' },
+                   { value: 'contains', text: 'contains' }
+                ],
+            }
+        };
     }
 }
 
