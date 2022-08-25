@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
 layout: post
 title: Aggregates in Angular Grid component | Syncfusion
