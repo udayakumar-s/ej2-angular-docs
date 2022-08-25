@@ -24,7 +24,6 @@ To bind local data to the grid, you can assign a JavaScript object array to the
 {% include code-snippet/grid/databinding-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs1/app/app.component.ts" % }
 
@@ -68,6 +67,5 @@ Refresh the grid after the datasource change by using the [`refresh`](../../api/
 {% include code-snippet/grid/change-headertext-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/change-headertext-cs2/app/app.component.ts" % }

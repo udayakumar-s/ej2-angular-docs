@@ -28,6 +28,5 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% include code-snippet/grid/edit-cs44/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs44/app/app.component.ts" % }

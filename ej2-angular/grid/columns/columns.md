@@ -52,7 +52,6 @@ You can achieve custom value formatting by using [`valueAccessor`](../../api/gri
 {% include code-snippet/grid/grid-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs10/app/app.component.ts" % }
 
@@ -73,7 +72,6 @@ In this example, The Name field has an array of two objects FirstName and LastNa
 {% include code-snippet/grid/grid-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs11/app/app.component.ts" % }
 
@@ -92,7 +90,6 @@ You can achieve the expression column by using [`valueAccessor`](../../api/grid/
 {% include code-snippet/grid/expression-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/expression-cs1/app/app.component.ts" % }
 
@@ -114,7 +111,6 @@ values.
 {% include code-snippet/grid/grid-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs12/app/app.component.ts" % }
 
@@ -159,7 +155,6 @@ Format | Formatted value
 {% include code-snippet/grid/grid-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs13/app/app.component.ts" % }
 
@@ -178,7 +173,6 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 {% include code-snippet/grid/grid-cs14/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs14/app/app.component.ts" % }
 
@@ -197,7 +191,6 @@ You can hide any particular column in Grid before rendering by defining [`visibl
 {% include code-snippet/grid/grid-cs15/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs15/app/app.component.ts" % }
 
@@ -218,7 +211,6 @@ In the below example, Ship City column is locked and its reordering functionalit
 {% include code-snippet/grid/reorder-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reorder-cs5/app/app.component.ts" % }
 
@@ -238,7 +230,6 @@ You can enable or disable grid action for a particular column by setting the [`a
 {% include code-snippet/grid/control-actions-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/control-actions-cs1/app/app.component.ts" % }
 
@@ -258,7 +249,6 @@ methods.
 {% include code-snippet/grid/grid-cs16/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs16/app/app.component.ts" % }
 
@@ -305,7 +295,6 @@ Add the custom css class to particular column by using [`customAttributes`](../.
 {% include code-snippet/grid/custom-column-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs1/app/app.component.ts" % }
 
@@ -337,7 +326,6 @@ tooltip (args: QueryCellInfoEventArgs) {
 {% include code-snippet/grid/custom-tooltip-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-tooltip-cs1/app/app.component.ts" % }
 
@@ -362,7 +350,6 @@ Grid column supports the following alignments:
 {% include code-snippet/grid/grid-cs17/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs17/app/app.component.ts" % }
 

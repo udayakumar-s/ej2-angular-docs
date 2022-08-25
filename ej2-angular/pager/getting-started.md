@@ -109,7 +109,6 @@ export class AppComponent implements OnInit {
 {% include code-snippet/pager/pager-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs1/app/app.component.ts" % }
 
@@ -130,7 +129,6 @@ and [`pageSize`](#page-size) values.
 {% include code-snippet/pager/pager-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs2/app/app.component.ts" % }
 
@@ -155,6 +153,5 @@ Output will be appears as follows.
 {% include code-snippet/pager/pager-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs3/app/app.component.ts" % }

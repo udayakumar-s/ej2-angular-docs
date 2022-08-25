@@ -28,6 +28,5 @@ The grid have an option to export the hierarchy grid to pdf document. By default
 {% include code-snippet/grid/exporting-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs8/app/app.component.ts" % }

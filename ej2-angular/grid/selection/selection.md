@@ -32,7 +32,6 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 {% include code-snippet/grid/selection-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs10/app/app.component.ts" % }
 
@@ -56,7 +55,6 @@ Grid supports three types of selection mode which can be set by using
 {% include code-snippet/grid/selection-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs11/app/app.component.ts" % }
 

@@ -25,7 +25,6 @@ To override the default header title by defining [`headerText`](../../api/grid/c
 {% include code-snippet/grid/grid-cs20/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs20/app/app.component.ts" % }
 
@@ -47,7 +46,6 @@ You can customize the header element by using the [`headerTemplate`](../../api/g
 {% include code-snippet/grid/header-template-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/header-template-cs1/app/app.component.ts" % }
 
@@ -88,7 +86,6 @@ this.grid.refreshHeader();
 {% include code-snippet/grid/change-headertext-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/change-headertext-cs1/app/app.component.ts" % }
 
@@ -144,6 +141,5 @@ setHeaderHeight(args) {
 {% include code-snippet/grid/header-orientation-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/header-orientation-cs1/app/app.component.ts" % }

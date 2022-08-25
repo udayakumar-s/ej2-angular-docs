@@ -24,7 +24,6 @@ The following example demonstrates the way to use filter template for a column w
 {% include code-snippet/grid/filter-template-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-template-cs1/app/app.component.ts" % }
 

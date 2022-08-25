@@ -28,7 +28,6 @@ triggers for every cell. In that event handler, you can get
 {% include code-snippet/grid/custom-cell-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs1/app/app.component.ts" % }
 
@@ -61,7 +60,6 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 {% include code-snippet/grid/custom-cell-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs2/app/app.component.ts" % }
 
@@ -91,7 +89,6 @@ The available modes of grid lines are:
 {% include code-snippet/grid/autowrap-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/autowrap-cs2/app/app.component.ts" % }
 

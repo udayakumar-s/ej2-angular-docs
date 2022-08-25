@@ -28,7 +28,6 @@ To use Sorting, you need to inject **SortService** in the provider section of **
 {% include code-snippet/grid/sorting1-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs1/app/app.component.ts" % }
 
@@ -55,7 +54,6 @@ To apply sort at initial rendering, set the [`field`](../api/grid/sortDescriptor
 {% include code-snippet/grid/sorting1-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs2/app/app.component.ts" % }
 
@@ -79,7 +77,6 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 {% include code-snippet/grid/sorting1-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs3/app/app.component.ts" % }
 
@@ -197,7 +194,6 @@ triggers after the sort action complete. Using these events you can perform any 
 {% include code-snippet/grid/sorting1-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs4/app/app.component.ts" % }
 
@@ -223,7 +219,6 @@ In the following example, custom sort comparer function was defined in **Custome
 {% include code-snippet/grid/sorting1-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting1-cs5/app/app.component.ts" % }
 

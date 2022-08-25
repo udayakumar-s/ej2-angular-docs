@@ -28,7 +28,6 @@ To use Paging, you need to inject **PageService** in the provider section of **A
 {% include code-snippet/grid/paging1-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs5/app/app.component.ts" % }
 
@@ -53,7 +52,6 @@ Inside this template, you can access the [`CurrentPage`](../api/grid/pageSetting
 {% include code-snippet/grid/pager-template-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/pager-template-cs1/app/app.component.ts" % }
 
@@ -72,7 +70,6 @@ The pager Dropdown allows you to change the number of records in the Grid dynami
 {% include code-snippet/grid/paging1-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs6/app/app.component.ts" % }
 
@@ -91,7 +88,6 @@ By default, Pager will be rendered at the bottom of the Grid. You can also rende
 {% include code-snippet/grid/paging1-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs7/app/app.component.ts" % }
 

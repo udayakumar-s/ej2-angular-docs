@@ -23,6 +23,5 @@ In the below sample, OrderID and Freight Columns are numeric columns, while open
 {% include code-snippet/grid/filtering1-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs11/app/app.component.ts" % }

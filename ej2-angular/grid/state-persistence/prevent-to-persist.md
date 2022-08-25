@@ -28,6 +28,5 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 {% include code-snippet/grid/grouping1-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs9/app/app.component.ts" % }

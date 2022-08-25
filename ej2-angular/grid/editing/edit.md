@@ -37,7 +37,6 @@ To learn about what are all the edit modes and edit types are available in Angul
 {% include code-snippet/grid/edit-cs14/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs14/app/app.component.ts" % }
 
@@ -62,7 +61,6 @@ You can define this by using the [`toolbar`](../../api/grid/#toolbar) property.
 {% include code-snippet/grid/edit-cs15/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs15/app/app.component.ts" % }
 
@@ -83,7 +81,6 @@ In the following demo, editing is disabled for the **CustomerID** column.
 {% include code-snippet/grid/edit-cs16/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs16/app/app.component.ts" % }
 
@@ -104,7 +101,6 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% include code-snippet/grid/edit-cs17/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs17/app/app.component.ts" % }
 
@@ -121,7 +117,6 @@ For batch mode of editing, you can use [`cellEdit`](../../api/grid/#celledit) ev
 {% include code-snippet/grid/edit-cs18/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs18/app/app.component.ts" % }
 
@@ -142,7 +137,6 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% include code-snippet/grid/edit-cs19/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs19/app/app.component.ts" % }
 
@@ -170,7 +164,6 @@ In the following example, the textbox is rendered in the Freight column using a 
 {% include code-snippet/grid/edit-cs20/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs20/app/app.component.ts" % }
 

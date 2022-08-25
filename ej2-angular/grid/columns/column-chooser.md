@@ -25,7 +25,6 @@ To use column chooser, inject **ColumnChooserService** in the provider section o
 {% include code-snippet/grid/columnchooser-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/columnchooser-cs1/app/app.component.ts" % }
 
@@ -48,6 +47,5 @@ the [`openColumnChooser`](../../api/grid/columnChooser/#opencolumnchooser) metho
 {% include code-snippet/grid/columnschooser-method-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/columnschooser-method-cs1/app/app.component.ts" % }

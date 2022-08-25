@@ -24,6 +24,5 @@ Custom Toolbar is used to customize the whole toolbar. It can be added by defini
 {% include code-snippet/grid/toolbar-template-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/toolbar-template-cs1/app/app.component.ts" % }

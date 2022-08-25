@@ -31,7 +31,6 @@ object.
 {% include code-snippet/grid/aggregates-custom-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-custom-cs2/app/app.component.ts" % }
 

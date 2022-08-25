@@ -22,6 +22,5 @@ The excel export provides an option to include header and footer content for exp
 {% include code-snippet/grid/excel-exporting-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/excel-exporting-cs1/app/app.component.ts" % }

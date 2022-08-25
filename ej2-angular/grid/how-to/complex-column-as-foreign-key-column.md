@@ -24,6 +24,5 @@ In the following example, **Employee.EmployeeID** is a complex column and also d
 {% include code-snippet/grid/foreignkey-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs11/app/app.component.ts" % }

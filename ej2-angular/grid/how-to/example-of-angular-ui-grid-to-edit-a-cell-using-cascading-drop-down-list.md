@@ -24,6 +24,5 @@ In the below demo, Cascading DropDownList rendered for `ShipCountry` and `ShipSt
 {% include code-snippet/grid/edit-cs46/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs46/app/app.component.ts" % }

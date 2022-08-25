@@ -34,6 +34,5 @@ In the below example, the [`textWrapSettings.wrapMode`](../../api/grid/textWrapS
 {% include code-snippet/grid/autowrap-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/autowrap-cs1/app/app.component.ts" % }

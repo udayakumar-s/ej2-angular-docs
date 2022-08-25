@@ -26,7 +26,6 @@ You can set validation rules by defining the [`columns.validationRules`](../../a
 {% include code-snippet/grid/edit-cs29/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs29/app/app.component.ts" % }
 
@@ -47,7 +46,6 @@ In the below demo, custom validation applied for **CustomerID** column.
 {% include code-snippet/grid/edit-cs30/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs30/app/app.component.ts" % }
 
@@ -68,6 +66,5 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 {% include code-snippet/grid/edit-cs31/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs31/app/app.component.ts" % }

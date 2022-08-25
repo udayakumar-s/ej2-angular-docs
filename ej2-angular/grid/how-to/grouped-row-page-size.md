@@ -24,6 +24,5 @@ In the below sample, we have overridden the default **generateQuery** to display
 {% include code-snippet/grid/filtering1-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs12/app/app.component.ts" % }

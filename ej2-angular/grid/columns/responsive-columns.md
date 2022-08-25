@@ -25,6 +25,5 @@ The [`hideAtMedia`](../../api/grid/column/#hideatmedia) accepts valid
 {% include code-snippet/grid/grid-cs21/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs21/app/app.component.ts" % }

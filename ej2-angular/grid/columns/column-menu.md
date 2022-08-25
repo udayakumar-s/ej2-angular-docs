@@ -39,7 +39,6 @@ The default items are displayed in following table.
 {% include code-snippet/grid/grid-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs6/app/app.component.ts" % }
 
@@ -66,7 +65,6 @@ During the resizing action, the grid component triggers the below two events.
 {% include code-snippet/grid/grid-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs7/app/app.component.ts" % }
 
@@ -89,7 +87,6 @@ Actions for this customized items can be defined in the
 {% include code-snippet/grid/grid-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs8/app/app.component.ts" % }
 
@@ -112,7 +109,6 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% include code-snippet/grid/grid-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs9/app/app.component.ts" % }
 
@@ -139,6 +135,5 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% include code-snippet/grid/custom-column-menu-icon-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-menu-icon-cs1/app/app.component.ts" % }

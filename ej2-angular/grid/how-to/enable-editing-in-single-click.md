@@ -26,7 +26,6 @@ Bind the **mouseup** event for Grid and in the event handler call the [`startEdi
 {% include code-snippet/grid/single-click-batch-editing-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/single-click-batch-editing-cs1/app/app.component.ts" % }
 
@@ -45,7 +44,6 @@ You can open the default dropdown edit popup with single click edit by focusing 
 {% include code-snippet/grid/open-dropdown-popup-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/open-dropdown-popup-cs1/app/app.component.ts" % }
 
@@ -66,6 +64,5 @@ Bind the **mouseup** event for Grid and in the event handler call the [`editCell
 {% include code-snippet/grid/single-click-inline-editing-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
   
 { % previewsample "https://ej2.syncfusion.com/code-snippet/grid/single-click-inline-editing-cs1/app/app.component.ts" % }
