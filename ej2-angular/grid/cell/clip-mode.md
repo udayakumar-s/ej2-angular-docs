@@ -1,4 +1,13 @@
-# Clip Mode
+---
+layout: post
+title: Clip mode in Angular Grid component | Syncfusion
+description: Learn here all about Clip mode in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Clip mode 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Clip mode in Angular Grid component
 
 The clip mode provides options to display its overflow cell content and it can be defined
 by the [`columns.clipMode`](../../api/grid/column/#clipmode) property.
@@ -10,34 +19,18 @@ There are three types of [`clipMode`](../../api/grid/column/#clipmode). They are
 * **EllipsisWithTooltip**: Displays ellipsis when the cell content overflows its area,
 also it will display the tooltip while hover on ellipsis is applied.
 
-{% tab template="grid/clipmode", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { inventoryData } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' allowPaging='true'>
-        <e-columns>
-            <e-column field='Inventor' headerText='Name of the Inventor' clipMode='Clip' width='80'></e-column>
-            <e-column field='NumberofPatentFamilies' headerText='Number of Patent Families' clipMode='Ellipsis' width='100'></e-column>
-            <e-column field='Country' headerText='Country' width='80'></e-column>
-            <e-column field='Number of INPADOC patents' headerText='Number of INPADOC patents' width='100'></e-column>
-            <e-column field='Mainfieldsofinvention' headerText='Main fields of invention' clipMode='EllipsisWithTooltip' width='100'></e-column>
-        </e-columns>
-    </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    ngOnInit(): void {
-        this.data = inventoryData;
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/clipmode-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/clipmode-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/clipmode-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/clipmode-cs1/app/app.component.ts" % }
 
 >By default, [`columns.clipMode`](../../api/grid/column/#clipmode) value is **Ellipsis**.

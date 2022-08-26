@@ -1,3 +1,12 @@
+---
+layout: post
+title: Summary in Angular Grid component | Syncfusion
+description: Learn here all about Summary in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Summary 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
 * [Getting Started](grid/getting-started.md)
 * [Feature Modules](grid/module.md)
 * [Data Binding](grid/data-binding/data-binding.md)

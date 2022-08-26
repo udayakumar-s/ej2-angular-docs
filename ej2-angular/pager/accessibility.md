@@ -1,10 +1,13 @@
 ---
-title: "Accessibility"
-component: "Pager"
-description: "Documentation on accessibility in the Essential JS 2 Pager control, featuring WAI-ARIA standards and keyboard navigation."
+layout: post
+title: Accessibility in Angular Pager component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Pager component of Syncfusion Essential JS 2 and more.
+control: Accessibility 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Accessibility
+# Accessibility in Angular Pager component
 
 Accessibility is achieved in the Pager component through WAI-ARIA standard and keyboard navigations.  The Pager features can be effectively accessed through assistive technologies such as screen readers.
 

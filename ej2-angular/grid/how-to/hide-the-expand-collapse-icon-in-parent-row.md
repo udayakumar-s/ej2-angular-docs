@@ -1,10 +1,13 @@
 ---
-title: "Hide the expand/collapse icon in parent row with no record in child grid"
-component: "Grid"
-description: "Learn how to Hide the expand/collapse icon in parent row with no record in child grid."
+layout: post
+title: Hide the expand collapse icon in parent row in Angular Grid component | Syncfusion
+description: Learn here all about Hide the expand collapse icon in parent row in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Hide the expand collapse icon in parent row 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Hide the expand/collapse icon in parent row with no record in child grid
+# Hide the expand collapse icon in parent row in Angular Grid component
 
 By default, the expand/collapse icon will be visible even if the child grid is empty.
 
@@ -46,67 +49,16 @@ Add the CSS class to the Grid in the [`rowDataBound`](../../api/grid/#rowdatabou
 
 In the below demo, the expand/collapse icon in the row with **EmployeeID** as **1** is hidden as it does not have record in child Grid.
 
-{% tab template="grid/template", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { employeeData } from './datasource';
-import { GridComponent, RowDataBoundEventArgs, DetailRowService } from '@syncfusion/ej2-angular-grids';
-import { DataManager, Query, DataResult } from '@syncfusion/ej2-data';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #Grid [dataSource]='data' [childGrid]='childGrid' (rowDataBound)="rowDataBound($event)">
-                    <e-columns>
-                        <e-column field='EmployeeID' headerText='EmployeeID' width='120' ></e-column>
-                        <e-column field='FirstName' headerText='First Name'  width='150' ></e-column>
-                        <e-column field='Title' headerText='Title' width='120' textAlign='Right'></e-column>
-                        <e-column field='City' headerText='City' width='120' textAlign='Right'></e-column>
-                        <e-column field='Country' headerText='Country' width='120' textAlign='Right'></e-column>
-                    </e-columns>
-                </ejs-grid>`,
-    providers: [DetailRowService]
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('Grid') public Grid: GridComponent;
-    public childGrid: object;
-    public dataManager: object[] = [{Order: 100, ShipName: 'Berlin', EmployeeID: 2},
-                                 {Order: 101, ShipName: 'Capte', EmployeeID: 3},
-                                 {Order: 102, ShipName: 'Marlon', EmployeeID: 4},
-                                 {Order: 103, ShipName: 'Black pearl', EmployeeID: 5},
-                                 {Order: 104, ShipName: 'Pearl', EmployeeID: 6},
-                                 {Order: 105, ShipName: 'Noth bay', EmployeeID: 7},
-                                 {Order: 106, ShipName: 'baratna', EmployeeID: 8},
-                                 {Order: 107, ShipName: 'Charge', EmployeeID: 9}];
-
-    ngOnInit(): void {
-      this.data = employeeData;
-      this.childGrid = {
-          dataSource: this.dataManager,
-          queryString: 'EmployeeID',
-          allowPaging: true,
-          columns: [
-              { field: 'Order', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-              { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', width: 120 },
-              { field: 'ShipName', headerText: 'Ship Name', width: 150 }
-          ]
-      };
-    }
-    public rowDataBound(args: RowDataBoundEventArgs) {
-        const EmployeeID = 'EmployeeID';
-        const filter: string = args.data[EmployeeID];
-        const childrecord: any = new DataManager(this.Grid.childGrid.dataSource as JSON[]).
-        executeLocal(new Query().where('EmployeeID', 'equal', parseInt(filter, 10), true));
-        if (childrecord.length === 0) {
-            // here hide which parent row has no child records
-            args.row.querySelector('td').innerHTML = ' ';
-            args.row.querySelector('td').className = 'e-customizedExpandcell';
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/template-cs4/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/template-cs4/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/template-cs4/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/template-cs4/app/app.component.ts" % }

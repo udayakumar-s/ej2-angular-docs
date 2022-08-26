@@ -1,4 +1,13 @@
-# Exporting Grid in Server
+---
+layout: post
+title: Exporting grid in server in Angular Grid component | Syncfusion
+description: Learn here all about Exporting grid in server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Exporting grid in server 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Exporting grid in server in Angular Grid component
 
 The Grid have an option to export the data to PDF in server side using Grid server export library.
 
@@ -91,7 +100,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-> **Note:** Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Angular-EJ2-Grid-server-side-exporting).
+>Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Angular-EJ2-Grid-server-side-exporting).
 
 ## Rotate a header text to a certain degree in the exported grid on the server side
 

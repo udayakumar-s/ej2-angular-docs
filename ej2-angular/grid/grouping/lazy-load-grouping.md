@@ -1,4 +1,13 @@
-# Lazy Load Grouping
+---
+layout: post
+title: Lazy load grouping in Angular Grid component | Syncfusion
+description: Learn here all about Lazy load grouping in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Lazy load grouping 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Lazy load grouping in Angular Grid component
 
 The lazy load grouping allows you to load grouped records to the Grid through the on-demand concept. So, you can use this feature to load a huge amount of grouped data to the Grid without any performance degradation.
 
@@ -8,38 +17,19 @@ The caption row expand/collapse state will be persisted on paging and Grid pages
 
 To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](../../api/grid/groupSettings/#enableLazyLoading) property as **true**.
 
-{% tab template="grid/lazy-load-grouping", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { ActionEventArgs, GridComponent, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: ` <ejs-grid #grid [dataSource]='data' [allowPaging]='true' [allowGrouping]='true' [groupSettings]='groupSettings'>
-        <e-columns>
-            <e-column field='OrderID' headerText='Order ID' textAlign='Right' width='120'></e-column>
-            <e-column field='ProductName' headerText='Product Name' width='100'></e-column>
-            <e-column field='ProductID' headerText='Product ID' textAlign='Right' width='120'></e-column>
-            <e-column field='CustomerID' headerText='Customer ID' width='120'></e-column>
-            <e-column field='CustomerName' headerText='Customer Name' width='120'></e-column>
-        </e-columns>
-    </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public groupSettings: GroupSettingsModel = { enableLazyLoading: true, columns: ['ProductName', 'CustomerName' };
-    ngOnInit(): void {
-        this.data = data;
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/lazy-load-grouping-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/lazy-load-grouping-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/lazy-load-grouping-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/lazy-load-grouping-cs1/app/app.component.ts" % }
 
 ## Handling the lazy load grouping at server-side
 

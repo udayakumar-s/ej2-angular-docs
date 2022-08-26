@@ -1,4 +1,13 @@
-# Aggregate
+---
+layout: post
+title: Aggregate in Angular Grid component | Syncfusion
+description: Learn here all about Aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Aggregate 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Aggregate in Angular Grid component
 
 ## Customizing the aggregate root element
 

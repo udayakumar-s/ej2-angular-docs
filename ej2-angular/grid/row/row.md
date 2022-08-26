@@ -1,10 +1,13 @@
 ---
-title: "Row"
-component: "Grid"
-description: "Documentation for row templates (custom row content), detail templates, and DataGrid row styles."
+layout: post
+title: Row in Angular Grid component | Syncfusion
+description: Learn here all about Row in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Row 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Row
+# Row in Angular Grid component
 
 It represents the record details that are fetched from the data source.
 
@@ -16,50 +19,19 @@ You can customize the appearance of the Row by using the [`rowDataBound`](../../
 The [`rowDataBound`](../../api/grid/#rowdatabound) event triggers for every row. In that event handler,
 you can get [`RowDataBoundEventArgs`](../../api/grid/rowDataBoundEventArgs) which contain details of the row.
 
-{% tab template="grid/custom-cell", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [enableHover]='false' [allowSelection]='false' [height]='315'
-               (rowDataBound)='rowDataBound($event)'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130 ></e-column>
-                    </e-columns>
-                </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-
-    rowDataBound(args: RowDataBoundEventArgs) {
-        const Freight = 'Freight';
-        if (args.data[Freight] < 30) {
-            args.row.classList.add('below-30');
-        } else if (args.data[Freight] < 80) {
-            args.row.classList.add('below-80');
-        } else {
-            args.row.classList.add('above-80');
-        }
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-cell-cs11/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs11/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-cell-cs11/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs11/app/app.component.ts" % }
 
 ### Using CSS customize alternate rows
 
@@ -73,40 +45,19 @@ You can change the grid's alternative rows' background color by overriding the *
 
 Please refer the following example.
 
-{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts", isDefaultActive=true %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=140></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign='Right' format='C' width=120></e-column>
-                    <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=140></e-column>
-                </e-columns>
-               </ejs-grid>`,
-    styles: [`
-        .e-grid .e-altrow {
-            background-color: #fafafa;
-        }
-    `]
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = data.slice(0, 8);
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grid-cs22/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grid-cs22/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grid-cs22/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs22/app/app.component.ts" % }
 
 ## See Also
 

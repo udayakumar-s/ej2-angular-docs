@@ -1,10 +1,13 @@
 ---
-title: "Observables"
-component: "Grid"
-description: "Learn how to bind the Observable using aync pipe methodology and perform CRUD operation."
+layout: post
+title: Observables in Angular Grid component | Syncfusion
+description: Learn here all about Observables in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Observables 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Observables
+# Observables in Angular Grid component
 
 An [`Observable`](https://angular.io/guide/observables) is used extensively by Angular since it provide significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
