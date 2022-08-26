@@ -1,46 +1,30 @@
 ---
-title: "Print"
-component: "Grid"
-description: "Learn how to print DataGrid content, set up pages for printing, perform external print, and print visible pages in the Essential JS 2 DataGrid control."
+layout: post
+title: Print in Angular Grid component | Syncfusion
+description: Learn here all about Print in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Print 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Print
+# Print in Angular Grid component
 
 To print the Grid, use the [`print`](../api/grid/#print) method from grid instance. The print option can be displayed on the
 [`toolbar`](../api/grid/#toolbar) by adding the **Print** toolbar item.
 
-{% tab template="grid/print", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [toolbar]='toolbarOptions' height='272px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.toolbarOptions = ['Print'];
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/print-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/print-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/print-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/print-cs2/app/app.component.ts" % }
 
 ## Page Setup
 
@@ -56,84 +40,37 @@ and margin options using the browser page setup dialog. Please refer to the foll
 
 To print the grid from an external button, invoke the [`Print`](../api/grid/#print) method.
 
-{% tab template="grid/paging-api", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template:
-    `<button ej-button id='print' (click)='print()'>Print</button>
-        <ejs-grid #grid='' [dataSource]='data' height='280px'>
-            <e-columns>
-                <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-            </e-columns>
-        </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    @ViewChild('grid') public gridObj: GridComponent;
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-
-    print() {
-        this.gridObj.print();
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/paging-api-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/paging-api-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/paging-api-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging-api-cs1/app/app.component.ts" % }
 
 ## Print visible Page
 
 By default, the grid prints all the pages. To print the current page alone, set the [`printMode`](../api/grid/#printmode) to **CurrentPage**.
 
-{% tab template="grid/print-api", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { ToolbarItems, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' printMode='CurrentPage' [allowPaging]='true'
-               [pageSettings]='pageOptions' [toolbar]='toolbarOptions'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    public pageOptions: PageSettingsModel;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.toolbarOptions = ['Print'];
-        this.pageOptions = { pageSize: 6 };
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/print-api-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/print-api-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/print-api-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/print-api-cs1/app/app.component.ts" % }
 
 ## Print the hierarchy grid
 
@@ -145,50 +82,19 @@ By default, the grid will be print the master and expanded child grids alone. yo
 | All      | Prints the master grid with all the child grids. |
 | None     | Prints the master grid alone. |
 
-{% tab template="grid/default", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data, employeeData } from './datasource';
-import { DetailRowService, GridModel, ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid' [toolbar]='["Print"]' hierarchyPrintMode='All'>
-                    <e-columns>
-                        <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
-                        <e-column field='FirstName' headerText='FirstName' width=150></e-column>
-                        <e-column field='LastName' headerText='Last Name' width=150></e-column>
-                        <e-column field='City' headerText='City' width=150></e-column>
-                    </e-columns>
-                </ejs-grid>
-                `,
-    providers: [DetailRowService, ToolbarService]
-})
-export class AppComponent implements OnInit {
-
-    public pData: object[];
-    public childGrid: GridModel = {
-        dataSource: data,
-        queryString: 'EmployeeID',
-        columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-            { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
-            { field: 'ShipCity', headerText: 'Ship City', width: 150 },
-            { field: 'ShipName', headerText: 'Ship Name', width: 150 }
-        ],
-    };
-    @ViewChild('grid') public grid: GridComponent;
-
-    ngOnInit(): void {
-        this.pData = employeeData;
-    }
-
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/default-cs13/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/default-cs13/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/default-cs13/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs13/app/app.component.ts" % }
 
 ## Print large number of columns
 
@@ -208,63 +114,19 @@ In the printComplete event, We have reversed the state back to the previous stat
 
 In the below example, we have **CustomerID** as a hidden column in the grid. While printing, we have changed **CustomerID** to visible column and **ShipCity** as hidden column.
 
-{% tab template="grid/print-api", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { ToolbarItems, PageSettingsModel, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
-
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' (toolbarClick)='toolbarClick()' (printComplete)='printComplete()'
-                [allowPaging]='true' [pageSettings]='pageOptions' [toolbar]='toolbarOptions'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' [visible]= 'false' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    public pageOptions: PageSettingsModel;
-    @ViewChild('grid') public grid: GridComponent;
-    toolbarClick() {
-        for (const columns of this.grid.columns) {
-            if ((columns as Column).field === 'CustomerID') {
-                (columns as Column).visible = true;
-            } else if ((columns as Column).field === 'ShipCity') {
-                (columns as Column).visible = false;
-            }
-        }
-    }
-
-    printComplete() {
-        for (const columns of this.grid.columns) {
-            if ((columns as Column).field === 'CustomerID') {
-                (columns as Column).visible = false;
-            } else if ((columns as Column).field === 'ShipCity') {
-                (columns as Column).visible = true;
-            }
-        }
-    }
-
-    ngOnInit(): void {
-        this.data = data;
-        this.toolbarOptions = ['Print'];
-        this.pageOptions = { pageSize: 6 };
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/print-api-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/print-api-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/print-api-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/print-api-cs2/app/app.component.ts" % }
 
 ## Limitations of Printing Large Data
 

@@ -1,4 +1,13 @@
-# Editing
+---
+layout: post
+title: Editing in Angular Grid component | Syncfusion
+description: Learn here all about Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Editing 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Editing in Angular Grid component
 
 ## Customizing the edited and added row element
 

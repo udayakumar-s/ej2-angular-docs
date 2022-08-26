@@ -1,4 +1,13 @@
-# Paging
+---
+layout: post
+title: Paging in Angular Grid component | Syncfusion
+description: Learn here all about Paging in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Paging 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Paging in Angular Grid component
 
 ## Customizing the Grid pager root element
 

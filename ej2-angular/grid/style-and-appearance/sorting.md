@@ -1,4 +1,13 @@
-# Sorting
+---
+layout: post
+title: Sorting in Angular Grid component | Syncfusion
+description: Learn here all about Sorting in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Sorting 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Sorting in Angular Grid component
 
 ## Customizing the Grid sorting icon
 

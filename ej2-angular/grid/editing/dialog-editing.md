@@ -1,44 +1,31 @@
-# Dialog
+---
+layout: post
+title: Dialog editing in Angular Grid component | Syncfusion
+description: Learn here all about Dialog editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Dialog editing 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Dialog editing in Angular Grid component
 
 In Dialog edit mode, when you start editing the currently selected row data will be shown on a dialog.
 You can change the cell values and save edited data to the data source.
 To enable Dialog edit, set the [`editSettings.mode`](../../api/grid/editSettings/#mode) as **Dialog**.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs7/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs7/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs7/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs7/app/app.component.ts" % }
 
 ## Customize edit dialog
 
@@ -50,64 +37,19 @@ Also the locale text for the **Save** and **Cancel** buttons has been changed by
 
 You can refer the Grid [`Default text`](../global-local/) list for more localization.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { L10n } from '@syncfusion/ej2-base';
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-L10n.load({
-    'en-US': {
-        grid: {
-            'SaveButton': 'Submit',
-            'CancelButton': 'Discard'
-        }
-    }
-});
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
-     (actionComplete)="actionComplete($event)" height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-
-    actionComplete(args) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            const dialog = args.dialog;
-            const CustomerID = 'CustomerID';
-            dialog.showCloseIcon = false;
-            dialog.height = 400;
-            // change the header of the dialog
-            dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + args.rowData['CustomerID'] : 'New Customer';
-        }
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs8/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs8/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs8/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs8/app/app.component.ts" % }
 
 ## Show or hide columns in dialog editing
 
@@ -119,67 +61,19 @@ In the [`actionComplete`](../../api/grid/#actioncomplete) event, based on **requ
 
 In the below example, we have rendered the grid columns **CustomerID** as hidden column and **ShipCountry** as visible column. In the edit mode, we have changed the **CustomerID** column to visible state and **ShipCountry** column to hidden state.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent, Column, SaveEventArgs, EditEventArgs } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)"
-     (actionComplete)="actionComplete($event)" height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' [visible]='false' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    @ViewChild('grid') grid: GridComponent;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-
-    actionBegin(args: EditEventArgs) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            for (const cols of this.grid.columns) {
-                if ((cols as Column).field === 'CustomerID') {
-                    (cols as Column).visible = true;
-                } else if ((cols as Column).field === 'ShipCountry') {
-                    (cols as Column).visible = false;
-                }
-            }
-        }
-    }
-
-    actionComplete(args: SaveEventArgs) {
-        if (args.requestType === 'save') {
-            for (const cols of this.grid.columns) {
-                if ((cols as Column).field === 'CustomerID') {
-                    (cols as Column).visible = false;
-                } else if ((cols as Column).field === 'ShipCountry') {
-                    (cols as Column).visible = true;
-                }
-            }
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs9/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs9/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs9/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs9/app/app.component.ts" % }
 
 ## Use wizard like dialog editing
 
@@ -187,81 +81,16 @@ Wizard helps you create intuitive step-by-step forms to fill. You can achieve th
 
 The following example demonstrate the wizard like editing in the grid with the unobtrusive Validation.
 
-{% tab template="grid/wizardtemplate", sourceFiles="app/app.component.ts,app/wizardtemplate.html,app/app.module.ts,app/main.ts" %}
-
-```typescript
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-import { data } from './datasource';
-import { DataUtil } from '@syncfusion/ej2-data';
-import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    templateUrl: `app/wizardtemplate.html`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public shipCountryDistinctData: object;
-    public next = 'Next';
-    public currentTab = 0;
-    public hidden = true;
-    @ViewChild('grid') grid: GridComponent;
-    @ViewChild('orderForm') orderForm: FormGroup;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete'];
-        this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true);
-    }
-
-    actionComplete(args: DialogEditEventArgs) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            args.form.ej2_instances[0].rules = {}; // Disable deafault valdation.
-            // Set initail Focus
-            if (args.requestType === 'beginEdit') {
-                (args.form.elements.namedItem('CustomerID') as HTMLInputElement).focus();
-            }
-            this.currentTab = 0;
-            this.hidden = true;
-            this.next = 'Next';
-        }
-    }
-
-    nextBtn(args) {
-        if (this.orderForm.valid) {
-            if (this.next !== 'SUBMIT') {
-                this.currentTab++;
-                this.nextpre(this.currentTab);
-            } else {
-                this.grid.endEdit();
-            }
-        }
-    }
-
-    previousBtn(args) {
-        if (this.orderForm.valid) {
-            this.currentTab--;
-            this.nextpre(this.currentTab);
-        }
-    }
-
-    nextpre(current) {
-        if (current) {
-            this.hidden = false;
-            this.next = 'SUBMIT';
-        } else {
-            this.hidden = true;
-            this.next = 'NEXT';
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/wizardtemplate-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/wizardtemplate-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/wizardtemplate-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/wizardtemplate-cs1/app/app.component.ts" % }

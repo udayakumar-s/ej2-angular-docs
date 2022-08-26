@@ -1,10 +1,13 @@
 ---
-title: "Getting started"
-component: "Pager"
-description: "Learn how to add and customize the pager in the Essential JS 2."
+layout: post
+title: Getting started with Angular Pager component | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## Pager component of Syncfusion Essential JS 2 and more details.
+control: Getting started 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Getting started
+# Getting started in Angular Pager component
 
 This section explains you the steps required to create a simple Pager
 and demonstrate the basic usage of the Pager component in Angular environment.
@@ -119,25 +122,19 @@ export class AppComponent implements OnInit {
 
 `pageSize` value defines the number of records to be displayed per page. The default value for the `pageSize` is 12.
 
-{% tab template="pager/pager", sourceFiles="app/**/*.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-pager [pageSize]= '1' [totalRecordsCount]='20'>
-                </ejs-pager>`
-})
-export class AppComponent implements OnInit{
-
-    ngOnInit(): void {
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pager/pager-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pager/pager-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pager/pager-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs1/app/app.component.ts" % }
 
 ## Page Count
 
@@ -145,25 +142,19 @@ export class AppComponent implements OnInit{
 The default value for `pageCount` is 10 and value will be updated based on [`totalRecordsCount`](../api/pager#totalrecordscount)
 and [`pageSize`](#page-size) values.
 
-{% tab template="pager/pager", sourceFiles="app/**/*.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-pager [pageSize]='1' [pageCount]='3' [totalRecordsCount]='20'>
-                </ejs-pager>`
-})
-export class AppComponent implements OnInit{
-
-    ngOnInit(): void {
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pager/pager-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pager/pager-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pager/pager-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs2/app/app.component.ts" % }
 
 ## Run the application
 
@@ -175,22 +166,16 @@ ng serve --open
 
 Output will be appears as follows.
 
-{% tab template="pager/pager", sourceFiles="app/**/*.ts", isDefaultActive=true %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-pager [pageSize]='8' [pageCount]='3' [totalRecordsCount]='20'>
-                </ejs-pager>`
-})
-export class AppComponent implements OnInit{
-
-    ngOnInit(): void {
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pager/pager-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pager/pager-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pager/pager-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs3/app/app.component.ts" % }

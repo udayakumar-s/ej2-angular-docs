@@ -1,35 +1,32 @@
-# Row Height
+---
+layout: post
+title: Row height in Angular Grid component | Syncfusion
+description: Learn here all about Row height in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Row height 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Row height in Angular Grid component
 
 You can customize the row height of grid rows through the [`rowHeight`](../../api/grid/#rowheight) property. The [`rowHeight`](../../api/grid/#rowheight) property
 is used to change the row height of entire grid rows.
 
 In the below example, the [`rowHeight`](../../api/grid/#rowheight) is set as '60px'.
 
-{% tab template="grid/custom-cell", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [enableHover]='false' [allowSelection]='false' [height]='315' [rowHeight]='60'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130 ></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-    public data: object[];
-    ngOnInit(): void {
-        this.data = data;
-    }
-}
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-cell-cs7/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs7/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-cell-cs7/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs7/app/app.component.ts" % }
 
 ## Customize row height for particular row
 
@@ -38,42 +35,18 @@ event by setting the [`rowHeight`](../../api/grid/#rowheight) in arguments for e
 
 In the below example, the row height for the row with OrderID as '10249' is set as '90px' using the [`rowDataBound`](../../api/grid/#rowdatabound) event.
 
-{% tab template="grid/custom-cell", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { Query, DataManager } from '@syncfusion/ej2-data';
-import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='315' (rowDataBound)='rowDataBound($event)'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130 ></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = new DataManager(data as JSON[]).executeLocal(new Query().take(8));
-    }
-
-    public rowDataBound(args: RowDataBoundEventArgs) {
-        const OrderID = 'OrderID';
-        if (args.data[OrderID] === 10249) {
-            args.rowHeight = 90;
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-cell-cs8/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs8/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-cell-cs8/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs8/app/app.component.ts" % }
 
 > In virtual scrolling mode, it is not applicable to set the [`rowHeight`](../../api/grid/#rowheight) using the [`rowDataBound`](../../api/grid/#rowdatabound) event.

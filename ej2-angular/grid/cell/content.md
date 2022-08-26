@@ -1,36 +1,27 @@
-# Displaying HTML content
+---
+layout: post
+title: Content in Angular Grid component | Syncfusion
+description: Learn here all about Content in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Content 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Content in Angular Grid component
 
 The HTML tags can be displayed in the Grid header and content by enabling the
 [`disableHtmlEncode`](../../api/grid/column/#disablehtmlencode) property.
 
-{% tab template="grid/custom-cell", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='315'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='<span> Order ID </span>'
-                         [disableHtmlEncode]='true' textAlign='Right' width=140></e-column>
-                        <e-column field='CustomerID' headerText='<span> Customer ID </span>' [disableHtmlEncode]='false'
-                         width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130 ></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-cell-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-cell-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs3/app/app.component.ts" % }

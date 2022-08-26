@@ -1,41 +1,29 @@
-# Responsive Columns
+---
+layout: post
+title: Responsive columns in Angular Grid component | Syncfusion
+description: Learn here all about Responsive columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Responsive columns 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Responsive columns in Angular Grid component
 
 You can toggle column visibility based on media queries which are defined
 at the [`hideAtMedia`](../../api/grid/column/#hideatmedia).
 The [`hideAtMedia`](../../api/grid/column/#hideatmedia) accepts valid
 [Media Queries]( http://cssmediaqueries.com/what-are-css-media-queries.html ). In the below sample, for **OrderID** column, [`hideAtMedia`](../../api/grid/column/#hideatmedia) property value is set as **(min-width: 700px)** so that **OrderID** column will gets hidden when the browser screen width is lessthan 700px.
 
-{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' height='315px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120 hideAtMedia='(min-width: 700px)'>
-                    </e-column> //  column visibility hide when browser screen width lessthan 700px;
-                    <e-column field='CustomerID' headerText='Customer ID' width=140 hideAtMedia='(max-width: 700px)'>
-                    </e-column> // column Visibility show when browser screen width  500px or less;
-                    <e-column field='Freight' headerText='Freight' textAlign='Right' format='C' width=120
-                    hideAtMedia='(min-width: 500px)'>
-                    </e-column> // column visibility hide when browser screen width lessthan 500px;
-                    <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=140>
-                    </e-column> // it always shown
-                </e-columns>
-               </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grid-cs21/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grid-cs21/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grid-cs21/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs21/app/app.component.ts" % }

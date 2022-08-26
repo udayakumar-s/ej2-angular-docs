@@ -1,10 +1,13 @@
 ---
-title: "How To"
-component: "Grid"
-description: "Learn how to refresh the datasource, exporting filtered data, enable and disable grid actions, customize the pager dropdown in Essential JS 2 DataGrid."
+layout: post
+title: How to in Angular Grid component | Syncfusion
+description: Learn here all about How to in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: How to 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# How To
+# How to in Angular Grid component
 
 ## Refresh the Datasource
 
@@ -33,54 +36,19 @@ Refresh the grid after the datasource change by using the [`refresh`](../../api/
 
 ```
 
-{% tab template="grid/change-headertext", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts"%}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { data } from './datasource';
-
-
-@Component({
-    selector: 'app-root',
-    template: `<button ej-button class='e-flat' (click)='add()'> Add </button>
-               <button ej-button class='e-flat' (click)='delete()'> Delete </button>
-                <ejs-grid #grid [dataSource]='data' [height]='280' >
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=120 ></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-    add(): void {
-        const rdata: object = { OrderID: 10247, CustomerID: 'ASDFG', Freight: 40.4, OrderDate: new Date(8367642e5) };
-        (this.grid.dataSource as object[]).unshift(rdata);
-        this.grid.refresh();
-    }
-    delete(): void {
-        const selectedRow: number = this.grid.getSelectedRowIndexes()[0];
-        if (this.grid.getSelectedRowIndexes().length) {
-            (this.grid.dataSource as object[]).splice(selectedRow, 1);
-        } else {
-            alert('No records selected for delete operation');
-        }
-        this.grid.refresh();
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/change-headertext-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/change-headertext-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/change-headertext-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/change-headertext-cs3/app/app.component.ts" % }
 
 ## Enable/Disable Grid and its actions
 
@@ -123,54 +91,19 @@ Add/Remove the CSS class to the Grid in the click event handler of Button.
 
 In the below demo, the button click will enable/disable the Grid and its actions.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<button ejs-button (click)="btnClick()"  cssClass="e-flat">Enable/Disable Grid</button>
-               <div id="GridParent">
-                    <ejs-grid #Grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
-                        <e-columns>
-                            <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                            <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                            <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                             editType= 'numericedit' width=120 format= 'C2'></e-column>
-                            <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                        </e-columns>
-                    </ejs-grid>
-               </div>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('Grid') public Grid: GridComponent;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowAdding: true, allowEditing: true, allowDeleting: true };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-    public btnClick(): void {
-        if (this.Grid.element.classList.contains('disablegrid')) {
-            this.Grid.element.classList.remove('disablegrid');
-            document.getElementById('GridParent').classList.remove('wrapper');
-        } else {
-            this.Grid.element.classList.add('disablegrid');
-            document.getElementById('GridParent').classList.add('wrapper');
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs35/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs35/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs35/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs35/app/app.component.ts" % }
 
 ## Print the expanded state from other pages
 
@@ -178,79 +111,19 @@ By default, the expanded child grids will be printed from the current page alone
 
 In the following example, we have printed expanded child grids form other pages.
 
-{% tab template="grid/default", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data, employeeData } from './datasource';
-import { DetailRowService, GridComponent, getPrintGridModel, Row, Column,
-     ToolbarService, printGridInit, GridModel, HierarchyGridPrintMode } from '@syncfusion/ej2-angular-grids';
-import { extend } from '@syncfusion/ej2-base';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='pData' [childGrid]='childGrid' [toolbar]='["Print"]'
-     hierarchyPrintMode='Expanded' allowPaging=true [pageSettings]="{pageSize: 4}" (actionBegin)="actionBegin($event)" >
-                    <e-columns>
-                        <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
-                        <e-column field='FirstName' headerText='FirstName' width=150></e-column>
-                        <e-column field='LastName' headerText='Last Name' width=150></e-column>
-                        <e-column field='City' headerText='City' width=150></e-column>
-                    </e-columns>
-                </ejs-grid>
-                `,
-    providers: [DetailRowService, ToolbarService]
-})
-export class AppComponent implements OnInit {
-
-    public pData: object[];
-    public expandedChildGrid: object = {};
-    public childGrid: GridModel = {
-        dataSource: data,
-        queryString: 'EmployeeID',
-        columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-            { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
-            { field: 'ShipCity', headerText: 'Ship City', width: 150 },
-            { field: 'ShipName', headerText: 'Ship Name', width: 150 }
-        ]
-    };
-    @ViewChild('grid') public grid: GridComponent;
-
-    ngOnInit(): void {
-        this.pData = employeeData;
-        this.grid.on(printGridInit, this.printInit, this);
-    }
-
-    actionBegin(args) {
-        if (args.requestType === 'paging') {
-            this.expandedChildGrid = extend({}, this.expandedChildGrid, this.getExpandedState(this.grid, 'Expanded', args.previousPage));
-        }
-    }
-
-    printInit(gridModel) {
-        gridModel.printgrid.expandedRows = extend({}, this.expandedChildGrid, gridModel.expandedRows);
-    }
-
-    getExpandedState(gObj: GridComponent, hierarchyPrintMode: HierarchyGridPrintMode, currentPage: number): object {
-        const obj: object = {};
-        const rows: Row<Column>[] = gObj.getRowsObject();
-        for (const row of rows) {
-            if (row.isExpand && !row.isDetailRow) {
-                const index: number = gObj.allowPaging ? row.index +
-                    (currentPage * gObj.pageSettings.pageSize) - gObj.pageSettings.pageSize : row.index;
-                obj[index] = {};
-                obj[index].isExpand = true;
-                obj[index].gridModel = getPrintGridModel(row.childGrid, hierarchyPrintMode);
-            }
-        }
-        return obj;
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/default-cs12/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/default-cs12/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/default-cs12/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs12/app/app.component.ts" % }
 
 ## Columns
 
@@ -280,44 +153,19 @@ this.grid.refreshHeader();
 
 ```
 
-{% tab template="grid/change-headertext", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts"%}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { data } from './datasource';
-
-
-@Component({
-    selector: 'app-root',
-    template: `<button ej-button class='e-flat' (click)='click()'>Change Header Text</button>
-                <ejs-grid #grid [dataSource]='data' [height]='280' >
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=120 ></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-    click(): void {
-        const column = this.grid.getColumnByField('ShipCity'); // get the JSON object of the column corresponding to the field name
-        column.headerText = 'Changed Text'; // assign a new header text to the column
-        this.grid.refreshHeader();
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/change-headertext-cs4/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/change-headertext-cs4/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/change-headertext-cs4/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/change-headertext-cs4/app/app.component.ts" % }
 
 ### Customize Column Styles
 
@@ -351,37 +199,19 @@ Create a css class with custom style to override the default style for rowcell a
 
 Add the custom css class to particular column by using [`customAttributes`](../../api/grid/column/#customattributes) property.
 
-{% tab template="grid/custom-column", sourceFiles="app/**/*.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [height]='315'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' [customAttributes]='customAttributes' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
-                        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit{
-
-    public data: object[];
-    public customAttributes: object;
-
-    ngOnInit(): void{
-        this.data = data;
-        this.customAttributes = {class: 'customcss'};
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-column-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-column-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-column-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs2/app/app.component.ts" % }
 
 ### Custom Tooltip for Columns
 
@@ -400,43 +230,19 @@ tooltip (args: QueryCellInfoEventArgs) {
 
 ```
 
-{% tab template="grid/custom-tooltip", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
-import { Tooltip } from '@syncfusion/ej2-popups';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='315' (queryCellInfo)='tooltip($event)' >
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
-                        <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-    tooltip(args: QueryCellInfoEventArgs) {
-        const tooltip: Tooltip = new Tooltip({
-            content: args.data[args.column.field].toString()
-        }, args.cell as HTMLTableCellElement);
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-tooltip-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-tooltip-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-tooltip-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-tooltip-cs2/app/app.component.ts" % }
 
 ### Render other components in a column
 
@@ -452,45 +258,19 @@ renders the custom component.
 
 ```
 
-{% tab template="grid/column-sync-comp", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='300'>
-                    <e-columns>
-                        <e-column headerText='Order Status'width='200'>
-                            <ng-template #template let-data>
-                                <div>
-                                    <ejs-dropdownlist value='Order Placed' [dataSource]='dropData' [popupHeight]='150' [popupWidth]='150' >
-                                    </ejs-dropdownlist>
-                                </div>
-                            </ng-template>
-                        </e-column>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
-                        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public dropData: string[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.dropData = ['Order Placed', 'Processing', 'Delivered'];
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/column-sync-comp-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/column-sync-comp-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/column-sync-comp-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/column-sync-comp-cs2/app/app.component.ts" % }
 
 ### Change the Orientation of Header Text
 
@@ -533,46 +313,19 @@ setHeaderHeight(args) {
 
 ```
 
-{% tab template="grid/header-orientation", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='240' (created)='setHeaderHeight($event)' >
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Center'
-                         format='C2' [customAttributes]='customAttributes' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=100 ></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public customAttributes: object;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.customAttributes = { class: 'orientationcss' };
-    }
-    setHeaderHeight(args) {
-        const textWidth = document.querySelector('.orientationcss > div').scrollWidth; // Obtain the width of the headerText content.
-        const headerCell: NodeList = document.querySelectorAll('.e-headercell');
-        for (let i = 0; i < headerCell.length; i++) {
-            // Assign the obtained textWidth as the height of the headerCell.
-            (headerCell.item(i) as HTMLElement).style.height = textWidth + 'px';
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/header-orientation-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/header-orientation-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/header-orientation-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/header-orientation-cs2/app/app.component.ts" % }
 
 ### Customize the icon for column menu
 
@@ -586,38 +339,19 @@ You can customize the column menu icon by overriding the default grid class **.e
 
 In the below sample, grid is rendered with a customized column menu icon.
 
-{% tab template="grid/custom-column-menu-icon", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { ColumnMenuService } from '@syncfusion/ej2-angular-grids';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='315' showColumnMenu='true' >
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' width=90></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' format='C2' width=90></e-column>
-                        <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
-                    </e-columns>
-                </ejs-grid>`,
-   providers: [ColumnMenuService]
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-column-menu-icon-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-column-menu-icon-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-column-menu-icon-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-menu-icon-cs2/app/app.component.ts" % }
 
 ## Editing
 
@@ -627,45 +361,19 @@ You can edit template column value by defining [`field`](../api/grid/column/#fie
 
 In the below demo, the **ShipCountry** column is rendered with the template.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                    editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150>
-                        <ng-template #template let-data>
-                            <a href="#">{{data.ShipCountry}}</a>
-                        </ng-template>
-                    </e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs36/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs36/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs36/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs36/app/app.component.ts" % }
 
 ### Customize the Edit Dialog
 
@@ -673,52 +381,19 @@ You can customize the appearance of the edit dialog in the [`actionComplete`](..
 
 In the below example, we have changed the dialog's header text for editing and adding records.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
-     (actionComplete)="actionComplete($event)" height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-
-    actionComplete(args) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            const dialog = args.dialog;
-            const CustomerID = 'CustomerID';
-            // change the header of the dialog
-            dialog.header = args.requestType === 'beginEdit' ? 'Record of ' + args.rowData[CustomerID] : 'New Customer';
-        }
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs37/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs37/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs37/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs37/app/app.component.ts" % }
 
 ### Show or Hide columns in Dialog editing
 
@@ -730,67 +405,19 @@ In the [`actionComplete`](../../api/grid/#actioncomplete) event, based on **requ
 
 In the below example, we have rendered the grid columns **CustomerID** as hidden column and **ShipCountry** as visible column. In the edit mode, we have changed the **CustomerID** column to visible state and **ShipCountry** column to hidden state.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent, Column, SaveEventArgs, EditEventArgs } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)"
-     (actionComplete)="actionComplete($event)" height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' [visible]='false' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    @ViewChild('grid') grid: GridComponent;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-
-    actionBegin(args: EditEventArgs) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            for (const cols of this.grid.columns) {
-                if ((cols as Column).field === 'CustomerID') {
-                    (cols as Column).visible = true;
-                } else if ((cols as Column).field === 'ShipCountry') {
-                    (cols as Column).visible = false;
-                }
-            }
-        }
-    }
-
-    actionComplete(args: SaveEventArgs) {
-        if (args.requestType === 'save') {
-            for (const cols of this.grid.columns) {
-                if ((cols as Column).field === 'CustomerID') {
-                    (cols as Column).visible = false;
-                } else if ((cols as Column).field === 'ShipCountry') {
-                    (cols as Column).visible = true;
-                }
-            }
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs38/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs38/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs38/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs38/app/app.component.ts" % }
 
 ### Cascading DropDownList with Grid editing
 
@@ -798,114 +425,19 @@ You can achieve the Cascading DropDownList with grid Editing by using the Cell E
 
 In the below demo, Cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { DropDownList } from '@syncfusion/ej2-dropdowns';
-import { Query, DataManager } from '@syncfusion/ej2-data';
-import { cascadeData } from './datasource';
-import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit'
-                     [edit]='countryParams' width=150></e-column>
-                    <e-column field='ShipState' headerText='Ship State' editType= 'dropdownedit' [edit]='stateParams' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public countryParams: IEditCell;
-    public stateParams: IEditCell;
-
-    public countryElem: HTMLElement;
-    public countryObj: DropDownList;
-
-    public stateElem: HTMLElement;
-    public stateObj: DropDownList;
-
-    public country: object[] = [
-        { countryName: 'United States', countryId: '1' },
-        { countryName: 'Australia', countryId: '2' }
-    ];
-    public state: object[] = [
-        { stateName: 'New York', countryId: '1', stateId: '101' },
-        { stateName: 'Virginia ', countryId: '1', stateId: '102' },
-        { stateName: 'Washington', countryId: '1', stateId: '103' },
-        { stateName: 'Queensland', countryId: '2', stateId: '104' },
-        { stateName: 'Tasmania ', countryId: '2', stateId: '105' },
-        { stateName: 'Victoria', countryId: '2', stateId: '106' }
-    ];
-
-    ngOnInit(): void {
-        this.data = cascadeData;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.countryParams = {
-            create: () => {
-                this.countryElem = document.createElement('input');
-                return this.countryElem;
-            },
-            read: () => {
-                return this.countryObj.text;
-            },
-            destroy: () => {
-                this.countryObj.destroy();
-            },
-            write: () => {
-                this.countryObj = new DropDownList({
-                    dataSource: new DataManager(this.country),
-                    fields: { value: 'countryId', text: 'countryName' },
-                    change: () => {
-                        this.stateObj.enabled = true;
-                        const tempQuery: Query = new Query().where('countryId', 'equal', this.countryObj.value);
-                        this.stateObj.query = tempQuery;
-                        this.stateObj.text = null;
-                        this.stateObj.dataBind();
-                    },
-                    placeholder: 'Select a country',
-                    floatLabelType: 'Never'
-                });
-                this.countryObj.appendTo(this.countryElem);
-            }
-        };
-        this.stateParams = {
-            create: () => {
-                this.stateElem = document.createElement('input');
-                return this.stateElem;
-            },
-            read: () => {
-                return this.stateObj.text;
-            },
-            destroy: () => {
-                this.stateObj.destroy();
-            },
-            write: () => {
-                this.stateObj = new DropDownList({
-                    dataSource: new DataManager(this.state),
-                    fields: { value: 'stateId', text: 'stateName' },
-                    enabled: false,
-                    placeholder: 'Select a state',
-                    floatLabelType: 'Never'
-                });
-                this.stateObj.appendTo(this.stateElem);
-            }
-        };
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs39/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs39/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs39/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs39/app/app.component.ts" % }
 
 ### Provide custom data source and enabling filtering to DropDownList
 
@@ -932,59 +464,19 @@ You can also enable filtering for the DropDownList by passing the [`allowFilteri
 
 In the below demo, DropDownList is rendered with custom Datasource for the **ShipCountry** column and enabled filtering to search DropDownList items.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { DropDownList } from '@syncfusion/ej2-dropdowns';
-import { Query, DataManager } from '@syncfusion/ej2-data';
-import { cascadeData } from './datasource';
-import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit'
-                     [edit]='countryParams' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public countryParams: IEditCell;
-
-    public country: object[] = [
-        { countryName: 'United States', countryId: '1' },
-        { countryName: 'Australia', countryId: '2' },
-        { countryName: 'India', countryId: '3' }
-    ];
-
-    ngOnInit(): void {
-        this.data = cascadeData;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.countryParams = {
-            params: {
-                allowFiltering: true,
-                dataSource: new DataManager(this.country),
-                fields: { text: 'countryName', value: 'countryName' },
-                query: new Query(),
-                actionComplete: () => false
-            }
-        };
-    }
-
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs40/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs40/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs40/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs40/app/app.component.ts" % }
 
 ### Use Wizard like Dialog Editing
 
@@ -992,84 +484,19 @@ Wizard helps you create intuitive step-by-step forms to fill. You can achieve th
 
 The following example demonstrate the wizard like editing in the grid with the unobtrusive Validation.
 
-{% tab template="grid/wizardtemplate", sourceFiles="app/app.component.ts,app/wizardtemplate.html,app/app.module.ts,app/main.ts" %}
-
-```typescript
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-import { data } from './datasource';
-import { DataUtil } from '@syncfusion/ej2-data';
-import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    templateUrl: `app/wizardtemplate.html`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public shipCountryDistinctData: object;
-    public next = 'Next';
-    public currentTab = 0;
-    public hidden = true;
-    @ViewChild('grid') grid: GridComponent;
-    @ViewChild('orderForm') orderForm: FormGroup;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete'];
-        this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true);
-    }
-
-    actionComplete(args: DialogEditEventArgs) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            args.form.ej2_instances[0].rules = {}; // Disable deafault valdation.
-            // Set initail Focus
-            if (args.requestType === 'beginEdit') {
-                (args.form.elements.namedItem('CustomerID') as HTMLInputElement).focus();
-            }
-            this.currentTab = 0;
-            this.hidden = true;
-            this.next = 'Next';
-        }
-    }
-
-    nextBtn(args) {
-        if (this.orderForm.valid) {
-            if (this.next !== 'SUBMIT') {
-                this.currentTab++;
-                this.nextpre(this.currentTab);
-            } else {
-                this.grid.endEdit();
-            }
-        }
-    }
-
-    previousBtn(args) {
-        if (this.orderForm.valid) {
-            this.currentTab--;
-            this.nextpre(this.currentTab);
-        }
-    }
-
-    nextpre(current) {
-        if (current) {
-            this.hidden = false;
-            this.next = 'SUBMIT';
-        } else {
-            this.hidden = true;
-            this.next = 'NEXT';
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/wizardtemplate-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/wizardtemplate-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/wizardtemplate-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/wizardtemplate-cs2/app/app.component.ts" % }
 
 ### Using Tab Inside the Dialog Editing
 
@@ -1143,79 +570,19 @@ To render the Tab component, use the [`editSettingsTemplate`](../../api/grid/edi
 
 The following example, we have rendered tab control inside the edit dialog. The tab control has two tabs and once you fill the first tab and navigate to second one. The validation for first tab was done before navigate to second.
 
-{% tab template="grid/tablikeedit", sourceFiles="app/app.component.ts,app/tablikeedit.html,app/app.module.ts,app/main.ts" %}
-
-```typescript
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-import { DataUtil } from '@syncfusion/ej2-data';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    templateUrl: `./app/tablikeedit.html`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public shipCountryDistinctData: object;
-    @ViewChild('grid')
-    grid: GridComponent;
-    @ViewChild('orderForm')
-    orderForm: FormGroup
-    @ViewChild('tab')
-    tabObj: any;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete'];
-        this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true );
-    }
-
-    actionComplete(args: DialogEditEventArgs) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            // Disable deafault valdation.
-            args.form.ej2_instances[0].rules = {};
-            // Set initail Focus
-            if (args.requestType === 'beginEdit') {
-                (args.form.elements.namedItem('CustomerID')as HTMLInputElement).focus();
-            }
-        }
-    }
-
-    nextBtn() {
-        this.moveNext();
-    }
-
-    selecting(e) {
-     if(e.isSwiped){
-       e.cancel = true;
-     }
-     if(e.selectingIndex === 1) {
-       e.cancel = !this.orderForm.valid;
-     }
-    }
-
-    moveNext() {
-        if (this.orderForm.valid)) {
-            this.tabObj.select(1);
-        }
-    }
-    submitBtn() {
-        if (this.orderForm.valid) {
-            this.grid.endEdit();
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/tablikeedit-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/tablikeedit-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/tablikeedit-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/tablikeedit-cs2/app/app.component.ts" % }
 
 ### Disable editing for a particular row/cell
 
@@ -1223,94 +590,35 @@ You can disable the editing for a particular row by using the [`actionBegin`](..
 
 In the below demo, the rows which are having the value for **ShipCountry** column as "France" is prevented from editing.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
-               (actionBegin)="actionBegin($event)" height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right' editType= 'numericedit'
-                     width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true };
-        this.toolbar = ['Edit', 'Update', 'Cancel'];
-    }
-
-    actionBegin(args) {
-        if (args.requestType === 'beginEdit') {
-            if (args.rowData.ShipCountry === 'France') {
-                args.cancel = true;
-            }
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs41/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs41/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs41/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs41/app/app.component.ts" % }
 
 For batch mode of editing, you can use [`cellEdit`](../../api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems, CellEditArgs } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (cellEdit)="cellEdit($event)" height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, mode: 'Batch' };
-        this.toolbar = ['Edit', 'Update', 'Cancel'];
-    }
-
-    cellEdit(args: CellEditArgs) {
-        if (args.value === 'France') {
-            args.cancel = true;
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs42/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs42/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs42/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs42/app/app.component.ts" % }
 
 ### Perform Grid actions by keyboard shortcut keys
 
@@ -1320,50 +628,19 @@ In addition, You can also perform grid actions with custom keyboard shortcuts. T
 
 The following example demonstrates on **Adding** a new row when Enter key is pressed in the grid.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { cascadeData } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid  #grid [dataSource]='data' (load)="load()" [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    @ViewChild('grid') Grid: GridComponent;
-    load() {
-        document.getElementsByClassName('e-grid')[0].addEventListener('keydown', this.keyDownHandler.bind(this));
-    }
-
-    keyDownHandler(e: any) {
-        if (e.keyCode === 13) {
-            this.Grid.addRecord();
-        }
-    }
-
-    ngOnInit(): void {
-        this.data = cascadeData;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs43/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs43/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs43/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs43/app/app.component.ts" % }
 
 ### Make a cell editable on a single click with batch editing
 
@@ -1371,51 +648,19 @@ You can make a cell editable on a single click with **batch** mode of editing in
 
 Bind the click event for the Grid and in the click event handler call the [`editCell`](../../api/grid/#editcell) method, based on the clicked target element.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #Grid [dataSource]='data' (click)='click($event)' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    @ViewChild('Grid') public grid: GridComponent;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Batch' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-
-    click(event: any) {
-        if ((event.target as any).classList.contains('e-rowcell')) {
-            const index: number = parseInt((event.target as any).getAttribute('Index'), 10);
-            const colindex: number = parseInt((event.target as any).getAttribute('aria-colindex'), 10);
-            const field: string = this.grid.getColumns()[colindex].field;
-            this.grid.editModule.editCell(index, field);
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs44/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs44/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs44/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs44/app/app.component.ts" % }
 
 ## Sort
 
@@ -1444,50 +689,19 @@ To perform multi-column sorting, you need to push the columns to be sorted into 
 
 In the below demo, click on the corresponding button to perform single-column or multi-column sorting.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<button ejs-button (click)="SingleSort()"  cssClass="e-flat">Sort <b>OrderID</b> column</button>
-               <button ejs-button (click)="MultiSort()"  cssClass="e-flat">Sort <b>CustomerID</b> and <b>ShipName</b> columns</button>
-               <div id="GridParent">
-                    <ejs-grid #Grid [dataSource]='data' allowSorting='true' [toolbar]='toolbar' height='273px'>
-                        <e-columns>
-                            <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                            <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                            <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                             editType= 'numericedit' width=120 format= 'C2'></e-column>
-                            <e-column field='ShipName' headerText='Ship Name' editType= 'dropdownedit' width=150></e-column>
-                        </e-columns>
-                    </ejs-grid>
-               </div>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('Grid') public grid: GridComponent;
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-    public SingleSort(): void {
-        this.grid.sortColumn('OrderID', 'Descending');
-    }
-    public MultiSort(): void {
-        this.grid.sortSettings.columns.push({ field: 'CustomerID', direction: 'Ascending' },
-            { field: 'ShipName', direction: 'Descending' });
-        this.grid.refresh();
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs45/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs45/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs45/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs45/app/app.component.ts" % }
 
 ### Dynamically clear sort for particular/entire sorted columns in Grid
 
@@ -1518,56 +732,19 @@ To clear sorting for all the sorted columns, use the [`clearSorting`](../../api/
 
 In the below demo, click on the corresponding button to clear sort for particular or entire sorted columns in Grid.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<button ejs-button (click)="SingleClearSort()"  cssClass="e-flat">Clear the sort for <b>OrderID</b> column</button>
-               <button ejs-button (click)="MultiClearSort()"  cssClass="e-flat">Clear sorting for entire sorted columns</button>
-               <div id="GridParent">
-                    <ejs-grid #Grid [dataSource]='data' [sortSettings]='sortOptions' allowSorting='true' [toolbar]='toolbar' height='273px'>
-                        <e-columns>
-                            <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                            <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                            <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                             editType= 'numericedit' width=120 format= 'C2'></e-column>
-                            <e-column field='ShipName' headerText='Ship Name' editType= 'dropdownedit' width=150></e-column>
-                        </e-columns>
-                    </ejs-grid>
-               </div>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('Grid') public grid: GridComponent;
-    public sortOptions: object;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.sortOptions = { columns: [{ field: 'OrderID', direction: 'Ascending' }, { field: 'CustomerID', direction: 'Descending' }] };
-    }
-    public SingleClearSort(): void {
-        const column: any = this.grid.sortSettings.columns;
-        for (let i = 0; i < column.length; i++) {
-            if (column[i].field === 'OrderID') {
-                column.splice(i, 1);
-                this.grid.refresh();
-            }
-        }
-    }
-    public MultiClearSort(): void {
-        this.grid.clearSorting();
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs46/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs46/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs46/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs46/app/app.component.ts" % }
 
 ## Foreign Key
 
@@ -1579,71 +756,19 @@ The following example demonstrates the way of using edit template in foreign col
 
 In the following example, The **Employee Name** is a foreign key column and while editing, AutoComplete component is rendered instead of DropDownList.
 
-{% tab template="grid/foreignkey", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-
-import { Component, OnInit } from '@angular/core';
-import { createElement } from '@syncfusion/ej2-base';
-import { ForeignKeyService, EditService, IEditCell, EditSettingsModel, ToolbarService, Column } from '@syncfusion/ej2-angular-grids';
-import { DataManager, Query } from '@syncfusion/ej2-data';
-import { AutoComplete } from '@syncfusion/ej2-angular-dropdowns';
-import { data, employeeData } from './datasource';
-
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='270' [editSettings]='editoption' [toolbar]='toolbar'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' textAlign='Right' width=100></e-column>
-                        <e-column field='EmployeeID' headerText='Employee Name' width=120
-                        foreignKeyValue='FirstName' [dataSource]='employeeData' [edit]='edit'></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130></e-column>
-                    </e-columns>
-                </ejs-grid>`,
-    providers: [ForeignKeyService, EditService, ToolbarService]
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public employeeData: object[];
-    public editoption: EditSettingsModel = { allowEditing: true };
-    public autoComplete: AutoComplete;
-    toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    public edit: IEditCell = {
-        create: () => { // to create input element
-            return createElement('input');
-        },
-        read: () => { // return edited value to update data source
-            const EmployeeID = 'EmployeeID';
-            const value = new DataManager(employeeData).executeLocal(new Query().where('FirstName', 'equal', this.autoComplete.value));
-            return value.length && value[0][EmployeeID]; // to convert foreign key value to local value.
-        },
-        destroy: () => { // to destroy the custom component.
-            this.autoComplete.destroy();
-        },
-        write: (args: { rowData: object, column: Column, foreignKeyData: object,
-             element: HTMLTableCellElement }) => { // to show the value for date picker
-            this.autoComplete = new AutoComplete({
-                dataSource: employeeData,
-                fields: { value: args.column.foreignKeyValue },
-                value: args.foreignKeyData[0][args.column.foreignKeyValue]
-            });
-            this.autoComplete.appendTo(args.element);
-        }
-    }
-
-    ngOnInit(): void {
-        this.data = data;
-        this.employeeData = employeeData;
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/foreignkey-cs6/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/foreignkey-cs6/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/foreignkey-cs6/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs6/app/app.component.ts" % }
 
 ### Customizing filter menu operators list
 
@@ -1656,47 +781,19 @@ You can customize the default filter operator list by defining the
 * **booleanOperator** - defines customized boolean operator list.
 
 In the following sample, we have customized string filter operators.
-{% tab template="grid/filtering1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=100></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public filterOptions: FilterSettingsModel;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.filterOptions = {
-           type: 'Menu',
-           operators: {
-               stringOperator: [
-                   { value: 'startsWith', text: 'starts with' },
-                   { value: 'endsWith', text: 'ends with' },
-                   { value: 'contains', text: 'contains' }
-                ],
-            }
-        };
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/filtering1-cs11/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/filtering1-cs11/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/filtering1-cs11/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs11/app/app.component.ts" % }
 
 ### Customize filter UI in foreign key column
 
@@ -1705,71 +802,19 @@ The following example demonstrates the way to create a custom filtering UI in th
 
 In the following example, The **Employee Name** is a foreign key column. DropDownList is rendered using Filter UI.
 
-{% tab template="grid/foreignkey", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { createElement } from '@syncfusion/ej2-base';
-import { GridComponent, ForeignKeyService, FilterService, IFilter, FilterSettingsModel, Filter } from '@syncfusion/ej2-angular-grids';
-import { DataManager } from '@syncfusion/ej2-data';
-import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
-import { data, fEmployeeData } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='315' [allowFiltering]='true'
-        [filterSettings]='filteroption'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                        <e-column field='EmployeeID' headerText='Employee Name' width=120
-                        foreignKeyValue='FirstName' [dataSource]='employeeData' [filter]='filter'></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130  ></e-column>
-                    </e-columns>
-                </ejs-grid>`,
-    providers: [ForeignKeyService, FilterService]
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-    public employeeData: object[];
-    public dropInstance: DropDownList;
-    public filteroption: FilterSettingsModel = { type: 'Menu'};
-    public filter: IFilter = {
-        ui: {
-            create: (args: { target: Element, column: object }) => {
-                const flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
-                args.target.appendChild(flValInput);
-                this.dropInstance = new DropDownList({
-                    dataSource: new DataManager(fEmployeeData),
-                    fields: { text: 'FirstName', value: 'EmployeeID' },
-                    placeholder: 'Select a value',
-                    popupHeight: '200px'
-                });
-                this.dropInstance.appendTo(flValInput);
-            },
-            write: (args: {
-                column: object, target: Element, parent: any,
-                filteredValue: number | string
-            }) => {
-                this.dropInstance.text = args.filteredValue as string || '';
-            },
-            read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {
-                args.fltrObj.filterByColumn(args.column.field, args.operator, this.dropInstance.text);
-            }
-        }
-    };
-    ngOnInit(): void {
-        this.data = data;
-        this.employeeData = fEmployeeData;
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/foreignkey-cs7/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/foreignkey-cs7/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/foreignkey-cs7/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs7/app/app.component.ts" % }
 
 ### Use filter bar template in foreign key column
 
@@ -1780,67 +825,19 @@ The following example demonstrates the way to use filter bar template in foreign
 In the following example, The **Employee Name** is a foreign key column.
 This column header shows the custom filter bar template and you can select filter value by using the **DropDown** options.
 
-{% tab template="grid/foreignkey", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { createElement } from '@syncfusion/ej2-base';
-import { GridComponent, ForeignKeyService, FilterService, IFilterUI, Column } from '@syncfusion/ej2-angular-grids';
-import { DataManager } from '@syncfusion/ej2-data';
-import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
-import { data, fEmployeeData } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='260' [allowFiltering]='true'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                        <e-column field='EmployeeID' headerText='Employee Name' width=120
-                        foreignKeyValue='FirstName' [dataSource]='employeeData' [filterBarTemplate]='filter'></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130  ></e-column>
-                    </e-columns>
-                </ejs-grid>`,
-    providers: [ForeignKeyService, FilterService]
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-    public employeeData: object[];
-    public filter: IFilterUI = {
-        create: (args: { element: Element, column: Column }) => {
-            return createElement('input', { className: 'flm-input' });
-        },
-        write: (args: { element: Element, column: Column }) => {
-            fEmployeeData.splice(0, 0, {FirstName: 'All'}); // for clear filtering
-            const dropInstance: DropDownList = new DropDownList({
-                dataSource: new DataManager(fEmployeeData),
-                fields: { text: 'FirstName' },
-                placeholder: 'Select a value',
-                popupHeight: '200px',
-                index: 0,
-                change: (e) => {
-                    if (e.value !== 'All') {
-                        this.grid.filterByColumn('EmployeeID', 'equal', e.value);
-                    } else {
-                        this.grid.removeFilteredColsByField('EmployeeID');
-                    }
-                }
-            });
-            dropInstance.appendTo(args.element as HTMLTableCellElement);
-        }
-    };
-    ngOnInit(): void {
-        this.data = data;
-        this.employeeData = fEmployeeData;
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/foreignkey-cs8/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/foreignkey-cs8/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/foreignkey-cs8/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs8/app/app.component.ts" % }
 
 ### Perform aggregation in Foreign Key Column
 
@@ -1850,104 +847,37 @@ The following example demonstrates the way to achieve aggregation in foreign key
 
 In the following example, The **Employee Name** is a foreign key column and the aggregation for the foreign column was calculated in customAggregateFn.
 
-{% tab template="grid/foreignkey", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ForeignKeyService, AggregateService, getForeignData, CustomSummaryType,
-     AggregateColumnModel, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { data, employeeData } from './datasource';
-import { getValue } from '@syncfusion/ej2-base';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='280'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                        <e-column field='EmployeeID' headerText='Employee Name' width=120
-                         foreignKeyValue='FirstName' [dataSource]='employeeData'></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130  ></e-column>
-                    </e-columns>
-                    <e-aggregates>
-                        <e-aggregate>
-                            <e-columns>
-                                <e-column field="EmployeeID" type="Custom" [customAggregate]= 'customAggregateFn'>
-                                    <ng-template #footerTemplate let-data>
-                                        Count of Margaret:  {{data.Custom}}
-                                    </ng-template>
-                                </e-column>
-                            </e-columns>
-                        </e-aggregate>
-                    </e-aggregates>
-                </ejs-grid>`,
-    providers: [ForeignKeyService, AggregateService]
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-    public employeeData: object[];
-
-    // Custom Aggregate function for foreign column
-    public customAggregateFn: CustomSummaryType = (data1: any, column: AggregateColumnModel) => {
-        return data1.result.filter((dObj: object) => {
-            return getValue('FirstName', getForeignData(this.grid.getColumnByField(column.field), dObj)[0]) === 'Margaret';
-        }).length;
-    }
-
-    ngOnInit(): void {
-        this.data = data;
-        this.employeeData = employeeData;
-    }
-}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/foreignkey-cs9/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/foreignkey-cs9/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/foreignkey-cs9/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
   
-```
-
-{% endtab %}
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs9/app/app.component.ts" % }
 
 ### Bind foreign key dataSource on dropdown edit
 
 When editing, you can bind foreign key datasource to a dropdown list by using [`column.dataSource`](../../api/grid/column/#datasource) property.
 
-{% tab template="grid/foreignkey", sourceFiles="app/**/*.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { ForeignKeyService, EditSettingsModel, ToolbarItems, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids';
-import { data, employeeData } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' [height]='315'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                        <e-column field='EmployeeID' headerText='Employee Name' width=120
-                        foreignKeyValue='FirstName' [dataSource]='employeeData'></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130  ></e-column>
-                    </e-columns>
-                </ejs-grid>`,
-    providers: [ForeignKeyService, EditService, ToolbarService]
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public employeeData: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.employeeData = employeeData;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/foreignkey-cs10/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/foreignkey-cs10/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/foreignkey-cs10/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs10/app/app.component.ts" % }
 
 > * By default, the foreign key column's **editType** will be set as **dropdownedit**.
 
@@ -1958,82 +888,19 @@ export class AppComponent implements OnInit {
 Cordova application does not support direct file download. So we have to use the Blob stream to export the Grid.
 You can use corresponding exporting methods and exportComplete events to get the Blob stream.
 
-{% tab template="grid/exporting", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import {
-    GridComponent, ToolbarItems, ToolbarService, ExcelExportService, PdfExportService,
-    ExcelExportCompleteArgs, PdfExportCompleteArgs
-} from '@syncfusion/ej2-angular-grids';
-import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowExcelExport]='true'
-    (excelExportComplete)='excelExpComplete($event)' (pdfExportComplete)='pdfExpComplete($event)'
-      [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`,
-    providers: [ToolbarService, ExcelExportService, PdfExportService]
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('grid') public grid: GridComponent;
-    public exportBlob = (blob: Blob) => {
-        const a: HTMLAnchorElement = document.createElement('a');
-        document.body.appendChild(a);
-        a.style.display = 'none';
-        const url: string = (window.URL as any).createobjectURL(blob);
-        a.href = url;
-        a.download = 'Export';
-        a.click();
-        (window.URL as any).revokeobjectURL(url);
-        document.body.removeChild(a);
-    }
-
-    ngOnInit(): void {
-        this.data = data;
-        this.toolbarOptions = ['PdfExport', 'ExcelExport'];
-    }
-
-    toolbarClick(args: ClickEventArgs) {
-        if (args.item.id === 'Grid_pdfexport') {
-            this.grid.pdfExport(null, null, null, true);
-        }
-        if (args.item.id === 'Grid_excelexport') {
-            this.grid.excelExport(null, null, null, true);
-        }
-    }
-
-    excelExpComplete(args: ExcelExportCompleteArgs) {
-        // This event will be triggered when excel exporting.
-        args.promise.then((e: { blobData: Blob }) => {
-            // In this `then` function, we can get blob data through the arguments after promise resolved.
-            this.exportBlob(e.blobData);
-        });
-    }
-
-    pdfExpComplete(args: PdfExportCompleteArgs) {
-        // This event will be triggered when pdf exporting.
-        args.promise.then((e: { blobData: Blob }) => {
-            // In this `then` function, we can get blob data through the arguments after promise resolved.
-            this.exportBlob(e.blobData);
-        });
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/exporting-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/exporting-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/exporting-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs3/app/app.component.ts" % }
 
 ### Exporting Filtered Data Only
 
@@ -2041,66 +908,19 @@ You can export the filtered data by defining the resulted data in [`exportProper
 
 In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in [`exportProperties.dataSource`](../api/grid/excelExportProperties/#datasource) and pass it to [`pdfExport`](../api/grid/#pdfexport) method.
 
-{% tab template="grid/exporting-filtered-data", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { GridComponent, ToolbarItems, ToolbarService, PdfExportService,
- PageService, FilterService } from '@syncfusion/ej2-angular-grids';
-import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-import {DataManager} from '@syncfusion/ej2-data';
-
-@Component({
-  selector: 'app-root',
-  template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions'
-   [allowFiltering]='true' [allowPaging]='true' [pageSettings]='initialPage' [allowPdfExport]='true'
-   (toolbarClick)='toolbarClick($event)'>
-              <e-columns>
-                  <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                  <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                  <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-              </e-columns>
-              </ejs-grid>`,
-  providers: [ToolbarService, PdfExportService, PageService, FilterService]
-})
-export class AppComponent implements OnInit {
-
-  public data: object[];
-  public toolbarOptions: ToolbarItems[];
-  public initialPage: object;
-  @ViewChild('grid')
-  public grid: GridComponent;
-  ngOnInit(): void {
-    this.data = data;
-    this.toolbarOptions = ['PdfExport'];
-    this.initialPage = { pageCount: 5, pageSize: 5 };
-  }
-
-  toolbarClick(args: ClickEventArgs) {
-    if (args.item.id === 'Grid_pdfexport') {
-      let pdfdata;
-      const query = this.grid.renderModule.data.generateQuery(); // get grid corresponding query
-      for (let i = 0; i < query.queries.length; i++) {
-        if (query.queries[i].fn === 'onPage') {
-          query.queries.splice(i, 1);       // remove page query to get all records
-          break;
-        }
-      }
-      const fdata = new DataManager({ json: data }).executeQuery(query).then((e: any) => {
-        pdfdata = e.result as object[];  // get all filtered records
-        const exportProperties = {
-          dataSource: pdfdata,
-        };
-        this.grid.pdfExport(exportProperties);
-      }).catch((e) => true);
-    }
-  }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/exporting-filtered-data-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/exporting-filtered-data-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/exporting-filtered-data-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-filtered-data-cs2/app/app.component.ts" % }
 
 ## Pager
 
@@ -2108,37 +928,19 @@ export class AppComponent implements OnInit {
 
 To customize default values of pager dropdown, you need to define [`pageSizes`](../../api/grid/pageSettingsModel/#pagesizes) as array of strings.
 
-{% tab template="grid/custom-column", sourceFiles="app/**/*.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' allowPaging='true' [pageSettings]='initialPage'>
-                    <e-columns>
-                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
-                        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public initialPage: object;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.initialPage = { pageSizes: ['5', '10', 'All'], };
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-column-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-column-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-column-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs3/app/app.component.ts" % }
 
 ## Hide the expand/collapse icon in parent row when no records in child grid
 
@@ -2182,66 +984,16 @@ Add the CSS class to the Grid in the [`rowDataBound`](../../api/grid/#rowdatabou
 
 In the below demo, the expand/collapse icon in the row with **EmployeeID** as **1** is hidden as it does not have record in child Grid.
 
-{% tab template="grid/template", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { employeeData } from './datasource';
-import { GridComponent, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
-import { DataManager, Query, DataResult } from '@syncfusion/ej2-data';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #Grid [dataSource]='data' [childGrid]='childGrid' (rowDataBound)="rowDataBound($event)">
-                    <e-columns>
-                        <e-column field='EmployeeID' headerText='EmployeeID' width='120' ></e-column>
-                        <e-column field='FirstName' headerText='First Name'  width='150' ></e-column>
-                        <e-column field='Title' headerText='Title' width='120' textAlign='Right'></e-column>
-                        <e-column field='City' headerText='City' width='120' textAlign='Right'></e-column>
-                        <e-column field='Country' headerText='Country' width='120' textAlign='Right'></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('Grid') public Grid: GridComponent;
-    public childGrid: object;
-    public dataManger: object[] = [{Order: 100, ShipName: 'Berlin', EmployeeID: 2},
-                                 {Order: 101, ShipName: 'Capte', EmployeeID: 3},
-                                 {Order: 102, ShipName: 'Marlon', EmployeeID: 4},
-                                 {Order: 103, ShipName: 'Black pearl', EmployeeID: 5},
-                                 {Order: 104, ShipName: 'Pearl', EmployeeID: 6},
-                                 {Order: 105, ShipName: 'Noth bay', EmployeeID: 7},
-                                 {Order: 106, ShipName: 'baratna', EmployeeID: 8},
-                                 {Order: 107, ShipName: 'Charge', EmployeeID: 9}];
-
-    ngOnInit(): void {
-      this.data = employeeData;
-      this.childGrid = {
-          dataSource: new DataManager(this.dataManger),
-          queryString: 'EmployeeID',
-          allowPaging: true,
-          columns: [
-              { field: 'Order', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-              { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', width: 120 },
-              { field: 'ShipName', headerText: 'Ship Name', width: 150 }
-          ]
-      };
-    }
-    public rowDataBound(args: RowDataBoundEventArgs) {
-        const EmployeeID = 'EmployeeID';
-        const filter: string = args.data[EmployeeID];
-        const childrecord: any = new DataManager(this.Grid.childGrid.dataSource as JSON[]).
-        executeLocal(new Query().where('EmployeeID', 'equal', parseInt(filter, 10), true));
-        if (childrecord.length === 0) {
-            // here hide which parent row has no child records
-            args.row.querySelector('td').innerHTML = ' ';
-            args.row.querySelector('td').className = 'e-customizedExpandcell';
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/template-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/template-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/template-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/template-cs3/app/app.component.ts" % }

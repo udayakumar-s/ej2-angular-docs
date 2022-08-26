@@ -1,10 +1,13 @@
 ---
-title: "Customize the Edit Dialog"
-component: "Grid"
-description: "Learn how to Customize the Edit Dialog."
+layout: post
+title: Customize the edit dialog in Angular Grid component | Syncfusion
+description: Learn here all about Customize the edit dialog in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Customize the edit dialog 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Customize the Edit Dialog
+# Customize the edit dialog in Angular Grid component
 
 You can customize the appearance of the edit dialog in the [`actionComplete`](../../api/grid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
 
@@ -14,61 +17,16 @@ Also the locale text for the **Save** and **Cancel** buttons has been changed by
 
 You can refer the Grid [`Default text`](../global-local/) list for more localization.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { L10n } from '@syncfusion/ej2-base';
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-L10n.load({
-    'en-US': {
-        grid: {
-            'SaveButton': 'Submit',
-            'CancelButton': 'Discard'
-        }
-    }
-});
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
-     (actionComplete)="actionComplete($event)" height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-
-    actionComplete(args) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            const dialog = args.dialog;
-            const CustomerID = 'CustomerID';
-            dialog.showCloseIcon = false;
-            dialog.height = 400;
-            // change the header of the dialog
-            dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + args.rowData['CustomerID'] : 'New Customer';
-        }
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs47/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs47/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs47/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs47/app/app.component.ts" % }

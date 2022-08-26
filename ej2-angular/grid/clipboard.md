@@ -1,10 +1,13 @@
 ---
-title: "Clipboard"
-component: "Grid"
-description: "Learn how to use the copy to clipboard functionality in the Essential JS 2 DataGrid Control."
+layout: post
+title: Clipboard in Angular Grid component | Syncfusion
+description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Clipboard 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Clipboard
+# Clipboard in Angular Grid component
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 
@@ -15,132 +18,56 @@ Interaction keys |Description
 <kbd>Ctrl + C</kbd> |Copy selected rows or cells data into clipboard.
 <kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with header into clipboard.
 
-{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' height='272px' [selectionSettings]='selectionOptions'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.selectionOptions = { type: 'Multiple'};
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grid-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grid-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grid-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs1/app/app.component.ts" % }
 
 ## Copy to clipboard by external buttons
 
 To copy selected rows or cells data into clipboard with help of external buttons, you need to invoke the [`copy`](../api/grid/clipboard/#copy)
 method.
 
-{% tab template="grid/grid", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { SelectionSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template:
-    `<button ej-button id='copy' (click)='copy()'>Copy</button>
-     <button ej-button id='copyHeader' (click)='copyHeader()'>CopyHeader</button>
-        <ejs-grid #grid='' [dataSource]='data' height='280px' [selectionSettings]='selectionOptions'>
-            <e-columns>
-                <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-            </e-columns>
-        </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
-    @ViewChild('grid') public gridObj: GridComponent;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.selectionOptions = { type: 'Multiple'};
-    }
-
-    copy() {
-        this.gridObj.copy();
-    }
-
-    copyHeader() {
-        this.gridObj.copy(true);
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grid-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grid-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grid-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs2/app/app.component.ts" % }
 
 ## AutoFill
 
 AutoFill Feature allows you to copy the data of selected cells and paste it to another cells by just dragging the autofill icon of the selected cells up to required cells. This feature is enabled by defining [`enableAutoFill`](../api/grid/#enableautofill) property as true.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { SelectionSettingsModel, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' height='272px' [enableAutoFill]='true' [editSettings]='editSettings'
-     [toolbar]='toolbar' [selectionSettings]='selectionOptions'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right'
-                     isPrimaryKey='true' visible='false' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Name' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.selectionOptions = { type: 'Multiple', mode: 'Cell', cellSelectionMode: 'Box' };
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
-            this.toolbar = ['Add', 'Update', 'Cancel'];
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs1/app/app.component.ts" % }
 
 > * If [`enableAutoFill`](../api/grid/#enableautofill)  is set to true, then the autofill icon will be displayed on cell selection to copy cells.
 > * It requires the selection **mode** to be **Cell**,  **cellSelectionMode** to be **Box** and also Batch Editing should be enabled.
@@ -154,45 +81,19 @@ export class AppComponent implements OnInit {
 
 You can able to copy the content of a cell or a group of cells by selecting the cells and pressing <kbd>Ctrl + C</kbd> shortcut key and paste it to another set of cells by selecting the cells and pressing <kbd>Ctrl + V</kbd> shortcut key.
 
-{% tab template="grid/edit", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { SelectionSettingsModel, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' height='272px' [editSettings]='editSettings' [toolbar]='toolbar'
-               [selectionSettings]='selectionOptions'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right'
-                     isPrimaryKey='true' visible='false' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Name' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-
-    ngOnInit(): void {
-        this.data = data;
-        this.selectionOptions = { type: 'Multiple', mode: 'Cell', cellSelectionMode: 'Box' };
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
-            this.toolbar = ['Add', 'Update', 'Cancel'];
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs2/app/app.component.ts" % }
 
 > To perform paste functionality, it requires the selection **mode** to be **Cell**,  **cellSelectionMode** to be **Box** and also Batch Editing should be enabled.
 

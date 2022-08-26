@@ -1,39 +1,26 @@
 ---
-title: "Complex Data Binding with list of Array Of Objects"
-component: "Grid"
-description: "Learn how to set Complex data for datasource having Array Of Objects."
+layout: post
+title: List of array of objects in Angular Grid component | Syncfusion
+description: Learn here all about List of array of objects in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: List of array of objects 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Complex Data Binding with list of Array Of Objects
+# List of array of objects in Angular Grid component
 
 The following example shows how to set Complex field for datasource having Array Of Objects.
 
-{% tab template="grid/complex-data", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { complexData } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [height]='315'>
-                    <e-columns>
-                        <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
-                        <e-column field='Names.0.FirstName' headerText='First Name' width=120></e-column>
-                        <e-column field='Names.0.LastName' headerText='Last Name' width=120></e-column>
-                        <e-column field='Title' headerText='Title' width=150></e-column>
-                    </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = complexData.slice(0, 5);
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/complex-data-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/complex-data-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/complex-data-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/complex-data-cs1/app/app.component.ts" % }

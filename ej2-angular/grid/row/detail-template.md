@@ -1,91 +1,29 @@
-# Detail Template
+---
+layout: post
+title: Detail template in Angular Grid component | Syncfusion
+description: Learn here all about Detail template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Detail template 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Detail template in Angular Grid component
 
 The detail template provides additional information about a particular row by expanding or collapsing detail content. The [detailTemplate](../../api/grid/#detailtemplate) property accepts the template for the detail row.
 
-{% tab template="grid/custom-cell", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { employeeData } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' height='315' width='auto'>
-        <e-columns>
-            <e-column field="FirstName" headerText='First Name' width='140'></e-column>
-            <e-column field="LastName" headerText='Last Name' width='140'></e-column>
-            <e-column field="Title" headerText='Title' width='150'></e-column>
-            <e-column field="Country" headerText='Country' width='150'></e-column>
-        </e-columns>
-        <ng-template #detailTemplate let-data>
-                    <table class="detailtable" width="100%">
-                        <colgroup>
-                            <col width="35%">
-                            <col width="35%">
-                            <col width="40%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <td class="photo" rowSpan="4" style="text-align : center">
-                                    <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}" />
-                                </td>
-                                <td>
-                                    <span style="font-weight: 500">First Name:</span>
-                                    {{data.FirstName}}
-                                </td>
-                                <td>
-                                     <span style="font-weight: 500"> Postal Code:</span>
-                                     {{data.PostalCode}}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span style="font-weight: 500">Last Name:</span>
-                                    {{data.LastName}}
-                                </td>
-                                <td>
-                                     <span style="font-weight: 500"> City:</span>
-                                     {{data.City}}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span style="font-weight: 500">Title:</span>
-                                    {{data.Title}}
-                                </td>
-                                <td>
-                                     <span style="font-weight: 500"> Phone:</span>
-                                     {{data.Phone}}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span style="font-weight: 500">City:</span>
-                                    {{data.City}}
-                                </td>
-                                <td>
-                                     <span style="font-weight: 500"> Country:</span>
-                                     {{data.Country}}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-        </ng-template>
-    </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = employeeData;
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-cell-cs4/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs4/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-cell-cs4/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs4/app/app.component.ts" % }
 
 ## Rendering custom component
 
@@ -94,151 +32,34 @@ component in the [detailDataBound](../../api/grid/#detaildatabound-emittypedetai
 
 For example, to render grid inside the detail row, place an HTML div element as the [detailTemplate](../../api/grid/#detailtemplate) and render the DIV element as grid component in the [detailDataBound](../../api/grid/#detaildatabound-emittypedetaildataboundeventargs) event.
 
-{% tab template="grid/custom-cell", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { employeeData, data } from './datasource';
-import { DetailDataBoundEventArgs, Grid } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' height='315' width='auto' (detailDataBound)='detailDataBound($event)'>
-        <e-columns>
-            <e-column field='FirstName' headerText='First Name' width='140'></e-column>
-            <e-column field='LastName' headerText='Last Name' width='140'></e-column>
-            <e-column field='Title' headerText='Title' width='150'></e-column>
-            <e-column field='Country' headerText='Country' width='150'></e-column>
-        </e-columns>
-        <ng-template #detailTemplate let-data>
-            <div class = 'custom-grid' ></div>
-        </ng-template>
-    </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = employeeData.slice(2, 5);
-    }
-    detailDataBound(e: DetailDataBoundEventArgs) {
-        let detail = new Grid({
-            dataSource: data.filter((item: Object) => item['EmployeeID'] === e.data['EmployeeID']).slice(0, 3),
-            columns: [
-                { field: 'OrderID', headerText: 'Order ID', width: 110 },
-                { field: 'CustomerID', headerText: 'Customer Name', width: 140 },
-                { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
-            ]
-        });
-        detail.appendTo(e.detailElement.querySelector('.custom-grid'));
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-cell-cs5/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs5/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-cell-cs5/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs5/app/app.component.ts" % }
 
 ## Expand by external button
 
 By default, detail rows render in collapsed state. You can expand a detail row by invoking the [expand](../../api/grid/detailRow/#expand) method using the external button.
 
-{% tab template="grid/custom-cell", sourceFiles="app/**/*.ts"%}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { employeeData } from './datasource';
-import { Internationalization } from '@syncfusion/ej2-base';
-
-@Component({
-    selector: 'app-root',
-    template: `<div class="e-float-input" style="width: 200px; display: inline-block;">
-                   <input type="text" class="rowindex" value="0" />
-                   <span class="e-float-line"></span>
-                   <label class="e-float-text">Row Index</label>
-                </div>
-    <button ejs-button (click)="btnClick()">Expand</button>
-    <ejs-grid #grid [dataSource]='data' height='315' width='auto'>
-        <e-columns>
-            <e-column field="FirstName" headerText='First Name' width='140'></e-column>
-            <e-column field="LastName" headerText='Last Name' width='140'></e-column>
-            <e-column field="Title" headerText='Title' width='150'></e-column>
-            <e-column field="Country" headerText='Country' width='150'></e-column>
-        </e-columns>
-        <ng-template #detailTemplate let-data>
-                    <table class="CardTable" cellpadding="3" cellspacing="2">
-                        <colgroup>
-                            <col width="35%">
-                            <col width="35%">
-                            <col width="40%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <td class="rowphoto" rowSpan="4" style="text-align : center">
-                                    <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}" />
-                                </td>
-                                <td>
-                                    <span style="font-weight: 500">First Name:</span>
-                                    {{data.FirstName}}
-                                </td>
-                                <td>
-                                     <span style="font-weight: 500"> Postal Code:</span>
-                                     {{data.PostalCode}}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span style="font-weight: 500">Last Name:</span>
-                                    {{data.LastName}}
-                                </td>
-                                <td>
-                                     <span style="font-weight: 500"> City:</span>
-                                     {{data.City}}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span style="font-weight: 500">Title:</span>
-                                    {{data.Title}}
-                                </td>
-                                <td>
-                                     <span style="font-weight: 500"> Phone:</span>
-                                     {{data.Phone}}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span style="font-weight: 500">City:</span>
-                                    {{data.City}}
-                                </td>
-                                <td>
-                                     <span style="font-weight: 500"> Country:</span>
-                                     {{data.Country}}
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-        </ng-template>
-    </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    @ViewChild('grid')
-    public grid: GridComponent;
-
-    ngOnInit(): void {
-        this.data = employeeData;
-    }
-    public btnClick(): void {
-        let inputElem: HTMLInputElement = (document.getElementsByClassName('rowindex')[0] as HTMLInputElement);
-        let rowIndex: number = parseInt(inputElem.value, 10);
-        this.grid.detailRowModule.expand(rowIndex);
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-cell-cs6/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs6/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-cell-cs6/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs6/app/app.component.ts" % }

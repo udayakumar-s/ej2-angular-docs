@@ -1,10 +1,13 @@
 ---
-title: "Grouping"
-component: "Grid"
-description: "Learn how to group rows, apply initial groups, customize caption templates, and group by format in the Essential JS 2 DataGrid control."
+layout: post
+title: Grouping in Angular Grid component | Syncfusion
+description: Learn here all about Grouping in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+control: Grouping 
+publishingplatform: ##Platform_Name##
+documentation: ug
 ---
 
-# Grouping
+# Grouping in Angular Grid component
 
 The Grid has options to group records by dragging and dropping the column header to the group drop area. When grouping is applied,
 grid records are organized into a hierarchical structure to facilitate easier expansion and collapse of records.
@@ -14,35 +17,19 @@ Grouping options can be configured in [`groupSettings`](../../api/grid/groupSett
 
 To use Grouping, you need to inject **GroupService** in the provider section of **AppModule**.
 
-{% tab template="grid/grouping1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' height='267px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grouping1-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grouping1-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grouping1-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs2/app/app.component.ts" % }
 
 > * You can group and ungroup columns by using the [`groupColumn`](../../api/grid/group/#groupcolumn) and
 [`ungroupColumn`](../../api/grid/group/#ungroupcolumn) methods.
@@ -53,74 +40,38 @@ export class AppComponent implements OnInit {
 
 To apply group at initial rendering, set the column field name in the `groupSettings.columns`.
 
-{% tab template="grid/grouping1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='267px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public groupOptions: GroupSettingsModel;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.groupOptions = { columns: ['CustomerID', 'ShipCity'] };
-    }
-}
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grouping1-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grouping1-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grouping1-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs3/app/app.component.ts" % }
 
 ## Hide drop area
 
 To avoid ungrouping or further grouping of a column after initial column
 grouping, define the [`groupSettings.showDropArea`](../../api/grid/groupSettings#showdroparea) as false.
 
-{% tab template="grid/grouping1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='315px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public groupOptions: GroupSettingsModel;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.groupOptions = { showDropArea: false, columns: ['CustomerID', 'ShipCity'] };
-    }
-}
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grouping1-cs4/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grouping1-cs4/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grouping1-cs4/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs4/app/app.component.ts" % }
 
 ## Group with paging
 
@@ -139,37 +90,19 @@ or datetime column based on the mentioned format, you have to enable the
 [`enableGroupByFormat`](../../api/grid/column/#enablegroupbyformat) property of the corresponding
 grid columns.
 
-{% tab template="grid/grouping1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='315px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='OrderDate' headerText='Order Date' format='yMMM' [enableGroupByFormat]='true' width=150></e-column>
-                    <e-column field='Freight' headerText='Freight' format='C2' [enableGroupByFormat]='true' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: Object[];
-    public groupOptions: GroupSettingsModel;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.groupOptions = { showDropArea: false, columns: ['OrderDate', 'Freight'] };
-    }
-}
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grouping1-cs5/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grouping1-cs5/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grouping1-cs5/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs5/app/app.component.ts" % }
 
 ## Grouping Events
 
@@ -179,43 +112,19 @@ triggers before the group action starts and the
 [`actionComplete`](../../api/grid/#actioncomplete)
 event triggers after the group action is completed. Using these events you can perform any action.
 
-{% tab template="grid/grouping1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { ActionEventArgs, GridComponent, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupSettings'
-     (actionComplete)='actionHandler($event)' (actionBegin)='actionHandler($event)' height='260px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public groupSettings: GroupSettingsModel;
-    @ViewChild('grid') public grid: GridComponent;
-    ngOnInit(): void {
-        this.data = data;
-    }
-
-    actionHandler(args: ActionEventArgs) {
-        alert(args.requestType + ' ' + args.type); // custom Action
-    }
-}
-
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grouping1-cs6/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grouping1-cs6/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grouping1-cs6/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs6/app/app.component.ts" % }
 
 > [`args.requestType`](../../api/grid/sortEventArgs/#requesttype) is current action name.
 For example in grouping, the [`args.requestType`](../../api/grid/sortEventArgs/#requesttype) value is 'grouping'.
@@ -224,52 +133,19 @@ For example in grouping, the [`args.requestType`](../../api/grid/sortEventArgs/#
 
 To collapse the selected grouped row from an external button by using the [`expandCollapse`](../../api/grid/group/#expandcollapserows) method.
 
-{% tab template="grid/grouping1", sourceFiles="app/app.component.ts,app/app.module.ts,app/main.ts" %}
-
-```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<button ej-button id='collapse' cssClass='e-flat' (click)='collapse()'>Collapse</button>
-            <ejs-grid #grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupSettings' height='240px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: object[];
-    public groupSettings: GroupSettingsModel;
-    @ViewChild('grid')
-    public grid: GridComponent;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.groupSettings = { columns: ['CustomerID'] };
-    }
-
-    collapse() {
-        if (this.grid.getSelectedRowIndexes().length) {
-            let currentTr: Element = this.grid.getRows()[this.grid.getSelectedRowIndexes()[0]];
-            while (currentTr.classList && currentTr.classList.length) {
-                currentTr = currentTr.previousSibling as Element;
-            }
-            const collapseElement = currentTr.querySelector('.e-recordplusexpand');
-            this.grid.groupModule.expandCollapseRows(collapseElement); // pass the collapse row element.
-        }
-    }
-}
-
-```
-
-{% endtab %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grouping1-cs7/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grouping1-cs7/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grouping1-cs7/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs7/app/app.component.ts" % }
 
 ## See Also
 
