@@ -2,6 +2,7 @@
 layout: post
 title: Customize the edit dialog in Angular Grid component | Syncfusion
 description: Learn here all about Customize the edit dialog in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Customize the edit dialog 
 publishingplatform: ##Platform_Name##
 documentation: ug

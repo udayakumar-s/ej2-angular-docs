@@ -2,6 +2,7 @@
 layout: post
 title: Command column editing in Angular Grid component | Syncfusion
 description: Learn here all about Command column editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Command column editing 
 publishingplatform: ##Platform_Name##
 documentation: ug

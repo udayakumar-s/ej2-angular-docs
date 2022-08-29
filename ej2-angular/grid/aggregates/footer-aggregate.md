@@ -2,6 +2,7 @@
 layout: post
 title: Footer aggregate in Angular Grid component | Syncfusion
 description: Learn here all about Footer aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Footer aggregate 
 publishingplatform: ##Platform_Name##
 documentation: ug

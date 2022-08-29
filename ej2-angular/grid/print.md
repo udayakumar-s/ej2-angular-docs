@@ -2,6 +2,7 @@
 layout: post
 title: Print in Angular Grid component | Syncfusion
 description: Learn here all about Print in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Print 
 publishingplatform: ##Platform_Name##
 documentation: ug

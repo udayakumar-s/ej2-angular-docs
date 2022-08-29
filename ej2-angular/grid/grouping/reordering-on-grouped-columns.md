@@ -2,6 +2,7 @@
 layout: post
 title: Reordering on grouped columns in Angular Grid component | Syncfusion
 description: Learn here all about Reordering on grouped columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Reordering on grouped columns 
 publishingplatform: ##Platform_Name##
 documentation: ug

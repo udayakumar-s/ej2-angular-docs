@@ -2,6 +2,7 @@
 layout: post
 title: Column resizing in Angular Grid component | Syncfusion
 description: Learn here all about Column resizing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Column resizing 
 publishingplatform: ##Platform_Name##
 documentation: ug

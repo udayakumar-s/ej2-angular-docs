@@ -2,6 +2,7 @@
 layout: post
 title: Hide the expand collapse icon in parent row in Angular Grid component | Syncfusion
 description: Learn here all about Hide the expand collapse icon in parent row in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Hide the expand collapse icon in parent row 
 publishingplatform: ##Platform_Name##
 documentation: ug

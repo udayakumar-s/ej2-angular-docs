@@ -2,6 +2,7 @@
 layout: post
 title: Complex data binding in Angular Grid component | Syncfusion
 description: Learn here all about Complex data binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Complex data binding 
 publishingplatform: ##Platform_Name##
 documentation: ug

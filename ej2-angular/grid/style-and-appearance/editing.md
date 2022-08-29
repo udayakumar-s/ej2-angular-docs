@@ -2,6 +2,7 @@
 layout: post
 title: Editing in Angular Grid component | Syncfusion
 description: Learn here all about Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Editing 
 publishingplatform: ##Platform_Name##
 documentation: ug

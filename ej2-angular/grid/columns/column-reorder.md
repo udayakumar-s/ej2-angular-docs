@@ -2,6 +2,7 @@
 layout: post
 title: Column reorder in Angular Grid component | Syncfusion
 description: Learn here all about Column reorder in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Column reorder 
 publishingplatform: ##Platform_Name##
 documentation: ug

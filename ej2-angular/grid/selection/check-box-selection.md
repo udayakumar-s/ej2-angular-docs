@@ -2,6 +2,7 @@
 layout: post
 title: Check box selection in Angular Grid component | Syncfusion
 description: Learn here all about Check box selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Check box selection 
 publishingplatform: ##Platform_Name##
 documentation: ug

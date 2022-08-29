@@ -2,6 +2,7 @@
 layout: post
 title: Exporting grid in server in Angular Grid component | Syncfusion
 description: Learn here all about Exporting grid in server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Exporting grid in server 
 publishingplatform: ##Platform_Name##
 documentation: ug

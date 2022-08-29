@@ -2,6 +2,7 @@
 layout: post
 title: Column chooser in Angular Grid component | Syncfusion
 description: Learn here all about Column chooser in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Column chooser 
 publishingplatform: ##Platform_Name##
 documentation: ug

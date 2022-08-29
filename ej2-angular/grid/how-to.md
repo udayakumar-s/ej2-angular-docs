@@ -2,6 +2,7 @@
 layout: post
 title: How to in Angular Grid component | Syncfusion
 description: Learn here all about How to in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: How to 
 publishingplatform: ##Platform_Name##
 documentation: ug

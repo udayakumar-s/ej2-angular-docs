@@ -2,6 +2,7 @@
 layout: post
 title: Context menu in Angular Grid component | Syncfusion
 description: Learn here all about Context menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Context menu 
 publishingplatform: ##Platform_Name##
 documentation: ug
