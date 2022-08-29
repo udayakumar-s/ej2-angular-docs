@@ -2,6 +2,7 @@
 layout: post
 title: Summary in Angular Pager component | Syncfusion
 description: Learn here all about Summary in Syncfusion ##Platform_Name## Pager component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Summary 
 publishingplatform: ##Platform_Name##
 documentation: ug

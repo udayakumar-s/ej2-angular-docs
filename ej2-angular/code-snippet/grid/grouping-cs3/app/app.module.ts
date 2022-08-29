@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
-import { PageService, SortService, FilterService, GroupService, ToolbarService, ExcelExportService } from '@syncfusion/ej2-angular-grids';
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
 
 /**
@@ -11,16 +10,13 @@ import { AppComponent } from './app.component';
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule,
-        DropDownListModule
+        GridModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
     providers: [PageService,
                 SortService,
                 FilterService,
-                GroupService,
-                ToolbarService,
-                ExcelExportService]
+                GroupService]
 })
 export class AppModule { }

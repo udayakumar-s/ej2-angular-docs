@@ -2,6 +2,7 @@
 layout: post
 title: List of array of objects in Angular Grid component | Syncfusion
 description: Learn here all about List of array of objects in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: List of array of objects 
 publishingplatform: ##Platform_Name##
 documentation: ug

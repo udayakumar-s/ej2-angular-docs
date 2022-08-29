@@ -2,6 +2,7 @@
 layout: post
 title: Enable editing in single click in Angular Grid component | Syncfusion
 description: Learn here all about Enable editing in single click in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Enable editing in single click 
 publishingplatform: ##Platform_Name##
 documentation: ug

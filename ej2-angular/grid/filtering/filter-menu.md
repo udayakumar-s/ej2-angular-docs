@@ -2,6 +2,7 @@
 layout: post
 title: Filter menu in Angular Grid component | Syncfusion
 description: Learn here all about Filter menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Filter menu 
 publishingplatform: ##Platform_Name##
 documentation: ug

@@ -2,6 +2,7 @@
 layout: post
 title: Perform grid actions by keyboard short cut keys in Angular Grid component | Syncfusion
 description: Learn here all about Perform grid actions by keyboard short cut keys in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Perform grid actions by keyboard short cut keys 
 publishingplatform: ##Platform_Name##
 documentation: ug

@@ -2,6 +2,7 @@
 layout: post
 title: Scrolling in Angular Grid component | Syncfusion
 description: Learn here all about Scrolling in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Scrolling 
 publishingplatform: ##Platform_Name##
 documentation: ug

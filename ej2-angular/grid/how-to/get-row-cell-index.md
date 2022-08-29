@@ -2,6 +2,7 @@
 layout: post
 title: Get row cell index in Angular Grid component | Syncfusion
 description: Learn here all about Get row cell index in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Get row cell index 
 publishingplatform: ##Platform_Name##
 documentation: ug

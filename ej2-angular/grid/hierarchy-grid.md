@@ -2,6 +2,7 @@
 layout: post
 title: Hierarchy grid in Angular Grid component | Syncfusion
 description: Learn here all about Hierarchy grid in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Hierarchy grid 
 publishingplatform: ##Platform_Name##
 documentation: ug

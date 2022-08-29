@@ -2,6 +2,7 @@
 layout: post
 title: Frozen in Angular Grid component | Syncfusion
 description: Learn here all about Frozen in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Frozen 
 publishingplatform: ##Platform_Name##
 documentation: ug

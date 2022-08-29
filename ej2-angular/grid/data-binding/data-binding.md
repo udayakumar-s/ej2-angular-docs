@@ -2,6 +2,7 @@
 layout: post
 title: Data binding in Angular Grid component | Syncfusion
 description: Learn here all about Data binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Data binding 
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -144,4 +145,4 @@ export class AppComponent implements OnInit {
 ## See Also
 
 * [Binding a firebase data source to Grid using AngularFire2](https://www.syncfusion.com/blogs/post/binding-a-firebase-data-source-to-grid-using-angularfire2.aspx)
-* [How to bind SQL Server data in Angular DataGrid using SqlClient data provider](https://www.syncfusion.com/kb/13243/how-to-bind-sql-server-data-in-angular-datagrid-using-sqlclient-data-provider)
+* [How to bind SQL Server data in Angular DataGrid using SqlClient data provider](https://www.syncfusion.com/kb/11453/how-to-bind-sql-server-data-in-angular-datagrid-using-sqlclient-data-provider)

@@ -2,6 +2,7 @@
 layout: post
 title: Batch editing in Angular Grid component | Syncfusion
 description: Learn here all about Batch editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Batch editing 
 publishingplatform: ##Platform_Name##
 documentation: ug

@@ -2,6 +2,7 @@
 layout: post
 title: Global local in Angular Grid component | Syncfusion
 description: Learn here all about Global local in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Global local 
 publishingplatform: ##Platform_Name##
 documentation: ug

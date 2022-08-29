@@ -2,6 +2,7 @@
 layout: post
 title: Local data in Angular Grid component | Syncfusion
 description: Learn here all about Local data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Local data 
 publishingplatform: ##Platform_Name##
 documentation: ug

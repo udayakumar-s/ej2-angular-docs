@@ -2,6 +2,7 @@
 layout: post
 title: Pdf cell style customization in Angular Grid component | Syncfusion
 description: Learn here all about Pdf cell style customization in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Pdf cell style customization 
 publishingplatform: ##Platform_Name##
 documentation: ug

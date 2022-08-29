@@ -2,6 +2,7 @@
 layout: post
 title: Column menu in Angular Grid component | Syncfusion
 description: Learn here all about Column menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Column menu 
 publishingplatform: ##Platform_Name##
 documentation: ug

@@ -33,9 +33,7 @@ System.config({
         "@syncfusion/ej2-excel-export": "syncfusion:ej2-excel-export/dist/ej2-excel-export.umd.min.js",
         "@syncfusion/ej2-pdf-export": "syncfusion:ej2-pdf-export/dist/ej2-pdf-export.umd.min.js",
         "@syncfusion/ej2-file-utils": "syncfusion:ej2-file-utils/dist/ej2-file-utils.umd.min.js",
-        "@syncfusion/ej2-compression": "syncfusion:ej2-compression/dist/ej2-compression.umd.min.js", 
-        "@syncfusion/ej2-angular-dropdowns": "syncfusion:ej2-angular-dropdowns/dist/ej2-angular-dropdowns.umd.min.js",
-        "@syncfusion/ej2-angular-inputs": "syncfusion:ej2-angular-inputs/dist/ej2-angular-inputs.umd.min.js", 
+        "@syncfusion/ej2-compression": "syncfusion:ej2-compression/dist/ej2-compression.umd.min.js",  
 
         '@angular/core': 'angular:core@5.2.0/bundles/core.umd.js',
         '@angular/common': 'angular:common@5.2.0/bundles/common.umd.js',

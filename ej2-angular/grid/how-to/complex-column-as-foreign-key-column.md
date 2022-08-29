@@ -2,6 +2,7 @@
 layout: post
 title: Complex column as foreign key column in Angular Grid component | Syncfusion
 description: Learn here all about Complex column as foreign key column in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Complex column as foreign key column 
 publishingplatform: ##Platform_Name##
 documentation: ug

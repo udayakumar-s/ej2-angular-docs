@@ -2,6 +2,7 @@
 layout: post
 title: Hide sorting in excel filter in Angular Grid component | Syncfusion
 description: Learn here all about Hide sorting in excel filter in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Hide sorting in excel filter 
 publishingplatform: ##Platform_Name##
 documentation: ug

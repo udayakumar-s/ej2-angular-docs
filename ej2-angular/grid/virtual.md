@@ -2,6 +2,7 @@
 layout: post
 title: Virtual in Angular Grid component | Syncfusion
 description: Learn here all about Virtual in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
 control: Virtual 
 publishingplatform: ##Platform_Name##
 documentation: ug
