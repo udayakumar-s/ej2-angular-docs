@@ -14,7 +14,7 @@ The Grid user interface (UI) was redesigned to provide an optimal viewing experi
 
 ## Render adaptive dialogs
 
-When we enable the [`enableAdaptiveUI`](../api/grid/#enableadaptiveui) property, the grid will render the filter, sort, and edit dialogs in full screen for a better user experience. This behavior is demonstrated in the below demo.
+When we enable the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableadaptiveui) property, the grid will render the filter, sort, and edit dialogs in full screen for a better user experience. This behavior is demonstrated in the below demo.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,11 +28,11 @@ When we enable the [`enableAdaptiveUI`](../api/grid/#enableadaptiveui) property,
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/adaptive-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/adaptive-cs1" %}
 
 ## Vertical row rendering
 
-The grid will render the row elements in vertical order while setting the [`rowRenderingMode`](../api/grid/rowRenderingMode/) property value as **Vertical**.
+The grid will render the row elements in vertical order while setting the [`rowRenderingMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/rowRenderingMode/) property value as **Vertical**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,9 +46,9 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/adaptive-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/adaptive-cs2" %}
 
-> * [`enableAdaptiveUI`](../api/grid/#enableadaptiveui) property must be enabled for vertical row rendering.
+> * [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableadaptiveui) property must be enabled for vertical row rendering.
 
 ### Supported features by vertical row rendering
 

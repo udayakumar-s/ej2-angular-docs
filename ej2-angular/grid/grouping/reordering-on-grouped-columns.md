@@ -12,7 +12,7 @@ documentation: ug
 
 Grid provides an option to interchange the position of the Grouped Columns by dragging and dropping the grouped headercells in the droparea. So, any new column entering into the droparea can also be dropped in any position.
 
-To enable this feature, you have to set the [`groupSettings.allowReordering`](../../api/grid/groupSettings/#allowReordering) property as **true**.
+To enable this feature, you have to set the [`groupSettings.allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#allowReordering) property as **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,4 +26,4 @@ To enable this feature, you have to set the [`groupSettings.allowReordering`](..
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping-anim-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping-anim-cs1" %}

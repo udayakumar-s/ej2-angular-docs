@@ -10,7 +10,7 @@ documentation: ug
 
 # Row template in Angular Grid component
 
-The Grid provides a way to use a custom layout for its rows using template feature. The [rowTemplate](../../api/grid/#rowtemplate) property accepts the template for the row.
+The Grid provides a way to use a custom layout for its rows using template feature. The [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property accepts the template for the row.
 
 In the following example, Employee Information with Employee Photo is presented in the first column and employee details like Name, Address, etc., are presented in the second column.
 
@@ -26,11 +26,11 @@ In the following example, Employee Information with Employee Photo is presented 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs9/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs9" %}
 
 ## Row template with formatting
 
-If the [rowTemplate](../../api/grid/#rowtemplate) is used, the value cannot be formatted inside the template using the [columns.format](../../api/grid/column/#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
+If the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) is used, the value cannot be formatted inside the template using the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ If the [rowTemplate](../../api/grid/#rowtemplate) is used, the value cannot be f
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs10/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs10" %}
 
 ## Limitations
 

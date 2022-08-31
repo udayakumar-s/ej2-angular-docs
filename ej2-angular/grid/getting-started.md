@@ -106,7 +106,7 @@ export class AppComponent implements OnInit {
 
 ## Defining Row Data
 
-Bind data for the Grid component by using [`dataSource`](../api/grid/#datasource) property.
+Bind data for the Grid component by using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
 It accepts either array of JavaScript object or [`DataManager`](./data-binding) instance.
 
 ```typescript
@@ -132,10 +132,10 @@ export class AppComponent implements OnInit {
 The Grid has an option to define columns as directives. In these column directives, we have properties to customize columns.
 Let’s check the properties used here:
 
-* We have added [`field`](../api/grid/column/#field) to map with a property name an array of JavaScript objects.
-* We have added [`headerText`](../api/grid/column/#headertext) to change the title of columns.
-* We have used [`textAlign`](../api/grid/column/#textalign) to change the alignment of columns.
-By default, columns will be left aligned. To change columns to right align, we need to define [`textAlign`](../api/grid/column/#textalign) as **Right**.
+* We have added [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) to map with a property name an array of JavaScript objects.
+* We have added [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) to change the title of columns.
+* We have used [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) to change the alignment of columns.
+By default, columns will be left aligned. To change columns to right align, we need to define [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) as **Right**.
 * Also, we have used another useful property, [`format`](./columns#format).
 Using this, we can format number and date values to standard or custom formats.
 Here, we have defined it for the conversion of numeric values to currency.
@@ -152,7 +152,7 @@ Here, we have defined it for the conversion of numeric values to currency.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging-cs1" %}
 
 ## Module Injection
 
@@ -170,10 +170,10 @@ These modules should be injected into the **providers** section of root **NgModu
 ## Enable Paging
 
 The paging feature enables users to view the Grid record in a paged view.
-It can be enabled by setting [`allowPaging`](../api/grid/#allowpaging) property to true.
+It can be enabled by setting [`allowPaging`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowpaging) property to true.
 Also, need to inject the **PageService** module in the provider section as follows.
 If we didn't inject the **PageService** module, then the pager will not be rendered in Grid.
-The pager can be customized using [`pageSettings`](../api/grid/#pagesettings) property.
+The pager can be customized using [`pageSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pagesettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,15 +187,15 @@ The pager can be customized using [`pageSettings`](../api/grid/#pagesettings) pr
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging-cs2" %}
 
 ## Enable Sorting
 
 The sorting feature enables the user to order the records.
-It can be enabled by setting [`allowSorting`](../api/grid/#allowsorting) property as true.
+It can be enabled by setting [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property as true.
 Also, need to inject the **SortService** module in the provider section as follow.
 If we didn't inject the **SortService** module, then user not able to sort when click on headers.
-Sorting feature can be customized using [`sortSettings`](../api/grid/#sortsettings) property.
+Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,15 +209,15 @@ Sorting feature can be customized using [`sortSettings`](../api/grid/#sortsettin
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/sorting-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/sorting-cs1" %}
 
 ## Enable Filtering
 
 The filtering feature enables the user to view the reduced amount of records based on filter criteria.
-It can be enabled by setting [`allowFiltering`](../api/grid/#allowfiltering) property as true.
+It can be enabled by setting [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property as true.
 Also, need to inject the **FilterService** module in the provider section as follow.
 If we didn't inject the **FilterService** module, then filter bar will not be rendered in Grid.
-Filtering feature can be customized using [`filterSettings`](../api/grid/#filtersettings) property.
+Filtering feature can be customized using [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#filtersettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -231,15 +231,15 @@ Filtering feature can be customized using [`filterSettings`](../api/grid/#filter
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering-cs1" %}
 
 ## Enable Grouping
 
 The grouping feature enables users to view the Grid record in a grouped view.
-It can be enabled by setting [`allowGrouping`](../api/grid/#allowgrouping) property to true.
+It can be enabled by setting [`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to true.
 Also, need to inject the **GroupService** module in the provider section as follow.
 If we didn't inject the **GroupService** module, then the group drop area will not be rendered in Grid.
-Grouping feature can be customized using [`groupSettings`](../api/grid/#groupsettings) property.
+Grouping feature can be customized using [`groupSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#groupsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -253,7 +253,7 @@ Grouping feature can be customized using [`groupSettings`](../api/grid/#groupset
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping-cs2" %}
 
 ## Run the application
 
@@ -277,7 +277,7 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping-cs3" %}
 
 ## See Also
 

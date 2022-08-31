@@ -10,13 +10,13 @@ documentation: ug
 
 # Foreign key column in Angular Grid component
 
-Foreign key column can be enabled by using [`column.dataSource`](../../api/grid/column/#datasource),
-[`column.foreignKeyField`](../../api/grid/column/#foreignkeyfield) and
-[`column.foreignKeyValue`](../../api/grid/column/#foreignkeyvalue) properties.
+Foreign key column can be enabled by using [`column.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#datasource),
+[`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) and
+[`column.foreignKeyValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue) properties.
 
-* [`column.dataSource`](../../api/grid/column/#datasource) - Defines the foreign data.
-* [`column.foreignKeyField`](../../api/grid/column/#foreignkeyfield) - Defines the mapping column name to the foreign data.
-* [`column.foreignKeyValue`](../../api/grid/column/#foreignkeyvalue) - Defines the display field from the foreign data.
+* [`column.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#datasource) - Defines the foreign data.
+* [`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) - Defines the mapping column name to the foreign data.
+* [`column.foreignKeyValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue) - Defines the display field from the foreign data.
 
 In the following example, **Employee Name** is a foreign column which shows **FirstName** column from foreign data.
 
@@ -34,16 +34,16 @@ To use ForeignKeyColumn, you need to inject **ForeignKeyService** in the provide
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs19/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs19" %}
 
-> * For remote data, the sorting and grouping is done based on [`column.foreignKeyField`](../../api/grid/column/#foreignkeyfield) instead of
-[`column.foreignKeyValue`](../../api/grid/column/#foreignkeyvalue).
-> * If [`column.foreignKeyField`](../../api/grid/column/#foreignkeyfield) is not defined, then the column uses [`column.field`](../../api/grid/column/#field).
+> * For remote data, the sorting and grouping is done based on [`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) instead of
+[`column.foreignKeyValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue).
+> * If [`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) is not defined, then the column uses [`column.field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field).
 
 ## Use edit template in foreignkey column
 
 By default, foreign key column uses dropdown component for editing.
-You can render other than the dropdown by using the [`column.edit`](../../api/grid/column/#edit) property.
+You can render other than the dropdown by using the [`column.edit`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property.
 The following example demonstrates the way of using edit template in foreign column.
 
 In the following example, The **Employee Name** is a foreign key column and while editing, AutoComplete component is rendered instead of DropDownList.
@@ -60,11 +60,11 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/foreignkey-cs1" %}
 
 ## Customize filter UI in foreignkey column
 
-You can create your own filtering UI by using [`column.filter`](../../api/grid/column/#filter) property.
+You can create your own filtering UI by using [`column.filter`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter) property.
 The following example demonstrates the way to create a custom filtering UI in the foreign column.
 
 In the following example, The **Employee Name** is a foreign key column. DropDownList is rendered using Filter UI.
@@ -81,12 +81,12 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/foreignkey-cs2" %}
 
 ## Use filter bar template in foreignkey column
 
 You can use the filter bar template in foreign key column by defining the
-[`column.filterBarTemplate`](../../api/grid/column/#filterbartemplate) property.
+[`column.filterBarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) property.
 The following example demonstrates the way to use filter bar template in foreign column.
 
 In the following example, The **Employee Name** is a foreign key column.
@@ -104,7 +104,7 @@ This column header shows the custom filter bar template and you can select filte
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/foreignkey-cs3" %}
 
 ## Perform aggregation in foreignkey column
 
@@ -126,7 +126,7 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs4/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/foreignkey-cs4" %}
 
 ## Enable multiple foreign key columns
 
@@ -146,4 +146,4 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/foreignkey-cs5/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/foreignkey-cs5" %}

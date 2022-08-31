@@ -11,7 +11,7 @@ documentation: ug
 # Column chooser in Angular Grid component
 
 The column chooser has options to show or hide columns dynamically. It can be enabled by defining the
-[`showColumnChooser`](../../api/grid/#showcolumnchooser) as true.
+[`showColumnChooser`](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumnchooser) as true.
 
 To use column chooser, inject **ColumnChooserService** in the provider section of **AppModule**.
 
@@ -27,15 +27,15 @@ To use column chooser, inject **ColumnChooserService** in the provider section o
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/columnchooser-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/columnchooser-cs1" %}
 
 > You can hide the column names in column chooser by defining the
-[`columns.showInColumnChooser`](../../api/grid/column/#showincolumnchooser) as false.
+[`columns.showInColumnChooser`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showincolumnchooser) as false.
 
 ## Open column chooser by external button
 
 The Column chooser can be displayed on a page through external button by invoking
-the [`openColumnChooser`](../../api/grid/columnChooser/#opencolumnchooser) method with **X** and **Y** axis positions.
+the [`openColumnChooser`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooser/#opencolumnchooser) method with **X** and **Y** axis positions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,4 +49,4 @@ the [`openColumnChooser`](../../api/grid/columnChooser/#opencolumnchooser) metho
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/columnschooser-method-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/columnschooser-method-cs1" %}

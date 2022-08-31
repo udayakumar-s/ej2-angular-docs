@@ -10,7 +10,7 @@ documentation: ug
 
 # Get or set local storage value in Angular Grid component
 
-If the [`enablePersistence`](../../api/grid/#enablepersistence) property set as true,
+If the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) property set as true,
 The Grid property value is saved in the **window.localStorage** for reference. You can get/set the localStorage value by using the
 **getItem**/**setItem** method in **window.localStorage**.
 

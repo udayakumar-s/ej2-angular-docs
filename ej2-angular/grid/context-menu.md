@@ -12,7 +12,7 @@ documentation: ug
 
 The Grid has options to show the context menu when right clicked on it. To enable this feature,
 you need to define either default or custom item in the
-[`contextMenuItems`](../api/grid/#contextmenuitems).
+[`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuitems).
 
 To use the context menu, inject the **ContextMenuService** in the provider section of **AppModule**.
 
@@ -51,15 +51,15 @@ Items| Description
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/default-cs1" %}
 
 ## Custom context menu items
 
 The custom context menu items can be added by defining the
-[`contextMenuItems`](../api/grid/#contextmenuitems) as a collection of
-[`contextMenuItemModel`](../api/grid/contextMenuItemModel).
+[`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuitems) as a collection of
+[`contextMenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel).
 Actions for this customized items can be defined in the
-[`contextMenuClick`](../api/grid/#contextmenuclick) event.
+[`contextMenuClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuclick) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,13 +73,13 @@ Actions for this customized items can be defined in the
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/default-cs2" %}
 
 ## Show context menu on left click
 
-By default, the context menu items will be shown in the Grid using the right mouse click action. Show the context menu items during the left mouse click action using the [created](../api/grid/#created) and context menu's `beforeOpen` events of the Grid.
+By default, the context menu items will be shown in the Grid using the right mouse click action. Show the context menu items during the left mouse click action using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) and context menu's `beforeOpen` events of the Grid.
 
-Using the `onclick` eventlistener of Grid , you can get the clicked position values and send them to the `open` method of the context menu in the `onclick` event of the Grid. Also, we have prevented the default right click action to open the context menu items using the [created](../api/grid/#created) event of the Grid.
+Using the `onclick` eventlistener of Grid , you can get the clicked position values and send them to the `open` method of the context menu in the `onclick` event of the Grid. Also, we have prevented the default right click action to open the context menu items using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) event of the Grid.
 
 This is demonstrated in the following sample.
 
@@ -95,7 +95,7 @@ This is demonstrated in the following sample.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/default-cs3" %}
 
 > You can hide or show an item in context menu for specific area inside of grid by defining the
-[`target`](../api/grid/contextMenuItemModel/#target) property.
+[`target`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/#target) property.

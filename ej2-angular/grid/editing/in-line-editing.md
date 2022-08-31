@@ -12,7 +12,7 @@ documentation: ug
 
 In Normal edit mode, when you start editing the currently selected record is changed to edit state.
 You can change the cell values and save edited data to the data source.
-To enable Normal edit, set the [`editSettings.mode`](../../api/grid/editSettings/#mode) as **Normal**.
+To enable Normal edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Normal**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,7 +26,7 @@ To enable Normal edit, set the [`editSettings.mode`](../../api/grid/editSettings
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs24/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs24" %}
 
 > Normal edit mode is default mode of editing.
 
@@ -48,11 +48,11 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs25/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs25" %}
 
 ## Cancel edit based on condition
 
-You can prevent the CRUD operations of the Grid by using condition in the [`actionBegin`](../../api/grid/#actionbegin) event with requestType as `beginEdit` for editing, `add` for adding and `delete` for deleting actions.
+You can prevent the CRUD operations of the Grid by using condition in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event with requestType as `beginEdit` for editing, `add` for adding and `delete` for deleting actions.
 
 In the below demo, we prevent the CRUD operation based on the `Role` column value. If the Role Column is `Employee`, we are unable to edit/delete that row.
 
@@ -68,21 +68,21 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs26/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs26" %}
 
 ## Perform CRUD action programmatically
 
-Grid methods can be used to perform CRUD operations programmatically. The [addRecord](../../api/grid/#addrecord), [deleteRecord](../../api/grid/#deleterecord), and [startEdit](../../api/grid/#startedit) methods are used to perform CRUD operations in the following demo.
+Grid methods can be used to perform CRUD operations programmatically. The [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/#addrecord), [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/#deleterecord), and [startEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) methods are used to perform CRUD operations in the following demo.
 
-* To add a new record to the Grid, use the [addRecord](../../api/grid/#addrecord) method. In this method, you can pass the data parameter to add a new record to the Grid, and the index parameter to add a record at a specific index. If you call this method with no parameters, it will create an empty row in the Grid.
+* To add a new record to the Grid, use the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/#addrecord) method. In this method, you can pass the data parameter to add a new record to the Grid, and the index parameter to add a record at a specific index. If you call this method with no parameters, it will create an empty row in the Grid.
 
-* To change the selected row to the edit state, use the [startEdit](../../api/grid/#startedit) method.
+* To change the selected row to the edit state, use the [startEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) method.
 
-* If you need to update the row data in the Grid’s datasource, you can use the [updateRow](../../api/grid/#updaterow) method. In this method, you need to pass the index value of the row to be updated along with the updated data.
+* If you need to update the row data in the Grid’s datasource, you can use the [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid/#updaterow) method. In this method, you need to pass the index value of the row to be updated along with the updated data.
 
-* If you need to update the particular cell in the row, you can use the [setCellValue](../../api/grid/#setcellvalue) method. In this method, you need to pass the primary key value of the data source, field name, and new value for the particular cell.
+* If you need to update the particular cell in the row, you can use the [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/grid/#setcellvalue) method. In this method, you need to pass the primary key value of the data source, field name, and new value for the particular cell.
 
-* To remove a selected row from the Grid, use the [deleteRecord](../../api/grid/#deleterecord) method. For both edit and delete operations, you must select a row first.
+* To remove a selected row from the Grid, use the [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/#deleterecord) method. For both edit and delete operations, you must select a row first.
 
 >Note: In both normal and dialog editing modes, these methods can be used.
 
@@ -98,12 +98,12 @@ Grid methods can be used to perform CRUD operations programmatically. The [addRe
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs27/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs27" %}
 
 ## Confirmation dialog
 
 The delete confirm dialog can be shown when deleting a record by defining the
-[`showDeleteConfirmDialog`](../../api/grid/editSettings/#showdeleteconfirmdialog) as **true**
+[`showDeleteConfirmDialog`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showdeleteconfirmdialog) as **true**
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,14 +117,14 @@ The delete confirm dialog can be shown when deleting a record by defining the
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs28/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs28" %}
 
 > The **showDeleteConfirmDialog** supports all type of edit modes.
 
 ## Default column values on add new row
 
 The grid provides an option to set the default value for the columns when adding a new record in it.
-To set a default value for the particular column by defining the [`columns.defaultValue`](../../api/grid/column/#defaultvalue).
+To set a default value for the particular column by defining the [`columns.defaultValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#defaultvalue).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -138,11 +138,11 @@ To set a default value for the particular column by defining the [`columns.defau
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs29/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs29" %}
 
 ## Adding a new row at the bottom of the Grid
 
-By default, a new row will be added at the top of the grid. You can change it by setting [`editSettings.newRowPosition`](../../api/grid/editSettings/#newrowposition) as **Bottom**.
+By default, a new row will be added at the top of the grid. You can change it by setting [`editSettings.newRowPosition`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#newrowposition) as **Bottom**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -156,13 +156,13 @@ By default, a new row will be added at the top of the grid. You can change it by
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs30/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs30" %}
 
 > Add newRowPostion is supported for **Normal** and **Batch** editing modes.
 
 ## Move the focus to a particular cell instead of first cell while editing a row
 
-The [recordDoubleClick](../../api/grid/#recordDoubleClick) event allows you to move the focus to the corresponding cell (the cell that you doubled-clicked to edit a row) instead of the first cell in edit form. With the help of this event, you can focus the double-clicked column in inline edit mode.
+The [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#recordDoubleClick) event allows you to move the focus to the corresponding cell (the cell that you doubled-clicked to edit a row) instead of the first cell in edit form. With the help of this event, you can focus the double-clicked column in inline edit mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -176,4 +176,4 @@ The [recordDoubleClick](../../api/grid/#recordDoubleClick) event allows you to m
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs31/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs31" %}

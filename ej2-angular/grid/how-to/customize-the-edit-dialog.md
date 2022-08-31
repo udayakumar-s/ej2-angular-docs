@@ -10,7 +10,7 @@ documentation: ug
 
 # Customize the edit dialog in Angular Grid component
 
-You can customize the appearance of the edit dialog in the [`actionComplete`](../../api/grid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
+You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
 
 In the following example, the dialog's properties like header text, showCloseIcon, height have been changed while editing and adding the records.
 
@@ -30,4 +30,4 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs47/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs47" %}

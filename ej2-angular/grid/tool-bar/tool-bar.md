@@ -10,9 +10,9 @@ documentation: ug
 
 # Tool bar in Angular Grid component
 
-The Grid provides ToolBar support to handle grid actions. The [`toolbar`](../../api/grid/#toolbar)
+The Grid provides ToolBar support to handle grid actions. The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar)
 property accepts either the collection of built-in toolbar items and
-[`ItemModel`](../../api/toolbar/itemModel) objects for custom toolbar items or
+[`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects for custom toolbar items or
 HTML element ID for toolbar template.
 
 To use Toolbar, you need to inject **ToolbarService** in the provider section of **AppModule**.
@@ -33,11 +33,11 @@ You can enable/disable toolbar items by using the **enableItems** method.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/toolbar-enable-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/toolbar-enable-cs1" %}
 
 ## Add toolbar at the bottom of Grid
 
-You can add the Grid toolbar component at the bottom of Grid using the ['created'](../../api/grid/#created) event.
+You can add the Grid toolbar component at the bottom of Grid using the ['created'](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -51,7 +51,7 @@ You can add the Grid toolbar component at the bottom of Grid using the ['created
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/toolbar-enable-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/toolbar-enable-cs2" %}
 
 ## See Also
 

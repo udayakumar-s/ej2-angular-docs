@@ -10,8 +10,8 @@ documentation: ug
 
 # Print in Angular Grid component
 
-To print the Grid, use the [`print`](../api/grid/#print) method from grid instance. The print option can be displayed on the
-[`toolbar`](../api/grid/#toolbar) by adding the **Print** toolbar item.
+To print the Grid, use the [`print`](https://ej2.syncfusion.com/angular/documentation/api/grid/#print) method from grid instance. The print option can be displayed on the
+[`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) by adding the **Print** toolbar item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,7 +25,7 @@ To print the Grid, use the [`print`](../api/grid/#print) method from grid instan
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/print-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/print-cs2" %}
 
 ## Page Setup
 
@@ -39,7 +39,7 @@ and margin options using the browser page setup dialog. Please refer to the foll
 
 ## Print by external button
 
-To print the grid from an external button, invoke the [`Print`](../api/grid/#print) method.
+To print the grid from an external button, invoke the [`Print`](https://ej2.syncfusion.com/angular/documentation/api/grid/#print) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,11 +53,11 @@ To print the grid from an external button, invoke the [`Print`](../api/grid/#pri
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging-api-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging-api-cs1" %}
 
 ## Print visible Page
 
-By default, the grid prints all the pages. To print the current page alone, set the [`printMode`](../api/grid/#printmode) to **CurrentPage**.
+By default, the grid prints all the pages. To print the current page alone, set the [`printMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/#printmode) to **CurrentPage**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -71,11 +71,11 @@ By default, the grid prints all the pages. To print the current page alone, set 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/print-api-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/print-api-cs1" %}
 
 ## Print the hierarchy grid
 
-By default, the grid will be print the master and expanded child grids alone. you can change the print option by using the [`hierarchyPrintMode`](../api/grid/#hierarchyprintmode) property. The available options are,
+By default, the grid will be print the master and expanded child grids alone. you can change the print option by using the [`hierarchyPrintMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/#hierarchyprintmode) property. The available options are,
 
 | Mode     | Behavior    |
 |----------|-------------|
@@ -95,7 +95,7 @@ By default, the grid will be print the master and expanded child grids alone. yo
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/default-cs13/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/default-cs13" %}
 
 ## Print large number of columns
 
@@ -107,9 +107,9 @@ To show large number of columns when printing, adjust the scale option from prin
 
 ## Show or Hide columns while Printing
 
-You can show a hidden column or hide a visible column while printing the grid using [`toolbarClick`](./api/grid#toolbarclick) and [`printComplete`](./api/grid#printcomplete) events.
+You can show a hidden column or hide a visible column while printing the grid using [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) and [`printComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid#printcomplete) events.
 
-In the [`toolbarClick`](./api/grid#toolbarclick) event, based on **args.item.id** as **grid_print**. We can show or hide columns by setting [`column.visible`](../api/grid/column/#visible) property to **true** or **false** respectively.
+In the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event, based on **args.item.id** as **grid_print**. We can show or hide columns by setting [`column.visible`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property to **true** or **false** respectively.
 
 In the printComplete event, We have reversed the state back to the previous state.
 
@@ -127,7 +127,7 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/print-api-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/print-api-cs2" %}
 
 ## Limitations of Printing Large Data
 

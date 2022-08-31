@@ -11,7 +11,7 @@ documentation: ug
 # Footer aggregate in Angular Grid component
 
 Footer aggregate value is calculated from all the rows and it can be displayed in footer cells. Use
-[`footerTemplate`](../../api/grid/aggregateColumnDirective/#footertemplate) to render the aggregate value in footer cells.
+[`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#footertemplate) to render the aggregate value in footer cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,16 +25,16 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-footer-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/aggregates-footer-cs1" %}
 
 > * Use the template reference variable name as **#footerTemplate** to specify the footer template.
 > * The aggregate values must be accessed inside the template using their corresponding
-[`type`](../../api/grid/aggregateColumnDirective/#type) name.
+[`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name.
 
 ## How to format aggregate value
 
 You can format the aggregate value result by using the
-[`format`](../../api/grid/aggregateColumn/#format) property.
+[`format`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#format) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,4 +48,4 @@ You can format the aggregate value result by using the
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-footer-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/aggregates-footer-cs2" %}

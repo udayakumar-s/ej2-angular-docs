@@ -11,9 +11,9 @@ documentation: ug
 # Clip mode in Angular Grid component
 
 The clip mode provides options to display its overflow cell content and it can be defined
-by the [`columns.clipMode`](../../api/grid/column/#clipmode) property.
+by the [`columns.clipMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) property.
 
-There are three types of [`clipMode`](../../api/grid/column/#clipmode). They are:
+There are three types of [`clipMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode). They are:
 
 * **Clip**: Truncates the cell content when it overflows its area.
 * **Ellipsis**: Displays ellipsis when the cell content overflows its area.
@@ -32,6 +32,6 @@ also it will display the tooltip while hover on ellipsis is applied.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/clipmode-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/clipmode-cs1" %}
 
->By default, [`columns.clipMode`](../../api/grid/column/#clipmode) value is **Ellipsis**.
+>By default, [`columns.clipMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) value is **Ellipsis**.

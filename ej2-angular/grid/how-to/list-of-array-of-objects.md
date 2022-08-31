@@ -24,4 +24,4 @@ The following example shows how to set Complex field for datasource having Array
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/complex-data-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/complex-data-cs1" %}

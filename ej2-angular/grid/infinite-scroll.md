@@ -28,7 +28,7 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs2" %}
 
 ## InitialBlocks
 
@@ -48,7 +48,7 @@ In the below demo, we have changed this property value to load five page records
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs3" %}
 
 ## Cache Mode
 
@@ -68,7 +68,7 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs4/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs4" %}
 
 ## Limitations for Infinite Scrolling
 
@@ -79,7 +79,7 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 * Group expand and collapse state will not be persisted in cache mode.
 * The aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the
 [`Group with Page`](./grouping/#Group-with-paging) topic.
-* Programmatic selection using the [`selectRows`](../api/grid/#selectrows) and [`selectRow`](../api/grid/#selectrow) method is not supported in infinite scrolling.
+* Programmatic selection using the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) and [`selectRow`](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrow) method is not supported in infinite scrolling.
 
 ## See Also
 

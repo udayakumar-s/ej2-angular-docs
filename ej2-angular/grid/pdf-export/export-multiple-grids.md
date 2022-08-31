@@ -25,4 +25,4 @@ In this exported document, each grid will be exported to new page of document in
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs7/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs7" %}

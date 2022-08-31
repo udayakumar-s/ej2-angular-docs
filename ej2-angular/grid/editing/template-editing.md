@@ -12,9 +12,9 @@ documentation: ug
 
 ## Reactive Forms
 
-[`Reactive`](https://angular.io/guide/reactive-forms) Forms is a model-driven approach to create and manipulate the form controls. You can use reactive form to add and update grid records. To use reactive forms for editing operation, you can take leverage of the template support of dialog or inline edit mode. Setting the [`editSettings.mode`](../../api/grid/editSettings/#mode) as **Normal/Dialog** and **editSettingsTemplate** as template variable of NgTemplate to define the grid editors.
+[`Reactive`](https://angular.io/guide/reactive-forms) Forms is a model-driven approach to create and manipulate the form controls. You can use reactive form to add and update grid records. To use reactive forms for editing operation, you can take leverage of the template support of dialog or inline edit mode. Setting the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Normal/Dialog** and **editSettingsTemplate** as template variable of NgTemplate to define the grid editors.
 
-In the below sample, We have created the **FormGroup** with **FormControls** for each columns, in the [`actionBegin`](../../api/grid/#actionbegin)  event. While saving, we have validated the formgroup and updated the grid with the edited data from the FormGroup object.
+In the below sample, We have created the **FormGroup** with **FormControls** for each columns, in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin)  event. While saving, we have validated the formgroup and updated the grid with the edited data from the FormGroup object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,11 +28,11 @@ In the below sample, We have created the **FormGroup** with **FormControls** for
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reactive-form-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/reactive-form-cs1" %}
 
 ## Template-driven forms
 
-[`Template-driven`](https://angular.io/guide/forms#template-driven-forms) forms is a template-driven approach to create and manipulate the form controls. You can use template-driven form to add and update grid records. To use template-driven forms for editing operation, you can take leverage of the template support of dialog or inline edit mode. Setting the [`editSettings.mode`](../../api/grid/editSettings/#mode) as **Normal/Dialog** and **editSettingsTemplate** as template variable of NgTemplate to define the grid editors.
+[`Template-driven`](https://angular.io/guide/forms#template-driven-forms) forms is a template-driven approach to create and manipulate the form controls. You can use template-driven form to add and update grid records. To use template-driven forms for editing operation, you can take leverage of the template support of dialog or inline edit mode. Setting the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Normal/Dialog** and **editSettingsTemplate** as template variable of NgTemplate to define the grid editors.
 
 In some cases, you want to add new field editors in the dialog which are not present in the column model. In that situation the dialog template will help us to customize the default edit dialog.
 
@@ -50,7 +50,7 @@ In the below sample, We have created the **FormGroup** by using **ngForm** direc
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/dialogTemplate-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/dialogTemplate-cs1" %}
 
 > The form editors should have **name** attribute.
 
@@ -90,7 +90,7 @@ The following code example illustrates rendering the **OrderID** textbox, when a
 
 By default, the first input element in the dialog will be focused while opening the dialog.
 If the first input element is in disabled or hidden state then you need to focused the valid input element in the
-[`actionComplete`](../../api/grid/#actioncomplete)
+[`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete)
 event based on **requestType** as **beginEdit**.
 
 ```typescript
@@ -106,7 +106,7 @@ event based on **requestType** as **beginEdit**.
 
 ## Disable form validation
 
-If you have interested to use [`angular form validation`](https://angular.io/guide/form-validation) then you need to disable the default validation rules in  the [`actionComplete`](../../api/grid/#actioncomplete) event.
+If you have interested to use [`angular form validation`](https://angular.io/guide/form-validation) then you need to disable the default validation rules in  the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event.
 
 ```typescript
 
@@ -121,7 +121,7 @@ If you have interested to use [`angular form validation`](https://angular.io/gui
 
 ## Adding validation rules for custom editors
 
-If you have interested to use our default form validation, the validation rules for the fields which are not present in the column model need to be add in  the [`actionComplete`](../../api/grid/#actioncomplete) event.
+If you have interested to use our default form validation, the validation rules for the fields which are not present in the column model need to be add in  the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event.
 
 ```typescript
 
@@ -136,13 +136,13 @@ If you have interested to use our default form validation, the validation rules 
 
 ## Render tab component inside the dialog template
 
-You can use [`Tab`](../../../tab/index.html) component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining  [`editSettings.mode`](../../../api/grid/editSettings/#mode) as `Dialog` and [`editSettingsTemplate`](../../../api/grid/editSettings/#template) as template variable to define the editors.
+You can use [`Tab`](../../../tab/index.html) component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining  [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as `Dialog` and [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) as template variable to define the editors.
 
 To include tab components in the Dialog, please ensure the following steps:
 
 **Step 1**:
 
-To render the Tab component, use the [`editSettingsTemplate`](../../../api/grid/editSettings/#template) of the Grid. Inside the content template of the tab items define
+To render the Tab component, use the [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid. Inside the content template of the tab items define
 the input elements.
 
 ```html
@@ -215,4 +215,4 @@ The following example, we have rendered tab control inside the edit dialog. The 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/tablikeedit-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/tablikeedit-cs1" %}

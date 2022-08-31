@@ -12,11 +12,11 @@ documentation: ug
 
 ## Prevent columns from persisting
 
-When the [enablePersistence](../../api/grid/#enablepersistence) property is set to true, the Grid properties such as [Grouping](../../api/grid/groupSettingsModel/), [Paging](../../api/grid/pageSettingsModel/), [Filtering](../../api/grid/pageSettingsModel/), [Sorting](../../api/grid/sortSettingsModel/), and [Columns](../../api/grid/columnModel/) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
+When the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) property is set to true, the Grid properties such as [Grouping](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettingsModel/), [Paging](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/), [Filtering](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/), [Sorting](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettingsModel/), and [Columns](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
 
-The following example demonstrates how to prevent Grid columns from persisting. In the [dataBound](../../api/grid/#databound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
+The following example demonstrates how to prevent Grid columns from persisting. In the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 
->**Note:** When the [enablePersistence](../../api/grid/#enablepersistence) property is set to true, the Grid properties such as column template, column formatter, header text, and value accessor will not persist.
+>**Note:** When the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) property is set to true, the Grid properties such as column template, column formatter, header text, and value accessor will not persist.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,4 +30,4 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grouping1-cs9/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs9" %}

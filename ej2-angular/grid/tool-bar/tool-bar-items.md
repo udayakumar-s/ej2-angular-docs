@@ -13,7 +13,7 @@ documentation: ug
 ## Built-in toolbar items
 
 Built-in Toolbar Items execute standard actions of the Grid and it can be added by defining
-[`toolbar`](../../api/grid/#toolbar)
+[`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar)
 as a collection of built-in items. It renders the button with icon and text.
 
 The following table shows Built-in toolbar items and its action.
@@ -44,17 +44,17 @@ The following table shows Built-in toolbar items and its action.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/toolbar-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/toolbar-cs1" %}
 
-> * The [`toolbar`](../../api/grid/#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 
 ## Custom toolbar items
 
-Custom toolbar items can be added by defining [`toolbar`](../../api/grid/#toolbar) as a collection of
-[`ItemModel`](../../api/toolbar/itemModel).
-Actions for this customized toolbar items are defined in the [`toolbarClick`](../../api/grid/#toolbarclick) event.
+Custom toolbar items can be added by defining [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) as a collection of
+[`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel).
+Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event.
 
-By default, Custom toolbar items are in position **Left**. You can change the position by using the [`align`](../../api/toolbar/itemModel) property. In the below sample, we have applied position **Right** for the **Collapse All** toolbar item.
+By default, Custom toolbar items are in position **Left**. You can change the position by using the [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) property. In the below sample, we have applied position **Right** for the **Collapse All** toolbar item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,9 +68,9 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-toolbar-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-toolbar-cs1" %}
 
-> * The [`toolbar`](../../api/grid/#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 > * If a toolbar item does not match with built-in items, it will be treated as custom toolbar item.
 
 ## Both built-in and custom items in toolbar
@@ -91,11 +91,11 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs51/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs51" %}
 
 ## Custom toolbar component in a specific position
 
-By default, Custom toolbar items are in the Left position. You can change the position by using the [align](../../api/toolbar/itemModel) property. In the following sample, we have applied the Right position for the Collapse All toolbar item, Left for the Expand All toolbar item, and Center for the Search toolbar item.
+By default, Custom toolbar items are in the Left position. You can change the position by using the [align](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) property. In the following sample, we have applied the Right position for the Collapse All toolbar item, Left for the Expand All toolbar item, and Center for the Search toolbar item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,4 +109,4 @@ By default, Custom toolbar items are in the Left position. You can change the po
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-toolbar-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-toolbar-cs2" %}

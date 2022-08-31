@@ -12,7 +12,7 @@ documentation: ug
 
 By default, the expand/collapse icon will be visible even if the child grid is empty.
 
-You can use [`rowDataBound`](../../api/grid/#rowdatabound) event to hide the icon when there are no records in child grid.
+You can use [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event to hide the icon when there are no records in child grid.
 
 To hide the expand/collapse icon in parent row when no records in child grid, follow the given steps:
 
@@ -33,7 +33,7 @@ Create CSS class with custom style to override the default style of Grid.
 
 **Step 2**:
 
-Add the CSS class to the Grid in the [`rowDataBound`](../../api/grid/#rowdatabound-) event handler of Grid.
+Add the CSS class to the Grid in the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound-) event handler of Grid.
 
 ```typescript
     public rowDataBound(args:any){
@@ -62,4 +62,4 @@ In the below demo, the expand/collapse icon in the row with **EmployeeID** as **
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/template-cs4/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/template-cs4" %}

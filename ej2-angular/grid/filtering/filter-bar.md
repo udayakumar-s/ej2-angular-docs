@@ -10,7 +10,7 @@ documentation: ug
 
 # Filter bar in Angular Grid component
 
-By defining the [`allowFiltering`](../../api/grid/#allowfiltering) to true,
+By defining the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to true,
 then filter bar row will be rendered next to header which allows you to filter data.
  You can filter the records with different expressions depending upon the column type.
 
@@ -43,11 +43,11 @@ N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs1" %}
 
 ## Filter bar template with custom component
 
-The [`filterBarTemplate`](../../api/grid/column/#filterbartemplate) is used to add a custom component for a
+The [`filterBarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) is used to add a custom component for a
 particular column and this contains the following functions.
 * **create** – It is used for creating custom components.
 * **write** - It is used to wire events for custom components.
@@ -66,11 +66,11 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs2" %}
 
 ## Change default filterbar operator
 
-You can change the default filter operator by extending [`filterModule.filterOperators`](../../api/grid/filterSettings/#operators) property in [`dataBound`](../../api/grid/#databound) event. In the following sample,
+You can change the default filter operator by extending [`filterModule.filterOperators`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property in [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event. In the following sample,
 we have changed the default operator for string typed columns as **contains** from **startsWith**.
 
 {% tabs %}
@@ -85,4 +85,4 @@ we have changed the default operator for string typed columns as **contains** fr
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs3" %}

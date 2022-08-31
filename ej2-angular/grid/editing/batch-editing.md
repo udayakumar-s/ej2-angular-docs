@@ -12,8 +12,8 @@ documentation: ug
 
 In Batch edit mode, when you double-click on the grid cell, then the target cell changed to edit state.
 You can bulk save (added, changed and deleted data in the single request) to data source by click on the toolbar's **Update**
-button or by externally invoking the [`batchSave`](../../api/grid/edit/#batchsave) method.
-To enable Batch edit, set the [`editSettings.mode`](../../api/grid/editSettings/#mode) as **Batch**.
+button or by externally invoking the [`batchSave`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#batchsave) method.
+To enable Batch edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,7 +27,7 @@ To enable Batch edit, set the [`editSettings.mode`](../../api/grid/editSettings/
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs3" %}
 
 ## Automatically update the column based on another column edited value in batch mode
 
@@ -47,11 +47,11 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs4/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs4" %}
 
 ## Cancel edit based on condition in batch mode
 
-You can prevent the CRUD operations of the Batch edit Grid by using condition in the [`cellEdit`](../../api/grid/#cellEdit), [`beforeBatchAdd`](../../api/grid/#beforeBatchAdd) and [`beforeBatchDelete`](../../api/grid/#beforeBatchDelete) events for Edit, Add and Delete actions respectively.
+You can prevent the CRUD operations of the Batch edit Grid by using condition in the [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#cellEdit), [`beforeBatchAdd`](https://ej2.syncfusion.com/angular/documentation/api/grid/#beforeBatchAdd) and [`beforeBatchDelete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#beforeBatchDelete) events for Edit, Add and Delete actions respectively.
 
 In the below demo, we prevent the CRUD operation based on the `Role` column value. If the Role Column is `Employee`, we are unable to edit/delete that row.
 
@@ -67,7 +67,7 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs5/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs5" %}
 
 ## Confirmation dialog
 
@@ -85,8 +85,8 @@ By default, grid will show the confirm dialog when saving or canceling or perfor
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs6/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs6" %}
 
-> * [`editSettings.showConfirmDialog`](../../api/grid/editSettings/#showconfirmdialog) requires the [`editSettings.mode`](../../api/grid/editSettings/#mode) to be **Batch**
-> * If [`editSettings.showConfirmDialog`](../../api/grid/editSettings/#showconfirmdialog)
+> * [`editSettings.showConfirmDialog`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showconfirmdialog) requires the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) to be **Batch**
+> * If [`editSettings.showConfirmDialog`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showconfirmdialog)
 set to **false**, then confirmation dialog does not display in batch editing.

@@ -16,7 +16,7 @@ When you enable this feature, the Grid will render only the initial level captio
 
 The caption row expand/collapse state will be persisted on paging and Grid pages count will be determined based on the caption rows count instead of the child rows.
 
-To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](../../api/grid/groupSettings/#enableLazyLoading) property as **true**.
+To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#enableLazyLoading) property as **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/lazy-load-grouping-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/lazy-load-grouping-cs1" %}
 
 ## Handling the lazy load grouping at server-side
 

@@ -25,4 +25,4 @@ You can use corresponding exporting methods and exportComplete events to get the
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs4/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs4" %}

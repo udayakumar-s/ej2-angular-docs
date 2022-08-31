@@ -13,10 +13,10 @@ documentation: ug
 ## Cell customization
 
 The appearance of cells can be customized by using the
-[`queryCellInfo`](../../api/grid/#querycellinfo) event.
-The [`queryCellInfo`](../../api/grid/#querycellinfo) event
+[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
+The [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event
 triggers for every cell. In that event handler, you can get
-[`QueryCellInfoEventArgs`](../../api/grid/queryCellInfoEventArgs) that contains the details of the cell.
+[`QueryCellInfoEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) that contains the details of the cell.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,11 +30,11 @@ triggers for every cell. In that event handler, you can get
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs1" %}
 
 ## Custom attributes
 
-You can customize the grid cells by adding a CSS class to the [`customAttribute`](../../api/grid/column/#customattributes) property of the column.
+You can customize the grid cells by adding a CSS class to the [`customAttribute`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property of the column.
 
 ```CSS
 .e-attr {
@@ -62,12 +62,12 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs2" %}
 
 ## Grid lines
 
-The [`gridLines`](../../api/grid/#gridlines) have the option to display cell border and it can be defined by the
-[`gridLines`](../../api/grid/#gridlines) property.
+The [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/grid/#gridlines) have the option to display cell border and it can be defined by the
+[`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/grid/#gridlines) property.
 
 The available modes of grid lines are:
 
@@ -91,7 +91,7 @@ The available modes of grid lines are:
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/autowrap-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/autowrap-cs2" %}
 
 >By default, the grid renders with **Default** mode.
 

@@ -34,7 +34,7 @@ The following list of ARIA attributes is used in Grid.
 
 ## Keyboard Navigation
 
-Grid functionalities can be interactive with keyboard shortcuts. In order to utilize all the available keyboard shortcuts, the [`enableHeaderFocus`](../api/grid/#enableheaderfocus) property of the Grid needs to be set as **true**.
+Grid functionalities can be interactive with keyboard shortcuts. In order to utilize all the available keyboard shortcuts, the [`enableHeaderFocus`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableheaderfocus) property of the Grid needs to be set as **true**.
 
 The following keyboard shortcuts are supported by the Grid.
 

@@ -135,12 +135,12 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/pager/pager-cs1" %}
 
 ## Page Count
 
 `pageCount` value defines the number of pages to be displayed in the pager component for navigation.
-The default value for `pageCount` is 10 and value will be updated based on [`totalRecordsCount`](../api/pager#totalrecordscount)
+The default value for `pageCount` is 10 and value will be updated based on [`totalRecordsCount`](https://ej2.syncfusion.com/angular/documentation/api/pager#totalrecordscount)
 and [`pageSize`](#page-size) values.
 
 {% tabs %}
@@ -155,7 +155,7 @@ and [`pageSize`](#page-size) values.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/pager/pager-cs2" %}
 
 ## Run the application
 
@@ -179,4 +179,4 @@ Output will be appears as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/pager/pager-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/pager/pager-cs3" %}

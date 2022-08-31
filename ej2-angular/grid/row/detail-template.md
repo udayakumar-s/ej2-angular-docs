@@ -10,7 +10,7 @@ documentation: ug
 
 # Detail template in Angular Grid component
 
-The detail template provides additional information about a particular row by expanding or collapsing detail content. The [detailTemplate](../../api/grid/#detailtemplate) property accepts the template for the detail row.
+The detail template provides additional information about a particular row by expanding or collapsing detail content. The [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) property accepts the template for the detail row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -24,14 +24,14 @@ The detail template provides additional information about a particular row by ex
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs4/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs4" %}
 
 ## Rendering custom component
 
-To render the custom component inside the detail row, define the template in the [detailTemplate](../../api/grid/#detailtemplate) and render the
-component in the [detailDataBound](../../api/grid/#detaildatabound-emittypedetaildataboundeventargs) event.
+To render the custom component inside the detail row, define the template in the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) and render the
+component in the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#detaildatabound-emittypedetaildataboundeventargs) event.
 
-For example, to render grid inside the detail row, place an HTML div element as the [detailTemplate](../../api/grid/#detailtemplate) and render the DIV element as grid component in the [detailDataBound](../../api/grid/#detaildatabound-emittypedetaildataboundeventargs) event.
+For example, to render grid inside the detail row, place an HTML div element as the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) and render the DIV element as grid component in the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#detaildatabound-emittypedetaildataboundeventargs) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,11 +45,11 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs5/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs5" %}
 
 ## Expand by external button
 
-By default, detail rows render in collapsed state. You can expand a detail row by invoking the [expand](../../api/grid/detailRow/#expand) method using the external button.
+By default, detail rows render in collapsed state. You can expand a detail row by invoking the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expand) method using the external button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,4 +63,4 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs6/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs6" %}

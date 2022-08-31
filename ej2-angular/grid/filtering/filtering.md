@@ -11,8 +11,8 @@ documentation: ug
 # Filtering in Angular Grid component
 
 Filtering allows you to view particular records based on filter criteria. To enable filtering in the Grid,
-set the [`allowFiltering`](../../api/grid/#allowfiltering) to true.
-Filtering options can be configured through [`filterSettings`](../../api/grid/filterSettings).
+set the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to true.
+Filtering options can be configured through [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings).
 
 To use filter, inject **FilterService** in the provider section of **AppModule**.
 
@@ -34,17 +34,17 @@ The Grid supports two types of filter, they are
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs9/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs9" %}
 
 > * You can apply and clear filtering, by using
-[`filterByColumn`](../../api/grid/filter/#filterbycolumn) and [`clearFiltering`](../../api/grid/filter/#clearfiltering) methods.
+[`filterByColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#clearfiltering) methods.
 > * To disable Filtering for a particular column, by specifying
-[`columns.allowFiltering`](../../api/grid/column/#allowfiltering) to false.
+[`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) to false.
 
 ## Initial filter
 
-To apply the filter at initial rendering, set the filter [`predicate`](../../api/grid/predicate) object in
-[`filterSettings.columns`](../../api/grid/filterSettingsModel/#columns).
+To apply the filter at initial rendering, set the filter [`predicate`](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate) object in
+[`filterSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,11 +58,11 @@ To apply the filter at initial rendering, set the filter [`predicate`](../../api
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs10/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs10" %}
 
 ## Filter operators
 
-The filter operator for a column can be defined in [`filterSettings.columns.operator`](../../api/grid/predicateModel/#operator) property.
+The filter operator for a column can be defined in [`filterSettings.columns.operator`](https://ej2.syncfusion.com/angular/documentation/api/grid/predicateModel/#operator) property.
 
 The available operators and its supported data types are,
 
@@ -78,12 +78,12 @@ greaterThanOrEqual|Checks whether a value is greater than or equal to specified 
 lessThan |Checks whether a value is less than with specified value. |Number &#124; Date
 lessThanOrEqual |Checks whether a value is less than or equal to specified value. |Number &#124; Date
 
-> By default, the [`filterSettings.columns.operator`](../../api/grid/predicateModel/#operator) value is **equal**.
+> By default, the [`filterSettings.columns.operator`](https://ej2.syncfusion.com/angular/documentation/api/grid/predicateModel/#operator) value is **equal**.
 
 ## Diacritics filter
 
 By default, grid ignores diacritic characters while filtering. To include diacritic characters, set the
-[`filterSettings.ignoreAccent`](../../api/grid/filter/#filterbycolumn) as **true**.
+[`filterSettings.ignoreAccent`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) as **true**.
 
 In the following sample, type **aero** in **Name** column to filter diacritic characters.
 
@@ -99,11 +99,11 @@ In the following sample, type **aero** in **Name** column to filter diacritic ch
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-diacritics-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filter-diacritics-cs1" %}
 
 ## Filter bar
 
-You can customize default filter bar component of a column by custom component using [`filter template`](../../api/grid/column/#filtertemplate).
+You can customize default filter bar component of a column by custom component using [`filter template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filtertemplate).
 
 The following example demonstrates the way to use filter template for a column when using filter bar. In the following example, the [`DropdownList`](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started/) component is used to filter **Name** column using filter template.
 
@@ -119,11 +119,11 @@ The following example demonstrates the way to use filter template for a column w
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-template-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filter-template-cs2" %}
 
 ## Filter menu
 
-You can customize default filter menu component of a column by custom component using [`filter template`](../../api/grid/column/#filtertemplate).
+You can customize default filter menu component of a column by custom component using [`filter template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filtertemplate).
 
 The following example demonstrates the way to use filter template for a column when using filter menu. In the following example, the [`DropdownList`](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started/) component is used to filter **ShipName** column using filter template.
 
@@ -139,7 +139,7 @@ The following example demonstrates the way to use filter template for a column w
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filter-template-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filter-template-cs3" %}
 
 ## See Also
 

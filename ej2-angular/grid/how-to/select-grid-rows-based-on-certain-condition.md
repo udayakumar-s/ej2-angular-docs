@@ -10,7 +10,7 @@ documentation: ug
 
 # Select grid rows based on certain condition in Angular Grid component
 
-You can select the specific row in the grid based on a certain condition by using the [`selectRows`](../../api/grid/#selectrows) method in the [`dataBound`](../../api/grid/#databound) event of Grid.
+You can select the specific row in the grid based on a certain condition by using the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) method in the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of Grid.
 
 In the below demo, we have selected the grid rows only when **EmployeeID** column value greater than **3**.
 
@@ -26,4 +26,4 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs5/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-column-cs5" %}

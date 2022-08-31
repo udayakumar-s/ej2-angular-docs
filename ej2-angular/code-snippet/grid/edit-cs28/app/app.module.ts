@@ -4,6 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
 import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns';
 
 /**
  * Module
@@ -13,7 +18,12 @@ import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
         BrowserModule,
         GridModule,
         DatePickerAllModule,
-        FormsModule
+        FormsModule,
+        TimePickerModule,
+        FormsModule,
+        TextBoxModule,
+        MultiSelectModule,
+        AutoCompleteModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
