@@ -11,19 +11,19 @@ documentation: ug
 # Aggregates in Angular Grid component
 
 Aggregate values are displayed in the footer, group footer and group caption of Grid. It can be configured through **e-aggregates** directive.
-The [`field`](../../api/grid/aggregateColumnDirective/#field) and [`type`](../../api/grid/aggregateColumnDirective/#type)
+The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#field) and [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type)
  are the minimum properties required to represent an aggregate column.
 
 To use aggregate feature, you need to inject the **AggregateService** module into the **@NgModule.providers** section.
 
 By default, the aggregate value can be displayed in footer, group and caption cells, to
-show the aggregate value in any of these cells, use the [`footerTemplate`](../../api/grid/aggregateColumn/#footertemplate),
-[`groupFooterTemplate`](../../api/grid/aggregateColumn/#groupfootertemplate) and
-[`groupCaptionTemplate`](../../api/grid/aggregateColumn/#groupcaptiontemplate) properties.
+show the aggregate value in any of these cells, use the [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#footertemplate),
+[`groupFooterTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#groupfootertemplate) and
+[`groupCaptionTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#groupcaptiontemplate) properties.
 
 ## Built-in aggregate types
 
-Aggregate type must be specified in [`type`](../../api/grid/aggregateColumnDirective/#type) property to configure an aggregate column.
+Aggregate type must be specified in [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property to configure an aggregate column.
 
 The built-in aggregates are,
 * Sum
@@ -34,7 +34,7 @@ The built-in aggregates are,
 * TrueCount
 * FalseCount
 
-> * Multiple aggregates can be used for an aggregate column by setting the [`type`](../../api/grid/aggregateColumnDirective/#type)
+> * Multiple aggregates can be used for an aggregate column by setting the [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type)
  property
 with an array of aggregate type.
 > * Multiple types for a column is supported only when one of the aggregate templates is used.

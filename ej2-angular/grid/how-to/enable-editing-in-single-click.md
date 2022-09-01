@@ -12,9 +12,9 @@ documentation: ug
 
 ## Normal Editing
 
-You can make a row editable on a single click with **Normal** mode of editing in Grid, by using the [`startEdit`](../../api/grid/#startedit) and [`endEdit`](../../api/grid/#endedit) methods.
+You can make a row editable on a single click with **Normal** mode of editing in Grid, by using the [`startEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) and [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) methods.
 
-Bind the **mouseup** event for Grid and in the event handler call the [`startEdit`](../../api/grid/#startedit) and [`endEdit`](../../api/grid/#endedit), based on the clicked target element.
+Bind the **mouseup** event for Grid and in the event handler call the [`startEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) and [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit), based on the clicked target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,11 +28,11 @@ Bind the **mouseup** event for Grid and in the event handler call the [`startEdi
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/single-click-batch-editing-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/single-click-batch-editing-cs1" %}
 
 ### Open dropdown edit popup on single click
 
-You can open the default dropdown edit popup with single click edit by focusing the dropdown element and calling the EJ2 dropdown list's [`showPopup`](../../api/drop-down-list/#showpopup) method in the Grid's [`actionComplete`](../../api/grid/#actioncomplete) event. In this demo we have used a global flag variable in the **mouseup** event to ensure if the dropdown column is the clicked edit target.
+You can open the default dropdown edit popup with single click edit by focusing the dropdown element and calling the EJ2 dropdown list's [`showPopup`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#showpopup) method in the Grid's [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event. In this demo we have used a global flag variable in the **mouseup** event to ensure if the dropdown column is the clicked edit target.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,13 +46,13 @@ You can open the default dropdown edit popup with single click edit by focusing 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/open-dropdown-popup-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/open-dropdown-popup-cs1" %}
 
 ## Batch Editing
 
-You can make a cell editable on a single click with **Batch** mode of editing in Grid, by using the [`editCell`](../../api/grid/edit/#editcell) method.
+You can make a cell editable on a single click with **Batch** mode of editing in Grid, by using the [`editCell`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#editcell) method.
 
-Bind the **mouseup** event for Grid and in the event handler call the [`editCell`](../../api/grid/edit/#editcell) method, based on the clicked target element.
+Bind the **mouseup** event for Grid and in the event handler call the [`editCell`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#editcell) method, based on the clicked target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,4 +66,4 @@ Bind the **mouseup** event for Grid and in the event handler call the [`editCell
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/single-click-inline-editing-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/single-click-inline-editing-cs1" %}

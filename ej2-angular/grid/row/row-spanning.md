@@ -10,7 +10,7 @@ documentation: ug
 
 # Row spanning in Angular Grid component
 
-The grid has option to span row cells. To achieve this, You need to define the [`rowSpan`](../../api/grid/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [`QueryCellInfo`](../../api/grid/queryCellInfoEventArgs) event.
+The grid has option to span row cells. To achieve this, You need to define the [`rowSpan`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [`QueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event.
 
 In the following demo, **Davolio** cell is spanned to two rows in the **EmployeeName** column.
 
@@ -28,6 +28,6 @@ Also Grid supports the spanning of rows and columns for same cells. **Lunch Brea
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/spanning-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/spanning-cs2" %}
 
-> To disable the spanning for particular grid page, we need to use **requestType** from [`QueryCellInfo`](../../api/grid/queryCellInfoEventArgs) event argument.
+> To disable the spanning for particular grid page, we need to use **requestType** from [`QueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event argument.

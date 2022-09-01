@@ -10,9 +10,9 @@ documentation: ug
 
 # Grouped row page size in Angular Grid component
 
-By default, we have displayed the no of records based on the [`pageSize`](../../api/grid/pageSettings/#pagesize). If you want to show grouped column rows based on the [`pageSize`](../../api/grid/pageSettings/#pagesize) then we suggest you to use the below way.
+By default, we have displayed the no of records based on the [`pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesize). If you want to show grouped column rows based on the [`pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesize) then we suggest you to use the below way.
 
-In the below sample, we have overridden the default **generateQuery** to display the grouped rows instead of grid rows based on the [`pageSize`](../../api/grid/pageSettings/#pagesize).
+In the below sample, we have overridden the default **generateQuery** to display the grouped rows instead of grid rows based on the [`pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings/#pagesize).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,4 +26,4 @@ In the below sample, we have overridden the default **generateQuery** to display
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/filtering1-cs13/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs13" %}

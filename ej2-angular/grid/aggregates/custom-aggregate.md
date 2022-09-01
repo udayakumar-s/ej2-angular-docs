@@ -13,13 +13,13 @@ documentation: ug
 Sometimes you can have a scenario to calculate aggregate value using your own aggregate function,
  we can achieve this behavior using the custom aggregate option.
 To use custom aggregation, specify the
-[`type`](../../api/grid/aggregateColumnDirective/#type) as **Custom** and provide the custom aggregate
-function in the [`customAggregate`](../../api/grid/aggregateColumnDirective/#customaggregate) property.
+[`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) as **Custom** and provide the custom aggregate
+function in the [`customAggregate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#customaggregate) property.
 
 The custom aggregate function will be invoked with different arguments for Total and Group aggregations.
-* **Total aggregation** - the custom aggregate function will be called with whole data and the current [`AggregateColumn`](../../api/grid/aggregateColumnDirective)
+* **Total aggregation** - the custom aggregate function will be called with whole data and the current [`AggregateColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective)
 object.
-* **Group aggregation** - it will be called with current group details and the [`AggregateColumn`](../../api/grid/aggregateColumnDirective) object.
+* **Group aggregation** - it will be called with current group details and the [`AggregateColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective) object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,6 +33,6 @@ object.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/aggregates-custom-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/aggregates-custom-cs1" %}
 
 > To access the custom aggregate value inside template, use the key as **Custom**

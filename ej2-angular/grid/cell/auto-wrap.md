@@ -11,10 +11,10 @@ documentation: ug
 # Auto wrap in Angular Grid component
 
 The auto wrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the cell width. The Cell Content wrapping works based on the position of white space between words.
-To enable auto wrap, set the [`allowTextWrap`](../../api/grid/#allowtextwrap) property to **true**.
-You can configure the auto wrap mode by setting the [`textWrapSettings.wrapMode`](../../api/grid/textWrapSettings/#wrapmode) property.
+To enable auto wrap, set the [`allowTextWrap`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowtextwrap) property to **true**.
+You can configure the auto wrap mode by setting the [`textWrapSettings.wrapMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings/#wrapmode) property.
 
-There are three types of [`wrapMode`](../../api/grid/textWrapSettings/#wrapmode). They are
+There are three types of [`wrapMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings/#wrapmode). They are
 
 * **Both** - The **Both** value is set by default. The auto wrap will be enabled for both content and Header.
 * **Header** - Auto wrap will be enabled only for the header.
@@ -22,7 +22,7 @@ There are three types of [`wrapMode`](../../api/grid/textWrapSettings/#wrapmode)
 
 Note: When a column width is not specified, then auto wrap of columns will be adjusted with respect to the grid's width.
 
-In the below example, the [`textWrapSettings.wrapMode`](../../api/grid/textWrapSettings/#wrapmode) is set as **Content**.
+In the below example, the [`textWrapSettings.wrapMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings/#wrapmode) is set as **Content**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,4 +36,4 @@ In the below example, the [`textWrapSettings.wrapMode`](../../api/grid/textWrapS
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/autowrap-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/autowrap-cs1" %}

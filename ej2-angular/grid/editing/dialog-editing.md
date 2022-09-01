@@ -12,7 +12,7 @@ documentation: ug
 
 In Dialog edit mode, when you start editing the currently selected row data will be shown on a dialog.
 You can change the cell values and save edited data to the data source.
-To enable Dialog edit, set the [`editSettings.mode`](../../api/grid/editSettings/#mode) as **Dialog**.
+To enable Dialog edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Dialog**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,11 +26,11 @@ To enable Dialog edit, set the [`editSettings.mode`](../../api/grid/editSettings
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs7/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs7" %}
 
 ## Customize edit dialog
 
-You can customize the appearance of the edit dialog in the [`actionComplete`](../../api/grid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
+You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
 
 In the following example, the dialog's properties like header text, showCloseIcon, height have been changed while editing and adding the records.
 
@@ -50,15 +50,15 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs8/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs8" %}
 
 ## Show or hide columns in dialog editing
 
-You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](../../api/grid/#actionbegin) and [`actionComplete`](../../api/grid/#actioncomplete) events.
+You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) events.
 
-In the [`actionBegin`](../../api/grid/#actionbegin) event, based on **requestType** as **beginEdit** or  **add**. We can show or hide the editor by using [`column.visible`](../../api/grid/column/#visible) property.
+In the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event, based on **requestType** as **beginEdit** or  **add**. We can show or hide the editor by using [`column.visible`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property.
 
-In the [`actionComplete`](../../api/grid/#actioncomplete) event, based on **requestType** as **save**. We can reset the properties back to the column state.
+In the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event, based on **requestType** as **save**. We can reset the properties back to the column state.
 
 In the below example, we have rendered the grid columns **CustomerID** as hidden column and **ShipCountry** as visible column. In the edit mode, we have changed the **CustomerID** column to visible state and **ShipCountry** column to hidden state.
 
@@ -74,11 +74,11 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs9/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs9" %}
 
 ## Use wizard like dialog editing
 
-Wizard helps you create intuitive step-by-step forms to fill. You can achieve the wizard like editing by using the dialog template feature. It support your own editing template by defining [`editSettings.mode`](../../api/grid/editSettings/#mode) as **Dialog** and [`editSettingsTemplate`](../../api/grid/editSettings/#template) as template variable to define the editors.
+Wizard helps you create intuitive step-by-step forms to fill. You can achieve the wizard like editing by using the dialog template feature. It support your own editing template by defining [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Dialog** and [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) as template variable to define the editors.
 
 The following example demonstrate the wizard like editing in the grid with the unobtrusive Validation.
 
@@ -94,4 +94,4 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/wizardtemplate-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/wizardtemplate-cs1" %}

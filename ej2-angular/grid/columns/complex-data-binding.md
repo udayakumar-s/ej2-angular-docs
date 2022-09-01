@@ -10,7 +10,7 @@ documentation: ug
 
 # Complex data binding in Angular Grid component
 
-You can achieve complex data binding in the grid by using the dot(.) operator in the [`column.field`](../../api/grid/column/#field).
+You can achieve complex data binding in the grid by using the dot(.) operator in the [`column.field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -24,9 +24,9 @@ You can achieve complex data binding in the grid by using the dot(.) operator in
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs18/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs18" %}
 
- For OData and ODataV4 adaptors, you need to add [`expand`](https://ej2.syncfusion.com/documentation/api/data/query/#expand) query to the [`query`](../../api/grid/#query) property (of Grid), to eager load the complex data.
+ For OData and ODataV4 adaptors, you need to add [`expand`](https://ej2.syncfusion.com/documentation/api/data/query/#expand) query to the [`query`](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property (of Grid), to eager load the complex data.
 
  ```typescript
 import { Component, OnInit } from '@angular/core';

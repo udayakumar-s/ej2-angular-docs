@@ -14,7 +14,7 @@ You can customize text, page number, line, page size and changing orientation in
 
 ## Write a text in header and footer
 
-You can add text either in Header or Footer of exported PDF document using [`pdfExportProperties`](../../api/grid/pdfExportProperties).
+You can add text either in Header or Footer of exported PDF document using [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties).
 
 ```typescript
 
@@ -96,7 +96,7 @@ Supported page number types:
 
 ## Insert an image in header and footer
 
-Image (Base64 string with .jpeg format) can be added in the exported document in header/footer using the [`pdfExportProperties`](../../api/grid/pdfExportProperties).
+Image (Base64 string with .jpeg format) can be added in the exported document in header/footer using the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties).
 
 ```typescript
 
@@ -131,13 +131,13 @@ The below code illustrates the pdf export customization.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs5/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs5" %}
 
 ## Repeat column header on every page
 
 By default, column header will be placed on the first page of the pdf document but you can display column header on every page using **repeatHeader** property of **pdfGrid**.
 
-In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQueryCellInfo`](../../api/grid/#pdfheaderquerycellinfo) event to show the header on every page.
+In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfheaderquerycellinfo) event to show the header on every page.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -151,4 +151,4 @@ In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQue
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs6/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs6" %}

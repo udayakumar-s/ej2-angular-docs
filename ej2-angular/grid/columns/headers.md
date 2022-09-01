@@ -12,8 +12,8 @@ documentation: ug
 
 ## Header text
 
-By default, column header title is displayed from column [`field`](../../api/grid/column/#field) value.
-To override the default header title by defining [`headerText`](../../api/grid/column/#headertext) value.
+By default, column header title is displayed from column [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) value.
+To override the default header title by defining [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,14 +27,14 @@ To override the default header title by defining [`headerText`](../../api/grid/c
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs20/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs20" %}
 
-> If both the [`field`](../../api/grid/column/#field) and [`headerText`](../../api/grid/column/#headertext)
+> If both the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) and [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext)
 are not defined in the column, the column renders with “empty” header text.
 
 ## Header template
 
-You can customize the header element by using the [`headerTemplate`](../../api/grid/column/#headertemplate) property. In this demo, the custom element is rendered for both CustomerID and OrderDate column headers.
+You can customize the header element by using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) property. In this demo, the custom element is rendered for both CustomerID and OrderDate column headers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,17 +48,17 @@ You can customize the header element by using the [`headerTemplate`](../../api/g
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/header-template-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/header-template-cs1" %}
 
 ## Change header text dynamically
 
-You can change the column [`headerText`](../../api/grid/column/#headertext) dynamically through an external button.
+You can change the column [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) dynamically through an external button.
 
 Follow the given steps to change the header text dynamically:
 
 **Step 1**:
 
-Get the column object corresponding to the field name by using the [`getColumnByField`](../../api/grid/#getcolumnbyfield) method.
+Get the column object corresponding to the field name by using the [`getColumnByField`](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield) method.
 Then change the header Text value.
 
 ```typescript
@@ -69,7 +69,7 @@ column.headerText = 'Changed Text';
 
 **Step 2**:
 
-To reflect the changes in the grid header, invoke the [`refreshHeader`](../../api/grid/#refreshheader) method.
+To reflect the changes in the grid header, invoke the [`refreshHeader`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshheader) method.
 
 ```typescript
 this.grid.refreshHeader();
@@ -88,11 +88,11 @@ this.grid.refreshHeader();
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/change-headertext-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/change-headertext-cs1" %}
 
 ## Change the orientation of header text
 
-You can change the orientation of the header text by using the [`customAttributes`](../../api/grid/column/#customattributes) property.
+You can change the orientation of the header text by using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
 To change the Orientation of Header Text, Ensure the following steps:
 
@@ -109,7 +109,7 @@ Create a css class with orientation style for grid header cell.
 
 **Step 2**:
 
-Add the custom css class to particular column by using [`customAttributes`](../../api/grid/column/#customattributes) property.
+Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
 ```typescript
     <e-column field='Freight' headerText='Freight' textAlign='Center' format='C2' [customAttributes]='customAttributes' width=80></e-column>
@@ -143,4 +143,4 @@ setHeaderHeight(args) {
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/header-orientation-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/header-orientation-cs1" %}

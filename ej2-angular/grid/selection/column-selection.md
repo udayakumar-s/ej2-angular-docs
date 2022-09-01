@@ -12,7 +12,7 @@ documentation: ug
 
 Column selection can be done through simple mouse down or arrow keys.
 
-You can enable column selection by setting the [`selectionSettings.allowColumnSelection`](../../api/grid/selectionSettings/#allowcolumnselection) property as true.
+You can enable column selection by setting the [`selectionSettings.allowColumnSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#allowcolumnselection) property as true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,4 +26,4 @@ You can enable column selection by setting the [`selectionSettings.allowColumnSe
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs6/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/selection-cs6" %}

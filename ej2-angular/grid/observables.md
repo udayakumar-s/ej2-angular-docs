@@ -108,7 +108,7 @@ export class DataService extends Subject<DataStateChangeEventArgs> {
 
 ## Handling grid actions
 
-For grid actions such as **paging**, **grouping**, **sorting**, etc., the [`dataStateChange`](../api/grid/#datastatechange) event is invoked. You have to query and resolve data using [`Observable`](https://angular.io/guide/observables) in this event based on the state arguments.
+For grid actions such as **paging**, **grouping**, **sorting**, etc., the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event is invoked. You have to query and resolve data using [`Observable`](https://angular.io/guide/observables) in this event based on the state arguments.
 
 ```ts
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -153,11 +153,11 @@ export class AppComponent implements OnInit {
 
 ```
 
-> When initial rendering, the [`dataStateChange`](../api/grid/#datastatechange) event will not be triggered. You can perform the operation in the **ngOnInit** if you want the grid to show the record.
+> When initial rendering, the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event will not be triggered. You can perform the operation in the **ngOnInit** if you want the grid to show the record.
 
 ## Perform CRUD operations
 
-The [`dataSourceChanged`](../api/grid/#datasourcechanged) event is triggered to update the grid data. You can perform the save operation based on the event arguments and you need to call the [`endEdit`](../api/grid/#endedit) method to indicate the completion of save operation.
+The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasourcechanged) event is triggered to update the grid data. You can perform the save operation based on the event arguments and you need to call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) method to indicate the completion of save operation.
 
 ```ts
 import { Component, OnInit, ViewChild, ViewContainerRef, Inject } from '@angular/core';
@@ -291,11 +291,11 @@ export class CrudService extends Subject<DataStateChangeEventArgs>  {
 
 ## Calculate aggregates
 
-The footer aggregate values should be calculated and sent along with the [`dataSource`](../api/grid/#datasource) property as follows. The aggregate property of the data source should contain the aggregate value assigned to the **field – type** property. For example, the **Sum** aggregate value for the **Freight** field should be assigned to the **Freight - sum** property.
+The footer aggregate values should be calculated and sent along with the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property as follows. The aggregate property of the data source should contain the aggregate value assigned to the **field – type** property. For example, the **Sum** aggregate value for the **Freight** field should be assigned to the **Freight - sum** property.
 
 ```json
 {
-    result: [{..}, {..}, {..}, ...],
+    result: [{https://ej2.syncfusion.com/angular/documentation}, {..}, {..}, ...],
     count: 830,
     aggregates: { 'Freight - sum' : 450,'EmployeeID - min': 1 }
 }

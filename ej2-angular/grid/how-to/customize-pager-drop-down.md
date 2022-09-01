@@ -10,7 +10,7 @@ documentation: ug
 
 # Customize pager drop down in Angular Grid component
 
-To customize default values of pager dropdown, you need to define [`pageSizes`](../../api/grid/pageSettingsModel/#pagesizes) as array of strings.
+To customize default values of pager dropdown, you need to define [`pageSizes`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/#pagesizes) as array of strings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -24,4 +24,4 @@ To customize default values of pager dropdown, you need to define [`pageSizes`](
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs4/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-column-cs4" %}

@@ -14,7 +14,7 @@ Frozen rows and columns provides an option to make rows and columns always visib
 
 To use frozen rows and columns support, inject the **FreezeService** in the provider section of **AppModule**.
 
-In this demo, the [`frozenColumns`](../api/grid/#frozencolumns) is set as **2** and the [`frozenRows`](../api/grid/#frozenrows)
+In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) is set as **2** and the [`frozenRows`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows)
 is set as **3**. Hence, the left two columns and top three rows are frozen.
 
 {% tabs %}
@@ -29,7 +29,7 @@ is set as **3**. Hence, the left two columns and top three rows are frozen.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/frozenrows-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/frozenrows-cs1" %}
 
 > * Frozen rows and columns should not be set outside the grid view port.
 > * Frozen Grid will support row and column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
@@ -45,9 +45,9 @@ The following features are not supported in frozen rows and columns:
 
 ## Freeze Direction
 
-You can freeze the Grid columns on the left or right side by using the [`column.freeze`](../api/grid/column/#freeze) property and the remaining columns will be movable. The grid will automatically move the columns to the left or right position based on the [`column.freeze`](../api/grid/column/#freeze) value.
+You can freeze the Grid columns on the left or right side by using the [`column.freeze`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#freeze) property and the remaining columns will be movable. The grid will automatically move the columns to the left or right position based on the [`column.freeze`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#freeze) value.
 
-Types of the [`column.freeze`](../api/grid/column/#freeze) directions:
+Types of the [`column.freeze`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#freeze) directions:
 
 * **`Left`**: Allows you to freeze the columns at the left.
 * **`Right`**: Allows you to freeze the columns at the right.
@@ -66,9 +66,9 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/frozenrows-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/frozenrows-cs2" %}
 
-> * Freeze Direction is not compatible with the [`isFrozen`](../api/grid/column/#isfrozen) and [`frozenColumns`](../api/grid/#frozencolumns) properties.
+> * Freeze Direction is not compatible with the [`isFrozen`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) and [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) properties.
 
 ## Limitations of Freeze Direction
 
@@ -80,7 +80,7 @@ This feature has the below limitations, along with the above mentioned Frozen Gr
 
 ## Add validation rule for frozen Grid
 
-In a frozen column enabled Grid, Grid content will be separated into frozen and movable parts. The following code can be used to dynamically add validation to input fields that are placed in the movable part. In the [actionComplete](../api/grid/#actioncomplete) event args, you can find the movableform instance as an argument. Here, you can add validation rules dynamically.
+In a frozen column enabled Grid, Grid content will be separated into frozen and movable parts. The following code can be used to dynamically add validation to input fields that are placed in the movable part. In the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event args, you can find the movableform instance as an argument. Here, you can add validation rules dynamically.
 
 ```typescript
   actionComplete: (args: DialogEditEventArgs) => {
@@ -106,6 +106,6 @@ Validation rules for the 'EmployeeID' and 'Freight' columns can be added in the 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/frozenrows-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/frozenrows-cs3" %}
 
 > This is applicable when a frozen column is enabled and the edit mode is set as "**Normal**" in the Grid.

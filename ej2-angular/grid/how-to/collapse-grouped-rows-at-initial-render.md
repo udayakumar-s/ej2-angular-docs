@@ -10,7 +10,7 @@ documentation: ug
 
 # Collapse grouped rows at initial render in Angular Grid component
 
-You can collapse all the grouped rows at initial rendering by using [`dataBound`](../../api/grid/#databound) event with  [`collapseAll`](../../api/grid/group/#collapseall) method of the grid.
+You can collapse all the grouped rows at initial rendering by using [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event with  [`collapseAll`](https://ej2.syncfusion.com/angular/documentation/api/grid/group/#collapseall) method of the grid.
 
 In the below demo, all the grouped rows are collapsed at initial rendering.
 
@@ -26,4 +26,4 @@ In the below demo, all the grouped rows are collapsed at initial rendering.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/collapse-all-initial-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/collapse-all-initial-cs1" %}

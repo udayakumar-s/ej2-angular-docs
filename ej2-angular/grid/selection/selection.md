@@ -12,10 +12,10 @@ documentation: ug
 
 Selection provides an option to highlight a row or cell or column.
 Selection can be done through simple Mouse down or Arrow keys.
-To disable selection in the Grid, set the [`allowSelection`](../../api/grid/#allowselection) to false.
+To disable selection in the Grid, set the [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowselection) to false.
 
 The grid supports two types of selection that can be set by using the
-[`selectionSettings.type`](../../api/grid/selectionSettings/#type).They are:
+[`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type).They are:
 
 * **Single** - The **Single** value is set by default. Allows you to select only a single row or cell or column.
 * **Multiple** - Allows you to select multiple rows or cells or columns.
@@ -34,12 +34,12 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs13/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/selection-cs13" %}
 
 ## Selection mode
 
 Grid supports three types of selection mode which can be set by using
-[`selectionSettings.mode`](../../api/grid/selectionSettings/#mode). They are:
+[`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode). They are:
 
 * **Row** - The **row** value is set by default. Allows you to select rows only.
 * **Cell** - Allows you to select cells only.
@@ -57,7 +57,7 @@ Grid supports three types of selection mode which can be set by using
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/selection-cs14/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/selection-cs14" %}
 
 ## Touch interaction
 
@@ -65,7 +65,7 @@ When you tap Grid row on touch screen devices, then the tapped row is selected.
 Also, it will show a popup ![Multi row selection](../images/selection.jpg)  for multi-row-selection.
 To select multiple rows or cells, tap the popup![Multi row or cell selection](../images/mselection.jpg)  and then tap the desired rows or cells.
 
-> For multi-selection, It requires the selection [`type`](../../api/grid/selectionSettings/#type) to be **Multiple**.
+> For multi-selection, It requires the selection [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) to be **Multiple**.
 
 The following screenshot represents a Grid touch selection in the device.
 

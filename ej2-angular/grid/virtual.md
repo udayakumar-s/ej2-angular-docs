@@ -19,12 +19,12 @@ To use virtualization, you need to inject **VirtualScrollService** in Grid.
 Row virtualization allows you to load and render rows only in content viewport. It is an alternative way of
 paging in which the data will load while scrolling vertically.
 To setup the row virtualization, you need to define
-[`enableVirtualization`](../api/grid/#enablevirtualization) as true and
-content height by [`height`](../api/grid/#height) property.
+[`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) as true and
+content height by [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
 
 The number of records displayed in the Grid is determined implicitly by height of content area. Also you have an option to define visible
 number of records by
-[`pageSettings.pageSize`](../api/grid/pageSettingsModel/#pagesize) property.
+[`pageSettings.pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/#pagesize) property.
 The loaded data will be cached and reused when it is needed for next time.
 
 {% tabs %}
@@ -39,7 +39,7 @@ The loaded data will be cached and reused when it is needed for next time.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs8/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs8" %}
 
 ## Column Virtualization
 
@@ -47,8 +47,8 @@ Column virtualization allows you to virtualize columns. It will render columns w
 You can scroll horizontally to view more columns.
 
 To setup the column virtualization, set the
-[`enableVirtualization`](../api/grid/#enablevirtualization) and
-[`enableColumnVirtualization`](../api/grid/#enablecolumnvirtualization) properties as `true`.
+[`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) and
+[`enableColumnVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablecolumnvirtualization) properties as `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,9 +62,9 @@ To setup the column virtualization, set the
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs9/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs9" %}
 
-> Column's [`width`](../api/grid/column/#width) is required for column virtualization.
+> Column's [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) is required for column virtualization.
 If column's width is not defined then Grid will consider its value as **200px**.
 
 ## Virtualization with Grouping
@@ -96,7 +96,7 @@ If you want to increase the row height to accommodate the content then you can s
 }
 ```
 
-* Programmatic selection using [`selectRows`](../api/grid/#selectrows) method is not supported in virtual scrolling.
+* Programmatic selection using [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) method is not supported in virtual scrolling.
 
 ## See also
 

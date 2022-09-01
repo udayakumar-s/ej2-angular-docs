@@ -12,8 +12,8 @@ documentation: ug
 
 ## Customize editors using params
 
-The [`columns.editType`](../../api/grid/column/#edittype) is used to define the editor component for any particular column.
-You can set the [`columns.editType`](../../api/grid/column/#edittype) based on data type of the column.
+The [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edittype) is used to define the editor component for any particular column.
+You can set the [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edittype) based on data type of the column.
 
 * [`NumericTextBox`](../../numerictextbox) component for integers, double, and decimal data types.
 
@@ -27,7 +27,7 @@ You can set the [`columns.editType`](../../api/grid/column/#edittype) based on d
 
 * [`DateTimePicker`](../../datetimepicker) component for date time data type.
 
-Also, you can customize the behavior of the editor component through the [`columns.edit.params`](../../api/grid/column/#edit).
+Also, you can customize the behavior of the editor component through the [`columns.edit.params`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit).
 
 The following table describes editor component and their example edit params of the column.
 
@@ -51,7 +51,7 @@ Component |Example
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs10/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs10" %}
 
 > If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component) .
 
@@ -73,13 +73,13 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/prevent-decimalpoint-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/prevent-decimalpoint-cs1" %}
 
 ### Provide custom data source and enabling filtering to DropDownList
 
-You can provide data source to the DropDownList by using the [`columns.edit.params`](../../api/grid/column/#edit) property.
+You can provide data source to the DropDownList by using the [`columns.edit.params`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property.
 
-While setting new data source using edit params, you must specify a new [`query`](../../api/drop-down-list#query) property too for the DropDownList as follows,
+While setting new data source using edit params, you must specify a new [`query`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#query) property too for the DropDownList as follows,
 
 ```typescript
 {
@@ -96,7 +96,7 @@ While setting new data source using edit params, you must specify a new [`query`
 
 ```
 
-You can also enable filtering for the DropDownList by passing the [`allowFiltering`](../../api/drop-down-list#allowfiltering) as **true** to the edit params.
+You can also enable filtering for the DropDownList by passing the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowfiltering) as **true** to the edit params.
 
 In the below demo, DropDownList is rendered with custom Datasource for the **ShipCountry** column and enabled filtering to search DropDownList items.
 
@@ -112,7 +112,7 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs11/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs11" %}
 
 ## Custom editors using template
 
@@ -142,7 +142,7 @@ Use the cell edit template feature of the Grid to render the TimePicker componen
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs12/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs12" %}
 
 ### Render AutoComplete component while editing
 
@@ -160,7 +160,7 @@ Use the cell edit template feature of the Grid to render the AutoComplete compon
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs13/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs13" %}
 
 ### Render MultiSelect DropDown component while editing
 
@@ -178,11 +178,11 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs14/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs14" %}
 
 ### Render RichTextEditor component while editing
 
-Use the cell edit template feature of the Grid to render the RichTextEditor component in the Grid edit form. In the below sample, we have rendered RichTextEditor component in the **ShipAddress** column, so we use [allowTextWrap](../../api/grid/#allowtextwrap) property to true.
+Use the cell edit template feature of the Grid to render the RichTextEditor component in the Grid edit form. In the below sample, we have rendered RichTextEditor component in the **ShipAddress** column, so we use [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowtextwrap) property to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -196,11 +196,11 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs15/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs15" %}
 
 ### Using template
 
-The cell editor for a particular column can be specified using the content of the NgTemplate. The [`#editTemplate`](../../api/grid/column/#edittemplate-string) template variable identifies the NgTemplate content as the corresponding column editor.
+The cell editor for a particular column can be specified using the content of the NgTemplate. The [`#editTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edittemplate-string) template variable identifies the NgTemplate content as the corresponding column editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -214,4 +214,4 @@ The cell editor for a particular column can be specified using the content of th
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/edit-cs16/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs16" %}

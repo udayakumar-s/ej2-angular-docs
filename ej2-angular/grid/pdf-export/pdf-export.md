@@ -11,8 +11,8 @@ documentation: ug
 # Pdf export in Angular Grid component
 
 PDF export allows exporting Grid data to PDF document. You need to use the
- [`pdfExport`](../../api/grid/#pdfexport) method for exporting.
- To enable PDF export in the grid, set the [`allowPdfExport`](../../api/grid/#allowpdfexport) as true.
+ [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexport) method for exporting.
+ To enable PDF export in the grid, set the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowpdfexport) as true.
 
 To use PDF export, inject **PdfExportService** in the provider section of **AppModule**.
 
@@ -28,13 +28,13 @@ To use PDF export, inject **PdfExportService** in the provider section of **AppM
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs18/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs18" %}
 
 ## Show spinner while exporting
 
-You can show/ hide spinner component while exporting the grid using **showSpinner**/ **hideSpinner** methods. You can use [`toolbarClick`](../../api/grid/#toolbarclick) event to show spinner before exporting and hide a spinner in the [`pdfExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexportcomplete) or [`excelExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete) event after the exporting.
+You can show/ hide spinner component while exporting the grid using **showSpinner**/ **hideSpinner** methods. You can use [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event to show spinner before exporting and hide a spinner in the [`pdfExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexportcomplete) or [`excelExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete) event after the exporting.
 
-In the [`toolbarClick`](../../api/grid/#toolbarclick) event, based on the parameter **args.item.id** as **Grid_pdfexport** or **Grid_excelexport** we can call the **showSpinner** method from grid instance.
+In the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event, based on the parameter **args.item.id** as **Grid_pdfexport** or **Grid_excelexport** we can call the **showSpinner** method from grid instance.
 
 In the [`pdfExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexportcomplete) or [`excelExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete) event, We can call the **hideSpinner** method.
 
@@ -52,11 +52,11 @@ In the below demo, we have rendered the default spinner component when exporting
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs19/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs19" %}
 
 ## Custom data source
 
-PDF export provides an option to define datasource dynamically before exporting. To export data dynamically, define the [`dataSource`](../../api/grid/pdfExportProperties/#datasource) in [`pdfExportProperties`](../../api/grid/pdfExportProperties/)
+PDF export provides an option to define datasource dynamically before exporting. To export data dynamically, define the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) in [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,11 +70,11 @@ PDF export provides an option to define datasource dynamically before exporting.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs20/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs20" %}
 
 ## Passing additional parameters to the server when exporting
 
-You can pass the additional parameter in the [`query`](../../api/grid/#query) property by invoking **addParams** method. In the [`toolbarClick`](../../api/grid/#toolbarclick) event, you can define params as key and value pair so it will receive at the server side when exporting.
+You can pass the additional parameter in the [`query`](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property by invoking **addParams** method. In the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event, you can define params as key and value pair so it will receive at the server side when exporting.
 
 In the below example, we have passed **recordcount** as **12** using **addParams** method
 
@@ -90,7 +90,7 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs21/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs21" %}
 
 ## See Also
 

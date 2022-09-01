@@ -15,7 +15,7 @@ documentation: ug
 The [`Localization`](../common/localization/) library allows you to localize default text content of the Grid.
 The grid component has static text on some features (like group drop area text, pager information text, etc.)
 that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
-[`locale`](../api/grid/#locale) value and translation object.
+[`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value and translation object.
 
 The following list of properties and its values are used in the grid.
 
@@ -135,13 +135,13 @@ The below example demonstrates the Grid in **Deutsch** culture.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/localization-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/localization-cs1" %}
 
 ## Internationalization
 
 The [`Internationalization`](../common/intl.html) library is used to globalize number, date,
 and time values in grid component using format strings in the
-[`columns.format`](../api/grid/column/#format).
+[`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
 
 For importing **json** files in your application, you need to include the **json-typings.d.ts** file.
 
@@ -166,16 +166,16 @@ You need to load culture format files in **ngOnInit** function.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/localization-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/localization-cs2" %}
 
 > * In the above sample, **Freight** column is formatted by [`NumberFormatOptions`](../common/internationalization/#manipulating-numbers).
-> * By default, [`locale`](../api/grid/#locale) value is **en-US**. If you want to change **en-US** culture, then set the [`locale`](../api/grid/#locale).
+> * By default, [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value is **en-US**. If you want to change **en-US** culture, then set the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale).
 
 ## Right to Left - RTL
 
 RTL provides an option to switch the text direction and layout of Grid component from right to left.
 It improves the user experiences and accessibility for users who use right-to-left languages(Arabic, Farsi, Urdu, etc).
-To enable RTL in the Grid, set the [`enableRtl`](../api/grid/#enablertl) to true.
+To enable RTL in the Grid, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablertl) to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -189,7 +189,7 @@ To enable RTL in the Grid, set the [`enableRtl`](../api/grid/#enablertl) to true
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/paging1-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs1" %}
 
 ## See Also
 

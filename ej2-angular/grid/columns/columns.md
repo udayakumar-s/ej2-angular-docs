@@ -13,18 +13,18 @@ documentation: ug
 The column definitions are used as the **dataSource** schema in the Grid.
 This plays a vital role in rendering column values in the required format.
 The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions.
-The [`field`](../../api/grid/column/#field) property of the [`columns`](../../api/grid/column)
+The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column)
 is necessary to map the data source values in Grid columns.
 
-> 1. If the column with [`field`](../../api/grid/column/#field) is not in the dataSource, then the column values will be displayed as empty.
-> 2. If the [`field`](../../api/grid/column/#field) name contains “dot” operator then it is considered as complex binding.
+> 1. If the column with [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) is not in the dataSource, then the column values will be displayed as empty.
+> 2. If the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) name contains “dot” operator then it is considered as complex binding.
 
 ## Column types
 
-Column type can be specified using the [`columns.type`](../../api/grid/column/#type) property. It specifies the type of data the column binds.
+Column type can be specified using the [`columns.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. It specifies the type of data the column binds.
 
-If the [`format`](../../api/grid/column/#format)  is defined for a column,
-the column uses [`type`](../../api/grid/column/#type) to select the appropriate format option ([number](../../common/internationalization/#number-formatting)
+If the [`format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format)  is defined for a column,
+the column uses [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) to select the appropriate format option ([number](../../common/internationalization/#number-formatting)
  or [date](../../common/internationalization/#manipulating-datetime)).
 
 Grid column supports the following types:
@@ -34,13 +34,13 @@ Grid column supports the following types:
 * date
 * datetime
 
-> If the [`type`](../../api/grid/column/#type) is not defined, then it will be determined from the first record of the [`dataSource`](../../api/grid/#datasource).
-> Incase if the first record of the [`dataSource`](../../api/grid/#datasource) is null/blank value for a column then it is necessary to define the [`type`](../../api/grid/column/#type) for that column.
+> If the [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) is not defined, then it will be determined from the first record of the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource).
+> Incase if the first record of the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) is null/blank value for a column then it is necessary to define the [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) for that column.
 
 ## ValueAccessor
 
-The [`valueAccessor`](../../api/grid/column/#valueaccessor) is used to access/manipulate the value of display data.
-You can achieve custom value formatting by using [`valueAccessor`](../../api/grid/column/#valueaccessor).
+The [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor) is used to access/manipulate the value of display data.
+You can achieve custom value formatting by using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,13 +54,13 @@ You can achieve custom value formatting by using [`valueAccessor`](../../api/gri
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs10/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs10" %}
 
 ### Display array type columns
 
-You can bind an Array of Objects in a column by using [`valueAccessor`](../../api/grid/column/#valueaccessor) property.
+You can bind an Array of Objects in a column by using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor) property.
 In this example, The Name field has an array of two objects FirstName and LastName. These two objects are joined and bind to a column using
-[`valueAccessor`](../../api/grid/column/#valueaccessor).
+[`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,11 +74,11 @@ In this example, The Name field has an array of two objects FirstName and LastNa
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs11/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs11" %}
 
 ### Expression column
 
-You can achieve the expression column by using [`valueAccessor`](../../api/grid/column/#valueaccessor) property.
+You can achieve the expression column by using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,11 +92,11 @@ You can achieve the expression column by using [`valueAccessor`](../../api/grid/
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/expression-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/expression-cs1" %}
 
 ## Format
 
-To format cell values based on specific culture, use the [`columns.format`](../../api/grid/column/#format)
+To format cell values based on specific culture, use the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format)
 property. The grid uses [`Internalization`](../../common/internationalization/) library to format [`number`](../../common/internationalization/#number-formatting) and
 [`date`](../../common/internationalization/#manipulating-datetime)
 values.
@@ -113,7 +113,7 @@ values.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs12/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs12" %}
 
 > By default, the [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained ['here'](../../common/internationalization/)
 
@@ -133,7 +133,7 @@ Please refer to the link to know more about [`number`](../../common/internationa
 
 You can format date values either using built-in date format string or custom format string.
 
-For built-in date format you can specify [`columns.format`](../../api/grid/column/#format) as string   (Example: **yMd**). Please refer to the link to know more about [`Date formatting`](../../common/internationalization/#manipulating-datetime)
+For built-in date format you can specify [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) as string   (Example: **yMd**). Please refer to the link to know more about [`Date formatting`](../../common/internationalization/#manipulating-datetime)
 
 You can also use custom format string to format the date values. Some of the custom formats and the formatted date values are given in the below table.
 
@@ -157,11 +157,11 @@ Format | Formatted value
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs13/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs13" %}
 
 ## Render boolean value as checkbox
 
-To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../../api/grid/column/#displayascheckbox) property as **true**.
+To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property as **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -175,11 +175,11 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs14/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs14" %}
 
 ## Visibility
 
-You can hide any particular column in Grid before rendering by defining [`visible`](../../api/grid/column/#visible) property as false. In the below sample **ShipCity** column is defined as visible false.
+You can hide any particular column in Grid before rendering by defining [`visible`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property as false. In the below sample **ShipCity** column is defined as visible false.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -193,11 +193,11 @@ You can hide any particular column in Grid before rendering by defining [`visibl
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs15/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs15" %}
 
 ## Lock columns
 
-You can lock columns by using [`column.lockColumn`](../../api/grid/column/#lockcolumn) property. The locked columns will be moved to the first position. Also you can’t reorder its position.
+You can lock columns by using [`column.lockColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#lockcolumn) property. The locked columns will be moved to the first position. Also you can’t reorder its position.
 
 In the below example, Ship City column is locked and its reordering functionality is disabled.
 
@@ -213,12 +213,12 @@ In the below example, Ship City column is locked and its reordering functionalit
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/reorder-cs5/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/reorder-cs5" %}
 
 ## Controlling Grid actions
 
-You can enable or disable grid action for a particular column by setting the [`allowFiltering`](../../api/grid/columnModel/#allowfiltering),
-[`allowGrouping`](../../api/grid/columnModel/#allowgrouping), [`allowSorting`](../../api/grid/columnModel/#allowsorting), [`allowReordering`](../../api/grid/columnModel/#allowreordering) and [`allowEditing`](../../api/grid/columnModel/#allowediting) properties.
+You can enable or disable grid action for a particular column by setting the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowfiltering),
+[`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowgrouping), [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowsorting), [`allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowreordering) and [`allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowediting) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -232,11 +232,11 @@ You can enable or disable grid action for a particular column by setting the [`a
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/control-actions-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/control-actions-cs1" %}
 
 ## Show or hide columns by external button
 
-You can show or hide the grid columns dynamically through external buttons by invoking the [`showColumns`](../../api/grid/#showcolumns)/[`hideColumns`](../../api/grid/#hidecolumns)
+You can show or hide the grid columns dynamically through external buttons by invoking the [`showColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#showcolumns)/[`hideColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#hidecolumns)
 methods.
 
 {% tabs %}
@@ -251,12 +251,12 @@ methods.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs16/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs16" %}
 
 ## Customize column styles
 
 You can customise the appearance of header and content of the particular column using the
-[`customAttributes`](../../api/grid/column/#customattributes) property.
+[`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
 To customize the grid column, follow the given steps:
 
@@ -283,7 +283,7 @@ Create a css class with custom style to override the default style for rowcell a
 
 **Step 2**:
 
-Add the custom css class to particular column by using [`customAttributes`](../../api/grid/column/#customattributes) property.
+Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -297,15 +297,15 @@ Add the custom css class to particular column by using [`customAttributes`](../.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-column-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-column-cs1" %}
 
 ## Display custom tooltip for columns
 
 You can achieve the custom tooltip([`EJ2 Tooltip`](../../../tooltip/getting-started)) for Grid by using the
-[`queryCellInfo`](../../api/grid/#querycellinfo) event.
+[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 
 Render the ToolTip component for the grid cells by using the following code in the
-[`queryCellInfo`](../../api/grid/#querycellinfo) event.
+[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 
 ```typescript
 tooltip (args: QueryCellInfoEventArgs) {
@@ -328,11 +328,11 @@ tooltip (args: QueryCellInfoEventArgs) {
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-tooltip-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-tooltip-cs1" %}
 
 ## Align the text of Grid content and header
 
-For aligning the text of Grid content and header part, kindly use [textAlign](../../api/grid/column/#textalign) and [headerTextAlign](../../api/grid/column/#headertextalign) properties.
+For aligning the text of Grid content and header part, kindly use [textAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) and [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertextalign) properties.
 
 Grid column supports the following alignments:
 * Left
@@ -352,7 +352,7 @@ Grid column supports the following alignments:
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs17/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs17" %}
 
 ## See Also
 

@@ -12,7 +12,7 @@ documentation: ug
 
 ## Conditional cell formatting
 
-Grid cells in the exported PDF can be customized or formatted using [`pdfQueryCellInfo`](../../api/grid/#pdfquerycellinfo) event. In this event, we can format the grid cells of exported PDF document based on the column cell value.
+Grid cells in the exported PDF can be customized or formatted using [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfquerycellinfo) event. In this event, we can format the grid cells of exported PDF document based on the column cell value.
 
 In the below sample, we have set the background color for **Freight** column in the exported document by **args.cell** and **backgroundColor** property.
 
@@ -28,13 +28,13 @@ In the below sample, we have set the background color for **Freight** column in 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs9/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs9" %}
 
 ## Theme
 
 PDF export provides an option to include theme for exported PDF document.
 
-To apply theme in exported PDF, define the [`theme`](../../api/grid/pdfExportProperties/#theme) in [`pdfExportProperties`](../../api/grid/pdfExportProperties/) .
+To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#theme) in [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) .
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,6 +48,6 @@ To apply theme in exported PDF, define the [`theme`](../../api/grid/pdfExportPro
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/exporting-cs10/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs10" %}
 
 > By default, material theme is applied to exported PDF document.

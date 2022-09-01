@@ -10,9 +10,9 @@ documentation: ug
 
 # Auto fit columns in Angular Grid component
 
-The [`autoFitColumns`](../../api/grid/#autofitcolumns) method resizes the column to fit the widest
+The [`autoFitColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) method resizes the column to fit the widest
 cell's content without wrapping. You can autofit specific columns at initial rendering by invoking
-the [`autoFitColumns`](../../api/grid/#autofitcolumns) method in [`dataBound`](../../api/grid/#databound) event.
+the [`autoFitColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) method in [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event.
 
 To use autofit feature, you need to inject **ResizeService** in the provider section of **AppModule**.
 
@@ -28,7 +28,7 @@ To use autofit feature, you need to inject **ResizeService** in the provider sec
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/resize-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/resize-cs1" %}
 
-> You can autofit all columns, by invoking the [`autoFitColumns`](../../api/grid/#autofitcolumns)
+> You can autofit all columns, by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns)
 method without column name.

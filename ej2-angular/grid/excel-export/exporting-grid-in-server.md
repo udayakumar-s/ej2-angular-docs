@@ -24,7 +24,7 @@ The Server side export functionality is shipped in the Syncfusion.EJ2.GridExport
 The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
 To Export the Grid in server side, You need to call the
- [`serverExcelExport`](../../api/grid/#serverexcelexport) method for passing the Grid properties to server exporting action.
+ [`serverExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/grid/#serverexcelexport) method for passing the Grid properties to server exporting action.
 
 ```typescript
 
@@ -105,9 +105,9 @@ export class AppComponent implements OnInit {
 
 ## CSV Export in server side
 
-You can export the Grid to CSV format by using the [`serverCsvExport`](../../api/grid/#servercsvexport) method which will pass the Grid properties to server.
+You can export the Grid to CSV format by using the [`serverCsvExport`](https://ej2.syncfusion.com/angular/documentation/api/grid/#servercsvexport) method which will pass the Grid properties to server.
 
-In the below demo, we have invoked the above method inside the [`toolbarClick`](../../api/grid/#toolbarclick) event. In server side, we have deserialized the Grid properties and passed to the `CsvExport` method which will export the properties to CSV format.
+In the below demo, we have invoked the above method inside the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event. In server side, we have deserialized the Grid properties and passed to the `CsvExport` method which will export the properties to CSV format.
 
 ```typescript
 

@@ -10,9 +10,9 @@ documentation: ug
 
 # Searching in Angular Grid component
 
-You can search records in a Grid, by using the [`search`](../api/grid/#search) method with search key as a parameter.
+You can search records in a Grid, by using the [`search`](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) method with search key as a parameter.
 This also provides an option to integrate search text box in grid's toolbar by adding **Search** item to the
-[`toolbar`](../api/grid/#toolbar).
+[`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar).
 
 To use Searching, you need to inject **SearchService** in the provider section of **AppModule**.
 
@@ -30,11 +30,11 @@ To use Searching, you need to inject **SearchService** in the provider section o
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/searching-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/searching-cs1" %}
 
 ## Initial search
 
-To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`searchSettings`](../api/grid/#searchsettings).
+To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`searchSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#searchsettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,14 +48,14 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/searching-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/searching-cs2" %}
 
 > By default, grid searches all the bound column values. To customize this behavior define
-the [`searchSettings.fields`](../api/grid/searchSettings/#fields) property.
+the [`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property.
 
 ## Search operators
 
-The search operator can be defined in [`searchSettings.operator`](../api/grid/searchSettings/#operator) property
+The search operator can be defined in [`searchSettings.operator`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator) property
 to configure specified searching.
 
 The following operators are supported in searching:
@@ -70,7 +70,7 @@ notEqual |Checks whether a value not equal to specified value.
 
 ## Search by external button
 
-To search grid records from an external button, invoke the [`search`](../api/grid/#search) method.
+To search grid records from an external button, invoke the [`search`](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,12 +84,12 @@ To search grid records from an external button, invoke the [`search`](../api/gri
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/searching-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/searching-cs3" %}
 
 ## Search Specific Columns
 
 By default, grid searches all visible columns. You can search specific columns by defining the specific column's field names in the
-[`searchSettings.fields`](../api/grid/searchSettings/#fields) property.
+[`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,11 +103,11 @@ By default, grid searches all visible columns. You can search specific columns b
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/searching-cs4/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/searching-cs4" %}
 
 ## Clear search by external button
 
-To clear the searched grid records from the external button, set [`searchSettings.key`](../api/grid/searchSettings/#key) property as `empty` string.
+To clear the searched grid records from the external button, set [`searchSettings.key`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#key) property as `empty` string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,11 +121,11 @@ To clear the searched grid records from the external button, set [`searchSetting
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/searching-cs5/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/searching-cs5" %}
 
 ## Search on each key stroke
 
-You can search the Grid data on each key stroke by binding the `keyup` event for the search input element inside the [`created`](../api/grid/#created) event. Inside the `keyup` handler you can search the Grid by invoking the [`search`](../api/grid/#search) method of the Grid component.
+You can search the Grid data on each key stroke by binding the `keyup` event for the search input element inside the [`created`](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) event. Inside the `keyup` handler you can search the Grid by invoking the [`search`](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) method of the Grid component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,12 +139,12 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/searching-cs6/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/searching-cs6" %}
 
 ## Perform search operation in Grid using multiple keywords
 
-You can perform a searching operation in the Grid using multiple keywords. This can be achieved by the [actionBegin](../api/grid/#actionbegin) event of the Grid.
-In the following sample, we have performed the searching with multiple keywords by using the query property of grid when the requestType is searching in the [actionBegin](../api/grid/#actionbegin) event.
+You can perform a searching operation in the Grid using multiple keywords. This can be achieved by the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event of the Grid.
+In the following sample, we have performed the searching with multiple keywords by using the query property of grid when the requestType is searching in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -158,4 +158,4 @@ In the following sample, we have performed the searching with multiple keywords 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/searching-cs7/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/searching-cs7" %}

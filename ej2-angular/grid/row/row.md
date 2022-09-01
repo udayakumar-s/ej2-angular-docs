@@ -16,9 +16,9 @@ It represents the record details that are fetched from the data source.
 
 ### Using event
 
-You can customize the appearance of the Row by using the [`rowDataBound`](../../api/grid/#rowdatabound) event.
-The [`rowDataBound`](../../api/grid/#rowdatabound) event triggers for every row. In that event handler,
-you can get [`RowDataBoundEventArgs`](../../api/grid/rowDataBoundEventArgs) which contain details of the row.
+You can customize the appearance of the Row by using the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event.
+The [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event triggers for every row. In that event handler,
+you can get [`RowDataBoundEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs) which contain details of the row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ you can get [`RowDataBoundEventArgs`](../../api/grid/rowDataBoundEventArgs) whic
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs11/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs11" %}
 
 ### Using CSS customize alternate rows
 
@@ -58,7 +58,7 @@ Please refer the following example.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/grid-cs22/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs22" %}
 
 ## See Also
 

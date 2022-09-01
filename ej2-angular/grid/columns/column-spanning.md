@@ -11,8 +11,8 @@ documentation: ug
 # Column spanning in Angular Grid component
 
 The grid has option to span the adjacent cells. You need to define the
-[`colSpan`](../../api/grid/queryCellInfoEventArgs/#colspan) attribute to span cells in the
-[`QueryCellInfo`](../../api/grid/queryCellInfoEventArgs) event.
+[`colSpan`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs/#colspan) attribute to span cells in the
+[`QueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event.
 
 In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00 AM, so that cells have spanned.
 
@@ -28,4 +28,4 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/spanning-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/spanning-cs1" %}

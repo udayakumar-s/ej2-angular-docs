@@ -11,7 +11,7 @@ documentation: ug
 # Local data in Angular Grid component
 
 To bind local data to the grid, you can assign a JavaScript object array to the
-[`dataSource`](../../api/grid/#datasource) property. The local data source can also be provided as an instance of the
+[`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. The local data source can also be provided as an instance of the
 **DataManager**.
 
 {% tabs %}
@@ -26,14 +26,14 @@ To bind local data to the grid, you can assign a JavaScript object array to the
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/databinding-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/databinding-cs1" %}
 
 > By default, **DataManager** uses **JsonAdaptor** for local data-binding.
 
 ## Refresh the data source
 
 You can add/delete the datasource records through an external button. To reflect the datasource changes in grid,
-you need to invoke the [`refresh`](../../api/grid/#refresh) method.
+you need to invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
 
 Please follow the below steps to refresh the grid after datasource change.
 
@@ -50,7 +50,7 @@ Add/delete the datasource record by using the following code.
 
 **Step 2**:
 
-Refresh the grid after the datasource change by using the [`refresh`](../../api/grid/#refresh) method.
+Refresh the grid after the datasource change by using the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
 
 ```typescript
     this.grid.refresh(); // Refresh the Grid.
@@ -69,4 +69,4 @@ Refresh the grid after the datasource change by using the [`refresh`](../../api/
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/change-headertext-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/change-headertext-cs2" %}

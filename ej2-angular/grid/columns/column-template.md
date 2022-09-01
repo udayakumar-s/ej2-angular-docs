@@ -12,7 +12,7 @@ documentation: ug
 
 ## Render image in a column
 
-The column [`template`](../../api/grid/column/#template) has options to display custom element instead of a field value in the column.
+The column [`template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) has options to display custom element instead of a field value in the column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,13 +26,13 @@ The column [`template`](../../api/grid/column/#template) has options to display 
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/template-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/template-cs1" %}
 
 ## Render other components in a column
 
-You can render any component in a grid column using the [`template`](../../api/grid/column/#template) property.
+You can render any component in a grid column using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
 
-Initialize the column template for your custom component. The [`template`](../../api/grid/column/#template) property
+Initialize the column template for your custom component. The [`template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property
 renders the custom component.
 
 ```html
@@ -54,7 +54,7 @@ renders the custom component.
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/column-sync-comp-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/column-sync-comp-cs1" %}
 
 ## Using condition template
 
@@ -85,7 +85,7 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/condition-template-cs1/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/condition-template-cs1" %}
 
 ## How to get the row object by clicking on the template element
 
@@ -105,4 +105,4 @@ In the following sample, the button element is rendered in the Employee Data col
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/template-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/template-cs2" %}

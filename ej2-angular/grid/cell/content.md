@@ -11,7 +11,7 @@ documentation: ug
 # Content in Angular Grid component
 
 The HTML tags can be displayed in the Grid header and content by enabling the
-[`disableHtmlEncode`](../../api/grid/column/#disablehtmlencode) property.
+[`disableHtmlEncode`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,4 +25,4 @@ The HTML tags can be displayed in the Grid header and content by enabling the
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/custom-cell-cs3/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs3" %}

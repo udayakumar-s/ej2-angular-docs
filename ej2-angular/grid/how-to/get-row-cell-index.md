@@ -24,4 +24,4 @@ You can get the specific row and cell index of the grid by using [`rowSelected`]
 {% endhighlight %}
 {% endtabs %}
   
-{ % previewsample "https://ej2.syncfusion.com/code-snippet/grid/collapse-all-initial-cs2/app/app.component.ts" % }
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/collapse-all-initial-cs2" %}
