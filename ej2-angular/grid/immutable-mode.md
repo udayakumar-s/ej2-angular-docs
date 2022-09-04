@@ -28,7 +28,7 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/immutable-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/immutable-cs1" %}
 
 ## Limitations
 

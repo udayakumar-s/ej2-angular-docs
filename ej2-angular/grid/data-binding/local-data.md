@@ -26,7 +26,7 @@ To bind local data to the grid, you can assign a JavaScript object array to the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/databinding-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/databinding-cs1" %}
 
 > By default, **DataManager** uses **JsonAdaptor** for local data-binding.
 
@@ -69,4 +69,4 @@ Refresh the grid after the datasource change by using the [`refresh`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/change-headertext-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/change-headertext-cs2" %}

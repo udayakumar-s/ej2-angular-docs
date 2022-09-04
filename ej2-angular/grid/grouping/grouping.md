@@ -30,7 +30,7 @@ To use Grouping, you need to inject **GroupService** in the provider section of 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs2" %}
 
 > * You can group and ungroup columns by using the [`groupColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/group/#groupcolumn) and
 [`ungroupColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/group/#ungroupcolumn) methods.
@@ -53,7 +53,7 @@ To apply group at initial rendering, set the column field name in the `groupSett
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs3" %}
 
 ## Hide drop area
 
@@ -72,7 +72,7 @@ grouping, define the [`groupSettings.showDropArea`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs4" %}
 
 ## Group with paging
 
@@ -103,7 +103,7 @@ grid columns.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs5" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs5" %}
 
 ## Grouping Events
 
@@ -125,7 +125,7 @@ event triggers after the group action is completed. Using these events you can p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs6" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs6" %}
 
 > [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) is current action name.
 For example in grouping, the [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) value is 'grouping'.
@@ -146,7 +146,7 @@ To collapse the selected grouped row from an external button by using the [`expa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs7" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs7" %}
 
 ## See Also
 

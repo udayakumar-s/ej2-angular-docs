@@ -28,6 +28,6 @@ Also Grid supports the spanning of rows and columns for same cells. **Lunch Brea
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/spanning-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/spanning-cs2" %}
 
 > To disable the spanning for particular grid page, we need to use **requestType** from [`QueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event argument.

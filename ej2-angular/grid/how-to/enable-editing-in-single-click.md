@@ -28,7 +28,7 @@ Bind the **mouseup** event for Grid and in the event handler call the [`startEdi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/single-click-batch-editing-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/single-click-batch-editing-cs1" %}
 
 ### Open dropdown edit popup on single click
 
@@ -46,7 +46,7 @@ You can open the default dropdown edit popup with single click edit by focusing 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/open-dropdown-popup-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/open-dropdown-popup-cs1" %}
 
 ## Batch Editing
 
@@ -66,4 +66,4 @@ Bind the **mouseup** event for Grid and in the event handler call the [`editCell
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/single-click-inline-editing-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/single-click-inline-editing-cs1" %}

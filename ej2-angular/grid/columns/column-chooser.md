@@ -27,7 +27,7 @@ To use column chooser, inject **ColumnChooserService** in the provider section o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/columnchooser-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/columnchooser-cs1" %}
 
 > You can hide the column names in column chooser by defining the
 [`columns.showInColumnChooser`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showincolumnchooser) as false.
@@ -49,4 +49,4 @@ the [`openColumnChooser`](https://ej2.syncfusion.com/angular/documentation/api/g
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/columnschooser-method-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/columnschooser-method-cs1" %}

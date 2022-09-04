@@ -26,4 +26,4 @@ In the below sample, we have overridden the default **generateQuery** to display
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs13" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs13" %}

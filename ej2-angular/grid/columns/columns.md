@@ -54,7 +54,7 @@ You can achieve custom value formatting by using [`valueAccessor`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs10" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs10" %}
 
 ### Display array type columns
 
@@ -74,7 +74,7 @@ In this example, The Name field has an array of two objects FirstName and LastNa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs11" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs11" %}
 
 ### Expression column
 
@@ -92,7 +92,7 @@ You can achieve the expression column by using [`valueAccessor`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/expression-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/expression-cs1" %}
 
 ## Format
 
@@ -113,7 +113,7 @@ values.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs12" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs12" %}
 
 > By default, the [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained ['here'](../../common/internationalization/)
 
@@ -157,7 +157,7 @@ Format | Formatted value
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs13" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs13" %}
 
 ## Render boolean value as checkbox
 
@@ -175,7 +175,7 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs14" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs14" %}
 
 ## Visibility
 
@@ -193,7 +193,7 @@ You can hide any particular column in Grid before rendering by defining [`visibl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs15" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs15" %}
 
 ## Lock columns
 
@@ -213,7 +213,7 @@ In the below example, Ship City column is locked and its reordering functionalit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/reorder-cs5" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/reorder-cs5" %}
 
 ## Controlling Grid actions
 
@@ -232,7 +232,7 @@ You can enable or disable grid action for a particular column by setting the [`a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/control-actions-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/control-actions-cs1" %}
 
 ## Show or hide columns by external button
 
@@ -251,7 +251,7 @@ methods.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs16" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs16" %}
 
 ## Customize column styles
 
@@ -297,7 +297,7 @@ Add the custom css class to particular column by using [`customAttributes`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-column-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-column-cs1" %}
 
 ## Display custom tooltip for columns
 
@@ -328,7 +328,7 @@ tooltip (args: QueryCellInfoEventArgs) {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-tooltip-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-tooltip-cs1" %}
 
 ## Align the text of Grid content and header
 
@@ -352,7 +352,7 @@ Grid column supports the following alignments:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs17" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs17" %}
 
 ## See Also
 

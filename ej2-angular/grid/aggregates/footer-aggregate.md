@@ -25,7 +25,7 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/aggregates-footer-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/aggregates-footer-cs1" %}
 
 > * Use the template reference variable name as **#footerTemplate** to specify the footer template.
 > * The aggregate values must be accessed inside the template using their corresponding
@@ -48,4 +48,4 @@ You can format the aggregate value result by using the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/aggregates-footer-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/aggregates-footer-cs2" %}

@@ -24,7 +24,7 @@ You can achieve complex data binding in the grid by using the dot(.) operator in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs18" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs18" %}
 
  For OData and ODataV4 adaptors, you need to add [`expand`](https://ej2.syncfusion.com/documentation/api/data/query/#expand) query to the [`query`](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property (of Grid), to eager load the complex data.
 

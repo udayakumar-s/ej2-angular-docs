@@ -28,7 +28,7 @@ When we enable the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/adaptive-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/adaptive-cs1" %}
 
 ## Vertical row rendering
 
@@ -46,7 +46,7 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/adaptive-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/adaptive-cs2" %}
 
 > * [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableadaptiveui) property must be enabled for vertical row rendering.
 

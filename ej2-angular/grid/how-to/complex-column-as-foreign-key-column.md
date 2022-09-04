@@ -26,4 +26,4 @@ In the following example, **Employee.EmployeeID** is a complex column and also d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/foreignkey-cs11" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs11" %}

@@ -30,7 +30,7 @@ To use the column resize, inject **ResizeService** in the provider section of **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/resize-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/resize-cs2" %}
 
 > You can disable Resizing for a particular column,
 by specifying [`columns.allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#allowresizing) to false.
@@ -55,7 +55,7 @@ In the below sample, **OrderID**, **Ship Name** and **Ship Country** columns are
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/resize-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/resize-cs3" %}
 
 ## Resize stacked column
 
@@ -75,7 +75,7 @@ In this example, we have disabled resize for **Ship City** column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/resize-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/resize-cs4" %}
 
 ## Touch interaction
 
@@ -106,4 +106,4 @@ During the resizing action, the grid component triggers the below three events.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/resize-cs5" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/resize-cs5" %}

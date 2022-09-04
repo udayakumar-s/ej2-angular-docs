@@ -33,6 +33,6 @@ object.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/aggregates-custom-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/aggregates-custom-cs1" %}
 
 > To access the custom aggregate value inside template, use the key as **Custom**

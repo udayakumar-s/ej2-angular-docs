@@ -27,7 +27,7 @@ In the below example, the [`rowHeight`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs7" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs7" %}
 
 ## Customize row height for particular row
 
@@ -48,6 +48,6 @@ In the below example, the row height for the row with OrderID as '10249' is set 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs8" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs8" %}
 
 > In virtual scrolling mode, it is not applicable to set the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) using the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event.

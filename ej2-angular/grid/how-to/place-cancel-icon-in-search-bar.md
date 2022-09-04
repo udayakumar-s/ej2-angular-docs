@@ -24,4 +24,4 @@ By default, the search bar in the grid doesn't have a **cancel** icon. If you wa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/print-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/print-cs1" %}

@@ -34,7 +34,7 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/selection-cs13" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs13" %}
 
 ## Selection mode
 
@@ -57,7 +57,7 @@ Grid supports three types of selection mode which can be set by using
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/selection-cs14" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs14" %}
 
 ## Touch interaction
 

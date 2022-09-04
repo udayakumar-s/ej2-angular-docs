@@ -24,7 +24,7 @@ The detail template provides additional information about a particular row by ex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs4" %}
 
 ## Rendering custom component
 
@@ -45,7 +45,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs5" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs5" %}
 
 ## Expand by external button
 
@@ -63,4 +63,4 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs6" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs6" %}

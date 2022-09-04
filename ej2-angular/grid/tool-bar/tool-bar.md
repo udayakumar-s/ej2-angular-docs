@@ -33,7 +33,7 @@ You can enable/disable toolbar items by using the **enableItems** method.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/toolbar-enable-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/toolbar-enable-cs1" %}
 
 ## Add toolbar at the bottom of Grid
 
@@ -51,7 +51,7 @@ You can add the Grid toolbar component at the bottom of Grid using the ['created
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/toolbar-enable-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/toolbar-enable-cs2" %}
 
 ## See Also
 

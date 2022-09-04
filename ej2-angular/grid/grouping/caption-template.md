@@ -24,4 +24,4 @@ You can customize the group caption by using the groupSettings.captionTemplate p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs1" %}

@@ -28,4 +28,4 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/spanning-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/spanning-cs1" %}

@@ -30,4 +30,4 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs9" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs9" %}

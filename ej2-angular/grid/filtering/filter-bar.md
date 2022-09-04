@@ -43,7 +43,7 @@ N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs1" %}
 
 ## Filter bar template with custom component
 
@@ -66,7 +66,7 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs2" %}
 
 ## Change default filterbar operator
 
@@ -85,4 +85,4 @@ we have changed the default operator for string typed columns as **contains** fr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs3" %}

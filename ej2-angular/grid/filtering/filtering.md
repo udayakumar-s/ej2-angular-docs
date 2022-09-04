@@ -34,7 +34,7 @@ The Grid supports two types of filter, they are
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs9" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs9" %}
 
 > * You can apply and clear filtering, by using
 [`filterByColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#clearfiltering) methods.
@@ -58,7 +58,7 @@ To apply the filter at initial rendering, set the filter [`predicate`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering1-cs10" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs10" %}
 
 ## Filter operators
 
@@ -99,7 +99,7 @@ In the following sample, type **aero** in **Name** column to filter diacritic ch
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filter-diacritics-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filter-diacritics-cs1" %}
 
 ## Filter bar
 
@@ -119,7 +119,7 @@ The following example demonstrates the way to use filter template for a column w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filter-template-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filter-template-cs2" %}
 
 ## Filter menu
 
@@ -139,7 +139,7 @@ The following example demonstrates the way to use filter template for a column w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filter-template-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filter-template-cs3" %}
 
 ## See Also
 

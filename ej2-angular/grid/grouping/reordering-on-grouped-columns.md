@@ -26,4 +26,4 @@ To enable this feature, you have to set the [`groupSettings.allowReordering`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping-anim-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping-anim-cs1" %}

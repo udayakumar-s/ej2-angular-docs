@@ -26,4 +26,4 @@ In the below demo, all the grouped rows are collapsed at initial rendering.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/collapse-all-initial-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/collapse-all-initial-cs1" %}

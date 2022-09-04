@@ -30,7 +30,7 @@ To use Paging, you need to inject **PageService** in the provider section of **A
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs5" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging1-cs5" %}
 
 > You can achieve better performance by using grid paging to fetch only a pre-defined number of records from the data source.
 
@@ -54,7 +54,7 @@ Inside this template, you can access the [`CurrentPage`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/pager-template-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/pager-template-cs1" %}
 
 ## Pager with Page Size Dropdown
 
@@ -72,7 +72,7 @@ The pager Dropdown allows you to change the number of records in the Grid dynami
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs6" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging1-cs6" %}
 
 ## Render Pager at the Top of the Grid
 
@@ -90,7 +90,7 @@ By default, Pager will be rendered at the bottom of the Grid. You can also rende
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs7" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging1-cs7" %}
 
 > During the paging action, the pager component triggers the below three events.
 > * The [`created`](https://ej2.syncfusion.com/angular/documentation/api/pager/pagerModel/#created) event triggers when Pager is created.

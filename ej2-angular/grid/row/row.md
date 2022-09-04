@@ -32,7 +32,7 @@ you can get [`RowDataBoundEventArgs`](https://ej2.syncfusion.com/angular/documen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs11" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs11" %}
 
 ### Using CSS customize alternate rows
 
@@ -58,7 +58,7 @@ Please refer the following example.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs22" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs22" %}
 
 ## See Also
 

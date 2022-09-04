@@ -51,7 +51,7 @@ Component |Example
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs10" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs10" %}
 
 > If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component) .
 
@@ -73,7 +73,7 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/prevent-decimalpoint-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/prevent-decimalpoint-cs1" %}
 
 ### Provide custom data source and enabling filtering to DropDownList
 
@@ -112,7 +112,7 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs11" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs11" %}
 
 ## Custom editors using template
 
@@ -142,7 +142,7 @@ Use the cell edit template feature of the Grid to render the TimePicker componen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs12" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs12" %}
 
 ### Render AutoComplete component while editing
 
@@ -160,7 +160,7 @@ Use the cell edit template feature of the Grid to render the AutoComplete compon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs13" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs13" %}
 
 ### Render MultiSelect DropDown component while editing
 
@@ -178,7 +178,7 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs14" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs14" %}
 
 ### Render RichTextEditor component while editing
 
@@ -196,7 +196,7 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs15" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs15" %}
 
 ### Using template
 
@@ -214,4 +214,4 @@ The cell editor for a particular column can be specified using the content of th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs16" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs16" %}
