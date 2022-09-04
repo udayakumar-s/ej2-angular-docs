@@ -16,7 +16,7 @@ The appearance of cells can be customized by using the
 [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 The [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event
 triggers for every cell. In that event handler, you can get
-[`QueryCellInfoEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) that contains the details of the cell.
+[`QueryCellInfoEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/#queryCellInfoEventArgs) that contains the details of the cell.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

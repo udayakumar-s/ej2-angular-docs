@@ -13,7 +13,7 @@ documentation: ug
 The column definitions are used as the **dataSource** schema in the Grid.
 This plays a vital role in rendering column values in the required format.
 The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions.
-The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column)
+The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#column)
 is necessary to map the data source values in Grid columns.
 
 > 1. If the column with [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) is not in the dataSource, then the column values will be displayed as empty.

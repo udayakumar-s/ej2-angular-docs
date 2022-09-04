@@ -32,7 +32,7 @@ When we enable the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/docum
 
 ## Vertical row rendering
 
-The grid will render the row elements in vertical order while setting the [`rowRenderingMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/rowRenderingMode/) property value as **Vertical**.
+The grid will render the row elements in vertical order while setting the [`rowRenderingMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowRenderingMode/) property value as **Vertical**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

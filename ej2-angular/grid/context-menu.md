@@ -57,7 +57,7 @@ Items| Description
 
 The custom context menu items can be added by defining the
 [`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuitems) as a collection of
-[`contextMenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel).
+[`contextMenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextMenuItemModel).
 Actions for this customized items can be defined in the
 [`contextMenuClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuclick) event.
 

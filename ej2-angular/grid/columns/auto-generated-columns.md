@@ -10,8 +10,8 @@ documentation: ug
 
 # Auto generated columns in Angular Grid component
 
-The [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column) are automatically generated when
-[`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column)
+The [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#column) are automatically generated when
+[`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#column)
 declaration is empty or undefined while initializing the grid. All the columns in the **dataSource** are bound as grid columns.
 
 {% tabs %}
