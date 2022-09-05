@@ -1,0 +1,32 @@
+---
+layout: post
+title: Create collapsible tabs in Angular Tab component | Syncfusion
+description: Learn here all about Create collapsible tabs in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
+control: Create collapsible tabs 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Create collapsible tabs in Angular Tab component
+
+You can achieve collapse and expand functionality in Tab by adding/removing a custom CSS class in the click event handler for each tab.
+* Define a CSS class to set the style property display as none. Here 'collapse' class is added to the content
+element for hiding it using [`created`](https://ej2.syncfusion.com/angular/documentation/api/tab#created) event.
+* Bind the [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab#selected) event for Tab to collapse the initially selected Tab item
+and bind custom click handler for the Tab headers.
+* In the event handler, add and remove 'collapse' class to hide and show the corresponding Tab content.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/tab/collapse-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/tab/collapse-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/tab/collapse-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/collapse-cs1" %}

@@ -1,0 +1,29 @@
+---
+layout: post
+title: Render other components in toolbar using angular template in Angular Toolbar component | Syncfusion
+description: Learn here all about Render other components in toolbar using angular template in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
+control: Render other components in toolbar using angular template 
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+# Render other components in toolbar using angular template in Angular Toolbar component
+
+You can render other components inside Toolbar using Angular **ng-template**. Through this, we can add items as other components directly with
+all their functionalities to our Toolbar. We need to use `ng-template` inside the each `e-item` tag with `#template` attribute, which is
+mandatory to render that template.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/toolbar/direct-components-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/toolbar/direct-components-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/toolbar/direct-components-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/direct-components-cs1" %}
