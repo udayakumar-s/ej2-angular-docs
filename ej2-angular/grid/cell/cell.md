@@ -16,7 +16,7 @@ The appearance of cells can be customized by using the
 [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 The [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event
 triggers for every cell. In that event handler, you can get
-[`QueryCellInfoEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) that contains the details of the cell.
+[`QueryCellInfoEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/#queryCellInfoEventArgs) that contains the details of the cell.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ triggers for every cell. In that event handler, you can get
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs1" %}
 
 ## Custom attributes
 
@@ -62,7 +62,7 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs2" %}
 
 ## Grid lines
 
@@ -91,7 +91,7 @@ The available modes of grid lines are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/autowrap-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/autowrap-cs2" %}
 
 >By default, the grid renders with **Default** mode.
 

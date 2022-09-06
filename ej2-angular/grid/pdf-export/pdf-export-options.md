@@ -26,7 +26,7 @@ PDF export provides an option to export the current page into PDF. To export cur
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs11" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs11" %}
 
 ## Export the selected records only
 
@@ -46,7 +46,7 @@ In the below exporting demo, We can get the selected records using [`getSelected
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-filtered-data-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-filtered-data-cs3" %}
 
 ## Export filtered data only
 
@@ -66,7 +66,7 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-filtered-data-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-filtered-data-cs4" %}
 
 ## Export hidden columns
 
@@ -84,7 +84,7 @@ PDF export provides an option to export hidden columns of Grid by defining the [
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs12" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs12" %}
 
 ## Show or hide columns
 
@@ -108,7 +108,7 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs13" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs13" %}
 
 ## Change page orientation
 
@@ -126,7 +126,7 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs14" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs14" %}
 
 ## Change page size
 
@@ -173,7 +173,7 @@ Supported page sizes are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs15" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs15" %}
 
 ## Define file name
 
@@ -191,7 +191,7 @@ You can assign the file name for the exported document by defining [fileName](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs16" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs16" %}
 
 ## Font customization
 
@@ -241,6 +241,6 @@ In the following example, we have used Algeria font to export the grid.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs17" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs17" %}
 
 > **PdfTrueTypeFont** accepts base 64 format of the Custom Font.

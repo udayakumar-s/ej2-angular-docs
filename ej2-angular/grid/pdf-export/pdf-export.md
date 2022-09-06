@@ -28,7 +28,7 @@ To use PDF export, inject **PdfExportService** in the provider section of **AppM
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs18" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs18" %}
 
 ## Show spinner while exporting
 
@@ -52,7 +52,7 @@ In the below demo, we have rendered the default spinner component when exporting
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs19" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs19" %}
 
 ## Custom data source
 
@@ -70,7 +70,7 @@ PDF export provides an option to define datasource dynamically before exporting.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs20" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs20" %}
 
 ## Passing additional parameters to the server when exporting
 
@@ -90,7 +90,7 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs21" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs21" %}
 
 ## See Also
 

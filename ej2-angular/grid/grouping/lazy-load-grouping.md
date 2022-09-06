@@ -30,7 +30,7 @@ To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/lazy-load-grouping-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/lazy-load-grouping-cs1" %}
 
 ## Handling the lazy load grouping at server-side
 

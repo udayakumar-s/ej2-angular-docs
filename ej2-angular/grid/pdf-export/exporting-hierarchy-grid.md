@@ -30,4 +30,4 @@ The grid have an option to export the hierarchy grid to pdf document. By default
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/exporting-cs8" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs8" %}

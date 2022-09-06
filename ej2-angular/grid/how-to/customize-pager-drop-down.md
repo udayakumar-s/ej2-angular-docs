@@ -24,4 +24,4 @@ To customize default values of pager dropdown, you need to define [`pageSizes`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-column-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-column-cs4" %}

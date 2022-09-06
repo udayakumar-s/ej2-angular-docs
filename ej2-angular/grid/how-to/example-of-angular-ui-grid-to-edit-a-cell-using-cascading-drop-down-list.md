@@ -26,4 +26,4 @@ In the below demo, Cascading DropDownList rendered for `ShipCountry` and `ShipSt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs49" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs49" %}

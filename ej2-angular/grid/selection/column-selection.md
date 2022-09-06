@@ -26,4 +26,4 @@ You can enable column selection by setting the [`selectionSettings.allowColumnSe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/selection-cs6" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs6" %}

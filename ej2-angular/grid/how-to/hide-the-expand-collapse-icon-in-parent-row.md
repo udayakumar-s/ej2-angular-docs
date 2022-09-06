@@ -62,4 +62,4 @@ In the below demo, the expand/collapse icon in the row with **EmployeeID** as **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/template-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/template-cs4" %}

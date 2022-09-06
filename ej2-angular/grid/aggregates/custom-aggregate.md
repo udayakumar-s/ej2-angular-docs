@@ -17,9 +17,9 @@ To use custom aggregation, specify the
 function in the [`customAggregate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#customaggregate) property.
 
 The custom aggregate function will be invoked with different arguments for Total and Group aggregations.
-* **Total aggregation** - the custom aggregate function will be called with whole data and the current [`AggregateColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective)
+* **Total aggregation** - the custom aggregate function will be called with whole data and the current [`AggregateColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/#aggregateColumnDirective)
 object.
-* **Group aggregation** - it will be called with current group details and the [`AggregateColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective) object.
+* **Group aggregation** - it will be called with current group details and the [`AggregateColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/#aggregateColumnDirective) object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,6 +33,6 @@ object.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/aggregates-custom-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/aggregates-custom-cs1" %}
 
 > To access the custom aggregate value inside template, use the key as **Custom**

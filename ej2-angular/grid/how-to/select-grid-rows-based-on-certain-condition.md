@@ -26,4 +26,4 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-column-cs5" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-column-cs5" %}

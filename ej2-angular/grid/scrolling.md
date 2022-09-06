@@ -38,7 +38,7 @@ of scroller in pixel, set the pixel value as number.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/scrolling-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/scrolling-cs1" %}
 
 ## Responsive with parent container
 
@@ -58,7 +58,7 @@ Setting the [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/scrolling-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/scrolling-cs2" %}
 
 ## Sticky Header
 
@@ -78,7 +78,7 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/scrolling-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/scrolling-cs3" %}
 
 ## Scroll To Selected Row
 
@@ -97,7 +97,7 @@ You can scroll the grid content to the selected row position by using the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/scrolling-select-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/scrolling-select-cs1" %}
 
 ## Hide the scrollbar when the content is not overflown
 
@@ -117,4 +117,4 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/scrolling-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/scrolling-cs4" %}

@@ -28,7 +28,7 @@ if [`groupCaptionTemplate`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/aggregates-group-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/aggregates-group-cs1" %}
 
 > * Use the template reference variable name as **#groupFooterTemplate** to specify the group footer template
 and as **#groupCaptionTemplate** to specify the group caption template.

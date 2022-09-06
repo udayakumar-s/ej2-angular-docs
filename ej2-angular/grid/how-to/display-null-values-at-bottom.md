@@ -26,4 +26,4 @@ In the below demo we have displayed the null date values at bottom of the Grid r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/null-date-value-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/null-date-value-cs1" %}

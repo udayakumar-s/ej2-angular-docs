@@ -26,7 +26,7 @@ In the following example, Employee Information with Employee Photo is presented 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs9" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs9" %}
 
 ## Row template with formatting
 
@@ -44,7 +44,7 @@ If the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-cell-cs10" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs10" %}
 
 ## Limitations
 

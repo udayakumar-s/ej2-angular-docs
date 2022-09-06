@@ -135,7 +135,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/pager/pager-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/pager/pager-cs1" %}
 
 ## Page Count
 
@@ -155,7 +155,7 @@ and [`pageSize`](#page-size) values.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/pager/pager-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/pager/pager-cs2" %}
 
 ## Run the application
 
@@ -179,4 +179,4 @@ Output will be appears as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/pager/pager-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/pager/pager-cs3" %}

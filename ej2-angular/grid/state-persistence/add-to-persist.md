@@ -28,4 +28,4 @@ If you wish to restore all these column properties, then you can achieve it by c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping1-cs8" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs8" %}

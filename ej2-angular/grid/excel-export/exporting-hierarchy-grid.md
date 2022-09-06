@@ -30,7 +30,7 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/excel-exporting-cs14" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs14" %}
 
 ## Limitations
 

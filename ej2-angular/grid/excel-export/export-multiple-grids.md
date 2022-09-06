@@ -30,7 +30,7 @@ It have an option to provide blank rows between grids. These blank rows count ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/excel-exporting-cs12" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs12" %}
 
 >By default, **multipleExport.blankRows** value is 5.
 
@@ -51,4 +51,4 @@ To export in new sheet, define  **multipleExport.type** as **NewSheet** in [`exc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/excel-exporting-cs13" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs13" %}

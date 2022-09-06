@@ -27,4 +27,4 @@ The [`hideAtMedia`](https://ej2.syncfusion.com/angular/documentation/api/grid/co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs21" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs21" %}

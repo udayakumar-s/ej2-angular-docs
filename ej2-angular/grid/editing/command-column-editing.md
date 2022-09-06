@@ -36,7 +36,7 @@ The available built-in command buttons are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/command-column-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/command-column-cs1" %}
 
 ## Custom command column
 
@@ -55,4 +55,4 @@ the action for the custom buttons can be defined using [`commandClick`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/command-column-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/command-column-cs2" %}

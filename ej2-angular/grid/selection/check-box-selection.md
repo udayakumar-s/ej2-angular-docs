@@ -27,7 +27,7 @@ column [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/selection-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs3" %}
 
 > By default selection is allowed by clicking a grid row or checkbox in that row. To allow Selection only through checkbox, you can set
 [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#checkboxonly) property to true.
@@ -57,7 +57,7 @@ and hold CTRL key and click the desired rows. To select range of rows, press and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/selection-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs4" %}
 
 ## Prevent specific rows from being selected in checkbox selection
 
@@ -77,4 +77,4 @@ In the following sample, the selection of specific rows has been prevented based
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/selection-cs5" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs5" %}

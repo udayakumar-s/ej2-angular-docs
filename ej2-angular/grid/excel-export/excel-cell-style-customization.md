@@ -28,7 +28,7 @@ In the below sample, we have set the background color for **Freight** column in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/excel-exporting-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs2" %}
 
 ## Theme
 
@@ -48,7 +48,7 @@ To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/excel-exporting-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs3" %}
 
 >By default, material theme is applied to exported excel document.
 
@@ -72,4 +72,4 @@ In the following demo, using the `rotation` property of the style argument in th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping-cs1" %}

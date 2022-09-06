@@ -12,7 +12,7 @@ documentation: ug
 
 The grid has option to span the adjacent cells. You need to define the
 [`colSpan`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs/#colspan) attribute to span cells in the
-[`QueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event.
+[`QueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#queryCellInfoEventArgs) event.
 
 In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00 AM, so that cells have spanned.
 
@@ -28,4 +28,4 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/spanning-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/spanning-cs1" %}

@@ -28,4 +28,4 @@ The following example demonstrates on **Adding** a new row when Enter key is pre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs50" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs50" %}

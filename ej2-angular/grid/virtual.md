@@ -39,7 +39,7 @@ The loaded data will be cached and reused when it is needed for next time.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs8" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging1-cs8" %}
 
 ## Column Virtualization
 
@@ -62,7 +62,7 @@ To setup the column virtualization, set the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging1-cs9" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging1-cs9" %}
 
 > Column's [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) is required for column virtualization.
 If column's width is not defined then Grid will consider its value as **200px**.

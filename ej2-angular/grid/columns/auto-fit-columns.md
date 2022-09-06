@@ -28,7 +28,7 @@ To use autofit feature, you need to inject **ResizeService** in the provider sec
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/resize-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/resize-cs1" %}
 
 > You can autofit all columns, by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns)
 method without column name.

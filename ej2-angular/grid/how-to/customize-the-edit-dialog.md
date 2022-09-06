@@ -30,4 +30,4 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs47" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs47" %}

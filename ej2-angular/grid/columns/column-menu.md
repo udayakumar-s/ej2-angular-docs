@@ -41,7 +41,7 @@ The default items are displayed in following table.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs6" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs6" %}
 
 > You can disable column menu for a particular column by defining the
 [`columns.showColumnMenu`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showcolumnmenu) as false.
@@ -67,7 +67,7 @@ During the resizing action, the grid component triggers the below two events.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs7" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs7" %}
 
 ## Custom column menu item
 
@@ -89,12 +89,12 @@ Actions for this customized items can be defined in the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs8" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs8" %}
 
 ## Customize menu items for particular columns
 
 Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the
-[`columnMenuOpenEventArgs.hide`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuOpenEventArgs) as true in the
+[`columnMenuOpenEventArgs.hide`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnMenuOpenEventArgs) as true in the
 [`columnMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuopen) event.
 
 The following sample, **Filter** item was hidden in column menu when opens for the **OrderID** column.
@@ -111,7 +111,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grid-cs9" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs9" %}
 
 ## Customize the icon of column menu
 
@@ -137,4 +137,4 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/custom-column-menu-icon-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-column-menu-icon-cs1" %}

@@ -30,7 +30,7 @@ To use Sorting, you need to inject **SortService** in the provider section of **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/sorting1-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/sorting1-cs1" %}
 
 > * Grid column sorted in **Ascending** order. If you click on an already sorted column, then toggles the sort direction.
 > * You can apply and clear sorting by invoking [`sortColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortcolumn) and
@@ -56,7 +56,7 @@ To apply sort at initial rendering, set the [`field`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/sorting1-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/sorting1-cs2" %}
 
 ## Multi-column sorting
 
@@ -79,7 +79,7 @@ To clear sorting for a particular column, press the "Shift + mouse left click".
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/sorting1-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/sorting1-cs3" %}
 
 ## Sort order
 
@@ -196,7 +196,7 @@ triggers after the sort action complete. Using these events you can perform any 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/sorting1-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/sorting1-cs4" %}
 
 > [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) is current action name.
 For example in sorting, the [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) value is **sorting**.
@@ -221,7 +221,7 @@ In the following example, custom sort comparer function was defined in **Custome
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/sorting1-cs5" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/sorting1-cs5" %}
 
 ## Touch Interaction
 

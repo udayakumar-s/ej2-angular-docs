@@ -36,4 +36,4 @@ In the below example, the [`textWrapSettings.wrapMode`](https://ej2.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/autowrap-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/autowrap-cs1" %}

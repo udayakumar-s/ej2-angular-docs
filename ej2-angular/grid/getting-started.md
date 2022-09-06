@@ -152,7 +152,7 @@ Here, we have defined it for the conversion of numeric values to currency.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging-cs1" %}
 
 ## Module Injection
 
@@ -187,7 +187,7 @@ The pager can be customized using [`pageSettings`](https://ej2.syncfusion.com/an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/paging-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging-cs2" %}
 
 ## Enable Sorting
 
@@ -209,7 +209,7 @@ Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/sorting-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/sorting-cs1" %}
 
 ## Enable Filtering
 
@@ -231,7 +231,7 @@ Filtering feature can be customized using [`filterSettings`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/filtering-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering-cs1" %}
 
 ## Enable Grouping
 
@@ -253,7 +253,7 @@ Grouping feature can be customized using [`groupSettings`](https://ej2.syncfusio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping-cs2" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping-cs2" %}
 
 ## Run the application
 
@@ -277,7 +277,7 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/grouping-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping-cs3" %}
 
 ## See Also
 

@@ -28,7 +28,7 @@ In the below sample, We have created the **FormGroup** with **FormControls** for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/reactive-form-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/reactive-form-cs1" %}
 
 ## Template-driven forms
 
@@ -50,7 +50,7 @@ In the below sample, We have created the **FormGroup** by using **ngForm** direc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/dialogTemplate-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/dialogTemplate-cs1" %}
 
 > The form editors should have **name** attribute.
 
@@ -215,4 +215,4 @@ The following example, we have rendered tab control inside the edit dialog. The 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/tablikeedit-cs1" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/tablikeedit-cs1" %}

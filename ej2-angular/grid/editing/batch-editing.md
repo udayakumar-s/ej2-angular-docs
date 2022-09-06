@@ -27,7 +27,7 @@ To enable Batch edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs3" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs3" %}
 
 ## Automatically update the column based on another column edited value in batch mode
 
@@ -47,7 +47,7 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs4" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs4" %}
 
 ## Cancel edit based on condition in batch mode
 
@@ -67,7 +67,7 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs5" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs5" %}
 
 ## Confirmation dialog
 
@@ -85,7 +85,7 @@ By default, grid will show the confirm dialog when saving or canceling or perfor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs6" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs6" %}
 
 > * [`editSettings.showConfirmDialog`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showconfirmdialog) requires the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) to be **Batch**
 > * If [`editSettings.showConfirmDialog`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showconfirmdialog)

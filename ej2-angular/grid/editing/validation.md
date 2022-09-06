@@ -28,7 +28,7 @@ You can set validation rules by defining the [`columns.validationRules`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs32" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs32" %}
 
 ## Custom validation
 
@@ -48,7 +48,7 @@ In the below demo, custom validation applied for **CustomerID** column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs33" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs33" %}
 
 ### Custom validation based on dropdown change
 
@@ -68,4 +68,4 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/samples/grid/edit-cs34" %}
+{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs34" %}
