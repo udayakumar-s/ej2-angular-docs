@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Caption template in Angular Grid component | Syncfusion
-description: Learn here all about Caption template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Caption template in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Caption template 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Caption template in Angular Grid component
@@ -24,4 +24,4 @@ You can customize the group caption by using the groupSettings.captionTemplate p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs1" %}

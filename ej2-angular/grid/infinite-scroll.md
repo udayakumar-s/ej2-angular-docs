@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Infinite scroll in Angular Grid component | Syncfusion
-description: Learn here all about Infinite scroll in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Infinite scroll in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Infinite scroll 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Infinite scroll in Angular Grid component
@@ -28,7 +28,7 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging1-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/paging1-cs2" %}
 
 ## InitialBlocks
 
@@ -48,7 +48,7 @@ In the below demo, we have changed this property value to load five page records
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging1-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/paging1-cs3" %}
 
 ## Cache Mode
 
@@ -68,7 +68,7 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging1-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/paging1-cs4" %}
 
 ## Limitations for Infinite Scrolling
 

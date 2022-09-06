@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Immutable mode in Angular Grid component | Syncfusion
-description: Learn here all about Immutable mode in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Immutable mode in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Immutable mode 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Immutable mode in Angular Grid component
@@ -28,7 +28,7 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/immutable-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/immutable-cs1" %}
 
 ## Limitations
 

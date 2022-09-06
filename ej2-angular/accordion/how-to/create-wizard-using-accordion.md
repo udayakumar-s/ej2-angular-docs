@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Create wizard using accordion in Angular Accordion component | Syncfusion
-description: Learn here all about Create wizard using accordion in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Create wizard using accordion in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Create wizard using accordion 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Create wizard using accordion in Angular Accordion component
@@ -28,4 +28,4 @@ option to enable/disable to next Accordion. In below sample, accordion items can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-disable-cs1" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-disable-cs1" %}

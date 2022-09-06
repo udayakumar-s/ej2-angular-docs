@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Filtering tree nodes in Angular Treeview component | Syncfusion
-description: Learn here all about Filtering tree nodes in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Filtering tree nodes in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Filtering tree nodes 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Filtering tree nodes in Angular Treeview component
@@ -26,4 +26,4 @@ The following code example demonstrates how to filter the tree nodes in a TreeVi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/filtering-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/filtering-cs1" %}

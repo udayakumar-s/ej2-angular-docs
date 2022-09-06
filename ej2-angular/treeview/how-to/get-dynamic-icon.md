@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Get dynamic icon in Angular Treeview component | Syncfusion
-description: Learn here all about Get dynamic icon in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Get dynamic icon in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Get dynamic icon 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Get dynamic icon in Angular Treeview component
@@ -24,4 +24,4 @@ In TreeView component, you can get the original bound data using the `getTreeDat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/icon-css-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/icon-css-cs1" %}

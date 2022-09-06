@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Templates in Angular Context menu component | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Templates in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Templates 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Templates in Angular Context menu component
@@ -32,7 +32,7 @@ source, and Inspect in the right side corner of the menu items by adding span el
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/template-cs4" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/template-cs4" %}
 
 > To create span element, `createElement` utility function used from `ej2-base`.
 
@@ -54,7 +54,7 @@ level nesting of ContextMenu is provided.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/template-cs5" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/template-cs5" %}
 
 > To open sub menu items only on click, [`showItemOnClick`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#showitemonclick) property should be set as `true`.
 

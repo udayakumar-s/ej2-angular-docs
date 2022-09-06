@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Templates in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Templates in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Templates 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Templates in Angular Breadcrumb component
@@ -28,7 +28,7 @@ In the following example, Shopping Cart details are used as breadcrumb Items and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/template-cs1" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/template-cs1" %}
 
 ## Separator Template
 
@@ -46,7 +46,7 @@ In the  following example, the separators are customized with icons using `separ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/template-cs2" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/template-cs2" %}
 
 ## Customize Specific Item Template
 
@@ -64,4 +64,4 @@ The specific breadcrumb item can be customizable using itemTemplate with conditi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/template-cs3" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/template-cs3" %}

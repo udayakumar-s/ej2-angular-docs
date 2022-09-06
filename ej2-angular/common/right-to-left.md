@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Right to left in Angular Common control | Syncfusion
-description: Learn here all about Right to left in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Right to left in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Right to left in Angular Common component
@@ -26,7 +26,7 @@ value as true.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/right-to-left-cs1" %}
+{% previewsample "page.domainurl/code-snippet/common/right-to-left-cs1" %}
 
 ## Enable RTL to Individual Component
 
@@ -45,4 +45,4 @@ property as true. For illustration, we have enabled RTL for ListView component i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/individual-rtl-cs1" %}
+{% previewsample "page.domainurl/code-snippet/common/individual-rtl-cs1" %}

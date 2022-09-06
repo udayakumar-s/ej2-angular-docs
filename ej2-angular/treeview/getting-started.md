@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting started with Angular Treeview component | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with Angular Treeview component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Getting started in Angular Treeview component
@@ -183,7 +183,7 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs8" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs8" %}
 
 > You can also explore our [Angular TreeView](https://ej2.syncfusion.com/angular/demos/#/material/treeview/default) example to knows how to present and manipulate data.
 

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Icons in Angular Appearance component | Syncfusion
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Appearance component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Icons in Syncfusion Angular Appearance component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Icons 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Icons in Angular Appearance component

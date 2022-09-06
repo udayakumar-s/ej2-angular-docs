@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Persisting data in server in Angular Grid component | Syncfusion
-description: Learn here all about Persisting data in server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Persisting data in server in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Persisting data in server 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Persisting data in server in Angular Grid component

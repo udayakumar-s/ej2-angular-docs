@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Index in Angular Pager component | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Pager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Index in Syncfusion Angular Pager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Index 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Index in Angular Pager component

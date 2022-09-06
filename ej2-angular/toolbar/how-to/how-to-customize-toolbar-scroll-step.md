@@ -1,11 +1,11 @@
 ---
 layout: post
 title: How to customize toolbar scroll step in Angular Toolbar component | Syncfusion
-description: Learn here all about How to customize toolbar scroll step in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about How to customize toolbar scroll step in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: How to customize toolbar scroll step 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # How to customize toolbar scroll step in Angular Toolbar component
@@ -26,4 +26,4 @@ By using Toolbar scrollStep property, pass a required value to customize toolbar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/scrollstep-cs1" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/scrollstep-cs1" %}

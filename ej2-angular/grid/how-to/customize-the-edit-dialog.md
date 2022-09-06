@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Customize the edit dialog in Angular Grid component | Syncfusion
-description: Learn here all about Customize the edit dialog in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize the edit dialog in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize the edit dialog 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Customize the edit dialog in Angular Grid component
@@ -30,4 +30,4 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs47" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs47" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Load accordion with data source in Angular Accordion component | Syncfusion
-description: Learn here all about Load accordion with data source in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Load accordion with data source in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Load accordion with data source 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Load accordion with data source in Angular Accordion component
@@ -29,4 +29,4 @@ fields, which is set to [`items`](https://ej2.syncfusion.com/angular/documentati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-cs5" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs5" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Perform grid actions by keyboard short cut keys in Angular Grid component | Syncfusion
-description: Learn here all about Perform grid actions by keyboard short cut keys in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Perform grid actions by keyboard short cut keys in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Perform grid actions by keyboard short cut keys 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Perform grid actions by keyboard short cut keys in Angular Grid component
@@ -28,4 +28,4 @@ The following example demonstrates on **Adding** a new row when Enter key is pre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs50" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs50" %}

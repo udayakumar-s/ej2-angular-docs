@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Adding header and footer in Angular Grid component | Syncfusion
-description: Learn here all about Adding header and footer in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Adding header and footer in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Adding header and footer 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Adding header and footer in Angular Grid component
@@ -24,4 +24,4 @@ The excel export provides an option to include header and footer content for exp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs1" %}

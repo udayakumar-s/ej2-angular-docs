@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Hover multi line tree node in Angular Treeview component | Syncfusion
-description: Learn here all about Hover multi line tree node in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Hover multi line tree node in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Hover multi line tree node 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Hover multi line tree node in Angular Treeview component
@@ -24,4 +24,4 @@ This section demonstrates how to hover and select a multi-line tree node. Here, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/multi-line-tree-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/multi-line-tree-cs1" %}

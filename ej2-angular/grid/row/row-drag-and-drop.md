@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Row drag and drop in Angular Grid component | Syncfusion
-description: Learn here all about Row drag and drop in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Row drag and drop in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Row drag and drop 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Row drag and drop in Angular Grid component
@@ -29,7 +29,7 @@ To use Row Drag and Drop, you need to inject **RowDDService** in the provider se
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/dragndrop-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/dragndrop-cs1" %}
 
 ## Drag and drop rows without drag icons
 
@@ -49,7 +49,7 @@ By setting the [targetID](https://ej2.syncfusion.com/angular/documentation/api/g
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/dragndrop-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/dragndrop-cs2" %}
 
 > * Selection feature must be enabled for row drag and drop.
 > * Multiple rows can be selected by clicking and dragging inside the grid.

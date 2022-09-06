@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Lazy load grouping in Angular Grid component | Syncfusion
-description: Learn here all about Lazy load grouping in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Lazy load grouping in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Lazy load grouping 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Lazy load grouping in Angular Grid component
@@ -30,7 +30,7 @@ To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/lazy-load-grouping-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/lazy-load-grouping-cs1" %}
 
 ## Handling the lazy load grouping at server-side
 

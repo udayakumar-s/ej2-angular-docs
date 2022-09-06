@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Load tab with data source in Angular Tab component | Syncfusion
-description: Learn here all about Load tab with data source in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Load tab with data source in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Load tab with data source 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Load tab with data source in Angular Tab component
@@ -28,4 +28,4 @@ a JSON object with `header` and `content` fields, which is set to [`items`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/basic-cs7" %}
+{% previewsample "page.domainurl/code-snippet/tab/basic-cs7" %}

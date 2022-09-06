@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Node editing in Angular Treeview component | Syncfusion
-description: Learn here all about Node editing in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Node editing in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Node editing 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Node editing in Angular Treeview component
@@ -41,7 +41,7 @@ In the following example, the first level node’s text cannot be changed, but a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs12" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs12" %}
 
 ## See Also
 

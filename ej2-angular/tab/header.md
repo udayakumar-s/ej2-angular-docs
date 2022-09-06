@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Header in Angular Tab component | Syncfusion
-description: Learn here all about Header in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Header in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Header 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Header in Angular Tab component
@@ -34,7 +34,7 @@ You can customize header styles by adding predefined classes in the Tab root ele
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/header-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/header-cs1" %}
 
 ## Icon positions
 
@@ -57,7 +57,7 @@ You can customize the position of the Tab header icons using the [`iconPosition`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/icon-position-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/icon-position-cs1" %}
 
 ## See Also
 

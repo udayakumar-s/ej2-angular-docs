@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Display null values at bottom in Angular Grid component | Syncfusion
-description: Learn here all about Display null values at bottom in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Display null values at bottom in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Display null values at bottom 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Display null values at bottom in Angular Grid component
@@ -26,4 +26,4 @@ In the below demo we have displayed the null date values at bottom of the Grid r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/null-date-value-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/null-date-value-cs1" %}

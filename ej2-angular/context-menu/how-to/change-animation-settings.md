@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Change animation settings in Angular Context menu component | Syncfusion
-description: Learn here all about Change animation settings in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Change animation settings in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Change animation settings 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Change animation settings in Angular Context menu component
@@ -35,4 +35,4 @@ The following sample illustrates how to open ContextMenu with `FadeIn` effect wi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/template-cs2" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/template-cs2" %}

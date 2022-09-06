@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Customize menu using events in Angular Menu component | Syncfusion
-description: Learn here all about Customize menu using events in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize menu using events in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize menu using events 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Customize menu using events in Angular Menu component
@@ -26,4 +26,4 @@ The available events are [`beforeOpen`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/handle-event-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/handle-event-cs1" %}

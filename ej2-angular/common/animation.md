@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Animation in Angular Common control | Syncfusion
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Animation in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Animation in Angular Common component
@@ -31,4 +31,4 @@ to animate a multiple DOM element.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/animation-multiple-cs1" %}
+{% previewsample "page.domainurl/code-snippet/common/animation-multiple-cs1" %}

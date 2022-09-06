@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Icons and navigation in Angular Context menu component | Syncfusion
-description: Learn here all about Icons and navigation in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Icons and navigation in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Icons and navigation 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Icons and navigation in Angular Context menu component
@@ -30,7 +30,7 @@ Copy and Paste menu items are added using the `iconCss` property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/icons-and-navigation-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/icons-and-navigation-cs1" %}
 
 ## Navigation
 
@@ -52,7 +52,7 @@ are added using the `url` property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/icons-and-navigation-cs2" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/icons-and-navigation-cs2" %}
 
 > To open the links in new tab, set `target` attribute with the value `_blank` in the
 [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#beforeitemrender) event.

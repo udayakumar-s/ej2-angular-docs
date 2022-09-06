@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data binding in Angular Treeview component | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Data binding in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data binding 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Data binding in Angular Treeview component
@@ -56,7 +56,7 @@ and **text** fields, respectively.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs3" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs3" %}
 
 ### Self-referential Data
 
@@ -80,7 +80,7 @@ to **id**, **parentID**, **hasChildren**, and **text** fields, respectively.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs4" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs4" %}
 
 ## Remote data
 
@@ -130,4 +130,4 @@ fields respectively for second level nodes.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs5" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs5" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Fixed sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Fixed sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Fixed sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Fixed sidebar 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Fixed sidebar in Angular Sidebar component
@@ -24,4 +24,4 @@ The Sidebar does not require any specific style to make it as a fixed one. By de
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/sidebar/fixed-position-cs1" %}
+{% previewsample "page.domainurl/code-snippet/sidebar/fixed-position-cs1" %}

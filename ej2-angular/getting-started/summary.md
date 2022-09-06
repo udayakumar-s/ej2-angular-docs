@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Summary with Angular Getting started component | Syncfusion
-description:  Checkout and learn about Summary with ##Platform_Name## Getting started component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Summary with Angular Getting started component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Summary 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 * [Angular CLI](getting-started/angular-cli.md)

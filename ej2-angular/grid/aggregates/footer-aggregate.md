@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Footer aggregate in Angular Grid component | Syncfusion
-description: Learn here all about Footer aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Footer aggregate in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Footer aggregate 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Footer aggregate in Angular Grid component
@@ -25,7 +25,7 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/aggregates-footer-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/aggregates-footer-cs1" %}
 
 > * Use the template reference variable name as **#footerTemplate** to specify the footer template.
 > * The aggregate values must be accessed inside the template using their corresponding
@@ -48,4 +48,4 @@ You can format the aggregate value result by using the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/aggregates-footer-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/aggregates-footer-cs2" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Localization in Angular Common control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Localization in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Localization in Angular Common component
@@ -28,7 +28,7 @@ To load a translation object in your application use [`load`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/locale-cs2" %}
+{% previewsample "page.domainurl/code-snippet/common/locale-cs2" %}
 
 ## Changing current locale
 

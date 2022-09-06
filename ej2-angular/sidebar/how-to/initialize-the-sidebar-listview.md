@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Initialize the sidebar listview in Angular Sidebar component | Syncfusion
-description: Learn here all about Initialize the sidebar listview in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Initialize the sidebar listview in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Initialize the sidebar listview 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Initialize the sidebar listview in Angular Sidebar component
@@ -26,4 +26,4 @@ In the following example, Sidebar has been rendered with ListView component in i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/sidebar/listview-cs1" %}
+{% previewsample "page.domainurl/code-snippet/sidebar/listview-cs1" %}

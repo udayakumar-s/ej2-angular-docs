@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Select grid rows based on certain condition in Angular Grid component | Syncfusion
-description: Learn here all about Select grid rows based on certain condition in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Select grid rows based on certain condition in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Select grid rows based on certain condition 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Select grid rows based on certain condition in Angular Grid component
@@ -26,4 +26,4 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-column-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-column-cs5" %}

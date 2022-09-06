@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Searching in Angular Grid component | Syncfusion
-description: Learn here all about Searching in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Searching in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Searching 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Searching in Angular Grid component
@@ -30,7 +30,7 @@ To use Searching, you need to inject **SearchService** in the provider section o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/searching-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/searching-cs1" %}
 
 ## Initial search
 
@@ -48,7 +48,7 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/searching-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/searching-cs2" %}
 
 > By default, grid searches all the bound column values. To customize this behavior define
 the [`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property.
@@ -84,7 +84,7 @@ To search grid records from an external button, invoke the [`search`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/searching-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/searching-cs3" %}
 
 ## Search Specific Columns
 
@@ -103,7 +103,7 @@ By default, grid searches all visible columns. You can search specific columns b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/searching-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/searching-cs4" %}
 
 ## Clear search by external button
 
@@ -121,7 +121,7 @@ To clear the searched grid records from the external button, set [`searchSetting
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/searching-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/searching-cs5" %}
 
 ## Search on each key stroke
 
@@ -139,7 +139,7 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/searching-cs6" %}
+{% previewsample "page.domainurl/code-snippet/grid/searching-cs6" %}
 
 ## Perform search operation in Grid using multiple keywords
 
@@ -158,4 +158,4 @@ In the following sample, we have performed the searching with multiple keywords 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/searching-cs7" %}
+{% previewsample "page.domainurl/code-snippet/grid/searching-cs7" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Template in Angular Context menu component | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Template in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Template 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Template in Angular Context menu component
@@ -29,7 +29,7 @@ This can be achieved by appending table layout while `li` rendering by using `be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/table-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/table-cs1" %}
 
 ## Show UI components in ContextMenu
 
@@ -51,4 +51,4 @@ appending it into the `li` element.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/how-to-cs2" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/how-to-cs2" %}

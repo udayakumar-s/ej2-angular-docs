@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Group and caption aggregate in Angular Grid component | Syncfusion
-description: Learn here all about Group and caption aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Group and caption aggregate in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Group and caption aggregate 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Group and caption aggregate in Angular Grid component
@@ -28,7 +28,7 @@ if [`groupCaptionTemplate`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/aggregates-group-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/aggregates-group-cs1" %}
 
 > * Use the template reference variable name as **#groupFooterTemplate** to specify the group footer template
 and as **#groupCaptionTemplate** to specify the group caption template.

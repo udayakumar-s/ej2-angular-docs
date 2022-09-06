@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Summary in Angular Carousel component | Syncfusion
-description: Learn here all about Summary in Syncfusion ##Platform_Name## Carousel component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Summary in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Summary 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 * [Getting Started](carousel/getting-started.md)

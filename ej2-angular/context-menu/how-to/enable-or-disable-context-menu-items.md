@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Enable or disable context menu items in Angular Context menu component | Syncfusion
-description: Learn here all about Enable or disable context menu items in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Enable or disable context menu items in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Enable or disable context menu items 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Enable or disable context menu items in Angular Context menu component
@@ -26,6 +26,6 @@ In the following example, the **Display Settings** in parent items and **Medium 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/template-cs3" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/template-cs3" %}
 
 > To disable sub menu items, use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu#beforeopen) event.

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Common installation errors in Angular Common control | Syncfusion
-description: Learn here all about Common installation errors in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Common installation errors in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Common installation errors in Angular Installation and upgrade component

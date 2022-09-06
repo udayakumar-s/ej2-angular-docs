@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Style and appearance in Angular Context menu component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Style and appearance in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Style and appearance 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Style and appearance in Angular Context menu component

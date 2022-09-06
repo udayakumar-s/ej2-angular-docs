@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Expand mode in Angular Accordion component | Syncfusion
-description: Learn here all about Expand mode in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Expand mode in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Expand mode 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Expand mode in Angular Accordion component
@@ -35,7 +35,7 @@ You can also choose which accordion pane is expanded state at initial rendering 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-cs2" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs2" %}
 
 ## Multiple
 
@@ -56,7 +56,7 @@ For example, expanded item is collapsed when you click on it again.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-cs3" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs3" %}
 
 ## See Also
 

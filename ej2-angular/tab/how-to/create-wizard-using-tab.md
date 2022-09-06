@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Create wizard using tab in Angular Tab component | Syncfusion
-description: Learn here all about Create wizard using tab in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Create wizard using tab in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Create wizard using tab 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Create wizard using tab in Angular Tab component
@@ -38,4 +38,4 @@ In the below demo, designed for simple train reservation module that enable/disa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/wizard-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/wizard-cs1" %}

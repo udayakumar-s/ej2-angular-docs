@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Cell selection in Angular Grid component | Syncfusion
-description: Learn here all about Cell selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Cell selection in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Cell selection 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Cell selection in Angular Grid component
@@ -32,7 +32,7 @@ in between cells of rows within the range.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs1" %}
 
 > Cell Selection requires the [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to be **Cell** or  **Both** and
 [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) should be **Multiple**.
@@ -53,6 +53,6 @@ The Toggle selection allows to perform selection and unselection of the particul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs2" %}
 
 > If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.

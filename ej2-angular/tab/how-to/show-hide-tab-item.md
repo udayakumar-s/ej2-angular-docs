@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Show hide tab item in Angular Tab component | Syncfusion
-description: Learn here all about Show hide tab item in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Show hide tab item in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Show hide tab item 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Show hide tab item in Angular Tab component
@@ -24,4 +24,4 @@ The [`hideTab`](https://ej2.syncfusion.com/angular/documentation/api/tab#hideTab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/show-hide-tab-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/show-hide-tab-cs1" %}

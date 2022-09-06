@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Prevent content swipe selection in Angular Tab component | Syncfusion
-description: Learn here all about Prevent content swipe selection in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Prevent content swipe selection in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Prevent content swipe selection 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Prevent content swipe selection in Angular Tab component
@@ -26,4 +26,4 @@ Refer the below sample with preventing swipe selection.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/basic-cs8" %}
+{% previewsample "page.domainurl/code-snippet/tab/basic-cs8" %}

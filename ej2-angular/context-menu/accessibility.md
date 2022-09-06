@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Accessibility in Angular Context menu component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Accessibility in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular Context menu component
@@ -48,4 +48,4 @@ readers. ContextMenu component contains the `menu` role and `menuItem` role.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/aria-and-keyboard-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/aria-and-keyboard-cs1" %}

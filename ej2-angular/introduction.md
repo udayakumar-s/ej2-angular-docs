@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Introduction in Angular Introduction md component | Syncfusion
-description: Learn here all about Introduction in Syncfusion ##Platform_Name## Introduction md component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Introduction in Syncfusion Angular Introduction md component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Introduction 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Introduction in Angular Introduction md component

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Responsive mode in Angular Toolbar component | Syncfusion
-description: Learn here all about Responsive mode in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Responsive mode in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Responsive mode 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Responsive mode in Angular Toolbar component
@@ -50,7 +50,7 @@ horizontal scrolling enabled when commands overflow to available space.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-items-cs7" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs7" %}
 
 ## Popup
 
@@ -93,7 +93,7 @@ before the secondary priority commands.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-items-cs8" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs8" %}
 
 ### Text mode for buttons
 
@@ -125,7 +125,7 @@ In the following code sample, text is only visible in the popup container and no
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-items-cs9" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs9" %}
 
 ## Render toolbar with a less than minimum height
 
@@ -143,4 +143,4 @@ By default, the toolbar renders with a minimum height to render items properly. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/minimum-height-cs1" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/minimum-height-cs1" %}

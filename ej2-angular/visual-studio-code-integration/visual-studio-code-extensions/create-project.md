@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Create project in Angular Visual studio code integration component | Syncfusion
-description: Learn here all about Create project in Syncfusion ##Platform_Name## Visual studio code integration component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Create project in Syncfusion Angular Visual studio code integration component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Create project 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Create project in Angular Visual studio code integration component

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Cell in Angular Grid component | Syncfusion
-description: Learn here all about Cell in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Cell in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Cell 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Cell in Angular Grid component
@@ -30,7 +30,7 @@ triggers for every cell. In that event handler, you can get
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs1" %}
 
 ## Custom attributes
 
@@ -62,7 +62,7 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs2" %}
 
 ## Grid lines
 
@@ -91,7 +91,7 @@ The available modes of grid lines are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/autowrap-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/autowrap-cs2" %}
 
 >By default, the grid renders with **Default** mode.
 

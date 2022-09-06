@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Check box in Angular Treeview component | Syncfusion
-description: Learn here all about Check box in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Check box in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Check box 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Check box in Angular Treeview component
@@ -44,7 +44,7 @@ In the following example, the `showCheckBox` property is enabled.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs1" %}
 
 ## Checked nodes
 
@@ -67,7 +67,7 @@ If any more nodes are checked, the checked nodes' IDs will be displayed in alert
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs2" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs2" %}
 
 ## See Also
 

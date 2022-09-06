@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Animations and transitions in Angular Carousel component | Syncfusion
-description: Learn here all about Animations and transitions in Syncfusion ##Platform_Name## Carousel component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Animations and transitions in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Animations and transitions 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Animations and transitions in Angular Carousel component
@@ -30,7 +30,7 @@ The following demo depicts the example for fade animation,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs1" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs1" %}
 
 ### Custom animation
 
@@ -50,7 +50,7 @@ The following demo depicts the example for `parallax` custom animation,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/custom-animation-cs1" %}
+{% previewsample "page.domainurl/code-snippet/carousel/custom-animation-cs1" %}
 
 ## Intervals between slides
 
@@ -68,7 +68,7 @@ Using the items property, you can set different intervals for each item to trans
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs2" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs2" %}
 
 **Note**: Interval property can accept value in terms of milliseconds.
 
@@ -88,7 +88,7 @@ In the carousel, all slides transitions are performed continuously after the spe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs3" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs3" %}
 
 ## Pause on hover
 
@@ -108,7 +108,7 @@ The following example depicts the code to play the slides when hovering the mous
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs4" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs4" %}
 
 ## Looping slides
 
@@ -126,7 +126,7 @@ In the carousel, slides transitions are repeated continuously when you reach the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs5" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs5" %}
 
 ## Slide changing events
 
@@ -146,7 +146,7 @@ The following demo depicts the example for carousel events,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs6" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs6" %}
 
 ## Disable touch swiping
 
@@ -164,4 +164,4 @@ In the carousel, you can swipe the carousel slides using touch actions by defaul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs7" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs7" %}

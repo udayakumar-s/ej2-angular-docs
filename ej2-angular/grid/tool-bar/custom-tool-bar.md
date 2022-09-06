@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Custom tool bar in Angular Grid component | Syncfusion
-description: Learn here all about Custom tool bar in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Custom tool bar in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Custom tool bar 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Custom tool bar in Angular Grid component
@@ -26,4 +26,4 @@ Custom Toolbar is used to customize the whole toolbar. It can be added by defini
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/toolbar-template-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/toolbar-template-cs1" %}

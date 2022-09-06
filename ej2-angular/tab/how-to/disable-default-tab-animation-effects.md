@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Disable default tab animation effects in Angular Tab component | Syncfusion
-description: Learn here all about Disable default tab animation effects in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Disable default tab animation effects in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Disable default tab animation effects 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Disable default tab animation effects in Angular Tab component
@@ -26,4 +26,4 @@ The sample demonstrates Tab without the default animation effects. You can check
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/disable-animation-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/disable-animation-cs1" %}

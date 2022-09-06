@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Command column editing in Angular Grid component | Syncfusion
-description: Learn here all about Command column editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Command column editing in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Command column editing 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Command column editing in Angular Grid component
@@ -36,7 +36,7 @@ The available built-in command buttons are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/command-column-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/command-column-cs1" %}
 
 ## Custom command column
 
@@ -55,4 +55,4 @@ the action for the custom buttons can be defined using [`commandClick`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/command-column-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/command-column-cs2" %}

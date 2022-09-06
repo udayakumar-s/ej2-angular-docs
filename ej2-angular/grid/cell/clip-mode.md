@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Clip mode in Angular Grid component | Syncfusion
-description: Learn here all about Clip mode in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Clip mode in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Clip mode 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Clip mode in Angular Grid component
@@ -32,6 +32,6 @@ also it will display the tooltip while hover on ellipsis is applied.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/clipmode-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/clipmode-cs1" %}
 
 >By default, [`columns.clipMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) value is **Ellipsis**.

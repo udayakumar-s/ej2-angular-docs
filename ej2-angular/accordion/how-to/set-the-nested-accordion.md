@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Set the nested accordion in Angular Accordion component | Syncfusion
-description: Learn here all about Set the nested accordion in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Set the nested accordion in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Set the nested accordion 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Set the nested accordion in Angular Accordion component
@@ -24,4 +24,4 @@ You can render Accordion components inside the parent Accordion content using An
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-cs6" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs6" %}

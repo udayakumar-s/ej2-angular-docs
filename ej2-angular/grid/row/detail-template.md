@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Detail template in Angular Grid component | Syncfusion
-description: Learn here all about Detail template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Detail template in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Detail template 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Detail template in Angular Grid component
@@ -24,7 +24,7 @@ The detail template provides additional information about a particular row by ex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs4" %}
 
 ## Rendering custom component
 
@@ -45,7 +45,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs5" %}
 
 ## Expand by external button
 
@@ -63,4 +63,4 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs6" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs6" %}

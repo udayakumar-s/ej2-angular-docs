@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Sidebar with variation animation in Angular Sidebar component | Syncfusion
-description: Learn here all about Sidebar with variation animation in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Sidebar with variation animation in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Sidebar with variation animation 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Sidebar with variation animation in Angular Sidebar component
@@ -26,4 +26,4 @@ Sidebar will automatically adjust expanding animation to match any custom size s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/sidebar/animation-cs1" %}
+{% previewsample "page.domainurl/code-snippet/sidebar/animation-cs1" %}

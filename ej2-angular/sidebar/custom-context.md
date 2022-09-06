@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Custom context in Angular Sidebar component | Syncfusion
-description: Learn here all about Custom context in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Custom context in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Custom context 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Custom context in Angular Sidebar component
@@ -28,7 +28,7 @@ By default, it initialize target to the body element. [`target`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/sidebar/custom-cs1" %}
+{% previewsample "page.domainurl/code-snippet/sidebar/custom-cs1" %}
 
 ## See Also
 

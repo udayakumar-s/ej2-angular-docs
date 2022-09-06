@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Set tool tip to the commands in Angular Toolbar component | Syncfusion
-description: Learn here all about Set tool tip to the commands in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Set tool tip to the commands in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Set tool tip to the commands 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Set tool tip to the commands in Angular Toolbar component
@@ -28,4 +28,4 @@ To change the [`tooltipText`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-items-cs4" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs4" %}

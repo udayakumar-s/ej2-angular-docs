@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Customize tab scroll step in Angular Tab component | Syncfusion
-description: Learn here all about Customize tab scroll step in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize tab scroll step in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize tab scroll step 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Customize tab scroll step in Angular Tab component
@@ -26,4 +26,4 @@ Tab supports to customize the scrolling distance when you click the left and rig
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/scrollstep-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/scrollstep-cs1" %}

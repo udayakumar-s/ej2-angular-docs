@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Selection in Angular Grid component | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Selection in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Selection 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Selection in Angular Grid component
@@ -34,7 +34,7 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs13" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs13" %}
 
 ## Selection mode
 
@@ -57,7 +57,7 @@ Grid supports three types of selection mode which can be set by using
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs14" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs14" %}
 
 ## Touch interaction
 

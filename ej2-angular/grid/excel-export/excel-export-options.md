@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Excel export options in Angular Grid component | Syncfusion
-description: Learn here all about Excel export options in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Excel export options in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Excel export options 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Excel export options in Angular Grid component
@@ -28,7 +28,7 @@ The excel export provides an option to export the current page into excel. To ex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs4" %}
 
 ## Export the selected records only
 
@@ -48,7 +48,7 @@ In the below exporting demo, We can get the selected records using [`getSelected
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-filtered-data-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/exporting-filtered-data-cs1" %}
 
 ## Export hidden columns
 
@@ -66,7 +66,7 @@ The excel export provides an option to export hidden columns of grid by defining
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs5" %}
 
 ## Show or hide columns
 
@@ -90,7 +90,7 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs6" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs6" %}
 
 ## Export with filter options
 
@@ -108,7 +108,7 @@ It requires the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs7" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs7" %}
 
 ## Exporting grouped records
 
@@ -127,7 +127,7 @@ In grid, we have provided the outline option for the exported document when the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs8" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs8" %}
 
 ## Define file name
 
@@ -145,4 +145,4 @@ You can assign the file name for the exported document by defining [`fileName`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs9" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs9" %}

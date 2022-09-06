@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Hierarchy grid in Angular Grid component | Syncfusion
-description: Learn here all about Hierarchy grid in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Hierarchy grid in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Hierarchy grid 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Hierarchy grid in Angular Grid component
@@ -30,7 +30,7 @@ To use hierarchical binding, inject the **DetailRowService** in the provider sec
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs4" %}
 > * Grid supports n level of child grids.
 > * Hierarchical binding is not supported when [`DetailTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) is enabled.
 
@@ -52,7 +52,7 @@ and collapse all grid rows by invoking the [`collapseAll`](https://ej2.syncfusio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs5" %}
 
 ## Expand child grid initially
 
@@ -71,7 +71,7 @@ You can expand a particular child grid at initial rendering by invoking the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs6" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs6" %}
 
 ## Dynamically load child grid data
 
@@ -90,7 +90,7 @@ You can dynamically load child grid dataSource by using the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs7" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs7" %}
 
 ## Bind hierarchy grid with different field
 
@@ -110,7 +110,7 @@ In the below sample, we have bound the child and parent grid with different fiel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs8" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs8" %}
 
 ## Adding Record in ChildGrid
 
@@ -133,7 +133,7 @@ with parent record's [`queryString`](https://ej2.syncfusion.com/angular/document
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs9" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs9" %}
 
 ## Template column in Child Grid
 
@@ -153,7 +153,7 @@ In the below sample, we have shown custom image in **Employee Image** column of 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs10" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs10" %}
 
 ## Dynamically bind data to child grid based on parent row Data
 
@@ -173,7 +173,7 @@ While expanding the child Grid, the `detailDataBound` event will be triggered. I
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs11" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs11" %}
 
 ## See Also
 

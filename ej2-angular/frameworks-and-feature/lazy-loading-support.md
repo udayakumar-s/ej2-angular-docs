@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Lazy loading support in Angular Frameworks and feature component | Syncfusion
-description: Learn here all about Lazy loading support in Syncfusion ##Platform_Name## Frameworks and feature component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Lazy loading support in Syncfusion Angular Frameworks and feature component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Lazy loading support 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Lazy loading support in Angular Frameworks and feature component

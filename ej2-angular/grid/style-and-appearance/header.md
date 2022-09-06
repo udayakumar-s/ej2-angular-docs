@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Header in Angular Grid component | Syncfusion
-description: Learn here all about Header in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Header in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Header 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Header in Angular Grid component

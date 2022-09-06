@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Tree shaking in Angular Frameworks and feature component | Syncfusion
-description: Learn here all about Tree shaking in Syncfusion ##Platform_Name## Frameworks and feature component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Tree shaking in Syncfusion Angular Frameworks and feature component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Tree shaking 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Tree shaking in Angular Frameworks and feature component

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Internationalization in Angular Common control | Syncfusion
-description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Internationalization in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Internationalization in Angular Common component
@@ -136,7 +136,7 @@ The [`getNumberFormat`](https://ej2.syncfusion.com/documentation/api/base/intern
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/intl-getNumber-format-cs3" %}
+{% previewsample "page.domainurl/code-snippet/common/intl-getNumber-format-cs3" %}
 
 #### `formatNumber`
 
@@ -156,7 +156,7 @@ and returns the formatted string.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/intl-getNumber-format-cs4" %}
+{% previewsample "page.domainurl/code-snippet/common/intl-getNumber-format-cs4" %}
 
 ### Parsing
 
@@ -177,7 +177,7 @@ The [`getNumberParser`](https://ej2.syncfusion.com/documentation/api/base/intern
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/intl-parseNumber1-cs2" %}
+{% previewsample "page.domainurl/code-snippet/common/intl-parseNumber1-cs2" %}
 
 #### `parseNumber`
 
@@ -196,7 +196,7 @@ string value and [`NumberFormatOptions`](https://ej2.syncfusion.com/documentatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/intl-parseNumber-cs2" %}
+{% previewsample "page.domainurl/code-snippet/common/intl-parseNumber-cs2" %}
 
 ## Manipulating DateTime
 
@@ -346,7 +346,7 @@ The [`getDateFormat`](https://ej2.syncfusion.com/documentation/api/base/internat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/intl-formatDate-cs3" %}
+{% previewsample "page.domainurl/code-snippet/common/intl-formatDate-cs3" %}
 
 #### `formatDate`
 
@@ -367,7 +367,7 @@ The [`getDateFormat`](https://ej2.syncfusion.com/documentation/api/base/internat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/intl-formatDate-cs4" %}
+{% previewsample "page.domainurl/code-snippet/common/intl-formatDate-cs4" %}
 
 <!-- markdownlint-enable MD036 -->
 
@@ -390,7 +390,7 @@ The `getDateParser` method which will return a function that parses given string
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/intl-parseDate-cs2" %}
+{% previewsample "page.domainurl/code-snippet/common/intl-parseDate-cs2" %}
 
 #### `parseDate`
 
@@ -409,4 +409,4 @@ value and [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/bas
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/intl-parseDate1-cs2" %}
+{% previewsample "page.domainurl/code-snippet/common/intl-parseDate1-cs2" %}

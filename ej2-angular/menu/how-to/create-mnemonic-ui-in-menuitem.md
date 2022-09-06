@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Create mnemonic ui in menuitem in Angular Menu component | Syncfusion
-description: Learn here all about Create mnemonic ui in menuitem in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Create mnemonic ui in menuitem in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Create mnemonic ui in menuitem 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Create mnemonic ui in menuitem in Angular Menu component
@@ -27,4 +27,4 @@ In the following example, the first character in `File`, `Open`, and `Save` menu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs7" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs7" %}

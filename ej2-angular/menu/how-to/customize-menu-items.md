@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Customize menu items in Angular Menu component | Syncfusion
-description: Learn here all about Customize menu items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize menu items in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize menu items 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Customize menu items in Angular Menu component
@@ -31,7 +31,7 @@ and **Mexico** items are removed from menu.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs8" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs8" %}
 
 > To process items with `ID` values, set `isUnique` to `true`.
 
@@ -54,7 +54,7 @@ In the following example, the **Directory** header item, **Conferences**, and **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/enable-disable-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/enable-disable-cs1" %}
 
 > To disable sub menu items, use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu#beforeopen) event.
 
@@ -78,6 +78,6 @@ are hidden in menu.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/enable-disable-cs2" %}
+{% previewsample "page.domainurl/code-snippet/menu/enable-disable-cs2" %}
 
 > Using the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu#beforeopen) event, you can hide the sub menu items as in the above example since the menu supports to hide items only for headers initially.

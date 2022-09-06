@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Adaptive in Angular Grid component | Syncfusion
-description: Learn here all about Adaptive in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Adaptive in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Adaptive 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Adaptive in Angular Grid component
@@ -28,7 +28,7 @@ When we enable the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/adaptive-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/adaptive-cs1" %}
 
 ## Vertical row rendering
 
@@ -46,7 +46,7 @@ The grid will render the row elements in vertical order while setting the [`rowR
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/adaptive-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/adaptive-cs2" %}
 
 > * [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableadaptiveui) property must be enabled for vertical row rendering.
 

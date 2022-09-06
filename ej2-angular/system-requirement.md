@@ -1,11 +1,11 @@
 ---
 layout: post
 title: System requirement in Angular System requirement md component | Syncfusion
-description: Learn here all about System requirement in Syncfusion ##Platform_Name## System requirement md component of Syncfusion Essential JS 2 and more.
+description: Learn here all about System requirement in Syncfusion Angular System requirement md component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: System requirement 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # System requirement in Angular System requirement md component

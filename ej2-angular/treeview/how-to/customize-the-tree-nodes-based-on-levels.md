@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Customize the tree nodes based on levels in Angular Treeview component | Syncfusion
-description: Learn here all about Customize the tree nodes based on levels in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize the tree nodes based on levels in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize the tree nodes based on levels 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Customize the tree nodes based on levels in Angular Treeview component
@@ -24,4 +24,4 @@ You can customize the tree nodes level wise by adding custom cssClass to the com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/customize-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/customize-cs1" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Load tab items dynamically in Angular Tab component | Syncfusion
-description: Learn here all about Load tab items dynamically in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Load tab items dynamically in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Load tab items dynamically 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Load tab items dynamically in Angular Tab component
@@ -40,4 +40,4 @@ click 'Add Tab' button to pass the details as an array and here last index is ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/dynamic-tab-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/dynamic-tab-cs1" %}

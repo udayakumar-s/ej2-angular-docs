@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Add font awesome in Angular Toolbar component | Syncfusion
-description: Learn here all about Add font awesome in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Add font awesome in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add font awesome 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Add font awesome in Angular Toolbar component
@@ -34,7 +34,7 @@ The following sample explains how to use font awesome in the toolbar component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/add-font-awesome-cs1" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/add-font-awesome-cs1" %}
 
 > We can also use templates for rendering icons based on the requirements.
 

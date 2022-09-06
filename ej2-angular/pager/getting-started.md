@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting started with Angular Pager component | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Pager component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with Angular Pager component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Getting started in Angular Pager component
@@ -135,7 +135,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/pager/pager-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pager/pager-cs1" %}
 
 ## Page Count
 
@@ -155,7 +155,7 @@ and [`pageSize`](#page-size) values.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/pager/pager-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pager/pager-cs2" %}
 
 ## Run the application
 
@@ -179,4 +179,4 @@ Output will be appears as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/pager/pager-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pager/pager-cs3" %}

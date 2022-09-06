@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Docking sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Docking sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Docking sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Docking sidebar 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Docking sidebar in Angular Sidebar component
@@ -24,7 +24,7 @@ Dock state of the Sidebar reserves some space on the page that always remains in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/sidebar/dock-cs1" %}
+{% previewsample "page.domainurl/code-snippet/sidebar/dock-cs1" %}
 
 ## See Also
 

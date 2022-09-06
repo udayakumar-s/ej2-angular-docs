@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Frozen in Angular Grid component | Syncfusion
-description: Learn here all about Frozen in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Frozen in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Frozen 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Frozen in Angular Grid component
@@ -29,7 +29,7 @@ is set as **3**. Hence, the left two columns and top three rows are frozen.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/frozenrows-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/frozenrows-cs1" %}
 
 > * Frozen rows and columns should not be set outside the grid view port.
 > * Frozen Grid will support row and column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
@@ -66,7 +66,7 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/frozenrows-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/frozenrows-cs2" %}
 
 > * Freeze Direction is not compatible with the [`isFrozen`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) and [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) properties.
 
@@ -106,6 +106,6 @@ Validation rules for the 'EmployeeID' and 'Freight' columns can be added in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/frozenrows-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/frozenrows-cs3" %}
 
 > This is applicable when a frozen column is enabled and the edit mode is set as "**Normal**" in the Grid.

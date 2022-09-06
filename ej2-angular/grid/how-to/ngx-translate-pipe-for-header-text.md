@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Ngx translate pipe for header text in Angular Grid component | Syncfusion
-description: Learn here all about Ngx translate pipe for header text in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Ngx translate pipe for header text in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Ngx translate pipe for header text 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Ngx translate pipe for header text in Angular Grid component

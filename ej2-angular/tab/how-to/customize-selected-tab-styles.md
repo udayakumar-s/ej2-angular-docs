@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Customize selected tab styles in Angular Tab component | Syncfusion
-description: Learn here all about Customize selected tab styles in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize selected tab styles in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize selected tab styles 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Customize selected tab styles in Angular Tab component
@@ -29,4 +29,4 @@ property which is used to customize the Tab component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/custom-styles-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/custom-styles-cs1" %}

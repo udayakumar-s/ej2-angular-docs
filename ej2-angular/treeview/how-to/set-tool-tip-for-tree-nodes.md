@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Set tool tip for tree nodes in Angular Treeview component | Syncfusion
-description: Learn here all about Set tool tip for tree nodes in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Set tool tip for tree nodes in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Set tool tip for tree nodes 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Set tool tip for tree nodes in Angular Treeview component
@@ -24,4 +24,4 @@ TreeView control allows you to set tooltip option to tree nodes using the [`tool
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/tooltip-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/tooltip-cs1" %}

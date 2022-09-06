@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Open and close the sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Open and close the sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Open and close the sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Open and close the sidebar 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Open and close the sidebar in Angular Sidebar component
@@ -30,4 +30,4 @@ In the following sample, toggle method has been used to show or hide the Sidebar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/sidebar/openclose-cs1" %}
+{% previewsample "page.domainurl/code-snippet/sidebar/openclose-cs1" %}

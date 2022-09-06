@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Multiple selection in Angular Treeview component | Syncfusion
-description: Learn here all about Multiple selection in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Multiple selection in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Multiple selection 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Multiple selection in Angular Treeview component
@@ -35,7 +35,7 @@ In the following example, the `allowMultiSelection` property is enabled.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs10" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs10" %}
 
 ## Selected nodes
 
@@ -62,7 +62,7 @@ When a node is selected, the selected node’s ID is displayed in alert.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs11" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs11" %}
 
 ## See Also
 

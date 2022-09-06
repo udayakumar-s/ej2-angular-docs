@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Enable disable grid and its actions in Angular Grid component | Syncfusion
-description: Learn here all about Enable disable grid and its actions in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Enable disable grid and its actions in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Enable disable grid and its actions 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Enable disable grid and its actions in Angular Grid component
@@ -61,4 +61,4 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs48" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs48" %}

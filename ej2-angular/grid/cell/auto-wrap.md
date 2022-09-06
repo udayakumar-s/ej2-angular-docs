@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Auto wrap in Angular Grid component | Syncfusion
-description: Learn here all about Auto wrap in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Auto wrap in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Auto wrap 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Auto wrap in Angular Grid component
@@ -36,4 +36,4 @@ In the below example, the [`textWrapSettings.wrapMode`](https://ej2.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/autowrap-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/autowrap-cs1" %}

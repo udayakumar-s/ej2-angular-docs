@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Render other components in tab using angular template in Angular Tab component | Syncfusion
-description: Learn here all about Render other components in tab using angular template in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Render other components in tab using angular template in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Render other components in tab using angular template 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Render other components in tab using angular template in Angular Tab component
@@ -26,4 +26,4 @@ mandatory to render content. And now use `ng-template` tag with select attribute
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/direct-components-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/direct-components-cs1" %}

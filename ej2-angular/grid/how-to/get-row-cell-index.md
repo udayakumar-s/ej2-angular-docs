@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Get row cell index in Angular Grid component | Syncfusion
-description: Learn here all about Get row cell index in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Get row cell index in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Get row cell index 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Get row cell index in Angular Grid component
@@ -24,4 +24,4 @@ You can get the specific row and cell index of the grid by using [`rowSelected`]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/collapse-all-initial-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/collapse-all-initial-cs2" %}

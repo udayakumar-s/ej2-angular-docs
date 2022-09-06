@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Add reactive forms within a tab in Angular Tab component | Syncfusion
-description: Learn here all about Add reactive forms within a tab in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Add reactive forms within a tab in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add reactive forms within a tab 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Add reactive forms within a tab in Angular Tab component
@@ -36,4 +36,4 @@ The following example demonstrates how to add the reactive forms within a Tab it
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/reactive-forms-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/reactive-forms-cs1" %}

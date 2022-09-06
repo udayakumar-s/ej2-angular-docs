@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Navigations in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Navigations in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Navigations in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Navigations 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Navigations in Angular Breadcrumb component
@@ -32,7 +32,7 @@ The breadcrumb items with relative URL contain only the path but do not locate t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs1" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs1" %}
 
 ### Absolute URL
 
@@ -50,7 +50,7 @@ The breadcrumb items with Absolute URL contain the path and locate to the resour
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs2" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs2" %}
 
 ## Enable navigation for last Breadcrumb item
 
@@ -68,7 +68,7 @@ The feature enables the last item of the Breadcrumb component by setting the `en
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs3" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs3" %}
 
 ## Open URL in new page or tab
 
@@ -86,4 +86,4 @@ To open the breadcrumb item in a new page or tab, set the target property of the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs4" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs4" %}

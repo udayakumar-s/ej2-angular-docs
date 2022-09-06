@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Use case scenarios in Angular Menu component | Syncfusion
-description: Learn here all about Use case scenarios in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Use case scenarios in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Use case scenarios 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Use case scenarios in Angular Menu component
@@ -26,7 +26,7 @@ The menu component supports horizontal and vertical scrolling to render large me
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/scroll-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/scroll-cs1" %}
 
 ## Menu in toolbar
 
@@ -44,7 +44,7 @@ The following example demonstrates how to integrate Menu with Toolbar component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/toolbar-menu-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/toolbar-menu-cs1" %}
 
 ## Hamburger menu
 
@@ -62,7 +62,7 @@ The following example demonstrates the use case of menu with Accordion component
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/sidebar-menu-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/sidebar-menu-cs1" %}
 
 ## Mobile view
 
@@ -80,4 +80,4 @@ The following example demonstrates the use case of Menu in Mobile mode by using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/listview-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/listview-cs1" %}

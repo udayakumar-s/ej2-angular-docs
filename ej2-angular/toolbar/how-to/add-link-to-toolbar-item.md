@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Add link to toolbar item in Angular Toolbar component | Syncfusion
-description: Learn here all about Add link to toolbar item in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Add link to toolbar item in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add link to toolbar item 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Add link to toolbar item in Angular Toolbar component
@@ -24,4 +24,4 @@ You can add link inside Toolbar using Angular **ng-template**. We need to use `n
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-link-cs1" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-link-cs1" %}

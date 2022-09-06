@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Context menu in Angular Grid component | Syncfusion
-description: Learn here all about Context menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Context menu in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Context menu 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Context menu in Angular Grid component
@@ -51,7 +51,7 @@ Items| Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs1" %}
 
 ## Custom context menu items
 
@@ -73,7 +73,7 @@ Actions for this customized items can be defined in the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs2" %}
 
 ## Show context menu on left click
 
@@ -95,7 +95,7 @@ This is demonstrated in the following sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs3" %}
 
 > You can hide or show an item in context menu for specific area inside of grid by defining the
 [`target`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/#target) property.

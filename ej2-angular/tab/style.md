@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Style in Angular Tab component | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Style in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Style 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Style in Angular Tab component

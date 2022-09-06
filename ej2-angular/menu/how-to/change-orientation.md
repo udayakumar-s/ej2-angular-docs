@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Change orientation in Angular Menu component | Syncfusion
-description: Learn here all about Change orientation in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Change orientation in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Change orientation 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Change orientation in Angular Menu component
@@ -26,4 +26,4 @@ By default, it is horizontally aligned.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs6" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs6" %}

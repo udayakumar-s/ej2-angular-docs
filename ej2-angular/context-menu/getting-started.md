@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting started with Angular Context menu component | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with Angular Context menu component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Getting started in Angular Context menu component
@@ -176,7 +176,7 @@ The following example shows a basic `ContextMenu` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/getting-started-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/getting-started-cs1" %}
 
 ## Rendering items with Separator
 
@@ -196,7 +196,7 @@ property. Cut, Copy, and Paste menu items are grouped using `separator` property
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/separators-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/separators-cs1" %}
 
 > The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#separator) property should not be given along with
 the other fields in the [`MenuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel).

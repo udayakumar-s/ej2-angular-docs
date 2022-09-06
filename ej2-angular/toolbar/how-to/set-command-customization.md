@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Set command customization in Angular Toolbar component | Syncfusion
-description: Learn here all about Set command customization in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Set command customization in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Set command customization 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Set command customization in Angular Toolbar component
@@ -29,4 +29,4 @@ Single or multiple CSS classes can be added to the Toolbar commands using the To
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-items-cs2" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs2" %}

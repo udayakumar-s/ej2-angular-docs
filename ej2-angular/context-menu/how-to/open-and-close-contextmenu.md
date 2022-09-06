@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Open and close contextmenu in Angular Context menu component | Syncfusion
-description: Learn here all about Open and close contextmenu in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Open and close contextmenu in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Open and close contextmenu 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Open and close contextmenu in Angular Context menu component
@@ -28,4 +28,4 @@ method on ContextMenu item click or document click.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/how-to-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/how-to-cs1" %}

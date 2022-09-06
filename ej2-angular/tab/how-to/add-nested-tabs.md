@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Add nested tabs in Angular Tab component | Syncfusion
-description: Learn here all about Add nested tabs in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Add nested tabs in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add nested tabs 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Add nested tabs in Angular Tab component
@@ -26,4 +26,4 @@ To render the nested Tab, initialize the component using the id of Tab from [`se
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/basic-cs6" %}
+{% previewsample "page.domainurl/code-snippet/tab/basic-cs6" %}

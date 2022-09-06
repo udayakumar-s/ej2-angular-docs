@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Add params for filtering in Angular Grid component | Syncfusion
-description: Learn here all about Add params for filtering in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Add params for filtering in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add params for filtering 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Add params for filtering in Angular Grid component
@@ -25,4 +25,4 @@ In the below sample, OrderID and Freight Columns are numeric columns, while open
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs12" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs12" %}

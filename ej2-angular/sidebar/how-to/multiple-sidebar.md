@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Multiple sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Multiple sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Multiple sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Multiple sidebar 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Multiple sidebar in Angular Sidebar component
@@ -28,4 +28,4 @@ Sidebars will behave as side content to this main content area of a web page.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/sidebar/multiple-cs1" %}
+{% previewsample "page.domainurl/code-snippet/sidebar/multiple-cs1" %}

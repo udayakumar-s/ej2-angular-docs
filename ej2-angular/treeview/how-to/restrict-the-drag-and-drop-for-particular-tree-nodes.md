@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Restrict the drag and drop for particular tree nodes in Angular Treeview component | Syncfusion
-description: Learn here all about Restrict the drag and drop for particular tree nodes in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Restrict the drag and drop for particular tree nodes in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Restrict the drag and drop for particular tree nodes 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Restrict the drag and drop for particular tree nodes in Angular Treeview component
@@ -25,4 +25,4 @@ These can be achieved by using 'nodeDragStop' and 'nodeDragging' event of TreeVi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/restrict-drag-drop-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/restrict-drag-drop-cs1" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data binding in Angular Grid component | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Data binding in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data binding 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Data binding in Angular Grid component

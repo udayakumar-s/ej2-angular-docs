@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Ej1 api migration in Angular Menu component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Ej1 api migration in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Ej1 api migration 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Ej1 api migration in Angular Menu component

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Hide sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Hide sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Hide sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Hide sidebar 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Hide sidebar in Angular Sidebar component

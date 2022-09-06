@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Add to persist in Angular Grid component | Syncfusion
-description: Learn here all about Add to persist in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Add to persist in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add to persist 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Add to persist in Angular Grid component
@@ -28,4 +28,4 @@ If you wish to restore all these column properties, then you can achieve it by c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs8" %}
+{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs8" %}

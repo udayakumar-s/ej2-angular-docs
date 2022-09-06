@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Select one child in Angular Treeview component | Syncfusion
-description: Learn here all about Select one child in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Select one child in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Select one child 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Select one child in Angular Treeview component
@@ -24,4 +24,4 @@ TreeView allows both single and multiple selections. If your application needs t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/select-one-child-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/select-one-child-cs1" %}

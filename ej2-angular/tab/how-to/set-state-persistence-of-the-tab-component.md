@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Set state persistence of the tab component in Angular Tab component | Syncfusion
-description: Learn here all about Set state persistence of the tab component in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Set state persistence of the tab component in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Set state persistence of the tab component 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Set state persistence of the tab component in Angular Tab component
@@ -28,4 +28,4 @@ The following sample demonstrates how to set state persistence of the Tab compon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/persistence-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/persistence-cs1" %}

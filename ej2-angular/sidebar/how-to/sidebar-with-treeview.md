@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Sidebar with treeview in Angular Sidebar component | Syncfusion
-description: Learn here all about Sidebar with treeview in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Sidebar with treeview in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Sidebar with treeview 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Sidebar with treeview in Angular Sidebar component
@@ -26,4 +26,4 @@ On collapse, the LI elements of TreeView show icons only to represent the short 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/sidebar/treeview-cs1" %}
+{% previewsample "page.domainurl/code-snippet/sidebar/treeview-cs1" %}

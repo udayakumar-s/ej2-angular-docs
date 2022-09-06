@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Localization in Angular Tab component | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Localization in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Localization 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Localization in Angular Tab component
@@ -37,4 +37,4 @@ text.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/basic-cs10" %}
+{% previewsample "page.domainurl/code-snippet/tab/basic-cs10" %}

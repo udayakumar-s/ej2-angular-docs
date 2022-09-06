@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Global local in Angular Grid component | Syncfusion
-description: Learn here all about Global local in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Global local in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Global local 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Global local in Angular Grid component
@@ -135,7 +135,7 @@ The below example demonstrates the Grid in **Deutsch** culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/localization-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/localization-cs1" %}
 
 ## Internationalization
 
@@ -166,7 +166,7 @@ You need to load culture format files in **ngOnInit** function.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/localization-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/localization-cs2" %}
 
 > * In the above sample, **Freight** column is formatted by [`NumberFormatOptions`](../common/internationalization/#manipulating-numbers).
 > * By default, [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value is **en-US**. If you want to change **en-US** culture, then set the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale).
@@ -189,7 +189,7 @@ To enable RTL in the Grid, set the [`enableRtl`](https://ej2.syncfusion.com/angu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/paging1-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/paging1-cs1" %}
 
 ## See Also
 

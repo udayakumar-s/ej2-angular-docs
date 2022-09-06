@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Column reorder in Angular Grid component | Syncfusion
-description: Learn here all about Column reorder in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Column reorder in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Column reorder 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Column reorder in Angular Grid component
@@ -27,7 +27,7 @@ To use Reordering, you need to inject **ReorderService** in the provider section
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/reorder-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/reorder-cs1" %}
 
 > You can disable reordering a particular column by setting the [`columns.allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowreordering) to false.
 
@@ -47,7 +47,7 @@ Grid have option to reorder Columns either by Interaction or by using the [`reor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/reorder-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/reorder-cs2" %}
 
 ## Reorder multiple columns
 
@@ -67,7 +67,7 @@ In the below sample, **Ship City** and **Ship Region** column is reordered to la
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/reorder-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/reorder-cs3" %}
 
 ## Reorder events
 
@@ -89,4 +89,4 @@ During the reorder action, the grid component triggers the below three events.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/reorder-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/reorder-cs4" %}

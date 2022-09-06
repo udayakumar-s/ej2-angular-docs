@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Populate menu items with data source in Angular Context menu component | Syncfusion
-description: Learn here all about Populate menu items with data source in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Populate menu items with data source in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Populate menu items with data source 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Populate menu items with data source in Angular Context menu component
@@ -27,4 +27,4 @@ The below example demonstrates how to bind local data source to the ContextMenu.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/data-binding-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/data-binding-cs1" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Drag and drop in Angular Tab component | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Drag and drop in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Drag and drop 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Drag and drop in Angular Tab component
@@ -36,7 +36,7 @@ In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/drag-and-drop/default-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/drag-and-drop/default-cs1" %}
 
 ## Drag and drop item between tabs
 
@@ -56,7 +56,7 @@ In this example, we have used the tab control as an external source, and the ite
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/drag-and-drop/tab-to-tab-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/drag-and-drop/tab-to-tab-cs1" %}
 
 ## Drag and drop items to external source
 
@@ -76,7 +76,7 @@ In this example, we have used the tree view control as an external source, and t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/drag-and-drop/tab-to-treeview-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/drag-and-drop/tab-to-treeview-cs1" %}
 
 ## Drag and drop items from external source
 
@@ -96,4 +96,4 @@ In this example, we have used the tree view control as an external source, and t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/drag-and-drop/treeview-to-tab-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/drag-and-drop/treeview-to-tab-cs1" %}

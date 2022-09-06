@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Exporting hierarchy grid in Angular Grid component | Syncfusion
-description: Learn here all about Exporting hierarchy grid in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Exporting hierarchy grid in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Exporting hierarchy grid 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Exporting hierarchy grid in Angular Grid component
@@ -30,7 +30,7 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs14" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs14" %}
 
 ## Limitations
 

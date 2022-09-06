@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Column chooser in Angular Grid component | Syncfusion
-description: Learn here all about Column chooser in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Column chooser in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Column chooser 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Column chooser in Angular Grid component
@@ -27,7 +27,7 @@ To use column chooser, inject **ColumnChooserService** in the provider section o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/columnchooser-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/columnchooser-cs1" %}
 
 > You can hide the column names in column chooser by defining the
 [`columns.showInColumnChooser`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showincolumnchooser) as false.
@@ -49,4 +49,4 @@ the [`openColumnChooser`](https://ej2.syncfusion.com/angular/documentation/api/g
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/columnschooser-method-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/columnschooser-method-cs1" %}

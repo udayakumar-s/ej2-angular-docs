@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Licensing errors in Angular Licensing component | Syncfusion
-description: Learn here all about Licensing errors in Syncfusion ##Platform_Name## Licensing component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Licensing errors in Syncfusion Angular Licensing component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Licensing errors 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Licensing errors in Angular Licensing component

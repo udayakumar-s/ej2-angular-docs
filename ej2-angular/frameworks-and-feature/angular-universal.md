@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Angular universal in Angular Frameworks and feature component | Syncfusion
-description: Learn here all about Angular universal in Syncfusion ##Platform_Name## Frameworks and feature component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Angular universal in Syncfusion Angular Frameworks and feature component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Angular universal 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Angular universal in Angular Frameworks and feature component

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Release history in Angular Upgrade component | Syncfusion
-description: Learn here all about Release history in Syncfusion ##Platform_Name## Upgrade component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Release history in Syncfusion Angular Upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Release history 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Release history in Angular Upgrade component

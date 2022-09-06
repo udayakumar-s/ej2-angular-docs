@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Clipboard in Angular Grid component | Syncfusion
-description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Clipboard in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Clipboard 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Clipboard in Angular Grid component
@@ -31,7 +31,7 @@ Interaction keys |Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs1" %}
 
 ## Copy to clipboard by external buttons
 
@@ -50,7 +50,7 @@ method.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs2" %}
 
 ## AutoFill
 
@@ -68,7 +68,7 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs1" %}
 
 > * If [`enableAutoFill`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableautofill)  is set to true, then the autofill icon will be displayed on cell selection to copy cells.
 > * It requires the selection **mode** to be **Cell**,  **cellSelectionMode** to be **Box** and also Batch Editing should be enabled.
@@ -94,7 +94,7 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs2" %}
 
 > To perform paste functionality, it requires the selection **mode** to be **Cell**,  **cellSelectionMode** to be **Box** and also Batch Editing should be enabled.
 

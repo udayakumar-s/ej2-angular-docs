@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Collapse grouped rows at initial render in Angular Grid component | Syncfusion
-description: Learn here all about Collapse grouped rows at initial render in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Collapse grouped rows at initial render in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Collapse grouped rows at initial render 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Collapse grouped rows at initial render in Angular Grid component
@@ -26,4 +26,4 @@ In the below demo, all the grouped rows are collapsed at initial rendering.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/collapse-all-initial-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/collapse-all-initial-cs1" %}

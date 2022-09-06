@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting started with Angular Carousel component | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Carousel component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with Angular Carousel component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Getting started in Angular Carousel component
@@ -189,4 +189,4 @@ The following example shows a basic `Carousel` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/getting-started-cs1" %}
+{% previewsample "page.domainurl/code-snippet/carousel/getting-started-cs1" %}

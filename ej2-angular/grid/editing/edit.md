@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Edit in Angular Grid component | Syncfusion
-description: Learn here all about Edit in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Edit in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Edit 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Edit in Angular Grid component
@@ -39,7 +39,7 @@ To learn about what are all the edit modes and edit types are available in Angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs17" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs17" %}
 
 > * If [`columns.isIdentity`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) is enabled,
 then it will be considered as a read-only column when editing and adding a record.
@@ -63,7 +63,7 @@ You can define this by using the [`toolbar`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs18" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs18" %}
 
 ## Disable editing for particular column
 
@@ -83,7 +83,7 @@ In the following demo, editing is disabled for the **CustomerID** column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs19" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs19" %}
 
 ## Disable editing for a particular row or cell
 
@@ -103,7 +103,7 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs20" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs20" %}
 
 For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
 
@@ -119,7 +119,7 @@ For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs21" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs21" %}
 
 ## Editing template column
 
@@ -139,7 +139,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs22" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs22" %}
 
 ## Troubleshoot editing works only for first row
 
@@ -164,7 +164,7 @@ In the following example, the textbox is rendered in the Freight column using a 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs23" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs23" %}
 
 ## See Also
 

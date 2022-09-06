@@ -1,11 +1,11 @@
 ---
 layout: post
 title: State persistence in Angular Grid component | Syncfusion
-description: Learn here all about State persistence in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about State persistence in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: State persistence 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # State persistence in Angular Grid component
@@ -34,7 +34,7 @@ You can achieve this by destroying the grid after disabling the [`enablePersiste
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs10" %}
+{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs10" %}
 
 ## Maintaining custom query in a persistent state
 
@@ -56,7 +56,7 @@ method in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs11" %}
+{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs11" %}
 
 ## Add a new column in persisted columns list
 
@@ -74,4 +74,4 @@ The Grid columns can be persisted when the [enablePersistence](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping1-cs12" %}
+{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs12" %}

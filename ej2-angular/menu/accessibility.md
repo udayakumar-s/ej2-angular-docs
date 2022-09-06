@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Accessibility in Angular Menu component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Accessibility in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular Menu component
@@ -86,4 +86,4 @@ Focuses the last item.</td></tr>
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs1" %}

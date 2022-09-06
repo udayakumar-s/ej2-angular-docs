@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Npm package in Angular Npm package md component | Syncfusion
-description: Learn here all about Npm package in Syncfusion ##Platform_Name## Npm package md component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Npm package in Syncfusion Angular Npm package md component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Npm package 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Npm package in Angular Npm package md component

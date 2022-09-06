@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Filter template in Angular Grid component | Syncfusion
-description: Learn here all about Filter template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Filter template in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Filter template 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Filter template in Angular Grid component

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting started with Angular Toolbar component | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with Angular Toolbar component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Getting started in Angular Toolbar component
@@ -162,7 +162,7 @@ The following code example depicts the way to initialize The Toolbar on a single
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-cs1" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-cs1" %}
 
 ## Initialize the Toolbar using HTML elements
 
@@ -190,7 +190,7 @@ You need to follow the below structure of HTML elements to render the Toolbar in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-container-cs1" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-container-cs1" %}
 
 ## See Also
 

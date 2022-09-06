@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Overflow in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Overflow in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Overflow in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Overflow 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Overflow in Angular Breadcrumb component
@@ -28,7 +28,7 @@ In the following example, the maxItems is set as 3 with overflowMode as Default.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs5" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs5" %}
 
 The following overflow modes are available in the Breadcrumb component.
 
@@ -55,7 +55,7 @@ Collapsed mode shows the first and last Breadcrumb items and hides the remaining
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs6" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs6" %}
 
 ## Menu
 
@@ -73,7 +73,7 @@ Menu mode shows the number of Breadcrumb items that can be accommodated within t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs7" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs7" %}
 
 ## Wrap
 
@@ -91,7 +91,7 @@ Wrap mode wraps the items to multiple lines when the Breadcrumb’s width exceed
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs8" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs8" %}
 
 ## Scroll
 
@@ -109,7 +109,7 @@ Scroll mode shows an HTML scroll bar when the Breadcrumb’s width exceeds the c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs9" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs9" %}
 
 ## Hidden
 
@@ -127,7 +127,7 @@ Hidden mode shows the maximum number of items possible in the container space an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/navigations-cs10" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/navigations-cs10" %}
 
 ## None
 

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: To keep single pane open always in Angular Accordion component | Syncfusion
-description: Learn here all about To keep single pane open always in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about To keep single pane open always in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: To keep single pane open always 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # To keep single pane open always in Angular Accordion component
@@ -25,4 +25,4 @@ as expanded state always. This is applicable for `Single` expand mode.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-cs7" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs7" %}

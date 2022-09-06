@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Context menu item click in Angular Context menu component | Syncfusion
-description: Learn here all about Context menu item click in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Context menu item click in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Context menu item click 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Context menu item click in Angular Context menu component
@@ -24,4 +24,4 @@ This section explains about how to open a sub menu on Context Menu item click. T
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/getting-started-cs2" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/getting-started-cs2" %}

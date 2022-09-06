@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Excel exporting in Angular Grid component | Syncfusion
-description: Learn here all about Excel exporting in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Excel exporting in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Excel exporting 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Excel exporting in Angular Grid component
@@ -28,7 +28,7 @@ To use excel export, inject **ExcelExportService** in the provider section of **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs10" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs10" %}
 
 ## Show spinner while exporting
 
@@ -52,7 +52,7 @@ In the below demo, we have rendered the default spinner component when exporting
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/exporting-cs1" %}
 
 ## Custom data source
 
@@ -71,7 +71,7 @@ To export data dynamically, define the [`dataSource`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs11" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs11" %}
 
 ## Passing additional parameters to the server when exporting
 
@@ -91,7 +91,7 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/exporting-cs2" %}
 
 ## See Also
 

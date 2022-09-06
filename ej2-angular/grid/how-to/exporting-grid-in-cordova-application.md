@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Exporting grid in cordova application in Angular Grid component | Syncfusion
-description: Learn here all about Exporting grid in cordova application in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Exporting grid in cordova application in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Exporting grid in cordova application 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Exporting grid in cordova application in Angular Grid component
@@ -25,4 +25,4 @@ You can use corresponding exporting methods and exportComplete events to get the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/exporting-cs4" %}

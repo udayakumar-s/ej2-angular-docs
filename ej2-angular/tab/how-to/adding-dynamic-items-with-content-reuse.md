@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Adding dynamic items with content reuse in Angular Tab component | Syncfusion
-description: Learn here all about Adding dynamic items with content reuse in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Adding dynamic items with content reuse in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Adding dynamic items with content reuse 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Adding dynamic items with content reuse in Angular Tab component
@@ -32,4 +32,4 @@ Refer to the following sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/content-reuse-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/content-reuse-cs1" %}

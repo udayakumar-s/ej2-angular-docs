@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Pdf cell style customization in Angular Grid component | Syncfusion
-description: Learn here all about Pdf cell style customization in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Pdf cell style customization in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Pdf cell style customization 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Pdf cell style customization in Angular Grid component
@@ -28,7 +28,7 @@ In the below sample, we have set the background color for **Freight** column in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs9" %}
+{% previewsample "page.domainurl/code-snippet/grid/exporting-cs9" %}
 
 ## Theme
 
@@ -48,6 +48,6 @@ To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs10" %}
+{% previewsample "page.domainurl/code-snippet/grid/exporting-cs10" %}
 
 > By default, material theme is applied to exported PDF document.

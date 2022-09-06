@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Remote data in Angular Grid component | Syncfusion
-description: Learn here all about Remote data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Remote data in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Remote data 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Remote data in Angular Grid component
@@ -26,7 +26,7 @@ To interact with remote data source,  provide the endpoint **url**.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/databinding-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/databinding-cs2" %}
 
 > By default, **DataManager** uses **ODataAdaptor** for remote data-binding.
 
@@ -47,7 +47,7 @@ You can retrieve data from OData service using DataManager. You can refer to the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/databinding-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/databinding-cs3" %}
 
 ## OData v4 adaptor - Binding OData v4 service
 
@@ -68,7 +68,7 @@ To bind OData v4 service, use the **ODataV4Adaptor**.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/databinding-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/databinding-cs4" %}
 
 ## Web API adaptor
 
@@ -213,7 +213,7 @@ by overriding the built-in response processing using the **processResponse** met
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/databinding-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/databinding-cs5" %}
 
 ## Offline mode
 

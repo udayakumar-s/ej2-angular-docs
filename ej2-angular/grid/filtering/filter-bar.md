@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Filter bar in Angular Grid component | Syncfusion
-description: Learn here all about Filter bar in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Filter bar in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Filter bar 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Filter bar in Angular Grid component
@@ -43,7 +43,7 @@ N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs1" %}
 
 ## Filter bar template with custom component
 
@@ -66,7 +66,7 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs2" %}
 
 ## Change default filterbar operator
 
@@ -85,4 +85,4 @@ we have changed the default operator for string typed columns as **contains** fr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs3" %}

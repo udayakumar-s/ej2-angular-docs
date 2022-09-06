@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Open a dialog on contextmenu item click in Angular Context menu component | Syncfusion
-description: Learn here all about Open a dialog on contextmenu item click in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Open a dialog on contextmenu item click in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Open a dialog on contextmenu item click 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Open a dialog on contextmenu item click in Angular Context menu component
@@ -27,4 +27,4 @@ In the following sample, Dialog will open while clicking `Save As...` item:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/dialog-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/dialog-cs1" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Foreign key column in Angular Grid component | Syncfusion
-description: Learn here all about Foreign key column in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Foreign key column in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Foreign key column 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Foreign key column in Angular Grid component
@@ -34,7 +34,7 @@ To use ForeignKeyColumn, you need to inject **ForeignKeyService** in the provide
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs19" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs19" %}
 
 > * For remote data, the sorting and grouping is done based on [`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) instead of
 [`column.foreignKeyValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue).
@@ -60,7 +60,7 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs1" %}
 
 ## Customize filter UI in foreignkey column
 
@@ -81,7 +81,7 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs2" %}
 
 ## Use filter bar template in foreignkey column
 
@@ -104,7 +104,7 @@ This column header shows the custom filter bar template and you can select filte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs3" %}
 
 ## Perform aggregation in foreignkey column
 
@@ -126,7 +126,7 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs4" %}
 
 ## Enable multiple foreign key columns
 
@@ -146,4 +146,4 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs5" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Add or remove context menu items in Angular Context menu component | Syncfusion
-description: Learn here all about Add or remove context menu items in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Add or remove context menu items in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add or remove context menu items 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Add or remove context menu items in Angular Context menu component
@@ -26,4 +26,4 @@ In the following example, the **Display Settings** menu items are added before t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/template-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/template-cs1" %}

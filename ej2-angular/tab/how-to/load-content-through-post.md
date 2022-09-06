@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Load content through post in Angular Tab component | Syncfusion
-description: Learn here all about Load content through post in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Load content through post in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Load content through post 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Load content through post in Angular Tab component
@@ -28,4 +28,4 @@ The Tab supports to load external contents through `AJAX` library. Refer to the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/ajax-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/ajax-cs1" %}

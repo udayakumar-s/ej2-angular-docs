@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting started with Angular Breadcrumb component | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with Angular Breadcrumb component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Getting started in Angular Breadcrumb component
@@ -155,7 +155,7 @@ The following example shows a basic `Breadcrumb` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/getting-started-cs5" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/getting-started-cs5" %}
 
 ## Add Items to the Breadcrumb Component
 
@@ -173,7 +173,7 @@ Use `items` property to bind items for Breadcrumb component. The below example d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/getting-started-cs6" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/getting-started-cs6" %}
 
 ## Enable or Disable Navigation
 
@@ -191,4 +191,4 @@ This feature enables or disables the item navigation. By default, the navigation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/enable-navigation-cs1" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/enable-navigation-cs1" %}

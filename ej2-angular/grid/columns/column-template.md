@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Column template in Angular Grid component | Syncfusion
-description: Learn here all about Column template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Column template in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Column template 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Column template in Angular Grid component
@@ -26,7 +26,7 @@ The column [`template`](https://ej2.syncfusion.com/angular/documentation/api/gri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/template-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/template-cs1" %}
 
 ## Render other components in a column
 
@@ -54,7 +54,7 @@ renders the custom component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/column-sync-comp-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/column-sync-comp-cs1" %}
 
 ## Using condition template
 
@@ -85,7 +85,7 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/condition-template-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/condition-template-cs1" %}
 
 ## How to get the row object by clicking on the template element
 
@@ -105,4 +105,4 @@ In the following sample, the button element is rendered in the Employee Data col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/template-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/template-cs2" %}

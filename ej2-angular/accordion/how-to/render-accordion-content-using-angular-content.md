@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Render accordion content using angular content in Angular Accordion component | Syncfusion
-description: Learn here all about Render accordion content using angular content in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Render accordion content using angular content in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Render accordion content using angular content 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Render accordion content using angular content in Angular Accordion component
@@ -36,4 +36,4 @@ tag with `#content` attribute, which is mandatory to render content. Now include
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-ng-content-cs1" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-ng-content-cs1" %}

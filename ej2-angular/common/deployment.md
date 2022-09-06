@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Deployment in Angular Common control | Syncfusion
-description: Learn here all about Deployment in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Deployment in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Deployment in Angular Common component

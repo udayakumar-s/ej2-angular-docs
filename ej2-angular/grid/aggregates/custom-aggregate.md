@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Custom aggregate in Angular Grid component | Syncfusion
-description: Learn here all about Custom aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Custom aggregate in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Custom aggregate 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Custom aggregate in Angular Grid component
@@ -33,6 +33,6 @@ object.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/aggregates-custom-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/aggregates-custom-cs1" %}
 
 > To access the custom aggregate value inside template, use the key as **Custom**

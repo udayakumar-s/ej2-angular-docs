@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Icons and sub menu items in Angular Menu component | Syncfusion
-description: Learn here all about Icons and sub menu items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Icons and sub menu items in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Icons and sub menu items 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Icons and sub menu items in Angular Menu component
@@ -30,7 +30,7 @@ menu item. In the following sample, the icons of `File` and `Edit` menu items an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs11" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs11" %}
 
 ## Navigation
 
@@ -49,7 +49,7 @@ It can be achieved by providing a link to the menu item using the [`url`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs12" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs12" %}
 
 ## Multilevel nesting
 
@@ -69,7 +69,7 @@ In the following sample, three-level nesting of menu has been provided.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs13" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs13" %}
 
 > You can achieve multi level nesting with data source by mapping `name` of the child items
 to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel#children) sub-property

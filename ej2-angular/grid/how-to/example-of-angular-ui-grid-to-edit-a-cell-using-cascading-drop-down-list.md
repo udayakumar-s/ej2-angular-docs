@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Example of angular ui grid to edit a cell using cascading drop down list in Angular Grid component | Syncfusion
-description: Learn here all about Example of angular ui grid to edit a cell using cascading drop down list in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Example of angular ui grid to edit a cell using cascading drop down list in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Example of angular ui grid to edit a cell using cascading drop down list 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Example of angular ui grid to edit a cell using cascading drop down list in Angular Grid component
@@ -26,4 +26,4 @@ In the below demo, Cascading DropDownList rendered for `ShipCountry` and `ShipSt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs49" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs49" %}

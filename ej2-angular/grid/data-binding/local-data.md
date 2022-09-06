@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Local data in Angular Grid component | Syncfusion
-description: Learn here all about Local data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Local data in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Local data 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Local data in Angular Grid component
@@ -26,7 +26,7 @@ To bind local data to the grid, you can assign a JavaScript object array to the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/databinding-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/databinding-cs1" %}
 
 > By default, **DataManager** uses **JsonAdaptor** for local data-binding.
 
@@ -69,4 +69,4 @@ Refresh the grid after the datasource change by using the [`refresh`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/change-headertext-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/change-headertext-cs2" %}

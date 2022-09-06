@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Browser in Angular Browser md component | Syncfusion
-description: Learn here all about Browser in Syncfusion ##Platform_Name## Browser md component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Browser in Syncfusion Angular Browser md component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Browser 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Browser in Angular Browser md component

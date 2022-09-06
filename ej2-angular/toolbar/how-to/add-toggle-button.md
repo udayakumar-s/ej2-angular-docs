@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Add toggle button in Angular Toolbar component | Syncfusion
-description: Learn here all about Add toggle button in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Add toggle button in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add toggle button 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Add toggle button in Angular Toolbar component
@@ -33,4 +33,4 @@ bind click event for it.  On clicking the toggle Button, change the required ico
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toggle-button-cs1" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toggle-button-cs1" %}

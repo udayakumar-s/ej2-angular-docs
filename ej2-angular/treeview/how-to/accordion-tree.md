@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Accordion tree in Angular Treeview component | Syncfusion
-description: Learn here all about Accordion tree in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Accordion tree in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accordion tree 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Accordion tree in Angular Treeview component
@@ -24,4 +24,4 @@ Accordion is an interface where a list of items can be collapsed or expanded, bu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/accordion-tree-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/accordion-tree-cs1" %}

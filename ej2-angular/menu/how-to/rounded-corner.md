@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Rounded corner in Angular Menu component | Syncfusion
-description: Learn here all about Rounded corner in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Rounded corner in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Rounded corner 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Rounded corner in Angular Menu component
@@ -24,4 +24,4 @@ The rounded corner can be achieved by using the [`cssClass`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/rounded-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/rounded-cs1" %}

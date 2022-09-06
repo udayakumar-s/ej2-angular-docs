@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Reactive form validation in Angular Common control | Syncfusion
-description: Learn here all about Reactive form validation in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Reactive form validation in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Reactive form validation in Angular Common component

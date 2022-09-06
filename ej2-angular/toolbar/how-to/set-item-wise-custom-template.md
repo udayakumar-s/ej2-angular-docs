@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Set item wise custom template in Angular Toolbar component | Syncfusion
-description: Learn here all about Set item wise custom template in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Set item wise custom template in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Set item wise custom template 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Set item wise custom template in Angular Toolbar component
@@ -43,4 +43,4 @@ template: "#Template"
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-items-cs3" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs3" %}

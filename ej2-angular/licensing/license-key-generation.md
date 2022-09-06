@@ -1,11 +1,11 @@
 ---
 layout: post
 title: License key generation in Angular Licensing component | Syncfusion
-description: Learn here all about License key generation in Syncfusion ##Platform_Name## Licensing component of Syncfusion Essential JS 2 and more.
+description: Learn here all about License key generation in Syncfusion Angular Licensing component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: License key generation 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # License key generation in Angular Licensing component

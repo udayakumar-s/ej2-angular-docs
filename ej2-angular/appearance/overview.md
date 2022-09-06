@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Overview in Angular Appearance component | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Appearance component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Overview in Syncfusion Angular Appearance component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Overview 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Overview in Angular Appearance component

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Right to left in Angular Menu component | Syncfusion
-description: Learn here all about Right to left in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Right to left in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Right to left 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Right to left in Angular Menu component
@@ -26,4 +26,4 @@ The following example illustrates how to enable right-to-left support in Menu co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs10" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs10" %}

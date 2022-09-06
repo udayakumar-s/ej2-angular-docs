@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Populating items in Angular Carousel component | Syncfusion
-description: Learn here all about Populating items in Syncfusion ##Platform_Name## Carousel component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Populating items in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Populating items 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Populating items in Angular Carousel component
@@ -31,7 +31,7 @@ When rendering the Carousel component using items binding, you can assign templa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs14" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs14" %}
 
 ## Populating items using data source
 
@@ -49,7 +49,7 @@ When rendering the Carousel component using data binding, you can assign a commo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs15" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs15" %}
 
 ## Selection
 
@@ -74,7 +74,7 @@ Using the [`selectedIndex`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs16" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs16" %}
 
 ### Select an item using the method
 
@@ -92,4 +92,4 @@ Using the [`prev`](https://ej2.syncfusion.com/angular/documentation/api/carousel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/carousel/default-cs17" %}
+{% previewsample "page.domainurl/code-snippet/carousel/default-cs17" %}

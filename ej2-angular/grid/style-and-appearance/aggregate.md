@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Aggregate in Angular Grid component | Syncfusion
-description: Learn here all about Aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Aggregate in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Aggregate 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Aggregate in Angular Grid component

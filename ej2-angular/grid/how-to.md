@@ -1,11 +1,11 @@
 ---
 layout: post
 title: How to in Angular Grid component | Syncfusion
-description: Learn here all about How to in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about How to in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: How to 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # How to in Angular Grid component
@@ -49,7 +49,7 @@ Refresh the grid after the datasource change by using the [`refresh`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/change-headertext-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/change-headertext-cs3" %}
 
 ## Enable/Disable Grid and its actions
 
@@ -104,7 +104,7 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs35" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs35" %}
 
 ## Print the expanded state from other pages
 
@@ -124,7 +124,7 @@ In the following example, we have printed expanded child grids form other pages.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/default-cs12" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs12" %}
 
 ## Columns
 
@@ -166,7 +166,7 @@ this.grid.refreshHeader();
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/change-headertext-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/change-headertext-cs4" %}
 
 ### Customize Column Styles
 
@@ -212,7 +212,7 @@ Add the custom css class to particular column by using [`customAttributes`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-column-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-column-cs2" %}
 
 ### Custom Tooltip for Columns
 
@@ -243,7 +243,7 @@ tooltip (args: QueryCellInfoEventArgs) {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-tooltip-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-tooltip-cs2" %}
 
 ### Render other components in a column
 
@@ -271,7 +271,7 @@ renders the custom component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/column-sync-comp-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/column-sync-comp-cs2" %}
 
 ### Change the Orientation of Header Text
 
@@ -326,7 +326,7 @@ setHeaderHeight(args) {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/header-orientation-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/header-orientation-cs2" %}
 
 ### Customize the icon for column menu
 
@@ -352,7 +352,7 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-column-menu-icon-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-column-menu-icon-cs2" %}
 
 ## Editing
 
@@ -374,7 +374,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs36" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs36" %}
 
 ### Customize the Edit Dialog
 
@@ -394,7 +394,7 @@ In the below example, we have changed the dialog's header text for editing and a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs37" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs37" %}
 
 ### Show or Hide columns in Dialog editing
 
@@ -418,7 +418,7 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs38" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs38" %}
 
 ### Cascading DropDownList with Grid editing
 
@@ -438,7 +438,7 @@ In the below demo, Cascading DropDownList rendered for **ShipCountry** and **Shi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs39" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs39" %}
 
 ### Provide custom data source and enabling filtering to DropDownList
 
@@ -477,7 +477,7 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs40" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs40" %}
 
 ### Use Wizard like Dialog Editing
 
@@ -497,7 +497,7 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/wizardtemplate-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/wizardtemplate-cs2" %}
 
 ### Using Tab Inside the Dialog Editing
 
@@ -583,7 +583,7 @@ The following example, we have rendered tab control inside the edit dialog. The 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/tablikeedit-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/tablikeedit-cs2" %}
 
 ### Disable editing for a particular row/cell
 
@@ -603,7 +603,7 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs41" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs41" %}
 
 For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
 
@@ -619,7 +619,7 @@ For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs42" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs42" %}
 
 ### Perform Grid actions by keyboard shortcut keys
 
@@ -641,7 +641,7 @@ The following example demonstrates on **Adding** a new row when Enter key is pre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs43" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs43" %}
 
 ### Make a cell editable on a single click with batch editing
 
@@ -661,7 +661,7 @@ Bind the click event for the Grid and in the click event handler call the [`edit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs44" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs44" %}
 
 ## Sort
 
@@ -702,7 +702,7 @@ In the below demo, click on the corresponding button to perform single-column or
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs45" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs45" %}
 
 ### Dynamically clear sort for particular/entire sorted columns in Grid
 
@@ -745,7 +745,7 @@ In the below demo, click on the corresponding button to clear sort for particula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs46" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs46" %}
 
 ## Foreign Key
 
@@ -769,7 +769,7 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs6" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs6" %}
 
 ### Customizing filter menu operators list
 
@@ -794,7 +794,7 @@ In the following sample, we have customized string filter operators.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs11" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs11" %}
 
 ### Customize filter UI in foreign key column
 
@@ -815,7 +815,7 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs7" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs7" %}
 
 ### Use filter bar template in foreign key column
 
@@ -838,7 +838,7 @@ This column header shows the custom filter bar template and you can select filte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs8" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs8" %}
 
 ### Perform aggregation in Foreign Key Column
 
@@ -860,7 +860,7 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs9" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs9" %}
 
 ### Bind foreign key dataSource on dropdown edit
 
@@ -878,7 +878,7 @@ When editing, you can bind foreign key datasource to a dropdown list by using [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/foreignkey-cs10" %}
+{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs10" %}
 
 > * By default, the foreign key column's **editType** will be set as **dropdownedit**.
 
@@ -901,7 +901,7 @@ You can use corresponding exporting methods and exportComplete events to get the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/exporting-cs3" %}
 
 ### Exporting Filtered Data Only
 
@@ -921,7 +921,7 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/exporting-filtered-data-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/exporting-filtered-data-cs2" %}
 
 ## Pager
 
@@ -941,7 +941,7 @@ To customize default values of pager dropdown, you need to define [`pageSizes`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-column-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-column-cs3" %}
 
 ## Hide the expand/collapse icon in parent row when no records in child grid
 
@@ -997,4 +997,4 @@ In the below demo, the expand/collapse icon in the row with **EmployeeID** as **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/template-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/template-cs3" %}

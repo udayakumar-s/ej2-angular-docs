@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Upgrade project in Angular Visual studio integration component | Syncfusion
-description: Learn here all about Upgrade project in Syncfusion ##Platform_Name## Visual studio integration component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Upgrade project in Syncfusion Angular Visual studio integration component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Upgrade project 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Upgrade project in Angular Visual studio integration component

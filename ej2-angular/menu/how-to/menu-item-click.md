@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Menu item click in Angular Menu component | Syncfusion
-description: Learn here all about Menu item click in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Menu item click in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Menu item click 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Menu item click in Angular Menu component
@@ -24,4 +24,4 @@ You can open menu items and sub menu on menu item click by setting [`showItemOnC
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs9" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs9" %}

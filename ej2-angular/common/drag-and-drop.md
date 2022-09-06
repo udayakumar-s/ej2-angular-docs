@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Drag and drop in Angular Common control | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Drag and drop in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Drag and drop in Angular Common component
@@ -31,7 +31,7 @@ the following code snippet to enable draggable for DOM element
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/draggable-default-cs1" %}
+{% previewsample "page.domainurl/code-snippet/common/draggable-default-cs1" %}
 
 ## Creating Droppable Zone
 
@@ -49,7 +49,7 @@ You can convert any DOM element as a droppable zone, which accepts the draggable
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/droppable-default-cs1" %}
+{% previewsample "page.domainurl/code-snippet/common/droppable-default-cs1" %}
 
 ## Defining Drop Action
 
@@ -69,4 +69,4 @@ Refer the following  code snippet to use basic drag and drop action
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/drag-drop-action-cs1" %}
+{% previewsample "page.domainurl/code-snippet/common/drag-drop-action-cs1" %}

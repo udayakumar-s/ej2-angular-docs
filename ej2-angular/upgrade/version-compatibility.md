@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Version compatibility in Angular Upgrade component | Syncfusion
-description: Learn here all about Version compatibility in Syncfusion ##Platform_Name## Upgrade component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Version compatibility in Syncfusion Angular Upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Version compatibility 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Version compatibility in Angular Upgrade component

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Filter menu in Angular Grid component | Syncfusion
-description: Learn here all about Filter menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Filter menu in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Filter menu 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Filter menu in Angular Grid component
@@ -26,7 +26,7 @@ You can filter the records with different operators.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs4" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs4" %}
 
 > * [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) must be set as true to enable filter menu.
 > * Setting [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) as false will prevent
@@ -54,7 +54,7 @@ In the following sample, dropdown is used  as custom component in the OrderID co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs5" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs5" %}
 
 ## Customizing filter menu operators list
 
@@ -79,7 +79,7 @@ In the following sample, we have customized string filter operators.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs6" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs6" %}
 
 ## Enable different filter for a column
 
@@ -101,7 +101,7 @@ In the following sample menu filter is enabled by default and checkbox filter is
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs7" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs7" %}
 
 ## Filter by multiple keywords using filter menu
 
@@ -121,4 +121,4 @@ In the following sample, filtering action with multiple keywords can be done by 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/filtering1-cs8" %}
+{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs8" %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Accessibility in Angular Tab component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Accessibility in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular Tab component
@@ -62,4 +62,4 @@ you can use the following key combination for interacting with the Tab.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/basic-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/basic-cs1" %}

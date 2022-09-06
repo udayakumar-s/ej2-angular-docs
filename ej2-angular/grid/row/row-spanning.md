@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Row spanning in Angular Grid component | Syncfusion
-description: Learn here all about Row spanning in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Row spanning in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Row spanning 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Row spanning in Angular Grid component
@@ -28,6 +28,6 @@ Also Grid supports the spanning of rows and columns for same cells. **Lunch Brea
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/spanning-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/spanning-cs2" %}
 
 > To disable the spanning for particular grid page, we need to use **requestType** from [`QueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event argument.

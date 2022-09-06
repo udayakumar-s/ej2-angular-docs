@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting started with Angular Accordion component | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with Angular Accordion component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Getting started in Angular Accordion component
@@ -209,7 +209,7 @@ Output will be as follows:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-cs4" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs4" %}
 
 ## Initialize the Accordion using HTML elements
 
@@ -241,7 +241,7 @@ You need to follow the below structure of HTML elements to render the Accordion 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-container-cs1" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-container-cs1" %}
 
 > You can add the custom class into Accordion component using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#cssclass) property which is used to customize the Accordion component.
 

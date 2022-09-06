@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Angular selenium in Angular Frameworks and feature component | Syncfusion
-description: Learn here all about Angular selenium in Syncfusion ##Platform_Name## Frameworks and feature component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Angular selenium in Syncfusion Angular Frameworks and feature component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Angular selenium 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Angular selenium in Angular Frameworks and feature component

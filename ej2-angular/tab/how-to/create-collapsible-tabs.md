@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Create collapsible tabs in Angular Tab component | Syncfusion
-description: Learn here all about Create collapsible tabs in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Create collapsible tabs in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Create collapsible tabs 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Create collapsible tabs in Angular Tab component
@@ -29,4 +29,4 @@ and bind custom click handler for the Tab headers.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/collapse-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tab/collapse-cs1" %}

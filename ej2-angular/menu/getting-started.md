@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Getting started with Angular Menu component | Syncfusion
-description:  Checkout and learn about Getting started with ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with Angular Menu component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Getting started in Angular Menu component
@@ -192,7 +192,7 @@ The following example shows a basic `Menu` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs3" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs3" %}
 
 > This example demonstrates the basic rendering of Menu with items support.
 For more information about data source support,
@@ -217,7 +217,7 @@ The `Open` and `Save` sub menu items are grouped using the `separator` property 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs4" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs4" %}
 
 > The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property should not be given
 along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel).

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Load accordion items dynamically in Angular Accordion component | Syncfusion
-description: Learn here all about Load accordion items dynamically in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Load accordion items dynamically in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Load accordion items dynamically 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Load accordion items dynamically in Angular Accordion component
@@ -34,4 +34,4 @@ and [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-items-dynamically-cs1" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-items-dynamically-cs1" %}

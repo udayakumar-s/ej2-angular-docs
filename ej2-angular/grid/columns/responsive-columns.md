@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Responsive columns in Angular Grid component | Syncfusion
-description: Learn here all about Responsive columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Responsive columns in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Responsive columns 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Responsive columns in Angular Grid component
@@ -27,4 +27,4 @@ The [`hideAtMedia`](https://ej2.syncfusion.com/angular/documentation/api/grid/co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs21" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs21" %}

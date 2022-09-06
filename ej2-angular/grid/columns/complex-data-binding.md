@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Complex data binding in Angular Grid component | Syncfusion
-description: Learn here all about Complex data binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Complex data binding in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Complex data binding 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Complex data binding in Angular Grid component
@@ -24,7 +24,7 @@ You can achieve complex data binding in the grid by using the dot(.) operator in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs18" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs18" %}
 
  For OData and ODataV4 adaptors, you need to add [`expand`](https://ej2.syncfusion.com/documentation/api/data/query/#expand) query to the [`query`](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property (of Grid), to eager load the complex data.
 

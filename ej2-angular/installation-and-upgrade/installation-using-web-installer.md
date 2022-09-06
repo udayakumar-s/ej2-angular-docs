@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Installation using web installer in Angular Installation and upgrade component | Syncfusion
-description: Learn here all about Installation using web installer in Syncfusion ##Platform_Name## Installation and upgrade component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Installation using web installer in Syncfusion Angular Installation and upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Installation using web installer 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Installation using web installer in Angular Installation and upgrade component

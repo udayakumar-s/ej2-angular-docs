@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Customize expand collapse actions in Angular Accordion component | Syncfusion
-description: Learn here all about Customize expand collapse actions in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize expand collapse actions in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize expand collapse actions 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Customize expand collapse actions in Angular Accordion component
@@ -28,4 +28,4 @@ The following sample demonstrates, how to expand the collapsed Accordion item af
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-actions-cs1" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-actions-cs1" %}

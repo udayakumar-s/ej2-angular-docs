@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Set custom animation in Angular Accordion component | Syncfusion
-description: Learn here all about Set custom animation in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Set custom animation in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Set custom animation 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Set custom animation in Angular Accordion component
@@ -33,4 +33,4 @@ The sample demonstrates some types of animation that suits for Accordion. You ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-custom-cs1" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-custom-cs1" %}

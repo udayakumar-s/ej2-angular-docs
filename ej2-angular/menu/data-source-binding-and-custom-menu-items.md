@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Data source binding and custom menu items in Angular Menu component | Syncfusion
-description: Learn here all about Data source binding and custom menu items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Data source binding and custom menu items in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data source binding and custom menu items 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Data source binding and custom menu items in Angular Menu component
@@ -38,7 +38,7 @@ from the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/menu/fi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/data-binding-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/data-binding-cs1" %}
 
 #### Data Service
 
@@ -61,7 +61,7 @@ and **ShipName** details from **Orders** table of the `Northwind` Data Service.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/data-service-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/data-service-cs1" %}
 
 ### Self-referential data
 
@@ -88,7 +88,7 @@ In the following example, the **id**, **pId**, and **text** columns from self-re
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs2" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs2" %}
 
 ## Custom menu items
 
@@ -111,7 +111,7 @@ In the following example, the menu has been rendered with customized menu items.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/custom-menu-items-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/custom-menu-items-cs1" %}
 
 >To prevent sub menu closing, set `args.cancel` to `true` in [`beforeClose`](../api/menu#beforeclose) event.
 

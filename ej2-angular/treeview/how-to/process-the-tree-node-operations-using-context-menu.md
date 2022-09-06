@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Process the tree node operations using context menu in Angular Treeview component | Syncfusion
-description: Learn here all about Process the tree node operations using context menu in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Process the tree node operations using context menu in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Process the tree node operations using context menu 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Process the tree node operations using context menu in Angular Treeview component
@@ -27,4 +27,4 @@ manipulate tree view operations in the 'select ' event of context menu.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/context-menu-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/context-menu-cs1" %}

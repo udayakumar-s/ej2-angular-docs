@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Change sub menu position in Angular Menu component | Syncfusion
-description: Learn here all about Change sub menu position in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Change sub menu position in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Change sub menu position 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Change sub menu position in Angular Menu component
@@ -26,6 +26,6 @@ In the below sample, the sub menu opens above the parent menu item.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/position-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/position-cs1" %}
 
 >> For custom positioning, set both `top` and `left` position in the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event.

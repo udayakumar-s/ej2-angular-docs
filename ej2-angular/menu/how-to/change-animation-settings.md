@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Change animation settings in Angular Menu component | Syncfusion
-description: Learn here all about Change animation settings in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Change animation settings in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Change animation settings 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Change animation settings in Angular Menu component
@@ -33,4 +33,4 @@ The following sample illustrates how to open Menu with `FadeIn` [`effect`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/getting-started-cs5" %}
+{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs5" %}

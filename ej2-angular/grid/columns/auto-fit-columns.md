@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Auto fit columns in Angular Grid component | Syncfusion
-description: Learn here all about Auto fit columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Auto fit columns in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Auto fit columns 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Auto fit columns in Angular Grid component
@@ -28,7 +28,7 @@ To use autofit feature, you need to inject **ResizeService** in the provider sec
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/resize-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/resize-cs1" %}
 
 > You can autofit all columns, by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns)
 method without column name.

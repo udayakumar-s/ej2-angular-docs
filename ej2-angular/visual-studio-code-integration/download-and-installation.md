@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Download and installation in Angular Visual studio code integration component | Syncfusion
-description: Learn here all about Download and installation in Syncfusion ##Platform_Name## Visual studio code integration component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Download and installation in Syncfusion Angular Visual studio code integration component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Download and installation 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Download and installation in Angular Visual studio code integration component

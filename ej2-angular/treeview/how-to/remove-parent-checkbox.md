@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Remove parent checkbox in Angular Treeview component | Syncfusion
-description: Learn here all about Remove parent checkbox in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Remove parent checkbox in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Remove parent checkbox 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Remove parent checkbox in Angular Treeview component
@@ -24,4 +24,4 @@ By enabling the `showCheckBox` property, you can render check box before each no
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/remove-parent-checkbox-cs1" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/remove-parent-checkbox-cs1" %}

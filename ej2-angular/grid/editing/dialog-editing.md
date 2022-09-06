@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Dialog editing in Angular Grid component | Syncfusion
-description: Learn here all about Dialog editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Dialog editing in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Dialog editing 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Dialog editing in Angular Grid component
@@ -26,7 +26,7 @@ To enable Dialog edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs7" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs7" %}
 
 ## Customize edit dialog
 
@@ -50,7 +50,7 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs8" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs8" %}
 
 ## Show or hide columns in dialog editing
 
@@ -74,7 +74,7 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/edit-cs9" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs9" %}
 
 ## Use wizard like dialog editing
 
@@ -94,4 +94,4 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/wizardtemplate-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/wizardtemplate-cs1" %}

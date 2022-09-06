@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Style in Angular Accordion component | Syncfusion
-description: Learn here all about Style in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Style in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Style 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Style in Angular Accordion component

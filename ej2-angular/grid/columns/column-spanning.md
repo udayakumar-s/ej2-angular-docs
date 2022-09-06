@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Column spanning in Angular Grid component | Syncfusion
-description: Learn here all about Column spanning in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Column spanning in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Column spanning 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Column spanning in Angular Grid component
@@ -28,4 +28,4 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/spanning-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/spanning-cs1" %}

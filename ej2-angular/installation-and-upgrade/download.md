@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Download in Angular Installation and upgrade component | Syncfusion
-description: Learn here all about Download in Syncfusion ##Platform_Name## Installation and upgrade component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Download in Syncfusion Angular Installation and upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Download 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Download in Angular Installation and upgrade component

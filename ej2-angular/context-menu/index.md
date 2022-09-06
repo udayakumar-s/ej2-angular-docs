@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Index in Angular Context menu component | Syncfusion
-description: Learn here all about Index in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Index in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Index 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Index in Angular Context menu component

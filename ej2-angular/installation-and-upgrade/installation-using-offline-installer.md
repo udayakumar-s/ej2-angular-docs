@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Installation using offline installer in Angular Installation and upgrade component | Syncfusion
-description: Learn here all about Installation using offline installer in Syncfusion ##Platform_Name## Installation and upgrade component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Installation using offline installer in Syncfusion Angular Installation and upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Installation using offline installer 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Installation using offline installer in Angular Installation and upgrade component

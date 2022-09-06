@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Row template in Angular Grid component | Syncfusion
-description: Learn here all about Row template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Row template in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Row template 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Row template in Angular Grid component
@@ -26,7 +26,7 @@ In the following example, Employee Information with Employee Photo is presented 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs9" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs9" %}
 
 ## Row template with formatting
 
@@ -44,7 +44,7 @@ If the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs10" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs10" %}
 
 ## Limitations
 

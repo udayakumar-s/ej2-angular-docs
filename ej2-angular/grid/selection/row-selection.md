@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Row selection in Angular Grid component | Syncfusion
-description: Learn here all about Row selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Row selection in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Row selection 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Row selection in Angular Grid component
@@ -26,7 +26,7 @@ To select a row at initial rendering, set the [`selectedRowIndex`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs7" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs7" %}
 
 ## Get selected row indexes
 
@@ -44,7 +44,7 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs8" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs8" %}
 
 ## Simple multiple row selection
 
@@ -62,7 +62,7 @@ You can select multiple rows by clicking on rows one by one. This will not desel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs9" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs9" %}
 
 ## Toggle selection
 
@@ -80,7 +80,7 @@ The Toggle selection allows to perform selection and unselection of the particul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs10" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs10" %}
 
 > If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
 
@@ -102,7 +102,7 @@ In the demo below, we initially selected the third row using [selectedRowIndex](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs11" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs11" %}
 
 ## Get selected records on various pages
 
@@ -124,6 +124,6 @@ You can get the selected records using the [getSelectedRecords](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/selection-cs12" %}
+{% previewsample "page.domainurl/code-snippet/grid/selection-cs12" %}
 
 > To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columnshttps://ej2.syncfusion.com/angular/documentationisPrimaryKey](./api-column.html#isprimarykey-boolean) property.

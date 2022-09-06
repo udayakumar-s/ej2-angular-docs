@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Row in Angular Grid component | Syncfusion
-description: Learn here all about Row in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Row in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Row 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Row in Angular Grid component
@@ -32,7 +32,7 @@ you can get [`RowDataBoundEventArgs`](https://ej2.syncfusion.com/angular/documen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/custom-cell-cs11" %}
+{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs11" %}
 
 ### Using CSS customize alternate rows
 
@@ -58,7 +58,7 @@ Please refer the following example.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs22" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs22" %}
 
 ## See Also
 

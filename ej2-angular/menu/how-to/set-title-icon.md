@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Set title icon in Angular Menu component | Syncfusion
-description: Learn here all about Set title icon in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Set title icon in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Set title icon 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Set title icon in Angular Menu component
@@ -24,4 +24,4 @@ In this sample , the title for settings icon can be achievable by using 'beforeI
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/menu/set-title-cs1" %}
+{% previewsample "page.domainurl/code-snippet/menu/set-title-cs1" %}

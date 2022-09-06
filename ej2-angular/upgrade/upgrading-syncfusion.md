@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Upgrading syncfusion in Angular Upgrade component | Syncfusion
-description: Learn here all about Upgrading syncfusion in Syncfusion ##Platform_Name## Upgrade component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Upgrading syncfusion in Syncfusion Angular Upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Upgrading syncfusion 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Upgrading syncfusion in Angular Upgrade component

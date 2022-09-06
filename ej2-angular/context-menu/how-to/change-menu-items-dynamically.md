@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Change menu items dynamically in Angular Context menu component | Syncfusion
-description: Learn here all about Change menu items dynamically in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Change menu items dynamically in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Change menu items dynamically 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Change menu items dynamically in Angular Context menu component
@@ -36,4 +36,4 @@ for the Editor div is `Add`, `Edit`, `Delete` is changed on
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/dynamic-cs1" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/dynamic-cs1" %}

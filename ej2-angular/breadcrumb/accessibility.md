@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Accessibility in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Accessibility in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular Breadcrumb component
@@ -60,4 +60,4 @@ Navigate to the previous item also previous item in the popup of menu type overf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/breadcrumb/accessibility-cs1" %}
+{% previewsample "page.domainurl/code-snippet/breadcrumb/accessibility-cs1" %}

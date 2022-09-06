@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Code snippet in Angular Visual studio code integration component | Syncfusion
-description: Learn here all about Code snippet in Syncfusion ##Platform_Name## Visual studio code integration component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Code snippet in Syncfusion Angular Visual studio code integration component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Code snippet 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Code snippet in Angular Visual studio code integration component

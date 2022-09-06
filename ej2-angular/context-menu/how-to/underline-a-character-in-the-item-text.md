@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Underline a character in the item text in Angular Context menu component | Syncfusion
-description: Learn here all about Underline a character in the item text in Syncfusion ##Platform_Name## Context menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Underline a character in the item text in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Underline a character in the item text 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Underline a character in the item text in Angular Context menu component
@@ -25,4 +25,4 @@ adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/context-menu/separators-cs2" %}
+{% previewsample "page.domainurl/code-snippet/context-menu/separators-cs2" %}

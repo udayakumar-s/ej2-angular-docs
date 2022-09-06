@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Angular cli with Angular Getting started component | Syncfusion
-description:  Checkout and learn about Angular cli with ##Platform_Name## Getting started component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Angular cli with Angular Getting started component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Angular cli 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Angular cli in Angular Getting started component
@@ -236,7 +236,7 @@ Refer the below sample for more information.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/common/quickstart-cs1" %}
+{% previewsample "page.domainurl/code-snippet/common/quickstart-cs1" %}
 
 
 ## See Also

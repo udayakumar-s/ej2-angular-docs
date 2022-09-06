@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Headers in Angular Grid component | Syncfusion
-description: Learn here all about Headers in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Headers in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Headers 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Headers in Angular Grid component
@@ -27,7 +27,7 @@ To override the default header title by defining [`headerText`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grid-cs20" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs20" %}
 
 > If both the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) and [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext)
 are not defined in the column, the column renders with “empty” header text.
@@ -48,7 +48,7 @@ You can customize the header element by using the [`headerTemplate`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/header-template-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/header-template-cs1" %}
 
 ## Change header text dynamically
 
@@ -88,7 +88,7 @@ this.grid.refreshHeader();
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/change-headertext-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/change-headertext-cs1" %}
 
 ## Change the orientation of header text
 
@@ -143,4 +143,4 @@ setHeaderHeight(args) {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/header-orientation-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/header-orientation-cs1" %}

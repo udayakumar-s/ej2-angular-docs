@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Drag and drop in Angular Treeview component | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Drag and drop in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Drag and drop 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Drag and drop in Angular Treeview component
@@ -49,7 +49,7 @@ In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs6" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs6" %}
 
 ## Multiple-node drag and drop
 
@@ -73,7 +73,7 @@ In the following sample,  the `allowMultiSelection` property is  enabled along w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tree-view/getting-started-cs7" %}
+{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs7" %}
 
 ## See Also
 

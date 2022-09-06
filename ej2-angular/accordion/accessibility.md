@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Accessibility in Angular Accordion component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Accessibility in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular Accordion component
@@ -57,4 +57,4 @@ Keyboard navigation is enabled by default. Possible keys are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/accordion/accordion-cs1" %}
+{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs1" %}

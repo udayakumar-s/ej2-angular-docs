@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Excel cell style customization in Angular Grid component | Syncfusion
-description: Learn here all about Excel cell style customization in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Excel cell style customization in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Excel cell style customization 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Excel cell style customization in Angular Grid component
@@ -28,7 +28,7 @@ In the below sample, we have set the background color for **Freight** column in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs2" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs2" %}
 
 ## Theme
 
@@ -48,7 +48,7 @@ To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/excel-exporting-cs3" %}
+{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs3" %}
 
 >By default, material theme is applied to exported excel document.
 
@@ -72,4 +72,4 @@ In the following demo, using the `rotation` property of the style argument in th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/grouping-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/grouping-cs1" %}

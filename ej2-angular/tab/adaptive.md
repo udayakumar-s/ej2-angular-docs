@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Adaptive in Angular Tab component | Syncfusion
-description: Learn here all about Adaptive in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Adaptive in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Adaptive 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Adaptive in Angular Tab component
@@ -46,7 +46,7 @@ enabled, when the item overflows to the available space.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/basic-cs2" %}
+{% previewsample "page.domainurl/code-snippet/tab/basic-cs2" %}
 
 ## Popup
 
@@ -72,7 +72,7 @@ which there is no space to fit within the viewing area are moved to overflow pop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/tab/basic-cs3" %}
+{% previewsample "page.domainurl/code-snippet/tab/basic-cs3" %}
 
 ## See Also
 

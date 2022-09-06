@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Item configuration in Angular Toolbar component | Syncfusion
-description: Learn here all about Item configuration in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Item configuration in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Item configuration 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Item configuration in Angular Toolbar component
@@ -42,7 +42,7 @@ The `Separator` type adds a vertical separation between the Toolbar's single/mul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-items-cs5" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs5" %}
 
 > If `Separator` is added as first or last item, it is not visible.
 
@@ -113,7 +113,7 @@ Above steps applicable for all 'Syncfusion' input based components.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/toolbar/toolbar-items-cs6" %}
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs6" %}
 
 ## See Also
 

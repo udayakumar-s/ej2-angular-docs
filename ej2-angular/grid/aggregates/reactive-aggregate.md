@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Reactive aggregate in Angular Grid component | Syncfusion
-description: Learn here all about Reactive aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Reactive aggregate in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Reactive aggregate 
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Reactive aggregate in Angular Grid component
@@ -28,7 +28,7 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/reactive-aggregates-batchedit-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/reactive-aggregates-batchedit-cs1" %}
 
 ## Refresh aggregate values in inline editing
 
@@ -48,4 +48,4 @@ In the following code, the input event for the Freight column editor has been re
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://ej2.syncfusion.com/angular/documentation/code-snippet/grid/reactive-aggregates-inlineedit-cs1" %}
+{% previewsample "page.domainurl/code-snippet/grid/reactive-aggregates-inlineedit-cs1" %}

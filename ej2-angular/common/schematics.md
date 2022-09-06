@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Schematics in Angular Common control | Syncfusion
-description: Learn here all about Schematics in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Schematics in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Schematics in Angular Common component
