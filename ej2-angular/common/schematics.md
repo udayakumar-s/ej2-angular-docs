@@ -20,13 +20,13 @@ The [NPM](https://www.npmjs.com/search?q=@syncfusion/ej2-angular) packages are i
 To create an Angular application, install an [Angular CLI](https://github.com/angular/angular-cli) globally using the following
 command.
 
-```cmd
+```
 npm install -g @angular/cli
 ```
 
 Then, create a new Angular application using the following command.
 
-```cmd
+```
 ng new my-app
 ```
 
@@ -36,13 +36,13 @@ This will download all the required files and initialize the NPM install.
 
 All the Essential JS 2 Angular packages can be installed using the following command in the CLI application.
 
-```cmd
+```
 ng add 'package-name'
 ```
 
 For example,
 
-```cmd
+```
 ng add @syncfusion/ej2-angular-grids
 ```
 
@@ -57,7 +57,7 @@ The EJ2 Angular Schematics support adding a specific module from the component p
 
 While initializing the package, we can pass the preferred module as a parameter using the following command.
 
-```cmd
+```
 ng add @syncfusion/<ej2-angular-package-name> --module=module_1,module_2,module_3
 ```
 
@@ -65,15 +65,15 @@ ng add @syncfusion/<ej2-angular-package-name> --module=module_1,module_2,module_
 
 For example,
 
-```cmd
+```
 ng add @syncfusion/ej2-angular-popups -–module=tooltip
 ```
 
-```cmd
+```
 ng add @syncfusion/ej2-angular-inputs -–module=slider,colorpicker,maskedtextbox
 ```
 
-```cmd
+```
 ng add @syncfusion/ej2-angular-navigation -–module=treeview,tab,contextmenu
 ```
 
@@ -84,7 +84,7 @@ invalid module.
 
 For example,
 
-```cmd
+```
 ng add @syncfusion/ej2-angular-popups -–module=tooltip,treeview
 ```
 
@@ -92,6 +92,6 @@ Here, the `tooltip` is a valid module but the `treeview` is invalid since it doe
 `@syncfusion/ej2-angular-popups` package. Schematics add only the `tooltip` but it will throw the following error message
 for `treeview`. It is also applicable for misspelled module name.
 
-```cmd
+```
 The treeview module is not a part of the package, @syncfusion/ej2-angular-popups. The available modules are Tooltip, Dialog.
 ```

@@ -28,7 +28,7 @@ The list of dependencies required to use the Carousel module in your application
 
 You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
-```cmd
+```
 npm install -g @angular/cli
 ```
 
@@ -36,7 +36,7 @@ npm install -g @angular/cli
 
 Start a new Angular application using below Angular CLI command.
 
-```cmd
+```
 ng new my-app
 cd my-app
 ```
@@ -171,7 +171,7 @@ Add Carousel component's styles as given below in `style.css`.
 
 Run the application in the browser using the following command:
 
-```cmd
+```
 ng serve
 ```
 

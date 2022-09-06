@@ -103,7 +103,7 @@ exports.config = {
 
 To install/update and start the Selenium server, run the following command before running the testcases and maintain the server in active state until the testing is finished.
 
-```cmd
+```
 webdriver-manager update
 webdriver-manager start
 ```

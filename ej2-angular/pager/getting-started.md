@@ -18,7 +18,7 @@ and demonstrate the basic usage of the Pager component in Angular environment.
 You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
 To install Angular CLI use the following command.
 
-```bash
+```
 npm install -g @angular/cli
 ```
 
@@ -26,7 +26,7 @@ npm install -g @angular/cli
 
 Start a new Angular application using below Angular CLI command.
 
-```bash
+```
 ng new my-app
 cd my-app
 ```
@@ -45,7 +45,7 @@ Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution 
 
 Add [`@syncfusion/ej2-angular-grids`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38) package to the application.
 
-```bash
+```
 npm install @syncfusion/ej2-angular-grids --save
 ```
 
@@ -55,13 +55,13 @@ For Angular version below 12, you can use the legacy (ngcc) package of the Syncf
 
 Add [`@syncfusion/ej2-angular-grids@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38-ngcc) package to the application.
 
-```bash
+```
 npm install @syncfusion/ej2-angular-grids@ngcc --save
 ```
 
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
 
-```bash
+```
 @syncfusion/ej2-angular-grids:"20.2.38-ngcc"
 ```
 

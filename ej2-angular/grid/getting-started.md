@@ -21,7 +21,7 @@ To get start quickly with Angular Grid using CLI and Schematics, you can check o
 You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
 To install Angular CLI use the following command.
 
-```bash
+```
 npm install -g @angular/cli
 ```
 
@@ -29,7 +29,7 @@ npm install -g @angular/cli
 
 Start a new Angular application using below Angular CLI command.
 
-```bash
+```
 ng new my-app
 cd my-app
 ```
@@ -40,7 +40,7 @@ All the available Essential JS 2 packages are published in [`npmjs.com`](https:/
 
 To install Grid component, use the following command.
 
-```bash
+```
 npm install @syncfusion/ej2-angular-grids --save
 ```
 
