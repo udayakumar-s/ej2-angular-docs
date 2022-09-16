@@ -1,0 +1,17 @@
+<div>
+    <table>
+        <tr>
+            <td> <button ejs-button id="reset" class="e-control e-danger e-btn e-small" (click)="onReset($event)">Reset</button> </td>
+            <td> <button ejs-button id="rule" class="e-control e-success e-btn e-small"  (click)="onSetSqlRules($event)">SetSqlRules</button> </td>
+            <td> <button ejs-button id="sql" class="e-control e-success e-btn e-small"  (click)="onSetRules($event)">SetRules</button> </td>
+        </tr>
+    </table>
+</div>
+<ejs-querybuilder id="querybuilder" #querybuilder width="100%" [rule] = "importRules"   enableNotCondition = true  separator= '.'>
+    <e-columns>
+        <e-column field="Employee" label="Employee" [columns] = "columns1"></e-column>
+        <e-column field="Name" label="Name" [columns] = "columns2"></e-column>
+        <e-column field="Country" label="Country" [columns] = "columns3"></e-column>
+      </e-columns>
+</ejs-querybuilder>
+
