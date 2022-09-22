@@ -1,4 +1,4 @@
-System.config({
+﻿System.config({
     transpiler: "typescript",
     typescriptOptions: {
         compilerOptions: {
