@@ -104,7 +104,7 @@ import * as signalR from '@aspnet/signalr';
 
 Initially create a AspNetCore project and add the hub file for sending and receiving the data between server and clients.
 
-```javascipt
+```javascript
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
 
@@ -122,7 +122,7 @@ namespace WebApplication.Hubs
 
 To configure the SignalR middleware by registering the following service in the `ConfigureServices` method of the `Startup` class.
 
-```javascipt
+```javascript
     services.AddSignalR(e =>
     {
         e.MaximumReceiveMessageSize = int.MaxValue; // Option to increase message size for inserting image feature. By default, SignalR send messages up to 32 KB.
@@ -131,7 +131,7 @@ To configure the SignalR middleware by registering the following service in the 
 
 To set up the SignalR routes by calling MapHub in the `Configure` method of the `Startup` class.
 
-```javascipt
+```javascript
 
     app.UseEndpoints(endpoints =>
 
