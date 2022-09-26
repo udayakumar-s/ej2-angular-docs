@@ -1,0 +1,31 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#element {
+    width: 300px;
+}
+
+.content-title {
+    font-weight: 500;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+
+.e-highlight {
+    color: red;
+}
