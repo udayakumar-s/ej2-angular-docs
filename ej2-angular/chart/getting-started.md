@@ -385,48 +385,6 @@ These modules should be injected to the provider section as follows,
 
  ```
 
-## Populate Chart with Data
-
-This section explains how to plot below JSON data to the chart.
-
-```javascript
-    export class AppComponent implements OnInit {
-    public chartData: Object[];
-    ngOnInit(): void {
-        // Data for chart series
-        this.chartData = [
-            { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
-            { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
-            { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
-            { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
-            { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
-            { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
-        ];
-    }
-
-}
-
- ```
-
- Add a series object to the chart by using [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and
-[`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties of the series, then set the JSON data to [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property.
-
-Since the JSON contains category data, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype)for horizontal axis to `Category`. By default, the axis valueType is `Numeric`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs5/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs5/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs5/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/datasource-cs5" %}
-
 ## Add Chart Title
 
 You can add a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#title) property to the chart to provide
