@@ -48,17 +48,17 @@ which can be placed before or after the header caption wrapper element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/card/card_header_img-cs1/app/app.component.ts %}
+{% include code-snippet/card/card-header-img-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/card/card_header_img-cs1/app/app.module.ts %}
+{% include code-snippet/card/card-header-img-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/card/card_header_img-cs1/app/main.ts %}
+{% include code-snippet/card/card-header-img-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card_header_img-cs1" %}
+{% previewsample "page.domainurl/code-snippet/card/card-header-img-cs1" %}
 
 ## Content
 
@@ -69,14 +69,14 @@ Content in Card holds texts, images, links and all possible HTML elements. Its a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/card/card_content-cs1/app/app.component.ts %}
+{% include code-snippet/card/card-content-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/card/card_content-cs1/app/app.module.ts %}
+{% include code-snippet/card/card-content-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/card/card_content-cs1/app/main.ts %}
+{% include code-snippet/card/card-content-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card_content-cs1" %}
+{% previewsample "page.domainurl/code-snippet/card/card-content-cs1" %}

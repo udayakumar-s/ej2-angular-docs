@@ -152,17 +152,17 @@ The class **e-upload-drag-hover** is available to handle this customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/cus_draganddrop-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/cus-draganddrop-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/cus_draganddrop-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/cus-draganddrop-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/cus_draganddrop-cs1/app/main.ts %}
+{% include code-snippet/uploader/cus-draganddrop-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/cus_draganddrop-cs1" %}
+{% previewsample "page.domainurl/code-snippet/uploader/cus-draganddrop-cs1" %}
 
 > You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
 
