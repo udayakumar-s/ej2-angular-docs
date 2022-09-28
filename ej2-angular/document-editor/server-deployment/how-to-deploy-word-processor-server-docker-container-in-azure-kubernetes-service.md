@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 * Run the following command to open the Azure login page. Sign into your [`Microsoft Azure account`](https://azure.microsoft.com/en-gb/).
 
-```azurecli
+```
 az login
 ```
 
@@ -25,7 +25,7 @@ Create a resource group using the [`az group create`](https://docs.microsoft.com
 
 The following example creates a resource group named documenteditorresourcegroup in the eastus location.
 
-```azurecli
+```
 az group create --name documenteditorresourcegroup --location "East US"
 ```
 
@@ -33,7 +33,7 @@ az group create --name documenteditorresourcegroup --location "East US"
 
 Use the [`az aks create`](https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest#az-aks-create) command to create an AKS cluster. The following example creates a cluster named documenteditorcluster with one node.
 
-```azurecli
+```
 az aks create --resource-group documenteditorresourcegroup --name documenteditorcluster --node-count 1
 ```
 
@@ -41,13 +41,13 @@ az aks create --resource-group documenteditorresourcegroup --name documenteditor
 
 Install the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/kubectl/) into the workspace using the following command.
 
-```azurecli
+```
 az aks install-cli
 ```
 
 To configure kubectl to connect to your Kubernetes cluster, use the [`az aks get-credentials`](https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest#az-aks-get-credentials) command. This command downloads credentials and configures the Kubernetes CLI to use them.
 
-```azurecli
+```
 az aks get-credentials --resource-group documenteditorresourcegroup --name documenteditorcluster
 ```
 

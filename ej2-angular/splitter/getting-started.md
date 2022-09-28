@@ -188,29 +188,6 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 > The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
 > This web tool is useful to combine the required component scripts and styles in a single file.
 
-## Load content to the pane
-
-You can load the pane contents either as HTML element or string type
-using [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel/#content) property.
-
-The below example shows how to load the content to panes by using `ng-template`.
-
-For detailed information, refer to the [Pane Content](./pane-content/) section.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/splitter/load-content-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/load-content-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/splitter/load-content-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/splitter/load-content-cs1" %}
-
 ## Running the application
 
 Run the `ng serve` command in command window, it will serve your application and you can open the browser window. Output will appear as follows.

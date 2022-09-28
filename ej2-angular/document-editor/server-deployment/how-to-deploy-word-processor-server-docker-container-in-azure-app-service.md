@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 
 * Run the following command to open the Azure login page. Sign into your [`Microsoft Azure account`](https://azure.microsoft.com/en-gb/).
 
-```azurecli
+```
 az login
 ```
 
@@ -25,7 +25,7 @@ Create a resource group using the [`az group create`](https://docs.microsoft.com
 
 The following example creates a resource group named documenteditorresourcegroup in the eastus location.
 
-```azurecli
+```
 az group create --name documenteditorresourcegroup --location "East US"
 ```
 
@@ -35,7 +35,7 @@ Create an App Service plan in the resource group with the [`az appservice plan c
 
 The following example creates an App Service plan named documenteditorappservice in the Standard pricing tier (--sku S1) and in a Linux container (--is-linux).
 
-```azurecli
+```
 az appservice plan create --name documenteditorappservice --resource-group documenteditorresourcegroup --sku S1 --is-linux
 ```
 
@@ -43,7 +43,7 @@ az appservice plan create --name documenteditorappservice --resource-group docum
 
 Create a multi-container [`web app`](https://docs.microsoft.com/en-us/azure/app-service/containers/app-service-linux-intro) in the documenteditorappservice App Service plan with the [`az webapp create`](https://docs.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az-webapp-create) command. The following command creates the web app using the provided Docker compose file. Please look into the section for getting started with Docker compose to create the Docker compose file for the document editor server and use the created Docker compose file here.
 
-```azurecli
+```
 az webapp create --resource-group documenteditorresourcegroup --plan documenteditorappservice --name documenteditor-server --multicontainer-config-type compose --multicontainer-config-file documenteditor-server-compose.yml
 ```
 
