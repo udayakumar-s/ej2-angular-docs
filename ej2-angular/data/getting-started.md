@@ -82,8 +82,7 @@ The DataManager can act as gateway for both local and remote data source which w
 
 ### Binding to JSON data
 
-**DataManager** can be bound to local data source by assigning the array of JavaScript objects to the **json** property or simply passing them
-to the constructor while instantiating.
+**DataManager** can be bound to local data source by assigning the array of JavaScript objects to the **json** property or simply passing them to the constructor while instantiating.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

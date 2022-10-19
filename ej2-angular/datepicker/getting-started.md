@@ -35,9 +35,7 @@ Install the below required dependency package in order to use the `DatePicker` c
 
 ## Setup Angular environment
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
-
-Install the CLI application globally to your machine.
+Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.Install the CLI application globally to your machine.
 
 ```bash
 npm install -g @angular/cli

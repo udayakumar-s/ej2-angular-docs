@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction in Angular Introduction md component | Syncfusion
+title: Introduction in Angular Introduction component | Syncfusion
 description: Learn here all about Introduction in Syncfusion Angular Introduction md component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Introduction 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Introduction in Angular Introduction md component
+# Welcome to Syncfusion Angular UI Components (Essential JS 2)
 
 Syncfusion Angular UI (Essential JS 2) is a collection of modern TypeScript based true Angular Components. It has support for Ahead Of Time (AOT) compilation and Tree-Shaking. All the components are developed from the ground up to be lightweight, responsive, modular and touch friendly.
 
