@@ -15,6 +15,7 @@ This article describes the API migration process of DatePicker component from Es
 ## Date Selection
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -29,7 +30,7 @@ Setting the value
 <td>
 <b>Property:</b> <i>value</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" value="5/5/2019"/>
 ```
 
@@ -37,7 +38,7 @@ Setting the value
 <td>
 <b>Property:</b> <i>value</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" value='5/5/2019'></ejs-datepicker>
 ```
 
@@ -49,6 +50,7 @@ Setting the value
 ## Date Format
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -63,7 +65,7 @@ Display date format
 <td>
 <b>Property:</b> <i>dateFormat</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" dateFormat='yyyy/MM/dd'/>
 ```
 
@@ -71,7 +73,7 @@ Display date format
 <td>
 <b>Property:</b> <i>format</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" format="yyyy-MM-dd"></ejs-datepicker>
 ```
 
@@ -84,7 +86,7 @@ Day header format
 <td>
 <b>Property:</b> <i>dayHeaderFormat</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" dayHeaderFormat="long"/>
 ```
 
@@ -99,6 +101,7 @@ Day header format
 ## Calendar Views
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -113,7 +116,7 @@ Start view
 <td>
 <b>Property:</b> <i>startLevel</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" startLevel="year"/>
 ```
 
@@ -121,7 +124,7 @@ Start view
 <td>
 <b>Property:</b> <i>start</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" start="Decade"></ejs-datepicker>
 ```
 
@@ -134,7 +137,7 @@ Depth view
 <td>
 <b>Property:</b> <i>depthLevel</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" depthLevel="year"/>
 ```
 
@@ -142,7 +145,7 @@ Depth view
 <td>
 <b>Property:</b> <i>depth</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" depth="Year"></ejs-datepicker>
 ```
 
@@ -154,6 +157,7 @@ Depth view
 ## Date Range
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -168,7 +172,7 @@ Minimum date
 <td>
 <b>Property:</b> <i>minDate</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" minDate="5/5/2019"/>
 ```
 
@@ -176,7 +180,7 @@ Minimum date
 <td>
 <b>Property:</b> <i>min</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" min="6/6/2019"></ejs-datepicker>
 ```
 
@@ -189,7 +193,7 @@ Maximum date
 <td>
 <b>Property:</b> <i>maxDate</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" maxDate="5/5/2019"/>
 ```
 
@@ -197,7 +201,7 @@ Maximum date
 <td>
 <b>Property:</b> <i>max</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" max="6/6/2019"></ejs-datepicker>
 ```
 
@@ -209,6 +213,7 @@ Maximum date
 ## Disabled Dates
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -223,11 +228,11 @@ Block-out dates
 <td>
 <b>Property:</b> <i>blackoutDates</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [blackoutDates]='blackoutDates'/>
 ```
 
-```ts
+```
 blackoutDates : Object = [new Date(2016, 4, 10), new Date(2016, 4, 15), new Date(2016, 4, 20), new Date(2016, 4, 22), new Date(2016, 5, 12), new Date(2016, 5, 24)]
 ```
 
@@ -235,11 +240,11 @@ blackoutDates : Object = [new Date(2016, 4, 10), new Date(2016, 4, 15), new Date
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" (renderDayCell)="disableDate($event)"></ejs-datepicker>
 ```
 
-```ts
+```
 public disableDate(args) {
     if (args.date.getDay() === 0 || args.date.getDay() === 6) {
         args.isDisabled = true;
@@ -255,6 +260,7 @@ public disableDate(args) {
 ## Customization
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -269,7 +275,7 @@ CSS Class
 <td>
 <b>Property:</b> <i>cssClass</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" cssClass="gradient-lime"/>
 ```
 
@@ -277,7 +283,7 @@ CSS Class
 <td>
 <b>Property:</b> <i>cssClass</i>
 
-```html
+```
 <ejs-datepicker id="datepicker"  cssClass='gradient-lime'></ejs-datepicker>
 ```
 
@@ -293,11 +299,11 @@ Event callback for each cell creation
 <td>
 <b>Event:</b> <i>renderDayCell</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" (renderDayCell)="onRenderCell($event)"></ejs-datepicker>
 ```
 
-```ts
+```
 public onRenderCell(args:any) {/** code block */}
 ```
 
@@ -310,7 +316,7 @@ Show/Hide the today button
 <td>
 <b>Property:</b> <i>showFooter</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [showFooter]="false"/>
 ```
 
@@ -318,7 +324,7 @@ Show/Hide the today button
 <td>
 <b>Property:</b> <i>showTodayButton</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" [showTodayButton]="false"></ejs-datepicker>
 ```
 
@@ -331,7 +337,7 @@ Show/Hide the other month dates
 <td>
 <b>Property:</b> <i>showOtherMonths</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [showOtherMonths]="false"/>
 ```
 
@@ -339,11 +345,11 @@ Show/Hide the other month dates
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker"></ejs-datepicker>
 ```
 
-```css
+```
 
 .e-datepicker .e-calendar .e-content tr.e-month-hide, .e-datepicker .e-calendar .e-content td.e-other-month > .e-day {
         visibility: none;
@@ -364,11 +370,11 @@ Show/Hide the disabled date
 <td>
 <b>Property:</b> <i>showDisabledRange</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [showDisabledRange]="false" [blackoutDates]='blackoutDates'/>
 ```
 
-```ts
+```
 blackoutDates : Object = [new Date(2016, 4, 10), new Date(2016, 4, 15), new Date(2016, 4, 20), new Date(2016, 4, 22), new Date(2016, 5, 12), new Date(2016, 5, 24)]
 ```
 
@@ -384,7 +390,7 @@ Show/Hide the popup button
 <td>
 <b>Property:</b> <i>showPopupButton</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [showPopupButton]="false"/>
 ```
 
@@ -392,11 +398,11 @@ Show/Hide the popup button
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" #dateObj (focus)="onFocus($event)"></ejs-datepicker>
 ```
 
-```ts
+```
 @ViewChild("dateObj") dateObj: DatePickerComponent;
 
 public onFocus(args:any) {
@@ -404,7 +410,7 @@ public onFocus(args:any) {
 }
 ```
 
-```css
+```
 .e-control-wrapper .e-input-group-icon.e-date-icon {
     display: none;
 ```
@@ -418,7 +424,7 @@ Enable/Disable the rounded corner
 <td>
 <b>Property:</b> <i>showRoundedCorner</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [showRoundedCorner]="true"/>
 ```
 
@@ -426,11 +432,11 @@ Enable/Disable the rounded corner
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" #dateObj cssClass='e-customStyle'></ejs-datepicker>
 ```
 
-```css
+```
 .e-control-wrapper.e-customStyle.e-date-wrapper.e-input-group {
     border-radius: 4px;
 }
@@ -445,7 +451,7 @@ Skip a month
 <td>
 <b>Property:</b> <i>stepMonths</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [stepMonths]="3"/>
 ```
 
@@ -453,11 +459,11 @@ Skip a month
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" #dateObj value='5/5/2019' (open)="onOpen($event)"></ejs-datepicker>
 ```
 
-```ts
+```
 @ViewChild("dateObj") dateObj: DatePickerComponent;
 public onOpen(args:any){
     this.dateObj.navigateTo('Year', new Date("03/18/2028"));
@@ -473,7 +479,7 @@ Show/Hide the tooltip
 <td>
 <b>Property:</b> <i>showTooltip</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [showTooltip]="false"/>
 ```
 
@@ -489,7 +495,7 @@ Today button text
 <td>
 <b>Property:</b> <i>buttonText</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" buttonText="Now"/>
 ```
 
@@ -497,11 +503,11 @@ Today button text
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" locale='de'></ejs-datepicker>
 ```
 
-```ts
+```
 L10n.load({
     'de': {
         'datepicker': { placeholder: 'Wählen Sie ein Datum aus',
@@ -519,7 +525,7 @@ Display inline
 <td>
 <b>Property:</b> <i>displayInline</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [displayInline]='true'/>
 ```
 
@@ -535,7 +541,7 @@ Enable/Disable  the animation
 <td>
 <b>Property:</b> <i>enableAnimation</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [enableAnimation]='false'/>
 ```
 
@@ -551,7 +557,7 @@ Highlight dates
 <td>
 <b>Property:</b> <i>highlightSection</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" highlightSection='month'/>
 ```
 
@@ -559,11 +565,11 @@ Highlight dates
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" (renderDayCell)='highlightDate($event)'></ejs-datepicker>
 ```
 
-```ts
+```
 public highlightDate(args:any) {
     if (args.date.getDate() === 10) {
         args.element.classList.add('e-highlightweekend');
@@ -571,7 +577,7 @@ public highlightDate(args:any) {
 }
 ```
 
-```css
+```
 .e-highlightweekend {
     background-color: #cfe9f3;
 }
@@ -586,7 +592,7 @@ Highlight weekend
 <td>
 <b>Property:</b> <i>highlightWeekend</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [highlightWeekend]='true'/>
 ```
 
@@ -594,11 +600,11 @@ Highlight weekend
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" (renderDayCell)='highlightDate($event)'></ejs-datepicker>
 ```
 
-```ts
+```
 
 public highlightDate(args:any) {
     if (args.date.getDay() === 0 || args.date.getDay() === 6) {
@@ -607,7 +613,7 @@ public highlightDate(args:any) {
 }
 ```
 
-```css
+```
 .e-highlightweekend {
     background-color: #cfe9f3;
 }
@@ -622,7 +628,7 @@ Tooltip format
 <td>
 <b>Property:</b> <i>tooltipFormat</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" tooltipFormat='dd/MM/yyyy'/>
 ```
 
@@ -638,11 +644,11 @@ Special dates
 <td>
 <b>Property:</b> <i>specialDates</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [specialDates]='specialdate'/>
 ```
 
-```ts
+```
 specialdate: Object = [ { date: new Date(), tooltip: "In Australia" }]
 ```
 
@@ -650,11 +656,11 @@ specialdate: Object = [ { date: new Date(), tooltip: "In Australia" }]
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" (renderDayCell)='customDates($event)' value='5/5/2017'></ejs-datepicker>
 ```
 
-```ts
+```
 public customDates(args:any) {
      let span: HTMLElement;
     if (args.date.getDate() === 10) {
@@ -677,11 +683,11 @@ FocusIn event
 <td>
 <b>Event:</b> <i>focusIn</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" (focusIn)='onFocus($event)'/>
 ```
 
-```ts
+```
 public onFocus(e:any) {
     /** code block */
 }
@@ -691,11 +697,11 @@ public onFocus(e:any) {
 <td>
 <b>Event:</b> <i>focus</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" (focus)='onFocus($event)'></ejs-datepicker>
 ```
 
-```ts
+```
 public onFocus(args:any) {
     /** code block */  
 }
@@ -710,11 +716,11 @@ FocusOut event
 <td>
 <b>Event:</b> <i>focusOut</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" (focusOut)='onFocus($event)'/>
 ```
 
-```ts
+```
 public onFocus(e:any) {
     /** code block */
 }
@@ -724,11 +730,11 @@ public onFocus(e:any) {
 <td>
 <b>Event:</b> <i>blur</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" (blur)='onBlur($event)'></ejs-datepicker>
 ```
 
-```ts
+```
 public onBlur(args:any) {
     /** code block */  
 }
@@ -746,11 +752,11 @@ FocusIn method
 <td>
 <b>Method:</b> <i>focusIn()</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" #dateObj (created)='create($event)'></ejs-datepicker>
 ```
 
-```ts
+```
 @ViewChild("dateObj") dateObj : DatePickerComponent;
 public create(args:any){
     this.dateObj.focusIn();
@@ -769,11 +775,11 @@ FocusOut method
 <td>
 <b>Method:</b> <i>focusOut()</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" #dateObj (created)='create($event)'></ejs-datepicker>
 ```
 
-```ts
+```
 @ViewChild("dateObj") dateObj : DatePickerComponent;
 public create(args:any){
     this.dateObj.focusIn();
@@ -793,11 +799,11 @@ Prevent popup close
 <td>
 <b>Event:</b> <i>Close</i>
 
-```html
+```
 <ejs-datepicker id="datepicker"  (close)='onClose($event)'></ejs-datepicker>
 ```
 
-```ts
+```
 public onClose(args) {
     /*Triggers when the popup gets close*/
     args.cancel = true;
@@ -816,11 +822,11 @@ Prevent popup open
 <td>
 <b>Event:</b> <i>Open</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" (open)='onOpen($event)'></ejs-datepicker>
 ```
 
-```ts
+```
 public onOpen(args:any) {
     /*Triggers when the popup gets close*/
     args.cancel = true;
@@ -834,6 +840,7 @@ public onOpen(args:any) {
 ## Accessibility
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -848,7 +855,7 @@ Enable/Disable the RTL
 <td>
 <b>Property:</b> <i>enableRTL</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [enableRTL]='true'/>
 ```
 
@@ -856,7 +863,7 @@ Enable/Disable the RTL
 <td>
 <b>Property:</b> <i>enableRtl</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" [enableRtl]='true'></ejs-datepicker>
 ```
 
@@ -868,6 +875,7 @@ Enable/Disable the RTL
 ## Persistence
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -882,7 +890,7 @@ Enable/Disable the persistence
 <td>
 <b>Property:</b> <i>enablePersistence</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [enablePersistence]='true'/>
 ```
 
@@ -890,7 +898,7 @@ Enable/Disable the persistence
 <td>
 <b>Property:</b> <i>enablePersistence</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" [enablePersistence]='true'></ejs-datepicker>
 ```
 
@@ -902,6 +910,7 @@ Enable/Disable the persistence
 ## Validation
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -916,11 +925,11 @@ Validation rules
 <td>
 <b>Property:</b> <i>validationRules</i>
 
-```html
+```
 <input type="text" ej-datepicker id="timePicker"  [validationRules]="validationRules"/>
 ```
 
-```ts
+```
 validationRules:Object;
 constructor(){
     this.validationRules = {required:true};
@@ -931,11 +940,11 @@ constructor(){
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" floatLabelType='Always'></ejs-datepicker>
 ```
 
-```ts
+```
 let options: FormValidatorModel = {
     rules: {
         'datepicker': { required: [true, "Value is required"] } }};
@@ -951,11 +960,11 @@ Validation message
 <td>
 <b>Property:</b> <i>validationMessage</i>
 
-```html
+```
 <input type="text" ej-datepicker id="timePicker"  [validationRules]="validationRules" [validationMessage]="validationMessage"/>
 ```
 
-```ts
+```
 validationRules:Object;
 validationMessage:Object;
 constructor(){
@@ -968,11 +977,11 @@ constructor(){
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker #datepicker id="datepicker" floatLabelType='Always'></ejs-datepicker>
 ```
 
-```ts
+```
 let options: FormValidatorModel = {
     rules: {
         'datepicker': {
@@ -994,6 +1003,7 @@ this.formObject = new FormValidator('#form-element', options);
 ## Common
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -1008,7 +1018,7 @@ Width
 <td>
 <b>Property:</b> <i>width</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" width='300px'/>
 ```
 
@@ -1016,7 +1026,7 @@ Width
 <td>
 <b>Property:</b> <i>width</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" width='300px'></ejs-datepicker>
 ```
 
@@ -1029,7 +1039,7 @@ Readonly
 <td>
 <b>Property:</b> <i>readonly</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [readOnly]='true'/>
 ```
 
@@ -1037,7 +1047,7 @@ Readonly
 <td>
 <b>Property:</b> <i>readonly</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" [readonly]='true'></ejs-datepicker>
 ```
 
@@ -1053,7 +1063,7 @@ Show/Hide the clear button
 <td>
 <b>Property:</b> <i>showClearButton</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" [showClearButton]='false'></ejs-datepicker>
 ```
 
@@ -1066,7 +1076,7 @@ Height
 <td>
 <b>Property:</b> <i>height</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" height='50px'/>
 ```
 
@@ -1074,11 +1084,11 @@ Height
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-datepicker id="datepicker" cssClass='e-custom-style'></ejs-datepicker>
 ```
 
-```css
+```
 .e-control-wrapper.e-custom-style.e-date-wrapper.e-input-group {
     height: 35px;
 }
@@ -1093,11 +1103,11 @@ Html attributes
 <td>
 <b>Property:</b> <i>HtmlAttributes</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [htmlAttributes] = 'htmlAttributes'/>
 ```
 
-```ts
+```
 htmlAttributes : Object = {required:"required"}
 ```
 
@@ -1113,7 +1123,7 @@ Enable/Disable the week number
 <td>
 <b>Property:</b> <i>weekNumber</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [weekNumber] = 'true'/>
 ```
 
@@ -1121,7 +1131,7 @@ Enable/Disable the week number
 <td>
 <b>Property:</b> <i>weekNumber</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" [weekNumber]='true'></ejs-datepicker>
 ```
 
@@ -1134,7 +1144,7 @@ Watermark text
 <td>
 <b>Property:</b> <i>watermarkText</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" watermarkText= 'Enter a date'/>
 ```
 
@@ -1142,7 +1152,7 @@ Watermark text
 <td>
 <b>Property:</b> <i>placeholder</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" placeholder='Enter Date'></ejs-datepicker>
 ```
 
@@ -1155,7 +1165,7 @@ Disable/Enable
 <td>
 <b>Property:</b> <i>enabled</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [enabled]= 'false'/>
 ```
 
@@ -1163,7 +1173,7 @@ Disable/Enable
 <td>
 <b>Property:</b> <i>enabled</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" [enabled]='false'></ejs-datepicker>
 ```
 
@@ -1176,11 +1186,11 @@ Disable the DatePicker
 <td>
 <b>Method:</b> <i>disable()</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" (create)= 'onCreate($event)'/>
 ```
 
-```ts
+```
 public onCreate(e:any) {
     var dateObject = $("#datepicker").data("ejDatePicker");
     dateObject.disable();
@@ -1199,11 +1209,11 @@ Enable the DatePicker
 <td>
 <b>Method:</b> <i>enable()</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" (create)= 'onCreate($event)'/>
 ```
 
-```ts
+```
 public onCreate(e:any) {
     var dateObject = $("#datepicker").data("ejDatePicker");
     dateObject.enable();
@@ -1222,7 +1232,7 @@ Enable/Disable the textBox editing
 <td>
 <b>Property:</b> <i>AllowEdit</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [allowEdit]= 'true'/>
 ```
 
@@ -1230,7 +1240,7 @@ Enable/Disable the textBox editing
 <td>
 <b>Property:</b> <i>AllowEdit</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" [allowEdit]='false'></ejs-datepicker>
 ```
 
@@ -1246,7 +1256,7 @@ zIndex
 <td>
 <b>Property:</b> <i>zIndex</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" zIndex="2000"></ejs-datepicker>
 ```
 
@@ -1262,7 +1272,7 @@ Specify the placeholder text behavior
 <td>
 <b>Property:</b> <i>floatLabelType</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" placeholder='Enter date' floatLabelType='Auto'></ejs-datepicker>
 ```
 
@@ -1273,6 +1283,7 @@ Specify the placeholder text behavior
 ## Globalization
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -1287,7 +1298,7 @@ Locale
 <td>
 <b>Property:</b> <i>Locale</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" locale="en-US"/>
 ```
 
@@ -1295,7 +1306,7 @@ Locale
 <td>
 <b>Property:</b> <i>locale</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" locale='en'></ejs-datepicker>
 ```
 
@@ -1308,7 +1319,7 @@ First day of week
 <td>
 <b>Property:</b> <i>startDay</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [startDay]="4"/>
 ```
 
@@ -1316,7 +1327,7 @@ First day of week
 <td>
 <b>Property:</b> <i>firstDayOfWeek</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" [firstDayOfWeek]='5'></ejs-datepicker>
 ```
 
@@ -1328,6 +1339,7 @@ First day of week
 ## Strict Mode
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -1342,7 +1354,7 @@ Strict mode
 <td>
 <b>Property:</b> <i>enableStrictMode</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [enableStrictMode]="true"/>
 ```
 
@@ -1350,7 +1362,7 @@ Strict mode
 <td>
 <b>Property:</b> <i>strictMode</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" min="5/5/2019" max="6/6/2019" value="7/7/2019" [strictMode]='true'></ejs-datepicker>
 ```
 
@@ -1362,6 +1374,7 @@ Strict mode
 ## Open and Close
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -1376,11 +1389,11 @@ Close
 <td>
 <b>Event:</b> <i>Close</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" (close)="onClose($event)"/>
 ```
 
-```ts
+```
 public onClose(e:any) { /** code block */ }
 ```
 
@@ -1388,11 +1401,11 @@ public onClose(e:any) { /** code block */ }
 <td>
 <b>Event:</b> <i>Close</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" (close)="onClose($event")></ejs-datepicker>
 ```
 
-```ts
+```
 public onClose(args:any) { /** code block */ }
 ```
 
@@ -1405,11 +1418,11 @@ Hide
 <td>
 <b>Method:</b> <i>hide()</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" (create)="onCreate($event")/>
 ```
 
-```ts
+```
 public onCreate(e:any) {
     var dateObject = $("#datepicker").data("ejDatePicker");
     dateObject.show();
@@ -1421,11 +1434,11 @@ public onCreate(e:any) {
 <td>
 <b>Method:</b> <i>hide()</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" #dateObj (created)="onCreate($event")></ejs-datepicker>
 ```
 
-```ts
+```
 @ViewChild("dateObj") dateObj: DatePickerComponent;
 public onCreate(args:any){
     this.dateObj.show();
@@ -1442,11 +1455,11 @@ Open
 <td>
 <b>Event:</b> <i>Open</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" (open)="onOpen($event)"/>
 ```
 
-```ts
+```
 public onOpen(e:any) { /** code block */ }
 ```
 
@@ -1454,11 +1467,11 @@ public onOpen(e:any) { /** code block */ }
 <td>
 <b>Event:</b> <i>Open</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" (open)="onOpen($event")></ejs-datepicker>
 ```
 
-```ts
+```
 public onOpen(args:any) { /** code block */ }
 ```
 
@@ -1471,11 +1484,11 @@ Show
 <td>
 <b>Method:</b> <i>show()</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" (create)="onCreate($event")/>
 ```
 
-```ts
+```
 public onCreate(e:any) {
     var dateObject = $("#datepicker").data("ejDatePicker");
     dateObject.show();
@@ -1486,11 +1499,11 @@ public onCreate(e:any) {
 <td>
 <b>Method:</b> <i>show()</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" #dateObj (created)="onCreate($event")></ejs-datepicker>
 ```
 
-```ts
+```
 @ViewChild("dateObj") dateObj: DatePickerComponent;
 public onCreate(args:any){
     this.dateObj.show();
@@ -1505,6 +1518,7 @@ public onCreate(args:any){
 ## View Navigation
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -1522,11 +1536,11 @@ Navigate to specific month
 <td>
 <b>Method:</b> <i>navigateTo()</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" #dateObj value='5/5/2019' (open)="onOpen($event)"></ejs-datepicker>
 ```
 
-```ts
+```
 @ViewChild("dateObj") dateObj: DatePickerComponent;
 public onOpen(args:any){
     this.dateObj.navigateTo('Year', new Date("03/18/2028"));
@@ -1542,11 +1556,11 @@ Navigation callback
 <td>
 <b>Event:</b> <i>Navigate</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" (navigate)="onNavigate($event")/>
 ```
 
-```ts
+```
 public onNavigate(e:any) {/** code block */ }
 ```
 
@@ -1554,11 +1568,11 @@ public onNavigate(e:any) {/** code block */ }
 <td>
 <b>Event:</b> <i>Navigated</i>
 
-```html
+```
 <ejs-datepicker id="datepicker" (navigated)="onNavigated($event)"></ejs-datepicker>
 ```
 
-```ts
+```
 public onNavigated(args:any) {/** code block */ }
 ```
 
@@ -1571,7 +1585,7 @@ Enable/Disable the drill down
 <td>
 <b>Property:</b> <i>allowDirllDown</i>
 
-```html
+```
 <input type="text" ej-datepicker id="datepicker" [allowDirllDown]="true")/>
 ```
 

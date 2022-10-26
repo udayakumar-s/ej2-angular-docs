@@ -15,6 +15,7 @@ This article describes the API migration process of File Upload component from E
 ## Accessibility
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior**           | **Property in Essential JS 1**     |        **Property in Essential JS 2**       |
 | -----------------------| -----------------------------------| ------------------------------------------- |
 | Localization           | **Property** : locale <br/> `<ej-uploadbox id='uploadDefault' locale='es-ES'> </ej-uploadbox>` | **Property** : locale <br/> `<ejs-uploader locale='es-ES'></ejs-uploader>` |
@@ -23,6 +24,7 @@ This article describes the API migration process of File Upload component from E
 ## File List
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Show/Hide the selected files | **Property** : showFileDetails <br/> `<ej-uploadbox id='uploadDefault' [showFileDetails]= 'false'></ej-uploadbox>`  | **Property** :  showFileList <br/> `<ejs-uploader [showFileList]= 'false'></ejs-uploader>`  |
@@ -34,6 +36,7 @@ This article describes the API migration process of File Upload component from E
 ## File selection
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Select multiple files to upload | **Property** : multipleFilesSelection <br/> `<ej-uploadbox id='uploadDefault' [multipleFilesSelection]= 'true'></ej-uploadbox>`  | **Property** : multiple <br/> `<ejs-uploader [multiple]='true'></ejs-uploader>` |
@@ -55,6 +58,7 @@ This article describes the API migration process of File Upload component from E
 ## Upload action
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Save URL | **Property** : saveUrl <br/>`<ej-uploadbox [saveUrl]='saveUrl'></ej-uploadbox>` | **Property** : asyncSettings.saveUrl<br/>`<ejs-uploader [asyncSettings]='path'></ejs-uploader>`<br/> `public path: Object = {  saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save'};`  |
@@ -74,6 +78,7 @@ This article describes the API migration process of File Upload component from E
 ## Chunk Upload
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Enabling the chunk upload | Not Applicable | **Property:** asyncSettings.chunkSize<br/> `<ejs-uploader [asyncSettings]='path'></ejs-uploader>`<br/>  **TS:**<br/> public path: Object = {  saveUrl: 'saveUrl',chunkSize: 50000   }; |
@@ -91,6 +96,7 @@ This article describes the API migration process of File Upload component from E
 ## Remove action
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Remove the uploaded file | Not Applicable | **Method:** remove<br/> `<ejs-uploader #defaultupload></ejs-uploader>`<br/>  **TS:**<br/> @ViewChild('defaultupload')    public uploadObj: UploaderComponent;   uploadObj.remove(filesData); |
@@ -100,6 +106,7 @@ This article describes the API migration process of File Upload component from E
 ## Buttons
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in essential JS 1** | **Property in essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Customize button text | **Property** : buttonText<br/> `<ej-uploadbox buttonText.browse]='browse' [buttonText.upload]='upload' [buttonText.cancel]='cancel'></ej-uploadbox>`<br/>  **TS:**<br/>  public browse: string = 'Choose File';   public upload: string = 'Upload File';  public cancel: string = 'Cancel Upload'; | **Property** : buttons<br/> `<ejs-uploader [buttons]='buttons'></ejs-uploader>`<br/>  **TS:**<br/>  public buttons: object { browse: 'Choose File', clear: 'Clear files', upload: 'upload Files' } |
@@ -107,6 +114,7 @@ This article describes the API migration process of File Upload component from E
 ## Drag and Drop
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS  1** | **Property in Essential JS 2** |
 | ------------ | --------------------------------| ------------------------------ |
 | Enable drag and drop upload | **Property** : allowDragAndDrop<br/> `<ej-uploadbox [allowDragAndDrop]='true'></ej-uploadbox>` | No separate Property to disabling drag and drop |
@@ -115,6 +123,7 @@ This article describes the API migration process of File Upload component from E
 ## Common
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------------ | ------------------------------ |
 | Adding custom class to wrapper element | **Property** : cssClass<br/> `<ej-uploadbox cssClass='Custom-Class'></ej-uploadbox>` | Not Applicable |

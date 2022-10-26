@@ -15,6 +15,7 @@ This article describes the API migration process of Tab component from Essential
 ## Accessibility and Localization
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> `<ej-tab id="Tab" [allowKeyboardNavigation]="false" ></ej-tab>`  | <b>Not Applicable</b> |
@@ -24,6 +25,7 @@ This article describes the API migration process of Tab component from Essential
 ## AjaxSettings
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Default | **Property** : ajaxSettings<br/> `<ej-tab id="tab" [ajaxSettings.type]="GET"></ej-tab>` | <b>Not Applicable</b>  |
@@ -41,6 +43,7 @@ This article describes the API migration process of Tab component from Essential
 ## Animation
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Default |<b>Not Applicable</b> | **Property** :animation<br/> `<ejs-tab id="tab" [animation]="animation"></ejs-tab>`<br/> **TS:**<br/>  public animation: Object[] = [ { prev: { }, next: { } } ] |
@@ -54,6 +57,7 @@ This article describes the API migration process of Tab component from Essential
 ## Header
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Header position | **Property** : headerPosition<br/> `<ej-tab id="Tab" [headerPosition]="Bottom" ></ej-tab>`  | **Property** : headerPlacement<br/> `<ejs-tab id="Tab" [headerPlacement]="Bottom" ></ejs-tab>`  |
@@ -64,6 +68,7 @@ This article describes the API migration process of Tab component from Essential
 ## Items
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Default | <b>Not Applicable</b> | **Property** : items<br/> `<ejs-tab id="tab" [items]="items"> </ejs-tab>` |
@@ -94,6 +99,7 @@ This article describes the API migration process of Tab component from Essential
 ## Common
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Collapse active item | **Property** : collapsible <br/> `<ej-tab id="tab" [collapsible]="true"> </ej-tab>`| <b>Not Applicable</b> |
