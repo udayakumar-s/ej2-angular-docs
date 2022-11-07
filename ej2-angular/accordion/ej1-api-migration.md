@@ -15,6 +15,7 @@ This article describes the API migration process of Accordion component from Ess
 ## Accessibility and Localization
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> `<ej-accordion id="Accordion" [allowKeyboardNavigation]="false" ></ej-accordion>`  | <b>Not Applicable</b> |
@@ -24,6 +25,7 @@ This article describes the API migration process of Accordion component from Ess
 ## AjaxSettings
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Default | **Property** : ajaxSettings<br/> `<ej-accordion id="accordion" [ajaxSettings.type]="GET"></ej-accordion>` | <b>Not Applicable</b>  |
@@ -41,6 +43,7 @@ This article describes the API migration process of Accordion component from Ess
 ## Animation
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Default |<b>Not Applicable</b> | **Property** :animation<br/> `<ejs-accordion id='accordion' [animation]="animation"></ejs-accordion>`<br/> **TS:**<br/>  public animation: Object[] = [{collapse: { effect: 'FlipXDownIn', duration: 600, easing: 'ease' }, expand: { effect: 'FlipXUpIn', duration: 600, easing: 'ease' }}] |
@@ -54,6 +57,7 @@ This article describes the API migration process of Accordion component from Ess
 ## Items
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Default | <b>Not Applicable</b> | **Property** : items<br/> `<ejs-accordion id="Accordion" [items]="items"> </ejs-accordion>` |
@@ -86,6 +90,7 @@ This article describes the API migration process of Accordion component from Ess
 ## Common
 
 <!-- markdownlint-disable MD033 -->
+
 | **Behavior** | **Property in Essential JS 1** | **Property in Essential JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Collapsible | **Property** : collapsible <br/> `<ej-accordion id="Accordion" [collapsible]="false"> </ej-accordion>`| <b>Not Applicable</b> |

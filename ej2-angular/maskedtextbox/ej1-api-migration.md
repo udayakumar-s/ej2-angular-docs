@@ -15,6 +15,7 @@ This article describes the API migration process of MaskEdit component from Esse
 ## Common
 
 <!-- markdownlint-disable MD033 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | Adding custom class | **Property:** *cssClass* <br /><br />`<input ej-maskedit  inputMode="ej.InputMode.Text" maskFormat="9999" cssClass = "custom" />` | **Property:** *cssClass*<br /><br />`<ejs-maskedtextbox #mask cssClass = "custom" mask='9999'></ejs-maskedtextbox>` |
@@ -41,6 +42,7 @@ This article describes the API migration process of MaskEdit component from Esse
 ## Mask Configuration
 
 <!-- markdownlint-disable MD033 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | Triggers on value change | **Event** *change*<br /><br />`<input ej-maskedit  inputMode="ej.InputMode.Text" maskFormat="00-00" (change)="onChange()"/>`<br /><br />**script**<br />`onChange() {}` | **Event:** *change*<br /><br />`<ejs-maskedtextbox mask='00-00' (change) = "onChange()"></ejs-maskedtextbox>`<br /><br />**script**<br />`public onChange(): void {}` |
@@ -63,6 +65,7 @@ This article describes the API migration process of MaskEdit component from Esse
 ## Validation
 
 <!-- markdownlint-disable MD033 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | Displays error until correct value is entered | **Property:** *showError*<br /><br />`<input ej-maskedit  inputMode="ej.InputMode.Text" maskFormat="99-999" showError="true"/>` | **MaskedTextBox by default shows error until the correct value is entered**<br/>**script**<br />`<ejs-maskedtextbox #mask mask="00-00" value="1234"></ejs-maskedtextbox>` |

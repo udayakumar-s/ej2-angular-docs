@@ -15,6 +15,7 @@ This article describes the API migration process of TimePicker component from Es
 ## Time Selection
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -29,7 +30,7 @@ Setting the value
 <td>
 <b>Property:</b> <i>value</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" value='5/5/2019 3:00 AM'/>
 ```
 
@@ -37,7 +38,7 @@ Setting the value
 <td>
 <b>Property:</b> <i>value</i>
 
-```html
+```
 <ejs-timepicker id="timepicker" value='5/5/2019 3:00 AM'></ejs-timepicker>
 ```
 
@@ -49,6 +50,7 @@ Setting the value
 ## Time Format
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -63,7 +65,7 @@ Display time format
 <td>
 <b>Property:</b> <i>timeFormat</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" timeFormat='hh:mm:ss tt'/>
 ```
 
@@ -71,7 +73,7 @@ Display time format
 <td>
 <b>Property:</b> <i>format</i>
 
-```html
+```
 <ejs-timepicker id="timepicker"  format='hh:mm:ss'></ejs-timepicker>
 ```
 
@@ -83,6 +85,7 @@ Display time format
 ## Time Range
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -97,7 +100,7 @@ Minimum time
 <td>
 <b>Property:</b> <i>minTime</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" minTime='10:00 AM'/>
 ```
 
@@ -105,7 +108,7 @@ Minimum time
 <td>
 <b>Property:</b> <i>min</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' min='5/5/2019 3:00 AM'></ejs-timepicker>
 ```
 
@@ -118,7 +121,7 @@ Maximum time
 <td>
 <b>Property:</b> <i>maxTime</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" maxTime='10:00 AM'/>
 ```
 
@@ -126,7 +129,7 @@ Maximum time
 <td>
 <b>Property:</b> <i>Max</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' max='5/5/2019 3:00 AM'></ejs-timepicker>
 ```
 
@@ -139,11 +142,11 @@ Set current time
 <td>
 <b>Method:</b> <i>setCurrentTime()</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" (create)="onCreate($event)"/>
 ```
 
-```ts
+```
 public onCreate(e:any) {
     var timeObj = $("#timePicker").data("ejTimePicker");
     timeObj.setCurrentTime();
@@ -154,11 +157,11 @@ public onCreate(e:any) {
 <td>
 <b>Can be achieved by</b>
 
-```ts
+```
 public value: Date = new Date();
 ```
 
-```html
+```
 <ejs-timepicker id='timepicker' [value]='value'></ejs-timepicker>
 ```
 
@@ -170,6 +173,7 @@ public value: Date = new Date();
 ## Disabled Time Ranges
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -184,11 +188,11 @@ Disable time ranges
 <td>
 <b>Property:</b> <i>disableTimeRanges</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [disableTimeRanges]="disableTime"/>
 ```
 
-```ts
+```
 disableTime: Object = [{ startTime: '3:00 AM', endTime: '6:00 AM' }, { startTime: '1:00 PM', endTime: '3:00 PM' }, { startTime: '8:00 PM', endTime: '10:00 PM' }];
 ```
 
@@ -196,11 +200,11 @@ disableTime: Object = [{ startTime: '3:00 AM', endTime: '6:00 AM' }, { startTime
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-timepicker id='timepicker' (itemRender)='itemRenderHandler($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 public itemRenderHandler(args: ItemEventArgs): void {
     if (args.value.getHours() === 4) {
         args.isDisabled = true;
@@ -216,6 +220,7 @@ public itemRenderHandler(args: ItemEventArgs): void {
 ## Customization
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -230,7 +235,7 @@ CSS Class
 <td>
 <b>Property:</b> <i>CssClass</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" cssClass="gradient-lime"/>
 ```
 
@@ -238,7 +243,7 @@ CSS Class
 <td>
 <b>Property:</b> <i>CssClass</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' cssClass='e-custom-style'></ejs-timepicker>
 ```
 
@@ -254,11 +259,11 @@ Popup list customization
 <td>
 <b>Event:</b> <i>itemRender</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' (itemRender)='itemRanderHandler($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 public itemRenderHandler(args: ItemEventArgs): void {/** code block */ }
 ```
 
@@ -271,7 +276,7 @@ Show/Hide the popup button
 <td>
 <b>Property:</b> <i>showPopupButton</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [showPopupButton]="false"/>
 ```
 
@@ -279,11 +284,11 @@ Show/Hide the popup button
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (focus)='onFocus($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public onFocus(args:any):void {
@@ -291,7 +296,7 @@ public onFocus(args:any):void {
 }
 ```
 
-```css
+```
 .e-control-wrapper .e-input-group-icon.e-time-icon {
     display: none;
 }
@@ -306,7 +311,7 @@ Enable/Disable the rounded corner
 <td>
 <b>Property:</b> <i>showRoundedCorner</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [showRoundedCorner]="true"/>
 ```
 
@@ -314,11 +319,11 @@ Enable/Disable the rounded corner
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-timepicker id='timepicker' cssClass='e-custom-style'></ejs-timepicker>
 ```
 
-```css
+```
 .e-control-wrapper.e-custom-style.e-time-wrapper.e-input-group {
     border-radius: 4px;
 }
@@ -333,7 +338,7 @@ Enable/Disable the animation
 <td>
 <b>Property:</b> <i>enableAnimation</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [enableAnimation]="true"/>
 ```
 
@@ -349,7 +354,7 @@ Interval
 <td>
 <b>Property:</b> <i>interval</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [interval]=120/>
 ```
 
@@ -357,7 +362,7 @@ Interval
 <td>
 <b>Property:</b> <i>step</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' step='120'></ejs-timepicker>
 ```
 
@@ -370,11 +375,11 @@ FocusIn event
 <td>
 <b>Event:</b> <i>focusIn</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" (focusIn)="onFocus($event)"/>
 ```
 
-```ts
+```
 public onFocus(e:any) { /** code block */}
 ```
 
@@ -382,11 +387,11 @@ public onFocus(e:any) { /** code block */}
 <td>
 <b>Event:</b> <i>focus</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (focus)='onFocus($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public onFocus(args:any):void {
@@ -403,11 +408,11 @@ FocusOut event
 <td>
 <b>Event:</b> <i>focusOut</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" (focusOut)="onFocus($event)"/>
 ```
 
-```ts
+```
 public onFocus(e:any) { /** code block */}
 ```
 
@@ -415,11 +420,11 @@ public onFocus(e:any) { /** code block */}
 <td>
 <b>Event:</b> <i>blur</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj  (blur)='onBlur($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public onBlur(args:any):void {
@@ -439,11 +444,11 @@ FocusIn method
 <td>
 <b>Method:</b> <i>focusIn()</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (created)='create($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public create(args:any):void {
@@ -463,11 +468,11 @@ FocusOut method
 <td>
 <b>Event:</b> <i>focusOut</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (created)='create($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public create(args:any):void {
@@ -487,11 +492,11 @@ Prevent popup close
 <td>
 <b>Event:</b> <i>close</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (close)='onClose($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public onClose(args:any): void {
@@ -511,11 +516,11 @@ Prevent popup open
 <td>
 <b>Event:</b> <i>open</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (open)='onOpen($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public onOpen(args:any): void {
@@ -531,6 +536,7 @@ public onOpen(args:any): void {
 ## Accessibility
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -545,7 +551,7 @@ Enable/Disable the RTL
 <td>
 <b>Property:</b> <i>enableRTL</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [enableRTL]="true"/>
 ```
 
@@ -553,7 +559,7 @@ Enable/Disable the RTL
 <td>
 <b>Property:</b> <i>enableRtl</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj enableRtl='true'></ejs-timepicker>
 ```
 
@@ -565,6 +571,7 @@ Enable/Disable the RTL
 ## Persistence
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -579,7 +586,7 @@ Enable/Disable the persistence
 <td>
 <b>Property:</b> <i>enablePersistence</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [enablePersistence]="true"/>
 ```
 
@@ -587,7 +594,7 @@ Enable/Disable the persistence
 <td>
 <b>Property:</b> <i>enablePersistence</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj enablePersistence='true'></ejs-timepicker>
 ```
 
@@ -599,6 +606,7 @@ Enable/Disable the persistence
 ## Validation
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -613,11 +621,11 @@ Validation rules
 <td>
 <b>Property:</b> <i>validationRules</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker"  [validationRules]="validationRules"/>
 ```
 
-```ts
+```
 validationRules:Object;
 constructor(){
     this.validationRules = {required:true};
@@ -628,11 +636,11 @@ constructor(){
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-timepicker #timepicker id="timepicker" floatLabelType='Always'></ejs-timepicker>
 ```
 
-```ts
+```
 let options: FormValidatorModel = {
     rules: {
         'timepicker': { required: [true, "Value is required"] } }};
@@ -648,11 +656,11 @@ Validation message
 <td>
 <b>Property:</b> <i>validationMessages</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker"  [validationRules]="validationRules" [validationMessages]="validationMessages"/>
 ```
 
-```ts
+```
 validationRules:Object;
 validationMessages:Object;
 constructor(){
@@ -665,11 +673,11 @@ constructor(){
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-timepicker #timepicker id="timepicker" floatLabelType='Always'></ejs-timepicker>
 ```
 
-```ts
+```
 let options: FormValidatorModel = {
     rules: {
         'timepicker': {
@@ -691,6 +699,7 @@ this.formObject = new FormValidator('#form-element', options);
 ## Common
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -705,7 +714,7 @@ Width
 <td>
 <b>Property:</b> <i>width</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" width="300px"/>
 ```
 
@@ -713,7 +722,7 @@ Width
 <td>
 <b>Property:</b> <i>width</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' width='200px'></ejs-timepicker>
 ```
 
@@ -726,7 +735,7 @@ Readonly
 <td>
 <b>Property:</b> <i>readOnly</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker"  [readOnly]="true"/>
 ```
 
@@ -734,7 +743,7 @@ Readonly
 <td>
 <b>Property:</b> <i>Readonly</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' readonly='true' value='5/5/2019 12:00 AM'></ejs-timepicker>
 ```
 
@@ -750,7 +759,7 @@ Show/Hide the clear button
 <td>
 <b>Property:</b> <i>showClearButton</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' showClearButton='true'></ejs-timepicker>
 ```
 
@@ -763,7 +772,7 @@ Height
 <td>
 <b>Property:</b> <i>Height</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" height="50px"/>
 ```
 
@@ -771,11 +780,11 @@ Height
 <td>
 <b>Can be achieved by</b>
 
-```html
+```
 <ejs-timepicker id='timepicker' cssClass='e-custom-style'></ejs-timepicker>
 ```
 
-```css
+```
 .e-control-wrapper.e-custom-style.e-time-wrapper.e-input-group {
     height: 35px;
 }
@@ -790,11 +799,11 @@ Html Attributes
 <td>
 <b>Property:</b> <i>HtmlAttributes</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [htmlAttributes]="htmlAttributes"/>
 ```
 
-```ts
+```
 htmlAttributes: Object = {required:"required"}
 ```
 
@@ -810,7 +819,7 @@ Watermark text
 <td>
 <b>Property:</b> <i>watermarkText</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" watermarkText="Enter Time"/>
 ```
 
@@ -818,7 +827,7 @@ Watermark text
 <td>
 <b>Property:</b> <i>placeholder</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' placeholder='Select a Time'></ejs-timepicker>
 ```
 
@@ -831,7 +840,7 @@ Enable the TimePicker
 <td>
 <b>Property:</b> <i>enabled</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [enabled]="true"/>
 ```
 
@@ -839,7 +848,7 @@ Enable the TimePicker
 <td>
 <b>Property:</b> <i>enabled</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' enabled='true'></ejs-timepicker>
 ```
 
@@ -852,11 +861,11 @@ Disable the TimePicker
 <td>
 <b>Method:</b> <i>disable()</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" (create)="onCreate($event)"/>
 ```
 
-```ts
+```
 public onCreate(e:any) {
     var timeObject = $("#timePicker").data("ejTimePicker");
     timeObject.disable();
@@ -867,7 +876,7 @@ public onCreate(e:any) {
 <td>
 <b>Property:</b> <i>enabled</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' enabled='false'></ejs-timepicker>
 ```
 
@@ -883,7 +892,7 @@ Enable/Disable the textBox editing
 <td>
 <b>Property:</b> <i>allowEdit</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' allowEdit='false'></ejs-timepicker>
 ```
 
@@ -899,7 +908,7 @@ zIndex
 <td>
 <b>Property:</b> <i>zIndex</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' zIndex='2000'></ejs-timepicker>
 ```
 
@@ -915,7 +924,7 @@ Specify the placeholder text behavior
 <td>
 <b>Property:</b> <i>floatLabelType</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' floatLabelType='Always'></ejs-timepicker>
 ```
 
@@ -927,6 +936,7 @@ Specify the placeholder text behavior
 ## Globalization
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -941,7 +951,7 @@ Locale
 <td>
 <b>Property:</b> <i>locale</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" locale="en-US"/>
 ```
 
@@ -949,7 +959,7 @@ Locale
 <td>
 <b>Property:</b> <i>locale</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' locale='en'></ejs-timepicker>
 ```
 
@@ -961,6 +971,7 @@ Locale
 ## Strict Mode
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -975,7 +986,7 @@ Strict mode
 <td>
 <b>Property:</b> <i>enableStrictMode</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" [enableStrictMode]="true"/>
 ```
 
@@ -983,7 +994,7 @@ Strict mode
 <td>
 <b>Property:</b> <i>strictMode</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' strictMode='true'></ejs-timepicker>
 ```
 
@@ -995,6 +1006,7 @@ Strict mode
 ## Open and Close
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <thead>
 <tr>
@@ -1009,11 +1021,11 @@ Close
 <td>
 <b>Event:</b> <i>close</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" (close)="onClose($event)"/>
 ```
 
-```ts
+```
 public onClose(e:any) {/** code block */ }
 ```
 
@@ -1021,11 +1033,11 @@ public onClose(e:any) {/** code block */ }
 <td>
 <b>Event:</b> <i>close</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (close)='onClose($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public onClose(args:any): void {/** code block */ }
@@ -1040,11 +1052,11 @@ Open
 <td>
 <b>Event:</b> <i>open</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" (open)="onOpen($event)"/>
 ```
 
-```ts
+```
 public onOpen(e:any) {/** code block */ }
 ```
 
@@ -1052,11 +1064,11 @@ public onOpen(e:any) {/** code block */ }
 <td>
 <b>Event:</b> <i>open</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (open)='onOpen($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public onOpen(args:any): void {/** code block */ }
@@ -1071,11 +1083,11 @@ Hide
 <td>
 <b>Method:</b> <i>hide()</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" (create)="onCreate($event)"/>
 ```
 
-```ts
+```
 public onCreate(e:any) {
     var timeObject = $("#timePicker").data("ejTimePicker");
     timeObject.show();
@@ -1087,11 +1099,11 @@ public onCreate(e:any) {
 <td>
 <b>Method:</b> <i>hide()</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (created)='create($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public create(args:any): void {
@@ -1109,11 +1121,11 @@ Show
 <td>
 <b>Method:</b> <i>show()</i>
 
-```html
+```
 <input type="text" ej-timepicker id="timePicker" (create)="onCreate($event)"/>
 ```
 
-```ts
+```
 public onCreate(e:any) {
     var timeObject = $("#timePicker").data("ejTimePicker");
     timeObject.show();
@@ -1125,11 +1137,11 @@ public onCreate(e:any) {
 <td>
 <b>Method:</b> <i>show()</i>
 
-```html
+```
 <ejs-timepicker id='timepicker' #timeObj (created)='create($event)'></ejs-timepicker>
 ```
 
-```ts
+```
 @ViewChild("timeObj") timeObj: TimePickerComponent;
 
 public create(args:any): void {

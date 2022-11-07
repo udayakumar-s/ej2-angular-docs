@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installation in Angular Installation md component | Syncfusion
-description: Learn here all about Installation in Syncfusion Angular Installation md component of Syncfusion Essential JS 2 and more.
+title: Installation in Angular component | Syncfusion
+description: Learn here all about Installation in Syncfusion Angular component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Installation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installation in Angular Installation md component
+# Installation in Angular component
 
 ## Installing Package
 

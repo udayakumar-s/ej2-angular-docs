@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Browser in Angular Browser md component | Syncfusion
-description: Learn here all about Browser in Syncfusion Angular Browser md component of Syncfusion Essential JS 2 and more.
+title: Browser in Angular component | Syncfusion
+description: Learn here all about Browser in Syncfusion Angular component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Browser 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Browser in Angular Browser md component
+# Browser in Angular component
 
 The Syncfusion Angular UI components are supported only in modern browsers. This includes the following versions.
 

@@ -15,6 +15,7 @@ This article describes the API migration process of  DropDownList component from
 ## DataBinding
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *dataSource* <br/>`<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="empList">` | **Property**: *dataSource* <br/>`<ejs-dropdownlist  id="state" [dataSource]="stateData"></ejs-dropdownlist>`|
@@ -29,6 +30,7 @@ This article describes the API migration process of  DropDownList component from
 ## Filtering
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *enableFilterSearch* <br/>`<input type="text" id="dropdown1" ej-dropdownlist [enableFilterSearch]="enableFilterSearch">`| **Property**: *allowFiltering* <br/>`<ejs-dropdownlist  id="state" [allowFiltering]="allowFiltering"></ejs-dropdownlist>` |
@@ -44,6 +46,7 @@ This article describes the API migration process of  DropDownList component from
 ## Template
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *template* <br/>`<input type="text" id="dropdown1" ej-dropdownlist [template]="template">` |**Property**: *itemTemplate*<br/>`<ejs-dropdownlist  id="state" [itemTemplate]="itemTemplate"></ejs-dropdownlist>`|
@@ -57,6 +60,7 @@ This article describes the API migration process of  DropDownList component from
 ## Virtual Scrolling
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *allowVirtualScrolling* <br/>`<input type="text" id="dropdown1" ej-dropdownlist [allowVirtualScrolling]="caseSensitiveSearch">` | **Not applicable** |
@@ -64,6 +68,7 @@ This article describes the API migration process of  DropDownList component from
 ## Applying CSS
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *cssClass* <br/>`<input type="text" id="dropdown1" ej-dropdownlist [cssClass]="customClass">` | **Property**: *cssClass* <br/>`<ejs-dropdownlist  id="state" [cssClass]="cssClass"></ejs-dropdownlist>`|
@@ -72,6 +77,7 @@ This article describes the API migration process of  DropDownList component from
 ## Sorting
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *enableSorting* <br/>`<input type="text" id="dropdown1" ej-dropdownlist [enableSorting]="enableSorting">` | **Enabled only on using sortorder **Property**** |
@@ -80,6 +86,7 @@ This article describes the API migration process of  DropDownList component from
 ## Popup
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--- | --- | --- |
 | **Popup height** | **Property**: *popupHeight* <br/>`<input type="text" id="dropdown1" ej-dropdownlist [popupHeight]="popupHeight">`| **Property**: popupHeight <br/>`<ejs-dropdownlist  id="state" [floatLabelType]="floatLabelType"></ejs-dropdownlist>`|
@@ -105,6 +112,7 @@ This article describes the API migration process of  DropDownList component from
 ## Placeholder
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Watermark text** | **Property**: *watermarkText* <br/>`<input type="text" id="dropdown1" ej-dropdownlist [watermarkText]="watermarkText">`| **Property**: *placeholder* <br/>`<ejs-dropdownlist  id="state" [placeholder]="placeholder"></ejs-dropdownlist>`|
@@ -113,6 +121,7 @@ This article describes the API migration process of  DropDownList component from
 ## Grouping
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *fields.groupBy* <br/>`<input type="text" id="dropdown1" ej-dropdownlist [fields]="fields">`|**Property**: *fields.groupBy*<br/>`@Html.EJS().DropDownList("games").Fields(new DropDownListFieldSettings { GroupBy = "Game" }).Render()`|
@@ -121,6 +130,7 @@ This article describes the API migration process of  DropDownList component from
 ## Accessibility
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Globalization** | **Property**: *locale*<br/>`<input type="text" id="dropdown1" ej-dropdownlist [locale]="locale">`| **Property**: *locale*<br/>`<ejs-dropdownlist  id="state" [locale]="locale"></ejs-dropdownlist>` |
@@ -129,6 +139,7 @@ This article describes the API migration process of  DropDownList component from
 ## Miscellaneous
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Enable/disable** | **Property**: *enabled*<br/>`<input type="text" id="dropdown1" ej-dropdownlist [enabled]="enabled">` | **Property**: *enabled* <br/>`<ejs-dropdownlist  id="state" [enabled]="enabled"></ejs-dropdownlist>` |
@@ -142,6 +153,7 @@ This article describes the API migration process of  DropDownList component from
 ## Selection
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior	| API in Essential JS 1	| API in Essential JS 2 |
 |--- | --- | --- |
 | Selecting particular index | **Property**: *selectedIndex*<br/>`<input type="text" id="dropdown1" ej-dropdownlist [selectedIndex]="selectedIndex">` | **Property**: *index*<br/>`<ejs-dropdownlist  id="state" [index]="index"></ejs-dropdownlist>` |
@@ -160,6 +172,7 @@ This article describes the API migration process of  DropDownList component from
 ## Common
 
 <!-- markdownlint-disable MD010 -->
+
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Adding new item** | **Method** : *addItem*<br/>`<input type="text" id="dropdown1" ej-dropdownlist >`<br/><br/>`$('#dropdown1').ejDropDownList("addItem", {text:"India"});` | **Method**: *addItem*<br/>`<ejs-dropdownlist #sample/>`<br/> <br/>`@ViewChild('sample')   public ddlObj: DropDownListComponent;`<br/><br/>`ddlObj.addItem({Id: 'game4', Game: 'Golf'}, 2);` |
