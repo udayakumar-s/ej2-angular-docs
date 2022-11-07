@@ -1,0 +1,16 @@
+.e-inplaceeditor {
+    text-align: left
+}
+
+#container .control-group {
+    text-align: center;
+    margin: 100px auto;
+}
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
