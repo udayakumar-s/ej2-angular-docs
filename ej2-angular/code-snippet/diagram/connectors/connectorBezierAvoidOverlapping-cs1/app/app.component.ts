@@ -1,13 +1,13 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent,Diagram,NodeModel,ConnectorModel,ConnectorEditing,ConnectorConstraints } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel,ConnectorEditing, ConnectorConstraints,BezierSegmentModel, PointPortModel, ControlPointsVisibility, PortVisibility } from '@syncfusion/ej2-angular-diagrams';
 Diagram.Inject(ConnectorEditing);
 @Component({
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="600px" [getNodeDefaults]='getNodeDefaults' [getConnectorDefaults] ='getConnectorDefaults'>
-         <e-nodes>
-            <e-node id=''Start'' [offsetX]=250 [offsetY]=150 [ports]='StartPort'>
+        <e-nodes>
+            <e-node id='Start' [offsetX]=250 [offsetY]=150 [ports]='StartPort'>
                 <e-node-annotations>
                     <e-node-annotation content="Start">
                     </e-node-annotation>
@@ -21,7 +21,7 @@ Diagram.Inject(ConnectorEditing);
             </e-node>
         </e-nodes>
         <e-connectors>
-            <e-connector id='connector1' type='Bezier' sourceID='Start' targetID='End' sourcePortID='StartPort'targetPortID='EndPort' [bezierSettings]='bezierSettings'>
+            <e-connector id='connector1' type='Bezier' sourceID='Start' targetID='End'  sourcePortID='StartPort' targetPortID='EndPort' bezierSettings='bezierSettings'>
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,
@@ -33,7 +33,7 @@ export class AppComponent {
     public StartPort:PointPortModel[];
     public EndPort:PointPortModel[];
     public bezierSettings;
-     ngOnInit(): void {
+      ngOnInit(): void {
         this.StartPort = [{
             id: 'StartPort',
             visibility: PortVisibility.Visible,
@@ -59,7 +59,7 @@ export class AppComponent {
         return node;
     }
     public getConnectorDefaults(connector: ConnectorModel): ConnectorModel {
-     connector.style: {
+     connector.style = {
         strokeColor: '#6BA5D7',
         fill: '#6BA5D7',
         strokeWidth: 2

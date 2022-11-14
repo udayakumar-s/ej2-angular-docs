@@ -34,8 +34,7 @@ through the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/a
 
 ## Size
 
-The different CheckBox size are default and small. To reduce the size of default CheckBox to small,
-set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/check-box#cssclass) property to `e-small`.
+The different CheckBox size are default and small. To reduce the size of default CheckBox to small, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/check-box#cssclass) property to `e-small`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 Checkbox component supports two way binding.
 
-In this following example, two way binding for Checkbox is illustrated with Switch component. The steps to achieve two way binding in CheckBox
-are as follows,
+In this following example, two way binding for Checkbox is illustrated with Switch component. The steps to achieve two way binding in CheckBox are as follows,
 
 * Initialize CheckBox component and bind the checked value using `ngModel` as in the below code using "banana in a box" syntax,
 
@@ -31,8 +30,7 @@ are as follows,
 
 ```
 
-* Now, the changes made in CheckBox will reflect in Switch (i.e When the state of CheckBox is changed to checked state then the Switch
-state will also change to checked state) and vice versa.
+* Now, the changes made in CheckBox will reflect in Switch (i.e When the state of CheckBox is changed to checked state then the Switch state will also change to checked state) and vice versa.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

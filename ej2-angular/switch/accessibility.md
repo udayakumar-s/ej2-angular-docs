@@ -10,13 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Switch component
 
-The web accessibility makes web content and web applications more accessible for people with disabilities. It
-especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML,
-JavaScript, and related technologies.
+The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies.
 
-Switch provides built-in compliance with `WAI-ARIA` specifications. `WAI-ARIA` support is achieved through the
-attributes like `aria-checked` and `aria-disabled`. It helps the people with disabilities by providing information
-about the widget for assistive technology in the screen readers, such as screen readers.
+Switch provides built-in compliance with `WAI-ARIA` specifications. `WAI-ARIA` support is achieved through the attributes like `aria-checked` and `aria-disabled`. It helps the people with disabilities by providing information about the widget for assistive technology in the screen readers, such as screen readers.
 
 | Properties | Functionality |
 | ------------ | ----------------------- |

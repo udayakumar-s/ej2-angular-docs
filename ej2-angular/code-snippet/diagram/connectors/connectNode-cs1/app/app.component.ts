@@ -21,7 +21,7 @@ import { DiagramComponent, Diagram, NodeModel, ConnectorModel } from '@syncfusio
             </e-node>
         </e-nodes>
         <e-connectors>
-            <e-connector id='connector' type='Orthogonal' sourceID='node1' targetID='node2' [connectorSpacing]='connectorSpacing'>
+            <e-connector id='connector' type='Orthogonal' sourceID='node1' targetID='node2' connectorSpacing='connectorSpacing'>
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,

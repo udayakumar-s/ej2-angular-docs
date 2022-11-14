@@ -10,10 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular Multi select component
 
-The MultiSelect supports wrapping nested elements into a group based on different categories. The category
-of each list item can be mapped through the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#fields) field in
-the data table. The group header is displayed both as inline and fixed headers. The fixed group header content
-is updated dynamically on scrolling the popup list with its category value.
+The MultiSelect supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#fields) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
 
 In the following sample, vegetables are grouped according on its category using `groupBy` field.
 

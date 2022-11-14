@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Query builder component
+# Getting started with Angular Query builder component
 
 This section explains how to create and demonstrate the basic usage of the [Angular Query Builder](https://www.syncfusion.com/angular-ui-components/angular-query-builder) module.
 
@@ -52,8 +52,7 @@ To install Query Builder package, use the following command.
 npm install @syncfusion/ej2-angular-querybuilder --save
 ```
 
-The above package installs [Query Builder dependencies](./getting-started#dependencies) which
-are required to render the component in the Angular environment.
+The above package installs [Query Builder dependencies](./getting-started#dependencies) which are required to render the component in the Angular environment.
 
 ## Adding Query Builder module
 
@@ -98,7 +97,9 @@ import { Component } from '@angular/core';
                 </e-columns>
               </ejs-querybuilder>`
 })
-export class AppComponent  { }
+export class AppComponent  {
+  public values: string[] = ['Mr.', 'Mrs.'];
+}
 ```
 
 ## Adding CSS reference

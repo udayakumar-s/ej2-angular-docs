@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Enable ripple for switch label in Angular Switch component
 
-By default, label with ripple effect is not available in Switch. You can achieve this by using `rippleMouseHandler`
-method.
+By default, label with ripple effect is not available in Switch. You can achieve this by using `rippleMouseHandler` method.
 
 The following example illustrates how to enable ripple effect for labels in Switch component.
 

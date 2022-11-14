@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Drop down list component
+# Getting started with Angular Drop down list component
 
-This section briefly explains how to create a simple **DropDownList** component and configure its available
-functionalities in Angular.
+This section briefly explains how to create a simple **DropDownList** component and configure its available functionalities in Angular.
 
 ## Dependencies
 
@@ -154,8 +153,7 @@ export class AppComponent  { }
 
 ## Binding data source
 
-After initialization, populate the DropDownList with data using the `dataSource` property.
-Here, an array of string values passed to DropDownList component.
+After initialization, populate the DropDownList with data using the `dataSource` property. Here, an array of string values passed to DropDownList component.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -175,8 +173,7 @@ export class AppComponent {
 
 ## Running the application
 
-After completing the configuration required to render a basic DropDownList, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic DropDownList, run the following command to display the output in your default browser.
 
 ```
 ng serve
@@ -200,13 +197,9 @@ The following example illustrates the output in your browser.
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the DropDownList input
-element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the DropDownList input element's width, and the height of the popup list has '300px'.
 
-The height and width of the popup list can also be customized using the
-[popupHeight](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#popupheight)
- &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#popupwidth) property
-respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#popupwidth) property respectively.
 
 In the following sample, popup list's width and height are configured.
 
@@ -226,8 +219,7 @@ In the following sample, popup list's width and height are configured.
 
 ## Two-way binding
 
-In DropDownList, the `value` property supports two-way binding functionality.
-The following example demonstrates how to work the two-way binding functionality in DropDownList.
+In DropDownList, the `value` property supports two-way binding functionality. The following example demonstrates how to work the two-way binding functionality in DropDownList.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

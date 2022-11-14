@@ -10,13 +10,10 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Drop down list component
 
-The DropDownList loads the data either from local data sources or
-remote data services using the
-[dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. It supports
-the data type of `array` or `DataManager`.
+The DropDownList loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. It supports the data type of `array` or `DataManager`.
+remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. It supports the data type of `array` or `DataManager`.
 
-The DropDownList also supports different kinds of data services such as OData, OData V4, and Web API,
-and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
+The DropDownList also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager`adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -74,11 +71,9 @@ In the following example, `Id` column and `Game` column from complex data have b
 ### 3. Array of Complex data
 
 The DropDownList can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#fields)
-property.
+the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#fields) property.
 
-In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped
-to the `value` field and `text` field, respectively.
+In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,8 +92,7 @@ to the `value` field and `text` field, respectively.
 ## Binding remote data
 
 The DropDownList supports retrieval of data from remote data services with the help
-of `DataManager` component. The `Query` property is
-used to fetch data from the database and bind it to the DropDownList.
+of `DataManager` component. The `Query` property is used to fetch data from the database and bind it to the DropDownList.
 
 The following sample displays the first 6 contacts from “Customers” table of the `Northwind` Data Service.
 

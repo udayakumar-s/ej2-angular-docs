@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Drop down button component
+# Getting started with Angular Drop down button component
 
 This section explains how to create a simple DropDownButton and demonstrate the basic usage of the DropDownButton component in an Angular environment.
 

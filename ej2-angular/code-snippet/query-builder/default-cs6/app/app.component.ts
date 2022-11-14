@@ -12,6 +12,7 @@ L10n.load({
         'querybuilder': {
             'AddGroup': 'Gruppe hinzufügen',
             'AddCondition': 'Bedingung hinzufügen',
+            "AddButton": "Gruppe/Bedingung hinzufügen",
             'DeleteRule': 'Entfernen Sie diesen Zustand',
             'DeleteGroup': 'Gruppe löschen',
             'Edit': 'BEARBEITEN',

@@ -14,8 +14,7 @@ You can customize the appearance of the RadioButton component by using the CSS r
 Define own CSS rules according to your requirement and assign the class name to the
 [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#cssclass) property.
 
-The background and border color of the RadioButton is customized through the custom classes
-to create primary, success, warning, danger, and info type of radio button.
+The background and border color of the RadioButton is customized through the custom classes to create primary, success, warning, danger, and info type of radio button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

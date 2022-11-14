@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Chips component
+# Getting started with Angular Chips component
 
 This section explains you the steps required to create a simple `Chip` and demonstrate the basic usage of the Chip component in an Angular environment.
 

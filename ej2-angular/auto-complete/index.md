@@ -18,16 +18,11 @@ AutoComplete component provides the matched suggestion list when type into the i
 
 * [**Grouping**](./grouping/) - Supports grouping of logically related items under a single or specific category.
 
-* [**Sorting**](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#sortorder) - Supports sorting of list
-items in an alphabetical order (either ascending or descending).
+* [**Sorting**](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#sortorder) - Supports sorting of list items in an alphabetical order (either ascending or descending).
 
-* [**Highlight search**](./how-to/#custom-search) - Supports highlighting the typed
-text in the suggestion list.
+* [**Highlight search**](./how-to/#custom-search) - Supports highlighting the typed text in the suggestion list.
 
 * [**Templates**](./templates/) - Allows customizing the list item, header, footer,
-category group header, no records and action failure
-content.
+category group header, no records and action failure content.
 
-* [**Accessibility**](./accessibility/) - Provided with built-in accessibility
-support that helps to access all the AutoComplete component features through keyboard, on-screen readers, or other
-assistive technology devices.
+* [**Accessibility**](./accessibility/) - Provided with built-in accessibility support that helps to access all the AutoComplete component features through keyboard,on-screen readers, or other assistive technology devices.

@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular List box component
 
-The ListBox loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#datasource) property. It supports
-the data type of `array` or `DataManager`.
+The ListBox loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#datasource) property. It supports the data type of `array` or `DataManager`.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -89,8 +88,7 @@ In the following example, `Sports.Name` column from complex data have been mappe
 
 ## Remote Data
 
-The ListBox supports retrieval of data from remote data services with the help of [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/) component. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#query) property is used to fetch
-data from the database and bind it to the ListBox.
+The ListBox supports retrieval of data from remote data services with the help of [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/) component. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#query) property is used to fetch data from the database and bind it to the ListBox.
 
 The following sample displays the first 10 products from `Products` table of the `Northwind` Data Service.
 

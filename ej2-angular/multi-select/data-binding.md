@@ -11,9 +11,7 @@ domainurl: ##DomainURL##
 # Data binding in Angular Multi select component
 
 The MultiSelect loads the data either from local data sources or
-remote data services using the
-[dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#datasource) property. It supports
-the data type of `array` or `DataManager`.
+remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#datasource) property. It supports the data type of `array` or `DataManager`.
 
 The MultiSelect also supports different kinds of data services such as OData, OData V4,
 and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
@@ -75,8 +73,7 @@ In the following example, `id` column and `sports` column from complex data have
 The MultiSelect can generate its list items through an array of complex data. For this,
 the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#fields) property.
 
-In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped
-to the `value` field and `text` field, respectively.
+In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,9 +92,7 @@ to the `value` field and `text` field, respectively.
 ## Binding remote data
 
 The MultiSelect supports retrieval of data from remote data services with the help of
-`DataManager` component.
-The [Query](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#query) property is used to fetch
-data from the database and bind it to the MultiSelect.
+`DataManager` component. The [Query](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#query) property is used to fetch data from the database and bind it to the MultiSelect.
 
 The following sample displays the first 6 contacts from “Customers” table of the `Northwind` Data Service.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Hide spinner in Angular Progress button component
 
-You can hide spinner in the ProgressButton by setting the `e-hide-spinner` property to [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#cssClass).
+You can hide spinner in the ProgressButton by setting the `e-hide-spinner` property to [`cssClass`](https://ej2.syncfusion.com/angular/documentation/apiprogress-button#cssClass).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

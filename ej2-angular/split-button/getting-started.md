@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Split button component
+# Getting started with Angular Split button component
 
 This section explains how to create a simple SplitButton and demonstrate the basic usage of the SplitButton component in an Angular environment.
 

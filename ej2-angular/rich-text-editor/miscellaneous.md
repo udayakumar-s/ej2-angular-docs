@@ -113,9 +113,7 @@ Customize the undo/redo step count using the [`undoRedoSteps`](https://ej2.syncf
 
 ## Prevention of cross-site scripting (XSS)
 
-The Rich Text Editor allow the users to edit the content with security by preventing cross-site
-scripting (XSS). By default, provided built-in support to remove the elements from editor content which cause XSS
-attack. The editor removes the elements based on the attributes if there is possible to execute script.
+The Rich Text Editor allow the users to edit the content with security by preventing cross-site scripting (XSS). By default, provided built-in support to remove the elements from editor content which cause XSS attack. The editor removes the elements based on the attributes if there is possible to execute script.
 
 In the following sample, removed `script` tag and `onmouseover` attribute from content of the Rich Text Editor.
 
@@ -137,8 +135,7 @@ In the following sample, removed `script` tag and `onmouseover` attribute from c
 
 ### Custom cross-site scripting
 
-You can also filter the elements and attributes additionally which cause the XSS attack through
-[`beforeSanitizeHtml`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#beforesanitizehtml) event. Return the value from the event argument `helper` function to apply in the editor. If you want to prevent the built-in support and make own cross-site scripting rules, set `cancel` argument as true.
+You can also filter the elements and attributes additionally which cause the XSS attack through [`beforeSanitizeHtml`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#beforesanitizehtml) event. Return the value from the event argument `helper` function to apply in the editor. If you want to prevent the built-in support and make own cross-site scripting rules, set `cancel` argument as true.
 
 The following sample demonstrate how to filter `script` tag from value.
 

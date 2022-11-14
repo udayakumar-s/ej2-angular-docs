@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 # Chip customization in Angular Multi select component
 
 The MultiSelect allows the user to customize the selected chip element through the [`tagging`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#tagging)
-event. In that event, you can set the custom classes to chip element via that event argument
-of `setClass` method.
+event. In that event, you can set the custom classes to chip element via that event argument of `setClass` method.
 
 The following sample demonstrates chip-customization with the MultiSelect component.
 
