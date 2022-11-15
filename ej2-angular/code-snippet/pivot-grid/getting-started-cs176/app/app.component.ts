@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
             filters: []
         };
         this.hyperlinkSettings = {
-           headerText: 'FY 2015.Q1.Units Sold',
+           showSummaryCellHyperlink: true,
            cssClass: 'e-custom-class'
         } as HyperlinkSettings;
         this.width = '100%';

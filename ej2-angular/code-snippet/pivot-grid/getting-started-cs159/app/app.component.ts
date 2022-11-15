@@ -1,13 +1,16 @@
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { IDataOptions, PivotView, IAxisSet, IFieldOptions, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, PivotView, IAxisSet, IFieldOptions, PivotViewComponent, FieldListService, PivotCellSelectedEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
+import { Chart, Category, Legend, Tooltip, ColumnSeries, LineSeries, SeriesModel } from '@syncfusion/ej2-charts';
 import { renewableEnergy } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
+  providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings (dataBound)='trend()' width=width height=height [cellTemplate]=cellTemplate></ejs-pivotview>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width height=height [gridSettings]=gridSettings (cellSelected)="cellSelected($event)" (dataBound)="dataBound($event)"></ejs-pivotview><div><br/><div id="Chart"></div>`
 })
 
 export class AppComponent implements OnInit {
@@ -15,70 +18,88 @@ export class AppComponent implements OnInit {
     public width: string;
     public height: number;
     public dataSourceSettings: IDataOptions;
-    public cellTemplate: string;
+    public gridSettings: GridSettings;
+    public onInit: boolean = true;
+    public measureList: { [key: string]: string } = {};
+    public chart: Chart;
+    public selectedCells: CellSelectedObject[];
+    public chartSeries: SeriesModel[];
 
     @ViewChild('pivotview',{static: false})
-    public pivotGridObj: PivotViewComponent;
+    public pivotObj: PivotViewComponent;
 
-    trend(): void {
-        let cTable: HTMLElement[] = [].slice.call(document.getElementsByClassName("e-table"));
-        let colLen: number = this.pivotGridObj.pivotValues[3].length;
-        let cLen: number = cTable[3].children[0].children.length;
-        let rLen: number = cTable[3].children[1].children.length;
-        let rowIndx: number;
-
-        for (let k: number = 0; k < rLen; k++) {
-            if (this.pivotGridObj.pivotValues[k] && this.pivotGridObj.pivotValues[k][0] !== undefined) {
-                rowIndx = ((this.pivotGridObj.pivotValues[k][0]) as IAxisSet).rowIndex;
-                break;
+    frameChartSeries(): SeriesModel[] {
+        let columnGroupObject: { [key: string]: { x: string, y: number }[] } = {};
+        for (let cell of this.selectedCells) {
+        if (cell.measure !== '') {
+            let columnSeries = (this.pivotObj.dataSourceSettings.values.length > 1 && this.measureList[cell.measure]) ?
+            (cell.columnHeaders.toString() + ' ~ ' + this.measureList[cell.measure]) : cell.columnHeaders.toString();
+            if (columnGroupObject[columnSeries]) {
+            columnGroupObject[columnSeries].push({ x: cell.rowHeaders == '' ? 'Grand Total' : cell.rowHeaders.toString(), y: Number(cell.value) });
+            } else {
+            columnGroupObject[columnSeries] = [{ x: cell.rowHeaders == '' ? 'Grand Total' : cell.rowHeaders.toString(), y: Number(cell.value) }];
             }
         }
-        let rowHeaders: HTMLElement[] = [].slice.call(cTable[2].children[1].querySelectorAll('td'));
-        let rows: IFieldOptions[] = this.pivotGridObj.dataSourceSettings.rows as IFieldOptions[];
-        if (rowHeaders.length > 1) {
-            for (let i: number = 0, Cnt = rows; i < Cnt.length; i++) {
-                let fields: any = {};
-                let fieldHeaders: any = [];
-                for (let j: number = 0, Lnt = rowHeaders; j < Lnt.length; j++) {
-                    let header: any = rowHeaders[j];
-                    if (header.className.indexOf('e-gtot') === -1 && header.className.indexOf('e-rowsheader') > -1 && header.getAttribute('fieldname') === rows[i].name) {
-                        var headerName = rowHeaders[j].getAttribute('fieldname') + '_' + rowHeaders[j].textContent;
-                        fields[rowHeaders[j].textContent] = j;
-                        fieldHeaders.push(rowHeaders[j].textContent);
-                    }
-                }
-                if (i === 0) {
-                    for (let rnt: number = 0, Lnt = fieldHeaders; rnt < Lnt.length; rnt++) {
-                        if (rnt !== 0) {
-                            let row: number = fields[fieldHeaders[rnt]];
-                            let prevRow: number = fields[fieldHeaders[rnt - 1]];
-                            for (let j: number = 0, ci = 1; j < cLen && ci < colLen; j++ , ci++) {
-                                let node: HTMLElement = cTable[3].children[1].children[row].childNodes[j] as HTMLElement;
-                                let prevNode: HTMLElement = cTable[3].children[1].children[prevRow].childNodes[j] as HTMLElement;
-                                let ri: any = undefined;
-                                let prevRi: any = undefined;
-                                if (node) {
-                                    ri = node.getAttribute("index");
-                                }
-                                if (prevNode) {
-                                    prevRi = prevNode.getAttribute("index");
-                                }
-                                if (ri && ri < [].slice.call(this.pivotGridObj.pivotValues).length) {
-                                    if ((this.pivotGridObj.pivotValues[prevRi][ci] as IAxisSet).value > (this.pivotGridObj.pivotValues[ri][ci]  as IAxisSet).value &&
-                                     node.querySelector('.tempwrap')) {
-                                        let trendElement: HTMLElement = node.querySelector('.tempwrap');
-                                        trendElement.className = trendElement.className.replace('sb-icon-neutral', 'sb-icon-loss');
-                                    } else if ((this.pivotGridObj.pivotValues[prevRi][ci]  as IAxisSet).value < (this.pivotGridObj.pivotValues[ri][ci]  as IAxisSet).value &&
-                                     node.querySelector('.tempwrap')) {
-                                        let trendElement: HTMLElement = node.querySelector('.tempwrap');
-                                        trendElement.className = trendElement.className.replace('sb-icon-neutral', 'sb-icon-profit');
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+        }
+        let columnKeys: string[] = Object.keys(columnGroupObject);
+        let chartSeries: SeriesModel[] = [];
+        for (let key of columnKeys) {
+            chartSeries.push({
+                dataSource: columnGroupObject[key],
+                xName: 'x',
+                yName: 'y',
+                type: 'Column',
+                name: key
+            });
+        }
+        return chartSeries;
+    }
+
+    chartUpdate(): void {
+        if (this.onInit) {
+            this.onInit = false;
+            Chart.Inject(ColumnSeries, LineSeries, Legend, Tooltip, Category);
+            this.chart = new Chart({
+                title: 'Sales Analysis',
+                legendSettings: {
+                    visible: true
+                },
+                tooltip: {
+                    enable: true
+                },
+                primaryYAxis: {
+                    title: this.pivotObj.dataSourceSettings.values.map(function (args) { return args.caption || args.name }).join(' ~ '),
+                },
+                primaryXAxis: {
+                    valueType: 'Category',
+                    title: this.pivotObj.dataSourceSettings.rows.map(function (args) { return args.caption || args.name }).join(' ~ '),
+                    labelIntersectAction: 'Rotate45'
+                },
+                series: this.chartSeries,
+            }, '#Chart');
+        } else {
+            this.chart.series = this.chartSeries;
+            this.chart.primaryXAxis.title = this.pivotObj.dataSourceSettings.rows.map(function (args) { return args.caption || args.name }).join(' ~ ');
+            this.chart.primaryYAxis.title = this.pivotObj.dataSourceSettings.values.map(function (args) { return args.caption || args.name }).join(' ~ ');
+            this.chart.refresh();
+        }
+    }
+    dataBound(): void {
+        if(this.onInit) {
+            for (let value of this.pivotObj.dataSourceSettings.values) {
+                this.measureList[value.name] = value.caption || value.name;
             }
+            this.pivotObj.grid.selectionModule.selectCellsByRange(
+            { cellIndex: 1, rowIndex: 1 },
+            { cellIndex: 3, rowIndex: 3 }
+            );
+        }
+    }
+    cellSelected(args: PivotCellSelectedEventArgs): void {
+        this.selectedCells = args.selectedCellsInfo;
+        if (this.selectedCells && this.selectedCells.length > 0) {
+            this.chartSeries = this.frameChartSeries();
+            this.chartUpdate();
         }
     }
 
@@ -87,7 +108,15 @@ export class AppComponent implements OnInit {
         this.width = "100%";
         this.height = 350;
 
-        this.cellTemplate = '<span class="tempwrap sb-icon-neutral e-icons"></span>';
+        this.gridSettings = {
+            columnWidth: 120,
+            allowSelection: true,
+            selectionSettings: {
+            mode: 'Cell',
+            type: 'Multiple',
+            cellSelectionMode: 'Box',
+            }
+        };
 
         this.dataSourceSettings = {
             dataSource: renewableEnergy,

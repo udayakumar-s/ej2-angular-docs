@@ -1,24 +1,24 @@
 
 
-import { Component } from '@angular/core';
-import { IDataOptions, PivotView, GroupingBarService, PivotActionCompleteEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Component, OnInit } from '@angular/core';
+import { IDataOptions, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
   providers: [GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' (actionComplete)='actionComplete($event)' width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true'
+  (aggregateMenuOpen)='aggregateMenuOpen($event)' width=width></ejs-pivotview>`
 })
-
-export class AppComponent {
-
+export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
 
-    actionComplete(args: PivotActionCompleteEventArgs): void {
-       if (args.actionName == 'Field sorted' && args.actionName == 'Field filtered') {
-            // Triggers when the grouping bar UI actions such as sorting and filtering are completed.
+    aggregateMenuOpen(args: AggregateMenuOpenEventArgs): void {
+        args.displayMenuCount = 4;
+        if(args.fieldName === 'Amount') {
+            args.aggregateTypes = ['Sum','Avg','Max'];
         }
     }
 
@@ -29,9 +29,6 @@ export class AppComponent {
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
-            allowLabelFilter: true,
-            allowValueFilter: true,
-            enableSorting: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
@@ -39,7 +36,7 @@ export class AppComponent {
             filters: []
         };
     }
- }
+}
 
 
 

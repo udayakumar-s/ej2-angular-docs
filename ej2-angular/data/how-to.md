@@ -12,13 +12,10 @@ domainurl: ##DomainURL##
 
 ## Work in offline mode
 
-On remote data binding,
-every time invoking [`executeQuery`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executequery) will send request to the server and the query will be
+On remote data binding, every time invoking [`executeQuery`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executequery) will send request to the server and the query will be
 processed on server-side.
-To avoid post back to server on calling [`executeQuery`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executequery), you can set the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/)
-to load all the data on initialization time and make the query processing in client-side.
-To enable this behavior, you can use **offline** property of
-[`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/).
+To avoid post back to server on calling [`executeQuery`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executequery), you can set the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) to load all the data on initialization time and make the query processing in client-side.
+To enable this behavior, you can use **offline** property of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/).
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -67,8 +64,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-> The loaded data will be cached in the **json** property
-of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/).
+> The loaded data will be cached in the **json** property of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/).
 
 ## Sending additional parameters to server
 

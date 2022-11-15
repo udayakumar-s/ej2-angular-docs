@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Querying in Angular Data component
 
-In this section, you will see in detail about how to build query using [`Query`](https://ej2.syncfusion.com/documentation/api/data/query/) class and consume
-the data source.
+In this section, you will see in detail about how to build query using [`Query`](https://ej2.syncfusion.com/documentation/api/data/query/) class and consume the datasource.
 
 ## Specifying resource name using `from`
 
@@ -51,8 +50,7 @@ The [`select`](https://ej2.syncfusion.com/documentation/api/data/query/#select) 
 
 ## Eager loading navigation properties
 
-You can use the [`expand`](https://ej2.syncfusion.com/documentation/api/data/query/#expand) method to eagerly load navigation properties. The navigation properties
-values are accessed using appropriate field names separated by dot(.) sign.
+You can use the [`expand`](https://ej2.syncfusion.com/documentation/api/data/query/#expand) method to eagerly load navigation properties. The navigation properties values are accessed using appropriate field names separated by dot(.) sign.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,10 +68,7 @@ values are accessed using appropriate field names separated by dot(.) sign.
 
 ## Sorting
 
-You can use the [`sortBy`](https://ej2.syncfusion.com/documentation/api/data/query/#sortby) method to perform sort operation in the
-data source. Default sorting order is **ascending**. To change the sort order, either you can
-specify the second argument of [`sortBy`](https://ej2.syncfusion.com/documentation/api/data/query/#sortby) as **descending** or use the
-[`sortByDesc`](https://ej2.syncfusion.com/documentation/api/data/query/#sortbydesc) method.
+You can use the [`sortBy`](https://ej2.syncfusion.com/documentation/api/data/query/#sortby) method to perform sort operation in the datasource. Default sorting order is **ascending**. To change the sort order, either you can specify the second argument of [`sortBy`](https://ej2.syncfusion.com/documentation/api/data/query/#sortby) as **descending** or use the [`sortByDesc`](https://ej2.syncfusion.com/documentation/api/data/query/#sortbydesc) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,8 +88,7 @@ specify the second argument of [`sortBy`](https://ej2.syncfusion.com/documentati
 
 ## Filtering
 
-You can use the [`where`](https://ej2.syncfusion.com/documentation/data/api-query.html#where) method to build filter criteria which allows you to get reduced view of
-records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query.html#where) method can also be chained to form multiple filter criteria.
+You can use the [`where`](https://ej2.syncfusion.com/documentation/data/api-query.html#where) method to build filter criteria which allows you to get reduced view of records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query.html#where) method can also be chained to form multiple filter criteria.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,8 +106,7 @@ records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query.h
 
 ### Filter Operators
 
-Filter operators are generally used to specify the filter type. The various filter operators
-supported by [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) is listed below.
+Filter operators are generally used to specify the filter type. The various filter operators supported by [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) is listed below.
 
 * greaterthan
 * greaterthanorequal
@@ -125,13 +118,11 @@ supported by [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/d
 * endswith
 * contains
 
-> These filter operators are used for creating filter query using
-[`where`](https://ej2.syncfusion.com/documentation/api/data/query/#where) method and [`Predicate`](https://ej2.syncfusion.com/documentation/api/data/predicate/) class.
+> These filter operators are used for creating filter query using [`where`](https://ej2.syncfusion.com/documentation/api/data/query/#where) method and [`Predicate`](https://ej2.syncfusion.com/documentation/api/data/predicate/) class.
 
 ### Build complex filter criteria using `Predicate`
 
-Sometimes chaining [`where`](https://ej2.syncfusion.com/documentation/api/data/query/#where) method is not sufficient to create very
-complex filter criteria, in such cases we can use [`Predicate`](https://ej2.syncfusion.com/documentation/api/data/predicate/) class to create composite filter criteria.
+Sometimes chaining [`where`](https://ej2.syncfusion.com/documentation/api/data/query/#where) method is not sufficient to create very complex filter criteria, in such cases we can use [`Predicate`](https://ej2.syncfusion.com/documentation/api/data/predicate/) class to create composite filter criteria.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -149,9 +140,7 @@ complex filter criteria, in such cases we can use [`Predicate`](https://ej2.sync
 
 ## Searching
 
-You can use the [`search`](https://ej2.syncfusion.com/documentation/api/data/query/#search) method to create search criteria, it
-differs from the filter in the way that search criteria will applied to all fields in the data
-source whereas filter criteria will be applied to a particular field.
+You can use the [`search`](https://ej2.syncfusion.com/documentation/api/data/query/#search) method to create search criteria, it differs from the filter in the way that search criteria will applied to all fields in the datasource whereas filter criteria will be applied to a particular field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,8 +160,7 @@ source whereas filter criteria will be applied to a particular field.
 
 ## Grouping
 
-[`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) allow you to group records by category. The
-[`group`](https://ej2.syncfusion.com/documentation/api/data/query/#group) method is used to add group query.
+[`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) allow you to group records by category. The [`group`](https://ej2.syncfusion.com/documentation/api/data/query/#group) method is used to add group query.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -192,8 +180,7 @@ source whereas filter criteria will be applied to a particular field.
 
 ## Paging
 
-You can query paged data using [`page`](https://ej2.syncfusion.com/documentation/data/api-query.html#page) method. This allow you to query
-particular set of records based on the page size and index.
+You can query paged data using [`page`](https://ej2.syncfusion.com/documentation/data/api-query.html#page) method. This allow you to query particular set of records based on the page size and index.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -242,9 +229,7 @@ The built-in aggregate types are,
 You can use the [`hierarchy`](https://ej2.syncfusion.com/documentation/api/data/query/#hierarchy) method to build nested query.
 The hierarchical queries are commonly required when you use foreign key binding.
 
-The [`foreignKey`](https://ej2.syncfusion.com/documentation/api/data/query/#foreignkey) method is used to specify the key field of the
-foreign table and the second argument of the [`hierarchy`](https://ej2.syncfusion.com/documentation/api/data/query/#hierarchy) method
-accepts a selector function which selects the records from the foreign table.
+The [`foreignKey`](https://ej2.syncfusion.com/documentation/api/data/query/#foreignkey) method is used to specify the key field of the foreign table and the second argument of the [`hierarchy`](https://ej2.syncfusion.com/documentation/api/data/query/#hierarchy) method accepts a selector function which selects the records from the foreign table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

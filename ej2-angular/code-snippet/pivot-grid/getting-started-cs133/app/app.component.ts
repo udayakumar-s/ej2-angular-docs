@@ -9,7 +9,7 @@ import { Pivot_Data } from './datasource.ts';
   providers: [GroupingBarService],
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true'
-  width=width></ejs-pivotview>`
+  [groupingBarSettings]='groupingSettings' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
@@ -27,9 +27,12 @@ export class AppComponent implements OnInit {
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [],
-            excludeFields:['In_Stock']
+            filters: []
         };
+
+        this.groupingSettings = {
+            allowDragAndDrop: false
+        } as GroupingBarSettings;
     }
 }
 

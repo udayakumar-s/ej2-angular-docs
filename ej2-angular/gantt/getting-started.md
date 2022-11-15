@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Gantt component
+# Getting started with Angular Gantt component
 
 This section explains you the steps required to create a simple Gantt component and demonstrate the basic usage of the Gantt component in an Angular environment.
 

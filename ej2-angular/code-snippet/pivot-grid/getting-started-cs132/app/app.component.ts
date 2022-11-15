@@ -13,6 +13,7 @@ import { Pivot_Data } from './datasource.ts';
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
+    public groupingSettings: GroupingBarSettings;
 
     ngOnInit(): void {
 
@@ -20,9 +21,10 @@ export class AppComponent implements OnInit {
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            columns: [{ name: 'Year', caption: 'Production Year', allowDragAndDrop: false }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products', allowDragAndDrop: false }],
+            expandAll: false,
+            columns: [{ name: 'Year', caption: 'Production Year', showRemoveIcon: false }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold', showRemoveIcon: false }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products', showRemoveIcon: false }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };

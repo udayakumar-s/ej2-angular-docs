@@ -7,7 +7,7 @@ import { Pivot_Data } from './datasource.ts';
 @Component({
   selector: 'app-container',
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public dataSourceSettings: IDataOptions;
@@ -19,8 +19,10 @@ export class AppComponent implements OnInit {
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
+            emptyCellsTextContent: '*',
             drilledMembers: [{ name: 'Country', items: ['France'] }],
-            formatSettings: [{ name: 'Year', format: 'dd/MM/yyyy-hh:mm', type: 'date' }],
+            formatSettings: [{ name: 'Amount', format: 'C2', useGrouping: false,
+                    minimumSignificantDigits: 1, maximumSignificantDigits: 3 }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],

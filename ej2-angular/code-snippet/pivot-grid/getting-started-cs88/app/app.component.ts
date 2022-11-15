@@ -1,14 +1,14 @@
 
 
-import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService, PivotActionCompleteEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Component, ViewChild } from '@angular/core';
+import { IDataOptions, IDataSet, PivotView, FieldListService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
   providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' (actionComplete)='actionComplete($event)' width=width></ejs-pivotview></div>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings (onFieldDropped)='fieldDropped($event)' showFieldList='true' width=width></ejs-pivotview></div>`
 })
 
 export class AppComponent {
@@ -16,10 +16,12 @@ export class AppComponent {
     public width: string;
     public dataSourceSettings: IDataOptions;
 
-    actionComplete(args: PivotActionCompleteEventArgs): void {
-        if (args.actionName == 'Field list closed') {
-            // Triggers when the field list dialog is closed.
-        }
+    @ViewChild('pivotview', {static: false})
+    public pivotGridObj: PivotViewComponent;
+
+    fieldDropped(args: FieldDroppedEventArgs): void {
+        //Triggers, whenever field list get refreshed.
+        args.droppedField.caption = args.droppedField.name + " --> " + args.droppedAxis;
     }
 
     ngOnInit(): void {

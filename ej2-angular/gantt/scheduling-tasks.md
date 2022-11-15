@@ -8,12 +8,6 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-﻿---
-title: "Scheduling Tasks"
-component: "Gantt"
-description: "Learn about duration values in the Essential JS 2 Gantt component."
----
-
 # Scheduling tasks in Angular Gantt component
 
 ## Duration units

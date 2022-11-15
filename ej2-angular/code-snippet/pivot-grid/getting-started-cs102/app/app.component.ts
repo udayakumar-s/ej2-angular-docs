@@ -1,22 +1,22 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, GroupingBarService, FieldListService, PivotActionFailureEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, GroupingBarService, FieldListService, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
   providers: [GroupingBarService, FieldListService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' showFieldList='true' (actionFailure)='actionFailure($event)' width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' showFieldList='true' (actionBegin)='actionBegin($event)' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
 
-    actionFailure(args: PivotActionFailureEventArgs): void {
+    actionBegin(args: PivotActionBeginEventArgs): void {
         if (args.actionName == 'Filter field') {
-            // Triggers when the current UI action fails to achieve the desired result.
+            args.cancel = true;
         }
     }
 

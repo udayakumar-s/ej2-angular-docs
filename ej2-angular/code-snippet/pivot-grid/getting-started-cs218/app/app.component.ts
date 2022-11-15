@@ -1,39 +1,46 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, DisplayOption, PivotChartService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
-import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
+import { IDataOptions, PivotView, VirtualScrollService } from '@syncfusion/ej2-angular-pivotview';
+import { Button } from '@syncfusion/ej2-buttons';
 import { Pivot_Data } from './datasource.ts';
+
 @Component({
-    selector: 'app-container',
-    providers: [PivotChartService],
-    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
+  selector: 'app-container',
+  providers: [VirtualScrollService],
+  template: `<div class="col-md-8">
+  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' exportAllPages='false' enableVirtualization='true' width=width></ejs-pivotview></div>
+  <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
-    public pivotData: IDataSet[];
-    public dataSourceSettings: IDataOptions;
-    public chartSettings: ChartSettings;
-    public displayOption: DisplayOption;
-    @ViewChild('pivotview', { static: false })
-    public pivotGridObj: PivotViewComponent;
+  public width: string;
+  public dataSourceSettings: IDataOptions;
+  public button: Button;
+
+    @ViewChild('pivotview', {static: false})
+    public pivotGridObj: PivotView;
+
     ngOnInit(): void {
+
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            expandAll: false,
-            columns: [{ name: 'Year' }, { name: 'Products' }],
-            rows: [{ name: 'Country' }, { name: 'Quarter' }],
-            formatSettings: [{ name: 'Amount', format: 'C' }],
-            values: [{ name: 'Amount' }, { name: 'Sold' }]
+            expandAll: true,
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            rows: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            values: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: []
         };
-        this.displayOption = { view: 'Chart' } as DisplayOption;
-        this.chartSettings = {
-            chartSeries: {
-                dataLabel: {visible:true, position: 'Outside', connectorStyle: { length: '50px', width: 2, dashArray: '5,3', color: '#f4429e' } },
-                type: 'Funnel'
-            }
-        } as ChartSettings;
+        this.width = '100%';
+
+        this.button = new Button({ isPrimary: true });
+        this.button.appendTo('#export');
+
+        this.button.element.onclick = (): void => {
+            this.pivotGridObj.pdfExport();
+        };
     }
 }
+
 
 

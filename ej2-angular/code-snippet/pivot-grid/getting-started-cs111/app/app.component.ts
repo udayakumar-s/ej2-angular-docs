@@ -1,68 +1,78 @@
 
 
 import { Component } from '@angular/core';
-import { L10n } from '@syncfusion/ej2-base';
+import { loadCldr, L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
 import { IDataOptions, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
+import * as currencies from './currencies.json';
+import * as cagregorian from './ca-gregorian.json';
+import * as numbers from './numbers.json';
+import * as timeZoneNames from './timeZoneNames.json';
+import * as numberingSystems from './numberingSystems.json';
+
+loadCldr(currencies, cagregorian, numbers, timeZoneNames, numberingSystems);
+setCulture('de');
+setCurrencyCode('EUR');
 
 @Component({
   selector: 'app-container',
   providers: [FieldListService, CalculatedFieldService, GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings [width]=width
-  allowCalculatedField='true' showGroupingBar='true' locale='ar-AE' enableRtl= true showFieldList='true'></ejs-pivotview></div>`
+  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width
+  allowCalculatedField='true' showGroupingBar='true' locale='de-DE' showFieldList='true'></ejs-pivotview></div>`
 })
 
 export class AppComponent {
     public dataSourceSettings: IDataOptions;
+    
     ngOnInit(): void {
+        
         L10n.load({
-            'ar-AE': {
+            'de-DE': {
                 'pivotview': {
-                    'grandTotal': 'المجموع الكلى',
-                    'total': 'المجموع',
-                    'value': 'القيمة',
-                    'noValue': 'لا قيمة لها',
-                    'row': 'صف',
-                    'column': 'العمود',
-                    'collapse': 'الانهيار',
-                    'expand': 'توسيع'
+                    'grandTotal': 'Gesamtsumme',
+                    'total': 'Insgesamt',
+                    'value': 'Wert',
+                    'noValue': 'Kein Wert',
+                    'row': 'Zeile',
+                    'column': 'Spalte',
+                    'collapse': 'Zusammenbruch',
+                    'expand': 'Erweitern'
                 },
-                'pivotfieldlist': {
-                    'fieldList': 'قائمة الحقول',
-                    'dropRowPrompt': 'تراجع الخلاف هنا',
-                    'dropColPrompt': 'انخفاض العمود هنا',
-                    'dropValPrompt': 'انخفاض قيمة هنا',
-                    'dropFilterPrompt': 'انخفاض هنا عامل التصفية',
-                    'addPrompt': 'اضافة حقل هنا',
-                    'adaptiveFieldHeader': 'اختر الحقل',
-                    'centerHeader': 'اسحب المجالات بين المناطق الموضحة ادناه:',
-                    'add': 'اضافة',
-                    'drag': 'اسحب',
-                    'filters': 'عوامل التصفية',
-                    'rows': 'الصفوف',
-                    'columns': 'الاعمدة',
-                    'values': 'قيم',
-                    'search': 'البحث',
-                    'close': 'قريب',
-                    'cancel': 'الغاء',
-                    'delete': 'احذف',
-                    'alert': 'حالة تاهب قصوى',
-                    'warning': 'تحذير',
-                    'ok': 'موافق',
-                    'allFields': 'جميع الحقول',
-                    'noMatches': 'لا مباريات'
+                "pivotfieldlist": {
+                    'fieldList': 'Feld Liste',
+                    'dropRowPrompt': 'Drop Reihe hier',
+                    'dropColPrompt': 'Drop column Hier',
+                    'dropValPrompt': 'Drop wert hier',
+                    'dropFilterPrompt': 'Drop Filter Hier',
+                    'addPrompt': 'Feld hinzufügen',
+                    'centerHeader': 'Ziehen Sie die Felder zwischen den Bereichen unten:',
+                    'add': 'Hinzufügen',
+                    'drag': 'Ziehen',
+                    'filters': 'Filter',
+                    'rows': 'Zeilen',
+                    'columns': 'Spalten',
+                    'values': 'Werte',
+                    'error': 'Fehler',
+                    'dropAction': 'Berechnetes Feld nicht in jeder anderen Region außer Wert Achse sein.',
+                    'search': 'Suche',
+                    'close': 'Schließen',
+                    'cancel': 'Abbrechen',
+                    'delete': 'Löschen',
+                    'alert': 'Warnung',
+                    'warning': 'Warnung',
+                    'ok': 'OK',
+                    'allFields': 'Alle Felder',
+                    'noMatches': 'Keine Treffer'
                 }
             }
         });
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            expandAll: false,
-            enableSorting: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            formatSettings: [{ name: 'Amount', format: 'C2', currency: 'EUR' }],
             filters: [],
             calculatedFieldSettings: [{ name: 'Total', formula: '"Sum(Amount)"+"Sum(Sold)"' }]
         };

@@ -16,7 +16,7 @@ export class AppComponent {
     public dataSourceSettings: IDataOptions;
 
     actionBegin(args: PivotActionBeginEventArgs): void {
-        if (args.actionName == 'Add new record' && args.actionName == 'Save edited records') {
+        if (args.actionName == 'Add new record' || args.actionName == 'Save edited records') {
             args.cancel = true;
         }
     }

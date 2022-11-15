@@ -32,7 +32,8 @@ export class AppComponent implements OnInit {
         };
 
         this.gridSettings = {
-            clipMode: 'Clip'
+            allowSelection: true,
+            selectionSettings: { mode: 'Both' }
         } as GridSettings;
     }
 }

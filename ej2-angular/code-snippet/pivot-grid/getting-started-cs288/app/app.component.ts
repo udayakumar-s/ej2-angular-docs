@@ -1,62 +1,112 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { IDataOptions, PivotView, VirtualScrollService } from '@syncfusion/ej2-angular-pivotview';
+import { Component, ViewChild } from '@angular/core';
+import {
+    IDataOptions, PivotView, FieldListService, CalculatedFieldService, NumberFormattingService,
+    ToolbarService, ConditionalFormattingService, ToolbarItems, DisplayOption, IDataSet
+} from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [VirtualScrollService],
+  providers: [CalculatedFieldService, ToolbarService, ConditionalFormattingService, FieldListService, NumberFormattingService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings allowDataCompression='true' enableVirtualization='true' height='350'></ejs-pivotview>`
+  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings allowExcelExport='true' allowNumberFormatting='true' allowConditionalFormatting='true' allowPdfExport='true' showToolbar='true' allowCalculatedField='true' showFieldList='true' width='100%' [displayOption]='displayOption' height='350' [toolbar]='toolbarOptions' (saveReport)='saveReport($event)' (loadReport)='loadReport($event)' (fetchReport)='fetchReport($event)' (renameReport)='renameReport($event)' (removeReport)='removeReport($event)' (newReport)='newReport()'></ejs-pivotview></div>`
 })
 
-export class AppComponent implements OnInit  {
-public dataSourceSettings: IDataOptions;
-public date1: number;
-public date2: number;
-data(count: number) {
-  let result: Object[] = [];
-  let dt: number = 0;
-  for (let i: number = 1; i < count + 1; i++) {
-    dt++;
-    let round: string;
-    let toString: string = i.toString();
-    if (toString.length === 1) {
-      round = "0000" + i;
-    } else if (toString.length === 2) {
-      round = "000" + i;
-    } else if (toString.length === 3) {
-      round = "00" + i;
-    } else if (toString.length === 4) {
-      round = "0" + i;
-    } else {
-      round = toString;
+export class AppComponent {
+    public dataSourceSettings: IDataOptions;
+    public toolbarOptions: ToolbarItems[];
+    public displayOption: DisplayOption;
+
+    @ViewChild('pivotview', {static: false})
+    public pivotGridObj: PivotView;
+
+    saveReport(args: any) {
+        let reports = [];
+        let isSaved: boolean = false;
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reports = JSON.parse(localStorage.pivotviewReports);
+        }
+        if (args.report && args.reportName && args.reportName !== '') {
+            reports.map(function (item: any): any {
+                if (args.reportName === item.reportName) {
+                    item.report = args.report; isSaved = true;
+                }
+            });
+            if (!isSaved) {
+                reports.push(args);
+            }
+            localStorage.pivotviewReports = JSON.stringify(reports);
+        }
     }
-    result.push({
-      ProductID: 'PRO-' + (i % 1000),
-      Year: "FY " + (dt + 2013),
-      Price: Math.round(Math.random() * 5000) + 5000,
-      Sold: Math.round(Math.random() * 80) + 10
-    });
-    if (dt / 4 == 1) {
-        dt = 0;
+    fetchReport(args: any) {
+        let reportCollection: string[] = [];
+        let reeportList: string[] = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item: any): void { reeportList.push(item.reportName); });
+        args.reportName = reeportList;
     }
-  }
-  return result;
-}
+    loadReport(args: any) {
+        let reportCollection: string[] = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item: any): void {
+            if (args.reportName === item.reportName) {
+                args.report = item.report;
+            }
+        });
+        if (args.report) {
+            this.pivotGridObj.dataSourceSettings = JSON.parse(args.report).dataSourceSettings;
+        }
+    }
+    removeReport(args: any) {
+        let reportCollection: any[] = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        for (let i: number = 0; i < reportCollection.length; i++) {
+            if (reportCollection[i].reportName === args.reportName) {
+                reportCollection.splice(i, 1);
+            }
+        }
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            localStorage.pivotviewReports = JSON.stringify(reportCollection);
+        }
+    }
+    renameReport(args: any) {
+        let reportCollection: string[] = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item: any): any { if (args.reportName === item.reportName) { item.reportName = args.rename; } });
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            localStorage.pivotviewReports = JSON.stringify(reportCollection);
+        }
+    }
+    newReport() {
+        this.pivotGridObj.setProperties({ dataSourceSettings: { columns: [], rows: [], values: [], filters: [] } }, false);
+    }
     ngOnInit(): void {
+        this.displayOption = { view: 'Both' } as DisplayOption;
+
+        this.toolbarOptions = ['New', 'Save', 'SaveAs', 'Rename', 'Remove', 'Load',
+            'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'NumberFormatting', 'FieldList'] as ToolbarItems[];
         this.dataSourceSettings = {
-        dataSource: this.data(1000000) as IDataSet[],
-        enableSorting: false,
-        expandAll: true,
-        formatSettings: [{ name: 'Price', format: 'C0' }],
-        rows: [{ name: 'ProductID' }],
-        columns: [{ name: 'Year' }],
-        values: [{ name: 'Price', caption: 'Unit Price' }, { name: 'Sold', caption: 'Unit Sold' }]
+            dataSource: Pivot_Data,
+            expandAll: false,
+            enableSorting: true,
+            drilledMembers: [{ name: 'Country', items: ['France'] }],
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: []
         };
     }
-}
-
+ }
 
 

@@ -183,46 +183,6 @@ In this sample, "Product Categories" is added in column, "Customer Geography" in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs187/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs187/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs187/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs187" %}
-
-### Applying formatting to a value field
-
-Formatting defines a way in which values should be displayed. For example, format **"C"** denotes the values should be displayed in currency pattern. To do so, define the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings) property with its [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#name) and [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#format) properties and add it to [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings). In this sample, the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#name) property is set as **[Measures].[Internet Sales Amount]**, a field from value section and its format is set as currency. Likewise, we can set format for other value fields as well and add it to [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings).
-
-> Only fields from value section, which is in the form of numeric data values are applicable for formatting.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs188/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs188/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs188/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs188" %}
-
-### Enable grouping bar
-
-The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube-elements) from the bound data source and allows end users to drag [OLAP cube elements](#olap-cube-elements) between different axes such as [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters), and change pivot view at runtime. Sorting, filtering and removing of elements is also possible. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/?no-cache=1#showgroupingbar) property to **true** and by injecting the **GroupingBarService** module as follows.
-
-> If the **GroupingBarService** module is not injected, the grouping bar will not be rendered with the pivot table component.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs189/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -235,11 +195,11 @@ The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs189" %}
 
-### Enable pivot field list
+### Applying formatting to a value field
 
-The component provides a built-in Field List similar to Microsoft Excel. It allows you to add or remove [OLAP cube elements](#olap-cube-elements) and also rearrange the [OLAP cube elements](#olap-cube-elements) between different axes, including [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) along with filter and sort options dynamically at runtime. It can be enabled by setting the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/?no-cache=1#showfieldlist) property to **true** and by injecting the **FieldListService** module as follows.
+Formatting defines a way in which values should be displayed. For example, format **"C"** denotes the values should be displayed in currency pattern. To do so, define the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings) property with its [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#name) and [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#format) properties and add it to [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings). In this sample, the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#name) property is set as **[Measures].[Internet Sales Amount]**, a field from value section and its format is set as currency. Likewise, we can set format for other value fields as well and add it to [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings).
 
-> If the **FieldListService** module is not injected, the Field List will not be rendered with the pivot table component.
+> Only fields from value section, which is in the form of numeric data values are applicable for formatting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -255,9 +215,11 @@ The component provides a built-in Field List similar to Microsoft Excel. It allo
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs190" %}
 
-### Exploring filter axis
+### Enable grouping bar
 
-The filter axis contains collection of [OLAP cube elements](#olap-cube-elements) such as hierarchies and calculated members that would act as master filter over the data bound in [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) and [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) axes of the pivot table. The [OLAP cube elements](#olap-cube-elements) along with filter members could be set to filter axis either through report via code behind or by dragging and dropping [OLAP cube elements](#olap-cube-elements) from other axes to filter axis via grouping bar or field list at runtime.
+The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube-elements) from the bound data source and allows end users to drag [OLAP cube elements](#olap-cube-elements) between different axes such as [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters), and change pivot view at runtime. Sorting, filtering and removing of elements is also possible. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/?no-cache=1#showgroupingbar) property to **true** and by injecting the **GroupingBarService** module as follows.
+
+> If the **GroupingBarService** module is not injected, the grouping bar will not be rendered with the pivot table component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -272,6 +234,44 @@ The filter axis contains collection of [OLAP cube elements](#olap-cube-elements)
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs191" %}
+
+### Enable pivot field list
+
+The component provides a built-in Field List similar to Microsoft Excel. It allows you to add or remove [OLAP cube elements](#olap-cube-elements) and also rearrange the [OLAP cube elements](#olap-cube-elements) between different axes, including [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) along with filter and sort options dynamically at runtime. It can be enabled by setting the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/?no-cache=1#showfieldlist) property to **true** and by injecting the **FieldListService** module as follows.
+
+> If the **FieldListService** module is not injected, the Field List will not be rendered with the pivot table component.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs192/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs192/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs192/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs192" %}
+
+### Exploring filter axis
+
+The filter axis contains collection of [OLAP cube elements](#olap-cube-elements) such as hierarchies and calculated members that would act as master filter over the data bound in [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) and [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) axes of the pivot table. The [OLAP cube elements](#olap-cube-elements) along with filter members could be set to filter axis either through report via code behind or by dragging and dropping [OLAP cube elements](#olap-cube-elements) from other axes to filter axis via grouping bar or field list at runtime.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs193/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs193/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs193/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs193" %}
 
 ### Calculated field
 
@@ -296,17 +296,17 @@ Also calculated fields can be added at run time through the built-in dialog. The
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs192/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs194/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs192/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs194/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs192/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs194/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs192" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs194" %}
 
 Users can add a calculated field at runtime through the built-in dialog by using the following steps.
 
@@ -414,17 +414,17 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs193/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs195/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs193/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs195/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs193/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs195/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs193" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs195" %}
 
 ##### Limitations for virtual scrolling
 
@@ -442,51 +442,6 @@ ng serve --open
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs194/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs194/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs194/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs194" %}
-
-## Data Binding
-
-To bind OLAP datasource to the pivot table, you need to specify following properties under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) option.
-
-| Properties|Description |
-|-----|-----|
-| [`cube`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#cube "cube")| Points the respective cube name from OLAP database.|
-| [`providerType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#providertype "providerType")| Points the provider type for pivot table to identify the type of data source.|
-| [`url`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#url "url")| Contains the cube URL for establishing the connection (online).|
-| [`catalog`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#catalog "catalog")| Contains the database name (catalog name) to fetch the data.|
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs195/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs195/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs195/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs195" %}
-
-### Fields
-
-#### Measures in row axis
-
-By default, the measures are plotted in column axis. To plot those measures in row axis, place the **Measures** button in the row axis as follows.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs196/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -499,9 +454,16 @@ By default, the measures are plotted in column axis. To plot those measures in r
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs196" %}
 
-#### Measures in different position
+## Data Binding
 
-You can place measures in different position in row or column axis either thorough code behind or UI. In this sample, **measures** placed before the dimension in the column axis.
+To bind OLAP datasource to the pivot table, you need to specify following properties under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) option.
+
+| Properties|Description |
+|-----|-----|
+| [`cube`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#cube "cube")| Points the respective cube name from OLAP database.|
+| [`providerType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#providertype "providerType")| Points the provider type for pivot table to identify the type of data source.|
+| [`url`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#url "url")| Contains the cube URL for establishing the connection (online).|
+| [`catalog`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#catalog "catalog")| Contains the database name (catalog name) to fetch the data.|
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -517,11 +479,11 @@ You can place measures in different position in row or column axis either thorou
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs197" %}
 
-### Named set
+### Fields
 
-Named set is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining the cube data, arithmetic operators, numbers, and functions.
+#### Measures in row axis
 
-You can bind the named sets in the pivot table by setting it's unique name in the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#name) property either in row or column axis and [`isNamedSet`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#isnamedset) boolean property to **true**. In this sample, we have added "Core Product Group" named set in the column axis.
+By default, the measures are plotted in column axis. To plot those measures in row axis, place the **Measures** button in the row axis as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -536,6 +498,44 @@ You can bind the named sets in the pivot table by setting it's unique name in th
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs198" %}
+
+#### Measures in different position
+
+You can place measures in different position in row or column axis either thorough code behind or UI. In this sample, **measures** placed before the dimension in the column axis.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs199/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs199/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs199/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs199" %}
+
+### Named set
+
+Named set is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining the cube data, arithmetic operators, numbers, and functions.
+
+You can bind the named sets in the pivot table by setting it's unique name in the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#name) property either in row or column axis and [`isNamedSet`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#isnamedset) boolean property to **true**. In this sample, we have added "Core Product Group" named set in the column axis.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs200/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs200/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs200/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs200" %}
 
 ### Configuring authentication
 

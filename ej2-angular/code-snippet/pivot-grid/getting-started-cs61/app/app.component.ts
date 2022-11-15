@@ -16,7 +16,7 @@ export class AppComponent {
     public dataSourceSettings: IDataOptions;
 
     actionComplete(args: PivotActionCompleteEventArgs): void {
-        if (args.actionName == 'New record added' && args.actionName == 'Edited records saved') {
+        if (args.actionName == 'New record added' || args.actionName == 'Edited records saved') {
             // Triggers when the editing UI actions such as add and edit are completed.
         }
     }

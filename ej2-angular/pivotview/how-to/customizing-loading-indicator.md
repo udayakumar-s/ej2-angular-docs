@@ -16,14 +16,14 @@ You can customize the appearance of the loading indicator in the pivot table by 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs163/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs165/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs163/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs165/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs163/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs165/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs163" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs165" %}

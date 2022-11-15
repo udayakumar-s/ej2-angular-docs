@@ -1,67 +1,52 @@
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
-import { Button } from '@syncfusion/ej2-buttons';
-import { Pivot_Data } from './datasource.ts';
+import { Component } from '@angular/core';
+import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
   selector: 'app-container',
-  template: `<div class="col-md-8">
-  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' width=width></ejs-pivotview>
-  <ejs-pivotview #pivotview1 id='PivotView1' [dataSourceSettings]=dataSourceSettings1 allowPdfExport='true' width=width></ejs-pivotview></div>
-  <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
+  providers: [FieldListService],
+  // specifies the template string for the pivot table component
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width showFieldList='true'></ejs-pivotview></div>`
 })
-export class AppComponent implements OnInit {
-  public width: string;
-  public dataSourceSettings: IDataOptions;
-  public dataSourceSettings1: IDataOptions;
-  public button: Button;
-  public firstGridPdfExport: Promise<Object>;
 
-    @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotView;
-
-    @ViewChild('pivotview1')
-    public pivotGridObj1: PivotView;
-
+export class AppComponent {
+    public dataSourceSettings: IDataOptions;
     ngOnInit(): void {
-
-        this.width = "100%";
-
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
-            expandAll: false,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [],
-            valueSortSettings: { headerText: 'FY 2015##Q1##Amount', headerDelimiter: '##', sortOrder: 'Descending' }
+            catalog: 'Adventure Works DW 2008 SE',
+            cube: 'Adventure Works',
+            providerType: 'SSAS',
+            enableSorting: true,
+            url: 'https://bi.syncfusion.com/olap/msmdpump.dll',
+            localeIdentifier: 1033,
+            rows: [
+                { name: '[Customer].[Customer Geography]', caption: 'Customer Geography' },
+            ],
+            columns: [
+                {
+                    name: "[Core Product Group]",
+                    isNamedSet: true
+                },
+                { name: '[Measures]', caption: 'Measures' },
+            ],
+            values: [
+                { name: '[Measures].[Customer Count]', caption: 'Customer Count' },
+                { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' }
+            ],
+            filters: [
+                { name: '[Date].[Fiscal]', caption: 'Date Fiscal' },
+            ],
+            filterSettings: [
+                {
+                    name: '[Date].[Fiscal]', items: ['[Date].[Fiscal].[Fiscal Quarter].&[2002]&[4]',
+                        '[Date].[Fiscal].[Fiscal Year].&[2005]'],
+                    levelCount: 3
+                }
+            ]
         };
-
-        this.dataSourceSettings1 = {
-            dataSource: Pivot_Data,
-            expandAll: false,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [],
-            valueSortSettings: { headerText: 'FY 2015##Q1##Amount', headerDelimiter: '##', sortOrder: 'Descending' }
-        };
-
-        this.button = new Button({ isPrimary: true });
-        this.button.appendTo('#export');
-
-        this.button.element.onclick = (): void => {
-            this.firstGridPdfExport = this.pivotGridObj.grid.pdfExport({}, true);
-            this.firstGridPdfExport.then((pdfData: Object) => {
-                this.pivotGridObj1.pdfExport({}, false, pdfData);
-            });
-        };
+        this.width = "100%";
     }
-}
-
+ }
 
 

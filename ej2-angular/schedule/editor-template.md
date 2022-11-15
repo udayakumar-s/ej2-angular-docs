@@ -529,7 +529,7 @@ The following code example shows you how to customize the `moreEventsClick` prop
 
 ### How to close the editor window manually
 
-You can close the editor window by using [closeEditor](https://ej2.syncfusion.com/angular/documentation/api/schedule/#closeeditor) public method. The following code example demonstrates the how to close editor window manually.
+You can close the editor window by using [closeEditor](https://ej2.syncfusion.com/angular/documentation/api/schedule/#closeeditor) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

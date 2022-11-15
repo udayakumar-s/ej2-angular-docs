@@ -1,13 +1,13 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, VirtualScrollService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
   selector: 'app-container',
-  providers: [VirtualScrollService],
+  providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings enableVirtualization='true'[width]=width></ejs-pivotview>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width showFieldList='true'></ejs-pivotview></div>`
 })
 
 export class AppComponent {
@@ -17,10 +17,11 @@ export class AppComponent {
             catalog: 'Adventure Works DW 2008 SE',
             cube: 'Adventure Works',
             providerType: 'SSAS',
+            enableSorting: true,
             url: 'https://bi.syncfusion.com/olap/msmdpump.dll',
             localeIdentifier: 1033,
             rows: [
-                { name: '[Customer].[Customer]', caption: 'Customer' },
+                { name: '[Customer].[Customer Geography]', caption: 'Customer Geography' },
             ],
             columns: [
                 { name: '[Product].[Product Categories]', caption: 'Product Categories' },
@@ -39,8 +40,7 @@ export class AppComponent {
                         '[Date].[Fiscal].[Fiscal Year].&[2005]'],
                     levelCount: 3
                 }
-            ],
-            formatSettings: [{ name: '[Measures].[Internet Sales Amount]', format: 'C0' }]
+            ]
         };
         this.width = "100%";
     }

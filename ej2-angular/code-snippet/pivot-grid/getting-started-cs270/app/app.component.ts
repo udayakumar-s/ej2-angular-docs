@@ -1,23 +1,38 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { IDataOptions, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true'
-  width=width></ejs-pivotview></div>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  [gridSettings]='gridSettings' (enginePopulated)='enginePopulated($event)' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
+    public gridSettings: GridSettings;
+    public columnGrandTotalIndex;
+    public rowGrandTotalIndex;
+
+    @ViewChild('pivotview', { static: false })
+    public pivotGridObj: PivotView;
+
+    headerCell(args: any): void {
+        (this.pivotGridObj.renderModule as any).columnCellBoundEvent(args);
+        //triggers for every cell
+    },
+
+    enginePopulated(args: any): void {
+       this.pivotGridObj.grid.headerCellInfo = this.headerCell.bind(this);
+    },
 
     ngOnInit(): void {
 
-        this.width = "100%";
+        this.width = '100%';
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
@@ -27,9 +42,12 @@ export class AppComponent implements OnInit {
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [],
-            showGrandTotals: false
+            filters: []
         };
+
+        this.gridSettings = {
+            columnWidth: 140,
+        } as GridSettings;
     }
 }
 

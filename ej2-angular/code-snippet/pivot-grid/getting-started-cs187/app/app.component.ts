@@ -1,48 +1,49 @@
 
 
-import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IDataOptions, CalculatedFieldService, PivotView, NumberFormattingService } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource.ts';
+import { Button } from '@syncfusion/ej2-buttons';
 
 @Component({
   selector: 'app-container',
-  // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width></ejs-pivotview>`
+  providers: [CalculatedFieldService, NumberFormattingService],
+  template: `<div class="col-md-8">
+  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowNumberFormatting='true' allowCalculatedField='true' width=width></ejs-pivotview></div>
+  <div class="col-md-2"><button ej-button id='calculatedfield'>Calculated Field</button></div>`
 })
+export class AppComponent implements OnInit {
+  public dataSourceSettings: IDataOptions;
+  public button: Button;
+  public width: string;
 
-export class AppComponent {
-    public dataSourceSettings: IDataOptions;
+    @ViewChild('pivotview', {static: false})
+    public pivotGridObj: PivotView;
+
     ngOnInit(): void {
         this.dataSourceSettings = {
-            catalog: 'Adventure Works DW 2008 SE',
-            cube: 'Adventure Works',
-            providerType: 'SSAS',
+            dataSource: Pivot_Data,
+            expandAll: false,
             enableSorting: true,
-            url: 'https://bi.syncfusion.com/olap/msmdpump.dll',
-            localeIdentifier: 1033,
-            rows: [
-                { name: '[Customer].[Customer Geography]', caption: 'Customer Geography' },
-            ],
-            columns: [
-                { name: '[Product].[Product Categories]', caption: 'Product Categories' },
-                { name: '[Measures]', caption: 'Measures' },
-            ],
-            values: [
-                { name: '[Measures].[Customer Count]', caption: 'Customer Count' },
-                { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' }
-            ],
-            filters: [
-                { name: '[Date].[Fiscal]', caption: 'Date Fiscal' },
-            ],
-            filterSettings: [
-                {
-                    name: '[Date].[Fiscal]', items: ['[Date].[Fiscal].[Fiscal Quarter].&[2002]&[4]',
-                        '[Date].[Fiscal].[Fiscal Year].&[2005]'],
-                    levelCount: 3
-                }
-            ]
+            drilledMembers: [{ name: 'Country', items: ['France'] }],
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }, { name: 'Total', caption: 'Total Amount', type: 'CalculatedField' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: [],
+            calculatedFieldSettings: [{ name: 'Total', formula: '"Sum(Amount)"+"Sum(Sold)"' }]
         };
-        this.width = "100%";
+
+        this.width = '100%';
+
+        this.button = new Button({ isPrimary: true });
+        this.button.appendTo('#calculatedfield');
+
+        this.button.element.onclick = (): void => {
+            this.pivotGridObj.numberFormattingModule.showNumberFormattingDialog();
+        };
     }
- }
+}
+
 
 

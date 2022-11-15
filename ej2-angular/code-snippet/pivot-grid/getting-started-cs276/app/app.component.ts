@@ -1,39 +1,37 @@
 
 
-import { Component, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView, ToolbarService, ToolbarItems, DisplayOption, IDataSet, ChartTypeOptions
-} from '@syncfusion/ej2-angular-pivotview';
+import { Component, OnInit } from '@angular/core';
+import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [ ToolbarService ],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showToolbar='true' width='100%' [displayOption]='displayOption' height='350' [toolbar]='toolbarOptions' [chartTypes]= 'chartTypeOptions'></ejs-pivotview></div>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings enableValueSorting='true' width=width></ejs-pivotview>`
 })
-
-export class AppComponent {
+export class AppComponent implements OnInit {
+    public width: string;
     public dataSourceSettings: IDataOptions;
-    public toolbarOptions: ToolbarItems[];
-    public displayOption: DisplayOption;
-    public chartTypeOptions: ChartTypeOptions[];
-
-    @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotView;
 
     ngOnInit(): void {
-        this.displayOption = { view: 'Both' } as DisplayOption;
-        this.chartTypeOptions = ['Column', 'Bar', 'Line', 'Area'] as ChartTypeOptions[];
-        this.toolbarOptions = [ 'Grid','Chart' ] as ToolbarItems[];
+
+        this.width = "100%";
+
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            enableSorting: true,
+            expandAll: true,
+            valueSortSettings: {
+                headerText: 'FY 2015##Q1##Sold Amount',
+                headerDelimiter: '##',
+                sortOrder: 'Descending'
+            },
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: [],
         };
     }
- }
+}
+
 
 

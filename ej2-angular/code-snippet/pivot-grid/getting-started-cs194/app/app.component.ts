@@ -9,7 +9,6 @@ import { IDataOptions, IDataSet, PivotView, FieldListService, CalculatedFieldSer
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width allowCalculatedField='true' showFieldList='true'></ejs-pivotview>`
 })
-
 export class AppComponent {
     public dataSourceSettings: IDataOptions;
     ngOnInit(): void {
@@ -29,7 +28,8 @@ export class AppComponent {
             ],
             values: [
                 { name: '[Measures].[Customer Count]', caption: 'Customer Count' },
-                { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' }
+                { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' },
+                { name: 'Order on Discount', isCalculatedField: true }
             ],
             filters: [
                 { name: '[Date].[Fiscal]', caption: 'Date Fiscal' },
@@ -57,6 +57,6 @@ export class AppComponent {
         };
         this.width = "100%";
     }
-}
+ }
 
 

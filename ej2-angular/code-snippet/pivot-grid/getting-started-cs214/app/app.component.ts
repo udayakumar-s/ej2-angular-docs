@@ -1,66 +1,63 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, DisplayOption, PivotChartService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
-import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
-import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
+import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { Button } from '@syncfusion/ej2-buttons';
+import { PdfExportProperties } from '@syncfusion/ej2-grids';
 import { Pivot_Data } from './datasource.ts';
+
 @Component({
-    selector: 'app-container',
-    providers: [PivotChartService],
-    template: `<div id="dropdown-control" style="margin-bottom:5px;">
-            <table style="width: 350px;margin-left: 50px;">
-                <tbody>
-                    <tr style="height: 50px">
-                        <td>
-                            <div><b>Accumulation Chart:</b>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <select id="charttypes" name="ddl-view-mode">
-                                    <option value='Pie'>Pie</option>
-                                    <option value='Doughnut'>Doughnut</option>
-                                    <option value='Funnel'>Funnel</option>
-                                    <option value='Pyramid'>Pyramid</option>
-                                </select>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
+  selector: 'app-container',
+  template: `<div class="col-md-8">
+  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' width=width></ejs-pivotview></div>
+  <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
-    public pivotData: IDataSet[];
-    public dataSourceSettings: IDataOptions;
-    public chartSettings: ChartSettings;
-    public displayOption: DisplayOption;
-    public chartTypesDropDown: DropDownList;
-    @ViewChild('pivotview', { static: false })
-    public pivotGridObj: PivotViewComponent;
+  public width: string;
+  public dataSourceSettings: IDataOptions;
+  public button: Button;
+  public pdfExportProperties: PdfExportProperties;
 
-    onChange(args: ChangeEventArgs): void {
-        this.chartSettings = { chartSeries: { type: args.value } } as ChartSettings;
-    }
+    @ViewChild('pivotview', {static: false})
+    public pivotGridObj: PivotView;
+
     ngOnInit(): void {
+
+        this.width = "100%";
+
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
-            columns: [{ name: 'Year' }, { name: 'Products' }],
-            rows: [{ name: 'Country' }, { name: 'Quarter' }],
-            formatSettings: [{ name: 'Amount', format: 'C' }],
-            values: [{ name: 'Amount' }, { name: 'Sold' }]
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: [],
+            valueSortSettings: { headerText: 'FY 2015##Q1##Amount', headerDelimiter: '##', sortOrder: 'Descending' }
         };
-        this.displayOption = { view: 'Chart' } as DisplayOption;
-        this.chartSettings = { chartSeries: { type: 'Pie' } } as ChartSettings;
-        this.chartTypesDropDown = new DropDownList({
-            floatLabelType: 'Auto',
-            change: this.onChange.bind(this)
-        });
-        this.chartTypesDropDown.appendTo('#charttypes');
+
+        this.button = new Button({ isPrimary: true });
+        this.button.appendTo('#export');
+
+        this.button.element.onclick = (): void => {
+            this.pdfExportProperties = {
+                theme: {
+                    header: {
+                        fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true,
+                        borders: { color: '#64FA50', lineStyle: 'Thin' }
+                    },
+                    record: {
+                        fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true
+                    },
+                    caption: {
+                        fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true
+                    }
+                }
+            };
+            this.pivotGridObj.pdfExport(this.pdfExportProperties);
+        };
     }
 }
+
 
 

@@ -1,38 +1,41 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, GroupingBarService, GroupingService } from '@syncfusion/ej2-angular-pivotview';
-import { Group_Data } from './datasource.ts';
+import { IDataOptions, PivotView, GroupingBarService, PivotActionCompleteEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [GroupingBarService, GroupingService],
+  providers: [GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' allowGrouping='true' width=width height=height></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' (actionComplete)='actionComplete($event)' width=width></ejs-pivotview>`
 })
 
 export class AppComponent {
 
     public width: string;
-    public height: number;
     public dataSourceSettings: IDataOptions;
+
+    actionComplete(args: PivotActionCompleteEventArgs): void {
+       if (args.actionName == 'Field sorted' || args.actionName == 'Field filtered') {
+            // Triggers when the grouping bar UI actions such as sorting and filtering are completed.
+        }
+    }
 
     ngOnInit(): void {
 
         this.width = "100%";
-        this.height = 350;
 
         this.dataSourceSettings = {
-            dataSource: Group_Data,
+            dataSource: Pivot_Data,
             expandAll: false,
+            allowLabelFilter: true,
+            allowValueFilter: true,
             enableSorting: true,
-            formatSettings: [{ name: 'Amount', format: 'C' }, { name: 'Product_ID', format: 'N0' },
-            { name: 'Date', type: 'date', format: 'dd/MM/yyyy-hh:mm a' }],
-            rows: [{ name: 'Date', caption: 'Date' }],
-            columns: [{ name: 'Product_ID', caption: 'Product ID' },
-            { name: 'Products', caption: 'Products' }],
-            values: [{ name: 'Sold', caption: 'Unit Sold' },
-            { name: 'Amount', caption: 'Sold Amount' }],
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
     }

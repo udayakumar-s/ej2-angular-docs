@@ -8,17 +8,13 @@ import { Pivot_Data } from './datasource.ts';
   selector: 'app-container',
   providers: [GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' showValuesButton='true' (onFieldDropped)='fieldDropped($event)' width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true'
+  [groupingBarSettings]='groupingSettings' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
     public groupingSettings: GroupingBarSettings;
-
-    fieldDropped(args: FieldDroppedEventArgs): void {
-        //Triggers, whenever field is dropped in an axis.
-        args.droppedField.caption = args.droppedField.name + " --> " + args.droppedAxis;
-    }
 
     ngOnInit(): void {
 
@@ -33,6 +29,10 @@ export class AppComponent implements OnInit {
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
+
+        this.groupingSettings = {
+            showValueTypeIcon: true
+        } as GroupingBarSettings;
     }
 }
 

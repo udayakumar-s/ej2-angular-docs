@@ -19,17 +19,17 @@ End user can also hide grand totals for row or columns separately by setting the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs270/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs283/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs270/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs283/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs270/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs283/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs270" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs283" %}
 
 ## Show Grand Totals at Top
 
@@ -37,17 +37,17 @@ Allows to show grand totals either at top or bottom in rows and columns using th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs271/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs284/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs271/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs284/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs271/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs284/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs271" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs284" %}
 
 ## Show or hide sub-totals
 
@@ -57,17 +57,17 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs272/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs285/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs272/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs285/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs272/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs285/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs272" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs285" %}
 
 ## Show or hide sub-totals for specific fields
 
@@ -77,17 +77,17 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs273/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs286/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs273/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs286/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs273/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs286/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs273" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs286" %}
 
 ## Show or hide totals using toolbar
 
@@ -95,17 +95,17 @@ It can also be achieved using built-in toolbar options by setting the [`showTool
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs274/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs287/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs274/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs287/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs274/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs287/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs274" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs287" %}
 
 Additionally, with the built-in option available in the grand totals drop-down menu, the grand totals can be dynamically displayed at the top or bottom of the pivot table's row and column axes. By default, the grand totals are displayed at the bottom of the pivot table's row and column axes.
 

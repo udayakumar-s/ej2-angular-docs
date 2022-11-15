@@ -36,17 +36,17 @@ The following table shows built-in toolbar options and its actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs275/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs288/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs275/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs288/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs275/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs288/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs275" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs288" %}
 
 ## Show desired chart types in the dropdown menu
 
@@ -54,17 +54,17 @@ By default, all chart types are displayed in the dropdown menu included in the t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs276/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs289/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs276/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs289/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs276/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs289/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs276" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs289" %}
 
 ## Switch the chart to multiple axes
 
@@ -93,17 +93,17 @@ In addition to the existing built-in toolbar items, new toolbar item(s) may also
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs277/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs290/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs277/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs290/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs277/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs290/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs277" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs290" %}
 
 In the above topic, we have seen how to add an icon as one of the toolbar item in toolbar panel. In the next topic, we are going to see how to frame the entire toolbar panel and how to add a custom control in it.
 
@@ -153,17 +153,17 @@ The current pivot report can be saved as a JSON file in the desired path and loa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs278/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs291/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs278/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs291/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs278/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs291/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs278" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs291" %}
 
 ## Events
 
@@ -199,17 +199,17 @@ The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs279/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs292/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs279/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs292/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs279/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs292/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs279" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs292" %}
 
 ### BeforeExport
 
@@ -219,17 +219,17 @@ For example, you can add the header and footer for the pdf document by setting t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs280/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs293/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs280/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs293/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs280/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs293/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs280" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs293" %}
 
 ### ActionBegin
 
@@ -262,17 +262,17 @@ In the below sample, toolbar UI actions such as add new report and save current 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs281/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs294/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs281/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs294/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs281/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs294/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs281" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs294" %}
 
 ### ActionComplete
 
@@ -302,17 +302,17 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs282/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs295/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs282/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs295/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs282/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs295/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs282" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs295" %}
 
 ### ActionFailure
 
@@ -341,17 +341,17 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs283/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs296/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs283/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs296/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs283/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs296/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs283" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs296" %}
 
 ## See Also
 

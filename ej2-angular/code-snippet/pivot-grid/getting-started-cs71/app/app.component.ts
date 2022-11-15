@@ -38,7 +38,10 @@ export class AppComponent implements OnInit {
         this.button.appendTo('#export');
 
         this.button.element.onclick = (): void => {
-            this.pivotGridObj.excelExportModule.exportToExcel('csv');
+            let excelExportProperties = {
+                fileName: 'csvexport.csv',
+            };
+            this.pivotGridObj.csvExport(excelExportProperties);
         };
     }
 }

@@ -27,26 +27,6 @@ To use field list, you need to inject the `FieldListService` module in pivot tab
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs75/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs75/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs75/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs75" %}
-
-## Stand-alone Field List (Fixed)
-
-The field list can be rendered in a static position, anywhere in web page layout, like a separate component. To do so, you need to set [`renderMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist#rendermode) property to **Fixed** in pivot fieldlist.
-
-> To make field list interact with pivot table, you need to use the **updateView** and **update** methods for data source update in both field list and pivot table simultaneously.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs76/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -59,13 +39,11 @@ The field list can be rendered in a static position, anywhere in web page layout
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs76" %}
 
-## Search desired field
+## Stand-alone Field List (Fixed)
 
-End user can search for desired field in the field list UI by typing the field name into the search box at runtime. It can be enabled by setting the [`enableFieldSearching`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/#enablefieldsearching) property to **true** via code-behind.
+The field list can be rendered in a static position, anywhere in web page layout, like a separate component. To do so, you need to set [`renderMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist#rendermode) property to **Fixed** in pivot fieldlist.
 
-> By default, field search option is disabled in the field list UI.
-
-To enable search box in the static field list UI, set the [`enableFieldSearching`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/#enablefieldsearching) property  to **true** in `ejs-pivotfieldlist`.
+> To make field list interact with pivot table, you need to use the **updateView** and **update** methods for data source update in both field list and pivot table simultaneously.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,7 +59,13 @@ To enable search box in the static field list UI, set the [`enableFieldSearching
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs77" %}
 
-To enable search box in the pivot table's built-in popup field list UI, set the [`enableFieldSearching`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablefieldsearching) property to **true** in `ejs-pivotview`.
+## Search desired field
+
+End user can search for desired field in the field list UI by typing the field name into the search box at runtime. It can be enabled by setting the [`enableFieldSearching`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/#enablefieldsearching) property to **true** via code-behind.
+
+> By default, field search option is disabled in the field list UI.
+
+To enable search box in the static field list UI, set the [`enableFieldSearching`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/#enablefieldsearching) property  to **true** in `ejs-pivotfieldlist`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,15 +81,7 @@ To enable search box in the pivot table's built-in popup field list UI, set the 
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs78" %}
 
-## Add or remove fields
-
-Using check box besides each field, end user can select or unselect to add or remove fields respectively from the report at runtime.
-
-![output](images/fieldlist_treeview.png)
-
-## Remove specific field(s) from displaying
-
-When a data source is bound to the component, fields will be automatically populated inside the Field List. In such case, user can also restrict specific field(s) from displaying. To do so, set the appropriate field name(s) in [`excludeFields`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#excludefields) property belonging to [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#excludefields).
+To enable search box in the pivot table's built-in popup field list UI, set the [`enableFieldSearching`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablefieldsearching) property to **true** in `ejs-pivotview`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,6 +96,50 @@ When a data source is bound to the component, fields will be automatically popul
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs79" %}
+
+## Group fields under desired folder name
+
+In the field list UI, you can display fields by grouping them under the desired folder name. It can only be configured via code-behind by setting the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptionsModel/#groupname) property in [`fieldMapping`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#fieldmapping).
+
+> You can only group fields to one level using the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptionsModel/#groupname) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs80/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs80/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs80/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs80" %}
+
+## Add or remove fields
+
+Using check box besides each field, end user can select or unselect to add or remove fields respectively from the report at runtime.
+
+![output](images/fieldlist_treeview.png)
+
+## Remove specific field(s) from displaying
+
+When a data source is bound to the component, fields will be automatically populated inside the Field List. In such case, user can also restrict specific field(s) from displaying. To do so, set the appropriate field name(s) in [`excludeFields`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#excludefields) property belonging to [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#excludefields).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs81/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs81/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs81/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs81" %}
 
 ## Re-arranging fields
 
@@ -180,47 +200,6 @@ The sample code below shows the built-in field list dialog using `document.body
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs80/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs80/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs80/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs80" %}
-
-## Show field list using toolbar
-
-It can also be viewed in toolbar by setting [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showfieldlist) and [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showtoolbar) properties in pivot table to **true**. Also, include the item **FieldList** within the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbar) property in pivot table. When toolbar is enabled, field list icon will be automatically added into the toolbar and the icon won't appear on top left corner in the pivot table component.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs81/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs81/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs81/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs81" %}
-
-## Invoking dynamic Field List (Customized)
-
-Also, you can display the field list dialog independently through other means. For example, you can invoke the field list dialog on an external button click. To do so, set `renderMode` property to `Popup` and  since on button click, field list dialog will be invoked.
-
-> * Meanwhile, you can display the field list dialog over specific target element within a web page using `target` property. By default, the `target` value is "null", which by default refers the `document.body` element.
-> * To make field list interact with pivot table, you need to use the **updateView** and **update** methods for data source update in both field list and pivot table simultaneously.
-
-The below sample code illustrates the field list dialog invoked on an external button click.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs82/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -233,11 +212,9 @@ The below sample code illustrates the field list dialog invoked on an external b
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs82" %}
 
-## Set caption to fields which isn’t bound to the report
+## Show field list using toolbar
 
-One can set the caption to all fields from the data source even if it is not bound to the actual report. It can be achieved using the [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist#enginepopulated) event. On doing so, caption of the respective field will be displayed in both grouping bar and field list.
-
-In the sample, we have set caption to the fields `Year` and `Quarter` dynamically.
+It can also be viewed in toolbar by setting [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showfieldlist) and [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showtoolbar) properties in pivot table to **true**. Also, include the item **FieldList** within the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbar) property in pivot table. When toolbar is enabled, field list icon will be automatically added into the toolbar and the icon won't appear on top left corner in the pivot table component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -253,11 +230,14 @@ In the sample, we have set caption to the fields `Year` and `Quarter` dynamicall
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs83" %}
 
-## Show values button
+## Invoking dynamic Field List (Customized)
 
-During runtime, the **Values** button in the field list can be moved to a different position (i.e., different index) among other fields in the column or row axis. To enable the **Values** button, set the [`showValuesButton`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showvaluesbutton) property to **true**.
+Also, you can display the field list dialog independently through other means. For example, you can invoke the field list dialog on an external button click. To do so, set `renderMode` property to `Popup` and  since on button click, field list dialog will be invoked.
 
-> This support is only available for relational data sources.
+> * Meanwhile, you can display the field list dialog over specific target element within a web page using `target` property. By default, the `target` value is "null", which by default refers the `document.body` element.
+> * To make field list interact with pivot table, you need to use the **updateView** and **update** methods for data source update in both field list and pivot table simultaneously.
+
+The below sample code illustrates the field list dialog invoked on an external button click.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -272,6 +252,46 @@ During runtime, the **Values** button in the field list can be moved to a differ
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs84" %}
+
+## Set caption to fields which isn’t bound to the report
+
+One can set the caption to all fields from the data source even if it is not bound to the actual report. It can be achieved using the [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist#enginepopulated) event. On doing so, caption of the respective field will be displayed in both grouping bar and field list.
+
+In the sample, we have set caption to the fields `Year` and `Quarter` dynamically.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs85/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs85/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs85/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs85" %}
+
+## Show values button
+
+During runtime, the **Values** button in the field list can be moved to a different position (i.e., different index) among other fields in the column or row axis. To enable the **Values** button, set the [`showValuesButton`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showvaluesbutton) property to **true**.
+
+> This support is only available for relational data sources.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs86/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs86/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs86/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs86" %}
 
 ## Events
 
@@ -295,17 +315,17 @@ For example, if we perform a sort operation within the field list, the field lis
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs85/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs87/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs85/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs87/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs85/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs87/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs85" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs87" %}
 
 ### OnFieldDropped
 
@@ -313,17 +333,17 @@ The event [`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs86/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs88/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs86/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs88/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs86/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs88/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs86" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs88" %}
 
 ### ActionBegin
 
@@ -353,17 +373,17 @@ In the below sample, opening pop-up field list can be restricted by setting the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs87/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs89/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs87/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs89/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs87/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs89/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs87" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs89" %}
 
 ### ActionComplete
 
@@ -391,17 +411,17 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs88/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs90/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs88/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs90/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs88/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs90/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs88" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs90" %}
 
 ### ActionFailure
 
@@ -423,17 +443,17 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs89/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs91/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs89/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs91/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs89/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs91/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs89" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs91" %}
 
 ## See Also
 

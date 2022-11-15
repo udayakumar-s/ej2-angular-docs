@@ -33,17 +33,17 @@ Member sorting can also be configured using the [`sortSettings`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs260/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs273/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs260/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs273/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs260/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs273/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs260" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs273" %}
 
 ### Alphanumeric Sorting
 
@@ -51,17 +51,17 @@ Usually string sorting is applied to field members even if it starts with number
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs261/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs274/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs261/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs274/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs261/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs274/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs261" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs274" %}
 
 ### Custom Sorting
 
@@ -73,17 +73,17 @@ Allows to sort field headers (aka, members) in rows and columns based on user-de
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs262/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs275/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs262/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs275/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs262/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs275/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs262" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs275" %}
 
 ## Value Sorting
 
@@ -101,17 +101,17 @@ The value sorting can also be configured using the [`valueSortSettings`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs263/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs276/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs263/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs276/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs263/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs276/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs263" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs276" %}
 
 ## Event
 
@@ -131,17 +131,17 @@ When sorting is applied, the event [`onHeadersSort`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs264/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs277/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs264/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs277/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs264/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs277/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs264" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs277" %}
 
 ### ActionBegin
 
@@ -153,8 +153,8 @@ The event [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/p
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting/#Member-Sorting)| Sort field |
-| [`Value sort icon`](./sorting/#Value-Sorting)| Sort value|
+| [`Sort field`](./sorting/#member-sorting)| Sort field |
+| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -166,17 +166,17 @@ In the below sample, sort action can be restricted by setting the **args.cancel*
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs265/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs278/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs265/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs278/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs265/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs278/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs265" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs278" %}
 
 ### ActionComplete
 
@@ -188,8 +188,8 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting/#Member-Sorting)| Field sorted|
-| [`Value sort icon`](./sorting/#Value-Sorting)| Value sorted|
+| [`Sort field`](./sorting/#member-sorting)| Field sorted|
+| [`Value sort icon`](./sorting/#value-sorting)| Value sorted|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -199,17 +199,17 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs266/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs279/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs266/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs279/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs266/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs279/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs266" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs279" %}
 
 ### ActionFailure
 
@@ -219,21 +219,21 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting/#Member-Sorting)| Sort field |
-| [`Value sort icon`](./sorting/#Value-Sorting)| Sort value|
+| [`Sort field`](./sorting/#member-sorting)| Sort field |
+| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
 
 * `errorInfo`: It holds the error information of the current UI action.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs267/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs280/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs267/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs280/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs267/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs280/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs267" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs280" %}

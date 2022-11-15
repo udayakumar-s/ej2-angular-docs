@@ -1,44 +1,56 @@
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
-import { Button } from '@syncfusion/ej2-buttons';
-import { Pivot_Data } from './datasource.ts';
+import { Component, OnInit } from '@angular/core';
+import { IDataOptions, IDataSet, PivotView, PagerSettings, PageSettings, PagerService } from '@syncfusion/ej2-angular-pivotview';
+import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
+import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
 
 @Component({
-  selector: 'app-container',
-  template: `<div class="col-md-8">
-  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' width=width></ejs-pivotview></div>
-  <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
+    selector: 'app-container',
+    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width [gridSettings]='gridSettings' enablePaging="true" [pageSettings]="pageSettings" [pagerSettings]="pagerSettings"></ejs-pivotview>`,
+    providers: [PagerService]
 })
 export class AppComponent implements OnInit {
-  public width: string;
-  public dataSourceSettings: IDataOptions;
-  public button: Button;
-
-    @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotView;
+    public dataSourceSettings: IDataOptions;
+    public remoteData: DataManager;
+    public width: string;
+    public gridSettings: GridSettings;
+    public pageSettings: PageSettings;
+    public pagerSettings: PagerSettings;
 
     ngOnInit(): void {
-
-        this.width = "100%";
-
-        this.dataSourceSettings = {
-            dataSource: Pivot_Data,
-            expandAll: false,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [],
-            valueSortSettings: { headerText: 'FY 2015##Q1##Amount', headerDelimiter: '##', sortOrder: 'Descending' }
+        this.remoteData = new DataManager({
+            url: 'https://bi.syncfusion.com/northwindservice/api/orders',
+            adaptor: new WebApiAdaptor,
+            crossDomain: true
+        });
+        this.width = '100%';
+        this.pageSettings = {
+            rowPageSize: 10,
+            columnPageSize: 5,
+            currentColumnPage: 1,
+            currentRowPage: 1
         };
-
-        this.button = new Button({ isPrimary: true });
-        this.button.appendTo('#export');
-
-        this.button.element.onclick = (): void => {
-            this.pivotGridObj.pdfExportModule.exportToPDF();
+        this.pagerSettings = {
+            position: 'Bottom',
+            enableCompactView: false,
+            showColumnPager: true,
+            showRowPager: true,
+            columnPageSizes: [5, 10, 15, 20, 30],
+            rowPageSizes: [10, 20, 30, 40, 50],
+            isInversed: false,
+            showColumnPageSize: true,
+            showRowPageSize: true
+        };
+        this.gridSettings = { columnWidth: 120 };
+        this.dataSourceSettings = {
+            dataSource: this.remoteData,
+            expandAll: true,
+            filters: [],
+            columns: [{ name: 'ProductName', caption: 'Product Name' }],
+            rows: [{ name: 'ShipCountry', caption: 'Ship Country' }, { name: 'ShipCity', caption: 'Ship City' }],
+            formatSettings: [{ name: 'UnitPrice', format: 'C0' }],
+            values: [{ name: 'Quantity' }, { name: 'UnitPrice', caption: 'Unit Price' }]
         };
     }
 }

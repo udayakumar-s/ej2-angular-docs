@@ -1,13 +1,12 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
   selector: 'app-container',
-  providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width showFieldList='true'></ejs-pivotview></div>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width></ejs-pivotview>`
 })
 
 export class AppComponent {
@@ -40,7 +39,8 @@ export class AppComponent {
                         '[Date].[Fiscal].[Fiscal Year].&[2005]'],
                     levelCount: 3
                 }
-            ]
+            ],
+            formatSettings: [{ name: '[Measures].[Internet Sales Amount]', format: 'C0' }]
         };
         this.width = "100%";
     }
