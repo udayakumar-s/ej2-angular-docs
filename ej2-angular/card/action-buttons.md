@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Action buttons in Angular Card component
 
-You can include Action buttons within the Card and customize them. Action button is a `div`
-element with `e-card-actions` class followed by button tag or anchor tag within the card root element.
+You can include Action buttons within the Card and customize them. Action button is a `div` element with `e-card-actions` class followed by button tag or anchor tag within the card root element.
 
 * For adding action buttons you can create button or anchor tag with `e-card-btn` class within the card action element.
 
@@ -26,8 +25,7 @@ element with `e-card-actions` class followed by button tag or anchor tag within 
 
 ## Vertical
 
-By default, action buttons positioned in horizontal alignment , and also it can be aligned to show in vertical alignment by adding
-`e-card-vertical` class.
+By default, action buttons positioned in horizontal alignment , and also it can be aligned to show in vertical alignment by adding `e-card-vertical` class.
 
 ```html
     <div class = "e-card">

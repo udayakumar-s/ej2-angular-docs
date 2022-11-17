@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Range slider component
 
-The Slider is characterized with complete ARIA Accessibility support that helps to access
-by on-screen readers and other assistive technology devices. This component is designed with the
-reference of guidelines document given in the [WAI ARAI Accessibility Practices](https://www.w3.org/TR/wai-aria-practices/#slider).
+The Slider is characterized with complete ARIA Accessibility support that helps to access by on-screen readers and other assistive technology devices. This component is designed with the reference of guidelines document given in the [WAI ARAI Accessibility Practices](https://www.w3.org/TR/wai-aria-practices/#slider).
 
 The Slider component uses the `Slider` role and the following ARIA properties for its element based on the state.
 
@@ -28,8 +26,7 @@ The Slider component uses the `Slider` role and the following ARIA properties fo
 
 ## Keyboard interaction
 
-The Keyboard interaction of the Slider component is designed based on the
-[WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices/#slider ) described for Slider.
+The Keyboard interaction of the Slider component is designed based on the [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices/#slider ) described for Slider.
 Users can use the following shortcut keys to interact with the Slider.
 
 <!-- markdownlint-disable MD033 -->

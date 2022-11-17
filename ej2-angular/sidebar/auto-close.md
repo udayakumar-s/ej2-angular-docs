@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 The Sidebar often behaves differently on mobile display and differently on desktop display.
 It has an effective feature that offers to set it in opened or closed state depending on the specified screen resolution.
-This functionality can be achieved through [`mediaQuery`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#mediaquery) property that allows you to set the Sidebar in an expanded state
- or collapsed state only in user-defined resolution.
+This functionality can be achieved through [`mediaQuery`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#mediaquery) property that allows you to set the Sidebar in an expanded state or collapsed state only in user-defined resolution.
 
 > window.matchMedia() method returns the object of parsed `media query` string.
 The value of matchMedia() can be any of the media features of CSS @media rule. For example, min-width and max-width.

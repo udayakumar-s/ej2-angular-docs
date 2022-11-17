@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Calendar component
+# Getting started with Angular Calendar component
 
-The following section explains the steps required to create a
-simple Calendar component and also it demonstrates the basic usage of the Calendar. To get started quickly with angular DropDownList component using angular CLI, you can check the video below.
+The following section explains the steps required to create a simple Calendar component and also it demonstrates the basic usage of the Calendar. To get started quickly with angular DropDownList component using angular CLI, you can check the video below.
 
 {% youtube "https://www.youtube.com/watch?v=I_A5xksToN0" %}
 
@@ -152,8 +151,7 @@ export class AppComponent  { }
 
 ## Running the application
 
-After completing the configuration required to render a basic Calendar, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic Calendar, run the following command to display the output in your default browser.
 
 ```
 ng serve

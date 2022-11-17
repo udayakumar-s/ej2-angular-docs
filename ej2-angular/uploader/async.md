@@ -16,15 +16,12 @@ The upload process requires save and remove action URL to manage the upload proc
     *   The save action is necessary to handle the upload operation.
     *   The remove action is optional, one can handle the removed files from server.
 
-The File can be upload automatically or manually. For more information, you can refer to the
-`Auto Upload` section from the documentation.
+The File can be upload automatically or manually. For more information, you can refer to the `Auto Upload` section from the documentation.
 
 ## Multiple file upload
 
 By Default, the uploader component allows you to select and upload multiple files simultaneously.
-The selected files are organized in a list for every file selection until you clear it by clicking clear
-button that is shown in footer. You can add the multiple attributes to original input element of file by
-enabling the multiple file selection. The following example explains about `multiple` file upload settings.
+The selected files are organized in a list for every file selection until you clear it by clicking clear button that is shown in footer. You can add the multiple attributes to original input element of file by enabling the multiple file selection. The following example explains about `multiple` file upload settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,8 +63,7 @@ The following example explains about single file upload settings.
 
 The save action handler upload the files that needs to be specified in the `saveUrl` property.
 The save handler receives the submitted files and manages the save process in server.
-After uploading the files to server location, the color of the selected file name changes to green and
-the remove icon is changed as bin icon.
+After uploading the files to server location, the color of the selected file name changes to green and the remove icon is changed as bin icon.
 
     *   When the file is uploaded successfully, the event **success** triggers to handle the operation after upload.
     *   When the file is failed to upload, the event **failure** triggers with information, which cause this failure.

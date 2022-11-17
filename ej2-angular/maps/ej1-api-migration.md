@@ -30,6 +30,8 @@ This article describes the API migration process of Maps component from Essentia
 |Title Alignment| Not Applicable |**Property:** *title.alignment*<br/><br/> `<ejs-maps id="maps" [titlleSettings]="titleSettings"></ejs-maps>` <br/> **TS:** public titleSettings: Object = { alignment: "Center" }|
 |Subtitle Alignment| Not Applicable |**Property:** *title.subtitle.alignment*<br/><br/> `<ejs-maps id="maps" [titlleSettings]="titleSettings"></ejs-maps>` <br/> **TS:** public titleSettings: Object = { subTitleSettings: { alignment: "Center" } }|
 
+<!-- markdownlint-disable MD038 -->
+
 ## Zooming Customization
 
 | **Behavior** | **API in Essential JS 1** | **API in Essential JS 2** |

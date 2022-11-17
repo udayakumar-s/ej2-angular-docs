@@ -268,23 +268,15 @@ Here, the data is fetched from `Northwind` Service URL; it takes a few seconds t
 
 ## Add and remove list items from the ListView component
 
-You can add or remove list items from the ListView component using the
-[`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#additem) and
-[`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#removeitem) methods.
+You can add or remove list items from the ListView component using the [`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#additem) and [`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#removeitem) methods.
 Refer to the following steps to add or remove a list item.
 
-* Render the ListView with data source, and use the
-[template](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#template) property to append the delete icon
-for each list item. Also, bind the click event for the delete icon using the
+* Render the ListView with data source, and use the [template](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#template) property to append the delete icon for each list item. Also, bind the click event for the delete icon using the
 [actionComplete](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#actioncomplete) handler.
 
-* Render the Add Item button, and bind the click event. On the click event handler, pass data with random id to
-the [`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#additem) method to add a
-new list item on clicking the Add Item button.
+* Render the Add Item button, and bind the click event. On the click event handler, pass data with random id to the [`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#additem) method to add a new list item on clicking the Add Item button.
 
-* Bind the click handler to the delete icon created in step 1. Within the click event, remove the list item by passing the
-delete icon list item to
-[`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#removeitem) method.
+* Bind the click handler to the delete icon created in step 1. Within the click event, remove the list item by passing the delete icon list item to [`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#removeitem) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -302,8 +294,7 @@ delete icon list item to
 
 ## Customize dual list
 
-The dual list contains two ListView. This allows you to move list items from one list to another using the client-side
-events. This section explains how to integrate the ListView component to achieve dual list.
+The dual list contains two ListView. This allows you to move list items from one list to another using the client-side events. This section explains how to integrate the ListView component to achieve dual list.
 
 ### Use cases
 
@@ -312,8 +303,7 @@ events. This section explains how to integrate the ListView component to achieve
 
 ### Integration of Dual List
 
-Here, two ListView components have been used to display the list items. An ej2-button is used to transfer data between
-the ListView, and a textbox is used to achieve the UI of filtering support.
+Here, two ListView components have been used to display the list items. An ej2-button is used to transfer data between the ListView, and a textbox is used to achieve the UI of filtering support.
 
 The dual list supports:
 
@@ -330,26 +320,20 @@ while selecting an item. Here, the select event is triggered to enable and disab
 
 ### Moving whole data from the first list to the second list(>>)
 
-* Here, the whole data can be moved from the first ListView to the second by clicking the first button. When clicking the button,
-the whole list items are sliced, and `concat` with the second ListView. This button is enabled only when the data source
+* Here, the whole data can be moved from the first ListView to the second by clicking the first button. When clicking the button, the whole list items are sliced, and `concat` with the second ListView. This button is enabled only when the data source
 of the first ListView is not empty.
 
 ### Moving whole data from the second list to the first list(<<)
 
-* The functionality of the second button is the same as above, and data is transferred from the second list to the first
-list. This button is enabled only when the data source of the second ListView is not empty.
+* The functionality of the second button is the same as above, and data is transferred from the second list to the first list. This button is enabled only when the data source of the second ListView is not empty.
 
 ### Moving selected item from one list to another list (>) and (<)
 
-* The [Select](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) event is triggered
-when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be
-enabled when selecting an item in lists.
+* The [Select](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
 
 ### Filtering method
 
-* The filtering method is used to filter list items when typing a character in the text box. In this
-method, the [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started.html) has been
-used to fetch data from the data source and display in ListView.
+* The filtering method is used to filter list items when typing a character in the text box. In this method, the [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started.html) has been used to fetch data from the data source and display in ListView.
 
 ### Sorting
 
@@ -373,14 +357,10 @@ You can enable sorting in one ListView; in the same order, data can be transferr
 
 ## Hide checkbox in listview
 
-The checkbox of the any list item can be hidden by using
-[`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#htmlattributes) of
-[`fields`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#fields) object. With
-the help of `htmlAttributes` we can add unique class to each list item that will be rendered from the data source, from
-the CSS class we can hide the checkbox of the list item.
+The checkbox of the any list item can be hidden by using [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#htmlattributes) of
+[`fields`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#fields) object. With the help of `htmlAttributes` we can add unique class to each list item that will be rendered from the data source, from the CSS class we can hide the checkbox of the list item.
 
-In this sample, we had hidden the multiple leaf node of nested list. The `e-checkbox-hidden` class has been added in the data
-source where the checkbox needs to be hidden. Refer the below snippet for simple data source.
+In this sample, we had hidden the multiple leaf node of nested list. The `e-checkbox-hidden` class has been added in the data source where the checkbox needs to be hidden. Refer the below snippet for simple data source.
 
 ```typescript
     {
@@ -391,10 +371,7 @@ source where the checkbox needs to be hidden. Refer the below snippet for simple
     }
 ```
 
-Even though we have hidden the checkbox the functionality will be same for the list item which might affect the
-`getSelectedItems` method. So, to counteract that we will follow certain logic in the `select` event. The Logic here is to
-remove the `e-active` class from the other checkbox hidden list item which will be added when we select on that item and
-retain `e-active` on currently selected item.
+Even though we have hidden the checkbox the functionality will be same for the list item which might affect the `getSelectedItems` method. So, to counteract that we will follow certain logic in the `select` event. The Logic here is to remove the `e-active` class from the other checkbox hidden list item which will be added when we select on that item and retain `e-active` on currently selected item.
 
 > In this process we will exclude the visible checkbox list items and only consider the hidden checkbox items.
 
@@ -414,14 +391,9 @@ retain `e-active` on currently selected item.
 
 ## Customize ListView with dynamic tags
 
-You can customize the ListView items using the
-[`template`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#template) property. Here,
-the dynamic tags are added and removed in the list item from another ListView. Refer to the following steps to achieve this.
+You can customize the ListView items using the [`template`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#template) property. Here, the dynamic tags are added and removed in the list item from another ListView. Refer to the following steps to achieve this.
 
-* Initialize dynamic ListView with required property that holds the tags of parent ListView, and bind the
-[`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) event
-(triggers when the list item is selected), in which you can get and add the selected item value as tags into parent
-ListView. Refer to the following code sample.
+* Initialize dynamic ListView with required property that holds the tags of parent ListView, and bind the [`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) event (triggers when the list item is selected), in which you can get and add the selected item value as tags into parent ListView. Refer to the following code sample.
 
 ```typescript
 
@@ -445,11 +417,9 @@ addTag(e) {
 
 ```
 
-* Render the dialog component with empty content and append the created dynamic ListView object to the dialog on
-[`created`](https://ej2.syncfusion.com/angular/documentation/dialog/api-dialog.html#created) event.
+* Render the dialog component with empty content and append the created dynamic ListView object to the dialog on [`created`](https://ej2.syncfusion.com/angular/documentation/dialog/api-dialog.html#created) event.
 
-* Bind the click event for button icon (+) to update the ListView data source with tags, and open the dialog with this
-dynamic ListView. Refer to the following code sample.
+* Bind the click event for button icon (+) to update the ListView data source with tags, and open the dialog with this dynamic ListView. Refer to the following code sample.
 
 ```typescript
 

@@ -44,10 +44,8 @@ Floating label:
 * Place the label element with class `e-float-text` after the above created span element.
 When you focus or filled with value in the TextBox, the label floats above the TextBox.
 
-> Creating the Floating label TextBox, you have to set the `required` attribute to the Input element to
-achieve the floating label functionality which is used for validating the value existence in TextBox.
-If you want to render the Floating label TextBox without
-`required` attribute then refer to the [Floating Label without required attribute](#floating-Label-without-required-attribute) section.
+> Creating the Floating label TextBox, you have to set the `required` attribute to the Input element to achieve the floating label functionality which is used for validating the value existence in TextBox.
+If you want to render the Floating label TextBox without `required` attribute then refer to the [Floating Label without required attribute](#floating-Label-without-required-attribute) section.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -70,11 +68,9 @@ And refer to the following sections to add the icons to the TextBox.
 
 ## With icon and floating label
 
-Create an icon element as a span with the class `e-input-group-icon`, and the user can place the icon in either side of TextBox
-by adding the created icon element before/after the input.
+Create an icon element as a span with the class `e-input-group-icon`, and the user can place the icon in either side of TextBox by adding the created icon element before/after the input.
 
-For the floating label enabled TextBox add the icon element as first or last element inside the TextBox wrapper, and
-based on the element position it will act as prefix or suffix icon.
+For the floating label enabled TextBox add the icon element as first or last element inside the TextBox wrapper, and based on the element position it will act as prefix or suffix icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,8 +86,7 @@ based on the element position it will act as prefix or suffix icon.
   
 {% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs1" %}
 
-> To place the icon on left side of the TextBox, create a div element with the class `e-input-in-wrap` as wrapper to the input
-element and place the `floating line`, `floating text`, and right side icon element within it.
+> To place the icon on left side of the TextBox, create a div element with the class `e-input-in-wrap` as wrapper to the input element and place the `floating line`, `floating text`, and right side icon element within it.
 Add the `e-float-icon-left` class to the TextBox container element.
 
 ## With clear button and floating label
@@ -117,10 +112,8 @@ You can add the clear button to the TextBox by `showClearButton` API in textbox
 
 ## Floating Label without required attribute
 
-You can render the `Floating label TextBox` without `required` attribute by manually
-float the label above of the TextBox using `ngClass`.
-You can manually float the label above of the TextBox by adding the below list of
-classes to the floating label element. The classes are:
+You can render the `Floating label TextBox` without `required` attribute by manually float the label above of the TextBox using `ngClass`.
+You can manually float the label above of the TextBox by adding the below list of classes to the floating label element. The classes are:
 
 Class Name        | Description
 ------------------| -------------

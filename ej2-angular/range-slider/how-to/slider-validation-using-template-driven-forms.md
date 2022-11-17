@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Slider validation using template driven forms in Angular Range slider component
 
-Slider can be validated in Angular using [Template-driven](https://angular.io/guide/form-validation#template-driven-validation)
-forms.
+Slider can be validated in Angular using [Template-driven](https://angular.io/guide/form-validation#template-driven-validation) forms.
 
 * The following [CSS classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel) will be added on Slider component based on the action done by user.
 

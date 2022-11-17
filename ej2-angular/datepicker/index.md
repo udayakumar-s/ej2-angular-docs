@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Datepicker component
 
-The **DatePicker** is a graphical user interface component that allows user to select
-or enter a date value.
+The **DatePicker** is a graphical user interface component that allows user to select or enter a date value.
 
 ## Key Features
 

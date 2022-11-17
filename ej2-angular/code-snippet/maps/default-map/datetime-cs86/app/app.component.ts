@@ -1,16 +1,13 @@
 
 
 
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Maps, Zoom, Marker, NavigationLine } from '@syncfusion/ej2-angular-maps';
-import { usa_map } from 'usa.ts';
-import { world_map } from 'world-map.ts';
-import { california } from 'california.ts';
 Maps.Inject(Zoom, Marker, NavigationLine);
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps id='rn-container' [layers]='layers' [zoomSettings]='zoomSettings' [centerPosition]='centerPosition'>
+    `<ejs-maps id='rn-container' style='display:block' [zoomSettings]='zoomSettings' [centerPosition]='centerPosition'>
      <e-layers>
     <e-layer [urlTemplate]= 'urlTemplate' [markerSettings]='markerSettings' [navigationLineSettings]='navigationLineSettings'></e-layer>
     </e-layers>

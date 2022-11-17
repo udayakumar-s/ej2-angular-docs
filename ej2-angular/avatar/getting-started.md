@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Avatar component
+# Getting started with Angular Avatar component
 
 The following section explains the steps required to create a simple avatar component using styles and its basic usage.
 

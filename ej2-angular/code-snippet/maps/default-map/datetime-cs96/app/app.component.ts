@@ -1,59 +1,45 @@
 
 
-
 import { Component, OnInit } from '@angular/core';
-import { Maps, Selection, Legend } from '@syncfusion/ej2-angular-maps';
+import { Maps, Marker, Selection } from '@syncfusion/ej2-angular-maps';
 import { world_map } from 'world-map.ts';
-Maps.Inject(Selection, Legend);
+Maps.Inject(Marker, Selection);
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps id='rn-container' [legendSettings]='legendSettings'>
-     <e-layers>
-    <e-layer [shapeData] = 'shapeData' [shapePropertyPath]='shapePropertyPath' [shapeDataPath]='shapeDataPath' [dataSource]='dataSource' [shapeSettings]='shapeSettings' [selectionSettings] ='selectionSettings'></e-layer>
+    `<ejs-maps id='rn-container'>
+    <e-layers>
+    <e-layer  [shapeData]= 'shapeData' [markerSettings] = 'markerSettings'></e-layer>
     </e-layers>
     </ejs-maps>`
 })
+
 export class AppComponent implements OnInit {
-    public selectionSettings: object;
     public shapeData: object;
-    public shapePropertyPath: string;
-    public shapeDataPath: string;
-    public dataSource: object;
-    public shapeSettings: object;
-    public legendSettings: object;
+    public markerSettings: object;
     ngOnInit(): void {
-        this.selectionSettings = {
-            enable: true,
-            fill: 'blue',
-            border: { color: 'white', width: 2}
-        };
         this.shapeData = world_map;
-        this.shapePropertyPath = "name";
-        this.shapeDataPath = "Country";
-        this.dataSource = [
-            {  "Country": "China", "Membership": "Permanent"},
-            { "Country": "France","Membership": "Permanent" },
-            { "Country": "Russia","Membership": "Permanent"},
-            { "Country": "Kazakhstan","Membership": "Non-Permanent"},
-            { "Country": "Poland","Membership": "Non-Permanent"},
-            { "Country": "Sweden","Membership": "Non-Permanent"}
-        ];
-        this.shapeSettings = {
-            colorValuePath: 'Membership',
-                colorMapping: [
-                    {
-                        value: 'Permanent', color: '#D84444'
-                    },
-                    {
-                        value: 'Non-Permanent', color: '#316DB5'
-                   }]
-        };
-        this.legendSettings = {
-            visible: true
+        this.markerSettings = [{
+            visible: true,
+            height: 20,
+            width: 20,
+            fill: 'green',
+            shape:'Balloon',
+            initialMarkerSelection: [{
+               latitude: -6.64607562172573, longitude: -55.54687499999999
+            }],
+            selectionSettings: {
+                enable: true,
+                fill: 'blue',
+                border: { color: 'white', width: 2}
+            },
+            dataSource: [
+                { latitude: 49.95121990866204, longitude: 18.468749999999998, name:'Europe' },
+                { latitude: 59.88893689676585, longitude: -109.3359375, name:'North America'},
+                { latitude: -6.64607562172573, longitude: -55.54687499999999, name:'South America'}
+            ]
+        }];
     }
 }
-}
-
 
 

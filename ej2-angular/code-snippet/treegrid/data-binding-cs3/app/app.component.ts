@@ -1,11 +1,11 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
+import { projectData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' hasChildMapping='isParent' parentIdMapping='ParentItem' idMapping='TaskID' [allowPaging]="true">
+    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' parentIdMapping='parentID' idMapping='TaskID' height=265 [allowPaging]="true">
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
             <e-column field='TaskName' headerText='Task Name' width='170'></e-column>
@@ -16,12 +16,10 @@ import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data: Object[];
+
     ngOnInit(): void {
-        this.data = new DataManager({
-                url: 'https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData',
-                adaptor: new WebApiAdaptor, crossDomain: true
-            });
+        this.data = projectData;
     }
 }
 

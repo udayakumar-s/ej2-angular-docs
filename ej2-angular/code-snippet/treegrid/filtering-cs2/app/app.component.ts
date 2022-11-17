@@ -1,46 +1,42 @@
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
+import { DataUtil } from '@syncfusion/ej2-data';
+import { DropDownList } from '@syncfusion/ej2-dropdowns';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<div style="padding-top: 7px; display: inline-block">Hierarchy Mode<ejs-dropdownlist (change)='onChange($event)' [dataSource]='dropData' value='Parent' [fields]='fields'></ejs-dropdownlist></div>
-    <ejs-treegrid #treegrid [dataSource]='data' height='210' [treeColumnIndex]='1' [allowFiltering]='true'  childMapping='subtasks' >
+    template: `<ejs-treegrid #treegrid [dataSource]='data' (created) = 'created($event)' [treeColumnIndex]='1' height='275' [allowFiltering]='true' [filterSettings]="filterSettings" childMapping='subtasks' >
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
-                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
-                    <e-column field='startDate' headerText='Start Date' textAlign='Right' type='date' format='yMd' width=90></e-column>
-                    <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
+                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=150>
+                     <ng-template #filterTemplate let-data>
+                            <ejs-dropdownlist id='dropdown' [dataSource]='dropdata'
+                             [fields]='fields' [popupHeight]='height'></ejs-dropdownlist>
+                       </ng-template>
+                    </e-column>
+                    <e-column field='startDate' headerText='Start Date' textAlign='Right' type='date' format='yMd' width=120></e-column>
+                    <e-column field='duration' headerText='Duration' textAlign='Right' width=120></e-column>
         </e-columns>
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-
+    @ViewChild('treegrid')
+    public treegrid: TreeGridComponent;
     public data: Object[];
-    public dropData: Object[];
-    public fields: Object;
-     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
-
+    public filterSettings: Object;
+    public dropdata: string[] = [];
+    public fields: object = { text: 'taskName', value: 'taskName' };
+    public height = '220px';
     ngOnInit(): void {
         this.data = sampleData;
-        this.dropData = [
-        { id: 'Parent', mode: 'Parent' },
-        { id: 'Child', mode: 'Child' },
-        { id: 'Both', mode: 'Both' },
-        { id: 'None', mode: 'None' },
-    ];
-    this.fields = { text: 'mode', value: 'id' };
+        this.filterSettings = {type: 'Excel'};
     }
-        onChange(e: ChangeEventArgs): any {
-        let mode: any = <string>e.value;
-        this.treeGridObj.filterSettings.hierarchyMode = mode;
-        this.treeGridObj.clearFiltering();
+    created(args: any): void{
+        this.dropdata = DataUtil.distinct(this.treegrid.grid.dataSource, 'taskName') as string[];
     }
 }
-
 
 

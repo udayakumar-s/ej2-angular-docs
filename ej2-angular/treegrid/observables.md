@@ -24,7 +24,7 @@ TreeGrid data can be consumed from an `Observable` object by piping it through a
 
 The TreeGrid expects an object from the `Observable`. The emitted value should be an object with properties `result` and `count`.
 
-```ts
+```
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { CrudService } from './data.service';
@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-```ts
+```
 import { DataManager, Query, } from '@syncfusion/ej2-data';
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
@@ -112,7 +112,7 @@ Using the custom binding feature you can bind the child data for a parent record
 After assigning the child data, `childDataBind` method should be called from the
 [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event arguments to indicate that the data is bound.
 
-```ts
+```
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
@@ -166,7 +166,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-```ts
+```
 import { DataManager, Query, } from '@syncfusion/ej2-data';
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
@@ -213,7 +213,7 @@ export class DataService extends Subject<Object> {
 
 For TreeGrid actions such as `paging`, `sorting`, etc., the `dataStateChange` event is invoked. You have to query and resolve data using `Observable` in this event based on the state arguments.
 
-```ts
+```
 import { Component, OnInit, Inject, ViewChild } from '@angular/core';
 import { TreeGridComponent, DataStateChangeEventArgs } from '@syncfusion/ej2-angular-treegrid';
 import { DataService } from './data.service';
@@ -258,7 +258,7 @@ export class AppComponent implements OnInit {
 
 The `dataSourceChanged` event is triggered to update the treegrid data. You can perform the save operation based on the event arguments and you need to call the `endEdit` method to indicate the completion of save operation.
 
-```ts
+```
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { CrudService } from './crud.service';
@@ -325,7 +325,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-```ts
+```
 
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -416,7 +416,7 @@ The footer aggregate values should be calculated and sent along with the `dataSo
 
 The `dataStateChange` event is triggered with appropriate arguments when the Excel filter requests the filter choice data source. You need to resolve the Excel filter data source using the `dataSource` resolver function from the state argument as follows.
 
-```ts
+```
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { CrudService } from './data.service';
@@ -461,7 +461,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-```ts
+```
 import { DataManager, Query, } from '@syncfusion/ej2-data';
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';

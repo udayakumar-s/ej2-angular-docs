@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Numerictextbox component
+# Getting started with Angular Numerictextbox component
 
-The following section explains the steps required to create
-the NumericTextBox component and also it demonstrates the basic usage of the NumericTextBox.
+The following section explains the steps required to create the NumericTextBox component and also it demonstrates the basic usage of the NumericTextBox.
 
 ## Dependencies
 
@@ -174,8 +173,7 @@ The following example illustrates the output in your browser.
 
 ## Range validation
 
-You can set the minimum and maximum range of values in the NumericTextBox using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#min) and
-[`max`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#max) properties, so the numeric value should be in the min and max range.
+You can set the minimum and maximum range of values in the NumericTextBox using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#max) properties, so the numeric value should be in the min and max range.
 
 The validation behavior depends on the [`strictMode`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#strictmode) property.
 
@@ -197,9 +195,7 @@ The below example demonstrates range validation.
 
 ## Formatting the value
 
-User can set the format of the NumericTextBox component using [`format`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#format)
-property. The value will be displayed in the specified format, when the component is in focused out state. For more information about
-formatting the value, refer to this [link](./formats/).
+User can set the format of the NumericTextBox component using [`format`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#format) property. The value will be displayed in the specified format, when the component is in focused out state. For more information about formatting the value, refer to this [link](./formats/).
 
 The below example demonstrates format the value by using currency format value `c2`.
 
@@ -219,8 +215,7 @@ The below example demonstrates format the value by using currency format value `
 
 ## Precision of numbers
 
-You can restrict the number of decimals to be entered in the NumericTextBox by using the [`decimals`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#decimals)
-and [`validateDecimalOnType`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#validatedecimalontype) properties.
+You can restrict the number of decimals to be entered in the NumericTextBox by using the [`decimals`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#decimals) and [`validateDecimalOnType`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#validatedecimalontype) properties.
 So, you can't enter the number whose precision is greater than the mentioned decimals.
 
 * If `validateDecimalOnType` is false, number of decimals will not be restricted.
@@ -265,10 +260,8 @@ NumericTextBox is a form component and validation is playing vital role in forms
 Here to showcase the NumericTextBox with form validations we have used the reactive form.
 For more details about Reactive Forms refer: [`https://angular.io/guide/reactive-forms`](https://angular.io/guide/reactive-forms).
 
-* To use reactive forms, import `ReactiveFormsModule` from the `@angular/forms` package and add it to your NgModule's imports array.
-  In addition to this, `FormGroup`, `FormControl` should be imported to the app component.
-* The `FormGroup` is used to declare `formGroupName` for the form. The constructor of this `FormGroup` then takes an object,
-  that can contain sub-form-groups and `FormControls`.
+* To use reactive forms, import `ReactiveFormsModule` from the `@angular/forms` package and add it to your NgModule's imports array. In addition to this, `FormGroup`, `FormControl` should be imported to the app component.
+* The `FormGroup` is used to declare `formGroupName` for the form. The constructor of this `FormGroup` then takes an object, that can contain sub-form-groups and `FormControls`.
 * The `FormControl` is used to declare `formControlName` for form controls.
 
 The following example demonstrates how to use the reactive forms.

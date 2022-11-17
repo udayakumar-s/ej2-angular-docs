@@ -10,19 +10,11 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Datepicker component
 
-The Web accessibility defines a way to make web content and web applications
-more accessible to disabled people. It especially helps the dynamic content change
-and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
+The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 
-DatePicker provides built-in compliance with the
-[WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA
-supports is achieved through the attributes
-like `aria-expanded`, `aria-disabled`, `aria-activedescendant`
-applied for the input element.
+DatePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied for the input element.
 
-It helps to provide information about the widget
-for assistive technology to the disabled person in a
-screen reader.
+It helps to provide information about the widget for assistive technology to the disabled person in a screen reader.
 
 * **Aria-expanded** : attributes indicates the state of a collapsible element.
 
@@ -30,9 +22,7 @@ screen reader.
 
 * **Aria-activedescendent** : attribute helps in managing the current active child of the DatePicker component.
 
-For more information about accessibility of Calendar refer to the Calendar
-[Accessibility](http://npmci.syncfusion.com/development/angular/documentation/calendar/accessibility/)
- section.
+For more information about accessibility of Calendar refer to the Calendar [Accessibility](http://npmci.syncfusion.com/development/angular/documentation/calendar/accessibility/) section.
 
 ## Keyboard Interaction
 

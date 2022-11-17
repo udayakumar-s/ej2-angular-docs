@@ -1,44 +1,59 @@
 
 
+
 import { Component, OnInit } from '@angular/core';
-import { Maps, Bubble, Selection } from '@syncfusion/ej2-angular-maps';
+import { Maps, Highlight, Legend } from '@syncfusion/ej2-angular-maps';
 import { world_map } from 'world-map.ts';
-Maps.Inject(Bubble, Selection);
+Maps.Inject(Highlight, Legend);
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps id='rn-container'>
-    <e-layers>
-    <e-layer  [shapeData]= 'shapeData' [bubbleSettings] = 'bubbleSettings'></e-layer>
+    `<ejs-maps id='rn-container' [legendSettings]='legendSettings'>
+     <e-layers>
+    <e-layer [shapeData] = 'shapeData' [shapePropertyPath]='shapePropertyPath' [shapeDataPath]='shapeDataPath' [dataSource]='dataSource' [shapeSettings]='shapeSettings' [highlightSettings] ='highlightSettings'></e-layer>
     </e-layers>
     </ejs-maps>`
 })
-
 export class AppComponent implements OnInit {
+    public highlightSettings: object;
     public shapeData: object;
-    public shapeDataPath: object;
-    public shapePropertyPath: object;
-    public bubbleSettings: object;
+    public shapePropertyPath: string;
+    public shapeDataPath: string;
+    public dataSource: object;
+    public shapeSettings: object;
+    public legendSettings: object;
     ngOnInit(): void {
+        this.highlightSettings = {
+            enable: true,
+            fill: 'green',
+            border: { color: 'white', width: 2}
+        }
         this.shapeData = world_map;
-        this.shapeDataPath = 'name',
-        this.shapePropertyPath = 'name',
-        this.bubbleSettings = [{
-            visible: true,
-            dataSource: [
-                { name: 'India', population: '38332521' },
-                { name: 'South Africa', population: '19651127' },
-                { name: 'Pakistan', population: '3090416' }
-            ],
-            selectionSettings: {
-                enable: true,
-                fill: 'green',
-                border: { color: 'white', width: 2}
-            },
-            valuePath: 'population'
-        }]
+        this.shapePropertyPath= "name";
+        this.shapeDataPath = "Country";
+        this.dataSource = [
+            {  "Country": "China", "Membership": "Permanent"},
+            { "Country": "France","Membership": "Permanent" },
+            { "Country": "Russia","Membership": "Permanent"},
+            { "Country": "Kazakhstan","Membership": "Non-Permanent"},
+            { "Country": "Poland","Membership": "Non-Permanent"},
+            { "Country": "Sweden","Membership": "Non-Permanent"}
+        ];
+        this.shapeSettings = {
+            colorValuePath: 'Membership',
+                colorMapping: [
+                    {
+                        value: 'Permanent', color: '#D84444'
+                    },
+                    {
+                        value: 'Non-Permanent', color: '#316DB5'
+                   }]
+        };
+        this.legendSettings= {
+            visible: true
+        }
     }
 }
 
 
- 
+

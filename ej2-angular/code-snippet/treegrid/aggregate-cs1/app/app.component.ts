@@ -13,17 +13,17 @@ import { summaryRowData } from './datasource';
                    <e-column field='TotalUnits' headerText='Total Units' textAlign='Right' type='number' width=125></e-column>
         </e-columns>
         <e-aggregates>
-        <e-aggregate [showChildSummary]='false'>
+        <e-aggregate [showChildSummary]='true'>
             <e-columns>
-                <e-column field="UnitWeight" type="Max" columnName='UnitWeight'>
+                <e-column field="UnitWeight" type="Max">
                     <ng-template #footerTemplate let-data>Maximum: {{data.Max}}</ng-template>
                 </e-column>
-                 <e-column field="TotalUnits" type="Min" columnName='TotalUnits'>
+                <e-column field="TotalUnits" type="Min">
                     <ng-template #footerTemplate let-data>Minimum: {{data.Min}}</ng-template>
                 </e-column>
             </e-columns>
         </e-aggregate>
-        </e-aggregates>
+    </e-aggregates>
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {

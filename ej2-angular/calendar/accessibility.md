@@ -10,24 +10,13 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Calendar component
 
-The Web accessibility defines a way to make web content and web applications
-more accessible to disabled people. It especially helps the dynamic content change
-and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
+The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 
-Calendar provides built-in compliance with the
-[WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA
-supports is achieved through the attributes
-like `aria-label`,`aria-selected`, `aria-disabled`, `aria-activedescendant`
-applied for navigation buttons,
-disable and active day cells.
+Calendar provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-label`,`aria-selected`, `aria-disabled`, `aria-activedescendant` applied for navigation buttons, disable and active day cells.
 
-It helps to provide the information about the widget
-for assistive technology to the disabled person in the
-screen reader. Calendar component contains
-grid as role and grid cell for each day cell
+It helps to provide the information about the widget for assistive technology to the disabled person in the screen reader. Calendar component contains grid as role and grid cell for each day cell
 
-* **Aria-label** : attribute provides the text label for an object
-for the previous and next month element. It helps the screen reader object to read for the assistive purpose.
+* **Aria-label** : attribute provides the text label for an object for the previous and next month element. It helps the screen reader object to read for the assistive purpose.
 
 * **Aria-selected** : attribute indicates the currently selected date of the Calendar component.
 
@@ -42,8 +31,7 @@ for the previous and next month element. It helps the screen reader object to re
 ## Keyboard Interaction
 
 You can use the following keys to interact with the Calendar.
-The component implements the keyboard navigation support by following the
-   [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices)
+The component implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices)
 
 It supports the below list of shortcut keys.
 

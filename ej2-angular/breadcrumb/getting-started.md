@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Breadcrumb component
+# Getting started with Angular Breadcrumb component
 
 This section explains how to create a simple Breadcrumb, and demonstrate the basic usage of the Breadcrumb module in an Angular environment.
 

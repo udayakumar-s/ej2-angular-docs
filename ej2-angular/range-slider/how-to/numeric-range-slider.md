@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 
 # Numeric range slider in Angular Range slider component
 
-The numeric values can be formatted into different decimal digits or fixed number of whole numbers
-or to represent the units.
+The numeric values can be formatted into different decimal digits or fixed number of whole numbers or to represent the units.
 The Numeric processing is demonstrated below.
 
 {% tabs %}

@@ -10,15 +10,11 @@ domainurl: ##DomainURL##
 
 # Slider in angular reactive form in Angular Range slider component
 
-Slider validation can be achieved in Angular using [Reactive](https://angular.io/guide/reactive-forms)
-forms. Here the sample shown slider validation state based on Angular form
-[classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
+Slider validation can be achieved in Angular using [Reactive](https://angular.io/guide/reactive-forms) forms. Here the sample shown slider validation state based on Angular form [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
 
 Follow below steps to validate slider within reactive forms.
 
-* Create simple Angular reactive form. And add simple
-[slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types)
-component within form.
+* Create simple Angular reactive form. And add simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component within form.
 
 * Create [form group](https://angular.io/guide/reactive-forms#add-a-formgroup) with slider.
 
@@ -42,7 +38,7 @@ component within form.
 | `ng-dirty` | `ng-pristine` |The control's value has changed. |
 | `ng-valid` | `ng-invalid` |The control's value is valid. |
 
-```html
+```
 
 <div *ngIf="sliderForm.invalid">
 slider has <b><i>invalid </i> </b> value and choose value greater than 10.

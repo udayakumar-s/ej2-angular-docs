@@ -1,35 +1,44 @@
 
 
-
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Maps } from '@syncfusion/ej2-angular-maps';
-import { africa_continent } from 'africa-continent.ts';
+import { Component, OnInit } from '@angular/core';
+import { Maps, Bubble, Selection } from '@syncfusion/ej2-angular-maps';
 import { world_map } from 'world-map.ts';
-
+Maps.Inject(Bubble, Selection);
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps id='rn-container' [layers]='layers'>
-     <e-layers>
-    <e-layer [urlTemplate] = "urlTemplate"></e-layer>
-    <e-layer [type] = 'type' [shapeData]='shapeData' [shapeSettings]='shapeSettings'></e-layer>
+    `<ejs-maps id='rn-container'>
+    <e-layers>
+    <e-layer  [shapeData]= 'shapeData' [bubbleSettings] = 'bubbleSettings'></e-layer>
     </e-layers>
     </ejs-maps>`
 })
+
 export class AppComponent implements OnInit {
-    public urlTemplate: string;
-    public type: string;
     public shapeData: object;
-    public shapeSettings: object;
+    public shapeDataPath: object;
+    public shapePropertyPath: object;
+    public bubbleSettings: object;
     ngOnInit(): void {
-           this.urlTemplate = "http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level";
-           this.type = 'SubLayer';
-           this.shapeData = africa_continent;
-           this.shapeSettings = {
-               fill: 'blue'
-           };
+        this.shapeData = world_map;
+        this.shapeDataPath = 'name',
+        this.shapePropertyPath = 'name',
+        this.bubbleSettings = [{
+            visible: true,
+            dataSource: [
+                { name: 'India', population: '38332521' },
+                { name: 'South Africa', population: '19651127' },
+                { name: 'Pakistan', population: '3090416' }
+            ],
+            selectionSettings: {
+                enable: true,
+                fill: 'green',
+                border: { color: 'white', width: 2}
+            },
+            valuePath: 'population'
+        }]
     }
 }
 
 
-
+ 

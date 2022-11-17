@@ -10,13 +10,9 @@ domainurl: ##DomainURL##
 
 # State persistence in Angular Datepicker component
 
-The persistence is a process of maintaining the user interacted settings on
-page refresh.
+The persistence is a process of maintaining the user interacted settings on page refresh.
 
-In DatePicker, the selected or entered value has to be persisted on page refresh
-or navigation to another page. To persist the value set the
-[`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#enablepersistence) property
- as true
+In DatePicker, the selected or entered value has to be persisted on page refresh or navigation to another page. To persist the value set the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#enablepersistence) property as true
 
 > It persists the value in local storage of the browser.
 

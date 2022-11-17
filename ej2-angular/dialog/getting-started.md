@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Dialog component
+# Getting started with Angular Dialog component
 
 This section explains the steps to create a simple **Dialog** component and configure its available functionalities in Angular.
 
@@ -243,16 +243,11 @@ html, body {
 
 ## Modal Dialog
 
-A [modal](https://ej2.syncfusion.com/angular/documentation/api/dialog/#ismodal) shows an overlay behind the Dialog. So, the user
-should interact the Dialog compulsory before interacting with the remaining content in an
-application.
+A [modal](https://ej2.syncfusion.com/angular/documentation/api/dialog/#ismodal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
 
-While the user clicks the overlay, the action can be handled through the
-[`overlayClick`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#overlayclick) event. In the below sample the
-Dialog close action is performed while clicking on the overlay.
+While the user clicks the overlay, the action can be handled through the [`overlayClick`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#overlayclick) event. In the below sample the Dialog close action is performed while clicking on the overlay.
 
-> When the modal Dialog is opened, the Dialog's target scrolling will be disabled. The scrolling
-will be enabled again once close the Dialog.
+> When the modal Dialog is opened, the Dialog's target scrolling will be disabled. The scrolling will be enabled again once close the Dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -270,8 +265,7 @@ will be enabled again once close the Dialog.
 
 ## Enable header
 
-The Dialog header can be enabled by adding the header content as text or HTML content through the
-[`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#header) property.
+The Dialog header can be enabled by adding the header content as text or HTML content through the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#header) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,11 +283,9 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 
 ## Enable footer
 
-The Dialog provides built-in support to render the `buttons` on the footer (for ex: ‘OK’ or
-‘Cancel’ buttons). Each Dialog button allows the user to perform any action while clicking on it.
+The Dialog provides built-in support to render the `buttons` on the footer (for ex: ‘OK’ or ‘Cancel’ buttons). Each Dialog button allows the user to perform any action while clicking on it.
 
-The primary button will be focused automatically when open the Dialog and add the [`click`](https://ej2.syncfusion.com/angular/documentation/api/dialog/buttonProps/#click)
-event to handle the actions
+The primary button will be focused automatically when open the Dialog and add the [`click`](https://ej2.syncfusion.com/angular/documentation/api/dialog/buttonProps/#click) event to handle the actions
 
 > When the Dialog initialize with more than one primary buttons, the first primary button gets focus on open the Dialog.
 
@@ -315,9 +307,7 @@ The below sample render with button and its click event.
 
 ## Draggable
 
-The Angular Dialog supports to [drag](https://ej2.syncfusion.com/angular/documentation/api/dialog/#allowdragging) within its target
-container by grabbing the Dialog header, which allows the user to reposition the
-Dialog dynamically.
+The Angular Dialog supports to [drag](https://ej2.syncfusion.com/angular/documentation/api/dialog/#allowdragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
 
 > The Dialog can be draggable only when the Dialog header is enabled.
 From `16.2.x` version, enabled draggable support for modal Dialog also.

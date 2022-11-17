@@ -14,8 +14,7 @@ DateRangePicker makes available for the UI customization which can be achieved w
 
 ## Day cell format
 
-[`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker/renderDayCellEventArgs#renderdaycelleventargs) is a
- event which provides the option to customize each day cell while rendering itself.
+[`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker/renderDayCellEventArgs#renderdaycelleventargs) is a event which provides the option to customize each day cell while rendering itself.
 The following example disables the weekends of every month using `renderDayCell` event.
 
 {% tabs %}

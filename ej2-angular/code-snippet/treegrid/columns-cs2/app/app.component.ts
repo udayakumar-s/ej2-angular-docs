@@ -1,26 +1,32 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { formatData } from './datasource';
+import { Component, OnInit,ViewChild } from '@angular/core';
+import { sampleData } from './datasource';
+import { ResizeService,FilterService,SortService,PageService,ColumnMenuService  } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' >
+    template: `<ejs-treegrid #treegrid height='315' [dataSource]='data' [allowResizing]='true' [treeColumnIndex]='1' childMapping='subtasks'  showColumnMenu="true"  [allowFiltering]="true" [allowSorting]="true" [filterSettings]="filterSettings">
         <e-columns>
-                    <e-column field='orderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                    <e-column field='orderName' headerText='Order Name' textAlign='Left' width=180></e-column>
-                    <e-column field='price' headerText='Price' textAlign='Right' format='c2' type='number' width=80></e-column>
+                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=100></e-column>
+                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=130></e-column>
+                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=130></e-column>
+                    <e-column field='duration' headerText='Duration' textAlign='Right' width=150></e-column>
+                    <e-column field='progress' headerText='Progress' textAlign='Right' width=150></e-column>
         </e-columns>
-                </ejs-treegrid>`
+                </ejs-treegrid>`,
+      providers: [FilterService, PageService, SortService, ResizeService, ColumnMenuService]
 })
 export class AppComponent implements OnInit {
 
     public data: Object[];
-
+    public filterSettings: Object;
     ngOnInit(): void {
-        this.data = formatData;
+        this.data = sampleData;
+         this.filterSettings = { type: 'Menu'};
     }
 }
+
 
 
 

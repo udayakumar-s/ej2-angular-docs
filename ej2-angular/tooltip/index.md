@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 # Index in Angular Tooltip component
 
 The **Tooltip** component displays a pop-up containing an information or a message when you hover, click, focus, or touch an element.
- The information displayed in the Tooltip can include simple text, images, hyperlinks, or custom templates. In mobile devices, to display
-  the Tooltip, you need to tap and hold the target elements.
+The information displayed in the Tooltip can include simple text, images, hyperlinks, or custom templates. In mobile devices, to display the Tooltip, you need to tap and hold the target elements.
 
 ## Key features
 

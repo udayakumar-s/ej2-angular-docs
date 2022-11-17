@@ -15,16 +15,13 @@ Maps provide support for internationalization for the below elements.
 * Data label
 * Tooltip
 
-For more information about number and date formatter, refer to the
-[`internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html) section.
+For more information about number and date formatter, refer to the [`internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html) section.
 
 <!-- markdownlint-disable MD036 -->
 
 ## Globalization
 
-Globalization is the process of designing and developing a component that works in different
-cultures/locales. Internationalization library is used to globalize number, date, time values in
-Maps component using [`format`](https://ej2.syncfusion.com/angular/documentation/api/maps/mapsModel/#format) property in the [`Maps`](https://ej2.syncfusion.com/angular/documentation/api/maps/mapsModel).
+Globalization is the process of designing and developing a component that works in different cultures/locales. Internationalization library is used to globalize number, date, time values in Maps component using [`format`](https://ej2.syncfusion.com/angular/documentation/api/maps/mapsModel/#format) property in the [`Maps`](https://ej2.syncfusion.com/angular/documentation/api/maps/mapsModel).
 
 ## Numeric Format
 

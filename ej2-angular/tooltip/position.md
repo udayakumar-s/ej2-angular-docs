@@ -86,8 +86,7 @@ By default, tip pointers are auto adjusted so that the arrow does not point outs
 
 ## Dynamic positioning
 
-The Tooltip and its tip pointer can be positioned dynamically based on the target's location. This can be achieved by using the `refresh`
- method, which auto adjusts the Tooltip over the target.
+The Tooltip and its tip pointer can be positioned dynamically based on the target's location. This can be achieved by using the `refresh` method, which auto adjusts the Tooltip over the target.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -106,7 +105,7 @@ The Tooltip and its tip pointer can be positioned dynamically based on the targe
 ## Mouse trailing
 
 Tooltips can be positioned relative to the mouse pointer. This behavior can be enabled or disabled by using the `mouseTrail` property.
- By default, it is set to `false`.
+By default, it is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

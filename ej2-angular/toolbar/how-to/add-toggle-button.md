@@ -18,8 +18,7 @@ Toolbar supports to add a toggle Button by using the [`template`](https://ej2.sy
     <e-item template='<button class="e-btn" id="media_btn"></button>'></e-item>
 ```
 
-* Now render the toggle Button into the targeted element in Toolbar [`created`](https://ej2.syncfusion.com/angular/documentation/api/toolbar#created) event handler and
-bind click event for it.  On clicking the toggle Button, change the required icon and content based on current active state.
+* Now render the toggle Button into the targeted element in Toolbar [`created`](https://ej2.syncfusion.com/angular/documentation/api/toolbar#created) event handler and bind click event for it.  On clicking the toggle Button, change the required icon and content based on current active state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

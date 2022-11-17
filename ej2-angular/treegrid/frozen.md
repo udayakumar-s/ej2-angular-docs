@@ -14,8 +14,7 @@ domainurl: ##DomainURL##
 
 Frozen rows and columns provides an option to make rows and columns always visible in the top and left side of the tree grid while scrolling.
 
-In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#frozencolumns) is set as '2' and the [`frozenRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#frozenrows)
-is set as '3'. Hence, the left two columns and top three rows are frozen.
+In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#frozencolumns) is set as '2' and the [`frozenRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#frozenrows) is set as '3'. Hence, the left two columns and top three rows are frozen.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -87,9 +86,42 @@ The following features are not supported in frozen rows and columns:
 * Detail Template
 * Cell Editing
 
-Freeze Direction feature has the below limitations, along with the above mentioned limitations.
+### Limitations of freeze direction
 
-* Infinite scroll cache mode
+This feature has the following limitations, along with the above mentioned frozen tree grid limitations.
+
+* Infinite scroll cache mode.
 * Freeze direction in the stacked header is not compatible with column reordering.
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+## Add validation rule for frozen tree grid
+
+In a frozen column-enabled tree grid, the content will be separated into frozen and movable parts. The following code is used to dynamically add validation to input fields in the movable part. In the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event args, find the movableform instance as an argument. Here, add the validation rules dynamically.
+
+```typescript
+  actionComplete: (args: DialogEditEventArgs) => {
+        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
+            // Add Validation Rules
+            args.movableForm.ej2_instances[0].addRules('duration', { max: 200 }); // Here, 'duration' is the column name.
+        }
+    }
+
+```
+
+Validation rules for the 'duration' and 'taskID' columns can be added in the following sample.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/isfrozen-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/isfrozen-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/isfrozen-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/isfrozen-cs3" %}
+
+> This is applicable when a frozen column is enabled and the edit mode is set as "**Row**" in the tree grid.
+> You can refer to Syncfusion [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.

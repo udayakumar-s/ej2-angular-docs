@@ -28,4 +28,20 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
   
 {% previewsample "page.domainurl/code-snippet/treegrid/indent-outdent-cs1" %}
 
-> To change hierarchy level of the record programmatically, `indent` and `outdent` methods can be used by passing the record as a parameter.
+## Indent/Outdent a row programmatically
+
+You can change the hierarchy level of record programmatically using `indent` and `outdent` methods.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/programmatic-indent-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/programmatic-indent-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/programmatic-indent-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/programmatic-indent-cs1" %}

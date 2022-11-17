@@ -10,12 +10,10 @@ domainurl: ##DomainURL##
 
 # Validate image on drop in Angular Uploader component
 
-The uploader component allows you to upload all type of images by setting
-**image/* ** to [allowedExtensions](https://ej2.syncfusion.com/angular/documentation/api/uploader/#allowedextensions) property.
+The uploader component allows you to upload all type of images by setting **image/* ** to [allowedExtensions](https://ej2.syncfusion.com/angular/documentation/api/uploader/#allowedextensions) property.
 You can directly set it to `accept` attribute of uploader element.
 
-By default, the behavior is working with select a file using browse button. But, this behavior doesn’t support
-on drag and drop the files. You can handle this behavior manually using `selected` event by filtering the file types from application.
+By default, the behavior is working with select a file using browse button. But, this behavior doesn’t support on drag and drop the files. You can handle this behavior manually using `selected` event by filtering the file types from application.
 
 In the following example, validated image files using images/*. You are able to drag and drop the image files with extension of PNG, JPG, BPG, GIF and TIFF to upload it.
 

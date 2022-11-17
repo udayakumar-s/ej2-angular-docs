@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Sparkline component
+# Getting started with Angular Sparkline component
 
 This section explains you the steps required to create a Sparkline and demonstrate the basic usage of the Sparkline control.
 
@@ -111,8 +111,7 @@ As we didn't specify dataSource to the Sparkline, no shape will be rendered and 
 
 ## Module Injection
 
-Sparkline component are segregated into individual feature-wise modules. In order to use a particular feature,
-you need to inject its feature service in the AppModule.  Find the relevant feature service available in Sparkline and its description as follows.
+Sparkline component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the AppModule. Find the relevant feature service available in Sparkline and its description as follows.
 
 * SparklineTooltipService - Inject this provider to use tooltip series.
 

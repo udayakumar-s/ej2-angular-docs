@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Timepicker component
 
-**TimePicker** is an intuitive interface component which provides an options to select a value
-from popup list or to set a desired time value.
+**TimePicker** is an intuitive interface component which provides an options to select a value from popup list or to set a desired time value.
 
 ## Key Features
 

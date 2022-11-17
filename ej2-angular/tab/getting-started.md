@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Tab component
+# Getting started with Angular Tab component
 
 This section briefly explains about how to create a simple Tab using Angular by configuring the Tab header content.
 
@@ -137,8 +137,7 @@ export class AppComponent implements OnInit {
 
 ## Initialize the Tab using JSON items collection
 
-The Tab can be rendered by defining a JSON array. The item is rendered with header [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header#text) and
-[`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemModel#content) for each Tab.
+The Tab can be rendered by defining a JSON array. The item is rendered with header [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header#text) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemModel#content) for each Tab.
 
 ```typescript
 
@@ -191,8 +190,7 @@ export class AppComponent {
 
 ## Run the application
 
-After completing the configuration required to render a basic Tab, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic Tab, run the following command to display the output in your default browser.
 
 ```shell
 npm start
@@ -288,7 +286,7 @@ You need to follow the below structure of HTML elements to render the Tab,
   
 {% previewsample "page.domainurl/code-snippet/tab/tab-container-cs1" %}
 
-> You can refer to our [Angular Tab](https://www.syncfusion.com/angular-ui-components/angular-tabs) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tab example](https://ej2.syncfusion.com/angular/demos/#/material/tab/default) that shows how to render the Tabs in Angular.
+> You can refer to our [Angular Tab](https://www.syncfusion.com/angular-ui-components/angular-tabs) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tab example](https://ej2.syncfusion.com/angular/demos/#/material/tab/default) that shows you how to render the Tabs in Angular.
 
 ## See Also
 

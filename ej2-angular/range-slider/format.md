@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Format in Angular Range slider component
 
-The `format` feature used to customize the units of Slider values to desired format. The formatted values will also be applied
-to the ARIA attributes of the slider. There are two ways of achieving formatting in slider.
+The `format` feature used to customize the units of Slider values to desired format. The formatted values will also be applied to the ARIA attributes of the slider. There are two ways of achieving formatting in slider.
 
 * Use the format API of slider which utilizes our [Internationalization](../common/internationalization/) to format values.
 
@@ -33,8 +32,7 @@ to the ARIA attributes of the slider. There are two ways of achieving formatting
 
 ## Using format API
 
-In this method, we have different predefined formatting styles like Numeric (N), Percentage (P), Currency (C) and `#` specifiers. In
-this below example, we have formatted the `ticks` and `tooltip` values into percentage.
+In this method, we have different predefined formatting styles like Numeric (N), Percentage (P), Currency (C) and `#` specifiers. In this below example, we have formatted the `ticks` and `tooltip` values into percentage.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

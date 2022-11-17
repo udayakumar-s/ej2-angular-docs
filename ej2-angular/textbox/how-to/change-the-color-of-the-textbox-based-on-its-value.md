@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Change the color of the textbox based on its value in Angular Textbox component
 
-You can change the color of the TextBox by validating its value using regular expression in the `keyup` event
-for predicting the numeric values as demonstrated in the following code sample.
+You can change the color of the TextBox by validating its value using regular expression in the `keyup` event for predicting the numeric values as demonstrated in the following code sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

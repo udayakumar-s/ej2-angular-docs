@@ -1,66 +1,42 @@
 
 
-
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Maps } from '@syncfusion/ej2-angular-maps';
-import { markerDataSource } from 'markerdata.ts';
-
+import { Component, OnInit } from '@angular/core';
+import { Maps, Marker, Selection } from '@syncfusion/ej2-angular-maps';
+import { world_map } from 'world-map.ts';
+Maps.Inject(Marker, Selection);
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps
-      id="rn-container"
-      style="display:block"
-      [legendSettings]="legendSettings"
-    >
-      <e-layers>
-        <e-layer [urlTemplate]= 'urlTemplate'
-          [shapePropertyPath]="shapePropertyPath"
-          [shapeDataPath]="shapeDataPath"
-          [markerSettings]="markerSettings"
-          [shapeSettings]="shapeSettings"
-        ></e-layer>
-      </e-layers>
+    `<ejs-maps id='rn-container'>
+    <e-layers>
+    <e-layer  [shapeData]= 'shapeData' [markerSettings] = 'markerSettings'></e-layer>
+    </e-layers>
     </ejs-maps>`
 })
-export class AppComponent implements OnInit {
-  public shapeDataPath: string;
-  public shapePropertyPath: string;
-  public shapeSettings: object;
-  public markerSettings: object;
-  public legendSettings: object;
-  public urlTemplate: string;
-  ngOnInit(): void {
-    this.urlTemplate = 'http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level';
-    this.shapeDataPath = 'name';
-    this.shapePropertyPath = 'name';
-    this.legendSettings = {
-      visible: true,
-      type: 'Markers',
-      useMarkerShape: true,
-      toggleLegendSettings: {
-        enable: true,
-        applyShapeSettings: false,
-        border: {
-          color: 'green',
-          width: 2,
-        },
-      },
-    };
-    this.shapeSettings = {
-      fill: '#E5E5E5',
-    };
-    this.markerSettings = [
-      {
-        dataSource: markerDataSource,
-        colorValuePath: 'color',
-        shapeValuePath: 'shape',
-        legendText: 'country',
-        visible: true,
-      },
-    ];
-  }
-}
 
+export class AppComponent implements OnInit {
+    public shapeData: object;
+    public markerSettings: object;
+    ngOnInit(): void {
+        this.shapeData = world_map;
+        this.markerSettings = [{
+           visible: true,
+            height: 20,
+            width: 20,
+            fill: 'green',
+            shape:'Balloon',
+            selectionSettings: {
+                enable: true,
+                fill: 'blue',
+                border: { color: 'white', width: 2}
+            },
+            dataSource: [
+                { latitude: 49.95121990866204, longitude: 18.468749999999998, name:'Europe' },
+                { latitude: 59.88893689676585, longitude: -109.3359375, name:'North America'},
+                { latitude: -6.64607562172573, longitude: -55.54687499999999, name:'South America'}
+            ]
+        }];
+    }
+}
 
 

@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Change orientation in Angular Menu component
 
-Orientation in menu items can be changed horizontally or vertically using the
-[`orientation`](https://ej2.syncfusion.com/angular/documentation/api/menu/#orientation) property.
+Orientation in menu items can be changed horizontally or vertically using the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/menu/#orientation) property.
 By default, it is horizontally aligned.
 
 {% tabs %}

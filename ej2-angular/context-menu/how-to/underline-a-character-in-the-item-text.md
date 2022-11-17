@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Underline a character in the item text in Angular Context menu component
 
-To underline a particular character in a text, it can be handled in `beforeItemRender` event by
-adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
+To underline a particular character in a text, it can be handled in `beforeItemRender` event by adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Heatmap chart component
+# Getting started with Angular Heatmap chart component
 
 This section explains  the steps required to create a heat map and demonstrates the basic usage of the heat map control.
 
@@ -250,7 +250,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 
 ## Add custom cell palette
 
-The default palette settings of the heat map cells can be customized by using the [`paletteSettings`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#palettesettings) property. Using the [`palette`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings/#palette) property in `paletteSettings` object, you can change the color set for the cells.   You can change the color mode of the cells to `fixed` or `gradient` mode using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings/#type) property.
+The default palette settings of the heat map cells can be customized by using the [`paletteSettings`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#palettesettings) property. Using the [`palette`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings/#palette) property in `paletteSettings` object, you can change the color set for the cells. You can change the color mode of the cells to `fixed` or `gradient` mode using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings/#type) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

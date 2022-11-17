@@ -103,8 +103,7 @@ To render the Sidebar component, need to import Sidebar and its dependent compon
 @import '../../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
 ```
 
->Note: If you want to refer the combined component styles,
-please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Create a simple Sidebar
 

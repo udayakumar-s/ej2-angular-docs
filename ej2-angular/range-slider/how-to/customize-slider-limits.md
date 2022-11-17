@@ -10,10 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize slider limits in Angular Range slider component
 
-Slider appearance can be customized via CSS. By overriding the slider CSS classes, the slider
-limit bar can be customized. Here, the limit bar is customized with different background color. By
-default, the slider has class `e-limits` for limits bar. You can override the class with our own
-color values as given in the following code snippet.
+Slider appearance can be customized via CSS. By overriding the slider CSS classes, the slider limit bar can be customized. Here, the limit bar is customized with different background color. By default, the slider has class `e-limits` for limits bar. You can override the class with our own color values as given in the following code snippet.
 
 ```css
 

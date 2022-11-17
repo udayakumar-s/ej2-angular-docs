@@ -10,21 +10,16 @@ domainurl: ##DomainURL##
 
 # Form slider with formvalidator in Angular Range slider component
 
-We can validate the Slider component using our `FormValidator`. The following steps walk-through
-for slider validation.
+We can validate the Slider component using our `FormValidator`. The following steps walk-through for slider validation.
 
 * Render Slider component inside form.
 
-* Bind [changed](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#changed)
-event in the Slider component to validate the slider value when the value changes.
+* Bind [changed](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#changed) event in the Slider component to validate the slider value when the value changes.
 
 * Initialize and render FormValidator for the form using form ID.
 
 * Set required property in the FormValidator `rules` collection.
-Here, we set the
-[min](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#min)
-property of Slider which sets the minimum value in Slider component and it has hidden
-input since enable `validateHidden` property as true.
+Here, we set the [min](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#min) property of Slider which sets the minimum value in Slider component and it has hidden input since enable `validateHidden` property as true.
 
 ```typescript
 
@@ -49,11 +44,9 @@ export class AppComponent {
 
 ```
 
-> Form validation done by either ID or name value of Slider component. In above used ID of the
-slider for validate it.
+> Form validation done by either ID or name value of Slider component. In above used ID of the slider for validate it.
 
-Using Slider name: Render Slider with name attribute. In the below code snippet we have used name
-attribute value of ‘slider’ for form validation.
+Using Slider name: Render Slider with name attribute. In the below code snippet we have used name attribute value of ‘slider’ for form validation.
 
 ```typescript
 
@@ -78,8 +71,7 @@ export class AppComponent {
 
 ```
 
-* Validate the form using `validate` method and it validates the Slider value with the defined
-rules collection and returns the result.
+* Validate the form using `validate` method and it validates the Slider value with the defined rules collection and returns the result.
 If user selects the value less than the minimum value, form will not submit.
 
 ```typescript

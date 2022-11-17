@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Signature component
+# Getting started with Angular Signature component
 
 This section explains how to create a simple Signature, and demonstrate the basic usage of the Signature module in an Angular environment.
 
@@ -78,8 +78,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Signature module
 
-Import Signature module into Angular application(app.module.ts) from the package
-`@syncfusion/ej2-angular-inputs`.
+Import Signature module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-inputs`.
 
 ```javascript
 import { NgModule } from '@angular/core';
@@ -97,8 +96,7 @@ export class AppModule { }
 
 ## Adding Syncfusion Signature component
 
-Modify the template in `app.component.ts` file with `ejs-signature` to render the Signature
-component.
+Modify the template in `app.component.ts` file with `ejs-signature` to render the Signature component.
 
 ```javascript
 import { Component } from '@angular/core';

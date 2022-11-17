@@ -23,8 +23,8 @@ export class AppComponent implements OnInit {
     public toolbarOptions: ToolbarItems[];
     ngOnInit(): void {
         this.data = sampleData;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row' };
-        this.toolbarOptions = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Cell' };
+        this.toolbarOptions = ['Add', 'Delete', 'Update', 'Cancel'];
     }
 }
 

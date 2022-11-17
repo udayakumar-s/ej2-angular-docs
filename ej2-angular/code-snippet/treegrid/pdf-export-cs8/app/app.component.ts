@@ -20,9 +20,9 @@ export class AppComponent implements OnInit {
 
     public data: Object[];
     public pager: Object;
-    public toolbarOptions: ToolbarItems[];
     @ViewChild('treegrid')
     public treeGridObj: TreeGridComponent;
+    public toolbarOptions: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     toolbarClick(args: Object) : void {
         if (args['item'].text === 'PDF Export') {
             let exportProperties: PdfExportProperties = {
-                exportType: 'CurrentPage'
+                pageOrientation: 'Landscape'
             };
             this.treeGridObj.pdfExport(exportProperties);
         }

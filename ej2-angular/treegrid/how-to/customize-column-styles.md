@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize column styles in Angular Treegrid component
 
-You can customise the appearance of header and content of the particular column using the
-[`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property.
+You can customise the appearance of header and content of the particular column using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property.
 
 To customize the Tree Grid column, follow the given steps:
 

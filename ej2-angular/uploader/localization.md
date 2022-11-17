@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 # Localization in Angular Uploader component
 
 The Localization library allows you to localize static text content of the uploader.
-The static text contains default text content of action buttons, file status, clear icon title, tooltips,
-and text content of drag area. Define the locale object for a culture and assign it to L10n load method.
+The static text contains default text content of action buttons, file status, clear icon title, tooltips, and text content of drag area. Define the locale object for a culture and assign it to L10n load method.
 
 The following are the list of keys and its values used in the uploader.
 

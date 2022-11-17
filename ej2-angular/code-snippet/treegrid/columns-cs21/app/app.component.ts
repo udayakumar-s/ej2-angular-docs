@@ -1,16 +1,15 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { sampleData } from './datasource';
+import { stringData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'>
+    template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' >
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
-                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
-                    <e-column field='approved' headerText='Approved' width='150' [displayAsCheckBox]="true" textAlign='Center'> </e-column>
+                    <e-column field='name' headerText='Assignee' textAlign='Right' [valueAccessor]='orderFormatter' width=90></e-column>
                     <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
         </e-columns>
                 </ejs-treegrid>`
@@ -20,10 +19,12 @@ export class AppComponent implements OnInit {
     public data: Object[];
 
     ngOnInit(): void {
-        this.data = sampleData;
+        this.data = stringData;
     }
+ orderFormatter(field: string, data: Object, column: Object): string {
+    return data[field].map(function (s: {lastName: string, firstName: string}): string {
+        return s.lastName || s.firstName }).join(' ');
 }
-
-
+}
 
 

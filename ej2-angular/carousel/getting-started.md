@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Carousel component
+# Getting started with Angular Carousel component
 
-This section explains how to create a simple Carousel, and demonstrate the basic usage of the Carousel module in an Angular environment.
+This section explains how to create a simple [Angular Carousel](https://www.syncfusion.com/angular-ui-components/angular-carousel), and demonstrate the basic usage of the Carousel module in an Angular environment.
 
 ## Dependencies
 
@@ -190,3 +190,5 @@ The following example shows a basic `Carousel` component.
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/carousel/getting-started-cs1" %}
+
+N> You can also explore our [Angular Carousel example](https://ej2.syncfusion.com/angular/demos/#/material/carousel/default) that shows you how to configure the Carousel in Angular.

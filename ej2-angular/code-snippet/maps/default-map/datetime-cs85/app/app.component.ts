@@ -1,16 +1,13 @@
 
 
 
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Maps, Zoom } from '@syncfusion/ej2-angular-maps';
-import { usa_map } from 'usa.ts';
-import { world_map } from 'world-map.ts';
-import { california } from 'california.ts';
 Maps.Inject(Zoom);
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps id='rn-container' [layers]='layers' [zoomSettings]='zoomSettings'>
+    `<ejs-maps id='rn-container' style='display:block' [zoomSettings]='zoomSettings'>
      <e-layers>
     <e-layer [urlTemplate]= 'urlTemplate'></e-layer>
     </e-layers>
@@ -22,7 +19,8 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
            this.urlTemplate = 'https://tile.openstreetmap.org/level/tileX/tileY.png';
            this.zoomSettings = {
-               enable: true
+              enable: true,
+              toolbars: ["Zoom", "ZoomIn", "ZoomOut", "Pan", "Reset"]
            }
     }
 }

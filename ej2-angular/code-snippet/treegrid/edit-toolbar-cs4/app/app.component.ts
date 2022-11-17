@@ -1,39 +1,101 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { sampleData } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { summaryData } from './datasource';
+import { EditSettingsModel, ToolbarItems, TreeGridComponent, IEditCell } from '@syncfusion/ej2-angular-treegrid';
+import { NumericTextBox } from '@syncfusion/ej2-inputs';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data'  [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' childMapping='subtasks' >
-        <e-columns>
-                    <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
-                    <e-column field='taskName' headerText='Task Name' editType='stringedit' textAlign='Left' width=180></e-column>
-                    <e-column field='approved' headerText='Approved' editType='booleanedit' type='boolean' textAlign='Right' [displayAsCheckBox]='true' width=110></e-column>
-                    <e-column field='priority' headerText='Priority' editType='dropdownedit' textAlign='Right' width=110></e-column>
-                    <e-column field='startDate' headerText='Start Date' textAlign='Right' [format]='formatOptions' editType='datetimepickeredit' [edit]='editOptions' width=180></e-column>
-                    <e-column field='progress' headerText='Progress' textAlign='Right' editType='numericedit' width=120 [edit]='editing'></e-column>
-        </e-columns>
+    template: `<ejs-treegrid #treegrid id="treegrid" [dataSource]='data'  [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' childMapping='subtasks' (cellEdit)="cellEdit($event)">
+                    <e-columns>
+                        <e-column field='ID' headerText='ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
+                        <e-column field='Name' headerText='Name' textAlign='Left' width=180></e-column>
+                        <e-column field='units' headerText='Units' textAlign='Right' editType="numericedit" [edit]="unitsParams" format="C2" width=120></e-column>
+                        <e-column field='unitPrice' headerText='Unit Price' textAlign='Right' editType="numericedit" [edit]="unitPriceParams" width=120></e-column>
+                        <e-column field='price' headerText='Total Price' textAlign='Right' format="C2" width=110></e-column>
+                    </e-columns>
                 </ejs-treegrid>`
 })
+
 export class AppComponent implements OnInit {
+  @ViewChild('treegrid')
+  public treegrid: TreeGridComponent;
+  public data: Object[];
+  public editSettings: EditSettingsModel;
+  public toolbarOptions: ToolbarItems[];
+  public unitsParams: IEditCell;
+  public unitPriceParams: IEditCell;
 
-    public data: Object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
-    public editing: Object;
-    public formatOptions: Object;
-    public editOptions: Object;
-    ngOnInit(): void {
-        this.data = sampleData;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row' };
-        this.toolbarOptions = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.editing = { params: { format: 'n' } };
-        this.formatOptions = { format: 'M/d/y hh:mm a', type: 'dateTime' };
-        this.editOptions = { params: { format: 'M/d/y hh:mm a' } };
+  public unitsElem: HTMLElement;
+  public unitsObj: NumericTextBox;
+
+  public unitPriceElem: HTMLElement;
+  public unitPriceObj: NumericTextBox;
+
+  ngOnInit(): void {
+    this.data = summaryData;
+    this.editSettings = {
+      allowEditing: true,
+      allowAdding: true,
+      allowDeleting: true,
+      mode: 'Batch'
+    };
+    this.toolbarOptions = ['Add', 'Delete', 'Update', 'Cancel'];
+    this.unitsParams = {
+      create: () => {
+        this.unitsElem = document.createElement('input');
+        return this.unitsElem;
+      },
+      read: () => {
+        return this.unitsObj.value;
+      },
+      destroy: () => {
+        this.unitsObj.destroy();
+      },
+      write: args => {
+        var rowData = args.rowData;
+        var rowIndex = this.treegrid.getRowInfo(args.row).rowIndex;
+        this.unitsObj = new NumericTextBox({
+          value: args.rowData[args.column.field],
+          change: function(args) {
+            var totalCostValue = args.value * rowData['unitPrice'];
+            this.treegrid.updateCell(rowIndex, 'price', totalCostValue);
+          }.bind(this)
+        });
+        this.unitsObj.appendTo(this.unitsElem);
+      }
+    };
+    this.unitPriceParams = {
+      create: () => {
+        this.unitPriceElem = document.createElement('input');
+        return this.unitPriceElem;
+      },
+      read: () => {
+        return this.unitPriceObj.value;
+      },
+      destroy: () => {
+        this.unitPriceObj.destroy();
+      },
+      write: args => {
+        var rowData = args.rowData;
+        var rowIndex = this.treegrid.getRowInfo(args.row).rowIndex;
+        this.unitPriceObj = new NumericTextBox({
+          value: args.rowData[args.column.field],
+          change: function(args) {
+            var totalCostValue = args.value * rowData['unitPrice'];
+            this.treegrid.updateCell(rowIndex, 'price', totalCostValue);
+          }.bind(this)
+        });
+        this.unitPriceObj.appendTo(this.unitPriceElem);
+      }
+    };
+  }
+  cellEdit(args) {
+    if (args.columnName == 'price') {
+      args.cancel = true;
     }
+  }
 }
-
 
 

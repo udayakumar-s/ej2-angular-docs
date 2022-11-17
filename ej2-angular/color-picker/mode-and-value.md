@@ -32,8 +32,7 @@ In the following sample, it will render the `Palette` at initial load.
 
 ## Color value
 
-The [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property can be used to specify the color value to the
-ColorPicker. It supports either `three` or `six` digit hex codes. To include `opacity`, set the color value as `four` or `eight` digit hex code.
+The [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property can be used to specify the color value to the ColorPicker. It supports either `three` or `six` digit hex codes. To include `opacity`, set the color value as `four` or `eight` digit hex code.
 
 In the following sample, the color value sets as `four` digit hex code, the last digit represents the `opacity` value.
 

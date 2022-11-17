@@ -1,27 +1,33 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { projectData } from './datasource';
+import { sampleData } from './datasource';
+import {PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' parentIdMapping='parentID' idMapping='TaskID' height=265 [allowPaging]="true">
-        <e-columns>
-            <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
-            <e-column field='TaskName' headerText='Task Name' width='170'></e-column>
-            <e-column field='StartDate' headerText='Start Date' width='130' format="yMd" textAlign='Right'></e-column>
-            <e-column field='Duration' headerText='Duration' width='80' textAlign='Right'></e-column>
-        </e-columns>
+    template: `<ejs-treegrid [dataSource]='data'  [treeColumnIndex]='1' childMapping='subtasks'
+                [allowPaging]="true" [pageSettings]='pageSettings'>
+                <e-columns>
+                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
+                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
+                    <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
+                </e-columns>
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
 
     public data: Object[];
+    public pageSettings: PageSettingsModel;
 
     ngOnInit(): void {
-        this.data = projectData;
+        this.data = sampleData;
+        this.pageSettings = { pageSize: 6 };
     }
 }
 
 
+
+> * Remote data binding is not supported for Hierarchy Data.
 

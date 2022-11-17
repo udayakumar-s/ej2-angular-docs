@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Smithchart component
+# Getting started with Angular Smithchart component
 
 This section explains you the steps required to create a Smith Chart and demonstrate the basic usage of the Smith Chart control.
 
@@ -133,11 +133,8 @@ The below example shows a basic Smithchart.
 
 ## Module Injection
 
-Smithchart component are segregated into individual feature-wise modules. In order to use a particular feature,
-you need to inject its feature service in the AppModule. In the current application, we are
-going to modify the above basic smithchart to visualize transmission lines.
-For this application we are going to use  tooltip and legend feature of the smithchart. Please find relevant
-feature service name and description as follows.
+Smithchart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the AppModule. In the current application, we are going to modify the above basic smithchart to visualize transmission lines.
+For this application we are going to use  tooltip and legend feature of the smithchart. Please find relevant feature service name and description as follows.
 
 * SmithchartLegendService - Inject this provider to use legend feature.
 * TooltipRenderService - Inject this provider to use tooltip feature.
