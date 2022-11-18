@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Funnel in Angular Accumulation chart component
 
-To render a funnel series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#type) as `Funnel` and
-inject, the `FunnelSeries` module  into the `@NgModule.providers`.
+To render a funnel series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#type) as `Funnel` and inject, the `FunnelSeries` module  into the `@NgModule.providers`.
 
 To known about funnel charts, you can check on this video:
 
@@ -69,8 +68,7 @@ The funnel's neck size can be customized by using the `neckWidth` and `neckHeigh
 
 ## Gap between the segments
 
-Funnel chart provides options to customize the space between the segments by using the `gapRatio` property of the
-series. It ranges from 0 to 1.
+Funnel chart provides options to customize the space between the segments by using the `gapRatio` property of the series. It ranges from 0 to 1.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -88,8 +86,7 @@ series. It ranges from 0 to 1.
 
 ## Explode
 
-Points can be exploded on mouse click by setting the `explode` property to true. You can also explode the point
-on load using `explodeIndex`. Explode distance can be set by using `explodeOffset` property.
+Points can be exploded on mouse click by setting the `explode` property to true. You can also explode the point on load using `explodeIndex`. Explode distance can be set by using `explodeOffset` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

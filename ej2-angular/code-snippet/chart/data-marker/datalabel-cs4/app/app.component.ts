@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { mapData } from 'datasource.ts';
+import { columnData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:
@@ -15,14 +15,15 @@ export class AppComponent implements OnInit {
     public primaryXAxis: Object;
     public chartData: Object[];
     public title: string;
-    public primaryYAxis: Object;
     public marker: Object;
     ngOnInit(): void {
-        this.chartData = mapData;
+        this.chartData = columnData;
         this.primaryXAxis = {
-            valueType: 'Category'
+            title: 'Months',
+            valueType: 'Category', labelFormat: 'yMMM',
+            edgeLabelPlacement: 'Shift'
         };
-        this.marker = { dataLabel: { visible: true, name: 'text'}
+        this.marker = { dataLabel: { visible: true, format: 'p1'}
         };
         this.title = 'Alaska Weather Statistics - 2016';
     }

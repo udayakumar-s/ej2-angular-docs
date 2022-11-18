@@ -54,8 +54,7 @@ export class AppComponent {
 
 ## Size for Chart
 
-You can also set size for chart directly through [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/#width) and
-[`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/#height) properties.
+You can also set size for chart directly through [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/#height) properties.
 
 <!-- markdownlint-disable MD036 -->
 **In Pixel**

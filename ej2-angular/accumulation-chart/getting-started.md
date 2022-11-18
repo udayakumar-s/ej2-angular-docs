@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Getting started in Angular Accumulation chart component
+# Getting started with Angular Accumulation chart component
 
 This section explains you the steps required to create a simple Chart and demonstrate the basic usage of the AccumulationChart component in an Angular environment.
 
@@ -120,10 +120,7 @@ npm start
 
 **Pie Series**
 
-By default pie series will be rendered on assigning JSON data to the series by using
-[`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#datasource) property. Map the field names
-in the JSON data to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#xname) and
-[`yName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#yname) properties of the series.
+By default pie series will be rendered on assigning JSON data to the series by using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#datasource) property. Map the field names in the JSON data to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#yname) properties of the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

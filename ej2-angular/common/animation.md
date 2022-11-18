@@ -8,16 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in Angular Common component
+# Animation
 
 The **Animation** library is used to perform animation effects on HTML elements by running sequence of frames.
 
 ## Animate HTML Element
 
-The [`animate`](https://ej2.syncfusion.com/documentation/api/base/animation#animate) method of `Animation` library
-can be used to animate the HTML elements. This method can also take additional
-[`AnimationModel`](https://ej2.syncfusion.com/documentation/api/base/animationModel). Refer the following code snippet
-to animate a multiple DOM element.
+The [`animate`](https://ej2.syncfusion.com/documentation/api/base/animation#animate) method of `Animation` library can be used to animate the HTML elements. This method can also take additional [`AnimationModel`](https://ej2.syncfusion.com/documentation/api/base/animationModel). Refer the following code snippet to animate a multiple DOM element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

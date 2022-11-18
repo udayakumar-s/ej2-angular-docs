@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Inplace editor component
+# Getting started with Angular Inplace editor component
 
 This section explains the steps to create a simple **In-place Editor** component and configure its available functionalities in Angular.
 
@@ -216,7 +216,7 @@ export class AppComponent {
 
 ## Configuring DropDownList
 
-You can render the Essential JS2 DropDownList by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) and configure its properties and methods using the `model` property.
+You can render the Essential JS2 DropDownList by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) and configure its properties and methods using the `model` property.
 
 In the following sample, [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and model values are configured to render the [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) component.
 

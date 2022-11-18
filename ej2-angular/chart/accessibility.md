@@ -25,24 +25,20 @@ The following ARIA attributes are used in the chart:
 <td><b>Default description</b></td>
 </tr>
 <tr>
-<td>Datalabel</td>
-<td>Reads the Point y value</td>
-</tr>
-<tr>
 <td>Legend</td>
-<td>Click to show or hide the series</td>
-</tr>
-<tr>
-<td>Axis Title</td>
-<td>Reads the axis tile</td>
+<td>Reads the series name</td>
 </tr>
 <tr>
 <td>Chart Title</td>
-<td>Reads the chart title</td>
+<td>Reads the chart's title</td>
 </tr>
 <tr>
 <td>Series Points</td>
 <td>Reads the Point x :  Point y value</td>
+</tr>
+<tr>
+<td>Series Group</td>
+<td>Reads the series type with data points</td>
 </tr>
 </table>
 

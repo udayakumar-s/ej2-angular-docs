@@ -10,11 +10,8 @@ domainurl: ##DomainURL##
 
 # State persistence in Angular Grid component
 
-State persistence refers to the Grid's state maintained in the browser's
-[`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#)
-even if the browser is refreshed or if you move to the next page within the browser.
-State persistence stores grid’s model object in the local storage when the
-[`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) is defined as true.
+State persistence refers to the Grid's state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
+State persistence stores grid’s model object in the local storage when the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) is defined as true.
 
 ## Restore initial Grid state
 
@@ -38,11 +35,8 @@ You can achieve this by destroying the grid after disabling the [`enablePersiste
 
 ## Maintaining custom query in a persistent state
 
-Grid does not maintain the query params after page load event when
-[`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) is set to true.
-This is because the Grid refreshes its query params for every page load. You can maintain the custom query params by resetting the
-[`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams)
-method in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
+Grid does not maintain the query params after page load event when [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) is set to true.
+This is because the Grid refreshes its query params for every page load. You can maintain the custom query params by resetting the [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

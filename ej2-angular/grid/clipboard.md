@@ -35,8 +35,7 @@ Interaction keys |Description
 
 ## Copy to clipboard by external buttons
 
-To copy selected rows or cells data into clipboard with help of external buttons, you need to invoke the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/grid/clipboard/#copy)
-method.
+To copy selected rows or cells data into clipboard with help of external buttons, you need to invoke the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/grid/clipboard/#copy) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

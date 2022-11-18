@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Foreign key column in Angular Grid component
 
-Foreign key column can be enabled by using [`column.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#datasource),
-[`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) and
-[`column.foreignKeyValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue) properties.
+Foreign key column can be enabled by using [`column.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#datasource), [`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) and [`column.foreignKeyValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue) properties.
 
 * [`column.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#datasource) - Defines the foreign data.
 * [`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) - Defines the mapping column name to the foreign data.
@@ -36,8 +34,7 @@ To use ForeignKeyColumn, you need to inject **ForeignKeyService** in the provide
   
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs19" %}
 
-> * For remote data, the sorting and grouping is done based on [`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) instead of
-[`column.foreignKeyValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue).
+> * For remote data, the sorting and grouping is done based on [`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) instead of [`column.foreignKeyValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue).
 > * If [`column.foreignKeyField`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) is not defined, then the column uses [`column.field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field).
 
 ## Use edit template in foreignkey column
@@ -85,8 +82,7 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 
 ## Use filter bar template in foreignkey column
 
-You can use the filter bar template in foreign key column by defining the
-[`column.filterBarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) property.
+You can use the filter bar template in foreign key column by defining the [`column.filterBarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) property.
 The following example demonstrates the way to use filter bar template in foreign column.
 
 In the following example, The **Employee Name** is a foreign key column.

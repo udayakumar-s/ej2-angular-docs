@@ -2,7 +2,6 @@
 
 import { Component, OnInit } from '@angular/core';
 import { pieData } from 'datasource.ts';
-import { IAccTextRenderEventArgs, IAccTooltipRenderEventArgs } from '@syncfusion/ej2-charts';
 @Component({
     selector: 'app-container',
     template:
@@ -14,17 +13,13 @@ import { IAccTextRenderEventArgs, IAccTooltipRenderEventArgs } from '@syncfusion
 })
 export class AppComponent implements OnInit {
     public piedata: Object[];
-    public tooltip: Object;
-    public ontooltipRender: Function;
+     public tooltip: Object;
     ngOnInit(): void {
         this.piedata = pieData;
-         this.tooltip = {
-              enable: true,
-                format: '${series.name} ${point.x} : ${point.y}',
-                fill: '#7bb4eb',
-                border: {
-                   width: 2,
-                   color: 'grey'
+        this.tooltip = {
+              enable: true,  template: "<div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>"+
+        "<img src='https://ej2.syncfusion.com/demos/src/chart/images/sunny.png' />" +
+        "<div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${y}</span></div></div>"
                 }
         };
     }

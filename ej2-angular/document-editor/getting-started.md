@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Document editor component
+# Getting started with Angular Document editor component
 
 This section explains the steps to create a Word document editor within your application and demonstrates the basic usage of the Document Editor component.
 
@@ -188,8 +188,7 @@ This can be referenced in your `[src/styles/styles.css]` using the following cod
 @import '../../node_modules/@syncfusion/ej2-angular-documenteditor/styles/material.css';
 ```
 
-> To know about individual component CSS, please refer to
-[Individual Component theme files](../appearance/theme#referring-individual-control-theme/) section.
+> To know about individual component CSS, please refer to [Individual Component theme files](../appearance/theme#referring-individual-control-theme/) section.
 
 In case, if you want to make use of the combined CSS files of entire components, then you can avail it from the root folder of Essential JS 2 package and reference it with the code shown below.
 

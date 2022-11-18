@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 # Index in Angular Grid component
 
 The Grid component is used to display and manipulate tabular data with configuration options to control the way the data is presented and manipulated.
-It will pull data from a data source, such as an array of JavaScript objects, **OData web services**, or **DataManager** and
-binding data fields to columns. Also displaying a column header to identify the field with support for grouped records.
+It will pull data from a data source, such as an array of JavaScript objects, **OData web services**, or **DataManager** and binding data fields to columns. Also displaying a column header to identify the field with support for grouped records.
 
 The most important features available in the grid components are paging, sorting, filtering, searching and grouping.
 
@@ -24,13 +23,13 @@ The most important features available in the grid components are paging, sorting
 * [**Paging**](./paging) - Provides the option to easily switch between pages using the pager bar.
 * [**Editing**](./edit) - provides the options for create, read, update, and delete operations.
 * [**Columns**](./columns) - The column definitions are used as the dataSource schema in the Grid. This plays a vital role in rendering column values in the required format.
-    * [**Reordering**](./columns/#reorder) - Allows you to drag any column and drop it at any position in the Grid’s column header row, allowing columns to be repositioned.
-    * [**Column Chooser**](./columns/#column-chooser) - The column chooser provides a list of column names paired with check boxes that allow the visibility to be toggled on the fly.
-    * [**Resizing**](./columns/#column-resizing) - Resizing allows changing column width on the fly by simply dragging the right corner of the column header.
-    * [**Freeze**](./scrolling/#frozen-rows-and-columns) - Columns and rows can be frozen to allow scrolling and comparing cell values.
-    * [**Cell Spanning**](./columns/#column-spanning) - Grid cells can be spanned based on the preferred criteria.
-    * [**Foreign data source**](./columns/#foreign-key-column) - This provides the option to show values from external or lookup data sources in a column based on foreign key/value mapping.
-    * [**Cell Styling**](./how-to/#customize-column-styles) - Grid cell styles can be customized either by using CSS or programmatically.
+* [**Reordering**](./columns/#reorder) - Allows you to drag any column and drop it at any position in the Grid’s column header row, allowing columns to be repositioned.
+* [**Column Chooser**](./columns/#column-chooser) - The column chooser provides a list of column names paired with check boxes that allow the visibility to be toggled on the fly.
+* [**Resizing**](./columns/#column-resizing) - Resizing allows changing column width on the fly by simply dragging the right corner of the column header.
+* [**Freeze**](./scrolling/#frozen-rows-and-columns) - Columns and rows can be frozen to allow scrolling and comparing cell values.
+* [**Cell Spanning**](./columns/#column-spanning) - Grid cells can be spanned based on the preferred criteria.
+* [**Foreign data source**](./columns/#foreign-key-column) - This provides the option to show values from external or lookup data sources in a column based on foreign key/value mapping.
+* [**Cell Styling**](./how-to/#customize-column-styles) - Grid cell styles can be customized either by using CSS or programmatically.
 * [**Selection**](./selection) - Rows or cells can be selected in the grid. One or more rows or cells can also be selected by holding Ctrl or Command, or programmatically.
 * [**Templates**](./columns/#column-template) - Templates can be used to create custom user experiences in the grid.
 * [**Aggregation**](./aggregates) - Provides the option to easily visualized the Aggregates for column values.

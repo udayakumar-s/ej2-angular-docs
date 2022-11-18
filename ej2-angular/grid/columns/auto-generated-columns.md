@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Auto generated columns in Angular Grid component
 
-The [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#column) are automatically generated when
-[`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#column)
-declaration is empty or undefined while initializing the grid. All the columns in the **dataSource** are bound as grid columns.
+The [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column) are automatically generated when [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column) declaration is empty or undefined while initializing the grid. All the columns in the **dataSource** are bound as grid columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,9 +26,7 @@ declaration is empty or undefined while initializing the grid. All the columns i
   
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs3" %}
 
-> When the columns are auto-generated then the column [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type)
-will be determined from the first record of the
-[`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource).
+> When the columns are auto-generated then the column [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) will be determined from the first record of the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource).
 
 ## Set Primary key column for auto generated columns when editing is enabled
 

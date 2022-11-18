@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Local data in Angular Grid component
 
-To bind local data to the grid, you can assign a JavaScript object array to the
-[`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. The local data source can also be provided as an instance of the
-**DataManager**.
+To bind local data to the grid, you can assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. The local data source can also be provided as an instance of the **DataManager**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,8 +30,7 @@ To bind local data to the grid, you can assign a JavaScript object array to the
 
 ## Refresh the data source
 
-You can add/delete the datasource records through an external button. To reflect the datasource changes in grid,
-you need to invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
+You can add/delete the datasource records through an external button. To reflect the datasource changes in grid, you need to invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
 
 Please follow the below steps to refresh the grid after datasource change.
 

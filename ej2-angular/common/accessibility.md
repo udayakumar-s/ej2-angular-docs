@@ -8,17 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Common component
+# Accessibility
 
 All the Syncfusion Angular UI components follow WAI-ARIA accessibility standard by default.
-This enables you to build accessible web application which is fully navigable by the user with
-disabilities.
+This enables you to build accessible web application which is fully navigable by the user with disabilities.
 
 ## Keyboard Navigation
 
 Keyboard navigation support enables users to interact with components using Keyboard shortcuts.
-Each component has its own set of shortcuts, please refer the following documents to get details for
-each component.
+Each component has its own set of shortcuts, please refer the following documents to get details for each component.
 
 * [AutoComplete](../auto-complete/accessibility)
 * [Calendar](../calendar/accessibility)

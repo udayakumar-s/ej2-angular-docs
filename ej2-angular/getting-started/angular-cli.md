@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular cli in Angular Getting started component
+# Angular cli with Angular Getting started component
 
 Refer to the following steps to create Angular project with Syncfusion Angular UI Components (Essential JS 2).
 

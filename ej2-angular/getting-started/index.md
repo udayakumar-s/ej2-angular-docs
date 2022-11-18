@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Getting started component
+# Index with Angular Getting started component
 
 The Base (`ej2-base`) is the common package which have common class definitions, libraries and methods for the Essential JS 2 components.
 

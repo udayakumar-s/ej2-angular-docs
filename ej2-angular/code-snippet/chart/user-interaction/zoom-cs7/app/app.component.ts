@@ -28,7 +28,8 @@ export class AppComponent implements OnInit {
         };
         this.zoom = {
             enableSelectionZooming: true,
-            toolbarItems: ['Zoom', 'Pan', 'Reset']
+            toolbarItems: ['Zoom', 'Pan', 'Reset'],
+            showToolbar: true
         };
         this.animation = { enable: false};
         this.legend = { visible: false };

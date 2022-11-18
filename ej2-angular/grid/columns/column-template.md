@@ -32,10 +32,9 @@ The column [`template`](https://ej2.syncfusion.com/angular/documentation/api/gri
 
 You can render any component in a grid column using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
 
-Initialize the column template for your custom component. The [`template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property
-renders the custom component.
+Initialize the column template for your custom component. The [`template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property renders the custom component.
 
-```html
+```
     <div>
         <ejs-dropdownlist value='Order Placed' [dataSource]='dropData' [popupHeight]='150' [popupWidth]='150' ></ejs-dropdownlist>
     </div>
@@ -62,7 +61,7 @@ You can render the template elements based on condition.
 
 In the following code, checkbox is rendered based on **Discontinued** field value.
 
-```html
+```
   <e-column headerText='Discontinued' width='150' textAlign='Center'>
              <ng-template #template let-data>
                   <div *ngIf="data.Discontinued; else elseblock">

@@ -34,7 +34,7 @@ You can assign data from the data base to the chart. The **series.dataSource** p
 ng generate service chart
 ```
 
-The command generates  ChartService class in src/app/chart.service.ts as follows:
+The command generates ChartService class in src/app/chart.service.ts as follows:
 
 ```typescript
 import { Injectable } from '@angular/core';

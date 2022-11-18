@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Grid component
 
-Filtering allows you to view particular records based on filter criteria. To enable filtering in the Grid,
-set the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to true.
+Filtering allows you to view particular records based on filter criteria. To enable filtering in the Grid, set the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to true.
 Filtering options can be configured through [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings).
 
 To use filter, inject **FilterService** in the provider section of **AppModule**.
@@ -36,15 +35,12 @@ The Grid supports two types of filter, they are
   
 {% previewsample "page.domainurl/code-snippet/grid/filtering1-cs9" %}
 
-> * You can apply and clear filtering, by using
-[`filterByColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#clearfiltering) methods.
-> * To disable Filtering for a particular column, by specifying
-[`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) to false.
+> * You can apply and clear filtering, by using [`filterByColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#clearfiltering) methods.
+> * To disable Filtering for a particular column, by specifying [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) to false.
 
 ## Initial filter
 
-To apply the filter at initial rendering, set the filter [`predicate`](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate) object in
-[`filterSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns).
+To apply the filter at initial rendering, set the filter [`predicate`](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate) object in [`filterSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,8 +78,7 @@ lessThanOrEqual |Checks whether a value is less than or equal to specified valu
 
 ## Diacritics filter
 
-By default, grid ignores diacritic characters while filtering. To include diacritic characters, set the
-[`filterSettings.ignoreAccent`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) as **true**.
+By default, grid ignores diacritic characters while filtering. To include diacritic characters, set the [`filterSettings.ignoreAccent`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) as **true**.
 
 In the following sample, type **aero** in **Name** column to filter diacritic characters.
 

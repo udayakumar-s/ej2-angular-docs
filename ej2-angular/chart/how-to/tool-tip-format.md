@@ -17,8 +17,7 @@ To format the datetime value,please follow the steps below
 
 **Step 1**:
 
-By using [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#tooltiprender) event we can able to get
-the current point x value. Using this value to format the tooltip by using `formatDate` method.
+By using [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#tooltiprender) event we can able to get the current point x value. Using this value to format the tooltip by using `formatDate` method.
 
 The output will appear as follows,
 

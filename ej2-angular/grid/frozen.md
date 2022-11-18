@@ -14,8 +14,7 @@ Frozen rows and columns provides an option to make rows and columns always visib
 
 To use frozen rows and columns support, inject the **FreezeService** in the provider section of **AppModule**.
 
-In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) is set as **2** and the [`frozenRows`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows)
-is set as **3**. Hence, the left two columns and top three rows are frozen.
+In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) is set as **2** and the [`frozenRows`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows) is set as **3**. Hence, the left two columns and top three rows are frozen.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

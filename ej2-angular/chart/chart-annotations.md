@@ -40,8 +40,7 @@ To known more about annotations, you can check on this video:
 
 ## Region
 
-Annotations can be placed either with respect to `Series` or `Chart`. by default, it will placed with respect
-to `Chart`.
+Annotations can be placed either with respect to `Series` or `Chart`. by default, it will placed with respect to `Chart`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,8 +76,7 @@ Specified the coordinates units of the annotation either `Pixel` or `Point`.
 
 ## Alignment
 
-Annotation provides `verticalAlignment` and `horizontalAlignment`. The `verticalAlignment` can be customized
-via `Top`, `Bottom` or `Middle` and the `horizontalAlignment` can be customized via `Near`, `Far` or `Center`.
+Annotation provides `verticalAlignment` and `horizontalAlignment`. The `verticalAlignment` can be customized via `Top`, `Bottom` or `Middle` and the `horizontalAlignment` can be customized via `Near`, `Far` or `Center`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,8 +94,7 @@ via `Top`, `Bottom` or `Middle` and the `horizontalAlignment` can be customized 
 
 ## Adding y-axis sub title through on annotation
 
-By setting text div in the `content` option of annotation object you can add sub title to chart y-axis. Specified the
-`coordinate` value as `pixel` and customize x and y location of the text.
+By setting text div in the `content` option of annotation object you can add sub title to chart y-axis. Specified the `coordinate` value as `pixel` and customize x and y location of the text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

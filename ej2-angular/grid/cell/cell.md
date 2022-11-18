@@ -12,11 +12,8 @@ domainurl: ##DomainURL##
 
 ## Cell customization
 
-The appearance of cells can be customized by using the
-[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
-The [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event
-triggers for every cell. In that event handler, you can get
-[`QueryCellInfoEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/#queryCellInfoEventArgs) that contains the details of the cell.
+The appearance of cells can be customized by using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
+The [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event triggers for every cell. In that event handler, you can get [`QueryCellInfoEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) that contains the details of the cell.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,8 +63,7 @@ In the below example, we have customized the cells of **OrderID** and **ShipCity
 
 ## Grid lines
 
-The [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/grid/#gridlines) have the option to display cell border and it can be defined by the
-[`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/grid/#gridlines) property.
+The [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/grid/#gridlines) have the option to display cell border and it can be defined by the [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/grid/#gridlines) property.
 
 The available modes of grid lines are:
 

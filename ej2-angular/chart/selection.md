@@ -66,8 +66,7 @@ We have different type of selection mode for selecting the data. They are,
 
 ## Cluster
 
-You can select the points that corresponds to the same index in all the series, by setting `selectionMode` to
-cluster.
+You can select the points that corresponds to the same index in all the series, by setting `selectionMode` to cluster.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,8 +165,7 @@ You can select multiple points or series, by enabling the [`isMultiSelect`](http
 
 ## Selection on load
 
-You can able to select a point or series programmatically on a chart using
-[`selectedDataIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart/#selecteddataindexes) property.
+You can able to select a point or series programmatically on a chart using [`selectedDataIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart/#selecteddataindexes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -185,9 +183,7 @@ You can able to select a point or series programmatically on a chart using
 
 ## Selection through on legend
 
-You can able to select a point or series through on legend using
-[`toggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel/#toggleVisibility) property.
-
+You can able to select a point or series through on legend using [`toggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel/#toggleVisibility) property. Also, use [`enableHighlight`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#enableHighlight) property for highlighting the series through legend.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/selection-cs6/app/app.component.ts %}

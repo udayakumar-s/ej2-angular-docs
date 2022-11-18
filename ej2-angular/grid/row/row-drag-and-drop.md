@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 The Grid Row drag and drop allows you to drag grid rows and drop to another Grid or custom component.
 To enable Row drag and drop in the Grid, set the [`allowRowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowrowdraganddrop) to true.
-The target component on which the Grid rows to be dropped can be set by using
-[`targetID`](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDropSettings/#targetid).
+The target component on which the Grid rows to be dropped can be set by using [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDropSettings/#targetid).
 
 To use Row Drag and Drop, you need to inject **RowDDService** in the provider section of **AppModule**.
 

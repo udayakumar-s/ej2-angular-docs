@@ -14,8 +14,7 @@ The annotations are used to mark the specific area of interest in the chart area
 
 <!-- markdownlint-disable MD033 -->
 
-By using the <code>content</code> option of annotation property, you can specify the Id of the element that needs
-to be displayed in the chart area.
+By using the <code>content</code> option of annotation property, you can specify the Id of the element that needs to be displayed in the chart area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,8 +71,7 @@ Specifies the coordinate units of an annotation either in `Pixel` or `Point`.
 ## Alignment
 
 The annotations provides the `verticalAlignment`or `horizontalAlignment` properties.
-The `verticalAlignment` property can be customized via `Top`, `Bottom` or `Middle` and the `horizontalAlignment`
-property can be customized via `Near`, `Far` or `Center`.
+The `verticalAlignment` property can be customized via `Top`, `Bottom` or `Middle` and the `horizontalAlignment` property can be customized via `Near`, `Far` or `Center`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

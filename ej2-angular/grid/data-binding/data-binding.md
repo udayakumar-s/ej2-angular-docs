@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 # Data binding in Angular Grid component
 
 The Grid uses **DataManager** which supports both RESTful JSON data services binding and local JavaScript object array binding.
-The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property can be assigned either with the instance of **DataManager** or
-JavaScript object array collection.
+The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property can be assigned either with the instance of **DataManager** or JavaScript object array collection.
 It supports two kinds of data binding methods:
 * Local data
 * Remote data
@@ -61,11 +60,9 @@ export class AppComponent implements OnInit {
 
 ## Handling HTTP error
 
-During server interaction from the grid, some server-side exceptions may occur, and you can acquire those error messages or exception details
-in client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event.
+During server interaction from the grid, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event.
 
-The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) Grid event contains the error details
-returned from the server.
+The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) Grid event contains the error details returned from the server.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -99,8 +96,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event will be triggered not only for the server errors, but
-also when there is an exception while processing the grid actions.
+> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
 
 ## Binding with ajax
 
@@ -145,4 +141,4 @@ export class AppComponent implements OnInit {
 ## See Also
 
 * [Binding a firebase data source to Grid using AngularFire2](https://www.syncfusion.com/blogs/post/binding-a-firebase-data-source-to-grid-using-angularfire2.aspx)
-* [How to bind SQL Server data in Angular DataGrid using SqlClient data provider](https://www.syncfusion.com/kb/13243/how-to-bind-sql-server-data-in-angular-datagrid-using-sqlclient-data-provider)
+* [How to bind SQL Server data in Angular DataGrid using SqlClient data provider](https://www.syncfusion.com/kb/11453/how-to-bind-sql-server-data-in-angular-datagrid-using-sqlclient-data-provider)

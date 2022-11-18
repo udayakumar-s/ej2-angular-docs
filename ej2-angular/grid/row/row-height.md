@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Row height in Angular Grid component
 
-You can customize the row height of grid rows through the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) property. The [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) property
-is used to change the row height of entire grid rows.
+You can customize the row height of grid rows through the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) property. The [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) property is used to change the row height of entire grid rows.
 
 In the below example, the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) is set as '60px'.
 
@@ -31,8 +30,7 @@ In the below example, the [`rowHeight`](https://ej2.syncfusion.com/angular/docum
 
 ## Customize row height for particular row
 
-Grid row height for particular row can be customized using the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound)
-event by setting the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) in arguments for each row based on the requirement.
+Grid row height for particular row can be customized using the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event by setting the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) in arguments for each row based on the requirement.
 
 In the below example, the row height for the row with OrderID as '10249' is set as '90px' using the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event.
 

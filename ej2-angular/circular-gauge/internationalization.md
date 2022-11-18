@@ -22,8 +22,7 @@ For more information about number formatter you can refer
 **Globalization**
 
 Globalization is the process of designing and developing a component that works in different cultures/locales.
-Internationalization library is used to globalize number in CircularGauge component
-using [`format`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/label/#format-string) property in [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/label).
+Internationalization library is used to globalize number in CircularGauge component using [`format`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/label/#format-string) property in [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/label).
 
 <!-- markdownlint-disable MD036 -->
 **Numeric Format**

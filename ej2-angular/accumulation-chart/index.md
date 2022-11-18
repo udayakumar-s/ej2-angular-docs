@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Accumulation chart component
 
-A pie chart is a circular graphics, which can be divided into multiple segments to illustrate the numerical
-proportions. All elements are rendered using the Scalable Vector Graphics (SVG).
+A pie chart is a circular graphics, which can be divided into multiple segments to illustrate the numerical proportions. All elements are rendered using the Scalable Vector Graphics (SVG).
 
 ## Key Features
 

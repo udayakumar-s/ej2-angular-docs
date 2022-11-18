@@ -26,7 +26,7 @@ The Syncfusion Angular UI Components provides the set of `base64` formatted font
 
 3. Add `e-icons` and `e-search` class to the HTML element.
 
-    ```html
+    ```
     <span class="e-icons e-search"></span>
     ```
 
@@ -145,3 +145,7 @@ The complete pack of Essential JS 2 icons are listed in the following table. The
 ### High Contrast
 
 <iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/highcontrast/demo.html" style="height:1000px;width:100%;"></iframe>
+
+### Fluent
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/fluent/demo.html" style="height:1000px;"></iframe>

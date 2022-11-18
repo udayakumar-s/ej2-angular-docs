@@ -14,20 +14,15 @@ domainurl: ##DomainURL##
 
 ## Polar Chart
 
-To render a polar series, use series[`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#type) as `Polar` and
-inject `PolarSeriesService`  into the `@NgModule.providers`.
+To render a polar series, use series[`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#type) as `Polar` and inject `PolarSeriesService`  into the `@NgModule.providers`.
 
 ### Draw Types
 
-Polar drawType property is used to change the series plotting type to line, column, area, range column, spline,
-scatter, stacking area and stacking column. The default value of drawType is `Line`.
+Polar drawType property is used to change the series plotting type to line, column, area, range column, spline, scatter, stacking area and stacking column. The default value of drawType is `Line`.
 
 **Line**
 
-To render a line draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Line` and inject
-`LineSeriesService` inject `LineSeriesService`  into the `@NgModule.providers`.
-[`isClosed`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#isclosed) property specifies whether to join start and end point of
- a line series used in polar chart to form a closed path. Default value of isClosed is true.
+To render a line draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Line` and inject `LineSeriesService` inject `LineSeriesService`  into the `@NgModule.providers`. [`isClosed`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#isclosed) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,8 +40,7 @@ To render a line draw type, use series [`drawType`](https://ej2.syncfusion.com/a
 
 **Spline**
 
-To render a spline line draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Spline`
-and inject `SplineSeriesService` inject `SplineSeriesService`  into the `@NgModule.providers`.
+To render a spline line draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Spline` and inject `SplineSeriesService` inject `SplineSeriesService`  into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,8 +58,7 @@ and inject `SplineSeriesService` inject `SplineSeriesService`  into the `@NgModu
 
 **Area**
 
-To render a area line draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Area` and
-inject `AreaSeriesService`  into the `@NgModule.providers`.
+To render a area line draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Area` and inject `AreaSeriesService`  into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,8 +76,7 @@ inject `AreaSeriesService`  into the `@NgModule.providers`.
 
 **Stacked Area**
 
-To render a stacked area draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `StackingArea` and inject `StackingAreaSeriesService`
-into the `@NgModule.providers`.
+To render a stacked area draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `StackingArea` and inject `StackingAreaSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,8 +94,7 @@ into the `@NgModule.providers`.
 
 **Column**
 
-To render a column draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Column` and inject `ColumnSeriesService`
-into the `@NgModule.providers`.
+To render a column draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Column` and inject `ColumnSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,8 +112,7 @@ into the `@NgModule.providers`.
 
 **Stacked Column**
 
-To render a stacked column draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `StackingColumn` and inject `StackingColumnSeriesService`
-into the `@NgModule.providers`.
+To render a stacked column draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `StackingColumn` and inject `StackingColumnSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,8 +130,7 @@ into the `@NgModule.providers`.
 
 **Range Column**
 
-To render a range column draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `RangeColumn` and inject `RangeColumnSeriesService`
-into the `@NgModule.providers`.
+To render a range column draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `RangeColumn` and inject `RangeColumnSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -159,8 +148,7 @@ into the `@NgModule.providers`.
 
 **Scatter**
 
-To render a scatter draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Scatter` and
-inject `ScatterSeriesService`  into the `@NgModule.providers`.
+To render a scatter draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Scatter` and inject `ScatterSeriesService`  into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -178,17 +166,13 @@ inject `ScatterSeriesService`  into the `@NgModule.providers`.
 
 ## Radar Chart
 
-To render a radar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#type) as `Radar` and
-inject `RadarSeriesService` into the `@NgModule.providers`.
+To render a radar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#type) as `Radar` and inject `RadarSeriesService` into the `@NgModule.providers`.
 
 ### Draw Type
 
 **Line**
 
-To render a line draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Line` and inject
-`LineSeriesService` inject `LineSeriesService`  into the `@NgModule.providers`.
-[`isClosed`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#isclosed) property specifies whether to join start and end point of
-a line series used in polar chart to form a closed path. Default value of isClosed is true.
+To render a line draw type, use series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#drawtype) as `Line` and inject `LineSeriesService` inject `LineSeriesService`  into the `@NgModule.providers`. [`isClosed`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#isclosed) property specifies whether to join start and end point of a line series used in polar chart to form a closed path. Default value of isClosed is true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -208,8 +192,7 @@ a line series used in polar chart to form a closed path. Default value of isClos
 
 **Start Angle**
 
-You can customize the start angle of the polar series using
-[`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#startangle) property. By default, `startAngle` is 0 degree.
+You can customize the start angle of the polar series using [`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#startangle) property. By default, `startAngle` is 0 degree.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -227,8 +210,7 @@ You can customize the start angle of the polar series using
 
 **Coefficient in axis**
 
-You can customize the radius of the polar series and radar series using
-[`coefficient`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#coefficient) property. By default, `coefficient` is 100.
+You can customize the radius of the polar series and radar series using [`coefficient`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#coefficient) property. By default, `coefficient` is 100.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -246,8 +228,7 @@ You can customize the radius of the polar series and radar series using
 
 **DashArray**
 
-You can customize the DashArray of the polar series and radar series using
-[`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart) property. By default, `dashArray` is 0.
+You can customize the DashArray of the polar series and radar series using [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart) property. By default, `dashArray` is 0.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -265,8 +246,7 @@ You can customize the DashArray of the polar series and radar series using
 
 **Marker and Customization**
 
-Markers can be added to the points by enabling the visible option of the
-[`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart) property. Markers can be assigned with different shapes such as Rectangle, Circle, Diamond, Pentagon etc using the `shape` property.
+Markers can be added to the points by enabling the visible option of the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart) property. Markers can be assigned with different shapes such as Rectangle, Circle, Diamond, Pentagon etc using the `shape` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -284,8 +264,7 @@ Markers can be added to the points by enabling the visible option of the
 
 **Datalabel and customization**
 
-You can customize the dataLabel of the polar series and radar series using
-[`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart) property. By setting `dataLabel` visible true.
+You can customize the dataLabel of the polar series and radar series using [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart) property. By setting `dataLabel` visible true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -303,9 +282,7 @@ You can customize the dataLabel of the polar series and radar series using
 
 **Axis label and customization**
 
-You can customize the Axis label of the polar series and radar series using `labelStyle`,
-`labelPlacement`, `labelRotation`, `labelIntersectAction` properties in the `primaryXAxis` and
-`primaryYAxis`.
+You can customize the Axis label of the polar series and radar series using `labelStyle`, `labelPlacement`, `labelRotation`, `labelIntersectAction` properties in the `primaryXAxis` and `primaryYAxis`.
 In the below sample `labelPlacement` and `labelStyle` properties is used in `primaryXAxis`.
 
 {% tabs %}

@@ -34,9 +34,7 @@ To known about numeric axis, you can check on this video:
 
 ## Range
 
-Range for an axis, will be calculated automatically based on the provided data, you can also customize the range
-of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#maximum)
-and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#interval) property of the axis.
+Range for an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#interval) property of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,8 +52,7 @@ and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axi
 
 ## Range Padding
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using the
-[`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) property. Numeric axis supports following types of padding.
+Padding can be applied to the minimum and maximum extremes of the axis range by using the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) property. Numeric axis supports following types of padding.
 
 * None
 * Round
@@ -83,9 +80,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 **Numeric - Round**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Round`, minimum and maximum will be
-rounded to the nearest possible value divisible by interval. For example, when the minimum is 3.5 and the interval
-is 1, then the minimum will be rounded to 3.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value divisible by interval. For example, when the minimum is 3.5 and the interval is 1, then the minimum will be rounded to 3.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,8 +98,7 @@ is 1, then the minimum will be rounded to 3.
 
 **Numeric - Additional**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Additional`, interval of an axis will
-be padded to the minimum and maximum of the axis.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,8 +116,7 @@ be padded to the minimum and maximum of the axis.
 
 **Numeric - Normal**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Normal`, padding is applied to the axis
-based on default range calculation.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Normal`, padding is applied to the axis based on default range calculation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,8 +134,7 @@ based on default range calculation.
 
 **Numeric - Auto**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Auto`,horizontal numeric axis takes
-None as padding calculation, while the vertical numeric axis takes Normal as padding calculation.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Auto`,horizontal numeric axis takes None as padding calculation, while the vertical numeric axis takes Normal as padding calculation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -162,7 +154,7 @@ None as padding calculation, while the vertical numeric axis takes Normal as pad
 
 **Numeric Label Format**
 
-Numeric labels can be formatted by using the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelformat) property.
+Numeric labels can be formatted by using the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelformat) property.
 Numeric labels supports all globalize format.
 
 {% tabs %}
@@ -242,8 +234,7 @@ The following table describes the result of applying some commonly used label fo
 
 ## GroupingSeparator
 
-To separate groups of thousands, use [`useGroupingSeparator`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#usegroupingseparator)
-property in chart.
+To separate groups of thousands, use [`useGroupingSeparator`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#usegroupingseparator) property in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -261,8 +252,7 @@ property in chart.
 
 ## Custom Label Format
 
-Axis also supports custom label format using placeholder like {value}°C, in which the value represent the axis
-label e.g 20°C.
+Axis also supports custom label format using placeholder like {value}°C, in which the value represent the axis label e.g 20°C.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

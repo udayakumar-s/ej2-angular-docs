@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sass in Angular Common component
+# How to use SCSS File in Angular-CLI
 
 ## SASS Variables Location
 
@@ -32,7 +32,10 @@ Refer to the styles of the required component in the src/styles.scss file.
 
 To avoid SCSS compilation issues and to map the SCSS file path, add the stylePreprocessorOptions to the .angular-cli.json file.
 
-Add the `stylePreprocessorOptions` option under apps in the `.angular-cli.json` file.
+Add the `stylePreprocessorOptions` option in two places under apps in the `.angular-cli.json` file.
+
+1. angular-cli.json -> {}build -> {}options
+2. angular-cli.json -> {}test -> {}options
 
 The following paths can be used globally in Angular app.
 
@@ -50,7 +53,7 @@ An angular sample with SCSS compilation to render the Essential JS 2 Grid compon
 
 In syncfusion Angular components, you can override control styles by replacing `sass` variable values like below:
 
-```html
+```
 
 // SASS Variable override
 $accent: black;

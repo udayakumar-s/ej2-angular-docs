@@ -26,7 +26,7 @@ The following properties will be available at the time of template execution.
 
 In the following code example, the filter in the **Name** textbox is disabled by using the [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property.
 
-```html
+```
 // The disabled attributes will be added based on the column property.
 <DropDownListComponent id='dropdown' enabled={data.column.allowFiltering} popupHeight="250px" fields={this.fields} dataSource={data} />
 

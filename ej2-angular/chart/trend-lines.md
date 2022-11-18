@@ -14,16 +14,13 @@ domainurl: ##DomainURL##
 
 Trendlines are used to show the direction and speed of price.
 
-Trendlines can be generated for Cartesian type series (Line, Column, Scatter, Area, Candle, Hilo etc.)
-except bar type series. You can add more than one trendline to a series.
+Trendlines can be generated for Cartesian type series (Line, Column, Scatter, Area, Candle, Hilo etc.) except bar type series. You can add more than one trendline to a series.
 
 Chart supports 6 types of trendlines.
 
 ## Linear
 
-A linear trendline is a best fit straight line that is used with simpler data sets. To render a linear trendline,
-use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Linear` and inject
-`TrendLines` .
+A linear trendline is a best fit straight line that is used with simpler data sets. To render a linear trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Linear` and inject `TrendLines` .
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,8 +38,7 @@ use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/char
 
 ## Exponential
 
-An exponential trendline is a curved line that is most useful when data values rise or fall
-at increasingly higher rates. You cannot create an exponential trendline, if your data contains zero or negative values.
+An exponential trendline is a curved line that is most useful when data values rise or fall at increasingly higher rates. You cannot create an exponential trendline, if your data contains zero or negative values.
 
 To render a exponential trendline,
 use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Exponential` and inject
@@ -64,13 +60,11 @@ use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/char
 
 ## Logarithmic
 
-A logarithmic trendline is a best-fit curved line that is most useful when the rate of change
-in the data increases or decreases quickly and then levels out.
+A logarithmic trendline is a best-fit curved line that is most useful when the rate of change in the data increases or decreases quickly and then levels out.
 
 A logarithmic trendline can use negative and/or positive values.
 
-To render a logarithmic trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Logarithmic` and inject
-`TrendLines` .
+To render a logarithmic trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Logarithmic` and inject `TrendLines` .
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,9 +84,7 @@ To render a logarithmic trendline, use trendline [`type`](https://ej2.syncfusion
 
 A polynomial trendline is a curved line that is used when data fluctuates.
 
-To render a polynomial trendline,
-use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Polynomial` and inject
-`TrendLines`.
+To render a polynomial trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `Polynomial` and inject `TrendLines`.
 
 `polynomialOrder` used to define the polynomial value.
 
@@ -135,8 +127,7 @@ To render a power trendline, use trendline [`type`](https://ej2.syncfusion.com/a
 
 A moving average trendline smoothen out fluctuations in data to show a pattern or trend more clearly.
 
-To render a moving average trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `MovingAverage` and inject
-`TrendLines` .
+To render a moving average trendline, use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/trendline/#type) as `MovingAverage` and inject `TrendLines` .
 
 `period` property defines the period to find the moving average.
 

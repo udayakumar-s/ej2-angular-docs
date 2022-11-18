@@ -14,18 +14,13 @@ domainurl: ##DomainURL##
 
 Chart can be zoomed in three ways.
 
-* Selection - By setting [`enableSelectionZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enableselectionzooming) property to true
-  in `zoomSettings`, you can zoom the chart by using the rubber band selection.
-* Mousewheel - By setting [`enableMouseWheelZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablemousewheelzooming) property to true
-  in `zoomSettings`, you can zoomin and zoomout the chart by scrolling the mouse wheel.
-* Pinch - By setting  [`enablePinchZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablepinchzooming) property to true in `zoomSettings`,
-  you can zoom the chart through pinch gesture in touch enabled devices.
+* Selection - By setting [`enableSelectionZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enableselectionzooming) property to true in `zoomSettings`, you can zoom the chart by using the rubber band selection.
+* Mousewheel - By setting [`enableMouseWheelZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablemousewheelzooming) property to true in `zoomSettings`, you can zoomin and zoomout the chart by scrolling the mouse wheel.
+* Pinch - By setting  [`enablePinchZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablepinchzooming) property to true in `zoomSettings`, you can zoom the chart through pinch gesture in touch enabled devices.
 
- >Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE11, Chrome and Opera
+>Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE11, Chrome and Opera browsers support multi-touch in desktop devices.
 
- browsers support multi-touch in desktop devices.
-
- To known about Zooming and Panning, you can check on this video:
+To known about Zooming and Panning, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=B9_gRlZ5B94" %}
 
@@ -50,8 +45,7 @@ Selecting the Pan option will allow to pan the chart and selecting the Reset opt
 
 ## Modes
 
-The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#mode) property in zoomSettings specifies whether the chart is
-allowed to scale along the horizontal axis or vertical axis. The default value of the mode is XY (both axis).
+The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#mode) property in zoomSettings specifies whether the chart is allowed to scale along the horizontal axis or vertical axis. The default value of the mode is XY (both axis).
 
 There are three types of mode.
 
@@ -75,9 +69,7 @@ There are three types of mode.
 
 ## Toolbar
 
-By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed chart. You can customize
-to show your desire tools in the toolbar using [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#toolbaritems)
-property.
+By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed chart. You can customize to show the desired options in the toolbar using the [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#toolbaritems) property. Also using the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#showtoolbar) property, you can show toolkit for zooming and panning the chart during initial rendering itself.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,8 +87,7 @@ property.
 
 ## Enable pan
 
-Using [`enablePan`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablePan)
-property you can able to pan the zoomed chart without help of toolbar items.
+Using [`enablePan`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablePan) property you can able to pan the zoomed chart without help of toolbar items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,8 +123,7 @@ Using `enableScrollbar` property, you can able to add scrollbar for zoomed chart
 
 ## Auto interval on zooming
 
-By using [`enableAutoIntervalOnZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#enableAutoIntervalOnZooming) property,
-the axis interval will get calculated automatically with respect to the zoomed range.
+By using [`enableAutoIntervalOnZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#enableAutoIntervalOnZooming) property, the axis interval will get calculated automatically with respect to the zoomed range.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

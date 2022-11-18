@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Update npm package in Angular Common component
+# Update Syncfusion npm Package
 
 The latest Syncfusion npm package can be updated with the help of [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) package.
 

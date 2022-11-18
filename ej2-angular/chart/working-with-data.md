@@ -16,10 +16,7 @@ Chart can visualise data bound from local or remote data.
 
 ## Local Data
 
-You can bind a simple JSON data to the chart using
-[`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property in series. Now map the fields in JSON to
-[`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname)
-properties.
+You can bind a simple JSON data to the chart using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property in series. Now map the fields in JSON to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,8 +34,7 @@ properties.
 
 ### Common Datasource
 
-You can also bind a JSON data common to all series using
-[`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#datasource) property in chart.
+You can also bind a JSON data common to all series using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#datasource) property in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,8 +52,7 @@ You can also bind a JSON data common to all series using
 
 ## Lazy loading
 
-Lazy loading allows you to load data for chart on demand. Chart will fire the scrollEnd event, in that we can
-get the minimum and maximum range of the axis, based on this, we can upload the data to chart.
+Lazy loading allows you to load data for chart on demand. Chart will fire the scrollEnd event, in that we can get the minimum and maximum range of the axis, based on this, we can upload the data to chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,12 +70,7 @@ get the minimum and maximum range of the axis, based on this, we can upload the 
 
 ## Remote Data
 
-You can also bind remote data to the chart using `DataManager`. The DataManager requires minimal information
-like webservice URL, adaptor and crossDomain to interact with service endpoint properly. Assign the instance
- of DataManager to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property in series and map
- the fields of data to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and
-[`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties. You can also use the
-[`query`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#query) property of the series to filter the data.
+You can also bind remote data to the chart using `DataManager`. The DataManager requires minimal information like webservice URL, adaptor and crossDomain to interact with service endpoint properly. Assign the instance of DataManager to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property in series and map the fields of data to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties. You can also use the [`query`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#query) property of the series to filter the data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,10 +88,8 @@ like webservice URL, adaptor and crossDomain to interact with service endpoint 
 
 ## Empty points
 
-The Data points that uses the `null` or `undefined` as value are considered as empty points.
-Empty data points are ignored and not plotted in the Chart.
-When the data is provided by using the points property,
-By using `emptyPointSettings` property in series, you can customize the empty point. Default `mode` of the empty point is `Gap`.
+The Data points that uses the `null` or `undefined` as value are considered as empty points. Empty data points are ignored and not plotted in the Chart.
+When the data is provided by using the points property, By using `emptyPointSettings` property in series, you can customize the empty point. Default `mode` of the empty point is `Gap`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,8 +107,7 @@ By using `emptyPointSettings` property in series, you can customize the empty po
 
 **Customizing empty point**
 
-Specific color for empty point can be set by `fill` property in `emptyPointSettings`. Border for a empty point can be set by
-`border` property.
+Specific color for empty point can be set by `fill` property in `emptyPointSettings`. Border for a empty point can be set by `border` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

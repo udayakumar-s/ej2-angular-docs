@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Range navigator component
+# Getting started with Angular Range navigator component
 
 This section explains you the steps required to create a simple RangeNavigator and demonstrate the basic usage of the RangeNavigator component in an Angular environment.
 

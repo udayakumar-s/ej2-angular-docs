@@ -15,8 +15,7 @@ User can effectively access the Grid features through assistive technologies suc
 
 ## WAI-ARIA
 
-WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility
-of web pages, dynamic content, and user interface components developed with Ajax, HTML, JavaScript, and related technologies.
+WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with Ajax, HTML, JavaScript, and related technologies.
 ARIA provides additional semantics to describe the role, state, and functionality of web components.
 
 The following list of ARIA attributes is used in Grid.
@@ -31,6 +30,8 @@ The following list of ARIA attributes is used in Grid.
 * aria-grabbed (attribute)
 * aria-owns (attribute)
 * aria-label (attribute)
+
+> You can achieve a single table announcing on the JAWS screen reader by setting an **`e-gridcell-read`** class through [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/grid/#cssclass) property of the grid.
 
 ## Keyboard Navigation
 

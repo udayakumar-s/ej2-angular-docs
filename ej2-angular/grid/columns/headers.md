@@ -29,8 +29,7 @@ To override the default header title by defining [`headerText`](https://ej2.sync
   
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs20" %}
 
-> If both the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) and [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext)
-are not defined in the column, the column renders with “empty” header text.
+> If both the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) and [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) are not defined in the column, the column renders with “empty” header text.
 
 ## Header template
 

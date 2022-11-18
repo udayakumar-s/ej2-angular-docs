@@ -7,7 +7,7 @@ import { pieData } from 'datasource.ts';
     template:
     `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
         <e-accumulation-series-collection>
-            <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' type='Pie'></e-accumulation-series>
+            <e-accumulation-series [dataSource]='piedata' xName='x' yName='y'  legendShape='Circle'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>`
 })
@@ -15,10 +15,10 @@ export class AppComponent implements OnInit {
     public piedata: Object[];
     public legendSettings: Object;
     ngOnInit(): void {
-        this.piedata = pieData;
         this.legendSettings = {
-            visible: false
+        width: '260px', height: '50px', position: "Bottom", itemPadding: 30
         };
+        this.piedata = pieData;
     }
 
 }

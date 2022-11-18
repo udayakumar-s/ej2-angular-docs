@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD024 -->
 
-# Installation in Angular Installation and upgrade component
+# Installation
 
 ## Install by using NPM CLI
 

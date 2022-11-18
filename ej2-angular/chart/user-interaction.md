@@ -20,9 +20,7 @@ Chart will display details about the points through tooltip, when the mouse is m
 **Enable Tooltip for Data Point**
 
 <!-- markdownlint-disable MD012 -->
-By default, tooltip is not visible. Enable the tooltip by setting
-[`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#enable) property to true and by injecting `TooltipService`
-into the `NgModule.providers`.
+By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#enable) property to true and by injecting `TooltipService` into the `NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,9 +38,7 @@ into the `NgModule.providers`.
 
 **Format the Tooltip**
 
-By default, tooltip shows information of x and y value in points. In addition to that, you can show more
-information in tooltip. For example the format '${series.name} ${point.x}' shows series name and point x
-value.
+By default, tooltip shows information of x and y value in points. In addition to that, you can show more information in tooltip. For example the format '${series.name} ${point.x}' shows series name and point x value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,14 +98,11 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipS
 
 Chart can be zoomed in three ways.
 
-* Selection - By setting [`enableSelectionZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enableselectionzooming) property to true
-  in `zoomSettings`, you can zoom the chart by using the rubber band selection.
-* Mousewheel - By setting [`enableMouseWheelZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablemousewheelzooming) property to true
-  in `zoomSettings`, you can zoomin and zoomout the chart by scrolling the mouse wheel.
-* Pinch - By setting  [`enablePinchZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablepinchzooming) property to true in `zoomSettings`,
-  you can zoom the chart through pinch gesture in touch enabled devices.
+* Selection - By setting [`enableSelectionZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enableselectionzooming) property to true in `zoomSettings`, you can zoom the chart by using the rubber band selection.
+* Mousewheel - By setting [`enableMouseWheelZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablemousewheelzooming) property to true in `zoomSettings`, you can zoomin and zoomout the chart by scrolling the mouse wheel.
+* Pinch - By setting  [`enablePinchZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablepinchzooming) property to true in `zoomSettings`, you can zoom the chart through pinch gesture in touch enabled devices.
 
- >Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE11, Chrome and Opera browsers support multi-touch in desktop devices.
+>Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE11, Chrome and Opera browsers support multi-touch in desktop devices.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -221,8 +214,7 @@ Color and width of the crosshair line can be customized by using the [`line`](ht
 
 Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `CrosshairService` and `TooltipService` into the `NgModule.providers`.
 
-Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#enable) property of the crosshair to true and
-[`shared`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettings/#shared) property in `tooltip` to true in chart.
+Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#enable) property of the crosshair to true and [`shared`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettings/#shared) property in `tooltip` to true in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

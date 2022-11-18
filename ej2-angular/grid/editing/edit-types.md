@@ -180,6 +180,24 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs14" %}
 
+### Render MaskedTextBox component while editing
+
+Use the cell edit template feature of the Grid to render the MaskedTextBox component in the Grid edit form. In the following sample, the MaskedTextBox component is rendered in the Mask column.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grid-cs22/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/grid-cs22/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grid-cs22/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs22" %}
+
 ### Render RichTextEditor component while editing
 
 Use the cell edit template feature of the Grid to render the RichTextEditor component in the Grid edit form. In the below sample, we have rendered RichTextEditor component in the **ShipAddress** column, so we use [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowtextwrap) property to true.
@@ -197,6 +215,28 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs15" %}
+
+### Render multiple columns in DropDownList component while editing
+
+Use the cell edit template feature of the Grid to render the DropDownList component in the Grid edit form.
+
+The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList component. Instead of this, multiple columns can be rendered. This can be achieved by using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#headertemplate) and [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#itemtemplate) properties of the DropDownList component.
+
+This is demonstrated in the following sample.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/multicolumn-dropdown-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/multicolumn-dropdown-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/multicolumn-dropdown-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/grid/multicolumn-dropdown-cs1" %}
 
 ### Using template
 

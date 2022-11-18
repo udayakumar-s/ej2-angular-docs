@@ -8,18 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in Angular Common component
+# Drag and Drop
 
-Drag and Drop is supported through two libraries of Syncfusion Angular UI Components. Those are
-[`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable) and [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable). Draggable makes DOM to be
-dragged using mouse or touch gestures and Droppable mark required DOM as droppable zone.
+Drag and Drop is supported through two libraries of Syncfusion Angular UI Components. Those are [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable) and [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable). Draggable makes DOM to be dragged using mouse or touch gestures and Droppable mark required DOM as droppable zone.
 
 ## Initializing Draggable
 
-You can make any element draggable by passing the element to Draggable constructor. Refer
-the following code snippet to enable draggable for DOM element
+You can make any element draggable by passing the element to Draggable constructor. Refer the following code snippet to enable draggable for DOM element
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/draggable-default-cs1/app/app.component.ts %}
 {% endhighlight %}
@@ -53,8 +50,7 @@ You can convert any DOM element as a droppable zone, which accepts the draggable
 
 ## Defining Drop Action
 
-To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable#drop) callback function during droppable object
-creation. You can get details of dropped element through dropped element property in event argument.
+To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable#drop) callback function during droppable object creation. You can get details of dropped element through dropped element property in event argument.
 Refer the following  code snippet to use basic drag and drop action
 
 {% tabs %}

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Treemap component
+# Getting started with Angular Treemap component
 
 This section explains you the steps required to create a TreeMap control and demonstrate the basic usage of the TreeMap control.
 
@@ -62,8 +62,7 @@ import { AppComponent }  from './app.component';
 export class AppModule { }
 ```
 
-* Modify the template in `app.component.ts` file to render the `ej2-angular-treemap` component
-`[src/app/app.component.ts]`.
+* Modify the template in `app.component.ts` file to render the `ej2-angular-treemap` component `[src/app/app.component.ts]`.
 
 ```javascript
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -81,7 +80,7 @@ export class AppComponent  { }
 
 Now use the <code>app-container</code> in the index.html instead of default one.
 
-```html
+```
 <app-container></app-container>
 ```
 
@@ -110,8 +109,7 @@ As we didn't specify shapeData to the treemap, no shape will be rendered and onl
 
 ## Module Injection
 
-TreeMap component is segregated into individual feature-wise modules. In order to use a particular feature,
-you need to inject its feature Service in the AppModule.  Find the modules available in TreeMap and its description as follows.
+TreeMap component is segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature Service in the AppModule.  Find the modules available in TreeMap and its description as follows.
 
 * TreeMapHighlightService - Inject this provider to use highlight feature.
 * TreeMapSelectionService - Inject this provider to use selection feature.

@@ -16,9 +16,7 @@ Chart will display details about the points through tooltip, when the mouse is m
 
 ## Default Tooltip
 
-By default, tooltip is not visible. Enable the tooltip by setting
-[`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#enable) property to true and by injecting `TooltipService`
-into the `NgModule.providers`.
+By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#enable) property to true and by injecting `TooltipService` into the `NgModule.providers`.
 
 To known about tooltip, you can check on this video:
 
@@ -44,9 +42,7 @@ To known about tooltip, you can check on this video:
 
 <!-- markdownlint-disable MD013 -->
 
-By default, tooltip shows information of x and y value in points. In addition to that, you can show more
-information in tooltip. For example the format '${series.name} ${point.x}' shows series name and point x
-value.
+By default, tooltip shows information of x and y value in points. In addition to that, you can show more information in tooltip. For example the format '${series.name} ${point.x}' shows series name and point x value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

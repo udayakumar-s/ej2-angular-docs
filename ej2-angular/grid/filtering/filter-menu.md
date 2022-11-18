@@ -29,8 +29,7 @@ You can filter the records with different operators.
 {% previewsample "page.domainurl/code-snippet/grid/filtering1-cs4" %}
 
 > * [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) must be set as true to enable filter menu.
-> * Setting [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) as false will prevent
- filter menu rendering for a particular column.
+> * Setting [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) as false will prevent  filter menu rendering for a particular column.
 
 ## Custom component in filter menu
 
@@ -58,8 +57,7 @@ In the following sample, dropdown is used  as custom component in the OrderID co
 
 ## Customizing filter menu operators list
 
-You can customize the default filter operator list by defining the
-[`filterSettings.operators`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property. The available options are:
+You can customize the default filter operator list by defining the [`filterSettings.operators`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property. The available options are:
 
 * **stringOperator**- defines customized string operator list.
 * **numberOperator** - defines customized number operator list.
@@ -83,11 +81,9 @@ In the following sample, we have customized string filter operators.
 
 ## Enable different filter for a column
 
-You can use both **Menu** and **Checkbox** filter in a same Grid. To do so, set the
-[`column.filter.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter) as **Menu** or **Checkbox**.
+You can use both **Menu** and **Checkbox** filter in a same Grid. To do so, set the [`column.filter.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter) as **Menu** or **Checkbox**.
 
-In the following sample menu filter is enabled by default and checkbox filter is enabled for the CustomerID column using the
-[`column.filter.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter).
+In the following sample menu filter is enabled by default and checkbox filter is enabled for the CustomerID column using the [`column.filter.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

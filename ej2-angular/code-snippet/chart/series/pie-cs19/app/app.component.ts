@@ -7,7 +7,7 @@ import { pieData } from 'datasource.ts';
     template:
     `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
         <e-accumulation-series-collection>
-            <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' radius="100%"></e-accumulation-series>
+            <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' type='Pie'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>`
 })

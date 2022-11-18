@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtual in Angular Grid component | Syncfusion
-description: Learn here all about Virtual in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Virtual scroll in Angular Grid component | Syncfusion
+description: Learn here all about Virtual scroll in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Virtual 
+control: Virtual scroll 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtual in Angular Grid component
+# Virtual scroll in Angular Grid component
 
 Grid allows you to load large amount of data without performance degradation.
 
@@ -16,15 +16,10 @@ To use virtualization, you need to inject **VirtualScrollService** in Grid.
 
 ## Row Virtualization
 
-Row virtualization allows you to load and render rows only in content viewport. It is an alternative way of
-paging in which the data will load while scrolling vertically.
-To setup the row virtualization, you need to define
-[`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) as true and
-content height by [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
+Row virtualization allows you to load and render rows only in content viewport. It is an alternative way of paging in which the data will load while scrolling vertically.
+To setup the row virtualization, you need to define [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) as true and content height by [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
 
-The number of records displayed in the Grid is determined implicitly by height of content area. Also you have an option to define visible
-number of records by
-[`pageSettings.pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/#pagesize) property.
+The number of records displayed in the Grid is determined implicitly by height of content area. Also you have an option to define visible number of records by [`pageSettings.pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/#pagesize) property.
 The loaded data will be cached and reused when it is needed for next time.
 
 {% tabs %}
@@ -46,9 +41,7 @@ The loaded data will be cached and reused when it is needed for next time.
 Column virtualization allows you to virtualize columns. It will render columns which are in viewport.
 You can scroll horizontally to view more columns.
 
-To setup the column virtualization, set the
-[`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) and
-[`enableColumnVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablecolumnvirtualization) properties as `true`.
+To setup the column virtualization, set the [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) and [`enableColumnVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablecolumnvirtualization) properties as `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,18 +70,13 @@ Both the row and column virtualization can be used along with grouping. At initi
 
 * While using column virtual scrolling, column width should be in pixel. Percentage values are not accepted.
 * Due to the element height limitation in browsers, the maximum number of records loaded by the Grid is limited by the browser capability.
-* Cell selection will not be persisted in both row and column virtual scrolling.
-* Virtual scrolling is not compatible with batch editing, detail template and hierarchy features.
+* The cell selection is not supported for both row and column virtual scrolling.
+* Virtual scrolling is not compatible with batch editing, detail template, rowspan, colspan and hierarchy features.
 * Group expand and collapse state will not be persisted for remote data.
 * Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items.
-To get these information regardless of the view items, refer to the
-[`Group with Page`](./grouping#group-with-paging) topic.
-* The page size provided must be two times larger than the number of visible rows in the grid.
-If the page size is failed to meet this condition then the size will be determined by grid.
-* The height of the grid content is calculated using the row height and total number of records
-in the data source and hence features which changes row height such as text wrapping are not supported.
-If you want to increase the row height to accommodate the content then you can specify the
- row height as below to ensure all the table rows are in same height.
+To get these information regardless of the view items, refer to the [`Group with Page`](./grouping#group-with-paging) topic.
+* The page size provided must be two times larger than the number of visible rows in the grid. If the page size is failed to meet this condition then the size will be determined by grid.
+* The height of the grid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported. If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
 
 ```css
 .e-grid .e-row {
