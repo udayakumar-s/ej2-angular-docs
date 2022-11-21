@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 Chart can render to its container size. You can set the size via inline or CSS as demonstrated below.
 
-```html
+```
     <div style="width:650px; height:350px;">
         <ejs-chart id="chart-container"></ejs-chart>
     </div>
