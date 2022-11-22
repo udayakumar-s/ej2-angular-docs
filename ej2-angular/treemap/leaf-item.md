@@ -85,8 +85,7 @@ export class AppComponent {
             labelPath: 'Sport',
             fill: '#993399',
             templatePosition: 'Center',
-            labelTemplate: '<div style="pointer-events: none;"><img src="src/treemap/image/{{:GameImage}}"' +
-            ' style="height:{{:ItemHeight}};width:{{:ItemWidth}};"></img></div>'
+            labelTemplate: '<div style="pointer-events: none;"><img src="src/treemap/image></img></div>'
         }
 }
 
