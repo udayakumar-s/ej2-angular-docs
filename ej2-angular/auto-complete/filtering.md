@@ -42,8 +42,7 @@ The following examples shows the data filtering is done with `StartsWith` type
 
 ## Filter item count
 
-You can specify the filter suggestion item count through
-[`suggestionCount`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#suggestioncount) property of AutoComplete.
+You can specify the filter suggestion item count through [`suggestionCount`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#suggestioncount) property of AutoComplete.
 
 The following examples, to restrict the suggestion list item counts as 5.
 
@@ -63,8 +62,7 @@ The following examples, to restrict the suggestion list item counts as 5.
 
 ## Limit the minimum filter character
 
-You can set the limit for the character count to filter the data on the AutoComplete. This can be done by
-set the [`minLength`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#minlength) property to AutoComplete.
+You can set the limit for the character count to filter the data on the AutoComplete. This can be done by set the [`minLength`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#minlength) property to AutoComplete.
 
 In the following example, the remote request doesn't fetch the search data, until the search key contains three characters.
 
@@ -105,9 +103,7 @@ The following sample depicts how to filter the data with case-sensitive.
 
 ## Diacritics Filtering
 
-An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and
-makes it easier to filter the results in international characters lists
-when the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#ignoreaccent) is enabled.
+An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#ignoreaccent) is enabled.
 
 In the following sample,data with diacritics are bound as dataSource for AutoComplete.
 

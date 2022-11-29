@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Datetimepicker component
+# Getting started with Angular Datetimepicker component
 
-The following section explains the steps required to create a
-simple DateTimePicker component and also it demonstrates the basic usage of the DateTimePicker.
+The following section explains the steps required to create a simple DateTimePicker component and also it demonstrates the basic usage of the DateTimePicker.
 
 ## Dependencies
 
@@ -153,8 +152,7 @@ export class AppComponent {}
 
 ## Running the application
 
-After completing the configuration required to render a basic DateTimePicker, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic DateTimePicker, run the following command to display the output in your default browser.
 
 ```
 ng serve
@@ -194,10 +192,7 @@ The minimum and maximum date time can be defined with the help of `min` and `max
   
 {% previewsample "page.domainurl/code-snippet/datetimepicker/accessibility-cs5" %}
 
-> If the value of `min` or `max` properties
-changed through code behind, then you have to
-update the `value` property to set within the
-range.
+> If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.
 
 N> You can refer to our [Angular DateTime Picker]( https://www.syncfusion.com/angular-ui-components/angular-datetime-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular DateTime Picker example](https://ej2.syncfusion.com/angular/demos/#/material/datetimepicker/default) that shows how to render the DateTime Picker in Angular.
 

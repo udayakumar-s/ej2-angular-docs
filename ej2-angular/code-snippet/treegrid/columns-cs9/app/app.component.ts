@@ -1,21 +1,23 @@
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation  } from '@angular/core';
 import { sampleData } from './datasource';
-import { ResizeService  } from '@syncfusion/ej2-angular-treegrid';
+import { ReorderService } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [allowResizing]='true' [treeColumnIndex]='1' childMapping='subtasks' >
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='285' [allowReordering]='true' [allowSelection]='false' [treeColumnIndex]='1' childMapping='subtasks' >
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
-                    <e-column field='taskName' headerText='Task Name' minWidth=170 maxWidth=250 textAlign='Left' width=180></e-column>
-                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
-                    <e-column field='duration' headerText='Duration' minWidth=50 maxWidth=150 textAlign='Right' width=80></e-column>
+                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=120></e-column>
+                    <e-column field='duration' headerText='Duration' textAlign='Right' width=120 [lockColumn]= 'true' [customAttributes]='customAttributes'></e-column>
                     <e-column field='progress' headerText='Progress' textAlign='Right' width=120></e-column>
         </e-columns>
                 </ejs-treegrid>`,
-    providers: [ResizeService ]
+                providers: [ReorderService],
+                encapsulation: ViewEncapsulation.None,
+                styleUrls: ['app/custom-column.style.css']
 })
 export class AppComponent implements OnInit {
 
@@ -23,7 +25,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = sampleData;
-
+         this.customAttributes = {class: 'customcss'};
     }
 }
 

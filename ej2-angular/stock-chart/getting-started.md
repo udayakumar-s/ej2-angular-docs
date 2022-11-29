@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Stock chart component
+# Getting started with Angular Stock chart component
 
 This section explains you the steps required to create a simple StockChart and demonstrate the basic usage of the StockChart component in an Angular environment.
 
@@ -105,7 +105,7 @@ export class AppComponent  { }
 
 Now use the <code>app-container</code> in the index.html instead of default one.
 
-```html
+```
 <app-container></app-container>
 ```
 
@@ -117,12 +117,8 @@ npm start
 
 ## Module Injection
 
-Chart component are segregated into individual feature-wise modules. In order to use a particular feature,
-you need to inject its feature service in the AppModule. In the current application, we are
-going to modify the above basic chart to visualize sales stock value of a company.
-For this application we are going to use  candle series, tooltip, data label, datetime axis and legend
-feature of the chart. Please find relevant
-feature service name and description as follows.
+Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the AppModule. In the current application, we are going to modify the above basic chart to visualize sales stock value of a company.
+For this application we are going to use  candle series, tooltip, data label, datetime axis and legend feature of the chart. Please find relevant feature service name and description as follows.
 
 * `CandleSeriesService` - Inject this provider to use candle series.
 * `LegendService` - Inject this provider to use legend feature.
@@ -216,8 +212,7 @@ Since the JSON contains datetime data, set the [`valueType`](https://ej2.syncfus
 
 ## Add Stock Chart Title
 
-You can add a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/#title) property to the chart to provide
-quick information to the user about the data plotted in the chart.
+You can add a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/#title) property to the chart to provide quick information to the user about the data plotted in the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -255,12 +250,9 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 
 ## Trackball
 
-Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the
-closest point and trackball tooltip displays the information about the point. To use trackball feature,
-we need to inject `CrosshairService` and `TooltipService` into the `NgModule.providers`.
+Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `CrosshairService` and `TooltipService` into the `NgModule.providers`.
 
-Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#enable) property of the crosshair to true and
-[`shared`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettings/#shared) property in `tooltip` to true in chart.
+Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#enable) property of the crosshair to true and [`shared`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettings/#shared) property in `tooltip` to true in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

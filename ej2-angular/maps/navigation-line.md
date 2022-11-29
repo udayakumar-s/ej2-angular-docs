@@ -14,7 +14,7 @@ The navigation lines are used to denote the path between two locations. This fea
 
 ## Customization
 
-The following properties are available in [`navigationLineSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/navigationLineSettingsModel/) to customize the navigation line of the Maps control.
+The following properties are available in [`navigationLineSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/navigationLineSettingsModel/) to customize the navigation line of the Maps component.
 
 * [`color`](https://ej2.syncfusion.com/angular/documentation/api/maps/navigationLineSettingsModel/#color) - To apply the color for navigation lines in Maps.
 * [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/maps/navigationLineSettingsModel/#dasharray) - To define the pattern of dashes and gaps that is applied to the outline of the navigation lines.

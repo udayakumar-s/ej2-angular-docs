@@ -2,12 +2,11 @@
 
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent,ReorderService } from '@syncfusion/ej2-angular-treegrid';
+import { ReorderService } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<button ejs-button (click)="btnClick()">Reorder Task ID and Duration to Last</button>
-    <ejs-treegrid #treegrid [dataSource]='data' height='285' [allowReordering]='true' [treeColumnIndex]='1' childMapping='subtasks' >
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [allowReordering]='true' [treeColumnIndex]='1' childMapping='subtasks' >
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -21,16 +20,11 @@ import { TreeGridComponent,ReorderService } from '@syncfusion/ej2-angular-treegr
 export class AppComponent implements OnInit {
 
     public data: Object[];
-    @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
 
     }
-     btnClick(e: any): any{
-            this.treeGridObj.reorderColumns(['taskID','duration'],'progress');
-}
 }
 
 

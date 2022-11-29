@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Scroll settings in Angular Diagram component
 
-The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars,mousewheel can be used to scroll the diagram.
-Diagram’s [`scrollSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram) enable you to read the current scroll status, view port size, current zoom, and zoom factor. It also allows you to scroll the diagram programmatically.
+The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars,mousewheel can be used to scroll the diagram. Diagram’s [`scrollSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram) enable you to read the current scroll status, view port size, current zoom, and zoom factor. It also allows you to scroll the diagram programmatically.
 
 ## Get current scroll status
 

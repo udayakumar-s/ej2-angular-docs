@@ -15,7 +15,6 @@ This article describes the API migration process of DateTimePicker component fro
 ## DateTime Selection
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -50,7 +49,6 @@ Setting the Value
 ## DateTime Format
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -101,7 +99,6 @@ Day header format
 ## Calendar Views
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -157,7 +154,6 @@ Depth view
 ## Date Range
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -213,7 +209,6 @@ Maximum datetime
 ## Disabled Dates
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -252,7 +247,6 @@ public disabledDatetime(args: any): void {
 ## Customization
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -292,7 +286,7 @@ Show/Hide the today button
 <input type="text" ej-datetimepicker id="datetimepicker" cssClass="e-custom-class"/>
 ```
 
-```
+```css
 .e-datetime-popup.e-popup.e-custom-class .e-button-container {
     display: none !important;
 }
@@ -327,7 +321,7 @@ Show/Hide the other month dates
 <ejs-datetimepicker id="datetimepicker"></ejs-datetimepicker>
 ```
 
-```
+```css
 
 .e-DateTimePicker .e-calendar .e-content tr.e-month-hide, .e-DateTimePicker .e-calendar .e-content td.e-other-month > .e-day {
     visibility: none;
@@ -368,7 +362,7 @@ public onFocus(args:any): void {
 }
 ```
 
-```
+```css
 .e-control-wrapper .e-input-group-icon.e-date-icon {
     display: none;
 }
@@ -395,7 +389,7 @@ Enable/Disable the rounded corner
 <ejs-datetimepicker id="datetimepicker"  cssClass="e-custom-style"></ejs-datetimepicker>
 ```
 
-```
+```css
 .e-control-wrapper.e-custom-style.e-date-wrapper.e-input-group {
     border-radius: 4px;
 }
@@ -617,7 +611,6 @@ public onOpen(args:any): void{
 ## Accessibility
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -652,7 +645,6 @@ Enable/Disable the RTL
 ## Persistence
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -687,7 +679,6 @@ Enable/Disable the persistence
 ## Validation
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -780,7 +771,6 @@ this.formObject = new FormValidator('#form-element', options);
 ## Common
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -865,7 +855,7 @@ Height
 <ejs-datetimepicker id="datetimepicker" cssClass='e-custom-style' ></ejs-datetimepicker>
 ```
 
-```
+```css
 .e-control-wrapper.e-custom-style.e-date-wrapper.e-input-group {
     height: 35px;
 }
@@ -989,7 +979,7 @@ zIndex
 <input type="text" ej-datetimepicker id="datetimepicker" cssClas="e-custom-class"/>
 ```
 
-```
+```css
 .e-datetime-popup.e-popup.e-custom-class {
     z-index: 100 !important;
 }
@@ -1211,7 +1201,6 @@ public onChange(args:any):void{
 ## Globalization
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1268,7 +1257,6 @@ Specify the start day of week
 ## Strict Mode
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1303,7 +1291,6 @@ Strict mode
 ## Open and Close
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1450,7 +1437,6 @@ public onCreate(args:any): void {
 ## View Navigation
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>

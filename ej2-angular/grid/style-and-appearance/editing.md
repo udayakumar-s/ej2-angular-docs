@@ -58,3 +58,21 @@ Below CSS customizes the Grid edited row input element in Dialog edit mode
 }
 
 ```
+
+## Customizing the command column buttons
+
+Use the below CSS to customize the command column buttons such as edit, delete, update, and cancel.
+
+```css
+
+.e-grid .e-edit::before, .e-grid .e-delete::before {
+    color: #FF8787;
+}
+
+.e-grid .e-update::before, .e-grid .e-cancel-icon::before {
+    color: #0078d7;
+}
+
+```
+
+![Customize command column button](../images/commandbutton.jpg)

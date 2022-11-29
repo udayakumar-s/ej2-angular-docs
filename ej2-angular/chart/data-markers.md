@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Data markers in Angular Chart component
 
-Data markers are used to provide information about the data points in the series. You can add a shape to adorn
-each data point.
+Data markers are used to provide information about the data points in the series. You can add a shape to adorn each data point.
 
 <!-- markdownlint-disable MD036 -->
 
@@ -19,8 +18,7 @@ each data point.
 
 <!-- markdownlint-disable MD036 -->
 
-Markers can be added to the points by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel/#visible)
-option of the marker property.
+Markers can be added to the points by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel/#visible) option of the marker property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,7 +36,7 @@ option of the marker property.
 
 ## Shape
 
-Markers can be assigned with different shapes such as Rectangle, Circle, Diamond etc using the `shape`property.
+Markers can be assigned with different shapes such as Rectangle, Circle, Diamond etc using the `shape` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,8 +56,7 @@ Markers can be assigned with different shapes such as Rectangle, Circle, Diamond
 
 ## Images
 
-Apart from the shapes, you can also add custom images to mark the data point using the
-[`imageUrl`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel/#imageurl) property.
+Apart from the shapes, you can also add custom images to mark the data point using the [`imageUrl`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel/#imageurl) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,11 +90,9 @@ Marker's color and border can be customized using `fill` and `border` properties
   
 {% previewsample "page.domainurl/code-snippet/chart/data-marker/marker-cs4" %}
 
-## Customizing Specific Point
+## Customizing specific point
 
-You can also customize the specific marker and label using
-[`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event.
-`pointRender` event allows you to change the shape, color and border for a point.
+You can also customize the specific marker and label using [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/#pointrender-emittypeipointrendereventargs) event. The `pointRender` event allows you to change the shape, color and border for a point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,6 +107,24 @@ You can also customize the specific marker and label using
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/chart/data-marker/marker-cs5" %}
+
+## Fill marker with series color
+
+Marker can be filled with the series color by setting the [`isFilled`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel/#isFilled-boolean) property to <b>true</b>.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/data-marker/marker-cs6/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/data-marker/marker-cs6/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/data-marker/marker-cs6/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/chart/data-marker/marker-cs6" %}
 
 ## See Also
 

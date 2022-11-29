@@ -6,8 +6,7 @@ import { EditSettingsModel, ToolbarItems, GridComponent, Column, SaveEventArgs, 
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)"
-     (actionComplete)="actionComplete($event)" height='273px'>
+    template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='273px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' [visible]='false' width=120></e-column>
@@ -40,9 +39,6 @@ export class AppComponent implements OnInit {
                 }
             }
         }
-    }
-
-    actionComplete(args: SaveEventArgs) {
         if (args.requestType === 'save') {
             for (const cols of this.grid.columns) {
                 if ((cols as Column).field === 'CustomerID') {

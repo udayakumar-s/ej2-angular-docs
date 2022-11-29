@@ -32,11 +32,9 @@ export class AppComponent implements OnInit {
         };
 
         this.gridSettings = {
-            allowSelection: true,
-            selectionSettings: { type: 'Multiple' }
+            allowTextWrap: true
         } as GridSettings;
     }
 }
-
 
 

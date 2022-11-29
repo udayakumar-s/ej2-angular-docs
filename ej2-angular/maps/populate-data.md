@@ -87,7 +87,7 @@ export let populationData: object[] = [
 
 ## Data binding
 
-The following properties in the [`layers`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/) are used for binding data in the Maps control. Both the properties are related to each other.
+The following properties in the [`layers`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/) are used for binding data in the Maps component. Both the properties are related to each other.
 
 * shapePropertyPath
 * shapeDataPath
@@ -137,11 +137,9 @@ In the below example, both **name** fields contain the same value as **Afghanist
 
 Data from data source can be bind to the Maps in two different ways.
 
-1. Bind the field name directly to the properties as [`shapeDataPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#shapedatapath), [`colorValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#colorvaluepath),
-[`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/#valuepath) and [`shapeValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#shapevaluepath).
+1. Bind the field name directly to the properties as [`shapeDataPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#shapedatapath), [`colorValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#colorvaluepath), [`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/#valuepath) and [`shapeValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#shapevaluepath).
 
-2. Bind the field name as `data.field` to the properties as [`shapeDataPath`](../api/maps/layerSettingsModel/#shapedatapath), [`colorValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#colorvaluepath),
-[`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/#valuepath) and [`shapeValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#shapevaluepath).
+2. Bind the field name as `data.field` to the properties as [`shapeDataPath`](../api/maps/layerSettingsModel/#shapedatapath), [`colorValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#colorvaluepath), [`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/#valuepath) and [`shapeValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#shapevaluepath).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

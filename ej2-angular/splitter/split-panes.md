@@ -109,13 +109,11 @@ Splitter provides support to render the nested pane to achieve the complex layou
 
 ## Add or remove pane
 
-You can add or remove panes programmatically to the splitter, By using
- [addPane](https://ej2.syncfusion.com/angular/documentation/api/splitter#addpane) and [removePane](https://ej2.syncfusion.com/angular/documentation/api/splitter#removepane) methods.
+You can add or remove panes programmatically to the splitter, By using [addPane](https://ej2.syncfusion.com/angular/documentation/api/splitter#addpane) and [removePane](https://ej2.syncfusion.com/angular/documentation/api/splitter#removepane) methods.
 
 ### Add pane
 
-You can add the panes dynamically in the splitter by passing
-[pane properties](https://ej2.syncfusion.com/documentation/api/splitter/panePropertiesModel/) along with index to the addPane method.
+You can add the panes dynamically in the splitter by passing [pane properties](https://ej2.syncfusion.com/documentation/api/splitter/panePropertiesModel/) along with index to the addPane method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

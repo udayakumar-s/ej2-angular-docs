@@ -43,16 +43,16 @@ Refresh the Tree Grid after the datasource change by assign the modified data to
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/refresh-datasource-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/refresh-datasource-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-datasource-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/refresh-datasource-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/refresh-datasource-cs1/app/main.ts %}
+{% include code-snippet/treegrid/refresh-datasource-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/refresh-datasource-cs1" %}
+{% previewsample "page.domainurl/code-snippet/treegrid/refresh-datasource-cs2" %}
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

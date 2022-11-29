@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize the step value and hide spin buttons in Angular Numerictextbox component
 
-The spin buttons allow you to increase or decrease the value with the predefined [`step`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#step)
-value. The visibility of spin buttons can be set using the[`showSpinButton`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#showSpinButton) property.
+The spin buttons allow you to increase or decrease the value with the predefined [`step`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#step) value. The visibility of spin buttons can be set using the[`showSpinButton`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#showSpinButton) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

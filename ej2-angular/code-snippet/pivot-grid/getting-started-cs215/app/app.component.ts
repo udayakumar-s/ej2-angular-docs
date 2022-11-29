@@ -1,34 +1,55 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, DisplayOption, PivotChartService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
-import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { Button } from '@syncfusion/ej2-buttons';
+import { PdfExportProperties } from '@syncfusion/ej2-grids';
+import { Pivot_Data, base64AlgeriaFont } from './datasource.ts';
+import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
+
 @Component({
-    selector: 'app-container',
-    providers: [PivotChartService],
-    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
+  selector: 'app-container',
+  template: `<div class="col-md-8">
+  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' width=width></ejs-pivotview></div>
+  <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
-    public pivotData: IDataSet[];
-    public dataSourceSettings: IDataOptions;
-    public chartSettings: ChartSettings;
-    public displayOption: DisplayOption;
-    @ViewChild('pivotview', { static: false })
-    public pivotGridObj: PivotViewComponent;
+  public width: string;
+  public dataSourceSettings: IDataOptions;
+  public button: Button;
+  public pdfExportProperties: PdfExportProperties;
+
+    @ViewChild('pivotview', {static: false})
+    public pivotGridObj: PivotView;
+
     ngOnInit(): void {
+
+        this.width = "100%";
+
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            expandAll: false,
-            columns: [{ name: 'Products' }],
-            rows: [{ name: 'Country' }, { name: 'Year' }, { name: 'Quarter' }],
-            formatSettings: [{ name: 'Amount', format: 'C' }],
-            values: [{ name: 'Amount' }, { name: 'Sold' }]
+            columns: [{ name: 'Year', caption: 'Production Year' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: [],
         };
-        this.displayOption = { view: 'Chart' } as DisplayOption;
-        this.chartSettings = { chartSeries: { type: 'Pie' } } as ChartSettings;
+
+        this.button = new Button({ isPrimary: true });
+        this.button.appendTo('#export');
+
+        this.button.element.onclick = (): void => {
+            this.pdfExportProperties = {
+               theme: { 
+                header: {font:  new PdfTrueTypeFont(base64AlgeriaFont, 11) }, 
+                caption: { font: new PdfTrueTypeFont(base64AlgeriaFont, 9) }, 
+                record: { font: new PdfTrueTypeFont(base64AlgeriaFont, 10) } 
+                } 
+            };
+            this.pivotGridObj.pdfExport(this.pdfExportProperties);
+        };
     }
 }
+
 
 

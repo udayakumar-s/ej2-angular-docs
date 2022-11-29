@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Download in Angular Installation and upgrade component
+# Download Javascript -EJ2 Installer
 
 The Syncfusion JavaScript - EJ2 installer can be downloaded from the Syncfusion website. You can either download the licensed installer or try our trial installer depending on your license.
 
@@ -52,7 +52,7 @@ You should initiate an evaluation if you have already obtained our components th
 
     ![start trial download](images/start-trial-download.png)
 
-2. To access this page, you must sign up\log in with your Syncfusion account.
+2. To access this page, you must sign up/log in with your Syncfusion account.
 
 3. Begin your trial by selecting the JavaScript – EJ2 product.
 
@@ -76,7 +76,7 @@ You should initiate an evaluation if you have already obtained our components th
 
 5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
 
-6. You can download other platform\add-on installers by going to More Downloads Options (element 3 in the screenshot below).
+6. You can download other platform/add-on installers by going to More Downloads Options (element 3 in the screenshot below).
 
 7. For Windows OS, EXE and Zip formats are available for download. They are both Offline Installers.
 

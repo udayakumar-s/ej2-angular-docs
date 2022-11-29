@@ -30,18 +30,7 @@ export class AppComponent implements OnInit {
         };
 
         this.displayOption = { view: 'Chart' } as DisplayOPtion;
-        this.chartSettings = {
-            chartSeries: {
-                type: 'Column'
-            },
-            tooltip: {
-                enableMarker: true,
-                textStyle: { color: '#000' },
-                fill: '#FFF',
-                opacity: 1,
-                border: { color: '#000' }
-            }
-        } as ChartSettings;
+        this.chartSettings = { enableMultipleAxis: true, chartSeries: { type: 'Column' }} as ChartSettings;
     }
 }
 

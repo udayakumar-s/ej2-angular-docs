@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Time range slider in Angular Range slider component
 
-The time formatting can be achieved same as the date formatting using `renderingTicks` and
-`change` events. The process of time formatting is
-explained in the below sample.
+The time formatting can be achieved same as the date formatting using `renderingTicks` and `change` events. The process of time formatting is explained in the below sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

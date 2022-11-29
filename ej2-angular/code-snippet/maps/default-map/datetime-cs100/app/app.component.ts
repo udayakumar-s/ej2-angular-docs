@@ -1,36 +1,30 @@
 
 
+
 import { Component, OnInit } from '@angular/core';
-import { Maps, Selection} from '@syncfusion/ej2-angular-maps';
+import { Maps, MapsTooltip } from '@syncfusion/ej2-angular-maps';
 import { world_map } from 'world-map.ts';
-Maps.Inject(Selection);
+Maps.Inject(MapsTooltip);
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps id='rn-container' >
-    <e-layers>
-    <e-layer  [shapeData]= 'shapeData' [initialShapeSelection] = 'initialShapeSelection' [selectionSettings] ='selectionSettings'></e-layer>
+    `<ejs-maps id='rn-container'>
+     <e-layers>
+    <e-layer [shapeData] = 'shapeData' [tooltipSettings] ='tooltipSettings'></e-layer>
     </e-layers>
     </ejs-maps>`
 })
-
 export class AppComponent implements OnInit {
+    public tooltipSettings: object;
     public shapeData: object;
-    public initialShapeSelection: object;
-    public selectionSettings: object;
     ngOnInit(): void {
-        this.shapeData = world_map;
-        this.initialShapeSelection = [
-            { shapePath: 'continent', shapeValue: 'Africa' },
-            { shapePath: 'name', shapeValue: 'India' }
-        ];
-        this.selectionSettings = {
-            enable: true,
-            fill: 'green',
-            border: { color: 'white', width: 2 }
+        this.tooltipSettings ={
+            visible: true,
+            valuePath: 'name'
         }
+        this.shapeData = world_map;
     }
 }
 
 
- 
+

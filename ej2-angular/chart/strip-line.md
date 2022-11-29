@@ -57,11 +57,8 @@ Striplines are rendered in the specified start to end range and you can add more
 
 ## Customize the strip line
 
-Starting value in specific strip line can be customized by `start` property in strip line. Similarly, ending value
-is customized by `end`. It can be also set for starting from the corresponding origin of the axis by `startFromOrigin`.
-Size of the strip line is customized by `size`. Border for the stripline is customized by `border`.
-Order of the strip line such that whether it should be rendered in behind or over the series elements
-is customized by `zIndex`.
+Starting value in specific strip line can be customized by `start` property in strip line. Similarly, ending value is customized by `end`. It can be also set for starting from the corresponding origin of the axis by `startFromOrigin`.
+Size of the strip line is customized by `size`. Border for the stripline is customized by `border`. Order of the strip line such that whether it should be rendered in behind or over the series elements is customized by `zIndex`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,7 +113,7 @@ You can create dash array stripline by using `dashArray` property. The Stripline
 
 ## Recurrence Stripline
 
- The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
+The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
 
 * `isRepeat`       - It is used for enable / disable the recurrence strip line.
 * `repeatEvery`    - It is used for mention the stripline interval.

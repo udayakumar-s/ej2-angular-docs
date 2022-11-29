@@ -1,12 +1,12 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, OrthogonalSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel,ConnectorEditing, ConnectorModel,ConnectorConstraints, OrthogonalSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
 Diagram.Inject(ConnectorEditing);
 
 @Component({
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="900px" height="500px"
+    template: `<ejs-diagram #diagram id="diagram" width="900px" height="500px" [getConnectorDefaults] ='getConnectorDefaults'>
         <e-connectors>
             <e-connector id='connector2' type='Orthogonal' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint' [segments]='segments'>
             </e-connector>
@@ -38,7 +38,12 @@ export class AppComponent {
             }
         ]
     }
-    public getConnectorDefaults(connector: ConnectorModel):ConnectorModel {
+    public getConnectorDefaults(connector: ConnectorModel): ConnectorModel {
+        connector.style = {
+            strokeColor: '#6BA5D7',
+            fill: '#6BA5D7',
+            strokeWidth: 2
+        }
         connector.constraints = ConnectorConstraints.Default | ConnectorConstraints.DragSegmentThumb;
     }
 }

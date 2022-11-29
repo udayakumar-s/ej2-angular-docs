@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Scrolling in Angular Grid component
 
- The scrollbar will be displayed in the grid when content exceeds the element [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) or
- [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height).
- The vertical and horizontal scrollbars will be displayed based on the following criteria:
+The scrollbar will be displayed in the grid when content exceeds the element [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) or [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 
 * The vertical scrollbar appears when the total height of rows present in the grid exceeds its element height.
 * The horizontal scrollbar appears when the sum of columns width exceeds the grid element width.
@@ -42,8 +40,7 @@ of scroller in pixel, set the pixel value as number.
 
 ## Responsive with parent container
 
-Specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height)
-as **100%** to make the grid element fill its parent container.
+Specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) as **100%** to make the grid element fill its parent container.
 Setting the [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) to **100%** requires the grid parent element to have explicit height.
 
 {% tabs %}
@@ -82,8 +79,7 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 
 ## Scroll To Selected Row
 
-You can scroll the grid content to the selected row position by using the
-[`rowSelected`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowselected) event.
+You can scroll the grid content to the selected row position by using the [`rowSelected`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowselected) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

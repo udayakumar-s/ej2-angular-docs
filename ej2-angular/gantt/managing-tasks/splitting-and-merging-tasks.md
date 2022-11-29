@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Splitting task at load time
 
-To split task at load time, we can define segment details in both hierarchical and self-referential way.
-Refer below link for more details.
+To split task at load time, we can define segment details in both hierarchical and self-referential way. Refer below link for more details.
 
 * [Split task at load time](./data-binding/#split-task)
 

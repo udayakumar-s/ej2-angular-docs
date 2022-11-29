@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Refresh the Datasource
 
-You can add/delete the datasource records through an external button. To reflect the datasource changes in grid,
-you need to invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
+You can add/delete the datasource records through an external button. To reflect the datasource changes in grid, you need to invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
 
 Please follow the below steps to refresh the grid after datasource change.
 
@@ -170,8 +169,7 @@ this.grid.refreshHeader();
 
 ### Customize Column Styles
 
-You can customise the appearance of header and content of the particular column using the
-[`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
+You can customise the appearance of header and content of the particular column using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
 To customize the grid column, follow the given steps:
 
@@ -216,11 +214,9 @@ Add the custom css class to particular column by using [`customAttributes`](http
 
 ### Custom Tooltip for Columns
 
-You can achieve the custom tooltip([`EJ2 Tooltip`](../../../tooltip/getting-started)) for Grid by using the
-[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
+You can achieve the custom tooltip([`EJ2 Tooltip`](../../../tooltip/getting-started)) for Grid by using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 
-Render the ToolTip component for the grid cells by using the following code in the
-[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
+Render the ToolTip component for the grid cells by using the following code in the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 
 ```typescript
 tooltip (args: QueryCellInfoEventArgs) {
@@ -249,10 +245,9 @@ tooltip (args: QueryCellInfoEventArgs) {
 
 You can render any component in a grid column using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
 
-Initialize the column template for your custom component. The [`template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property
-renders the custom component.
+Initialize the column template for your custom component. The [`template`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property renders the custom component.
 
-```html
+```
     <div>
         <ejs-dropdownlist value='Order Placed' [dataSource]='dropData' [popupHeight]='150' [popupWidth]='150' ></ejs-dropdownlist>
     </div>
@@ -509,7 +504,7 @@ To include tab components in the Dialog, please ensure the following steps:
 
 Initialize the template for your tab component.
 
-```html
+```
         <div id="tab1">
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -558,7 +553,7 @@ Initialize the template for your tab component.
 
 To render the Tab component, use the [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid.
 
-```html
+```
 
     <ejs-tab #tab id="tab_wizard" showCloseButton=false (selecting)='selecting($event)'>
         <e-tabitems>
@@ -773,8 +768,7 @@ In the following example, The **Employee Name** is a foreign key column and whil
 
 ### Customizing filter menu operators list
 
-You can customize the default filter operator list by defining the
-[`filterSettings.operators`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property. The available options are:
+You can customize the default filter operator list by defining the [`filterSettings.operators`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property. The available options are:
 
 * **stringOperator**- defines customized string operator list.
 * **numberOperator** - defines customized number operator list.
@@ -819,8 +813,7 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 
 ### Use filter bar template in foreign key column
 
-You can use the filter bar template in foreign key column by defining the
-[`column.filterBarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) property.
+You can use the filter bar template in foreign key column by defining the [`column.filterBarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) property.
 The following example demonstrates the way to use filter bar template in foreign column.
 
 In the following example, The **Employee Name** is a foreign key column.

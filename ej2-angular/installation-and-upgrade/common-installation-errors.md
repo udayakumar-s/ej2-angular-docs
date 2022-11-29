@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Common installation errors in Angular Installation and upgrade component
+# Common Installation Errors
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 

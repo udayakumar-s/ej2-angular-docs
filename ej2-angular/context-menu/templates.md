@@ -12,13 +12,7 @@ domainurl: ##DomainURL##
 
 ## Template
 
-The ContextMenu items can be customized using the
-[`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#beforeitemrender) property. The item render event
-triggers while rendering each menu item. The event argument will be used to identify the menu
-item and customized it based on the requirement. In the following sample, the menu item is rendered with keycode for
-specified action in ContextMenu using the template. Here, the keycode is specified for Save as, View page
-source, and Inspect in the right side corner of the menu items by adding span element in the
-[`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#beforeitemrender) event.
+The ContextMenu items can be customized using the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#beforeitemrender) property. The item render event triggers while rendering each menu item. The event argument will be used to identify the menu item and customized it based on the requirement. In the following sample, the menu item is rendered with keycode for specified action in ContextMenu using the template. Here, the keycode is specified for Save as, View page source, and Inspect in the right side corner of the menu items by adding span element in the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#beforeitemrender) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,9 +32,7 @@ source, and Inspect in the right side corner of the menu items by adding span el
 
 ## Multilevel nesting
 
-The Multiple level nesting supports in ContextMenu. It can be achieved by mapping the [`items`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#items)
-property inside the parent [`menuItems`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#items). In the following sample, three
-level nesting of ContextMenu is provided.
+The Multiple level nesting supports in ContextMenu. It can be achieved by mapping the [`items`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#items) property inside the parent [`menuItems`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#items). In the following sample, three level nesting of ContextMenu is provided.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize the card image title position in Angular Card component
 
-Card Image titles are placed as always Bottom-Left Corner only, You can manually customize to
-placing titles anywhere over the image by adding styles.
+Card Image titles are placed as always Bottom-Left Corner only, You can manually customize to placing titles anywhere over the image by adding styles.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

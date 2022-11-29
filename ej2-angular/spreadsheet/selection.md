@@ -74,7 +74,7 @@ You can perform column selection in any of the following ways,
 * To select non-adjacent columns, hold `Ctrl` and select the column header.
 * You can also use the `selectRange` method for row selection.
 
-The following sample shows the column selection in the spreadsheet, here selecting the 3rd column using  the `selectRange` method.
+The following sample shows the column selection in the spreadsheet, here selecting the 3rd column using the `selectRange` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Check box component
+# Getting started with Angular Check box component
 
 This section explains how to create a simple CheckBox, and demonstrate the basic usage of the CheckBox module in an Angular environment.
 
@@ -158,9 +158,7 @@ In checked state a tick mark will be added to the visualization of CheckBox.
 
 ### Indeterminate
 
-CheckBox indeterminate state can be set through [`indeterminate`](https://ej2.syncfusion.com/angular/documentation/api/check-box#indeterminate) property.
-CheckBox indeterminate state masks the real value of CheckBox visually. Checkbox cannot be changed to indeterminate state through the user interface,
-this state can be achieved only through the property.
+CheckBox indeterminate state can be set through [`indeterminate`](https://ej2.syncfusion.com/angular/documentation/api/check-box#indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

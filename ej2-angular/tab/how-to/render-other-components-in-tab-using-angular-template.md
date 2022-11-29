@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Render other components in tab using angular template in Angular Tab component
 
-You can render other components inside Tab using Angular **ng-template**. Through this, we can add content as other components directly with
-all their functionalities to our Tab. We need to use `ng-template` inside the each `e-tabitem` tag with `#content` attribute, which is
-mandatory to render content. And now use `ng-template` tag with select attribute of id or class name for mapping required content.
+You can render other components inside Tab using Angular **ng-template**. Through this, we can add content as other components directly with all their functionalities to our Tab. We need to use `ng-template` inside the each `e-tabitem` tag with `#content` attribute, which is mandatory to render content. And now use `ng-template` tag with select attribute of id or class name for mapping required content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

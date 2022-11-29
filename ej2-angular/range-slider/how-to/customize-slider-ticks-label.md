@@ -10,11 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize slider ticks label in Angular Range slider component
 
-Slider view can be customized via CSS. By overriding the slider CSS classes, you can customize the
-ticks. The ticks in slider allows you to easily identify the current value/values of the slider. It
-contains [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#smallstep)
-and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#largestep). By
-default, slider has class `e-tick` for slider ticks. You can override the class as per your requirement.
+Slider view can be customized via CSS. By overriding the slider CSS classes, you can customize the ticks. The ticks in slider allows you to easily identify the current value/values of the slider. It contains [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#smallstep) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#largestep). By default, slider has class `e-tick` for slider ticks. You can override the class as per your requirement.
 Refer to the following code snippet to render ticks.
 
 ```typescript

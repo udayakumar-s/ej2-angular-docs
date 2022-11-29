@@ -2,34 +2,24 @@
 
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { FilterSettingsModel, IFilter } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='273' [allowFiltering]='true' childMapping='subtasks' [filterSettings]='filterOptions'>
+    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='275' [allowFiltering]='true' childMapping='subtasks' >
         <e-columns>
-                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=80></e-column>
-                    <e-column field='taskName' headerText='Task Name' [filter] = 'filter' textAlign='Left' width=150></e-column>
+                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
+                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+                    <e-column field='startDate' headerText='Start Date' textAlign='Right' type='date' format='yMd' width=90></e-column>
                     <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
-                    <e-column field='progress' headerText='Progress' textAlign='Right' width=80></e-column>
         </e-columns>
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
 
     public data: Object[];
-    public filterOptions: FilterSettingsModel;
-    public filter : IFilter;
 
     ngOnInit(): void {
         this.data = sampleData;
-        this.filterOptions = {
-           type: 'Menu'
-        };
-        this.filter = {
-            type : 'Excel';
-        }
-    }
     }
 }
 

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Progress button component
+# Getting started with Angular Progress button component
 
 This section explains how to create a simple ProgressButton and demonstrate the basic usage of the ProgressButton component in an Angular environment.
 

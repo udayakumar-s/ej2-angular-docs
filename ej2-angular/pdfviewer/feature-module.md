@@ -24,6 +24,8 @@ The available PdfViewer modules are:
 * **TextSearch**:- Search a text easily across the PDF document.
 * **Print**:- Print the entire document or a specific page directly from the browser.
 * **Annotation**:- Annotations can be added or edited in the PDF document.
+* **FormFields**:- Preserve the form fields in the PDF document.
+* **FormDesigner**:- Form fields can be added or edited in the PDF document.
 
 >In addition to injecting the required modules in your application, enable corresponding properties to extend the functionality for a PDF Viewer instance.
 Refer to the following table.
@@ -40,6 +42,8 @@ Refer to the following table.
 |TextSearch|`<ejs-pdfviewer enableTextSearch= true ></ejs-pdfviewer>`|
 |Print|`<ejs-pdfviewer enablePrint= true ></ejs-pdfviewer>`|
 |Annotation|`<ejs-pdfviewer enableAnnotation= true ></ejs-pdfviewer>`|
+|FormFields|`<ejs-pdfviewer enableFormFields= true ></ejs-pdfviewer>`|
+|FormDesigner|`<ejs-pdfviewer enableFormDesigner= true ></ejs-pdfviewer>`|
 
 ## See also
 

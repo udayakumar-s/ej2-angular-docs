@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Multi select component
+# Getting started with Angular Multi select component
 
-This section explains how to create a simple **MultiSelect** component and configure its available
-functionalities in Angular.
+This section explains how to create a simple **MultiSelect** component and configure its available functionalities in Angular.
 
 ## Dependencies
 
@@ -149,8 +148,7 @@ export class AppComponent  { }
 
 ## Binding data source
 
-After initialization, populate the MultiSelect with data using the `dataSource` property.
-Here, an array of string values passed to MultiSelect component.
+After initialization, populate the MultiSelect with data using the `dataSource` property. Here, an array of string values passed to MultiSelect component.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -170,8 +168,7 @@ export class AppComponent {
 
 ## Running the application
 
-After completing the configuration required to render a basic MultiSelect, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic MultiSelect, run the following command to display the output in your default browser.
 
 ```
 ng serve
@@ -196,8 +193,7 @@ The following example illustrates the output in your browser.
 ## Configure the popup list
 
 By default, the width of the popup list automatically adjusts according to the
-MultiSelect input element's width, and the height auto adjust's according to
-the height of the popup list items.
+MultiSelect input element's width, and the height auto adjust's according to the height of the popup list items.
 
 The height and width of the popup list can also be customized using the
 [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#popupheight)

@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Validation in Angular Textbox component
 
-The TextBox supports three types of validation styles namely `error`, `warning`, and `success`. These states are
-enabled by adding corresponding classes `.e-error`, `.e-warning`, or `.e-success` to the input parent element.
+The TextBox supports three types of validation styles namely `error`, `warning`, and `success`. These states are enabled by adding corresponding classes `.e-error`, `.e-warning`, or `.e-success` to the input parent element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

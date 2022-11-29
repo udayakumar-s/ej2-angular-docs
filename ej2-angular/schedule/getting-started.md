@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Schedule component
+# Getting started with Angular Schedule component
 
 This section briefly explains how to create [**Angular Scheduler**](https://www.syncfusion.com/angular-ui-components/angular-scheduler) component and configure its available functionalities in Angular Environment.
 

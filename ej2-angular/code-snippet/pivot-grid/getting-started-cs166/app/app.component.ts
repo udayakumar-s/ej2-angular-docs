@@ -1,45 +1,57 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { IDataOptions, PivotCellSelectedEventArgs, GridSettings } from '@syncfusion/ej2-angular-pivotview';
+import { Component } from '@angular/core';
+import { IDataOptions, PivotView, DrillThroughService, DrillThroughEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { CellEditSettings } from '@syncfusion/ej2-pivotview/src/pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width [gridSettings]=gridSettings (cellSelected)='cellSelected($event)'></ejs-pivotview>`
+  providers: [DrillThroughService],
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [editSettings]='editSettings' width=width (drillThrough)='drillThrough($event)'></ejs-pivotview>`
 })
-export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
+
+export class AppComponent {
+
     public width: string;
-    public gridSettings: GridSettings;
+    public dataSourceSettings: IDataOptions;
+    public editSettings: CellEditSettings;
+
+    drillThrough(args:DrillThroughEventArgs) {
+        for (var i = 0; i < args.gridColumns.length; i++) {
+            if (args.gridColumns[i].field === 'Country') {
+                args.gridColumns[i].editType = 'dropdownedit';
+                //args.gridColumns[i].editType = 'numericedit';
+                //args.gridColumns[i].editType = 'textedit';
+                //args.gridColumns[i].editType = 'booleanedit';
+                //args.gridColumns[i].editType = 'datepickeredit';
+                //args.gridColumns[i].editType = 'datetimepickeredit';
+            }
+        }
+    }
 
     ngOnInit(): void {
-        this.width = '100%';
+
+        this.width = "100%";
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
+            enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
-            formatSettings: [{ name: 'Amount', format: 'C2', useGrouping: false,
-                    minimumSignificantDigits: 1, maximumSignificantDigits: 3 }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
 
-        this.gridSettings = {
-            allowSelection: true,
-            selectionSettings: { mode: 'Both', type: 'Multiple' }
-        } as GridSettings;
-    },
-
-    cellSelected(args: PivotCellSelectedEventArgs){
-        //args.selectedCellsInfo -> get selected cells information.
-        //args.pivotValues -> get the pivot values of the pivot table.
-    },
-}
+        this.editSettings = {
+            allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal', allowCommandColumns: false,
+            allowEditOnDblClick: true, showConfirmDialog: true, showDeleteConfirmDialog: false
+        } as CellEditSettings;
+    }
+ }
 
 
 

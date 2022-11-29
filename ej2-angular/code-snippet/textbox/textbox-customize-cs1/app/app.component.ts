@@ -19,11 +19,11 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-    public focusIn(target: HTMLElement): void {
+    public focusIn(target: any): void {
         target.parentElement.classList.add('e-input-focus');
     }
 
-    public focusOut(target: HTMLElement): void {
+    public focusOut(target: any): void {
         target.parentElement.classList.remove('e-input-focus');
     }
 }

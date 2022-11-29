@@ -37,7 +37,7 @@ To bind local JSON data to the Kanban, you can simply assign a JavaScript object
 
 ## Remote data
 
-To bind remote data to kanban component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban#datasource) property. To interact with remote data source,  provide the endpoint **url**.
+To bind remote data to kanban component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban#datasource) property. To interact with remote data source, provide the endpoint **url**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,7 +75,7 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 ### OData v4 services
 
-The ODataV4 is an improved version of OData protocols, and the [`DataManager`](../data) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
+The ODataV4 is an improved version of OData protocols, and the [`DataManager`](../data) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`odatadocumentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -254,8 +254,7 @@ To add a custom parameter to the data request, use the **addParams** method of *
 
 ### Handling HTTP error
 
-During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details
-in client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban#actionfailure) event.
+During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban#actionfailure) event.
 
 The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban#actionfailure) event contains the error details returned from the server.
 
@@ -273,8 +272,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
   
 {% previewsample "page.domainurl/code-snippet/kanban/error-cs1" %}
 
-> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban#actionfailure) event will be triggered not only for the server errors, but
-also when there is an exception while processing the kanban actions.
+> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
 ## Loading data via ajax
 

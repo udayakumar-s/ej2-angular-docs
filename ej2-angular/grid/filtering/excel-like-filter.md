@@ -32,7 +32,7 @@ The following example demonstrates the way to use filter template for a column w
 > * However, we can increase the excel/checkbox filter count by modifying the `filterChoiceCount` argument value(as per our need) in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionBegin) event when the [`requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#requesttype) is `filterchoicerequest` or `filtersearchbegin`. This is demonstrated in the below code snippet,
 
 ```typescript
-actionBegin(args: FilterEventArgs) {
+actionBegin(args: FilterSearchBeginEventArgs) {
     if (args.requestType === "filterchoicerequest" || args.requestType === "filtersearchbegin") {
         args.filterChoiceCount = 3000;
     }

@@ -8,13 +8,27 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Maps component
+# Getting started with Angular Maps component
 
-This section explains you the steps required to create a map and demonstrate the basic usage of the maps control.
+This section explains you the steps required to create a map and demonstrate the basic usage of the maps component.
 
 You can explore some useful features in the Maps component using the following video.
 
 {% youtube "https://www.youtube.com/watch?v=kwE6ikF7QYQ" %}
+
+## Dependencies
+
+The following is a list of the dependencies required to use the Maps component.
+
+```javascript
+|-- @syncfusion/ej2-angular-maps
+    |-- @syncfusion/ej2-angular-base
+    |-- @syncfusion/ej2-angular-maps
+    |-- @syncfusion/ej2-maps
+    |-- @syncfusion/ej2-base
+    |-- @syncfusion/ej2-svg-base
+    |-- @syncfusion/ej2-data
+```
 
 ## Setup Angular Environment
 
@@ -39,6 +53,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
+
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
@@ -82,7 +97,7 @@ import { MapsModule } from '@syncfusion/ej2-angular-maps';
 import { AppComponent }  from './app.component';
 
 @NgModule({
-  //declaration of chart module into NgModule
+  //declaration of Maps module into NgModule
   imports:      [ BrowserModule, MapsModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
@@ -90,7 +105,7 @@ import { AppComponent }  from './app.component';
 export class AppModule { }
 ```
 
-* Modify the template in `app.component.ts` file to render the `ej2-angular-maps` component
+Modify the template in `app.component.ts` file to render the Maps component
 `[src/app/app.component.ts]`.
 
 ```javascript
@@ -105,12 +120,42 @@ import { Component, ViewEncapsulation } from '@angular/core';
 export class AppComponent  { }
 ```
 
+Add the **world-map** data in the **app.component.ts** file.
+
+>Note: Refer the data for [world-map](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world-map-2091224620) here. These data must be imported in the **src/app/app.component.ts** file.
+
+```javascript
+import { world_map } from './world-map';
+```
+
+Bind the **world-map** data to the **shapeData** property of the **layer** in the Maps control.
+
+```typescript
+@Component({
+    // specifies the template string for the maps component
+    template: `<ejs-maps id='maps-container'>
+                <e-layers>
+                    <e-layer [shapeData] = 'shapeData'></e-layer>
+                </e-layers>
+               </ejs-maps>`
+})
+export class AppComponent {
+  public shapeData: object = world_map;
+}
+```
+
 <!-- markdownlint-disable MD033 -->
 
-Now use the <code>app-container</code> in the index.html instead of default one.
+Now use the <code>app-container</code> in the **index.html** instead of default one.
 
 ```html
 <app-container></app-container>
+```
+
+```typescript
+@Component({
+    selector: 'app-container'
+})
 ```
 
 * Now run the application in the browser using the below command.
@@ -123,18 +168,21 @@ The below example shows a basic map.
 
 ```typescript
 import { Component } from '@angular/core';
+import { world_map } from './world-map';
 
 @Component({
     selector: 'app-container',
     // specifies the template string for the maps component
-    template: `<ejs-maps id="maps-container"></ejs-maps>`
+    template: `<ejs-maps id='maps-container'>
+                <e-layers>
+                    <e-layer [shapeData] = 'shapeData'></e-layer>
+                </e-layers>
+               </ejs-maps>`
 })
 export class AppComponent {
-
+  public shapeData: object = world_map;
 }
 ```
-
-As we didn't specify shapeData to the maps, no shape will be rendered and only an empty SVG element is appended to the maps container.
 
 ## Module Injection
 
@@ -265,8 +313,7 @@ Specify color and value in [`colorMapping`](https://ej2.syncfusion.com/angular/d
 
 ## Add Title for Maps
 
-You can add a title using [`titleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/titleSettingsModel/) property to the map to provide quick
-information to the user about the shapes rendered in the map.
+You can add a title using [`titleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/titleSettingsModel/) property to the map to provide quick information to the user about the shapes rendered in the map.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -284,9 +331,7 @@ information to the user about the shapes rendered in the map.
 
 ## Enable Legend
 
-You can show legend for the maps by setting true to the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible)
-property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/) object and by injecting the `LegendService`
-module using `@NgModule.providers` method.
+You can show legend for the maps by setting true to the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/) object and by injecting the `LegendService` module using `@NgModule.providers` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -323,9 +368,7 @@ You can add data labels to show additional information of the shapes in map. Thi
 ## Enable Tooltip
 
 The tooltip is useful when you cannot display information by using the data labels due to space constraints.
-You can enable tooltip by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/#visible) property as true
-in [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/) object and by injecting `MapsTooltipService` module using
-`@NgModule.providers` method.
+You can enable tooltip by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/#visible) property as true in [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel/) object and by injecting `MapsTooltipService` module using `@NgModule.providers` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

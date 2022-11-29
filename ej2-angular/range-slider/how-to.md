@@ -14,8 +14,7 @@ domainurl: ##DomainURL##
 
 ### Date Format
 
-The Date formatting can be achieved in `ticks` and `tooltip` using `renderingTicks` and
-`tooltipChange` events respectively.
+The Date formatting can be achieved in `ticks` and `tooltip` using `renderingTicks` and `tooltipChange` events respectively.
 The process of formatting is explained in the below sample.
 
 {% tabs %}
@@ -34,9 +33,7 @@ The process of formatting is explained in the below sample.
 
 ### Time Format
 
-The time formatting can be achieved same as the date formatting using `renderingTicks` and
-`change` events. The process of time formatting is
-explained in the below sample.
+The time formatting can be achieved same as the date formatting using `renderingTicks` and `change` events. The process of time formatting is explained in the below sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,8 +51,7 @@ explained in the below sample.
 
 ### Numeric Value Customization
 
-The numeric values can be formatted into different decimal digits or fixed number of whole numbers
-or to represent the units.
+The numeric values can be formatted into different decimal digits or fixed number of whole numbers or to represent the units.
 The Numeric processing is demonstrated below.
 
 {% tabs %}
@@ -74,16 +70,13 @@ The Numeric processing is demonstrated below.
 
 ## Slider with ngModel
 
-Slider component supports one and two-way property binding. Slider two way binding can be
-achieved through [ngModel](https://angular.io/api/forms/NgModel) Angular directive.
+Slider component supports one and two-way property binding. Slider two way binding can be achieved through [ngModel](https://angular.io/api/forms/NgModel) Angular directive.
 
 Follow the below steps to perform two-way binding with ngModel.
 
-* Create simple
-[slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types)
-component and binds the value property using ngModel. Refer to the below code snippet.
+* Create simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component and binds the value property using ngModel. Refer to the below code snippet.
 
-```html
+```
 
 <ejs-slider class="form-control" id='slider' [ticks]="ticks" [(ngModel)]="slidervalue" name="slider" required #slider="ngModel"></ejs-slider>
 
@@ -91,17 +84,15 @@ component and binds the value property using ngModel. Refer to the below code sn
 
 * Create numeric text box and bind the value using ngModel.
 
-```html
+```
 
 <input type="number" id="name" name="name" class="form-control" required [(ngModel)]="slidervalue" #slider="ngModel">
 
 ```
 
-* And name the same variable name in both slider and numeric text box. Which will help to view
-the two-way binding i.e. changing value in slider will change the numeric textbox value and vice versa.
+* And name the same variable name in both slider and numeric text box. Which will help to view the two-way binding i.e. changing value in slider will change the numeric textbox value and vice versa.
 
-* Initialize the value of the variable in component file, while will be bound to slider and text
-box initially. The values will be changed synchronously while changing any one (slider or text-box) value.
+* Initialize the value of the variable in component file, while will be bound to slider and text box initially. The values will be changed synchronously while changing any one (slider or text-box) value.
 
 ```typescript
 
@@ -133,15 +124,11 @@ export class AppComponent {
 
 ## Slider in Angular reactive form
 
-Slider validation can be achieved in Angular using [Reactive](https://angular.io/guide/reactive-forms)
-forms. Here the sample shown slider validation state based on Angular form
-[classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
+Slider validation can be achieved in Angular using [Reactive](https://angular.io/guide/reactive-forms) forms. Here the sample shown slider validation state based on Angular form [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
 
 Follow below steps to validate slider within reactive forms.
 
-* Create simple Angular reactive form. And add simple
-[slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types)
-component within form.
+* Create simple Angular reactive form. And add simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component within form.
 
 * Create [form group](https://angular.io/guide/reactive-forms#add-a-formgroup) with slider.
 
@@ -165,7 +152,7 @@ component within form.
 | `ng-dirty` | `ng-pristine` |The control's value has changed. |
 | `ng-valid` | `ng-invalid` |The control's value is valid. |
 
-```html
+```
 
 <div *ngIf="sliderForm.invalid">
 slider has <b><i>invalid </i> </b> value and choose value greater than 10.
@@ -203,8 +190,7 @@ Slider value choosen as: {{value}}
 
 ## Slider validation using Template-driven Forms
 
-Slider can be validated in Angular using [Template-driven](https://angular.io/guide/form-validation#template-driven-validation)
-forms.
+Slider can be validated in Angular using [Template-driven](https://angular.io/guide/form-validation#template-driven-validation) forms.
 
 * The following [CSS classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel) will be added on Slider component based on the action done by user.
 
@@ -230,21 +216,16 @@ forms.
 
 ## Slider validation using FormValidator
 
-We can validate the Slider component using our `FormValidator`. The following steps walk-through
-for slider validation.
+We can validate the Slider component using our `FormValidator`. The following steps walk-through for slider validation.
 
 * Render Slider component inside form.
 
-* Bind [changed](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#changed)
-event in the Slider component to validate the slider value when the value changes.
+* Bind [changed](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#changed) event in the Slider component to validate the slider value when the value changes.
 
 * Initialize and render FormValidator for the form using form ID.
 
 * Set required property in the FormValidator `rules` collection.
-Here, we set the
-[min](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#min)
-property of Slider which sets the minimum value in Slider component and it has hidden
-input since enable `validateHidden` property as true.
+Here, we set the [min](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#min) property of Slider which sets the minimum value in Slider component and it has hidden input since enable `validateHidden` property as true.
 
 ```typescript
 
@@ -269,11 +250,9 @@ export class AppComponent {
 
 ```
 
-> Form validation done by either ID or name value of Slider component. In above used ID of the
-slider for validate it.
+> Form validation done by either ID or name value of Slider component. In above used ID of the slider for validate it.
 
-Using Slider name: Render Slider with name attribute. In the below code snippet we have used name
-attribute value of ‘slider’ for form validation.
+Using Slider name: Render Slider with name attribute. In the below code snippet we have used name attribute value of ‘slider’ for form validation.
 
 ```typescript
 
@@ -298,8 +277,7 @@ export class AppComponent {
 
 ```
 
-* Validate the form using `validate` method and it validates the Slider value with the defined
-rules collection and returns the result.
+* Validate the form using `validate` method and it validates the Slider value with the defined rules collection and returns the result.
 If user selects the value less than the minimum value, form will not submit.
 
 ```typescript
@@ -334,10 +312,7 @@ this.formObject.validate();
 
 ## Customize the bar
 
-Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can
-customize the slider bar. The slider bar can be customized with different themes. By default, slider
-have class name `e-slider-track` for bar. The class can be overridden with our own color values like
-the following code snippet.
+Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the slider bar. The slider bar can be customized with different themes. By default, slider have class name `e-slider-track` for bar. The class can be overridden with our own color values like the following code snippet.
 
 ```css
 
@@ -389,10 +364,7 @@ change(args: SliderChangeEventArgs) => {
 
 ## Customize the limits
 
-Slider appearance can be customized via CSS. By overriding the slider CSS classes, the slider
-limit bar can be customized. Here, the limit bar is customized with different background color. By
-default, the slider has class `e-limits` for limits bar. You can override the class with our own
-color values as given in the following code snippet.
+Slider appearance can be customized via CSS. By overriding the slider CSS classes, the slider limit bar can be customized. Here, the limit bar is customized with different background color. By default, the slider has class `e-limits` for limits bar. You can override the class with our own color values as given in the following code snippet.
 
 ```css
 
@@ -418,11 +390,7 @@ color values as given in the following code snippet.
 
 ## Customize the ticks
 
-Slider view can be customized via CSS. By overriding the slider CSS classes, you can customize the
-ticks. The ticks in slider allows you to easily identify the current value/values of the slider. It
-contains [`smallStep`](https://ej2.syncfusion.com/angular/documentation/slider/api-ticksData.html#smallstep)
-and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/slider/api-ticksData.html#largestep). By
-default, slider has class `e-tick` for slider ticks. You can override the class as per your requirement.
+Slider view can be customized via CSS. By overriding the slider CSS classes, you can customize the ticks. The ticks in slider allows you to easily identify the current value/values of the slider. It contains [`smallStep`](https://ej2.syncfusion.com/angular/documentation/slider/api-ticksData.html#smallstep) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/slider/api-ticksData.html#largestep). By default, slider has class `e-tick` for slider ticks. You can override the class as per your requirement.
 Refer to the following code snippet to render ticks.
 
 ```typescript
@@ -461,10 +429,7 @@ applied to the value of the `child_number` in the slider.
 
 ## Customize the thumb
 
-Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize
-the thumb. By default, slider has unique class `e-handle` for slider thumb. You can override the following
-class as per your requirement. Here, in the sample, the slider thumb has been customized to square, circle,
-oval shapes, and background image has also been customized.
+Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the thumb. By default, slider has unique class `e-handle` for slider thumb. You can override the following class as per your requirement. Here, in the sample, the slider thumb has been customized to square, circle, oval shapes, and background image has also been customized.
 
 ```typescript
 

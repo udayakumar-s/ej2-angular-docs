@@ -1,16 +1,16 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, DisplayOption, PivotChartService, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [PivotChartService, FieldListService],
+  providers: [PivotChartService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [chartSettings]='chartSettings' [showFieldList]='true' [displayOption]='displayOption'></ejs-pivotview></div>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public dataSourceSettings: IDataOptions;

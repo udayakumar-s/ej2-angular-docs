@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     public dataSourceSettings: IDataOptions;
 
     actionBegin(args: PivotActionBeginEventArgs): void {
-        if (args.actionName == 'Drill down' && args.actionName == 'Drill up') {
+        if (args.actionName == 'Drill down' || args.actionName == 'Drill up') {
             args.cancel = true;
         }
     }

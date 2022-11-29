@@ -15,7 +15,6 @@ This article describes the API migration process of DateRangePicker component fr
 ## Date Selection
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -54,7 +53,6 @@ public value: Date[] = [new Date("10/07/2017"), new Date("2/2/2019")]
 ## Date Format
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -89,7 +87,6 @@ Display date format
 ## Date Range
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -327,7 +324,6 @@ public onCreate (args: any) {
 ## Disabled Dates
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -365,7 +361,6 @@ public disableDaterange(args:any) {
 ## Customization
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -518,7 +513,7 @@ public onFocus(args:any) {
 }
 ```
 
-```
+```css
 .e-control-wrapper .e-input-group-icon.e-range-icon {
     display: none;
 }
@@ -545,7 +540,7 @@ Enable/Disable the rounded corner
 <ejs-daterangepicker id="daterangepicker" cssClass="e-custom-style"></ejs-daterangepicker>
 ```
 
-```
+```css
 .e-control-wrapper.e-custom-style.e-date-range-wrapper.e-input-group {
     border-radius: 4px;
 }
@@ -645,7 +640,6 @@ public onCreate(args:any) {
 ## Accessibility
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -675,7 +669,6 @@ Enable/Disable the RTL
 ## Persistence
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -710,7 +703,6 @@ Enable/Disable the persistence
 ## Common
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -790,7 +782,7 @@ Height
 <ejs-daterangepicker id="daterangepicker" cssClass="e-custom-style"></ejs-daterangepicker>
 ```
 
-```
+```css
 .e-control-wrapper.e-custom-style.e-date-range-wrapper.e-input-group {
     height: 35px;
 }
@@ -982,7 +974,6 @@ Separator
 ## Globalization
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1033,7 +1024,6 @@ First day of week
 ## Strict mode
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1063,7 +1053,6 @@ Strict mode
 ## Open and Close
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1176,7 +1165,7 @@ Show
 <input type="text" ej-daterangepicker id="daterangepicker" (create)="onCreate($event)"/>
 ```
 
-```ts
+```
 public onCreate(e:any) {
     var daterangeObject = $("#daterangepicker").data("ejDateRangePicker");
     daterangeObject.popupShow();

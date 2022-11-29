@@ -20,7 +20,7 @@ Maps provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/a
 </tr>
 <tr>
 <td>Maps container</td>
-<td>Specifies the Maps control.</td>
+<td>Specifies the Maps component.</td>
 </tr>
 <tr>
 <td>Maps title</td>

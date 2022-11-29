@@ -16,9 +16,7 @@ stockchart will display details about the points through tooltip, when the mouse
 
 ## Default Tooltip
 
-By default, tooltip is not visible. Enable the tooltip by setting
-[`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/) property to true and by injecting `TooltipService`
-into the `NgModule.providers`.
+By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/) property to true and by injecting `TooltipService` into the `NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,9 +38,7 @@ into the `NgModule.providers`.
 
 <!-- markdownlint-disable MD013 -->
 
-By default, tooltip shows information of x and y value in points. In addition to that, you can show more
-information in tooltip. For example the format '${series.name} ${point.x}' shows series name and point x
-value.
+By default, tooltip shows information of x and y value in points. In addition to that, you can show more information in tooltip. For example the format '${series.name} ${point.x}' shows series name and point x value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

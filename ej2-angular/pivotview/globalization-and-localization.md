@@ -24,7 +24,7 @@ By default, all the Essential JS 2 component are specific to English culture ('e
 npm install cldr-data --save
 ```
 
-* Once the package installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
+* Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
 * Download the required locale packages to render the angular Pivot Table component with specified locale. To download the locale definition of angular components, use this [link](https://github.com/syncfusion/ej2-locale).
 
@@ -47,17 +47,17 @@ The Internationalization library is used to globalize number, date, and time val
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs108/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs110/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs108/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs110/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs108/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs110/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs108" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs110" %}
 
 > * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/internationalization/#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/internationalization/#manipulating-datetime).
 > * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
@@ -72,22 +72,21 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs109/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs111/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs109/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs111/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs109/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs111/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs109" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs111" %}
 
 ## Localization
 
-The [`Localization`](https://ej2.syncfusion.com/documentation/common/api-l10n.html) library allows you to localize default text content of the pivot table. The pivot table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
-`locale` value and translation object.
+The [`Localization`](https://ej2.syncfusion.com/documentation/common/api-l10n.html) library allows you to localize default text content of the pivot table. The pivot table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
 
 The following list of properties and its values are used in the pivot table.
 
@@ -212,17 +211,17 @@ The following example demonstrates the pivot table in `Deutsch` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs110/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs112/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs110/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs112/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs110/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs112/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs110" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs112" %}
 
 ## Right-to-left (RTL)
 
@@ -230,17 +229,17 @@ RTL provides an option to switch the text direction and layout of the pivot tabl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs111/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs113/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs111/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs113/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs111/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs113/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs111" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs113" %}
 
 ## See Also
 

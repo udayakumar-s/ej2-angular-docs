@@ -66,11 +66,11 @@ You can download the custom styles after customizing the theme colors.
 
 You can directly use the customized CSS file in the web application.
 
-**Step 1:** Copy/paste the customized CSS file from the download folder into your application at any folder. Example: `styles\{file-name}.css`.
+**Step 1:** Copy/paste the customized CSS file from the download folder into your application at any folder. Example: `styles/{file-name}.css`.
 
 **Step 2:** Refer the customized CSS file reference in the `index.html` or `shared/_layout.cshtml` main page head section.
 
-```html
+```
     <head>
         <link href="styles/{file-name}.css" rel="stylesheet"/>
     </head>
@@ -99,3 +99,7 @@ When you want to change your application theme and UI design in the future, you 
 ![filter-customized](images/filter-customized.png)
 
 **Step 5:** The exported file will contain your latest changes. You can just replace the older custom style with the newer one to refresh your application.
+
+### Tailwind Theme
+
+The Syncfusion Angular UI Components provides tailwind theme support for EJ2 components by considering the UI design principles and theme colors.Syncfusion developed tailwind theme by using the design principles of tailwind ui.

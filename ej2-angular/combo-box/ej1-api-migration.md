@@ -15,7 +15,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## DataBinding
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior	| API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *dataSource*<br/>`<input id="dropdown1" ej-combobox [dataSource]="data" />`|**Property**: *dataSource*<br/>`<ejs-combobox [dataSource]="dataSource"></ejs-combobox>`|
@@ -28,7 +27,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Filtering
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default**| **Property**: *allowFiltering*<br/>`<input id="dropdown1" ej-combobox [allowFiltering]="allowFiltering"/>`  |	**Property**: *allowFiltering*<br/>`<ejs-combobox [allowFiltering]="true"></ejs-combobox>`|
@@ -40,7 +38,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Template
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *itemTemplate*<br/>`<input id="dropdown1" ej-combobox [itemTemplate]="itemTemplate"/>` | **Property**: *itemTemplate*<br/>`<ejs-combobox [itemTemplate]="itemTemplate"></ejs-combobox>`|
@@ -55,7 +52,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Applying CSS
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | ---|
 | **Default** | **Property**: *cssClass* <br/>`<input id="dropdown1" ej-combobox [cssClass]="cssClass"/>`| **Property**: *cssClass*<br/>`<ejs-combobox [cssClass]="customclass"></ejs-combobox>` |
@@ -64,7 +60,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Grouping
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2|
 | --- | --- | --- |
 | **Default** | **Property**: *fields*<br/>`<input id="dropdown1" ej-combobox [fields]="fields"/>`| **Property**: *fields*<br/>`<ejs-combobox [fields]="field"></ejs-combobox>` |
@@ -72,7 +67,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Accessibility
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2|
 | --- | --- | --- |
 | **Globalization** | **Property**: *locale*<br/>`<input id="dropdown1" ej-combobox [locale]="locale"/>`| **Property**: *locale*<br/>`<ejs-combobox [locale]="locale"/>` |
@@ -81,7 +75,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Placeholder
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2|
 | --- | --- | --- |
 | **Watermark text** | **Property**: *placeholder*<br/>`<input id="dropdown1" ej-combobox [placeholder]="placeholder"/>`|<br/>**Property**: *placeholder*<br/>`<ejs-combobox [placeholder]="select"/>` |
@@ -90,7 +83,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Miscellaneous
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2|
 | --- | --- | --- |
 | **Enable/disable** | **Property**: *enabled*<br/>`<input id="dropdown1" ej-combobox [enabled]="enabled"/>`|**Property**: *enabled*<br/>`<ejs-combobox [enabled]="true"/>` |
@@ -100,7 +92,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Sorting
 
 <!-- markdownlint-disable MD010 -->
-
 |Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Order of sorting** | **Property**: *sortOrder*<br/>`<input id="dropdown1" ej-combobox [sortOrder]="sortOrder"/>` | **Property**: *sortOrder*<br/>`<ejs-combobox [sortOrder]="sortOrder"/>`|
@@ -108,7 +99,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Selection
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Selecting particular index** | **Property**: *index*<br/>`<input id="dropdown1" ej-combobox [index]="index"/>` | **Property**: *index*<br/>`<ejs-combobox [index]="index"/>` |
@@ -120,7 +110,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Popup
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior| API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 | **Popup height** | **Property**: *popupHeight*<br/>`<input id="dropdown1" ej-combobox [popupHeight]="popupHeight"/>`|**Property**:*popupheight*<br/>`<ejs-combobox [popupHeight]="300px"/>`|
@@ -133,7 +122,6 @@ This article describes the API migration process of ComboBox component from Esse
 ## Common
 
 <!-- markdownlint-disable MD010 -->
-
 | Behavior | API in Essential JS 1 |API in Essential JS 2 |
 | --- | --- | --- |
 | **Adding new item** | **Method** : *addItem*<br/>`<input id="dropdown1" ej-combobox />` <br/> <br/>$('#dropdown').ejComboBox("addItem", { text :"India"});| **Method**: *addItem*<br/>`<ejs-combobox #sample id="combobox"/>`<br/> <br/>`@ViewChild('sample') public cmbObj: ComboBoxComponent;`<br/><br/> cmbObj.addItem({Id: 'id', Game: 'Golf'},2);|

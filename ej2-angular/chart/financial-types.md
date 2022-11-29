@@ -42,11 +42,9 @@ Hilo series requires 3 fields (x, high and low) to show the high and low price i
 ## High Low Open Close
 
 HiloOpenClose series is used to represent the low, high, open and closing values over time.
-To render a HiloOpenClose series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `HiloOpenClose` and
-inject `HiloOpenCloseSeriesService` into the `@NgModule.providers`.
+To render a HiloOpenClose series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `HiloOpenClose` and inject `HiloOpenCloseSeriesService` into the `@NgModule.providers`.
 
-HiloOpenClose series requires 5 fields (x, high, low, open and close) to show the high, low, open and close price
-values in the stock.
+HiloOpenClose series requires 5 fields (x, high, low, open and close) to show the high, low, open and close price values in the stock.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,10 +62,7 @@ values in the stock.
 
 ### Customization of HiloOpenClose Series
 
-In HiloOpenClose series, [`bullFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#bullFillColor) is used to fill the
- segment when the open value is greater than the close value and
-[`bearFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#bearFillColor) is used to fill the segment when the open
-value is less than the close value.
+In HiloOpenClose series, [`bullFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#bullFillColor) is used to fill the  segment when the open value is greater than the close value and [`bearFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#bearFillColor) is used to fill the segment when the open value is less than the close value.
 
 By default, bullFillColor is set as red and bearFillColor is set as green.
 
@@ -87,10 +82,7 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 
 ## Candle
 
-Candle series are similar to Hilo Open Close series, are used to represent the low,
-high, open and closing price over time. To render a candle series, use series
-[`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `Candle` and inject `CandleSeriesService` into the
-`@NgModule.providers`.
+Candle series are similar to Hilo Open Close series, are used to represent the low, high, open and closing price over time. To render a candle series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `Candle` and inject `CandleSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -137,8 +129,7 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 
 **Solid Candles**
 
-[`enableSolidCandles`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#enableSolidCandles) is used to enable/disable the solid
-candles. By default is set to be false. The fill color of the candle will be defined by its opening and closing values.
+[`enableSolidCandles`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#enableSolidCandles) is used to enable/disable the solid candles. By default is set to be false. The fill color of the candle will be defined by its opening and closing values.
 
 [`bearFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#bearFillColor) will be applied when the opening value is less than the closing value.
 [`bullFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#bullFillColor) will be applied when the opening value is greater than closing value.

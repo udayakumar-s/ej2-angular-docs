@@ -18,15 +18,15 @@ export class AppComponent implements OnInit {
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
-            expandAll: false,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
-            filterSettings: [{ name: 'Country', type: 'Exclude', items: ['United States'] }],
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: []
+        dataSource: Pivot_Data as IDataSet[],
+        expandAll: false,
+        allowLabelFilter: true,
+        formatSettings: [{ name: 'Year', format: 'dd/MM/yyyy-hh:mm', type: 'date' }],
+        filterSettings: [{ name: 'Year', type: 'Date', condition: 'Before', value1: new Date('2016') }],
+        columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+        values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+        rows: [{ name: 'Country' }, { name: 'Products' }],
+        filters: []
         };
     }
 }

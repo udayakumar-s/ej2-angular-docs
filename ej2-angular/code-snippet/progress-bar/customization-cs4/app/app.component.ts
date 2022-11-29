@@ -5,7 +5,7 @@ import { AnimationModel } from '@syncfusion/ej2-progressbar';
 @Component({
     selector: 'my-app',
     template:
-    `<ejs-progressbar  id='percentage' type='Circular' height='160px' width='160px'  trackColor='#FFD939'        radius='100%' innerRadius='70%' progressColor='white' cornerRadius='Round' trackThickness=80 progressThickness=10 value=60 [animation]='animation'>
+    ` <ejs-progressbar  id='percentage' type='Circular' height='160px' width='160px'  trackColor='#FFD939'        radius='100%' progressColor='white' cornerRadius='Round' trackThickness=80 progressThickness=10 value=60 [animation]='animation'>
      </ejs-progressbar>`
 })
 export class AppComponent implements OnInit {

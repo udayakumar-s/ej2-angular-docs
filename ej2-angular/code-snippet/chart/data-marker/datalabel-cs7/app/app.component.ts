@@ -22,14 +22,16 @@ export class AppComponent implements OnInit {
         this.primaryXAxis = {
             valueType: 'Category'
         };
-        this.marker = { dataLabel: { visible: true,
-                        border:{width: 2, color : 'red'},
-                        rx:10, ry: 10
-                    }
+        this.marker = { dataLabel: { visible: true, border:{width: 1, color : 'red'},
+                        margin:{
+                            left:5,
+                            right:5,
+                            top:5,
+                            bottom:5
+                        }, angle : 45, enableRotation: true }
         };
         this.title = 'Alaska Weather Statistics - 2016';
     }
-
 }
 
 

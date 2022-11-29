@@ -32,9 +32,10 @@ export class AppComponent implements OnInit {
         };
 
         this.gridSettings = {
-            allowTextWrap: true
+            allowReordering: true
         } as GridSettings;
     }
 }
+
 
 

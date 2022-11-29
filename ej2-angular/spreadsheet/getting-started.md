@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Spreadsheet component
+# Getting started with Angular Spreadsheet component
 
 This section explains the steps to create a simple Spreadsheet control with basic features in an Angular environment.
 

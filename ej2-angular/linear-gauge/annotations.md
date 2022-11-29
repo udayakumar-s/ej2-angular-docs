@@ -20,7 +20,7 @@ To render the custom HTML elements in the Linear Gauge component, use the [`cont
 
 <!-- markdownlint-disable MD036 -->
 
- ```html
+ ```
 <script id='fruits' type="text/x-template">
     <div id='apple'>
         <img src='src/lineargauge/images/apple.png'>

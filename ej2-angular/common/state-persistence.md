@@ -8,12 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State persistence in Angular Common component
+# State Persistence
 
-Syncfusion Angular UI Components has support for persisting component’s state across page refreshes or
-navigation. To enable this feature, set `enablePersistence` property as true to the required component.
-This will store the component’s state in the browser’s `localStorage` object on page `unload` event. For
-example, we have enabled persistence to grid component in the following code.
+Syncfusion Angular UI Components has support for persisting component’s state across page refreshes or navigation. To enable this feature, set `enablePersistence` property as true to the required component. This will store the component’s state in the browser’s `localStorage` object on page `unload` event. For example, we have enabled persistence to grid component in the following code.
 
 ```typescript
 import { Component, OnInit, ViewChild } from '@angular/core';

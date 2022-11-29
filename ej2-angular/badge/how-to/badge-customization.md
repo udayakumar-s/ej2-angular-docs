@@ -49,10 +49,8 @@ adjust the `font size` of the badge.
 
 ## Custom position
 
-Even though the badges support the conventional `top` and `bottom` positions, the position of the
-badges can be changed as desired.
-This can be done by adding a custom class to the badge element to override the default position applied
-from the source.
+Even though the badges support the conventional `top` and `bottom` positions, the position of the badges can be changed as desired.
+This can be done by adding a custom class to the badge element to override the default position applied from the source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

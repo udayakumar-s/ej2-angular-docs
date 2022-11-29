@@ -46,7 +46,7 @@ Instead of using a local resource on your server, you can use a cloud CDN to ref
 
 Syncfusion Angular Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion Angular Package you are using.
 
-```html
+```
 // Bootstrap5
 <head>
     <link href="https://cdn.syncfusion.com/ej2/bootstrap5.css" rel="stylesheet"/>
@@ -962,6 +962,7 @@ The following list of common variables is used in the Syncfusion Angular library
         </tr>
     </tbody>
 </table>
+
 ### Tailwind CSS Theme
 
 <table>

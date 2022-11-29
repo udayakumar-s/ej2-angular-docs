@@ -7,7 +7,7 @@ control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Getting started in Angular Rich text editor component
+# Getting started with Angular Rich text editor component
 
 This section explains the steps to create a simple **Rich Text Editor** component and configure its available functionalities in Angular.
 

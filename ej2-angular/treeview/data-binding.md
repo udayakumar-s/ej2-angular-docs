@@ -25,8 +25,7 @@ This event will be triggered once the data source is populated in the TreeView.
 
 ## Local data
 
-To bind local data to the TreeView, you can assign a JavaScript object array to the
-[dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel#datasource) property.
+To bind local data to the TreeView, you can assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel#datasource) property.
 The TreeView component requires three  fields (id, text, and parentID) to render local data source.
 When mapper fields are not specified, it takes the default values as the mapping fields. Local data source can also be
 provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
@@ -38,11 +37,9 @@ provided as an instance of the `DataManager`. It supports two kinds of local dat
 ### Hierarchical data
 
 TreeView can be populated with hierarchical data source that contains nested array of JSON objects.
-You can directly assign hierarchical data to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel#datasource) property,
-and map all the field members with corresponding keys from the hierarchical data to `fields` property.
+You can directly assign hierarchical data to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel#datasource) property, and map all the field members with corresponding keys from the hierarchical data to `fields` property.
 
-In the following example, **code**, **name**, and **countries** columns from hierarchical data have been mapped to **id**, **child**,
-and **text** fields, respectively.
+In the following example, **code**, **name**, and **countries** columns from hierarchical data have been mapped to **id**, **child**, and **text** fields, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,11 +59,9 @@ and **text** fields, respectively.
 
 TreeView can be populated from self-referential data structure that contains array of JSON objects with `parentID` mapping.
 
-You can directly assign self-referential data to the `dataSource` property, and map all the field members with corresponding
-keys from self-referential data to [fields](https://ej2.syncfusion.com/angular/documentation/api/treeview#fields) property.
+You can directly assign self-referential data to the `dataSource` property, and map all the field members with corresponding keys from self-referential data to [fields](https://ej2.syncfusion.com/angular/documentation/api/treeview#fields) property.
 
-In the following example, **id**, **pid**, **hasChild**, and **name** columns from self-referential data have been mapped
-to **id**, **parentID**, **hasChildren**, and **text** fields, respectively.
+In the following example, **id**, **pid**, **hasChild**, and **name** columns from self-referential data have been mapped to **id**, **parentID**, **hasChildren**, and **text** fields, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,18 +84,15 @@ and `Query` property.
 
 It supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
-You can assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source,
-you have to provide the endpoint `url`.
+You can assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, you have to provide the endpoint `url`.
 
-The `DataManager` that acts as an interface between the service endpoint and the TreeView requires the following information
-to interact with service endpoint properly.
+The `DataManager` that acts as an interface between the service endpoint and the TreeView requires the following information to interact with service endpoint properly.
 
 * `DataManager->url`: Defines the service endpoint to fetch data.
 
 * `DataManager->adaptor`: Defines the adaptor option. By default, ODataAdaptor is used for remote binding.
 
-Adaptor is responsible for processing response and request from/to the service endpoint. The `@syncfusion/ej2-data` package provides
-some predefined adaptors  designed to interact with service endpoints. They are,
+Adaptor is responsible for processing response and request from/to the service endpoint. The `@syncfusion/ej2-data` package provides some predefined adaptors  designed to interact with service endpoints. They are,
 
 * `UrlAdaptor`: Used to interact with remote services. This is the base adaptor for all remote based adaptors.
 
@@ -112,11 +104,9 @@ some predefined adaptors  designed to interact with service endpoints. They are,
 
 * `WebMethodAdaptor`: Used to interact with web methods.
 
-In the following example, `ODataV4Adaptor` is  used to fetch data from remote services. The **EmployeeID**, **FirstName**, and **Title**
-columns from Employees table have been mapped to **id**, **text**, and **hasChildren** fields respectively for first level nodes.
+In the following example, `ODataV4Adaptor` is  used to fetch data from remote services. The **EmployeeID**, **FirstName**, and **Title** columns from Employees table have been mapped to **id**, **text**, and **hasChildren** fields respectively for first level nodes.
 
-The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have been mapped to **id**, **parentID**, and **text**
-fields respectively for second level nodes.
+The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have been mapped to **id**, **parentID**, and **text** fields respectively for second level nodes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

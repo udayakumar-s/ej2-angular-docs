@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Context menu component
+# Getting started with Angular Context menu component
 
 This section explains how to create a simple ContextMenu, and demonstrate the basic usage of the ContextMenu component in an Angular environment.
 
@@ -105,8 +105,7 @@ export class AppModule { }
 
 ## Adding Syncfusion ContextMenu component
 
-Modify the template in `app.component.ts` file with `ejs-contextmenu` to render the ContextMenu
-component and the option contains `menuItems` and `target` in which ContextMenu will be opened.
+Modify the template in `app.component.ts` file with `ejs-contextmenu` to render the ContextMenu component and the option contains `menuItems` and `target` in which ContextMenu will be opened.
 
 ```javascript
 import { Component } from '@angular/core';
@@ -180,9 +179,7 @@ The following example shows a basic `ContextMenu` component.
 
 ## Rendering items with Separator
 
-The Separators are the horizontal lines used to separate the menu items. You `cannot` select the separators. You
-can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#separator)
-property. Cut, Copy, and Paste menu items are grouped using `separator` property in the following sample.
+The Separators are the horizontal lines used to separate the menu items. You `cannot` select the separators. You can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#separator) property. Cut, Copy, and Paste menu items are grouped using `separator` property in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

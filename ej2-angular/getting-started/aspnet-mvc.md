@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aspnet mvc in Angular Getting started component
+# Aspnet mvc with Angular Getting started component
 
 This document explains how to create an ASP.NET MVC framework with an Angular CLI project as the front end and Syncfusion EJ2 Angular components.
 
@@ -147,7 +147,7 @@ namespace SyncfusionAngularASPNETMVC
 
 Include the Angular production scripts and style files in the `Views/Shared/_Layout.cshtml`.
 
-```html
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -174,7 +174,7 @@ Include the Angular production scripts and style files in the `Views/Shared/_Lay
 
 Include the `<app-root>` tag in the `Views/Home/index.cshtml`.
 
-```html
+```
 
 @{
     ViewBag.Title = "Home Page";

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Data component
+# Getting started with Angular Data component
 
 ## Dependencies
 

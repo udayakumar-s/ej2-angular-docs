@@ -1,14 +1,14 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, OrthogonalSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel,ConnectorEditing, OrthogonalSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
 import {ConnectorConstraints} from '@syncfusion/ej2-diagrams';
 Diagram.Inject(ConnectorEditing);
 @Component({
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getConnectorDefaults] ='getConnectorDefaults'>
         <e-connectors>
-            <e-connector id='connector' type='Orthogonal' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint' [maxSegmentThumb]='maxSegmentThumb' [constraints] ='constraints' [segments]='segments'>
+            <e-connector id='connector' type='Orthogonal' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint' maxSegmentThumb='maxSegmentThumb' [constraints] ='constraints' [segments]='segments'>
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,

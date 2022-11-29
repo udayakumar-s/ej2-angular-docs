@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 Chart can render to its container size. You can set the size via inline or CSS as demonstrated below.
 
-```html
+```
     <div style="width:650px; height:350px;">
         <ejs-chart id="chart-container"></ejs-chart>
     </div>
@@ -54,8 +54,7 @@ export class AppComponent {
 
 ## Size for Chart
 
-You can also set size for chart directly through [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/#width) and
-[`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/#height) properties.
+You can also set size for chart directly through [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/#height) properties.
 
 <!-- markdownlint-disable MD036 -->
 **In Pixel**

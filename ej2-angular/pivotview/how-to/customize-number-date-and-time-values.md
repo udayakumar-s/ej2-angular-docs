@@ -23,17 +23,17 @@ For numbers, the formatting settings required to apply through code behind are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs161/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs163/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs161/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs163/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs161/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs163/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs161" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs163" %}
 
 ## Date and Time formatting
 
@@ -47,17 +47,17 @@ For date and time, the formatting settings required to apply through code behind
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs162/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs164/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs162/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs164/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs162/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs164/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs162" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs164" %}
 
 ## Limitations of date formatting
 

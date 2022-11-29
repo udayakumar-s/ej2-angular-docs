@@ -1,13 +1,13 @@
 
 
 
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Maps } from '@syncfusion/ej2-angular-maps';
 
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps id='rn-container' [layers]='layers'>
+    `<ejs-maps id='rn-container' style='display:block'>
      <e-layers>
     <e-layer [urlTemplate]= 'urlTemplate'></e-layer>
     </e-layers>

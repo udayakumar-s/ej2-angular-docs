@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Linear gauge component
+# Getting started with Angular Linear gauge component
 
 <!-- markdownlint-disable MD013 -->
 
@@ -119,7 +119,7 @@ export class AppComponent  { }
 
 Now use the `<code>app-container</code>` in the index.html instead of default one.
 
-```html
+```
 <app-container></app-container>
 ```
 

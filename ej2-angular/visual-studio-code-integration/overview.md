@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview in Angular Visual studio code integration component
+# Visual Studio Code Integration
 
 ## Overview
 

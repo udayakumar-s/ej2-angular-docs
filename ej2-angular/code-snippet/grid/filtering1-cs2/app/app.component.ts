@@ -2,6 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent, IFilterUI, Column } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs, DropDownList } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
 
 @Component({
@@ -27,27 +28,26 @@ export class AppComponent implements OnInit {
         this.data = data;
         this.templateOptions = {
             create: (args: { element: Element, column: Column }) => {
-                const dd = document.createElement('select');
+                const dd = document.createElement('input');
                 dd.id = 'EmployeeID';
-                const dataSource: string[] = ['All', '1', '3', '4', '5', '6', '8', '9'];
-                for (const value of  dataSource) {
-                    const option: HTMLOptionElement = document.createElement('option');
-                    option.value = value;
-                    option.innerHTML = value;
-                    dd.appendChild(option);
-                }
                 return dd;
             },
             write: (args: { element: Element, column: Column }) => {
-                args.element.addEventListener('input', (args1: Event): void => {
-                    const target: HTMLInputElement = args1.currentTarget as HTMLInputElement;
-                    if (target.value !== 'All') {
-                        const value = + +target.value;
-                        this.gridObj.filterByColumn(target.id, 'equal', value);
-                    } else {
-                        this.gridObj.removeFilteredColsByField(target.id);
+                 let DropDownListObj: DropDownList = new DropDownList({
+                    dataSource: ['All','1','3','4','5','6','8','9'],
+                    fields: { text: 'EmployeeID', value: 'EmployeeID' },
+                    placeholder: 'Select a value',
+                    popupHeight: '200px',
+                    change: function(e){
+                        var gridObj = (document.getElementsByClassName('e-grid')[0] as any).ej2_instances[0];
+                        if(e.value =='All') {
+                            gridObj.removeFilteredColsByField('EmployeeID');
+                        } else {
+                            gridObj.filterByColumn('EmployeeID','equal',parseInt(e.value as any));
+                        }
                     }
-                });
+                 });
+                DropDownListObj.appendTo('#EmployeeID');
             },
         };
     }

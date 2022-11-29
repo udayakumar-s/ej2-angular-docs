@@ -93,3 +93,47 @@ Using the [`prev`](https://ej2.syncfusion.com/angular/documentation/api/carousel
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/carousel/default-cs17" %}
+
+## Partial visible slides
+
+The Carousel component supports to show one complete slide and a partial view of adjacent (previous and next) slides at the same time. You can enable or disable the partial slides using the [`partialVisible`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#partialVisible) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/carousel/partial-visible-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/carousel/partial-visible-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/carousel/partial-visible-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/carousel/partial-visible-cs1" %}
+
+> Slide animation only applicable if the `partialVisible` is enabled.
+
+The last slide will be displayed as a partial slide at the initial rendering when the [`loop`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#loop) and [`partialVisible`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#partialVisible) properties are enabled.
+
+The previous slide is not displayed at the initial rendering when the `loop` is disabled.
+
+The following example code depicts the functionality of `partialVisible` and without `loop` functionalities.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/carousel/partial-visible-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/carousel/partial-visible-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/carousel/partial-visible-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/carousel/partial-visible-cs2" %}
+
+## See Also
+
+* [Customizing partial slides size](./styles-and-appearance/#customizing-partial-slides-size)

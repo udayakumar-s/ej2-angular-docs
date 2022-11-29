@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Dashboard layout component
+# Getting started with Angular Dashboard layout component
 
 This section explains how to create a simple **DashboardLayout** component and its basic usage.
 

@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Auto complete component
 
-The AutoComplete loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#datasource)
-property. It supports the data type of array or `DataManager`.
+The AutoComplete loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#datasource) property. It supports the data type of array or `DataManager`.
 
 The AutoComplete also supports different kind of data services such as OData, OData V4,
 Web API and data formats such as XML, JSON, JSONP with the help of DataManager Adaptors.
@@ -22,8 +21,7 @@ Web API and data formats such as XML, JSON, JSONP with the help of DataManager�
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
->While binding complex data to AutoComplete, fields should be mapped correctly. Otherwise, the selected
-item remains undefined.
+>While binding complex data to AutoComplete, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Bind to local data
 

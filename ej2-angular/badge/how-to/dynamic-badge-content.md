@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Dynamic badge content in Angular Badge component
 
-Badges in real-time needs to be updated dynamically based on the requirements. In this sample, using Angular data binding
-the badges content will be updated dynamically. Click the increment button to change the badge value.
+Badges in real-time needs to be updated dynamically based on the requirements. In this sample, using Angular data binding the badges content will be updated dynamically. Click the increment button to change the badge value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

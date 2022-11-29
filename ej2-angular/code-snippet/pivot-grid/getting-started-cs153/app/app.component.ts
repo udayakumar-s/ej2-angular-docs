@@ -1,44 +1,41 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
-import { HyperLinkSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/hyperlinksettings';
-import { Pivot_Data } from './datasource.ts';
+import { Component } from '@angular/core';
+import { IDataOptions, PivotView, GroupingBarService, GroupingService } from '@syncfusion/ej2-angular-pivotview';
+import { Group_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
+  providers: [GroupingBarService, GroupingService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [hyperlinkSettings]=hyperlinkSettings width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' allowGrouping='true' width=width height=height></ejs-pivotview>`
 })
-export class AppComponent implements OnInit {
+
+export class AppComponent {
+
     public width: string;
+    public height: number;
     public dataSourceSettings: IDataOptions;
-    public hyperlinkSettings: HyperLinkSettings;
 
     ngOnInit(): void {
 
+        this.width = "100%";
+        this.height = 350;
+
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Group_Data,
             expandAll: false,
             enableSorting: true,
-            drilledMembers: [{ name: 'Year', items: ['FY 2015'] }, { name: 'Country', items: ['France'] }],
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: []
+            formatSettings: [{ name: 'Amount', format: 'C' }, { name: 'Product_ID', format: 'N0' }],
+            columns: [{ name: 'Product_ID', caption: 'Product ID' }],
+            rows: [{ name: 'Products' }],
+            values: [{ name: 'Sold', caption: 'Unit Sold' },
+            { name: 'Amount', caption: 'Sold Amount' }],
+            filters: [],
+            groupSettings: [{ name: 'Products', type: 'Custom', caption: 'Product catergory', customGroups: [{groupName: 'Clothings', items: ['Gloves', 'Jerseys', 'Shorts']}]}]
         };
-        this.hyperlinkSettings = {
-           conditionalSettings: [{
-                label: 'Germany',
-                conditions: 'GreaterThan',
-                value1: 500
-            }],
-            cssClass: 'e-custom-class'
-        };
-        this.width = '100%';
     }
-}
+ }
 
 
 

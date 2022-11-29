@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
         };
 
         this.gridSettings = {
-            clipMode: 'Clip'
+            allowResizing: true
         } as GridSettings;
     }
 }

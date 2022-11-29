@@ -53,17 +53,17 @@ Operators that can be used in label filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs178/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs180/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs178/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs180/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs178/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs180/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs178" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs180" %}
 
 ## Date filtering through code
 
@@ -94,17 +94,17 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs179/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs181/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs179/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs181/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs179/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs181/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs179" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs181" %}
 
 ## Number filtering through code
 
@@ -135,17 +135,17 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs180/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs182/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs180/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs182/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs180/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs182/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs180" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs182" %}
 
 ## See Also
 

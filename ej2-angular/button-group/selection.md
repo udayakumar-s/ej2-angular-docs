@@ -14,9 +14,7 @@ domainurl: ##DomainURL##
 
 ### Single selection
 
-ButtonGroup supports radio type selection in which only one button can be selected. This can be achieved by adding input element
-along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup,
-the type of the input element should be `radio` and `e-btn` is added to the `label` element.
+ButtonGroup supports radio type selection in which only one button can be selected. This can be achieved by adding input element along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup, the type of the input element should be `radio` and `e-btn` is added to the `label` element.
 
 The following example illustrates the single selection behavior in ButtonGroup.
 
@@ -36,9 +34,7 @@ The following example illustrates the single selection behavior in ButtonGroup.
 
 ### Multiple selection
 
-ButtonGroup supports checkbox type selection in which multiple button can be selected. This can be achieved by adding input element
-along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup,
-the type of the input element should be `checkbox` and `e-btn` is added to the `label` element.
+ButtonGroup supports checkbox type selection in which multiple button can be selected. This can be achieved by adding input element along with `id` attribute with its corresponding label along with `for` attribute inside the target element. In this ButtonGroup, the type of the input element should be `checkbox` and `e-btn` is added to the `label` element.
 
 The following example illustrates the multiple selection behavior in ButtonGroup.
 
@@ -69,8 +65,7 @@ For nesting support, [`SplitButton dependencies`](./../split-button/getting-star
 
 To initialize DropDownButton component, refer [`DropDownButton Getting Started documentation`](./../drop-down-button/getting-started).
 
-In the following example, the DropDownButton component is rendered in `app.component.ts` and `DropDownButtonModule` is imported in
-`app.module.ts` file.
+In the following example, the DropDownButton component is rendered in `app.component.ts` and `DropDownButtonModule` is imported in `app.module.ts` file.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,8 +85,7 @@ In the following example, the DropDownButton component is rendered in `app.compo
 
 To initialize SplitButton component refer [`SplitButton Getting Started documentation`](./../split-button/getting-started).
 
-In the following example, the SplitButton component is rendered in `app.component.ts` and `SplitButtonModule` is imported in
-`app.module.ts` file.
+In the following example, the SplitButton component is rendered in `app.component.ts` and `SplitButtonModule` is imported in `app.module.ts` file.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

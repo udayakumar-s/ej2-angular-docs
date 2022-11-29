@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Common component
+# Overview
 
 The Base (`ej2-base`) is the common package which have common class definitions, libraries and methods for the Syncfusion (Essential JS 2) Components.
 

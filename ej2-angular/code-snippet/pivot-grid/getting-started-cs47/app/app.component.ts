@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     public dataSourceSettings: IDataOptions;
 
     actionComplete(args: PivotActionCompleteEventArgs): void {
-        if (args.actionName == 'Drill down' && args.actionName == 'Drill up') {
+        if (args.actionName == 'Drill down' || args.actionName == 'Drill up') {
             // Triggers when the drill operations are completed.
         }
     }

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Circular gauge component
+# Getting started with Angular Circular gauge component
 
 This section explains you the steps required to create a simple circular gauge and demonstrate the basic usage of circular gauge control.
 
@@ -105,7 +105,7 @@ export class AppComponent  { }
 
 Now use the <code>app-container</code> in the index.html instead of default one.
 
-```html
+```
 <app-container></app-container>
 ```
 

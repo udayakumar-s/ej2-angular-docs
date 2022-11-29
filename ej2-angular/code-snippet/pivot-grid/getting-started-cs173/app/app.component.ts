@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
             dataSource: Pivot_Data,
             expandAll: false,
             enableSorting: true,
-            drilledMembers: [{ name: 'Year', items: ['FY 2015'] }, { name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
@@ -28,7 +27,7 @@ export class AppComponent implements OnInit {
             filters: []
         };
         this.hyperlinkSettings = {
-           showValueCellHyperlink: true,
+           showRowHeaderHyperlink: true,
            cssClass: 'e-custom-class'
         } as HyperlinkSettings;
         this.width = '100%';

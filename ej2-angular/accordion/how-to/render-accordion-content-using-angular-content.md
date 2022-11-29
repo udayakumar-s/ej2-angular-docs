@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Render accordion content using angular content in Angular Accordion component
 
-To render the Accordion contents using ng-content, we need to use ng-template inside the each `e-accordionitem`
-tag with `#content` attribute, which is mandatory to render content. Now include `ng-content` inside the
-`ng-template` tag with select attribute of id or class name for mapping required content.
+To render the Accordion contents using ng-content, we need to use ng-template inside the each `e-accordionitem` tag with `#content` attribute, which is mandatory to render content. Now include `ng-content` inside the `ng-template` tag with select attribute of id or class name for mapping required content.
 
 ```javascript
   <e-accordionitem expanded='true' header='Athletics'>

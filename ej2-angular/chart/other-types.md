@@ -12,9 +12,7 @@ domainurl: ##DomainURL##
 
 # Other types in Angular Chart component
 
-To render a box and whisker chart, use series[`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type) as `BoxAndWhisker` and inject
-`BoxAndWhiskerSeriesService` into the `@NgModule.providers`. The field y requires n number of data or it should
-contains minimum of five values to plot a segment.
+To render a box and whisker chart, use series[`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type) as `BoxAndWhisker` and inject `BoxAndWhiskerSeriesService` into the `@NgModule.providers`. The field y requires n number of data or it should contains minimum of five values to plot a segment.
 >
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,9 +35,7 @@ contains minimum of five values to plot a segment.
 You can change the rendering mode of the Box and Whisker series using the `boxPlotMode` property.
 The default boxPlotMode is `exclusive`.The other boxPlotMode available are `inclusive` and `normal`.
 
-To render a box and whisker chart, use series[`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type) as `BoxAndWhisker` and
-inject `BoxAndWhiskerSeriesService` into the `@NgModule.providers`. The field y requires n number of data or it
-should contains minimum of five values to plot a segment.
+To render a box and whisker chart, use series[`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type) as `BoxAndWhisker` and inject `BoxAndWhiskerSeriesService` into the `@NgModule.providers`. The field y requires n number of data or it should contains minimum of five values to plot a segment.
 >
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,12 +71,8 @@ In Box and Whisker series `showMean` property is used to show the box and whiske
 
 ## Waterfall Chart
 
-Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive
-and negative values. To render a Waterfall series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as
-`Waterfall` and inject `WaterfallSeriesService` into the `@NgModule.providers`.
-[`intermediateSumIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#intermediateSumIndexes) property of waterfall is used
-to represent the in between the sum values and [`sumIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#sumIndexes)
-is used to represent the cumulative sum values.
+Waterfall chart helps to understand the cumulative effect of the sequentially introduced positive and negative values. To render a Waterfall series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as
+`Waterfall` and inject `WaterfallSeriesService` into the `@NgModule.providers`. [`intermediateSumIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#intermediateSumIndexes) property of waterfall is used to represent the in between the sum values and [`sumIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#sumIndexes) is used to represent the cumulative sum values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,9 +90,7 @@ is used to represent the cumulative sum values.
 
 **Customization of Waterfall Series**
 
-The negative changes of waterfall charts is
-represented by using [`negativeFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#negativeFillColor) and the summary changes are
-represented by using [`summaryFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#summaryFillColor) properties.
+The negative changes of waterfall charts is represented by using [`negativeFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#negativeFillColor) and the summary changes are represented by using [`summaryFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#summaryFillColor) properties.
 
 By default, the negativeFillColor as ‘#E94649’ and the summaryFillColor as ‘#4E81BC’.
 
@@ -138,9 +128,7 @@ Histogram type charts can provide a visual display of large amounts of data that
 
 ## Error Bar Chart
 
-Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported
-measurement. To render the error bar for the series, set [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type)
-as `true` in error bar object and inject `ErrorBar` module into the `@NgModule.providers`.
+Error bars are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render the error bar for the series, set [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `true` in error bar object and inject `ErrorBar` module into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -158,9 +146,7 @@ as `true` in error bar object and inject `ErrorBar` module into the `@NgModule.p
 
 **Changing Error Bar Type**
 
-To change the error bar rendering type using [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#type)
-option of error bar. To change the error bar line length you can use [`verticalError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#verticalError)
-property.
+To change the error bar rendering type using [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#type) option of error bar. To change the error bar line length you can use [`verticalError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#verticalError) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -178,8 +164,7 @@ property.
 
 **Customizing Error Bar Type**
 
-To customize the error bar type, set error bar [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#type) as `Custom` and
-then change the horizontal/vertical positive and negative error of error bar.
+To customize the error bar type, set error bar [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#type) as `Custom` and then change the horizontal/vertical positive and negative error of error bar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -197,8 +182,7 @@ then change the horizontal/vertical positive and negative error of error bar.
 
 **Changing Error Bar Mode**
 
-Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side.
-To change the error bar mode use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#mode) option.
+Error bar mode is used to define whether the error bar line has to be drawn horizontally, vertically or in both side. To change the error bar mode use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#mode) option.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -273,8 +257,7 @@ You can use `isTransposed` property in chart to render a chart in vertical manne
 
 Pareto charts are used to find the cumulative values of data in different categories. It is a combination of Column and Line series.
 The initial values are represented by column chart and the cumulative values are represented by Line chart.
-To render a pareto chart, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type) as
-`Pareto` and inject `ParetoSeries` `ColumnSeries` and  `LineSeries` module.
+To render a pareto chart, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type) as `Pareto` and inject `ParetoSeries` `ColumnSeries` and  `LineSeries` module.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

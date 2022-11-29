@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Electron in Angular Getting started component
+# Electron with Angular Getting started component
 
 This document helps you to create a simple Angular application with `Electron Framework` and `Syncfusion Angular UI components`.
 

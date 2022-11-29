@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Prevent content swipe selection in Angular Tab component
 
-We can prevent the tab selection on touch swipe action by using the Tab
-[`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab#selecting) event.
+We can prevent the tab selection on touch swipe action by using the Tab [`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab#selecting) event.
 Refer the below sample with preventing swipe selection.
 
 {% tabs %}

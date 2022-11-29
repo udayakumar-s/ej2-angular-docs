@@ -10,24 +10,15 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Calendar component
 
-Calendar allows you to customize the entire appearance by
-using the custom CSS and
-[`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs)
- event
-to customize the each day cell.
+Calendar allows you to customize the entire appearance by using the custom CSS and [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event to customize the each day cell.
 
 This following section demonstrates how to disable, highlights the specific dates in the Calendar.
 
 ## Disable Weekends
 
-You can disable the weekends of every month in a Calendar by using the
-[`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs)
-event. The `isDisabled` argument from this event allows you to define whether the
- date to be disabled or not.
+You can disable the weekends of every month in a Calendar by using the [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event. The `isDisabled` argument from this event allows you to define whether the date to be disabled or not.
 
-> Set
-[`isDisabled`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs)
-to true to disable the date value.
+> Set [`isDisabled`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs) to true to disable the date value.
 
 The following example demonstrates how to disable weekends of every month.
 
@@ -47,9 +38,7 @@ The following example demonstrates how to disable weekends of every month.
 
 ## Day Cell Format
 
-You can highlight the specific dates by adding the
-custom CSS or element to the day cell by using
-[`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs).
+You can highlight the specific dates by adding the custom CSS or element to the day cell by using [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs).
 
 Below is the list of classes that provides the flexible way to customize the Calendar component.
 
@@ -67,9 +56,7 @@ Below is the list of classes that provides the flexible way to customize the Cal
 | e-selected | Applied to selected dates.|
 | e-disabled | Applied to disabled dates.|
 
-The following example highlights the world health date (7th April every year)
-and world forest day (21st March every year) in a Calendar by using the
-custom icon and tooltip.
+The following example highlights the world health date (7th April every year) and world forest day (21st March every year) in a Calendar by using the custom icon and tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -87,9 +74,7 @@ custom icon and tooltip.
 
 ## Highlight Weekends
 
-You can highlight the weekends of every month in a Calendar by using the
-[`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs)
-event. The following example demonstrates how to highlights the weekends of every month.
+You can highlight the weekends of every month in a Calendar by using the [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderDayCellEventArgs#renderdaycelleventargs) event. The following example demonstrates how to highlights the weekends of every month.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

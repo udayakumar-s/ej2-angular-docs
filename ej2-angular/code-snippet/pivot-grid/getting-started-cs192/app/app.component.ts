@@ -1,14 +1,15 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService, CalculatedFieldService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
   selector: 'app-container',
-  providers: [FieldListService, CalculatedFieldService],
+  providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width allowCalculatedField='true' showFieldList='true'></ejs-pivotview>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width showFieldList='true'></ejs-pivotview></div>`
 })
+
 export class AppComponent {
     public dataSourceSettings: IDataOptions;
     ngOnInit(): void {
@@ -28,24 +29,10 @@ export class AppComponent {
             ],
             values: [
                 { name: '[Measures].[Customer Count]', caption: 'Customer Count' },
-                { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' },
-                { name: 'Order on Discount', isCalculatedField: true }
+                { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' }
             ],
             filters: [
                 { name: '[Date].[Fiscal]', caption: 'Date Fiscal' },
-            ],
-            calculatedFieldSettings: [
-                {
-                    name: 'BikeAndComponents',
-                    formula: '([Product].[Product Categories].[Category].[Bikes] + [Product].[Product Categories].[Category].[Components] )',
-                    hierarchyUniqueName: '[Product].[Product Categories]',
-                    formatString: 'Standard'
-                },
-                {
-                    name: 'Order on Discount',
-                    formula: '[Measures].[Order Quantity] + ([Measures].[Order Quantity] * 0.10)',
-                    formatString: 'Currency'
-                }
             ],
             filterSettings: [
                 {

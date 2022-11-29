@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Pdfviewer component
+# Getting started with Angular Pdfviewer component
 
 This section explains the steps required to create a simple Essential JS 2 PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application.
 

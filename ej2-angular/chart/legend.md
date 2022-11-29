@@ -18,8 +18,7 @@ To known more about legend settings, you can check on this video:
 
 ## Position and Alignment
 
-By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#position) property, you can position the legend
-at left, right, top or bottom of the chart. The legend is positioned at the bottom of the chart, by default.
+By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#position) property, you can position the legend at left, right, top or bottom of the chart. The legend is positioned at the bottom of the chart, by default.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,8 +76,7 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
 
 <!-- markdownlint-disable MD036 -->
 
-You can align the legend as `center`, `far` or `near` to the chart using
-[`alignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#alignment) property.
+You can align the legend as `center`, `far` or `near` to the chart using [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#alignment) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,9 +203,7 @@ You can set the legend label color based on series color by using chart's [loade
 
 ## Series Selection on Legend
 
-By default, legend click enables you to collapse the series visibility.  On other hand, if you need to select
-a series through legend click, disable the
-[`toggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#togglevisibility).
+By default, legend click enables you to collapse the series visibility.  On other hand, if you need to select a series through legend click, disable the [`toggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#togglevisibility).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -294,6 +290,24 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/chart/axis/category-cs51" %}
+
+## Legend Item Padding
+
+The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#itempadding) property can be used to adjust the space between the legend items.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/axis/category-cs52/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/axis/category-cs52/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/axis/category-cs52/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs52" %}
 
 >Note: To use legend feature, we need to inject `LegendService` into the `@NgModule.Providers`.
 

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Menu component
+# Getting started with Angular Menu component
 
 This section explains how to create a simple Menu, and demonstrate the basic usage of the Menu module in an Angular environment.
 
@@ -84,8 +84,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Menu module
 
-Import Menu module into Angular application(app.module.ts) from the package
-`@syncfusion/ej2-angular-navigations`.
+Import Menu module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-navigations`.
 
 ```javascript
 import { NgModule } from '@angular/core';
@@ -195,14 +194,12 @@ The following example shows a basic `Menu` component.
 {% previewsample "page.domainurl/code-snippet/menu/getting-started-cs3" %}
 
 > This example demonstrates the basic rendering of Menu with items support.
-For more information about data source support,
-refer to the [`Data Source Binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
+For more information about data source support, refer to the [`Data Source Binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
 
 ## Group Menu items with separator
 
 The separators are both horizontal and vertical lines used to separate the menu items.
-You cannot select the separators, but you can enable separators to group the menu items
-using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property.
+You cannot select the separators, but you can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property.
 The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
 
 {% tabs %}
@@ -219,6 +216,5 @@ The `Open` and `Save` sub menu items are grouped using the `separator` property 
   
 {% previewsample "page.domainurl/code-snippet/menu/getting-started-cs4" %}
 
-> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property should not be given
-along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel).
+> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property should not be given along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel).
 You can also enable the separator to group **horizontal** menu items.

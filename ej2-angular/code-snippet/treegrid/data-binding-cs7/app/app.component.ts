@@ -1,12 +1,11 @@
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
-import { DataManager } from '@syncfusion/ej2-data';
-import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { Component, OnInit } from '@angular/core';
+import { DataManager,Query, WebApiAdaptor } from '@syncfusion/ej2-data';
+
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid  #treegrid [treeColumnIndex]='1' (actionFailure)="onActionFailure($event)"
-    parentIdMapping='ParentItem' [dataSource]='data' idMapping='TaskID' [allowPaging]="true">
+    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' [query]='query' parentIdMapping='ParentItem' idMapping='TaskID' height=265 [allowPaging]="true">
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
             <e-column field='TaskName' headerText='Task Name' width='170'></e-column>
@@ -18,20 +17,15 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 export class AppComponent implements OnInit {
 
     public data: DataManager;
-    @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public query: Query;
 
     ngOnInit(): void {
         this.data = new DataManager({
-    url: 'http://some.com/invalidUrl'
-});
+                url: 'https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData',
+                adaptor: new WebApiAdaptor, crossDomain: true
+            });
+        this.query = new Query().addParams('ej2treegrid', 'true');
 }
- onActionFailure(e: any): any {
-       let span: HTMLElement = document.createElement('span');
-       this.treegrid.element.parentNode.insertBefore(span, this.treegrid.element);
-       span.style.color = '#FF0000'
-       span.innerHTML = 'Server exception: 404 Not found';
-    }
 }
 
 

@@ -23,9 +23,7 @@ Input Element
 | Alt +  Up Arrow | Closes the popup.|
 | Esc | closes the popup. |
 
-> To know more about Calendar navigation keys refer the Calendar
-[keyboard Interaction](http://ej2.syncfusion.com/staging/ej2/documentation/calendar/keyboard-interaction)
-section.
+> To know more about Calendar navigation keys refer the Calendar [keyboard Interaction](http://ej2.syncfusion.com/staging/ej2/documentation/calendar/keyboard-interaction) section.
 
 To focus the Calendar component use the `alt+t` keys.
 

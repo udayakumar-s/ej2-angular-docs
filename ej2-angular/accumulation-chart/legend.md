@@ -11,9 +11,7 @@ domainurl: ##DomainURL##
 # Legend in Angular Accumulation chart component
 
 As like a chart, the legend is also available for accumulation charts, which gives information about the points.
-By default, the legend will be placed on the right, if the width of the chart is high or will be placed on the bottom,
-if the height of the chart is high. Other customization features regarding the legend element are same as the
-[`chart legend`](http://ej2.syncfusion.com/documentation/chart/legend.html#position-and-alignment).
+By default, the legend will be placed on the right, if the width of the chart is high or will be placed on the bottom, if the height of the chart is high. Other customization features regarding the legend element are same as the [`chart legend`](http://ej2.syncfusion.com/documentation/chart/legend.html#position-and-alignment).
 Here, the legend for a point can be collapsed by giving the empty string to the x value of the point.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,8 +66,7 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
 
 ## Legend Shape
 
-To change the legend icon shape, use the `legendShape` property in the `series`. By default, legend icon shape
-is `seriesType`.
+To change the legend icon shape, use the `legendShape` property in the `series`. By default, legend icon shape is `seriesType`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,8 +138,7 @@ You can customize the animation while clicking legend by setting enableAnimation
 
 ## Paging for Legend
 
-Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view the each legend
-item by navigating between the pages using the navigation buttons.
+Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view the each legend item by navigating between the pages using the navigation buttons.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -178,8 +174,7 @@ When the legend text exceeds the container, the text can be wrapped by using `te
 
 ## Legend Title
 
-You can set title for legend using `title` property in `legendSettings`. You can also customize the `fontStyle`, `size`, `fontWeight`,
-`color`, `textAlignment`, `fontFamily`, `opacity` and `textOverflow` of legend title. `titlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `maximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
+You can set title for legend using `title` property in `legendSettings`. You can also customize the `fontStyle`, `size`, `fontWeight`, `color`, `textAlignment`, `fontFamily`, `opacity` and `textOverflow` of legend title. `titlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `maximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -212,3 +207,21 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/chart/series/pie-cs17" %}
+
+## Legend Item Padding
+
+The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/legendSettings/#itempadding) property can be used to adjust the space between the legend items.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/pie-cs18/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/pie-cs18/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/pie-cs18/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs18" %}

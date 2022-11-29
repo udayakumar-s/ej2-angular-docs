@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Open a dialog on contextmenu item click in Angular Context menu component
 
-This section explains about how to open a dialog on ContextMenu item click. This can be achieved by
-handling dialog open in `select` event of the ContextMenu.
+This section explains about how to open a dialog on ContextMenu item click. This can be achieved by handling dialog open in `select` event of the ContextMenu.
 
 In the following sample, Dialog will open while clicking `Save As...` item:
 

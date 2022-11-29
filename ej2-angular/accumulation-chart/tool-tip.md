@@ -14,26 +14,6 @@ Tooltip for the accumulation chart can be enabled by using the `enable` proper
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs30/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs30/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs30/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs30" %}
-
->Note: To use tooltip feature, inject the `AccumulationTooltipService` into the `@NgModule.providers`.
-
-## Header
-
-We can specify header for the tooltip using `header` property.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs31/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -46,10 +26,11 @@ We can specify header for the tooltip using `header` property.
   
 {% previewsample "page.domainurl/code-snippet/chart/series/pie-cs31" %}
 
-## Format
+>Note: To use tooltip feature, inject the `AccumulationTooltipService` into the `@NgModule.providers`.
 
-By default, tooltip shows information of x and y value in points. In addition to that, you can show more
-information in tooltip. For example the format `${series.name} ${point.x}` shows series name and point x value.
+## Header
+
+We can specify header for the tooltip using `header` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,9 +46,10 @@ information in tooltip. For example the format `${series.name} ${point.x}` sho
   
 {% previewsample "page.domainurl/code-snippet/chart/series/pie-cs32" %}
 
-## Tooltip Template
+## Format
 
-Any HTML element can be displayed in the tooltip by using the `template` property.
+By default, tooltip shows information of x and y value in points. In addition to that, you can show more
+information in tooltip. For example the format `${series.name} ${point.x}` shows series name and point x value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,12 +65,9 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
   
 {% previewsample "page.domainurl/code-snippet/chart/series/pie-cs33" %}
 
-## Customization
+## Tooltip Template
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#fill) and
-[`border`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#border) properties are used to customize the background
-color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#textstyle)
-property in the tooltip is used to customize the font of the tooltip text.
+Any HTML element can be displayed in the tooltip by using the `template` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,10 +83,9 @@ property in the tooltip is used to customize the font of the tooltip text.
   
 {% previewsample "page.domainurl/code-snippet/chart/series/pie-cs34" %}
 
-## Tooltip Mapping Name
+## Customization
 
-By default, tooltip shows information of x and y value in points. You can show more information from datasource in tooltip by using the `tooltipMappingName` property of the tooltip.
-You can use the `${point.tooltip}` as place holders to display the specified tooltip content.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#textstyle) property in the tooltip is used to customize the font of the tooltip text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,10 +101,10 @@ You can use the `${point.tooltip}` as place holders to display the specified too
   
 {% previewsample "page.domainurl/code-snippet/chart/series/pie-cs35" %}
 
-## To customize individual tooltip
+## Tooltip Mapping Name
 
-Using `tooltipRender` event, you can customize a tooltip for particular point. event, you can customize a
-tooltip for particular point.
+By default, tooltip shows information of x and y value in points. You can show more information from datasource in tooltip by using the `tooltipMappingName` property of the tooltip.
+You can use the `${point.tooltip}` as place holders to display the specified tooltip content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,3 +119,22 @@ tooltip for particular point.
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/chart/series/pie-cs36" %}
+
+## To customize individual tooltip
+
+Using `tooltipRender` event, you can customize a tooltip for particular point. event, you can customize a
+tooltip for particular point.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/pie-cs37/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/pie-cs37/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/pie-cs37/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs37" %}

@@ -10,13 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Context menu component
 
-The web accessibility makes web content and web applications more accessible for people with
-disabilities. It especially helps in dynamic content change and development of advanced user interface
-controls with AJAX, HTML, JavaScript, and related technologies. ContextMenu provides built-in
-compliance with `WAI-ARIA` specifications. `WAI-ARIA` support is achieved through attributes the
-like `aria-expanded` and `aria-haspopup` applied for menu item in ContextMenu. It helps the people
-with disabilities by providing information about the widget for assistive technology in the screen
-readers. ContextMenu component contains the `menu` role and `menuItem` role.
+The web accessibility makes web content and web applications more accessible for people with disabilities. It especially helps in dynamic content change and development of advanced user interface controls with AJAX, HTML, JavaScript, and related technologies. ContextMenu provides built-in compliance with `WAI-ARIA` specifications. `WAI-ARIA` support is achieved through attributes the like `aria-expanded` and `aria-haspopup` applied for menu item in ContextMenu. It helps the people with disabilities by providing information about the widget for assistive technology in the screen readers. ContextMenu component contains the `menu` role and `menuItem` role.
 
 | Properties | Functionality |
 | ------------ | ----------------------- |

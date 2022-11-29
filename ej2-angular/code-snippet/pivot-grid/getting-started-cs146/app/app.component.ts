@@ -1,36 +1,41 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, GroupingBarService, GroupingService } from '@syncfusion/ej2-angular-pivotview';
-import { Group_Data } from './datasource.ts';
+import { IDataOptions, PivotView, GroupingBarService, PivotActionFailureEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [GroupingBarService, GroupingService],
+  providers: [GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' allowGrouping='true' width=width height=height></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' (actionFailure)='actionFailure($event)' width=width></ejs-pivotview>`
 })
 
 export class AppComponent {
 
     public width: string;
-    public height: number;
     public dataSourceSettings: IDataOptions;
+
+    actionFailure(args: PivotActionFailureEventArgs): void {
+        if (args.actionName == 'Sort field' || args.actionName == 'Filter field') {
+            // Triggers when the current UI action fails to achieve the desired result.
+        }
+    }
 
     ngOnInit(): void {
 
         this.width = "100%";
-        this.height = 350;
 
         this.dataSourceSettings = {
-            dataSource: Group_Data,
+            dataSource: Pivot_Data,
             expandAll: false,
+            allowLabelFilter: true,
+            allowValueFilter: true,
             enableSorting: true,
-            formatSettings: [{ name: 'Amount', format: 'C' }, { name: 'Product_ID', format: 'N0' }],
-            rows: [{ name: 'Product_ID', caption: 'Product ID' }],
-            columns: [{ name: 'Products' }],
-            values: [{ name: 'Sold', caption: 'Unit Sold' },
-            { name: 'Amount', caption: 'Sold Amount' }],
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
     }

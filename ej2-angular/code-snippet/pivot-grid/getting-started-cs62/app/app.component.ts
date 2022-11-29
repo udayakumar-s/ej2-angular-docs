@@ -16,7 +16,7 @@ export class AppComponent {
     public dataSourceSettings: IDataOptions;
 
     actionFailure(args: PivotActionFailureEventArgs): void {
-        if (args.actionName == 'Add new record' && args.actionName == 'Edit record') {
+        if (args.actionName == 'Add new record' || args.actionName == 'Edit record') {
             // Triggers when the current UI action fails to achieve the desired result.
         }
     }

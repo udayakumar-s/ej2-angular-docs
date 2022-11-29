@@ -66,7 +66,7 @@ The following properties will be available at the time of template execution.
 
 In the following code example, the **OrderID** textbox has been disabled by using the **isAdd** property.
 
-```html
+```
 // The disabled attributes will be added based on the isAdd property.
 <input formControlName="OrderID" id="OrderID" name="OrderID" type="text" [attr.disabled]="!data.isAdd ? '' : null">
 
@@ -74,7 +74,7 @@ In the following code example, the **OrderID** textbox has been disabled by usin
 
 The following code example illustrates rendering the **OrderID** textbox, when a new record is added.
 
-```html
+```
 
 <div class="form-group col-md-6" *ngIf='data.isAdd'>
     <div class="e-float-input e-control-wrapper">
@@ -89,9 +89,7 @@ The following code example illustrates rendering the **OrderID** textbox, when a
 ## Set focus to editor
 
 By default, the first input element in the dialog will be focused while opening the dialog.
-If the first input element is in disabled or hidden state then you need to focused the valid input element in the
-[`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete)
-event based on **requestType** as **beginEdit**.
+If the first input element is in disabled or hidden state then you need to focused the valid input element in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event based on **requestType** as **beginEdit**.
 
 ```typescript
 
@@ -142,10 +140,9 @@ To include tab components in the Dialog, please ensure the following steps:
 
 **Step 1**:
 
-To render the Tab component, use the [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid. Inside the content template of the tab items define
-the input elements.
+To render the Tab component, use the [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid. Inside the content template of the tab items define the input elements.
 
-```html
+```
 
     <ejs-tab #tab id="tab_wizard" showCloseButton=false (selecting)='selecting($event)'>
         <e-tabitems>

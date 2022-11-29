@@ -30,17 +30,7 @@ export class AppComponent implements OnInit {
         };
 
         this.displayOption = { view: 'Chart' } as DisplayOPtion;
-        this.chartSettings = {
-            chartSeries: {
-                type: 'Column'
-            },
-            zoomSettings: {
-                enableDeferredZooming: true,
-                enableMouseWheelZooming: true,
-                enablePinchZooming: true,
-                enableSelectionZooming: true
-            }
-        } as ChartSettings;
+        this.chartSettings = { value: 'Amount', chartSeries: { type: 'Column' }} as ChartSettings;
     }
 }
 

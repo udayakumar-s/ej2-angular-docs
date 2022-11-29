@@ -12,9 +12,7 @@ domainurl: ##DomainURL##
 
 ## Images
 
-The Card supports to include images within the elements, you can add image as direct element
-anywhere inside card root by adding the `e-card-image` class to `div` element. Using the class
-defined, you can write CSS styles to load images to that element.
+The Card supports to include images within the elements, you can add image as direct element anywhere inside card root by adding the `e-card-image` class to `div` element. Using the class defined, you can write CSS styles to load images to that element.
 
 > By default, card images occupies full width of its parent element.
 
@@ -27,8 +25,7 @@ defined, you can write CSS styles to load images to that element.
 
 ### Title
 
-Card image is supported to include a title or caption for the image. By default, Title is placed
-over the image on left-bottom position with overlay.
+Card image is supported to include a title or caption for the image. By default, Title is placed over the image on left-bottom position with overlay.
 
 ```html
     <div class = "e-card">

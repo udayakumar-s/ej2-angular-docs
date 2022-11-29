@@ -1,20 +1,18 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, GroupingBarSettings, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
   providers: [GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true'
-  [groupingBarSettings]='groupingSettings' width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
-    public groupingSettings: GroupingBarSettings;
 
     ngOnInit(): void {
 
@@ -22,17 +20,12 @@ export class AppComponent implements OnInit {
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            expandAll: false,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            columns: [{ name: 'Year', caption: 'Production Year', allowDragAndDrop: false }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
+            rows: [{ name: 'Country' }, { name: 'Products', allowDragAndDrop: false }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
-
-        this.groupingSettings = {
-            showValueTypeIcon: true
-        } as GroupingBarSettings;
     }
 }
 

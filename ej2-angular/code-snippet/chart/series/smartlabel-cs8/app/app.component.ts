@@ -16,19 +16,7 @@ export class AppComponent implements OnInit {
     public datalabel: Object;
     public enableSmartLabels: boolean;
     ngOnInit(): void {
-        this.datalabel = { visible: true, name: 'text', position: 'Outside',
-                         connectorStyle:{
-                    //Length of the connector line in pixels
-                    length: '50px',
-                    //Width of the connector line in pixels
-                    width: 2,
-                    //dashArray of the connector line
-                    dashArray: '5,3',
-                    //Color of the connector line
-                    color: '#f4429e',
-                    //Specifies the type of the connector line either Line or Curve
-                    type: 'Curve'
-                } };
+        this.datalabel = { visible: true, name: 'text', position: 'Outside', template: '<div>${point.x}</div><div>${point.y}</div>' };
         this.enableSmartLabels = true;
         this.piedata = labelData;
     }

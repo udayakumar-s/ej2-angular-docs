@@ -14,10 +14,8 @@ In Dialog the template support is provided to the header, content and footer sec
 
 ## Header
 
-The Dialog header content can be provided through the
-[`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#header) property, and it will allow both text and any HTML content as a string.
-Also in header, close button is provided as built-in support, and this can be enabled through
-the [`showCloseIcon`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#showcloseicon) property.
+The Dialog header content can be provided through the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#header) property, and it will allow both text and any HTML content as a string.
+Also in header, close button is provided as built-in support, and this can be enabled through the [`showCloseIcon`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#showcloseicon) property.
 
 ## Footer
 

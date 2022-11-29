@@ -36,8 +36,7 @@ Defines the HTML attributes such as id, class, etc,. for the specific list item.
 
 ### iconCss `string`
 
-It is used to customize the icon to the list items dynamically.
- We can add specific image to the icons using iconCss property.
+It is used to customize the icon to the list items dynamically. We can add specific image to the icons using iconCss property.
 
 ### id `string`
 

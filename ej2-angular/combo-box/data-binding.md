@@ -10,13 +10,9 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Combo box component
 
-The ComboBox loads the data either from local data sources or
-remote data services using the
-[dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. It supports
-the data type of `array` or `DataManager`.
+The ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. It supports the data type of `array` or `DataManager`.
 
-The ComboBox also supports different kinds of data services such as OData, OData V4, and Web API,
-and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
+The ComboBox also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -77,8 +73,7 @@ The ComboBox can generate its list items through an array of complex data. For t
 the appropriate columns should be mapped to the [fields](/api/combo-box/#fields)
 property.
 
-In the following example, `Code.Id` column and `'Country.Name` column from complex data have been mapped
-to the `value` field and `text` field, respectively.
+In the following example, `Code.Id` column and `'Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,8 +92,7 @@ to the `value` field and `text` field, respectively.
 ## Binding remote data
 
 The ComboBox supports retrieval of data from remote data services with the help
-of `DataManager` component. The `Query` property allows is
-used to fetch data from the database and bind it to the ComboBox.
+of `DataManager` component. The `Query` property allows is used to fetch data from the database and bind it to the ComboBox.
 
 In the following sample, displayed first 6 contacts from `customer` table of `Northwind` Data Service.
 

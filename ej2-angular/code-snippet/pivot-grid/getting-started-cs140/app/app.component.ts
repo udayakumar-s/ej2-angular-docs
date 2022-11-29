@@ -6,16 +6,17 @@ import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
+  providers: [GroupingBarService],
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true'
-  (fieldRemove)='fieldRemove($event)' width=width></ejs-pivotview>`
+  (fieldDragStart)='fieldDragStart($event)' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
 
-    fieldRemove(args: FieldRemoveEventArgs): void {
-        if(args.fieldName === 'Country') {
+    fieldDragStart(args: FieldDragStartEventArgs): void {
+         if(args.axis === 'rows') {
             args.cancel = true;
         }
     }

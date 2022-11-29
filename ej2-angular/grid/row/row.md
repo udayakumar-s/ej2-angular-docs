@@ -17,8 +17,7 @@ It represents the record details that are fetched from the data source.
 ### Using event
 
 You can customize the appearance of the Row by using the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event.
-The [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event triggers for every row. In that event handler,
-you can get [`RowDataBoundEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs) which contain details of the row.
+The [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event triggers for every row. In that event handler, you can get [`RowDataBoundEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs) which contain details of the row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,17 +47,17 @@ Please refer the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs22/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs23/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs22/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs23/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs22/app/main.ts %}
+{% include code-snippet/grid/grid-cs23/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs22" %}
+{% previewsample "page.domainurl/code-snippet/grid/grid-cs23" %}
 
 ## See Also
 

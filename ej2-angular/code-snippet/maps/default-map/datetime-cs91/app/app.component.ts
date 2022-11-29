@@ -1,61 +1,58 @@
 
 
 
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Maps, Zoom, Marker, NavigationLine } from '@syncfusion/ej2-angular-maps';
-import { usa_map } from 'usa.ts';
+import { Component, OnInit } from '@angular/core';
+import { Maps, Selection, Legend } from '@syncfusion/ej2-angular-maps';
 import { world_map } from 'world-map.ts';
-import { california } from 'california.ts';
-Maps.Inject(Zoom, Marker, NavigationLine);
+Maps.Inject(Selection, Legend);
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps id='rn-container' [layers]='layers' [zoomSettings]='zoomSettings' [centerPosition]='centerPosition'>
+    `<ejs-maps id='rn-container' [legendSettings]='legendSettings'>
      <e-layers>
-    <e-layer [markerSettings]='markerSettings' [navigationLineSettings]='navigationLineSettings'></e-layer>
+    <e-layer [shapeData] = 'shapeData' [shapePropertyPath]='shapePropertyPath' [shapeDataPath]='shapeDataPath' [dataSource]='dataSource' [shapeSettings]='shapeSettings' [selectionSettings] ='selectionSettings'></e-layer>
     </e-layers>
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-    public urlTemplate: string;
-    public zoomSettings: object;
-    public markerSettings: object;
-    public navigationLineSettings: object;
+    public selectionSettings: object;
+    public shapeData: object;
+    public shapePropertyPath: string;
+    public shapeDataPath: string;
+    public dataSource: object;
+    public shapeSettings: object;
+    public legendSettings: object;
     ngOnInit(): void {
-            this.urlTemplate = "http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level";
-            this.zoomSettings = {
-               zoomFactor: 4
-            };
-            this.centerPosition = {
-               latitude: 29.394708,
-                longitude: -94.954653
-            };
-            this.markerSettings = [{
-                visible: true,
-                height: 25,
-                width: 15,
-                dataSource: [
+        this.selectionSettings = {
+            enable: true,
+            fill: 'blue',
+            border: { color: 'white', width: 2}
+        };
+        this.shapeData = world_map;
+        this.shapePropertyPath = "name";
+        this.shapeDataPath = "Country";
+        this.dataSource = [
+            {  "Country": "China", "Membership": "Permanent"},
+            { "Country": "France","Membership": "Permanent" },
+            { "Country": "Russia","Membership": "Permanent"},
+            { "Country": "Kazakhstan","Membership": "Non-Permanent"},
+            { "Country": "Poland","Membership": "Non-Permanent"},
+            { "Country": "Sweden","Membership": "Non-Permanent"}
+        ];
+        this.shapeSettings = {
+            colorValuePath: 'Membership',
+                colorMapping: [
                     {
-                        latitude: 34.060620,
-                        longitude: -118.330491,
-                        name: "California"
+                        value: 'Permanent', color: '#D84444'
                     },
                     {
-                        latitude: 40.724546,
-                        longitude: -73.850344,
-                        name: "New York"
-                    }
-                ]
-            }];
-            this.navigationLineSettings = [{
-                visible: true,
-                color: "blue",
-                width: 5,
-                angle: 0.1,
-                latitude: [34.060620, 40.724546],
-                longitude: [-118.330491,-73.850344]
-            }];
+                        value: 'Non-Permanent', color: '#316DB5'
+                   }]
+        };
+        this.legendSettings = {
+            visible: true
     }
+}
 }
 
 

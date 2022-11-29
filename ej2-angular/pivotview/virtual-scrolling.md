@@ -20,17 +20,17 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module in to th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs287/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs300/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs287/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs300/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs287/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs300/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs287" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs300" %}
 
 **Limitations for virtual scrolling**
 
@@ -51,17 +51,17 @@ When we bind one million raw data, the pivot table will process all raw data to 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs288/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs301/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs288/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs301/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs288/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs301/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs288" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs301" %}
 
 **Limitations during data compression**
 
@@ -81,14 +81,14 @@ Virtual scrolling automatically works with "Popup" field list on setting the [`e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs289/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs302/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs289/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs302/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs289/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs302/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs289" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs302" %}

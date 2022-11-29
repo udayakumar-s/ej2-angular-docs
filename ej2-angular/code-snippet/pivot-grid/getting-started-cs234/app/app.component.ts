@@ -1,46 +1,34 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { IDataOptions, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IDataOptions, IDataSet, DisplayOption, PivotChartService, PivotViewComponent, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Pivot_Data } from './datasource.ts';
-
 @Component({
-  selector: 'app-container',
-  providers: [PivotChartService],
-  // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
+    selector: 'app-container',
+    providers: [PivotChartService, GroupingBarService],
+    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  [chartSettings]='chartSettings' [showGroupingBar]='true' [displayOption]='displayOption'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
+    public pivotData: IDataSet[];
     public dataSourceSettings: IDataOptions;
     public chartSettings: ChartSettings;
     public displayOption: DisplayOption;
-
+    @ViewChild('pivotview', { static: false })
+    public pivotGridObj: PivotViewComponent;
     ngOnInit(): void {
-
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: []
+            columns: [{ name: 'Year' }, { name: 'Products' }],
+            rows: [{ name: 'Country' }, { name: 'Quarter' }],
+            formatSettings: [{ name: 'Amount', format: 'C' }],
+            values: [{ name: 'Amount' }, { name: 'Sold' }]
         };
-
-        this.displayOption = { view: 'Chart' } as DisplayOPtion;
-        this.chartSettings = {
-            crosshair: { enable: true },
-            chartSeries: {
-                type: 'Line',
-                marker: { fill: '#EEE', height: 10, width: 10, shape: 'Pentagon', visible: true }
-            },
-            primaryXAxis: { crosshairTooltip: { enable: true, fill: '#ff0000' } },
-            primaryYAxis: { crosshairTooltip: { enable: true, fill: '#0000FF' } }
-        } as ChartSettings;
+        this.displayOption = { view: 'Chart' } as DisplayOption;
+        this.chartSettings = { chartSeries: { type: 'Pie' } } as ChartSettings;
     }
 }
-
 
 

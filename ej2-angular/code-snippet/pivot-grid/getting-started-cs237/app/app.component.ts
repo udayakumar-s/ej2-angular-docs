@@ -1,25 +1,21 @@
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, DisplayOption, PivotChartService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
+import { Component, OnInit } from '@angular/core';
+import { IDataOptions, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Pivot_Data } from './datasource.ts';
-import { Button } from '@syncfusion/ej2-buttons';
 
 @Component({
   selector: 'app-container',
   providers: [PivotChartService],
   // specifies the template string for the pivot table component
-  template: `<span><button ej-button id='chartexport'>Export</button></span><div><ejs-pivotview #pivotview id='PivotView' height='300' [dataSourceSettings]=dataSourceSettings [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview></div>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public dataSourceSettings: IDataOptions;
     public chartSettings: ChartSettings;
     public displayOption: DisplayOption;
-    public exportButton: Button;
-
-    @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotViewComponent;
 
     ngOnInit(): void {
 
@@ -27,25 +23,14 @@ export class AppComponent implements OnInit {
             dataSource: Pivot_Data,
             expandAll: false,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }, { name: 'Products', type: 'Count'}],
+            rows: [{ name: 'Country' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
 
         this.displayOption = { view: 'Chart' } as DisplayOPtion;
-        this.chartSettings = {
-            chartSeries: {
-                type: 'Column'
-            }
-        } as ChartSettings;
-
-        this.exportButton = new Button({ isPrimary: true });
-        this.exportButton.appendTo('#chartexport');
-
-        this.exportButton.element.onclick = (): void => {
-            this.pivotGridObj.chartExport('PNG', 'result');
-        };
+        this.chartSettings = { enableScrollOnMultiAxis:true, enableMultipleAxis: true, chartSeries: { type: 'Column' }} as ChartSettings;
     }
 }
 

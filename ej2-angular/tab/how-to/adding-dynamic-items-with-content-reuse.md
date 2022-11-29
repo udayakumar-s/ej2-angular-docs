@@ -15,8 +15,7 @@ You can add dynamic tabs by reusing the content using Angular **TemplateRef**. T
 Content reuse can be achieved by using the following steps:
 1. Create a TemplateRef variable in your component(app.component.ts) file.
 2. Access the TemplateRef using ViewChild on the `<ng-template>` element.
-3. Provide separate TemplateRef declaration for each angular component
-and pass content by dynamically adding tab. It will reuse the content of angular component.
+3. Provide separate TemplateRef declaration for each angular component and pass content by dynamically adding tab. It will reuse the content of angular component.
 
 Refer to the following sample.
 

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Radio button component
+# Getting started with Angular Radio button component
 
 This section explains how to create a simple RadioButton, and demonstrate the basic usage of the RadioButton module in an Angular environment.
 

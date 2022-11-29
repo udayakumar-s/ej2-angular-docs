@@ -1,140 +1,66 @@
 
 
-import { Component, ViewChild, OnInit } from '@angular/core';
-import { IDataOptions, PivotView, IAxisSet, IFieldOptions, PivotViewComponent, FieldListService, PivotCellSelectedEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
-import { Chart, Category, Legend, Tooltip, ColumnSeries, LineSeries, SeriesModel } from '@syncfusion/ej2-charts';
-import { renewableEnergy } from './datasource.ts';
+import { Component } from '@angular/core';
+import { IDataOptions, PivotView, GroupingBarService, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [FieldListService],
+  providers: [GroupingBarService, FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width height=height [gridSettings]=gridSettings (cellSelected)="cellSelected($event)" (dataBound)="dataBound($event)"></ejs-pivotview><div><br/><div id="Chart"></div>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' width=width maxNodeLimitInMemberEditor=maxNodeLimitInMemberEditor showFieldList='true'></ejs-pivotview></div>`
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
 
     public width: string;
-    public height: number;
     public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
-    public onInit: boolean = true;
-    public measureList: { [key: string]: string } = {};
-    public chart: Chart;
-    public selectedCells: CellSelectedObject[];
-    public chartSeries: SeriesModel[];
-
-    @ViewChild('pivotview',{static: false})
-    public pivotObj: PivotViewComponent;
-
-    frameChartSeries(): SeriesModel[] {
-        let columnGroupObject: { [key: string]: { x: string, y: number }[] } = {};
-        for (let cell of this.selectedCells) {
-        if (cell.measure !== '') {
-            let columnSeries = (this.pivotObj.dataSourceSettings.values.length > 1 && this.measureList[cell.measure]) ?
-            (cell.columnHeaders.toString() + ' ~ ' + this.measureList[cell.measure]) : cell.columnHeaders.toString();
-            if (columnGroupObject[columnSeries]) {
-            columnGroupObject[columnSeries].push({ x: cell.rowHeaders == '' ? 'Grand Total' : cell.rowHeaders.toString(), y: Number(cell.value) });
+    public maxNodeLimitInMemberEditor: number;
+    public date1: number;
+    public date2: number;
+    data(count: number) {
+        let result: Object[] = [];
+        let dt: number = 0;
+        for (let i: number = 1; i < count + 1; i++) {
+            dt++;
+            let round: string;
+            let toString: string = i.toString();
+            if (toString.length === 1) {
+                round = "0000" + i;
+            } else if (toString.length === 2) {
+                round = "000" + i;
+            } else if (toString.length === 3) {
+                round = "00" + i;
+            } else if (toString.length === 4) {
+                round = "0" + i;
             } else {
-            columnGroupObject[columnSeries] = [{ x: cell.rowHeaders == '' ? 'Grand Total' : cell.rowHeaders.toString(), y: Number(cell.value) }];
+                round = toString;
             }
-        }
-        }
-        let columnKeys: string[] = Object.keys(columnGroupObject);
-        let chartSeries: SeriesModel[] = [];
-        for (let key of columnKeys) {
-            chartSeries.push({
-                dataSource: columnGroupObject[key],
-                xName: 'x',
-                yName: 'y',
-                type: 'Column',
-                name: key
+            result.push({
+                ProductID: "PRO-" + round,
+                Year: "FY " + (dt + 2013),
+                Price: Math.round(Math.random() * 5000) + 5000,
+                Sold: Math.round(Math.random() * 80) + 10
             });
-        }
-        return chartSeries;
-    }
-
-    chartUpdate(): void {
-        if (this.onInit) {
-            this.onInit = false;
-            Chart.Inject(ColumnSeries, LineSeries, Legend, Tooltip, Category);
-            this.chart = new Chart({
-                title: 'Sales Analysis',
-                legendSettings: {
-                    visible: true
-                },
-                tooltip: {
-                    enable: true
-                },
-                primaryYAxis: {
-                    title: this.pivotObj.dataSourceSettings.values.map(function (args) { return args.caption || args.name }).join(' ~ '),
-                },
-                primaryXAxis: {
-                    valueType: 'Category',
-                    title: this.pivotObj.dataSourceSettings.rows.map(function (args) { return args.caption || args.name }).join(' ~ '),
-                    labelIntersectAction: 'Rotate45'
-                },
-                series: this.chartSeries,
-            }, '#Chart');
-        } else {
-            this.chart.series = this.chartSeries;
-            this.chart.primaryXAxis.title = this.pivotObj.dataSourceSettings.rows.map(function (args) { return args.caption || args.name }).join(' ~ ');
-            this.chart.primaryYAxis.title = this.pivotObj.dataSourceSettings.values.map(function (args) { return args.caption || args.name }).join(' ~ ');
-            this.chart.refresh();
-        }
-    }
-    dataBound(): void {
-        if(this.onInit) {
-            for (let value of this.pivotObj.dataSourceSettings.values) {
-                this.measureList[value.name] = value.caption || value.name;
+            if (dt / 4 == 1) {
+                dt = 0;
             }
-            this.pivotObj.grid.selectionModule.selectCellsByRange(
-            { cellIndex: 1, rowIndex: 1 },
-            { cellIndex: 3, rowIndex: 3 }
-            );
         }
+        return result;
     }
-    cellSelected(args: PivotCellSelectedEventArgs): void {
-        this.selectedCells = args.selectedCellsInfo;
-        if (this.selectedCells && this.selectedCells.length > 0) {
-            this.chartSeries = this.frameChartSeries();
-            this.chartUpdate();
-        }
-    }
-
     ngOnInit(): void {
 
         this.width = "100%";
-        this.height = 350;
-
-        this.gridSettings = {
-            columnWidth: 120,
-            allowSelection: true,
-            selectionSettings: {
-            mode: 'Cell',
-            type: 'Multiple',
-            cellSelectionMode: 'Box',
-            }
-        };
+        this.maxNodeLimitInMemberEditor= 100;
 
         this.dataSourceSettings = {
-            dataSource: renewableEnergy,
+            dataSource: this.data(1000) as IDataSet[],
+            enableSorting: false,
             expandAll: true,
-            enableSorting: true,
-            drilledMembers: [{ name: 'Year', items: ['FY 2015', 'FY 2017', 'FY 2018'] }],
-            formatSettings: [{ name: 'ProCost', format: 'C0' }],
-            rows: [
-                { name: 'Year', caption: 'Production Year' }
-            ],
-            columns: [
-                { name: 'EnerType', caption: 'Energy Type' },
-                { name: 'EneSource', caption: 'Energy Source' }
-            ],
-            values: [
-                { name: 'ProCost', caption: 'Revenue Growth' }
-            ],
-            filters: []
+            formatSettings: [{ name: 'Price', format: 'C0' }],
+            rows: [{ name: 'ProductID' }],
+            columns: [{ name: 'Year' }],
+            values: [{ name: 'Price', caption: 'Unit Price' }, { name: 'Sold', caption: 'Unit Sold' }]
         };
     }
  }

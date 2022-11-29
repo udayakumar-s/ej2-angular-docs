@@ -880,7 +880,7 @@ You can restrict the users to create and update more than one appointment on spe
 
 ## Differentiate the past time events
 
-To differentiate the appearance of the appointments based on specific criteria such as displaying the past hour appointments with different colors on Scheduler, `eventRendered` event can be used which triggers before the appointment renders on the Scheduler.
+To differentiate the appearance of the appointments based on specific criteria such as displaying the past hour appointments with different colors on Scheduler `eventRendered` event can be used which triggers before the appointment renders on the Scheduler.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

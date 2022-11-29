@@ -2,12 +2,11 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
 import { ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' (pdfExportComplete)='pdfExportComplete($event)' (toolbarClick)='toolbarClick($event)' [allowPaging]='true' [allowPdfExport]='true' [pageSettings]='pager' [treeColumnIndex]='1'  childMapping='subtasks' [toolbar]='toolbarOptions'>
+    template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' (toolbarClick)='toolbarClick($event)' [allowPaging]='true' [allowPdfExport]='true' [pageSettings]='pager' [treeColumnIndex]='1'  childMapping='subtasks' [toolbar]='toolbarOptions'>
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -31,16 +30,11 @@ export class AppComponent implements OnInit {
     }
     toolbarClick(args: Object) : void {
         if (args['item'].text === 'PDF Export') {
-            let cols: Column[] = this.treeGridObj.grid.columns;
-            cols[2].visible = false;
-            cols[3].visible = true;
-            this.treeGridObj.pdfExport();
+            let exportProperties: PdfExportProperties = {
+                fileName:"new.pdf"
+            };
+            this.treeGridObj.pdfExport(exportProperties);
         }
-    }
-    pdfExportComplete(): void {
-        let cols: Column[] = this.treeGridObj.grid.columns;
-        cols[3].visible = false;
-        cols[2].visible = true;
     }
 }
 

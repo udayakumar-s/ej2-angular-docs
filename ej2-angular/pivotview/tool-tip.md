@@ -14,17 +14,17 @@ The tooltip can be enabled or disabled by setting the [`showTooltip`](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs284/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs297/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs284/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs297/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs284/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs297/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs284" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs297" %}
 
 ## Tooltip Template
 

@@ -1,2 +1,2 @@
-# ej2-angular-docs
-Documentation repository for the EJ2 Angular platform
+# ej2-calendars-angular-docs
+Repo for maintaining the angular calendar docs

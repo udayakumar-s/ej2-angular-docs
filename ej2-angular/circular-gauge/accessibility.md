@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 # Accessibility in Angular Circular gauge component
 
 Circular gauge provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
-WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements
-in a document for assistive technology.
+WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provides information about elements in a document for assistive technology.
 
 **Aria-label:**   Attribute provides the text label with some default description for below elements in gauge.
 
@@ -37,8 +36,5 @@ in a document for assistive technology.
 </tr>
 </table>
 
- You can change this default description,
- using description property available in [`Pointers`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer),
- [`Annotations`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation) and
- [`CircularGauge`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge) object.
+ You can change this default description, using description property available in [`Pointers`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer), [`Annotations`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation) and [`CircularGauge`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge) object.
  It helps the screen reader to read for assistive purpose.

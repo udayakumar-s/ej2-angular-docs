@@ -16,8 +16,7 @@ To Customize the legend shape, follow the given steps:
 
 **Step 1**:
 
-Set the shape value `args.shape` to the argument to change the legend shape by using the
-[`legendRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#legendrender) event.
+Set the shape value `args.shape` to the argument to change the legend shape by using the [`legendRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#legendrender) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

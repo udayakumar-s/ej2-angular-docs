@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 # Batch editing in Angular Grid component
 
 In Batch edit mode, when you double-click on the grid cell, then the target cell changed to edit state.
-You can bulk save (added, changed and deleted data in the single request) to data source by click on the toolbar's **Update**
-button or by externally invoking the [`batchSave`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#batchsave) method.
+You can bulk save (added, changed and deleted data in the single request) to data source by click on the toolbar's **Update** button or by externally invoking the [`batchSave`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#batchsave) method.
 To enable Batch edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch**.
 
 {% tabs %}

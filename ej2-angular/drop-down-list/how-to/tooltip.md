@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Tooltip in Angular Drop down list component
 
-You can achieve this behavior by using `ej2-tooltip` component.
-When the mouse hover on the DropDownList option that tooltip display
-some details related to hovered list item.
+You can achieve this behavior by using `ej2-tooltip` component. When the mouse hover on the DropDownList option that tooltip display some details related to hovered list item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

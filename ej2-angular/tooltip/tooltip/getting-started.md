@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Tooltip component
+# Getting started with Angular Tooltip component
 
 This section briefly explains how to create a simple **Tooltip** component and configure its available functionalities in angular.
 
@@ -134,9 +134,7 @@ The following code example depicts the way to initialize Tooltip on a single ele
 
 ### Initialize Tooltip within a container
 
-It is possible to create Tooltip on multiple targets within a container. To do so, define the `selector` property with specific target
- elements - so that the tooltip will be initialized only on those matched targets within a container. In this case, the Tooltip content
-  gets assigned from the `title` attribute of the target element.
+It is possible to create Tooltip on multiple targets within a container. To do so, define the `selector` property with specific target elements - so that the tooltip will be initialized only on those matched targets within a container. In this case, the Tooltip content gets assigned from the `title` attribute of the target element.
 
 Refer the following code example, to create a Tooltip on multiple targets within a container.
 

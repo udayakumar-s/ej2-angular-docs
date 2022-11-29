@@ -16,8 +16,7 @@ This section explains about different types and styles of ButtonGroup.
 
 ### Outline ButtonGroup
 
-An Outline ButtonGroup has a border with transparent background. To create Outline ButtonGroup, `e-outline` class should
-be added to the target element and to each button elements using `cssClass` property.
+An Outline ButtonGroup has a border with transparent background. To create Outline ButtonGroup, `e-outline` class should be added to the target element and to each button elements using `cssClass` property.
 
 The following sample illustrates how to achieve an Outline ButtonGroup,
 
@@ -39,8 +38,7 @@ The following sample illustrates how to achieve an Outline ButtonGroup,
 
 ## ButtonGroup styles
 
-The Essential JS 2 ButtonGroup has the following predefined styles. This can be achieved by adding corresponding class name
-in each button elements using `cssClass` property.
+The Essential JS 2 ButtonGroup has the following predefined styles. This can be achieved by adding corresponding class name in each button elements using `cssClass` property.
 
 | Class | Description |
 | -------- | -------- |

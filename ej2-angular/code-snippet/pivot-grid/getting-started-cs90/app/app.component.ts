@@ -1,17 +1,26 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { Component } from '@angular/core';
+import { IDataOptions, IDataSet, PivotView, FieldListService, PivotActionCompleteEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
+  providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' (actionComplete)='actionComplete($event)' width=width></ejs-pivotview></div>`
 })
-export class AppComponent implements OnInit {
+
+export class AppComponent {
+
     public width: string;
     public dataSourceSettings: IDataOptions;
+
+    actionComplete(args: PivotActionCompleteEventArgs): void {
+        if (args.actionName == 'Field list closed') {
+            // Triggers when the field list dialog is closed.
+        }
+    }
 
     ngOnInit(): void {
 
@@ -20,9 +29,10 @@ export class AppComponent implements OnInit {
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
-            allowMemberFilter:true,
+            allowLabelFilter: true,
+            allowValueFilter: true,
+            enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
-            filterSettings: [{ name: 'Country', type: 'Exclude', items: ['United States'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
@@ -30,7 +40,7 @@ export class AppComponent implements OnInit {
             filters: []
         };
     }
-}
+ }
 
 
 

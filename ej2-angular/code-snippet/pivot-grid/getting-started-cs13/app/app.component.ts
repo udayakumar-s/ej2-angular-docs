@@ -1,8 +1,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, CalculatedFieldService, PivotView,
-    FieldListService, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, CalculatedFieldService, PivotView, FieldListService, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 import { Button } from '@syncfusion/ej2-buttons';
 

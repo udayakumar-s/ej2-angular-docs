@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Custom Color Palette
 
-You can customize the default color of series or points by providing a custom color palette of your choice by
-using the [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/chart/#palettes) property.
+You can customize the default color of series or points by providing a custom color palette of your choice by using the [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/chart/#palettes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,8 +131,7 @@ You can set margin for chart from its container through [`margin`](https://ej2.s
 
 **Chart Area Background**
 
-The chart area background can be customized by using the [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel/#background)
-property in the [`chartArea`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel/).
+The chart area background can be customized by using the [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel/#background) property in the [`chartArea`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -223,8 +221,7 @@ Chart can be given a title using [`title`](https://ej2.syncfusion.com/angular/do
 
 ## Chart SubTitle
 
-Chart can be given a subtitle using [`subTitle`](https://ej2.syncfusion.com/angular/documentation/api/chart/#subtitle) property, to show the information
-about the data plotted.
+Chart can be given a subtitle using [`subTitle`](https://ej2.syncfusion.com/angular/documentation/api/chart/#subtitle) property, to show the information about the data plotted.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

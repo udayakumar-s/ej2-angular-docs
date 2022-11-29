@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Dual list box in Angular List box component
 
-The dual list box allows the user to move items between two list boxes by clicking the toolbar buttons. Dual list box can be created by listing items in the
-[`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#toolbarsettings) along with the `scope` property.
+The dual list box allows the user to move items between two list boxes by clicking the toolbar buttons. Dual list box can be created by listing items in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#toolbarsettings) along with the `scope` property.
 
 The following operations can be performed in dual list box,
 

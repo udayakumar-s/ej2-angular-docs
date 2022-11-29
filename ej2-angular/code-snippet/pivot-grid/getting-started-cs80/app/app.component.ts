@@ -1,27 +1,20 @@
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
-import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
+import { Component } from '@angular/core';
+import { IDataOptions, IDataSet, PivotView, FieldListService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
+  providers: [FieldListService, GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  width=width (dataBound)='ondataBound()' showFieldList='true'></ejs-pivotview>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' showGroupingBar='true' width=width></ejs-pivotview></div>`
 })
-export class AppComponent implements OnInit {
+
+export class AppComponent {
+
     public width: string;
     public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
-
-    @ViewChild('pivotview',{static: false})
-    public pivotGridObj: PivotView;
-
-    ondataBound(): void {
-        this.pivotGridObj.pivotFieldListModule.dialogRenderer.fieldListDialog.target = document.body;
-    }
 
     ngOnInit(): void {
 
@@ -30,15 +23,21 @@ export class AppComponent implements OnInit {
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
+            allowLabelFilter: true,
+            allowValueFilter: true,
+            columns: [{ name: 'Year', caption: 'Production Year' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }],
+            rows: [{ name: 'Country' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: []
+            filters: [],
+            fieldMapping: [
+                { name: 'Quarter', groupName: 'Product category' },
+                { name: 'Products', groupName: 'Product category' },
+                { name: 'Amount', groupName: 'Product category', caption: 'Sold Amount' },
+            ]
         };
     }
-}
+ }
 
 
 

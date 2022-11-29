@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Range slider component
+# Getting started with Angular Range slider component
 
-The Slider component is available in `@syncfusion/ej2-angular-inputs` package. Utilize this package to render the
-Slider Component.
+The Slider component is available in `@syncfusion/ej2-angular-inputs` package. Utilize this package to render the Slider Component.
 
 ## Setting up angular project
 
@@ -186,8 +185,7 @@ The types of Slider are as follows:
 | Range | Selects a range of values. It also displays the shadow in-between the selection range. |
 
 >Both the Default Slider and Min-Range Slider have same behavior that is used to select a single value.
-In Min-Range Slider, a shadow is considered from the start value to current handle position. But the Range Slider
-contains two handles that is used to select a range of values and a shadow is considered in between the two handles.
+In Min-Range Slider, a shadow is considered from the start value to current handle position. But the Range Slider contains two handles that is used to select a range of values and a shadow is considered in between the two handles.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -225,9 +223,7 @@ The Slider can be displayed, either in horizontal or vertical orientation. By de
 
 ### Tooltip
 
-The Slider displays the tooltip to indicate the current value by clicking the Slider bar or drag
-the Slider handle. The Tooltip position can be customized by using the `placement` property. Also decides the tooltip display mode
-on a page, i.e., on hovering, focusing, or clicking on the Slider handle and it always remains/displays on the page.
+The Slider displays the tooltip to indicate the current value by clicking the Slider bar or drag the Slider handle. The Tooltip position can be customized by using the `placement` property. Also decides the tooltip display mode on a page, i.e., on hovering, focusing, or clicking on the Slider handle and it always remains/displays on the page.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -245,9 +241,7 @@ on a page, i.e., on hovering, focusing, or clicking on the Slider handle and it 
 
 ### Buttons
 
-The Slider value can be changed by using the Increase and Decrease buttons. In Range Slider, by
-default the first handle value will be changed while clicking the button. Change the handle focus and
-press the button to change the last focused handle value.
+The Slider value can be changed by using the Increase and Decrease buttons. In Range Slider, by default the first handle value will be changed while clicking the button. Change the handle focus and press the button to change the last focused handle value.
 
 > After enabling the slider buttons if the 'Tab' key is pressed, the focus goes to the handle
 and not to the button.

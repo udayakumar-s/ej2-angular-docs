@@ -15,8 +15,7 @@ This section explains the different sizes and labels.
 ## Label
 
 RadioButton caption can be defined by using the [`label`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#label) property. This reduces the manual addition
-of label for RadioButton. You can customize the label position before or after the RadioButton
-through the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#labelposition) property.
+of label for RadioButton. You can customize the label position before or after the RadioButton through the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#labelposition) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,8 +33,7 @@ through the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/a
 
 ## Size
 
-The different RadioButton size are default and small. To reduce the size of the default RadioButton to small,
-set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#cssclass) property to `e-small`.
+The different RadioButton size are default and small. To reduce the size of the default RadioButton to small, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#cssclass) property to `e-small`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

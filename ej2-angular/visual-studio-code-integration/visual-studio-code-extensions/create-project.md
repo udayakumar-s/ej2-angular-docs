@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create project in Angular Visual studio code integration component
+# Create project in Angular 
 
 ## Create project
 

@@ -40,8 +40,7 @@ To sort, inject the [`Sort`](https://ej2.syncfusion.com/angular/documentation/ap
 
 ## Initial sort
 
-To sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/sortDescriptorModel/#field) and
-[`direction`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/sortDescriptorModel/#direction) in the `sortSettings.columns`.
+To sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/sortDescriptorModel/#field) and [`direction`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/sortDescriptorModel/#direction) in the `sortSettings.columns`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,9 +56,14 @@ To sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/angul
   
 {% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs2" %}
 
-## Sorting events
+## Multi-column sorting
 
-During the sort action, the treegrid component triggers two events. The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
+Sort more than one column in a tree grid. To sort multiple columns, press and hold the **CTRL** key and click the column header. The sorting order will be displayed in the header while performing multi-column sorting.
+
+To clear sorting for a particular column, press the "Shift + mouse left click."
+
+> The [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowsorting) must be true while enabling multi-column sort.
+> Set the [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowmultisorting) property as **false** to disable multi-column sorting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,13 +79,18 @@ During the sort action, the treegrid component triggers two events. The [`action
   
 {% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs3" %}
 
-> The `args.requestType` is the current action name. For example, in sorting the `args.requestType` value is 'sorting'.
+## Sort order
 
-<!--  Custom sort comparer
+By default, the sorting order will be as **ascending -> descending -> none**.
 
-You can customize the default sort action for a column by defining the [`column.sortComparer`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
+When you first click a column header, it sorts the column in ascending order. Again click the same column header, it will now sort the column in descending order. A repetitive third click on the same column header will clear the sorting.
 
-In the following example, custom sort comparer function was defined in the `Category` column.
+## Sort Comparer
+
+Customize the default sort action for a column by defining the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#sortcomparer) property.
+The sort comparer function has the same functionality as [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
+
+In the following example, the custom sort comparer function was defined in the **orderName** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,6 +105,46 @@ In the following example, custom sort comparer function was defined in the `Cate
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs4" %}
+
+## Sorting events
+
+During the sort action, the treegrid component triggers two events. The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/sorting-cs5/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/sorting-cs5/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/sorting-cs5/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs5" %}
+
+> The `args.requestType` is the current action name. For example, in sorting the `args.requestType` value is 'sorting'.
+
+<!--  Custom sort comparer
+
+You can customize the default sort action for a column by defining the [`column.sortComparer`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
+
+In the following example, custom sort comparer function was defined in the `Category` column.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/sorting-cs6/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/sorting-cs6/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/sorting-cs6/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs6" %}
 
 > The sort comparer function will work only for the local data. -->
 

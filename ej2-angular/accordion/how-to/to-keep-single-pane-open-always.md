@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # To keep single pane open always in Angular Accordion component
 
-By default, all Accordion panels are collapsible. You can customize the Accordion to keep one panel
-as expanded state always. This is applicable for `Single` expand mode.
+By default, all Accordion panels are collapsible. You can customize the Accordion to keep one panel as expanded state always. This is applicable for `Single` expand mode.
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

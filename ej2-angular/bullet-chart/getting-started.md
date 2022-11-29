@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Bullet chart component
+# Getting started with Angular Bullet chart component
 
 This section explains you the steps required to create a simple Bullet Chart and demonstrate the basic usage of the Bullet Chart component in an Angular environment.
 
@@ -104,7 +104,7 @@ export class AppComponent  { }
 
 Now use the <code>app-container</code> in the index.html instead of default one.
 
-```html
+```
 <app-container></app-container>
 ```
 
@@ -226,8 +226,7 @@ You can add a range using [`ranges`](https://ej2.syncfusion.com/angular/document
 
 ## Enable Tooltip
 
-The tooltip is useful when you cannot display information by using the data labels
-due to space constraints. You can enable tooltip by setting the enable property as true in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#tooltip) object and by injecting `BulletTooltipService` into the `@NgModule.providers`.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the enable property as true in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#tooltip) object and by injecting `BulletTooltipService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

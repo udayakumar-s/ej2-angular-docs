@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular File manager component
+# Getting started with Angular File manager component
 
 This section explains how to create a simple **File Manager** component and its basic usage.
 

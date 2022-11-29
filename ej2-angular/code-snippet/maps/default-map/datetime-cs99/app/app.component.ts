@@ -1,35 +1,42 @@
 
 
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Maps, Selection, MapsComponent} from '@syncfusion/ej2-angular-maps';
+import { Component, OnInit } from '@angular/core';
+import { Maps, Marker, Highlight } from '@syncfusion/ej2-angular-maps';
 import { world_map } from 'world-map.ts';
-Maps.Inject(Selection);
+Maps.Inject(Marker, Highlight);
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-maps id='rn-container' #maps>
+    `<ejs-maps id='rn-container'>
     <e-layers>
-    <e-layer  [shapeData]= 'shapeData' [selectionSettings] ='selectionSettings'></e-layer>
+    <e-layer  [shapeData]= 'shapeData' [markerSettings] = 'markerSettings'></e-layer>
     </e-layers>
-    </ejs-maps> <button  id='select' (click)='select()'>select</button> <button id='unselect' (click)='unselect()'>unselect</button>`
+    </ejs-maps>`
 })
 
-export class AppComponent {
-    @ViewChild('maps')
-    public mapObj: MapsComponent;
-    public shapeData: object = world_map;
-    public selectionSettings: object = {
-        enable: true,
-        fill: 'green',
-        border: { color: 'white', width: 2 }
-    };
-    select(){
-        this.mapObj.shapeSelection(0, "continent", "Asia", true);
-    };
-    unselect(){
-        this.mapObj.shapeSelection(0, "continent", "Asia", false);
+export class AppComponent implements OnInit {
+    public shapeData: object;
+     public markerSettings: object;
+    ngOnInit(): void {
+        this.shapeData = world_map;
+        this.markerSettings = [{
+           visible: true,
+            height: 20,
+            width: 20,
+            fill: 'green',
+            shape:'Balloon',
+            highlightSettings: {
+                enable: true,
+                fill: 'blue',
+                border: { color: 'white', width: 2}
+            },
+            dataSource: [
+                { latitude: 49.95121990866204, longitude: 18.468749999999998, name:'Europe' },
+                { latitude: 59.88893689676585, longitude: -109.3359375, name:'North America'},
+                { latitude: -6.64607562172573, longitude: -55.54687499999999, name:'South America'}
+            ]
+        }];
     }
 }
 
 
- 

@@ -472,8 +472,7 @@ export class AppComponent {
 
 ## Command manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some built-in commands.
-[`CommandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager#commandManager) provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
+Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some built-in commands. [`CommandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager#commandManager) provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
 
 ## Custom command
 

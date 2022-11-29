@@ -23,8 +23,7 @@ To know about Angular Chart types, you can check on this video:
 
 **Line**
 
-To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `Line` and
-inject `LineSeriesService` into the `@NgModule.providers`.
+To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `Line` and inject `LineSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,8 +41,7 @@ inject `LineSeriesService` into the `@NgModule.providers`.
 
 **Step Line**
 
-To render a step line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StepLine` and inject `StepLineSeriesService` into
-the `@NgModule.providers`.
+To render a step line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StepLine` and inject `StepLineSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,8 +59,7 @@ the `@NgModule.providers`.
 
 **Stacked Line**
 
-To render a stacked line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type-string) as
-`StackingLine` and inject `StackingLineSeriesService`  into the `@NgModule.providers`.
+To render a stacked line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type-string) as `StackingLine` and inject `StackingLineSeriesService`  into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,8 +77,7 @@ To render a stacked line series, use series [`type`](https://ej2.syncfusion.com/
 
 **100% Stacked Line**
 
-To render a 100% stacked line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type-string) as
-`StackingLine100` and inject `StackingLineSeriesService`  into the `@NgModule.providers`.
+To render a 100% stacked line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type-string) as `StackingLine100` and inject `StackingLineSeriesService`  into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,8 +132,7 @@ inject `SplineAreaSeriesService` into the `@NgModule.providers`.
 
 **Multicolored Line**
 
-To render a multicolored line series, use the series type as `MultiColoredLine`, and inject the
-`MultiColoredLineSeriesService` into the `@NgModule.providers`.
+To render a multicolored line series, use the series type as `MultiColoredLine`, and inject the `MultiColoredLineSeriesService` into the `@NgModule.providers`.
 Here, the individual colors to the data can be mapped by using `pointColorMapping`.
 
 {% tabs %}
@@ -156,8 +151,7 @@ Here, the individual colors to the data can be mapped by using `pointColorMappin
 
 **Customization of Line Charts**
 
-`stroke`, `stroke-width` and `dashArray` of all line type series can be customized by using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill),
-[`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#width) and [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#dasharray) properties.
+`stroke`, `stroke-width` and `dashArray` of all line type series can be customized by using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill), [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#width) and [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#dasharray) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -195,8 +189,7 @@ To render a area series, use series [`type`](https://ej2.syncfusion.com/angular/
 
 **Range Area**
 
-To render a range area series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type)
-as `RangeArea` and inject `RangeAreaSeriesService`  into the `@NgModule.providers`.
+To render a range area series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `RangeArea` and inject `RangeAreaSeriesService`  into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -234,8 +227,7 @@ To render a spline range area series, use series [`type`](https://ej2.syncfusion
 
 **Stacked Area**
 
-To render a stacked area series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingArea` and inject `StackingAreaSeriesService`
-into the `@NgModule.providers`.
+To render a stacked area series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingArea` and inject `StackingAreaSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -253,8 +245,7 @@ into the `@NgModule.providers`.
 
 **100% Stacked Area**
 
-To render a 100% stacked area series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingArea100` and inject
-`StackingAreaSeriesService` into the `@NgModule.providers`.
+To render a 100% stacked area series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingArea100` and inject `StackingAreaSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -272,8 +263,7 @@ To render a 100% stacked area series, use series [`type`](https://ej2.syncfusion
 
 **Step Area**
 
-To render a step area series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StepArea` and inject
-`StepAreaSeriesService` into the `@NgModule.providers`.
+To render a step area series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StepArea` and inject `StepAreaSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -291,8 +281,7 @@ To render a step area series, use series [`type`](https://ej2.syncfusion.com/ang
 
 **Stacked Step Area**
 
-To render a stacked step area series, use series `type` as `StackingStepArea` and inject
-`StackingStepAreaSeriesService` into the `@NgModule.providers`.
+To render a stacked step area series, use series `type` as `StackingStepArea` and inject `StackingStepAreaSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -310,8 +299,7 @@ To render a stacked step area series, use series `type` as `StackingStepArea` an
 
 **Multicolored area**
 
-To render a multicolored area series, use the series type as `MultiColoredArea`, and
-inject the `MultiColoredAreaSeriesService` into the `@NgModule.providers`.
+To render a multicolored area series, use the series type as `MultiColoredArea`, and inject the `MultiColoredAreaSeriesService` into the `@NgModule.providers`.
 The required `segments` of the series can be customized using the `value`, `color`, and `dashArray`.
 
 {% tabs %}
@@ -328,12 +316,9 @@ The required `segments` of the series can be customized using the `value`, `colo
   
 {% previewsample "page.domainurl/code-snippet/chart/series/area-cs8" %}
 
-**Customization of Area Charts**
+### Customization of the series
 
-`fill`, `border` and `dashArray` of all area type series can be customized
-using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill),
-[`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border)
-and [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#dasharray) properties.
+`fill` and `dashArray` of all area type series can be customized using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#fill-string) and [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#dasharray-string) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -348,6 +333,24 @@ and [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/ser
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/chart/series/area-cs9" %}
+
+### Customization of the border
+
+The `width` and `fill` properties in the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#border-bordermodel) can be used to customize the border of all area type series.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/area-cs10/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/area-cs10/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/area-cs10/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/chart/series/area-cs10" %}
 
 ## Column Charts
 
@@ -371,8 +374,7 @@ To render a column series, use series [`type`](https://ej2.syncfusion.com/angula
 
 **Range Column**
 
-To render a range column series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `RangeColumn` and inject `RangeColumnSeriesService`
-into the `@NgModule.providers`.
+To render a range column series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `RangeColumn` and inject `RangeColumnSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -390,8 +392,7 @@ into the `@NgModule.providers`.
 
 **Stacked Column**
 
-To render a stacked column series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingColumn` and inject
-`StackingColumnSeriesService` into the `@NgModule.providers`.
+To render a stacked column series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingColumn` and inject `StackingColumnSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -409,8 +410,7 @@ To render a stacked column series, use series [`type`](https://ej2.syncfusion.co
 
 **100% Stacked Column**
 
-To render a 100% stacked column series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingColumn100` and
-inject `StackingColumnSeriesService` into the `@NgModule.providers`.
+To render a 100% stacked column series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingColumn100` and inject `StackingColumnSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -469,11 +469,9 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
 **Customization of Column Charts**
 
 <!-- markdownlint-disable MD013 -->
-`fill` and `border` of all column type series can be
-customized using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border) properties.
+`fill` and `border` of all column type series can be customized using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border) properties.
 Width of the column and space between each column can be customized using [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#columnwidth) and [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#columnspacing) properties respectively. The [`columnWidthInPixel`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#columnwidthinpixel) property allows to specify the column width in pixel unit.
-For customizing a specify point, please refer the
-[`pointRender`](./chart-appearance/#point-level-customization).
+For customizing a specify point, please refer the [`pointRender`](./chart-appearance/#point-level-customization).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -511,8 +509,7 @@ To render a bar series, use series [`type`](https://ej2.syncfusion.com/angular/d
 
 **Stacked bar**
 
-To render a stacked bar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingBar` and
-inject `StackingBarSeriesService` into the `@NgModule.providers`.
+To render a stacked bar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingBar` and inject `StackingBarSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -530,8 +527,7 @@ inject `StackingBarSeriesService` into the `@NgModule.providers`.
 
 **100% Stacked Bar**
 
-To render a 100% stacked bar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingBar100` and
-inject `StackingBarSeriesService` into the `@NgModule.providers`.
+To render a 100% stacked bar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingBar100` and inject `StackingBarSeriesService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -549,8 +545,7 @@ inject `StackingBarSeriesService` into the `@NgModule.providers`.
 
 **Stacking Group**
 
-You can use the [`stackingGroup`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#stackinggroup) property to group the stacked
-bar and 100% stacked bar. Columns with same group name are stacked on top of each other.
+You can use the [`stackingGroup`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#stackinggroup) property to group the stacked bar and 100% stacked bar. Columns with same group name are stacked on top of each other.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -586,8 +581,7 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
 
 **Customization of Bar Charts**
 
-`fill` and `border` of all bar type series can be
-customized using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border).
+`fill` and `border` of all bar type series can be customized using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border).
 Width of the bar and space between each bar can be customized using [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#columnwidth) and [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#columnspacing) properties respectively. The [`columnWidthInPixel`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#columnwidthinpixel) property allows to specify the bar width in pixel unit.
 For customizing a specify point, please refer the [`pointRender`](./appearance/#point-level-customization).
 

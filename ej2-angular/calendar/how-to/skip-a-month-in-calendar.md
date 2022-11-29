@@ -10,12 +10,7 @@ domainurl: ##DomainURL##
 
 # Skip a month in calendar in Angular Calendar component
 
-The following example demonstrates how to skip a month in a Calendar while clicking the previous
-and next icon. Here we have used
-the [`navigated`](https://ej2.syncfusion.com/angular/documentation/api/calendar#navigated)
-event to skip a month using
-[`NavigateTo`](https://ej2.syncfusion.com/angular/documentation/api/calendar#navigateto)
-  method.
+The following example demonstrates how to skip a month in a Calendar while clicking the previous and next icon. Here we have used the [`navigated`](https://ej2.syncfusion.com/angular/documentation/api/calendar#navigated) event to skip a month using [`NavigateTo`](https://ej2.syncfusion.com/angular/documentation/api/calendar#navigateto) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

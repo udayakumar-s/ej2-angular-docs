@@ -37,17 +37,17 @@ Other properties include:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs182/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs184/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs182/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs184/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs182/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs184/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs182" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs184" %}
 
 You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`allowNumberFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allownumberformatting) property to **true**. The same has been discussed in some of the upcoming topics.
 
@@ -71,42 +71,6 @@ You can add any custom format directly to the [`format`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs183/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs183/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs183/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs183" %}
-
-## Toolbar
-
-You can enable formatting dialog option in the toolbar by adding `NumberFormatting` in the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar). After that, you can see the option to invoke the formatting dialog in the toolbar.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs184/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs184/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs184/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs184" %}
-
-## Invoking formatting dialog through external button
-
-You can invoke the formatting dialog by clicking an external button using the `ShowNumberFormattingDialog` method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs185/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -118,6 +82,42 @@ You can invoke the formatting dialog by clicking an external button using the `S
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs185" %}
+
+## Toolbar
+
+You can enable formatting dialog option in the toolbar by adding `NumberFormatting` in the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar). After that, you can see the option to invoke the formatting dialog in the toolbar.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs186/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs186/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs186/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs186" %}
+
+## Invoking formatting dialog through external button
+
+You can invoke the formatting dialog by clicking an external button using the `ShowNumberFormattingDialog` method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs187/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs187/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs187/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs187" %}
 
 ## Events
 
@@ -135,17 +135,17 @@ In the below sample, the customization done in number formatting dialog for the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs186/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs188/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs186/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs188/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs186/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs188/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs186" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs188" %}
 
 ## See Also
 

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Textbox component
+# Getting started with Angular Textbox component
 
 This section briefly explains about how to create a simple TextBox through CSS classes using Angular seed repository.
 
@@ -121,8 +121,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding icons to the TextBox
 
-You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and
-add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups/) section.
+You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups/) section.
 
 ```javascript
 import { Component } from '@angular/core';

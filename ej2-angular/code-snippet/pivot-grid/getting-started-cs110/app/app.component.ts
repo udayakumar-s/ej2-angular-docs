@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { L10n } from '@syncfusion/ej2-base';
+import { L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
 import { IDataOptions, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
@@ -16,6 +16,8 @@ import { Pivot_Data } from './datasource.ts';
 export class AppComponent {
     public dataSourceSettings: IDataOptions;
     ngOnInit(): void {
+        setCulture('de');
+        setCurrencyCode('EUR');
         L10n.load({
             'de-DE': {
                 'pivotview': {
@@ -63,7 +65,8 @@ export class AppComponent {
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            formatSettings: [{ name: 'Amount', format: 'C2', useGrouping: false,
+                minimumSignificantDigits: 1, maximumSignificantDigits: 3, currency: 'EUR' }],
             filters: [],
             calculatedFieldSettings: [{ name: 'Total', formula: '"Sum(Amount)"+"Sum(Sold)"' }]
         };

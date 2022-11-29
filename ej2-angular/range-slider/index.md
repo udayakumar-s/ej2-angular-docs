@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Range slider component
 
-The Slider component allows the user to select a value or range of values in-between the min and max range,
-by dragging the handle over the slider bar.
+The Slider component allows the user to select a value or range of values in-between the min and max range, by dragging the handle over the slider bar.
 
 There are three types of Slider:
 * Default - Shows a default slider to select a single value.

@@ -11,6 +11,7 @@ domainurl: ##DomainURL##
 # Accessibility in Angular Linear gauge component
 
 <!-- markdownlint-disable MD013 -->
+
 Linear Gauge provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. The WAI-ARIA accessibility support is achieved through the attribute like `aria-label` in the SVG element. It helps to provide information about elements in a document for assistive technology. This attribute sets the text label with some default descriptions for the following elements in the Linear Gauge.
 
 <!-- markdownlint-disable MD033 -->

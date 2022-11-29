@@ -1,12 +1,11 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IPointRenderEventArgs, ITextRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 import { columnData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' (pointRender)='pointRender($event)' (textRender)='textRender($event)'[title]='title'>
+    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Warmest' width=2 [marker]='marker'></e-series>
         </e-series-collection>
@@ -16,26 +15,17 @@ export class AppComponent implements OnInit {
     public primaryXAxis: Object;
     public chartData: Object[];
     public title: string;
+    public primaryYAxis: Object;
     public marker: Object;
-    public pointRender(args: IPointRenderEventArgs): void {
-        if(args.point.index === 6) {
-                args.fill = 'red'
-        }
-    };
-    public textRender(args: ITextRenderEventArgs): void {
-            if(args.point.index === 6){
-                args.text = 'Maximum Temperature';
-                args.color = 'red';
-            }
-    };
     ngOnInit(): void {
         this.chartData = columnData;
         this.primaryXAxis = {
-            title: 'Months',
-            valueType: 'Category', labelFormat: 'yMMM',
-            edgeLabelPlacement: 'Shift'
+            valueType: 'Category'
         };
-        this.marker = { dataLabel: { visible: true }
+        this.marker = { dataLabel: { visible: true,
+                        border:{width: 2, color : 'red'},
+                        rx:10, ry: 10
+                    }
         };
         this.title = 'Alaska Weather Statistics - 2016';
     }

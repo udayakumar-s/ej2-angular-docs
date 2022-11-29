@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Sidebar component
+# Getting started with Angular Sidebar component
 
 This section briefly explains how to create a simple **Sidebar** component, and configure its available functionalities.
 
@@ -101,8 +101,7 @@ To render the Sidebar component, need to import Sidebar and its dependent compon
 @import '../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
 ```
 
->Note: If you want to refer the combined component styles,
-please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Adding Sidebar module
 
@@ -212,8 +211,7 @@ Here, DOM elements will not get changed. It only close the main content by cover
 
 ## Position
 
-Positioning the Sidebar to the right or left of the main content can be achieved by using the
-[`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property. If the position is not set,the Sidebar will expand from the left to the body element. [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablepersistence) will persist the component's state between page reloads. [`change`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#change) event will be triggered when the state(expand/collapse) of the component is changed.
+Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property. If the position is not set,the Sidebar will expand from the left to the body element. [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablepersistence) will persist the component's state between page reloads. [`change`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#change) event will be triggered when the state(expand/collapse) of the component is changed.
 
 >Note: Add the required Button and Radio Button component style dependency to **app.component.css**.
 

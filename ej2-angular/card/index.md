@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Card component
 
-The Card is a small container in which user can show defined content in specific structure. It
-is a pure CSS component built with markup and styles.
+The Card is a small container in which user can show defined content in specific structure. It is a pure CSS component built with markup and styles.
 
 ## Key features
 

@@ -48,10 +48,8 @@ Tooltip label for an axis can be enabled by using [`enable`](https://ej2.syncfu
 
 ## Customization
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#fill-string) and [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#textstyle-fontmodel)
-property of the `crosshairTooltip` is used to customize the background color and font style of the crosshair label respectively.
-Color and width of the crosshair line can be customized by using the
-[`line`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettingsModel/#line) property in the crosshair.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#fill-string) and [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#textstyle-fontmodel) property of the `crosshairTooltip` is used to customize the background color and font style of the crosshair label respectively.
+Color and width of the crosshair line can be customized by using the [`line`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettingsModel/#line) property in the crosshair.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

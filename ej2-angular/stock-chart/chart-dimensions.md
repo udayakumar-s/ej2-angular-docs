@@ -54,8 +54,7 @@ You can set the size of chart in pixel as demonstrated below.
 
 **In Percentage**
 
-By setting value in percentage, Stock Chart gets its dimension with respect to its container. For example, when
-the height is ‘50%’, Stock Chart renders to half of the container height.
+By setting value in percentage, Stock Chart gets its dimension with respect to its container. For example, when the height is ‘50%’, Stock Chart renders to half of the container height.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

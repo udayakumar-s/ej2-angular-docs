@@ -19,7 +19,7 @@ Follow the given steps to show the table tooltip,
 
 Initialize the datalabel template div as shown in the following html page,
 
-```html
+```
     <script id="index" type="text/x-template">
     <div id='templateWrap' style="background-color: ${point.text}; border-radius: 3px;"><span>${point.y}</span></div>
     </script>

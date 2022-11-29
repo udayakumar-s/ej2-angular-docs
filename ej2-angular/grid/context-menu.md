@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Context menu in Angular Grid component
 
-The Grid has options to show the context menu when right clicked on it. To enable this feature,
-you need to define either default or custom item in the
-[`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuitems).
+The Grid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuitems).
 
 To use the context menu, inject the **ContextMenuService** in the provider section of **AppModule**.
 
@@ -55,11 +53,8 @@ Items| Description
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the
-[`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuitems) as a collection of
-[`contextMenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextMenuItemModel).
-Actions for this customized items can be defined in the
-[`contextMenuClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuclick) event.
+The custom context menu items can be added by defining the [`contextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuitems) as a collection of [`contextMenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel).
+Actions for this customized items can be defined in the [`contextMenuClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#contextmenuclick) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,5 +92,4 @@ This is demonstrated in the following sample.
   
 {% previewsample "page.domainurl/code-snippet/grid/default-cs3" %}
 
-> You can hide or show an item in context menu for specific area inside of grid by defining the
-[`target`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/#target) property.
+> You can hide or show an item in context menu for specific area inside of grid by defining the [`target`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/#target) property.

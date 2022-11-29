@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
         };
 
         this.gridSettings = {
-            gridLines: 'Vertical'
+            allowResizing: true
         } as GridSettings;
     }
 }

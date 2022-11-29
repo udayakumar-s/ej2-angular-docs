@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # How to in Angular Badge component
 
-The badge is a completely customizable and integral component, and this section shows how to
-customize and integrate badges with other components.
+The badge is a completely customizable and integral component, and this section shows how to customize and integrate badges with other components.
 
 ## Customize badges
 
@@ -54,10 +53,8 @@ adjust the `font size` of the badge.
 
 ### Custom position
 
-Even though the badges support the conventional `top` and `bottom` positions, the position of the
-badges can be changed as desired.
-This can be done by adding a custom class to the badge element to override the default position applied
-from the source.
+Even though the badges support the conventional `top` and `bottom` positions, the position of the badges can be changed as desired.
+This can be done by adding a custom class to the badge element to override the default position applied from the source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,8 +95,7 @@ badge size. The component will automatically adjust the size based on the contai
 
 ## Dynamic Content
 
-Badges in real-time needs to be updated dynamically based on the requirements. In this sample, using Angular data binding
-the badges content will be updated dynamically. Click the increment button to change the badge value.
+Badges in real-time needs to be updated dynamically based on the requirements. In this sample, using Angular data binding the badges content will be updated dynamically. Click the increment button to change the badge value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

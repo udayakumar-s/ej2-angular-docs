@@ -1,13 +1,13 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, FieldListService, CalculatedFieldService } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
   selector: 'app-container',
-  providers: [FieldListService],
+  providers: [FieldListService, CalculatedFieldService],
   // specifies the template string for the pivot table component
-  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width showFieldList='true'></ejs-pivotview></div>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width allowCalculatedField='true' showFieldList='true'></ejs-pivotview>`
 })
 
 export class AppComponent {
@@ -22,10 +22,10 @@ export class AppComponent {
             localeIdentifier: 1033,
             rows: [
                 { name: '[Customer].[Customer Geography]', caption: 'Customer Geography' },
-                { name: '[Measures]', caption: 'Measures' }
             ],
             columns: [
-                { name: '[Product].[Product Categories]', caption: 'Product Categories' }
+                { name: '[Product].[Product Categories]', caption: 'Product Categories' },
+                { name: '[Measures]', caption: 'Measures' },
             ],
             values: [
                 { name: '[Measures].[Customer Count]', caption: 'Customer Count' },
@@ -33,6 +33,19 @@ export class AppComponent {
             ],
             filters: [
                 { name: '[Date].[Fiscal]', caption: 'Date Fiscal' },
+            ],
+            calculatedFieldSettings: [
+                {
+                    name: 'BikeAndComponents',
+                    formula: '([Product].[Product Categories].[Category].[Bikes] + [Product].[Product Categories].[Category].[Components] )',
+                    hierarchyUniqueName: '[Product].[Product Categories]',
+                    formatString: 'Standard'
+                },
+                {
+                    name: 'Order on Discount',
+                    formula: '[Measures].[Order Quantity] + ([Measures].[Order Quantity] * 0.10)',
+                    formatString: 'Currency'
+                }
             ],
             filterSettings: [
                 {
@@ -44,6 +57,6 @@ export class AppComponent {
         };
         this.width = "100%";
     }
- }
+}
 
 

@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Wai aria accessibility in Angular Uploader component
 
-The uploader component characterized with complete ARIA accessibility support that helps to be accessible by on-screen
-readers and other assistive technology devices.
+The uploader component characterized with complete ARIA accessibility support that helps to be accessible by on-screen readers and other assistive technology devices.
 
 ## Keyboard interaction
 

@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 
 # Gauge pointers in Angular Circular gauge component
 
-Pointers are used to indicate values on the axis. Value of the pointer can be modified using the
-[`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#value-number) property.
+Pointers are used to indicate values on the axis. Value of the pointer can be modified using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#value-number) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,12 +33,9 @@ You can choose any one of the pointer by using [`type`](https://ej2.syncfusion.c
 ## Needle Pointers
 
 A needle pointer contains three parts, a needle, a cap / knob and a tail.
-The length of the needle can be customized by using
-[`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#radius-string) property.
-The length of the tail can be customized by using
-[`length`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/needleTailModel/#length-string) property.
-The radius of the cap can be customized by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/capModel/#radius-number)
-in cap object.
+The length of the needle can be customized by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#radius-string) property.
+The length of the tail can be customized by using [`length`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/needleTailModel/#length-string) property.
+The radius of the cap can be customized by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/capModel/#radius-number) in cap object.
 The needle and tail length takes value either in `percentage` or `pixel`.
 
 {% tabs %}
@@ -60,12 +56,8 @@ The needle and tail length takes value either in `percentage` or `pixel`.
 
 **Customization**
 
-Needle color and width can be customized by using
-[`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#color-string) and
-[`pointerWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#pointerwidth-number) property.
-Cap and tails can be customized by using
-[`cap`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#cap-capmodel) and
-[`needleTail`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#needletail-needletailmodel) object.
+Needle color and width can be customized by using [`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#color-string) and [`pointerWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#pointerwidth-number) property.
+Cap and tails can be customized by using [`cap`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#cap-capmodel) and [`needleTail`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#needletail-needletailmodel) object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,10 +112,7 @@ RangeBar starts from the beginning of the gauge and ends at the pointer value.
 
 **Customization**
 
-RangeBar can be customized in terms of color, border and thickness by using
-[`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#color-string),
-[`border`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#border-bordermodel) and
-[`pointerWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#pointerwidth-number) property.
+RangeBar can be customized in terms of color, border and thickness by using [`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#color-string), [`border`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#border-bordermodel) and [`pointerWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#pointerwidth-number) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -173,8 +162,7 @@ Gauge supports the below marker shape.
 
 We can use image instead of rendering marker shape to denote the pointer value.
 It can be achieved by setting [`markerShape`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markershape-string)
-to Image and assigning  image path to
-[`imageUrl`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#imageurl-string) in pointer.
+to Image and assigning  image path to [`imageUrl`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#imageurl-string)in pointer.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -192,12 +180,7 @@ to Image and assigning  image path to
 
 **Customization**
 
-The marker can be customized in terms of color, border, width and height by using
-[`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#color-string),
-[`border`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#border-bordermodel),
-[`markerWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markerwidth-number) and
-[`markerHeight`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markerheight-number) property in
-[`pointer`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer).
+The marker can be customized in terms of color, border, width and height by using [`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#color-string), [`border`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#border-bordermodel), [`markerWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markerwidth-number) and [`markerHeight`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markerheight-number) property in [`pointer`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -253,8 +236,7 @@ In addition to the default pointer, you can add n number of pointer to an axis b
 
 ## Animation
 
-Pointer will get animate on loading the gauge, this can be handled by using
-[`animation`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#animation-animationmodel) property in pointer.
+Pointer will get animate on loading the gauge, this can be handled by using [`animation`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#animation-animationmodel) property in pointer.
 The [`enable`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/animationModel/#enable-boolean) property in animation allows you to enable or disable the animation.
 The [`duration`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/animationModel/#duration-number) property specify the duration of the animation in milliseconds.
 

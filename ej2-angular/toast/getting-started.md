@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Toast component
+# Getting started with Angular Toast component
 
-This section briefly explains about how to create a simple **Toast** and configure its available functionalities in Angular
-using Angular quickstart.
+This section briefly explains about how to create a simple **Toast** and configure its available functionalities in Angular using Angular quickstart.
 
 ## Getting Started with Angular CLI
 

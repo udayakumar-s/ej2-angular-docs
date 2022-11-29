@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular List box component
+# Getting started with Angular List box component
 
-This section briefly explains how to create a simple **ListBox** component and configure its available
-functionalities in Angular.
+This section briefly explains how to create a simple **ListBox** component and configure its available functionalities in Angular.
 
 ## Dependencies
 
@@ -164,8 +163,7 @@ export class AppComponent {
 
 ## Run the application
 
-After completing the configuration required to render a basic ListBox, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic ListBox, run the following command to display the output in your default browser.
 
 ```
 ng serve

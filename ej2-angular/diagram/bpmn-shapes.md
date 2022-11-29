@@ -148,9 +148,7 @@ The different activities of BPMN process are listed as follows.
 
 ## Tasks
 
-The [`task`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask) property of the node allows you to define the type of task such as sending, receiving, user based task, etc. By
-default, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#type) property of task is set as **none**. The following code illustrates how to create different types of
-BPMN tasks.
+The [`task`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask) property of the node allows you to define the type of task such as sending, receiving, user based task, etc. By default, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#type) property of task is set as **none**. The following code illustrates how to create different types of BPMN tasks.
 The events property of tasks allow to represent these results as an event attached to the task.
 
 {% tabs %}

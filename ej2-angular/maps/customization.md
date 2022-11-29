@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Setting the size for Maps
 
-The width and height of the Maps can be set using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/maps/mapsModel/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/maps/mapsModel/#height) properties in the Maps control. Percentage or pixel values can be used for the height and width values.
+The width and height of the Maps can be set using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/maps/mapsModel/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/maps/mapsModel/#height) properties in the Maps component. Percentage or pixel values can be used for the height and width values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +54,7 @@ The title for the Maps can be set using the [`titleSettings`](https://ej2.syncfu
 
 ## Setting theme
 
-The Maps control supports following themes.
+The Maps component supports following themes.
 
 * Material
 * Fabric
@@ -186,7 +186,7 @@ The border of each shape in the Maps can be customized using the [`borderColorVa
 
 ## Projection type
 
-The Maps control supports the following projection types:
+The Maps component supports the following projection types:
 
 * Mercator
 * Equirectangular

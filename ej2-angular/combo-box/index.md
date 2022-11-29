@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Combo box component
 
-The ComboBox component allows the user to type a value or choose an option from the list of predefined options.
-When an arrow icon accompanied with this component is pressed, the dropdown displays a list of values, from which the user can select one.
+The ComboBox component allows the user to type a value or choose an option from the list of predefined options. When an arrow icon accompanied with this component is pressed, the dropdown displays a list of values, from which the user can select one.
 
 ## Key features
 
@@ -25,8 +24,6 @@ When an arrow icon accompanied with this component is pressed, the dropdown disp
 
 * [**Filtering**](./filtering/) - Allows filtering of list items based on a character typed in the component.
 
-* [**Templates**](./templates/) - Allows customizing the list items, selected value, header, footer, category
-group header, and no records content.
+* [**Templates**](./templates/) - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-* [**Accessibility**](./accessibility/) - Provided with built-in accessibility support that helps to access all
-the ComboBox component features through the keyboard, screen readers, or other assistive technology devices.
+* [**Accessibility**](./accessibility/) - Provided with built-in accessibility support that helps to access all the ComboBox component features through the keyboard, screen readers, or other assistive technology devices.

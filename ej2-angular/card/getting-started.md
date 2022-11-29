@@ -8,11 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Card component
+# Getting started with Angular Card component
 
-This section explains how to create a simple **Card** using Styles, and
-how to configure the structure for the header section, Horizontal, action buttons, content section, and configure its available
- functionalities in Angular using Angular quickstart.
+This section explains how to create a simple **Card** using Styles, and how to configure the structure for the header section, Horizontal, action buttons, content section, and configure its available functionalities in Angular using Angular quickstart.
 
 ## Dependencies
 
@@ -103,9 +101,7 @@ This can be referenced in [src/styles.css] using following code.
 
 You can create cards with a header in a specific structure. For adding header you need to create `div` element and add `e-card-header` class.
 
-* You can include heading inside the card header by adding an `div` element with
-`e-card-header-caption` class, and also content will be added by adding element with
-`e-card-content`. For detailed information, refer to the [Header and Content](./header-content/).
+* You can include heading inside the card header by adding an `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](./header-content/).
 
 ```html
     <div class = "e-card">                    --> Root Element

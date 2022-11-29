@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Types in Angular Spinner component
 
-By default, the Spinner is loaded in the applicable Essential JS 2 component based on the theme imported into
-the page. Based on the theme, the type is set to the Spinner.
+By default, the Spinner is loaded in the applicable Essential JS 2 component based on the theme imported into the page. Based on the theme, the type is set to the Spinner.
 
 The available types are:
 * Material

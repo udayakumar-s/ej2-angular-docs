@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { sampleData, adventProFont } from './datasource';
+import { sampleData } from './datasource';
 import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
 import { ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-treegrid';
 
@@ -20,9 +20,9 @@ export class AppComponent implements OnInit {
 
     public data: Object[];
     public pager: Object;
+    public toolbarOptions: ToolbarItems[];
     @ViewChild('treegrid')
     public treeGridObj: TreeGridComponent;
-    public toolbarOptions: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -32,10 +32,7 @@ export class AppComponent implements OnInit {
     toolbarClick(args: Object) : void {
         if (args['item'].text === 'PDF Export') {
             let exportProperties: PdfExportProperties = {
-                theme: {
-                        header: {font:  new PdfTrueTypeFont(adventProFont, 12) },
-                        record: { font: new PdfTrueTypeFont(adventProFont, 9) }
-                    }
+                exportType: 'CurrentPage'
             };
             this.treeGridObj.pdfExport(exportProperties);
         }

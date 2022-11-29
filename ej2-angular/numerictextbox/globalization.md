@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-Localization library allows users to localize the default text contents
-of the NumericTextBox to different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#locale) property.
+Localization library allows users to localize the default text contents of the NumericTextBox to different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#locale) property.
 In NumericTextBox, spin buttons title for the tooltip will be localized based on the culture.
 
 | Locale key | en-US (default)  |
@@ -43,29 +42,22 @@ The below example demonstrates the NumericTextBox in `German` culture with the s
 
 ## Internationalization
 
-Internationalization library provides support for formatting and parsing the number by using the
-official [Unicode CLDR](http://cldr.unicode.org/) JSON data and also provides the
-`loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in
-internationalization support to adapt based on culture. For more information about internationalization,
-refer to this [link](../common/internationalization/).
+Internationalization library provides support for formatting and parsing the number by using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data and also provides the `loadCldr` method to load the culture specific CLDR JSON data. The NumericTextBox comes with built-in internationalization support to adapt based on culture. For more information about internationalization, refer to this [link](../common/internationalization/).
 
 By default, all the Essential JS 2  component are specific to English culture ('en-US').
 If you want to go with the different culture other than `English`, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data,
-refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
+* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
 
 ```
 npm install cldr-data --save
 ```
 
-Once the package installed, you can find the culture
-specific JSON data under the location `\node_modules\cldr-data`.
+Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
 * Now import the installed CLDR JSON data into the `app.ts` file.
 
-* Now import the required culture
-from the installed location to `app.ts` file as like the below code snippets.
+* Now import the required culture from the installed location to `app.ts` file as like the below code snippets.
 
 ```typescript
 declare var require: any;

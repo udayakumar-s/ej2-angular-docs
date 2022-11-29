@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Smart Axis Labels
 
-When the axis labels overlap with each other, you can use [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelintersectaction)
-property in the axis, to place them smartly.
+When the axis labels overlap with each other, you can use [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelintersectaction) property in the axis, to place them smartly.
 
 When setting `labelIntersectAction` as `Hide`
 
@@ -65,8 +64,7 @@ When setting `labelIntersectAction` as `Rotate90`
 
 ## Axis Labels Positioning
 
-By default, the axis labels can be placed at `outside` the axis line and this also can be placed at `inside`
-the axis line using the `labelPosition` property.
+By default, the axis labels can be placed at `outside` the axis line and this also can be placed at `inside` the axis line using the `labelPosition` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,8 +82,7 @@ the axis line using the `labelPosition` property.
 
 ## Multilevel Labels
 
-Any number of levels of labels can be added to an axis using the `multiLevelLabels` property. This property can be
-configured using the following properties:
+Any number of levels of labels can be added to an axis using the `multiLevelLabels` property. This property can be configured using the following properties:
 
 • Categories
 • Overflow
@@ -151,8 +148,7 @@ The `alignment` property provides option to position the multilevel labels at `f
 
 ### Text customization
 
-The `textStyle` property of multilevel labels provides options to customize the `size`, `color`, `fontFamily`,
-`fontWeight`, `fontStyle`, `opacity`, `textAlignment` and `textOverflow`.
+The `textStyle` property of multilevel labels provides options to customize the `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment` and `textOverflow`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -189,9 +185,7 @@ are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBot
 
 ## Edge Label Placement
 
-Labels with long text at the edges of an axis may appear partially in the chart. To avoid this,
-use [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#edgelabelplacement) property in axis, which moves
-the label inside the chart area for better appearance or hides it.
+Labels with long text at the edges of an axis may appear partially in the chart. To avoid this, use [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,8 +203,7 @@ the label inside the chart area for better appearance or hides it.
 
 ## Trim using maximum label width
 
-You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#enabletrim) property and width of the labels can also be
-customized using [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#maximumlabelwidth) property in the axis, the value maximum label width is `34` by default.
+You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#enabletrim) property and width of the labels can also be customized using [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#maximumlabelwidth) property in the axis, the value maximum label width is `34` by default.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -228,8 +221,7 @@ customized using [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/docume
 
 ## Labels Customization
 
-The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelstyle) property of an axis provides options to customize the
-`color`, `font-family`, `font-size` and `font-weight` of the axis labels.
+The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelstyle) property of an axis provides options to customize the `color`, `font-family`, `font-size` and `font-weight` of the axis labels.
 
 To known more about labels customization, you can check on this video:
 

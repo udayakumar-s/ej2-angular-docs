@@ -1,35 +1,49 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { Component } from '@angular/core';
+import { IDataOptions, PivotView, CellEditSettings, BeginDrillThroughEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Grid, Sort, Filter, Group } from '@syncfusion/ej2-grids';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
-  selector: 'app-container',
-  // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
+  selector: 'app-container',  
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [editSettings]=editSettings width=width (beginDrillThrough)='beginDrillThrough($event)'></ejs-pivotview>`
 })
-export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
+
+export class AppComponent {
+
     public width: string;
+    public editSettings: CellEditSettings
+    public dataSourceSettings: IDataOptions;
 
     ngOnInit(): void {
-        this.width = '100%';
 
+        this.width = "100%";
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
-            emptyCellsTextContent: '*',
+            enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
-            formatSettings: [{ name: 'Amount', format: 'C2', useGrouping: false,
-                    minimumSignificantDigits: 1, maximumSignificantDigits: 3 }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
-    }
-}
+        this.editSettings= { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Normal' }
+    },
+
+    beginDrillThrough(args: BeginDrillThroughEventArgs) {
+        if (args.gridObj) {
+            Grid.Inject(Sort, Filter, Group);
+            let gridObj: Grid = args.gridObj;
+            gridObj.allowGrouping = true;
+            gridObj.allowSorting = true;
+            gridObj.allowFiltering = true;
+            gridObj.filterSettings = { type: 'CheckBox' };
+        }
+    },
+ }
 
 
 

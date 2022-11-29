@@ -1,31 +1,46 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { IDataOptions, CellClickEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { noData } from './datasource.ts';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
+import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings width=width height='350' (cellClick)='cellClick($event)'></ejs-pivotview>`
+  // specifies the template string for the pivot table component
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  width=width (dataBound)='ondataBound()'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
     public width: string;
-    public height: number;
-    cellClick(args: CellClickEventArgs) {
-        //trigger for evey cell click in pivot table
+    public dataSourceSettings: IDataOptions;
+    public gridSettings: GridSettings;
+
+    @ViewChild('pivotview',{static: false})
+    public pivotGridObj: PivotView;
+
+    ondataBound(): void {
+        if (this.pivotGridObj.showGroupingBar) {
+            let columns: string[] = [];
+            for (let i: number = 1; i < (this.pivotGridObj.grid as any).columnModel.length; i++) {
+                columns.push((this.pivotGridObj.grid as any).columnModel[i].field);
+            }
+            this.pivotGridObj.grid.autoFitColumns(columns);
+        }
     }
+
     ngOnInit(): void {
+
         this.width = '100%';
 
         this.dataSourceSettings = {
-        dataSource: noData,
-        expandAll: true,
-        formatSettings: [{ name: 'Amount', format: 'C0' }],
-        columns: [{ name: 'Date', showNoDataItems: true}],
-        values: [{ name: 'Quantity', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-        rows: [{ name: 'Country'}, { name: 'State'}],
-        filters: []
+            dataSource: Pivot_Data,
+            expandAll: true,
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: []
         };
     }
 }

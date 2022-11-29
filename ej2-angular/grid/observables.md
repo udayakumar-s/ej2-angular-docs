@@ -20,7 +20,7 @@ Grid data can be consumed from an [`Observable`](https://angular.io/guide/observ
 
 The grid expects an object from the [`Observable`](https://angular.io/guide/observables). The emitted value should be an object with properties **result** and **count**.
 
-```ts
+```
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-grids';
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-```ts
+```
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { DataStateChangeEventArgs, Sorts, DataResult } from '@syncfusion/ej2-angular-grids';
@@ -110,7 +110,7 @@ export class DataService extends Subject<DataStateChangeEventArgs> {
 
 For grid actions such as **paging**, **grouping**, **sorting**, etc., the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event is invoked. You have to query and resolve data using [`Observable`](https://angular.io/guide/observables) in this event based on the state arguments.
 
-```ts
+```
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-grids';
@@ -159,7 +159,7 @@ export class AppComponent implements OnInit {
 
 The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasourcechanged) event is triggered to update the grid data. You can perform the save operation based on the event arguments and you need to call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) method to indicate the completion of save operation.
 
-```ts
+```
 import { Component, OnInit, ViewChild, ViewContainerRef, Inject } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { Observable } from 'rxjs/Observable';
@@ -229,7 +229,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-```ts
+```
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
@@ -307,7 +307,7 @@ The footer aggregate values should be calculated and sent along with the [`dataS
 
 The [`dataStateChange`](../api/grid/#datastatechange) event is triggered with appropriate arguments when the Excel filter requests the filter choice data source. You need to resolve the Excel filter data source using the **dataSource** resolver function from the state argument as follows.
 
-```ts
+```
 import { Component, OnInit, Inject, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DataStateChangeEventArgs} from '@syncfusion/ej2-angular-grids';
@@ -359,7 +359,7 @@ export class AppComponent implements OnInit {
 
 By default, when using `observables` for Grid data binding then it exports current page records only. If you want to export all page records, define the `dataSource` in `exportProperties` as follows,
 
-```ts
+```
 import { Component, OnInit, Inject, ViewChild } from '@angular/core';
 import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 import { DataStateChangeEventArgs, Sorts, DataResult } from '@syncfusion/ej2-angular-grids'
@@ -406,7 +406,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-```ts
+```
 import { DataManager, Query, } from '@syncfusion/ej2-data';
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
@@ -448,7 +448,7 @@ export class DataService extends Subject<Object> {
 
 The [`async`](https://angular.io/api/common/AsyncPipe) pipe helps you to auto subscribe the [`Observable`](https://angular.io/guide/observables). If you are not comfortable with using [`async`](https://angular.io/api/common/AsyncPipe) then just subscribe the [`Observable`](https://angular.io/guide/observables) and resolve the view data manually.
 
-```ts
+```
 import { Component, OnInit, Inject, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DataStateChangeEventArgs} from '@syncfusion/ej2-angular-grids';

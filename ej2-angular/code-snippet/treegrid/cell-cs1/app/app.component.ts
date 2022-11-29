@@ -1,14 +1,14 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { htmlData } from './datasource';
+import { sampleData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' height='300' [treeColumnIndex]='1'  childMapping='subtasks' >
+    template: `<ejs-treegrid [dataSource]='data' [allowTextWrap]='true' textWrapSettings='textSettings' height='300' [treeColumnIndex]='1' childMapping='subtasks' >
         <e-columns>
-                    <e-column field='taskID' headerText='<span> Task ID </span>' [disableHtmlEncode]='true' textAlign='Right' width=150></e-column>
-                    <e-column field='taskName' headerText='<span> Task Name </span>' [disableHtmlEncode]='false' textAlign='Left' width=180></e-column>
+                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
+                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=75></e-column>
                     <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
                     <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
         </e-columns>
@@ -17,9 +17,10 @@ import { htmlData } from './datasource';
 export class AppComponent implements OnInit {
 
     public data: Object[];
-
+    public textSettings: Object;
     ngOnInit(): void {
-        this.data = htmlData;
+        this.data = sampleData;
+        this.textSettings = { wrapMode: 'Content' };
     }
 }
 

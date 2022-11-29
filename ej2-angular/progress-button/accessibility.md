@@ -24,6 +24,7 @@ The web accessibility makes web content and web applications more accessible for
 ## Keyboard interaction
 
 <!-- markdownlint-disable MD033 -->
+
 <table>
 <tr>
 <td>

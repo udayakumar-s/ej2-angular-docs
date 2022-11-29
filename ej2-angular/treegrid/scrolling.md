@@ -24,17 +24,17 @@ To specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/tr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs23/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs28/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs23/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs28/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs23/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs28/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs23" %}
+{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs28" %}
 
 ## Responsive with parent container
 
@@ -57,7 +57,7 @@ Setting the [`height`](https://ej2.syncfusion.com/angular/documentation/api/tree
 
 ## Scroll to selected row
 
-You can scroll the treegrid content to the selected row position by using the [`rowSelected`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowselected) event.
+Scroll the tree grid content to the selected row position by using the [`rowSelected`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowselected) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,3 +72,23 @@ You can scroll the treegrid content to the selected row position by using the [`
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/treegrid/scroll-selection-cs1" %}
+
+## Hide the scrollbar when the content is not overflown
+
+Hide the scrollbar of the tree grid content by using the [`hideScroll`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#hidescroll) method when the content doesn't overflow its parent element.
+
+In the following sample, the [`hideScroll`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#hidescroll) method is invoked inside the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/scroll-selection-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/scroll-selection-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/scroll-selection-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/scroll-selection-cs2" %}

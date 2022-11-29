@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Listview component
+# Getting started with Angular Listview component
 
-The ListView component is available in `@syncfusion/ej2-angular-lists` package. Utilize this package to render the
-ListView Component.
+The ListView component is available in `@syncfusion/ej2-angular-lists` package. Utilize this package to render the ListView Component.
 
 ## Setup Angular Environment
 

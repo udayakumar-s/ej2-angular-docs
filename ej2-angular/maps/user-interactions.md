@@ -28,17 +28,17 @@ To enable the panning feature, set the [`enablePanning`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs94/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs89/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs94/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs89/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs94/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs89/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs94" %}
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs89" %}
 
 **app.module.ts**
 Injecting ZoomService into NgModule.
@@ -348,17 +348,17 @@ export class AppComponent implements OnInit {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs95/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs90/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs95/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs90/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs95/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs90/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs95" %}
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs90" %}
 
 ## Selection
 
@@ -377,6 +377,105 @@ By tapping on the specific legend, the shapes which are bounded to the selected 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs91/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs91/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs91/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs91" %}
+
+### Enable selection for bubbles
+
+To enable the selection for bubbles in Maps, set the [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel) in [`bubbleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel/) and set the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#enable) property of [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel) as **true**.
+
+>To use the bubble feature, the Bubble module must be injected.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs92/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs92/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs92/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs92" %}
+
+### Enable selection for markers
+
+To enable the selection for markers in Maps, set the [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel) in the [`markerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel) and set the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#enable) property of the [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel) as **true**.
+
+>To use the marker feature, the Marker module must be injected.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs93/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs93/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs93/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs93" %}
+
+### Public method for the shape selection
+
+The [`shapeSelection`](https://ej2.syncfusion.com/angular/documentation/api/maps/#shapeselection) method can be used to select each shape in the Maps.
+LayerIndex, propertyName, country name, and selected value as a boolean state(true / false) are the input parameters for this method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs94/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs94/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs94/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs94" %}
+
+### Initial shape selection
+
+The shape is initially selected using the [`initialShapeSelection`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialShapeSelectionSettingsModel), and the values are mapped to the [`shapePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialShapeSelectionSettingsModel/#shapepath) and [`shapeValue`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialShapeSelectionSettingsModel/#shapevalue).
+
+>initialShapeSelection is an Array property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs95/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs95/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs95/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs95" %}
+
+### Initial marker selection
+
+Using the [`initialMarkerSelection`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialMarkerSelectionSettingsModel), the marker shape can be selected initially. Markers render based on the [`latitude`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialMarkerSelectionSettingsModel/#latitude) and [`longitude`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialMarkerSelectionSettingsModel/#longitude) values.
+
+**Note:** initialMarkerSelection is an Array property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs96/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -388,105 +487,6 @@ By tapping on the specific legend, the shapes which are bounded to the selected 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs96" %}
-
-### Enable selection for bubbles
-
-To enable the selection for bubbles in Maps, set the [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel) in [`bubbleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel/) and set the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#enable) property of [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel) as **true**.
-
->To use the bubble feature, the Bubble module must be injected.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs97/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs97/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs97/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs97" %}
-
-### Enable selection for markers
-
-To enable the selection for markers in Maps, set the [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel) in the [`markerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel) and set the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#enable) property of the [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel) as **true**.
-
->To use the marker feature, the Marker module must be injected.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs98/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs98/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs98/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs98" %}
-
-### Public method for the shape selection
-
-The [`shapeSelection`](https://ej2.syncfusion.com/angular/documentation/api/maps/#shapeselection) method can be used to select each shape in the Maps.
-LayerIndex, propertyName, country name, and selected value as a boolean state(true / false) are the input parameters for this method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs99/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs99/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs99/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs99" %}
-
-### Initial shape selection
-
-The shape is initially selected using the [`initialShapeSelection`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialShapeSelectionSettingsModel), and the values are mapped to the [`shapePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialShapeSelectionSettingsModel/#shapepath) and [`shapeValue`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialShapeSelectionSettingsModel/#shapevalue).
-
->initialShapeSelection is an Array property.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs100/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs100/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs100/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs100" %}
-
-### Initial marker selection
-
-Using the [`initialMarkerSelection`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialMarkerSelectionSettingsModel), the marker shape can be selected initially. Markers render based on the [`latitude`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialMarkerSelectionSettingsModel/#latitude) and [`longitude`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialMarkerSelectionSettingsModel/#longitude) values.
-
-**Note:** initialMarkerSelection is an Array property.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs101/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs101/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs101/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs101" %}
 
 ## Highlight
 
@@ -504,17 +504,17 @@ Hovering on the specific legend, the shapes which are bounded to the selected le
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs102/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs97/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs102/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs97/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs102/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs97/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs102" %}
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs97" %}
 
 ### Enable highlight for bubbles
 
@@ -524,17 +524,17 @@ To enable the highlight for bubbles in Maps, set the [`highlightSettings`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs103/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs98/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs103/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs98/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs103/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs98/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs103" %}
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs98" %}
 
 ### Enable highlight for markers
 
@@ -544,17 +544,17 @@ To enable the highlight for markers in Maps, set the [`highlightSettings`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs104/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs99/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs104/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs99/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs104/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs99/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs104" %}
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs99" %}
 
 ## Tooltip
 
@@ -566,17 +566,17 @@ On mouse over or touch end event, the tooltip is used to get more information ab
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs105/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs100/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs105/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs100/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs105/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs100/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs105" %}
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs100" %}
 
 **app.module.ts**
 Injecting MapsTooltipService into NgModule.
@@ -609,17 +609,17 @@ The following properties are available to customize the tooltip of the Maps comp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs106/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs101/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs106/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs101/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs106/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs101/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs106" %}
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs101" %}
 
 ### Tooltip template
 
@@ -627,14 +627,14 @@ The HTML element can be rendered in the tooltip of the Maps using the [`template
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs107/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs102/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs107/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs102/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs107/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs102/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs107" %}
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs102" %}

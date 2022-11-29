@@ -16,9 +16,7 @@ Annotations are used to mark a specific area of interest in the gauge with texts
 
 ## Content
 
-You can place any custom element on the axis area by assigning the id of the element to
-[`content`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation/#content-string) property of
-[`annotation`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation) object.
+You can place any custom element on the axis area by assigning the id of the element to [`content`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation/#content-string) property of [`annotation`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation) object.
 
 >Note: To use annotation feature, we need to inject `AnnotationsService` into the `NgModule.providers`.
 
@@ -38,8 +36,7 @@ You can place any custom element on the axis area by assigning the id of the ele
 
 ## Position
 
-Annotation can be placed around the axis by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation/#radius-string)
-and [`angle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation/#angle-number) property.
+Annotation can be placed around the axis by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation/#radius-string) and [`angle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/annotation/#angle-number) property.
 For example, if the angle is 90 degree and the radius is 110%, then the annotation, will be placed at the right side of the axis.
 
 Radius of the annotation takes value either in pixel or percentage.
@@ -61,8 +58,7 @@ By setting value in percentage, annotation gets its position with respect to its
 
 ## Sub Gauge
 
-As the annotation allows you to place any custom element,
-we can initialize a gauge to the element and can be used to place that in another gauge.
+As the annotation allows you to place any custom element, we can initialize a gauge to the element and can be used to place that in another gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

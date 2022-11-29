@@ -13,9 +13,7 @@ domainurl: ##DomainURL##
 ## Localization
 
 The [`Localization`](../common/localization) library allows you to localize default text content of the Gantt.
-The Gantt component has static text on some features (like column headers, add and edit dialog, tooltip, toolbar, etc.)
-that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
-[`locale`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value and translation object.
+The Gantt component has static text on some features (like column headers, add and edit dialog, tooltip, toolbar, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value and translation object.
 
 The following list of properties and its values are used in the Gantt.
 

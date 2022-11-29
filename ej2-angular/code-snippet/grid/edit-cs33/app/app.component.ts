@@ -6,7 +6,7 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
+    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right'
                      isPrimaryKey='true' [validationRules]='orderIDRules' width=100></e-column>

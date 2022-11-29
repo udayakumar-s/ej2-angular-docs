@@ -10,11 +10,8 @@ domainurl: ##DomainURL##
 
 # Customize button appearance in Angular Button component
 
-You can customize the appearance of the button by using the Cascading Style Sheets (CSS). Define the
-CSS according to your requirement, and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property.
-In the following code snippet the background color, text color, height, width, and sharp corner
-of the button can be customized through the `e-custom` class
-for all states (hover, focus, and active).
+You can customize the appearance of the button by using the Cascading Style Sheets (CSS). Define the CSS according to your requirement, and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass)property.
+In the following code snippet the background color, text color, height, width, and sharp corner of the button can be customized through the `e-custom` class for all states (hover, focus, and active).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

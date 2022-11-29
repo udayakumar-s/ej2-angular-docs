@@ -4,31 +4,19 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Pivot_Data } from './datasource.ts';
+import { Observable } from 'rxjsObservable';
 
 @Component({
   selector: 'app-container',
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [gridSettings]='gridSettings' (enginePopulated)='enginePopulated($event)' width=width></ejs-pivotview>`
+  [gridSettings]='gridSettings' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
     public gridSettings: GridSettings;
-    public columnGrandTotalIndex;
-    public rowGrandTotalIndex;
-
-    @ViewChild('pivotview', { static: false })
-    public pivotGridObj: PivotView;
-
-    queryCell(args: any): void {
-        (this.pivotGridObj.renderModule as any).rowCellBoundEvent(args);
-        //triggers for every cell
-    }
-
-    enginePopulated(args: any): void {
-       this.pivotGridObj.grid.queryCellInfo = this.queryCell.bind(this);
-    }
+    public observable = new Observable();
 
     ngOnInit(): void {
 
@@ -36,8 +24,7 @@ export class AppComponent implements OnInit {
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            expandAll: false,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
+            expandAll: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
@@ -47,6 +34,28 @@ export class AppComponent implements OnInit {
 
         this.gridSettings = {
             columnWidth: 140,
+            columnRender: this.observable.subscribe(args => {
+                if ((args as any).stackedColumns[0]) {
+                    // Content for the row headers is right-aligned here.
+                    (args as any).stackedColumns[0].textAlign = 'Right';
+                }
+                if ((args as any).stackedColumns[1]) {
+                    // Content for the column header "FY 2015" is center-aligned here.
+                    (args as any).stackedColumns[1].textAlign = 'Center';
+                }
+                if ((args as any).stackedColumns[1] && ((args as any).stackedColumns[1].columns[0] as any)) {
+                    // Content for the column header "Q1" is right-aligned here.
+                    ((args as any).stackedColumns[1].columns[0] as any).textAlign = 'Right';
+                }
+                if ((args as any).stackedColumns[1] && (args as any).stackedColumns[1].columns[0] && ((args as any).stackedColumns[1].columns[0] as any).columns[0]) {
+                    // Content for the value header "Units Sold" is right-aligned here.
+                    ((args as any).stackedColumns[1].columns[0] as any).columns[0].headerTextAlign = 'Right';
+                }
+                if ((args as any).stackedColumns[1] && (args as any).stackedColumns[1].columns[0] && ((args as any).stackedColumns[1].columns[0] as any).columns[0]) {
+                    // Content for the values are left-aligned here.
+                    ((args as any).stackedColumns[1].columns[0] as any).columns[0].textAlign = 'Left';
+                }
+            }) as any
         } as GridSettings;
     }
 }
