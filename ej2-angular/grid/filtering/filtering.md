@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Grid component
 
-Filtering allows you to view particular records based on filter criteria. To enable filtering in the Grid, set the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to true.
-Filtering options can be configured through [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings).
+Filtering allows you to view particular records based on filter criteria. To enable filtering in the Grid, set the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to true. Filtering options can be configured through [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings).
 
 To use filter, inject **FilterService** in the provider section of **AppModule**.
 
@@ -73,6 +72,7 @@ greaterThan |Checks whether a value is greater than with specified value. |Num
 greaterThanOrEqual|Checks whether a value is greater than or equal to specified value. |Number &#124; Date
 lessThan |Checks whether a value is less than with specified value. |Number &#124; Date
 lessThanOrEqual |Checks whether a value is less than or equal to specified value. |Number &#124; Date
+between|Filter the values based on the range between the start and end specified values. |Number &#124; Date
 
 > By default, the [`filterSettings.columns.operator`](https://ej2.syncfusion.com/angular/documentation/api/grid/predicateModel/#operator) value is **equal**.
 

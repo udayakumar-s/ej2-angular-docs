@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Dialog editing in Angular Grid component
 
-In Dialog edit mode, when you start editing the currently selected row data will be shown on a dialog.
-You can change the cell values and save edited data to the data source.
-To enable Dialog edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Dialog**.
+In Dialog edit mode, when you start editing the currently selected row data will be shown on a dialog. You can change the cell values and save edited data to the data source. To enable Dialog edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Dialog**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

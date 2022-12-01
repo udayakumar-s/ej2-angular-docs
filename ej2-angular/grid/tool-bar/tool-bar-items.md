@@ -46,10 +46,35 @@ The following table shows Built-in toolbar items and its action.
 
 > * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 
+### Show only icons in built-in toolbar items
+
+By default, the built-in toolbar items render as buttons with an icon and text. It is possible to hide the text and show only the icon using the following CSS style.
+
+```css
+.e-toolbar .e-tbar-btn-text, .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
+    display: none;
+}
+```
+
+This is demonstrated in the following sample:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/toolbaricon-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/toolbaricon-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/toolbaricon-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/grid/toolbaricon-cs1" %}
+
 ## Custom toolbar items
 
-Custom toolbar items can be added by defining [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) as a collection of [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel).
-Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event.
+Custom toolbar items can be added by defining [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) as a collection of [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel). Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event.
 
 By default, Custom toolbar items are in position **Left**. You can change the position by using the [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) property. In the below sample, we have applied position **Right** for the **Collapse All** toolbar item.
 
@@ -78,17 +103,17 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs51/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs52/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs51/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs52/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs51/app/main.ts %}
+{% include code-snippet/grid/edit-cs52/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs51" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs52" %}
 
 ## Custom toolbar component in a specific position
 

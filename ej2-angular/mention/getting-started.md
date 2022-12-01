@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple **Mention** component and demonstrates the basic usage of the Mention component in an Angular environment.
 
+To get started quickly with angular Mention component using angular CLI, you can check the video below.
+
+{% youtube "https://www.youtube.com/watch?v=CNsnT4i67Qw" %}
+
 ## Dependencies
 
 The list of dependencies required to use the Mention component in your application is given below:
@@ -102,8 +106,7 @@ export class AppModule { }
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-Add Mentions component's styles as given below in `style.css`.
+The following CSS files are available in `../node_modules/@syncfusion` package folder. Add Mentions component's styles as given below in `style.css`.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';
@@ -115,8 +118,7 @@ Add Mentions component's styles as given below in `style.css`.
 
 ## Adding Mention component
 
-Modify the template in the [src/app/app.component.ts] file to render the Mention component.
-Add the Angular Mention by using `<ejs-mention>` selector in `template` section of the app.component.ts file. To use the Mention component properly, the [`target`](https://ej2.syncfusion.com/angular/documentation/api/mention/#target) property should be configured so that it renders the Mention component in the configured element.
+Modify the template in the [src/app/app.component.ts] file to render the Mention component. Add the Angular Mention by using `<ejs-mention>` selector in `template` section of the app.component.ts file. To use the Mention component properly, the [`target`](https://ej2.syncfusion.com/angular/documentation/api/mention/#target) property should be configured so that it renders the Mention component in the configured element.
 
 ```javascript
 import { Component } from '@angular/core';

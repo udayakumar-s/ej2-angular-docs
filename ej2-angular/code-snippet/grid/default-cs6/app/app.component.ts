@@ -6,7 +6,9 @@ import { DetailRowService, GridModel, GridComponent } from '@syncfusion/ej2-angu
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid' (dataBound)='onDataBound()'>
+    template: `<button ej-button (click)='expand()'>Expand All</button>
+                <button ej-button (click)='collapse()'>Collapse All</button>
+                <ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid'>
                     <e-columns>
                         <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
                         <e-column field='FirstName' headerText='FirstName' width=150></e-column>
@@ -37,12 +39,15 @@ export class AppComponent implements OnInit {
         this.pData = employeeData;
     }
 
-    onDataBound(): void {
-        this.grid.detailRowModule.expand(2); // initial expand 2 chid Grid.
+    expand(): void {
+        this.grid.detailRowModule.expandAll();
+    }
+
+    collapse(): void {
+        this.grid.detailRowModule.collapseAll();
     }
 
 }
-
 
 
 

@@ -18,7 +18,7 @@ The following steps are used to get the base 64 string of the loaded PDF documen
 
 **Step 2:** Add the following code snippet to get the base 64 string with button click event.
 
-```html
+```
 
 <button (click)="base64ofloadedDocument()">base64Document</button>
 
@@ -50,3 +50,5 @@ viewer.load(base64data, null);
 ```
 
 Find the Sample, [how to get the Base 64 string of the loaded PDF document](https://stackblitz.com/edit/angular-wmpo4g-ts8b1g?file=app.component.ts)
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Save%20and%20Load/Load%20PDF%20with%20WebService)

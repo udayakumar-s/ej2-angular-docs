@@ -2,14 +2,12 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
-import { DetailRowService, GridComponent, getPrintGridModel, Row, Column,
-     ToolbarService, printGridInit, GridModel, HierarchyGridPrintMode } from '@syncfusion/ej2-angular-grids';
-import { extend } from '@syncfusion/ej2-base';
+import { DataManager, Query} from '@syncfusion/ej2-data';
+import { DetailRowService, GridModel, GridComponent, DetailDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='pData' [childGrid]='childGrid' [toolbar]='["Print"]'
-     hierarchyPrintMode='Expanded' allowPaging=true [pageSettings]="{pageSize: 4}" (actionBegin)="actionBegin($event)" >
+    template: `<ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid' (detailDataBound)='detailDataBound($event)'>
                     <e-columns>
                         <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
                         <e-column field='FirstName' headerText='FirstName' width=150></e-column>
@@ -18,53 +16,33 @@ import { extend } from '@syncfusion/ej2-base';
                     </e-columns>
                 </ejs-grid>
                 `,
-    providers: [DetailRowService, ToolbarService]
+    providers: [DetailRowService]
 })
 export class AppComponent implements OnInit {
 
     public pData: object[];
-    public expandedChildGrid: object = {};
     public childGrid: GridModel = {
-        dataSource: data,
-        queryString: 'EmployeeID',
         columns: [
             { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
             { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
             { field: 'ShipCity', headerText: 'Ship City', width: 150 },
             { field: 'ShipName', headerText: 'Ship Name', width: 150 }
-        ]
+        ],
     };
     @ViewChild('grid') public grid: GridComponent;
 
     ngOnInit(): void {
         this.pData = employeeData;
-        this.grid.on(printGridInit, this.printInit, this);
     }
 
-    actionBegin(args) {
-        if (args.requestType === 'paging') {
-            this.expandedChildGrid = extend({}, this.expandedChildGrid, this.getExpandedState(this.grid, 'Expanded', args.previousPage));
-        }
-    }
-
-    printInit(gridModel) {
-        gridModel.printgrid.expandedRows = extend({}, this.expandedChildGrid, gridModel.expandedRows);
-    }
-
-    getExpandedState(gObj: GridComponent, hierarchyPrintMode: HierarchyGridPrintMode, currentPage: number): object {
-        const obj: object = {};
-        const rows: Row<Column>[] = gObj.getRowsObject();
-        for (const row of rows) {
-            if (row.isExpand && !row.isDetailRow) {
-                const index: number = gObj.allowPaging ? row.index +
-                    (currentPage * gObj.pageSettings.pageSize) - gObj.pageSettings.pageSize : row.index;
-                obj[index] = {};
-                obj[index].isExpand = true;
-                obj[index].gridModel = getPrintGridModel(row.childGrid, hierarchyPrintMode);
-            }
-        }
-        return obj;
-    }
+    detailDataBound(args:DetailDataBoundEventArgs) {
+        var orderData = data;
+        var empIdValue = args.childGrid.parentDetails.parentRowData.EmployeeID;
+        var matchedData = new DataManager(orderData).executeLocal(
+            new Query().where('EmployeeID', 'equal', empIdValue, true)
+        );
+        args.childGrid.query = new Query();
+        args.childGrid.dataSource = matchedData;
 }
 
 

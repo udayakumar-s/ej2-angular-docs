@@ -10,11 +10,13 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Combo box component
 
-The ComboBox has built-in support to filter the data items when [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#allowfiltering) enabled.
-The filter operation starts as soon as you start typing characters in the component.
+The ComboBox has built-in support to filter the data items when [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#allowfiltering) enabled. The filter operation starts as soon as you start typing characters in the component.
 
 By making use of [filtering](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#filtering) event, you can filter required data and return the data to ComboBox via `updateData` method. So that those filtered items get displayed in the popup.
-return the data to ComboBox via `updateData` method. So that those filtered items get displayed in the popup.
+
+To get started quickly with Grouping and Filtering in angular ComboBox component, you can check the video below.
+
+{% youtube "https://www.youtube.com/watch?v=TyePpp8m7pc" %}
 
 The following sample illustrates how to query the data source and pass the data to the ComboBox through the `updateData` method in `filtering` event.
 

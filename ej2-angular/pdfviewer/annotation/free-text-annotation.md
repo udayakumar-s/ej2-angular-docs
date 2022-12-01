@@ -29,10 +29,7 @@ Refer to the following code sample to switch to the Free Text annotation mode.
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import {
-  PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService
-} from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-root',
@@ -58,6 +55,76 @@ export class AppComponent implements OnInit {
   }
 }
 ```
+
+## How to clear the selection focus from free text annotation
+
+The free text annotations selection focus can be cleared by using the `setAnnotationMode` property of the `annotationModule`.
+
+Refer to the following code sample to remove the selection focus from the annotation.
+
+```typescript
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import {
+  PdfViewerComponent,
+  LinkAnnotationService,
+  BookmarkViewService,
+  MagnificationService,
+  ThumbnailViewService,
+  ToolbarService,
+  NavigationService,
+  TextSearchService,
+  TextSelectionService,
+  PrintService,
+  AnnotationService,
+  FormFieldsService,
+} from '@syncfusion/ej2-angular-pdfviewer';
+
+/**
+ * Default PdfViewer Controller
+ */
+@Component({
+  selector: 'app-root',
+  //Specifies the template string for the PDF Viewer component.
+  template: `<button (click)="RemoveSelection()">RemoveSelection</button>
+  <div class="content-wrapper">
+  <ejs-pdfviewer
+  id="pdfViewer"
+  [serviceUrl]='service'
+  [documentPath]='document'
+  style="height:640px;display:block">
+  </ejs-pdfviewer>
+  </div>`,
+ providers: [
+    LinkAnnotationService,
+    BookmarkViewService,
+    MagnificationService,
+    ThumbnailViewService,
+    ToolbarService,
+    NavigationService,
+    TextSearchService,
+    TextSelectionService,
+    PrintService,
+    AnnotationService,
+    FormFieldsService,
+  ],
+})
+
+export class AppComponent {
+  public service: string =
+    'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+  public document: string = 'PDF_Succinctly.pdf';
+  ngOnInit(): void {
+  }
+  //Method to remove the selection from the free text annotation.
+  RemoveSelection() {
+    var pdfviewer = (<any>document.getElementById('pdfViewer'))
+      .ej2_instances[0];
+    pdfviewer.annotationModule.setAnnotationMode('None');
+  }
+}
+```
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Annotations/How%20to%20clear%20the%20selection%20from%20annotation)
 
 ## Editing the properties of free text annotation
 
@@ -121,14 +188,12 @@ The opacity of the annotation can be edited using the range slider provided in t
 
 The properties of the free text annotation can be set before creating the control using the FreeTextSettings.
 
-After editing the default values, they will be changed to the selected values.
-Refer to the following code sample to set the default free text annotation settings.
+After editing the default values, they will be changed to the selected values. Refer to the following code sample to set the default free text annotation settings.
 
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import {
-  PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
   ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService
 } from '@syncfusion/ej2-angular-pdfviewer';
 
@@ -200,3 +265,5 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {}
 }
 ```
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Annotations/How%20to%20change%20the%20properties%20of%20free%20text%20annotation)

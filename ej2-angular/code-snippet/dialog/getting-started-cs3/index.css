@@ -21,4 +21,7 @@ body,
     width: 30%;
 }
 
+#dialog.e-draggable {
+    min-height: 160px;
+}
 

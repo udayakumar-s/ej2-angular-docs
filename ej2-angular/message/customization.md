@@ -14,7 +14,7 @@ The Message component allows the user to customize the content display positions
 
 ## Content Alignment
 
-Normally, the message content is aligned to the **left**. The Message component allows user to align the message content in the **center** or **right** through the built-in classes `e-content-center` and `e-content-right`.
+Normally, the message content is aligned to the **left**. The Message component allows the user to align the message content in the **center** or **right** through the built-in classes `e-content-center` and `e-content-right`.
 
 The following example demonstrates the message with different content alignments.
 

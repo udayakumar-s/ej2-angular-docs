@@ -29,6 +29,7 @@ System.config({
         "@syncfusion/ej2-angular-buttons": "syncfusion:ej2-angular-buttons/dist/ej2-angular-buttons.umd.min.js",     
         "@syncfusion/ej2-angular-base": "syncfusion:ej2-angular-base/dist/ej2-angular-base.umd.min.js",
         "@syncfusion/ej2-angular-grids": "syncfusion:ej2-angular-grids/dist/ej2-angular-grids.umd.min.js",
+        "@syncfusion/ej2-angular-popups": "syncfusion:ej2-angular-popups/dist/ej2-angular-popups.umd.min.js",
         "@syncfusion/ej2-excel-export": "syncfusion:ej2-excel-export/dist/ej2-excel-export.umd.min.js",
         "@syncfusion/ej2-pdf-export": "syncfusion:ej2-pdf-export/dist/ej2-pdf-export.umd.min.js",
         "@syncfusion/ej2-file-utils": "syncfusion:ej2-file-utils/dist/ej2-file-utils.umd.min.js",

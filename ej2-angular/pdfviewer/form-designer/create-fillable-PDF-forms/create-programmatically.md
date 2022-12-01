@@ -75,6 +75,80 @@ Using deleteFormField method, the form field can be deleted programmatically. We
   
 {% previewsample "page.domainurl/code-snippet/pdfviewer/deleteformfield-cs1" %}
 
+The following code illustrates how to delete a signature from the signature field using the `retrieveFormFields` and `clearFormFields` APIs.
+
+```
+<div class="control-section">
+  <div class="content-wrapper">
+    <!--Method to remove signature-->
+    <button (click)="remove()">Signature Remove</button>
+    <!--Render PDF Viewer component-->
+    <ejs-pdfviewer
+      id="pdfViewer"
+      [serviceUrl]="service"
+      [documentPath]="document"
+      style="height:640px;display:block"
+    ></ejs-pdfviewer>
+  </div>
+</div>
+```
+
+```typescript
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import {
+  PdfViewerComponent,
+  LinkAnnotationService,
+  BookmarkViewService,
+  MagnificationService,
+  ThumbnailViewService,
+  ToolbarService,
+  NavigationService,
+  TextSearchService,
+  TextSelectionService,
+  PrintService,
+  AnnotationService,
+  FormFieldsService,
+} from '@syncfusion/ej2-angular-pdfviewer';
+
+/**
+ * Default PdfViewer Controller
+ */
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  encapsulation: ViewEncapsulation.None,
+  providers: [
+    LinkAnnotationService,
+    BookmarkViewService,
+    MagnificationService,
+    ThumbnailViewService,
+    ToolbarService,
+    NavigationService,
+    TextSearchService,
+    TextSelectionService,
+    PrintService,
+    AnnotationService,
+    FormFieldsService,
+  ],
+})
+export class AppComponent {
+  public service: string =
+  'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+  //The document path to load a PDF document.
+  public document: string = 'FormFillingDocument.pdf';
+  ngOnInit(): void {
+  }
+  //Method to remove a signature from the signature field.
+  remove() {
+    var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    var forms = viewer.retrieveFormFields();
+    viewer.clearFormFields(forms[8]);
+  }
+}
+```
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Form%20fields/Delete%20signature%20programmatically%20from%20signature%20field)
+
 ## Saving the form fields
 
 When the download icon is selected on the toolbar, the Form Fields will be saved in the PDF document and this action will not affect the original document. Refer the below GIF for further reference.
@@ -83,7 +157,7 @@ When the download icon is selected on the toolbar, the Form Fields will be saved
 
 You can invoke download action using following code snippet.
 
-```html
+```
 <script>
     window.onload = function () {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
@@ -101,7 +175,7 @@ When the print icon is selected on the toolbar, the PDF document will be printed
 
 You can invoke print action using the following code snippet.,
 
-```html
+```
 <script>
     window.onload = function () {
         var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];

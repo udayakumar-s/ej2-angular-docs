@@ -10,10 +10,8 @@ domainurl: ##DomainURL##
 
 # Columns in Angular Grid component
 
-The column definitions are used as the **dataSource** schema in the Grid.
-This plays a vital role in rendering column values in the required format.
-The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions.
-The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column) is necessary to map the data source values in Grid columns.
+The column definitions are used as the **dataSource** schema in the Grid. This plays a vital role in rendering column values in the required format. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column)
+is necessary to map the data source values in Grid columns.
 
 > 1. If the column with [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) is not in the dataSource, then the column values will be displayed as empty.
 > 2. If the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) name contains “dot” operator then it is considered as complex binding.
@@ -36,8 +34,7 @@ Grid column supports the following types:
 
 ## ValueAccessor
 
-The [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor) is used to access/manipulate the value of display data.
-You can achieve custom value formatting by using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
+The [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor) is used to access/manipulate the value of display data. You can achieve custom value formatting by using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -55,8 +52,7 @@ You can achieve custom value formatting by using [`valueAccessor`](https://ej2.s
 
 ### Display array type columns
 
-You can bind an Array of Objects in a column by using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor) property.
-In this example, The Name field has an array of two objects FirstName and LastName. These two objects are joined and bind to a column using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
+You can bind an Array of Objects in a column by using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor) property. In this example, The Name field has an array of two objects FirstName and LastName. These two objects are joined and bind to a column using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -291,16 +287,17 @@ Add the custom css class to particular column by using [`customAttributes`](http
 
 ## Display custom tooltip for columns
 
-You can achieve the custom tooltip([`EJ2 Tooltip`](../../../tooltip/getting-started)) for Grid by using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
+To display a custom ToolTip [EJ2 Tooltip](../../../tooltip/getting-started), you can render the Grid control inside the Tooltip component and set the target as “.e-rowcell”. The tooltip is displayed when hovering the grid cells.
 
-Render the ToolTip component for the grid cells by using the following code in the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
+Change the tooltip content for the grid cells by using the following code in the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#beforerender) event.
 
 ```typescript
-tooltip (args: QueryCellInfoEventArgs) {
-    let tooltip: Tooltip = new Tooltip({
-        content: args.data[args.column.field].toString();
-    }, args.cell);
-}
+ beforeRender(args): void {
+    if (args.target.classList.contains('e-rowcell')) {
+        // event triggered before render the tooltip on target element.
+        this.tooltip.content = args.target.innerText;
+    }
+  }
 
 ```
 
@@ -348,5 +345,5 @@ Grid column supports the following alignments:
 * [How to set complex column as Foreignkey column](../how-to/complex-column-as-foreign-key-column)
 * [Complex Data Binding with list of Array Of Objects](../how-to/list-of-array-of-objects)
 * [Format grid with auto generation columns in Angular Grid](https://www.syncfusion.com/forums/141181/format-grid-with-auto-generation-columns-in-angular-grid)
-* [Background color change for stacked headers and calculated columns in Angular Grid](https://www.syncfusion.com/forums/139804/background-color-change-for-stacked-headers-and-calculated-columns-in-angular-grid)
+* [Background color change for stacked headers and calculated columns in Angular Grid](https://www.syncfusion.com/forums/139804 background-color-change-for-stacked-headers-and-calculated-columns-in-angular-grid)
 * [Drag and Drop Between two grids in Angular Grid](https://www.syncfusion.com/forums/150058/drag-and-drop-between-two-grids-in-angular-grid)

@@ -8,12 +8,6 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-﻿---
-title: "Migration from Essential JS 1"
-component: "ColorPicker"
-description: "Explains the common steps for migrating from Essential JS 1 application to Essential JS 2 components especially, color picker component."
----
-
 # Ej1 api migration in Angular Color picker component
 
 This article describes the API migration process of ColorPicker component from Essential JS 1 to Essential JS 2.
