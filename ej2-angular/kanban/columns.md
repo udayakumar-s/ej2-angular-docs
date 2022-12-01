@@ -14,7 +14,7 @@ The **Kanban** columns represent the each stage of the process. The column defin
 
 ## Single-key mapping
 
-Kanban columns are categorized by mapping the **key** from the datasource using the `keyField` property. The corresponding **value** in the datasource is mapped inside the columns `keyField`.  Based on this categorization, Kanban columns are split on this board.
+Kanban columns are categorized by mapping the **key** from the datasource using the `keyField` property. The corresponding **value** in the datasource is mapped inside the columns `keyField`. Based on this categorization, Kanban columns are split on this board.
 
 > The `keyField` property is mandatory to render the columns in the Kanban board.
 

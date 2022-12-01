@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Numerictextbox component
 
-The NumericTextBox characterized with complete ARIA Accessibility support which helps to accessible
-by on-screen readers and other assistive technology devices. This component designed with the
-reference of the guidelines document given in [WAI ARAI Accessibility practices](https://www.w3.org/TR/wai-aria/#spinbutton).
+The NumericTextBox characterized with complete ARIA Accessibility support which helps to accessible by on-screen readers and other assistive technology devices. This component designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](https://www.w3.org/TR/wai-aria/#spinbutton).
 
 The NumericTextBox uses the `spinbutton` role and following ARIA properties to its element based on its state.
 
@@ -29,9 +27,7 @@ The NumericTextBox uses the `spinbutton` role and following ARIA properties to i
 
 ## Keyboard interaction
 
-Keyboard interaction of the NumericTextBox component has been designed based on
-[WAI-ARIA Practices](https://www.w3.org/TR/wai-aria/roles#spinbutton) described for the NumericTextBox and
-it is an alternative to mouse actions to interact with the NumericTextBox.
+Keyboard interaction of the NumericTextBox component has been designed based on [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria/roles#spinbutton) described for the NumericTextBox and it is an alternative to mouse actions to interact with the NumericTextBox.
 
 The below table shows shortcut keys and its corresponding usage.
 

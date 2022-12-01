@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
            title: 'Countries'
         };
         this.animation = { enable: false};
-        this.legendSettings = { visible: true,  toggleVisibility: false };
+        this.legendSettings = { visible: true,  toggleVisibility: false, enableHighlight: true };
         this.title = 'Olympic Medals';
     }
 

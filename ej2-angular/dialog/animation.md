@@ -10,10 +10,7 @@ domainurl: ##DomainURL##
 
 # Animation in Angular Dialog component
 
-The Dialog can be animated during the open and close actions. Also, user can
-customize animation's [`delay`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#delay),
-[`duration`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#duration)
-and [`effect`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#effect).
+The Dialog can be animated during the open and close actions. Also, user can customize animation's [`delay`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#delay), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#duration) and [`effect`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#effect).
 
 <!-- markdownlint-disable MD033 -->
 <table>

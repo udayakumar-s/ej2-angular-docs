@@ -32,8 +32,7 @@ To known about category axis, you can check on this video:
   
 {% previewsample "page.domainurl/code-snippet/chart/axis/category-cs21" %}
 
->Note: To use category axis, we need to inject `CategoryService` into the `@NgModule.providers` and
-set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#valuetype-any) of axis to `Category`.
+>Note: To use category axis, we need to inject `CategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#valuetype-any) of axis to `Category`.
 
 <!-- markdownlint-disable MD036 -->
 
@@ -60,9 +59,7 @@ using [`labelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 ## Range
 
-Range of the category axis can be customized using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#minimum),
-[`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#interval) property of
-the axis.
+Range of the category axis can be customized using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#interval) property of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,8 +77,7 @@ the axis.
 
 ## Indexed category axis
 
-Category axis also can be rendered based on the index values of data source. This can be achieved by defining the
-`isIndexed` property to `true` in the axis.
+Category axis also can be rendered based on the index values of data source. This can be achieved by defining the `isIndexed` property to `true` in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Combo box component
+# Getting started with Angular Combo box component
 
-This section explains how to create a simple **ComboBox** component and configure its available
-functionalities in Angular.
+This section explains how to create a simple **ComboBox** component and configure its available functionalities in Angular.
 
 ## Dependencies
 
@@ -138,8 +137,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding ComboBox component
 
-Modify the template in [src/app/app.component.ts] file to render the Angular ComboBox component.
-Add the Angular ComboBox by using `<ejs-combobox>` selector in `template` section of the app.component.ts file.
+Modify the template in [src/app/app.component.ts] file to render the Angular ComboBox component. Add the Angular ComboBox by using `<ejs-combobox>` selector in `template` section of the app.component.ts file.
 
 ```javascript
 import { Component } from '@angular/core';
@@ -154,8 +152,7 @@ export class AppComponent  { }
 
 ## Binding data source
 
-After initializing, populate the ComboBox with data using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property.
-Here, an array of string values passed to ComboBox component.
+After initializing, populate the ComboBox with data using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. Here, an array of string values passed to ComboBox component.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -175,8 +172,7 @@ export class AppComponent {
 
 ## Running the application
 
-After completing the configuration required to render a basic ComboBox, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic ComboBox, run the following command to display the output in your default browser.
 
 ```
 ng serve
@@ -200,9 +196,7 @@ The following example illustrates the output in your browser.
 
 ## Custom values
 
-The ComboBox allows the user to give input as custom value which is not required to present in predefined
-set of values. By default, this support is enabled by [allowCustom](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#allowcustom)
- property. In this case, both text field and value field considered as same.
+The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#allowcustom) property. In this case, both text field and value field considered as same.
 The custom value will be sent to post back handler when a form is about to be submitted.
 
 {% tabs %}
@@ -221,13 +215,10 @@ The custom value will be sent to post back handler when a form is about to be su
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the ComboBox input
-element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
 
 The height and width of the popup list can also be customized using the
-[popupHeight](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupheight)
- &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupwidth) property
-respectively.
+[popupHeight](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupwidth) property respectively.
 
 In the following sample, popup list's width and height are configured.
 

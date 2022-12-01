@@ -14,17 +14,17 @@ To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/angular/docu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs16/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs33/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs16/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs33/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs16/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs33/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs16" %}
+{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs33" %}
 
 ## Page setup
 
@@ -41,17 +41,17 @@ To print the treegrid from an external button, invoke the [`print`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs22/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs27/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs22/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs27/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs22/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs27/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs22" %}
+{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs27" %}
 
 ## Print the visible page
 
@@ -59,17 +59,17 @@ By default, the treegrid prints all the pages. To print the current page alone, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs17/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs34/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs17/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs34/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs17/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs34/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs17" %}
+{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs34" %}
 
 ## Print large number of columns
 
@@ -93,17 +93,17 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs18/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs35/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs18/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs35/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs18/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs35/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs18" %}
+{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs35" %}
 
 ## Limitations of Printing Large Data
 

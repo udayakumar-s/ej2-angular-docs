@@ -12,7 +12,7 @@ import { Pivot_Data } from './datasource.ts';
   providers: [FieldListService],
   styleUrls: ['app/app.component.css'],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings renderMode="Fixed" (enginePopulated)='afterPopulate($event)' allowCalculatedField='true' enableFieldSearching='true' (load)='onLoad()' (dataBound)='ondataBound()'></ejs-pivotfieldlist>
+  template: `<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings renderMode="Fixed" (enginePopulated)='afterPopulate($event)' allowCalculatedField='true' (load)='onLoad()' (dataBound)='ondataBound()'></ejs-pivotfieldlist>
   <ejs-pivotview #pivotview id='PivotViewFieldList' width='99%' height='530' (enginePopulated)='afterEnginePopulate($event)' [gridSettings]='gridSettings'></ejs-pivotview>`
 })
 
@@ -72,5 +72,6 @@ export class AppComponent {
         };
     }
  }
+
 
 

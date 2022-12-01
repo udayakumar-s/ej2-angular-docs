@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Installation in Angular component | Syncfusion
-description: Learn here all about Installation in Syncfusion Angular component of Syncfusion Essential JS 2 and more.
+title: Installation in Angular Installation md component | Syncfusion
+description: Learn here all about Installation in Syncfusion Angular Installation md component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Installation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installation in Angular component
+# Installation in Angular 
 
 ## Installing Package
 
-Syncfusion Angular UI Component (Essential JS 2) packages are published in
-[npm](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal).
+Syncfusion Angular UI Component (Essential JS 2) packages are published in [npm](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal).
 You can install the necessary packages from npm’s install command.
 For example, grid package can be installed using following command.
 
@@ -38,5 +37,4 @@ npm install @syncfusion/ej2-angular-grids --save
 
 > Refer the [documentation](https://docs.npmjs.com/files/package.json) for more details about npm `package.json`
 
-These packages offer JavaScript files in ES6, UMD module systems. Which can be used in different
-dependency management and bundling libraries.
+These packages offer JavaScript files in ES6, UMD module systems. Which can be used in different dependency management and bundling libraries.

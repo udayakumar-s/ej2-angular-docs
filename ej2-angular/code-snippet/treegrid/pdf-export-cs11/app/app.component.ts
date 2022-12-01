@@ -1,13 +1,13 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { sampleData } from './datasource';
+import { sampleData, adventProFont } from './datasource';
 import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
-import { ToolbarItems, PdfExportProperties, RowDataBoundEventArgs, PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-treegrid';
+import { ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' (queryCellInfo)='queryCellInfo($event)' (pdfQueryCellInfo)='pdfQueryCellInfo($event)' (toolbarClick)='toolbarClick($event)' [allowPaging]='true' [allowPdfExport]='true' [pageSettings]='pager' [treeColumnIndex]='1'  childMapping='subtasks' [toolbar]='toolbarOptions'>
+    template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' (toolbarClick)='toolbarClick($event)' [allowPaging]='true' [allowPdfExport]='true' [pageSettings]='pager' [treeColumnIndex]='1'  childMapping='subtasks' [toolbar]='toolbarOptions'>
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -31,24 +31,13 @@ export class AppComponent implements OnInit {
     }
     toolbarClick(args: Object) : void {
         if (args['item'].text === 'PDF Export') {
-            this.treeGridObj.pdfExport();
-        }
-    }
-    pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
-        if(args.column.field == 'duration'){
-            if(+args.value === 0 || args.value === "") {
-                args.style = {backgroundColor: '#336c12'};
-            }
-            else if(args.value < 3) {
-                args.style = {backgroundColor: '#7b2b1d'};
-            }
-        }
-    }
-    queryCellInfo(args: RowDataBoundEventArgs): void {
-        if (args.data['duration'] == 0 && args.column.field === 'duration' ) {
-            args.cell.style.background= '#336c12';
-        } else if (args.data['duration'] < 3 && args.column.field === 'duration') {
-            args.cell.style.background= '#7b2b1d';
+            let exportProperties: PdfExportProperties = {
+                theme: {
+                        header: {font:  new PdfTrueTypeFont(adventProFont, 12) },
+                        record: { font: new PdfTrueTypeFont(adventProFont, 9) }
+                    }
+            };
+            this.treeGridObj.pdfExport(exportProperties);
         }
     }
 }

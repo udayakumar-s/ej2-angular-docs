@@ -1,34 +1,31 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
-import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
+import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width spinnerTemplate="<i class='fa fa-cog fa-spin fa-3x fa-fw'></i>"></ejs-pivotview>`
+  // specifies the template string for the pivot table component
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
-  public data: DataManager;
-  public width: string;
+    public dataSourceSettings: IDataOptions;
+    public width: string;
 
     ngOnInit(): void {
-
-        this.data = new DataManager({
-            url: 'https://bi.syncfusion.com/northwindservice/api/orders',
-            adaptor: new WebApiAdaptor,
-            crossDomain: true
-        });
         this.width = '100%';
+
         this.dataSourceSettings = {
-            dataSource: this.data,
-            expandAll: true,
-            filters: [],
-            columns: [{ name: 'ProductName', caption: 'Product Name' }],
-            rows: [{ name: 'ShipCountry', caption: 'Ship Country' }, { name: 'ShipCity', caption: 'Ship City' }],
-            formatSettings: [{ name: 'UnitPrice', format: 'C0' }],
-            values: [{ name: 'Quantity' }, { name: 'UnitPrice', caption: 'Unit Price' }]
+            dataSource: Pivot_Data,
+            expandAll: false,
+            drilledMembers: [{ name: 'Country', items: ['France'] }],
+            formatSettings: [{ name: 'Amount', format: 'C2', useGrouping: false,
+                    minimumSignificantDigits: 1, maximumSignificantDigits: 3 }],
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            filters: []
         };
     }
 }

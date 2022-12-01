@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reactive form validation in Angular Common component
+# Angular Reactive Form Validator
 
 Syncfusion Angular UI Component provides custom built in reactive form validators. These validators will help you to validate your input component at client side before submitting.
 
@@ -52,12 +52,12 @@ Step 1: To getting start with an angular reactive form by using the following li
 
 Step 2: To add Syncfusion Angular UI Validation, Need to import the below validator class from  @syncfusion\ej2-angular-inputs.
 
-```html
+```
 import { FormValidators } from '@syncfusion/ej2-angular-inputs';
 ```
 Step 3:  Add the Required validator in your form group component.
 
-```html
+```
 this.reactForm = new FormGroup({
       'check': new FormControl('', [FormValidators.required]),
       'email_check': new FormControl('', [FormValidators.email]),

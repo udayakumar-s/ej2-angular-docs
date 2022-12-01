@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Kanban component
+# Getting started with Angular Kanban component
 
 This section briefly explains how to create **Kanban** component and configure its available functionalities in Angular Environment.
 

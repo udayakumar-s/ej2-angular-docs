@@ -1,24 +1,23 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, GroupingBarSettings, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
   providers: [GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true'
-  (fieldDragStart)='fieldDragStart($event)' width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' showValuesButton='true' (onFieldDropped)='fieldDropped($event)' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
+    public groupingSettings: GroupingBarSettings;
 
-    fieldDragStart(args: FieldDragStartEventArgs): void {
-         if(args.axis === 'rows') {
-            args.cancel = true;
-        }
+    fieldDropped(args: FieldDroppedEventArgs): void {
+        //Triggers, whenever field is dropped in an axis.
+        args.droppedField.caption = args.droppedField.name + " --> " + args.droppedAxis;
     }
 
     ngOnInit(): void {

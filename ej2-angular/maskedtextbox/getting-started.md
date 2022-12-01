@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Maskedtextbox component
+# Getting started with Angular Maskedtextbox component
 
-The following section explains the steps required to create
-the MaskedTextBox component and also it demonstrates the basic usage of the MaskedTextBox.
+The following section explains the steps required to create the MaskedTextBox component and also it demonstrates the basic usage of the MaskedTextBox.
 
 ## Dependencies
 
@@ -219,10 +218,8 @@ MaskedTextBox is a form component and validation is playing vital role in forms 
 Here to showcase the MaskedTextBox with form validations we have used the reactive form.
 For more details about Reactive Forms refer: [`https://angular.io/guide/reactive-forms`](https://angular.io/guide/reactive-forms).
 
-* To use reactive forms, import `ReactiveFormsModule` from the `@angular/forms` package and add it to your NgModule's imports array.
-  In addition to this, `FormGroup`, `FormControl` should be imported to the app component.
-* The `FormGroup` is used to declare `formGroupName` for the form. The constructor of this `FormGroup` then takes an object,
-  that can contain sub-form-groups and `FormControls`.
+* To use reactive forms, import `ReactiveFormsModule` from the `@angular/forms` package and add it to your NgModule's imports array. In addition to this, `FormGroup`, `FormControl` should be imported to the app component.
+* The `FormGroup` is used to declare `formGroupName` for the form. The constructor of this `FormGroup` then takes an object, that can contain sub-form-groups and `FormControls`.
 * The `FormControl` is used to declare `formControlName` for form controls.
 
 The following example demonstrates how to use the reactive forms.

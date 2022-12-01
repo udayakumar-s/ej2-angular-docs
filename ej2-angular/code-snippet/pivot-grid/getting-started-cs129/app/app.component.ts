@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
         };
 
         this.groupingSettings = {
-            showRemoveIcon: false
+            showSortIcon: false
         } as GroupingBarSettings;
     }
 }

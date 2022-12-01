@@ -1,16 +1,16 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, DisplayOption, PivotChartService, FieldListService } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [PivotChartService],
+  providers: [PivotChartService, FieldListService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [chartSettings]='chartSettings' (multiLevelLabelRender)='multiLevelLabelRender($event)' [displayOption]='displayOption'></ejs-pivotview>`
+  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  [chartSettings]='chartSettings' [showFieldList]='true' [displayOption]='displayOption'></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
     public dataSourceSettings: IDataOptions;
@@ -30,17 +30,7 @@ export class AppComponent implements OnInit {
         };
 
         this.displayOption = { view: 'Chart' } as DisplayOPtion;
-        this.chartSettings = {
-            chartSeries: { type: 'Column' },
-            multiLevelLabelRender(e) {
-                e.alignment = 'Near';
-                e.textStyle = { fontFamily: 'Bold', fontWeight: '400', size: '16px', color: 'red' };
-                if (e.text === ' + United Kingdom') {
-                    e.text = 'Text Changed';
-                    e.textStyle = { fontFamily: 'Bold', fontWeight: '800', size: '16px', color: 'Blue' };
-                }
-            }
-        } as ChartSettings;
+        this.chartSettings = { chartSeries: { type: 'Column' }} as ChartSettings;
     }
 }
 

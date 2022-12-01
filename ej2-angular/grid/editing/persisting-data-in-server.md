@@ -24,8 +24,7 @@ In the below section, we have explained how to get the edited data details on th
 
 You can use the [`UrlAdaptor`](../../data/adaptors/#url-adaptor) of [`DataManager`](../../data) when binding data source from remote data.
 In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of [`DataManager`](../../data).
-You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties
-**insertUrl**, **removeUrl**, **updateUrl**, **crudUrl** and **batchUrl**.
+You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties **insertUrl**, **removeUrl**, **updateUrl**, **crudUrl** and **batchUrl**.
 
 The following code example describes the above behavior.
 
@@ -74,8 +73,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-Also, when using the **UrlAdaptor**, you need to return the data as JSON from the controller action and the JSON object must contain
-a property as **result** with dataSource as its value and one more property **count** with the dataSource total records count as its value.
+Also, when using the **UrlAdaptor**, you need to return the data as JSON from the controller action and the JSON object must contain a property as **result** with dataSource as its value and one more property **count** with the dataSource total records count as its value.
 
 The following code example describes the above behavior.
 
@@ -167,8 +165,7 @@ The deleted record primary key value is bound to the **key** parameter. Please r
 
 ### CRUD URL
 
-Using the **crudUrl** property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using
-a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
+Using the **crudUrl** property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
 
 The action parameter of **crudUrl** is used to get the corresponding CRUD action.
 

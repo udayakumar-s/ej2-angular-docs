@@ -16,9 +16,7 @@ To show the total value in data points, follow the given steps:
 
 **Step 1**:
 
-Change the element value in chart by using the [`annotationRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#annotationrender)
-event. In this event, you can get the stacked value of the series and change the element value to show the total
-value of the stacking series.
+Change the element value in chart by using the [`annotationRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#annotationrender) event. In this event, you can get the stacked value of the series and change the element value to show the total value of the stacking series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, parentsUntil } from '@syncfusion/ej2-angular-grids';
 import { closest } from '@syncfusion/ej2-base';
 
 @Component({
@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
                 var row = parentsUntil(e.target as any, 'e-row');
                 var rowIndex = (row as any).rowIndex; // Get the row index.
                 var uid = row.getAttribute('data-uid');
+                var grid = (document.getElementsByClassName('e-grid')[0] as any).ej2_instances[0];
                 var rowData = grid.getRowObjectFromUID(uid).data; // Get the row data.
                 (rowData as any).Freight = (e.target as any).value; // Update the new value for the corresponding column.
                 grid.updateRow(rowIndex, rowData); // Update the modified value in the row data.

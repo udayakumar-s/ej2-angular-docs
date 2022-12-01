@@ -54,8 +54,7 @@ Enable or disable the cell highlighting while hover over the heat map cells by u
 
 ### Color gradient mode
 
-You can set the minimum and maximum value colors based on row and column using the `colorGradientMode` property.
-The types of colorGradientMode,
+You can set the minimum and maximum value colors based on row and column using the `colorGradientMode` property. The types of colorGradientMode,
 
 * Table: The minimum and maximum value colors calculated for overall data.
 * Row: The minimum and maximum value colors calculated for each row of data.

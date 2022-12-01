@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-treegrid';
+import { ToolbarItems, PdfExportProperties, RowDataBoundEventArgs, PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -31,7 +31,14 @@ export class AppComponent implements OnInit {
     toolbarClick(args: Object) : void {
         if (args['item'].text === 'PDF Export') {
             let exportProperties: PdfExportProperties = {
-                fileName:"new.pdf"
+                theme: {
+                    header: {
+                        fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true, border: { color: '#64FA50', lineStyle: 'Thin' }
+                    },
+                    record: {
+                        fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true
+                    }
+                }
             };
             this.treeGridObj.pdfExport(exportProperties);
         }

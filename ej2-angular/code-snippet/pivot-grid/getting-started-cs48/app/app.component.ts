@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     public dataSourceSettings: IDataOptions;
 
     actionFailure(args: PivotActionFailureEventArgs): void {
-        if (args.actionName == 'Drill down' && args.actionName == 'Drill up') {
+        if (args.actionName == 'Drill down' || args.actionName == 'Drill up') {
             // Triggers when the current UI action fails to achieve the desired result.
         }
     }

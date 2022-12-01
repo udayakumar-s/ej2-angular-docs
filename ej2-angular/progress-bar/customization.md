@@ -45,9 +45,9 @@ You can customize the thickness of the track  using `trackThickness` and progres
   
 {% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs2" %}
 
-## Radius
+## Min, Max, and Value
 
-The  radius of the progress bar can be customized using `radius` property and  corner can be customized by **cornerRadius** property.
+The progress bar value is set by using the `value` property in progress bar. The minimum and maximum value of the progress bar can be set by using the `min` and `max` property in the progress bar respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,9 +63,9 @@ The  radius of the progress bar can be customized using `radius` property and  c
   
 {% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs3" %}
 
-## InnerRadius
+## Radius
 
-The inner radius of the progress bar can be customized using `innerRadius` property.
+The  radius of the progress bar can be customized using `radius` property and  corner can be customized by **cornerRadius** property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,9 +81,9 @@ The inner radius of the progress bar can be customized using `innerRadius` prope
   
 {% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs4" %}
 
-## Progress color and track color
+## InnerRadius
 
-We can customize the color of progress and track by using  **progressColor** and **trackColor** property.
+The inner radius of the progress bar can be customized using `innerRadius` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,3 +98,21 @@ We can customize the color of progress and track by using  **progressColor** and
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs5" %}
+
+## Progress color and track color
+
+We can customize the color of progress and track by using  **progressColor** and **trackColor** property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/progress-bar/customization-cs6/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/progress-bar/customization-cs6/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/progress-bar/customization-cs6/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs6" %}

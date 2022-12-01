@@ -12,11 +12,9 @@ domainurl: ##DomainURL##
 
 ## Customize CheckBox Appearance
 
-You can customize the appearance of the CheckBox module using the CSS rules.
-Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/check-box#cssclass) property.
+You can customize the appearance of the CheckBox module using the CSS rules. Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/check-box#cssclass) property.
 
-The background and border color of the CheckBox is customized through the custom classes to create primary, success, warning, danger, and
-info type of checkbox.
+The background and border color of the CheckBox is customized through the custom classes to create primary, success, warning, danger, and info type of checkbox.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,8 +54,7 @@ In the following example, to-do list is displayed with round checkbox by changin
 
 CheckBox check icon can be customized as per the requirement by adding CSS rules.
 
-In the following example, the check icon can be customized by changing check icon content, background and
-border color in focus and hovered states by adding `e-checkicon` class.
+In the following example, the check icon can be customized by changing check icon content, background and border color in focus and hovered states by adding `e-checkicon` class.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

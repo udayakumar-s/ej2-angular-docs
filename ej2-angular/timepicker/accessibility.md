@@ -10,13 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Timepicker component
 
-The web accessibility makes web applications and its content more accessible to people with disabilities without any
-barriers. Especially it tracks the dynamic value changes and DOM changes.
+The web accessibility makes web applications and its content more accessible to people with disabilities without any barriers. Especially it tracks the dynamic value changes and DOM changes.
 
-TimePicker component has covered the
-[WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices)  specifications with the following list of WAI-ARIA attributes
-`aria-haspopup`, `aria-selected`, `aria-disabled`, `aria-activedescendant`, `aria-expanded`, `aria-owns`,
-and `aria-autocomplete`.
+TimePicker component has covered the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices)  specifications with the following list of WAI-ARIA attributes `aria-haspopup`, `aria-selected`, `aria-disabled`, `aria-activedescendant`, `aria-expanded`, `aria-owns`, and `aria-autocomplete`.
 
 Here, the `combobox` as a role for input element and `listbox` as a role for popup element in the TimePicker.
 
@@ -39,12 +35,10 @@ component.
 
 ## Keyboard Interaction
 
-Keyboard accessibility is one of the most important aspects of web accessibility. It will be more useful to
-all the computer users, as they often allow to interact keyboard more than a mouse.
+Keyboard accessibility is one of the most important aspects of web accessibility. It will be more useful to all the computer users, as they often allow to interact keyboard more than a mouse.
 Among people with disabilities like blind or who have motor disabilities are also can make frequent use of keyboard shortcuts.
 
-The TimePicker component has built-in keyboard accessibility support by following the
-[WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+The TimePicker component has built-in keyboard accessibility support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
 > It supports the following list of shortcut keys to interact the TimePicker control.
 

@@ -60,12 +60,10 @@ The following cases will dynamically change their [`field`](https://ej2.syncfusi
 
 For Example,
 **Continuous Order** -
-Consider,  Column A has Card A with priority value `1`, Card B with priority value `2`, and Card C with priority value `3`.
-and Column B has Card D with priority value `5`, then the dropped Card D will be placed between Card A and Card B. Now, the Cards D, B, and C will be dynamically changed to the priority values as `2, 3, and 4` respectively.
+Consider, Column A has Card A with priority value `1`, Card B with priority value `2`, and Card C with priority value `3`. and Column B has Card D with priority value `5`, then the dropped Card D will be placed between Card A and Card B. Now, the Cards D, B, and C will be dynamically changed to the priority values as `2, 3, and 4` respectively.
 
 **Odd/Even order** -
-Consider, Column A has Card A with priority value `1`, Card B with priority value `3`, and Card C with priority value `5`.
-and Column B has Card D with priority value `5`, then the Dropped Card D will be placed between Card A and Card B. Now, the Cards D, B, and C will be dynamically changed to the priority values as `2, 3, and 5` respectively.
+Consider, Column A has Card A with priority value `1`, Card B with priority value `3`, and Card C with priority value `5`. and Column B has Card D with priority value `5`, then the Dropped Card D will be placed between Card A and Card B. Now, the Cards D, B, and C will be dynamically changed to the priority values as `2, 3, and 5` respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

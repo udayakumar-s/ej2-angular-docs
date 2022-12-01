@@ -61,7 +61,7 @@ It also supports the following shapes:
 * InvertedTriangle
 * Image
 
- You can customize a shape using the `shapeWidth` and `shapeHeight` properties.
+You can customize a shape using the `shapeWidth` and `shapeHeight` properties.
 
 ### Legend padding
 

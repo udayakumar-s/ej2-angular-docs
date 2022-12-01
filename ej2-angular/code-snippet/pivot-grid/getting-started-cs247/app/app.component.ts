@@ -1,29 +1,27 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
-import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
+import { IDataOptions, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
+import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
+  providers: [PivotChartService],
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [gridSettings]='gridSettings' width=width></ejs-pivotview>`
+  [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
     public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
+    public chartSettings: ChartSettings;
+    public displayOption: DisplayOption;
 
     ngOnInit(): void {
-
-        this.width = '100%';
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
@@ -31,9 +29,19 @@ export class AppComponent implements OnInit {
             filters: []
         };
 
-        this.gridSettings = {
-            allowResizing: true
-        } as GridSettings;
+        this.displayOption = { view: 'Chart' } as DisplayOPtion;
+        this.chartSettings = {
+            chartSeries: {
+                type: 'Column'
+            },
+            tooltip: {
+                enableMarker: true,
+                textStyle: { color: '#000' },
+                fill: '#FFF',
+                opacity: 1,
+                border: { color: '#000' }
+            }
+        } as ChartSettings;
     }
 }
 

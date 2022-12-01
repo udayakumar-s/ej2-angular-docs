@@ -1,61 +1,70 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService, CalculatedFieldService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, PivotView, GroupingBarService, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [FieldListService, CalculatedFieldService],
+  providers: [GroupingBarService, FieldListService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width allowCalculatedField='true' showFieldList='true'></ejs-pivotview>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' width=width maxNodeLimitInMemberEditor='100' showFieldList='true'></ejs-pivotview></div>`
 })
 
 export class AppComponent {
+
+    public width: string;
     public dataSourceSettings: IDataOptions;
-    ngOnInit(): void {
-        this.dataSourceSettings = {
-            catalog: 'Adventure Works DW 2008 SE',
-            cube: 'Adventure Works',
-            providerType: 'SSAS',
-            enableSorting: true,
-            url: 'https://bi.syncfusion.com/olap/msmdpump.dll',
-            localeIdentifier: 1033,
-            rows: [
-                { name: '[Customer].[Customer Geography]', caption: 'Customer Geography' },
-            ],
-            columns: [
-                { name: '[Product].[Product Categories]', caption: 'Product Categories' },
-                { name: '[Measures]', caption: 'Measures' },
-            ],
-            values: [
-                { name: '[Measures].[Customer Count]', caption: 'Customer Count' },
-                { name: '[Measures].[Internet Sales Amount]', caption: 'Internet Sales Amount' }
-            ],
-            filters: [
-                { name: '[Date].[Fiscal]', caption: 'Date Fiscal' },
-            ],
-            calculatedFieldSettings: [
-                {
-                    name: 'BikeAndComponents',
-                    formula: '([Product].[Product Categories].[Category].[Bikes] + [Product].[Product Categories].[Category].[Components] )',
-                    hierarchyUniqueName: '[Product].[Product Categories]',
-                    formatString: 'Standard'
-                },
-                {
-                    name: 'Order on Discount',
-                    formula: '[Measures].[Order Quantity] + ([Measures].[Order Quantity] * 0.10)',
-                    formatString: 'Currency'
-                }
-            ],
-            filterSettings: [
-                {
-                    name: '[Customer].[Customer Geography]', items: ['[Customer].[Customer Geography].[State-Province].&[NSW]&[AU]'], type: 'Exclude',
-                    levelCount: 2
-                }
-            ]
-        };
-        this.width = "100%";
+    public maxNodeLimitInMemberEditor: number;
+    public date1: number;
+    public date2: number;
+    data(count: number) {
+        let result: Object[] = [];
+        let dt: number = 0;
+        for (let i: number = 1; i < count + 1; i++) {
+            dt++;
+            let round: string;
+            let toString: string = i.toString();
+            if (toString.length === 1) {
+                round = "0000" + i;
+            } else if (toString.length === 2) {
+                round = "000" + i;
+            } else if (toString.length === 3) {
+                round = "00" + i;
+            } else if (toString.length === 4) {
+                round = "0" + i;
+            } else {
+                round = toString;
+            }
+            result.push({
+                ProductID: "PRO-" + round,
+                Year: "FY " + (dt + 2013),
+                Price: Math.round(Math.random() * 5000) + 5000,
+                Sold: Math.round(Math.random() * 80) + 10
+            });
+            if (dt / 4 == 1) {
+                dt = 0;
+            }
+        }
+        return result;
     }
-}
+    ngOnInit(): void {
+
+        this.width = "100%";
+        this.maxNodeLimitInMemberEditor= 100;
+
+        this.dataSourceSettings = {
+            dataSource: this.data(1000) as IDataSet[],
+            enableSorting: false,
+            expandAll: true,
+            allowMemberFilter:true,
+            formatSettings: [{ name: 'Price', format: 'C0' }],
+            rows: [{ name: 'ProductID' }],
+            columns: [{ name: 'Year' }],
+            values: [{ name: 'Price', caption: 'Unit Price' }, { name: 'Sold', caption: 'Unit Sold' }]
+        };
+    }
+ }
+
 
 

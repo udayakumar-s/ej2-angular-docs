@@ -1,14 +1,14 @@
 
 
-import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Component, ViewChild } from '@angular/core';
+import { IDataOptions, IDataSet, PivotView, FieldListService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
   providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' (actionBegin)='actionBegin($event)' width=width></ejs-pivotview></div>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings (fieldListRefreshed)='fieldListRefreshed($event)' showFieldList='true' width=width></ejs-pivotview></div>`
 })
 
 export class AppComponent {
@@ -16,10 +16,11 @@ export class AppComponent {
     public width: string;
     public dataSourceSettings: IDataOptions;
 
-    actionBegin(args: PivotActionBeginEventArgs): void {
-        if (args.actionName == 'Open field list') {
-            args.cancel = true;
-        }
+    @ViewChild('pivotview', {static: false})
+    public pivotGridObj: PivotViewComponent;
+
+    fieldListRefreshed(args: FieldListRefreshedEventArgs): void {
+        //Triggers, whenever field list get refreshed.
     }
 
     ngOnInit(): void {

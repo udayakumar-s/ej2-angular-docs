@@ -1,14 +1,14 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService, PivotActionFailureEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, FieldListService, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
   providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' (actionFailure)='actionFailure($event)' width=width></ejs-pivotview></div>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' (actionBegin)='actionBegin($event)' width=width></ejs-pivotview></div>`
 })
 
 export class AppComponent {
@@ -16,9 +16,9 @@ export class AppComponent {
     public width: string;
     public dataSourceSettings: IDataOptions;
 
-    actionFailure(args: PivotActionFailureEventArgs): void {
+    actionBegin(args: PivotActionBeginEventArgs): void {
         if (args.actionName == 'Open field list') {
-            // Triggers when the current UI action fails to achieve the desired result.
+            args.cancel = true;
         }
     }
 

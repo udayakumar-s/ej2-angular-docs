@@ -1,55 +1,112 @@
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, CalculatedFieldService, PivotView, NumberFormattingService,NumberFormattingEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Component, ViewChild } from '@angular/core';
+import {
+    IDataOptions, PivotView, FieldListService, CalculatedFieldService, NumberFormattingService,
+    ToolbarService, ConditionalFormattingService, ToolbarItems, DisplayOption, IDataSet
+} from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
-import { Button } from '@syncfusion/ej2-buttons';
 
 @Component({
   selector: 'app-container',
-  providers: [CalculatedFieldService, NumberFormattingService],
-  template: `<div class="col-md-8">
-  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowNumberFormatting='true' allowCalculatedField='true' (numberFormatting)='numberFormatting($event)' width=width></ejs-pivotview></div>
-  <div class="col-md-2"><button ej-button id='calculatedfield'>number Format</button></div>`
+  providers: [CalculatedFieldService, ToolbarService, ConditionalFormattingService, FieldListService, NumberFormattingService],
+  // specifies the template string for the pivot table component
+  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings allowExcelExport='true' allowNumberFormatting='true' allowConditionalFormatting='true' allowPdfExport='true' showToolbar='true' allowCalculatedField='true' showFieldList='true' width='100%' [displayOption]='displayOption' height='350' [toolbar]='toolbarOptions' (saveReport)='saveReport($event)' (loadReport)='loadReport($event)' (fetchReport)='fetchReport($event)' (renameReport)='renameReport($event)' (removeReport)='removeReport($event)' (newReport)='newReport()'></ejs-pivotview></div>`
 })
-export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
-  public button: Button;
-  public width: string;
+
+export class AppComponent {
+    public dataSourceSettings: IDataOptions;
+    public toolbarOptions: ToolbarItems[];
+    public displayOption: DisplayOption;
 
     @ViewChild('pivotview', {static: false})
     public pivotGridObj: PivotView;
 
-    numberFormatting (args: NumberFormattingEventArgs): void {
-        if (args.formatName == 'Amount' ) {
-            args.cancel = true;
+    saveReport(args: any) {
+        let reports = [];
+        let isSaved: boolean = false;
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reports = JSON.parse(localStorage.pivotviewReports);
+        }
+        if (args.report && args.reportName && args.reportName !== '') {
+            reports.map(function (item: any): any {
+                if (args.reportName === item.reportName) {
+                    item.report = args.report; isSaved = true;
+                }
+            });
+            if (!isSaved) {
+                reports.push(args);
+            }
+            localStorage.pivotviewReports = JSON.stringify(reports);
         }
     }
-
+    fetchReport(args: any) {
+        let reportCollection: string[] = [];
+        let reeportList: string[] = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item: any): void { reeportList.push(item.reportName); });
+        args.reportName = reeportList;
+    }
+    loadReport(args: any) {
+        let reportCollection: string[] = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item: any): void {
+            if (args.reportName === item.reportName) {
+                args.report = item.report;
+            }
+        });
+        if (args.report) {
+            this.pivotGridObj.dataSourceSettings = JSON.parse(args.report).dataSourceSettings;
+        }
+    }
+    removeReport(args: any) {
+        let reportCollection: any[] = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        for (let i: number = 0; i < reportCollection.length; i++) {
+            if (reportCollection[i].reportName === args.reportName) {
+                reportCollection.splice(i, 1);
+            }
+        }
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            localStorage.pivotviewReports = JSON.stringify(reportCollection);
+        }
+    }
+    renameReport(args: any) {
+        let reportCollection: string[] = [];
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            reportCollection = JSON.parse(localStorage.pivotviewReports);
+        }
+        reportCollection.map(function (item: any): any { if (args.reportName === item.reportName) { item.reportName = args.rename; } });
+        if (localStorage.pivotviewReports && localStorage.pivotviewReports !== "") {
+            localStorage.pivotviewReports = JSON.stringify(reportCollection);
+        }
+    }
+    newReport() {
+        this.pivotGridObj.setProperties({ dataSourceSettings: { columns: [], rows: [], values: [], filters: [] } }, false);
+    }
     ngOnInit(): void {
+        this.displayOption = { view: 'Both' } as DisplayOption;
+
+        this.toolbarOptions = ['New', 'Save', 'SaveAs', 'Rename', 'Remove', 'Load',
+            'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'NumberFormatting', 'FieldList'] as ToolbarItems[];
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }, { name: 'Total', caption: 'Total Amount', type: 'CalculatedField' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [],
-            calculatedFieldSettings: [{ name: 'Total', formula: '"Sum(Amount)"+"Sum(Sold)"' }]
-        };
-
-        this.width = '100%';
-
-        this.button = new Button({ isPrimary: true });
-        this.button.appendTo('#calculatedfield');
-
-        this.button.element.onclick = (): void => {
-            this.pivotGridObj.numberFormattingModule.showNumberFormattingDialog();
+            filters: []
         };
     }
-}
-
+ }
 
 

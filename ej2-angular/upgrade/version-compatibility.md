@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Version compatibility in Angular Upgrade component
+# Syncfusion Version Information
 
 In a year, Syncfusion releases new volumes once every three months. Syncfusion Angular components follows sequence-based identifiers to process software releases based on the **Major.Minor.Build.Revision** format to track all the release changes. It helps developers to keep track of the changes in every release.
 

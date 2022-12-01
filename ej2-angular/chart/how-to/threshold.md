@@ -12,12 +12,7 @@ domainurl: ##DomainURL##
 
 You can mark a threshold in chart by using the `stripline`.
 
-To mark a threshold in chart, follow the given steps:
-
-**Step 1**:
-
-By using the start and end properties in `striplines` object, you can mark the threshold line in horizontal
-axis to the chart as follows,
+By using the start and end properties in `striplines` object, you can mark the threshold line in the horizontal axis of the chart as follows,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

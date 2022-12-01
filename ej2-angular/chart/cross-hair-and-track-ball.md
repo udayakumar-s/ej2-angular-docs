@@ -49,10 +49,7 @@ property of `crosshairTooltip` in the corresponding axis.
 
 ## Customization
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#fill) and [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#textstyle)
-property of the `crosshairTooltip` is used to customize the background color and font style of the crosshair label
-respectively. Color and width of the crosshair line can be customized by using the
-[`line`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#line) property in the crosshair.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#fill) and [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#textstyle) property of the `crosshairTooltip` is used to customize the background color and font style of the crosshair label respectively. Color and width of the crosshair line can be customized by using the [`line`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#line) property in the crosshair.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,12 +69,9 @@ respectively. Color and width of the crosshair line can be customized by using t
 
 ## Trackball
 
-Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the
-closest point and trackball tooltip displays the information about the point. To use trackball feature,
-we need to inject `CrosshairService` and `TooltipService` into the `NgModule.providers`.
+Trackball is used to track a data point closest to the mouse or touch position. Trackball marker indicates the closest point and trackball tooltip displays the information about the point. To use trackball feature, we need to inject `CrosshairService` and `TooltipService` into the `NgModule.providers`.
 
-Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#enable) property of the crosshair to true and
-[`shared`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#shared) property in `tooltip` to true in chart.
+Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltip/#enable) property of the crosshair to true and [`shared`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#shared) property in `tooltip` to true in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

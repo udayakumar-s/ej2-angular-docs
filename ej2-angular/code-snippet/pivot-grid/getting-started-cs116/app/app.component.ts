@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
         };
 
         this.gridSettings = {
-            allowResizing: true
+            columnWidth: 120
         } as GridSettings;
     }
 }

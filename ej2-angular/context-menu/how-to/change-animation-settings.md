@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Change animation settings in Angular Context menu component
 
-To change the animation of the ContextMenu,
-[`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuAnimationSettingsModel/) property is used.
+To change the animation of the ContextMenu, [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuAnimationSettingsModel/) property is used.
 The supported effects for ContextMenu are,
 
 | Effect | Functionality |

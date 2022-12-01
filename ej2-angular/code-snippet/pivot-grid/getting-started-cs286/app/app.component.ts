@@ -1,13 +1,15 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, FieldListService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
+  providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings enableValueSorting='true' width=width></ejs-pivotview>`
+  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true'
+  width=width></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
     public width: string;
@@ -19,16 +21,13 @@ export class AppComponent implements OnInit {
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            expandAll: true,
-            valueSortSettings: {
-                headerText: 'FY 2015##Q1##Sold Amount',
-                headerDelimiter: '##',
-                sortOrder: 'Descending'
-            },
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            expandAll: false,
+            drilledMembers: [{ name: 'Country', items: ['France'] }],
+            columns: [{ name: 'Year', caption: 'Production Year', showSubTotals: false }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            filters: [],
+            rows: [{ name: 'Country', showSubTotals: false }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: []
         };
     }
 }

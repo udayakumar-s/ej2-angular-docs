@@ -16,8 +16,7 @@ To display the selected data value, follow the given steps:
 
 **Step 1**:
 
-Get the selected data point values and display the values through grid component by using the
-[`dragComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#dragcomplete) event.
+Get the selected data point values and display the values through grid component by using the [`dragComplete`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#dragcomplete) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

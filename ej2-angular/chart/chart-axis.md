@@ -11,11 +11,9 @@ domainurl: ##DomainURL##
 ﻿
 # Chart axis in Angular Chart component
 
-Chart typically has two axis, which are used to measure and categorize data:
-a horizontal or primary x axis and a vertical or primary y axis.
+Chart typically has two axis, which are used to measure and categorize data: a horizontal or primary x axis and a vertical or primary y axis.
 
-Vertical axis supports numerical and logarithmic scale. Horizontal axis supports
-the following types of scale.
+Vertical axis supports numerical and logarithmic scale. Horizontal axis supports the following types of scale.
 
 * Category
 * Numeric
@@ -63,8 +61,7 @@ using [`labelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/c
   
 {% previewsample "page.domainurl/code-snippet/chart/axis/category-cs29" %}
 
->Note: To use category axis, we need to inject `CategoryService` into the `@NgModule.providers` and
-set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `Category`.
+>Note: To use category axis, we need to inject `CategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `Category`.
 
 <!-- markdownlint-disable MD013 -->
 
@@ -108,8 +105,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 
 **Apply Padding to the Range**
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using the
-[`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) property. Numeric axis supports following types of padding.
+Padding can be applied to the minimum and maximum extremes of the axis range by using the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) property. Numeric axis supports following types of padding.
 
 * None
 * Round
@@ -273,8 +269,7 @@ DateTime axis supports following interval types,
 
 **Applying Padding to the Range**
 
-Padding can be applied to the minimum and maximum extremes of the range by using the
-[`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) property. Date time axis supports the following types of padding,
+Padding can be applied to the minimum and maximum extremes of the range by using the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) property. Date time axis supports the following types of padding,
 
 * None
 * Round
@@ -417,8 +412,7 @@ Logarithmic axis interval can be customized by using the [`interval`](https://ej
 
 <!-- markdownlint-disable MD033 -->
 
-When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property
- [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#isInversed) to true.
+When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#isInversed) to true.
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -438,7 +432,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 
 **Numeric Label Format**
 
-Numeric labels can be formatted by using the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelformat) property. Numeric labels supports all globalize format.
+Numeric labels can be formatted by using the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelformat) property. Numeric labels supports all globalize format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -708,8 +702,7 @@ To place an axis opposite from its original position, set [`opposedPosition`](ht
 
 ## Multiple Axis
 
-In addition to primary X and Y axis, we can add n number of axis to the chart. Series can be associated with
-this axis, by mapping with axis's unique name.
+In addition to primary X and Y axis, we can add n number of axis to the chart. Series can be associated with this axis, by mapping with axis's unique name.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -822,9 +815,7 @@ Striplines are rendered in the specified start to end range and you can add more
 
 **Customize the strip line**
 
-Starting value in specific strip line can be customized by <code>start</code> property in strip line. Similarly, ending value is customized by <code>end</code>. It can be also set for starting from the corresponding origin of the axis by
-<code>startFromOrigin</code>. Size of the strip line is customized by <code>size</code>. Border for the stripline is customized by <code>border</code>. Order of the strip line such that whether it should be rendered in behind or over the series elements
-is customized by <code>zIndex</code>.
+Starting value in specific strip line can be customized by <code>start</code> property in strip line. Similarly, ending value is customized by <code>end</code>. It can be also set for starting from the corresponding origin of the axis by <code>startFromOrigin</code>. Size of the strip line is customized by <code>size</code>. Border for the stripline is customized by <code>border</code>. Order of the strip line such that whether it should be rendered in behind or over the series elements is customized by <code>zIndex</code>.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

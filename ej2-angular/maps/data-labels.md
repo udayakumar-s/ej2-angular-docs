@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Data labels in Angular Maps component
 
-Data labels provide information to users about the shapes of the Maps control. It can be enabled by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#visible) property of the [`dataLabelSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/) to **true**.
+Data labels provide information to users about the shapes of the Maps component. It can be enabled by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#visible) property of the [`dataLabelSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/) to **true**.
 
 ## Adding data labels
 
@@ -48,7 +48,7 @@ In the following example, the value of [`labelPath`](https://ej2.syncfusion.com/
 
 ## Customization
 
-The following properties are available in the [`dataLabelSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/) to customize the data label of the Maps control.
+The following properties are available in the [`dataLabelSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/) to customize the data label of the Maps component.
 
 * [`border`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#border) - To customize the color, width and opacity for the border of the data labels in Maps.
 * [`fill`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#fill) - To apply the color of the data labels in Maps.
@@ -71,7 +71,7 @@ The following properties are available in the [`dataLabelSettings`](https://ej2.
 
 ## Smart labels
 
-The Maps control provides an option to handle the labels when they intersect with the corresponding shape borders using the [`smartLabelMode`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#smartlabelmode) property. The following options are available in the [`smartLabelMode`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#smartlabelmode) property.
+The Maps component provides an option to handle the labels when they intersect with the corresponding shape borders using the [`smartLabelMode`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#smartlabelmode) property. The following options are available in the [`smartLabelMode`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#smartlabelmode) property.
 
 * None
 * Hide

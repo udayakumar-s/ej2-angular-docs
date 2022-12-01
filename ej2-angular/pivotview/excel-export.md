@@ -183,7 +183,7 @@ You can export the pivot table virtual scroll data as Excel/CSV document by usin
 
 ### Export all pages
 
-The pivot engine exports the entire virtual data of the pivot table (i.e. the data that contains all of the records used to render the complete pivot table) as an Excel/CSV document. To export just the current viewport of the pivot table, set the [`exportAllPages`](https://ej2.syncfusion.com/documentation/api/pivotview/#exportallpages) property to **false**. To use the pivot engine export, add the `ExcelExport` module into the pivot table.
+The pivot engine exports the entire virtual data of the pivot table (i.e. the data that contains all of the records used to render the complete pivot table) as an Excel/CSV document. To export just the current viewport of the pivot table, set the [`exportAllPages`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#exportallpages) property to **false**. To use the pivot engine export, add the `ExcelExport` module into the pivot table.
 
 > By default, the pivot engine export will be performed while virtual scrolling is enabled.
 
@@ -246,6 +246,27 @@ The event `excelHeaderQueryCellInfo` triggers on framing each header cell during
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs74" %}
+
+### ExportComplete
+
+The event [`exportComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#exportcomplete) is triggered after the pivot table data has been exported to an Excel/CSV document. You can use this event to acquire blob stream data for further customization and processing at your end by passing the `isBlob` parameter as **true** when using the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#excelexport) method. It has the following parameters:
+
+* `type` - It holds the current export type such as PDF, Excel, and CSV.
+* `promise` - It holds the promise object for blob data.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs75/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs75/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs75/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs75" %}
 
 ## See Also
 

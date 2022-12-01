@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Switch component
+# Getting started with Angular Switch component
 
 This section explains how to create a simple Switch, and demonstrate the basic usage of the Switch module in an Angular environment.
 
@@ -78,8 +78,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Switch module
 
-Import Switch module into Angular application(app.module.ts) from the package
-`@syncfusion/ej2-angular-buttons`.
+Import Switch module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-buttons`.
 
  ```typescript
 import { NgModule }      from '@angular/core';

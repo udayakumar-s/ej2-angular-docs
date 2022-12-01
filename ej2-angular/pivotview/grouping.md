@@ -14,9 +14,8 @@ domainurl: ##DomainURL##
 
 Grouping is the most-useful feature in pivot table and the component automatically groups date, time, number and string. For example, the date type can be formatted and displayed based on year, quarter, month, and more. Likewise, the number type can be grouped range-wise, such as 1-5, 6-10, etc. These group fields will act as individual fields and allows users to drag them between different axes such as columns, rows, values, and filters and create pivot table at runtime.
 
-The grouping can be enabled by setting the [`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowgrouping) property to **true**
-property in the pivot table.
-To perform the grouping action via UI, right click on the pivot table's row or column header, select "**Group**", a dialog will appear in which fill the appropriate options to group the data. To ungroup,right click on the pivot table's row or column header, select "**Ungroup**".
+The grouping can be enabled by setting the [`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowgrouping) property to **true** property in the pivot table.
+To perform the grouping action via UI, right click on the pivot table's row or column header, select "**Group**", a dialog will appear in which fill the appropriate options to group the data. To ungroup right click on the pivot table's row or column header, select "**Ungroup**".
 
 To use calculated field option, you need to inject the `GroupingService` module in pivot table. The following are the three different types of grouping:
 
@@ -28,17 +27,17 @@ To use calculated field option, you need to inject the `GroupingService` module 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs145/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs147/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs145/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs147/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs145/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs147/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs145" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs147" %}
 
 ## Number Grouping
 
@@ -46,17 +45,17 @@ Number grouping allows users to organize data, which is in number format into di
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs146/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs148/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs146/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs148/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs146/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs148/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs146" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs148" %}
 
 ![output](images/number-group-option.png "Context-menu options for number grouping")
 
@@ -87,17 +86,17 @@ Number grouping can also be configured using the [`groupSettings`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs147/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs149/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs147/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs149/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs147/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs149/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs147" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs149" %}
 
 ![output](images/number-group-updated.png "Applied grouping settings updated in pivot table for number grouping")
 
@@ -113,17 +112,17 @@ Date grouping allows users to organize data, which is in date format into differ
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs148/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs150/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs148/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs150/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs148/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs150/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs148" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs150" %}
 
 ![output](images/date-group-option.png "Context-menu options for date grouping")
 
@@ -157,19 +156,21 @@ Date grouping can also be configured using the [`groupSettings`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs149/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs151/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs149/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs151/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs149/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs151/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs149" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs151" %}
 
-![output](images/date-group-updated.png "Applied grouping settings updated in pivot table for date grouping")
+Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
+
+![Date fields grouped and displayed under the "Date" folder](images/treeview.png "Group fields under a separate folder displayed in the field list UI")
 
 ### Ungrouping the existing date groups
 
@@ -183,17 +184,17 @@ Custom grouping can group any data type, such as date, time, number and string, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs150/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs152/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs150/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs152/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs150/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs152/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs150" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs152" %}
 
 In order to create custom grouping in the pivot table, a minimum of two headers belonging to a specific field should be chosen. To select more than one header, press and hold the CTRL key or hold the SHIFT key and click the appropriate row or column headers. Once selection is done, right-click and select "**Group**".
 
@@ -233,17 +234,17 @@ The available custom group properties in [`customGroups`](https://ej2.syncfusion
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs151/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs153/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs151/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs153/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs151/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs153/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs151" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs153" %}
 
 ![output](images/custom-group-updated.png "Applied grouping settings updated in pivot table for custom grouping")
 

@@ -8,17 +8,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Schematics in Angular Common component
+# Schematics
 
-The Syncfusion Essential JS 2 Angular components now supports the
-[schematics](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2?gi=d47ecc14b7ed).
-The [NPM](https://www.npmjs.com/search?q=@syncfusion/ej2-angular) packages are installed by using the Angular CLI
- [`add`](https://github.com/angular/angular-cli/wiki/add/) command.
+The Syncfusion Essential JS 2 Angular components now supports the [schematics](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2?gi=d47ecc14b7ed).
+The [NPM](https://www.npmjs.com/search?q=@syncfusion/ej2-angular) packages are installed by using the Angular CLI [`add`](https://github.com/angular/angular-cli/wiki/add/) command.
 
 ## Creating Angular Application
 
-To create an Angular application, install an [Angular CLI](https://github.com/angular/angular-cli) globally using the following
-command.
+To create an Angular application, install an [Angular CLI](https://github.com/angular/angular-cli) globally using the following command.
 
 ```
 npm install -g @angular/cli
@@ -79,8 +76,7 @@ ng add @syncfusion/ej2-angular-navigation -–module=treeview,tab,contextmenu
 
 ## Invalid and misspelled module names
 
-When you pass valid and invalid module names, the schematics will add all the valid modules and throw an error for
-invalid module.
+When you pass valid and invalid module names, the schematics will add all the valid modules and throw an error for invalid module.
 
 For example,
 
@@ -88,9 +84,7 @@ For example,
 ng add @syncfusion/ej2-angular-popups -–module=tooltip,treeview
 ```
 
-Here, the `tooltip` is a valid module but the `treeview` is invalid since it does not belong to
-`@syncfusion/ej2-angular-popups` package. Schematics add only the `tooltip` but it will throw the following error message
-for `treeview`. It is also applicable for misspelled module name.
+Here, the `tooltip` is a valid module but the `treeview` is invalid since it does not belong to `@syncfusion/ej2-angular-popups` package. Schematics add only the `tooltip` but it will throw the following error message for `treeview`. It is also applicable for misspelled module name.
 
 ```
 The treeview module is not a part of the package, @syncfusion/ej2-angular-popups. The available modules are Tooltip, Dialog.

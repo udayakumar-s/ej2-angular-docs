@@ -8,7 +8,7 @@ import { Pivot_Data } from './datasource.ts';
 @Component({
   selector: 'app-container',
   template: `<div class="col-md-8">
-  <ejs-pivotview #pivotview id='PivotView' height='350' (beforeExport)='beforeExport($event)' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' width=width></ejs-pivotview></div>
+  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' width=width></ejs-pivotview></div>
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
@@ -18,10 +18,6 @@ export class AppComponent implements OnInit {
 
     @ViewChild('pivotview', {static: false})
     public pivotGridObj: PivotView;
-
-    beforeExport(args: any) {
-        args.allowRepeatHeader = false;
-    }
 
     ngOnInit(): void {
 
@@ -42,7 +38,7 @@ export class AppComponent implements OnInit {
         this.button.appendTo('#export');
 
         this.button.element.onclick = (): void => {
-            this.pivotGridObj.pdfExportModule.exportToPDF();
+            this.pivotGridObj.pdfExport();
         };
     }
 }

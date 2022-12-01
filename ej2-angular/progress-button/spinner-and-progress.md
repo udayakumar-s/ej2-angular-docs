@@ -9,6 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD002 MD022 -->
+
 ## Spinner and progress in Angular Progress button component
 
 ### Change spinner position

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Button component
+# Getting started with Angular Button component
 
 This section explains how to create a simple Button and demonstrate the basic usage of the Button module in an Angular environment.
 

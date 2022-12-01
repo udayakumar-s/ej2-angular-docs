@@ -15,7 +15,6 @@ This article describes the API migration process of TimePicker component from Es
 ## Time Selection
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -50,7 +49,6 @@ Setting the value
 ## Time Format
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -85,7 +83,6 @@ Display time format
 ## Time Range
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -173,7 +170,6 @@ public value: Date = new Date();
 ## Disabled Time Ranges
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -220,7 +216,6 @@ public itemRenderHandler(args: ItemEventArgs): void {
 ## Customization
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -296,7 +291,7 @@ public onFocus(args:any):void {
 }
 ```
 
-```
+```css
 .e-control-wrapper .e-input-group-icon.e-time-icon {
     display: none;
 }
@@ -323,7 +318,7 @@ Enable/Disable the rounded corner
 <ejs-timepicker id='timepicker' cssClass='e-custom-style'></ejs-timepicker>
 ```
 
-```
+```css
 .e-control-wrapper.e-custom-style.e-time-wrapper.e-input-group {
     border-radius: 4px;
 }
@@ -536,7 +531,6 @@ public onOpen(args:any): void {
 ## Accessibility
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -571,7 +565,6 @@ Enable/Disable the RTL
 ## Persistence
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -606,7 +599,6 @@ Enable/Disable the persistence
 ## Validation
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -699,7 +691,6 @@ this.formObject = new FormValidator('#form-element', options);
 ## Common
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -784,7 +775,7 @@ Height
 <ejs-timepicker id='timepicker' cssClass='e-custom-style'></ejs-timepicker>
 ```
 
-```
+```css
 .e-control-wrapper.e-custom-style.e-time-wrapper.e-input-group {
     height: 35px;
 }
@@ -936,7 +927,6 @@ Specify the placeholder text behavior
 ## Globalization
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -971,7 +961,6 @@ Locale
 ## Strict Mode
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1006,7 +995,6 @@ Strict mode
 ## Open and Close
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>

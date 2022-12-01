@@ -290,7 +290,7 @@ The following image illustrates how to edit the lane header.
 
 ## Phase
 
- Phase are the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. The multiple number of [`Phase`](https://ej2.syncfusion.com/angular/documentation/api/diagram/phaseModel) can be added to swimlane.
+Phase are the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. The multiple number of [`Phase`](https://ej2.syncfusion.com/angular/documentation/api/diagram/phaseModel) can be added to swimlane.
 
 The following code example illustrates how to add phase at swimlane.
 
@@ -310,7 +310,7 @@ The following code example illustrates how to add phase at swimlane.
 
 ### Dynamically add phase to lane
 
- You can add the a phase at runtime by using client side API method called `addPhases`. The following code example illustrates how to add phase at run time.
+You can add the a phase at runtime by using client side API method called `addPhases`. The following code example illustrates how to add phase at run time.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -370,7 +370,7 @@ The following image illustrates how to edit the swimlane header.
 
 ## Add swimlane to palette
 
-   Diagram provides the support to add swimlane and phases to symbol palette. The following code sample illustrate how to add swimlane and phases to palette.
+Diagram provides the support to add swimlane and phases to symbol palette. The following code sample illustrate how to add swimlane and phases to palette.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

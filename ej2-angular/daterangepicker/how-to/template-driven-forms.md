@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 # Template driven forms in Angular Daterangepicker component
 
 The form can be build with Angular template syntax easily along with form specific directives.
- This template-driven forms uses the `ng` directives in view to handle the forms controls.
+This template-driven forms uses the `ng` directives in view to handle the forms controls.
 
 * To enable the template-driven,  import the FormsModule into corresponding app component.
 
@@ -19,10 +19,8 @@ For more details about template-driven Forms refer to:<https://angular.io/guide/
 
 * In angular forms mentioning the name is must to process as form elements.
 
-* Mention the `name` attribute to DateRangePicker element which will be used to identify the
-  form element. To register an DateRangePicker element to ngForm,  give the ngModel  to it
-  so the FormsModule will  automatically detect the DateRangePicker as a form element.
-  After that, the DateRangePicker value will be selected based on the ngModel value.
+* Mention the `name` attribute to DateRangePicker element which will be used to identify the form element. To register an DateRangePicker element to ngForm,  give the ngModel  to it so the FormsModule will  automatically detect the DateRangePicker as a form element.
+After that, the DateRangePicker value will be selected based on the ngModel value.
 
 The following example  demonstrates template driven forms with DateRangePicker component.
 

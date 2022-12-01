@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aspnet core in Angular Getting started component
+# Aspnet core with Angular Getting started component
 
 This document helps you to create a simple ASP .NET Core application with Angular Framework and Syncfusion Angular UI components.
 

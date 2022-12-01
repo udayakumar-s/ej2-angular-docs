@@ -8,12 +8,6 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-﻿---
-title: "Duration Units"
-component: "Gantt"
-description: "Learn about duration values in the Essential JS 2 Gantt control."
----
-
 # Duration unit in Angular Gantt component
 
 ## Duration units
@@ -24,8 +18,7 @@ In Gantt, the task's duration value can be measured by the following duration un
 * Hour
 * Minute
 
-In Gantt, we can define duration unit for whole project by using [`durationUnit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#durationunit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value.
-And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
+In Gantt, we can define duration unit for whole project by using [`durationUnit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#durationunit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
 * Using [`taskFields.durationUnit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#durationunit) property, to map the duration unit data source field.
 * Defining the duration unit value along with the duration field in the data source.

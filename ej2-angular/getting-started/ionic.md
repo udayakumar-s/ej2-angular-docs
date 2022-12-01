@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ionic in Angular Getting started component
+# Ionic with Angular Getting started component
 
 This document helps you to create a simple Angular application with `Ionic Framework` and `Syncfusion Angular UI components`.
 

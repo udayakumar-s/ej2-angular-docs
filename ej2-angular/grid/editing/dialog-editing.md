@@ -52,15 +52,15 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs8" %}
 
+> The Grid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog's height up to 658px.
+
 ## Show or hide columns in dialog editing
 
-You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) events.
+The Grid has the option to show hidden columns or hide visible columns while editing in the dialog edit mode by using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event of the Grid.
 
-In the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event, based on **requestType** as **beginEdit** or  **add**. We can show or hide the editor by using [`column.visible`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property.
+In the `actionBegin` event, when the `requestType` is `beginEdit` or add, the column will be shown or hidden using the `column.visible` property. When the `requestType` is `save`, the properties will be reset to their original state.
 
-In the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event, based on **requestType** as **save**. We can reset the properties back to the column state.
-
-In the below example, we have rendered the grid columns **CustomerID** as hidden column and **ShipCountry** as visible column. In the edit mode, we have changed the **CustomerID** column to visible state and **ShipCountry** column to hidden state.
+In the following example, the CustomerID column is rendered as a hidden column, and the ShipCountry column is rendered as a visible column. In the edit mode, the CustomerID column will be changed to a visible state and the ShipCountry column will be changed to a hidden state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

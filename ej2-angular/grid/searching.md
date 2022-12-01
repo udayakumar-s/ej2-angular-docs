@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 # Searching in Angular Grid component
 
 You can search records in a Grid, by using the [`search`](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) method with search key as a parameter.
-This also provides an option to integrate search text box in grid's toolbar by adding **Search** item to the
-[`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar).
+This also provides an option to integrate search text box in grid's toolbar by adding **Search** item to the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar).
 
 To use Searching, you need to inject **SearchService** in the provider section of **AppModule**.
 
@@ -50,13 +49,11 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
   
 {% previewsample "page.domainurl/code-snippet/grid/searching-cs2" %}
 
-> By default, grid searches all the bound column values. To customize this behavior define
-the [`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property.
+> By default, grid searches all the bound column values. To customize this behavior define the [`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property.
 
 ## Search operators
 
-The search operator can be defined in [`searchSettings.operator`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator) property
-to configure specified searching.
+The search operator can be defined in [`searchSettings.operator`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator) property to configure specified searching.
 
 The following operators are supported in searching:
 
@@ -88,8 +85,7 @@ To search grid records from an external button, invoke the [`search`](https://ej
 
 ## Search Specific Columns
 
-By default, grid searches all visible columns. You can search specific columns by defining the specific column's field names in the
-[`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property.
+By default, grid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -12,9 +12,7 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-The `Localization` library allows you to localize default text content of the
-ColorPicker. The ColorPicker component has static text for `control buttons (apply / cancel)` and `mode switcher` that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
-[`locale`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#locale) value and translation object.
+The `Localization` library allows you to localize default text content of the ColorPicker. The ColorPicker component has static text for `control buttons (apply / cancel)` and `mode switcher` that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#locale) value and translation object.
 
 The following list of properties and its values are used in the ColorPicker.
 

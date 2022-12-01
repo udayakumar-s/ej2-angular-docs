@@ -14,14 +14,14 @@ The cell selection support is enabled using the [`allowSelection`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs157/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs159/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs157/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs159/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs157/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs159/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs157" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs159" %}

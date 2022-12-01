@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Custom tool bar in Angular Grid component
 
-Custom Toolbar is used to customize the whole toolbar. It can be added by defining
-**toolbarTemplate**. Actions for this toolbar template items are defined in the
-**clicked** event in toolbar.
+Custom Toolbar is used to customize the whole toolbar. It can be added by defining **toolbarTemplate**. Actions for this toolbar template items are defined in the **clicked** event in toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

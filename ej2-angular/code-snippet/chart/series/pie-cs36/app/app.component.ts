@@ -6,28 +6,23 @@ import { IAccTextRenderEventArgs, IAccTooltipRenderEventArgs } from '@syncfusion
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-accumulationchart id="chart-container" [tooltip]='tooltip' (tooltipRender)="ontooltipRender($event)">
+    `<ejs-accumulationchart id="chart-container" [tooltip]='tooltip'>
         <e-accumulation-series-collection>
-            <e-accumulation-series [dataSource]='piedata' xName='x' yName='y'></e-accumulation-series>
+            <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' tooltipMappingName='text'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
     public piedata: Object[];
     public tooltip: Object;
-    public ontooltipRender: Function;
     ngOnInit(): void {
-        this.piedata = pieData;
+        this.piedata = [{ x: 'Jan', y: 13, text: 'Jan: 13' }, { x: 'Feb', y: 13, text: 'Feb: 13' },
+                        { x: 'Mar', y: 17, text: 'Mar: 17' }, { x: 'Apr', y: 13.5, text: 'Apr: 13.5' }
+         ];
          this.tooltip = {
-              enable: true
+              enable: true, format: '${point.tooltip}'
                 }
-        this.ontooltipRender = (args: IAccTooltipRenderEventArgs): void {
-              if (args.point.index === 3) {
-              args.text = args.point.x + '' + ':' + args.point.y + '' + ' ' +'customtext';
-              args.textStyle.color = '#f48042';
-        }
-        }
-        };
+               };
     }
 
 

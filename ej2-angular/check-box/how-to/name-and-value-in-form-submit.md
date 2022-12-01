@@ -15,9 +15,7 @@ grouped in form, the checked items [`value`](https://ej2.syncfusion.com/angular/
 which can be retrieved through the name. The [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/check-box/#disabled) and unchecked CheckBox value will
 not be sent to the server on form submit.
 
-In the following code snippet, Cricket and Hockey are in the checked state,
-Tennis is in disabled state and Basketball is in unchecked state. Now, the value
-that is in checked state only be sent on form submit.
+In the following code snippet, Cricket and Hockey are in the checked state, Tennis is in disabled state and Basketball is in unchecked state. Now, the value that is in checked state only be sent on form submit.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

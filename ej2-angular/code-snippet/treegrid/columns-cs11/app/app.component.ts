@@ -1,26 +1,21 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
+import { ResizeService  } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' >
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [allowResizing]='true' [treeColumnIndex]='1' childMapping='subtasks' >
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
-                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+                    <e-column field='taskName' headerText='Task Name' minWidth=170 maxWidth=250 textAlign='Left' width=180></e-column>
                     <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
-                    <e-column headerText='Approved' width='150' textAlign='Center'>
-             <ng-template #template let-data>
-                  <div *ngIf="data.approved; else elseblock">
-                      <input type="checkbox" checked>
-                  </div>
-              </ng-template>
-              <ng-template #elseblock><input type="checkbox"></ng-template>
-        </e-column>
-                    <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
+                    <e-column field='duration' headerText='Duration' minWidth=50 maxWidth=150 textAlign='Right' width=80></e-column>
+                    <e-column field='progress' headerText='Progress' textAlign='Right' width=120></e-column>
         </e-columns>
-                </ejs-treegrid>`
+                </ejs-treegrid>`,
+    providers: [ResizeService ]
 })
 export class AppComponent implements OnInit {
 
@@ -28,6 +23,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = sampleData;
+
     }
 }
 

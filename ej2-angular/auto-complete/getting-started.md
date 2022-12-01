@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Auto complete component
+# Getting started with Angular Auto complete component
 
-This section explains how to create a simple **AutoComplete** component and configure its
-available functionalities in Angular.
+This section explains how to create a simple **AutoComplete** component and configure its available functionalities in Angular.
 
 ## Dependencies
 
@@ -148,8 +147,7 @@ export class AppComponent  { }
 
 ## Binding data source
 
-After initializing, populate the data in AutoComplete using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#datasource) property.
-Here, an array of string values is passed to the AutoComplete component.
+After initializing, populate the data in AutoComplete using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#datasource) property. Here, an array of string values is passed to the AutoComplete component.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -170,8 +168,7 @@ export class AppComponent {
 
 ## Running the application
 
-After completing the configuration required to render a basic AutoComplete, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic AutoComplete, run the following command to display the output in your default browser.
 
 ```
 ng serve
@@ -195,13 +192,10 @@ The following example illustrates the output in your browser.
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the DropDownList input element's
-width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the DropDownList input element's width, and the height of the popup list has '300px'.
 
 The height and width of the popup list can also be customized using the
-[popupHeight](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#popupheight)
-&nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#popupwidth) properties
-respectively.
+[popupHeight](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#popupwidth) properties respectively.
 
 In the following sample, popup list's width and height are configured.
 

@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Pivot_Data } from './datasource.ts';
 
@@ -9,26 +9,19 @@ import { Pivot_Data } from './datasource.ts';
   selector: 'app-container',
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [gridSettings]='gridSettings' (enginePopulated)='enginePopulated($event)' width=width></ejs-pivotview>`
+  width=width (dataBound)='ondataBound()'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
     public gridSettings: GridSettings;
-    public columnGrandTotalIndex;
-    public rowGrandTotalIndex;
 
-    @ViewChild('pivotview', { static: false })
+    @ViewChild('pivotview',{static: false})
     public pivotGridObj: PivotView;
 
-    headerCell(args: any): void {
-        (this.pivotGridObj.renderModule as any).columnCellBoundEvent(args);
-        //triggers for every cell
-    },
-
-    enginePopulated(args: any): void {
-       this.pivotGridObj.grid.headerCellInfo = this.headerCell.bind(this);
-    },
+    ondataBound(): void {
+        this.pivotGridObj.grid.autoFitColumns();
+    }
 
     ngOnInit(): void {
 
@@ -36,18 +29,13 @@ export class AppComponent implements OnInit {
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            expandAll: false,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
+            expandAll: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
-
-        this.gridSettings = {
-            columnWidth: 140,
-        } as GridSettings;
     }
 }
 

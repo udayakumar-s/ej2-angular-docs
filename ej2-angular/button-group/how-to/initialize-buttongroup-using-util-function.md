@@ -12,16 +12,13 @@ domainurl: ##DomainURL##
 
 Though, it is a CSS component for easy initialization of ButtonGroup `createButtonGroup` util function can be used.
 
-To use `createButtonGroup` util function, [`SplitButton dependencies`](./../../split-button/getting-started#dependencies) should be
-configured and it should be added in `system.config.js`.
+To use `createButtonGroup` util function, [`SplitButton dependencies`](./../../split-button/getting-started#dependencies) should be configured and it should be added in `system.config.js`.
 
-Using `createButtonGroup` method, the Button options, selector, and cssClass is passed and the corresponding classes is added to the
-elements.
+Using `createButtonGroup` method, the Button options, selector, and cssClass is passed and the corresponding classes is added to the elements.
 
 ## Create basic ButtonGroup
 
-To create a basic ButtonGroup, the target element along with the button elements should be created and `createButtonGroup` should
-be imported from `ej2-splitbuttons`.
+To create a basic ButtonGroup, the target element along with the button elements should be created and `createButtonGroup` should be imported from `ej2-splitbuttons`.
 
 ## Create radio type ButtonGroup
 

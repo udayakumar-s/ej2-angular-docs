@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Layers in Angular Maps component
 
-The Maps control is rendered through [`layers`](https://ej2.syncfusion.com/angular/documentation/api/maps/#layers) and any number of layers can be added to the Maps.
+The Maps component is rendered through [`layers`](https://ej2.syncfusion.com/angular/documentation/api/maps/#layers) and any number of layers can be added to the Maps.
 
 ## Multilayer
 

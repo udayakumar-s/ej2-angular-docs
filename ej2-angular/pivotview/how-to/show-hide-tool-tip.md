@@ -16,14 +16,14 @@ You can set the visibility of tooltip using `showTooltip` in the pivot table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs169/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs171/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs169/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs171/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs169/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs171/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs169" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs171" %}

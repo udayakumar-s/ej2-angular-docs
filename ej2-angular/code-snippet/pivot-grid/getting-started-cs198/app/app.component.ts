@@ -22,13 +22,10 @@ export class AppComponent {
             localeIdentifier: 1033,
             rows: [
                 { name: '[Customer].[Customer Geography]', caption: 'Customer Geography' },
+                { name: '[Measures]', caption: 'Measures' }
             ],
             columns: [
-                {
-                    name: "[Core Product Group]",
-                    isNamedSet: true
-                },
-                { name: '[Measures]', caption: 'Measures' },
+                { name: '[Product].[Product Categories]', caption: 'Product Categories' }
             ],
             values: [
                 { name: '[Measures].[Customer Count]', caption: 'Customer Count' },

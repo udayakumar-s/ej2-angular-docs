@@ -38,8 +38,7 @@ Defines the HTML attributes such as id, class, etc,. for the specific list item.
 
 ### iconCss `string`
 
-It is used to customize the icon to the list items dynamically.
- We can add specific image to the icons using iconCss property.
+It is used to customize the icon to the list items dynamically. We can add specific image to the icons using iconCss property.
 
 ### id `string`
 
@@ -60,7 +59,7 @@ It is used to enable the sorting of list items to be ascending or descending.
 ### tableName `string`
 
 It is used to fetch a specified named table data while using serviceUrl of DataManager
- in dataSource property.
+in dataSource property.
 Refer the documentation
  {@link http://ej2.syncfusion.com/documentation/data/getting-started.html?lang=typescript here}
  to know more about this property with demo.

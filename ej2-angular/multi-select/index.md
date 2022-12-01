@@ -22,13 +22,10 @@ value can be chosen. The functionality of MultiSelect resembles the SELECT form 
 * [**Templates**](./templates/) - Allows customizing the list items,
 selected value, header, footer, category group header, and no records content.
 
-* [**Sorting**](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#sortorder) - Supports sorting
-of list items in an alphabetical order (either ascending or descending).
+* [**Sorting**](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#sortorder) - Supports sorting of list items in an alphabetical order (either ascending or descending).
 
 * [**Filtering**](./filtering/) - Allows filtering of list items based on a character typed into the search box.
 
 * [**Custom Value**](./custom-value/) - Allows user to select a new custom value.
 
-* [**Accessibility**](./accessibility/) - Provided with built-in accessibility
-support that helps to access all the DropDownList component features through the keyboard,
-screen readers, or other assistive technology devices.
+* [**Accessibility**](./accessibility/) - Provided with built-in accessibility support that helps to access all the DropDownList component features through the keyboard, screen readers, or other assistive technology devices.

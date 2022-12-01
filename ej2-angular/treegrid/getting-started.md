@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Treegrid component
+# Getting started with Angular Treegrid component
 
 This section explains the steps required to create a simple Essential JS 2 TreeGrid and demonstrates the basic usage of the [`Angular Tree Grid control`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) in a Angular CLI application.
 

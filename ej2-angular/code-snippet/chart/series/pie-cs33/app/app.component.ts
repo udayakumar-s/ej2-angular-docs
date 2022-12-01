@@ -17,9 +17,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.piedata = pieData;
         this.tooltip = {
-              enable: true,  template: "<div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>"+
-        "<img src='https://ej2.syncfusion.com/demos/src/chart/images/sunny.png' />" +
-        "<div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${y}</span></div></div>"
+              enable: true,  format: '${point.x} : <b>${point.y}%</b>'
                 }
         };
     }

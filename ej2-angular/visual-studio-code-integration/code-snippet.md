@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Code snippet in Angular Visual studio code integration component
+# Add Syncfusion Angular component in the Angular application
 
 The Syncfusion Angular code snippet utility for Visual Studio Code provides snippets for adding a Syncfusion Angular component with various features in the html code editor file of the Angular Application.
 

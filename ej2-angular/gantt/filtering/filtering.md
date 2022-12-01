@@ -14,27 +14,6 @@ Filtering allows you to view specific or related records based on filter criteri
 
 To use the filter, inject the `FilterService` in the provider section of `AppModule`.
 
-## Menu filtering
-
-The Gantt Component provides the menu filtering support for each column. You can enable the filter menu by setting the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) to `true`. The filter menu UI will be rendered based on its column type, which allows you to filter data. You can filter the records with different operators.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/filtering/filtermenu-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/filtermenu-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/filtering/filtermenu-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/filtermenu-cs1" %}
-
->[`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) must be set as `true` to enable filter menu.
->Setting [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowfiltering) as `false` will prevent filter menu rendering for a particular column.
-
 ## Filter hierarchy modes
 
 The Gantt supports a set of filtering modes with the [`filterSettings.hierarchyMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings/#hierarchymode) property. The following are the types of filter hierarchy modes available in the Gantt component:

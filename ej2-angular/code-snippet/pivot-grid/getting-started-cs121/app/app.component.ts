@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
 
         this.gridSettings = {
             allowSelection: true,
-            selectionSettings: { cellSelectionMode: 'Box', type: 'Multiple', mode: 'Cell' }
+            selectionSettings: { type: 'Multiple' }
         } as GridSettings;
     }
 }

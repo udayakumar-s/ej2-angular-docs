@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Progress bar component
+# Getting started with Angular Progress bar component
 
 This section explains you the steps required to create a progressbar and demonstrate the basic usage of the progressbar control.
 

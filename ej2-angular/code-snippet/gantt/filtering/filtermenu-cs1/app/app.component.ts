@@ -60,7 +60,7 @@ export class AppComponent{
             columnIndex:3
             };
         this.filterSettings = {
-            type:'Menu'
+            type:'Excel'
         };
     }
 }

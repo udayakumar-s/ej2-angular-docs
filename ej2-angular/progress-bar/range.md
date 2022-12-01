@@ -11,18 +11,19 @@ domainurl: ##DomainURL##
 # Range in Angular Progress bar component
 
 <!-- markdownlint-disable MD033 -->
+
 Range represents the entire span of the ProgressBar and can be defined using the `minimum` and `maximum` properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progress-bar/customization-cs8/app/app.component.ts %}
+{% include code-snippet/progress-bar/customization-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-bar/customization-cs8/app/app.module.ts %}
+{% include code-snippet/progress-bar/customization-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progress-bar/customization-cs8/app/main.ts %}
+{% include code-snippet/progress-bar/customization-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs8" %}
+{% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs9" %}

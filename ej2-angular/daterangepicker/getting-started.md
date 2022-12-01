@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Daterangepicker component
+# Getting started with Angular Daterangepicker component
 
-The following section explains the steps required to create a
-simple DateRangePicker component and also it demonstrates the basic usage of the DateRangePicker.
+The following section explains the steps required to create a simple DateRangePicker component and also it demonstrates the basic usage of the DateRangePicker.
 
 ## Dependencies
 
@@ -150,8 +149,7 @@ export class AppComponent  { }
 
 ## Running the application
 
-After completing the configuration required to render a basic DateRangePicker, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic DateRangePicker, run the following command to display the output in your default browser.
 
 ```
 ng serve

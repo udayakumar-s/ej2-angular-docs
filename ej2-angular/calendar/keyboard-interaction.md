@@ -11,8 +11,7 @@ domainurl: ##DomainURL##
 # Keyboard interaction in Angular Calendar component
 
 You can use the following keys to interact with the Calendar.
-The component implements the keyboard navigation support by following the
-   [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices)
+The component implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices)
 
 It supports the below list of shortcut keys.
 

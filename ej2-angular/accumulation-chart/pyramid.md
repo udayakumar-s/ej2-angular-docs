@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Pyramid in Angular Accumulation chart component
 
-To render a pyramid series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel/#type) as `Pyramid` and
-inject `PyramidSeries` module into the `@NgModule.providers`.
+To render a pyramid series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel/#type) as `Pyramid` and inject `PyramidSeries` module into the `@NgModule.providers`.
 
 To known about pyramid, you can check on this video:
 
@@ -33,8 +32,7 @@ To known about pyramid, you can check on this video:
 
 ## Mode
 
-The Pyramid chart supports linear and surface modes of rendering. The default type of the
-`pyramidMode` is `linear`.
+The Pyramid chart supports linear and surface modes of rendering. The default type of the `pyramidMode` is `linear`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,8 +68,7 @@ The size of the pyramid chart can be customized by using the  `width` and `heigh
 
 ## Gap Between the Segments
 
-Pyramid chart provides options to customize the space between the segments by using the `gapRatio` property of the
-series. It ranges from 0 to 1.
+Pyramid chart provides options to customize the space between the segments by using the `gapRatio` property of the series. It ranges from 0 to 1.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,8 +86,7 @@ series. It ranges from 0 to 1.
 
 ## Explode
 
-Points can be exploded on mouse click by setting the `explode` property to true. You can also explode the point
-on load using `explodeIndex`. Explode distance can be set by using `explodeOffset` property.
+Points can be exploded on mouse click by setting the `explode` property to true. You can also explode the point on load using `explodeIndex`. Explode distance can be set by using `explodeOffset` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

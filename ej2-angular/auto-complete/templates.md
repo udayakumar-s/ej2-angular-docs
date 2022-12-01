@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Templates in Angular Auto complete component
 
-The AutoComplete has been provided with several options to customize each list items, group title, header
-and footer elements.
+The AutoComplete has been provided with several options to customize each list items, group title, header and footer elements.
 
 ## Item template
 
@@ -36,9 +35,7 @@ In the following sample, each list item is split into two columns to display rel
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customize
-with the help of [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/) property. This template is common
-for both inline and floating group header template.
+The group header title under which appropriate sub-items are categorized can also be customize with the help of [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/) property. This template is common for both inline and floating group header template.
 
 In the following sample, employees are grouped according to their city.
 
@@ -58,9 +55,7 @@ In the following sample, employees are grouped according to their city.
 
 ## Header template
 
-The header element is shown statically at the top of the suggestion list items
-within the AutoComplete, and any custom element can be placed as a header element using
-the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#headertemplate) property.
+The header element is shown statically at the top of the suggestion list items within the AutoComplete, and any custom element can be placed as a header element using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#headertemplate) property.
 
 In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
 
@@ -80,8 +75,7 @@ In the following sample, the list items and its headers are designed and display
 
 ## Footer template
 
-The AutoComplete has options to show a footer element at the bottom of the list items in the
-suggestion list. Here, you can place any custom element as a footer element using
+The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using
 [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#footertemplate) property.
 
 In the following sample, footer element displays the total number of list items present in the AutoComplete.
@@ -102,9 +96,7 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The AutoComplete is provided with support to custom design the popup list content when no data is
-found and no matches found on search with the help of
-[noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#norecordstemplate) property.
+The AutoComplete is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#norecordstemplate) property.
 
 In the following sample, popup list content displays the notification of no data available.
 
@@ -124,12 +116,10 @@ In the following sample, popup list content displays the notification of no data
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request
-fails at the remote server. This can be achieved using the
+There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the
 [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#actionfailuretemplate) property.
 
-In the following sample, when the data fetch request fails, the AutoComplete displays the
-notification.
+In the following sample, when the data fetch request fails, the AutoComplete displays the notification.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

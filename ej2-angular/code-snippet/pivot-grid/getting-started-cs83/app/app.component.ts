@@ -1,48 +1,38 @@
 
 
-import { Component, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IDataOptions, ConditionalFormattingService, PivotView,
+    FieldListService, ToolbarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [FieldListService],
-  // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width  (enginePopulated)='afterPopulate($event)'></ejs-pivotview></div>`
+  providers: [FieldListService, ToolbarService ],
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width showToolbar='true' [toolbar]='toolbarOptions'></ejs-pivotview></div>`
 })
-
-export class AppComponent {
-
-    public width: string;
-    public dataSourceSettings: IDataOptions;
+export class AppComponent implements OnInit {
+  public dataSourceSettings: IDataOptions;
+  public width: string;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotViewComponent;
-
-    afterPopulate(arge: EnginePopulatedEventArgs): void {
-        Object.keys(this.pivotGridObj.engineModule.fieldList).forEach((key, index) => {
-                if (key === 'Quarter') {
-                    this.pivotGridObj.engineModule.fieldList[key].caption = 'Production Quarter Year';
-                }
-                else if (key === 'Year') {
-                    this.pivotGridObj.engineModule.fieldList[key].caption = 'Production Year';
-                }
-        });  
-    }
-
+    public pivotGridObj: PivotView;
+    public toolbarOptions: ToolbarItems[];
     ngOnInit(): void {
-
-        this.width = '100%';
+        this.toolbarOptions = ['FieldList'] as ToolbarItems[];
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            columns: [{ name: 'Products' }],
+            expandAll: false,
+            enableSorting: true,
+            drilledMembers: [{ name: 'Country', items: ['France'] }],
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
+        this.width = '100%';
     }
- }
+}
 
 
 

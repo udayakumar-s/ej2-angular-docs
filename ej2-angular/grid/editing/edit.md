@@ -14,10 +14,7 @@ The Grid component has options to dynamically insert, delete and update records.
 Editing feature requires a primary key column for CRUD operations.
 To define the primary key, set [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) to **true** in particular column.
 
-You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit**
-button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar
-or on an external button which is bound to invoke the [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#addrecord) method of the grid,
-**Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid.
+You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#addrecord) method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid.
 
 Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
 
@@ -41,10 +38,8 @@ To learn about what are all the edit modes and edit types are available in Angul
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs17" %}
 
-> * If [`columns.isIdentity`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) is enabled,
-then it will be considered as a read-only column when editing and adding a record.
-> * You can disable editing for a particular column, by specifying
-[`columns.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowediting) to **false**.
+> * If [`columns.isIdentity`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
+> * You can disable editing for a particular column, by specifying [`columns.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowediting) to **false**.
 
 ## Toolbar with edit option
 

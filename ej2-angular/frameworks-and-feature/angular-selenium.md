@@ -114,7 +114,7 @@ The Syncfusion Angular EJ2 Components are accessed using the Protractor locators
 
 ## EJ2 Angular Button in `./src/app/app.component.html`
 
-```html
+```
 <button id="my_button" ejs-button>Button</button>
 ```
 

@@ -23,7 +23,6 @@ export class AppComponent implements OnInit {
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
@@ -32,8 +31,7 @@ export class AppComponent implements OnInit {
         };
 
         this.gridSettings = {
-            allowSelection: true,
-            selectionSettings: { mode: 'Both' }
+            rowHeight: 60
         } as GridSettings;
     }
 }

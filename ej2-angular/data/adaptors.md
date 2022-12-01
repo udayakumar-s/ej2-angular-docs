@@ -10,17 +10,13 @@ domainurl: ##DomainURL##
 
 # Adaptors in Angular Data component
 
-Each data source or remote service uses different way in accepting request and sending back the
-response. [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) cannot anticipate every way a data source
-works. To tackle this problem the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) uses the adaptor concept to communicate with particular data source.
+Each datasource or remote service uses different way in accepting request and sending back the response. [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) cannot anticipate every way a datasource works. To tackle this problem the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) uses the adaptor concept to communicate with particular data source.
 
-For local data sources, the role of the data adaptor is to query the JavaScript object array
-based on the [`Query`](https://ej2.syncfusion.com/documentation/api/data/query/) object and manipulate them.
+For local datasources, the role of the data adaptor is to query the JavaScript object array based on the [`Query`](https://ej2.syncfusion.com/documentation/api/data/query/) object and manipulate them.
 
 When comes with remote datasource, the data adaptor is used to send the request that the server can understand and process the server response.
 
-The adaptor can be assigned using the **adaptor** property of the
-[`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/).
+The adaptor can be assigned using the **adaptor** property of the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/).
 
 ## Json adaptor
 
@@ -58,8 +54,7 @@ new DataManager({
 
 ```
 
-**UrlAdaptor** expects response as a JSON object with properties **result** and **count** which
-contains the collection of entities and the total number of records respectively.
+**UrlAdaptor** expects response as a JSON object with properties **result** and **count** which contains the collection of entities and the total number of records respectively.
 
 The sample response object should be as follows,
 
@@ -72,10 +67,7 @@ The sample response object should be as follows,
 
 ## OData adaptor
 
-[`OData`](http://www.odata.org/documentation/odata-version-3-0/) is standardized protocol for
-creating and consuming data. You can retrieve data from OData service using
-[`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). The **ODataAdaptor** helps you to interact with OData service. You can
-refer to the following code example of remote Data binding using OData service.
+[`OData`](http://www.odata.org/documentation/odata-version-3-0/) is standardized protocol for creating and consuming data. You can retrieve data from OData service using [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). The **ODataAdaptor** helps you to interact with OData service. You can refer to the following code example of remote Data binding using OData service.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,10 +87,7 @@ refer to the following code example of remote Data binding using OData service.
 
 ## ODataV4 adaptor
 
-The ODataV4 is an improved version of OData protocols and the
-[`DataManager`](https://ej2.syncfusion.com/documentation/data/api-dataManager.html) can also retrieve and consume OData v4 services. For more details on
-OData v4 Services, refer the
-[`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).
+The ODataV4 is an improved version of OData protocols and the [`DataManager`](https://ej2.syncfusion.com/documentation/data/api-dataManager.html) can also retrieve and consume OData v4 services. For more details on OData v4 Services, refer the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).
 You can use the **ODataV4Adaptor** to interact with ODataV4 service.
 
 {% tabs %}
@@ -117,9 +106,7 @@ You can use the **ODataV4Adaptor** to interact with ODataV4 service.
 
 ## Web API adaptor
 
-You can use the **WepApiAdaptor** to interact with Web API created with OData endpoint. The
-**WepApiAdaptor** is extended from the **ODataAdaptor**. Hence to use **WepApiAdaptor**, the endpoint
-should understand the OData formatted queries send along with request.
+You can use the **WepApiAdaptor** to interact with Web API created with OData endpoint. The **WepApiAdaptor** is extended from the **ODataAdaptor**. Hence to use **WepApiAdaptor**, the endpoint should understand the OData formatted queries send along with request.
 
 To enable OData query option for Web API, please refer to the [`documentation`](https://docs.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options)
 
@@ -136,8 +123,7 @@ new DataManager({
     });
 ```
 
-**WepApiAdaptor** expects JSON response from the server and the response object should contain
-properties **Items** and **Count** whose values are collection of entities and total count of the entities respectively.
+**WepApiAdaptor** expects JSON response from the server and the response object should contain properties **Items** and **Count** whose values are collection of entities and total count of the entities respectively.
 
 The sample response object should look like below.
 
@@ -167,8 +153,7 @@ new DataManager({
     });
 ```
 
-**WebMethodAdaptor** expects JSON response from the server and the response object should contain properties **result** and **count**
-whose values are collection of entities and total count of the entities respectively.
+**WebMethodAdaptor** expects JSON response from the server and the response object should contain properties **result** and **count** whose values are collection of entities and total count of the entities respectively.
 
 The sample response object should look like below.
 
@@ -185,8 +170,7 @@ The sample response object should look like below.
 
 The `GraphQLAdaptor` provides an option to retrieve data from the GraphQL server. It performs CRUD and data operations such as paging, sorting, filtering etc by sending the required arguments to the server.
 
-You can provide the GraphQL query string by using the `query` property of the `GraphQLAdaptor`. Since, the `GraphQLAdaptor` is extended from the `UrlAdaptor`, it expects response as a JSON object with properties `result` and `count` which contains the collection of entities and the total number of records respectively. The GraphQL response should be returned in JSON format like {
-  "data": { ... }} with query name as field, you need to set the `result` and `count` properties to map the response.
+You can provide the GraphQL query string by using the `query` property of the `GraphQLAdaptor`. Since, the `GraphQLAdaptor` is extended from the `UrlAdaptor`, it expects response as a JSON object with properties `result` and `count` which contains the collection of entities and the total number of records respectively. The GraphQL response should be returned in JSON format like { "data": { ... }} with query name as field, you need to set the `result` and `count` properties to map the response.
 
 ```typescript
 import { DataManager, Query, GraphQLAdaptor } from '@syncfusion/ej2-data';
@@ -362,8 +346,7 @@ To create and use custom adaptor, please refer to the below steps.
 * Override the desired method to achieve your requirement.
 * Assign the custom adaptor to the **adaptor** property of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/).
 
-For the sake of demonstrating custom adaptor approach, we are going to see how to add serial
-number for the records by overriding the built-in response processing using **processResponse** method of the **ODataAdaptor**.
+For the sake of demonstrating custom adaptor approach, we are going to see how to add serial number for the records by overriding the built-in response processing using **processResponse** method of the **ODataAdaptor**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

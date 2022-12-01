@@ -1,14 +1,14 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
   providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings (fieldListRefreshed)='fieldListRefreshed($event)' showFieldList='true' width=width></ejs-pivotview></div>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width  (enginePopulated)='afterPopulate($event)'></ejs-pivotview></div>`
 })
 
 export class AppComponent {
@@ -19,24 +19,25 @@ export class AppComponent {
     @ViewChild('pivotview', {static: false})
     public pivotGridObj: PivotViewComponent;
 
-    fieldListRefreshed(args: FieldListRefreshedEventArgs): void {
-        //Triggers, whenever field list get refreshed.
+    afterPopulate(arge: EnginePopulatedEventArgs): void {
+        Object.keys(this.pivotGridObj.engineModule.fieldList).forEach((key, index) => {
+                if (key === 'Quarter') {
+                    this.pivotGridObj.engineModule.fieldList[key].caption = 'Production Quarter Year';
+                }
+                else if (key === 'Year') {
+                    this.pivotGridObj.engineModule.fieldList[key].caption = 'Production Year';
+                }
+        });  
     }
 
     ngOnInit(): void {
 
         this.width = '100%';
-
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            expandAll: false,
-            allowLabelFilter: true,
-            allowValueFilter: true,
-            enableSorting: true,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            columns: [{ name: 'Products' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
+            rows: [{ name: 'Country' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };

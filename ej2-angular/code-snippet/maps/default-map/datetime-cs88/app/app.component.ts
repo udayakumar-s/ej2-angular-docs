@@ -1,7 +1,7 @@
 
 
 
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Maps } from '@syncfusion/ej2-angular-maps';
 import { markerDataSource } from 'markerdata.ts';
 @Component({

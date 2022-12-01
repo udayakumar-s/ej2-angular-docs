@@ -16,8 +16,7 @@ Essential JS 2 StockChart supports 7 major types of series namely `Line`, `Splin
 
 ## Line
 
-To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockSeriesModel/#type) as `Line` and
-inject `LineSeriesService` into the `@NgModule.providers`.
+To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockSeriesModel/#type) as `Line` and inject `LineSeriesService` into the `@NgModule.providers`.
 
 ## Spline
 
@@ -29,8 +28,7 @@ To render a area series, use series [`type`](https://ej2.syncfusion.com/angular/
 
 ## Hilo
 
-To render a hilo series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockSeriesModel/#type) as `Hilo` and
-inject `HiloSeries` into the `@NgModule.providers`.
+To render a hilo series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockSeriesModel/#type) as `Hilo` and inject `HiloSeries` into the `@NgModule.providers`.
 
 ## HiloOpenClose
 
@@ -42,8 +40,7 @@ To render a hollowcandle series, use series [`type`](https://ej2.syncfusion.com/
 
 ## Candle
 
-To render a candle series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockSeriesModel/#type) as `Candle` and
-inject `CandleSeries` into the `@NgModule.providers`.
+To render a candle series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockSeriesModel/#type) as `Candle` and inject `CandleSeries` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Treeview component
+# Getting started with Angular Treeview component
 
 This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-ui-components/angular-treeview) component, and configure its available functionalities
 
@@ -97,8 +97,7 @@ export class AppModule { }
 @import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
 ```
 
->Note: If you want to refer the combined component styles, please make use of
-our [`CRG`](https://ej2crg.azurewebsites.net/) (Custom Resource Generator) in your application.
+>Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://ej2crg.azurewebsites.net/) (Custom Resource Generator) in your application.
 
 ## Add Treeview component
 
@@ -117,8 +116,7 @@ export class AppComponent {}
 
 ## Binding data source
 
-TreeView can load data either from local data sources or remote data services. This can be done using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel#datasource)
-property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and `DataManager`.
+TreeView can load data either from local data sources or remote data services. This can be done using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel#datasource) property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and `DataManager`.
 Here, an array of JSON values is passed to the TreeView component.
 
 ```typescript

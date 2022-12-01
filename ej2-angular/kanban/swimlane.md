@@ -34,7 +34,7 @@ Cards can be grouped based on `keyField` and displayed in rows, which are separa
 
 Customize the swimlane row header text by using the `textField` property mapped from datasource.
 
-> It is not mandatory to define the `textField` to `swimlaneSettings`.  It will automatically consider the `keyField` to swimlane row header text.
+> It is not mandatory to define the `textField` to `swimlaneSettings`. It will automatically consider the `keyField` to swimlane row header text.
 > If the mapping `textField` key is not present in the datasource, it will consider the swimlane `keyField` as swimlane row header text.
 
 {% tabs %}
@@ -107,7 +107,7 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 
 ## Create empty row
 
-You can render the empty swimlane row by enabling the `showEmptyRow` property.  If mapping `keyField` does not have cards, empty swimlane row will be rendered.
+You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping `keyField` does not have cards, empty swimlane row will be rendered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ToolbarItems } from '@syncfusion/ej2-treegrid';
+import { ToolbarItems, ExcelExportProperties } from '@syncfusion/ej2-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -30,10 +30,7 @@ export class AppComponent implements OnInit {
     }
     toolbarClick(args: Object) : void {
         if (args['item'].text === 'Excel Export') {
-            let excelExportProperties: ExcelExportProperties = {
-                fileName:"new.xlsx"
-            };
-            this.treeGridObj.excelExport(excelExportProperties);
+            this.treeGridObj.excelExport();
         }
     }
 }

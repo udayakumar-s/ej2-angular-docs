@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Icons support in Angular Combo box component
 
-You can render **icons** to the list items by mapping the [iconCss](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#fields) &nbsp;fields.
- This `iconCss` field create a span in the list item with mapped class name
-to allow styling as per your need.
+You can render **icons** to the list items by mapping the [iconCss](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#fields) &nbsp;fields. This `iconCss` field create a span in the list item with mapped class name to allow styling as per your need.
 
 In the following sample, icon classes are mapped with `iconCss` field.
 

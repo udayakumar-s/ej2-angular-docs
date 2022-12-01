@@ -1,13 +1,12 @@
 
 
 import { Component, OnInit,ViewChild } from '@angular/core';
-import { Ajax } from '@syncfusion/ej2-base';
+import { DataManager } from '@syncfusion/ej2-data';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
-
 @Component({
     selector: 'app-container',
-    template: ` <button ejs-button (click)="click()">Bind Data</button>
-    <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' parentIdMapping='ParentItem' idMapping='TaskID' [allowPaging]="true" height=240>
+    template: `<ejs-treegrid  #treegrid [treeColumnIndex]='1' (actionFailure)="onActionFailure($event)"
+    parentIdMapping='ParentItem' [dataSource]='data' idMapping='TaskID' [allowPaging]="true">
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
             <e-column field='TaskName' headerText='Task Name' width='170'></e-column>
@@ -21,17 +20,18 @@ export class AppComponent implements OnInit {
     public data: DataManager;
     @ViewChild('treegrid')
     public treegrid: TreeGridComponent;
+
     ngOnInit(): void {
+        this.data = new DataManager({
+    url: 'http://some.com/invalidUrl'
+});
 }
- click(e: any): any{
-    let ajax = new Ajax("https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData","GET");
-    let trgrid = this.treegrid;
-    ajax.send();
-    ajax.onSuccess = function (data: string) {
-        trgrid.hideSpinner();
-        trgrid.dataSource = JSON.parse(data);
-    };
-}
+ onActionFailure(e: any): any {
+       let span: HTMLElement = document.createElement('span');
+       this.treegrid.element.parentNode.insertBefore(span, this.treegrid.element);
+       span.style.color = '#FF0000'
+       span.innerHTML = 'Server exception: 404 Not found';
+    }
 }
 
 

@@ -200,7 +200,7 @@ public newImage: any;
 
 ```
 
-```html
+```
 
 <div class="uploadtemplate">
     <div id='dropArea'>
@@ -211,7 +211,7 @@ public newImage: any;
 
 ```
 
-```html
+```
 <style>
 .uploadtemplate #dropArea {
     min-height: 50px;

@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Set item wise custom template in Angular Toolbar component
 
-The Toolbar supports adding template commands using the  `template` property. Template property can be given as the `HTML element`
-that is either a `string`  or a `query selector`.
+The Toolbar supports adding template commands using the  `template` property. Template property can be given as the `HTML element` that is either a `string`  or a `query selector`.
 
 ## As string
 

@@ -8,10 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Timepicker component
+# Getting started with Angular Timepicker component
 
-This section briefly explains how to create a simple **TimePicker** component, and configure its available functionalities in Angular by
-using [quickstart](https://github.com/angular/quickstart.git) seed repository.
+This section briefly explains how to create a simple **TimePicker** component, and configure its available functionalities in Angular by using [quickstart](https://github.com/angular/quickstart.git) seed repository.
 
 To get start quickly with Angular TimePicker component, refer to the video below.
 
@@ -159,8 +158,7 @@ export class AppComponent  { }
 
 ## Running the application
 
-After completing the configuration required to render a basic TimePicker, run the following command to
-display the output in your default browser.
+After completing the configuration required to render a basic TimePicker, run the following command to display the output in your default browser.
 
 ```
 ng serve
@@ -184,8 +182,7 @@ The following example illustrates the output in your browser
 
 ## Setting the selected, min, and max time
 
-The following example demonstrates how to set the value, min and max time on initializing
-the TimePicker. The TimePicker allows you to select the time value within a range from `7:00 AM` to `4:00 PM`.
+The following example demonstrates how to set the value, min and max time on initializing the TimePicker. The TimePicker allows you to select the time value within a range from `7:00 AM` to `4:00 PM`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -203,15 +200,9 @@ the TimePicker. The TimePicker allows you to select the time value within a rang
 
 ## Setting the time format
 
-Time formats is a way of representing the time value in different string format in textbox and popup
-list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the
-[`format`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#format)
-property. To know more about the time format standards, refer to the
-[`Date and Time Format](../base/internationalization#custom-formats) section.
+Time formats is a way of representing the time value in different string format in textbox and popup list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#format) property. To know more about the time format standards, refer to the [`Date and Time Format](../base/internationalization#custom-formats) section.
 
-The following example demonstrates the TimePicker component in 24 hours format with 60 minutes
-interval. The time interval is set to
-60 minutes by using the [`step`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#step-number) property.
+The following example demonstrates the TimePicker component in 24 hours format with 60 minutes interval. The time interval is set to 60 minutes by using the [`step`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#step-number) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

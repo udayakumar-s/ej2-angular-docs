@@ -42,8 +42,7 @@ To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documen
 
 ## Add/Remove node at runtime
 
-* Nodes can be added at runtime by using public method, add and can be removed at runtime by using public method,
-remove. On adding node at runtime, the nodes collection is changed and the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#collectionChange--emittypecollectionchangeeventargs) event will trigger.
+* Nodes can be added at runtime by using public method, add and can be removed at runtime by using public method, remove. On adding node at runtime, the nodes collection is changed and the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#collectionChange--emittypecollectionchangeeventargs) event will trigger.
 
 * The node’s ID property is used to define the name of the node and its further used to find the node at runtime and do any customization.
 
@@ -65,8 +64,7 @@ The following code illustrates how to add a node.
 
 ## Add node from palette
 
-Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information
-about adding nodes from symbol palette, refer to [`Symbol Palette`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#palettes).
+Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#palettes).
 
 * Once you drag a node/connector from the palette to the diagram, the following events can be used to do your customization.
 * When a symbol is dragged into diagram from symbol palette, the [`dragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#dragEnter--emittypeidragentereventargs>) event gets triggered.
@@ -76,13 +74,11 @@ about adding nodes from symbol palette, refer to [`Symbol Palette`](https://ej2.
 
 ## Create node through data source
 
-Nodes can be generated automatically with the information provided through data source. The default properties for
-these nodes are fetched from default settings. For more information about data source, refer to Data Binding.
+Nodes can be generated automatically with the information provided through data source. The default properties for these nodes are fetched from default settings. For more information about data source, refer to Data Binding.
 
 ## Draw nodes
 
-Nodes can be interactively drawn by clicking and dragging the diagram surface by using `NodeDrawingTool`. For more
-information about drawing nodes, refer to Draw Nodes.
+Nodes can be interactively drawn by clicking and dragging the diagram surface by using `NodeDrawingTool`. For more information about drawing nodes, refer to Draw Nodes.
 
 ## Position
 
@@ -154,8 +150,7 @@ The following code illustrates how to provide the mirror image of the original e
 
 ## Appearance
 
-* The appearance of a node can be customized by changing its [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#fill-string) color, [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#borderColor-string), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#borderWidth-number), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#strokeDashArray-number),
-[`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#opacity-number), and [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#shadow-number).
+* The appearance of a node can be customized by changing its [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#fill-string) color, [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#borderColor-string), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#borderWidth-number), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#strokeDashArray-number), [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#opacity-number), and [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#shadow-number).
 
 * The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#visible-boolean) property of the node enables or disables the visibility of the node.
 
@@ -231,8 +226,7 @@ There are two types of gradients as follows:
 
 ## Shadow
 
-Diagram provides support to add [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#shadow-shadowmodel) effect to a node that is disabled, by default. It can be enabled with the
-constraints property of the node. The following code illustrates how to drop shadow.
+Diagram provides support to add [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#shadow-shadowmodel) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node. The following code illustrates how to drop shadow.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -250,8 +244,7 @@ constraints property of the node. The following code illustrates how to drop sha
 
 ## Customizing shadow
 
-The angle, distance, and opacity of the shadow can be customized with the shadow property of the node. The following code
-example illustrates how to customize shadow.
+The angle, distance, and opacity of the shadow can be customized with the shadow property of the node. The following code example illustrates how to customize shadow.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,19 +1,17 @@
 
 
-import { Component } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { Component, OnInit } from '@angular/core';
+import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width></ejs-pivotview></div>`
+  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings width=width height='350'></ejs-pivotview>`
 })
-
-export class AppComponent {
-
+export class AppComponent implements OnInit {
     public width: string;
+    public height: number;
     public dataSourceSettings: IDataOptions;
 
     ngOnInit(): void {
@@ -21,20 +19,17 @@ export class AppComponent {
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
-            expandAll: false,
-            allowLabelFilter: true,
-            allowValueFilter: true,
-            enableSorting: true,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C2', useGrouping: false, currency: 'EUR' }],
-            filters: []
+        dataSource: Pivot_Data as IDataSet[],
+        expandAll: false,
+        allowLabelFilter: true,
+        filterSettings: [{ name: 'Amount', type: 'Number', condition: 'LessThan', value1: '40000' }],
+        columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+        values: [{ name: 'Sold', caption: 'Units Sold' }],
+        rows: [{ name: 'Amount', caption: 'Sold Amount' }],
+        filters: [{ name: 'Country' }, { name: 'Products' }]
         };
     }
- }
+}
 
 
 

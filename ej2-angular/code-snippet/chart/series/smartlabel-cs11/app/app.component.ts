@@ -5,7 +5,7 @@ import { labelData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-accumulationchart id="chart-container">
+    `<ejs-accumulationchart id="chart-container" (textRender)="onTextRender($event)">
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' [dataLabel]='datalabel'></e-accumulation-series>
         </e-accumulation-series-collection>
@@ -15,8 +15,12 @@ export class AppComponent implements OnInit {
     public piedata: Object[];
     public datalabel: Object;
     ngOnInit(): void {
-        this.datalabel = { visible: true, template: "<div id='dataLabelTemplate'>${point.percentage}%</div>" };
+        this.datalabel = { visible: true };
         this.piedata = labelData;
+
+        this.onTextRender = (args: IAccTextRenderEventArgs): void {
+             args.text = args.point.percentage + "%";
+        }
     }
 
 }

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview in Angular Common component
+# Globalization
 
 Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (Internationalization (L18N)) and adding cultural-specific customizations and translating the text (Localization (L10N)). The Syncfusion Angular UI components are specific to the `American English (en-US)` culture by default.
 

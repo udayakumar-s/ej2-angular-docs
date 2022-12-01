@@ -11,13 +11,11 @@ domainurl: ##DomainURL##
 
 # Gauge ranges in Angular Circular gauge component
 
-You can categories certain interval on gauge axis using
-[`ranges`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#properties) property.
+You can categories certain interval on gauge axis using [`ranges`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#properties) property.
 
 ## Start and End
 
-Start and end value of a range in an axis can be customized by using
-[`start`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#start-number) and [`end`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#end-number) properties.
+Start and end value of a range in an axis can be customized by using [`start`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#start-number) and [`end`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#end-number) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,10 +33,7 @@ Start and end value of a range in an axis can be customized by using
 
 ## Customization
 
-Color and thickness of the range can be customized by using
-[`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#color-string),
-[`startWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#startwidth-number) and
-[`endWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#endwidth-number) property.
+Color and thickness of the range can be customized by using [`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#color-string), [`startWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#startwidth-number) and [`endWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#endwidth-number) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,8 +53,7 @@ Color and thickness of the range can be customized by using
 
 ## Radius
 
-You can place the range inside or outside of the axis by using
-[`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#radius-string) property.
+You can place the range inside or outside of the axis by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#radius-string) property.
 The radius of the range can takes value either in percentage or in pixels.
 By default, ranges take 100% of the axis radius.
 
@@ -126,8 +120,7 @@ The ranges can be dragged on the axis line by clicking and dragging the same. To
 
 You can add multiple ranges to an axis with the above customization as demonstrated below.
 
->Note: You can set the range color to axis ticks and labels by enabling `useRangeColor` property in [`majorTicks`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tick),
-[`minorTicks`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tick) and [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/label) object.
+>Note: You can set the range color to axis ticks and labels by enabling `useRangeColor` property in [`majorTicks`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tick), [`minorTicks`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tick) and [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/label) object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

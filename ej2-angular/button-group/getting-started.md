@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Button group component
+# Getting started with Angular Button group component
 
 This section explains how to create a simple CSS ButtonGroup, and demonstrate the basic usage of the CSS ButtonGroup component in an Angular environment.
 

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Property | Purpose
 -----|-----
- [`enabled`](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker#enabled) | The component can be restricted on a page, by setting `enabled` value as **false** which will disable the component completely from all user interactions including in form post action.
+[`enabled`](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker#enabled) | The component can be restricted on a page, by setting `enabled` value as **false** which will disable the component completely from all user interactions including in form post action.
 [`placeholder`](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker#placeholder) | Using `placeholder` you can display a short hint about the expected value in the input element.
 [`readonly`](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker#readonly)       | Editing the value in the component can be prevented by setting `readonly` as **true**, but value can be included in the form post action.
 

@@ -2,11 +2,11 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ToolbarItems } from '@syncfusion/ej2-treegrid';
+import { ToolbarItems, ExcelExportProperties } from '@syncfusion/ej2-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' (excelExportComplete)='excelExportComplete($event)' (toolbarClick)='toolbarClick($event)' [allowPaging]='true' [allowExcelExport]='true' [pageSettings]='pager' [treeColumnIndex]='1'  childMapping='subtasks' [toolbar]='toolbarOptions'>
+    template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' (toolbarClick)='toolbarClick($event)' [allowPaging]='true' [allowExcelExport]='true' [pageSettings]='pager' [treeColumnIndex]='1'  childMapping='subtasks' [toolbar]='toolbarOptions'>
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -30,16 +30,18 @@ export class AppComponent implements OnInit {
     }
     toolbarClick(args: Object) : void {
         if (args['item'].text === 'Excel Export') {
-            let cols: Column[] = this.treeGridObj.grid.columns;
-            cols[2].visible = false;
-            cols[3].visible = true;
-            this.treeGridObj.excelExport();
+            let exportProperties: ExcelExportProperties = {
+                theme: {
+                    header: {
+                        fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true, borders: { color: '#64FA50', lineStyle: 'Thin' }
+                    },
+                    record: {
+                        fontColor: '#64FA50', fontName: 'Calibri', fontSize: 17, bold: true
+                    }
+                }
+            };
+            this.treeGridObj.excelExport(exportProperties);
         }
-    }
-    excelExportComplete(): void {
-        let cols: Column[] = this.treeGridObj.grid.columns;
-        cols[3].visible = false;
-        cols[2].visible = true;
     }
 }
 

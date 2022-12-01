@@ -5,6 +5,7 @@ import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular
 import { AppComponent } from './app.component';
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { FormsModule } from '@angular/forms';
 
 /**
  * Module
@@ -14,7 +15,8 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
         BrowserModule,
         TreeGridModule,
         ButtonModule,
-        DropDownListAllModule
+        DropDownListAllModule,
+        FormsModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],

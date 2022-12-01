@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Deployment in Angular Common component
+# Deployment
 
 ## CDN
 
@@ -46,8 +46,7 @@ Syncfusion Angular UI Components (Essential JS 2) packages is published and avai
 
 ### Anatomy of NPM Packages
 
-Syncfusion Angular UI Components (Essential JS 2) are shipped as npm packages. Following
-table explains the purpose of each file available in the package.
+Syncfusion Angular UI Components (Essential JS 2) are shipped as npm packages. Following table explains the purpose of each file available in the package.
 
 |    Files                                                                  |    Purpose                                                                                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

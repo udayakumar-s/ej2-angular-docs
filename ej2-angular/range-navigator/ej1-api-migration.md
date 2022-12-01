@@ -16,7 +16,6 @@ This article describes the API migration process of Chart component from Essenti
 
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable MD038 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 |Allow snapping| **Property:** *allowSnapping* <br/><br/>`<ej:RangeNavigator`<br/>`[allowSnapping]="true">` <br/>`</ej:RangeNavigator>`|**Property:** *allowSnapping* <br/><br/>`<ejs-rangenavigator  [allowSnapping]='allowSnapping'>`<br/>`</ejs-rangenavigator>`<br/>this.allowSnapping= true; |
@@ -55,7 +54,6 @@ This article describes the API migration process of Chart component from Essenti
 ## Series
 
 <!-- markdownlint-disable MD033 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 |animation| **Property:** *enableAnimation* <br/><br>`<ej:RangeNavigator`<br/>`enableAnimation="true">` <br/>`</ej:RangeNavigator>`|**Property:** *animation.enable* <br/><br/>`<ejs-rangenavigator  [animation]='animation'>`<br/>`</ejs-rangenavigator>`<br/>this.animation={ enable: true}|
@@ -72,7 +70,6 @@ This article describes the API migration process of Chart component from Essenti
 ## StyleSettings
 
 <!-- markdownlint-disable MD033 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 |Style settings of range navigator| **Property:** *navigatorStyleSettings* <br/><br>this.navigatorStyleSettings = { leftThumbTemplate: 'left' };<br/>`<ej:RangeNavigator`<br/>`[navigatorStyleSettings]="navigatorStyleSettings">` <br/>`</ej:RangeNavigator>`|**Property:** *navigatorStyleSettings* <br/><br/>`<ejs-rangenavigator `<br/>`[navigatorStyleSettings]='navigatorStyleSettings'`<br/>`</ejs-rangenavigator>`<br/>this.navigatorStyleSettings = { leftThumbTemplate: 'left' };|
@@ -91,7 +88,6 @@ This article describes the API migration process of Chart component from Essenti
 ## Tooltip
 
 <!-- markdownlint-disable MD033 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 |tooltip| **Property:** *visible* <br/><br>this.tooltipSettings = { visible: true};<br/>`<ej:RangeNavigator`<br/>`[tooltipSettings]= "Tooltip">` <br/>`</ej:RangeNavigator>`|**Property:** *enable* <br/><br/>`<ejs-rangenavigator `<br/>`[tooltip]='tooltip'`<br/>`</ejs-rangenavigator>`<br/>this.tooltip= { enable: true }|
@@ -106,7 +102,6 @@ This article describes the API migration process of Chart component from Essenti
 ## Period Selector
 
 <!-- markdownlint-disable MD033 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 |period Selector position|Not Applicable|**Property:** *periodSelectorSettings.position* <br/><br/>`<ejs-rangenavigator `<br/>`[periodSelectorSettings]='periodsValue'`<br/>`</ejs-rangenavigator>`<br/>this.periodsValue = { }|
@@ -114,7 +109,6 @@ This article describes the API migration process of Chart component from Essenti
 ## Methods
 
 <!-- markdownlint-disable MD033 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 |Print|Not Applicable|**Property:** *print()* <br/><br/><br/>`<ejs-rangenavigator `<br/>`#range id="range"`<br/>`</ejs-rangenavigator>`<br/>print(){<br/>this.RangeObj.print();}|
@@ -123,7 +117,6 @@ This article describes the API migration process of Chart component from Essenti
 ## Events
 
 <!-- markdownlint-disable MD033 -->
-
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 | --- | --- | --- |
 |Fires before loading the RangeNavigator.| **Property:** *load* <br/><br/>`<ej:RangeNavigator`<br/>`(load)="load($event)">` <br/>`</ej:RangeNavigator>`<br/>load(sender){ };|**Property:** *load* <br/><br/>`<ejs-rangenavigator `<br/>`load={this.load.bind(this)}`<br/>`</ejs-rangenavigator>`<br/> public load(): void { };|

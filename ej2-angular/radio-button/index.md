@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Radio button component
 
-The RadioButton is a graphical user interface element that allows you to select only one option
-from the choices. It contains checked and unchecked states.
+The RadioButton is a graphical user interface element that allows you to select only one option from the choices. It contains checked and unchecked states.
 
 ## Key Features
 

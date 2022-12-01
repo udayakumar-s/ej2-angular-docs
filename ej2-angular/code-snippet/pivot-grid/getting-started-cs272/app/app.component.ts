@@ -1,41 +1,34 @@
 
 
-import { Component } from '@angular/core';
-import { IDataOptions, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { Component, OnInit } from '@angular/core';
+import { IDataOptions, CellClickEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { noData } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [FieldListService],
-  // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width></ejs-pivotview></div>`
+  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings width=width height='350' (cellClick)='cellClick($event)'></ejs-pivotview>`
 })
-
-export class AppComponent {
-
-    public width: string;
+export class AppComponent implements OnInit {
     public dataSourceSettings: IDataOptions;
-
+    public width: string;
+    public height: number;
+    cellClick(args: CellClickEventArgs) {
+        //trigger for evey cell click in pivot table
+    }
     ngOnInit(): void {
-
-        this.width = "100%";
+        this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
-            expandAll: false,
-            allowLabelFilter: true,
-            allowValueFilter: true,
-            enableSorting: true,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [],
-            showSubTotals: false
+        dataSource: noData,
+        expandAll: true,
+        formatSettings: [{ name: 'Amount', format: 'C0' }],
+        columns: [{ name: 'Date', showNoDataItems: true}],
+        values: [{ name: 'Quantity', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+        rows: [{ name: 'Country'}, { name: 'State'}],
+        filters: []
         };
     }
- }
+}
 
 
 

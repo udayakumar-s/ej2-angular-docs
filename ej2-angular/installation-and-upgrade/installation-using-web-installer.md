@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installation using web installer in Angular Installation and upgrade component
+# Installation using Web Installer
 
 You can refer to the [Download](../installation-and-upgrade/download/) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
 
@@ -89,7 +89,7 @@ The steps below show how to install Essential Studio JavaScript – EJ2 Web Inst
 
     >Important: The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
-10. The download and installation\uninstallation progress will be displayed as shown below.
+10. The download and installation/uninstallation progress will be displayed as shown below.
 
     ![license download](images/9_.png)
 

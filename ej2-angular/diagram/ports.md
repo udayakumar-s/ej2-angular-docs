@@ -136,5 +136,4 @@ The offset property of port is used to align the port based on fractions. 0 repr
 
 ## Constraints
 
-The constraints property allows to enable/disable certain behaviors of ports. For more information about port
-constraints, refer to [`Port Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#constraints-portconstraints).
+The constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [`Port Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#constraints-portconstraints).

@@ -1,43 +1,64 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView, VirtualScrollService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [VirtualScrollService],
   template: `<div class="col-md-8">
-  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' exportAllPages='false' enableVirtualization='true' width=width></ejs-pivotview></div>
+  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' width=width></ejs-pivotview>
+  <ejs-pivotview #pivotview1 id='PivotView1' [dataSourceSettings]=dataSourceSettings1 allowPdfExport='true' width=width></ejs-pivotview></div>
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
   public width: string;
   public dataSourceSettings: IDataOptions;
+  public dataSourceSettings1: IDataOptions;
   public button: Button;
+  public firstGridPdfExport: Promise<Object>;
 
     @ViewChild('pivotview', {static: false})
     public pivotGridObj: PivotView;
 
+    @ViewChild('pivotview1')
+    public pivotGridObj1: PivotView;
+
     ngOnInit(): void {
+
+        this.width = "100%";
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-            expandAll: true,
+            expandAll: false,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            rows: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            values: [{ name: 'Country' }, { name: 'Products' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: []
+            filters: [],
+            valueSortSettings: { headerText: 'FY 2015##Q1##Amount', headerDelimiter: '##', sortOrder: 'Descending' }
         };
-        this.width = '100%';
+
+        this.dataSourceSettings1 = {
+            dataSource: Pivot_Data,
+            expandAll: false,
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: [],
+            valueSortSettings: { headerText: 'FY 2015##Q1##Amount', headerDelimiter: '##', sortOrder: 'Descending' }
+        };
 
         this.button = new Button({ isPrimary: true });
         this.button.appendTo('#export');
 
         this.button.element.onclick = (): void => {
-            this.pivotGridObj.pdfExport();
+            this.firstGridPdfExport = this.pivotGridObj.grid.pdfExport({}, true);
+            this.firstGridPdfExport.then((pdfData: Object) => {
+                this.pivotGridObj1.pdfExport({}, false, pdfData);
+            });
         };
     }
 }

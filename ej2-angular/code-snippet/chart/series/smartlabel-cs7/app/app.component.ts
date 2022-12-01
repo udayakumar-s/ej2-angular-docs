@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
     public datalabel: Object;
     public enableSmartLabels: boolean;
     ngOnInit(): void {
-        this.datalabel = { visible: true, name: 'text', position: 'Outside', template: '<div>${point.x}</div><div>${point.y}</div>' };
+        this.datalabel = { visible: true, format: 'n2' };
         this.enableSmartLabels = true;
         this.piedata = labelData;
     }

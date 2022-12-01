@@ -69,7 +69,7 @@ Interaction Keys |Description
 <kbd>Shift + F</kbd> |If the current active element is a field's button and if it has a filter icon, the filter dialog will open to perform filtering.
 <kbd>Shift + S</kbd> |If the current active element is a field's button and if it has a sort icon, the sorting will be performed to the selected field.
 <kbd>Shift + E</kbd> |If the current active element is a calculated field's button and if it has an edit icon, the calculated field dialog will be opened to perform editing the selected calculated field.
-<kbd>Enter</kbd> |Performs the selection operation of the current active element. If the current active element is a field's button and it has a dropdown icon, the aggregation menu will open to perform calculations using aggregation options to the selected value field.
+<kbd>Enter</kbd> |Performs the selection operation of the current active element. If the current active element is a field's button and it has a dropdown icon, the aggregation menu will open to perform  calculations using aggregation options to the selected value field.
 <kbd>Delete</kbd> |If the current active element is a field's button, the selected field will be removed from the current report.
 <kbd>DownArrow</kbd> |If the current active element is a tree node, it moves to the next node.
 <kbd>UpArrow</kbd> |If the current active element is a tree node, it moves to the previous node.

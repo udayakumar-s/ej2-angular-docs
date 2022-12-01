@@ -10,10 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular Accumulation chart component
 
-You can club/group few points of the series based on
-[`groupTo`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#groupto) property. For example, if the club
-value is 11, then the points with value less than 11 is grouped together and will be showed as a single
-point with label `others`. The property also takes value in percentage (percentage of total data points value).
+You can club/group few points of the series based on [`groupTo`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#groupto) property. For example, if the club value is 11, then the points with value less than 11 is grouped together and will be showed as a single point with label `others`. The property also takes value in percentage (percentage of total data points value).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

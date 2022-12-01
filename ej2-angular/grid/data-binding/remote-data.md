@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Remote data in Angular Grid component
 
-To bind remote data to grid component, assign service data as an instance of **DataManager** to the
-[`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
+To bind remote data to grid component, assign service data as an instance of **DataManager** to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
 To interact with remote data source,  provide the endpoint **url**.
 
 {% tabs %}
@@ -52,8 +51,7 @@ You can retrieve data from OData service using DataManager. You can refer to the
 ## OData v4 adaptor - Binding OData v4 service
 
 The ODataV4 is an improved version of OData protocols, and the **DataManager** can also retrieve and consume OData v4 services.
-For more details on OData v4 services, refer to the
-[`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197).
+For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197).
 To bind OData v4 service, use the **ODataV4Adaptor**.
 
 {% tabs %}
@@ -103,8 +101,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-The response object should contain properties **Items** and **Count** whose values are a collection of entities and the total count of
-the entities respectively.
+The response object should contain properties **Items** and **Count** whose values are a collection of entities and the total count of the entities respectively.
 
 The sample response object should look like below.
 
@@ -164,7 +161,7 @@ export class AppComponent implements OnInit {
 
 The following code example describes how to fetch the data from **ViewBag** in angular.
 
-```html
+```
     <script type="text/javascript">
        window.griddata = '@Html.Raw(Json.Encode(ViewBag.dataSource))';
     </script>
@@ -197,9 +194,7 @@ The following code example describes the CRUD operations handled at server-side.
 
 ## Custom adaptor
 
-You can create your own adaptor by extending the built-in adaptors. For the sake of demonstrating custom adaptor approach,
-we are going to see how to add a serial number for the records
-by overriding the built-in response processing using the **processResponse** method of the **ODataAdaptor**.
+You can create your own adaptor by extending the built-in adaptors. For the sake of demonstrating custom adaptor approach, we are going to see how to add a serial number for the records by overriding the built-in response processing using the **processResponse** method of the **ODataAdaptor**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

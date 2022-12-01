@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Spinner component
+# Getting started with Angular Spinner component
 
 This section explains the steps to create a simple **Spinner** and configure its functionalities in Angular.
 

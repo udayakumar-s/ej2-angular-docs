@@ -10,10 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize slider thumb in Angular Range slider component
 
-Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize
-the thumb. By default, slider has unique class `e-handle` for slider thumb. You can override the following
-class as per your requirement. Here, in the sample, the slider thumb has been customized to square, circle,
-oval shapes, and background image has also been customized.
+Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the thumb. By default, slider has unique class `e-handle` for slider thumb. You can override the following class as per your requirement. Here, in the sample, the slider thumb has been customized to square, circle, oval shapes, and background image has also been customized.
 
 ```typescript
 

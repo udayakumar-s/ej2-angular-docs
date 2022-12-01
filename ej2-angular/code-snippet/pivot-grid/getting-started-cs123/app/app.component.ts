@@ -1,39 +1,42 @@
 
 
-import { Component } from '@angular/core';
-import { IDataOptions, PivotView, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
+import { Component, OnInit } from '@angular/core';
+import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [GroupingBarService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  [gridSettings]='gridSettings' width=width></ejs-pivotview>`
 })
-
-export class AppComponent {
-
+export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
+    public gridSettings: GridSettings;
 
     ngOnInit(): void {
 
-        this.width = "100%";
+        this.width = '100%';
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
             expandAll: false,
-            allowLabelFilter: true,
-            allowValueFilter: true,
-            enableSorting: true,
+            drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
+
+        this.gridSettings = {
+            allowSelection: true,
+            selectionSettings: { cellSelectionMode: 'Box', type: 'Multiple', mode: 'Cell' }
+        } as GridSettings;
     }
- }
+}
 
 
 

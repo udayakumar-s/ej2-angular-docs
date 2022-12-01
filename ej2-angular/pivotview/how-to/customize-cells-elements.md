@@ -17,14 +17,14 @@ In this demo, the revenue cost for each year is represented with trend icons.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs159/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs161/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs159/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs161/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs159/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs161/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs159" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs161" %}

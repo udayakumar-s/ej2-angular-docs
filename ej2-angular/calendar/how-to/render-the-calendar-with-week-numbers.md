@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Render the calendar with week numbers in Angular Calendar component
 
-You can enable the `weekNumber` in Calendar by using the
-[`weekNumber`](https://ej2.syncfusion.com/angular/documentation/api/calendar#weeknumber)
+You can enable the `weekNumber` in Calendar by using the [`weekNumber`](https://ej2.syncfusion.com/angular/documentation/api/calendar#weeknumber)
 property.
 
 {% tabs %}

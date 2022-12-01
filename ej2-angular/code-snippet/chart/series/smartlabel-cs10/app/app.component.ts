@@ -2,6 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { labelData } from 'datasource.ts';
+import { IAccTextRenderEventArgs } from '@syncfusion/ej2-charts';
 @Component({
     selector: 'app-container',
     template:
@@ -14,12 +15,15 @@ import { labelData } from 'datasource.ts';
 export class AppComponent implements OnInit {
     public piedata: Object[];
     public datalabel: Object;
+    public onTextRender: Function;
     ngOnInit(): void {
         this.datalabel = { visible: true };
         this.piedata = labelData;
-
         this.onTextRender = (args: IAccTextRenderEventArgs): void {
-             args.text = args.point.percentage + "%";
+             if (args.text === '13.5') {
+            args.color = 'red';
+            args.border.width = 1;
+        }
         }
     }
 

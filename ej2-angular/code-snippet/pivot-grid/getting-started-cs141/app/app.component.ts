@@ -9,16 +9,15 @@ import { Pivot_Data } from './datasource.ts';
   providers: [GroupingBarService],
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true'
-  (aggregateMenuOpen)='aggregateMenuOpen($event)' width=width></ejs-pivotview>`
+  (fieldDrop)='fieldDrop($event)' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
 
-    aggregateMenuOpen(args: AggregateMenuOpenEventArgs): void {
-        args.displayMenuCount = 4;
-        if(args.fieldName === 'Amount') {
-            args.aggregateTypes = ['Sum','Avg','Max'];
+    fieldDrop(args: FieldDropEventArgs): void {
+        if(args.dropAxis === 'values') {
+            args.cancel = true;
         }
     }
 

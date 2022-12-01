@@ -28,13 +28,8 @@ export class AppComponent implements OnInit {
             filters: []
         };
         this.hyperlinkSettings = {
-           conditionalSettings: [{
-                measure: 'Sold',
-                conditions: 'Between',
-                value1: 150,
-                value2: 200
-            }],
-            cssClass: 'e-custom-class'
+           showValueCellHyperlink: true,
+           cssClass: 'e-custom-class'
         } as HyperlinkSettings;
         this.width = '100%';
     }

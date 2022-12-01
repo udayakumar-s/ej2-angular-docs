@@ -40,7 +40,7 @@ In the following code example, you can see how to use the refreshTemplates metho
 
 ## Refresh Layout
 
-In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the [`refreshLayout`](https://ej2.syncfusion.com/angular/documentation/api/schedule#refreshlayout) public method.  The following example code explains to know how to use the refreshLayout method.
+In Scheduler, we can able to refresh the layout manually without re-render the DOM element by using the [`refreshLayout`](https://ej2.syncfusion.com/angular/documentation/api/schedule#refreshlayout) public method. The following example code explains to know how to use the refreshLayout method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

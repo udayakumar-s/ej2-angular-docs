@@ -19,8 +19,7 @@ You can use the [`isProtected`](https://ej2.syncfusion.com/angular/documentation
 
 > * The default value for `isProtected` property is `false`.
 
-By default in protected sheet, selecting, formatting, inserting, deleting functionalities are disabled. To enable some of the above said functionalities
-the `protectSettings` options are used in a protected spreadsheet.
+By default in protected sheet, selecting, formatting, inserting, deleting functionalities are disabled. To enable some of the above said functionalities the `protectSettings` options are used in a protected spreadsheet.
 
 The available `protectSettings` options in spreadsheet are,
 

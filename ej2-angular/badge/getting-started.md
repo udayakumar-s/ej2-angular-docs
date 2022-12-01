@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Badge component
+# Getting started with Angular Badge component
 
 The following section explains the steps required to create a simple badge component using styles and its basic usage.
 
@@ -38,8 +38,7 @@ For more information, refer to [Angular sample setup](https://angular.io/guide/s
 npm install @syncfusion/ej2-notifications --save
 ```
 
-* The Badge component CSS files are available in the `ej2-notifications` package folder. This can
-be referenced in your application using the following code.
+* The Badge component CSS files are available in the `ej2-notifications` package folder. This can be referenced in your application using the following code.
 
 `[src/styles.css]`
 

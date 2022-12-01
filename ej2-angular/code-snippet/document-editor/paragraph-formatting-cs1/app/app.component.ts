@@ -21,6 +21,8 @@ import {
                 <e-item prefixIcon='e-de-ctnr-decreaseindent e-icons' id='DecreaseIndent' tooltipText='Decrease Indent'></e-item>
                 <e-item type='Separator'></e-item>
                 <e-item prefixIcon='e-de-ctnr-clearall e-icons' id='ClearFormat' tooltipText='ClearFormatting'></e-item>
+                <e-item type='Separator'></e-item>
+                <e-item prefixIcon='e-de-e-paragraph-mark e-icons' id='ShowParagraphMark' tooltipText='Show the hidden characters like spaces, tab, paragraph marks, and breaks.(Ctrl + *)'></e-item>
             </e-items>
         </ejs-toolbar>
       </div>
@@ -63,6 +65,10 @@ export class AppComponent {
                 //Clear formatting for selected paragraph or content.
                 this.documentEditor.editor.clearFormatting();
                 break;
+            case 'ShowParagraphMark':
+                //Show or hide the hidden characters like spaces, tab, paragraph marks, and breaks.
+                this.documentEditor.documentEditorSettings.showHiddenMarks = !this.documentEditor.documentEditorSettings.showHiddenMarks;
+                break;
         }
     }
 
@@ -70,7 +76,7 @@ export class AppComponent {
     public onSelectionChange() {
         if (this.documentEditor.selection) {
             var paragraphFormat = this.documentEditor.selection.paragraphFormat;
-            var toggleBtnId = ['AlignLeft', 'AlignCenter', 'AlignRight', 'Justify'];
+            var toggleBtnId = ['AlignLeft', 'AlignCenter', 'AlignRight', 'Justify', 'ShowParagraphMark'];
             //Remove toggle state.
             for (var i = 0; i < toggleBtnId.length; i++) {
                 let toggleBtn: HTMLElement = document.getElementById(toggleBtnId[i]);
@@ -85,6 +91,9 @@ export class AppComponent {
                 document.getElementById('AlignCenter').classList.add('e-btn-toggle');
             } else {
                 document.getElementById('Justify').classList.add('e-btn-toggle');
+            }
+            if(this.documentEditor.documentEditorSettings.showHiddenMarks) {
+                document.getElementById('ShowParagraphMark').classList.add('e-btn-toggle');
             }
             // #endregion
         }

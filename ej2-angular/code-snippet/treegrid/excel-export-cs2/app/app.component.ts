@@ -2,16 +2,16 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ToolbarItems, ExcelExportProperties } from '@syncfusion/ej2-treegrid';
+import { ToolbarItems, ExcelExportProperties, RowDataBoundEventArgs, ExcelQueryCellInfoEventArgs } from '@syncfusion/ej2-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' (toolbarClick)='toolbarClick($event)' [allowPaging]='true' [allowExcelExport]='true' [pageSettings]='pager' [treeColumnIndex]='1'  childMapping='subtasks' [toolbar]='toolbarOptions'>
+    template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' (queryCellInfo)='queryCellInfo($event)' (excelQueryCellInfo)='excelQueryCellInfo($event)' (toolbarClick)='toolbarClick($event)' [allowPaging]='true' [allowExcelExport]='true' [pageSettings]='pager' [treeColumnIndex]='1'  childMapping='subtasks' [toolbar]='toolbarOptions'>
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
                     <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=120></e-column>
-                    <e-column field='duration' headerText='Duration' [visible]='false' textAlign='Right' width=110></e-column>
+                    <e-column field='duration' headerText='Duration' textAlign='Right' width=110></e-column>
         </e-columns>
                 </ejs-treegrid>`
 })
@@ -30,10 +30,24 @@ export class AppComponent implements OnInit {
     }
     toolbarClick(args: Object) : void {
         if (args['item'].text === 'Excel Export') {
-            let exportProperties: ExcelExportProperties = {
-                includeHiddenColumn: true
-            };
-            this.treeGridObj.excelExport(exportProperties);
+            this.treeGridObj.excelExport();
+        }
+    }
+    excelQueryCellInfo(args: ExcelQueryCellInfoEventArgs): void {
+        if(args.column.field == 'duration'){
+            if(args.value === 0 || args.value === "") {
+                args.style = {backColor: '#336c12'};
+            }
+            else if(args.value < 3) {
+                args.style = {backColor: '#7b2b1d'};
+            }
+        }
+    }
+    queryCellInfo(args: RowDataBoundEventArgs): void {
+        if (args.data['duration'] == 0 && args.column.field === 'duration' ) {
+            args.cell.style.background= '#336c12';
+        } else if (args.data['duration'] < 3 && args.column.field === 'duration') {
+            args.cell.style.background= '#7b2b1d';
         }
     }
 }

@@ -1,23 +1,29 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { IDataOptions, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
-import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { Button } from '@syncfusion/ej2-buttons';
+import { PdfExportProperties } from '@syncfusion/ej2-grids';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [PivotChartService],
-  // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
+  template: `<div class="col-md-8">
+  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' width=width></ejs-pivotview></div>
+  <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
-    public chartSettings: ChartSettings;
-    public displayOption: DisplayOption;
+  public width: string;
+  public dataSourceSettings: IDataOptions;
+  public button: Button;
+  public pdfExportProperties: PdfExportProperties;
+
+    @ViewChild('pivotview', {static: false})
+    public pivotGridObj: PivotView;
 
     ngOnInit(): void {
+
+        this.width = "100%";
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
@@ -26,11 +32,19 @@ export class AppComponent implements OnInit {
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: []
+            filters: [],
+            valueSortSettings: { headerText: 'FY 2015##Q1##Amount', headerDelimiter: '##', sortOrder: 'Descending' }
         };
 
-        this.displayOption = { view: 'Chart' } as DisplayOPtion;
-        this.chartSettings = { chartSeries: { type: 'Column' }} as ChartSettings;
+        this.button = new Button({ isPrimary: true });
+        this.button.appendTo('#export');
+
+        this.button.element.onclick = (): void => {
+            this.pdfExportProperties = {
+                pageOrientation: 'Landscape'
+            };
+            this.pivotGridObj.pdfExport(this.pdfExportProperties);
+        };
     }
 }
 

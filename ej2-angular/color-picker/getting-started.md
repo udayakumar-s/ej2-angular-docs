@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Color picker component
+# Getting started with Angular Color picker component
 
 This section explains how to create a default ColorPicker and demonstrate the basic usage of the ColorPicker module.
 
@@ -154,8 +154,7 @@ The following example shows a default ColorPicker component.
 
 ## Inline type
 
-By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To
-render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#inline) property to `true`.
+By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#inline) property to `true`.
 
 The following sample shows the inline type rendering of ColorPicker.
 

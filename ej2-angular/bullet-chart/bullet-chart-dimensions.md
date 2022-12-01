@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 The size of the Bullet Chart is determined by the container size, and it can be changed inline or via CSS as following.
 
-```html
+```
     <div style="width:650px; height:350px;">
         <ejs-bulletchart id="app-container"></ejs-bulletchart>
     </div>

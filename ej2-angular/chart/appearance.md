@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Custom Color Palette
 
-You can customize the default color of series or points by providing a custom color palette of your choice by
-using the [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#palettes) property
+You can customize the default color of series or points by providing a custom color palette of your choice by using the [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#palettes) property
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,9 +30,7 @@ using the [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/char
 
 ## Point Level Customization
 
-Marker, datalabel and fill color of each data point can be customized with
-[`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#pointrender) and
-[`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#textrender) event.
+Marker, datalabel and fill color of each data point can be customized with [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#pointrender) and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#textrender) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

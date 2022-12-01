@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.piedata = pieData;
         this.tooltip = {
-              enable: true, header:"Pie Chart"
+                enable: true
                 }
         };
     }

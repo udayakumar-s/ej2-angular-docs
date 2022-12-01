@@ -2,19 +2,16 @@
 
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
-import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [gridSettings]='gridSettings' width=width></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
 
     ngOnInit(): void {
 
@@ -30,10 +27,6 @@ export class AppComponent implements OnInit {
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
-
-        this.gridSettings = {
-            columnWidth: 120
-        } as GridSettings;
     }
 }
 

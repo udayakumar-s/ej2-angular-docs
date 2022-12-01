@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installation using offline installer in Angular Installation and upgrade component
+# Installation using offline installer 
 
 You can refer to the [Download](../installation-and-upgrade/download/) section to learn how to get the JavaScript – EJ2 trial or licensed installer.
 
@@ -51,7 +51,7 @@ The steps below show how to install the Essential Studio JavaScript – EJ2 inst
 
 3. After reading the License Terms and Privacy Policy, check the **“I agree to the License Terms and Privacy Policy”** check box. Click the Next button.
 
-4. Change the install and sample locations here. You can also change the Additional settings. Click Next\Install to install with the default settings.
+4. Change the install and sample locations here. You can also change the Additional settings. Click Next/Install to install with the default settings.
 
     ![license download](images/offline4.png)
 
@@ -109,7 +109,7 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     >Note: [..] – Arguments inside the square brackets are optional.
 
-    **Example:** “D:\Temp\syncfusionejs2x.x.x.x.exe” /Install silent /UNLOCKKEY:“product unlock key” /log “C:\Temp\EssentialStudioPlatform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+    **Example:** “D:/Temp/syncfusionejs2x.x.x.x.exe” /Install silent /UNLOCKKEY:“product unlock key” /log “C:/Temp/EssentialStudioPlatform.log” /InstallPath:C:/Syncfusion/x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 7. Essential Studio for JavaScript (Essential JS2) is installed.
 

@@ -1,30 +1,48 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Pivot_Data } from './datasource.ts';
+import { Observable } from 'rxjsObservable';
 
 @Component({
   selector: 'app-container',
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  width=width></ejs-pivotview></div>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  [gridSettings]='gridSettings' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
     public width: string;
     public dataSourceSettings: IDataOptions;
+    public gridSettings: GridSettings;
+    public observable = new Observable();
 
     ngOnInit(): void {
 
-        this.width = "100%";
+        this.width = '100%';
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
+            expandAll: false,
+            drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
-            grandTotalsPosition: 'Top',
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: []
         };
+
+        this.gridSettings = {
+            columnWidth: 140,
+            columnRender: this.observable.subscribe(args => {
+                // Here you can customize the specific columns.
+                for (var i = 0; i < (args as any).columns.length; i++) {
+                    (args as any).columns[i].autoFit = true;
+                    (args as any).columns[i].textAlign="Right";
+                }
+            }) as any
+        } as GridSettings;
     }
 }
 

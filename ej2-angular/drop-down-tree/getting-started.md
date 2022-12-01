@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Drop down tree component
+# Getting started with Angular Drop down tree component
 
 This section explains you about how to create a simple **Dropdown Tree** component and configure its available
 functionalities in Angular.

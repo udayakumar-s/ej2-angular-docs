@@ -18,25 +18,6 @@ domainurl: ##DomainURL##
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progress-bar/customization-cs6/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-bar/customization-cs6/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progress-bar/customization-cs6/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs6" %}
-
-## ProgressCompleted
-
-<!-- markdownlint-disable MD033 -->
-**ProgressCompleted** event is triggered when the progress attains the Maximum value.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/progress-bar/customization-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -48,3 +29,22 @@ domainurl: ##DomainURL##
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs7" %}
+
+## ProgressCompleted
+
+<!-- markdownlint-disable MD033 -->
+**ProgressCompleted** event is triggered when the progress attains the Maximum value.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/progress-bar/customization-cs8/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/progress-bar/customization-cs8/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/progress-bar/customization-cs8/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/progress-bar/customization-cs8" %}

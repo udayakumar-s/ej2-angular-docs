@@ -1,34 +1,27 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { formatData } from './datasource';
-
+import { Component, OnInit,ViewChild } from '@angular/core';
+import { sampleData } from './datasource';
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' >
-       <e-columns>
-                    <e-column field='orderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                    <e-column field='orderName' headerText='Order Name' [valueAccessor]='orderFormatter' textAlign='Left' width=180></e-column>
-                    <e-column field='orderDate' headerText='Order Date' textAlign='Right'  width=160 format='yMd'></e-column>
-                    <e-column field='price' headerText='Price' textAlign='Right' [valueAccessor]='currencyFormatter'  width=80></e-column>
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'  [allowFiltering]="true" [allowSorting]="true">
+        <e-columns>
+                    <e-column field='taskID' headerText='Task ID' [allowSorting]="false" textAlign='Right' width=120></e-column>
+                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+                    <e-column field='startDate' headerText='Start Date' [allowFiltering]="false" textAlign='Right' format='yMd' width=120></e-column>
+                    <e-column field='duration' headerText='Duration' textAlign='Right' width=120></e-column>
+                    <e-column field='progress' headerText='Progress' textAlign='Right' width=120></e-column>
         </e-columns>
-                </ejs-treegrid>`
+                </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
 
     public data: Object[];
 
     ngOnInit(): void {
-        this.data = formatData;
+        this.data = sampleData;
     }
-
- currencyFormatter(field: string, data: Object, column: Object): string {
-    return '€' + data['price'];
 }
 
- orderFormatter(field: string, data: Object, column: Object): string {
-    return data[field] + '-' + data['Category'];
-}
-}
 
 

@@ -15,7 +15,6 @@ This article describes the API migration process of DatePicker component from Es
 ## Date Selection
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -50,7 +49,6 @@ Setting the value
 ## Date Format
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -101,7 +99,6 @@ Day header format
 ## Calendar Views
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -157,7 +154,6 @@ Depth view
 ## Date Range
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -213,7 +209,6 @@ Maximum date
 ## Disabled Dates
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -260,7 +255,6 @@ public disableDate(args) {
 ## Customization
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -349,7 +343,7 @@ Show/Hide the other month dates
 <ejs-datepicker id="datepicker"></ejs-datepicker>
 ```
 
-```
+```css
 
 .e-datepicker .e-calendar .e-content tr.e-month-hide, .e-datepicker .e-calendar .e-content td.e-other-month > .e-day {
         visibility: none;
@@ -410,7 +404,7 @@ public onFocus(args:any) {
 }
 ```
 
-```
+```css
 .e-control-wrapper .e-input-group-icon.e-date-icon {
     display: none;
 ```
@@ -436,7 +430,7 @@ Enable/Disable the rounded corner
 <ejs-datepicker id="datepicker" #dateObj cssClass='e-customStyle'></ejs-datepicker>
 ```
 
-```
+```css
 .e-control-wrapper.e-customStyle.e-date-wrapper.e-input-group {
     border-radius: 4px;
 }
@@ -577,7 +571,7 @@ public highlightDate(args:any) {
 }
 ```
 
-```
+```css
 .e-highlightweekend {
     background-color: #cfe9f3;
 }
@@ -613,7 +607,7 @@ public highlightDate(args:any) {
 }
 ```
 
-```
+```css
 .e-highlightweekend {
     background-color: #cfe9f3;
 }
@@ -840,7 +834,6 @@ public onOpen(args:any) {
 ## Accessibility
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -875,7 +868,6 @@ Enable/Disable the RTL
 ## Persistence
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -910,7 +902,6 @@ Enable/Disable the persistence
 ## Validation
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1003,7 +994,6 @@ this.formObject = new FormValidator('#form-element', options);
 ## Common
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1088,7 +1078,7 @@ Height
 <ejs-datepicker id="datepicker" cssClass='e-custom-style'></ejs-datepicker>
 ```
 
-```
+```css
 .e-control-wrapper.e-custom-style.e-date-wrapper.e-input-group {
     height: 35px;
 }
@@ -1283,7 +1273,6 @@ Specify the placeholder text behavior
 ## Globalization
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1339,7 +1328,6 @@ First day of week
 ## Strict Mode
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1374,7 +1362,6 @@ Strict mode
 ## Open and Close
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>
@@ -1518,7 +1505,6 @@ public onCreate(args:any){
 ## View Navigation
 
 <!-- markdownlint-disable MD033 -->
-
 <table>
 <thead>
 <tr>

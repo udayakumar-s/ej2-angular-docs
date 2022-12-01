@@ -20,13 +20,11 @@ We can trigger `actionBegin` event before every ListView action starts.
 
 ### actionComplete  `EmitType<Object>`
 
-We can trigger `actionComplete` event for every ListView action success event
- with the dataSource parameter.
+We can trigger `actionComplete` event for every ListView action success event with the dataSource parameter.
 
 ### actionFailure  `EmitType<Object>`
 
-We can trigger `actionFailure` event for every ListView action failure event
- with the dataSource parameter.
+We can trigger `actionFailure` event for every ListView action failure event with the dataSource parameter.
 
 ### select [`EmitType<SelectEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api-selectEventArgs.html)
 
@@ -42,13 +40,11 @@ It is used to set the position of check box in an item.
 
 ### cssClass `string`
 
-This cssClass property helps to use custom skinning option for ListView component,
- by adding the mentioned class name into root element of ListView.
+This cssClass property helps to use custom skinning option for ListView component, by adding the mentioned class name into root element of ListView.
 
 ### dataSource ``Object`[]` &#124;  `string[]` &#124;  `DataManager`
 
-It provides the data to render the ListView component which is mapped
- with the fields of ListViewhttps://ej2.syncfusion.com/angular/documentation
+It provides the data to render the ListView component which is mapped with the fields of ListViewhttps://ej2.syncfusion.com/angular/documentation
 
 ### enable `boolean`
 
@@ -64,8 +60,7 @@ Enable or disable rendering component in right to left direction.
 
 ### fields [`FieldSettingsModel`](./api-fieldSettingsModel.html)
 
-It is used to map keys from the dataSource which extracts the appropriate data from the dataSource
- with specified mapped with the column fields to render the ListView.
+It is used to map keys from the dataSource which extracts the appropriate data from the dataSource with specified mapped with the column fields to render the ListView.
 
 ### groupTemplate `string`
 

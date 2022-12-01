@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Maskedtextbox component
 
-The MaskedTextBox is characterized with complete ARIA Accessibility support that helps to access
-through the on-screen readers and other assistive technology devices. This component is designed with the
-reference of the guidelines document given in [WAI ARAI Accessibility practices](https://www.w3.org/TR/wai-aria/#textbox ).
+The MaskedTextBox is characterized with complete ARIA Accessibility support that helps to access through the on-screen readers and other assistive technology devices. This component is designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](https://www.w3.org/TR/wai-aria/#textbox ).
 
 The MaskedTextBox uses the `textbox` role and following ARIA properties for its element based on its state.
 

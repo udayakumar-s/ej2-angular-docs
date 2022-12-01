@@ -8,7 +8,7 @@ import { Pivot_Data } from './datasource.ts';
   selector: 'app-container',
   providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width></ejs-pivotview></div>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' enableFieldSearching='true' width=width></ejs-pivotview></div>`
 })
 
 export class AppComponent {
@@ -28,10 +28,10 @@ export class AppComponent {
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
-            filters: [],
-            excludeFields:["Products", "Amount" ]
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: []
         };
     }
  }

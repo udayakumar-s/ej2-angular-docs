@@ -5,7 +5,7 @@ import { pieData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [title]='title' [subTitle]='subTitle'>
+    `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [title]='title' [titleStyle]='titleStyle'>
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' type='Pie'></e-accumulation-series>
         </e-accumulation-series-collection>
@@ -15,8 +15,7 @@ export class AppComponent implements OnInit {
     public piedata: Object[];
     public legendSettings: Object;
     public title: string;
-    public SubTitle: string;
-    public subTitleStyle: Object;
+    public titleStyle: Object;
     ngOnInit(): void {
         this.piedata = [{ x: 'Saudi Arabia', y: 58, text: '58%' },
                         { x: 'Persian Gulf', y: 15, text: '15%' },
@@ -29,7 +28,13 @@ export class AppComponent implements OnInit {
             visible: false
         };
         this.title = 'Oil and other liquid imports in USA';
-        this.subTitle = 'In the year 2014 - 2015';
+        this.titleStyle = {
+            fontFamily: "Arial",
+            fontStyle: 'italic',
+            fontWeight: 'regular',
+            color: "#E27F2D",
+            size: '23px'
+     }
     }
 
 }

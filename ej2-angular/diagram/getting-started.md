@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Diagram component
+# Getting started with Angular Diagram component
 
 This section explains you the steps required to create a simple diagram and demonstrate the basic usage of the diagram control.
 

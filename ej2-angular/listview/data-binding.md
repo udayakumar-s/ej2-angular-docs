@@ -59,8 +59,7 @@ ListView supports to load the array of primitive data like string and numbers. H
 
 ### Array of JSON data
 
-ListView can generate its list items through an array of complex data. To get it work properly,
-you should map the appropriate columns to field property.
+ListView can generate its list items through an array of complex data. To get it work properly, you should map the appropriate columns to field property.
 
 In below example, role column has mapped with text field.
 
@@ -80,8 +79,7 @@ In below example, role column has mapped with text field.
 
 ## Bind to remote data
 
-ListView supports to retrieve the data from remote data services with the help of DataManager component
-and Query property allows to fetch data and return it to ListView from the database.
+ListView supports to retrieve the data from remote data services with the help of DataManager component and Query property allows to fetch data and return it to ListView from the database.
 
 In the below sample, displayed first 6 Products from Product table of NorthWind data service.
 

@@ -32,8 +32,7 @@ export class AppComponent implements OnInit {
         };
 
         this.gridSettings = {
-            allowSelection: true,
-            selectionSettings: { mode: 'Both' }
+            gridLines: 'Vertical'
         } as GridSettings;
     }
 }

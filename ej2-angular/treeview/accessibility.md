@@ -10,10 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Treeview component
 
-The TreeView component has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles,
-states, and properties along with `keyboard support`. This component is characterized
-by complete keyboard interaction support and ARIA accessibility support that makes it easy for people
-who use assistive technologies (AT) and those who completely rely on keyboard navigation.
+The TreeView component has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 
 ## ARIA attributes
 

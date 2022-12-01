@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Badge component
 
-Badges can be used to alert users about new or unread messages, notifications, and
-additional information to the content. This can be used in conjunction with lists to
+Badges can be used to alert users about new or unread messages, notifications, and additional information to the content. This can be used in conjunction with lists to
 represent each list’s timeline such as ‘new’, ‘old’, and ‘preview’.
 
 ## Key features

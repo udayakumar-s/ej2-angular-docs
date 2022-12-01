@@ -37,9 +37,7 @@ For example, you can display file type icon along with default UI elements.
 ## Custom template
 
 You can design the own template by preventing the default file list including buttons.
-The `showFileList` property is used to display whether the default file list or own file list when you use
-custom template to upload or remove the files, pass the custom UI argument as true to call
-`upload`/`remove` public method as follows:
+The `showFileList` property is used to display whether the default file list or own file list when you use custom template to upload or remove the files, pass the custom UI argument as true to call `upload`/`remove` public method as follows:
 
 * UploaderObj.upload(filesData, true);
 
@@ -49,17 +47,17 @@ Refer to the following code sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/cus-template-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/cus_template-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/cus-template-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/cus_template-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/cus-template-cs1/app/main.ts %}
+{% include code-snippet/uploader/cus_template-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/cus-template-cs1" %}
+{% previewsample "page.domainurl/code-snippet/uploader/cus_template-cs1" %}
 
 > You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
 

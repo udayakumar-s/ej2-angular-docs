@@ -17,6 +17,9 @@ export class AppComponent {
     public close() {
         console.log("Sidebar Closed");
     }
+    openClick() {
+        this.sidebar.show();
+    }
     toggleClick() {
         this.sidebar.toggle();
     }

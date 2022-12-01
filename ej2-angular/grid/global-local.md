@@ -13,9 +13,7 @@ domainurl: ##DomainURL##
 ## Localization
 
 The [`Localization`](../common/localization/) library allows you to localize default text content of the Grid.
-The grid component has static text on some features (like group drop area text, pager information text, etc.)
-that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
-[`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value and translation object.
+The grid component has static text on some features (like group drop area text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value and translation object.
 
 The following list of properties and its values are used in the grid.
 
@@ -139,9 +137,7 @@ The below example demonstrates the Grid in **Deutsch** culture.
 
 ## Internationalization
 
-The [`Internationalization`](../common/intl.html) library is used to globalize number, date,
-and time values in grid component using format strings in the
-[`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
+The [`Internationalization`](../common/intl.html) library is used to globalize number, date, and time values in grid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
 
 For importing **json** files in your application, you need to include the **json-typings.d.ts** file.
 

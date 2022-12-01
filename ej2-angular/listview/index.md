@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Index in Angular Listview component
 
-ListView component represent data in interactive hierarchical structure interface across different layouts or views,
-which also has features data-binding, template and grouping.
+ListView component represent data in interactive hierarchical structure interface across different layouts or views, which also has features data-binding, template and grouping.
 
 ## Key Features
 
@@ -22,11 +21,8 @@ from the local or server-side data source.
 
 * **[Nested list](./nested-list)**:  Displays a set of nested list items in different layout.
 
-* **[Customizing templates](./customizing-templates)**: Allows you to customize the list item,
-header and category group header.
+* **[Customizing templates](./customizing-templates)**: Allows you to customize the list item, header and category group header.
 
-* **[Virtualization](./virtualization)**: Allows you to load only viewable list items in a view
-port which will increase ListView performance on loading large number of data.
+* **[Virtualization](./virtualization)**: Allows you to load only viewable list items in a view port which will increase ListView performance on loading large number of data.
 
-* **[Accessibility](./accessibility)**: Provides built-in accessibility support,
-Which helps to access all the ListView component features through the keyboard, on-screen readers, or other assistive technology devices.
+* **[Accessibility](./accessibility)**: Provides built-in accessibility support, Which helps to access all the ListView component features through the keyboard, on-screen readers, or other assistive technology devices.

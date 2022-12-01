@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Print in Angular Grid component
 
-To print the Grid, use the [`print`](https://ej2.syncfusion.com/angular/documentation/api/grid/#print) method from grid instance. The print option can be displayed on the
-[`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) by adding the **Print** toolbar item.
+To print the Grid, use the [`print`](https://ej2.syncfusion.com/angular/documentation/api/grid/#print) method from grid instance. The print option can be displayed on the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) by adding the **Print** toolbar item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,8 +28,7 @@ To print the Grid, use the [`print`](https://ej2.syncfusion.com/angular/document
 
 ## Page Setup
 
-Some of the print options cannot be configured through JavaScript code. So, you have to customize the layout, paper size,
-and margin options using the browser page setup dialog. Please refer to the following links to know more about the browser page setup:
+Some of the print options cannot be configured through JavaScript code. So, you have to customize the layout, paper size, and margin options using the browser page setup dialog. Please refer to the following links to know more about the browser page setup:
 
 * [`Chrome`](https://support.google.com/chrome/answer/1069693?hl=en&visit_id=1-636335333734668335-3165046395&rd=1)
 * [`Firefox`](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)

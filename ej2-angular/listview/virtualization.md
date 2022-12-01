@@ -10,13 +10,11 @@ domainurl: ##DomainURL##
 
 # Virtualization in Angular Listview component
 
-UI virtualization loads only viewable list items in a view port which will increase ListView performance
-on loading large number of data.
+UI virtualization loads only viewable list items in a view port which will increase ListView performance on loading large number of data.
 
 ## Module injection
 
-In order to use UI Virtualization, we need to import `VirtualizationService` module in the AppModule
-and it should be injected to the provider section as follow
+In order to use UI Virtualization, we need to import `VirtualizationService` module in the AppModule and it should be injected to the provider section as follow
 
 ```typescript
 

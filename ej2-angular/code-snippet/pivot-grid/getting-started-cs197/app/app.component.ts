@@ -24,8 +24,8 @@ export class AppComponent {
                 { name: '[Customer].[Customer Geography]', caption: 'Customer Geography' },
             ],
             columns: [
+                { name: '[Product].[Product Categories]', caption: 'Product Categories' },
                 { name: '[Measures]', caption: 'Measures' },
-                { name: '[Product].[Product Categories]', caption: 'Product Categories' }
             ],
             values: [
                 { name: '[Measures].[Customer Count]', caption: 'Customer Count' },

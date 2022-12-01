@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Pivotview component
+# Getting started with Angular Pivotview component
 
 This section explains you the steps required to create a simple pivot table and demonstrate the basic usage of the [pivot table component](https://www.syncfusion.com/angular-ui-components/angular-pivot-table) in an Angular environment.
 
@@ -309,44 +309,6 @@ The field list allows to add or remove fields and also rearrange the fields betw
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs103/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs103/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs103/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs103" %}
-
-## Enable Grouping Bar
-
-The grouping bar feature automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and alter pivot table at runtime. It also provides option to sort, filter and remove fields. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showgroupingbar) property to **true** and by injecting the `GroupingBarService` module as follows. To know more about grouping bar, [`refer`](./grouping-bar) here.
-
-> If the `GroupingBarService` module is not injected, the grouping bar will not be rendered with the pivot table component.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs104/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs104/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs104/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs104" %}
-
-## Exploring Filter Axis
-
-The filter axis contains collection of fields that would act as master filter over the data bound in row, column and value axes of the pivot table. The fields along with filter members could be set to filter axis either through report via code behind or by dragging and dropping fields from other axes to filter axis via grouping bar or field list at runtime.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs105/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -359,13 +321,11 @@ The filter axis contains collection of fields that would act as master filter ov
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs105" %}
 
-## Calculated field
+## Enable Grouping Bar
 
-The calculated field feature allows user to insert or add a new calculated field based on the available fields from the bound data source using basic arithmetic operators. The calculated field can be included in pivot table using the [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/) from code behind. Or else, calculated fields can be added at run time through the built-in dialog by just setting the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#allowcalculatedfield) property to **true** in pivot table. You will see a button enabled in the Field List UI automatically to invoke the calculated field dialog and perform necessary operation. To know more about calculated field, [`refer`](./calculated-field) here.
+The grouping bar feature automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and alter pivot table at runtime. It also provides option to sort, filter and remove fields. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showgroupingbar) property to **true** and by injecting the `GroupingBarService` module as follows. To know more about grouping bar, [`refer`](./grouping-bar) here.
 
-Also calculated fields can be added to the bound datasource at run time through the built-in popup. The popup can be enabled by setting the `allowCalculatedField` property to true and by injecting the `CalculatedFieldService` module as follows.
-
-> If the `CalculatedFieldService` module is not injected, the calculated field popup will not be rendered with the pivot table component. Moreover calculated field is applicable only for value fields.
+> If the `GroupingBarService` module is not injected, the grouping bar will not be rendered with the pivot table component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -380,6 +340,46 @@ Also calculated fields can be added to the bound datasource at run time through 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs106" %}
+
+## Exploring Filter Axis
+
+The filter axis contains collection of fields that would act as master filter over the data bound in row, column and value axes of the pivot table. The fields along with filter members could be set to filter axis either through report via code behind or by dragging and dropping fields from other axes to filter axis via grouping bar or field list at runtime.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs107/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs107/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs107/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs107" %}
+
+## Calculated field
+
+The calculated field feature allows user to insert or add a new calculated field based on the available fields from the bound data source using basic arithmetic operators. The calculated field can be included in pivot table using the [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/) from code behind. Or else, calculated fields can be added at run time through the built-in dialog by just setting the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#allowcalculatedfield) property to **true** in pivot table. You will see a button enabled in the Field List UI automatically to invoke the calculated field dialog and perform necessary operation. To know more about calculated field, [`refer`](./calculated-field) here.
+
+Also calculated fields can be added to the bound datasource at run time through the built-in popup. The popup can be enabled by setting the `allowCalculatedField` property to true and by injecting the `CalculatedFieldService` module as follows.
+
+> If the `CalculatedFieldService` module is not injected, the calculated field popup will not be rendered with the pivot table component. Moreover calculated field is applicable only for value fields.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs108/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs108/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs108/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs108" %}
 
 ## Run the application
 
@@ -397,17 +397,17 @@ ng serve --prod
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs107/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs109/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs107/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs109/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs107/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs109/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs107" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs109" %}
 
 <!-- markdownlint-disable MD028 -->
 > In Angular, the `ViewChild` method is used to access the instance of the component. It has following parameters.

@@ -10,18 +10,16 @@ domainurl: ##DomainURL##
 
 # Expand mode in Angular Accordion component
 
- The Accordion supports the two listed types of expand modes while expanding or collapsing the item.
+The Accordion supports the two listed types of expand modes while expanding or collapsing the item.
 
 * Single
 * Multiple
 
 ## Single
 
-The property enables to expand only one Accordion item at a time. If you expand any new item,
- the previously expanded one is collapsed and new item changed to expanded state.
+The property enables to expand only one Accordion item at a time. If you expand any new item, the previously expanded one is collapsed and new item changed to expanded state.
 
-You can also choose which accordion pane is expanded state at initial rendering by enabling the
-[`expanded`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItemModel#expanded) property on accordion items.
+You can also choose which accordion pane is expanded state at initial rendering by enabling the [`expanded`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItemModel#expanded) property on accordion items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -38,8 +38,7 @@ The following table illustrates about Hierarchical index in detail.
 
 ## Get the selection start and end hierarchical index
 
-Using [`startOffset`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#startOffset), you can get start hierarchical index which denotes the start index of current selection.
-Similarly, using [`endOffset`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#endOffset), you can get end hierarchical index which denotes the end index of current selection.
+Using [`startOffset`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#startOffset), you can get start hierarchical index which denotes the start index of current selection. Similarly, using [`endOffset`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#endOffset), you can get end hierarchical index which denotes the end index of current selection.
 
 The following code snippet illustrate how to get the selection start and end offset on selection changes in document.
 

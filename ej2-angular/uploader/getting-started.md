@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Uploader component
+# Getting started with Angular Uploader component
 
 This section explains how to create and configure the **uploader** component in Angular. The uploader component is available in @syncfusion/ej2-angular-inputs package. Utilize this package to render the uploader Component.
 

@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Dialog component
 
-Localization library allows to localize the default text content of
-Dialog. In Dialog, The close button's tooltip text alone will be localize based on culture.
+Localization library allows to localize the default text content of Dialog. In Dialog, The close button's tooltip text alone will be localize based on culture.
 
 | Locale key | en-US (default)  |
 |------|------|

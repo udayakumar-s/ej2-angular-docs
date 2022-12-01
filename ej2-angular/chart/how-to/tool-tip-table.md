@@ -18,7 +18,7 @@ Follow the given steps to show the table tooltip,
 
 Initialize the tooltip template div as shown in the following html page,
 
-```html
+```
    <script id="Female-Material" type="text/x-template">
     <div id='templateWrap'>
         <table style="width:100%;  border: 1px solid black;">

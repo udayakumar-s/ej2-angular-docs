@@ -10,13 +10,9 @@ domainurl: ##DomainURL##
 
 # Date selection in Angular Calendar component
 
-You can set or get the currently selected date of the calendar using the
-[`value`](https://ej2.syncfusion.com/documentation/api/calendar/#value-date)
-property.
+You can set or get the currently selected date of the calendar using the [`value`](https://ej2.syncfusion.com/documentation/api/calendar/#value-date) property.
 
-The following example demonstrates the Calendar with selected date and
-[`change`](https://ej2.syncfusion.com/angular/documentation/api/calendar/changedEventArgs/#changedeventargs) event
-to display the selected date value.
+The following example demonstrates the Calendar with selected date and [`change`](https://ej2.syncfusion.com/angular/documentation/api/calendar/changedEventArgs/#changedeventargs) event to display the selected date value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

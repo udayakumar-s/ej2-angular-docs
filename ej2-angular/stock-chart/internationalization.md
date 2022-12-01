@@ -16,15 +16,12 @@ Chart provide supports for internationalization for below chart elements.
 * Tooltip.
 * Crosshair
 
-For more information about number and date formatter you can refer
-[`internationalization`](https://ej2.syncfusion.com/angular/documentation/stock-chart/internationalization/?no-cache=1).
+For more information about number and date formatter you can refer [`internationalization`](https://ej2.syncfusion.com/angular/documentation/stock-chart/internationalization/?no-cache=1).
 
 <!-- markdownlint-disable MD036 -->
 **Globalization**
 
-Globalization is the process of designing and developing an component that works in different
-cultures/locales.  Internationalization  library is used to globalize number, date, time values in
-Chart component using  `labelFormat` property in axis.
+Globalization is the process of designing and developing an component that works in different cultures/locales.  Internationalization  library is used to globalize number, date, time values in Chart component using  `labelFormat` property in axis.
 
 **Numeric Format**
 

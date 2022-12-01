@@ -12,9 +12,7 @@ domainurl: ##DomainURL##
 
 Accordion items can be disabled dynamically by passing the index and boolean value with the [`enableItem`](https://ej2.syncfusion.com/angular/documentation/api/accordion#enableitem) method and also dynamically expand the item using [`expandItem`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expanditem) method.
 
-The below Wizard sample is designed for Online Shopping model. In this, each Accordion item is integrated with required components to fill
-the details and designed for getting user details and making payment at the end. Each field is provided with validation for all mandatory
-option to enable/disable to next Accordion. In below sample, accordion items can be disabled dynamically with [`enableItem`](https://ej2.syncfusion.com/angular/documentation/api/accordion#enableitem) method using [`created`](https://ej2.syncfusion.com/angular/documentation/api/accordion#created) event.
+The below Wizard sample is designed for Online Shopping model. In this, each Accordion item is integrated with required components to fill the details and designed for getting user details and making payment at the end. Each field is provided with validation for all mandatory option to enable/disable to next Accordion. In below sample, accordion items can be disabled dynamically with [`enableItem`](https://ej2.syncfusion.com/angular/documentation/api/accordion#enableitem) method using [`created`](https://ej2.syncfusion.com/angular/documentation/api/accordion#created) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
