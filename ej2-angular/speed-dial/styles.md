@@ -36,7 +36,7 @@ You can use the [`openIconCss`](https://ej2.syncfusion.com/angular/documentation
 
 ### Text only
 
-You can show only text in Speed Dial button by setting [`content`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#content) property  without setting icon properties.
+You can show only text in Speed Dial button by setting [`content`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#content) property  without setting icon properties..
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
