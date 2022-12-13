@@ -14,7 +14,7 @@ This section explains the steps required to create a simple Angular Message comp
 
 ## Setup Angular Environment
 
-Use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI, use the following command.
+Use [`Angular CLI`](https://github.com/angular/angular-cli) to setup the Angular applications. To install Angular CLI, use the following command.
 
 ```
 npm install -g @angular/cli
@@ -31,7 +31,8 @@ cd my-app
 
 ## Installing Syncfusion Notification package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ). Currently, Syncfusion provides two types of package structures for Angular components. They are:
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Currently, Syncfusion provides two types of package structures for Angular components. They are:
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format).
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 

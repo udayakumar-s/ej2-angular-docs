@@ -63,3 +63,21 @@ By default, detail rows render in collapsed state. You can expand a detail row b
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs6" %}
+
+## Limitations for detail template
+
+Detail template is not supported with the following features:
+
+* Frozen rows and columns
+* Immutable mode
+* Infinite scrolling
+* Virtual scrolling
+* Pdf export
+* Excel export
+* Print
+* Row template
+* Row spanning
+* Column spanning
+* Lazy load grouping
+* State persistence
+* Hierarchy Grid

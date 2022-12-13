@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Audio in Angular Rich text editor component
 
-The Rich Text Editor allows inserting audio files from online sources and the local computer where you want to insert the audio in your content. For inserting the audio to the Rich Text Editor, the following list of options have been provided in the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertaudiosettings).
+The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertaudiosettings) property.
 
 | Options | Description |
 |----------------|---------|
-| allowedTypes | Specifies the extensions of the audio types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as `.mp3`, `.wav`, `.m4a` and `.wma` |
-| layoutOption | Sets the default display for audio when it is inserted into the Rich Text Editor. Possible options are: `Inline` and `Break`.|
+| allowedTypes | Specifies the extensions of the audio types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as `.mp3`, `.wav`, `.m4a` and `.wma`. |
+| layoutOption | Sets the default display for audio when it is inserted into the Rich Text Editor. Possible options are `Inline` and `Break`.|
 | saveFormat | Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.|
 | saveUrl | Provides URL to map the action result method to save the audio.|
 | removeUrl | Provides URL to map the action result method to remove the audio.|
@@ -23,50 +23,47 @@ The Rich Text Editor allows inserting audio files from online sources and the lo
 
 ## Configure audio tool in the toolbar
 
-To include the audio tool in the Rich Text Editor, you can add the toolbar item `Audio` to the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+You can add an `audio` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
-> Rich Text Editor features are segregated into individual feature-wise modules. In this demo we have used following injectable services `ToolbarService`, `LinkService`, `HtmlEditorService`, `AudioService` into the `@NgModule.providers section`.
+> Rich Text Editor features are segregated into individual feature-wise modules. In this demo, we have used the following injectable services `ToolbarService`, `LinkService`, `HtmlEditorService`, `AudioService` in the `@NgModule.providers section`.
 
-To configure `Audio` toolbar item, refer to the below code.
+To configure the `Audio` toolbar item, refer to the below code.
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/audio-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/rich-text-editor/audio-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/audio-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/audio-cs1" %}
 
-import { Component } from '@angular/core';
-import { ToolbarService, LinkService, HtmlEditorService, AudioService } from '@syncfusion/ej2-angular-richtexteditor';
-@Component( {
-    selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaulRTE' [toolbarSettings]='toolbarSettings'>
-    </ejs-richtexteditor>`,
-    providers: [ ToolbarService, LinkService, AudioService, HtmlEditorService ]
-} )
-export class AppComponent
-{
-    public toolbarSettings: object = {
-        items: [ 'Audio' ]
-    };
-}
+## Insert audio from the web
 
-```
+You can insert audio from either the hosted link or the local machine, by clicking the audio button in the editor's toolbar. On clicking the audio button, a dialog opens, which allows you to insert audio from the web URL.
 
-## Insert audio from web
+### Insert from web URL
 
-To insert audio from the hosted link or local machine, you should enable the audio tool in the editor’s toolbar.
+By default, the audio tool opens the audio dialog, allowing you to insert audio from an online source. Inserting the URL will be added to the `src` attribute of the `<source>` tag.
 
-## Insert from web URL
+![Angular Rich Text Editor Audio insert](./images/angular-richtexteditor-audio-web.png)
 
-By default, the audio tool opens the audio dialog, allowing you to insert an audio from an online source. Inserting the URL will be added to the `src` attribute of the `<source>` tag.
+## Insert audio from local machine
 
-![Rich Text Editor Audio insert](./images/audio-web.png)
+You can use the `browse` option on the audio dialog, to select the audio from the local machine and insert it into the Rich Text Editor content.
 
-## Upload and insert audio
-
-In the audio dialog, using the `browse` option, select the audio from the local machine and insert it into the Rich Text Editor content.
-
-If the path field is not specified in the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertaudiosettings), the audio will be converted into `Blob` url or `Base64` and inserted inside the Rich Text Editor.
+If the path field is not specified in the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertaudiosettings), the audio will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
 
 ### Restrict audio upload based on size
 
-Using the Rich Text Editor [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event, you can restrict the audio to upload when the given audio size is greater than the allowed fileSize. Also, the audio size in the argument will be returned in `bytes`.
+You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event.
+
+> The file size in the argument will be returned in `bytes`.
 
 In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
 
@@ -108,7 +105,7 @@ export class AppComponent {
 
 The selected audio can be uploaded to the required destination using the controller action below. Map this method name in [insertAudioSettings.saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#saveurl) and provide the required destination path through [insertAudioSettings.path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#path) properties.
 
-> If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving audio, you can opt to save the format as `Base64`.
+> If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving the audio, you can opt to save the format as `Base64`.
 
 In the following code blocks, the audio module has been injected and can insert the audio files saved in the specified path.
 
@@ -214,11 +211,11 @@ namespace FileUpload.Controllers
 
 ### Audio save format
 
-The audio files can be saved as `Blob` or `Base64` url by using the [insertAudioSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#saveformat) property, which is of enum type and the generated url will be set to the `src` attribute of the `<source>` tag.
+The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudioSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
-> By default, the files are saved in the `Blob` format.
+> The default `saveFormat` property is set to `Blob` format.
 
-```typescript
+```HTML
 
 <audio>
     <source src="blob:http://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="audio/mp3" >
@@ -234,40 +231,21 @@ The audio files can be saved as `Blob` or `Base64` url by using the [insertAudio
 
 Once an audio file has been inserted, you can change it using the Rich Text Editor [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings/#quicktoolbarsettings) `audioReplace` option. You can replace the audio file using the web URL or the browse option in the audio dialog.
 
-![Rich Text Editor Audio replace](./images/audio-replace.png)
+![Angular Rich Text Editor Audio replace](./images/angular-richtexteditor-audio-replace.png)
 
 ## Delete audio
 
-To remove audio from the Rich Text Editor content, select the audio and click the `audioRemove` tool from the quick toolbar. It will delete the audio from the Rich Text Editor content as well as from the service location if the [insertAudioSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#removeurl) is given.
+To remove audio from the Rich Text Editor content, select the audio and click the `audioRemove` button from the quick toolbar. It will delete the audio from the Rich Text Editor content as well as from the service location if the [insertAudioSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#removeurl) is given.
 
 Once you select the audio from the local machine, the URL for the audio will be generated. You can remove the audio from the service location by clicking the cross icon.
 
-![Rich Text Editor Audio delete](./images/audio-del.png)
-
-The following sample explains how to configure `insertAudioSettings.removeUrl` to remove saved audio from the remote service location when the following audio removal actions are performed:
-
-* `delete` key action.
-* `backspace` key action.
-* Removing uploaded audio file from the insert audio dialog.
-* Deleting audio using the quick toolbar `audioRemove` option.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/remove-url-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/remove-url-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/remove-url-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/remove-url-cs1" %}
+![Angular Rich Text Editor Audio delete](./images/angular-richtexteditor-audio-del.png)
 
 ## Display position
 
-Sets the default display for an audio when it is inserted in the Rich Text Editor using the [insertAudioSettings.layoutOption](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#layoutOption). It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the audio elements’ layout position.
+Sets the default display property for audio when it is inserted in the Rich Text Editor using the [insertAudioSettings.layoutOption](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#layoutOption) property. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the audio elements’ layout position.
+
+> The default `layoutOption` property is set to `Inline`.
 
 ```typescript
 
@@ -294,14 +272,14 @@ export class AppComponent {
 
 ## Rename audio before inserting
 
-Using the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#insertaudiosettings) property, you can specify the server handler to upload the selected audio. Then by binding the [fileUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert audio dialog.
+You can use the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#insertaudiosettings) property, to specify the server handler to upload the selected audio. Then by binding the [fileUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert audio dialog.
 
 ```HTML
 
 <ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings' [insertAudioSettings] = 'insertAudioSettings' (fileUploadSuccess) = 'onAudioUploadSuccess($event)' >
-    <ng-template #valueTemplate>
-        <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
-    </ng-template>
+<ng-template #valueTemplate>
+    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
+</ng-template>
 </ejs-richtexteditor>
 
 ```
@@ -338,7 +316,7 @@ export class AppComponent {
 
 ```
 
-To configure server-side handler, refer to the below code.
+To configure the server-side handler, refer to the below code.
 
 ```csharp
 int x = 0;
@@ -393,7 +371,7 @@ public void Rename()
 
 ## Upload audio with authentication
 
-The Rich Text Editor component allows you to add additional data with the File Upload, which can be received on the server side. By using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+You can add additional data with the audio uploaded from the Rich Text Editor on the client side, which can even be received on the server side by using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 > By default, it doesn't support the `UseDefaultCredentials` property; we need to manually append the default credentials with the upload request.
 
@@ -439,4 +417,4 @@ public void SaveFiles(IList<IFormFile> UploadFiles)
 ## See Also
 
 * [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
-* [How to use link editing option in the toolbar items](./link/)
+* [How to use the link editing option in the toolbar items](./link/)

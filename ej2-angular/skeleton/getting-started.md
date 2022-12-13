@@ -160,21 +160,3 @@ The following example shows a basic Skeleton component.
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/skeleton/getting-started-cs1" %}
-
-## Skeleton Shapes
-
-The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/#shape) property can be used to display skeleton in different shapes like circle, square, rectangle and text.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/skeleton/shapes-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/skeleton/shapes-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/skeleton/shapes-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/skeleton/shapes-cs1" %}

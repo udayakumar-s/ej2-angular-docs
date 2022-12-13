@@ -3,10 +3,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import {
-    GridComponent, ContextMenuService, PageService, ResizeService, SortService, GroupService, EditService,
-    EditSettingsModel, ContextMenuItem, PdfExportService, ExcelExportService
-} from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ContextMenuService, PageService, ResizeService, SortService, GroupService, EditService, EditSettingsModel, ContextMenuItem, PdfExportService, ExcelExportService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',

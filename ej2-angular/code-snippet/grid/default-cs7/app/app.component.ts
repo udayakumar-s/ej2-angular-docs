@@ -6,7 +6,7 @@ import { DetailRowService, GridModel, GridComponent } from '@syncfusion/ej2-angu
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid' (load)='onLoad($event)'>
+    template: `<ejs-grid #grid [dataSource]='pData' height='265px' [childGrid]='childGrid' (dataBound)='onDataBound()'>
                     <e-columns>
                         <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
                         <e-column field='FirstName' headerText='FirstName' width=150></e-column>
@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
 
     public pData: object[];
     public childGrid: GridModel = {
+        dataSource: data,
         queryString: 'EmployeeID',
         columns: [
             { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
@@ -29,14 +30,15 @@ export class AppComponent implements OnInit {
             { field: 'ShipName', headerText: 'Ship Name', width: 150 }
         ],
     };
-    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('grid')
+    public grid: GridComponent;
 
     ngOnInit(): void {
         this.pData = employeeData;
     }
 
-    onLoad(): void {
-        this.grid.childGrid.dataSource = data; // assign data source for child grid.
+    onDataBound(): void {
+        this.grid.detailRowModule.expand(2); // initial expand 2 chid Grid.
     }
 
 }

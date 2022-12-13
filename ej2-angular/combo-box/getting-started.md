@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple **ComboBox** component and configure its available functionalities in Angular.
 
+To get started quickly with angular ComboBox component using angular CLI, you can check the video below.
+
+{% youtube "https://www.youtube.com/watch?v=2MVCLTvLN_s" %}
+
 ## Dependencies
 
 The following list of dependencies are required to use the Angular ComboBox component in your application.
@@ -33,10 +37,6 @@ The following list of dependencies are required to use the Angular ComboBox comp
 ## Setup angular environment
 
 Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
-
-To get started quickly with angular ComboBox component using angular CLI, you can check the video below.
-
-{% youtube "https://www.youtube.com/watch?v=2MVCLTvLN_s" %}
 
 Install the CLI application globally to your machine.
 
@@ -196,8 +196,7 @@ The following example illustrates the output in your browser.
 
 ## Custom values
 
-The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#allowcustom) property. In this case, both text field and value field considered as same.
-The custom value will be sent to post back handler when a form is about to be submitted.
+The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#allowcustom) property. In this case, both text field and value field considered as same. The custom value will be sent to post back handler when a form is about to be submitted.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -217,8 +216,8 @@ The custom value will be sent to post back handler when a form is about to be su
 
 By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
 
-The height and width of the popup list can also be customized using the
-[popupHeight](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupwidth) property respectively.
+The height and width of the popup list can also be customized using the  [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupwidth) property
+respectively.
 
 In the following sample, popup list's width and height are configured.
 
@@ -238,8 +237,7 @@ In the following sample, popup list's width and height are configured.
 
 ## Two-way binding
 
-In ComboBox, the `value` property supports two-way binding functionality.
-The following example demonstrates how to work the two-way binding functionality in ComboBox.
+In ComboBox, the `value` property supports two-way binding functionality. The following example demonstrates how to work the two-way binding functionality in ComboBox.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,38 +1,42 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { data, employeeData } from './datasource';
-import { DetailRowService, GridModel } from '@syncfusion/ej2-angular-grids';
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent, ContextMenuService, PageService, EditService, EditSettingsModel, ContextMenuItem } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='pData' height='315px' [childGrid]='childGrid'>
-                    <e-columns>
-                        <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
-                        <e-column field='FirstName' headerText='FirstName' width=150></e-column>
-                        <e-column field='LastName' headerText='Last Name' width=150></e-column>
-                        <e-column field='City' headerText='City' width=150></e-column>
-                    </e-columns>
-                </ejs-grid>
+    template: `<ejs-grid  #grid [dataSource]='data' id="gridcomp" allowPaging='true' height='220px'
+        [contextMenuItems]="contextMenuItems" [editSettings]='editing' (rowSelected)='rowSelected($event)'>
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' width='120' textAlign="Right" isPrimaryKey='true'></e-column>
+            <e-column field='CustomerID' headerText='Customer Name'></e-column>
+            <e-column field='Freight' headerText='Freight' format='C2' textAlign="Right" editType='numericedit'></e-column>
+            <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
+        </e-columns>
+    </ejs-grid>
                 `,
-    providers: [DetailRowService]
+    providers: [ContextMenuService, PageService, EditService]
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
-    public childGrid: GridModel = {
-        dataSource: data,
-        queryString: 'EmployeeID',
-        columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-            { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
-            { field: 'ShipCity', headerText: 'Ship City', width: 150 },
-            { field: 'ShipName', headerText: 'Ship Name', width: 150 }
-        ],
-    };
+    public data: object[];
+    public contextMenuItems: ContextMenuItem[] = ['Copy', 'Edit', 'Delete'];
+    @ViewChild('grid')
+    public grid: GridComponent;
+    public editing: EditSettingsModel = { allowAdding: true, allowDeleting: true, allowEditing: true };
 
     ngOnInit(): void {
-        this.pData = employeeData;
+        this.data = data;
+    }
+    rowSelected(args) {
+        var contextMenuObj = this.grid.contextMenuModule.contextMenu;
+        if (args.data.OrderID % 2 === 0) {
+            contextMenuObj.enableItems(['Copy'], false);
+        } else {
+            contextMenuObj.enableItems(['Copy'], true);
+        }
     }
 }
 
