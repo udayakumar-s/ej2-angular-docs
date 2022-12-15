@@ -111,7 +111,7 @@ Add the following lines in the `index.html` file to refer the css style.
 </html>
 ```
 
-6. Add PDF Viewer component
+6. Adding PDF Viewer component
 
 Modify the template in [src/app/app.component.ts] file to render the PDF Viewer component.
 Add the Angular PDF Viewer by using `<ejs-pdfviewer>` selector in `template` section of the app.component.ts file.
