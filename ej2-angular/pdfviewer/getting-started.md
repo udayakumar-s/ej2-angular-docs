@@ -154,7 +154,7 @@ dotnet restore
 ```sh
 dotnet run
 ```
-5. You can see that the service link was generated on the server side and we can now bind that generated service link to the `serviceUrl` property of pdf viewer.
+5. You can see that the service link was running on the server side and we can bind the service link to the `serviceUrl` property of pdf viewer.
 
 > For ex:  
 export class AppComponent implements OnInit {
