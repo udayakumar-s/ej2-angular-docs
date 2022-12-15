@@ -12,10 +12,14 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a simple Essential JS 2 PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application.
 
-## Setup Angular Environment
+## Prerequisites
+To get started with Syncfusion Angular UI components, ensure the compatible version of Angular. 
+* `Angular` : 6+
+* `Typescript` : 2.6+
+* Required node version >= `14.0.0+`(NPM Package Manager).
 
-You can use the [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI globally use the following command.
+## Setup Angular Environment
+1. Create a new Angular app [`Angular CLI`](https://github.com/angular/angular-cli) and install it using the following command.
 
 ```bash
 npm install -g @angular/cli
@@ -23,7 +27,7 @@ npm install -g @angular/cli
 
 N> Use the command **npm install --save @angular/cli@12.0.2** to install the latest Angular CLI version 12.0.2
 
-## Create an Angular Application
+2. Create an Angular Application
 
 Start a new Angular application using the Angular CLI command as follows.
 
@@ -32,7 +36,7 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Pdfviewer package
+3. Installing Syncfusion Pdfviewer package
 
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
@@ -40,7 +44,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
-### Ivy library distribution package
+## Ivy library distribution package
 
 Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
@@ -50,7 +54,7 @@ Add [`@syncfusion/ej2-angular-pdfviewer`](https://www.npmjs.com/package/@syncfus
 npm install @syncfusion/ej2-angular-pdfviewer --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+## Angular compatibility compiled package(ngcc)
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
 
@@ -68,7 +72,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering PDF Viewer Module
+4. Registering PDF Viewer Module
 
 Import PDF Viewer module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-pdfviewer` [src/app/app.module.ts].
 
@@ -77,7 +81,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // import the PdfViewer Module for the PDF Viewer component
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
+ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -86,35 +90,28 @@ import { AppComponent } from './app.component';
   declarations: [ AppComponent ],
   bootstrap: [AppComponent],
   providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,
-    ThumbnailViewService, ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService]
+  ThumbnailViewService, ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService]
 })
 export class AppModule { }
 ```
 
-## Adding CSS reference
-
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using the following code.
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-pdfviewer/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-```
+5. Adding CSS reference
 
 Add the following lines in the `index.html` file to refer the css style.
 
 ```html
-<link href="//cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
+<!doctype html>
+<html lang="en">
+<head>
+  <link href="//cdn.syncfusion.com/ej2/20.3.56/material.css" rel="stylesheet" />
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
 ```
 
-## Add PDF Viewer component
+6. Add PDF Viewer component
 
 Modify the template in [src/app/app.component.ts] file to render the PDF Viewer component.
 Add the Angular PDF Viewer by using `<ejs-pdfviewer>` selector in `template` section of the app.component.ts file.
@@ -133,7 +130,7 @@ import {
   <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' style="height:640px;display:block"></ejs-pdfviewer>
 </div>`,
   providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,
-    ThumbnailViewService, ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService, PrintService]
+  ThumbnailViewService, ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService, PrintService]
 })
 export class AppComponent implements OnInit {
     public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
@@ -145,7 +142,27 @@ export class AppComponent implements OnInit {
 
 > For PDF Viewer serviceUrl creation, follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/how-to/create-pdfviewer-service/)
 
-[View web service sample in GitHub](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices)
+
+## Follow the below steps to run the application using web service.
+1. Download the sample from the [View web service sample in GitHub](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices) link.
+2. Navigate to the `ASP.NET Core` folder and run it in the command promt.
+3. Use the below command to restore the required packages.
+```sh
+dotnet restore
+```
+4. Use the below command to run the web service.
+```sh
+dotnet run
+```
+5. You can see that the service link was generated on the server side and we can now bind that generated service link to the `serviceUrl` property of pdf viewer.
+
+> For ex:  
+export class AppComponent implements OnInit {
+    public service = 'https://localhost:5001/pdfviewer';
+    public document = 'PDF_Succinctly.pdf';
+    ngOnInit(): void {
+    }
+    
 
 ## Run the application
 
