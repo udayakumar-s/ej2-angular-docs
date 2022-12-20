@@ -6,10 +6,10 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<button ejs-button (click)="SingleClearSort()"  cssClass="e-flat">Clear the sort for <b>OrderID</b> column</button>
-               <button ejs-button (click)="MultiClearSort()"  cssClass="e-flat">Clear sorting for entire sorted columns</button>
+    template: `<button ejs-button (click)="SingleSort()"  cssClass="e-flat">Sort <b>OrderID</b> column</button>
+               <button ejs-button (click)="MultiSort()"  cssClass="e-flat">Sort <b>CustomerID</b> and <b>ShipName</b> columns</button>
                <div id="GridParent">
-                    <ejs-grid #Grid [dataSource]='data' [sortSettings]='sortOptions' allowSorting='true' [toolbar]='toolbar' height='273px'>
+                    <ejs-grid #Grid [dataSource]='data' allowSorting='true' [toolbar]='toolbar' height='273px'>
                         <e-columns>
                             <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
                             <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
@@ -24,23 +24,17 @@ export class AppComponent implements OnInit {
 
     public data: object[];
     @ViewChild('Grid') public grid: GridComponent;
-    public sortOptions: object;
 
     ngOnInit(): void {
         this.data = data;
-        this.sortOptions = { columns: [{ field: 'OrderID', direction: 'Ascending' }, { field: 'CustomerID', direction: 'Descending' }] };
     }
-    public SingleClearSort(): void {
-        const column: any = this.grid.sortSettings.columns;
-        for (let i = 0; i < column.length; i++) {
-            if (column[i].field === 'OrderID') {
-                column.splice(i, 1);
-                this.grid.refresh();
-            }
-        }
+    public SingleSort(): void {
+        this.grid.sortColumn('OrderID', 'Descending');
     }
-    public MultiClearSort(): void {
-        this.grid.clearSorting();
+    public MultiSort(): void {
+        this.grid.sortSettings.columns.push({ field: 'CustomerID', direction: 'Ascending' },
+            { field: 'ShipName', direction: 'Descending' });
+        this.grid.refresh();
     }
 }
 

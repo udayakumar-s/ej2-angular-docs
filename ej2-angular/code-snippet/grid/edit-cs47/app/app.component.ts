@@ -1,56 +1,48 @@
 
 
-import { L10n } from '@syncfusion/ej2-base';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-
-L10n.load({
-    'en-US': {
-        grid: {
-            'SaveButton': 'Submit',
-            'CancelButton': 'Discard'
-        }
-    }
-});
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
-     (actionComplete)="actionComplete($event)" height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
+    template: `<button ejs-button (click)="SingleClearSort()"  cssClass="e-flat">Clear the sort for <b>OrderID</b> column</button>
+               <button ejs-button (click)="MultiClearSort()"  cssClass="e-flat">Clear sorting for entire sorted columns</button>
+               <div id="GridParent">
+                    <ejs-grid #Grid [dataSource]='data' [sortSettings]='sortOptions' allowSorting='true' [toolbar]='toolbar' height='273px'>
+                        <e-columns>
+                            <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
+                            <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                            <e-column field='Freight' headerText='Freight' textAlign= 'Right'
+                             editType= 'numericedit' width=120 format= 'C2'></e-column>
+                            <e-column field='ShipName' headerText='Ship Name' editType= 'dropdownedit' width=150></e-column>
+                        </e-columns>
+                    </ejs-grid>
+               </div>`
 })
 export class AppComponent implements OnInit {
 
     public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    @ViewChild('Grid') public grid: GridComponent;
+    public sortOptions: object;
 
     ngOnInit(): void {
         this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.sortOptions = { columns: [{ field: 'OrderID', direction: 'Ascending' }, { field: 'CustomerID', direction: 'Descending' }] };
     }
-
-    actionComplete(args) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            const dialog = args.dialog;
-            const CustomerID = 'CustomerID';
-            dialog.showCloseIcon = false;
-            dialog.height = 400;
-            // change the header of the dialog
-            dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + args.rowData['CustomerID'] : 'New Customer';
+    public SingleClearSort(): void {
+        const column: any = this.grid.sortSettings.columns;
+        for (let i = 0; i < column.length; i++) {
+            if (column[i].field === 'OrderID') {
+                column.splice(i, 1);
+                this.grid.refresh();
+            }
         }
     }
+    public MultiClearSort(): void {
+        this.grid.clearSorting();
+    }
 }
-
 
 
 

@@ -93,3 +93,23 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/grid/wizardtemplate-cs1" %}
+
+## Customize Add/Edit Dialog footer
+
+In dialog edit mode, a dialog will show up when editing the currently selected row or adding a new row. By default, you can save or cancel the edited changes by clicking the Save or Cancel button in the dialog's footer. Along with these buttons, it is possible to add a custom button in the footer section using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event of the Grid.
+
+In the following sample, using the `dialog` argument of the `actionComplete` event, the action for the custom button can be customized.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs10/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs10/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs10/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs10" %}

@@ -13,7 +13,6 @@ domainurl: ##DomainURL##
 ## Built-in toolbar items
 
 Built-in Toolbar Items execute standard actions of the Grid and it can be added by defining [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) as a collection of built-in items. It renders the button with icon and text.
-
 The following table shows Built-in toolbar items and its action.
 
 | Built-in Toolbar Items | Actions |
@@ -75,6 +74,7 @@ This is demonstrated in the following sample:
 ## Custom toolbar items
 
 Custom toolbar items can be added by defining [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) as a collection of [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel). Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event.
+Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event.
 
 By default, Custom toolbar items are in position **Left**. You can change the position by using the [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) property. In the below sample, we have applied position **Right** for the **Collapse All** toolbar item.
 
@@ -103,17 +103,17 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs52/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs53/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs52/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs53/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs52/app/main.ts %}
+{% include code-snippet/grid/edit-cs53/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs52" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs53" %}
 
 ## Custom toolbar component in a specific position
 

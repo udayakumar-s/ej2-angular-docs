@@ -41,17 +41,17 @@ Component |Example
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs10/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs11/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs10/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs11/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs10/app/main.ts %}
+{% include code-snippet/grid/edit-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs10" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs11" %}
 
 > If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component) .
 
@@ -102,17 +102,17 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs11/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs12/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs11/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs12/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs11/app/main.ts %}
+{% include code-snippet/grid/edit-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs11" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs12" %}
 
 ## Custom editors using template
 
@@ -132,24 +132,6 @@ Use the cell edit template feature of the Grid to render the TimePicker componen
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs12/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs12/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs12/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs12" %}
-
-### Render AutoComplete component while editing
-
-Use the cell edit template feature of the Grid to render the AutoComplete component in the Grid edit form. In the below sample, we have rendered AutoComplete component in the **CustomerID** column.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs13/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -162,9 +144,9 @@ Use the cell edit template feature of the Grid to render the AutoComplete compon
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs13" %}
 
-### Render MultiSelect DropDown component while editing
+### Render AutoComplete component while editing
 
-Use the cell edit template feature of the Grid to render the MultiSelect DropDown component in the Grid edit form. In the below sample, we have rendered MultiSelect DropDown component in the **ShipCity** column.
+Use the cell edit template feature of the Grid to render the AutoComplete component in the Grid edit form. In the below sample, we have rendered AutoComplete component in the **CustomerID** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -179,6 +161,24 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs14" %}
+
+### Render MultiSelect DropDown component while editing
+
+Use the cell edit template feature of the Grid to render the MultiSelect DropDown component in the Grid edit form. In the below sample, we have rendered MultiSelect DropDown component in the **ShipCity** column.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs15/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs15/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs15/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs15" %}
 
 ### Render MaskedTextBox component while editing
 
@@ -204,17 +204,17 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs15/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs16/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs15/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs16/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs15/app/main.ts %}
+{% include code-snippet/grid/edit-cs16/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs15" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs16" %}
 
 ### Render multiple columns in DropDownList component while editing
 
@@ -244,14 +244,14 @@ The cell editor for a particular column can be specified using the content of th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs16/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs17/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs16/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs17/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs16/app/main.ts %}
+{% include code-snippet/grid/edit-cs17/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs16" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs17" %}

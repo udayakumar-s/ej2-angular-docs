@@ -83,17 +83,17 @@ By default, the grid will be print the master and expanded child grids alone. yo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs13/app/app.component.ts %}
+{% include code-snippet/grid/default-cs14/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs13/app/app.module.ts %}
+{% include code-snippet/grid/default-cs14/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs13/app/main.ts %}
+{% include code-snippet/grid/default-cs14/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs13" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs14" %}
 
 ## Print large number of columns
 

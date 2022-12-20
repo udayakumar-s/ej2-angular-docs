@@ -139,7 +139,8 @@ export class AppComponent implements OnInit {
 ## Page Count
 
 `pageCount` value defines the number of pages to be displayed in the pager component for navigation.
-The default value for `pageCount` is 10 and value will be updated based on [`totalRecordsCount`](https://ej2.syncfusion.com/angular/documentation/api/pager#totalrecordscount) and [`pageSize`](#page-size) values.
+The default value for `pageCount` is 10 and value will be updated based on [`totalRecordsCount`](https://ej2.syncfusion.com/angular/documentation/api/pager#totalrecordscount)
+and [`pageSize`](#page-size) values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

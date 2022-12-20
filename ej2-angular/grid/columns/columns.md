@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Columns in Angular Grid component
 
-The column definitions are used as the **dataSource** schema in the Grid. This plays a vital role in rendering column values in the required format. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column)
-is necessary to map the data source values in Grid columns.
+The column definitions are used as the **dataSource** schema in the Grid. This plays a vital role in rendering column values in the required format. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column) is necessary to map the data source values in Grid columns.
 
 > 1. If the column with [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) is not in the dataSource, then the column values will be displayed as empty.
 > 2. If the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) name contains “dot” operator then it is considered as complex binding.
@@ -21,7 +20,6 @@ is necessary to map the data source values in Grid columns.
 Column type can be specified using the [`columns.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. It specifies the type of data the column binds.
 
 If the [`format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format)  is defined for a column, the column uses [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) to select the appropriate format option ([number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime)).
-
 Grid column supports the following types:
 * string
 * number
@@ -53,6 +51,8 @@ The [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/
 ### Display array type columns
 
 You can bind an Array of Objects in a column by using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor) property. In this example, The Name field has an array of two objects FirstName and LastName. These two objects are joined and bind to a column using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
+In this example, The Name field has an array of two objects FirstName and LastName. These two objects are joined and bind to a column using
+[`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

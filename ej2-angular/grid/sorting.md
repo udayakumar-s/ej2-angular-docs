@@ -40,6 +40,7 @@ To use Sorting, you need to inject **SortService** in the provider section of **
 
 By default, the Grid records are not sorted at initial rendering.
 To apply sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#field) and [`direction`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction) in [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns).
+[`direction`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction) in [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -177,6 +178,9 @@ The following code example describes the handling of sorting operation at the se
 
 During the sort action, the Grid component triggers two events.
 [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event triggers before the sort action start and [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event triggers after the sort action complete. Using these events you can perform any actions.
+triggers before the sort action start and
+[`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event
+triggers after the sort action complete. Using these events you can perform any actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

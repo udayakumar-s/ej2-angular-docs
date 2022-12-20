@@ -18,14 +18,14 @@ The following example demonstrates on **Adding** a new row when Enter key is pre
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs50/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs51/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs50/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs51/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs50/app/main.ts %}
+{% include code-snippet/grid/edit-cs51/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs50" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs51" %}

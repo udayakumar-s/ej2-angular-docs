@@ -52,6 +52,7 @@ You can retrieve data from OData service using DataManager. You can refer to the
 
 The ODataV4 is an improved version of OData protocols, and the **DataManager** can also retrieve and consume OData v4 services.
 For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197).
+
 To bind OData v4 service, use the **ODataV4Adaptor**.
 
 {% tabs %}
@@ -195,6 +196,8 @@ The following code example describes the CRUD operations handled at server-side.
 ## Custom adaptor
 
 You can create your own adaptor by extending the built-in adaptors. For the sake of demonstrating custom adaptor approach, we are going to see how to add a serial number for the records by overriding the built-in response processing using the **processResponse** method of the **ODataAdaptor**.
+we are going to see how to add a serial number for the records
+by overriding the built-in response processing using the **processResponse** method of the **ODataAdaptor**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

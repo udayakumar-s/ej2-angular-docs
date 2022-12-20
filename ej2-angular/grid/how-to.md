@@ -93,17 +93,17 @@ In the below demo, the button click will enable/disable the Grid and its actions
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs35/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs36/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs35/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs36/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs35/app/main.ts %}
+{% include code-snippet/grid/edit-cs36/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs35" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs36" %}
 
 ## Print the expanded state from other pages
 
@@ -113,17 +113,17 @@ In the following example, we have printed expanded child grids form other pages.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs12/app/app.component.ts %}
+{% include code-snippet/grid/default-cs13/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs12/app/app.module.ts %}
+{% include code-snippet/grid/default-cs13/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs12/app/main.ts %}
+{% include code-snippet/grid/default-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs12" %}
+{% previewsample "page.domainurl/code-snippet/grid/default-cs13" %}
 
 ## Columns
 
@@ -215,6 +215,7 @@ Add the custom css class to particular column by using [`customAttributes`](http
 ### Custom Tooltip for Columns
 
 You can achieve the custom tooltip([`EJ2 Tooltip`](../../../tooltip/getting-started)) for Grid by using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
+[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 
 Render the ToolTip component for the grid cells by using the following code in the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event.
 
@@ -359,26 +360,6 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs36/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs36/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs36/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs36" %}
-
-### Customize the Edit Dialog
-
-You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
-
-In the below example, we have changed the dialog's header text for editing and adding records.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs37/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -391,15 +372,11 @@ In the below example, we have changed the dialog's header text for editing and a
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs37" %}
 
-### Show or Hide columns in Dialog editing
+### Customize the Edit Dialog
 
-You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) events.
+You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
 
-In the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event, based on **requestType** as **beginEdit** or  **add**. We can show or hide the editor by using [`column.visible`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property.
-
-In the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event, based on **requestType** as **save**. We can reset the properties back to the column state.
-
-In the below example, we have rendered the grid columns **CustomerID** as hidden column and **ShipCountry** as visible column. In the edit mode, we have changed the **CustomerID** column to visible state and **ShipCountry** column to hidden state.
+In the below example, we have changed the dialog's header text for editing and adding records.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -415,11 +392,15 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs38" %}
 
-### Cascading DropDownList with Grid editing
+### Show or Hide columns in Dialog editing
 
-You can achieve the Cascading DropDownList with grid Editing by using the Cell Edit Template feature.
+You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) events.
 
-In the below demo, Cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
+In the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event, based on **requestType** as **beginEdit** or  **add**. We can show or hide the editor by using [`column.visible`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property.
+
+In the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event, based on **requestType** as **save**. We can reset the properties back to the column state.
+
+In the below example, we have rendered the grid columns **CustomerID** as hidden column and **ShipCountry** as visible column. In the edit mode, we have changed the **CustomerID** column to visible state and **ShipCountry** column to hidden state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -434,6 +415,26 @@ In the below demo, Cascading DropDownList rendered for **ShipCountry** and **Shi
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs39" %}
+
+### Cascading DropDownList with Grid editing
+
+You can achieve the Cascading DropDownList with grid Editing by using the Cell Edit Template feature.
+
+In the below demo, Cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs40/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs40/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs40/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs40" %}
 
 ### Provide custom data source and enabling filtering to DropDownList
 
@@ -462,17 +463,17 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs40/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs41/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs40/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs41/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs40/app/main.ts %}
+{% include code-snippet/grid/edit-cs41/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs40" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs41" %}
 
 ### Use Wizard like Dialog Editing
 
@@ -588,22 +589,6 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs41/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs41/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs41/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs41" %}
-
-For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs42/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
@@ -616,13 +601,7 @@ For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/a
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs42" %}
 
-### Perform Grid actions by keyboard shortcut keys
-
-Using keyboard shortcuts, Grid performs navigation and actions.
-
-In addition, You can also perform grid actions with custom keyboard shortcuts. This operation has to be achieved outside of the grid with the help of **keydown** event.
-
-The following example demonstrates on **Adding** a new row when Enter key is pressed in the grid.
+For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -638,11 +617,13 @@ The following example demonstrates on **Adding** a new row when Enter key is pre
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs43" %}
 
-### Make a cell editable on a single click with batch editing
+### Perform Grid actions by keyboard shortcut keys
 
-You can make a cell editable on a single click with **batch** mode of editing in Grid, by using the [`editCell`](https://ej2.syncfusion.com/angular/documentation/api/grid/#editcell) method.
+Using keyboard shortcuts, Grid performs navigation and actions.
 
-Bind the click event for the Grid and in the click event handler call the [`editCell`](https://ej2.syncfusion.com/angular/documentation/api/grid/#editcell) method, based on the clicked target element.
+In addition, You can also perform grid actions with custom keyboard shortcuts. This operation has to be achieved outside of the grid with the help of **keydown** event.
+
+The following example demonstrates on **Adding** a new row when Enter key is pressed in the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -657,6 +638,26 @@ Bind the click event for the Grid and in the click event handler call the [`edit
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/grid/edit-cs44" %}
+
+### Make a cell editable on a single click with batch editing
+
+You can make a cell editable on a single click with **batch** mode of editing in Grid, by using the [`editCell`](https://ej2.syncfusion.com/angular/documentation/api/grid/#editcell) method.
+
+Bind the click event for the Grid and in the click event handler call the [`editCell`](https://ej2.syncfusion.com/angular/documentation/api/grid/#editcell) method, based on the clicked target element.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs45/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs45/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs45/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs45" %}
 
 ## Sort
 
@@ -687,17 +688,17 @@ In the below demo, click on the corresponding button to perform single-column or
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs45/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs46/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs45/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs46/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs45/app/main.ts %}
+{% include code-snippet/grid/edit-cs46/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs45" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs46" %}
 
 ### Dynamically clear sort for particular/entire sorted columns in Grid
 
@@ -730,17 +731,17 @@ In the below demo, click on the corresponding button to clear sort for particula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs46/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs47/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs46/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs47/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs46/app/main.ts %}
+{% include code-snippet/grid/edit-cs47/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs46" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs47" %}
 
 ## Foreign Key
 
@@ -769,6 +770,7 @@ In the following example, The **Employee Name** is a foreign key column and whil
 ### Customizing filter menu operators list
 
 You can customize the default filter operator list by defining the [`filterSettings.operators`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property. The available options are:
+[`filterSettings.operators`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#operators) property. The available options are:
 
 * **stringOperator**- defines customized string operator list.
 * **numberOperator** - defines customized number operator list.

@@ -140,7 +140,8 @@ To include tab components in the Dialog, please ensure the following steps:
 
 **Step 1**:
 
-To render the Tab component, use the [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid. Inside the content template of the tab items define the input elements.
+To render the Tab component, use the [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid. Inside the content template of the tab items define
+the input elements.
 
 ```
 

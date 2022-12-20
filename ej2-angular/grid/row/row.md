@@ -92,17 +92,17 @@ This is demonstrated in the following sample:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs51/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs52/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs51/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs52/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs51/app/main.ts %}
+{% include code-snippet/grid/edit-cs52/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs51" %}
+{% previewsample "page.domainurl/code-snippet/grid/edit-cs52" %}
 
 > When working with remote data, it is impossible to add a new row between the existing rows.
 
