@@ -14,7 +14,7 @@ This section explains the different styles of Floating Action Button.
 
 ## FAB styles
 
-The Angular Floating Action Button supports the following predefined styles that can be defined using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass) property. You can customize by replacing the `cssClass` property with the below defined class.
+The Angular Floating Action Button supports the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass) property. You can customize by replacing the `cssClass` property with the below defined class.
 
 | cssClass | Description |
 | -------- | -------- |
@@ -41,7 +41,7 @@ The Angular Floating Action Button supports the following predefined styles that
 
 > Predefined Floating Action Button styles provide only the visual indication. So, Floating Action Button [`content`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#content) property should define the Floating Action Button style for the users of assistive technologies such as screen readers.
 
-## Styles Customization
+## Styles customization
 
 To modify the Floating Action Button appearance, you need to override the default CSS of Floating Action Button component. Please find the list of CSS classes and its corresponding section in Floating Action Button component. Also, you have an option to create your own custom theme for the components using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=fluent).
 
@@ -55,7 +55,7 @@ To modify the Floating Action Button appearance, you need to override the defaul
 
 ## Show text on hover
 
-By using `cssClass`, you can customize the Floating Action Button to show text on hover with applied transition effect. For detailed information, refer `index.css` file below.
+By using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass), you can customize the Floating Action Button to show text on hover with applied transition effect. For detailed information, refer `index.css` file below.
 
 The content will behave the same , when the `enableHtmlSantiizer` is enabled. Since we are adding only the valid tags in content, sanitizing the content will not affect it.
 

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Icons in Angular Floating action button component
 
-You can customize the icon and text of Angular Floating Action Button(FAB) using [iconCss](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#iconcss) and [content](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#content) properties.
+You can customize the icon and text of Angular Floating Action Button(FAB) using [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#iconcss) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#content) properties.
 
 ## FAB with icon
 
-You can show icon only in Floating Action Button by setting [iconCss](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#iconcss) property. You can show tooltip on hover to show additional details to end-user by setting `title` attribute.
+You can show icon only in Floating Action Button by setting [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#iconcss) property. You can show tooltip on hover to show additional details to end-user by setting `title` attribute.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -30,7 +30,7 @@ export class AppComponent { }
 
 ## FAB with icon and text
 
-You can show icon along with text in Floating Action Button by setting [iconCss](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#iconcss) and [content](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#content) properties.
+You can show icon along with text in Floating Action Button by setting [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#iconcss) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#content) properties.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -46,7 +46,7 @@ export class AppComponent { }
 
 ### Icon position
 
-You can change the position of icon when showing along with content by setting [iconPosition](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#iconposition) property. By default, the icon is positioned on the left side together with text.
+You can change the position of icon when showing along with content by setting [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#iconposition) property. By default, the icon is positioned on the left side together with text.
 
 ```typescript
 import { Component } from '@angular/core';
