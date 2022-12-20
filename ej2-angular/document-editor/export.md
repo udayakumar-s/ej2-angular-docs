@@ -12,6 +12,13 @@ domainurl: ##DomainURL##
 
 Document Editor exports the document into various known file formats in client-side such as Microsoft Word document (.docx), text document (.txt), and its own format called **Syncfusion Document Text (.sfdt)**.
 
+We are providing two types of save APIs  as mentioned below.
+
+|API name|Purpose|
+|--------|---------|
+|save(filename,FormatType):void<br>FormatType: Sfdt or Docx or Txt|Creates the document with specified file name and format type. Then, the created file is downloaded in the client browser by default.|
+|saveAsBlob(FormatType):Blob|Creates the document in specified format type and returns the created document as Blob.<br>This blob can be uploaded to your required server, database, or file path.|
+
 ## SFDT export
 
 The following example shows how to export documents in document editor as Syncfusion document text (.sfdt).
@@ -122,7 +129,7 @@ For instance, to export the document as Rich Text Format file, implement an ASP.
 In client-side, you can consume this web service and save the document as Rich Text Format (.rtf) file. Refer to the following example.
 
 ```typescript
- public saveAsBlob() :void {
+public saveAsBlob() :void {
     this.documentEditor.saveAsBlob('Docx').then((exportedDocument: Blob) => {
           // The blob can be processed further
           let formData: FormData = new FormData();

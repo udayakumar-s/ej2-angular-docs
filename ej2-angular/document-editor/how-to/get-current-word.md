@@ -25,10 +25,10 @@ import {
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the DocumentEditorContainer component
-  template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
-  providers: [ToolbarService],
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
 
     // To get the selected content as text
     let selectedContent:string = this.container.documentEditor.selection.text;
-    }
+  }
 }
 ```
 
@@ -63,10 +63,10 @@ import {
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the DocumentEditorContainer component
-  template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
-  providers: [ToolbarService],
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')

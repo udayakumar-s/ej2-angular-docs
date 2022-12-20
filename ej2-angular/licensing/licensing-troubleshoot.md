@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Licensing troubleshoot in Angular Licensing component
+# Licensing troubleshoot in Angular
 
 ## Is an internet connection required for license validation
 

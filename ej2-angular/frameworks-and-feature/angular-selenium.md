@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular selenium in Angular Frameworks and feature component
+# Getting Started for Selenium E2E Testing using Protractor
 
 This documents helps us to write `Selenium E2E Testing` using `Protractor`.
 

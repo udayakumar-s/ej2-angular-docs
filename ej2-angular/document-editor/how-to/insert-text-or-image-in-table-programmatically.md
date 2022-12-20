@@ -23,10 +23,10 @@ import {
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the DocumentEditorContainer component
-  template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
-  providers: [ToolbarService],
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
@@ -55,38 +55,34 @@ export class AppComponent implements OnInit {
     this.container.documentEditor.editor.insertText('Text');
   }
   moveCursorToNextCell() {
-    // To get current selection start offset
-    var startOffset = this.container.documentEditor.selection.startOffset;
-    // Increasing cell index to consider next cell
-    var cellIndex = parseInt(startOffset.substring(6, 7)) + 1;
-    // Changing start offset
-    startOffset =
-      startOffset.substring(0, 6) +
-      cellIndex.toString() +
-      startOffset.substring(7, startOffset.length);
-    // Navigating selection using select method
-    this.container.documentEditor.selection.select(startOffset, startOffset);
-  }
+  // To get current selection start offset
+  var startOffset = container.documentEditor.selection.startOffset;
+  var offSet = startOffset.split(';');
+  // Increasing cell index to consider next cell
+  var cellIndex = parseInt(offSet[3]) + 1;
 
-  moveCursorToNextRow() {
-    // To get current selection start offset
-    var startOffset = this.container.documentEditor.selection.startOffset;
-    // Increasing row index to consider next row
-    var rowIndex = parseInt(startOffset.substring(4, 5)) + 1;
-    var cellIndex =
-      parseInt(startOffset.substring(6, 7)) != 0
-        ? parseInt(startOffset.substring(6, 7)) - 1
-        : 0;
-    // Changing start offset
-    startOffset =
-      startOffset.substring(0, 4) +
-      rowIndex.toString() +
-      startOffset.substring(5, 6) +
-      cellIndex +
-      startOffset.substring(7, startOffset.length);
-    // Navigating selection using select method
-    this.container.documentEditor.selection.select(startOffset, startOffset);
-  }
+  offSet[3] = cellIndex.toString();
+  // Changing start offset
+  startOffset = offSet.join(';');
+  // Navigating selection using select method
+  this.container.documentEditor.selection.select(startOffset, startOffset);
+ }
+
+ moveCursorToNextRow() {
+  // To get current selection start offset
+  var startOffset = container.documentEditor.selection.startOffset;
+  var offSet = startOffset.split(';');
+  // Increasing row index to consider next row
+  var rowIndex = parseInt(offSet[2]) + 1;
+  offSet[2] = rowIndex.toString();
+  var cellIndex =  0;
+  offSet[3] = cellIndex.toString();
+  // Changing start offset
+  startOffset = startOffset = offSet.join(';');
+  // Navigating selection using select method
+  this.container.documentEditor.selection.select(startOffset, startOffset);
+ }
+
 }
 ```
 

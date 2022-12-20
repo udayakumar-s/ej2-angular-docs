@@ -42,6 +42,6 @@ The Syncfusion Angular UI components are supported only in modern browsers. You 
 
 ## See Also
 
-* [Upgradation Guide](../upgrade/upgrading-syncfusion/)
+* [Upgradation Guide](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion/)
 
 * [Setting Up the Local Environment and Workspace](https://angular.io/guide/setup-local#setting-up-the-local-environment-and-workspace)

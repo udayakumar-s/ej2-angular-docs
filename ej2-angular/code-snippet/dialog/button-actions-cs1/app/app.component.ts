@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     public header: string = 'Delete Multiple Items';
     public content: string = 'Are you sure you want to permanently delete these items ?'
     public showCloseIcon: Boolean = true;
-    public width: string = '50%';
+    public width: string = '300px';
     public animationSettings: Object = { effect: 'None' };
     public hide: any;
     ngAfterViewInit():void{

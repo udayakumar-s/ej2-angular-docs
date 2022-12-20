@@ -22,7 +22,6 @@ The Word Processor is supported in the JavaScript, Angular, React, Vue, ASP.NET 
 Have [`Docker`](https://www.docker.com/products/container-runtime#/download) installed in your environment:
 
 * On Windows, install [`Docker for Windows`](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
-
 * On macOS, install [`Docker for Mac`](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 ## How to deploy Word Processor Docker image

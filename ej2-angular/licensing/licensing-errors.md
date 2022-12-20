@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Licensing errors in Angular Licensing component
+# Syncfusion Licensing Errors
 
 Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 

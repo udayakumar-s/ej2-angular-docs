@@ -16,12 +16,36 @@ You can insert the text, paragraph and rich-text content in Angular Document Edi
 
 You can use [`insertText`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#inserttext) API in editor module to insert the text in current cursor position.
 
-The following example code illustrates how to add the text in current selection.
+The following example illustrates how to add the text in current selection.
 
 ```typescript
-// It will insert the provided text in current selection
-this.container.documentEditor.editor.insertText('Syncfusion');
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import {
+    DocumentEditorContainerComponent, ToolbarService
+} from '@syncfusion/ej2-angular-documenteditor';
+
+@Component({
+      selector: 'app-container',
+      // specifies the template string for the Document Editor container component
+      template: `<div><button ejs-button (click)="insertText()" >Insert Text</button>
+      <ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer></div>`,
+      encapsulation: ViewEncapsulation.None,
+      providers: [ToolbarService]
+})
+export class AppComponent {
+    @ViewChild('documenteditor_default')
+    public container: DocumentEditorContainerComponent;
+
+    public insertText(): void {
+        // It will insert the provided text in current selection
+        this.container.documentEditor.editor.insertText('Syncfusion');
+    }
+}
 ```
+
+Please check below gif which illustrates how to insert text in current cursor position on button click:
+
+![Insert text in current cursor position in Javascript document editor](../images/insert_text.gif)
 
 ## Insert paragraph in current cursor position
 
@@ -51,10 +75,10 @@ import {
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the DocumentEditorContainer component
-  template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "searchHighlightColor" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
-  providers: [ToolbarService],
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "searchHighlightColor" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
@@ -64,25 +88,25 @@ export class AppComponent implements OnInit {
     let proxy = this;
     let htmltags: string =
       "<?xml version='1.0' encoding='utf - 8'?><!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN''http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'><html xmlns ='http://www.w3.org/1999/xhtml' xml:lang='en' lang ='en'><body><h1>The img element</h1><img src='https://www.w3schools.com/images/lamp.jpg' alt ='Lamp Image' width='500' height='600'/></body></html>";
-    document.getElementById('export').addEventListener('click', () => {
-      let http: XMLHttpRequest = new XMLHttpRequest();
-      http.open('POST', 'http://localhost:5000/api/documenteditor/LoadString');
-      http.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-      http.responseType = 'json';
-      http.onreadystatechange = function () {
-        if (http.readyState === 4) {
-          if (http.status === 200 || http.status === 304) {
-            // Insert the sfdt content in cursor position using paste API
-            proxy.container.documentEditor.editor.paste(http.response);
-          } else {
-            alert('failed;');
-          }
-        }
-      };
+      document.getElementById('export').addEventListener('click', () => {
+          let http: XMLHttpRequest = new XMLHttpRequest();
+          http.open('POST', 'http://localhost:5000/api/documenteditor/LoadString');
+          http.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+          http.responseType = 'json';
+          http.onreadystatechange = function () {
+            if (http.readyState === 4) {
+              if (http.status === 200 || http.status === 304) {
+                // Insert the sfdt content in cursor position using paste API
+                proxy.container.documentEditor.editor.paste(http.response);
+              } else {
+                alert('failed;');
+              }
+            }
+          };
 
-      let htmlContent: any = { content: htmltags };
-      http.send(JSON.stringify(htmlContent));
-    });
+          let htmlContent: any = { content: htmltags };
+          http.send(JSON.stringify(htmlContent));
+      });
   }
 }
 ```
@@ -94,16 +118,16 @@ export class AppComponent implements OnInit {
 [HttpPost]
 public string LoadString([FromBody]InputParameter data)
 {
-    // You can also load HTML file/string from server side.
-    Syncfusion.EJ2.DocumentEditor.WordDocument document = Syncfusion.EJ2.DocumentEditor.WordDocument.LoadString(data.content, FormatType.Html); // Convert the HTML to SFDT format.
-    string json = Newtonsoft.Json.JsonConvert.SerializeObject(document);
-    document.Dispose();
-    return json;
+      // You can also load HTML file/string from server side.
+      Syncfusion.EJ2.DocumentEditor.WordDocument document = Syncfusion.EJ2.DocumentEditor.WordDocument.LoadString(data.content, FormatType.Html); // Convert the HTML to SFDT format.
+      string json = Newtonsoft.Json.JsonConvert.SerializeObject(document);
+      document.Dispose();
+      return json;
 }
 
 public class InputParameter
 {
-    public string content {get; set; }
+      public string content {get; set; }
 }
 ```
 

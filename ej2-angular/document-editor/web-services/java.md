@@ -27,9 +27,7 @@ Syncfusion Java library supports Java SE 8.0(1.8) or above versions.
 The following jar files are required to be referenced in your Java application.
 
 1. syncfusion-ej2-wordprocessor
-
 2. syncfusion-docio
-
 3. syncfusion-javahelper
 
 ## Download JAR file
@@ -91,7 +89,7 @@ You can easily download the Syncfusion packages for Java via maven repository. F
 
 ```java
     dependencies {
-        implementation 'com.syncfusion:syncfusion-ej2-wordprocessor:18.4.0.30'
+        implementation 'com.syncfusion:syncfusion-ej2-wordprocessor:+'
     }
 ```
 
@@ -109,7 +107,9 @@ This section explains how to create the Java web service for DocumentEditor.
 
 ## Importing Word Document
 
-As the Document editor client-side script requires the document in SFDT file format, you can convert the Word documents (.dotx,.docx,.docm,.dot), rich text format documents (.rtf), and text documents (.txt) into SFDT format by using this Web API.
+As the Document editor client-side script requires the document in SFDT file format, you can convert the Word documents (.dotx,.docx,.docm), rich text format documents (.rtf), and text documents (.txt) into SFDT format by using this Web API.
+
+Note: Document editor Java library doesn’t have support for the **DOC format** Word document. As the DOC format is an older file format, we are concentrating on latest DOCX specific features and it will be more helpful in future if you use DOCX format to utilize some more features from Document editor. So, we recommend you to use the DOCX file format instead of DOC file format, to achieve your requirement.
 
 The following example code illustrates how to write a Web API for importing Word documents into Document Editor component.
 
@@ -126,6 +126,71 @@ The following example code illustrates how to write a Web API for importing Word
     }
 ```
 
+### Import document with EMF and WMF images
+
+The web browsers do not support to display metafile images like EMF and WMF. As a fallback approach, you can convert the metafile to raster image using any image converter in the `MetafileImageParsed` event and this fallback raster image will be displayed in the client-side Document editor component.
+
+The following example code illustrates how to use `MetafileImageParsed` event for creating fallback raster image for metafile present in a Word document.
+
+```java
+import com.syncfusion.javahelper.system.collections.generic.*;
+import com.syncfusion.ej2.wordprocessor.*;
+
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
+    @PostMapping("/api/wordeditor/Import")
+    public String importFile(@RequestParam("files") MultipartFile file) throws Exception {
+        try {
+            WordDocument docIoDocument = new WordDocument(file.getInputStream());
+
+            MetafileImageParsedEventHandler metafileImageParsedEvent = new MetafileImageParsedEventHandler() {
+
+                ListSupport<MetafileImageParsedEventHandler> delegateList = new ListSupport<MetafileImageParsedEventHandler>(
+                        MetafileImageParsedEventHandler.class);
+
+                // Represents event handling for MetafileImageParsedEventHandlerCollection.
+                public void invoke(Object sender, MetafileImageParsedEventArgs args) throws Exception {
+                    OnMetafileImageParsed(sender, args);
+                }
+
+                // Represents the method that handles MetafileImageParsed event.
+                public void dynamicInvoke(Object... args) throws Exception {
+                    OnMetafileImageParsed((Object) args[0], (MetafileImageParsedEventArgs) args[1]);
+                }
+
+                // Represents the method that handles MetafileImageParsed event to add collection item.
+                public void add(MetafileImageParsedEventHandler delegate) throws Exception {
+                    if (delegate != null)
+                        delegateList.add(delegate);
+                }
+
+                // Represents the method that handles MetafileImageParsed event to remove collection
+                // item.
+                public void remove(MetafileImageParsedEventHandler delegate) throws Exception {
+                    if (delegate != null)
+                        delegateList.remove(delegate);
+                }
+            };
+            // Hooks MetafileImageParsed event.
+            WordProcessorHelper.MetafileImageParsed.add("OnMetafileImageParsed", metafileImageParsedEvent);
+            // Converts DocIO DOM to SFDT DOM.
+            String sfdtContent = WordProcessorHelper.load(docIoDocument);
+            // Unhooks MetafileImageParsed event.
+            WordProcessorHelper.MetafileImageParsed.remove("OnMetafileImageParsed", metafileImageParsedEvent);
+            return sfdtContent;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "{\"sections\":[{\"blocks\":[{\"inlines\":[{\"text\":" + e.getMessage() + "}]}]}]}";
+        }
+    }
+
+    // Converts Metafile to raster image.
+    private static void OnMetafileImageParsed(Object sender, MetafileImageParsedEventArgs args) {
+        // You can write your own method definition for converting metafile to raster
+        // image using any third-party image converter.
+        args.setImageStream(ConvertMetafileToRasterImage(args.getMetafileStream())) ;
+    }
+```
+
 ## Paste with formatting
 
 This Web API converts the system clipboard data (HTML/RTF) to SFDT format which is required to paste content with formatting.
@@ -138,7 +203,41 @@ The following example code illustrates how to write a Web API for paste with for
     public String systemClipboard(@RequestBody CustomParameter param) {
         if (param.content != null && param.content != "") {
             try {
-                return  WordProcessorHelper.loadString(param.content, GetFormatType(param.type.toLowerCase()));
+                MetafileImageParsedEventHandler metafileImageParsedEvent = new MetafileImageParsedEventHandler() {
+
+                ListSupport<MetafileImageParsedEventHandler> delegateList = new ListSupport<MetafileImageParsedEventHandler>(
+                        MetafileImageParsedEventHandler.class);
+
+                // Represents event handling for MetafileImageParsedEventHandlerCollection.
+                public void invoke(Object sender, MetafileImageParsedEventArgs args) throws Exception {
+                    OnMetafileImageParsed(sender, args);
+                }
+
+                // Represents the method that handles MetafileImageParsed event.
+                public void dynamicInvoke(Object... args) throws Exception {
+                    OnMetafileImageParsed((Object) args[0], (MetafileImageParsedEventArgs) args[1]);
+                }
+
+                // Represents the method that handles MetafileImageParsed event to add collection item.
+                public void add(MetafileImageParsedEventHandler delegate) throws Exception {
+                    if (delegate != null)
+                        delegateList.add(delegate);
+                }
+
+                // Represents the method that handles MetafileImageParsed event to remove collection
+                // item.
+                public void remove(MetafileImageParsedEventHandler delegate) throws Exception {
+                    if (delegate != null)
+                        delegateList.remove(delegate);
+                }
+            };
+            // Hooks MetafileImageParsed event.
+            WordProcessorHelper.MetafileImageParsed.add("OnMetafileImageParsed", metafileImageParsedEvent);
+                // Converts Clipboard content to SFDT DOM.
+            String sfdtContent = WordProcessorHelper.loadString(param.content, GetFormatType(param.type.toLowerCase()));
+            // Unhooks MetafileImageParsed event.
+            WordProcessorHelper.MetafileImageParsed.remove("OnMetafileImageParsed", metafileImageParsedEvent);
+            return sfdtContent;
             } catch (Exception e) {
                 return "";
             }
@@ -161,6 +260,12 @@ The following example code illustrates how to write a Web API for paste with for
         public void setType(String value) {
             type = value;
         }
+    }
+    // Converts Metafile to raster image.
+    private static void OnMetafileImageParsed(Object sender, MetafileImageParsedEventArgs args) {
+        // You can write your own method definition for converting metafile to raster
+        // image using any third-party image converter.
+        args.setImageStream(ConvertMetafileToRasterImage(args.getMetafileStream())) ;
     }
 ```
 
@@ -213,32 +318,28 @@ To know more about configure spell check, please check this [link](https://githu
 In controller file, you can configure the spell check files like below:
 
 ```java
-
     List<DictionaryData> spellDictionary;
     String personalDictPath;
 
     public WordEditorController() throws Exception {
+        String jsonFilePath = "src/main/resources/spellcheck.json";
+        String jsonContent = new String(Files.readAllBytes(Paths.get(jsonFilePath)), StandardCharsets.UTF_8);
+        JsonArray spellDictionaryItems = new Gson().fromJson(jsonContent, JsonArray.class);
+        personalDictPath = "src/main/resources/customDict.dic";
+        spellDictionary = new ArrayList<DictionaryData>();
+        for(int i = 0; i < spellDictionaryItems.size(); i++) {
+            JsonObject spellCheckerInfo = spellDictionaryItems.get(i).getAsJsonObject();
+            DictionaryData dict = new DictionaryData();
 
-    String jsonFilePath = "src/main/resources/spellcheck.json";
-    String jsonContent = new String(Files.readAllBytes(Paths.get(jsonFilePath)), StandardCharsets.UTF_8);
-    JsonArray spellDictionaryItems = new Gson().fromJson(jsonContent, JsonArray.class);
-    personalDictPath = "src/main/resources/customDict.dic";
-    spellDictionary = new ArrayList<DictionaryData>();
-    for(int i = 0; i < spellDictionaryItems.size(); i++) {
-        JsonObject spellCheckerInfo = spellDictionaryItems.get(i).getAsJsonObject();
-        DictionaryData dict = new DictionaryData();
-
-        if(spellCheckerInfo.has("LanguadeID"))
-            dict.setLanguadeID(spellCheckerInfo.get("LanguadeID").getAsInt());
-        if(spellCheckerInfo.has("DictionaryPath"))
-            dict.setDictionaryPath("src/main/resources/"+spellCheckerInfo.get("DictionaryPath").getAsString());
-        if(spellCheckerInfo.has("AffixPath"))
-            dict.setAffixPath("src/main/resources/"+spellCheckerInfo.get("AffixPath").getAsString());
-        spellDictionary.add(dict);
+            if(spellCheckerInfo.has("LanguadeID"))
+                dict.setLanguadeID(spellCheckerInfo.get("LanguadeID").getAsInt());
+            if(spellCheckerInfo.has("DictionaryPath"))
+                dict.setDictionaryPath("src/main/resources/"+spellCheckerInfo.get("DictionaryPath").getAsString());
+            if(spellCheckerInfo.has("AffixPath"))
+                dict.setAffixPath("src/main/resources/"+spellCheckerInfo.get("AffixPath").getAsString());
+            spellDictionary.add(dict);
+        }
     }
-
-    }
-
 ```
 
 Document editor provides options to spell check word by word and spellcheck page by page when loading the documents.
@@ -250,7 +351,6 @@ This Web API performs the spell check word by word and return the json which con
 The following example code illustrates how to write a Web API for spell check word by word.
 
 ```csharp
-
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping("/api/wordeditor/SpellCheck")
     public String spellCheck(@RequestBody SpellCheckJsonData spellChecker) throws Exception {
@@ -262,7 +362,6 @@ The following example code illustrates how to write a Web API for spell check wo
             e.printStackTrace();
             return "{\"SpellCollection\":[],\"HasSpellingError\":false,\"Suggestions\":null}";
         }
-
     }
 
     public class SpellCheckJsonData {
@@ -288,7 +387,6 @@ This Web API performs the spell check page by page and return the json which con
 The following example code illustrates how to write a Web API for spell check page by page.
 
 ```csharp
-
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping("/api/wordeditor/SpellCheckByPage")
     public String spellCheckByPage(@RequestBody SpellCheckJsonData spellChecker) throws Exception {
@@ -301,7 +399,6 @@ The following example code illustrates how to write a Web API for spell check pa
             return "{\"SpellCollection\":[],\"HasSpellingError\":false,\"Suggestions\":null}";
         }
     }
-
 
     public class SpellCheckJsonData {
 
@@ -330,7 +427,6 @@ This Web API saves the document in the server machine. You can customize this AP
 The following example code illustrates how to write a Web API for save document in server-side.
 
 ```csharp
-
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping("/api/wordeditor/Save")
     public void save(@RequestBody SaveParameter data) throws Exception {
@@ -352,26 +448,26 @@ The following example code illustrates how to write a Web API for save document 
     }
 
     public class SaveParameter {
-    private String _content;
-    private String _fileName;
+        private String _content;
+        private String _fileName;
 
-    public String getContent() {
-        return _content;
-    }
+        public String getContent() {
+            return _content;
+        }
 
-    public String setContent(String value) {
-        _content = value;
-        return value;
-    }
+        public String setContent(String value) {
+            _content = value;
+            return value;
+        }
 
-    public String getFileName() {
-        return _fileName;
-    }
+        public String getFileName() {
+            return _fileName;
+        }
 
-    public String setFileName(String value) {
-        _fileName = value;
-        return value;
-    }
+        public String setFileName(String value) {
+            _fileName = value;
+            return value;
+        }
     }
     static com.syncfusion.docio.FormatType getWFormatType(String format) throws Exception {
 
@@ -424,27 +520,26 @@ The following example code illustrates how to write a Web API for export sfdt.
     }
 
     public class SaveParameter {
+        private String _content;
+        private String _fileName;
 
-    private String _content;
-    private String _fileName;
+        public String getContent() {
+            return _content;
+        }
 
-    public String getContent() {
-        return _content;
-    }
+        public String setContent(String value) {
+            _content = value;
+            return value;
+        }
 
-    public String setContent(String value) {
-        _content = value;
-        return value;
-    }
+        public String getFileName() {
+            return _fileName;
+        }
 
-    public String getFileName() {
-        return _fileName;
-    }
-
-    public String setFileName(String value) {
-        _fileName = value;
-        return value;
-    }
+        public String setFileName(String value) {
+            _fileName = value;
+            return value;
+        }
     }
 
     private ResponseEntity<Resource> saveDocument(WordDocument document, String format) throws Exception {
@@ -482,7 +577,6 @@ This Web API converts the DOCX document to required format and returns the docum
 The following example code illustrates how to write a Web API for export.
 
 ```csharp
-
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping("/api/wordeditor/Export")
     public ResponseEntity<Resource> export(@RequestParam("data") MultipartFile data, String fileName) throws Exception {
@@ -525,8 +619,6 @@ The following example code illustrates how to write a Web API for export.
         return ResponseEntity.ok().contentLength(resource.contentLength())
                 .contentType(MediaType.parseMediaType(contentType)).body(resource);
     }
-
-
 ```
 
 >Note: Please refer the [Java Web API example from GitHub](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices/tree/master/Java).

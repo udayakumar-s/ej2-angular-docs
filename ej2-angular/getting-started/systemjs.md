@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Systemjs with Angular Getting started component
+# Getting Started with Syncfusion Angular and SystemJS
 
 Refer to the following steps to create an angular application with `SystemJS` using Syncfusion Angular UI Components (Essential JS 2).
 

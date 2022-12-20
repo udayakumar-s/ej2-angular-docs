@@ -30,13 +30,16 @@ Cut a portion of document to system clipboard using built-in context menu of doc
 
 ## Paste
 
-Due to limitations, you can paste contents from system clipboard as plain text in document editor only using the ‘CTRL + V’ keyboard shortcut.
+Due to limitations, you can paste contents from system clipboard in Document Editor only using the ‘CTRL + V’ keyboard shortcut.
 
-## Local paste
+>Note: Due to browser limitation of getting content from system clipboard, paste using API and context menu option doesn't work.
+
+## Local paste (copy/paste within control)
 
 Document Editor expose API to enable local paste within the control. On enabling this, the following is performed:
 * Selected contents will be stored to an internal clipboard in addition to system clipboard.
-* Clipboard paste will be overridden, and internally stored data that has formatted text will be pasted.
+* Clipboard paste will be overridden, and internally stored data (SFDT data) that has formatted text will be pasted using paste() API in Document editor.
+
 Refer to the following sample code.
 
 ```typescript
@@ -72,6 +75,17 @@ When local paste is enabled for a document editor instance, you can paste conten
  this.documentEditor.editor.paste();
 ```
 
+### Paste options in context menu
+
+In Document editor, paste options in context menu will be in disabled state if you were try to copy/paste content from outside of Document editor. It gets enabled when **enableLocalPaste** is true and trying to copy/paste content inside Document editor.
+
+>Note: Due to browser limitation of getting content from system clipboard, paste using API and context menu option doesn't work. Hence, the paste option is disabled in context menu.
+Alternatively, you can use the keyboard shortcuts,
+
+* Cut: Ctrl + X
+* Copy: Ctrl + C
+* Paste: Ctrl + V
+
 ### EnableLocalPaste behaviour
 
 |**EnableLocalPaste** |**Paste behavior details**|
@@ -87,6 +101,8 @@ Note:
 
 Document Editor provides support to paste the system clipboard data with formatting. To enable clipboard paste with formatting options, set the `enableLocalPaste` property in Document Editor to false and use this .NET Standard library [`Syncfusion.EJ2.WordEditor.AspNet.Core`](<https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/>) by the web API service implementation. This library helps you to paste the system clipboard data with formatting.
 
+Refer this [page](../document-editor/web-services) for more details.
+
 You can paste your system clipboard data in the following ways:
 * **Keep Source Formatting** This option retains the character styles and direct formatting applied to the copied text. Direct formatting includes characteristics such as font size, italics, or other formatting that is not included in the paragraph style.
 * **Match Destination Formatting** This option discards most of the formatting applied directly to the copied text, but it retains the formatting applied for emphasis, such as bold and italic when it is applied to only a portion of the selection. The text takes on the style characteristics of the paragraph where it is pasted. The text also takes on any direct formatting or character style properties of text that immediately precedes the cursor when the text is pasted.
@@ -99,4 +115,4 @@ This paste option appears as follows.
 ## See Also
 
 * [Feature modules](../document-editor/feature-module/)
-* [Keyboard shortcuts](../document-editor/keyboard-shortcut)
+* [Keyboard shortcuts](../document-editor/keyboard-shortcut/#clipboard)

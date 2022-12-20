@@ -52,6 +52,45 @@ The following example code illustrates how to write a Web API for importing Word
     }
 ```
 
+### Import document with EMF and WMF images
+
+The web browsers do not support to display metafile images like EMF and WMF. As a fallback approach, you can convert the metafile to raster image using any image converter in the `MetafileImageParsed` event and this fallback raster image will be displayed in the client-side Document editor component.
+
+The following example code illustrates how to use `MetafileImageParsed` event for creating fallback raster image for metafile present in a Word document.
+
+```csharp
+    public string Import(IFormCollection data)
+    {
+        if (data.Files.Count == 0)
+            return null;
+        Stream stream = new MemoryStream();
+        IFormFile file = data.Files[0];
+        int index = file.FileName.LastIndexOf('.');
+        string type = index > -1 && index < file.FileName.Length - 1 ?
+            file.FileName.Substring(index) : ".docx";
+        file.CopyTo(stream);
+        stream.Position = 0;
+
+        //Hooks MetafileImageParsed event.
+        WordDocument.MetafileImageParsed += OnMetafileImageParsed;
+        //Converts Stream DOM to SFDT DOM.
+        WordDocument document = WordDocument.Load(stream, GetFormatType(type.ToLower()));
+        //Unhooks MetafileImageParsed event.
+        WordDocument.MetafileImageParsed -= OnMetafileImageParsed;
+        //Serializes SFDT DOM to SFDT string.
+        string json = Newtonsoft.Json.JsonConvert.SerializeObject(document);
+        document.Dispose();
+        return json;
+    }
+
+    //Converts Metafile to raster image.
+    private static void OnMetafileImageParsed(object sender, MetafileImageParsedEventArgs args)
+    {
+    //You can write your own method definition for converting metafile to raster image using any third-party image converter.
+    args.ImageStream = ConvertMetafileToRasterImage(args.MetafileStream);
+    }
+```
+
 ## Paste with formatting
 
 This Web API converts the system clipboard data (HTML/RTF) to SFDT format which is required to paste content with formatting.
@@ -69,7 +108,11 @@ The following example code illustrates how to write a Web API for paste with for
         {
             try
             {
+                //Hooks MetafileImageParsed event.
+                WordDocument.MetafileImageParsed += OnMetafileImageParsed;
                 WordDocument document = WordDocument.LoadString(param.content, GetFormatType(param.type.ToLower()));
+                //Unhooks MetafileImageParsed event.
+                WordDocument.MetafileImageParsed -= OnMetafileImageParsed;
                 string json = Newtonsoft.Json.JsonConvert.SerializeObject(document);
                 document.Dispose();
                 return json;
@@ -86,6 +129,13 @@ The following example code illustrates how to write a Web API for paste with for
     {
         public string content { get; set; }
         public string type { get; set; }
+    }
+
+    //Converts Metafile to raster image.
+    private static void OnMetafileImageParsed(object sender, MetafileImageParsedEventArgs args)
+    {
+    //You can write your own method definition for converting metafile to raster image using any third-party image converter.
+    args.ImageStream = ConvertMetafileToRasterImage(args.MetafileStream);
     }
 ```
 
@@ -124,39 +174,37 @@ To know more about configure spell check, please check this [link](https://githu
 In startup.cs file, you can configure the spell check files like below:
 
 ```csharp
+    public Startup(IConfiguration configuration, IHostingEnvironment env)
+    {
+        var builder = new ConfigurationBuilder()
+            .SetBasePath(env.ContentRootPath)
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+            .AddEnvironmentVariables();
 
-        public Startup(IConfiguration configuration, IHostingEnvironment env)
+        Configuration = builder.Build();
+        _contentRootPath = env.ContentRootPath;
+
+        path = Configuration["SPELLCHECK_DICTIONARY_PATH"];
+        string jsonFileName = Configuration["SPELLCHECK_JSON_FILENAME"];
+        //check the spell check dictionary path environment variable value and assign default data folder
+        //if it is null.
+        path = string.IsNullOrEmpty(path) ? Path.Combine(env.ContentRootPath, "App_Data") : Path.Combine(env.ContentRootPath, path);
+        //Set the default spellcheck.json file if the json filename is empty.
+        jsonFileName = string.IsNullOrEmpty(jsonFileName) ? Path.Combine(path, "spellcheck.json") : Path.Combine(path, jsonFileName);
+        if (System.IO.File.Exists(jsonFileName))
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddEnvironmentVariables();
-
-            Configuration = builder.Build();
-            _contentRootPath = env.ContentRootPath;
-
-            path = Configuration["SPELLCHECK_DICTIONARY_PATH"];
-            string jsonFileName = Configuration["SPELLCHECK_JSON_FILENAME"];
-            //check the spell check dictionary path environment variable value and assign default data folder
-            //if it is null.
-            path = string.IsNullOrEmpty(path) ? Path.Combine(env.ContentRootPath, "App_Data") : Path.Combine(env.ContentRootPath, path);
-            //Set the default spellcheck.json file if the json filename is empty.
-            jsonFileName = string.IsNullOrEmpty(jsonFileName) ? Path.Combine(path, "spellcheck.json") : Path.Combine(path, jsonFileName);
-            if (System.IO.File.Exists(jsonFileName))
+            string jsonImport = System.IO.File.ReadAllText(jsonFileName);
+            List<DictionaryData> spellChecks = JsonConvert.DeserializeObject<List<DictionaryData>>(jsonImport);
+            spellDictCollection = new List<DictionaryData>();
+            //construct the dictionary file path using customer provided path and dictionary name
+            foreach (var spellCheck in spellChecks)
             {
-                string jsonImport = System.IO.File.ReadAllText(jsonFileName);
-                List<DictionaryData> spellChecks = JsonConvert.DeserializeObject<List<DictionaryData>>(jsonImport);
-                spellDictCollection = new List<DictionaryData>();
-                //construct the dictionary file path using customer provided path and dictionary name
-                foreach (var spellCheck in spellChecks)
-                {
-                    spellDictCollection.Add(new DictionaryData(spellCheck.LanguadeID, Path.Combine(path, spellCheck.DictionaryPath), Path.Combine(path, spellCheck.AffixPath)));
-                    personalDictPath = Path.Combine(path, spellCheck.PersonalDictPath);
-                }
+                spellDictCollection.Add(new DictionaryData(spellCheck.LanguadeID, Path.Combine(path, spellCheck.DictionaryPath), Path.Combine(path, spellCheck.AffixPath)));
+                personalDictPath = Path.Combine(path, spellCheck.PersonalDictPath);
             }
         }
-
+    }
 ```
 
 Document editor provides options to spell check word by word and spellcheck page by page when loading the documents.
@@ -168,33 +216,32 @@ This Web API performs the spell check word by word and return the json which con
 The following example code illustrates how to write a Web API for spell check word by word.
 
 ```csharp
-     [AcceptVerbs("Post")]
-     [HttpPost]
-     [EnableCors("AllowAllOrigins")]
-     [Route("SpellCheck")]
-     public string SpellCheck([FromBody] SpellCheckJsonData spellChecker)
-     {
-        try
-            {
-                SpellChecker spellCheck = new SpellChecker(spellDictionary, personalDictPath);
-                spellCheck.GetSuggestions(spellChecker.LanguageID, spellChecker.TexttoCheck, spellChecker.CheckSpelling, spellChecker.CheckSuggestion, spellChecker.AddWord);
-                return Newtonsoft.Json.JsonConvert.SerializeObject(spellCheck);
-            }
-            catch
-            {
-                return "{\"SpellCollection\":[],\"HasSpellingError\":false,\"Suggestions\":null}";
-            }
+    [AcceptVerbs("Post")]
+    [HttpPost]
+    [EnableCors("AllowAllOrigins")]
+    [Route("SpellCheck")]
+    public string SpellCheck([FromBody] SpellCheckJsonData spellChecker)
+    {
+    try
+        {
+            SpellChecker spellCheck = new SpellChecker(spellDictionary, personalDictPath);
+            spellCheck.GetSuggestions(spellChecker.LanguageID, spellChecker.TexttoCheck, spellChecker.CheckSpelling, spellChecker.CheckSuggestion, spellChecker.AddWord);
+            return Newtonsoft.Json.JsonConvert.SerializeObject(spellCheck);
         }
+        catch
+        {
+            return "{\"SpellCollection\":[],\"HasSpellingError\":false,\"Suggestions\":null}";
+        }
+    }
 
-     public class SpellCheckJsonData
-     {
-            public int LanguageID { get; set; }
-            public string TexttoCheck { get; set; }
-            public bool CheckSpelling { get; set; }
-            public bool CheckSuggestion { get; set; }
-            public bool AddWord { get; set; }
-
-     }
+    public class SpellCheckJsonData
+    {
+        public int LanguageID { get; set; }
+        public string TexttoCheck { get; set; }
+        public bool CheckSpelling { get; set; }
+        public bool CheckSuggestion { get; set; }
+        public bool AddWord { get; set; }
+    }
 ```
 
 ### Spell check page by page
@@ -204,34 +251,32 @@ This Web API performs the spell check page by page and return the json which con
 The following example code illustrates how to write a Web API for spell check page by page.
 
 ```csharp
+    [AcceptVerbs("Post")]
+    [HttpPost]
+    [EnableCors("AllowAllOrigins")]
+    [Route("SpellCheckByPage")]
+    public string SpellCheckByPage([FromBody] SpellCheckJsonData spellChecker)
+    {
+    try
+        {
+            SpellChecker spellCheck = new SpellChecker(spellDictionary, personalDictPath);
+            spellCheck.CheckSpelling(spellChecker.LanguageID, spellChecker.TexttoCheck);
+            return Newtonsoft.Json.JsonConvert.SerializeObject(spellCheck);
+        }
+        catch
+        {
+            return "{\"SpellCollection\":[],\"HasSpellingError\":false,\"Suggestions\":null}";
+        }
+    }
 
-     [AcceptVerbs("Post")]
-     [HttpPost]
-     [EnableCors("AllowAllOrigins")]
-     [Route("SpellCheckByPage")]
-     public string SpellCheckByPage([FromBody] SpellCheckJsonData spellChecker)
-     {
-        try
-            {
-                SpellChecker spellCheck = new SpellChecker(spellDictionary, personalDictPath);
-                spellCheck.CheckSpelling(spellChecker.LanguageID, spellChecker.TexttoCheck);
-                return Newtonsoft.Json.JsonConvert.SerializeObject(spellCheck);
-            }
-            catch
-            {
-                return "{\"SpellCollection\":[],\"HasSpellingError\":false,\"Suggestions\":null}";
-            }
-     }
-
-     public class SpellCheckJsonData
-     {
-            public int LanguageID { get; set; }
-            public string TexttoCheck { get; set; }
-            public bool CheckSpelling { get; set; }
-            public bool CheckSuggestion { get; set; }
-            public bool AddWord { get; set; }
-
-     }
+    public class SpellCheckJsonData
+    {
+        public int LanguageID { get; set; }
+        public string TexttoCheck { get; set; }
+        public bool CheckSpelling { get; set; }
+        public bool CheckSuggestion { get; set; }
+        public bool AddWord { get; set; }
+    }
 ```
 
 ## Save as file formats other than SFDT and DOCX
@@ -245,31 +290,31 @@ This Web API saves the document in the server machine. You can customize this AP
 The following example code illustrates how to write a Web API for save document in server-side.
 
 ```csharp
-        [AcceptVerbs("Post")]
-        [HttpPost]
-        [EnableCors("AllowAllOrigins")]
-        [Route("Save")]
-        public void Save([FromBody] SaveParameter data)
+    [AcceptVerbs("Post")]
+    [HttpPost]
+    [EnableCors("AllowAllOrigins")]
+    [Route("Save")]
+    public void Save([FromBody] SaveParameter data)
+    {
+        string name = data.FileName;
+        string format = RetrieveFileType(name);
+        if (string.IsNullOrEmpty(name))
         {
-            string name = data.FileName;
-            string format = RetrieveFileType(name);
-            if (string.IsNullOrEmpty(name))
-            {
-                name = "Document1.doc";
-            }
-            WDocument document = WordDocument.Save(data.Content);
-            // Saves the document to server machine file system, you can customize here to save into databases or file servers based on requirement.
-            FileStream fileStream = new FileStream(name, FileMode.OpenOrCreate, FileAccess.ReadWrite);
-            document.Save(fileStream, GetWFormatType(format));
-            document.Close();
-            fileStream.Close();
+            name = "Document1.doc";
         }
+        WDocument document = WordDocument.Save(data.Content);
+        // Saves the document to server machine file system, you can customize here to save into databases or file servers based on requirement.
+        FileStream fileStream = new FileStream(name, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+        document.Save(fileStream, GetWFormatType(format));
+        document.Close();
+        fileStream.Close();
+    }
 
-        public class SaveParameter
-        {
-            public string Content { get; set; }
-            public string FileName { get; set; }
-        }
+    public class SaveParameter
+    {
+        public string Content { get; set; }
+        public string FileName { get; set; }
+    }
 ```
 
 ### Save as other file formats by passing SFDT string
@@ -279,69 +324,69 @@ This Web API converts the SFDT string to required format and returns the documen
 The following example code illustrates how to write a Web API for export sfdt.
 
 ```csharp
-        [AcceptVerbs("Post")]
-        [HttpPost]
-        [EnableCors("AllowAllOrigins")]
-        [Route("ExportSFDT")]
-        public FileStreamResult ExportSFDT([FromBody] SaveParameter data)
+    [AcceptVerbs("Post")]
+    [HttpPost]
+    [EnableCors("AllowAllOrigins")]
+    [Route("ExportSFDT")]
+    public FileStreamResult ExportSFDT([FromBody] SaveParameter data)
+    {
+        string name = data.FileName;
+        string format = RetrieveFileType(name);
+        if (string.IsNullOrEmpty(name))
         {
-            string name = data.FileName;
-            string format = RetrieveFileType(name);
-            if (string.IsNullOrEmpty(name))
-            {
-                name = "Document1.doc";
-            }
-            WDocument document = WordDocument.Save(data.Content);
-            return SaveDocument(document, format, name);
+            name = "Document1.doc";
         }
+        WDocument document = WordDocument.Save(data.Content);
+        return SaveDocument(document, format, name);
+    }
 
-        public class SaveParameter
-        {
-            public string Content { get; set; }
-            public string FileName { get; set; }
-        }
+    public class SaveParameter
+    {
+        public string Content { get; set; }
+        public string FileName { get; set; }
+    }
 
-         private FileStreamResult SaveDocument(WDocument document, string format, string fileName)
+        private FileStreamResult SaveDocument(WDocument document, string format, string fileName)
+    {
+        Stream stream = new MemoryStream();
+        string contentType = "";
+        if (format == ".pdf")
         {
-            Stream stream = new MemoryStream();
-            string contentType = "";
-            if (format == ".pdf")
-            {
-                contentType = "application/pdf";
-            }
-            else
-            {
-                WFormatType type = GetWFormatType(format);
-                switch (type)
-                {
-                    case WFormatType.Rtf:
-                        contentType = "application/rtf";
-                        break;
-                    case WFormatType.WordML:
-                        contentType = "application/xml";
-                        break;
-                    case WFormatType.Html:
-                        contentType = "application/html";
-                        break;
-                    case WFormatType.Dotx:
-                        contentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.template";
-                        break;
-                    case WFormatType.Doc:
-                        contentType = "application/msword";
-                        break;
-                    case WFormatType.Dot:
-                        contentType = "application/msword";
-                        break;
-                }
-                document.Save(stream, type);
-            }
-            document.Close();
-            stream.Position = 0;
-            return new FileStreamResult(stream, contentType)
-            {
-                FileDownloadName = fileName
-            };
+            contentType = "application/pdf";
         }
+        else
+        {
+            WFormatType type = GetWFormatType(format);
+            switch (type)
+            {
+                case WFormatType.Rtf:
+                    contentType = "application/rtf";
+                    break;
+                case WFormatType.WordML:
+                    contentType = "application/xml";
+                    break;
+                case WFormatType.Html:
+                    contentType = "application/html";
+                    break;
+                case WFormatType.Dotx:
+                    contentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.template";
+                    break;
+                case WFormatType.Doc:
+                    contentType = "application/msword";
+                    break;
+                case WFormatType.Dot:
+                    contentType = "application/msword";
+                    break;
+            }
+            document.Save(stream, type);
+        }
+        document.Close();
+        stream.Position = 0;
+        return new FileStreamResult(stream, contentType)
+        {
+            FileDownloadName = fileName
+        };
+    }
 ```
 
 ### Save as other file formats by passing DOCX file
@@ -351,48 +396,45 @@ This Web API converts the DOCX document to required format and returns the docum
 The following example code illustrates how to write a Web API for export.
 
 ```csharp
-
-        [AcceptVerbs("Post")]
-        [HttpPost]
-        [EnableCors("AllowAllOrigins")]
-        [Route("Export")]
-        public FileStreamResult Export(IFormCollection data)
+    [AcceptVerbs("Post")]
+    [HttpPost]
+    [EnableCors("AllowAllOrigins")]
+    [Route("Export")]
+    public FileStreamResult Export(IFormCollection data)
+    {
+        if (data.Files.Count == 0)
+            return null;
+        string fileName = this.GetValue(data, "filename");
+        string name = fileName;
+        string format = RetrieveFileType(name);
+        if (string.IsNullOrEmpty(name))
         {
-            if (data.Files.Count == 0)
-                return null;
-            string fileName = this.GetValue(data, "filename");
-            string name = fileName;
-            string format = RetrieveFileType(name);
-            if (string.IsNullOrEmpty(name))
+            name = "Document1";
+        }
+        WDocument document = this.GetDocument(data);
+        return SaveDocument(document, format, fileName);
+    }
+
+    private string RetrieveFileType(string name)
+    {
+        int index = name.LastIndexOf('.');
+        string format = index > -1 && index < name.Length - 1 ?
+            name.Substring(index) : ".doc";
+        return format;
+    }
+
+    private string GetValue(IFormCollection data, string key)
+    {
+        if (data.ContainsKey(key))
+        {
+            string[] values = data[key];
+            if (values.Length > 0)
             {
-                name = "Document1";
+                return values[0];
             }
-            WDocument document = this.GetDocument(data);
-            return SaveDocument(document, format, fileName);
         }
-
-        private string RetrieveFileType(string name)
-        {
-            int index = name.LastIndexOf('.');
-            string format = index > -1 && index < name.Length - 1 ?
-                name.Substring(index) : ".doc";
-            return format;
-        }
-
-        private string GetValue(IFormCollection data, string key)
-        {
-            if (data.ContainsKey(key))
-            {
-                string[] values = data[key];
-                if (values.Length > 0)
-                {
-                    return values[0];
-                }
-            }
-            return "";
-        }
-
-
+        return "";
+    }
 ```
 
 >Note: Please refer the [ASP.NET Core Web API sample](https://github.com/SyncfusionExamples/EJ2-DocumentEditor-WebServices/tree/master/ASP.NET%20Core).

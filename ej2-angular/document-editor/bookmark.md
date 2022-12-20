@@ -19,7 +19,7 @@ Document Editor provides built-in dialog to add, delete, and navigate bookmarks 
 
 ## Add bookmark
 
-Using [`insertBookmark`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#insertBookmark) method, Bookmark can be added to the selected text.
+Using [`insertBookmark`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#insertbookmark) method, Bookmark can be added to the selected text.
 
 ```csharp
 this.container.documentEditor.editor.insertBookmark("Bookmark1");
@@ -27,7 +27,7 @@ this.container.documentEditor.editor.insertBookmark("Bookmark1");
 
 ## Select Bookmark
 
-You can select the bookmark in the document using [`selectBookmark`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#selectBookmark) method by providing Bookmark name to select as shown in the following code snippet.
+You can select the bookmark in the document using [`selectBookmark`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#selectbookmark) method by providing Bookmark name to select as shown in the following code snippet.
 
 ```csharp
 this.container.documentEditor.selection.selectBookmark("Bookmark1");
@@ -35,7 +35,7 @@ this.container.documentEditor.selection.selectBookmark("Bookmark1");
 
 ## Delete Bookmark
 
-You can delete bookmark in the document using [`deleteBookmark`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#deleteBookmark) method as shown in the following code snippet.
+You can delete bookmark in the document using [`deleteBookmark`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#deletebookmark) method as shown in the following code snippet.
 
 ```csharp
 this.container.documentEditor.editor.deleteBookmark("Bookmark1");
@@ -43,7 +43,7 @@ this.container.documentEditor.editor.deleteBookmark("Bookmark1");
 
 ## Get Bookmark
 
-You can get all the bookmarks in the document using [`getBookmarks`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#getBookmarks) method as shown in the following code snippet.
+You can get all the bookmarks in the document using [`getBookmarks`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#getbookmarks) method as shown in the following code snippet.
 
 ```csharp
 this.container.documentEditor.selection.getBookmarks(false);

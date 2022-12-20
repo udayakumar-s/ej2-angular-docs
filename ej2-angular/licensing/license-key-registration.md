@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# License key registration in Angular Licensing component
+# Register Syncfusion License key in EJ2-Angular application
 
 Syncfusion license key should be registered, if your project using Syncfusion EJ2-Angular packages reference. The generated license key is a string that needs to be registered after any [Syncfusion Angular reference](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#create-a-new-application).
 

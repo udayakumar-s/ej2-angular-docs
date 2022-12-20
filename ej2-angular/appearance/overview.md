@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview in Angular Appearance component
+# Angular Theme in Syncfusion Components
 
 The  Syncfusion Angular UI can allows you to apply styles for your application. The following list of themes are included in the Syncfusion Angular components library
 

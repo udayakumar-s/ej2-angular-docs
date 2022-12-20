@@ -85,7 +85,7 @@ export class AppComponent {
 }
 ```
 
-Comment only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane/)
+Comment only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane)
 
 ![Enable comment only protection](images/commentsonly.png)
 

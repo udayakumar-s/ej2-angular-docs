@@ -26,7 +26,7 @@ The maximum size of row and column is limited to 32767 and 63 respectively.
 
 ## Insert rows
 
-You can add a row (or several rows) above or below the row at cursor position by using the `insertRow` method. This method accepts the following parameters:
+You can add a row (or several rows) above or below the row at cursor position by using the [`insertRow`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#insertrow) method. This method accepts the following parameters:
 
 Parameter | Type | Description
 ----------|------|-------------
@@ -46,7 +46,7 @@ this.documentEditor.editor.insertRow(true, 3)
 
 ## Insert columns
 
-You can add a column (or several columns) to the left or right of the column at cursor position by using the `insertColumn` method. This method accepts the following parameters:
+You can add a column (or several columns) to the left or right of the column at cursor position by using the [`insertColumn`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#insertcolumn) method. This method accepts the following parameters:
 
 Parameter | Type | Description
 ----------|------|-------------
@@ -102,7 +102,7 @@ this.documentEditor.selection.selectCell();
 
 ## Delete table
 
-Document Editor allows you to delete the entire table. You can use the `deleteTable()` method of editor instance, if selection is in table. Refer to the following sample code.
+Document Editor allows you to delete the entire table. You can use the [`deleteTable()`](../api/document-editor/editor/#deletetable) method of editor instance, if selection is in table. Refer to the following sample code.
 
 ```typescript
 this.documentEditor.editor.deleteTable();
@@ -110,7 +110,7 @@ this.documentEditor.editor.deleteTable();
 
 ## Delete row
 
-Document Editor allows you to delete the selected number of rows. You can use the `deleteRow()` method of editor instance to delete the selected number of rows, if selection is in table. Refer to the following sample code.
+Document Editor allows you to delete the selected number of rows. You can use the [`deleteRow()`](../api/document-editor/editor/#deleterow) method of editor instance to delete the selected number of rows, if selection is in table. Refer to the following sample code.
 
 ```typescript
 this.documentEditor.editor.deleteRow();
@@ -118,7 +118,7 @@ this.documentEditor.editor.deleteRow();
 
 ## Delete column
 
-Document Editor allows you to delete the selected number of columns. You can use the `deleteColumn ()` method of editor instance to delete the selected number of columns, if selection is in table. Refer to the following sample code.
+Document Editor allows you to delete the selected number of columns. You can use the [`deleteColumn()`](../api/document-editor/editor/#deletecolumn) method of editor instance to delete the selected number of columns, if selection is in table. Refer to the following sample code.
 
 ```typescript
 this.documentEditor.editor.deleteColumn();

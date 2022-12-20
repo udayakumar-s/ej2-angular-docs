@@ -14,20 +14,19 @@ domainurl: ##DomainURL##
 
 At present, Document editor component is not responsive for mobile, and we haven't ensured the editing functionalities in mobile browsers. Whereas it works properly as a document viewer in mobile browsers.
 
-Hence, it is recommended to switch the Document editor component as read-only in mobile browsers. Also, invoke [`fitPage`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/#fitpage/) method with `FitPageWidth` parameter in document change event, such as to display one full page by adjusting the zoom factor.
+Hence, it is recommended to switch the Document editor component as read-only in mobile browsers. Also, invoke [`fitPage`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/#fitpage) method with [`FitPageWidth`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/pageFitType/) parameter in document change event, such as to display one full page by adjusting the zoom factor.
 
 The following example code illustrates how to deploy Document Editor component for Mobile.
 
 ```typescript
-
 //Initialize Document Editor Container component.
 import { Component } from '@angular/core';
 import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-    selector: 'app-container',
-    // specifies the template string for the DocumentEditorContainer component
-    template: `<ejs-documenteditorcontainer #document_editor (documentChange)="onDocumentChange()" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
-    providers: [ToolbarService]
+      selector: 'app-container',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #document_editor (documentChange)="onDocumentChange()" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService]
 })
 export class AppComponent {
 
@@ -50,7 +49,6 @@ export class AppComponent {
     }
   }
 }
-
 ```
 
 You can download the complete working example from this [GitHub location](https://github.com/SyncfusionExamples/Deploy-Document-Editor-in-Mobile-Friendly-Web-page/)

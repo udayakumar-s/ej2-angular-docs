@@ -6,12 +6,12 @@ import {
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-    selector: 'app-container',
-    template: `<div>
-    <ejs-documenteditor #document_editor height="330px" style="display:block" [enableSelection]=true (created)="onCreated()"></ejs-documenteditor>
-    </div>`,
-    encapsulation: ViewEncapsulation.None,
-    providers: [SelectionService]
+      selector: 'app-container',
+      template: `<div>
+      <ejs-documenteditor #document_editor height="330px" style="display:block" [enableSelection]=true (created)="onCreated()"></ejs-documenteditor>
+      </div>`,
+      encapsulation: ViewEncapsulation.None,
+      providers: [SelectionService]
 })
 
 export class AppComponent {
