@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Print in Angular Document editor component
 
-To print the document, use the `print` method from document editor instance.
+To print the document, use the [`print`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#print) method from document editor instance.
 
 Refer to the following example for showing a document and print it.
 
@@ -54,10 +54,10 @@ The following example code illustrates how to improve the print quality in Docum
 import { Component, OnInit } from '@angular/core';
 import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-    selector: 'app-root',
-    // specifies the template string for the DocumentEditorContainer component
-    template: `<ejs-documenteditorcontainer id="container" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "settings" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
-    providers: [ToolbarService]
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer id="container" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "settings" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService]
 })
 export class AppComponent implements OnInit {
   // Add required font families to list it in font drop down
@@ -113,7 +113,7 @@ However, you can customize margins, paper, and layout options by modifying the s
 this.documentEditor.showPageSetupDialog();
 ```
 
-By customizing margins, papers, and layouts, the layout of the document will be changed in document editor. To modify these options during print operation, serialize the document as SFDT using the `serialize` method in document editor instance and open the SFDT data in another instance of document editor in separate window.
+By customizing margins, papers, and layouts, the layout of the document will be changed in document editor. To modify these options during print operation, serialize the document as SFDT using the [`serialize`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#serialize) method in document editor instance and open the SFDT data in another instance of document editor in separate window.
 
 The following example shows how to customize layout options only for printing.
 

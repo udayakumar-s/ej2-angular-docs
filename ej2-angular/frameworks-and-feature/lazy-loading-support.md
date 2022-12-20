@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Lazy loading support in Angular Frameworks and feature component
+# Lazy Loading Support with Syncfusion Components in Angular
 
 This section explains how to do Lazy Loading with Essential JS2 Angular components in Angular.  
 

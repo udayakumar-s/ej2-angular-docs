@@ -303,16 +303,16 @@ import {
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-    selector: 'app-container',
-    //specifies the template string for the Document Editor component
-    template: `<div style="height:330px">
-    <button ejs-button (click)="btnClick()" >Show Dialog</button>
-    <ejs-documenteditor #document_editor  id="container" style="width: 100%;height: 100%;display:block" [isReadOnly]=false [enableSfdtExport]=true
-    [enableTableOptionsDialog]=true [enableEditor]=true>
-    </ejs-documenteditor>
-    </div>`,
-    encapsulation: ViewEncapsulation.None,
-    providers: [SfdtExportService, SelectionService, TableOptionsDialogService, EditorService]
+      selector: 'app-container',
+      //specifies the template string for the Document Editor component
+      template: `<div style="height:330px">
+      <button ejs-button (click)="btnClick()" >Show Dialog</button>
+      <ejs-documenteditor #document_editor  id="container" style="width: 100%;height: 100%;display:block" [isReadOnly]=false [enableSfdtExport]=true
+      [enableTableOptionsDialog]=true [enableEditor]=true>
+      </ejs-documenteditor>
+      </div>`,
+      encapsulation: ViewEncapsulation.None,
+      providers: [SfdtExportService, SelectionService, TableOptionsDialogService, EditorService]
 })
 
 export class AppComponent {

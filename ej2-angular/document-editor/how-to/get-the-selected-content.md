@@ -23,10 +23,10 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { DocumentEditorContainerComponent, ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
 import { MenuItemModel } from '@syncfusion/ej2-navigations';
 @Component({
-    selector: 'app-root',
-    // specifies the template string for the DocumentEditorContainer component
-    template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreate()"> </ejs-documenteditorcontainer>`,
-    providers: [ToolbarService]
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreate()"> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService]
 })
 export class AppComponent implements OnInit {
     @ViewChild('documenteditor_default')
@@ -80,35 +80,34 @@ import {
   ToolbarService,
 } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the DocumentEditorContainer component
-  template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreate()"> </ejs-documenteditorcontainer>`,
-  providers: [ToolbarService],
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreate()"> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
-  @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
-  ngOnInit(): void {}
-  onCreate(): void {
-    // To insert text in cursor position
-    this.container.documentEditor.editor.insertText('Document editor');
-    // To select all the content in document
-    this.container.documentEditor.selection.selectAll();
-    // Insert bookmark to selected content
-    this.container.documentEditor.editor.insertBookmark('Bookmark1');
-    //Select the bookmark
-    this.container.documentEditor.selection.selectBookmark('Bookmark1');
-    // To get the selected content as sfdt
-    let selectedContent: string = this.container.documentEditor.selection.sfdt;
-    // Insert the sfdt content in cursor position using paste API
-    this.container.documentEditor.editor.paste(selectedContent);
-  }
+    @ViewChild('documenteditor_default')
+    public container: DocumentEditorContainerComponent;
+    ngOnInit(): void {}
+    onCreate(): void {
+      // To insert text in cursor position
+      this.container.documentEditor.editor.insertText('Document editor');
+      // To select all the content in document
+      this.container.documentEditor.selection.selectAll();
+      // Insert bookmark to selected content
+      this.container.documentEditor.editor.insertBookmark('Bookmark1');
+      //Select the bookmark
+      this.container.documentEditor.selection.selectBookmark('Bookmark1');
+      // To get the selected content as sfdt
+      let selectedContent: string = this.container.documentEditor.selection.sfdt;
+      // Insert the sfdt content in cursor position using paste API
+      this.container.documentEditor.editor.paste(selectedContent);
+    }
 }
-
 ```
 
 You can add the following custom options using this API,
 
 * Save or export the selected content as SFDT file.
-* Get the content of a bookmark in Word document as SFDT by selecting a bookmark using [`selectbookmark`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#selectbookmark) API.
+* Get the content of a bookmark in Word document as SFDT by selecting a bookmark using [`selectbookmark`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#selectbookmark) API.
 * Create template content that can be inserted to multiple documents in cursor position using [`paste`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#paste) API.

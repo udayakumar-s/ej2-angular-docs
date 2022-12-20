@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular universal in Angular Frameworks and feature component
+# Angular universal in Angular Frameworks and feature
 
 <!-- markdownlint-disable MD013 -->
 Angular is a client-side web development framework. On the contrary, conventional web technologies such as Asp.Net WebForms and Asp.Net MVC, etc.. are server-side frameworks. So, most of the web tools are designed by keeping these conventional web technologies in mind.

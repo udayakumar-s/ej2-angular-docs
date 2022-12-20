@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aspnet mvc with Angular Getting started component
+# Getting Started with Angular CLI as Front end in ASP.NET MVC
 
 This document explains how to create an ASP.NET MVC framework with an Angular CLI project as the front end and Syncfusion EJ2 Angular components.
 

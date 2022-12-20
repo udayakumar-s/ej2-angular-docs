@@ -179,12 +179,12 @@ letter-spacing: 0.7px;
 
 * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
 
-* [Getting started with Syncfusion Angular Components](../getting-started/angular-cli/)
+* [Getting started with Syncfusion Angular Components](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/)
 
-* [Getting started with Syncfusion Angular SystemJS](../getting-started/systemjs/)
+* [Getting started with Syncfusion Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs/)
 
-* [Getting started Syncfusion Angular with ASP.NET Core](../getting-started/aspnet-core/)
+* [Getting started Syncfusion Angular with ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core/)
 
-* [Getting started Syncfusion Angular with ASP.NET MVC](../getting-started/aspnet-mvc//)
+* [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc/)
 
-* [Getting started with Syncfusion Angular Treeshaking](../getting-started/treeshaking/)
+* [Getting started with Syncfusion Angular Treeshaking](https://ej2.syncfusion.com/angular/documentation/getting-started/treeshaking/)

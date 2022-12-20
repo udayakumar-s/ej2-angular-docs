@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aspnet core with Angular Getting started component
+# Getting Started ASP .NET Core with Angular using Project Template
 
 This document helps you to create a simple ASP .NET Core application with Angular Framework and Syncfusion Angular UI components.
 

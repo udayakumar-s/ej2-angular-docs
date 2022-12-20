@@ -32,10 +32,10 @@ import {
     SizeF,
   } from '@syncfusion/ej2-pdf-export';
 @Component({
-    selector: 'app-root',
-    // specifies the template string for the DocumentEditorContainer component
-    template: `<button id='export'(click)="onClick(this)">Export</button><ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
-    providers: [ToolbarService]
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<button id='export'(click)="onClick(this)">Export</button><ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService]
 })
 export class AppComponent implements OnInit {
     @ViewChild('documenteditor_default')
@@ -102,10 +102,10 @@ The following example code illustrates how to convert the document to sfdt and p
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DocumentEditorContainerComponent, ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-    selector: 'app-root',
-    // specifies the template string for the DocumentEditorContainer component
-    template: `<button id='export'(click)="onClick(this)">Export</button><ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
-    providers: [ToolbarService]
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<button id='export'(click)="onClick(this)">Export</button><ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService]
 })
 export class AppComponent implements OnInit {
     @ViewChild('documenteditor_default')
@@ -128,7 +128,7 @@ export class AppComponent implements OnInit {
 ```
 
 * Using Save API in server-side, you can convert the sfdt to stream.
-* Finally, convert the stream to Pdf using `Syncfusion.DocIORenderer.Net.Core` library.
+* Finally, convert the stream to Pdf using [`Syncfusion.DocIORenderer.Net.Core`](https://www.nuget.org/packages/Syncfusion.DocIORenderer.Net.Core) library.
 
 The following example code illustrates how to process the sfdt in server-side.
 

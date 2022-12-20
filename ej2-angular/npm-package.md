@@ -14,10 +14,10 @@ Starting with v18.4.0.30 (Volume 4, 2020), the Syncfusion Angular UI components 
 
 ## See Also
 
-* [Installation with NPM CLI](../installation-and-upgrade/installation/)
+* [Installation with NPM CLI](https://ej2.syncfusion.com/angular/documentation/installation-and-upgrade/installation/)
 
-* [Download JavaScript – EJ2 Installer](../installation-and-upgrade/download/#download-javascript--ej2-installer)
+* [Download JavaScript – EJ2 Installer](https://ej2.syncfusion.com/angular/documentation/installation-and-upgrade/download/#download-javascript--ej2-installer)
 
 * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
 
-* [Update NPM Packages](../common/how-to/update-npm-package/)
+* [Update NPM Packages](https://ej2.syncfusion.com/angular/documentation/common/how-to/update-npm-package/)

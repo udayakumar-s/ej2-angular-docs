@@ -8,19 +8,37 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Version Information
+# Syncfusion Angular supported versions
 
-In a year, Syncfusion releases new volumes once every three months. Syncfusion Angular components follows sequence-based identifiers to process software releases based on the **Major.Minor.Build.Revision** format to track all the release changes. It helps developers to keep track of the changes in every release.
+## Angular version compatibility
 
-For example, if the release a package version is `19.3.0.43`, the version number indicates the details as follows,
+The following table represents the supported Angular versions by different Syncfusion Angular UI components releases.
 
-* **19** denotes `Major release` version which changes every year.
-* **3** denotes `Volume release`. Syncfusion releases a new volume once every three months. Here 3 represents the third release of the year.
-* **0** denotes `Build Number` and it will always zero for Angular.
-* **43** denotes `Patch Number` also known as revision number which increases for each service pack release and weekly patch release.
+| Version | Syncfusion Angular components version |
+| ------------- | ------------- |
+| [Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af) | 20.2.36 and above |
+| [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296) | 19.4.38 and above |
+| [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49) | 19.3.43 and above |
+| [Angular v11](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7) | 18.4.31 and above |
+| [Angular v10](https://blog.angular.io/version-10-of-angular-now-available-78960babd41) | 18.2.55 and above |
+| [Angular v9](https://blog.angular.io/version-9-of-angular-now-available-project-ivy-has-arrived-23c97b63cfa3) | 17.4.51 and above |
+| [Angular v8](https://blog.angular.io/version-8-of-angular-smaller-bundles-cli-apis-and-alignment-with-the-ecosystem-af0261112a27) | 17.1.50 and above |
+| [Angular v7](https://blog.angular.io/version-7-of-angular-cli-prompts-virtual-scroll-drag-and-drop-and-more-c594e22e7b8c) | 16.3.32 and above |
 
-## See Also
+>By default, Syncfusion Angular packages (>=20.2.36) support the [Angular Ivy distribution](https://docs.angular.lat/guide/ivy). These packages are compatible with Angular versions 12 and above. After this release (>=20.2.36), you need to add the suffix `-ngcc` along with the package version (`@syncfusion/ej2-angular-grids:"20.2.38-ngcc"`) in the `package.json` file. For more information on Angular package installation, see [Angular package installation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-Syncfusion-Grid-Package).
 
-* [Syncfusion Product release lifecycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
+## Syncfusion version information
+
+In a year, Syncfusion releases new volumes once every three months. Syncfusion Angular components follows sequence-based identifiers to process software releases based on the **YearlyVersion.Major.Revision** format to track all the release changes. It helps developers to keep track of the changes in every release.
+
+For example, if the release package version is `20.2.36`, the version number indicates the details as follows,
+
+* **20** denotes the `yearly release` version, which changes every year.
+* **2** denotes the `major release` version. Once every three months, Syncfusion releases a new volume. Here, 2 represents the second release of the year.
+* **36** denotes the `revision number` also known as the `patch number`, which increases for each service pack release and weekly patch release.
+
+## See also
+
+* [Syncfusion product release lifecycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
 * [Upgrade guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components)

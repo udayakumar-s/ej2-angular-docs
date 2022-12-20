@@ -12,7 +12,6 @@ domainurl: ##DomainURL##
 ## Prerequisites
 
 * Have [`Azure account`](https://azure.microsoft.com/en-gb/) and [`Azure CLI`](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) setup in your environment.
-
 * Run the following command to open the Azure login page. Sign into your [`Microsoft Azure account`](https://azure.microsoft.com/en-gb/).
 
 ```

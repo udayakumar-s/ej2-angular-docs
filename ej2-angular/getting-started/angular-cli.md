@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular cli with Angular Getting started component
+# Getting Started with Angular CLI
 
 Refer to the following steps to create Angular project with Syncfusion Angular UI Components (Essential JS 2).
 
@@ -241,4 +241,4 @@ Refer the below sample for more information.
 
 ## See Also
 
-* [Upgradation Guide](../upgradation/upgrading-syncfusion/)
+* [Upgradation Guide](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion/)

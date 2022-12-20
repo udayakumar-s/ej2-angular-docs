@@ -1,6 +1,5 @@
 
 
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
     DocumentEditorComponent, EditorService, SelectionService, EditorHistoryService, SfdtExportService

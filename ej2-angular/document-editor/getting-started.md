@@ -149,8 +149,8 @@ Syncfusion `ej2-angular-documenteditor` packages have to be mapped in the system
         "@syncfusion/ej2-angular-base": "syncfusion:ej2-angular-base/dist/ej2-angular-base.umd.min.js",
 
         "@syncfusion/ej2-angular-documenteditor": "syncfusion:ej2-angular-documenteditor/dist/ej2-angular-documenteditor.umd.min.js",
-          // other libraries
-        'rxjs':                      'npm:rxjs',
+        // other libraries
+        'rxjs': 'npm:rxjs',
         'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
@@ -188,7 +188,8 @@ This can be referenced in your `[src/styles/styles.css]` using the following cod
 @import '../../node_modules/@syncfusion/ej2-angular-documenteditor/styles/material.css';
 ```
 
-> To know about individual component CSS, please refer to [Individual Component theme files](../appearance/theme#referring-individual-control-theme/) section.
+> To know about individual component CSS, please refer to
+[Individual Component theme files](../appearance/theme#referring-individual-control-theme/) section.
 
 In case, if you want to make use of the combined CSS files of entire components, then you can avail it from the root folder of Essential JS 2 package and reference it with the code shown below.
 
@@ -244,7 +245,6 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
     }
 }
-
 ```
 
 #### Run the  DocumentEditor application
@@ -319,7 +319,6 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
     }
 }
-
 ```
 
 #### Run the DocumentEditorContainer application

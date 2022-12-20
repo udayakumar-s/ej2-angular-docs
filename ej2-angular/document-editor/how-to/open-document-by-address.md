@@ -23,10 +23,10 @@ import {
   ToolbarService,
 } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the DocumentEditorContainer component
-  template: `<button id='export'(click)="onClick(this)">Export</button><ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
-  providers: [ToolbarService],
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<button id='export'(click)="onClick(this)">Export</button><ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
@@ -50,13 +50,11 @@ export class AppComponent implements OnInit {
     http.send(JSON.stringify(content));
   }
 }
-
 ```
 
 please refer below example for server-side code
 
 ```csharp
-
     [AcceptVerbs("Post")]
     public string ImportFileURL([FromBody]FileUrlInfo param)
     {
@@ -79,5 +77,4 @@ please refer below example for server-side code
         public string fileUrl { get; set; }
         public string Content { get; set; }
     }
-
 ```

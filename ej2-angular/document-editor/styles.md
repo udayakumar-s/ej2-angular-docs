@@ -55,7 +55,8 @@ When a paragraph style is based on a linked style, the inheritance of the proper
 
 ### Linked style
 
-Linked styles are composite styles and their components are paragraph and character styles with link between them. To apply paragraph properties, take the properties from the linked paragraph style. Similarly, to apply character properties, take the properties from linked character style. Linked styles are based on other linked styles or on paragraph styles.
+Linked styles are composite styles and their components are paragraph and character styles with link between them. To apply paragraph properties, take the properties from the linked paragraph style. Similarly, to apply character properties, take the properties from linked character style.
+Linked styles are based on other linked styles or on paragraph styles.
 
 When a linked style is based on a paragraph style, the hierarchy of the properties is as follows:
 

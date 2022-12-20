@@ -16,7 +16,7 @@ domainurl: ##DomainURL##
 
 ## Hide the properties pane
 
-By default, Document editor container has built-in properties pane which contains options for formatting text, table, image and header and footer. You can use [`showPropertiesPane`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/documentEditorContainerModel/#showpropertiespane) API in `DocumentEditorContainer` to hide the properties pane.
+By default, Document editor container has built-in properties pane which contains options for formatting text, table, image and header and footer. You can use [`showPropertiesPane`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/documentEditorContainerModel/#showpropertiespane) API in [`DocumentEditorContainer`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/documentEditorContainerModel/) to hide the properties pane.
 
 The following example code illustrates how to hide the properties pane.
 
@@ -27,10 +27,10 @@ import {
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the DocumentEditorContainer component
-  template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true [showPropertiesPane]=false (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
-  providers: [ToolbarService],
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true [showPropertiesPane]=false (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
 
 ## Hide the toolbar
 
-You can use [`enableToolbar`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/documentEditorContainerModel/#enabletoolbar) API in `DocumentEditorContainer` to hide the existing toolbar.
+You can use [`enableToolbar`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/documentEditorContainerModel/#enabletoolbar) API in [`DocumentEditorContainer`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/documentEditorContainerModel/) to hide the existing toolbar.
 
 The following example code illustrates how to hide the existing toolbar.
 
@@ -54,9 +54,9 @@ import {
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the DocumentEditorContainer component
-  template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=false (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=false (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')

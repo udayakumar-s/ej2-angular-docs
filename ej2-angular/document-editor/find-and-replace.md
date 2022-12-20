@@ -34,12 +34,12 @@ You can close the options pane by pressing `Esc` key.
 
 ## Search
 
-The `Search` module of Document Editor exposes the following APIs:
+The [`Search`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/search/) module of Document Editor exposes the following APIs:
 
 |API Name|Type |Description|
 |---|---|---|
 |[`findAll()`](../api/document-editor/search/#findall)| Method |Searches for specified text in the whole document and highlights it with yellow.|
-|[`searchResults`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/search/#searchresults) |Property |This is an instance of `SearchResults`.|
+|[`searchResults`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/search/#searchresults) |Property |This is an instance of [`SearchResults`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/searchResults/).|
 |[`find()`](../api/document-editor/search/#find) | Method |Find immediate occurrence of specified text from cursor position in the document and highlights it with yellow.|
 
 ### Find the immediate occurrence in the document
@@ -68,7 +68,7 @@ this.documenteditor.search.findAll('Some text', 'None');
 
 ## Search results
 
-The `SearchResults` class provides information about the search results after a search operation is completed that can be identified using the `searchResultsChange` event. This will expose the following APIs:
+The [`SearchResults`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/searchResults/) class provides information about the search results after a search operation is completed that can be identified using the [`searchResultsChange`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#searchresultschange) event. This will expose the following APIs:
 
 |API Name|Type |Description|
 |---|---|---|
@@ -117,7 +117,7 @@ this.container.documentEditor.search.searchResults.clear();
 
 ## SearchResultsChange event
 
-`DocumentEditor` exposes the `searchResultsChange’`event that will be triggered whenever search results are changed. Consider the following scenarios:
+[`DocumentEditor`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/) exposes the [`searchResultsChange`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#searchresultschange) event that will be triggered whenever search results are changed. Consider the following scenarios:
 
 * A search operation is completed with some results.
 * The results are replaced with some other text, since it will be cleared automatically.

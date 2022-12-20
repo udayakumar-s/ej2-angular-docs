@@ -8,7 +8,7 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
   template: `<div class="control-section">
   <button class="e-btn" id='dlgbtn' #ButtonInstance (click)="BtnClick()">Open</button>
      <!-- Render Button to open the Dialog -->
-     <ejs-dialog #Dialog [buttons]='dlgButtons' [header]='header' [animationSettings]='animationSettings' [showCloseIcon]='showCloseIcon' [width]='width' (open)="dialogOpen()"
+     <ejs-dialog #Dialog [buttons]='dlgButtons' [header]='header' [animationSettings]='animationSettings' [showCloseIcon]='showCloseIcon' [width]='width' [height]='height' (open)="dialogOpen()"
          (close)="dialogClose()">
          <app-ng-content>
          <span> 10% of battery remaining </span>
@@ -21,7 +21,8 @@ export class AppComponent {
   @ViewChild('Dialog')
     public Dialog: DialogComponent;
     public showCloseIcon: Boolean = true;
-    public width: string = '50%';
+    public width: string = '250px';
+    public height: string = '150px';
     public animationSettings: Object = { effect: 'None' };
     public header: string = 'Low Battery';
     BtnClick() {

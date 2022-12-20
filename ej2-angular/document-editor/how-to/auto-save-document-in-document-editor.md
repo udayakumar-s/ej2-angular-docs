@@ -27,10 +27,10 @@ The following example illustrates how to auto save the document in AWS S3.
  * Add below codes in app.component.ts file
  */
 @Component({
-    selector: 'app-root',
-    templateUrl: 'app.component.html',
-    encapsulation: ViewEncapsulation.None,
-    providers: [ToolbarService]
+      selector: 'app-root',
+      templateUrl: 'app.component.html',
+      encapsulation: ViewEncapsulation.None,
+      providers: [ToolbarService]
 })
 export class AppComponent {
     public hostUrl: string = 'https://ej2services.syncfusion.com/production/web-services/';
@@ -38,44 +38,44 @@ export class AppComponent {
     public container: DocumentEditorContainerComponent;
     contentChanged: boolean;
 
-    onCreate(): void {
-        this.container.serviceUrl = 'https://ej2services.syncfusion.com/production/web-services/api/documenteditor/';
+      onCreate(): void {
+          this.container.serviceUrl = 'https://ej2services.syncfusion.com/production/web-services/api/documenteditor/';
 
-        setInterval(() => {
-            if (this.contentChanged) {
-                //You can save the document as below
-                this. container.documentEditor.saveAsBlob('Docx').then((blob: Blob) => {
-                    console.log('Saved sucessfully');
-                    let exportedDocument: Blob = blob;
-                    //Now, save the document where ever you want.
-                    let formData: FormData = new FormData();
-                    formData.append('fileName', 'sample.docx');
-                    formData.append('data', exportedDocument);
-                    /* tslint:disable */
-                    var req = new XMLHttpRequest();
-                    // Replace your running Url here
-                    req.open(
-                      'POST',
-                      'http://localhost:62869/api/documenteditor/SaveToS3',
-                      true
-                    );
-                    req.onreadystatechange = () => {
-                      if (req.readyState === 4) {
-                        if (req.status === 200 || req.status === 304) {
-                          console.log('Saved sucessfully');
+          setInterval(() => {
+              if (this.contentChanged) {
+                  //You can save the document as below
+                  this. container.documentEditor.saveAsBlob('Docx').then((blob: Blob) => {
+                      console.log('Saved sucessfully');
+                      let exportedDocument: Blob = blob;
+                      //Now, save the document where ever you want.
+                      let formData: FormData = new FormData();
+                      formData.append('fileName', 'sample.docx');
+                      formData.append('data', exportedDocument);
+                      /* tslint:disable */
+                      var req = new XMLHttpRequest();
+                      // Replace your running Url here
+                      req.open(
+                        'POST',
+                        'http://localhost:62869/api/documenteditor/SaveToS3',
+                        true
+                      );
+                      req.onreadystatechange = () => {
+                        if (req.readyState === 4) {
+                          if (req.status === 200 || req.status === 304) {
+                            console.log('Saved sucessfully');
+                          }
                         }
-                      }
-                    };
-                    req.send(formData);
-                  });
-                  this.contentChanged = false;
-                }
-              }, 1000);
-    }
+                      };
+                      req.send(formData);
+                    });
+                    this.contentChanged = false;
+                  }
+                }, 1000);
+      }
 
-    onContentChange(): void {
-        this.contentChanged = true;
-    }
+      onContentChange(): void {
+          this.contentChanged = true;
+      }
 }
 ```
 

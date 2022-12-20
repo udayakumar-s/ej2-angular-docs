@@ -14,16 +14,14 @@ Document Editor has preservation support for all types of fields in an existing 
 
 ## Adding Fields
 
-You can add a field to the document by using [`insertField`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#insertfield) method in `Editor` module.
+You can add a field to the document by using [`insertField`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#insertfield) method in [`Editor`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/) module.
 
 The following example code illustrates how to insert merge field programmatically by providing the field code and field result.
 
 ```typescript
-
 let fieldCode: string = 'MERGEFIELD  First Name  \\* MERGEFORMAT ';
 let fieldResult: string = '«First Name»';
 this.documentEditor.editor.insertField(fieldCode, fieldResult);
-
 ```
 
 >Note: Document editor does not validate/process the field code/field result. it simply inserts the field with specified field information.
@@ -49,7 +47,7 @@ The following type of fields are automatically updated in Document Editor.
 
 ## Get field info
 
-You can get field code and field result of the current selected field by using [`getFieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#getfieldinfo) method in the `Selection` module.
+You can get field code and field result of the current selected field by using [`getFieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#getfieldinfo) method in the [`Selection`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/) module.
 
 ```typescript
 //Gets the field information of the selected field.
@@ -60,7 +58,7 @@ let fieldInfo: FieldInfo = this.documentEditor.selection.getFieldInfo();
 
 ## Set field info
 
-You can modify the field code and field result of the current selected field by using [`setFieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#setfieldinfo) method in the `Editor` module.
+You can modify the field code and field result of the current selected field by using [`setFieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#setfieldinfo) method in the [`Editor`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/) module.
 
 ```typescript
 //Gets the field information for the selected field.
@@ -74,7 +72,6 @@ fieldInfo.result = '«First Name»';
 
 //Modify field code and result of the current selected field.
 this.documentEditor.editor.setFieldInfo(fieldInfo);
-
 ```
 
 >Note: For nested field, entire field gets replaced completely with the specified field information.

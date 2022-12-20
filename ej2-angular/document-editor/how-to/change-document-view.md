@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## How to change the document view in DocumentEditor component
 
-DocumentEditor allows you to change the view to web layout and print using the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#layouttype) property with the supported [`LayoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/layouttype/).
+DocumentEditor allows you to change the view to web layout and print using the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#layouttype) property with the supported [`LayoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/layoutType/).
 
 ```typescript
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
@@ -52,21 +52,21 @@ export class AppComponent {
 }
 ```
 
->Note: Default value of `layoutType` in DocumentEditor component is `Pages`.
+>Note: Default value of [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#layouttype) in DocumentEditor component is [`Pages`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/layoutType/).
 
 ## How to change the document view in DocumentEditorContainer component
 
-DocumentEditorContainer component allows you to change the view to web layout and print using the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container#layouttype) property with the supported [`LayoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/layouttype/).
+DocumentEditorContainer component allows you to change the view to web layout and print using the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container#layouttype) property with the supported [`LayoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/layoutType/).
 
 ```typescript
 /**
  * Add below codes in app.component.ts file
  */
 @Component({
-    selector: 'app-root',
-    templateUrl: '<ejs-documenteditorcontainer #documenteditor_default [enableToolbar]=true (created)="onCreate()" height="600px" style="display:block;"></ejs-documenteditorcontainer>',
-    encapsulation: ViewEncapsulation.None,
-    providers: [ToolbarService]
+      selector: 'app-root',
+      templateUrl: '<ejs-documenteditorcontainer #documenteditor_default [enableToolbar]=true (created)="onCreate()" height="600px" style="display:block;"></ejs-documenteditorcontainer>',
+      encapsulation: ViewEncapsulation.None,
+      providers: [ToolbarService]
 })
 export class AppComponent {
     @ViewChild('documenteditor_default')
@@ -80,4 +80,4 @@ export class AppComponent {
 }
 ```
 
->Note: Default value of `layoutType` in DocumentEditorContainer component is `Pages`.
+>Note: Default value of [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/document-editor#layouttype) in DocumentEditorContainer component is [`Pages`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/layoutType/).

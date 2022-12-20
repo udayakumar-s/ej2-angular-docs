@@ -14,7 +14,11 @@ Document Editor supports hyperlink field. You can link a part of the document co
 
 ## Navigate a hyperlink
 
-Document Editor triggers `requestNavigate` event whenever user clicks Ctrl key or tap a hyperlink within the document. This event provides necessary details about link type, navigation URL, and local URL (if any) as arguments, and allows you to easily customize the hyperlink navigation functionality. Refer to the following example.
+Document Editor triggers `requestNavigate` event whenever user clicks Ctrl key or tap a hyperlink within the document. This event provides necessary details about link type, navigation URL, and local URL (if any) as arguments, and allows you to easily customize the hyperlink navigation functionality.
+
+### Add the requestNavigate event for DocumentEditor
+
+The following example illustrates how to add requestNavigate event for DocumentEditor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,6 +33,44 @@ Document Editor triggers `requestNavigate` event whenever user clicks Ctrl key o
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/document-editor/link-cs2" %}
+
+### Add the requestNavigate event for DocumentEditorContainer component
+
+The following example illustrates how to add requestNavigate event for DocumentEditorContainer component.
+
+```typescript
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import {
+    DocumentEditorContainerComponent, ToolbarService
+} from '@syncfusion/ej2-angular-documenteditor';
+
+@Component({
+      selector: 'app-container',
+      // specifies the template string for the Document Editor container component
+      template: `<div><button ejs-button (click)="insertText()" >Insert Text</button>
+      <ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer></div>`,
+      encapsulation: ViewEncapsulation.None,
+      providers: [ToolbarService]
+})
+export class AppComponent {
+    @ViewChild('documenteditor_default')
+    public container: DocumentEditorContainerComponent;
+
+  public onCreated(): void {
+    this.container.documentEditor.requestNavigate = (args) => {
+      if (args.linkType !== 'Bookmark') {
+        let link: string = args.navigationLink;
+        if (args.localReference.length > 0) {
+          link += '#' + args.localReference;
+        }
+        //Navigate to the specified URL.
+        window.open(link);
+        args.isHandled = true;
+      }
+    };
+  }
+}
+```
 
 If the selection is in hyperlink, trigger this event by calling `navigateHyperlink` method of `Selection` instance. Refer to the following example.
 
@@ -46,7 +88,7 @@ this.documentEditor.selection.copyHyperlink();
 
 ## Add hyperlink
 
-To create a basic hyperlink in the document, press `ENTER` / `SPACEBAR` / `SHIFT + ENTER` / `TAB` key after typing the address, for instance `http://www.google.com`. Document Editor automatically converts this address to a hyperlink field. The text can be considered as a valid URL if it starts with any of the following.
+To create a basic hyperlink in the document, press `ENTER` / `SPACEBAR` / `SHIFT + ENTER` / `TAB` key after typing the address, for instance [`http://www.google.com`](http://www.google.com). Document Editor automatically converts this address to a hyperlink field. The text can be considered as a valid URL if it starts with any of the following.
 
 > `<http://>`<br>
 > `<https://>`<br>
@@ -78,7 +120,7 @@ You can customize the screen tip text for the hyperlink by using below sample co
 this.documentEditor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
 ```
 
-Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog/)
+Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog)
 
 ![Add or modify the screen tip text for hyperlinks in a Word document.](images/screentip.png)
 

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tree shaking in Angular Frameworks and feature component
+# Tree shaking in Angular Frameworks and feature 
 
 The [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) process basically reduces the download size of an application over network.
 

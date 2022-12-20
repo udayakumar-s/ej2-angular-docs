@@ -151,7 +151,6 @@ Here’s how to handle the server-side action for converting word document in to
                 throw new System.NotSupportedException("EJ2 DocumentEditor does not support this file format.");
         }
     }
-
 ```
 
 To know about server-side action, please refer this [page](../document-editor/web-services).
@@ -188,4 +187,4 @@ The following table illustrates the reasons for pagination (page-by-page display
 ## See Also
 
 * [Feature modules](../document-editor/feature-module/)
-* [How to show and hide spinner while opening document in DocumentEditor](../ddocument-editor/how-to/show-hide-spinner/)
+* [How to show and hide spinner while opening document in DocumentEditor](../document-editor/how-to/show-hide-spinner/)

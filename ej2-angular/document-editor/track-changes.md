@@ -16,7 +16,7 @@ Track Changes allows you to keep a record of changes or edits made to a document
 
 The following example demonstrates how to enable track changes.
 
-```html
+```
  <ejs-documenteditor [enableTrackChanges]=true height="330px" style="display:block"></ejs-documenteditor>
 ```
 
@@ -130,7 +130,7 @@ export class AppComponent {
 }
 ```
 
-Tracked changes only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane/)
+Tracked changes only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane)
 
 ![Enable track changes only protection](images/tracked-changes.png)
 
