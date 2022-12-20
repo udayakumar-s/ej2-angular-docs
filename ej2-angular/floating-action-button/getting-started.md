@@ -23,7 +23,7 @@ The list of dependencies required to use the Floating Action Button component in
     |-- @syncfusion/ej2-buttons
 ```
 
-## Setup Angular environment
+## Setup Angular Environment
 
 You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
@@ -31,7 +31,7 @@ You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your 
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+## Create an Angular Application
 
 Start a new Angular application using below Angular CLI command.
 
@@ -48,7 +48,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
-### Ivy library distribution package
+### Ivy Library Distribution package
 
 Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
@@ -58,7 +58,7 @@ Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusio
 npm install @syncfusion/ej2-angular-buttons --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular Compatibility Compiled Package(ngcc)
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
 
@@ -97,7 +97,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-## Adding Syncfusion Floating Action Button component
+## Adding Syncfusion Floating Action Button Component
 
 Modify the template in `app.component.ts` file to render the Floating Action Button component.
 
@@ -145,3 +145,21 @@ The below example shows a basic Floating Action Button component,
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/floating-action-button/getting-started-cs1" %}
+
+## Click event
+
+The floating action button control triggers the `onclick` event when you click on the floating action button. You can use this event to perform the required action.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/floating-action-button/events-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/floating-action-button/events-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/floating-action-button/events-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/floating-action-button/events-cs2" %}

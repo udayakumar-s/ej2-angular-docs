@@ -74,7 +74,7 @@ import { Component } from '@angular/core';
         <tr>
             <td class="col-lg-6 col-md-6 col-sm-6 col-xs-6 control-title"> MultiSelect </td>
             <td class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <ejs-inplaceeditor id="multiSelect" mode="Inline" type="MultiSelect" value="Android" [model]="dropDownModel"></ejs-inplaceeditor>
+                <ejs-inplaceeditor id="multiSelect" mode="Inline" type="MultiSelect" value="multiSelectValue" [model]="dropDownModel"></ejs-inplaceeditor>
             </td>
         </tr>
         <tr>
@@ -106,6 +106,8 @@ export class AppComponent {
   public dateTimeValue: Date = new Date('11/23/2018 12:30 PM');
   public frameWorkList: string[] = ['Android', 'JavaScript', 'jQuery', 'TypeScript', 'Angular', 'React', 'Vue', 'Ionic'];
   public dropDownModel: object = { dataSource: this.frameWorkList, placeholder: 'Select frameworks'};
+  public multiSelectModel: object = {  dataSource: this.frameWorkList, placeholder: 'Select framework'};
+  public multiSelectValue: string[] = ['Android'];
   public maskModel: object = { mask: '000-000-000' };
   public numericModel: object = { placeholder: 'Enter number'};
   public textModel: object = { placeholder: 'Enter some text' };

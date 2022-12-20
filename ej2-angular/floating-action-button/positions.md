@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Positions in Angular Floating action button component
 
-The floating action button can be positioned anywhere on the [target](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#target) using the [position](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#position) property. If the `target` is not defined, then FAB is positioned based on the browser viewport.
+The floating action button can be positioned anywhere on the [`target`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#target) using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#position) property. If the `target` is not defined, then FAB is positioned based on the browser viewport.
 
 The position values of Floating Action Button are as follows:
 * TopLeft
@@ -53,7 +53,7 @@ Below example demonstrates different supported positions of FAB.
 
 ## Custom position
 
-You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properties using `cssClass`. For detailed information, refer `index.css` file below.
+You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properties using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass). For detailed information, refer `index.css` file below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
