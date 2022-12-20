@@ -1,51 +1,55 @@
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel,  GridComponent } from '@syncfusion/ej2-angular-grids';
+import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<button ej-button id='edit' (click)='clickEdit()'>Edit</button>
-    <button ej-button id='add' (click)='clickAdd()'>Add</button>
-    <button ej-button id='delete' (click)='clickDelete()'>Delete</button>
-    <button ej-button id='updaterow' (click)='clickUpdateRow()'>Update Row</button>
-    <button ej-button id='updatecell' (click)='clickUpdateCell()'>Update cell</button>
-               <ejs-grid #grid id="Grid" [dataSource]='data' [editSettings]='editSettings'
-           height='210px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120  isPrimaryKey='true'></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
+    template: `<button (click)="btnClick($event)">Grid is Addable</button>
+                <ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='240px'>
+                  <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
+                    <e-column field='Role' headerText='Role' width=120></e-column>
+                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
+                     editType= 'numericedit' width=120 format= 'C2'></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
+                  </e-columns>
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public editSettings: EditSettingsModel;
+
     public data: object[];
-    @ViewChild('grid')
-    public grid: GridComponent;
+    public editSettings: EditSettingsModel;
+    public toolbar: ToolbarItems[];
+    public isAddable: boolean = true;
 
     ngOnInit(): void {
         this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
 
-    clickEdit(){
-        this.grid.startEdit();
+    actionBegin(args) {
+        if (args.requestType == 'beginEdit') {
+            if (args.rowData['Role'].toLowerCase() == 'employee') {
+                args.cancel = true;
+            }
+        }
+        if (args.requestType == 'delete') {
+            if (args.data[0]['Role'].toLowerCase() == 'employee') {
+                args.cancel = true;
+            }
+        }
+        if (args.requestType == 'add') {
+            if (!this.isAddable) {
+                args.cancel = true;
+            }
+        }
     }
-    clickAdd(){
-        this.grid.addRecord({ "OrderID": "10248", "CustomerID": "RTER", "ShipCity": "America", "ShipName": "Hanari"  });
-    }
-    clickDelete(){
-        this.grid.deleteRecord();
-    }
-    clickUpdateRow(){
-        this.grid.updateRow(0, { OrderID: 10248, CustomerID: 'RTER', ShipCity: 'America', ShipName: 'Hanari'});
-    }
-    clickUpdateCell(){
-         this.grid.setCellValue((this.grid.currentViewData[0] as any).OrderID,'CustomerID','Value Changed');
+    btnClick(args) {
+        args.target.innerText == 'Grid is Addable' ? (args.target.innerText = 'Grid is Not Addable') : (args.target.innerText = 'Grid is Addable');
+        this.isAddable = !this.isAddable;
     }
 }
 

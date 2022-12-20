@@ -31,7 +31,6 @@ To bind local data to the grid, you can assign a JavaScript object array to the 
 ## Refresh the data source
 
 You can add/delete the datasource records through an external button. To reflect the datasource changes in grid, you need to invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method.
-
 Please follow the below steps to refresh the grid after datasource change.
 
 **Step 1**:

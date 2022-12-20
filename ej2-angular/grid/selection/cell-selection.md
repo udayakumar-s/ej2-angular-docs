@@ -33,6 +33,7 @@ Select range of cells between the start index and end index which includes in be
 {% previewsample "page.domainurl/code-snippet/grid/selection-cs1" %}
 
 > Cell Selection requires the [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to be **Cell** or  **Both** and [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) should be **Multiple**.
+[`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) should be **Multiple**.
 
 ## Toggle selection
 

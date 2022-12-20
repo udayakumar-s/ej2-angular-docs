@@ -45,7 +45,6 @@ The default items are displayed in following table.
 
 > You can disable column menu for a particular column by defining the [`columns.showColumnMenu`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showcolumnmenu) as false.
 > You can customize the default items by defining the [`columnMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuitems) with required items.
-
 ## Column menu events
 
 During the resizing action, the grid component triggers the below two events.

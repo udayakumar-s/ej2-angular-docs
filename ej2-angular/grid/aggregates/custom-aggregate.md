@@ -15,6 +15,7 @@ To use custom aggregation, specify the [`type`](https://ej2.syncfusion.com/angul
 
 The custom aggregate function will be invoked with different arguments for Total and Group aggregations.
 * **Total aggregation** - the custom aggregate function will be called with whole data and the current [`AggregateColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective) object.
+
 * **Group aggregation** - it will be called with current group details and the [`AggregateColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective) object.
 
 {% tabs %}

@@ -17,6 +17,7 @@ There are three types of [`clipMode`](https://ej2.syncfusion.com/angular/documen
 * **Clip**: Truncates the cell content when it overflows its area.
 * **Ellipsis**: Displays ellipsis when the cell content overflows its area.
 * **EllipsisWithTooltip**: Displays ellipsis when the cell content overflows its area, also it will display the tooltip while hover on ellipsis is applied.
+also it will display the tooltip while hover on ellipsis is applied.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -138,6 +138,8 @@ The below example demonstrates the Grid in **Deutsch** culture.
 ## Internationalization
 
 The [`Internationalization`](../common/intl.html) library is used to globalize number, date, and time values in grid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
+and time values in grid component using format strings in the
+[`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
 
 For importing **json** files in your application, you need to include the **json-typings.d.ts** file.
 

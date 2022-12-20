@@ -37,6 +37,9 @@ You can achieve this by destroying the grid after disabling the [`enablePersiste
 
 Grid does not maintain the query params after page load event when [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) is set to true.
 This is because the Grid refreshes its query params for every page load. You can maintain the custom query params by resetting the [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
+This is because the Grid refreshes its query params for every page load. You can maintain the custom query params by resetting the
+[`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams)
+method in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -27,7 +27,6 @@ The [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column
 {% previewsample "page.domainurl/code-snippet/grid/grid-cs3" %}
 
 > When the columns are auto-generated then the column [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) will be determined from the first record of the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource).
-
 ## Set Primary key column for auto generated columns when editing is enabled
 
 Primary key can be defined in the declaration of column object of the grid. When we didn't declare the columns, the grid will generate the columns automatically. For these auto generated columns, you can set [`isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) column property as true by using the following ways,

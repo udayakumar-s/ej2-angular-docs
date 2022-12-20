@@ -75,6 +75,7 @@ To avoid ungrouping or further grouping of a column after initial column groupin
 On grouping columns with paging feature, the aggregated information and total items are displayed based on the current page.
 The grid does not consider aggregated information and total items from other pages.
 To get additional details (aggregated information and total items) from other pages, set the [`groupSettings.disablePageWiseAggregates`](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablePageWiseAggregates) to false.
+set the [`groupSettings.disablePageWiseAggregates`](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablePageWiseAggregates) to false.
 
 > If remote data is bound to grid dataSource, two requests will be sent when performing grouping action;
 one for getting the grouped data and another for getting aggregate details and total items count.
@@ -82,6 +83,9 @@ one for getting the grouped data and another for getting aggregate details and t
 ## Group by format
 
 By default, columns will be grouped by the data or value present for the particular row. To group numeric or datetime column based on the mentioned format, you have to enable the [`enableGroupByFormat`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#enablegroupbyformat) property of the corresponding grid columns.
+or datetime column based on the mentioned format, you have to enable the
+[`enableGroupByFormat`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#enablegroupbyformat) property of the corresponding
+grid columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -100,6 +104,10 @@ By default, columns will be grouped by the data or value present for the particu
 ## Grouping Events
 
 During the group action, the grid component triggers two events. The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event triggers before the group action starts and the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event triggers after the group action is completed. Using these events you can perform any action.
+[`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event
+triggers before the group action starts and the
+[`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete)
+event triggers after the group action is completed. Using these events you can perform any action.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -138,7 +146,7 @@ To collapse the selected grouped row from an external button by using the [`expa
 
 ## See Also
 
-* [Exporting grouped records](../excel-exporting/#exporting-grouped-records)
+* [Exporting grouped records](../excel-export/excel-export-options/#exporting-grouped-records)
 * [How to enable lazy load grouping in Grid](https://www.syncfusion.com/blogs/post/how-to-enable-lazy-load-grouping-in-syncfusion-angular-data-grid.aspx)
 * [How can I do client side grouping by async pipe in Angular Grid](https://www.syncfusion.com/forums/148079/how-can-i-do-client-side-grouping-by-async-pipe-in-angular-grid)
 * [How to perform initial grouping by using the async pipe in Angular Grid](https://www.syncfusion.com/forums/160032/how-to-perform-initial-grouping-by-using-the-async-pipe-in-angular-grid)

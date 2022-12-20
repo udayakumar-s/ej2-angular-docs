@@ -36,6 +36,7 @@ The Grid supports two types of filter, they are
 
 > * You can apply and clear filtering, by using [`filterByColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#clearfiltering) methods.
 > * To disable Filtering for a particular column, by specifying [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) to false.
+[`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) to false.
 
 ## Initial filter
 
@@ -79,6 +80,7 @@ between|Filter the values based on the range between the start and end specified
 ## Diacritics filter
 
 By default, grid ignores diacritic characters while filtering. To include diacritic characters, set the [`filterSettings.ignoreAccent`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) as **true**.
+[`filterSettings.ignoreAccent`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) as **true**.
 
 In the following sample, type **aero** in **Name** column to filter diacritic characters.
 
