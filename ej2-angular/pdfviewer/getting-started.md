@@ -181,4 +181,4 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
     }
 
-Find the [Angular Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AngularSample730820475.zip)
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started).
