@@ -34,27 +34,22 @@ cd my-app
 
 ## Installing Syncfusion PDF Viewer package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-pdfviewer`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pdfviewer/v/20.2.38) package to the application.
+All the available Essential JS 2 packages are published in npmjs.com registry. To install PDF Viewer component, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-pdfviewer --save
 ```
+<style>
+#angular {
+    font-size: .88em!important;
+margin-top: 1.5em;     margin-bottom: 1.5em;
+    background-color: #def8ff;
+    padding: 10px 17px 14px;
+}
+</style>
 
-### Angular compatibility compiled package(ngcc)
-
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-pdfviewer@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pdfviewer/v/20.2.38-ngcc) package to the application.
+<div id="angular">
+Note: For Angular version below 12, use the following command to install PDF Viewer component.
 
 ```bash
 npm install @syncfusion/ej2-angular-pdfviewer@ngcc --save
@@ -65,8 +60,8 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 ```bash
 @syncfusion/ej2-angular-pdfviewer:"20.2.38-ngcc"
 ```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+</div>
 
 ## Registering PDF Viewer Module
 
