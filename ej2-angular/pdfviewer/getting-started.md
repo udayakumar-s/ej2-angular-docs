@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Pdfviewer component
 
-This section explains the steps required to create a simple Essential JS 2 PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application.
+This section explains the steps required to create a simple Angular PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application.
 
 ## Setup Angular Environment
 
@@ -32,29 +32,24 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Pdfviewer package
+## Installing Syncfusion PDF Viewer package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-pdfviewer`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pdfviewer/v/20.2.38) package to the application.
+All the available Essential JS 2 packages are published in npmjs.com registry. To install PDF Viewer component, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-pdfviewer --save
 ```
+<style>
+#angular {
+    font-size: .88em!important;
+margin-top: 1.5em;     margin-bottom: 1.5em;
+    background-color: #def8ff;
+    padding: 10px 17px 14px;
+}
+</style>
 
-### Angular compatibility compiled package(ngcc)
-
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-pdfviewer@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pdfviewer/v/20.2.38-ngcc) package to the application.
+<div id="angular">
+Note: For Angular version below 12, use the following command to install PDF Viewer component.
 
 ```bash
 npm install @syncfusion/ej2-angular-pdfviewer@ngcc --save
@@ -65,8 +60,8 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 ```bash
 @syncfusion/ej2-angular-pdfviewer:"20.2.38-ngcc"
 ```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+</div>
 
 ## Registering PDF Viewer Module
 
@@ -93,8 +88,7 @@ export class AppModule { }
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using the following code.
+Add the Angular PDF Viewer component’s styles as given below in `src/styles.css` file.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -108,16 +102,9 @@ This can be referenced in [src/styles.css] using the following code.
 @import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
 ```
 
-Add the following lines in the `index.html` file to refer the css style.
+## Adding PDF Viewer component
 
-```html
-<link href="//cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
-```
-
-## Add PDF Viewer component
-
-Modify the template in [src/app/app.component.ts] file to render the PDF Viewer component.
-Add the Angular PDF Viewer by using `<ejs-pdfviewer>` selector in `template` section of the app.component.ts file.
+Add the Angular PDF Viewer by using `<ejs-pdfviewer>` selector in `template` section of the `src/app/app.component.ts` file to render the PDF Viewer component.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -143,10 +130,6 @@ export class AppComponent implements OnInit {
 }
 ```
 
-> For PDF Viewer serviceUrl creation, follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/how-to/create-pdfviewer-service/)
-
-[View web service sample in GitHub](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices)
-
 ## Run the application
 
 Use the following command to run the application in browser.
@@ -171,4 +154,26 @@ The output will appear as follows.
   
 {% previewsample "page.domainurl/code-snippet/pdfviewer/getting-started-cs1" %}
 
-Find the [Angular Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AngularSample730820475.zip)
+> For PDF Viewer serviceUrl creation, follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/how-to/create-pdfviewer-service/)
+
+## How to run the PDF Viewer web service
+1. Download the sample from the [Web service sample in GitHub](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices) link.
+2. Navigate to the `ASP.NET Core` folder and open it in the command prompt.
+3. Use the below command to restore the required packages.
+```sh
+dotnet restore
+```
+4. Use the below command to run the web service.
+```sh
+dotnet run
+```
+5. You can see that the PDF Viewer server instance runs in the localhost with the port number `https://localhost:5001` and navigate to the PDF Viewer Web control `https://localhost:5001/pdfviewer` which returns the default get response method. We can bind the link to the `serviceUrl` property of PDF Viewer.
+
+> For ex:  
+export class AppComponent implements OnInit {
+    public service = 'https://localhost:5001/pdfviewer';
+    public document = 'PDF_Succinctly.pdf';
+    ngOnInit(): void {
+    }
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started).
