@@ -20,7 +20,7 @@ The Spreadsheet control opens an Excel document with its data, style, format, an
 
 In user interface you can open an Excel document by clicking `File > Open` menu item in ribbon.
 
-The following sample shows the `Open` option by using the [`openUrl`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#openUrl) property in the Spreadsheet control. You can also use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforeOpen) event to trigger before opening an Excel file.
+The following sample shows the `Open` option by using the [`openUrl`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#openurl) property in the Spreadsheet control. You can also use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforeopen) event to trigger before opening an Excel file.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,7 +73,7 @@ The Spreadsheet control saves its data, style, format, and more as Excel file do
 
 In user interface, you can save Spreadsheet data as Excel document by clicking `File > Save As` menu item in ribbon.
 
-The following sample shows the `Save` option by using the [`saveUrl`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#saveUrl) property in the Spreadsheet control. You can also use the [`beforeSave`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforeSave) event to trigger before saving the Spreadsheet as an Excel file.
+The following sample shows the `Save` option by using the [`saveUrl`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#saveurl) property in the Spreadsheet control. You can also use the [`beforeSave`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event to trigger before saving the Spreadsheet as an Excel file.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

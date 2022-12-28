@@ -14,14 +14,14 @@ Scrolling helps you to move quickly to different areas of the worksheet. It move
 
 > By default, the `allowScrolling` property is true.
 
-You have the following options in Scrolling by using [`scrollSettings`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollSettings).
+You have the following options in Scrolling by using [`scrollSettings`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollsettings).
 
 * Finite scrolling.
 * Virtual scrolling.
 
 ## Finite Scrolling
 
-Finite scrolling supports two type of modes in scrolling. You can use the [`isFinite`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollSettings/#isfinite) property in [`scrollSettings`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollSettings) to specify the mode of scrolling.
+Finite scrolling supports two type of modes in scrolling. You can use the [`isFinite`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollsettings/#isfinite) property in [`scrollSettings`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollsettings) to specify the mode of scrolling.
 
 * Finite - This mode does not create a new row/column when the scrollbar reaches the end. This can be achieved by setting the [`isFinite`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollSettings/#isfinite) property as `true`.
 
