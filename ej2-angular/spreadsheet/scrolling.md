@@ -25,7 +25,7 @@ Finite scrolling supports two type of modes in scrolling. You can use the [`isFi
 
 * Finite - This mode does not create a new row/column when the scrollbar reaches the end. This can be achieved by setting the [`isFinite`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollSettingsModel/#isfinite) property as `true`.
 
-* Infinite - This mode creates a new row/column when the scrollbar reaches the end. This can be achieved by setting the [`isFinite`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollSettingsModel/#isfinite property as `false`.
+* Infinite - This mode creates a new row/column when the scrollbar reaches the end. This can be achieved by setting the [`isFinite`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/scrollSettingsModel/#isfinite) property as `false`.
 
 > By Default, the `isFinite` property is `false`.
 
