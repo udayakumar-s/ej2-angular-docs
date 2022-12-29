@@ -89,9 +89,47 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs286" %}
 
+## Show sub-totals at top or bottom
+
+Allows to show sub-totals either at top or bottom of the header group in rows and columns by using the [subTotalsPosition](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property. By default, [subTotalsPosition](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property is set to **Auto**, which means that column sub-totals are displayed at the bottom and row sub-totals are displayed at the top of the header group in the pivot table.
+
+To show sub-totals at top of the header group in rows and columns, set the [subTotalsPosition](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Top**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs303/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs303/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs303/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs303" %}
+
+To show sub-totals at bottom of the header group in rows and columns, set the [subTotalsPosition](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subTotalsPosition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Bottom**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs304/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs304/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs304/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs304" %}
+
 ## Show or hide totals using toolbar
 
 It can also be achieved using built-in toolbar options by setting the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showtoolbar) property in pivot table to **true**. Also, include the items **GrandTotal** and **SubTotal** within the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbar) property in pivot table. End user can now see "Show/Hide Grand totals" and "Show/Hide Sub totals" icons in toolbar UI automatically.
+
+The grand totals and sub-totals can be dynamically displayed at the top or bottom of the pivot table's row and column axes by using the built-in options "Grand totals position" and "Subtotals position" available in the grand totals and sub-totals drop down menus, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -106,7 +144,3 @@ It can also be achieved using built-in toolbar options by setting the [`showTool
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs287" %}
-
-Additionally, with the built-in option available in the grand totals drop-down menu, the grand totals can be dynamically displayed at the top or bottom of the pivot table's row and column axes. By default, the grand totals are displayed at the bottom of the pivot table's row and column axes.
-
-![output](images/grandtotals-position.png)
