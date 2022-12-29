@@ -377,11 +377,31 @@ In the following code sample, the pivot chart can be seen as a single chart with
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs238" %}
 
-### Show member based chart series
+Additionally, to display chart series for multiple values within a single y-axis, set the properties [`enableMultipleAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#enablemultipleaxis) to **true** and the [`multipleAxisMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#multipleaxismode) to **Combined**, in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/).
 
-When multiple axes are enabled, the user can create each chart series with a unique color palette based on members by setting the [`showMemberSeries`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#showmemberseries) property in [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/) to **true**. As a result, user can easily identify each member enclosed chart series consistently across different measures in the entire chart area.
+> The y-axis range values will be formatted using the first value field on the value axis. For example, if the first value field is in currency format and the remaining value fields are in different number formats or no format, the y-axis range values will be displayed in the currency format of the first value field.
 
-Furthermore, with a single click over the legend item, you can show or hide specific chart series visibility based on members across different measures in the entire chart area.
+The pivot chart in the following code sample can be seen as a single chart with multiple value fields such as **Sold** and **Amount** drawn as a single y-axis.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs305/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs305/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs305/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs305" %}
+
+### Show point color based on members
+
+When multiple axes are enabled, you can display the same color for each member in the column axis by setting the [`showPointColorByMembers`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#showpointcolorbymembers) property to **true** in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/). As a result, the end user can easily identify each member across different measures in the entire chart.
+
+Furthermore, end user can see or hide specific members across different measures in the entire chart with a single click on the legend item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
