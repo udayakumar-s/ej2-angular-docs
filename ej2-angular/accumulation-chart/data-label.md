@@ -64,7 +64,7 @@ Using `angle` property, you can rotate the data label by its given angle.
   
 {% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs5" %}
 
->Note: when the `enableRotation` is true, the datalabel is rotated along the slice.
+>Note: when the `enableRotation` is true, the data label is rotated along the slice.
 
 ## Smart labels
 
@@ -198,7 +198,7 @@ The connector line can be customized using the `type`, `color`, `width`, `length
 
 ## Text Mapping
 
-The fill color and the text in the data source can be mapped to the chart using `pointColorMapping` in series and `name` in datalabel respectively.
+The fill color and the text in the data source can be mapped to the chart using `pointColorMapping` in series and `name` in data label respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
