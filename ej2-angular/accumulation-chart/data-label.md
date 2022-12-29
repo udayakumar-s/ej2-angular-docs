@@ -158,7 +158,7 @@ Data label for the accumulation chart can be formatted using [`format`](https://
   </tr>
 </table>
 
-## Datalabel template
+## DataLabel template
 
 Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using
 [`template`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings/#template)property, you can set data label template in chart.
