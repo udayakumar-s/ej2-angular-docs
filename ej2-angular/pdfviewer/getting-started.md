@@ -34,34 +34,11 @@ cd my-app
 
 ## Installing Syncfusion PDF Viewer package
 
-All the available Essential JS 2 packages are published in npmjs.com registry. To install PDF Viewer component, use the following command.
+All the available Essential JS 2 packages are published in `npmjs.com` registry. To install PDF Viewer component, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-pdfviewer --save
 ```
-<style>
-#angular {
-    font-size: .88em!important;
-margin-top: 1.5em;     margin-bottom: 1.5em;
-    background-color: #def8ff;
-    padding: 10px 17px 14px;
-}
-</style>
-
-<div id="angular">
-Note: For Angular version below 12, use the following command to install PDF Viewer component.
-
-```bash
-npm install @syncfusion/ej2-angular-pdfviewer@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
-
-```bash
-@syncfusion/ej2-angular-pdfviewer:"20.2.38-ngcc"
-```
-If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-</div>
 
 ## Registering PDF Viewer Module
 
@@ -157,23 +134,29 @@ The output will appear as follows.
 > For PDF Viewer serviceUrl creation, follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/how-to/create-pdfviewer-service/)
 
 ## How to run the PDF Viewer web service
+
 1. Download the sample from the [Web service sample in GitHub](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices) link.
 2. Navigate to the `ASP.NET Core` folder and open it in the command prompt.
 3. Use the below command to restore the required packages.
-```sh
-dotnet restore
-```
-4. Use the below command to run the web service.
-```sh
-dotnet run
-```
-5. You can see that the PDF Viewer server instance runs in the localhost with the port number `https://localhost:5001` and navigate to the PDF Viewer Web control `https://localhost:5001/pdfviewer` which returns the default get response method. We can bind the link to the `serviceUrl` property of PDF Viewer.
 
-> For ex:  
+   ```sh
+   dotnet restore
+   ```
+
+4. Use the below command to run the web service.
+
+   ```sh
+   dotnet run
+   ```
+
+5. You can see that the PDF Viewer server instance runs in the local host with the port number [`localhost:5001`](https://localhost:5001/) and navigate to the PDF Viewer Web control [`localhost:5001/pdfviewer`](https://localhost:5001/pdfviewer) which returns the default get response method. We can bind the link to the `serviceUrl` property of PDF Viewer as below.
+
+```javascript
 export class AppComponent implements OnInit {
     public service = 'https://localhost:5001/pdfviewer';
     public document = 'PDF_Succinctly.pdf';
     ngOnInit(): void {
     }
+```
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started).
