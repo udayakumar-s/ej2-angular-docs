@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting started with Angular Pdfviewer component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Pdfviewer component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about Getting started with Angular PDF Viewer component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Pdfviewer component
+# Getting started with Angular PDF Viewer component
 
 This section explains the steps required to create a simple Angular PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application.
 
@@ -34,7 +34,7 @@ cd my-app
 
 ## Installing Syncfusion PDF Viewer package
 
-All the available Essential JS 2 packages are published in `npmjs.com` registry. To install PDF Viewer component, use the following command.
+All the available Essential JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry. To install PDF Viewer component, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-pdfviewer --save
