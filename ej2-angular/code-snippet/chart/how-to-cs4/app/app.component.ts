@@ -78,7 +78,7 @@ export class AppComponent {
       }
     };
     public title: string = 'Height vs Weight';
-    public series1: Object[] = Object[] = [
+    public series1: Object[] = [
     { 'x': 131, 'y': 32, text: '131%' }, { 'x': 140, 'y': 52, text: '140%' }, { 'x': 149, 'y': 82, text: '149%' }, { 'x': 115, 'y': 52, text: '115%' },
     { 'x': 134, 'y': 62, text: '134%' }, { 'x': 183, 'y': 12, text: '183%' }, { 'x': 155, 'y': 32, text: '155%' }, { 'x': 164, 'y': 22, text: '164%' }];
     public series2: Object[] = [

@@ -5,10 +5,10 @@ import { toolData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [tooltip]='tooltip'>
+    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title' [tooltip]='tooltip'>
         <e-series-collection>
-            <e-series [dataSource]='chartData1' type='Spline' xName='x' yName='y' width=2 name='Max Temp' [marker]='marker' tooltipFormat='${point.x}'></e-series>
-            <e-series [dataSource]='chartData2' type='Spline' xName='x' yName='y' width=2 name='Avg Temp' [marker]='marker' tooltipFormat='${point.y}'></e-series>
+            <e-series [dataSource]='chartData1' type='Spline' xName='x' yName='y' width=2 name='Max Temp' [marker]='marker' ></e-series>
+            <e-series [dataSource]='chartData2' type='Spline' xName='x' yName='y' width=2 name='Avg Temp' [marker]='marker' ></e-series>
             <e-series [dataSource]='chartData3' type='Spline' xName='x' yName='y' width=2 name='Min Temp' [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
@@ -48,10 +48,11 @@ export class AppComponent implements OnInit {
         this.primaryXAxis = {
             valueType: 'Category'
         };
-        this.tooltip = { enable: true, header: 'Unemployment', format: '<b>${point.x} : ${point.y}</b>' };
+        this.tooltip = { enable: true, header: 'Unemployment', format: 'Survey : <b>${point.x} : ${point.y}</b>' };
         this.marker = { visible: true, width: 10, height: 10 };
         this.title = 'NC Weather Report - 2016';
 
+}
 }
 
 

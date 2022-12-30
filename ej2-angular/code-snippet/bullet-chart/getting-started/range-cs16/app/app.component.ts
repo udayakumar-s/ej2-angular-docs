@@ -7,7 +7,7 @@ import { AnimationModel } from '@syncfusion/ej2-charts';
 @Component({
     selector: 'app-container',
     template: `<ejs-bulletchart targetField='target' valueField='value' [minimum]='minimum' [maximum]='maximum'
-  [interval]='interval' [dataSource]='data' [animation]='animation' labelFormat='${value}'  title='Sales Rate in dollars'
+  [interval]='interval' [dataSource]='data' [animation]='animation' title='Sales Rate in dollars'
   subtitle='(in dollars $)'  width='25%' orientation='Vertical'>
   <e-bullet-range-collection>
     <e-bullet-range end='35' color='#ebebeb'></e-bullet-range>
