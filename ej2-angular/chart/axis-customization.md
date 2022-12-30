@@ -56,13 +56,13 @@ By using the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs3/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs3.1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs3/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs3.1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs3/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs3.1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
