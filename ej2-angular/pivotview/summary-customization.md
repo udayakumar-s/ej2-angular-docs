@@ -91,9 +91,9 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 ## Show sub-totals at top or bottom
 
-Allows to show sub-totals either at top or bottom of the header group in rows and columns by using the [subTotalsPosition](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property. By default, [subTotalsPosition](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property is set to **Auto**, which means that column sub-totals are displayed at the bottom and row sub-totals are displayed at the top of the header group in the pivot table.
+Allows to show sub-totals either at top or bottom of the header group in rows and columns by using the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property. By default, [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property is set to **Auto**, which means that column sub-totals are displayed at the bottom and row sub-totals are displayed at the top of the header group in the pivot table.
 
-To show sub-totals at top of the header group in rows and columns, set the [subTotalsPosition](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Top**.
+To show sub-totals at top of the header group in rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Top**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,7 +109,7 @@ To show sub-totals at top of the header group in rows and columns, set the [subT
   
 {% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs303" %}
 
-To show sub-totals at bottom of the header group in rows and columns, set the [subTotalsPosition](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subTotalsPosition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Bottom**.
+To show sub-totals at bottom of the header group in rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subTotalsPosition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Bottom**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
