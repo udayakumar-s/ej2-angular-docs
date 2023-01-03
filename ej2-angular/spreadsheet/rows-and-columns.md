@@ -91,7 +91,7 @@ The following code example shows the delete operation of rows and columns in the
   
 {% previewsample "page.domainurl/code-snippet/spreadsheet/delete/row-column-cs1" %}
 
-## Limitations
+## Limitations of insert and delete
 
 The following features have some limitations in Insert/Delete:
 
@@ -104,7 +104,7 @@ The following features have some limitations in Insert/Delete:
 
 You can show or hide the rows and columns in the spreadsheet through property binding, method, and context menu.
 
-## Row
+### Row
 
 The rows can be hidden or shown through the following ways,
 
@@ -112,7 +112,7 @@ The rows can be hidden or shown through the following ways,
 * Using `hideRow` method, you can hide the rows by specifying the start and end row index, set the last argument `hide` as `false` to unhide the hidden rows.
 * Right-click on the row header and select the desired option from context menu
 
-## Column
+### Column
 
 The columns can be hidden or shown through following ways,
 
@@ -135,6 +135,64 @@ The following code example shows the hide/show rows and columns operation in the
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/spreadsheet/hide-show-cs1" %}
+
+## Size
+
+You can change the size of rows and columns in the spreadsheet by using [setRowsHeight](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#setrowsheight) and [setColumnsWidth](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#setcolumnswidth) methods.
+
+### Row
+
+You can change the height of single or multiple rows by using the [setRowsHeight](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#setrowsheight) method.
+
+You can provide the following type of ranges to the method:
+
+* Single row range: `['2:2']`
+* Multiple rows range: `['1:100']`
+* Multiple rows with discontinuous range: `['1:10', '15:25', '30:40']`
+* Multiple rows with different sheets: `[Sheet1!1:50, 'Sheet2!1:50', 'Sheet3!1:50']`
+
+The following code example shows how to change the height for single/multiple rows in the spreadsheet.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/hide-show-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/spreadsheet/hide-show-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/hide-show-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/spreadsheet/hide-show-cs2" %}
+
+### Column
+
+You can change the width of single or multiple columns by using the [setColumnsWidth](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#setcolumnswidth) method.
+
+You can provide the following type of ranges to the method:
+
+* Single column range: `['F:F']`
+* Multiple columns range: `['A:F']`
+* Multiple columns with discontinuous range: `['A:C', 'G:I', 'K:M']`
+* Multiple columns with different sheets: `[Sheet1!A:H, 'Sheet2!A:H', 'Sheet3!A:H']`
+
+The following code example shows how to change the width for single/multiple columns in the spreadsheet.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/hide-show-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/spreadsheet/hide-show-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/hide-show-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/spreadsheet/hide-show-cs3" %}
 
 ## Note
 
