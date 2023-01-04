@@ -13,7 +13,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent{
 
-dataSource: Object[] = [
+       dataSource: Object[] = [
             [73, 39, 26, 39, 94, 0],
             [93, 58, 53, 38, 26, 68],
             [99, 28, 22, 4, 66, 90],
@@ -27,8 +27,8 @@ dataSource: Object[] = [
             [25, 56, 55, 58, 12, 82],
             [74, 33, 88, 23, 86, 59]];
 
-    public margin: Object = { left: 15, right: 15, top: 15, bottom: 15 };
-    titleSettings: Object = {
+        margin: Object = { left: 15, right: 15, top: 15, bottom: 15 };
+        titleSettings: Object = {
             text: 'Sales Revenue per Employee (in 1000 US$)',
             textStyle: {
                 size: '15px',

@@ -14,7 +14,7 @@ Tooltip is used to provide the details of the heat map cell, and this can be dis
 
 ## Default tooltip
 
-You can enable the tooltip by setting the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#showtooltip) property to true and injecting the `Tooltip` module using the `HeatMap.Inject(Tooltip)`.
+You can enable the tooltip by setting the [showTooltip](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#showtooltip) property to true and injecting the `Tooltip` module using the `HeatMap.Inject(Tooltip)`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ You can enable the tooltip by setting the [`showTooltip`](https://ej2.syncfusion
 
 ## Tooltip template
 
-In heat map, you can customize the tooltip using the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#tooltiprender) client-side event.
+In heat map, you can customize the tooltip using the [tooltipRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#tooltiprender) client-side event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +50,7 @@ In heat map, you can customize the tooltip using the [`tooltipRender`](https://e
 
 ## Customize the appearance of Tooltip
 
-The  [`fill`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings/#textStyle) property in the tooltip is used to customize the font of the tooltip text.
+The  [fill](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings/#fill) and [border](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings/#textStyle) property in the tooltip is used to customize the font of the tooltip text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

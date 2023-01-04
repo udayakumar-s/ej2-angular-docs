@@ -13,7 +13,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent{
 
-dataSource: Object[] = [
+        dataSource: Object[] = [
             [73, 39, 26, 39, 94, 0],
             [93, 58, 53, 38, 26, 68],
             [99, 28, 22, 4, 66, 90],
@@ -27,7 +27,7 @@ dataSource: Object[] = [
             [25, 56, 55, 58, 12, 82],
             [74, 33, 88, 23, 86, 59]];
 
-    titleSettings: Object = {
+       titleSettings: Object = {
             text: 'Sales Revenue per Employee (in US$)',
             textStyle: {
                 size: '15px',
@@ -43,7 +43,7 @@ dataSource: Object[] = [
         yAxis: Object = {
             labels: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
         };
-        public cellSettings: Object = {
+        cellSettings: Object = {
           enableCellHighlighting: true
         };
 }
