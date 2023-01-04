@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change selection border in Angular Pdfviewer component
+# Customize the selection border
 
 The PDF Viewer library allows you to customize the annotations selection borders using the [**annotationSelectorSettings**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotationSelectorSettingsModel/#annotationselectorsettingsmodel) Property.
 
@@ -20,9 +20,13 @@ The following steps are used to customize the selection border.
 
 ```html
 
-<ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document'
-    [freeTextSettings]="annotationsettings" [rectangleSettings]="annotationsettings"
-    [stampSettings]="annotationsettings" style="height:640px;display:block">
+<ejs-pdfviewer id="pdfViewer"
+               [serviceUrl]='service'
+               [documentPath]='document'
+               [freeTextSettings]="annotationsettings"
+               [rectangleSettings]="annotationsettings"
+               [stampSettings]="annotationsettings"
+               style="height:640px;display:block">
 </ejs-pdfviewer>
 
 ```
@@ -30,11 +34,11 @@ The following steps are used to customize the selection border.
 ```typescript
 
 public annotationsettings: any = {
-annotationSelectorSettings: {
+  annotationSelectorSettings: {
     selectionBorderColor: 'yellow',
     resizerShape: 'Circle',
     selectorLineDashArray: 9
-}
+  }
 };
   
 ```

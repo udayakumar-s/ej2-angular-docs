@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Free text annotation in Angular Pdfviewer component
+# Free text annotation
 
 The PDF Viewer control provides the options to add, edit, and delete the free text annotations.
 
@@ -24,104 +24,50 @@ In the pan mode, if the free text annotation mode is entered, the PDF Viewer con
 
 ![FreeTextAnnotation in Angular PDF Viewer](../../pdfviewer/images/freetext_tool.png)
 
-Refer to the following code sample to switch to the Free Text annotation mode.
+Refer to the following code sample to switch to the Free Text annotation mode using a button click.
 
 ```typescript
-import { ViewChild } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
 
-@Component({
-  selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
-  template: `<button (click)="addAnnot()">FreeText</button>
-  <div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' style="height:640px;display:block"></ejs-pdfviewer>
-  </div>`,
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService]
-})
-export class AppComponent implements OnInit {
-  @ViewChild('pdfviewer')
-  public pdfviewerControl: PdfViewerComponent;
-  public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'PDF_Succinctly.pdf';
-  addAnnot() {
-    var pdfviewer = (<any>document.getElementById("pdfViewer"))
-      .ej2_instances[0];
-    pdfviewer.annotationModule.setAnnotationMode("FreeText");
-  }
-  ngOnInit(): void {
-  }
+<button (click)="addFreeTextAnnotation()">FreeText</button>
+
+<ejs-pdfviewer id="pdfViewer"
+               [serviceUrl]='service'
+               [documentPath]='document'
+               style="height:640px;display:block">
+</ejs-pdfviewer>
+
+//Event triggers while clicking the FreeText button.  
+addFreeTextAnnotation() {
+  var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+  //API to set FreeText annotation  
+  pdfviewer.annotationModule.setAnnotationMode("FreeText");
 }
+  
 ```
 
 ## How to clear the selection focus from free text annotation
 
 The free text annotations selection focus can be cleared by using the `setAnnotationMode` property of the `annotationModule`.
 
-Refer to the following code sample to remove the selection focus from the annotation.
+Refer to the following code sample to remove the selection focus from the annotation by using a button click.
 
 ```typescript
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import {
-  PdfViewerComponent,
-  LinkAnnotationService,
-  BookmarkViewService,
-  MagnificationService,
-  ThumbnailViewService,
-  ToolbarService,
-  NavigationService,
-  TextSearchService,
-  TextSelectionService,
-  PrintService,
-  AnnotationService,
-  FormFieldsService,
-} from '@syncfusion/ej2-angular-pdfviewer';
 
-/**
- * Default PdfViewer Controller
- */
-@Component({
-  selector: 'app-root',
-  //Specifies the template string for the PDF Viewer component.
-  template: `<button (click)="RemoveSelection()">RemoveSelection</button>
-  <div class="content-wrapper">
-  <ejs-pdfviewer
-  id="pdfViewer"
-  [serviceUrl]='service'
-  [documentPath]='document'
-  style="height:640px;display:block">
-  </ejs-pdfviewer>
-  </div>`,
- providers: [
-    LinkAnnotationService,
-    BookmarkViewService,
-    MagnificationService,
-    ThumbnailViewService,
-    ToolbarService,
-    NavigationService,
-    TextSearchService,
-    TextSelectionService,
-    PrintService,
-    AnnotationService,
-    FormFieldsService,
-  ],
-})
+<button (click)="RemoveSelection()">RemoveSelection</button>
 
-export class AppComponent {
-  public service: string =
-    'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'PDF_Succinctly.pdf';
-  ngOnInit(): void {
-  }
-  //Method to remove the selection from the free text annotation.
-  RemoveSelection() {
-    var pdfviewer = (<any>document.getElementById('pdfViewer'))
-      .ej2_instances[0];
-    pdfviewer.annotationModule.setAnnotationMode('None');
-  }
+<ejs-pdfviewer id="pdfViewer"
+               [serviceUrl]='service'
+               [documentPath]='document'
+               style="height:640px;display:block">
+</ejs-pdfviewer>
+
+//Event triggers while clicking the RemoveSelection button.
+RemoveSelection() {
+  var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+  //API to remove the selection from the free text annotation.  
+  pdfviewer.annotationModule.setAnnotationMode('None');
 }
+
 ```
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Annotations/How%20to%20clear%20the%20selection%20from%20annotation)
@@ -188,33 +134,35 @@ The opacity of the annotation can be edited using the range slider provided in t
 
 The properties of the free text annotation can be set before creating the control using the FreeTextSettings.
 
-After editing the default values, they will be changed to the selected values. Refer to the following code sample to set the default free text annotation settings.
+After editing the default values, they will be changed to the selected values.
+Refer to the following code sample to set the default free text annotation settings.
 
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService
-} from '@syncfusion/ej2-angular-pdfviewer';
-
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
+          NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-root',
   // Specifies the template string for the PDF Viewer component.
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' [freeTextSettings]='freeTextSettings' style="height:640px;display:block"></ejs-pdfviewer>
-  </div>`,
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService]
-})
-export class AppComponent implements OnInit {
-  @ViewChild('pdfviewer')
-  public pdfviewerControl: PdfViewerComponent;
-  public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'PDF_Succinctly.pdf';
-  public freeTextSettings = {fillColor: 'green', borderColor: 'blue', fontColor: 'yellow'};
-  ngOnInit(): void {
+                <ejs-pdfviewer id="pdfViewer"
+                      [serviceUrl]='service'
+                      [documentPath]='document'
+                      [freeTextSettings]='freeTextSettings'
+                      style="height:640px;display:block">
+                </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
+              TextSearchService, TextSelectionService, PrintService, AnnotationService]
+  })
+  export class AppComponent implements OnInit {
+    @ViewChild('pdfviewer')
+    public pdfviewerControl: PdfViewerComponent;
+    public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public document: string = 'PDF_Succinctly.pdf';
+    public freeTextSettings = { fillColor: 'green', borderColor: 'blue', fontColor: 'yellow' };
   }
-}
 ```
 
 You can also enable the autofit support for free text annotation by using the enableAutoFit boolean property in freeTextSettings as below. The width of the free text rectangle box will be increased based on the text added to it.
@@ -222,48 +170,29 @@ You can also enable the autofit support for free text annotation by using the en
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import {
-  PdfViewerComponent,
-  LinkAnnotationService,
-  BookmarkViewService,
-  MagnificationService,
-  ThumbnailViewService,
-  ToolbarService,
-  NavigationService,
-  TextSearchService,
-  TextSelectionService,
-  PrintService,
-  AnnotationService,
-} from '@syncfusion/ej2-angular-pdfviewer';
-
+import { PdfViewerComponent,LinkAnnotationService,BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
+          NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-root',
   // Specify the template string for the PDF Viewer component.
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' [freeTextSettings]='freeTextSettings' style="height:640px;display:block"></ejs-pdfviewer>
-  </div>`,
-  providers: [
-    LinkAnnotationService,
-    BookmarkViewService,
-    MagnificationService,
-    ThumbnailViewService,
-    ToolbarService,
-    NavigationService,
-    TextSearchService,
-    TextSelectionService,
-    PrintService,
-    AnnotationService,
-  ],
+              <ejs-pdfviewer id="pdfViewer"
+                      [serviceUrl]='service'
+                      [documentPath]='document'
+                      [freeTextSettings]='freeTextSettings'
+                      style="height:640px;display:block">
+              </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
+              TextSearchService, TextSelectionService,PrintService,AnnotationService ]
 })
-export class AppComponent implements OnInit {
-  @ViewChild('pdfviewer')
-  public pdfviewerControl: PdfViewerComponent;
-  public service: string =
-    'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'PDF_Succinctly.pdf';
-  public freeTextSettings = { enableAutoFit: true };
-  ngOnInit(): void {}
-}
+  export class AppComponent implements OnInit {
+      @ViewChild('pdfviewer')
+      public pdfviewerControl: PdfViewerComponent;
+      public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public document: string = 'PDF_Succinctly.pdf';
+      public freeTextSettings = { enableAutoFit: true };
+      }
 ```
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Annotations/How%20to%20change%20the%20properties%20of%20free%20text%20annotation)

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open thumbnail in Angular Pdfviewer component
+# Open Thumbnail pane programmatically
 
 The PDF Viewer library allows you to open the thumbnail pane programmatically using the [**openThumbnailPane()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/thumbnailView/#openthumbnailpane) method.
 
@@ -24,9 +24,9 @@ The following steps are used to open the thumbnail.
 
 ```ts
 openThumbnail() {
-    var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
-    // Open Thumbnail pane.
-    viewer.thumbnailViewModule.openThumbnailPane();
+  var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+  // Open Thumbnail pane.
+  viewer.thumbnailViewModule.openThumbnailPane();
 }
 ```
 

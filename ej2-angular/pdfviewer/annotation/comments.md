@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Comments in Angular Pdfviewer component
+# Comments
 
 The PDF Viewer control provides options to add, edit, and delete the comments to the following annotation in the PDF documents:
 
@@ -113,81 +113,38 @@ The annotation comment and comment replies can be edited in the following ways:
 
 The comments added to the PDF document can be viewed by using the `comments` property of the annotation.
 
-Refer to the following code to check the comments added in the PDF document.
+Refer to the following code to check the comments added in the PDF document using a button click event.
 
-```
-<div class="control-section">
-  <div class="content-wrapper">
-    <button (click)="CheckComments()">Check the Comments</button>
-    <!--Render PDF Viewer component-->
-    <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' style="height:640px;display:block"></ejs-pdfviewer>
-  </div>
-</div>
+```html
+<button (click)="checkComments()">Check the Comments</button>
+<!--Render PDF Viewer component-->
+<ejs-pdfviewer id="pdfViewer"
+               [serviceUrl]='service'
+               [documentPath]='document'
+               style="height:640px;display:block">
+</ejs-pdfviewer>
+
 ```
 
 ```typescript
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import {
-  PdfViewerComponent,
-  LinkAnnotationService,
-  BookmarkViewService,
-  MagnificationService,
-  ThumbnailViewService,
-  ToolbarService,
-  NavigationService,
-  TextSearchService,
-  TextSelectionService,
-  PrintService,
-  AnnotationService,
-  FormFieldsService,
-} from '@syncfusion/ej2-angular-pdfviewer';
-
-/**
- * Default PdfViewer Controller
- */
-@Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  encapsulation: ViewEncapsulation.None,
-  providers: [
-    LinkAnnotationService,
-    BookmarkViewService,
-    MagnificationService,
-    ThumbnailViewService,
-    ToolbarService,
-    NavigationService,
-    TextSearchService,
-    TextSelectionService,
-    PrintService,
-    AnnotationService,
-    FormFieldsService,
-  ],
-})
-export class AppComponent {
-  public service: string =
-    'https://localhost:5001/pdfviewer';
-  //Sets the document path of the PDF Viewer.  
-  public document: string = 'PDF_Succinctly_Comments.pdf';
-  ngOnInit(): void {
-  }
-  //Method to check the comments added in the PDF document.
-  CheckComments(){
-    var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-    var annotationCollections= pdfviewer.annotationCollection;
-    for(var x=0;x<annotationCollections.length;x++){
-        //Prints the annotation id in the console window.
-        console.log(annotationCollections[x].annotationId);
-        var comments = annotationCollections[x].comments;
-        for(var y=0;y<comments.length;y++){
-            var comment = comments[y];
-            //Prints the PDF document's comments in the console window.
-            console.log("comment"+ "[" + y + "] :"+ comment.note);
-        }
-        var note = annotationCollections[x].note;
-        console.log("note : " + note);
+//Method to check the comments added in the PDF document.
+checkComments(){
+  var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+  var annotationCollections = pdfviewer.annotationCollection;
+  for (var x = 0; x < annotationCollections.length; x++) {
+    //Prints the annotation id in the console window.
+    console.log(annotationCollections[x].annotationId);
+    var comments = annotationCollections[x].comments;
+    for (var y = 0; y < comments.length; y++) {
+      var comment = comments[y];
+      //Prints the PDF document's comments in the console window.
+      console.log("comment" + "[" + y + "] :" + comment.note);
     }
+    var note = annotationCollections[x].note;
+    console.log("note : " + note);
+  }
 }
-}
+
 ```
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Annotations/How%20to%20check%20the%20comments)

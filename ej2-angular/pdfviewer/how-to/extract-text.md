@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Extract text in Angular Pdfviewer component
+# Extract Text
 
 The PDF Viewer library allows you to extract the text from a page along with the bounds. Text extraction can be done using the [**isExtractText**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer#isextracttext) property and [**extractTextCompleted**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer#extracttextcompleted) event.
 
@@ -19,7 +19,13 @@ The following steps are used to extract the text from the page.
 **Step 2:** The following code snippet explains how to extract the text from a page .
 
 ```html
- <ejs-pdfviewer #pdfViewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' (extractTextCompleted)='extractTextCompleted($event)' [isExtractText] = true style="height:640px;display:block"></ejs-pdfviewer>
+<ejs-pdfviewer #pdfViewer id="pdfViewer"
+               [serviceUrl]='service'
+               [documentPath]='document'
+               (extractTextCompleted)='extractTextCompleted($event)'
+               [isExtractText]=true
+               style="height:640px;display:block">
+</ejs-pdfviewer>
 ```
 
 ```typescript

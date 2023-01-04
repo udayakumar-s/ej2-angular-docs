@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get base string of the loaded document in Angular Pdfviewer component
+# Get the Base 64 string of the loaded PDF document
 
 The PDF Viewer library allows you to get the base 64 string of the loaded PDF document by using **saveAsBlob()** method. The entire PDF document will get as blob as like memory stream. So, we can save the blob or convert into stream and we can save it in the database. We can also load the PDF document from base 64 string using the **load()** method.
 
@@ -18,7 +18,7 @@ The following steps are used to get the base 64 string of the loaded PDF documen
 
 **Step 2:** Add the following code snippet to get the base 64 string with button click event.
 
-```
+```html
 
 <button (click)="base64ofloadedDocument()">base64Document</button>
 
@@ -28,8 +28,7 @@ The following steps are used to get the base 64 string of the loaded PDF documen
 
 base64ofloadedDocument() {
   var viewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-
-  viewer.saveAsBlob().then(function(value) {
+  viewer.saveAsBlob().then(function (value) {
     var data = value;
     var reader = new FileReader();
     reader.readAsDataURL(data);
@@ -38,7 +37,7 @@ base64ofloadedDocument() {
       // get base 64 string.
       console.log(base64data);
     };
-});
+  });
 
 ```
 
