@@ -42,7 +42,7 @@ dataSource: Object[] = [
         yAxis: Object = {
             labels: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
         };
-        public cellSettings: Object = {
+        cellSettings: Object = {
             border: {
                 width: 1,
                 radius: 4,

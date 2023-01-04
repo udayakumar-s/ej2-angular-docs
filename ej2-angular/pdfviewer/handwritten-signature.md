@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Handwritten signature in Angular Pdfviewer component
+# Handwritten Signature
 
 The PDF Viewer control supports adding the handwritten signatures to a PDF document. The handwritten signature reduces the paperwork of reviewing the content and verifies it digitally.
 

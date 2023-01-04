@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Appearance in Angular Heatmap chart component
 
-## Cell customizations
+## Cell customization
 
-You can customize the cell by using the `cellSettings` property.
+You can customize the cell by using the [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellsettings) property.
 
 ### Border
 
-Change the width, color, and radius of the heat map cells by using the [`border`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#border) property.
+Change the width, color, and radius of the heat map cells by using the [border](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#border) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ Change the width, color, and radius of the heat map cells by using the [`border`
 
 ### Cell highlighting
 
-Enable or disable the cell highlighting while hover over the heat map cells by using the [`enableCellHighlighting`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#enablecellhighlighting) property.
+Enable or disable the cell highlighting while hovering over the heat map cells by using the [enableCellHighlighting](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#enablecellhighlighting) property.
 
 >Note: The cell highlighting only works in a SVG rendering mode.
 
@@ -54,13 +54,14 @@ Enable or disable the cell highlighting while hover over the heat map cells by u
 
 ### Color gradient mode
 
-You can set the minimum and maximum value colors based on row and column using the `colorGradientMode` property. The types of colorGradientMode,
+The [colorGradientMode](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettingsModel/#colorgradientmode) property can be used to set the minimum and maximum values for colors based on row and column.
+Three types of color gradient modes are available.
 
-* Table: The minimum and maximum value colors calculated for overall data.
-* Row: The minimum and maximum value colors calculated for each row of data.
-* Column: The minimum and maximum value colors calculated for each column of data.
+* **Table**: The minimum and maximum value colors calculated for overall data.
+* **Row**: The minimum and maximum value colors calculated for each row of data.
+* **Column**: The minimum and maximum value colors calculated for each column of data.
 
->Note: The default value of `colorGradientMode` is Table.
+>Note: The default value of `colorGradientMode` is **Table**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,9 +77,27 @@ You can set the minimum and maximum value colors based on row and column using t
   
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance/colormode-cs1" %}
 
+## Background color
+
+The background color of the heat map can be customized using the [backgroundColor](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#backgroundcolor) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/heatmap/appearance/background-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/heatmap/appearance/background-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/heatmap/appearance/background-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance/background-cs1" %}
+
 ## Margin
 
-Set the margin for the heat map from its container by using the [`margin`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#margin) property.
+Set the margin for the heatmap from its container by using the [margin](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#margin) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +115,7 @@ Set the margin for the heat map from its container by using the [`margin`](https
 
 ## Title
 
-The title is used to provide a quick information about the data plotted in heat map. The [`text`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/title/#text) property is used to set the title for heat map. You can also customize text style of a title by using the [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/title/#textstyle) property.
+The title is used to provide a quick information about the data plotted in heatmap. The [text](https://ej2.syncfusion.com/angular/documentation/api/heatmap/title/#text) property is used to set the title for the heatmap. The text style of the title can be customized by using the [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/title/#textstyle) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,7 +133,7 @@ The title is used to provide a quick information about the data plotted in heat 
 
 ## Data label
 
-You can toggle the visibility of data labels by using the [`showLabel`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#showlabel) property . By default, the data label will be visible.
+The visibility of data labels can be toggled using the [showLabel](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#showlabel) property. By default, the data labels will be visible.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -130,9 +149,27 @@ You can toggle the visibility of data labels by using the [`showLabel`](https://
   
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance/datalabel-cs1" %}
 
+### Customize the data label
+
+The label displayed in the heat map cell can be changed using the [cellRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellrender) event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/heatmap/appearance/cellrender-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/heatmap/appearance/cellrender-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/heatmap/appearance/cellrender-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/heatmap/appearance/cellrender-cs1" %}
+
 ### Text style
 
-You can customize the font family, font size, and color of the data label by using the [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#textstyle) in the `cellSettings` property.
+The text attributes of the data label such as font-family, font-size, and color can be customized using the [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel/#textstyle) in the [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,9 +185,9 @@ You can customize the font family, font size, and color of the data label by usi
   
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance/textStyle-cs1" %}
 
-### Format
+## Format
 
-You can change the format of the data label, such as currency, decimal, percent etc. by using [`format`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#format) property.
+The format of the data label, such as currency, decimal, percent etc. can be changed using [format](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel/#format) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -165,24 +202,6 @@ You can change the format of the data label, such as currency, decimal, percent 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/heatmap/appearance/format-cs1" %}
-
-## Customize the cell value
-
-In the HeatMap, you can customize the cell value using the [`cellRender`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellrender) client-side event.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/cellrender-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/cellrender-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/cellrender-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/cellrender-cs1" %}
 
 ## See Also
 

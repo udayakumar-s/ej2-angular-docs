@@ -178,7 +178,7 @@ This section explains how to populate the following two-dimensional array data t
 
 ## Enable axis labels
 
-You can add axis labels to the heat map and format those labels using the [`xAxis`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#xaxis) and [`yAxis`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#yaxis) properties. Axis labels provide additional information about the data points populated in the heat map.
+You can add axis labels to the heat map and format those labels using the [xAxis](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#xaxis) and [yAxis](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#yaxis) properties. Axis labels provide additional information about the data points populated in the heat map.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -196,7 +196,7 @@ You can add axis labels to the heat map and format those labels using the [`xAxi
 
 ## Add heat map title
 
-Add a title using the [`titleSettings`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#titlesettings) property to the heat map to provide quick information to the user about the data populated in the heat map.
+Add a title using the [titleSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#titlesettings) property to the heat map to provide quick information to the user about the data populated in the heat map.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -214,7 +214,7 @@ Add a title using the [`titleSettings`](https://ej2.syncfusion.com/angular/docum
 
 ## Enable legend
 
-Use a legend for the heat map in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#legendsettings) object by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/legendSettings/#visible) property to `true` and injecting the `Legend` module using the `HeatMap.Inject(Legend)` method.
+Use a legend for the heat map in the [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#legendsettings) object by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/heatmap/legendSettings/#visible) property to **true** and injecting the `Legend` module using the `HeatMap.Inject(Legend)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -232,7 +232,7 @@ Use a legend for the heat map in the [`legendSettings`](https://ej2.syncfusion.c
 
 ## Add data label
 
-Add data labels to improve the readability of the heat map. This can be achieved by setting the [`showLabel`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#showlabel) property to `true` in the [`cellSettings`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellsettings) object.
+Add data labels to improve the readability of the heat map. This can be achieved by setting the [showLabel](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#showlabel) property to **true** in the [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellsettings) object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -250,7 +250,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 
 ## Add custom cell palette
 
-The default palette settings of the heat map cells can be customized by using the [`paletteSettings`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#palettesettings) property. Using the [`palette`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings/#palette) property in `paletteSettings` object, you can change the color set for the cells. You can change the color mode of the cells to `fixed` or `gradient` mode using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings/#type) property.
+The default palette settings of the heat map cells can be customized by using the [paletteSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#palettesettings) property. Using the [palette](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings/#palette) property in `paletteSettings` object, you can change the color set for the cells. You can change the color mode of the cells to `fixed` or `gradient` mode using the [type](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings/#type) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -268,7 +268,7 @@ The default palette settings of the heat map cells can be customized by using th
 
 ## Enable tooltip
 
-The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#showtooltip) property to true and injecting the Tooltip module using the `HeatMap.Inject(Tooltip)` method.
+The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [showTooltip](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#showtooltip) property to true and injecting the Tooltip module using the `HeatMap.Inject(Tooltip)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
