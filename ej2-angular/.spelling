@@ -151,30 +151,3 @@ lifecycle
 nuget
 v20.1.0.47
 nuget.org
-xlsm
-xlsb
-Sheet1!A:H
-Sheet2!A:H
-Sheet3!A:H
-Sheet1!1:50
-Sheet2!1:50
-Sheet3!1:50
-setRowsHeight
-setColumnsWidth
-A:H
-F:F
-A:F
-A:C
-G:I
-K:M
-Sheet1!
-Sheet2!
-Sheet3!
-['2:2']
-['1:100']
-['1:10', '15:25', '30:40']
-[Sheet1!1:50, 'Sheet2!1:50', 'Sheet3!1:50']
-['F:F']
-['A:F']
-['A:C', 'G:I', 'K:M']
-[Sheet1!A:H, 'Sheet2!A:H', 'Sheet3!A:H']

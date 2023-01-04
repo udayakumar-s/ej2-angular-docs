@@ -26,7 +26,7 @@ Using [Angular CLI](https://github.com/angular/angular-cli), you can easily setu
 npm install -g @angular/cli
 ```
 
-## Create a new Application
+## Create a new application
 
 Once the Angular CLI is installed, you can use it to create a new Angular project by running the following command:
 
@@ -82,81 +82,7 @@ The above command does the following configuration to your Angular app,
 
  For more information about version compatibility, see [version compatibility](../upgrade/version-compatibility/).
 
-### Ivy library distribution package
-
-By default, Syncfusion Angular packages(`>=20.2.36`) supports [Angular Ivy distribution](https://docs.angular.lat/guide/ivy). The package are compatible with Angular version 12 and above. To install the package use the below command,
-
-Add [`@syncfusion/ej2-angular-grids`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38) package to the application.
-
-```bash
-npm install @syncfusion/ej2-angular-grids --save
-```
-
-### Angular compatibility compiled package (ngcc)
-
-For Angular version below 12, you can use the `ngcc` tagged packages of the Syncfusion Angular components. To install the package use the below command,
-
-Add [`@syncfusion/ej2-angular-grids@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38-ngcc) package to the application.
-
-```bash
-npm install @syncfusion/ej2-angular-grids@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
-
-```bash
-@syncfusion/ej2-angular-grids:"20.2.38-ngcc"
-```
-
-> If the ngcc tag is not specified while installing the package for Angular versions below 12, the Ivy package will be installed with warning.
-
-## Installing Syncfusion Grid Package with Custom Tag name
-
-You can also change the tag name of Syncfusion Angular UI Controls. 
-
-Run the below command to add `@syncfusion/ej2-angular-grids` package to the application with the desired tag name `custom`.
-
-```bash
-SET tagName=custom && npm install @syncfusion/ej2-angular-grids
-```
-After executing the above command, the Syncfusion Angular UI component selector will be changed. For example, the tag name of `<ejs-grid>` will be changed into `<custom-grid>`.
-
-## Adding Grid Module
-
-After installing the package, the component modules are available to configure into your application from the installed syncfusion package. Syncfusion Angular package provides two different types of `ngModules`.
-
-Refer to [`Ng-Module`](../common/ng-module.html) to learn about `ngModules`.
-
-Refer to the following snippet to import the grid module in `app.module.ts` from the `@syncfusion/ej2-angular-grids`.
-
-```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-
-import { AppComponent } from './app.component';
-
-// Imported syncfusion Grid module from grids package
-import { GridModule } from '@syncfusion/ej2-angular-grids';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-
-    // Registering EJ2 Grid Module
-    GridModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
-## Adding Syncfusion Angular Components
+ ## Adding Syncfusion Angular components
 
 To use Syncfusion Angular components in your application, you will need to add them to your template and specify their properties in your component class.
 
@@ -203,50 +129,6 @@ export class AppComponent {
 }
 ```
 This will add a Grid to your application with the specified columns and data.
-
-## Adding CSS Reference
-
-Add button component styles in the `src/style.css` file as below.
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
-```
-## Adding SCSS Reference
-
-To avoid SCSS compilation issues and to map the SCSS file path, add the stylePreprocessorOptions to the .angular-cli.json file.
-
-Add the `stylePreprocessorOptions` option under apps in the `angular.json` file.
-
-The following paths can be used globally in Angular app.
-
-```typescript
-"stylePreprocessorOptions": {
-         "includePaths": [
-         "node_modules/@syncfusion"
-        ]
-  },
-```
-Add button component styles in the `src/style.scss` file as below.
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.scss';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.scss';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.scss';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.scss';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.scss';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.scss';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.scss';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.scss';  
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.scss';
-```
 
 ## Run the application
 
@@ -375,6 +257,79 @@ export class AppComponent implements OnInit {
 {% previewsample "page.domainurl/code-snippet/common/quickstart1-cs1" %}
 
 By using the Syncfusion Angular Grid component, you can easily add a robust data Grid to your Angular application that supports paging and sorting of data. For more details refer [Syncfusion Angular Grid](../grid/getting-started/).
+
+### Ivy library distribution package
+
+By default, Syncfusion Angular packages(`>=20.2.36`) supports [Angular Ivy distribution](https://docs.angular.lat/guide/ivy). The package are compatible with Angular version 12 and above. To install the package use the below command,
+
+Add [`@syncfusion/ej2-angular-grids`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38) package to the application.
+
+```bash
+npm install @syncfusion/ej2-angular-grids --save
+```
+
+### Angular compatibility compiled package (ngcc)
+
+For Angular version below 12, you can use the `ngcc` tagged packages of the Syncfusion Angular components. To install the package use the below command,
+
+Add [`@syncfusion/ej2-angular-grids@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38-ngcc) package to the application.
+
+```bash
+npm install @syncfusion/ej2-angular-grids@ngcc --save
+```
+
+To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+
+```bash
+@syncfusion/ej2-angular-grids:"20.2.38-ngcc"
+```
+
+> If the ngcc tag is not specified while installing the package for Angular versions below 12, the Ivy package will be installed with warning.
+
+
+## Adding CSS Reference
+
+Add button component styles in the `src/style.css` file as below.
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+```
+## Adding SCSS Reference
+
+To avoid SCSS compilation issues and to map the SCSS file path, add the stylePreprocessorOptions to the .angular-cli.json file.
+
+Add the `stylePreprocessorOptions` option under apps in the `angular.json` file.
+
+The following paths can be used globally in Angular app.
+
+```typescript
+"stylePreprocessorOptions": {
+         "includePaths": [
+         "node_modules/@syncfusion"
+        ]
+  },
+```
+Add button component styles in the `src/style.scss` file as below.
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material.scss';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.scss';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.scss';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.scss';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.scss';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.scss';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.scss';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.scss';  
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.scss';
+```
 
 ## Syncfusion Angular components showcase samples
 
