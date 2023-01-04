@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in Angular Pdfviewer component
+# Localization
 
 The text contents provided in the PDF Viewer can be localized using the collection of localized strings for different cultures. By default, the PDF Viewer is localized in “__en-US__”.
 
@@ -80,28 +80,30 @@ The following table shows the default text values used in PDF Viewer in 'en-US' 
 
 The different locale value for the PDF Viewer can be specified using the locale property.
 
-```html
+```typescript
+
 import { Component, OnInit } from '@angular/core';
-import {
-  LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, AnnotationService, TextSelectionService, PrintService
-} from '@syncfusion/ej2-angular-pdfviewer';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,ThumbnailViewService, ToolbarService, NavigationService,
+          TextSearchService, AnnotationService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' locale='ar-AE' [documentPath]='document' style="height:640px;display:block"></ejs-pdfviewer>
-</div>`,
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,
-    ThumbnailViewService, ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService,PrintService]
-})
-export class AppComponent implements OnInit {
+              <ejs-pdfviewer id="pdfViewer"
+                      [serviceUrl]='service'
+                      locale='ar-AE'
+                      [documentPath]='document'
+                      style="height:640px;display:block">
+              </ejs-pdfviewer>
+            </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
+              AnnotationService, TextSearchService, TextSelectionService, PrintService]
+  })
+  export class AppComponent implements OnInit {
     public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
     public document = 'PDF_Succinctly.pdf';
-    ngOnInit(): void {
-    }
-}
+  }
 ```
 
 You have to map the text content based on locale like following script in sample level.,

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sticky notes annotation in Angular Pdfviewer component
+# Sticky Notes Annotation in the Angular PDF Viewer component
 
 The PDF Viewer control provides the options to add, edit, and delete the sticky note annotations in the PDF document.
 
@@ -60,31 +60,30 @@ The properties of the sticky note annotation can be set before creating the cont
 After editing the default opacity using the Edit Opacity tool, they will be changed to the selected values. Refer to the following code sample to set the default sticky note annotation settings.
 
 ```typescript
-import { ViewChild } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
-import {
-  PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService
-} from '@syncfusion/ej2-angular-pdfviewer';
+ import { ViewChild } from '@angular/core';
+ import { Component, OnInit } from '@angular/core';
+ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
+          NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+  @Component({
+    selector: 'app-root',
+    // Specifies the template string for the PDF Viewer component.
+    template: `<div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                      [serviceUrl]='service'
+                      [documentPath]='document'
+                      [stickyNotesSettings]='stickyNotesSettings'
+                      style="height:640px;display:block">
+                  </ejs-pdfviewer>
+                </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
+              TextSearchService, TextSelectionService, PrintService, AnnotationService]
+  })
+ export class AppComponent implements OnInit {
+    public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public document: string = 'PDF_Succinctly.pdf';
+    public stickyNotesSettings = { author: 'Syncfusion' };
+ }
 
-@Component({
-  selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
-  template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' [stickyNotesSettings]='stickyNotesSettings' style="height:640px;display:block"></ejs-pdfviewer>
-  </div>`,
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService]
-})
-export class AppComponent implements OnInit {
-  @ViewChild('pdfviewer')
-  public pdfviewerControl: PdfViewerComponent;
-  public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'PDF_Succinctly.pdf';
-  public stickyNotesSettings = {author: 'Syncfusion'};
-  ngOnInit(): void {
-  }
-}
 ```
 
 ## Disabling sticky note annotations
@@ -94,26 +93,25 @@ The PDF Viewer control provides an option to disable the sticky note annotations
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import {
-  PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService
-} from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
+        NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-root',
   // Specifies the template string for the PDF Viewer component.
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' [enableStickyNotesAnnotation]='false' style="height:640px;display:block"></ejs-pdfviewer>
-  </div>`,
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService]
-})
-export class AppComponent implements OnInit {
-  @ViewChild('pdfviewer')
-  public pdfviewerControl: PdfViewerComponent;
-  public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'PDF_Succinctly.pdf';  
-  ngOnInit(): void {
-  }
+               <ejs-pdfviewer id="pdfViewer"
+                    [serviceUrl]='service'
+                    [documentPath]='document'
+                    [enableStickyNotesAnnotation]='false'
+                     style="height:640px;display:block">
+                </ejs-pdfviewer>
+             </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
+              NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService]
+  })
+ export class AppComponent implements OnInit {
+    public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public document: string = 'PDF_Succinctly.pdf';
 }
 ```

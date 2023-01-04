@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar in Angular Pdfviewer component
+# Built-in toolbar
 
 The PDF Viewer comes with a powerful built-in toolbar to execute important actions such as page navigation, text search,view mode,download,print,bookmark, and thumbnails.
 
@@ -34,38 +34,38 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 * **Show/Hide toolbar using enableToolbar API as in the following code snippet**
 
 ```typescript
-    import { Component, OnInit } from '@angular/core';
-import {
-  LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, AnnotationService, TextSelectionService, PrintService
-} from '@syncfusion/ej2-angular-pdfviewer';
-
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,  NavigationService,
+          TextSearchService, AnnotationService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' [enableToolbar]='true' style="height:640px;display:block"></ejs-pdfviewer>
-</div>`,
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,
-    ThumbnailViewService, ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService,PrintService]
-})
-export class AppComponent implements OnInit {
+                  <ejs-pdfviewer id="pdfViewer"
+                            [serviceUrl]='service'
+                            [documentPath]='document'
+                            [toolbarSettings]='toolbarSettings'
+                            style="height:640px;display:block">
+                  </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
+           AnnotationService, TextSearchService, TextSelectionService, PrintService ]
+  })
+  export class AppComponent implements OnInit {
     public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
     public document = 'PDF_Succinctly.pdf';
-    ngOnInit(): void {
-    }
-}
+  }
 ```
 
 * **Show/Hide toolbar using showToolbar as in the following code snippet**
 
 ```html
-    <script>
-       window.onload = function () {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.toolbar.showToolbar(false);
-        }
-    </script>
+<script>
+    window.onload = function () {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.toolbar.showToolbar(false);
+    }
+</script>
 ```
 
 ## Show/Hide the default toolbaritem
@@ -75,40 +75,40 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
-import {
-  LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, AnnotationService, TextSelectionService, PrintService
-} from '@syncfusion/ej2-angular-pdfviewer';
 
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,MagnificationService,ThumbnailViewService, ToolbarService,NavigationService,
+        TextSearchService, AnnotationService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
-  template: '<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [documentPath]='document' [toolbarSettings]='toolbarSettings'
-    style="height:640px;display:block"></ejs-pdfviewer>
-  </div>',
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-    ToolbarService, NavigationService, TextSearchService, AnnotationService, TextSelectionService,PrintService]
-})
-export class AppComponent implements OnInit {
-    public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document = 'PDF_Succinctly.pdf';
-    public toolbarSettings = { showTooltip: true, toolbarItems: 'DownloadOption' }
-    ngOnInit(): void {
-    }
-}
+  template:`<div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                              [serviceUrl]='service'
+                              [documentPath]='document'
+                              [toolbarSettings]='toolbarSettings'
+                              style="height:640px;display:block">
+                </ejs-pdfviewer>
+            </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
+            TextSearchService, AnnotationService, TextSelectionService, PrintService]
+  })
+  export class AppComponent implements OnInit {
+      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public document = 'PDF_Succinctly.pdf';
+      public toolbarSettings = { showTooltip: true, toolbarItems: 'DownloadOption' }
+  }
 ```
 
 * **Show/Hide toolbaritem using showToolbaritem as in the following code snippet**
 
 ```html
-    <script>
-       window.onload = function () {
-            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-            pdfViewer.toolbar.showToolbarItem(new Array("DownloadOption"),true);
-        }
-    </script>
+<script>
+    window.onload = function () {
+        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfViewer.toolbar.showToolbarItem(new Array("DownloadOption"), true);
+    }
+</script>
 ```
 
 ## Show/Hide the left toolbar with the thumbnails and bookmarks
@@ -116,28 +116,29 @@ export class AppComponent implements OnInit {
 The PDF Viewer has an option to show or hide the left toolbar with the thumbnails and bookmarks using enableNavigationToolbar API as in the following code sample.
 
 ```typescript
-    import { Component, OnInit } from '@angular/core';
-import {
-  LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, AnnotationService, TextSelectionService, PrintService
-} from '@syncfusion/ej2-angular-pdfviewer';
-
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService,BookmarkViewService,MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
+          TextSearchService, AnnotationService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' [enableNavigationToolbar]="false" [toolbarSettings]="toolbarSettings" [documentPath]='document' style="height:640px;display:block"></ejs-pdfviewer>
-</div>`,
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,
-    ThumbnailViewService, ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService,PrintService]
-})
-export class AppComponent implements OnInit {
-    public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document = 'PDF_Succinctly.pdf';
-    public toolbarSettings = { showTooltip: true, toolbarItems: ['OpenOption'] };
-    ngOnInit(): void {
-    }
-}
+                  <ejs-pdfviewer id="pdfViewer"
+                          [serviceUrl]='service'
+                          [enableNavigationToolbar]="false"
+                          [toolbarSettings]="toolbarSettings"
+                          [documentPath]='document'
+                          style="height:640px;display:block">
+                  </ejs-pdfviewer>
+            </div>`,
+  providers: [ LinkAnnotationService,  BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
+              AnnotationService, TextSearchService, TextSelectionService, PrintService]
+  })
+  export class AppComponent implements OnInit {
+      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public document = 'PDF_Succinctly.pdf';
+      public toolbarSettings = { showTooltip: true, toolbarItems: ['OpenOption'] };
+  }
 ```
 
 ## See also

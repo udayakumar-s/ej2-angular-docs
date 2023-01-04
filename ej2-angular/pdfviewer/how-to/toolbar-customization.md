@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar customization in Angular Pdfviewer component
+# Customize the toolbar
 
 The PDF Viewer provides API for user interactions options provided in its built-in toolbar. Using this, you can create your own User Interface for toolbar actions at the application level by hiding the default toolbar. The following steps are used to create the custom toolbar for PDF Viewer:
 
@@ -17,23 +17,33 @@ The PDF Viewer provides API for user interactions options provided in its built-
 **Step 2:** Hide the default toolbar of PDF Viewer using the following code snippet.,
 
 ```html
-<ejs-pdfviewer #pdfviewer id='pdfViewer' [serviceUrl]='service' [documentPath]='document' [enableToolbar]=false [enableNavigationToolbar]=false (pageChange)='pageChanged($event)' (documentLoad)='documentLoaded($event)'  style="height:640px; display: block"></ejs-pdfviewer>
+<ejs-pdfviewer #pdfviewer id='pdfViewer'
+               [serviceUrl]='service'
+               [documentPath]='document'
+               [enableToolbar]=false
+               [enableNavigationToolbar]=false
+               (pageChange)='pageChanged($event)'
+               (documentLoad)='documentLoaded($event)'
+               style="height:640px; display: block">
+</ejs-pdfviewer>
 ```
 
 **Step 3:** Add EJ2 toolbar for performing primary actions like Open, Previous page, Next page, Go to page, Print and Download using the following code snippet.
 
 ```html
- <ejs-toolbar id='topToolbar' #customToolbar>
+<ejs-toolbar id='topToolbar' #customToolbar>
     <e-items>
         <e-item prefixIcon='e-pv-open-document-icon' id='openDocument' tooltipText='Open' (click)='openDocument($event)'>
         </e-item>
         <e-item prefixIcon='e-pv-previous-page-navigation-icon' id='previousPage' tooltipText='Previous Page' (click)='previousClicked($event)'
-            align='Center'></e-item>
+                align='Center'></e-item>
         <e-item prefixIcon='e-pv-next-page-navigation-icon' id='nextPage' tooltipText='Next Page' (click)='nextClicked($event)' align='Center'></e-item>
         <e-item align='Center'>
             <ng-template #template>
-                <div class=''><input type='text' class='e-input-group e-pv-current-page-number' id='currentPage' value="0"
-                        (keypress)='onCurrentPageBoxKeypress($event)' (click)='onCurrentPageBoxClicked($event)' /></div>
+                <div class=''>
+                    <input type='text' class='e-input-group e-pv-current-page-number' id='currentPage' value="0"
+                           (keypress)='onCurrentPageBoxKeypress($event)' (click)='onCurrentPageBoxClicked($event)' />
+                </div>
                 <div style='margin-left: 6px'><span class='e-pv-total-page-number' id='totalPage'>of 0</span></div>
             </ng-template>
         </e-item>
@@ -203,176 +213,176 @@ The PDF Viewer provides API for user interactions options provided in its built-
 **Step 5:** Add the following code snippet in `app.component.ts` file for performing a user interaction in PDF Viewer in code behind.
 
 ```ts
- @ViewChild('pdfviewer')
-  public pdfviewerControl: PdfViewerComponent;
-  @ViewChild('customToolbar')
-  public customToolbar: ToolbarComponent;
-  @ViewChild('zoomToolbar')
-  public zoomToolbar: ToolbarComponent;
-  public service: string =
-    'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'Hive_Succinctly.pdf';
-  constructor() {}
-  ngOnInit(): void {
-    // ngOnInit function
-    document
-      .getElementById('fileUpload')
-      .addEventListener('change', this.readFile.bind(this));
-  }
+@ViewChild('pdfviewer')
+public pdfviewerControl: PdfViewerComponent;
+@ViewChild('customToolbar')
+public customToolbar: ToolbarComponent;
+@ViewChild('zoomToolbar')
+public zoomToolbar: ToolbarComponent;
+public service: string =
+  'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+public document: string = 'Hive_Succinctly.pdf';
+constructor() { }
+ngOnInit(): void {
+  // ngOnInit function
+  document
+    .getElementById('fileUpload')
+    .addEventListener('change', this.readFile.bind(this));
+}
 
-  public openDocument(e: ClickEventArgs): void {
-    document.getElementById('fileUpload').click();
-  }
+public openDocument(e: ClickEventArgs): void {
+  document.getElementById('fileUpload').click();
+}
 
-  public previousClicked(e: ClickEventArgs): void {
-    this.pdfviewerControl.navigation.goToPreviousPage();
-  }
+public previousClicked(e: ClickEventArgs): void {
+  this.pdfviewerControl.navigation.goToPreviousPage();
+}
 
-  public nextClicked(e: ClickEventArgs): void {
-    this.pdfviewerControl.navigation.goToNextPage();
-  }
+public nextClicked(e: ClickEventArgs): void {
+  this.pdfviewerControl.navigation.goToNextPage();
+}
 
-  public printClicked(e: ClickEventArgs): void {
-    this.pdfviewerControl.print.print();
-  }
+public printClicked(e: ClickEventArgs): void {
+  this.pdfviewerControl.print.print();
+}
 
-  public downloadClicked(e: ClickEventArgs): void {
-    let fileName: string = (document.getElementById(
-      'fileUpload'
-    ) as HTMLInputElement).value
-      .split('\\')
-      .pop();
-    if (fileName !== '') {
-      this.pdfviewerControl.fileName = fileName;
-    }
-    this.pdfviewerControl.download();
-  }
+public downloadClicked(e: ClickEventArgs): void {
+  let fileName: string = (document.getElementById(
+    'fileUpload'
+  ) as HTMLInputElement).value
+    .split('\\')
+    .pop();
+  if(fileName !== '') {
+  this.pdfviewerControl.fileName = fileName;
+}
+this.pdfviewerControl.download();
+}
 
-  public pageFitClicked(e: ClickEventArgs): void {
-    this.pdfviewerControl.magnification.fitToPage();
-    this.updateZoomButtons();
-    this.customToolbar.enableItems(document.getElementById('fitPage'), false);
-  }
+public pageFitClicked(e: ClickEventArgs): void {
+  this.pdfviewerControl.magnification.fitToPage();
+  this.updateZoomButtons();
+  this.customToolbar.enableItems(document.getElementById('fitPage'), false);
+}
 
-  public zoomInClicked(e: ClickEventArgs): void {
-    this.pdfviewerControl.magnification.zoomIn();
-    this.updateZoomButtons();
-  }
+public zoomInClicked(e: ClickEventArgs): void {
+  this.pdfviewerControl.magnification.zoomIn();
+  this.updateZoomButtons();
+}
 
-  public zoomOutClicked(e: ClickEventArgs): void {
-    this.pdfviewerControl.magnification.zoomOut();
-    this.updateZoomButtons();
-  }
+public zoomOutClicked(e: ClickEventArgs): void {
+  this.pdfviewerControl.magnification.zoomOut();
+  this.updateZoomButtons();
+}
 
-  public pageChanged(e: PageChangeEventArgs): void {
-    (document.getElementById(
+public pageChanged(e: PageChangeEventArgs): void {
+  (document.getElementById(
+  'currentPage'
+) as HTMLInputElement).value = this.pdfviewerControl.currentPageNumber.toString();
+this.updatePageNavigation();
+}
+
+public documentLoaded(e: LoadEventArgs): void {
+  document.getElementById('totalPage').textContent =
+    'of ' + this.pdfviewerControl.pageCount;
+  (document.getElementById(
       'currentPage'
     ) as HTMLInputElement).value = this.pdfviewerControl.currentPageNumber.toString();
-    this.updatePageNavigation();
-  }
+this.updatePageNavigation();
+}
 
-  public documentLoaded(e: LoadEventArgs): void {
-    document.getElementById('totalPage').textContent =
-      'of ' + this.pdfviewerControl.pageCount;
-    (document.getElementById(
-      'currentPage'
-    ) as HTMLInputElement).value = this.pdfviewerControl.currentPageNumber.toString();
-    this.updatePageNavigation();
-  }
+public onCurrentPageBoxClicked(e: ClickEventArgs): void {
+  (document.getElementById('currentPage') as HTMLInputElement).select();
+}
 
-  public onCurrentPageBoxClicked(e: ClickEventArgs): void {
-    (document.getElementById('currentPage') as HTMLInputElement).select();
-  }
-
-  public onCurrentPageBoxKeypress(e: KeyboardEvent): boolean {
-    if ((e.which < 48 || e.which > 57) && e.which !== 8 && e.which !== 13) {
-      e.preventDefault();
-      return false;
-    } else {
-      // tslint:disable-next-line:radix
-      const currentPageNumber: number = parseInt(
-        (document.getElementById('currentPage') as HTMLInputElement).value
-      );
-      if (e.which === 13) {
-        if (
-          currentPageNumber > 0 &&
-          currentPageNumber <= this.pdfviewerControl.pageCount
-        ) {
-          this.pdfviewerControl.navigation.goToPage(currentPageNumber);
-        } else {
-          // tslint:disable-next-line:max-line-length
-          (document.getElementById(
-            'currentPage'
-          ) as HTMLInputElement).value = this.pdfviewerControl.currentPageNumber.toString();
-        }
+public onCurrentPageBoxKeypress(e: KeyboardEvent): boolean {
+  if ((e.which < 48 || e.which > 57) && e.which !== 8 && e.which !== 13) {
+    e.preventDefault();
+    return false;
+  } else {
+    // tslint:disable-next-line:radix
+    const currentPageNumber: number = parseInt(
+      (document.getElementById('currentPage') as HTMLInputElement).value
+    );
+    if (e.which === 13) {
+      if (
+        currentPageNumber > 0 &&
+        currentPageNumber <= this.pdfviewerControl.pageCount
+      ) {
+        this.pdfviewerControl.navigation.goToPage(currentPageNumber);
+      } else {
+        // tslint:disable-next-line:max-line-length
+        (document.getElementById(
+          'currentPage'
+        ) as HTMLInputElement).value = this.pdfviewerControl.currentPageNumber.toString();
       }
-      return true;
     }
+    return true;
   }
+}
 
-  private updatePageNavigation(): void {
-    if (this.pdfviewerControl.currentPageNumber === 1) {
-      this.customToolbar.enableItems(
-        document.getElementById('previousPage'),
-        false
-      );
-      this.customToolbar.enableItems(document.getElementById('nextPage'), true);
-    } else if (
-      this.pdfviewerControl.currentPageNumber ===
-      this.pdfviewerControl.pageCount
-    ) {
-      this.customToolbar.enableItems(
-        document.getElementById('previousPage'),
-        true
-      );
-      this.customToolbar.enableItems(
-        document.getElementById('nextPage'),
-        false
-      );
-    } else {
-      this.customToolbar.enableItems(
-        document.getElementById('previousPage'),
-        true
-      );
-      this.customToolbar.enableItems(document.getElementById('nextPage'), true);
-    }
-  }
+private updatePageNavigation(): void {
+  if(this.pdfviewerControl.currentPageNumber === 1) {
+  this.customToolbar.enableItems(
+    document.getElementById('previousPage'),
+    false
+  );
+  this.customToolbar.enableItems(document.getElementById('nextPage'), true);
+} else if (
+  this.pdfviewerControl.currentPageNumber ===
+  this.pdfviewerControl.pageCount
+) {
+  this.customToolbar.enableItems(
+    document.getElementById('previousPage'),
+    true
+  );
+  this.customToolbar.enableItems(
+    document.getElementById('nextPage'),
+    false
+  );
+} else {
+  this.customToolbar.enableItems(
+    document.getElementById('previousPage'),
+    true
+  );
+  this.customToolbar.enableItems(document.getElementById('nextPage'), true);
+}
+}
 
-  private updateZoomButtons(): void {
-    if (this.pdfviewerControl.zoomPercentage <= 50) {
-      this.zoomToolbar.enableItems(document.getElementById('zoomIn'), true);
-      this.zoomToolbar.enableItems(document.getElementById('zoomOut'), false);
-      this.zoomToolbar.enableItems(document.getElementById('fitPage'), true);
-    } else if (this.pdfviewerControl.zoomPercentage >= 400) {
-      this.zoomToolbar.enableItems(document.getElementById('zoomIn'), false);
-      this.zoomToolbar.enableItems(document.getElementById('zoomOut'), true);
-      this.zoomToolbar.enableItems(document.getElementById('fitPage'), true);
-    } else {
-      this.zoomToolbar.enableItems(document.getElementById('zoomIn'), true);
-      this.zoomToolbar.enableItems(document.getElementById('zoomOut'), true);
-      this.zoomToolbar.enableItems(document.getElementById('fitPage'), true);
-    }
-  }
+private updateZoomButtons(): void {
+  if(this.pdfviewerControl.zoomPercentage <= 50) {
+  this.zoomToolbar.enableItems(document.getElementById('zoomIn'), true);
+  this.zoomToolbar.enableItems(document.getElementById('zoomOut'), false);
+  this.zoomToolbar.enableItems(document.getElementById('fitPage'), true);
+} else if (this.pdfviewerControl.zoomPercentage >= 400) {
+  this.zoomToolbar.enableItems(document.getElementById('zoomIn'), false);
+  this.zoomToolbar.enableItems(document.getElementById('zoomOut'), true);
+  this.zoomToolbar.enableItems(document.getElementById('fitPage'), true);
+} else {
+  this.zoomToolbar.enableItems(document.getElementById('zoomIn'), true);
+  this.zoomToolbar.enableItems(document.getElementById('zoomOut'), true);
+  this.zoomToolbar.enableItems(document.getElementById('fitPage'), true);
+}
+}
 
+// tslint:disable-next-line
+private readFile(args: any): void {
   // tslint:disable-next-line
-  private readFile(args: any): void {
+  let upoadedFiles: any = args.target.files;
+  if(args.target.files[0] !== null) {
+  let uploadedFile: File = upoadedFiles[0];
+  if (uploadedFile) {
+    let reader: FileReader = new FileReader();
+    reader.readAsDataURL(uploadedFile);
     // tslint:disable-next-line
-    let upoadedFiles: any = args.target.files;
-    if (args.target.files[0] !== null) {
-      let uploadedFile: File = upoadedFiles[0];
-      if (uploadedFile) {
-        let reader: FileReader = new FileReader();
-        reader.readAsDataURL(uploadedFile);
-        // tslint:disable-next-line
-        let proxy: any = this;
-        // tslint:disable-next-line
-        reader.onload = (e: any): void => {
-          let uploadedFileUrl: string = e.currentTarget.result;
-          proxy.pdfviewerControl.load(uploadedFileUrl, null);
-        };
-      }
-    }
+    let proxy: any = this;
+    // tslint:disable-next-line
+    reader.onload = (e: any): void => {
+      let uploadedFileUrl: string = e.currentTarget.result;
+      proxy.pdfviewerControl.load(uploadedFileUrl, null);
+    };
   }
+}
+}
 ```
 
 Find the sample of [Toolbar Customization](https://stackblitz.com/edit/angular-g94gvs?file=app.component.html)

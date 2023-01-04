@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Feature module in Angular Pdfviewer component
+# Feature modules
 
 The [`Angular PDF Viewer`](https://www.syncfusion.com/angular-ui-components/angular-pdf-viewer) features are segregated into individual feature-wise modules to enable selectively referencing in the application. The required modules should be injected to extend its functionality. The following are the selective modules of PDF Viewer that can be included as required:
 

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Interaction mode in Angular Pdfviewer component
+# Interaction Mode
 
 The PDF Viewer provides interaction mode for easy interaction with the loaded PDF document.  Selection mode and panning mode are the two interactions modes.
 
@@ -16,28 +16,29 @@ The PDF Viewer provides interaction mode for easy interaction with the loaded PD
 
 In this mode, the text selection can be performed in the PDF document loaded in PDF Viewer. The panning and scrolling of the pages by touch cannot be performed in this mode. It allows users to select and copy text from the PDF files. This is helpful for copying and sharing text content. You can enable/disable the text selection using the following code snippet.
 
-```html
-  import { Component, OnInit } from '@angular/core';
-import {
-  LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, AnnotationService, TextSelectionService, PrintService
-} from '@syncfusion/ej2-angular-pdfviewer';
+```typescript
 
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService, \
+          TextSearchService, AnnotationService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' enableTextSelection='true' [documentPath]='document' style="height:640px;display:block"></ejs-pdfviewer>
-</div>`,
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,
-    ThumbnailViewService, ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService,PrintService]
-})
-export class AppComponent implements OnInit {
-    public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document = 'PDF_Succinctly.pdf';
-    ngOnInit(): void {
-    }
-}
+              <ejs-pdfviewer id="pdfViewer"
+                      [serviceUrl]='service'
+                      enableTextSelection='true'
+                      [documentPath]='document'
+                      style="height:640px;display:block">
+              </ejs-pdfviewer>
+            </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
+                AnnotationService, TextSearchService,TextSelectionService, PrintService]
+  })
+  export class AppComponent implements OnInit {
+      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public document = 'PDF_Succinctly.pdf';
+  }
 ```
 
 ![Alt text](images/selection.png)
@@ -50,23 +51,27 @@ In this mode, the panning and scrolling of the pages by touch can be performed i
 
 You can switch the interaction mode of PDF Viewer by using the following code snippet.,
 
-```html
-    @Component({
+```typescript
+@Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" [serviceUrl]='service' enableTextSelection='true' [documentPath]='document' [interactionMode]='interaction' style="height:640px;display:block"></ejs-pdfviewer>
-</div>`,
-  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,
-    ThumbnailViewService, ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService,PrintService]
-})
-export class AppComponent implements OnInit {
-    public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document = 'PDF_Succinctly.pdf';
-    public interaction = 'Pan';
-    ngOnInit(): void {
-    }
-}
+              <ejs-pdfviewer id="pdfViewer"
+                    [serviceUrl]='service'
+                    enableTextSelection='true'
+                    [documentPath]='document'
+                    [interactionMode]='interaction'
+                    style="height:640px;display:block">
+              </ejs-pdfviewer>
+            </div>`,
+  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,ThumbnailViewService,ToolbarService,NavigationService,
+              AnnotationService,TextSearchService,TextSelectionService, PrintService]
+  })
+  export class AppComponent implements OnInit {
+      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public document = 'PDF_Succinctly.pdf';
+      public interaction = 'Pan';
+  }
 ```
 
 ## See also
