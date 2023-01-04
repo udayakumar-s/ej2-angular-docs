@@ -6,7 +6,7 @@ import { Pivot_Data } from './datasource.ts';
 
 @Component({
   selector: 'app-container',
-  providers: [GroupingBarService, FieldListService, PivotActionCompleteEventArgs ],
+  providers: [GroupingBarService, FieldListService],
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' showFieldList='true' (actionComplete)='actionComplete($event)' width=width></ejs-pivotview>`
 })
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     public dataSourceSettings: IDataOptions;
 
     actionComplete(args: PivotActionCompleteEventArgs): void {
-        if (args.actionName == 'Field aggregated') {
+        if (args.actionName == 'Field filtered') {
             // Triggers when the filter action is completed.
         }
     }

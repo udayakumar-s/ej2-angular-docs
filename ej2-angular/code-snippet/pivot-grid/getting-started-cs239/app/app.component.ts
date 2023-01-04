@@ -21,7 +21,8 @@ export class AppComponent implements OnInit {
 
         this.dataSourceSettings = {
             dataSource: Pivot_Data,
-             expandAll: false,
+            expandAll: false,
+            enableSorting: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
@@ -30,7 +31,11 @@ export class AppComponent implements OnInit {
         };
 
         this.displayOption = { view: 'Chart' } as DisplayOPtion;
-        this.chartSettings = { value: 'Amount', chartSeries: { type: 'Column', animation: { enable: false } }, enableMultipleAxis: true, showMemberSeries: true} as ChartSettings;
+        this.chartSettings = { 
+            title: 'Sales Analysis', value: 'Amount', chartSeries: { type: 'Column' }, 
+            enableMultipleAxis: true, showPointColorByMembers: true, multipleAxisMode: 'Stacked',
+            primaryYAxis: {border: {width: '0'}}
+        } as ChartSettings;
     }
 }
 
