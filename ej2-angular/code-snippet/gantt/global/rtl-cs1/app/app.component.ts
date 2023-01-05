@@ -114,7 +114,7 @@ L10n.load({
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    // Data for Gantt
+   // Data for Gantt
     public data: object[];
     public taskSettings: object;
     public toolbar: ToolbarItem[];
