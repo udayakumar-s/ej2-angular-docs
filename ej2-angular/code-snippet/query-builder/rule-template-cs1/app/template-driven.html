@@ -1,0 +1,39 @@
+<ejs-querybuilder id="querybuilder" #querybuilder width="100%" [rule] = "importRules" (actionBegin)="actionBegin($event)">
+    <e-columns>
+        <e-column field="EmployeeID" label="Employee ID" type="number"></e-column>
+        <e-column field="FirstName" label="First Name" type="string"></e-column>
+        <e-column field="LastName" label="LastName" type="string"></e-column>
+        <e-column field="Age" label="Age" type="number">
+            <ng-template #ruleTemplate let-data>
+                <div class="e-rule e-rule-template">
+                    <div class="e-rule-header">
+                        <div class="e-rule-filter">
+                            <ejs-dropdownlist (change)="fieldChange($event)" [fields]="data.fields" [dataSource]="data.columns" [value]="data.rule.field">
+                            </ejs-dropdownlist>
+                        </div>
+                        <div *ngIf="data.rule.type ==='number'" class="e-rule-value e-slide-val">
+                            <ejs-slider [value]='data.rule.value' [ticks]='rangeticks' min=30 max=50 id = "{{data.ruleID}}_valuekey0" (change)="valueChange($event, data.ruleID)">
+                            </ejs-slider>
+                        </div>
+                        <div class="e-rule-btn">
+                            <button id="{{data.ruleID}}_option" (click)="viewDetails(data.ruleID)" class="e-primary e-btn e-small">
+                                <span class='e-content'>View Details</span>
+                            </button>
+                            <button class="e-removerule e-rule-delete e-css e-btn e-small e-round">
+                                <span class="e-btn-icon e-icons e-delete-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="{{data.ruleID}}_section" class="e-rule-content e-hide">
+                        <table id="{{data.ruleID}}_datatable" class='e-rule-table e-hide'>
+                            <thead> <tr><th>EmployeeID</th><th>FirstName</th><th>Age</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </ng-template>
+        </e-column>
+        <e-column field="City" label="City" type="string"></e-column>
+        <e-column field="Country" label="Country" type="string"></e-column>
+    </e-columns>
+</ejs-querybuilder>

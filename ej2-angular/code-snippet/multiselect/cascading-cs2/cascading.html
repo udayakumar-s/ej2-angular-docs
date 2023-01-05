@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Angular MultiSelect</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Angular UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="{{:CDN_LINK}}ej2-dropdowns/styles/material.css" rel="stylesheet" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.6.25/zone.min.js"></script>
+    <script src="https://unpkg.com/reflect-metadata@0.1.3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id="wrapper" style='margin-top: 20px'>
+        <div id='content' style="margin: 50px auto 0; width:250px;">
+            <br>
+                <ejs-multiselect #country id="country" [dataSource]="countryData" [fields]="countryFields" [changeOnBlur]= "false" (change)="countryChange($event)" [placeholder]="countryWatermark"></ejs-multiselect>
+            <div class="padding-top">
+                <ejs-multiselect #state id="state" [dataSource]="stateData" [fields]="stateFields" [changeOnBlur] = "false" (change)="stateChange($event)" [placeholder]="stateWatermark" [enabled]="false"></ejs-multiselect>
+            </div>  
+            <div class="padding-top">
+                <ejs-multiselect #city id="city" [dataSource]="cityData" [fields]="cityFields" [placeholder]="cityWatermark" [enabled]="false"></ejs-multiselect>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
