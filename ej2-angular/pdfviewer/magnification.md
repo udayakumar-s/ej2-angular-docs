@@ -18,8 +18,11 @@ The following code snippet describes how to enable the magnification in PDF View
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-          TextSearchService, AnnotationService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService, NavigationService,
+         TextSearchService, AnnotationService, TextSelectionService,
+         PrintService
+       } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-container',
@@ -32,8 +35,10 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService, Thumb
                                 style="height:640px;display:block">
                   </ejs-pdfviewer>
             </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-              AnnotationService, TextSearchService, TextSelectionService, PrintService]
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               AnnotationService, TextSearchService, TextSelectionService,
+               PrintService]
   })
   export class AppComponent implements OnInit {
     public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';

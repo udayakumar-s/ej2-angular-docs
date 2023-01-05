@@ -52,21 +52,26 @@ You can import annotations using JSON object or JSON file in code behind like th
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, AnnotationDataFormat } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
   @Component({
     selector: 'app-root',
     // specifies the template string for the PDF Viewer component
     template: `<button (click)="OnImportAnnotationsClick()">Import Annotations</button>
-    <div class="content-wrapper">
-    <ejs-pdfviewer id="pdfViewer"
-                  [serviceUrl]='service'
-                  [documentPath]='document'
-                  style="height:640px;display:block">
-    </ejs-pdfviewer>
-    </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,ToolbarService,
-                 NavigationService,TextSearchService,TextSelectionService, PrintService, AnnotationService ],
+               <div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                        [serviceUrl]='service'
+                        [documentPath]='document'
+                        style="height:640px;display:block">
+                  </ejs-pdfviewer>
+               </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService],
   })
   export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
@@ -257,21 +262,26 @@ Refer to the following code snippet to import annotations from a JSON file.
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-        NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, AnnotationDataFormat } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-root',
   // specifies the template string for the PDF Viewer component
   template: `<button (click)="onImportAnnotationsClick()">Import Annotations</button>
-            <div class="content-wrapper">
+             <div class="content-wrapper">
                 <ejs-pdfviewer id="pdfViewer"
                         [serviceUrl]='service'
                         [documentPath]='document'
                         style="height:640px;display:block">
                 </ejs-pdfviewer>
-            </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-                TextSearchService,TextSelectionService, PrintService, AnnotationService ],
+             </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService,TextSelectionService, PrintService, 
+               AnnotationService],
   })
   export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
@@ -291,22 +301,27 @@ Refer to the following code snippet to import annotations from an XFDF file.
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService,ThumbnailViewService,ToolbarService,
-        NavigationService,TextSearchService, TextSelectionService, PrintService, AnnotationService, AnnotationDataFormat } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
 
   @Component({
     selector: 'app-root',
     // specifies the template string for the PDF Viewer component
     template: `<button (click)="OnImportAnnotationsClick()">Import Annotations</button>
-    <div class="content-wrapper">
-    <ejs-pdfviewer id="pdfViewer"
-                  [serviceUrl]='service'
-                  [documentPath]='document'
-                  style="height:640px;display:block">
-    </ejs-pdfviewer>
-    </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,ThumbnailViewService, ToolbarService,NavigationService,
-              TextSearchService, TextSelectionService, PrintService, AnnotationService  ]
+               <div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                          [serviceUrl]='service'
+                          [documentPath]='document'
+                          style="height:640px;display:block">
+                   </ejs-pdfviewer>
+               </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService, 
+                 AnnotationService ]
   })
   export class AppComponent implements OnInit {
       @ViewChild('pdfviewer')
@@ -348,8 +363,11 @@ You can export annotations as JSON file in code behind like the following code s
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService,  AnnotationDataFormat } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService,  AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
   @Component({
     selector: 'app-root',
     // specifies the template string for the PDF Viewer component
@@ -362,8 +380,10 @@ import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService, Magnific
                             style="height:640px;display:block">
                   </ejs-pdfviewer>
                 </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,ThumbnailViewService, ToolbarService, NavigationService,
-                TextSearchService, TextSelectionService, PrintService, AnnotationService]
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
   })
   export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
@@ -383,8 +403,11 @@ Refer to the following code snippet to export annotations as XFDF file.
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-         NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, AnnotationDataFormat } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-root',
   // specifies the template string for the PDF Viewer component
@@ -397,8 +420,10 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, Magnifi
                           style="height:640px;display:block">
                   </ejs-pdfviewer>
               </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService,MagnificationService,ThumbnailViewService,ToolbarService,NavigationService,
-              TextSearchService, TextSelectionService, PrintService,  AnnotationService]
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService]
 })
 export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')

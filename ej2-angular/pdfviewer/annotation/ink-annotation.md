@@ -29,8 +29,11 @@ Refer to the following code sample to switch to the ink annotation mode.
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService,  PrintService,  AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService,  AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
   @Component({
     selector: 'app-root',
     // Specifies the template string for the PDF Viewer component.
@@ -42,8 +45,10 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, Magnifi
                               style="height:640px;display:block">
                 </ejs-pdfviewer>
                 </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService,MagnificationService, ThumbnailViewService, ToolbarService,
-                  NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService]
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
     })
   export class AppComponent implements OnInit {
       public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
@@ -87,8 +92,11 @@ Refer to the following code sample to set the default ink annotation settings.
 ```typescript
   import { ViewChild } from '@angular/core';
   import { Component, OnInit } from '@angular/core';
-  import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService,ThumbnailViewService,ToolbarService,
-            NavigationService,TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+  import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+           MagnificationService, ThumbnailViewService, ToolbarService,
+           NavigationService, TextSearchService, TextSelectionService,
+           PrintService, AnnotationService
+         } from '@syncfusion/ej2-angular-pdfviewer';
   @Component({
     selector: 'app-root',
     // Specifies the template string for the PDF Viewer component.
@@ -100,8 +108,10 @@ Refer to the following code sample to set the default ink annotation settings.
                       style="height:640px;display:block">
                 </ejs-pdfviewer>
               </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-                   NavigationService, TextSearchService, TextSelectionService, PrintService,  AnnotationService]
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
     })
     export class AppComponent implements OnInit {
         public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
