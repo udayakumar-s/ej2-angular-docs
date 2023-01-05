@@ -152,6 +152,24 @@ The [`Internationalization`](../common/internationalization) library is used to 
 > * In the above sample, `Timeline` is formatted by `NumberFormatOptions` and `DateFormatOptions`.
 > * By default, [`locale`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value is `en-US`. If you want to change `en-US` culture, then set the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale).
 
+## Right to left (RTL)
+
+RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Urdu, etc.). To enable RTL Gantt, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enablertl) to true.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/global/rtl-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/global/rtl-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/global/rtl-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/global/rtl-cs1" %}
+
 ## See Also
 
 * [Internationalization](../common/internationalization)
