@@ -1,0 +1,31 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+.msg-icon-section .content-section {
+  margin: 0 auto;
+  max-width: 450px;
+  padding-top: 10px;
+}
+
+.msg-icon-section .e-message {
+  margin: 10px 0;
+}
+
+.msg-icon-section .e-btn {
+  display: block;
+  margin: 10px 0;
+}
+
+.msg-icon-section .e-btn.msg-hidden {
+  display: none;
+}

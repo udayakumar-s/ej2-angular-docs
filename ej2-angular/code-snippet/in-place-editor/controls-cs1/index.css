@@ -1,0 +1,37 @@
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+body {
+    padding: 20px 0
+}
+
+.control-title {
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+td {
+    height: 80px;
+}
+
+tr td:first-child {
+    text-align: right;
+}
+
+tr td:last-child {
+    text-align: left;
+}
+
+.table-section {
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+}

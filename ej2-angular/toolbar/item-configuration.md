@@ -1,0 +1,120 @@
+---
+layout: post
+title: Item configuration in Angular Toolbar component | Syncfusion
+description: Learn here all about Item configuration in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
+control: Item configuration 
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Item configuration in Angular Toolbar component
+
+The Toolbar can be rendered by defining an array of [`items`](https://ej2.syncfusion.com/angular/documentation/api/toolbar#items). Items can be constructed with the following built-in command types or item template.
+
+## Button
+
+`Button` is the default command [`type`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#type), and it can be rendered by using the [`text`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#text) property.
+Properties of the button command type:
+
+  Property   | Description
+------------ | -------------
+  [`text`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#text) | The text to be displayed for button.
+ [`id`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#id) | The ID of the button to be rendered. If the ID is not given, auto ID is generated.
+  [`prefixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#prefixicon) | Defines the class used to specify an icon for the button. The icon is `positioned before` the text if text is available or the icon alone button is rendered.
+[`suffixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#suffixicon) | Defines the class used to specify an icon for the button. The icon is `positioned after` the text if text is available. If both [`prefixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#prefixicon) and [`suffixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#suffixicon) are specified, only `prefixIcon` is considered.
+  [`width`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#width) | Used to set the [`width`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#width) of the button.
+  [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#align) | Specifies the location for aligning Toolbar items.
+
+## Separator
+
+The `Separator` type adds a vertical separation between the Toolbar's single/multiple commands.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/toolbar/toolbar-items-cs5/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/toolbar/toolbar-items-cs5/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/toolbar/toolbar-items-cs5/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs5" %}
+
+> If `Separator` is added as first or last item, it is not visible.
+
+## Input
+
+The `Input` type is only applicable for adding `template` elements when the [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#template) property is defined as an `object`.
+Input type creates an `input element` internally that acts as the container for `Syncfusion` input based components.
+
+### NumericTextBox
+
+* The `NumericTextBox` component can be included by importing the `NumericTextBox` module from `ej2-inputs`.
+
+* Initialize the `NumericTextBox` in template property, in which the Toolbar item type set as `Input`.
+
+* Related `NumericTextBox` component properties are also can be configured like as below.
+
+```javascript
+new NumericTextBox( { format: 'c2' }))
+```
+
+### DropDownList
+
+* The `DropDownList` component can be included by importing the `DropDownList` module from `ej2-dropdowns`.
+
+* Initialize the `DropDownList` in template property, in which the Toolbar item type set as `Input`.
+
+* Related `DropDownList` component properties are also can be configured like as below.
+
+```javascript
+new DropDownList({ width:100 })
+```
+
+### CheckBox
+
+* The `CheckBox` component can be included by importing the `CheckBox` module from `ej2-buttons`.
+
+* Initialize the `CheckBox` in template property, in which the Toolbar item type set as `Input`.
+
+* Related `CheckBox` component properties are also can be configured like as below.
+
+```javascript
+new CheckBox({ label: 'Checkbox', checked: true })
+```
+
+### RadioButton
+
+* The `RadioButton` component can be included by importing the `RadioButton` module from `ej2-buttons`.
+
+* Initialize the `RadioButton` in template property, in which the Toolbar item type set as `Input`.
+
+* Related `RadioButton` component properties are also can be configured like as below.
+
+```javascript
+new RadioButton({ label: 'Radio', name: 'default', checked: true })
+```
+
+Above steps applicable for all 'Syncfusion' input based components.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/toolbar/toolbar-items-cs6/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/toolbar/toolbar-items-cs6/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/toolbar/toolbar-items-cs6/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs6" %}
+
+## See Also
+
+* [How to set item wise custom template](./how-to/set-item-wise-custom-template/)

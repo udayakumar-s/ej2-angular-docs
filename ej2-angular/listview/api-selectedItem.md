@@ -1,0 +1,25 @@
+---
+layout: post
+title: Api selectedItem in Angular Listview component | Syncfusion
+description: Learn here all about Api selectedItem in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
+control: Api selectedItem 
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Api selectedItem in Angular Listview component
+
+## Properties
+
+### data ``Object`` &#124;  `string[]`
+
+It denotes the Selected Item dataSource JSON object.
+
+### item `HTMLElement` &#124;  `Element`
+
+It denotes the Selected Item list element.
+
+### text `string`
+
+It denotes the Selected Item text.

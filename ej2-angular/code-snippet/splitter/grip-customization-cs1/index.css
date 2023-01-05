@@ -1,0 +1,30 @@
+
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+#container .e-splitter .e-split-bar .e-resize-handler:before {
+  content: "\e934";
+  font-family: 'e-icons';
+  font-size: 11px;
+  transform: rotate(90deg);
+}
+
+.content {
+  padding: 9px;
+}
+
+#container {
+  margin: 80px auto;
+}
+
+#resizegrip.e-splitter .e-split-bar.e-split-bar-horizontal.e-resizable-split-bar,
+#resizegrip.e-splitter .e-split-bar.e-split-bar-horizontal.e-resizable-split-bar::after {
+  cursor: e-resize;
+}
