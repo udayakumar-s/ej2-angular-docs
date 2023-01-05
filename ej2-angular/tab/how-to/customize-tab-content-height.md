@@ -21,6 +21,9 @@ You can change the Tab content height by using the [`heightAdjustMode`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/height-cs1/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/tab/height-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/tab/height-cs1/app/app.module.ts %}
 {% endhighlight %}
