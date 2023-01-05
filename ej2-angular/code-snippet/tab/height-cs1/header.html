@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Angular Tab</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Angular Tab Control" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="{{:CDN_LINK}}ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="{{:CDN_LINK}}ej2-dropdowns/styles/material.css" rel="stylesheet" />
+    <link href="{{:CDN_LINK}}ej2-navigations/styles/material.css" rel="stylesheet" />    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.6.25/zone.min.js"></script>
+    <script src="https://unpkg.com/reflect-metadata@0.1.3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+ <div id="wrapper" style='margin-top: 20px'>
+	  <div id='content' style="margin: 0px auto">   
+          <div id="default" style="padding-top:20px;width:250px">
+            <div class='row'>
+                <div>
+                    <label>Height Adjust Mode</label>
+                </div><br/>
+                <div>
+                    <ejs-dropdownlist id='contentHeight' #contentHeight [dataSource]='heightData' (change)='onChange($event)' [value]='value' [fields]='fields' [popupHeight]='height'></ejs-dropdownlist>
+                </div>
+            </div>
+        </div>
+        <br/>
+	     <div>
+            <ejs-tab id="element" #element height="400px">
+                <e-tabitems>
+                        <e-tabitem [header]='headerText[0]'>
+                            <ng-template #content>
+                                Twitter is an online social networking service that enables users to send and read short 140-character messages called "tweets".
+                                Registered users can read and post tweets, but those who are unregistered can only read them. Users access Twitter
+                                through the website interface, SMS or mobile device app Twitter Inc. is based in San Francisco and has more than 25
+                                offices around the world. Twitter was created in March 2006 by Jack Dorsey, Evan Williams, Biz Stone, and Noah Glass
+                                and launched in July 2006. The service rapidly gained worldwide popularity, with more than 100 million users posting
+                                340 million tweets a day in 2012.The service also handled 1.6 billion search queries per day.
+                            </ng-template>
+                        </e-tabitem>
+                        <e-tabitem [header]='headerText[1]'>
+                            <ng-template #content>
+                                Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February
+                                4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum,
+                                Dustin Moskovitz and Chris Hughes.The founders had initially limited the website\'\s membership to Harvard students,
+                                but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support
+                                for students at various other universities and later to high-school students.
+                            </ng-template>
+                        </e-tabitem>
+                        <e-tabitem [header]='headerText[2]'>
+                            <ng-template #content>
+                                WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription
+                                business model. It uses the Internet to send text messages, images, video, user location and audio media messages to
+                                other users using standard cellular mobile numbers. As of February 2016, WhatsApp had a user base of up to one billion,[10]
+                                making it the most globally popular messaging application. WhatsApp Inc., based in Mountain View, California, was acquired
+                                by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
+                            </ng-template>
+                        </e-tabitem>
+                    </e-tabitems>
+                </ejs-tab>
+        </div>        
+      </div>
+ </div>
+</body>
+
+</html>

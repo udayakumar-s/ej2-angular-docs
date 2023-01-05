@@ -1,0 +1,29 @@
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+}
+
+body {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.e-arrow:before {
+  content: "\e253";
+  font-size: 21px;
+}
+
+.e-breadcrumb-chips .e-chip-list {
+  padding: 0px;
+}
+
+.e-breadcrumb-chips .e-chip-list .e-chip {
+  margin: 0px !important;
+}
+
+.e-breadcrumb-chips .e-breadcrumb-separator {
+  font-size: 20px;
+}
