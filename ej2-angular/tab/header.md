@@ -26,6 +26,9 @@ You can customize header styles by adding predefined classes in the Tab root ele
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/header-cs1/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/tab/header-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/tab/header-cs1/app/app.module.ts %}
 {% endhighlight %}

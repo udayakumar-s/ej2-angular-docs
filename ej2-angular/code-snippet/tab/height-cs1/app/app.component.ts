@@ -1,37 +1,26 @@
-
-
-
 import { Component, ViewChild } from '@angular/core';
-import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
+import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
-import { enableRipple } from '@syncfusion/ej2-base';
-/**
- * Adaptive Tab Component
- */
 
 @Component({
     selector: 'app-container',
     // specifies the template url path
-    templateUrl: './header.html'
-    })
+    templateUrl: 'app.component.html'
+})
 export class AppComponent {
     @ViewChild('element') tabObj: TabComponent;
     @ViewChild('contentHeight') listObj: DropDownListComponent;
     public heightData: Object[] = [
         { mode: 'None', text: 'None' },
-        { mode: 'Content', text: 'Content'},
-        { mode: 'Fill',text: 'Fill' },
+        { mode: 'Content', text: 'Content' },
+        { mode: 'Fill', text: 'Fill' },
         { mode: 'Auto', text: 'Auto' }
     ];
     public fields: Object = { text: 'text', value: 'mode' };
     public height: string = '220px';
     public value: string = 'Content';
-    public onChange(ChangeEventArgs: any): void {
-          this.tabObj.heightAdjustMode = this.listObj.value;
+    public onChange(args: ChangeEventArgs): void {
+        this.tabObj.heightAdjustMode = this.listObj.value as string;
     }
-    public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
-
+    public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' }, { 'text': 'WhatsApp' }];
 }
-
-
-
