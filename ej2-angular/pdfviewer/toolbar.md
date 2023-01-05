@@ -35,8 +35,11 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,  NavigationService,
-          TextSearchService, AnnotationService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService,  NavigationService,
+         TextSearchService, AnnotationService, TextSelectionService,
+         PrintService
+       } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
@@ -48,8 +51,10 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService, Thumb
                             style="height:640px;display:block">
                   </ejs-pdfviewer>
               </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-           AnnotationService, TextSearchService, TextSelectionService, PrintService ]
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               AnnotationService, TextSearchService, TextSelectionService,
+               PrintService]
   })
   export class AppComponent implements OnInit {
     public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
@@ -77,8 +82,11 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 ```typescript
 
 import { Component, OnInit } from '@angular/core';
-import { LinkAnnotationService, BookmarkViewService,MagnificationService,ThumbnailViewService, ToolbarService,NavigationService,
-        TextSearchService, AnnotationService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService,NavigationService,
+         TextSearchService, AnnotationService, TextSelectionService, 
+         PrintService
+       } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
@@ -90,8 +98,10 @@ import { LinkAnnotationService, BookmarkViewService,MagnificationService,Thumbna
                               style="height:640px;display:block">
                 </ejs-pdfviewer>
             </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-            TextSearchService, AnnotationService, TextSelectionService, PrintService]
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, AnnotationService, TextSelectionService,
+               PrintService]
   })
   export class AppComponent implements OnInit {
       public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
@@ -117,8 +127,11 @@ The PDF Viewer has an option to show or hide the left toolbar with the thumbnail
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { LinkAnnotationService,BookmarkViewService,MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-          TextSearchService, AnnotationService, TextSelectionService, PrintService } from '@syncfusion/ej2-angular-pdfviewer';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService, NavigationService,
+         TextSearchService, AnnotationService, TextSelectionService,
+         PrintService
+       } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
@@ -131,8 +144,10 @@ import { LinkAnnotationService,BookmarkViewService,MagnificationService, Thumbna
                           style="height:640px;display:block">
                   </ejs-pdfviewer>
             </div>`,
-  providers: [ LinkAnnotationService,  BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-              AnnotationService, TextSearchService, TextSelectionService, PrintService]
+  providers: [ LinkAnnotationService,  BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               AnnotationService, TextSearchService, TextSelectionService,
+               PrintService]
   })
   export class AppComponent implements OnInit {
       public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';

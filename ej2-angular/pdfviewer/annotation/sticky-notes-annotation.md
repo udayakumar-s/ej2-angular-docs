@@ -62,8 +62,11 @@ After editing the default opacity using the Edit Opacity tool, they will be chan
 ```typescript
  import { ViewChild } from '@angular/core';
  import { Component, OnInit } from '@angular/core';
- import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+          MagnificationService, ThumbnailViewService, ToolbarService,
+          NavigationService, TextSearchService, TextSelectionService,
+          PrintService, AnnotationService
+        } from '@syncfusion/ej2-angular-pdfviewer';
   @Component({
     selector: 'app-root',
     // Specifies the template string for the PDF Viewer component.
@@ -75,9 +78,11 @@ After editing the default opacity using the Edit Opacity tool, they will be chan
                       style="height:640px;display:block">
                   </ejs-pdfviewer>
                 </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-              TextSearchService, TextSelectionService, PrintService, AnnotationService]
-  })
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
+ })
  export class AppComponent implements OnInit {
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
     public document: string = 'PDF_Succinctly.pdf';
@@ -93,8 +98,11 @@ The PDF Viewer control provides an option to disable the sticky note annotations
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-        NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-root',
@@ -107,9 +115,11 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, Magnifi
                      style="height:640px;display:block">
                 </ejs-pdfviewer>
              </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-              NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService]
-  })
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService]
+ })
  export class AppComponent implements OnInit {
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
     public document: string = 'PDF_Succinctly.pdf';

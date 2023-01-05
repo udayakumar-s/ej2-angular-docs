@@ -140,8 +140,11 @@ Refer to the following code sample to set the default free text annotation setti
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-root',
   // Specifies the template string for the PDF Viewer component.
@@ -153,8 +156,10 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, Magnifi
                       style="height:640px;display:block">
                 </ejs-pdfviewer>
               </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-              TextSearchService, TextSelectionService, PrintService, AnnotationService]
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService]
   })
   export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
@@ -170,21 +175,26 @@ You can also enable the autofit support for free text annotation by using the en
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent,LinkAnnotationService,BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-root',
   // Specify the template string for the PDF Viewer component.
   template: `<div class="content-wrapper">
-              <ejs-pdfviewer id="pdfViewer"
+                <ejs-pdfviewer id="pdfViewer"
                       [serviceUrl]='service'
                       [documentPath]='document'
                       [freeTextSettings]='freeTextSettings'
                       style="height:640px;display:block">
-              </ejs-pdfviewer>
+                </ejs-pdfviewer>
               </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, NavigationService,
-              TextSearchService, TextSelectionService,PrintService,AnnotationService ]
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService ]
 })
   export class AppComponent implements OnInit {
       @ViewChild('pdfviewer')

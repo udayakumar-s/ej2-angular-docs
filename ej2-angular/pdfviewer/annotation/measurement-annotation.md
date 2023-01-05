@@ -38,21 +38,26 @@ Refer to the following code snippet to switch to distance annotation mode.
 ```typescript
   import { ViewChild } from '@angular/core';
   import { Component, OnInit } from '@angular/core';
-  import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-            NavigationService,TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+  import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+           MagnificationService, ThumbnailViewService, ToolbarService,
+           NavigationService,TextSearchService, TextSelectionService,
+           PrintService, AnnotationService
+         } from '@syncfusion/ej2-angular-pdfviewer';
   @Component({
     selector: 'app-root',
     // specifies the template string for the PDF Viewer component
     template: `<button (click)="addAnnotation()">Distance</button>
-              <div class="content-wrapper">
+               <div class="content-wrapper">
                   <ejs-pdfviewer id="pdfViewer"
                         [serviceUrl]='service'
                         [documentPath]='document'
                         style="height:640px;display:block">
                   </ejs-pdfviewer>
-              </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService, \
-                 NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService  ]
+               </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
     })
     export class AppComponent implements OnInit {
       public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
@@ -106,8 +111,11 @@ Refer to the following code snippet to set the default annotation settings.
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-root',
   // specifies the template string for the PDF Viewer component
@@ -123,8 +131,10 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, Magnifi
                     style="height:640px;display:block">
               </ejs-pdfviewer>
               </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,ToolbarService, NavigationService,
-                TextSearchService, TextSelectionService, PrintService, AnnotationService]
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService,ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService]
   })
   export class AppComponent implements OnInit {
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
@@ -161,8 +171,11 @@ The properties of scale ratio for measurement annotation can be set before creat
 ```typescript
   import { ViewChild } from '@angular/core';
   import { Component, OnInit } from '@angular/core';
-  import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-            NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService } from '@syncfusion/ej2-angular-pdfviewer';
+  import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+           MagnificationService, ThumbnailViewService, ToolbarService,
+           NavigationService, TextSearchService, TextSelectionService,
+           PrintService, AnnotationService
+         } from '@syncfusion/ej2-angular-pdfviewer';
   @Component({
       selector: 'app-root',
       // specifies the template string for the PDF Viewer component
@@ -174,8 +187,9 @@ The properties of scale ratio for measurement annotation can be set before creat
                                 style="height:640px;display:block">
                   </ejs-pdfviewer>
                 </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,ToolbarService, NavigationService,
-                  TextSearchService, TextSelectionService, PrintService, AnnotationService]
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService,ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService, AnnotationService]
   })
   export class AppComponent implements OnInit {
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';

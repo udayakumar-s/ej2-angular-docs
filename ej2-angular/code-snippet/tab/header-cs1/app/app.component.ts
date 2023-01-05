@@ -1,23 +1,17 @@
 
-
-
 import { Component, ViewChild } from '@angular/core';
-import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
+import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
-import { enableRipple } from '@syncfusion/ej2-base';
-/**
- * Adaptive Tab Component
- */
 
 @Component({
     selector: 'app-container',
     // specifies the template url path
-    templateUrl: './header.html'
+    templateUrl: 'app.component.html'
     })
 export class AppComponent {
-    @ViewChild('headerStyles');
     @ViewChild('element') tabObj: TabComponent;
-    @ViewChild('headerStyles') listObj: TabComponent;
+    @ViewChild('headerStyles') listObj: DropDownListComponent;
+    public headerText: Record<string, any>[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
     public headerData: Object[] = [
         { Id: 'header1', headerStyle: 'default', text: 'Default' },
         { Id: 'header2', headerStyle: 'fill', text: 'Fill'},
@@ -27,7 +21,7 @@ export class AppComponent {
     public fields: Object = { text: 'text', value: 'headerStyle' };
     public height: string = '220px';
     public value: string = 'default';
-    public onChange(ChangeEventArgs: any): void {
+    public onChange(args: ChangeEventArgs): void {
         this.removeStyleClass();
         if (this.listObj.value === 'fill') {
             this.tabObj.element.classList.add('e-fill');
@@ -38,15 +32,9 @@ export class AppComponent {
             this.tabObj.element.classList.add('e-accent');
         }
     }
-    public removeStyleClass(args: any): void {
+    public removeStyleClass(): void {
         this.tabObj.element.classList.remove('e-fill');
         this.tabObj.element.classList.remove('e-background');
         this.tabObj.element.classList.remove('e-accent');
-    }
-    @ViewChild('adaptiveTab');
-    public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
-
+    }    
 }
-
-
-

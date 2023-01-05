@@ -153,49 +153,29 @@ Add the following code snippet to validate the form fields,
 
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import {
-  PdfViewerComponent,
-  LinkAnnotationService,
-  BookmarkViewService,
-  MagnificationService,
-  ThumbnailViewService,
-  ToolbarService,
-  NavigationService,
-  TextSearchService,
-  TextSelectionService,
-  PrintService,
-  AnnotationService,
-  FormDesignerService,
-  FormFieldsService,
-  LoadEventArgs,
-  TextFieldSettings
-} from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, FormDesignerService,
+         FormFieldsService, LoadEventArgs, TextFieldSettings
+       } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-root',
   // Specifies the template string for the PDF Viewer component.
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer"
-                #pdfviewer [serviceUrl]='service'
-                [documentPath]='document'
-                [enableFormFieldsValidation]=true
-                (validateFormFields)='validateFormFields($event)'
-                style="height:640px;display:block">
-  </ejs-pdfviewer>
-  </div>`,
-  providers: [
-    LinkAnnotationService,
-    BookmarkViewService,
-    MagnificationService,
-    ThumbnailViewService,
-    ToolbarService,
-    NavigationService,
-    TextSearchService,
-    TextSelectionService,
-    PrintService,
-    AnnotationService,
-    FormDesignerService,
-    FormFieldsService]
+               <ejs-pdfviewer id="pdfViewer"
+                     #pdfviewer [serviceUrl]='service'
+                     [documentPath]='document'
+                     [enableFormFieldsValidation]=true
+                     (validateFormFields)='validateFormFields($event)'
+                     style="height:640px;display:block">
+               </ejs-pdfviewer>
+             </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService]
 })
 export class AppComponent implements OnInit {
   @ViewChild('pdfviewer')
@@ -205,9 +185,6 @@ export class AppComponent implements OnInit {
 
   public validateFormFields(e: ValidateFormFieldsArgs): void {
     this.e.nonFillableFields;
-  }
-
-  ngOnInit(): void {
   }
 }
 
