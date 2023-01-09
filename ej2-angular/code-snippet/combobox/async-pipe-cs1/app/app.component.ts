@@ -3,21 +3,19 @@
 
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CategoriesService } from './categories.service';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'app-root',
     // specifies the template string for the ComboBox component with dataSource
-    template: ` <ejs-combobox  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-combobox >`,
-    providers: [CategoriesService]
+    template: ` <ejs-combobox  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-combobox >`
 })
 export class AppComponent {
     constructor(private http: HttpClient){
       this.data=this.http.get<{[key: string]:object;}[]>('https://services.odata.org/V4/Northwind/Northwind.svc/Customers').pipe(
       map((results : {[key: string]:object;}) => {
-        return results.value;
+        return results['value'];
       })
     );
   }

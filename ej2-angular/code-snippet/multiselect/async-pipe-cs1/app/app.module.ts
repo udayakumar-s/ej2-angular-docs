@@ -4,9 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DropDownListModule, MultiSelectModule} from '@syncfusion/ej2-angular-dropdowns';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import {DialogModule} from '@syncfusion/ej2-angular-popups';
-import { HttpModule, JsonpModule } from '@angular/http';
 import { ReactiveFormsModule }   from '@angular/forms';
 @NgModule({
   imports: [ 
@@ -16,9 +14,9 @@ import { ReactiveFormsModule }   from '@angular/forms';
     MultiSelectModule,
     DialogModule,
     HttpClientModule,
-    ReactiveFormsModule, HttpModule, JsonpModule
+    ReactiveFormsModule
     ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
