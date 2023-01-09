@@ -10,7 +10,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
     template: `<ejs-grid #grid [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' >
                 <e-columns>
                     <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=140></e-column>
-                    <e-column field='Name' headerText='Name' width=140>
+                    <e-column field='CustomerID' headerText='Name' width=140>
                         <ng-template #filterTemplate let-data>
                             <ejs-dropdownlist id='dropdown' [(ngModel)]="data.Name" [enabled]="data.column.allowFiltering"
                             (change)=onChange($event) [dataSource]='dropdata' [fields]='fields'[popupHeight]='height' ></ejs-dropdownlist>
