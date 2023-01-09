@@ -125,7 +125,7 @@ Here’s how to handle the server-side action for converting word document in to
         Syncfusion.EJ2.DocumentEditor.WordDocument document = Syncfusion.EJ2.DocumentEditor.WordDocument.Load(stream, GetFormatType(type.ToLower()));
         string sfdt = Newtonsoft.Json.JsonConvert.SerializeObject(document);
         document.Dispose();
-        return sdft;
+        return sfdt;
     }
 
     internal static Syncfusion.EJ2.DocumentEditor.FormatType GetFormatType(string format)
