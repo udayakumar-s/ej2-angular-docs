@@ -77,6 +77,15 @@ In this demo, the **Task Name** column is frozen at the left and the **Priority*
 {% previewsample "page.domainurl/code-snippet/treegrid/isfrozen-cs2" %}
 
 > * Freeze Direction is not compatible with the [`isFrozen`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isfrozen) and [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#frozencolumns) properties.
+> * You can get the frozen right rows by using the [`getFrozenRightRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfrozenrightrows) method in tree grid.
+> * To get the movable rows, you can use the [`getMovableRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getmovablerows) method in tree grid.
+> * You can get the movable row by index using the [`getMovableRowByIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getmovablerowbyindex) method in tree grid.
+> * To get the movable cell from index using the [`getMovableCellFromIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getmovablecellfromindex) method in tree grid. In this method, you need to pass the row index and column index of movable column as parameter.
+> * To get the frozen right column header element by index, you can use the [`getFrozenRightColumnHeaderByIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfrozenrightcolumnheaderbyindex) method in tree grid. In this method, you need to pass the frozen right column header index as parameter.
+> * To get the frozen left column header element by index, you can use the [`getFrozenLeftColumnHeaderByIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfrozenleftcolumnheaderbyindex) method in tree grid. In this method, you need to pass the frozen left column header index as parameter.
+> * To get the frozen right cell element from index, you can use the [`getFrozenRightCellFromIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfrozenrightcellfromindex) method in tree grid. In this method, you need to pass the row index and cell index of the frozen right column as parameter.
+> To get the movable column header element by index, you can use the [`getMovableColumnHeaderByIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getmovablecolumnheaderbyindex) method in tree grid. In this method, you need to pass the movable column index as parameter.
+> * To get the frozen right row element by index, you can use the [`getFrozenRightRowByIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfrozenrightrowbyindex) method in tree grid. In this method, you need to pass the right frozen row index as parameter.
 
 ### Limitations of frozen tree grid
 
@@ -123,5 +132,5 @@ Validation rules for the 'duration' and 'taskID' columns can be added in the fol
   
 {% previewsample "page.domainurl/code-snippet/treegrid/isfrozen-cs3" %}
 
-> This is applicable when a frozen column is enabled and the edit mode is set as "**Row**" in the tree grid.
-> You can refer to Syncfusion [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.
+> * This is applicable when a frozen column is enabled and the edit mode is set as "**Row**" in the tree grid.
+> * You can refer to Syncfusion [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.

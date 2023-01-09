@@ -197,4 +197,6 @@ In the following demo, the **priority** column is rendered with the template.
 The Editing functionalities can be performed based upon the primary key value of the selected row.
 If `primaryKey` is not defined in the treegrid, then edit or delete action take places the first row.
 
+You can get the primary key field name by the [`getPrimaryKeyFieldNames`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getprimarykeyfieldnames) method in the tree grid.
+
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

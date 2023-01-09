@@ -29,6 +29,8 @@ The [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treeg
   
 {% previewsample "page.domainurl/code-snippet/treegrid/cell-cs2" %}
 
+> You can get the cell details by using the [`getCellFromIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcellfromindex) method in tree grid. In this method, you need to pass the row index and column index as parameters to get the cell details.
+
 ## Custom attributes
 
 You can customize the treegrid cells by adding a CSS class to the [`customAttribute`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property of the column.

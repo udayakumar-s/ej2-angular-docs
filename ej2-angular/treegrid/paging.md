@@ -30,6 +30,7 @@ To use paging, inject the [`Page`](https://ej2.syncfusion.com/angular/documentat
 {% previewsample "page.domainurl/code-snippet/treegrid/page-cs1" %}
 
 > You can achieve better performance by using treegrid paging to fetch only a pre-defined number of records from the data source.
+> You can navigate to the target pages programmatically by passing the page number into the [`goToPage`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#gotopage) method in the tree grid.
 
 ## Page Size Mode
 
@@ -106,4 +107,5 @@ By default, Pager will be rendered at the bottom of the TreeGrid. You can also r
 > * The `created` event triggers when Pager is created.
 > * The `click` event triggers when the numeric items in the pager is clicked.
 > * The `dropDownChanged` event triggers when pageSize DropDownList value is selected.
+> * You can get the pager element by [`getPager`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getpager) method in the tree grid.
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

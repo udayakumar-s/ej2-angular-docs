@@ -111,6 +111,8 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 
 You can able to copy the content of a cell or a group of cells by selecting the cells and pressing <kbd>Ctrl + C</kbd> shortcut key and paste it to another set of cells by selecting the cells and pressing <kbd>Ctrl + V</kbd> shortcut key.
 
+Paste the cell programmatically by using the [`Paste`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#paste) method in the tree grid. To use, you need to pass the data to paste the row index and column index as parameters to the method.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs2/app/app.component.ts %}

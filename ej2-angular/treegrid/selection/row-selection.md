@@ -89,3 +89,21 @@ You can get the selected records using the [getSelectedRecords](https://ej2.sync
 {% previewsample "page.domainurl/code-snippet/treegrid/selection-cs7" %}
 
 > To persist the tree grid selection, it is necessary to define any one of the columns as a primary key using the [columns.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) property.
+
+## Get selected rows programmatically
+
+Selected rows can be obtained by using the [`getSelectedRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrows) method in the tree grid.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/selection-cs13/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/selection-cs13/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/selection-cs13/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs13" %}

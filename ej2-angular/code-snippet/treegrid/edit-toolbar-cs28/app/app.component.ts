@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { EditSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
@@ -11,6 +9,7 @@ import { EditSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-tr
                <button ej-button id='delete' (click)='clickDelete()'>Delete</button>
                <button ej-button id='updaterow' (click)='clickUpdateRow()'>Update Row</button>
                <button ej-button id='updatecell' (click)='clickUpdateCell()'>Update cell</button>
+               <button ej-button id='updateEntireRow' (click)='clickupdateEntireRow()'>Update entire Row</button>
                <ejs-treegrid #treegrid id="TreeGrid" [dataSource]='data' [editSettings]='editSettings' [treeColumnIndex]='1' height='270' childMapping='subtasks'>
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
@@ -47,7 +46,7 @@ export class AppComponent implements OnInit {
     clickUpdateCell(){
          this.treegrid.setCellValue((this.treegrid.getCurrentViewRecords()[0] as any).taskID,'taskName','Value Changed');
     }
+    clickupdateEntireRow() {
+        this.treegrid.setRowData((this.treegrid.getCurrentViewRecords()[1] as any).taskID, this.treegrid.flatData[35]);
+      }
 }
-
-
-

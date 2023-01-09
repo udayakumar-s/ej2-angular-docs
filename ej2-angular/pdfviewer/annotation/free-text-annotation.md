@@ -130,6 +130,79 @@ The opacity of the annotation can be edited using the range slider provided in t
 
 ![FontOpacity](../../pdfviewer/images/fontopacity.png)
 
+## How to move the free text annotation programmatically
+
+The PDF Viewer library allows you to move the free text annotation in the PDF Viewer control programmatically using the **editAnnotation()** method.
+
+Here is an example of how you can use the **editAnnotation()** method to move the free text annotation programmatically:
+
+```html
+ <button (click)="moveFreeText()">Move the Free Text</button>
+```
+
+```typescript
+
+  moveFreeText() {
+    var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    for (let i = 0; i < viewer.annotationCollection.length; i++) 
+    {
+      if (viewer.annotationCollection[i].subject === "Text Box") {
+        var width = viewer.annotationCollection[i].bounds.width;
+        var height = viewer.annotationCollection[i].bounds.height;
+        viewer.annotationCollection[i].bounds = {x : 100, y: 100, width: width, height: height }; 
+        viewer.annotation.editAnnotation(viewer.annotationCollection[i]);
+      }
+    }
+  }
+
+```
+
+Find the sample [how to move the free text annotation programmatically](https://stackblitz.com/edit/angular-dxub1a-qjbisb?file=app.component.ts)
+
+## How to get the newly added free text annotation ID
+
+To get the ID of a newly added free text annotation in the Syncfusion PDF viewer, you can use the **annotationAdd()** event. This event is triggered whenever a new annotation is added to the PDF document, and it provides the annotationAddEventHandler object as a parameter. You can access the ID of the new annotation through the AnnotationID property of the annotationAddEventHandler object.
+
+Here is an example of how you can use the **annotationAdd()** event to get the ID of a new free text annotation:
+
+```typescript
+
+public annotationAddEventHandler(args) {
+  if (args.annotationType === 'FreeText') {
+    console.log('annotationId:' + args.annotationId);
+  }
+}
+
+```
+
+Find the sample [how to get the newly added free text annotation id](https://stackblitz.com/edit/angular-dxub1a-utuefq?file=app.component.ts)
+
+## How to change the content of an existing Free text annotation programmatically
+
+To change the content of an existing free text annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
+
+Here is an example of how you can use the **editAnnotation()** method to change the content of a free text annotation:
+
+```html
+ <button (click)="changeContent()">Change Contect</button>
+```
+
+```typescript
+
+changeContent() {
+  var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+  for (let i = 0; i < viewer.annotationCollection.length; i++) {
+    if (viewer.annotationCollection[i].subject === 'Text Box') {
+      viewer.annotationCollection[i].dynamicText = 'syncfusion';
+      viewer.annotation.editAnnotation(viewer.annotationCollection[i]);
+    }
+  }
+}
+
+```
+
+Find the sample [how to change the content of an existing  free text annotation programmatically](https://stackblitz.com/edit/angular-dxub1a-krsywy?file=app.component.ts)
+
 ## Setting default properties during control initialization
 
 The properties of the free text annotation can be set before creating the control using the FreeTextSettings.

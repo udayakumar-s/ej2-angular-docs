@@ -33,3 +33,41 @@ Select range of cells between the start index and end index which includes in be
 {% previewsample "page.domainurl/code-snippet/treegrid/selection-cs1" %}
 
 > Cell Selection requires the [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to be `Cell` or  `Both`.
+
+## Perform cell selection programmatically
+
+To perform cell selection programmatically, you can use [`selectCell`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectcell) method. To use this method you need to pass the cellIndex as parameter like in the below sample.
+
+To clear the selected rows or cells, by calling the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#clearselection) method in tree grid.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/selection-cs11/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/selection-cs11/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/selection-cs11/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs11" %}
+
+## How to get selected row cell in tree grid
+
+To get the selected row cell index, Use [`getSelectedRowCellIndexes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrowcellindexes) method in the treegrid.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/selection-cs12/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/selection-cs12/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/selection-cs12/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs12" %}

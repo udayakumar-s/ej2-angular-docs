@@ -27,6 +27,8 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% previewsample "page.domainurl/code-snippet/treegrid/aggregate-cs3" %}
 
 > The aggregate values must be accessed inside the template using their corresponding [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#type) name.
+> Get the footer content element by using [`getFooterContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfoootercontent) method in the tree grid.
+> Get the footer content table element by using [`getFooterContenTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfootercontenttable) method in the tree grid.
 
 ## How to format aggregate value
 
