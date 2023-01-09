@@ -18,6 +18,8 @@ To use ToolBar, inject `Toolbar` module in the treegrid.
 
 Enable or disable toolbar items by using the `enableItems` method.
 
+You can also use the [`enableToolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enabletoolbaritems) method to enable or disable the tool bar items. In this method, you need to pass the toolbar items and isEnable as parameters.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs39/app/app.component.ts %}

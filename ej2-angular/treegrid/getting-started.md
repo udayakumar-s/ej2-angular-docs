@@ -177,7 +177,7 @@ Tree Column is used to expand or collapse child rows is defined by using the [`t
   
 {% previewsample "page.domainurl/code-snippet/treegrid/getting-started-cs1" %}
 
-In the above code example, the hierarchical data binding is represented in which the [`childMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#childmapping) property denotes the hierarchy relationship; whereas in self-referencing data binding [`idMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#idmapping)  and [`parentIdMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#parentidmapping) denotes the hierarchy relationship.
+In the above code example, the hierarchical data binding is represented in which the [`childMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#childmapping) property denotes the hierarchy relationship; whereas in self-referencing data binding [`idMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#idmapping) and [`parentIdMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#parentidmapping) denotes the hierarchy relationship.
 
 ## Module injection
 
@@ -254,6 +254,8 @@ By default, filtered records are shown along with its parent records. This behav
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/treegrid/getting-started-cs4" %}
+
+> You can render the records in a collapsed state in the initial render of the tree grid by enabling the [`enableCollapseAll`](../../api/treegrid#enablecollapseall) property.
 
 ## Run the application
 

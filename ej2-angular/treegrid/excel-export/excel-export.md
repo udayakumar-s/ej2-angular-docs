@@ -50,6 +50,8 @@ You can persist the collapsed state in the exported document by defining `isColl
   
 {% previewsample "page.domainurl/code-snippet/treegrid/excel-export-cs8" %}
 
+> The CSV export allows exporting tree grid data to text document. Use the [`csvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelexport) method for exporting. To enable CSV export in the treegrid, set the [`allowCsvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowexcelexport-boolean) as true.
+
 ## Custom data source
 
 The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the `dataSource` in `exportProperties`.

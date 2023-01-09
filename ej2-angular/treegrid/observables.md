@@ -256,7 +256,7 @@ export class AppComponent implements OnInit {
 
 ## Perform CRUD operations
 
-The `dataSourceChanged` event is triggered to update the treegrid data. You can perform the save operation based on the event arguments and you need to call the `endEdit` method to indicate the completion of save operation.
+The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasourcechanged) event is triggered to update the treegrid data. You can perform the save operation based on the event arguments, and you need to call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit) method to indicate the completion of save operation.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';

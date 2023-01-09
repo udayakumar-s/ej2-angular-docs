@@ -28,4 +28,8 @@ To enable Cell edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/an
   
 {% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs7" %}
 
-> Cell edit mode is default mode of editing.
+> Cell edit mode is the default mode of editing.
+> The following events are triggered for the cell edit mode.
+> 1. [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#celledit) event when user begin to edit the cell.
+> 2. [`cellSave`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsave) event triggers on saving the cell.
+> 3. [`cellSaved`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#cellsaved) event triggers after the cell was saved.

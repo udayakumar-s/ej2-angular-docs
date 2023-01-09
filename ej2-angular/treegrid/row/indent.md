@@ -30,7 +30,8 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 
 ## Indent/Outdent a row programmatically
 
-You can change the hierarchy level of record programmatically using `indent` and `outdent` methods.
+You can change the hierarchy level of record programmatically using [`indent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#indent) and [`outdent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#outdent) methods by passing the record that needs to be indent or outdent.
+To get the records you can use [`getCurrentViewRecords`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcurrentviewrecords) method of the tree grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

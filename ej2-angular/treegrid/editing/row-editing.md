@@ -72,17 +72,19 @@ In the following demo, the CRUD operation is prevented based on the **priority**
 
 The Tree Grid methods can be used to perform CRUD operations programmatically. The [addRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord), [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterecord), and [startEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#startedit) methods are used to perform CRUD operations in the following demo:
 
-* To add a new record to the tree grid, use the `addRecord` method. In this method, pass the data parameter to add a new record to the tree grid, and the index parameter to add a record at a specific index. If you call this method with no parameters, it will create an empty row in the tree grid.
+* To add a new record to the tree grid, use the [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord) method. By passing the JSON data and the index parameter into the method. If you call this method with no parameters, it will create an empty row in the tree grid.
 
-* To change the selected row to the edit state, use the `startEdit` method.
+* To change the selected row to the edit state, use the [`startEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#startedit) method.
 
-* If you need to update the row data in the tree grid’s datasource, use the [updateRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#updaterow) method. In this method, pass the index value of the row to be updated along with the updated data.
+* If you need to update the row data in the tree grid’s datasource, use the [`updateRow`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#updaterow) method. In this method, pass the index value of the row to update along with the updated data.
 
-* If you need to update a particular cell in the row, use the [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#setcellvalue) method. In this method, pass the primary key value of the data source, field name, and new value for a particular cell.
+* If you need to update a particular cell in the row, use the [`setCellValue`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#setcellvalue) method. In this method, pass the primary key value of the data source, field name, and new value for a particular cell.
 
-* To remove a selected row from the tree grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
+* To remove a selected row from the tree grid, use the [`deleteRecord`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterecord) method. For both edit and delete operations, you must select a row first.
 
->Note: In both Row and dialog editing modes, these methods can be used.
+* If you need to update a entire row, use the [`setRowData`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#setrowdata) method. In this method, pass the primary key value of the data source, and the new value for the particular row.
+
+> **Note:** In both Row and dialog editing modes, these methods can be used.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,6 +99,9 @@ The Tree Grid methods can be used to perform CRUD operations programmatically. T
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs28" %}
+
+> You can cancel the editing programmatically by the [`closeEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#closeedit) method in Row and Dialog edit mode of tree grid.
+> You can delete the row by the [`deleteRow`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterow) method in tree grid. In this method, you need to pass the row element of the record that need to be deleted.
 
 ## Show delete confirmation dialog
 

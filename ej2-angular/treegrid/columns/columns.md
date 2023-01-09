@@ -134,6 +134,9 @@ It is also possible to select the rows hierarchically using checkboxes in TreeGr
 {% previewsample "page.domainurl/code-snippet/treegrid/columns-cs17" %}
 
 > Using [`selectCheckboxes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectcheckboxes) method, we can check the checkboxes by passing the desired row Indexes. When we pass the parent record index in the [`selectCheckboxes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectcheckboxes) method, all children record checkboxes for the corresponding parent record will be selected. So, there is no need to pass the child record index along with the parent record index.
+>  1. You can get the checked records detail by the [`getCheckedRecords`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcheckedrecords) method in tree grid.
+>  2. You can get the details of the column by the [`getColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumns) method in tree grid.
+>  3. You can get the checked row index programmatically by the ['getCheckedRowIndexes'](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcheckedrowindexes) method in tree grid.
 
 ## Controlling Tree Grid actions
 
@@ -297,4 +300,25 @@ The Tree Grid column supports the following alignments:
   
 {% previewsample "page.domainurl/code-snippet/treegrid/custom-tooltip-cs2" %}
 
+## Get column uid by field name using external button
+
+You can get the unique id of the column by field name using [`getUidByColumnField`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getuidbycolumnfield) method in the tree grid by passing field as parameter.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/column-uid-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/column-uid-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/column-uid-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/column-uid-cs1" %}
+
+> You can get the column name by uid in the tree grid by passing the uid as a parameter to the [`getColumnByUid`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyuid) method.
+> You can get the column index by field name by passing the field name as a parameter to the [`getColumnIndexByField`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnindexbyfield) method in tree grid.
+> You can get the column names in the tree grid by the [`getColumnFieldNames`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnfieldnames) method.
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

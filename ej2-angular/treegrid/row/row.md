@@ -66,4 +66,33 @@ Please refer to the following example.
   
 {% previewsample "page.domainurl/code-snippet/treegrid/alt-row-cs1" %}
 
+## Perform Expand/Collapse on parent row programmatically
+
+To expand and collapse all the records of the tree grid by using the [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandall) and [`collapseAll`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapseall) methods respectively in the tree grid.
+
+You can expand/collapse a specific row by using the following methods.
+1. [`collapseRow`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapserow) - By passing the row element in this method of tree grid.
+2. [`expandRow`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandrow) - By passing the row element in this method of tree grid.
+3. [`collapseAtLevel`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapseatlevel) - By passing the record levels in this method.
+4. [`expandAtLevel`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandatlevel) - By passing the record levels in this method.
+5. [`collapseByKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapsebykey) - By passing the primary key of parent record into the method.
+6. [`expandByKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandbykey) - By passing the primary key of parent record into the method.
+
+To get row element you can use [`getRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrows) method by passing the row index as parameter as used in the sample below.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/edit-toolbar-cs41/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treegrid/edit-toolbar-cs41/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/edit-toolbar-cs41/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs41" %}
+
+> You can get the row elements by [`getDataRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getdatarows) method in the tree grid.
 > Refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.

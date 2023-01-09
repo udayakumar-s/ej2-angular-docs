@@ -65,3 +65,8 @@ By using the headerTemplate template reference for the ng template, you can cust
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/treegrid/columns-header-cs2" %}
+
+> You can get the header table element by using the [`getHeaderTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getheadertable) method in tree grid.
+> You can get the column header element by field by using the [`getColumnHeaderByField`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyfield) method in tree grid. In this method you need to pass the field name as parameter.
+> You can get the column header element by index by using the [`getColumnHeaderByIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyindex) method in tree grid. In this method you need to pass the index as parameter.
+> You can get the column header element by uid by using the [`getColumnHeaderByUid`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyuid) method in tree grid. In this method you need to pass the column header uid as parameter.

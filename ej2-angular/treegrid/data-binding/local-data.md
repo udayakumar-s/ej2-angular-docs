@@ -121,3 +121,7 @@ Refresh the tree grid after changing the datasource by using the `refresh` metho
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/treegrid/refresh-datasource-cs1" %}
+
+> Get the content of the tree grid by using the [`getContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontent) method.
+> Get the table content by using the [`getContentTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontenttable) method in the tree grid.
+> Destroy the component by using the [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#destroy) method in the tree grid.

@@ -79,6 +79,8 @@ To clear sorting for a particular column, press the "Shift + mouse left click."
   
 {% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs3" %}
 
+> To sort the column, you can use [`sortByColumn`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#sortbycolumn) method in the tree grid. In this method you need to pass the column name, and the direction of sorting as parameters.
+
 ## Sort order
 
 By default, the sorting order will be as **ascending -> descending -> none**.
