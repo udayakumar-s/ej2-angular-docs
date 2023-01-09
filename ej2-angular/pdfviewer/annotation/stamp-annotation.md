@@ -84,6 +84,35 @@ Refer to the following code sample to switch to the stamp annotation mode.
 
 >The JPG and JPEG image format is only supported in the custom stamp annotations.
 
+## How to add the custom stamp programmatically
+
+To add a custom stamp programmatically in the Syncfusion PDF viewer, you can use the **addAnnotation()** method of the Annotation module in the viewer.
+
+Here is an example of how you can use this method to add a custom stamp to a PDF document:
+
+```typescript
+
+addCustomStamp() {
+  var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+  viewer.annotation.addAnnotation('Stamp', 
+  {
+    offset:{ x: 100, y: 200 },
+    width:46,
+    author:'Guest',
+    height:100,
+    isLock:true,
+    pageNumber:1,
+    customStamps:[{customStampName: "Image",customStampImageSource: // Provide the base64 string here
+    }]
+  });
+}
+
+```
+
+This will add a custom stamp to the first page of the PDF document.
+
+Find the sample [how to to add the custom stamp programmatically](https://stackblitz.com/edit/angular-dxub1a-gz5rle?file=app.component.ts)
+
 ## Setting default properties during control initialization
 
 The properties of the stamp annotation can be set before creating the control using the StampSettings.
