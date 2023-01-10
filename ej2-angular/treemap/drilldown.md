@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Drilldown in Angular Treemap component
 
-The TreeMap supports drill-down to expose the hierarchy, achieved by clicking a node. If an item is clicked in the TreeMap, it will be moved to the next level or sub level hierarchy and returned back to the previous level by clicking the node.
+The [Angular TreeMap](https://www.syncfusion.com/angular-components/angular-treemap) supports drill-down to expose the hierarchy, achieved by clicking a node. If an item is clicked in the TreeMap, it will be moved to the next level or sub level hierarchy and returned back to the previous level by clicking the node.
 
 ## Perform drill-down action
 

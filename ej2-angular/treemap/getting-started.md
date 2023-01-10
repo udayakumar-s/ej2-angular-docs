@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Treemap component
 
-This section explains you the steps required to create a TreeMap control and demonstrate the basic usage of the TreeMap control.
+This section explains you the steps required to create a [Angular TreeMap](https://www.syncfusion.com/angular-components/angular-treemap) control and demonstrate the basic usage of the TreeMap control.
 
 ## Setup Angular Environment
 
@@ -396,3 +396,5 @@ export class AppComponent {
 }
 
 ```
+
+N> You can also explore our [Angular TreeMap Example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treemap/default) that shows you how to render the TreeMap in Angular.
