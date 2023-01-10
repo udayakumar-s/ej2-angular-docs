@@ -184,3 +184,5 @@ To populate the empty Kanban with cards, define the local JSON data or remote da
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/kanban/getting-started-swimlane-cs1" %}
+
+N> You can refer to our [Angular Kanban](https://www.syncfusion.com/angular-components/angular-kanban-board) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Kanban Example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/kanban/overview) that shows you how to render the Kanban in Angular.

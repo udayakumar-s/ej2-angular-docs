@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Dimensions in Angular Kanban component
 
-The Kanban dimensions refers to both height and width of the entire layout and it accepts three types of values.
+The [Angular Kanban](https://www.syncfusion.com/angular-components/angular-kanban-board) dimensions refers to both height and width of the entire layout and it accepts three types of values.
 
 * Auto
 * Pixel
