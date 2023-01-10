@@ -1,13 +1,13 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IAccTooltipRenderEventArgs } from '@syncfusion/ej2-ng-charts';
+
 @Component({
     selector: 'app-container',
     template:
     `<ejs-chart style="display:block;" [chartArea]="chartArea" [width]="width" align="center"
       id="chartcontainer" [primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis"
-      [title]="title" [tooltip]="tooltip" (load)="load($event)" >
+      [title]="title" [tooltip]="tooltip" >
       <e-series-collection>
         <e-series [dataSource]="data" type="Column" xName="x" yName="y" name="Gold"
           width="2" columnWidth="0.4">
@@ -45,28 +45,13 @@ export class AppComponent {
     enable: true
   };
   // custom code start
-  public load(args: ILoadedEventArgs): void {
-    let selectedTheme: string = location.hash.split("/")[1];
-    selectedTheme = selectedTheme ? selectedTheme : "Material";
-    args.chart.theme = <ChartTheme>(
-      (selectedTheme.charAt(0).toUpperCase() + selectedTheme.slice(1)).replace(
-        /-dark/i,
-        "Dark"
-      )
-    );
-    if (selectedTheme === "highcontrast") {
-      args.chart.series[0].marker.dataLabel.font.color = "#000000";
-      args.chart.series[1].marker.dataLabel.font.color = "#000000";
-      args.chart.series[2].marker.dataLabel.font.color = "#000000";
-    }
-  }
   // custom code end
   public chartArea: Object = {
     border: {
       width: 0
     }
   };
-  public width: string = Browser.isDevice ? "100%" : "60%";
+  public width: string = "60%";
 
   constructor() {
     //code

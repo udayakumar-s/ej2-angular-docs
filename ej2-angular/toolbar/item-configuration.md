@@ -115,6 +115,82 @@ Above steps applicable for all 'Syncfusion' input based components.
   
 {% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs6" %}
 
+### Enabling tab key navigation in Toolbar
+
+The [`tabIndex`](../api/toolbar/item/#tabindex) property of a Toolbar item is used to enable tab key navigation for the item. By default, the user can switch between items using the arrow keys, but the [`tabIndex`](../api/toolbar/item/#tabindex) property allows you to switch between items using the Tab and Shift+Tab keys as well.
+
+To use the [`tabIndex`](../api/toolbar/item/#tabindex) property, you need to set it for each Toolbar item that you want to enable tab key navigation. The [`tabIndex`](../api/toolbar/item/#tabindex) property should be set to a positive integer value. A value of 0 or a negative value will disable tab key navigation for the item.
+
+For example, to enable tab key navigation for two Toolbar items, you can use the following code:
+
+```javascript
+import { Component, ViewChild } from '@angular/core';
+import { ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
+
+@Component({
+    selector: 'app-container',
+    template: `
+        <ejs-toolbar>
+          <e-items>
+             <e-item text='item1' tabIndex=1></e-item>
+             <e-item text='item2' tabIndex=2></e-item>
+          </e-items>
+        </ejs-toolbar>
+        `
+})
+
+export class AppComponent {
+
+}
+```
+
+With the above code, the user can switch between the two Toolbar items using the Tab and Shift+Tab keys, in addition to using the arrow keys. The items will be navigated in the order specified by the [`tabIndex`](../api/toolbar/item/#tabindex) values.
+
+If you set the [`tabIndex`](../api/toolbar/item/#tabindex) value to 0 for all Toolbar items, tab key navigation will be based on the element order rather than the [`tabIndex`](../api/toolbar/item/#tabindex) values. For example:
+
+```javascript
+import { Component, ViewChild } from '@angular/core';
+import { ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
+
+@Component({
+    selector: 'app-container',
+    template: `
+        <ejs-toolbar>
+          <e-items>
+             <e-item text='item1' tabIndex=0></e-item>
+             <e-item text='item2' tabIndex=0></e-item>
+          </e-items>
+        </ejs-toolbar>
+        `
+})
+
+export class AppComponent {
+
+}
+```
+
+In this case, the user can switch between the two Toolbar items using the Tab and Shift+Tab keys, and the items will be navigated in the order in which they appear in the DOM.
+
+Example:
+
+Here is an example of how you can use the [`tabIndex`](../api/toolbar/item/#tabindex) property to enable tab key navigation for a Toolbar component:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/toolbar/tab-key-navigation-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/toolbar/tab-key-navigation-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/toolbar/tab-key-navigation-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/toolbar/tab-key-navigation-cs1" %}
+
+With the above code, the user can switch between the Toolbar items using the Tab and Shift+Tab keys, and the items will be navigated based on the element order.
+
 ## See Also
 
 * [How to set item wise custom template](./how-to/set-item-wise-custom-template/)
