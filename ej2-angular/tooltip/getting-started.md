@@ -185,3 +185,5 @@ Refer the following code example, to create a Tooltip on multiple targets within
 [Tooltip Open Mode](./open-mode)
 
 [Customize the Tooltip](./customization)
+
+N > You can refer to our [Angular Tooltip](https://www.syncfusion.com/angular-components/angular-tooltip) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tooltip example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/tooltip/default) that shows you how to render the Tooltip in Angular.

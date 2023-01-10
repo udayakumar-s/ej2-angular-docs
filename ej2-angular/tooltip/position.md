@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Position in Angular Tooltip component
 
-Tooltips can be attached to 12 static locations around the target.
+[Angular Tooltips](https://www.syncfusion.com/angular-components/angular-tooltip) can be attached to 12 static locations around the target.
 On initializing the Tooltip, you can set the position property with any one of the following values:
 
 * `TopLeft`
