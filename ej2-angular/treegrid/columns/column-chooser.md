@@ -21,17 +21,17 @@ To use column chooser, inject **ColumnChooserService** in the provider section o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/column-chooser-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-chooser-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-chooser-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-chooser-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/column-chooser-cs1/app/main.ts %}
+{% include code-snippet/treegrid/columns-chooser-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/column-chooser-cs1" %}
+{% previewsample "page.domainurl/code-snippet/treegrid/columns-chooser-cs1" %}
 
 ## Open column chooser by external button
 
@@ -40,14 +40,14 @@ the [`openColumnChooser`](https://ej2.syncfusion.com/angular/documentation/api/t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/column-chooser-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-chooser-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-chooser-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-chooser-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/column-chooser-cs2/app/main.ts %}
+{% include code-snippet/treegrid/columns-chooser-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/column-chooser-cs2" %}
+{% previewsample "page.domainurl/code-snippet/treegrid/columns-chooser-cs2" %}
