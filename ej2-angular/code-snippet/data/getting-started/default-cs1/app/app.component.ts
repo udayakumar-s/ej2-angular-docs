@@ -5,7 +5,7 @@ import { data } from './datasource';
 import { DataManager, Query, JsonAdaptor } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
-    templateUrl: 'app.template.html',
+    templateUrl: 'app/app.template.html',
     styles: [`
             .e-table {
                 border: solid 1px #e0e0e0;

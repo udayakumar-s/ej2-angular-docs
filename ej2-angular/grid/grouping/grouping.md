@@ -144,6 +144,26 @@ To collapse the selected grouped row from an external button by using the [`expa
   
 {% previewsample "page.domainurl/code-snippet/grid/grouping1-cs7" %}
 
+## Sort grouped columns in descending order during initial grouping
+
+By default, grouped columns are sorted in ascending order. To sort grouped columns in descending order during initial grouping, you can set the [field](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#field) and [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction-string) in the `sortSettings.columns` property.
+
+The `CustomerID` column will be sorted in descending order when the grid is initially grouped, as shown in the following example.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/sort-group/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/sort-group/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/sort-group/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/grid/sort-group" %}
+
 ## See Also
 
 * [Exporting grouped records](../excel-export/excel-export-options/#exporting-grouped-records)

@@ -74,6 +74,9 @@ You can use the [`addParams`](https://ej2.syncfusion.com/documentation/api/data/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs11/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs11/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs11/app/app.module.ts %}
 {% endhighlight %}
