@@ -125,7 +125,7 @@ Here’s how to handle the server-side action for converting word document in to
         Syncfusion.EJ2.DocumentEditor.WordDocument document = Syncfusion.EJ2.DocumentEditor.WordDocument.Load(stream, GetFormatType(type.ToLower()));
         string sfdt = Newtonsoft.Json.JsonConvert.SerializeObject(document);
         document.Dispose();
-        return sdft;
+        return sfdt;
     }
 
     internal static Syncfusion.EJ2.DocumentEditor.FormatType GetFormatType(string format)
@@ -165,7 +165,7 @@ Syncfusion accepts new feature request as valid based on feature value and tech
 
 ### How to report the problems in Document Editor
 
-You can report the problems with displaying, or editing Word documents in Document Editor component through [`support forum`](https://www.syncfusion.com/forums/), [`Direct-Trac`](https://www.syncfusion.com/support/directtrac/), or [`feedback portal`](https://www.syncfusion.com/feedback/). Kindly share the Word document for replicating the problem easily in minimal time. If you have confidential data, you can replace it and attach the document.
+You can report the problems with displaying, or editing Word documents in Document Editor component through [`feedback portal`](https://www.syncfusion.com/feedback). Kindly share the Word document for replicating the problem easily in minimal time. If you have confidential data, you can replace it and attach the document.
 
 ### Why the document pagination differs from Microsoft Word
 

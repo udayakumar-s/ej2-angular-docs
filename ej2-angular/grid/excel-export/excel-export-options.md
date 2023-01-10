@@ -146,3 +146,23 @@ You can assign the file name for the exported document by defining [`fileName`](
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs9" %}
+
+## Export the master detail grid
+
+It is possible to export the master-detail grid on the same Excel sheet using the `ExcelExportProperties` class in the grid.
+
+To export the master-detail grid on the same sheet in the following sample, you need to set the `multipleExport.type` to `AppendToSheet` in the exportProperties. A promise object is created by exporting the master grid first, and then the detail grid is exported after the master grid has been successfully exported.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/export-masterdetail-grid/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/export-masterdetail-grid/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/export-masterdetail-grid/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/grid/export-masterdetail-grid %}
