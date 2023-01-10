@@ -138,7 +138,7 @@ This session explains how to render TreeMap with datasource.
   
 {% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs15" %}
 
-Here TreeMap is created with the datasource and set [`weightValuePath`] as Count field in the datasouce. You can customize the leaf level TreeMap items using [`leafItemSettings`]. Properties like [`fill`], [`border`], [`labelPosition`] can be changed using [`leafItemSettings`].
+Here TreeMap is created with the datasource and set [`weightValuePath`] as Count field in the datasource. You can customize the leaf level TreeMap items using [`leafItemSettings`]. Properties like [`fill`], [`border`], [`labelPosition`] can be changed using [`leafItemSettings`].
 
 ## Apply Color Mapping
 
