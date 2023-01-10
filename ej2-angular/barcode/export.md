@@ -19,8 +19,30 @@ The following code example shows how to export the barcode as an image
 
 ```typescript
 
-    let filename = 'Export';
-    this.barcode.exportImage(filename,'JPG');
+import { Component,ViewChild } from '@angular/core';
+import { BarcodeGeneratorComponent } from '@syncfusion/ej2-angular-barcode-generator';
+import { ClickEventArgs, } from '@syncfusion/ej2-navigations';
+
+@Component({
+  selector: "app-container",
+  // specifies the template string for the barcode generator component
+  template: `
+    <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
+        <button type="button" (click)="onClick()" id="btn">Export</button>
+    </div>
+    <div>
+    <ejs-barcodegenerator style="display: block;"  #barcode id="barcode" width="200px" height="150px" mode="SVG" type="Codabar" value="123456789">
+    </div>`
+})
+export class AppComponent {
+  @ViewChild('barcode')
+  public barcode: BarcodeGeneratorComponent;
+  public data: string;
+  public filename = 'Export';
+  public onClick(){
+    this.barcode.exportImage(this.filename,'PNG');
+  };
+}
 
 ```
 
@@ -33,13 +55,32 @@ The following code example shows how to export the barcode as a base64 string
 
 ```typescript
 
-async function () {
-    await this.barcode.exportAsBase64Image('JPG');
-};
+import { Component,ViewChild } from '@angular/core';
+import { BarcodeGeneratorComponent } from '@syncfusion/ej2-angular-barcode-generator';
+import { ClickEventArgs, } from '@syncfusion/ej2-navigations';
+
+@Component({
+  selector: "app-container",
+  // specifies the template string for the barcode generator component
+  template: `
+  <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
+    <button type="button" (click)="onClick()" id="btn">Export</button>
+  </div>
+  <div>
+    <ejs-barcodegenerator style="display: block;"  #barcode id="barcode" width="200px" height="150px" mode="SVG" type="Codabar" value="123456789">
+  </div>`
+})
+export class AppComponent {
+    @ViewChild('barcode')
+    public barcode: BarcodeGeneratorComponent;
+    public data: string ;
+    public filename = 'Export';
+    async onClick(){
+        this.data = await this.barcode.exportAsBase64Image('JPG');
+    };
+}
 
 ```
 
 >**Note:**
->Format is to specify the type or format of the exported file. You can export the barcode to the following formats:
->* JPG.
->* PNG.
+>Format is to specify the type or format of the exported file. You can export the barcode to the image formats such as PNG, JPG.
