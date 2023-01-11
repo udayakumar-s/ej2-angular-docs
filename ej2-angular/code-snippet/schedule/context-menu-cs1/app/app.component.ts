@@ -78,6 +78,7 @@ export class AppComponent {
             remove(newEventElement);
             removeClass([document.querySelector('.e-selected-cell')], 'e-selected-cell');
         }
+        this.scheduleObj.closeQuickInfoPopup();
         const targetElement: HTMLElement = <HTMLElement>args.event.target;
         if (closest(targetElement, '.e-contextmenu')) {
             return;

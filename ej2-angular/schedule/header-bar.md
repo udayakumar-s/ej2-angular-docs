@@ -108,6 +108,26 @@ In month view, the date header template is not applicable and therefore the same
   
 {% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs4" %}
 
+## Customizing the date range text
+
+The [`dateRangeTemplate`](../api/schedule/#daterangetemplate) option allows you to customize the text content of the date range displayed in the scheduler. By default, the date range text is determined by the scheduler view being used. However, you can use the [`dateRangeTemplate`](../api/schedule/#daterangetemplate) option to override the default text and specify your own custom text to be displayed.
+
+The [`dateRangeTemplate`](../api/schedule/#daterangetemplate) property includes `startDate`, `endDate` and `currentView` options, you can customize the date range text using these available options.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/schedule/header-bar-cs5/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/schedule/header-bar-cs5/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/schedule/header-bar-cs5/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs5" %}
+
 ## Customizing header indent cells
 
 It is possible to customize the header indent cells using the `headerIndentTemplate` option and change the look and appearance in both the vertical and timeline views. In vertical views, You can customize the header indent cells at the hierarchy level and you can customize the resource header left indent cell in timeline views using the template option.
