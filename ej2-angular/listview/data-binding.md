@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Listview component
 
-ListView provides the option to load the data either from local data sources or remote data services.
+[Angular ListView](https://www.syncfusion.com/angular-components/angular-listview) provides the option to load the data either from local data sources or remote data services.
 This can be done through dataSource property which supports the data type of array or through DataManager.
 
 ListView supports different kind of data services such as OData, OData V4, Web API and

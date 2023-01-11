@@ -160,3 +160,5 @@ The output will appear as follows.
 [ListView customization](./customizing-templates)
 
 [Virtualization](./virtualization)
+
+N> You can refer to our [Angular Listview](https://www.syncfusion.com/angular-components/angular-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Listview example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/listview/default) that shows you how to render and configure the Angular Listview.

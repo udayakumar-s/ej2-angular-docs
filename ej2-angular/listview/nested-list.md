@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Nested list in Angular Listview component
 
-ListView component supports Nested list. For that, we should define child property for the nested list in array of JSON.
+[Angular ListView](https://www.syncfusion.com/angular-components/angular-listview) component supports Nested list. For that, we should define child property for the nested list in array of JSON.
 
 The below samples illustrates, how the list is generated with the nested source.
 
