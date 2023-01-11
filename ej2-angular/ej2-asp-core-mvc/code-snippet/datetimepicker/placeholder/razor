@@ -1,1 +1,0 @@
-@Html.EJS().DateTimePicker("datetimepicker").Placeholder("Enter datetime").Render()

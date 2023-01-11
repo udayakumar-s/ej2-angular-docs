@@ -1,1 +1,0 @@
-<ejs-timepicker id="timepicker" format="HH:mm" step="60" value="@ViewBag.value"></ejs-timepicker>
