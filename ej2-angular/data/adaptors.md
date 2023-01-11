@@ -26,6 +26,9 @@ The adaptor can be assigned using the **adaptor** property of the [`DataManager`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs1/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs1/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs1/app/app.module.ts %}
 {% endhighlight %}
@@ -73,6 +76,9 @@ The sample response object should be as follows,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs2/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs2/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs2/app/app.module.ts %}
 {% endhighlight %}
@@ -93,6 +99,9 @@ You can use the **ODataV4Adaptor** to interact with ODataV4 service.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs3/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs3/app/app.module.ts %}
@@ -351,6 +360,9 @@ For the sake of demonstrating custom adaptor approach, we are going to see how t
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/custom-adaptor-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/custom-adaptor-cs1/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/custom-adaptor-cs1/app/app.module.ts %}

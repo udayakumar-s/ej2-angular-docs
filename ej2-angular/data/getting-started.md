@@ -88,6 +88,9 @@ The DataManager can act as gateway for both local and remote data source which w
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs6/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs6/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs6/app/app.module.ts %}
 {% endhighlight %}
@@ -106,6 +109,9 @@ Now all **DataManager** operations will address the provided service end point.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs7/app/app.component.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs7/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs7/app/app.module.ts %}
@@ -126,6 +132,9 @@ The filter expression can be built easily using **where** method of **Query** cl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs8/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs8/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs8/app/app.module.ts %}
 {% endhighlight %}
@@ -144,6 +153,9 @@ The data can be ordered either in ascending or descending using **sortBy** metho
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs9/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs9/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs9/app/app.module.ts %}
 {% endhighlight %}
@@ -161,6 +173,9 @@ The **page** method of the Query class is used to get range of data based on the
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs10/app/app.component.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs10/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs10/app/app.module.ts %}

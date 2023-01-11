@@ -6,7 +6,7 @@ import { data } from './datasource';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app.template.html',
+    templateUrl: 'app/app.template.html',
     styles: [`
             .e-table {
                 border: solid 1px #e0e0e0;

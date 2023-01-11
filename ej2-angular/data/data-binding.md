@@ -20,6 +20,9 @@ domainurl: ##DomainURL##
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs4/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs4/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs4/app/app.module.ts %}
 {% endhighlight %}
@@ -39,6 +42,9 @@ When querying data, the [`DataManager`](https://ej2.syncfusion.com/documentation
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs5/app/app.component.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/data/getting-started/default-cs5/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs5/app/app.module.ts %}

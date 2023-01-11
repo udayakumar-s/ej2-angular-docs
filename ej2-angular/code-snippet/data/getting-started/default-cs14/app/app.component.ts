@@ -7,7 +7,7 @@ const SERVICE_URI: string =  'https://js.syncfusion.com/demos/ejServices/Wcf/Nor
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app.template.html',
+    templateUrl: 'app/app.template.html',
     styles: [`
             .e-table {
                 border: solid 1px #e0e0e0;

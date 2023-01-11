@@ -84,6 +84,9 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/wizardtemplate-cs1/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="wizardtemplate.html" %}
+{% include code-snippet/grid/wizardtemplate-cs1/app/wizardtemplate.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/wizardtemplate-cs1/app/app.module.ts %}
 {% endhighlight %}
