@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Internationalization
 
-The `Internationalization` library provides support for formatting and parsing date and number objects using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. The `en-US` locale is set as default _culture_ and `USD` is set as default `_currencyCode_` for all Syncfusion Angular UI Components.
+The Internationalization library provided by Syncfusion enables formatting and parsing of date and number objects using official [Unicode CLDR](http://cldr.unicode.org/) JSON data. By default, the `en-US` locale is set as the default culture, and `USD` is set as the default currency code for all Syncfusion Angular UI Components.
 
-## Loading Culture Data
+## Loading CLDR-JSON Data
 
-It requires the following CLDR data to be load using `loadCldr` function for cultures other than `en-US`.
+It is necessary to load the following CLDR data using the `loadCldr` function for cultures other than `en-US`.
 
 | File Name | Path |
 | ------------- | ------------- |
@@ -26,58 +26,48 @@ It requires the following CLDR data to be load using `loadCldr` function for cul
 
 >Note: For `en`, dependency files are already loaded in the library.
 
-### Installing CLDR Data
+### Installing CLDR data
 
-CLDR data is available as npm package. So, we can install it through below command to our package.
+CLDR data is available as an npm package. So, you can instal it by adding the below command to our package.
 
 ```bash
 npm install cldr-data
 ```
 
-### Binding to i18n Library
+### Binding to i18n library
+
+The i18n library to use the CLDR data to format, parse number and date/time values in a way that is appropriate for the `en` culture. The loadCldr function takes two arguments, enNumberData and enTimeZoneData, which are the CLDR data for numbers and time zones, respectively, for the en culture.
 
 ```typescript
 
 import { loadCldr } from '@syncfusion/ej2-base';
+import enNumberData from 'cldr-data/main/en/numbers.json';
+import enTimeZoneData from 'cldr-data/main/en/timeZoneNames.json';
+
 loadcldr(enNumberData, entimeZoneData);
 
 ```
 
-## Changing Global Culture and Currency Code
+## Changing global Culture and Currency code
 
-To set the default culture and the currencyCode for all Syncfusion Angular UI Components, you can use the methods `setCulture` for setting default locale and `setCurrencyCode` for setting the currencyCode.
-
-### Setting Global Culture
+To set the default culture and the currency code for all Syncfusion Angular UI Components, you can use the methods `setCulture` for setting the default locale and `setCurrencyCode` for setting the currency code.
 
 ```typescript
 
-import {setCulture} from '@syncfusion/ej2-base';
+import {setCulture, setCurrencyCode} from '@syncfusion/ej2-base';
 
 setCulture('ar');
-
-```
-
-### Setting Currency Code
-
-```typescript
-
-import { setCurrencyCode} from '@syncfusion/ej2-base';
-
 setCurrencyCode('QAR');
 
 ```
 
->Note: If global culture is not set then `en-US` is set as default locale and `USD` is set as default currency code.
+>Note: If global culture is not set, then `en-US` is set as the default locale, and `USD` is set as the default currency code.
 
 ## Manipulating Numbers
 
-<!-- markdownlint-disable MD024 -->
+### Supported format string
 
-### Supported Format String
-
-<!-- markdownlint-disable MD024 -->
-
-Based on the  [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions) number formatting and parsing operations are processed. You need to specify some or all of the following properties mentioned below table.
+Based on the  [NumberFormatOptions](../../api/base/numberFormatOptions) number formatting and parsing operations are processed. You need to specify some or all of the following properties mentioned in the table below
 
 | No | Properties | Description |
 | --- | --- | --- |
@@ -92,11 +82,11 @@ Based on the  [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/a
 
 >Note: The `minimumIntegerDigits`, `minimumFractionDigits` and `maximumFractionDigits` are categorized
 as group one, `minimumSignificantDigits` and `maximumSignificantDigits` are categorized as group two.
-If group two properties are defined, then the  group one properties will be ignored.
+If group two properties are defined, then group one properties will be ignored.
 
-### Custom Number Formatting and Parsing
+### Custom number formatting and parsing
 
-Custom number formatting and parsing are also supported by specifying the pattern directly in the **format** property of `NumberFormatOptions`. Custom number format can be achieved by using one or more custom format specifiers listed in the below table.
+Custom number formatting and parsing can also be achieved by directly specifying the pattern in the **format** property of `NumberFormatOptions`. One or more of the custom format specifiers listed in the table below can be used to create custom number format.
 
 | Specifier | Description | Input | Format Output |
 | ------- |--------------- | ---------------- | --------------- |
@@ -108,52 +98,13 @@ Custom number formatting and parsing are also supported by specifying the patter
 | ; | Denotes separate formats for positive, negative and zero values. | `instance.formatNumber`(-120,{format: '###.##;(###.00);-0'}); | ‘(120.00)’    |
 | 'String' (single Quotes) | Denotes the characters enclosed within single Quote(') to be replaced in the resultant string. | `instance.formatNumber`(-123.44,{format: "####.## '@'"}) | ‘123.44 @’    |
 
->Note: If custom format pattern is specified other [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions) properties will not be considered.
+>Note: If a custom format pattern is specified, other [`NumberFormatOptions`](../../api/base/numberFormatOptions) properties will not be considered.
 
-### Number Formatting
-
-#### `getNumberFormat`
-
-The [`getNumberFormat`](https://ej2.syncfusion.com/documentation/api/base/internationalization#getnumberformat) method which will return a function that formats given number based on the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions) specified.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/common/intl-getNumber-format-cs1" %}
-
-#### `formatNumber`
-
-The [`formatNumber`](https://ej2.syncfusion.com/documentation/api/base/internationalization)
-method which takes two arguments numeric value and[`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions) and returns the formatted string.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/common/intl-getNumber-format-cs2" %}
-
-### Parsing
+### Number Parsing
 
 #### `getNumberParser`
 
-The [`getNumberParser`](https://ej2.syncfusion.com/documentation/api/base/internationalization#getnumberparser) method which will return a function that parses given string based on the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions) specified.
+The [`getNumberParser`](../../api/base/internationalization#getnumberparser) method, which will return a function that parses a given string based on the [`NumberFormatOptions`](../../api/base/numberFormatOptions) specified.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,7 +122,7 @@ The [`getNumberParser`](https://ej2.syncfusion.com/documentation/api/base/intern
 
 #### `parseNumber`
 
-The [`parseNumber`](https://ej2.syncfusion.com/documentation/api/base/internationalization#parsenumber)  method which takes two arguments the string value and [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions) and returns the numeric value.
+The [`parseNumber`](../../api/base/internationalization#parsenumber) method, which takes two arguments, the string value and [`NumberFormatOptions`](../../api/base/numberFormatOptions) and returns the numeric value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,11 +138,49 @@ The [`parseNumber`](https://ej2.syncfusion.com/documentation/api/base/internatio
   
 {% previewsample "page.domainurl/code-snippet/common/intl-parseNumber-cs1" %}
 
+### Number formatting
+
+#### `getNumberFormat`
+
+The [`getNumberFormat`](../../api/base/internationalization#getnumberformat) method will return a function that formats a given number based on the [`NumberFormatOptions`](../../api/base/numberFormatOptions) specified.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/common/intl-getNumber-format-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/common/intl-getNumber-format-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/common/intl-getNumber-format-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/common/intl-getNumber-format-cs1" %}
+
+#### `formatNumber`
+
+The [`formatNumber`](../../api/base/internationalization) method, which takes two arguments, a numeric value and [`NumberFormatOptions`](../../api/base/numberFormatOptions), and returns the formatted string.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/common/intl-getNumber-format-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/common/intl-getNumber-format-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/common/intl-getNumber-format-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/common/intl-getNumber-format-cs2" %}
+
 ## Manipulating DateTime
 
-### Supported Format String
+### Supported format string
 
-Based on the  [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions) date formatting and parsing operations are processed. You need to specify  some or all of the following properties mentioned below table.
+Date formatting and parsing operations are performed based on the [`DateFormatOptions`](../../api/base/dateFormatOptions). You need to specify  some or all of the following properties mentioned in the table below.
 
 | Options | Descriptions |
 | --- | --- | --- |
@@ -229,7 +218,7 @@ Based on the  [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api
 
 **Additional skeletons**
 
-Apart from the standard date type formats additional format are supported by using the additional skeletons given in below table.
+Apart from the standard date type formats, additional formats are supported by using the additional skeletons given in the below table.
 
 | skeleton | Option input |  Format Output |
 | --- | --- | --- |
@@ -268,10 +257,10 @@ Apart from the standard date type formats additional format are supported by usi
 
 >Note: Culture specific format skeletons are also supported.
 
-### Custom Formats
+### Custom formats
 
- To use the custom date and time formats we need to specify the date/time pattern directly in the *format* property.
- Custom format string must contain one or more  of the following standard date/time symbols
+To use the custom date and time formats, we need to specify the date/time pattern directly in the *format* property.
+A custom format string must contain one or more of the following standard date/time symbols.
 
 | Symbols | Description |
 |--------- |------------- |
@@ -309,55 +298,15 @@ export class AppComponent {
 
 ```
 
->Note: If format property is given in options other properties are not considered.
+>Note: If the format property is given as an option, other properties are not considered.
 
 <!-- markdownlint-enable MD036 -->
 
-### Formatting
-
-#### `getDateFormat`
-
-The [`getDateFormat`](https://ej2.syncfusion.com/documentation/api/base/internationalization#getdateformat) method which will return a function that formats given date object based on the [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions) specified.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-formatDate-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-formatDate-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-formatDate-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/common/intl-formatDate-cs1" %}
-
-#### `formatDate`
-
-The [`formatDate`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#formatdate)  method which takes two arguments date object and [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions) and returns the formatted string.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-formatDate-cs2/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-formatDate-cs2/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-formatDate-cs2/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/common/intl-formatDate-cs2" %}
-
-<!-- markdownlint-enable MD036 -->
-
-### Parsing
+### Date Parsing
 
 #### `getDateParser`
 
-The `getDateParser` method which will return a function that parses given string based on the [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions)  specified.
+The `getDateParser` method will return a function that parses a given string based on the [`DateFormatOptions`](../../api/base/dateFormatOptions) specified.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -375,7 +324,7 @@ The `getDateParser` method which will return a function that parses given string
 
 #### `parseDate`
 
-The [`parseDate`](https://ej2.syncfusion.com/documentation/api/base/internationalization#parsedate)  method which takes two arguments string value and [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions)  and returns the date Object.
+The date object is returned by the [`parseDate`](../../api/base/internationalization#parsedate) method, which takes two arguments, a string value and [`DateFormatOptions`](../../api/base/dateFormatOptions).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -390,3 +339,41 @@ The [`parseDate`](https://ej2.syncfusion.com/documentation/api/base/internationa
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/common/intl-parseDate1-cs1" %}
+
+### Date Formatting
+
+#### `getDateFormat`
+
+The [`getDateFormat`](../../api/base/internationalization#getdateformat) method, which will return a function that formats a given date object based on the [`DateFormatOptions`](../../api/base/dateFormatOptions) specified.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/common/intl-formatDate-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/common/intl-formatDate-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/common/intl-formatDate-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/common/intl-formatDate-cs1" %}
+
+#### `formatDate`
+
+The [`formatDate`](../../api/base/internationalization/#formatdate) method, which takes two arguments, the date object and [`DateFormatOptions`](../../api/base/dateFormatOptions), returns the formatted string.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/common/intl-formatDate-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/common/intl-formatDate-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/common/intl-formatDate-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/common/intl-formatDate-cs2" %}

@@ -8,13 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization
+# Getting started with Localization
 
-Localization library allows you to localize the text content of the Syncfusion Angular UI Components.
+Localization library allows you to localize the text content of the Syncfusion Angular UI Components. This is useful if you want to display the UI in a language other than English.
 
-## Loading Translations
+## Loading translations
 
-To load a translation object in your application use [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of `L10n` class.
+To load a translation object in your application, you can use the load function from the @syncfusion/ej2-base module. This function takes an object that contains the translations for various languages, with the keys being the language codes and the values being the translation objects.
+
+For example, to load translations for English and French, you can do the following:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,9 +32,9 @@ To load a translation object in your application use [`load`](https://ej2.syncfu
   
 {% previewsample "page.domainurl/code-snippet/common/locale-cs1" %}
 
-## Changing Current Locale
+## Changing current locale
 
-Current locale can be changed for all the Syncfusion Angular UI Components in your application by invoking `setCulture` function with your desired culture name.
+The current locale can be changed for all the Syncfusion Angular UI Components in your application by invoking `setCulture` function with your desired culture name.
 
 ```typescript
 import {L10n, setCulture} from '@syncfusion/ej2-base';
@@ -47,4 +49,4 @@ L10n.load({
 setCulture('fr-BE');
 ```
 
->Note: Before changing a culture globally, you need to ensure that locale text for the concern culture is loaded through `L10n.load` function.
+>Note: Before changing a culture globally, you need to ensure that locale text for the concerned culture is loaded through `L10n.load` function.

@@ -238,13 +238,13 @@ When the data label text exceeds the container, the text can be wrapped by using
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs10/app/app.component.ts %}
+{% include code-snippet/chart/series/smartlabel-cs13/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs10/app/app.module.ts %}
+{% include code-snippet/chart/series/smartlabel-cs13/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs10/app/main.ts %}
+{% include code-snippet/chart/series/smartlabel-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
