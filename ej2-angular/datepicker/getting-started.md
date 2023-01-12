@@ -222,3 +222,5 @@ The below example demonstrates the DatePicker to select a date within a range fr
 * [How to change the initial view of the DatePicker](./date-views)
 * [How to achieve validation with DatePicker](./how-to/custom-validation-using-form-validator)
 * [How to achieve two-way binding with DatePicker](./how-to/two-way-binding)
+
+N > You can refer to our [Angular DatePicker](https://www.syncfusion.com/angular-components/angular-datepicker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular DatePicker example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/datepicker/default) that shows you how to render the DatePicker in Angular.
