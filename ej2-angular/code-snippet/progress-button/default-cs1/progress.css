@@ -1,0 +1,8 @@
+.e-reverse-progress .e-progress {
+  right: 0;
+  left: auto;
+}
+
+button {
+  margin: 25px;
+}
