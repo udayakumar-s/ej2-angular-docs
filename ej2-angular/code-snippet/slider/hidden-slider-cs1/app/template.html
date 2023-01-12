@@ -1,0 +1,7 @@
+<button ejs-button id="element">Button</button>
+<div id='container'>
+    <div id="wrap">
+        <ejs-slider id='slider' [min]="min" [max]="max" [value]="value" [tooltip]="tooltipData" [ticks]="ticksData" [showButtons]=true [step]="step"
+            (tooltipChange)='tooltipChangeHandler($event)' (renderingTicks)='renderingTicksHandler($event)'></ejs-slider>
+    </div>
+</div>

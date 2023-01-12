@@ -1,0 +1,34 @@
+<!--Sidebar element declaration -->
+<ejs-sidebar id="default-sidebar" #sidebar  [closeOnDocumentClick]="closeOnDocumentClick">
+    <div class="title"> Sidebar content</div>
+    <div class="sub-title">
+        * Sidebar is rendered with animation effect
+    </div>
+    <div class="center-align">
+        <button ejs-button id="close" (click)="closeClick()" class="e-btn close-btn">Close Sidebar</button>
+    </div>
+</ejs-sidebar>
+<ejs-sidebar id="sidebar-element" #sidebar_element [type]='type'  [showBackdrop]="showBackdrop" [closeOnDocumentClick]="closeOnDocumentClick">
+    <div class="title"> Sidebar content</div>
+    <div class="sub-title">
+        * Sidebar is rendered with animation effect
+    </div>
+    <div class="center-align">
+        <button ejs-button id="close_btn" (click)="closeClick_btn()" class="e-btn close-btn">Close Sidebar</button>
+    </div>
+</ejs-sidebar>
+<div>
+    <div class="title">Sidebar Transitions</div>
+    <div class="sub-title"> * Click the below button to render the Sidebar with animation effect.</div>
+    <div style="padding:20px" class="center-align">
+        <button ejs-button id="toggle" class="e-btn e-info" (click)="zoom()">Zoom Sidebar</button>
+        <button ejs-button id="toggle" class="e-btn e-info" (click)="open_door()">Open Door</button>
+        <button ejs-button id="toggle" class="e-btn e-info" (click)="bottom_top()">Bottom to Top</button>
+    </div>
+    <div style="padding:20px" class="center-align">
+        <button ejs-button id="toggle" class="e-btn e-info" (click)="rotate()">Rotate Sidebar</button>
+        <button ejs-button id="toggle" class="e-btn e-info" (click)="rotate_3d()">Rotate 3D</button>
+        <button ejs-button id="toggle" class="e-btn e-info" (click)="reverse()">Reverse Slide Out</button>
+    </div>
+</div>
+<!--end of main content declaration -->

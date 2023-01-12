@@ -1,0 +1,31 @@
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.content {
+  padding: 9px;
+}
+
+#left-pane-content,
+#middle-pane-content,
+#last-pane-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+#panetext {
+  font-size: 11px;
+}
+
+#container {
+  margin: 80px auto;
+}
