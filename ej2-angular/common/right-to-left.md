@@ -8,9 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right-To-Left
+# Right-To-Left support in Syncfusion Angular Components
 
-Right To Left (RTL) can be enabled for Syncfusion Angular UI components by calling `enableRtl` with `true`.This will render all the Syncfusion Angular UI components in right to left direction. We can enable the feature by setting the property `enableRtl` value as true.
+Right-to-Left (RTL) support allows applications to effectively communicate with users who use languages that are written from right to left, such as Arabic, Hebrew, etc.
+
+Syncfusion Angular UI components support for right-to-left (RTL) by setting the `enableRtl` property to `true`. This adds the class name `e-rtl` to the component element and renders all Syncfusion Angular components in a right-to-left direction.
+
+## Enable RTL for all components
+
+To enable Right-To-Left (RTL) support for all components, users can set the `enableRtl` property directly in their application. Here is an example code snippet using the ListView component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,9 +32,9 @@ Right To Left (RTL) can be enabled for Syncfusion Angular UI components by calli
   
 {% previewsample "page.domainurl/code-snippet/common/right-to-left-cs1" %}
 
-## Enable RTL to Individual Component
+## Enable RTL for an individual component
 
-To control a component’s direction individually you can directly set the component’s `enableRtl` property as true. For illustration, we have enabled RTL for ListView component in following code snippet.
+To enable Right-To-Left (RTL) support for an individual component, users can set the `enableRtl` property in the component's options. Here is an example code snippet using the ListView component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
