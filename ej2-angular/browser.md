@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Browser Compatibility in Angular
+# Browser compatibility in Angular
 
 The Syncfusion Angular UI components are supported only in modern browsers. This includes the following versions.
 
@@ -22,7 +22,7 @@ A polyfill is a piece of code (usually JavaScript on the Web) used to provide mo
 
 The Syncfusion Angular UI components are supported in IE 11 browser with ES6 Promise polyfill.
 
-## Ways to add polyfills
+## Ways to add Polyfills
 
 There are two ways to add polyfill in application,
 
@@ -40,7 +40,7 @@ You can add ES6 Promise polyfill using below CDN in your HTML file.
 
 ```
 
-### Polyfill With NPM
+### Polyfill with NPM
 
 ES6 Promise polyfill can also be installed in npm.
 

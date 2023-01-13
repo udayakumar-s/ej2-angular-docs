@@ -8,23 +8,23 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Lazy Loading Support with Syncfusion Components in Angular
+# Lazy loading support with Syncfusion components in Angular
 
-This section explains how to do Lazy Loading with Essential JS2 Angular components in Angular.  
+This section explains how to implement Lazy Loading with Essential JS2 Angular components in Angular, which improves the initial loading time of the application by loading only the necessary modules on demand.
 
 ## Lazy Loading
 
-In the Lazy Loading technique, you can load additional payload only on demand. You can lazy load the Syncfusion components and routes in Angular by using Code splitting. The Angular will load only the needed `NgModules` for a path instead of loading everything in the application on initial start of the application. This is the main use of Code splitting. So, it reduces the initial loading time of the application.
+Lazy loading is a technique that loads additional payload only when needed, which can improve the overall performance and user experience of your Angular application. By using code splitting, you can lazy load the Syncfusion components and routes in Angular. This can reduce the initial loading time of the application.
 
-## Getting Started
+## Creating a Syncfusion component in Angular
 
-For creating the Syncfusion components in Angular, refer to the [getting started](../introduction/) documentation. Also read the Angular [lazy-loading](https://angular.io/guide/lazy-loading-ngmodules) documentation for more information.
+To create a Syncfusion component in Angular, refer to the [getting started](../getting-started/angular-cli.md) documentation. Additionally, you can refer to the Angular [lazy-loading](https://angular.io/guide/lazy-loading-ngmodules) documentation for more information on how to implement lazy loading in your application.
 
-## Angular sample with Lazy Loading Routes
+Here's an example of an Angular application that has routing enabled and uses lazy loading to load the `CustomersComponent` and `OrdersComponent`.
 
-Syncfusion Angular application is created with routing enabled and get the sample from the Angular [lazy-loading](https://angular.io/guide/lazy-loading-ngmodules). Now, create the Syncfusion Calendar and Grid components separately.
+Here's an example of an Angular application that has routing enabled and uses lazy loading to load the CustomersComponent and OrdersComponent.
 
-In the `customers.component.ts` file, Syncfusion Calendar component has been added.
+In the `customers.component.ts` file, the Syncfusion Calendar component is added as follows,
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -47,7 +47,7 @@ export class CustomersComponent implements OnInit {
 }
 ```
 
-In the `orders.component.ts` file, Syncfusion Grid component has been added.
+In the `orders.component.ts` file, the Syncfusion Grid component is added as follows,
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -77,7 +77,7 @@ export class OrdersComponent implements OnInit {
 }
 ```
 
-In the `app-routing.module.ts` file, we have implemented code splitting to dynamically import the components.
+In the `app-routing.module.ts` file, we've implemented code splitting to dynamically import the components.
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -105,15 +105,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 ```
 
-## Run the Application
-
-Run the application using the following commands.
-
-```bash
-npm install
-npm run start
-```
-
-## Sample Link
-
-Find this sample in the [Github link](https://github.com/SyncfusionExamples/EJ2-Angular-Lazy-loading)
+In the above code block, we are using loadChildren property in the routing configuration to lazily load the `CustomersModule` and `OrdersModule` when the user navigates to the corresponding routes. This way, the application only loads the necessary modules on demand, improving the initial loading time and performance of the application.
