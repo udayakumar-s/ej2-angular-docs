@@ -1,1 +1,0 @@
-@Html.EJS().DateTimePicker("datetimepicker").Max(ViewBag.maxDate).Min(ViewBag.minDate).Value(@ViewBag.value).Render()
