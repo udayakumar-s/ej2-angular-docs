@@ -20,6 +20,9 @@ Content reuse can be achieved by using the following steps:
 Refer to the following sample.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/tab/content-reuse-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/content-reuse-cs1/app/app.component.ts %}
 {% endhighlight %}

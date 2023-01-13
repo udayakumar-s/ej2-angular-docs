@@ -25,6 +25,9 @@ It is also adaptable to the available space when the tab items exceed the view s
 * Popup
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/tab/orientation-tab-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/orientation-tab-cs1/app/app.component.ts %}
 {% endhighlight %}

@@ -126,6 +126,9 @@ In the following code sample, text is only visible in the popup container and no
 By default, the toolbar renders with a minimum height to render items properly. You can also render a customized toolbar with a height that is less than the minimum height of the toolbar by overriding default styles from the application end.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/toolbar/minimum-height-cs1/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/minimum-height-cs1/app/app.component.ts %}
 {% endhighlight %}
