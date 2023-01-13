@@ -15,7 +15,7 @@ export class AppComponent {
     constructor(private http: HttpClient){
       this.data=this.http.get<{[key: string]:object;}[]>('https://services.odata.org/V4/Northwind/Northwind.svc/Customers').pipe(
       map((results : {[key: string]:any;}) => {
-        return results.value;
+        return results['value'];
       })
     );
   }

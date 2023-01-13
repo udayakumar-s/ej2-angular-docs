@@ -13,8 +13,11 @@ import { EmitType } from '@syncfusion/ej2-base';
  */
 @Component({
     selector: 'app-root',
-    templateUrl: 'app.component.html',
-    styleUrls: ['app.component.css'],
+    template: `<button class="e-control e-btn" style="position: absolute;" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>
+    <div id="modalTarget" #container class='root-container'>
+      <ejs-dialog id='dialog' #ejDialog [animationSettings]='animationSettings' content='Are you sure you want to permanently delete all of these items?' header='Delete Multiple Items' [target]='targetElement'
+      width='300px' [showCloseIcon]='showCloseIcon' [buttons]='buttons'>
+      </ejs-dialog> </div> `,
     encapsulation: ViewEncapsulation.None
 })
 

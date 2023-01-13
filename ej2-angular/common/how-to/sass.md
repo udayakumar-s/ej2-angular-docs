@@ -8,36 +8,36 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to use SCSS File in Angular-CLI
+# How to use SCSS in Angular CLI
 
-## SASS Variables Location
+Sass (SCSS) is a powerful CSS pre-processor that allows you to use variables, nested rules, and functions to make writing CSS easier and more efficient. In this guide, we will show you how to use SCSS in Angular CLI to customize the styles of your Angular Syncfusion components.
 
-The SASS variables for Essential JS 2 components are available in the following mentioned location.
+## SASS variables location
+
+The SASS variables for Essential JS 2 components can be found in the following location,
 
 `node_modules/@syncfusion/package-name/styles/themename.scss`
 
-For example, refer to the following location for navigation component’s SASS variable.
+For example, the location for the navigation component's SASS variables is,
 
 `node_modules/@syncfusion/ej2-angular-grids/styles/material.scss`
 
-## Initialization of SCSS Variables
+## Initialization of SCSS variables
 
-Refer to the styles of the required component in the src/styles.scss file.
+To use the SCSS variables in your project, you need to import the styles of the required component in the `src/styles.scss` file.
 
 ```typescript
 @import “ej2-grids/styles/material.scss”
 ```
 
-## Configuring node SCSS in .angular-cli.json
+## Configuring Node-Sass in Angular CLI json
 
-To avoid SCSS compilation issues and to map the SCSS file path, add the stylePreprocessorOptions to the .angular-cli.json file.
-
-Add the `stylePreprocessorOptions` option in two places under apps in the `.angular-cli.json` file.
+To avoid SCSS compilation issues and to map the SCSS file path, you need to add the `stylePreprocessorOptions` to the .`angular-cli.json` file. You should add this option in two places under the apps object,
 
 1. angular-cli.json -> {}build -> {}options
 2. angular-cli.json -> {}test -> {}options
 
-The following paths can be used globally in Angular app.
+This allows you to use the following paths globally in your Angular app.
 
 ```typescript
 "stylePreprocessorOptions": {
@@ -49,9 +49,9 @@ The following paths can be used globally in Angular app.
 
 An angular sample with SCSS compilation to render the Essential JS 2 Grid component can be downloaded from the following [GitHub link](https://github.com/SyncfusionExamples/ej2-angular-scss).
 
-## How To Override Styles
+## Overriding styles
 
-In syncfusion Angular components, you can override control styles by replacing `sass` variable values like below:
+You can override the control styles in Syncfusion Angular components by replacing the sass variable values like this,
 
 ```
 
@@ -66,8 +66,10 @@ $primary: rgb(0, 255, 157);
 
 ## Angular-CLI Version 8 With SASS
 
-In version 8, Angular Team moved away from `node-sass` in favour of `sass`.Nonetheless we have the option to use `node-sass` manually. Use the below command to install `node-sass`:
+In version 8, the Angular Team moved away from `node-sass` in favor of `sass`. However, you can still use `node-sass` manually by running the following command:
 
 ```bash
 npm install node-sass --save-dev
 ```
+
+By following the steps outlined in this guide, you should now be able to use SCSS in Angular CLI to customize the styles of your Essential JS 2 components.

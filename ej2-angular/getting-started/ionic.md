@@ -8,17 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started for Ionic with Angular
+# Getting started with Ionic and Angular
 
-This document helps you to create a simple Angular application with `Ionic Framework` and `Syncfusion Angular UI components`.
+This document helps you to create a simple Angular application with the `Ionic Framework` and including `Syncfusion Angular UI components` can be a great way to add functionality and a polished look to your app.
 
 ## Prerequisites
 
 Before getting started with Syncfusion Angular Components in Ionic with Angular project, check whether the following have been installed in the developer's machine.
 
-* Angular Versions supported - 4+
-* Typescript Versions supported - 2.6+
-* ionic CLI 3.9.0+
+* Angular Versions supported - 4+ or later
+* Typescript Versions supported - 2.6+ or later
+* ionic CLI 3.9.0+ or later
 
 >Note: If the `ionic CLI` is not installed, refer to the [`Getting Started with ionic`](https://ionicframework.com/getting-started/#cli) document to install it.
 
@@ -32,31 +32,30 @@ npm install -g ionic
 
 >Note: Here, we are using ionic version 4.6.0 to support Angular 6.
 
-Run the following command line to create a new Ionic template application. The new application will be placed under ej2-ionic folder after the command completes its process, and it will install the default npm dependent packages when creating the application.
+Once your development environment is set up, you can start by creating a new project using the Ionic CLI. To do this, run the following command in your command prompt,
 
 ```bash
 ionic start ej2-ionic blank --type=angular 
 ```
+This command will create a new Ionic template application in a folder called "ej2-ionic" and will also install the default npm packages needed for the application.
 
 >Note: Refer to this [getting started](https://ionicframework.com/getting-started/#cli) document to install ionic framework.
 
-## Installing Syncfusion Button Package
+## Installing Syncfusion Button package
 
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular syncfusion package from [npm]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Add the `@syncfusion/ej2-angular-buttons` package to the application.
 
 ```bash
-npm install @syncfusion/ej2-angular-buttons --save
+npm install @syncfusion/ej2-angular-buttons@ngcc --save
 (or)
-npm i @syncfusion/ej2-angular-buttons --save
+npm i @syncfusion/ej2-angular-buttons@ngcc --save
 ```
 
 ## Adding Button Module
 
-After installing the package, the component modules are available to configure your application from Syncfusion installed package. Syncfusion Angular package provides two different types of ng-Modules.
-
-Refer to [`Ng Module`](../common/ng-module.html) to learn about `ngModules`.
+After installing the package, the component modules are available to configure your application from Syncfusion installed package.
 
 Refer to the following code snippet to import the button module in `app/src/home/home.module.ts` from the `@syncfusion/ej2-angular-buttons`.
 
@@ -84,9 +83,9 @@ export class HomePageModule {}
 
 ```
 
-## Adding Syncfusion Component
+## Adding Syncfusion component
 
-Add the button component snippet in `src/home/home.page.ts` as follows.
+After importing the package, you can start using the Syncfusion UI components. In this example, we're adding a button component to the `src/home/home.page.ts` file.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -108,7 +107,7 @@ export class HomePage {
 
 Add button component styles as given in the `angular-cli.json` file within the app > styles section.
 
->Note: If you are using Angular 6 project, add the changes in `angular.json` file.
+Finally, you'll need to add the button component styles to your angular-cli.json file.
 
 ```typescript
 
@@ -131,7 +130,7 @@ Add button component styles as given in the `angular-cli.json` file within the a
 
 ## Running the Application
 
-Finally, run the following command line to start the application. The Syncfusion Essential JS 2 button component will be rendered in the ionic framework. 
+Finally, run the following command line to start the application. The Syncfusion Angular button component will be rendered in the ionic framework. 
 
  ```bash
 ionic serve 

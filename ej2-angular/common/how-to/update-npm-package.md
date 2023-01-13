@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Update Syncfusion npm Package
+# Update Syncfusion npm package
 
 The latest Syncfusion npm package can be updated with the help of [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) package.
 
@@ -29,7 +29,7 @@ The latest Syncfusion npm package can be updated with the help of [`npm-check-up
     npm dedupe
     ```
 
-## Updating a Specific npm package
+## Updating a specific npm package
 
 Run the following commands from the command prompt in the application root to update a specific npm package in `node_modules` and remove the installed duplicate package.
 

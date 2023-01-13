@@ -8,36 +8,23 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started for Electron with Angular
+# Getting started with Angular and Electron
 
 This document helps you to create a simple Angular application with `Electron Framework` and `Syncfusion Angular UI components`.
 
 ## Prerequisites
 
-Before getting started with the Angular project with Syncfusion Angular components in Electron, check whether the following have been installed in the developer's machine.
+Before getting started with the Angular project, make sure you have the following installed on your machine,
 
-* Angular Versions supported - 4+
-* Typescript Versions supported - 2.6+
-* Electron CLI - 6.0.10+
+* Angular version 4 or later
+* TypeScript version 2.6 or later
+* Electron CLI version 6.0.10 or later
 
->Note: If the `electron CLI` is not installed, refer to [`getting started with electron`](https://www.npmjs.com/package/electron-cli) to install it.
+If you do not have the `Electron CLI` installed, refer to the [`Electron package`](https://www.npmjs.com/package/electron-cli) for instructions on how to install it.
 
-## Setup Angular Environment
+## Setup Angular environment
 
-You can use Angular CLI to setup your Angular applications. To install Angular CLI, use the following command.
-
-```bash
-npm install -g @angular/cli
-```
-
-## Create an Application
-
-Create a new project with the following command using the command prompt.
-
-```bash
-ng new my-app
-cd my-app
-```
+You can use follow the [Setting up the local environment and workspace](https://angular.io/guide/setup-local).
 
 Install electron framework using the following command.
 
@@ -49,26 +36,23 @@ npm install -g electron
 
 >Note: Refer to this [getting started](https://electronjs.org/docs/tutorial/installation) to install electron framework.
 
-## Installing Syncfusion Menu Package
+## Installing Syncfusion Menu package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular syncfusion package from [npm]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed on npm under the `@syncfusion` scope. You can find all of the Angular Syncfusion packages [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-To install Menu package, use the following command.
+To install the Menu package, run the following command.
 
 ```bash
-npm install @syncfusion/ej2-angular-navigations --save
+npm install @syncfusion/ej2-angular-navigations@ngcc --save
 (or)
-npm i @syncfusion/ej2-angular-navigations --save
+npm i @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-## Adding Menu Module
+## Adding the Menu module
 
-After installing the package, the component modules are available to configure your application from Syncfusion installed package. Syncfusion Angular package provides two different types of ng-Modules.
-
-Refer to [`Ng Module`](../common/ng-module.html) to learn about `ngModules`.
+After installing the package, the component modules will be available for you to configure your application. The Syncfusion Angular package provides two different types of ng-Modules.
 
 Import Menu module into Angular application (app.module.ts) from the package `@syncfusion/ej2-angular-navigations`.
-
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -87,9 +71,9 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-## Adding Syncfusion Menu Component
+## Adding Syncfusion Menu component
 
-Modify the template in `app.component.ts` file with `ejs-menu` to render the Menu component.
+To add the Syncfusion Menu component to your application, modify the template in the `app.component.ts` file by adding the ejs-menu element and binding it to the menuItems variable.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -143,7 +127,7 @@ export class AppComponent {
 }
 ```
 
-## Adding CSS Reference
+## Adding CSS reference
 
 Add Menu component’s styles as given below in `style.css`.
 
@@ -220,9 +204,9 @@ In the `tsconfig.json` file, change the target as demonstrated in the following 
 "target": "es5"
 ```
 
-## Running the Application
+## Running the application
 
-Finally, run the following command line to start the application. The Syncfusion Essential JS 2 menu component will be rendered in the electron framework. 
+Finally, run the following command line to start the application. The Syncfusion Essential JS 2 menu component will be rendered in the Electron framework.
 
  ```bash
 npm  run electron-build 
@@ -233,7 +217,7 @@ npm  run electron
 >Note: For your convenience, we have prepared an [Angular sample with electron framework](https://github.com/SyncfusionExamples/ej2-angular-electron).
 
 
-## See Also
+## See also
 
 * [Electron Browser Window](https://www.electronjs.org/docs/latest/api/browser-window)
 

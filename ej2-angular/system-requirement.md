@@ -8,15 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# System Requirements for Angular Components 
+# System requirements for Angular components 
 
 This section explains the basic system requirements to work with Syncfusion Angular UI Components.
 
-## Operating System
+## Operating system
 
 Angular supports most recent browsers for additional details following [link](https://angular.io/guide/browser-support)
 
-## Angular Version
+## Angular version
 
 To get started with Syncfusion Angular UI Components, make sure the compatible versions of Angular should be `6+`.
 
@@ -28,7 +28,9 @@ ng --version
 
 ## Node.js
 
-The required [node version](https://nodejs.org/en/) should be `10.9.0` or later to work with Syncfusion Angular UI components and ensure the node version with supported [NPM](https://www.npmjs.com/) version.
+Angular requires an [active LTS or maintenance LTS](https://nodejs.org/about/releases) version of Node.js.
+
+For more information on installing Node.js, see [nodejs.org](https://nodejs.org/en/). If you are unsure what version of Node.js runs on your system, run node -v in a terminal window.
 
 You can use below command to check node version
 
@@ -36,11 +38,13 @@ You can use below command to check node version
 node --version
 ```
 
-## Browser Support
+## Browser support
 
 The Syncfusion Angular UI components are supported only in modern browsers. You can refer the [Browser Compatibility](./browser/) section for more information.
 
-## See Also
+For more details, check with the official sites for [documentation](https://angular.io/guide/setup-local).
+
+## See also
 
 * [Upgradation Guide](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion/)
 

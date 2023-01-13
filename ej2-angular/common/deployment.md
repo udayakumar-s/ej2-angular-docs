@@ -12,41 +12,31 @@ domainurl: ##DomainURL##
 
 ## CDN
 
-The CDN links are provided individually for all the scripts and style sheets of Syncfusion Angular UI Components (Essential JS 2).
+The CDN links are provided individually for all the scripts and style sheets of Syncfusion Angular UI Components.
 
 The CDN links are provided to following files in the package
 
 1. UMD Files
 2. CSS Files
 
-_The latest minified versions of all UMD, Global and CSS files are available in CDN:_
+_The latest minified versions of all UMD and CSS files are available in CDN:_
 
-* **`https://cdn.syncfusion.com/ej2/PACKAGENAME/dist/PACKAGENAME.umd.min.js`**
-* **`https://cdn.syncfusion.com/ej2/PACKAGENAME/styles/THEMENAME.css`**
-
-For example
-
-* [https://cdn.syncfusion.com/ej2/ej2-angular-inputs/dist/ej2-angular-inputs.umd.min.js](https://cdn.syncfusion.com/ej2/ej2-angular-inputs/dist/ej2-angular-inputs.umd.min.js)
-* [https://cdn.syncfusion.com/ej2/ej2-angular-inputs/styles/material.css](https://cdn.syncfusion.com/ej2/ej2-angular-inputs/styles/material.css)
-
-_Versioned files are also available in CDN._
-
-* **`https://cdn.syncfusion.com/ej2/VERSION/PACKAGENAME/dist/PACKAGENAME.umd.min.js`**
-* **`https://cdn.syncfusion.com/ej2/VERSION/PACKAGENAME/styles/THEMENAME.css`**
+* **`https://cdn.syncfusion.com/ej2/RELEASEVERSION/PACKAGENAME/dist/PACKAGENAME.umd.min.js`**
+* **`https://cdn.syncfusion.com/ej2/RELEASEVERSION/PACKAGENAME/styles/THEMENAME.css`**
 
 For example
 
-* [https://cdn.syncfusion.com/ej2/16.4.55/ej2-angular-inputs/dist/ej2-angular-inputs.umd.min.js](https://cdn.syncfusion.com/ej2/16.4.55/ej2-angular-inputs/dist/ej2-angular-inputs.umd.min.js)
-* [https://cdn.syncfusion.com/ej2/16.4.55/ej2-angular-inputs/styles/material.css](https://cdn.syncfusion.com/ej2/16.4.55/ej2-angular-inputs/styles/material.css)
+* [https://cdn.syncfusion.com/ej2/20.4.38/ej2-angular-inputs/dist/ej2-angular-inputs.umd.min.js](https://cdn.syncfusion.com/ej2/20.4.38/ej2-angular-inputs/dist/ej2-angular-inputs.umd.min.js)
+* [https://cdn.syncfusion.com/ej2/20.4.38/ej2-angular-inputs/styles/material.css](https://cdn.syncfusion.com/ej2/20.4.38/ej2-angular-inputs/styles/material.css)
 
 ## Packages
 
-Syncfusion Angular UI Components (Essential JS 2) packages is published and available in public
+Syncfusion Angular UI Components packages is published and available in public
 [npm](https://www.npmjs.com/search?q=ej2-angular&page=1&ranking=optimal) registry.
 
-### Anatomy of NPM Packages
+### Anatomy of NPM packages
 
-Syncfusion Angular UI Components (Essential JS 2) are shipped as npm packages. Following table explains the purpose of each file available in the package.
+Syncfusion Angular UI Components are shipped as npm packages. Following table explains the purpose of each file available in the package.
 
 |    Files                                                                  |    Purpose                                                                                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

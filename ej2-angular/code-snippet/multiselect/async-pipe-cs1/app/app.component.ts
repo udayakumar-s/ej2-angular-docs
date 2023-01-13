@@ -3,7 +3,6 @@
 
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CategoriesService } from './categories.service';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 
@@ -11,13 +10,12 @@ import { HttpClient } from '@angular/common/http';
     selector: 'app-root',
     // specifies the template string for the Multiselect component with dataSource
     template: `<ejs-multiselect  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-multiselect >`,
-    providers: [CategoriesService]
 })
 export class AppComponent {
     constructor(private http: HttpClient){
       this.data=this.http.get<{[key: string]:object;}[]>('https://services.odata.org/V4/Northwind/Northwind.svc/Customers').pipe(
-      map((results : {[key: string]:object;}) => {
-        return results.value;
+      map((results : {[key: string]:any;}) => {
+        return results['value'];
       })
     );
   }
