@@ -22,8 +22,7 @@ import moment from 'moment';
         `
 })
 export class AppComponent {
-    @ViewChild('ejCalendar')
-    public CalendarInstance: CalendarComponent;
+    @ViewChild('ejCalendar') CalendarInstance!: CalendarComponent;
     /*selected current week dates when click the button*/
     workWeek() {
         if (this.CalendarInstance.element.classList.contains('week')) {
@@ -43,9 +42,9 @@ export class AppComponent {
         var startOfWeek = moment(args.value).startOf('week');
         var endOfWeek = moment(args.value).endOf('week');
         if (this.CalendarInstance.element.classList.contains('workweek')) {
-            getWeekArray(startOfWeek.day(1), endOfWeek.day(5), this);
+            this.getWeekArray(startOfWeek.day(1), endOfWeek.day(5), this);
         } else if (this.CalendarInstance.element.classList.contains("week")) {
-            getWeekArray(startOfWeek, endOfWeek, this);
+            this.getWeekArray(startOfWeek, endOfWeek, this);
         }
     }
 
