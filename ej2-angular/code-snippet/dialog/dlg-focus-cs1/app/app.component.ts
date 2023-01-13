@@ -49,6 +49,10 @@ export class AppComponent implements OnInit {
     //Preventing the default dialog focus
     args.preventFocus = true;
   }
+    // Hide the Dialog when click the footer button.
+    public hideDialog: EmitType<object> = () => {
+      this.ejDialog.hide();
+  }
 
   // Enables the footer buttons
   public buttons: Object = [
@@ -69,10 +73,7 @@ export class AppComponent implements OnInit {
     }
   ];
 
-  // Hide the Dialog when click the footer button.
-  public hideDialog: EmitType<object> = () => {
-      this.ejDialog.hide();
-  }
+
 }
 
 
