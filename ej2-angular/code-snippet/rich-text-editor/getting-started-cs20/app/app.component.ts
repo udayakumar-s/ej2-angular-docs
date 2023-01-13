@@ -5,7 +5,7 @@ import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService} from '@syncfusion/ej2-angular-richtexteditor';
 import { RichTextEditorComponent, CountService} from '@syncfusion/ej2-angular-richtexteditor';
 import { createElement } from '@syncfusion/ej2-base';
-import CodeMirror from 'codemirror';
+import * as CodeMirror from 'codemirror';
 
 
 @Component({

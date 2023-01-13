@@ -1,1 +1,0 @@
-@Html.EJS().ComboBox("list").DataSource((string[])ViewBag.data).Placeholder("e.g: aero").IgnoreAccent(true).AllowFiltering(true).Render()

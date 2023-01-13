@@ -1,1 +1,0 @@
-<ejs-calendar id="calendar" value="@ViewBag.value" start=Decade depth=Year></ejs-calendar>

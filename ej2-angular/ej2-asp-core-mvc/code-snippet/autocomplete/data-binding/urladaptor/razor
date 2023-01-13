@@ -1,5 +1,0 @@
-@Html.EJS().AutoComplete("games").Placeholder("Select a Country").PopupHeight("200px").DataSource(dataManger =>
-    dataManger.Url("/AutoComplete/UrlDatasource").Adaptor("UrlAdaptor").CrossDomain(true)).Fields(new Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings
-    {
-        Value = "ShipCountry"
-    }).Render()
