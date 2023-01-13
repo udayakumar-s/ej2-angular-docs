@@ -1,1 +1,0 @@
-@Html.EJS().AutoComplete("Diacritics").DataSource((string[])ViewBag.data).Placeholder("e.g: aero").IgnoreAccent(true).Render()

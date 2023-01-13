@@ -1,7 +1,0 @@
-@using Syncfusion.EJ2;
-
-<ejs-lineargauge id="linear">
-    <e-lineargauge-axes>
-        <e-lineargauge-axis IsInversed="true"></e-lineargauge-axis>
-    </e-lineargauge-axes>
-</ejs-lineargauge>
