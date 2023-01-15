@@ -1,2 +1,0 @@
-<ejs-autocomplete id="games" allowCustom="true" dataSource="@ViewBag.data" placeholder="e.g. Basketball" popupHeight="220px">
-</ejs-autocomplete>

@@ -1,1 +1,0 @@
-@Html.EJS().Slider("slider").Type(SliderType.MinRange).Value(40).Render()
