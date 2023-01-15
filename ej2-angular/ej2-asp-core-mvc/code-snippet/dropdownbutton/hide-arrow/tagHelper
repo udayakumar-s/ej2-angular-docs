@@ -1,1 +1,0 @@
-<ejs-dropdownbutton id="hide-arrow" content="Edit" items="ViewBag.items" cssClass="e-caret-hide"></ejs-dropdownbutton>

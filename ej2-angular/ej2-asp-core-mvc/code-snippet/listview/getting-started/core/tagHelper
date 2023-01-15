@@ -1,1 +1,0 @@
-<ejs-listview id="list" dataSource="@ViewBag.dataSource"></ejs-listview>
