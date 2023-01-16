@@ -1,3 +1,0 @@
-<ejs-menu id="menu"  items="ViewBag.menuItems"></ejs-menu>
-
-

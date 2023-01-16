@@ -1,1 +1,0 @@
-@Html.EJS().ProgressButton("spin").Content("Spin Left").EnableProgress(true).Render()
