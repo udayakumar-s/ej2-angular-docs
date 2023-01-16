@@ -1,4 +1,0 @@
-<form>
-    <ejs-listbox id="listbox" dataSource="@ViewBag.data"></ejs-listbox>
-    <ejs-button id="button" isPrimary="true" content="Submit"></ejs-button>
-</form>

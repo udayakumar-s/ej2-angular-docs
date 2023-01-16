@@ -1,3 +1,0 @@
-<ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings dataSource="@ViewBag.DataSource">
-</ejs-pivotview>

@@ -1,1 +1,0 @@
-@Html.EJS().HeatMap("container").DataSource(ViewBag.dataSource).Render()
