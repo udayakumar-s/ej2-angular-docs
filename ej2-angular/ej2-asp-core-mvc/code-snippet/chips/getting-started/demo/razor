@@ -1,1 +1,0 @@
-@Html.EJS().ChipList("chip").Text("Janet Leverling").Render()

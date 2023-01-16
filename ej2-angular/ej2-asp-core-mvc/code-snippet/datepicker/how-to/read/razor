@@ -1,1 +1,0 @@
-@Html.EJS().DatePicker("datepicker").Readonly(true).Value(ViewBag.value).Placeholder("Choose a Date").Render()

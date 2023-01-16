@@ -1,7 +1,0 @@
-@Html.EJS().ProgressButton("progress").Content("Progress Step").EnableProgress(true).Begin("begin").CssClass("e-hide-spinner").Render()
-
-<script>
-    function begin(args) {
-        args.step = 20;
-    }
-</script>
