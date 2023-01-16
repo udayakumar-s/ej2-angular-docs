@@ -1,1 +1,0 @@
-@Html.EJS().CheckBox("default").Label("Default").Render()

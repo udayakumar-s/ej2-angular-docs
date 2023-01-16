@@ -1,1 +1,0 @@
-@Html.EJS().MaskedTextBox("mask1").Placeholder("MaskedTextBox").Render()
