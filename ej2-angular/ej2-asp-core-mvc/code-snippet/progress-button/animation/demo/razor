@@ -1,1 +1,0 @@
-@Html.EJS().ProgressButton("slideleft").Content("Slide Left").EnableProgress(true).AnimationSettings(ViewBag.animationSettings).SpinSettings(ViewBag.spinSettings).Render()

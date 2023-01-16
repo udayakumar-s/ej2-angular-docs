@@ -1,1 +1,0 @@
-@Html.EJS().DateRangePicker("daterangepicker").DayHeaderFormat(DayHeaderFormat.Short).Render()

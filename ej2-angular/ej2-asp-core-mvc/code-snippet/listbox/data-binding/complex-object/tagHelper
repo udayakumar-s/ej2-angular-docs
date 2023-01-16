@@ -1,3 +1,0 @@
-<ejs-listbox id="listbox" dataSource="@ViewBag.data" >
-    <e-listbox-fields text="sports.Name"></e-listbox-fields>
-</ejs-listbox>
