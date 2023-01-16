@@ -48,7 +48,7 @@ npm install -g @angular/cli
 ng new syncfusion-angular-datepicker
 ```
 
-By default, it install the CSS style base application. To setup with CSS, pass --style=scss argument on create project.
+By default, it install the CSS style base application. To setup with , pass --style=css argument on create project.
 
 Example code snippet.
 
