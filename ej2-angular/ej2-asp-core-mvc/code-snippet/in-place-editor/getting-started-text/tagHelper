@@ -1,5 +1,0 @@
-
-<div style="margin:0 auto; width:300px;">
-    <ejs-inplaceeditor id="element" type="Text" value="ViewBag.value" model="ViewBag.modalData">
-    </ejs-inplaceeditor>
-</div>

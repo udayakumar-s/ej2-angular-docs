@@ -1,3 +1,0 @@
-<ejs-multiselect id="games" dataSource="@ViewBag.data" placeholder="Favorite Sports" allowCustomValue="true" mode="Default">
-        <e-multiselect-fields value="Id" text="Game"></e-multiselect-fields>
-</ejs-multiselect>
