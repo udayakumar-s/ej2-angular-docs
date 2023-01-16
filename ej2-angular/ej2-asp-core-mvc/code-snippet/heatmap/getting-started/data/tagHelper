@@ -1,2 +1,0 @@
-<ejs-heatmap id='container' dataSource="ViewBag.dataSource">
-</ejs-heatmap>
