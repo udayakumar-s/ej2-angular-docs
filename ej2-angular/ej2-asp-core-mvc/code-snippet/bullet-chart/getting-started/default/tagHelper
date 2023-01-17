@@ -1,2 +1,0 @@
-<ejs-bulletchart id="bulletgraph" minimum="0" maximum="300" interval="50" valueField="value" targetField="target" dataSource="ViewBag.dataSource">
-</ejs-bulletchart>

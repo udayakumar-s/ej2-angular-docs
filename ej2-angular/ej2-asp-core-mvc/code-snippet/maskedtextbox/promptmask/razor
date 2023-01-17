@@ -1,1 +1,0 @@
-@Html.EJS().MaskedTextBox("mask1").Mask("999-999-9999").PromptChar("#").Render()

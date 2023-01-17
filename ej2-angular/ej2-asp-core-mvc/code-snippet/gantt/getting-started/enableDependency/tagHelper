@@ -1,4 +1,0 @@
-<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource">
-   <e-gantt-taskfields dependency="Predecessor">
-   </e-gantt-taskfields>
-</ejs-gantt>
