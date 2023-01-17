@@ -546,6 +546,9 @@ It is possible to drag and drop the unplanned items from any of the external sou
 In this example, we have used the tree view control as an external source and the child nodes from the tree view component are dragged and dropped onto the Scheduler. Therefore, it is necessary to make use of the `nodeDragStop` event of the TreeView component, where we can form an event object and save it using the `addEvent` method.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/external-drag-drop-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/external-drag-drop-cs1/app/app.component.ts %}
 {% endhighlight %}
@@ -719,6 +722,9 @@ Learn how easily you can customize the basic look and feel of Angular Scheduler 
 {% youtube "https://www.youtube.com/watch?v=z4n09yn1Jq0" %}
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/event-cs7/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/event-cs7/app/app.component.ts %}
 {% endhighlight %}
@@ -943,6 +949,9 @@ The tooltip can be displayed for appointments by setting `true` to the `enableTo
 After enabling the default tooltip, it is possible to customize the display of needed event information on tooltip by making use of the `tooltipTemplate` option within the `eventSettings`.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/tooltip-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/tooltip-cs1/app/app.component.ts %}
 {% endhighlight %}
@@ -963,6 +972,9 @@ After enabling the default tooltip, it is possible to customize the display of n
 The appointments can be filtered by passing the predicate value to `query` option in `eventSettings`. The following code example shows how to filter and render the selected appointments alone in the Scheduler.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/event-filter-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/event-filter-cs1/app/app.component.ts %}
 {% endhighlight %}
@@ -996,6 +1008,9 @@ It is possible to access the information about the event fields of an appointmen
 In the following example, the subject of the appointment clicked has been displayed.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/event-template-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/event-template-cs1/app/app.component.ts %}
 {% endhighlight %}
@@ -1014,6 +1029,9 @@ In the following example, the subject of the appointment clicked has been displa
 To retrieve the appointments present in the current view of the Scheduler, you can make use of the `getCurrentViewEvents` public method. In the following example, the count of current view appointment collection rendered has been traced in `dataBound` event.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/event-data-bound-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/event-data-bound-cs1/app/app.component.ts %}
 {% endhighlight %}
@@ -1032,6 +1050,9 @@ To retrieve the appointments present in the current view of the Scheduler, you c
 The entire collection of appointments rendered on the Scheduler can be accessed using the `getEvents` public method. In the following example, the count of entire appointment collection rendered on the Scheduler has been traced in `dataBound` event.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/event-data-bound-cs2/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/event-data-bound-cs2/app/app.component.ts %}
 {% endhighlight %}

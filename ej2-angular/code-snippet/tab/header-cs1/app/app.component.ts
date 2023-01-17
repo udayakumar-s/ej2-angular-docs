@@ -6,7 +6,7 @@ import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 @Component({
     selector: 'app-container',
     // specifies the template url path
-    templateUrl: 'app.component.html'
+    templateUrl: 'app/app.component.html'
     })
 export class AppComponent {
     @ViewChild('element') tabObj: TabComponent;

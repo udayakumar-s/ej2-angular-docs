@@ -27,6 +27,9 @@ You can go back on each tab using buttons available in it and tabs are [`disable
 In the below demo, designed for simple train reservation module that enable/disable tab items based on sequential validation of each Tab content.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/tab/wizard-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/wizard-cs1/app/app.component.ts %}
 {% endhighlight %}
