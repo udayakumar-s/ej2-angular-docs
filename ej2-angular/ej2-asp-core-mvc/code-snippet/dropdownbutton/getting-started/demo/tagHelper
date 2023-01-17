@@ -1,1 +1,0 @@
-<ejs-dropdownbutton id="element" content="Edit" items="ViewBag.items"></ejs-dropdownbutton>
