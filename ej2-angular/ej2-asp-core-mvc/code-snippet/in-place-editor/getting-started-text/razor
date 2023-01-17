@@ -1,3 +1,0 @@
-<div style="margin:0 auto; width:300px;">
-    @Html.EJS().InPlaceEditor("element").Type(Syncfusion.EJ2.InPlaceEditor.InputType.Text).Value(ViewBag.value).Model(ViewBag.modalData).Render()
-</div>
