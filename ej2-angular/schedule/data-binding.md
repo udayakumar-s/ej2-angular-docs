@@ -91,7 +91,7 @@ import { EventSettingsModel, View, EventRenderedArgs, DayService, WeekService, W
 
 @Component({
   selector: "app-root",
-  templateUrl: "app.component.html",
+  templateUrl: "app/app.component.html",
   providers: [ DayService, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService,
 DragAndDropService ]
 })

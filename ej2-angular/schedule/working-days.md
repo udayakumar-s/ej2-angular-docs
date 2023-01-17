@@ -178,6 +178,9 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 You can manually scroll to a specific time on Scheduler by making use of the `scrollTo` method as depicted in the following code example.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/scroll-to-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/scroll-to-cs1/app/app.component.ts %}
 {% endhighlight %}
