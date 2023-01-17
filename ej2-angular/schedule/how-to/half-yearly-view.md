@@ -19,6 +19,9 @@ The year view of our scheduler displays all the 365 days and their related appoi
 In the following code example, you can see how to render only the last six months of a year in the scheduler. To start with the month of  June, `firstMonthYear` is set to 6 and `monthsCount` is set to 6 to render only 6 months.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/year-customizations-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/year-customizations-cs1/app/app.component.ts %}
 {% endhighlight %}

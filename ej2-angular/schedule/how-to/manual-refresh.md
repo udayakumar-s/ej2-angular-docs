@@ -25,6 +25,9 @@ In Scheduler, we can able to refresh the elements of the template alone instead 
 In the following code example, you can see how to use the refreshTemplates method to refresh multiple templates. Here, we have added the following scheduler templates such as [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#celltemplate), [`dateHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#dateheadertemplate), [`eventTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventtemplate) and [`resourceHeaderTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#resourceheadertemplate)
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/refresh-templates-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/refresh-templates-cs1/app/app.component.ts %}
 {% endhighlight %}

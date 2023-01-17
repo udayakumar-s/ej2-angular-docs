@@ -42,6 +42,9 @@ The `timeScale` property also provides template option to allow customization of
 * `minorSlotTemplate` - The template option to be applied for minor time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/timescale-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/timescale-cs1/app/app.component.ts %}
 {% endhighlight %}
