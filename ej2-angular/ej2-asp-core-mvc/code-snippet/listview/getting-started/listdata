@@ -1,1 +1,0 @@
-@Html.EJ().ListView("listview").DataSource((IEnumerable<object>)ViewBag.dataSource).Render()

@@ -1,1 +1,0 @@
-@Html.EJS().DateRangePicker("daterangepicker").Placeholder("Select a Range").MinDays(4).MaxDays(10).Render()
