@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Appbar component
+# Getting started with Angular AppBar component
 
 This section explains how to create a simple AppBar, and demonstrate the basic usage of the AppBar module in an Angular environment.
 
@@ -97,7 +97,7 @@ export class AppModule {}
 
 ## Adding Syncfusion AppBar component
 
-Modify the template in `app.component.ts` file with `ejs-appbar` to render the AppBar component.
+Modify the template in `app.component.ts` file with `ejs-AppBar` to render the AppBar component.
 
 ```javascript
 import { Component } from "@angular/core";
