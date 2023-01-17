@@ -15,6 +15,9 @@ Toolbar supports to customize the scrolling distance when you click the left and
 By using Toolbar scrollStep property, pass a required value to customize toolbar scrollStep.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/toolbar/scrollstep-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/scrollstep-cs1/app/app.component.ts %}
 {% endhighlight %}
