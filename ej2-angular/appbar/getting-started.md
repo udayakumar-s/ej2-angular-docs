@@ -149,3 +149,5 @@ The following example shows a basic `AppBar` component.
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/appbar/getting-started-cs1" %}
+
+N> You can refer to our [Angular AppBar](https://www.syncfusion.com/angular-components/angular-appbar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular AppBar example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/appbar/default) that shows you how to render and configure the Angular AppBar.
