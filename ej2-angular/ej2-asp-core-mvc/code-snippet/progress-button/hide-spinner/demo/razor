@@ -1,1 +1,0 @@
-@Html.EJS().ProgressButton("progress").Content("Progress").EnableProgress(true).CssClass("e-hide-spinner").Render()

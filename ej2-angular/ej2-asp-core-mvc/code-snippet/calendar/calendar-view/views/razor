@@ -1,1 +1,0 @@
-@Html.EJS().Calendar("element").Value(@ViewBag.value).Start(Syncfusion.EJ2.Calendars.CalendarView.Year).Render()
