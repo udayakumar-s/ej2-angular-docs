@@ -23,6 +23,9 @@ To render the Accordion contents using ng-content, we need to use ng-template in
 > Here `div.content0` mapped to ng-content is reusable content. It can be used in multiple scenarios within the application.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/accordion/accordion-ng-content-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/accordion/accordion-ng-content-cs1/app/app.component.ts %}
 {% endhighlight %}
