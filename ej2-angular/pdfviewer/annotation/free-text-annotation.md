@@ -130,7 +130,7 @@ The opacity of the annotation can be edited using the range slider provided in t
 
 ![FontOpacity](../../pdfviewer/images/fontopacity.png)
 
-## How to move the free text annotation programmatically
+## Move the free text annotation programmatically
 
 The PDF Viewer library allows you to move the free text annotation in the PDF Viewer control programmatically using the **editAnnotation()** method.
 
@@ -159,7 +159,7 @@ Here is an example of how you can use the **editAnnotation()** method to move th
 
 Find the sample [how to move the free text annotation programmatically](https://stackblitz.com/edit/angular-dxub1a-qjbisb?file=app.component.ts)
 
-## How to get the newly added free text annotation ID
+## Get the newly added free text annotation ID
 
 To get the ID of a newly added free text annotation in the Syncfusion PDF viewer, you can use the **annotationAdd()** event. This event is triggered whenever a new annotation is added to the PDF document, and it provides the annotationAddEventHandler object as a parameter. You can access the ID of the new annotation through the AnnotationID property of the annotationAddEventHandler object.
 
@@ -177,7 +177,7 @@ public annotationAddEventHandler(args) {
 
 Find the sample [how to get the newly added free text annotation id](https://stackblitz.com/edit/angular-dxub1a-utuefq?file=app.component.ts)
 
-## How to change the content of an existing Free text annotation programmatically
+## Change the content of an existing Free text annotation programmatically
 
 To change the content of an existing free text annotation in the Syncfusion PDF viewer programmatically, you can use the **editAnnotation()** method.
 

@@ -84,7 +84,7 @@ Refer to the following code sample to switch to the stamp annotation mode.
 
 >The JPG and JPEG image format is only supported in the custom stamp annotations.
 
-## How to add the custom stamp programmatically
+## Adding custom stamp programmatically
 
 To add a custom stamp programmatically in the Syncfusion PDF viewer, you can use the **addAnnotation()** method of the Annotation module in the viewer.
 
