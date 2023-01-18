@@ -1,8 +1,0 @@
-@using Syncfusion.EJ2.LinearGauge;
-
-@Html.EJS().LinearGauge("linear").Resized("resized").Render()
-
-<script>
-    function resized(args) {
-	}
-</script>
