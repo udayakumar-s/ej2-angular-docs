@@ -1,3 +1,6 @@
+
+
+
 import { Component, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -6,11 +9,11 @@ import { HttpClient } from '@angular/common/http';
 @Component({
     selector: 'app-root',
     // specifies the template string for the DropDownList component with dataSource
-    template: `<ejs-dropdownlist  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-dropdownlist >`
+    template: `<ejs-dropdownlist  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-dropdownlist >`,
 })
 export class AppComponent {
     constructor(private http: HttpClient){
-        this.data=this.http.get<{[key: string]:object;}[]>('https://services.odata.org/V4/Northwind/Northwind.svc/Customers').pipe(
+      this.data=this.http.get<{[key: string]:object;}[]>('https://services.odata.org/V4/Northwind/Northwind.svc/Customers').pipe(
       map((results : {[key: string]:any;}) => {
         return results['value'];
       })
@@ -25,3 +28,6 @@ export class AppComponent {
   // set the placeholder to DropDownList input element
   public remoteWaterMark: string = 'Select a customer';
 }
+
+
+

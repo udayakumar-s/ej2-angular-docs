@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
     selector: 'app-root',
     // specifies the template string for the ComboBox component with dataSource
-    template: ` <ejs-combobox  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-combobox >`
+    template: ` <ejs-combobox  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-combobox >`,
 })
 export class AppComponent {
     constructor(private http: HttpClient){

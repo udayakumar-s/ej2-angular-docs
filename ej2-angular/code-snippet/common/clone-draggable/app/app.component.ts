@@ -1,5 +1,3 @@
-
-
 import { Component, ViewChild } from '@angular/core';
 import { Draggable } from  '@syncfusion/ej2-base';
 
@@ -16,7 +14,7 @@ export class AppComponent {
 
     ngAfterViewInit() {
         let draggable: Draggable =
-        new Draggable(this.element.nativeElement,{ clone: false });
+        new Draggable(this.element.nativeElement,{ clone: true });
     }
 }
 

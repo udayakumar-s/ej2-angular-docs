@@ -14,7 +14,7 @@ import { ReactiveFormsModule }   from '@angular/forms';
     AutoCompleteModule,
     DialogModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
     ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
