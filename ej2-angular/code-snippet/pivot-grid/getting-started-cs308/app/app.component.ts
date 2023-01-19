@@ -7,7 +7,7 @@ import { Pivot_Data } from './datasource.ts';
   selector: 'app-container',
   providers: [PDFExportService,VirtualScrollService],
   template: `<div class="col-md-8">
-  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' 
+  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true'
   enableVirtualization='true' (beforeExport)='beforeExport($event)' width=width></ejs-pivotview></div>
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
