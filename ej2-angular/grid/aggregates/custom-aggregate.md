@@ -22,6 +22,9 @@ The custom aggregate function will be invoked with different arguments for Total
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/aggregates-custom-cs1/app/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.template.html" %}
+{% include code-snippet/grid/aggregates-custom-cs1/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/aggregates-custom-cs1/app/app.module.ts %}
 {% endhighlight %}
