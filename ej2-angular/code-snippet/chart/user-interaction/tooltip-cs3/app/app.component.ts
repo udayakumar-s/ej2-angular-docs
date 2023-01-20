@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { toolData } from '../datasource';
+import { toolData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:
