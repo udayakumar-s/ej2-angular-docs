@@ -69,23 +69,3 @@ In the following example, the check icon can be customized by changing check ico
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/check-box/custom-icon-cs1" %}
-
-## Customized Checkbox output
-
-CheckBox output can be customized as per the requirement of the user.
-
-In the following example, the checkbox output can be customized by providing the given value as the output instead of boolean value in  the default checkbox.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/check-box/custom-output-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/custom-output-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/check-box/custom-output-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/check-box/custom-output-cs1" %}
