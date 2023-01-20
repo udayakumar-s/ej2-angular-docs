@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { labelData } from '../datasource';
+import { labelData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:

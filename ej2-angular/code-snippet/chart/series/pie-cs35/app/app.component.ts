@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { pieData } from '../datasource';
+import { pieData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
-import { categoryData } from '../datasource';
+import { categoryData } from 'datasource.ts';
 
 @Component({
     selector: 'app-container',

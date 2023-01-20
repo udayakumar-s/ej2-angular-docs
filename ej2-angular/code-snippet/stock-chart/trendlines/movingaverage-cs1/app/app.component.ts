@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { chartData } from '../datasource';
+import { chartData } from 'datasource.ts';
 
 @Component({
-    selector: 'app-root',
+    selector: 'app-container',
     template:
     `<ejs-stockchart id="chart-container"  [title]='title'>
         <e-stockchart-series-collection>
