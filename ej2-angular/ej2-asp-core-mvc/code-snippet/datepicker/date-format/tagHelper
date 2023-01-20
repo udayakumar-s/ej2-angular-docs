@@ -1,1 +1,0 @@
-<ejs-datepicker id="datepicker" value="@ViewBag.value" format="yyyy-MM-dd" placeholder="Enter date"></ejs-datepicker>
