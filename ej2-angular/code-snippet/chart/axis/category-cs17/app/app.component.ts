@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { categoryData } from '../../category-cs46/datasource';
+import { categoryData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:

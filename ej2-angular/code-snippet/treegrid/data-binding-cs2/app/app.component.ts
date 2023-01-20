@@ -29,5 +29,3 @@ export class AppComponent implements OnInit {
 
 
 
-> * Remote data binding is not supported for Hierarchy Data.
-
