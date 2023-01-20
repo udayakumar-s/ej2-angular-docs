@@ -17,7 +17,7 @@ export class AppComponent {
   @ViewChild('element2',{static: false})element2: any;
 
   ngAfterViewInit() {
-    let animation: Animation = new Animation();
+    let animation: Animation = new Animation({ duration: 5000 });
     animation.animate(this.element1.nativeElement, { name: 'FadeOut' });
     animation.animate(this.element2.nativeElement, { name: 'ZoomOut' });
   }
