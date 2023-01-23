@@ -196,4 +196,4 @@ A good starting point would be to refer to the code snippets in the [online samp
 
 * [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc/)
 
-* [Getting started with Syncfusion Angular Treeshaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)
+* [Getting started with Syncfusion Angular Tree shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)
