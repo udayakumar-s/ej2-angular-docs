@@ -8,7 +8,7 @@ import {
 } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-container',
   // Specifies the template string for the PDF Viewer component.
   template: `<div class="content-wrapper">
   <ejs-pdfviewer id="pdfViewer" #pdfviewer [serviceUrl]='service' [documentPath]='document' (documentLoad)='documentLoaded($event)' style="height:640px;display:block"></ejs-pdfviewer>

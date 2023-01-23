@@ -14,18 +14,18 @@ Rich Text Editor allows to insert images in your content from online sources as 
 
 | Options | Description |
 |----------------|---------|
-| allowedTypes | Specifies the extensions of the image types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as .jpg and .png.|
-| display | Sets the default display for an image when it is inserted in to the Rich Text Editor. Possible options are: 'inline' and 'block'.|
-| width | Sets the default width of the image when it is inserted in the Rich Text Editor.|
-| height | Sets the default height of the image when it is inserted in the Rich Text Editor.|
-| saveUrl | Provides URL to map the action result method to save the image.|
-| path | Specifies the location to store the image.|
-| resize | To enable resizing for image element.|
-| minWidth | Defines the maximum Width of the image.|
-| maxWidth | Defines the maximum Width of the image.|
-| minHeight | Defines the minimum Height of the image.|
-| maxHeight | Defines the maximum Height of the image.|
-| resizeByPercent | Image resizing should be done by percentage calculation.|
+| [allowedTypes](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#allowedtypes) | Specifies the extensions of the image types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as .jpg and .png.|
+| [display](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#display) | Sets the default display for an image when it is inserted in to the Rich Text Editor. Possible options are: 'inline' and 'block'.|
+| [width](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#width) | Sets the default width of the image when it is inserted in the Rich Text Editor.|
+| [height](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#height) | Sets the default height of the image when it is inserted in the Rich Text Editor.|
+| [saveUrl](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#saveurl) | Provides URL to map the action result method to save the image.|
+| [path](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#path) | Specifies the location to store the image.|
+| [resize](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#resize) | To enable resizing for image element.|
+| [minWidth](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#minwidth) | Defines the maximum Width of the image.|
+| [maxWidth](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#maxwidth) | Defines the maximum Width of the image.|
+| [minHeight](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#minheight) | Defines the minimum Height of the image.|
+| [maxHeight](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#maxheight) | Defines the maximum Height of the image.|
+| [resizeByPercent](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#resizebypercent) | Image resizing should be done by percentage calculation.|
 
 ## Upload options
 
