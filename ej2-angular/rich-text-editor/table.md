@@ -14,11 +14,11 @@ RichTextEditor allows to insert table of content in edit panel and provides an o
 
 | Options | Description | Default Value |
 |----------------|---------|-----------------------------|
-| minWidth | Sets the default minWidth of the table. | 0 |
-| maxWidth | Sets the default maxWidth of the table. | null |
-| resize | Enable resize feature in table.| true |
-| styles | This is an array of key value pair, on each pair, key should be name of styling and value is class name. this list will be shown on quick toolbar options to change the styles of table on designing like dashed, double bordered. | [`TableStyleItems`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettingsModel/#styles) |
-| width | Sets the default width of the table. | 100% |
+| [minWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/#minwidth) | Sets the default minWidth of the table. | 0 |
+| [maxWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/#maxwidth) | Sets the default maxWidth of the table. | null |
+| [resize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/#resize) | Enable resize feature in table.| true |
+| [styles](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/#styles) | This is an array of key value pair, on each pair, key should be name of styling and value is class name. this list will be shown on quick toolbar options to change the styles of table on designing like dashed, double bordered. | [`TableStyleItems`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettingsModel/#styles) |
+| [width](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings/#width) | Sets the default width of the table. | 100% |
 
 > To use Table feature, inject `TableService` in the provider section of `AppModule`.
 

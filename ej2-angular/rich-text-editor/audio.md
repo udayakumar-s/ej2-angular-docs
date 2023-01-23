@@ -14,12 +14,12 @@ The Rich Text Editor allows you to insert audio from online sources and local co
 
 | Options | Description |
 |----------------|---------|
-| allowedTypes | Specifies the extensions of the audio types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as `.mp3`, `.wav`, `.m4a` and `.wma`. |
-| layoutOption | Sets the default display for audio when it is inserted into the Rich Text Editor. Possible options are `Inline` and `Break`.|
-| saveFormat | Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.|
-| saveUrl | Provides URL to map the action result method to save the audio.|
-| removeUrl | Provides URL to map the action result method to remove the audio.|
-| path | Specifies the location to store the audio.|
+| [allowedTypes](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#allowedtypes) | Specifies the extensions of the audio types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as `.mp3`, `.wav`, `.m4a` and `.wma`. |
+| [layoutOption](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#layoutoption) | Sets the default display for audio when it is inserted into the Rich Text Editor. Possible options are `Inline` and `Break`.|
+| [saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#saveformat) | Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.|
+| [saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#saveurl) | Provides URL to map the action result method to save the audio.|
+| [removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#removeurl) | Provides URL to map the action result method to remove the audio.|
+| [path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#path) | Specifies the location to store the audio.|
 
 ## Configure audio tool in the toolbar
 

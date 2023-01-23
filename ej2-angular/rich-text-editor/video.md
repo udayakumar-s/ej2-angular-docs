@@ -14,20 +14,20 @@ The Rich Text Editor allows you to insert videos from online sources and local c
 
 | Options | Description |
 |----------------|---------|
-| allowedTypes | Specifies the extensions of the video types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as `.mp4`, `.mov`, `.wmv` and `.avi`.|
-| layoutOption | Sets the default display for a video when it is inserted into the Rich Text Editor. Possible options are: `Inline` and `Break`.|
-| saveFormat | Sets the default save format of the video element when inserted. Possible options are: `Blob` and `Base64`.|
-| width | Sets the default width of the video when it is inserted in the Rich Text Editor.|
-| minWidth | Sets the minWidth of the video element when it is inserted in the Rich Text Editor.|
-| maxWidth | Sets the maxWidth of the video element when it is inserted in the Rich Text Editor.|
-| height | Sets the default height of the video when it is inserted in the Rich Text Editor.|
-| minHeight | Sets the minHeight of the video element when it is inserted in the Rich Text Editor.|
-| maxHeight | Sets the maxHeight of the video element when it is inserted in the Rich Text Editor.|
-| saveUrl | Provides URL to map the action result method to save the video.|
-| removeUrl | Provides URL to map the action result method to remove the video.|
-| path | Specifies the location to store the video.|
-| resize | Sets the resizing action for the video element.|
-| resizeByPercent | Sets the percentage values for the video element with the resizing action.|
+| [allowedTypes](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#allowedtypes) | Specifies the extensions of the video types allowed to insert on bowering and passing the extensions with comma separators. For example, pass allowedTypes as `.mp4`, `.mov`, `.wmv` and `.avi`.|
+| [layoutOption](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#layoutoption) | Sets the default display for a video when it is inserted into the Rich Text Editor. Possible options are: `Inline` and `Break`.|
+| [saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#saveformat) | Sets the default save format of the video element when inserted. Possible options are: `Blob` and `Base64`.|
+| [width](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#width) | Sets the default width of the video when it is inserted in the Rich Text Editor.|
+| [minWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#minwidth) | Sets the minWidth of the video element when it is inserted in the Rich Text Editor.|
+| [maxWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#maxwidth) | Sets the maxWidth of the video element when it is inserted in the Rich Text Editor.|
+| [height](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#height) | Sets the default height of the video when it is inserted in the Rich Text Editor.|
+| [minHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#minheight) | Sets the minHeight of the video element when it is inserted in the Rich Text Editor.|
+| [maxHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#maxheight) | Sets the maxHeight of the video element when it is inserted in the Rich Text Editor.|
+| [saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#saveurl) | Provides URL to map the action result method to save the video.|
+| [removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#removeurl) | Provides URL to map the action result method to remove the video.|
+| [path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#path) | Specifies the location to store the video.|
+| [resize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#resize) | Sets the resizing action for the video element.|
+| [resizeByPercent](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#resizebypercent) | Sets the percentage values for the video element with the resizing action.|
 
 ## Configure the video tool in the toolbar
 
