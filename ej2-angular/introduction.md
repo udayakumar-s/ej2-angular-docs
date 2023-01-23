@@ -17,7 +17,7 @@ Syncfusion Angular UI (Essential JS 2) is a collection of modern TypeScript base
 The Syncfusion Angular UI components are listed below.
 
 <style>
-# table
+#table
 {
 border:0 !important;
 line-height: 2!important;
