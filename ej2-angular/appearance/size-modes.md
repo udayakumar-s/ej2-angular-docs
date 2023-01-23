@@ -3,7 +3,7 @@ layout: post
 title: Size Modes in Angular Appearance component | Syncfusion
 description: Learn here all about Size Modes in Syncfusion Angular Appearance component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Size Modes
+control: Size Modes 
 documentation: ug
 domainurl: ##DomainURL##
 ---
