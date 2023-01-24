@@ -17,7 +17,7 @@ Syncfusion Angular UI (Essential JS 2) is a collection of modern TypeScript base
 The Syncfusion Angular UI components are listed below.
 
 <style>
-#table
+# table
 {
 border:0 !important;
 line-height: 2!important;
@@ -196,4 +196,4 @@ A good starting point would be to refer to the code snippets in the [online samp
 
 * [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc/)
 
-* [Getting started with Syncfusion Angular Tree shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)
+* [Getting started with Syncfusion Angular Treeshaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)
