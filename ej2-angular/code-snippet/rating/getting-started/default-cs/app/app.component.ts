@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `<!-- To Render Rating component. -->
                 <div class="wrap">
-                    <input ejs-rating id='rating'/>
+                    <input ejs-rating id="rating"/>
                 </div>`
 })
 

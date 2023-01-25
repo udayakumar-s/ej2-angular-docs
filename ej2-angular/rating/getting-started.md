@@ -153,7 +153,7 @@ The following example shows a default Rating component.
 ## Value
 
 You can set the rating value by using the `value` property.
- 
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/getting-started/value-cs/app/app.component.ts %}
@@ -167,21 +167,3 @@ You can set the rating value by using the `value` property.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/rating/getting-started/value-cs" %}
-
-## Items Count
-
-You can specify the number of rating items using the `itemsCount` property.
- 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/getting-started/items-count-cs/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/getting-started/items-count-cs/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/getting-started/items-count-cs/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/rating/getting-started/items-count-cs" %}
