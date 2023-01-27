@@ -25,13 +25,13 @@ Syncfusion Angular components meet the following guidelines and standards that a
 
 ## Screen reader
 
-A screen reader allows people who are blind or visually impaired to use a computer by reading aloud the text that is displayed on the screen. Syncfusion Angular components meet the standards defined by the most common screen readers, such as [JAW](https://www.freedomscientific.com/Downloads/JAWS), Narrator, Lighthouse, and Accessibility Insights.
+A screen reader allows people who are blind or visually impaired to use a computer by reading aloud the text that is displayed on the screen. Syncfusion Angular components meet the standards defined by the **Narrator** screen reader.
 
 ## Accessibility testing
 
 The goal of accessibility testing is to identify and address any barriers that might prevent individuals with disabilities from using the product or service effectively. There are several different types of accessibility testing that can be performed on Syncfusion Angular components, such as:
 
-* `Automated testing`: Syncfusion Angular component accessibility levels are ensured through an accessibility checker software tool that supports a subset of [IBM requirements](https://www.ibm.com/able/requirements/requirements/).
+* `Automated testing`: Syncfusion Angular component accessibility levels are ensured through an [accessibility checker software tool](https://www.npmjs.com/package/accessibility-checker).
 
 * `Manual testing`: This type of testing involves manually evaluating the Syncfusion Angular components. During manual accessibility testing, testers will ensure accessibility using screen readers.
 
