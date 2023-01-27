@@ -37,8 +37,8 @@ We have different type of selection mode for selecting the data. They are,
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/selection-cs1/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs1/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/selection-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,8 +57,8 @@ We have different type of selection mode for selecting the data. They are,
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/selection-cs2/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs2/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/selection-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,8 +75,8 @@ You can select the points that corresponds to the same index in all the series, 
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/selection-cs3/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs3/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/selection-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,8 +102,8 @@ The selected data’s are returned as an array collection in the [`dragComplete`
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/drag-cs1/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/drag-cs1/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/drag-cs1/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,8 +120,8 @@ To select a region by drawing freehand shapes to fetch a collection of data use 
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/drag-cs2/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/drag-cs2/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/drag-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -138,8 +138,8 @@ To select multiple region on the chart, set the `allowMultiSelection` property t
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/drag-cs3/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/drag-cs3/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/drag-cs3/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -156,8 +156,8 @@ You can select multiple points or series, by enabling the [`isMultiSelect`](http
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/selection-cs4/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs4/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/selection-cs4/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -174,8 +174,8 @@ You can able to select a point or series programmatically on a chart using [`sel
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/selection-cs5/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs5/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/selection-cs5/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -191,8 +191,8 @@ You can able to select a point or series through on legend using [`toggleVisibil
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/selection-cs6/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs6/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/selection-cs6/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -209,8 +209,8 @@ You can apply custom style to selected points or series with [`selectionStyle`](
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/chart/user-interaction/selection-cs7/app/app.module.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs7/app/main.ts %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/chart/user-interaction/selection-cs7/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
