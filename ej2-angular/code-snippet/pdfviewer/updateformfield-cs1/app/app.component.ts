@@ -4,7 +4,7 @@ import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import {
   PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, LoadEventArgs, TextFieldSettings
+  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService
 } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
@@ -16,20 +16,25 @@ import {
   providers: [LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
 NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService]
 })
+
 export class AppComponent implements OnInit {
   @ViewChild('pdfviewer')
   public pdfviewerControl: PdfViewerComponent;
   public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
   public document: string = 'FormDesigner.pdf';
 
-  public documentLoaded(e: LoadEventArgs): void {
+  documentLoaded(e): void {
     this.pdfviewerControl.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } } as TextFieldSettings);
     this.pdfviewerControl.formDesignerModule.addFormField("Textbox", { name: "Textfield", bounds: { X: 300, Y: 229, Width: 150, Height: 24 } } as TextFieldSettings);
-    this.pdfviewerControl.formDesignerModule.updateFormField(pdfviewer.formFieldCollections[0], { backgroundColor: 'red' } as TextFieldSettings);
-  }
+    this.pdfviewerControl.formDesignerModule.updateFormField( this.pdfviewerControl.formFieldCollections[0], { backgroundColor: 'red' } as TextFieldSettings);
 
+  }
+  
   ngOnInit(): void {
+
   }
 }
+
+
 
 
