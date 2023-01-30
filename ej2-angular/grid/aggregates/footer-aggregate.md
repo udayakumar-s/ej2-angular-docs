@@ -16,6 +16,9 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/aggregates-footer-cs1/app/app.component.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="app.template.html" %}
+{% include code-snippet/grid/aggregates-footer-cs1/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/aggregates-footer-cs1/app/app.module.ts %}
 {% endhighlight %}
@@ -36,6 +39,9 @@ You can format the aggregate value result by using the [`format`](https://ej2.sy
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/aggregates-footer-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.template.html" %}
+{% include code-snippet/grid/aggregates-footer-cs2/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/aggregates-footer-cs2/app/app.module.ts %}

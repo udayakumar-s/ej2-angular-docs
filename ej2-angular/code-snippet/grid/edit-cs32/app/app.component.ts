@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
         }
     }
     recordDoubleClick(e) {
-        var clickedColumnIndex = e.cell.getAttribute("aria-colindex");
+        var clickedColumnIndex = e.cell.getAttribute("data-colindex");
         this.fieldName = this.grid.columnModel[parseInt(clickedColumnIndex)].field;
     }
 }

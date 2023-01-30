@@ -47,23 +47,3 @@ You can open the default dropdown edit popup with single click edit by focusing 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/grid/open-dropdown-popup-cs1" %}
-
-## Batch Editing
-
-You can make a cell editable on a single click with **Batch** mode of editing in Grid, by using the [`editCell`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#editcell) method.
-
-Bind the **mouseup** event for Grid and in the event handler call the [`editCell`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#editcell) method, based on the clicked target element.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/single-click-inline-editing-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/single-click-inline-editing-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/single-click-inline-editing-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/grid/single-click-inline-editing-cs1" %}
