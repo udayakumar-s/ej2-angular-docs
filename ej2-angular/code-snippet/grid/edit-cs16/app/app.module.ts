@@ -9,6 +9,7 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
 import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns';
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
 
 /**
  * Module
@@ -23,7 +24,8 @@ import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns';
         FormsModule,
         TextBoxModule,
         MultiSelectModule,
-        AutoCompleteModule
+        AutoCompleteModule,
+        RichTextEditorAllModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
