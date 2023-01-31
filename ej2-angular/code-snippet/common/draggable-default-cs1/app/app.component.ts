@@ -15,8 +15,8 @@ export class AppComponent {
 @ViewChild('ele',{static: false})element:any;
 
     ngAfterViewInit() {
-        let draggable:Draggable =
-        new Draggable(this.element.nativeElement,{clone: false});
+        let draggable: Draggable =
+        new Draggable(this.element.nativeElement,{ clone: false });
     }
 }
 
