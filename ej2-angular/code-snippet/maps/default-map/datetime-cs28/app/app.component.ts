@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
             };
         this.dataLabelSettings = {
             visible: true,
-            labelPath: 'name',
+            labelPath: 'name'
         };
    }
 }

@@ -2,16 +2,16 @@
 
 
 import { Component, OnInit} from '@angular/core';
-import { Maps, DataLabel } from '@syncfusion/ej2-angular-maps';
+import { Maps, DataLabel, MapsTooltip } from '@syncfusion/ej2-angular-maps';
 import { usa_map } from 'usa.ts';
 
-Maps.Inject(DataLabel);
+Maps.Inject(DataLabel, MapsTooltip);
 @Component({
     selector: 'app-container',
     template:
     `<ejs-maps id='rn-container'>
     <e-layers>
-    <e-layer  [shapeData]= 'shapeData' [shapeSettings] = 'shapeSettings' [dataLabelSettings] = 'dataLabelSettings'></e-layer>
+    <e-layer  [shapeData]= 'shapeData' [shapeSettings] = 'shapeSettings' [dataLabelSettings] = 'dataLabelSettings' [tooltipSettings] = 'tooltipSettings'></e-layer>
     </e-layers>
     </ejs-maps>`
 })
@@ -28,17 +28,22 @@ export class AppComponent implements OnInit {
         this.dataLabelSettings = {
             visible: true,
             labelPath: 'name',
+            smartLabelMode: 'Hide',
+            intersectionAction: 'Trim',
             border: {
                 color: 'green',
                 width: 2
             },
-            fill: 'red',
+            fill: 'transparent',
             opacity: 0.9,
             textStyle: {
-                color: 'blue',
-                size: '10px',
+                size: '17px',
                 fontStyle: 'Sans-serif',
-                fontWeight: 'normal',
+                fontWeight: 'normal'
+            },
+            tooltipSettings: {
+                visible: true,
+                valuePath: 'name'
             }
         };
     }

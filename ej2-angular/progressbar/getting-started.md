@@ -154,14 +154,14 @@ The below example shows a basic Progressbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progress-bar/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/progressbar/getting-started-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-bar/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/progressbar/getting-started-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progress-bar/getting-started-cs1/app/main.ts %}
+{% include code-snippet/progressbar/getting-started-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-bar/getting-started-cs1" %}
+{% previewsample "page.domainurl/code-snippet/progressbar/getting-started-cs1" %}
