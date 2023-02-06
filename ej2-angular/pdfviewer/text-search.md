@@ -7,7 +7,7 @@ control: Text search
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Text Search
+# Text Search in Angular PDF Viewer component
 
 The Text Search option in PDF Viewer is used to find and highlight the text content from the document. You can enable/disable the text search using the following code snippet.
 

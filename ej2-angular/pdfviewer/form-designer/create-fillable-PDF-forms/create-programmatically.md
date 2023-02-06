@@ -400,7 +400,7 @@ The following code example explains how to update the properties of the signatur
 
 ```
 
-![Signature Field Settings](../../../../pdfviewer/images/SignatureField.png)
+![Signature Field Settings](../../../pdfviewer/images/SignatureField.png)
 
 The following code example explains how to update the properties of the initial field added to the document from the form designer toolbar.
 
@@ -439,4 +439,4 @@ The following code example explains how to update the properties of the initial 
 
 ```
 
-![Initial Field Settings](../../../../pdfviewer/images/InitialField.png)
+![Initial Field Settings](../../../pdfviewer/images/InitialField.png)

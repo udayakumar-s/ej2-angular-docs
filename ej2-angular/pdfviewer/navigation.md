@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Navigation
+# Navigation in Angular PDF Viewer component
 
 The ASP.NET Core PDF Viewer supports different internal and external navigations.
 

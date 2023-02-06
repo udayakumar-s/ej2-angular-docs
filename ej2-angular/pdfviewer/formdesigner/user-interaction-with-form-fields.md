@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User interaction with form fields in Angular Pdfviewer component | Syncfusion
+title: User interaction in Angular Pdfviewer component | Syncfusion
 description: Learn here all about User interaction with form fields in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: User interaction with form fields 

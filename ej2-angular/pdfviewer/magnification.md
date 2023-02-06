@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Magnification
+# Magnification in Angular PDF Viewer component
 
 The magnification tools of the PDF Viewer contains ZoomIn, ZoomOut, Zoom, FitPage, and FitWidth tools in the
 default toolbar. The PDF Viewer also has an option to show or hide the magnification tools in the
