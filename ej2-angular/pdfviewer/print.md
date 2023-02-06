@@ -7,7 +7,7 @@ control: Print
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Print
+# Print in Angular PDF Viewer component
 
 The PDF Viewer supports printing the loaded PDF file. You can enable/disable the print using the following code snippet.
 

@@ -7,7 +7,7 @@ control: Download
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Download
+# Download in Angular PDF Viewer component
 
 The PDF Viewer supports downloading the loaded PDF file. You can enable/disable the download using the following code snippet.
 
