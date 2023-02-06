@@ -7,10 +7,10 @@ import { Animation } from '@syncfusion/ej2-base';
 @Component({
   selector: 'app-root',
   template: `
-    <div className="icon-bar">
-      <span className="e-icons e-cut"></span>
-      <span className="e-icons e-copy"></span>
-      <span className="e-icons e-paste"></span>
+    <div class="icon-bar">
+      <span class="e-icons e-cut"></span>
+      <span class="e-icons e-copy"></span>
+      <span class="e-icons e-paste"></span>
     </div>
   `
 })
