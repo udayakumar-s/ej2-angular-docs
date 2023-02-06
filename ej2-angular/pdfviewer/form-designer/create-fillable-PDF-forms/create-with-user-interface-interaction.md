@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create with user interface interaction in Angular Pdfviewer component | Syncfusion
+title: Create UI interaction in Angular Pdfviewer component | Syncfusion
 description: Learn here all about Create with user interface interaction in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Create with user interface interaction 

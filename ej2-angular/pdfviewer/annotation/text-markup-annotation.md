@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Markup Annotation in the Angular PDF Viewer component | Syncfusion
+title: Text Markup Annotation in Angular PDF Viewer component | Syncfusion
 description: Learn here all about Text Markup Annotation in Syncfusion Angular PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Text Markup Annotation 
