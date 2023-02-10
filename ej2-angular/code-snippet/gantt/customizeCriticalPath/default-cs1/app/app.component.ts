@@ -27,15 +27,15 @@ export class AppComponent{
             duration: 'Duration',
             progress: 'Progress',
             child: 'subtasks'
-        };
-        this.editSettings: {
+        },
+        this.editSettings = {
             allowAdding: true,
             allowEditing: true,
             allowDeleting: true,
             allowTaskbarEditing: true,
             showDeleteConfirmDialog: true
         },
-        this.toolbar: ['CriticalPath'],
+        this.toolbar = ['CriticalPath']
     }
     public queryTaskbarInfo(args: any) {
         if ((args.data.isCritical || args.data.slack === '0 day') && !args.data.hasChildRecords) {

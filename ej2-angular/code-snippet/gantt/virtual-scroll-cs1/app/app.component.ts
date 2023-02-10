@@ -3,6 +3,7 @@
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
+import { GanttComponent, VirtualScrollService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
     selector: 'app-root',
@@ -20,7 +21,7 @@ export class AppComponent{
     public columns: object[];
     public labelSettings: object;
     public ngOnInit(): void {
-        this.tempData: any[] = [
+        let tempData: any[] = [
     {
         TaskID: 1, TaskName: 'Product concept',StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'),
         parentID: 0
@@ -183,7 +184,7 @@ export class AppComponent{
     }
 ];
 
-this.virtualData: any[] = [];
+let virtualData: any[] = [];
 let projId: number = 1;
 for (let i: number = 0; i < 50; i++) {
     let x: number = virtualData.length + 1;
@@ -204,30 +205,31 @@ for (let i: number = 0; i < 50; i++) {
         virtualData.push(subtasks);
     }
 }
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            endDate: 'EndDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            parentID: 'parentID'
-        };
-        this.columns = [
-                { field: 'TaskID' },
-                { field: 'TaskName' },
-                { field: 'StartDate' },
-                { field: 'Duration' },
-                { field: 'Progress' }
-            ];
-        this.splitterSettings = {
-            columnIndex: 2
-        };
-        this.labelSettings = {
-            leftLabel: 'TaskName',
-            taskLabel: 'Progress'
-        };
-    }
+this.data = virtualData,
+    this.taskSettings = {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        endDate: 'EndDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'parentID'
+    };
+this.columns = [
+    { field: 'TaskID' },
+    { field: 'TaskName' },
+    { field: 'StartDate' },
+    { field: 'Duration' },
+    { field: 'Progress' }
+];
+this.splitterSettings = {
+    columnIndex: 2
+};
+this.labelSettings = {
+    leftLabel: 'TaskName',
+    taskLabel: 'Progress'
+};
+}
 }
 
 

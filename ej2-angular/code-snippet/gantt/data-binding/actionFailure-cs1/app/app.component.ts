@@ -4,11 +4,12 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { DataManager } from '@syncfusion/ej2-data';
+import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" (actionFailure)="actionFailure($event)"></ejs-gantt>`,
+       `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" (actionFailure)="actionFailure($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
