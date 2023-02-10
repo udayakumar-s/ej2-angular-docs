@@ -153,12 +153,7 @@ export class AppModule { }
 
 ## Adding Syncfusion component
 
-Add the FileManager component snippet in `app.component.html` as follows.
-
-```html
-<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
-</ejs-filemanager>
-```
+Add the FileManager component by using `<ejs-filemanager>` selector in `template` section of the `app.component.ts` file.
 
 Refer the FileManager component snippet in `app.component.ts` as follows.
 
@@ -167,7 +162,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   styleUrls: ['app/app.component.css'],
-  templateUrl: 'app/app.component.html'
+  template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
+</ejs-filemanager>`
 })
 export class AppComponent {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
@@ -213,7 +209,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   styleUrls: ['app/app.component.css'],
-  templateUrl: 'app/app.component.html'
+  template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
+</ejs-filemanager>`
 })
 export class AppComponent {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
@@ -233,7 +230,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   styleUrls: ['app/app.component.css'],
-  templateUrl: 'app/app.component.html'
+  template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
+</ejs-filemanager>`
 })
 export class AppComponent {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
@@ -379,7 +377,8 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+  template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
+</ejs-filemanager>`
 })
 export class AppComponent {
     public ajaxSettings: object;

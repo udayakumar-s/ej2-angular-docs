@@ -135,28 +135,24 @@ export class AppModule { }
 
 ## Adding Syncfusion component
 
-Add the sidebar component snippet in `app.component.html` as follows.
+Add the sidebar component by using `<ejs-sidebar>` selector in `template` section of the `app.component.ts` file.
 
-```html
-<ejs-sidebar id="default-sidebar" >
-    <div class="title"> Sidebar content</div>
-</ejs-sidebar>
-<div>
-    <div class="title">Main content</div>
-    <div class="sub-title">
-        Content goes here.
-    </div>
-</div>
-```
-
-Refer the sidebar component snippet in app.component.ts as follows.
+Refer the sidebar component snippet in `app.component.ts` as follows.
 
 ```ts
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html',
+  template: ` <ejs-sidebar id="default-sidebar" >
+                <div class="title"> Sidebar content</div>
+              </ejs-sidebar>
+              <div>
+                <div class="title">Main content</div>
+                <div class="sub-title">
+                    Content goes here.
+                </div>
+              </div>`,
   styleUrls: ['app/app.component.css']
  })
 export class AppComponent {

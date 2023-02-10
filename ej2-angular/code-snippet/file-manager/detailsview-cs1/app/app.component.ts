@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [detailsViewSettings]='detailsViewSettings' [view]='view'>
+    </ejs-filemanager>`
 })
 export class AppComponent {
     public ajaxSettings: object;

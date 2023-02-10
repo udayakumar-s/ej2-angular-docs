@@ -8,7 +8,8 @@ import {FileManagerComponent} from '@syncfusion/ej2-angular-filemanager';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: `<ejs-filemanager id='files' #fileManager [ajaxSettings]='ajaxSettings' [toolbarSettings]='toolbarSettings'
+    (toolbarClick)='toolbarClick($event)' (toolbarCreate)='toolbarCreate($event)'></ejs-filemanager>`
 })
 export class AppComponent {
     @ViewChild('fileManager')

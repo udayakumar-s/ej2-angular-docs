@@ -7,7 +7,17 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/default-style.css'],
-    templateUrl: 'app/app.template.html',
+    template: `
+    <div class="control-section">
+        <div class="inline" id="control">
+            <ejs-dashboardlayout id='dashboard_default' #defaultLayout [columns]='6' [cellSpacing]='cellSpacing'
+                [panels]='panels' [allowFloating]='allowFloating' [cellAspectRatio]='cellAspectRatio'>
+            </ejs-dashboardlayout>
+        </div>
+        <div class="inline" id="properties">
+            <button ejs-button id='toggle' #toggleBtn cssClass="e-flat e-primary e-outline" [isToggle]="true" (click)='btnClick($event)' content="Enable Floating"></button>
+        </div>
+    </div>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

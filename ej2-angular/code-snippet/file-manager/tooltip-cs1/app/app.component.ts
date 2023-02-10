@@ -9,7 +9,10 @@ import { getValue, select } from '@syncfusion/ej2-base';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: ` <div class="filemanagerContainer">
+                    <ejs-filemanager id='file-manager' #fileObj [ajaxSettings]='ajaxSettings' (fileLoad)="fileLoad($event)">
+                    </ejs-filemanager>
+                </div>`
 })
 export class AppComponent {
     @ViewChild('fileObj',{ static: true })
