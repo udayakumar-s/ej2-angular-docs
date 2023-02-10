@@ -8,9 +8,6 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { Ganttdata } from './data';
 
-setCulture('de-DE');
-loadCldr(gregorian,numbers);
-
 L10n.load({
   'de-DE': {
       'gantt': {
@@ -34,7 +31,12 @@ export class AppComponent{
     public data: object[];
     public taskSettings: object;
     public ngOnInit(): void {
-        this.data = Ganttdata
+        setCulture('de-DE');
+        loadCldr(
+            './numbers.json',
+            './ca-gregorian.json',
+        );
+        this.data = Ganttdata;
         this.taskSettings = {
             id: 'TaskID',
             name: 'TaskName',

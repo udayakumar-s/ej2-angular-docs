@@ -39,7 +39,8 @@ System.config({
         "@syncfusion/ej2-svg-base": "syncfusion:ej2-svg-base/dist/ej2-svg-base.umd.min.js",        
         "@syncfusion/ej2-angular-base": "syncfusion:ej2-angular-base/dist/ej2-angular-base.umd.min.js",        
         "@syncfusion/ej2-angular-gantt": "syncfusion:ej2-angular-gantt/dist/ej2-angular-gantt.umd.min.js",       
-
+        "@syncfusion/ej2-angular-dropdowns": "syncfusion:ej2-angular-dropdowns/dist/ej2-angular-dropdowns.umd.min.js",
+        
         '@angular/core': 'angular:core@5.2.0/bundles/core.umd.js',
         '@angular/common': 'angular:common@5.2.0/bundles/common.umd.js',
         '@angular/compiler': 'angular:compiler@5.2.0/bundles/compiler.umd.js',
