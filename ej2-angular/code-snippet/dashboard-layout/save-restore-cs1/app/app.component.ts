@@ -7,7 +7,18 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/default-style.css'],
-    templateUrl: 'app/app.template.html',
+    template: `
+    <div class="control-section">
+        <div class="inline" id="control">
+            <ejs-dashboardlayout id='dashboard_default' #defaultLayout [columns]='5' [cellSpacing]='cellSpacing'
+                [panels]='panels'>
+            </ejs-dashboardlayout>
+        </div>
+        <div class="inline" id="properties">
+            <button ejs-button id='saveBtn' #saveBtn cssClass="e-primary" (click)='onSaveClick($event)'>Save</button>
+            <button ejs-button id='restoreBtn' #restoreBtn cssClass="e-flat e-outline" (click)='onrestoreClick($event)'>Restore</button>
+        </div>
+    </div>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

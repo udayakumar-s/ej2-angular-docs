@@ -5,7 +5,12 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/template.html',
+    template: `
+    <div id='container'>
+        <div class='wrap'>
+            <ejs-slider id='slider'  [min]=0 [max]=100 [value]=30 [tooltip]="tooltipData" [ticks]="ticksData" ></ejs-slider>
+        </div>
+    </div>`,
     styleUrls:['index.css']
 })
 

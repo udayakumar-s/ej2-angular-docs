@@ -6,7 +6,12 @@ import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/default-style.css'],
-    templateUrl: 'app/app.template.html',
+    template: `
+    <div class="control-section">
+        <ejs-dashboardlayout id='defaultLayout' #defaultLayout [columns]='columns' [allowResizing]='true' [cellSpacing]='cellSpacing' [panels]='panels' 
+        (created)="onCreated($this)">
+        </ejs-dashboardlayout>
+    </div>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

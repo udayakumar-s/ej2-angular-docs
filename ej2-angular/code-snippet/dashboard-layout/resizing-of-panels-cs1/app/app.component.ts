@@ -5,7 +5,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/default-style.css'],
-    templateUrl: 'app/app.template.html',
+    template: `
+    <div class="control-section">
+        <ejs-dashboardlayout id='defaultLayout' #defaultLayout [columns]='5' [cellSpacing]='cellSpacing' [panels]='panels' [allowResizing]='allowResizing' [resizableHandles]='resizableHandles'
+        (resizeStart)="onResizeStart($this)" (resize)="onResize($this)" (resizeStop)="onResizeStop($this)">
+        </ejs-dashboardlayout>
+    </div>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

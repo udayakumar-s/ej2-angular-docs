@@ -10,7 +10,14 @@ import { SliderModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/template.html',
+    template: `
+    <button ejs-button id="element">Button</button>
+    <div id='container'>
+        <div id="wrap">
+            <ejs-slider id='slider' [min]="min" [max]="max" [value]="value" [tooltip]="tooltipData" [ticks]="ticksData" [showButtons]=true [step]="step"
+                (tooltipChange)='tooltipChangeHandler($event)' (renderingTicks)='renderingTicksHandler($event)'></ejs-slider>
+        </div>
+    </div>`,
     styleUrls:['index.css']
 })
 
