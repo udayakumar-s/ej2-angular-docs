@@ -7,7 +7,33 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: `  <ejs-sidebar id="top-sidebar" #topSidebar [type]="type" (open)="top_sidebar_open()" (close)="top_sidebar_close()">
+                        <div class="title">
+                            <div style="display:inline-block"> Top Sidebar </div>
+                        </div>
+                        <div class="content">
+                            Place your top sidebar primary content here.
+                        </div>
+                    </ejs-sidebar>
+                    <ejs-sidebar id="bottom-sidebar" #bottomSidebar [type]="type" (open)="bottom_sidebar_open()" (close)="bottom_sidebar_close()">
+                        <div class="title">
+                            <div style="display:inline-block"> Bottom Sidebar </div>
+                        </div>
+                        <div class="content">
+                            Place your bottom sidebar primary content here.
+                        </div>
+                    </ejs-sidebar>
+                    <div class="e-main-content">
+                    <div class="sub-content">
+                        <p>Place your main content here.....</p>
+                        <div id="button-align">
+                            <button ejs-button id="top-btn" class="toggle e-btn e-info" (click)="topBtnClick()">Toggle Top Sidebar</button>
+                        </div>
+                        <div id="button-align">
+                            <button ejs-button id="bottom-btn" class="toggle e-btn e-info" (click)="bottomBtnClick()">Toggle Bottom Sidebar</button>
+                        </div>
+                    </div>
+                    </div>`
 })
 export class AppComponent {
     @ViewChild('topSidebar', { static: true }) topSidebar: SidebarComponent;

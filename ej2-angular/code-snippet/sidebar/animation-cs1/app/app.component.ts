@@ -7,7 +7,29 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: ` <ejs-sidebar id="sidebar-element" class="sidebar" #sidebar  [showBackdrop]="showBackdrop" [closeOnDocumentClick]="closeOnDocumentClick" (created)="onCreated($event)" style="visibility: hidden">
+                    <div class="title"> Sidebar content</div>
+                    <div class="sub-title">
+                        * Sidebar is rendered with animation effect
+                    </div>
+                    <div class="center-align">
+                        <button ejs-button id="close_btn" (click)="closeClick_btn()" class="e-btn close-btn">Close Sidebar</button>
+                    </div>
+                </ejs-sidebar>
+                <div>
+                    <div class="title">Sidebar Transitions</div>
+                    <div class="sub-title"> * Click the below button to render the Sidebar with animation effect.</div>
+                    <div style="padding:20px" class="center-align">
+                        <button ejs-button id="toggle" class="e-btn e-info" (click)="zoom()">Zoom Sidebar</button>
+                        <button ejs-button id="toggle" class="e-btn e-info" (click)="open_door()">Open Door</button>
+                        <button ejs-button id="toggle" class="e-btn e-info" (click)="bottom_top()">Bottom to Top</button>
+                    </div>
+                    <div style="padding:20px" class="center-align">
+                        <button ejs-button id="toggle" class="e-btn e-info" (click)="rotate()">Rotate Sidebar</button>
+                        <button ejs-button id="toggle" class="e-btn e-info" (click)="rotate_3d()">Rotate 3D</button>
+                        <button ejs-button id="toggle" class="e-btn e-info" (click)="reverse()">Reverse Slide Out</button>
+                    </div>
+                </div>`
 })
 export class AppComponent {
   @ViewChild('sidebar') sidebar: SidebarComponent;
