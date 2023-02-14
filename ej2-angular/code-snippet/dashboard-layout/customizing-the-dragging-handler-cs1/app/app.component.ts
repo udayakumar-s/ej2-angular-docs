@@ -5,7 +5,80 @@ import { Component,ViewEncapsulation } from '@angular/core';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/default-style.css'],
-    templateUrl: 'app/app.template.html',
+    template: `
+        <div class="control-section">
+            <ejs-dashboardlayout [columns]="6" #editLayout [cellSpacing]='cellSpacing' [draggableHandle]='draggableHandle'>
+                <e-panels>
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="0" [col]="0">
+                        <ng-template #header>
+                            <div class="header">Product usage ratio</div>
+                            <span class="handler e-icons burg-icon"></span>
+                        </ng-template>
+                        <ng-template #content>
+                            <div id="column">
+                                <ejs-chart id="columnChart" height="162px" [primaryXAxis]='primaryXAxis'>
+                                    <e-series-collection>
+                                        <e-series [dataSource]="chartData" xName='month' yName='sales' type="Column">
+                                        </e-series>
+                                    </e-series-collection>
+                                </ejs-chart>
+                            </div>
+                        </ng-template>
+                    </e-panel>
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="0" [col]="3">
+                        <ng-template #header>
+                            <div class="header">Last year Sales Comparison</div>
+                            <span class="handler e-icons burg-icon"></span>
+                        </ng-template>
+                        <ng-template #content>
+                            <div id="line">
+                                <ejs-chart id="lineChart" height="162px" [primaryXAxis]='primaryXAxis'>
+                                    <e-series-collection>
+                                        <e-series [dataSource]="lineData" xName='x' yName='y' type="Line">
+                                        </e-series>
+                                    </e-series-collection>
+                                </ejs-chart>
+                            </div>
+                        </ng-template>
+                    </e-panel>
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="0" [col]="3">
+                        <ng-template #header>
+                            <div class="header">Sales increase percentage 1</div>
+                            <span class="handler e-icons burg-icon"></span>
+                        </ng-template>
+                        <ng-template #content>
+                            <div id="pie">
+                                <ejs-accumulationchart id="pieChart" height="162px" [legendSettings]="legendSettings" [tooltip]='tooltip'>
+                                    <e-accumulation-series-collection>
+                                        <e-accumulation-series [dataSource]="piechart" xName="x" yName="y" innerRadius="20%"
+                                            name="Browser">
+                                        </e-accumulation-series>
+                                    </e-accumulation-series-collection>
+                                </ejs-accumulationchart>
+                            </div>
+                        </ng-template>
+                    </e-panel>
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="1" [col]="0">
+                        <ng-template #header>
+                            <div class="header">Sales increase percentage 2</div>
+                            <span class="handler e-icons burg-icon"></span>
+                        </ng-template>
+                        <ng-template #content>
+                            <div id="pie1">
+                                <ejs-accumulationchart id="pieChart1" [enableAnimation]="false" height="162px"
+                                    [tooltip]='tooltip' [legendSettings]='legendSettings'>
+                                    <e-accumulation-series-collection>
+                                        <e-accumulation-series [dataSource]="piechart1" xName="x" yName="y" radius="70%"
+                                            name="Browser">
+                                        </e-accumulation-series>
+                                    </e-accumulation-series-collection>
+                                </ejs-accumulationchart>
+                            </div>
+                        </ng-template>
+                    </e-panel>
+                </e-panels>
+            </ejs-dashboardlayout>
+        </div>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

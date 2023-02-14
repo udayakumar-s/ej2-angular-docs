@@ -9,7 +9,62 @@ import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/default-style.css'],
-    templateUrl: 'app/app.template.html',
+    template: `
+        <div class="control-section">
+        <div class="inline" id="control">
+            <ejs-dashboardlayout id='defaultLayout' #defaultLayout [columns]='columns' [cellSpacing]='cellSpacing'
+                [panels]='panels'>
+            </ejs-dashboardlayout>
+        </div>
+        <div class="inline" id="properties">
+            <table>
+                <tr>
+                    <td>SizeX</td>
+                    <td>
+                        <ejs-numerictextbox id="sizex" #sizex placeholder="Ex: 1" floatLabelType="Never" value= 1 min=1 max=5></ejs-numerictextbox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SizeY</td>
+                    <td>
+                        <ejs-numerictextbox id="sizey" #sizey placeholder="Ex: 1" floatLabelType="Never" value= 1 min=1 max=5></ejs-numerictextbox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Row</td>
+                    <td>
+                        <ejs-numerictextbox id="row" #row placeholder="Ex: 1" floatLabelType="Never" value=0 min=0 max=5></ejs-numerictextbox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Column</td>
+                    <td>
+                        <ejs-numerictextbox id="column" #column placeholder="Ex: 1" floatLabelType="Never" value=0 min=0 max=4></ejs-numerictextbox>
+                    </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td>
+                        <button ejs-button id="add" #add cssClass="e-btn e-flat" (click)="addClick()">Add</button>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td> <ejs-dropdownlist id='dropdown' #dropdown [dataSource]='data' placeholder='Select a id value'
+                        ></ejs-dropdownlist></td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td>
+                        <button ejs-button id="remove" cssClass="e-btn e-flat e-danger" (click)="removeClick()">Remove</button>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

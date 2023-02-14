@@ -5,7 +5,76 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/default-style.css'],
-    templateUrl: 'app/app.template.html',
+    template: `
+        <div class="control-section">
+            <ejs-dashboardlayout [columns]="6" #editLayout [cellSpacing]='cellSpacing'>
+                <e-panels>
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="0" [col]="0">
+                        <ng-template #header>
+                            <div>Product usage ratio</div>
+                        </ng-template>
+                        <ng-template #content>
+                            <div id="column">
+                                <ejs-chart id="columnChart" height="162px" [primaryXAxis]='primaryXAxis'>
+                                    <e-series-collection>
+                                        <e-series [dataSource]="chartData" type='Column' xName='month' yName='sales'>
+                                        </e-series>
+                                    </e-series-collection>
+                                </ejs-chart>
+                            </div>
+                        </ng-template>
+                    </e-panel>
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="0" [col]="3">
+                        <ng-template #header>
+                            <div>Last year Sales Comparison</div>
+                        </ng-template>
+                        <ng-template #content>
+                            <div id="line">
+                                <ejs-chart id="lineChart" height="162px" [primaryXAxis]='primaryXAxis'>
+                                    <e-series-collection>
+                                        <e-series [dataSource]="lineData" xName='x' yName='y' type="Line">
+                                        </e-series>
+                                    </e-series-collection>
+                                </ejs-chart>
+                            </div>
+                        </ng-template>
+                    </e-panel>
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="0" [col]="3">
+                        <ng-template #header>
+                            <div>Sales increase percentage 1</div>
+                        </ng-template>
+                        <ng-template #content>
+                            <div id="pie">
+                                <ejs-accumulationchart id="pieChart" height="162px" [legendSettings]="legendSettings" [tooltip]='tooltip'>
+                                    <e-accumulation-series-collection>
+                                        <e-accumulation-series [dataSource]="piechart" xName="x" yName="y" innerRadius="20%"
+                                            name="Browser" [dataLabel]='datalabel'>
+                                        </e-accumulation-series>
+                                    </e-accumulation-series-collection>
+                                </ejs-accumulationchart>
+                            </div>
+                        </ng-template>
+                    </e-panel>
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="1" [col]="0">
+                        <ng-template #header>
+                            <div>Sales increase percentage 2</div>
+                        </ng-template>
+                        <ng-template #content>
+                            <div id="pie1">
+                                <ejs-accumulationchart id="pieChart1" [enableAnimation]="false" height="162px"
+                                    [tooltip]='tooltip' [legendSettings]='legendSettings'>
+                                    <e-accumulation-series-collection>
+                                        <e-accumulation-series [dataSource]="piechart1" xName="x" yName="y" radius="70%"
+                                            name="Browser" [dataLabel]='datalabel'>
+                                        </e-accumulation-series>
+                                    </e-accumulation-series-collection>
+                                </ejs-accumulationchart>
+                            </div>
+                        </ng-template>
+                    </e-panel>
+                </e-panels>
+            </ejs-dashboardlayout>
+        </div>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

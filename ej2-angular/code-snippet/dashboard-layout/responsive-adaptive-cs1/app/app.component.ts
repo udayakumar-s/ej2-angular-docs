@@ -5,7 +5,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/default-style.css'],
-    templateUrl: 'app/app.template.html',
+    template: `
+    <div class="control-section">
+        <ejs-dashboardlayout id='dashboard_default' [columns]='5' [cellSpacing]='cellSpacing' [panels]='panels' [mediaQuery]='mediaQuery'>
+        </ejs-dashboardlayout>
+    </div>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

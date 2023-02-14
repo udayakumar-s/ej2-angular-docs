@@ -7,7 +7,23 @@ import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/template.html',
+    template: `
+    <div id='container'>
+      <div class="content-wrapper" style="margin-bottom: 25px">
+        <div class="form-title">
+          <span>Slider Form Validation</span>
+        </div>
+        <form #formId class="form-horizontal">
+          <div class="form-group">
+            <div class="e-float-input">
+              <ejs-slider id='default' #default name='slider' [value]=20 (changed)='onChanged()'
+                [ticks]='ticks'></ejs-slider>
+            </div>
+          </div>
+            </form>
+            <button ejs-button isPrimary="true" type="submit" id="submit_btn" (click)="btnClick($event)">Submit</button>
+      </div>
+    </div>`,
     styleUrls:['index.css'],
     encapsulation: ViewEncapsulation.None
 

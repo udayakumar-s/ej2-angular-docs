@@ -5,7 +5,18 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/template.html',
+    template: `
+    <div id='container'>
+        <div class='wrap'>
+            <div class='label'>Slider without formatted values</div>
+            <ejs-slider id='slider' [type]="mintype" [min]=0 [max]=100 [value]=30 [step]=10 [tooltip]="tooltipData01" [ticks]="ticksData01"></ejs-slider>
+        </div>
+        <div class='wrap'>
+            <div class='label'>Slider with formatted values</div>
+            <ejs-slider id='slider1' [min]=0 [max]=6 [value]=2 [step]=1 [tooltip]="tooltipData02" [ticks]="ticksData02" 
+            (tooltipChange)='tooltipChangeHandler($event)' (renderingTicks)='renderingTicksHandler($event)'></ejs-slider>
+        </div>
+    </div>`,
     styleUrls:['index.css']
 })
 
