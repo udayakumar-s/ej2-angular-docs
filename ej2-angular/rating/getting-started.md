@@ -152,7 +152,7 @@ The following example shows a default Rating component.
 
 ## Value
 
-You can set the rating value by using the `value` property.
+You can set the rating value by using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/rating#value) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
