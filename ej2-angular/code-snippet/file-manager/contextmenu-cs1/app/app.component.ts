@@ -7,7 +7,8 @@ import { MenuOpenEventArgs, MenuClickEventArgs } from '@syncfusion/ej2-filemanag
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: `<ejs-filemanager id='filemanager' [ajaxSettings]='ajaxSettings' [contextMenuSettings]='contextMenuSettings' (menuOpen)='menuOpen($event)' (menuClick)='menuClick($event)'>
+    </ejs-filemanager>`
 })
 export class AppComponent {
     public ajaxSettings: object;

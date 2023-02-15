@@ -7,7 +7,12 @@ import { FileManager } from '@syncfusion/ej2-filemanager';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: ` <button ejs-button id="enable" cssClass="e-success">Enable New Folder toolbar item</button>
+                <button ejs-button id="disable" cssClass="e-danger">Disable New Folder toolbar item</button>
+                <br />
+                <br />
+                <ejs-filemanager id='file-manager' #fileManager [ajaxSettings]='ajaxSettings' [height]='height' (created)='onCreated($event)'  >
+                </ejs-filemanager>`
 })
 export class AppComponent {
     @ViewChild('fileManager')

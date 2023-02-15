@@ -127,8 +127,7 @@ please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Gen
 
 Refer the following code to include the file manager in application .
 
-* Create an `Angular` component with file manager. Add the following file manager template in component template of
-`app.component.html`
+* Create an `Angular` component with file manager. Add the FileManager component by using <ejs-filemanager> selector in template section of the `app.component.ts` file.
 
 ```HTML
 <ejs-filemanager id='overview' [ajaxSettings]='ajaxSettings'>
