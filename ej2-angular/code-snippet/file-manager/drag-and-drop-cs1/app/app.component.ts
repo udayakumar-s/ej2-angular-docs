@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [allowDragAndDrop]='allowDragAndDrop' (fileDragStart)='onFileDragStart($event)' (fileDragStop)='onFileDragStop($event)' (fileDragging)='onFileDragging($event)' (fileDropped)='onFileDropped($event)' >
+    </ejs-filemanager>`
 })
 export class AppComponent {
     public ajaxSettings: object;

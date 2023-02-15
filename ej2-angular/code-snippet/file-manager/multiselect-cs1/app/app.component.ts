@@ -7,7 +7,8 @@ import { FileSelectEventArgs } from '@syncfusion/ej2-filemanager';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: `<ejs-filemanager id='multi' [ajaxSettings]='ajaxSettings' [allowMultiSelection]='allowMultiSelection' (fileSelect)='onFileSelect($event)'>
+    </ejs-filemanager>`
 })
 export class AppComponent {
     public ajaxSettings: object;

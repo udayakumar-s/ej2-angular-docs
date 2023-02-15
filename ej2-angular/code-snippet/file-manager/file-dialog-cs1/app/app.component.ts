@@ -10,7 +10,19 @@ import { EmitType } from '@syncfusion/ej2-base';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: `<div class="sample-container">
+                    <div id='uploadFileManager' class="fileupload">
+                        <ejs-uploader #uploadObj id='defaultfileupload'></ejs-uploader>
+                        <button ejs-button id='openBtn' (click)="btnClick()">File Browser</button>
+                    </div>
+                    <div id='target' class="control-section">
+                        <ejs-dialog #dialogObj id='dialog' [visible]='visible' [header]='dialogHeader' [animationSettings]='animationSettings' [showCloseIcon]='showCloseIcon' (open)="dialogOpen()" (close)="dialogClose()" 
+                            [target]='target' [width]='dialogWidth'>
+                            <ejs-filemanager #filemanagerObj id='filemanager' [ajaxSettings]='ajaxSettings' [toolbarSettings]='toolbarSettings' [contextMenuSettings]='contextMenuSettings' [allowMultiSelection]='false' (fileOpen)="onFileOpen($event)">
+                            </ejs-filemanager>
+                        </ejs-dialog>
+                    </div>
+                </div>`
 })
 export class AppComponent {
     @ViewChild('uploadObj')

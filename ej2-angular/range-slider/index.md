@@ -19,20 +19,20 @@ There are three types of Slider:
 
 ## Key Features
 
-* **[Types](../range-slider/getting-started#types)**: Provided three types of Slider.
+* **[Types](../slider/getting-started#types)**: Provided three types of Slider.
 
-* **[Orientation](../range-slider/getting-started#customization)**: Displays the Slider in horizontal or vertical direction.
+* **[Orientation](../slider/getting-started#customization)**: Displays the Slider in horizontal or vertical direction.
 
-* **[Buttons](../range-slider/getting-started#buttons)**: Provided built-in support to render the buttons in both edges of the Slider.
+* **[Buttons](../slider/getting-started#buttons)**: Provided built-in support to render the buttons in both edges of the Slider.
 
-* **[Tooltip](../range-slider/getting-started#tooltip)**: Displays a tooltip to show the currently selected value.
+* **[Tooltip](../slider/getting-started#tooltip)**: Displays a tooltip to show the currently selected value.
 
-* **[Ticks](../range-slider/ticks)**: Displays a scale with small and big ticks.
+* **[Ticks](../slider/ticks)**: Displays a scale with small and big ticks.
 
-* **[Format](../range-slider/format)**: Customize the slider values into various format.
+* **[Format](../slider/format)**: Customize the slider values into various format.
 
-* **[Limits and Drag Interval](../range-slider/limits)**: Slider thumb movement restriction and interval dragging.
+* **[Limits and Drag Interval](../slider/limits)**: Slider thumb movement restriction and interval dragging.
 
-* **[Accessibility](../range-slider/accessibility)**: Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
+* **[Accessibility](../slider/accessibility)**: Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
 
-* **[Keyboard Interaction](../range-slider/accessibility#keyboard-interaction)**: The Slider can be intractable through the keyboard.
+* **[Keyboard Interaction](../slider/accessibility#keyboard-interaction)**: The Slider can be intractable through the keyboard.

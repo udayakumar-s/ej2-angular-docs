@@ -7,7 +7,8 @@ import { L10n } from '@syncfusion/ej2-base';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html'
+    template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [locale]='locale'>
+    </ejs-filemanager>`
 })
 export class AppComponent {
     public ajaxSettings: object;
