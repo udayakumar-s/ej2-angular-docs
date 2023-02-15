@@ -6,7 +6,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
     selector: 'my-app',
-    templateUrl: `
+    template: `
     <div class="container">
         <form [formGroup]="sliderForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
