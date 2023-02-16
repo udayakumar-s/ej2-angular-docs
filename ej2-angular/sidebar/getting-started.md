@@ -144,16 +144,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: `
-  <ejs-sidebar id="default-sidebar" >
-    <div class="title"> Sidebar content</div>
-  </ejs-sidebar>
-  <div>
-    <div class="title">Main content</div>
-    <div class="sub-title">
-        Content goes here.
-    </div>
-  </div>`,
+  template: ` <ejs-sidebar id="default-sidebar" >
+                <div class="title"> Sidebar content</div>
+              </ejs-sidebar>
+              <div>
+                <div class="title">Main content</div>
+                <div class="sub-title">
+                    Content goes here.
+                </div>
+              </div>`,
   styleUrls: ['app/app.component.css']
  })
 export class AppComponent {
