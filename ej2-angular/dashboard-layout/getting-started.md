@@ -123,8 +123,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   styleUrls: ['default-style.css'],
-  templateUrl: `
-    <div class="control-section">
+  template: `
+  <div class="control-section">
         <ejs-dashboardlayout id='defaultLayout' [columns]="5" #defaultLayout [cellSpacing]='cellSpacing'>
             <div id="one" class="e-panel" data-row="0" data-col="0" data-sizeX="1" data-sizeY="1">
                 <span id="close" class="e-template-icon e-clear-icon"></span>

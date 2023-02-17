@@ -9,9 +9,9 @@ import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
 
 @Component({
     selector: 'app-root',
+    styleUrls: ['app/app.component.css'],
     template: `<ejs-filemanager id='file' #fileObj [ajaxSettings]='ajaxSettings' (created)="onCreated($event)">
-    </ejs-filemanager>`,
-    styleUrls: ['app/app.component.css']
+    </ejs-filemanager>`
 })
 
 export class AppComponent{

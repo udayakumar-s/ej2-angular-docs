@@ -7,7 +7,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 @Component({
     selector: 'app-root',
     styleUrls: ['app/app.component.css'],
-    template: ` <div id='container'>
+    template: `  <div id='container'>
                         <!-- declaration of sidebar element -->
                         <div id="wrapper">
                             <!--Sidebar element declaration -->
@@ -209,7 +209,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
                                 </div>
                                 <!--end of main content declaration -->
                         </div>
-                </div>`
+                    </div>`
 })
 export class AppComponent {
     @ViewChild('sidebar')
