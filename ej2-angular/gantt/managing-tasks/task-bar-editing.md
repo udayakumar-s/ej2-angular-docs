@@ -109,17 +109,17 @@ The tasks value can be dynamically updated by using the [`updateRecordById`](htt
 The [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#edittype) is used to define the edit type for any particular column.
 You can set the [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#edittype) based on data type of the column.
 
-* `numericedit` - [`NumericTextBox`](../numerictextbox) component for integers, double, and decimal data types.
+* `numericedit` - [`NumericTextBox`](https://helpej2.syncfusion.com/angular/documentation/numerictextbox/) component for integers, double, and decimal data types.
 
-* `defaultedit` - [`TextBox`](../textbox) component for string data type.
+* `defaultedit` - [`TextBox`](https://helpej2.syncfusion.com/angular/documentation/textbox/) component for string data type.
 
-* `dropdownedit` - [`DropDownList`](../drop-down-list) component to show all unique values related to that field.
+* `dropdownedit` - [`DropDownList`](https://helpej2.syncfusion.com/angular/documentation/drop-down-list/) component to show all unique values related to that field.
 
-* `booleanedit` - [`CheckBox`](../check-box) component for boolean data type.
+* `booleanedit` - [`CheckBox`](https://helpej2.syncfusion.com/angular/documentation/check-box/) component for boolean data type.
 
-* `datepickeredit` - [`DatePicker`](../datepicker) component for date data type.
+* `datepickeredit` - [`DatePicker`](https://helpej2.syncfusion.com/angular/documentation/datepicker/) component for date data type.
 
-* `datetimepickeredit` - [`DateTimePicker`](../datetimepicker) component for date time data type.
+* `datetimepickeredit` - [`DateTimePicker`](https://helpej2.syncfusion.com/angular/documentation/datetimepicker/) component for date time data type.
 
 Also, you can customize the behavior of the editor component through the [`columns.edit.params`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#edit).
 
@@ -127,11 +127,11 @@ The following table describes cell edit type component and their corresponding e
 
 Edit Type |Component |Example
 -----|-----|-----
-`numericedit` | [`NumericTextBox`](../numerictextbox) | params: { decimals: 2, value: 5 }
-`dropdownedit` | [`DropDownList`](../drop-down-list) | params: { value: 'Germany' }
-`booleanedit` | [`Checkbox`](../check-box) | params: { checked: true}
-`datepickeredit` | [`DatePicker`](../datepicker) | params: { format:'dd.MM.yyyy' }
-`datetimepickeredit` | [`DateTimePicker`](../datetimepicker) | params: { value: new Date() }
+`numericedit` | [`NumericTextBox`](https://helpej2.syncfusion.com/angular/documentation/numerictextbox/) | params: { decimals: 2, value: 5 }
+`dropdownedit` | [`DropDownList`](https://helpej2.syncfusion.com/angular/documentation/drop-down-list/) | params: { value: 'Germany' }
+`booleanedit` | [`Checkbox`](https://helpej2.syncfusion.com/angular/documentation/check-box/) | params: { checked: true}
+`datepickeredit` | [`DatePicker`](https://helpej2.syncfusion.com/angular/documentation/datepicker/) | params: { format:'dd.MM.yyyy' }
+`datetimepickeredit` | [`DateTimePicker`](https://helpej2.syncfusion.com/angular/documentation/datetimepicker/) | params: { value: new Date() }
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

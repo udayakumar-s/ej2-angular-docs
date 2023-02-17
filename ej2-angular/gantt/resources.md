@@ -14,7 +14,7 @@ In Gantt, the resources are represented by staff, equipment and materials etc. I
 
 ## Resource collection
 
-The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourceFields) property.
+The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourcefields) property.
 
 Resource fields | Description
 -----|-----
