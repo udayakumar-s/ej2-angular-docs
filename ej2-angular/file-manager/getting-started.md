@@ -16,7 +16,7 @@ This section explains how to create a simple **File Manager** component and its 
 
 To get started with **File Manager** component, ensure the compatible versions of Angular and Typescript.
 
-* Angular : `4+`
+* Angular : `6+`
 * Typescript : `2.6+`
 
 ## Setting up angular project
