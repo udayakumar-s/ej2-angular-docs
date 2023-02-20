@@ -16,7 +16,7 @@ This document helps you to create a simple Angular application with the `Ionic F
 
 Before getting started with Syncfusion Angular Components in Ionic with Angular project, check whether the following have been installed in the developer's machine.
 
-* Angular Versions supported - 4+ or later
+* Angular Versions supported - 6+ or later
 * Typescript Versions supported - 2.6+ or later
 * ionic CLI 3.9.0+ or later
 

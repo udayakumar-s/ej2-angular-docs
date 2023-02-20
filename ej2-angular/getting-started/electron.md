@@ -16,7 +16,7 @@ This document helps you to create a simple Angular application with `Electron Fr
 
 Before getting started with the Angular project, make sure you have the following installed on your machine,
 
-* Angular version 4 or later
+* Angular version 6 or later
 * TypeScript version 2.6 or later
 * Electron CLI version 6.0.10 or later
 
