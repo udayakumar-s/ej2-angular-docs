@@ -16,7 +16,7 @@ This section explains how to create a simple **DashboardLayout** component and i
 
 To get started with **DashboardLayout** component, ensure the compatible versions of Angular and Typescript.
 
-* Angular : `4+`
+* Angular : `6+`
 * Typescript : `2.6+`
 
 ## Setting up angular project
