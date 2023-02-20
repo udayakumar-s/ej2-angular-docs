@@ -23,7 +23,7 @@ To get start quickly with Angular Rich Text Editor using CLI and Schematics, ref
 
 To get started with Syncfusion Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
 
-* Angular : 4+
+* Angular : 6+
 * TypeScript : 2.6+
 
 ### Setting up an Angular project
