@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         L10n.load({
             'fr-BE': {
-            'dropdowns': {
+            'mention': {
                     'noRecordsTemplate': "Aucun enregistrement trouvé",
                 }
             }
