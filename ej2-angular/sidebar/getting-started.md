@@ -16,7 +16,7 @@ This section briefly explains how to create a simple **Sidebar** component, and 
 
 To get started with **Sidebar** component, ensure the compatible versions of Angular and Typescript.
 
-* Angular : `4+`
+* Angular : `6+`
 * Typescript : `2.6+`
 
 ## Setting up angular project
