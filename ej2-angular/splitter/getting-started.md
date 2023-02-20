@@ -20,7 +20,7 @@ The following section explains the steps required to create and configure basic 
 
 To get started with Syncfusion Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
 
-* Angular : 4+
+* Angular : 6+
 * TypeScript : 2.6+
 
 ### Setting up an Angular project
