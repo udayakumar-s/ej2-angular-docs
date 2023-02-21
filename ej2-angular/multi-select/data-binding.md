@@ -116,19 +116,73 @@ An `Observable` is used extensively by Angular since it provide significant bene
 
 MultiSelect data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/multiselect/async-pipe-cs1/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/async-pipe-cs1/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/async-pipe-cs1/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/multiselect/async-pipe-cs1" %}
+[app.component.ts]
+```ts
+import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+
+@Component({
+    selector: 'app-root',
+    // specifies the template string for the Multiselect component with dataSource
+    template: `<ejs-multiselect  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-multiselect >`,
+})
+export class AppComponent {
+    constructor(private http: HttpClient){
+      this.data=this.http.get<{[key: string]:object;}[]>('https://services.odata.org/V4/Northwind/Northwind.svc/Customers').pipe(
+      map((results : {[key: string]:any;}) => {
+        return results['value'];
+      })
+    );
+  }
+
+ public data: Observable<any>;
+
+  // maps the remote data column to fields property
+  public remoteFields: Object = { value: 'CustomerID' };
+
+  // set the placeholder to Multiselect input element
+  public remoteWaterMark: string = 'Select a customer';
+}
+```
+
+[app.module.ts]
+```ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DropDownListModule, MultiSelectModule} from '@syncfusion/ej2-angular-dropdowns';
+import { AppComponent } from './app.component';
+import {DialogModule} from '@syncfusion/ej2-angular-popups';
+import { ReactiveFormsModule }   from '@angular/forms';
+@NgModule({
+  imports: [ 
+    BrowserModule, 
+    FormsModule,
+    DropDownListModule,
+    MultiSelectModule,
+    DialogModule,
+    HttpClientModule,
+    ReactiveFormsModule
+    ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
+
+[main.ts]
+```ts
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { enableProdMode } from '@angular/core';
+import { AppModule } from './app.module';
+
+enableProdMode();
+platformBrowserDynamic().bootstrapModule(AppModule);
+```
+[View Sample in Github](https://github.com/SyncfusionExamples/angular-multiselect-async-pipe)
 
 ## See Also
 
