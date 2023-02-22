@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular Templates
+# Templates in Syncfusion Angular Components
 
 Syncfusion Angular components are rendered with a pre-defined layout or structure that is used to define how the component should be rendered on the user interface. The user wants to customize the appearance of the component and add functionality that is specific to the needs of the application. Syncfusion Angular components have the option to achieve this using template support.
 
