@@ -32,6 +32,9 @@ The following example  demonstrates template driven forms with TimePicker compon
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timepicker/template-driven-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/timepicker/template-driven-cs1/app/template.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/timepicker/template-driven-cs1" %}
