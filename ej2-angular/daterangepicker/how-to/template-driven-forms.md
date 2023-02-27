@@ -34,6 +34,9 @@ The following example  demonstrates template driven forms with DateRangePicker c
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/daterangepicker/template-driven-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/daterangepicker/template-driven-cs1/app/template.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/daterangepicker/template-driven-cs1" %}

@@ -34,6 +34,9 @@ In the following sample, each list item is split into two columns to display rel
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/template-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/dropdownlist/template-cs1/app/template.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/dropdownlist/template-cs1" %}
@@ -53,6 +56,9 @@ In the following sample, the selected value is displayed as a combined text of b
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/value-template-cs1/app/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/dropdownlist/value-template-cs1/app/template.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,6 +82,9 @@ In the following sample, employees are grouped according to their city.
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/group-template-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/dropdownlist/group-template-cs1/app/template.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/dropdownlist/group-template-cs1" %}
@@ -98,6 +107,9 @@ In the following sample, the list items and its headers are designed and display
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/header-template-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/dropdownlist/header-template-cs1/app/template.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/dropdownlist/header-template-cs1" %}
@@ -118,6 +130,9 @@ In the following sample, footer element displays the total number of list items 
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/footer-template-cs1/app/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/dropdownlist/footer-template-cs1/app/template.html %}
 {% endhighlight %}
 {% endtabs %}
   

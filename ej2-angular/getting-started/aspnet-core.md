@@ -16,7 +16,7 @@ This document helps you to create a simple ASP .NET Core application with Angula
 
 Before getting started with Syncfusion Angular Components in ASP.NET Core with Angular project, check whether the following are installed in the developer machine. 
 
-* Angular Versions supported - 4+
+* Angular Versions supported - 6+
 * Typescript Versions supported - 2.6+
 * .NET CLI 2.0+
 
@@ -24,7 +24,7 @@ Before getting started with Syncfusion Angular Components in ASP.NET Core with A
 
 Create a new project with project template.
 
-1. Choose File > New > Project in the visual studio menu bar.
+1. Choose File > New > Project in the Visual Studio menu bar.
 
 ![create project](images/create-project.png)
 
