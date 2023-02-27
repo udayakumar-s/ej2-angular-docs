@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     // specifies the template url path
-    templateUrl: './app.component.html'
+    templateUrl: './app/template.html'
 })
 export class AppComponent {
     constructor() {
