@@ -95,7 +95,7 @@ export class AppModule { }
 @import "../node_modules/@syncfusion/ej2-angular-lists/styles/material.css";
 ```
 
-* If you are using `CheckList` behavior in ListView, we need to add `Button` component's styles as given below in `styles.css` file
+* If you are using `CheckList` behaviour in ListView, we need to add `Button` component's styles as given below in `styles.css` file
 
 ```css
 @import "../node_modules/@syncfusion/ej2-angular-buttons/styles/material.css";
