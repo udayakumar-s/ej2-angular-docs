@@ -29,6 +29,9 @@ In the following sample, each list item is split into two columns to display rel
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/item-template-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="itemTemplate.html" %}
+{% include code-snippet/autocomplete/item-template-cs1/app/itemTemplate.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/autocomplete/item-template-cs1" %}
@@ -48,6 +51,9 @@ In the following sample, employees are grouped according to their city.
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/group-template-cs1/app/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="groupTemplate.html" %}
+{% include code-snippet/autocomplete/group-template-cs1/app/groupTemplate.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -69,6 +75,9 @@ In the following sample, the list items and its headers are designed and display
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/header-template-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="headerTemplate.html" %}
+{% include code-snippet/autocomplete/header-template-cs1/app/headerTemplate.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/autocomplete/header-template-cs1" %}
@@ -89,6 +98,9 @@ In the following sample, footer element displays the total number of list items 
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/footer-template-cs1/app/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="footerTemplate.html" %}
+{% include code-snippet/autocomplete/footer-template-cs1/app/footerTemplate.html %}
 {% endhighlight %}
 {% endtabs %}
   
