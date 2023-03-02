@@ -7,7 +7,7 @@ import { AutoCompleteComponent, OpenEventArgs } from '@syncfusion/ej2-angular-dr
 @Component({
     selector: 'app-root',
     // specifies the template url path
-    templateUrl: './footerTemplate.html'
+    templateUrl: './app/footerTemplate.html'
 })
 export class AppComponent {
     @ViewChild('sample')

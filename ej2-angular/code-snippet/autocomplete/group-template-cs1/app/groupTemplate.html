@@ -1,0 +1,12 @@
+
+    <div id="wrapper" style='margin-top: 20px'>
+	  <div id='content' style="margin: 0px auto; width:250px;">
+        <!-- specifies the template string for the AutoComplete component-->
+        <ejs-autocomplete id='atcelement' [dataSource]='data' [fields]='fields' [sortOrder]='sorting' [placeholder]='text' [query]='query'>
+            <ng-template #groupTemplate="" let-data="">
+                <!--set the value to groupTemplate property-->
+                <strong>{{data.City}}</strong>
+            </ng-template>
+        </ejs-autocomplete>
+      </div>
+    </div>
