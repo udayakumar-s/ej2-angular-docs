@@ -46,6 +46,9 @@ In the following sample, the items in the cart are displayed using list box temp
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listbox/template-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/listbox/template-cs1/template.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/listbox/template-cs1" %}
