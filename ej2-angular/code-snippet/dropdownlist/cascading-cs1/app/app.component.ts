@@ -7,7 +7,7 @@ import { Query, DataManager } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
     // specifies the template path for DropDownList component
-    templateUrl: `./cascading.html`
+    templateUrl: `./app/cascading.html`
 })
 export class AppComponent {
     constructor() {

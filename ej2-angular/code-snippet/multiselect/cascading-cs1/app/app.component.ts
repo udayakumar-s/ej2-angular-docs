@@ -7,7 +7,7 @@ import { Query, DataManager, Predicate } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
     // specifies the template path for MultiSelect component
-    templateUrl: `./cascading.html`
+    templateUrl: `./app/cascading.html`
 })
 export class AppComponent {
     constructor() {
