@@ -30,6 +30,9 @@ DropDownList. Here, the `dataBind` method is used to reflect the property change
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/cascading-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="cascading.html" %}
+{% include code-snippet/dropdownlist/cascading-cs1/app/cascading.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/dropdownlist/cascading-cs1" %}

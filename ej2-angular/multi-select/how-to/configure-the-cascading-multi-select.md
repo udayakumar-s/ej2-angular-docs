@@ -24,6 +24,9 @@ The following example, shows the cascade behavior of country, state, and city Mu
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/cascading-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="cascading.html" %}
+{% include code-snippet/multiselect/cascading-cs1/app/cascading.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/multiselect/cascading-cs1" %}
