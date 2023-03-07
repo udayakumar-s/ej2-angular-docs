@@ -15,7 +15,7 @@ Globalization is the combination of internalization and localization. You can ad
 By default, DateRangePicker date format, week, and month names are specific to the English culture. It utilizes the [`Essential JavaScript 2 Internationalization`](http://ej2.syncfusion.com/documentation/base/internationalization) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load the culture specific CLDR JSON data. To go with the different culture other than `English`, follow the below steps.
 
 * Install the `CLDR-Data` package by using the below command (it installs all the CLDR JSON data). To
-know about CLDR-Data refer the [`CLDR-Data`](http://cldr.unicode.org/index/cldr-spec/json) link.
+know about CLDR-Data refer the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
 ```
 npm install cldr-data --save
