@@ -32,8 +32,8 @@ export class AppComponent {
     spreadsheetObj: SpreadsheetComponent;
 
     data: object[] = dataSource;
-    openUrl = 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/open';
-    saveUrl = 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save';
+    openUrl = 'https://services.syncfusion.com/angular/production/api/spreadsheet/open';
+    saveUrl = 'https://services.syncfusion.com/angular/production/api/spreadsheet/save';
 
     created() {
         this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:F1');

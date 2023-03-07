@@ -31,13 +31,13 @@ export class AppComponent implements OnInit {
 
     public itemSelect(args: MenuEventArgs) {
     if (args.item.text === 'Save As xlsx')
-      this.spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save', fileName: "Sample", saveType: "Xlsx"});
+      this.spreadsheetObj.save({url: 'https://services.syncfusion.com/angular/production/api/spreadsheet/save', fileName: "Sample", saveType: "Xlsx"});
     if (args.item.text === 'Save As xls')
-      this.spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save', fileName: "Sample", saveType: "Xls"});
+      this.spreadsheetObj.save({url: 'https://services.syncfusion.com/angular/production/api/spreadsheet/save', fileName: "Sample", saveType: "Xls"});
     if (args.item.text === 'Save As csv')
-      this.spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save',fileName: "Sample", saveType: "Csv"});
+      this.spreadsheetObj.save({url: 'https://services.syncfusion.com/angular/production/api/spreadsheet/save',fileName: "Sample", saveType: "Csv"});
     if (args.item.text === 'Save As pdf')
-      this.spreadsheetObj.save({url: 'https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/save',fileName: "Sample", saveType: "Pdf"});
+      this.spreadsheetObj.save({url: 'https://services.syncfusion.com/angular/production/api/spreadsheet/save',fileName: "Sample", saveType: "Pdf"});
     }
   };
 }
