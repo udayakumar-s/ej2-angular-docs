@@ -22,7 +22,7 @@ import moment from 'moment';
         `
 })
 export class AppComponent {
-    @ViewChild('ejCalendar') CalendarInstance!: CalendarComponent;
+    @ViewChild('ejCalendar') CalendarInstance: CalendarComponent;
     /*selected current week dates when click the button*/
     workWeek() {
         if (this.CalendarInstance.element.classList.contains('week')) {
