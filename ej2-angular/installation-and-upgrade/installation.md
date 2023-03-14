@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation in Angular Installation and upgrade component | Syncfusion
+title: Installation in Angular Installation and upgrade control | Syncfusion
 description: Learn here all about Installation in Syncfusion Angular Installation and upgrade component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Installation 
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD024 -->
 
-# Installation
+# Installation of Syncfusion Controls
 
 ## Install by using NPM CLI
 
@@ -60,7 +60,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
         }
     }
     ```
-    > The `*` indicates the latest version of npm package. Refer the [documentation](https://docs.npmjs.com/misc/semver#versions) for more details about npm versioning.
+    > The `*` indicates the latest version of npm package. Refer the [documentation](https://docs.npmjs.com/misc/) for more details about npm versioning.
 
 2. Now, open the command prompt and run the `npm install` command line. This will install all npm dependencies in a single command line.
 
