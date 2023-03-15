@@ -255,7 +255,7 @@ By default, filtered records are shown along with its parent records. This behav
   
 {% previewsample "page.domainurl/code-snippet/treegrid/getting-started-cs4" %}
 
-> You can render the records in a collapsed state in the initial render of the tree grid by enabling the [`enableCollapseAll`](../../api/treegrid#enablecollapseall) property.
+> You can render the records in a collapsed state in the initial render of the tree grid by enabling the [`enableCollapseAll`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablecollapseall) property.
 
 ## Run the application
 

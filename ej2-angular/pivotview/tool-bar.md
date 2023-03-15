@@ -355,4 +355,4 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 ## See Also
 
-* [Toolbar Component](../../toolbar/getting-started/)
+* [Toolbar Component](../toolbar/getting-started)

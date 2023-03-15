@@ -69,7 +69,7 @@ The third-party library such as `Marked` or any other library is used to convert
 * The Supported Selection Tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, `LowerCase`.
 * The supported insert commands are `Image`, `Link` and `Table`.
 
-For further details on Markdown editing, refer to the [`Markdown`](../markdown.html)
+For further details on Markdown editing, refer to the [`Markdown`](../rich-text-editor/markdown)
 
 ```typescript
 
