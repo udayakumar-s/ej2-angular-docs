@@ -82,5 +82,5 @@ You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-ui
 
 * [Editing](./editing)
 * [Formatting](./formatting)
-* [Open](./open)
-* [Save](./save)
+* [Open](./open-save#open)
+* [Save](./open-save#save)

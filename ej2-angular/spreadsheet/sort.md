@@ -136,7 +136,7 @@ By customizing sort comparer, you can define the sort action as desired.
 
 > * The `sortComparer` is an optional property of `sortDescriptor`.
 
-For custom sort comparer example, refer to the [`Sort a range by custom list`](./how-to/sort-a-range-by-custom-list) in the `how-to` section.
+For custom sort comparer example, refer to the [`Sort a range by custom list`](how-to/sort-a-range-by-custom-list) in the `how-to` section.
 
 ## Known error validations
 
@@ -157,7 +157,7 @@ You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-ui
 
 ## See Also
 
-* [Sort a range by custom list](./how-to/sort-a-range-by-custom-list.md)
+* [Sort a range by custom list](how-to/sort-a-range-by-custom-list.md)
 * [Hyperlink](./link)
 * [Filtering](./filter)
 * [Undo Redo](./undo-redo)

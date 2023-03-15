@@ -249,7 +249,7 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 
 ## Display custom tooltip for columns
 
-Achieve the custom tooltip([EJ2 Tooltip](../../../tooltip/getting-started)) for the tree grid by using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event.
+Achieve the custom tooltip([EJ2 Tooltip](../../tooltip/getting-started)) for the tree grid by using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event.
 
 Render the Tooltip component for the tree grid cells by using the following code in the `queryCellInfo` event:
 
