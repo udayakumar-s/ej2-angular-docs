@@ -14,6 +14,6 @@ The Syncfusion Angular UI (Essential JS 2) styles are developed under the SCSS e
 
 ## Key Features
 
-* [Theming](theme/)
+* [Theming](overview/)
 * [Icons Library](icons/)
 * [Theme Studio](theme-studio/)

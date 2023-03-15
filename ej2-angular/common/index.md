@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview
+# Overview in Angular Common control
 
 The Base (`ej2-base`) is the common package which have common class definitions, libraries and methods for the Syncfusion (Essential JS 2) Components.
 
@@ -18,6 +18,6 @@ The Base (`ej2-base`) is the common package which have common class definitions,
 * [Localization](./localization)
 * [Internationalization](./internationalization)
 * [Drag and Drop](./drag-and-drop)
-* [Template](./template.md)
+* [Template](./template)
 * [Reactive form validation](./reactive-form-validation/)
 * [Updating Package](./how-to/update-npm-package)
