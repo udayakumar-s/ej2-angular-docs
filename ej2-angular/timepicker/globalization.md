@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Globalization in Angular Timepicker component
 
-Globalization is the combination of internationalization and localization. You can adapt the component to various languages by means of parsing and formatting the date or number [`internationalization`](../base/internationalization/) and also add culture specific customization and translation to the text [`localization`](../base/localization).
+Globalization is the combination of internationalization and localization. You can adapt the component to various languages by means of parsing and formatting the date or number [`internationalization`](../common/Globalization/internationalization/) and also add culture specific customization and translation to the text [`localization`](../common/globalization/localization).
 
-By default, the time format and meridian names are specific to the `American English` culture. It utilizes the [`Essential JavaScript 2 Internationalization`](../base/internationalization/) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data. To go with the different culture other than `English`, follow the steps below.
+By default, the time format and meridian names are specific to the `American English` culture. It utilizes the [`Essential JavaScript 2 Internationalization`](../common/Globalization/internationalization/) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org/) JSON data. It provides the `loadCldr` method to load culture specific CLDR JSON data. To go with the different culture other than `English`, follow the steps below.
 
 * Install the `CLDR-Data` package by using the following command (it installs all the CLDR JSON data.
 To known more about CLDR-Data refer the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
@@ -44,7 +44,7 @@ loadCldr(
 
 ```
 
-* Before changing to a culture other than `English`, ensure that the locale text for the concerned culture is loaded through [`L10n.load`](http://ej2.syncfusion.com/documentation/base/api/l10n/) method.
+* Before changing to a culture other than `English`, ensure that the locale text for the concerned culture is loaded through `L10n.load` method.
 
 ```typescript
 
@@ -120,7 +120,7 @@ The following sample demonstrate the TimePicker component in `German` culture.
 
 The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#enablertl) property to set the RTL direction.
 
-The following code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using [`L10n.load`](http://ej2.syncfusion.com/documentation/base/api/l10n) method.
+The following code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using `L10n.load` method.
 
 ```typescript
 
