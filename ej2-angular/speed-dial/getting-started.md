@@ -52,7 +52,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 
 Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.3.0.47) package to the application.
+Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.3.47) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-buttons --save
@@ -62,7 +62,7 @@ npm install @syncfusion/ej2-angular-buttons --save
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
 
-Add [`@syncfusion/ej2-angular-buttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.3.0.47-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-buttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/20.3.47-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-buttons@ngcc --save

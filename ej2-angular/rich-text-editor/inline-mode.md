@@ -18,7 +18,7 @@ Inline editing is a true WYSIWYG formation and on the contrary to Rich Text Edit
 
 ## Show on select/click
 
-Enabling the [`onSelection`](/rich-text-editor/api-inlineModeModel.html) option of inlineMode makes the inline Rich Text Editor to appear.  You can select the text in the editable area otherwise the inline Rich Text Editor will be appear once click into the editable area.
+Enabling the [`onSelection`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/inlineMode/#onselection) option of inlineMode makes the inline Rich Text Editor to appear.  You can select the text in the editable area otherwise the inline Rich Text Editor will be appear once click into the editable area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

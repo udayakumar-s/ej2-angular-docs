@@ -41,7 +41,7 @@ Navigate to the created project folder by using following command.
 cd syncfusion-angular-app
 ```
 
->Refer [Syncfusion Angular Getting Started](../../getting-started/angular-cli/#getting-started-with-angular-cli) section to know more about setting up `angular-cli` project.
+>Refer [Syncfusion Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
 
 ## Adding Dependencies
 

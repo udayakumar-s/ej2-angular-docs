@@ -369,7 +369,7 @@ The following code example explains how to update the properties of the signatur
       // Properties to customize the signature field settings
       public signatureFieldSettings = {
         // Set the name of the form field element.
-        name: 'Signatute',
+        name: 'Signature',
         // Specify whether the signature field is in read-only or read-write mode.
         isReadOnly: false,
         // Set the visibility of the form field.
@@ -379,7 +379,7 @@ The following code example explains how to update the properties of the signatur
         // Specify whether to print the signature field.
         isPrint: true,
         // Set the text to be displayed as a tooltip.
-        tooltip: 'Signatute',
+        tooltip: 'Signature',
         // Set the thickness of the signature field. To hide the borders, set the value to 0 (zero).
         thickness: 4,
         // Specify the properties of the signature Dialog Settings in the signature field.
@@ -440,3 +440,532 @@ The following code example explains how to update the properties of the initial 
 ```
 
 ![Initial Field Settings](../../../pdfviewer/images/InitialField.png)
+
+## Textbox field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the Textbox field properties on a button click.
+
+```html
+
+<button (click)="updateProperties()">Update Properties</button>
+
+```
+
+```typescript
+  // Event triggers on the Update Properties button click.
+  updateProperties() {
+    var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    var formField = viewer.retrieveFormFields();
+    viewer.formDesignerModule.updateFormField(formField[0], {
+      name: 'Textbox',
+      isReadOnly: true,
+      visibility: 'visible',
+      isRequired: false,
+      isPrint: true,
+      tooltip: 'Textbox',
+      thickness: 4,
+      value:'Textbox',
+      fontFamily: 'Courier',
+      fontSize: 10,
+      fontStyle: 'None',
+      color: 'black',
+      borderColor: 'black',
+      backgroundColor: 'white',
+      alignment: 'Left',
+      maxLength: 0,
+      isMultiline: false,
+      bounds: { X: 146, Y: 229, Width: 150, Height: 24 }
+    });
+  }
+
+```
+
+The following code example explains how to update the properties of the Textbox field added to the document from the form designer toolbar.
+
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [serviceUrl]="service"
+    [documentPath]="document"
+    [textFieldSettings] = "textFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+
+```typescript
+  // Properties to customize the Textbox field settings
+  public textFieldSettings = {
+    // Set the name of the form field element.
+    name: 'Textbox',
+    // Specify whether the Textbox field is in read-only or read-write mode.
+    isReadOnly: false,
+    // Set the visibility of the form field.
+    visibility: 'visible',
+    // Specify whether the field is mandatory or not.
+    isRequired: false,
+    // Specify whether to print the Textbox field.
+    isPrint: true,
+    // Set the text to be displayed as a tooltip.
+    tooltip: 'Textbox',
+    // Set the thickness of the Textbox field. To hide the borders, set the value to 0 (zero).
+    thickness: 4,
+    // Set the value of the form field element.
+    value:'Textbox',
+    // Set the font family of the textbox field.
+    fontFamily: 'Courier',
+    // Set the font size of the textbox field.
+    fontSize: 10,
+    // Specify the font style
+    fontStyle: 'None',
+    // Set the font color of the textbox field.
+    color: 'black',
+    // Set the border color of the textbox field.
+    borderColor: 'black',
+    // Set the background color of the textbox field.
+    backgroundColor: 'White',
+    // Set the alignment of the text.
+    alignment: 'Left',
+    // Set the maximum character length.
+    maxLength: 0,
+    // Allows multiline input in the text field. FALSE, by default.
+    isMultiline: false
+  };
+
+```
+
+![Textbox Field Settings](../../../pdfviewer/images/Textbox.png)
+
+## Password field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the Password field properties on a button click.
+
+```html
+
+<button (click)="updateProperties()">Update Properties</button>
+
+```
+
+```typescript
+
+  // Event triggers on the Update Properties button click.
+  updateProperties() {
+    var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    var formField = viewer.retrieveFormFields();
+    viewer.formDesignerModule.updateFormField(formField[0], {
+      name: 'Password',
+      isReadOnly: true,
+      visibility: 'visible',
+      isRequired: false,
+      isPrint: true,
+      tooltip: 'Password',
+      thickness: 4,
+      value:'Password',
+      fontFamily: 'Courier',
+      fontSize: 10,
+      fontStyle: 'None',
+      color: 'black',
+      borderColor: 'black',
+      backgroundColor: 'white',
+      alignment: 'Left',
+      maxLength: 0,
+      bounds: { X: 148, Y: 229, Width: 150, Height: 24 }
+    });
+  }
+
+```
+
+The following code example explains how to update the properties of the Password field added to the document from the form designer toolbar.
+
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [serviceUrl]="service"
+    [documentPath]="document"
+    [passwordFieldSettings] = "passwordFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+
+```typescript
+  // Properties to customize the Password field settings
+  public passwordFieldSettings = {
+    // Set the name of the form field element.
+    name: 'Password',
+    // Specify whether the Password field is in read-only or read-write mode.
+    isReadOnly: false,
+    // Set the visibility of the form field.
+    visibility: 'visible',
+    // Specify whether the field is mandatory or not.
+    isRequired: false,
+    // Specify whether to print the Password field.
+    isPrint: true,
+    // Set the text to be displayed as a tooltip.
+    tooltip: 'Password',
+    // Set the thickness of the Password field. To hide the borders, set the value to 0 (zero).
+    thickness: 4,
+    // Set the value of the form field element.
+    value:'Password',
+    // Set the font family of the Password field.
+    fontFamily: 'Courier',
+    // Set the font size of the Password field.
+    fontSize: 10,
+    // Specify the font style
+    fontStyle: 'None',
+    // Set the font color of the Password field.
+    color: 'black',
+    // Set the border color of the Password field.
+    borderColor: 'black',
+    // Set the background color of the Password field.
+    backgroundColor: 'white',
+    // Set the alignment of the text.
+    alignment: 'Left',
+    // Set the maximum character length.
+    maxLength: 0,
+  };
+
+```
+
+![Password Field Settings](../../../pdfviewer/images/Password.png)
+
+## CheckBox field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the CheckBox field properties on a button click.
+
+```html
+
+<button (click)="updateProperties()">Update Properties</button>
+
+```
+
+```typescript
+
+  // Event triggers on the Update Properties button click.
+  updateProperties() {
+    var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    var formField = viewer.retrieveFormFields();
+    viewer.formDesignerModule.updateFormField(formField[0], {
+      name: 'CheckBox',
+      isReadOnly: true,
+      visibility: 'visible',
+      isRequired: false,
+      isPrint: true,
+      tooltip: 'CheckBox',
+      thickness: 4,
+      isChecked: true,
+      backgroundColor: 'white',
+      borderColor: 'black',
+    });
+  }
+
+```
+
+The following code example explains how to update the properties of the CheckBox field added to the document from the form designer toolbar.
+
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [serviceUrl]="service"
+    [documentPath]="document"
+    [checkBoxFieldSettings] = "checkBoxFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+
+```typescript
+  // Properties to customize the CheckBox field settings
+  public checkBoxFieldSettings = {
+    // Set the name of the form field element.
+    name: 'CheckBox',
+    // Specify whether the CheckBox field is in read-only or read-write mode.
+    isReadOnly: false,
+    // Set the visibility of the form field.
+    visibility: 'visible',
+    // Specify whether the field is mandatory or not.
+    isRequired: false,
+    // Specify whether to print the CheckBox field.
+    isPrint: true,
+    // Set the text to be displayed as a tooltip.
+    tooltip: 'CheckBox',
+    // Set the thickness of the CheckBox field. To hide the borders, set the value to 0 (zero).
+    thickness: 4,
+    // Specifies whether the check box is in checked state or not.
+    isChecked: true,
+    // Set the background color of the check box in hexadecimal string format.
+    backgroundColor: 'white',
+    // Set the border color of the check box field.
+    borderColor: 'black'
+  };
+
+```
+
+![CheckBox Field Settings](../../../pdfviewer/images/Checkbox.png)
+
+## RadioButton field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the RadioButton field properties on a button click.
+
+```html
+
+<button (click)="updateProperties()">Update Properties</button>
+
+```
+
+```typescript
+
+  // Event triggers on the Update Properties button click.
+  updateProperties() {
+    var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    var formField = viewer.retrieveFormFields();
+    viewer.formDesignerModule.updateFormField(formField[0], {
+        name: 'RadioButton',
+        isReadOnly: true,
+        visibility: 'visible',
+        isRequired: false,
+        isPrint: true,
+        tooltip: 'RadioButton',
+        thickness: 4,
+        isSelected: true,
+        backgroundColor: 'white',
+        borderColor: 'black',
+    });
+  }
+
+```
+
+The following code example explains how to update the properties of the RadioButton field added to the document from the form designer toolbar.
+
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [serviceUrl]="service"
+    [documentPath]="document"
+    [radioButtonFieldSettings] = "radioButtonFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+
+```typescript
+  // Properties to customize the RadioButton field settings
+  public radioButtonFieldSettings = {
+    // Set the name of the form field element.
+    name: 'RadioButton',
+    // Specify whether the RadioButton field is in read-only or read-write mode.
+    isReadOnly: false,
+    // Set the visibility of the form field.
+    visibility: 'visible',
+    // Specify whether the field is mandatory or not.
+    isRequired: false,
+    // Specify whether to print the RadioButton field.
+    isPrint: true,
+    // Set the text to be displayed as a tooltip.
+    tooltip: 'RadioButton',
+    // Set the thickness of the RadioButton field. To hide the borders, set the value to 0 (zero).
+    thickness: 4,
+    // Specifies whether the radio button is in checked state or not.
+    isSelected: true,
+    // Set the background color of the radio button in hexadecimal string format.
+    backgroundColor: 'white',
+    // Set the border color of the radio button field.
+    borderColor: 'black'
+  };
+
+```
+
+![RadioButton Field Settings](../../../pdfviewer/images/Radiobutton.png)
+
+## ListBox field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the ListBox field properties on a button click.
+
+```html
+
+<button (click)="updateProperties()">Update Properties</button>
+
+```
+
+```typescript
+
+  // Event triggers on the Update Properties button click.
+  updateProperties() {
+    var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    var formField = viewer.retrieveFormFields();
+    var customOptions  = [{itemName:'item1',itemValue:'item1'}, {itemName:'item2',itemValue:'item2'}, {itemName:'item3',itemValue:'item3'}]
+    viewer.formDesignerModule.updateFormField(formField[0], {
+      name: 'ListBox',
+      isReadOnly: true,
+      visibility: 'visible',
+      isRequired: false,
+      isPrint: true,
+      tooltip: 'ListBox',
+      thickness: 4,
+      fontFamily: 'Courier',
+      fontSize: 10,
+      fontStyle: 'None',
+      color: 'black',
+      borderColor: 'black',
+      backgroundColor: 'white',
+      alignment: 'Left',
+      options: customOptions,
+    });
+  }
+
+```
+
+The following code example explains how to update the properties of the ListBox field added to the document from the form designer toolbar.
+
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [serviceUrl]="service"
+    [documentPath]="document"
+    [listBoxFieldSettings] = "listBoxFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+
+```typescript
+  // Properties to customize the ListBox field settings
+  public listBoxFieldSettings = {
+     var customOptions  = [{itemName:'item1',itemValue:'item1'}, {itemName:'item2',itemValue:'item2'}, {itemName:'item3',itemValue:'item3'}]
+    // Set the name of the form field element.
+    name: 'ListBox',
+    // Specify whether the ListBox field is in read-only or read-write mode.
+    isReadOnly: false,
+    // Set the visibility of the form field.
+    visibility: 'visible',
+    // Specify whether the field is mandatory or not.
+    isRequired: false,
+    // Specify whether to print the ListBox field.
+    isPrint: true,
+    // Set the text to be displayed as a tooltip.
+    tooltip: 'ListBox',
+    // Set the thickness of the ListBox field. To hide the borders, set the value to 0 (zero).
+    thickness: 4,
+    // Set the value of the form field element.
+    value:'ListBox',
+    // Set the font family of the ListBox field.
+    fontFamily: 'Courier',
+    // Set the font size of the ListBox field.
+    fontSize: 10,
+    // Specify the font style
+    fontStyle: 'None',
+    // Set the  font color of the ListBox field.
+    color: 'black',
+    // Set the border color of the ListBox field.
+    borderColor: 'black',
+    // Set the background color of the ListBox field.
+    backgroundColor: 'White',
+    // Set the alignment of the text.
+    alignment: 'Left',
+    // Set the listbox items.
+    options: customOptions
+  };
+
+```
+
+![ListBox Field Settings](../../../pdfviewer/images/Listbox.png)
+
+## DropDown field settings
+
+Using the `updateFormField` method, the form fields can be updated programmatically.
+
+The following code example explains how to update the DropDown field properties on a button click.
+
+```html
+
+<button (click)="updateProperties()">Update Properties</button>
+
+```
+
+```typescript
+
+  // Event triggers on the Update Properties button click.
+  updateProperties() {
+    var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    var formField = viewer.retrieveFormFields();
+    var customOptions  = [{itemName:'item1',itemValue:'item1'}, {itemName:'item2',itemValue:'item2'}, {itemName:'item3',itemValue:'item3'}]
+    viewer.formDesignerModule.updateFormField(formField[0], { 
+        name: 'DropDown',
+        isReadOnly: true,
+        visibility: 'visible',
+        isRequired: false,
+        isPrint: true,
+        tooltip: 'DropDown',
+        thickness: 4,
+        fontFamily: 'Courier',
+        fontSize: 10,
+        fontStyle: 'None',
+        color: 'black',
+        borderColor: 'black',
+        backgroundColor: 'white',
+        alignment: 'Left',
+        options: customOptions,
+    });
+  }
+
+```
+
+The following code example explains how to update the properties of the DropDown field added to the document from the form designer toolbar.
+
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [serviceUrl]="service"
+    [documentPath]="document"
+    [DropdownFieldSettings] = "DropdownFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+
+```typescript
+
+  // Properties to customize the DropDown field settings
+  public DropdownFieldSettings = {
+    var customOptions = [{itemName:'item1',itemValue:'item1'}, {itemName:'item2',itemValue:'item2'}, {itemName:'item3',itemValue:'item3'}]
+    // Set the name of the form field element.
+    name: 'DropDown',
+    // Specify whether the DropDown field is in read-only or read-write mode.
+    isReadOnly: false,
+    // Set the visibility of the form field.
+    visibility: 'visible',
+    // Specify whether the field is mandatory or not.
+    isRequired: false,
+    // Specify whether to print the DropDown field.
+    isPrint: true,
+    // Set the text to be displayed as a tooltip.
+    tooltip: 'DropDown',
+    // Set the thickness of the DropDown field. To hide the borders, set the value to 0 (zero).
+    thickness: 4,
+    // Set the value of the form field element.
+    value:'DropDown',
+    // Set the font family of the DropDown field.
+    fontFamily: 'Courier',
+    // Set the font size of the DropDown field.
+    fontSize: 10,
+    // Specify the font style
+    fontStyle: 'None',
+    // Set the  font color of the DropDown field.
+    color: 'black',
+    // Set the border color of the DropDown field.
+    borderColor: 'black',
+    // Set the background color of the DropDown field.
+    backgroundColor: 'White',
+    // Set the alignment of the text.
+    alignment: 'Left',
+    // Set the DropDown items.
+    options: customOptions
+  };
+
+```
+
+![DropDown Field Settings](../../../pdfviewer/images/Dropdown.png)
