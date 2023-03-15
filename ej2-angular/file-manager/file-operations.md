@@ -107,7 +107,7 @@ Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-pro
 
 For Azure file service provider, no customizations are needed for directory upload with server side and this will work with the below default upload method code.
 
-Refer to the [GitHub](https://github.com/essential-studio/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs#L89) for more details.
+Refer to the [GitHub](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs) for more details.
 
 ### NodeJS file service provider
 
@@ -170,7 +170,7 @@ foreach (var file in uploadFiles)
             }
 ```
 
-Refer to the [GitHub](https://github.com/essential-studio/amazon-s3-aspcore-file-provider/blob/development/Controllers/AmazonS3ProviderController.cs#L83) for more details.
+Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs#L79) for more details.
 
 And also add the below code snippet in `AsyncUpload` method in `Models/AmazonS3FileProvider.cs` file.
 
@@ -179,7 +179,7 @@ string[] folders = file.FileName.Split('/');
 string name = folders[folders.Length - 1];
 ```
 
-Refer to the [GitHub](https://github.com/essential-studio/amazon-s3-aspcore-file-provider/blob/development/Models/AmazonS3FileProvider.cs#L585) for more details.
+Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Models/AmazonS3FileProvider.cs#L587) for more details.
 
 ## File operation request and response Parameters
 
