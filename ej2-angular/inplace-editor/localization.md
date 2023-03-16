@@ -67,7 +67,7 @@ Formatting is a way of representing the value in different format. You can forma
 * [DateRangePicker](../daterangepicker/globalization/#date-format-customization)
 * [DateTimePicker](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker/#format)
 * [NumericTextBox](../numerictextbox/formats/#custom-formats)
-* [Slider](../slider/format/)
+* [Slider](../range-slider/format/)
 * [TimePicker](https://ej2.syncfusion.com/angular/documentation/api/timepicker#format)
 
 {% tabs %}

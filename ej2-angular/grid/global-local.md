@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-The [`Localization`](../common/localization/) library allows you to localize default text content of the Grid.
+The [`Localization`](../common/globalization/localization/) library allows you to localize default text content of the Grid.
 The grid component has static text on some features (like group drop area text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value and translation object.
 
 The following list of properties and its values are used in the grid.
@@ -137,7 +137,7 @@ The below example demonstrates the Grid in **Deutsch** culture.
 
 ## Internationalization
 
-The [`Internationalization`](../common/intl.html) library is used to globalize number, date, and time values in grid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
+The [`Internationalization`](../common/globalization/internationalization) library is used to globalize number, date, and time values in grid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
 and time values in grid component using format strings in the
 [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
 
@@ -166,7 +166,7 @@ You need to load culture format files in **ngOnInit** function.
   
 {% previewsample "page.domainurl/code-snippet/grid/localization-cs2" %}
 
-> * In the above sample, **Freight** column is formatted by [`NumberFormatOptions`](../common/internationalization/#manipulating-numbers).
+> * In the above sample, **Freight** column is formatted by [`NumberFormatOptions`](../common/globalization/internationalization#manipulating-numbers).
 > * By default, [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value is **en-US**. If you want to change **en-US** culture, then set the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale).
 
 ## Right to Left - RTL
@@ -191,6 +191,6 @@ To enable RTL in the Grid, set the [`enableRtl`](https://ej2.syncfusion.com/angu
 
 ## See Also
 
-* [Internationalization](../common/internationalization)
-* [Localization](../common/localization/)
+* [Internationalization](../common/globalization/internationalization)
+* [Localization](../common/globalization/localization/)
 * [Animate the Grid selected row in Angular Grid](https://www.syncfusion.com/forums/144844/apply-grid-localization-from-external-json-file-in-angular-grid)

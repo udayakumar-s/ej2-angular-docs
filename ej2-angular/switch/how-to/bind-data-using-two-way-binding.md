@@ -22,7 +22,7 @@ In this following example, two way binding for Switch is illustrated with CheckB
 
 ```
 
-* Initialize Checkbox component and assign the [`checked`](./../../check-box/api/check-box/#checked) property value like the below code,
+* Initialize Checkbox component and assign the [`checked`](https://ej2.syncfusion.com/angular/documentation/api/check-box/checkBoxModel/#checked) property value like the below code,
 
 ```typescript
 

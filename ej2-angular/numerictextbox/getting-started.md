@@ -145,7 +145,7 @@ import { Component } from '@angular/core';
 export class AppComponent  { }
 ```
 
->Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://ej2crg.azurewebsites.net/) (Custom Resource Generator) in your application.
+>Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Running the application
 

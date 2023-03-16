@@ -41,7 +41,7 @@ The Document Editor component requires server-side interactions for the followin
 * [Open file formats other than SFDT](../document-editor/import#convert-word-documents-into-sfdt)
 * [Paste with formatting](../document-editor/clipboard#paste-with-formatting)
 * [Restrict editing](../document-editor/document-management)
-* [Spellcheck](../document-editor/spell-check)
+* [SpellCheck](../document-editor/spell-check)
 * [Save as file formats other than SFDT and DOCX](../document-editor/server-side-export)
 
 >Note: If you don't require the above functionalities then you can deploy as pure client-side component without any server-side interactions.
@@ -188,8 +188,7 @@ This can be referenced in your `[src/styles/styles.css]` using the following cod
 @import '../../node_modules/@syncfusion/ej2-angular-documenteditor/styles/material.css';
 ```
 
-> To know about individual component CSS, please refer to
-[Individual Component theme files](../appearance/theme#referring-individual-control-theme/) section.
+> To know about individual component CSS, please refer to [Individual Component theme files](../appearance/theme-studio#filtering-a-specific-list-of-components) section.
 
 In case, if you want to make use of the combined CSS files of entire components, then you can avail it from the root folder of Essential JS 2 package and reference it with the code shown below.
 
