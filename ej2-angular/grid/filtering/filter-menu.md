@@ -118,3 +118,7 @@ In the following sample, filtering action with multiple keywords can be done by 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/grid/filtering1-cs8" %}
+
+## See also
+
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
