@@ -42,6 +42,9 @@ Inside this template, you can access the [`CurrentPage`](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/pager-template-cs1/app/app.component.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="app.template.html" %}
+{% include code-snippet/grid/pager-template-cs1/app/app.template.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/pager-template-cs1/app/app.module.ts %}
 {% endhighlight %}
