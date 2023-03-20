@@ -6,7 +6,7 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
     selector: 'app-root',
     // specifies the template path for DropDownList component
-    templateUrl: `./template.html`
+    templateUrl: `./app/template.html`
 })
 export class AppComponent {
     constructor() {
