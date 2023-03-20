@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resolve unable to find an entry point error in React Pdfviewer component | Syncfusion
+title: Resolve unable to find an entry point error in Angular Pdfviewer component | Syncfusion
 description: Learn here how to resolve unable to find an entry point named error in Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 control: Resolve unable to find an entry point error
 platform: ej2-angular
