@@ -25,6 +25,9 @@ The following example demonstrate, how to check whether value change happened by
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/manual-programmatic-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/dropdownlist/manual-programmatic-cs1/app/template.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/dropdownlist/manual-programmatic-cs1" %}
