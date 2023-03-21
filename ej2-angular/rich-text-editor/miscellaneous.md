@@ -83,8 +83,6 @@ This sample used [`Code mirror`](https://codemirror.net/) plugin helps to highli
 {% include code-snippet/rich-text-editor/getting-started-cs20/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs20" %}
 
 ## Undo/redo manager
 
