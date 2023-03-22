@@ -86,7 +86,7 @@ The application registered license key is set priority and used for license vali
 
 One of the possible cases on experiencing license issues in your application is due to duplicate packages exists after upgrading packages to next or latest version. To remove the duplicate packages follow the below steps.
 
-* Delete the `@Syncfusion` folder from `node_modules` and [`package-lock.json`](https://docs.npmjs.com/cli/v6/commands/npm-dedupe) file from app `root folder`.
+* Delete the `@Syncfusion` folder from `node_modules` and `package-lock.json` file from app `root folder`.
 
 * Clear the npm `.cache` by running the command `npm cache clean –force` or you can directly delete the file present in the application.
 
@@ -105,3 +105,4 @@ For example, consider a situation where one component in the project has a versi
 When developing an application with Syncfusion packages, it is important to register the appropriate license key that matches the version of the package installed. Failure to do so may result in license errors within the application. 
 
 For instance, if you are using a component version labeled as `(v20.4.XX)`, it is essential to register the license key generated `specifically` for that version. By doing so, it ensures the smooth functioning of the controls and provides access to all features and functionality without encountering any license validation errors.
+

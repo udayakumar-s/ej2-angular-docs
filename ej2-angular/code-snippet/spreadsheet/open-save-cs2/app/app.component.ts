@@ -5,7 +5,7 @@ import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 
 @Component({
     selector: 'app-container',
-    template: "<ejs-spreadsheet #spreadsheet (created)='created()' openUrl='https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/open' allowOpen='true'> </ejs-spreadsheet>"
+    template: "<ejs-spreadsheet #spreadsheet (created)='created()' openUrl='https://services.syncfusion.com/angular/production/api/spreadsheet/open' allowOpen='true'> </ejs-spreadsheet>"
 })
 export class AppComponent {
     @ViewChild('spreadsheet') public spreadsheetObj: SpreadsheetComponent;

@@ -16,9 +16,9 @@ The modules that are available in Gantt are as follows.
 |------|-------------|
 | [`Sort`](https://ej2.syncfusion.com/angular/documentation/api/gantt/sort)| Inject this module to use sorting feature.|
 | [`Filter`](https://ej2.syncfusion.com/angular/documentation/api/gantt/filter)| Inject this module to use filtering feature.|
-| `Reorder` | Inject this module to use reorder feature.|
-| `ExcelExport` | Inject this module to use excel export feature.|
-| `PdfExport`| Inject this module to use PDF export feature.|
+| [`Reorder`](https://ej2.syncfusion.com/angular/documentation/api/grid/reorder) | Inject this module to use reorder feature.|
+| [`ExcelExport`](https://ej2.syncfusion.com/documentation/api/gantt/#excelexportmodule) | Inject this module to use excel export feature.|
+| [`PdfExport`](https://ej2.syncfusion.com/documentation/api/gantt/#pdfexportmodule) | Inject this module to use PDF export feature.|
 | [`RowDD`](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDD)| Inject this module to use row drag and drop feature.|
 | `Resize`| Inject this module to use resize feature.|
 | [`Toolbar`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar)| Inject this module to use toolbar feature.|
@@ -26,8 +26,8 @@ The modules that are available in Gantt are as follows.
 | [`Selection`](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection)| Inject this module to use selection feature.|
 | [`DayMarkers`](https://ej2.syncfusion.com/angular/documentation/api/gantt/dayMarkers)| Inject this module to use event markers.|
 | [`ContextMenu`](https://ej2.syncfusion.com/documentation/api/gantt/contextMenu/)| Inject this module to use context menu feature.|
-| [`ColumnMenu`](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnMenu)| Inject this module to use column menu feature.|
-| [`VirtualScroll`]| Inject this module to use virtual scroll feature.|
-| `CriticalPath` | Inject this module to use critical path feature.|
+| [`ColumnMenu`](https://ej2.syncfusion.com/documentation/api/gantt/columnMenu/#getcolumnmenu)| Inject this module to use column menu feature.|
+| [`VirtualScroll`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#virtualscrollmodule)| Inject this module to use virtual scroll feature.|
+| [`CriticalPath`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#criticalpathmodule)| Inject this module to use critical path feature.|
 
 These modules should be injected into the Gantt using the **Gantt.Inject** method.

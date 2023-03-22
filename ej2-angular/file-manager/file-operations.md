@@ -170,7 +170,7 @@ foreach (var file in uploadFiles)
             }
 ```
 
-Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs) for more details.
+Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs#L79) for more details.
 
 And also add the below code snippet in `AsyncUpload` method in `Models/AmazonS3FileProvider.cs` file.
 
@@ -179,7 +179,7 @@ string[] folders = file.FileName.Split('/');
 string name = folders[folders.Length - 1];
 ```
 
-Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Models/AmazonS3FileProvider.cs) for more details.
+Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Models/AmazonS3FileProvider.cs#L587) for more details.
 
 ## File operation request and response Parameters
 

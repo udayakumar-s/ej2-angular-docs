@@ -5,7 +5,7 @@ import { SpreadsheetComponent, BeforeSaveEventArgs } from '@syncfusion/ej2-angul
 
 @Component({
     selector: 'app-container',
-    template: "<ejs-spreadsheet (beforeOpen)='beforeOpen($event)' openUrl='https://ej2services.syncfusion.com/production/web-services/api/spreadsheet/open' allowOpen='true'> </ejs-spreadsheet>"
+    template: "<ejs-spreadsheet (beforeOpen)='beforeOpen($event)' openUrl='https://services.syncfusion.com/angular/production/api/spreadsheet/open' allowOpen='true'> </ejs-spreadsheet>"
 })
 export class AppComponent {
      beforeOpen (args: BeforeOpenEventArgs) {

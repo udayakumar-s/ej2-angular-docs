@@ -1,12 +1,5 @@
-
-
-
 import { Component, ViewEncapsulation, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
-import { DialogComponent, AnimationSettingsModel } from '@syncfusion/ej2-angular-popups';
-import { CheckBoxComponent, ButtonModel } from '@syncfusion/ej2-angular-buttons';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-
-import { OnInit } from '@angular/core';
+import { DialogComponent,PositionDataModel } from '@syncfusion/ej2-angular-popups';
 import { EmitType } from '@syncfusion/ej2-base';
 /**
  * Modal Dialog Component
@@ -15,7 +8,7 @@ import { EmitType } from '@syncfusion/ej2-base';
     selector: 'app-root',
     template: `<button class="e-control e-btn" style="position: absolute;" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>
     <div id="modalTarget" #container class='root-container'>
-      <ejs-dialog id='dialog' #ejDialog [animationSettings]='animationSettings' content='Are you sure you want to permanently delete all of these items?' header='Delete Multiple Items' [target]='targetElement'
+      <ejs-dialog id='dialog' #ejDialog [animationSettings]='animationSettings' [position]='position' content='Are you sure you want to permanently delete all of these items?' header='Delete Multiple Items' [target]='targetElement'
       width='300px' [showCloseIcon]='showCloseIcon' [buttons]='buttons'>
       </ejs-dialog> </div> `,
     encapsulation: ViewEncapsulation.None
@@ -28,6 +21,7 @@ export class AppComponent {
     @ViewChild('container', { read: ElementRef }) container: ElementRef;
     // The Dialog shows within the target element.
     public targetElement: HTMLElement;
+    public position: PositionDataModel = { X: 'center', Y: 'center' };
     //To get all element of the dialog component after component get initialized.
     ngOnInit() {
       this.initilaizeTarget();
