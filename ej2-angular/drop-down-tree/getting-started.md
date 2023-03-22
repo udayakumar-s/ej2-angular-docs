@@ -122,7 +122,7 @@ Add Dropdown Tree component's styles as given below in `styles.css`.
 ```
 
 >Note: If you want to refer the combined component styles, please make use of
-our [`CRG`](https://ej2crg.azurewebsites.net/) (Custom Resource Generator) in your application.
+our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Add Dropdown Tree component
 

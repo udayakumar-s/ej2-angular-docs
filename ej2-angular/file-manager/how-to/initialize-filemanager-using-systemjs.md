@@ -16,19 +16,19 @@ File manager can also be initialized using `SystemJS` as follows
 
 * To setup basic `Angular` sample use the following commands.
 
-```sh
-git clone https://github.com/angular/quickstart.git quickstart
-cd quickstart
-npm install
-```
+  ```sh
+  git clone https://github.com/angular/quickstart.git quickstart
+  cd quickstart
+  npm install
+  ```
 
 For more information, refer to [Angular sample setup](https://angular.io/guide/setup-local).
 
 * Install Syncfusion file manager packages using the below command.
 
-```sh
-npm install @syncfusion/ej2-angular-filemanager --save
-```
+  ```sh
+  npm install @syncfusion/ej2-angular-filemanager --save
+  ```
 
 The above package installs File Manager dependencies which are required to render the component in an Angular environment.
 
@@ -129,10 +129,10 @@ Refer the following code to include the file manager in application .
 
 * Create an `Angular` component with file manager. Add the FileManager component by using <ejs-filemanager> selector in template section of the `app.component.ts` file.
 
-```HTML
-<ejs-filemanager id='overview' [ajaxSettings]='ajaxSettings'>
-</ejs-filemanager>
-```
+  ```HTML
+  <ejs-filemanager id='overview' [ajaxSettings]='ajaxSettings'>
+  </ejs-filemanager>
+  ```
 
 * Create an `Angular` module and include the above file manager component.
 * In the module, declare the Component and Directives required to render the file manager.

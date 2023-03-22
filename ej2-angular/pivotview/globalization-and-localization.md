@@ -20,9 +20,9 @@ By default, all the Essential JS 2 component are specific to English culture ('e
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
 
-```
-npm install cldr-data --save
-```
+  ```
+   npm install cldr-data --save
+  ```
 
 * Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
@@ -30,18 +30,18 @@ npm install cldr-data --save
 
 * Now import the required culture from the installed location to `app.ts` file, like the below code snippets.
 
-```typescript
-//import the loadCldr from ej2-base
-import { loadCldr} from '@syncfusion/ej2-base';
+   ```typescript
+     //import the loadCldr from ej2-base
+    import { loadCldr} from '@syncfusion/ej2-base';
 
-loadCldr(
+   loadCldr(
     require('cldr-data/supplemental/numberingSystems.json'),
     require('cldr-data/main/fr-CH/ca-gregorian.json'),
     require('cldr-data/main/fr-CH/numbers.json'),
     require('cldr-data/main/fr-CH/timeZoneNames.json'));
-```
+  ```
 
-The Internationalization library is used to globalize number, date, and time values in pivot table component using the `dataSourceSettings.formatSettings` option.
+  The Internationalization library is used to globalize number, date, and time values in pivot table component using the `dataSourceSettings.formatSettings` option.
 
 * Set the culture by using the `locale` property.
 
