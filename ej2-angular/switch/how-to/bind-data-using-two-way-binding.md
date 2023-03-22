@@ -16,19 +16,19 @@ In this following example, two way binding for Switch is illustrated with CheckB
 
 * Initialize Switch component and bind the checked value using `ngModel` as in the below code using "banana in a box" syntax,
 
-```typescript
+  ```typescript
 
-<ejs-switch #switch [(ngModel)]="checked"></ejs-switch>
+  <ejs-switch #switch [(ngModel)]="checked"></ejs-switch>
 
-```
+  ```
 
 * Initialize Checkbox component and assign the [`checked`](https://ej2.syncfusion.com/angular/documentation/api/check-box/checkBoxModel/#checked) property value like the below code,
 
-```typescript
+  ```typescript
 
-<ejs-checkbox #checkbox [(checked)]="checked"></ejs-checkbox>
+  <ejs-checkbox #checkbox [(checked)]="checked"></ejs-checkbox>
 
-```
+  ```
 
 * Now, the changes made in Switch will reflect in CheckBox (i.e When the state of Switch is changed to checked state then the CheckBox state will also change to checked state) and vice versa.
 

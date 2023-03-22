@@ -111,9 +111,9 @@ Now use the <code>app-container</code> in the index.html instead of default one.
 
 * Now run the application in the browser using the below command.
 
-```
-npm start
-```
+  ```
+    npm start
+  ```
 
 The below example shows a basic Smithchart.
 

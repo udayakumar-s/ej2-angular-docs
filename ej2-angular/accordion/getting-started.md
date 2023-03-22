@@ -188,9 +188,9 @@ export class AppComponent {
 
 * Run the application in the browser using the following command.
 
-```shell
-npm start
-```
+   ```shell
+      npm start
+   ```
 
 The following code example depicts the way to initialize the Accordion on a single element.
 

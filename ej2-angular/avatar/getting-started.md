@@ -24,11 +24,11 @@ The `Avatar` component is pure CSS component which doesn't need specific depende
 
 * To setup basic `Angular` sample use the following commands.
 
-```
-git clone https://github.com/angular/quickstart.git quickstart
-cd quickstart
-npm install
-```
+    ```
+     git clone https://github.com/angular/quickstart.git quickstart
+     cd quickstart
+     npm install
+    ```
 
 For more information, refer to [Angular sample setup](https://angular.io/guide/setup-local).
 

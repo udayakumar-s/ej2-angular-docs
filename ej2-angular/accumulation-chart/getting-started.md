@@ -56,9 +56,9 @@ For Angular version below 12, you can use the legacy (ngcc) package of the Syncf
 
 Add [`@syncfusion/ej2-angular-charts@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-charts/v/20.2.38-ngcc) package to the application.
 
-```bash
-npm install @syncfusion/ej2-angular-charts@ngcc --save
-```
+   ```bash
+     npm install @syncfusion/ej2-angular-charts@ngcc --save
+   ```
 
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
 
@@ -72,45 +72,43 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 Import AccumulationChart module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
 
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the AccumulationChartModule for the AccumulationChart component
-import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
-import { AppComponent }  from './app.component';
+   ```typescript
+    import { NgModule } from '@angular/core';
+    import { BrowserModule } from '@angular/platform-browser';
+     // import the AccumulationChartModule for the AccumulationChart component
+    import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
+    import { AppComponent }  from './app.component';
 
-@NgModule({
-  //declaration of AccumulationChartModule into NgModule
-  imports:      [ BrowserModule, AccumulationChartModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
+    @NgModule({
+      //declaration of AccumulationChartModule into NgModule
+      imports:      [ BrowserModule, AccumulationChartModule ],
+      declarations: [ AppComponent ],
+      bootstrap:    [ AppComponent ]
+     })
+    export class AppModule { }
+  ```
 
 * Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component
 `[src/app/app.component.ts]`.
 
-```javascript
-import { Component, ViewEncapsulation } from '@angular/core';
+  ```javascript
+   import { Component, ViewEncapsulation } from '@angular/core';
 
-@Component({
+   @Component({
   selector: 'app-container',
   // specifies the template string for the Accumulation Charts component
   template: `<ejs-accumulationchart id="pie-container">
     </ejs-accumulationchart>`,
-  encapsulation: ViewEncapsulation.None
-})
-export class AppComponent  { }
-```
+   encapsulation: ViewEncapsulation.None
+  })
+  export class AppComponent  { }
+  ```
 
-<!-- markdownlint-disable MD033 -->
+  Now use the <code>app-container</code> in the index.html instead of default one.
 
-Now use the <code>app-container</code> in the index.html instead of default one.
-
-```
-<app-container></app-container>
-```
+  ```
+   <app-container></app-container>
+  ```
 
 * Now run the application in the browser using the below command.
 

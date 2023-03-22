@@ -151,10 +151,10 @@ The event [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/p
 
 * `actionName`: It holds the name of the current action began. The following are the UI actions and their names:
 
-| Action | Action Name|
-|------|-------------|
-| [`Sort field`](./sorting/#member-sorting)| Sort field |
-| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
+   | Action | Action Name|
+   |------|-------------|
+   | [`Sort field`](./sorting/#member-sorting)| Sort field |
+   | [`Value sort icon`](./sorting/#value-sorting)| Sort value|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -186,10 +186,10 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 * `actionName`: It holds the name of the current action completed. The following are the UI actions and their names:
 
-| Action | Action Name|
-|------|-------------|
-| [`Sort field`](./sorting/#member-sorting)| Field sorted|
-| [`Value sort icon`](./sorting/#value-sorting)| Value sorted|
+   | Action | Action Name|
+   |------|-------------|
+   | [`Sort field`](./sorting/#member-sorting)| Field sorted|
+   | [`Value sort icon`](./sorting/#value-sorting)| Value sorted|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -217,10 +217,10 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 * `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
 
-| Action | Action Name|
-|------|-------------|
-| [`Sort field`](./sorting/#member-sorting)| Sort field |
-| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
+    | Action | Action Name|
+    |------|-------------|
+    | [`Sort field`](./sorting/#member-sorting)| Sort field |
+    | [`Value sort icon`](./sorting/#value-sorting)| Sort value|
 
 * `errorInfo`: It holds the error information of the current UI action.
 

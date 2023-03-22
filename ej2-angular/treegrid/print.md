@@ -78,7 +78,7 @@ By default, the browser uses A4 as page size option to print pages and to adapt 
 To show large number of columns when printing, adjust the scale option from print option panel based on your content size.
 
 <!-- markdownlint-disable MD033 -->
-<img src="https://ej2.syncfusion.com/angular/documentation/images/print-preview.png" alt="Print Preview Image" style="width:320px;height: 620px">
+<img src="images/print-preview.png" alt="Print Preview Image" style="width:320px;height: 620px">
 <!-- markdownlint-enable MD033 -->
 
 ## Show or Hide columns while Printing

@@ -16,21 +16,21 @@ Sidebar can also be initialized using `SystemJS` as follows
 
 * To setup basic `Angular` sample use the following commands.
 
-```sh
-git clone https://github.com/angular/quickstart.git quickstart
-cd quickstart
-npm install
-```
+   ```sh
+   git clone https://github.com/angular/quickstart.git quickstart
+   cd quickstart
+   npm install
+   ```
 
 For more information, refer to [Angular sample setup](https://angular.io/docs/ts/latest/guide/setup.html).
 
 * Install Syncfusion Sidebar packages using the below command.
 
-```sh
-npm install @syncfusion/ej2-angular-navigations --save
-```
+   ```sh
+   npm install @syncfusion/ej2-angular-navigations --save
+   ```
 
-The above package installs Sidebar dependencies which are required to render the component in an Angular environment.
+ The above package installs Sidebar dependencies which are required to render the component in an Angular environment.
 
 * Syncfusion `ej2-angular-navigations` packages need to be mapped in `systemjs.config.js` configuration file.
 

@@ -14,15 +14,12 @@ The Rich Text Editor supports both the reactive and template-driven form-buildin
 
 ## Template driven forms
 
-The template-drive forms use the `angular` directives in view to handle the forms controls.
-To enable the template-driven, import the FormsModule into corresponding app component.
+The template-drive forms use the `angular` directives in view to handle the forms controls. To enable the template-driven, import the FormsModule into corresponding app component.
 
 For more details about template-driven
 forms, refer to:<https://angular.io/guide/forms#template-driven-forms>.
 
-Mention the `name` attribute to Rich Text Editor element that can be used to identify the form element. To register a Rich Text Editor element to ngForm, give the ngModel to it.
-So, the FormsModule will automatically detect the Rich Text Editor as a form element.
-After that, the Rich Text Editor value will be selected based on the ngModel value.
+Mention the `name` attribute to Rich Text Editor element that can be used to identify the form element. To register a Rich Text Editor element to ngForm, give the ngModel to it. So, the FormsModule will automatically detect the Rich Text Editor as a form element. After that, the Rich Text Editor value will be selected based on the ngModel value.
 
 The following example demonstrates how to achieve a two-way data binding.
 

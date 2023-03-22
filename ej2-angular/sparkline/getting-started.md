@@ -47,50 +47,50 @@ npm install @syncfusion/ej2-angular-charts --save
 * Import Sparkline module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts`
 `[src/app/app.module.ts]`.
 
-```typescript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the SparklineModule for the Sparkline component
-import { SparklineModule } from '@syncfusion/ej2-angular-charts';
-import { AppComponent }  from './app.component';
+  ```typescript
+  import { NgModule }      from '@angular/core';
+  import { BrowserModule } from '@angular/platform-browser';
+  // import the SparklineModule for the Sparkline component
+  import { SparklineModule } from '@syncfusion/ej2-angular-charts';
+  import { AppComponent }  from './app.component';
 
-@NgModule({
-  //declaration of sparkline module into NgModule
-  imports:      [ BrowserModule, SparklineModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
+  @NgModule({
+    //declaration of sparkline module into NgModule
+    imports:      [ BrowserModule, SparklineModule ],
+    declarations: [ AppComponent ],
+    bootstrap:    [ AppComponent ]
+  })
+  export class AppModule { }
+  ```
 
 * Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component
 `[src/app/app.component.ts]`.
 
-```javascript
-import { Component, ViewEncapsulation } from '@angular/core';
+  ```javascript
+  import { Component, ViewEncapsulation } from '@angular/core';
 
-@Component({
-  selector: 'app-container',
-  // specifies the template string for the Sparkline component
-  template: `<ejs-sparkline id='sparkline-container'></ejs-sparkline>`,
-  encapsulation: ViewEncapsulation.None
-})
-export class AppComponent  { }
-```
+  @Component({
+    selector: 'app-container',
+    // specifies the template string for the Sparkline component
+    template: `<ejs-sparkline id='sparkline-container'></ejs-sparkline>`,
+    encapsulation: ViewEncapsulation.None
+  })
+  export class AppComponent  { }
+  ```
 
-<!-- markdownlint-disable MD033 -->
+  <!-- markdownlint-disable MD033 -->
 
-Now use the <code>app-container</code> in the index.html instead of default one.
+  Now use the <code>app-container</code> in the index.html instead of default one.
 
-```html
-<app-container></app-container>
-```
+  ```html
+  <app-container></app-container>
+  ```
 
 * Now run the application in the browser using the below command.
 
-```
-npm start
-```
+  ```
+  npm start
+  ```
 
 The below example shows a basic Sparkline.
 
@@ -115,28 +115,28 @@ Sparkline component are segregated into individual feature-wise modules. In orde
 
 * SparklineTooltipService - Inject this provider to use tooltip series.
 
-In the current application, we are going to modify the above basic Sparkline to visualize the sparkline types.
+  In the current application, we are going to modify the above basic Sparkline to visualize the sparkline types.
 
-For this application we are going to use tooltip features of the Sparkline.
-Now import the SparklineTooltipService from Sparkline package and inject it into the AppModule.
+  For this application we are going to use tooltip features of the Sparkline.
+  Now import the SparklineTooltipService from Sparkline package and inject it into the AppModule.
 
-```javascript
+  ```javascript
 
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-    import { AppComponent } from './app.component';
-    import { SparklineComponent, SparklineTooltipService } from '@syncfusion/ej2-angular-charts';
+      import { NgModule } from '@angular/core';
+      import { BrowserModule } from '@angular/platform-browser';
+      import { AppComponent } from './app.component';
+      import { SparklineComponent, SparklineTooltipService } from '@syncfusion/ej2-angular-charts';
 
-    @NgModule({
-        imports: [
-            BrowserModule,
-        ],
-        declarations: [AppComponent, SparklineComponent],
-        bootstrap: [AppComponent],
-        providers: [ SparklineTooltipService ]
-    })
+      @NgModule({
+          imports: [
+              BrowserModule,
+          ],
+          declarations: [AppComponent, SparklineComponent],
+          bootstrap: [AppComponent],
+          providers: [ SparklineTooltipService ]
+      })
 
-```
+  ```
 
 ## Bind data source to Sparkline
 

@@ -18,9 +18,9 @@ To go with the different culture other than `English`, follow the below steps.
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
-```
-npm install cldr-data --save
-```
+  ```
+  npm install cldr-data --save
+  ```
 
 Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
@@ -30,19 +30,19 @@ Once the package installed, you can find the culture specific JSON data under th
 
 * Calendar displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the Calendar with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
 
-```typescript
-//import the loadCldr from ej2-base
-import { loadCldr} from '@syncfusion/ej2-base';
+  ```typescript
+  //import the loadCldr from ej2-base
+  import { loadCldr} from '@syncfusion/ej2-base';
 
-declare var require: any;
+  declare var require: any;
 
-loadCldr(
-    require('cldr-data/supplemental/numberingSystems.json'),
-    require('cldr-data/main/de/ca-gregorian.json'),
-    require('cldr-data/main/de/numbers.json'),
-    require('cldr-data/main/de/timeZoneNames.json'),
-    require('cldr-data/supplemental/weekdata.json')); // To load the culture based first day of week
-```
+  loadCldr(
+      require('cldr-data/supplemental/numberingSystems.json'),
+      require('cldr-data/main/de/ca-gregorian.json'),
+      require('cldr-data/main/de/numbers.json'),
+      require('cldr-data/main/de/timeZoneNames.json'),
+      require('cldr-data/supplemental/weekdata.json')); // To load the culture based first day of week
+  ```
 
 > The `Localization` library allows you to localize default text content of the Calendar. The Calendar component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/calendar#locale) value and translation object.
 
@@ -52,58 +52,58 @@ today | Name of the button to choose Today date.
 
 * Before changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of `L10n` class.
 
-```typescript
-//Load the L10n, loadCldr from ej2-base
-import { loadCldr, L10n } from "@syncfusion/ej2-base";
+  ```typescript
+  //Load the L10n, loadCldr from ej2-base
+  import { loadCldr, L10n } from "@syncfusion/ej2-base";
 
-//load the locale object to set the localized placeholder value
-L10n.load({
-  de: {
-    calendar: {
-              today:"heute"
- }
+  //load the locale object to set the localized placeholder value
+  L10n.load({
+    de: {
+      calendar: {
+                today:"heute"
   }
-});
-```
+    }
+  });
+  ```
 
 * Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/calendar#locale) property. The below code example, initialize the Calendar component in `German` culture.
 
-```typescript
-import { Component } from '@angular/core';
-//import the loadCldr from ej2-base
-import { loadCldr, L10n } from '@syncfusion/ej2-base';
+  ```typescript
+  import { Component } from '@angular/core';
+  //import the loadCldr from ej2-base
+  import { loadCldr, L10n } from '@syncfusion/ej2-base';
 
-declare var require: any;
+  declare var require: any;
 
-loadCldr(
-    require('cldr-data/supplemental/numberingSystems.json'),
-    require('cldr-data/main/de/ca-gregorian.json'),
-    require('cldr-data/main/de/numbers.json'),
-    require('cldr-data/main/de/timeZoneNames.json')
-    );
-@Component({
-    selector: 'app-root',
-    template: `
-    <!-- Sets the value, locale -->
-    <ejs-calendar [value]='dateValue' locale='de'></ejs-calendar>`
-})
+  loadCldr(
+      require('cldr-data/supplemental/numberingSystems.json'),
+      require('cldr-data/main/de/ca-gregorian.json'),
+      require('cldr-data/main/de/numbers.json'),
+      require('cldr-data/main/de/timeZoneNames.json')
+      );
+  @Component({
+      selector: 'app-root',
+      template: `
+      <!-- Sets the value, locale -->
+      <ejs-calendar [value]='dateValue' locale='de'></ejs-calendar>`
+  })
 
-export class AppComponent {
-    public dateValue: Object = new Date();
-     ngOnInit(): void {
-    /*loads the localization text*/
-    L10n.load({
-      'de': {
-        'calendar': {
-           today:"heute"
+  export class AppComponent {
+      public dateValue: Object = new Date();
+      ngOnInit(): void {
+      /*loads the localization text*/
+      L10n.load({
+        'de': {
+          'calendar': {
+            today:"heute"
+          }
         }
-      }
-    });
-  }
-    constructor() {
+      });
     }
-}
-```
+      constructor() {
+      }
+  }
+  ```
 
 The following example demonstrates the Calendar in `German` culture.
 

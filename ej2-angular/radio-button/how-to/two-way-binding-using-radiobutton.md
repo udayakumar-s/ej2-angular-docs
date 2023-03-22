@@ -14,17 +14,17 @@ In the following example, two-way binding for RadioButton is illustrated with Dr
 
 * Initialize RadioButton component and bind the checked value using ngModel as in the below code using "banana in a box" syntax,
 
-```typescript
+  ```typescript
 
-<ejs-radiobutton [label]='payment' [value]="payment" name="payment" [(ngModel)]="value"></ejs-radiobutton>
-
-```
+  <ejs-radiobutton [label]='payment' [value]="payment" name="payment" [(ngModel)]="value"></ejs-radiobutton>
+ 
+  ```
 
 * Initialize DropDownList component and assign the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) property value like the below code,
 
-```typescript
-<ejs-dropdownlist [dataSource]='paymentMethod' [(value)]="value" ></ejs-dropdownlist>
-```
+  ```typescript
+  <ejs-dropdownlist [dataSource]='paymentMethod' [(value)]="value" ></ejs-dropdownlist>
+  ```
 
 * Now, the changes made in RadioButton will reflect in DropDownList (i.e. Selected option in radio button will be reflected in DropDownList  ) and vice versa.
 

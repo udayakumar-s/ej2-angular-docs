@@ -16,21 +16,21 @@ DashboardLayout can also be initialized using `SystemJS` as follows.
 
 * To setup basic `Angular` sample use the following commands.
 
-```
-git clone https://github.com/angular/quickstart.git quickstart
-cd quickstart
-npm install
-```
+    ```
+      git clone https://github.com/angular/quickstart.git quickstart
+      cd quickstart
+      npm install
+    ```
 
-For more information, refer to [Angular sample setup](https://angular.io/guide/setup).
+   For more information, refer to [Angular sample setup](https://angular.io/guide/setup).
 
 * Install Syncfusion DashboardLayout package using below command.
 
-```
-npm install @syncfusion/ej2-angular-layouts --save
-```
+    ```
+      npm install @syncfusion/ej2-angular-layouts --save
+    ```
 
-The above package installs [Dashboard Layout component dependencies](#dependencies) which are required to render the component in an Angular environment.
+   The above package installs [Dashboard Layout component dependencies](#dependencies) which are required to render the component in an Angular environment.
 
 * Syncfusion [ej2-angular-layouts](#dependencies) packages need to be mapped in `systemjs.config.js` configuration file.
 

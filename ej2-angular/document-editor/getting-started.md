@@ -52,11 +52,11 @@ To know about server-side dependencies, please refer this [page](../document-edi
 
 * To setup basic `Angular` sample use following commands.
 
-```javascript
-git clone https://github.com/angular/quickstart.git quickstart
-cd quickstart
-npm install
-```
+    ```javascript
+    git clone https://github.com/angular/quickstart.git quickstart
+    cd quickstart
+    npm install
+    ```
 
 For more information, refer to [Angular sample setup](https://angular.io/guide/setup/)
 

@@ -69,52 +69,52 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 * Import Heatmap module into Angular application(app.module.ts) from the package `@syncfusion/ej2-ng-heatmap` `[src/app/app.module.ts]`.
 
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the HeatMapModule for the heatmap component
-import { HeatMapModule } from '@syncfusion/ej2-angular-heatmap';
-import { AppComponent }  from './app.component';
+  ```javascript
+  import { NgModule }      from '@angular/core';
+  import { BrowserModule } from '@angular/platform-browser';
+  // import the HeatMapModule for the heatmap component
+  import { HeatMapModule } from '@syncfusion/ej2-angular-heatmap';
+  import { AppComponent }  from './app.component';
 
-@NgModule({
-  //declaration of ej2-ng-heatmap module into NgModule
-  imports:      [ BrowserModule, HeatMapModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
+  @NgModule({
+    //declaration of ej2-ng-heatmap module into NgModule
+    imports:      [ BrowserModule, HeatMapModule ],
+    declarations: [ AppComponent ],
+    bootstrap:    [ AppComponent ]
+  })
+  export class AppModule { }
+  ```
 
 ## Add Heatmap component
 
 * Modify the template in `app.component.ts` file to render the `ej2-ng-heatmap` component
 `[src/app/app.component.ts]`.
 
-```javascript
-import { Component, ViewEncapsulation } from '@angular/core';
+  ```javascript
+  import { Component, ViewEncapsulation } from '@angular/core';
 
-@Component({
-  selector: 'my-app',
-  // specifies the template string for the Heatmap component
-  template: `<ejs-heatmap id='heatmap-container'></ejs-heatmap>`,
-  encapsulation: ViewEncapsulation.None
-})
-export class AppComponent  { }
-```
+  @Component({
+    selector: 'my-app',
+    // specifies the template string for the Heatmap component
+    template: `<ejs-heatmap id='heatmap-container'></ejs-heatmap>`,
+    encapsulation: ViewEncapsulation.None
+  })
+  export class AppComponent  { }
+  ```
 
-<!-- markdownlint-disable MD033 -->
+  <!-- markdownlint-disable MD033 -->
 
-Now use the <code>my-app</code> in the index.html instead of default one.
+  Now use the <code>my-app</code> in the index.html instead of default one.
 
-```html
-<my-app></my-app>
-```
+  ```html
+  <my-app></my-app>
+  ```
 
 * Use the `npm run start` command to run the application in the browser.
 
-```
-npm start
-```
+  ```
+  npm start
+  ```
 
 The below example shows a basic Heatmap.
 

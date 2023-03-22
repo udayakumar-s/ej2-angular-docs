@@ -24,28 +24,28 @@ The `Badge` component is pure CSS component which doesn't need specific dependen
 
 * To setup basic `Angular` sample use the following commands.
 
-```javascript
-git clone https://github.com/angular/quickstart.git quickstart
-cd quickstart
-npm install
-```
+  ```javascript
+  git clone https://github.com/angular/quickstart.git quickstart
+  cd quickstart
+  npm install
+  ```
 
-For more information, refer to [Angular sample setup](https://angular.io/guide/setup-local).
+ For more information, refer to [Angular sample setup](https://angular.io/guide/setup-local).
 
 * Install Syncfusion notifications package using below command.
 
-```javascript
-npm install @syncfusion/ej2-notifications --save
-```
+  ```javascript
+  npm install @syncfusion/ej2-notifications --save
+  ```
 
 * The Badge component CSS files are available in the `ej2-notifications` package folder. This can be referenced in your application using the following code.
 
-`[src/styles.css]`
+  `[src/styles.css]`
 
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-```
+  ```css
+  @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+  @import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+  ```
 
 ## Installing Syncfusion notifications Package
 

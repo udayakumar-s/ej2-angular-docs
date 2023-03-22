@@ -139,11 +139,10 @@ public void Save()
 
 ## Remove action
 
-The remove action is optional. Specify the URL to handle remove process from server.
-The remove handler receives the posted files and handle the remove operation in server.
+The remove action is optional. Specify the URL to handle remove process from server. The remove handler receives the posted files and handle the remove operation in server.
 
-    *   When the files are removed successfully from server, the success event triggers to denote the process has completed.
-    *   When remove action fails, the event **failure** triggers with information, which cause failure in remove process.
+    * When the files are removed successfully from server, the success event triggers to denote the process has completed.
+    * When remove action fails, the event **failure** triggers with information, which cause failure in remove process.
 
 > You can differentiate the file operation whether the success event triggers from save or remove action in its arguments **eventArgs.operation**.
 

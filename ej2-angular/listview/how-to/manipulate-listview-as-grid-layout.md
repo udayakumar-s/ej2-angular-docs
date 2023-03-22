@@ -28,15 +28,15 @@ In this section, we will discuss about rendering of list items in grid layout.
 
 * Now, add the below CSS to list item. This will make list items to render in grid layout
 
-```css
+        ```css
 
-#element .e-list-item {
-        height: 100px;
-        width: 100px;
-        float: left;
-}
+        #element .e-list-item {
+                height: 100px;
+                width: 100px;
+                float: left;
+        }
 
-```
+        ```
 
 In the below sample, we have rendered List items in grid layout.
 
