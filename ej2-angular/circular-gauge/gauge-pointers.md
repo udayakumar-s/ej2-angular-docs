@@ -150,8 +150,7 @@ The start and end pointers of range bar in the circular gauge are rounded to for
 
 ## Marker Pointer
 
-Different type of marker shape can be used to mark the pointer value in axis.
-You can change the marker shape using [`markerShape`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markershape-string)
+Different type of marker shape can be used to mark the pointer value in axis. You can change the marker shape using [`markerShape`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markershape-string)
 property in pointer.
 Gauge supports the below marker shape.
 * Circle
@@ -160,9 +159,7 @@ Gauge supports the below marker shape.
 * InvertedTriangle
 * Diamond
 
-We can use image instead of rendering marker shape to denote the pointer value.
-It can be achieved by setting [`markerShape`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markershape-string)
-to Image and assigning  image path to [`imageUrl`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#imageurl-string)in pointer.
+We can use image instead of rendering marker shape to denote the pointer value. It can be achieved by setting [`markerShape`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markershape-string) to Image and assigning  image path to [`imageUrl`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#imageurl-string)in pointer.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

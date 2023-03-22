@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Selection in Angular Treegrid component
 
-Selection provides an option to highlight a row or cell.
-Selection can be done through simple Mouse down or Arrow keys.
-To disable selection in the TreeGrid, set the [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowselection) to false.
+Selection provides an option to highlight a row or cell. Selection can be done through simple Mouse down or Arrow keys. To disable selection in the TreeGrid, set the [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowselection) to false.
 
 The treegrid supports two types of selection that can be set by using the [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type).They are:
 

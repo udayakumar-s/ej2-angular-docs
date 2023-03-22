@@ -14,9 +14,9 @@ You can customize the Toolbar component items by using third-party icons other t
 
 * Refer to the third-party reference link. Here, the CDN link of font awesome is referred.
 
-```html
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-```
+  ```html
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  ```
 
 * Add the icons to the toolbar component using ['prefixIcon'](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemDirective/#prefixicon) property
 

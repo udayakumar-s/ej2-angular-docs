@@ -74,21 +74,21 @@ export class AppComponent {
 * Validate the form using `validate` method and it validates the Slider value with the defined rules collection and returns the result.
 If user selects the value less than the minimum value, form will not submit.
 
-```typescript
+  ```typescript
 
-this.formObject.validate();
+  this.formObject.validate();
 
-```
+  ```
 
 * Slider validation can be done during value changes in slider. Refer to the below code snippet.
 
-```typescript
+  ```typescript
 
-  public onChanged(): void {
-      this.formObject.validate();
-  }
-
-```
+    public onChanged(): void {
+        this.formObject.validate();
+    }
+  
+  ```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

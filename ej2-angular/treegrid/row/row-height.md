@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Row Height in Angular Treegrid component
 
-You can customize the row height of treegrid rows through the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property. The `rowHeight` property
-is used to change the row height of entire treegrid rows.
+You can customize the row height of treegrid rows through the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property. The `rowHeight` property is used to change the row height of entire treegrid rows.
 
 In the below example, the `rowHeight` is set as '60px'.
 

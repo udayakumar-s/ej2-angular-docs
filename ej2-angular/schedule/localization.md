@@ -22,17 +22,17 @@ By default, Scheduler is set to follow the English culture ('en-US'). If you wan
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
 
-```
-npm install cldr-data --save
-```
+  ```
+  npm install cldr-data --save
+  ```
 
 Once the package is installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
 
 * Now import the installed CLDR JSON data into the `app.component.ts` file. To import JSON data, you need to install the JSON plugin loader. Here, we have used the SystemJS JSON plugin loader.
 
-```sh
-npm install systemjs-plugin-json --save-dev
-```
+  ```sh
+  npm install systemjs-plugin-json --save-dev
+  ```
 
 * Once installed, configure the `system.config.js` configuration settings as shown in the following code to map the `systemjs-plugin-json` loader.
 

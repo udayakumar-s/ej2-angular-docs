@@ -10,17 +10,11 @@ domainurl: ##DomainURL##
 
 # Validation in Angular Uploader component
 
-The uploader component validate the selected files extension and size using the `allowedExtentions`, `minFileSize` and `maxFileSize`properties.
-The files can be validated before uploading to the server and can be ignored on uploading.
-Also, you can validate the files by setting the HTML attributes to the original input element.
-The validation process occurs on drag-and-drop the files also.
+The uploader component validate the selected files extension and size using the `allowedExtentions`, `minFileSize` and `maxFileSize`properties. The files can be validated before uploading to the server and can be ignored on uploading. Also, you can validate the files by setting the HTML attributes to the original input element. The validation process occurs on drag-and-drop the files also.
 
 ## File type
 
-You can allow the specific types of files alone to upload using the `allowedExtentions` property.
-The extension can be represented as collection by comma separators. The uploader component
-filters the selected or dropped files matched against the specified file types and processes the
-upload operation. The validation happens when you specify value to inline attribute accept to original input element.
+You can allow the specific types of files alone to upload using the `allowedExtentions` property. The extension can be represented as collection by comma separators. The uploader component filters the selected or dropped files matched against the specified file types and processes the upload operation. The validation happens when you specify value to inline attribute accept to original input element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,9 +32,7 @@ upload operation. The validation happens when you specify value to inline attrib
 
 ## File size
 
-The uploader component allows you to validate the files based on its size.
-The validation helps to restrict uploading large files or empty files to the server. The size can be represented in `bytes`.
-By default, the uploader component allows you to upload **minimum file size** as 0 byte and **maximum file size** as 28.4 MB using using `minFileSize` and `maxFileSize` properties.
+The uploader component allows you to validate the files based on its size. The validation helps to restrict uploading large files or empty files to the server. The size can be represented in `bytes`. By default, the uploader component allows you to upload **minimum file size** as 0 byte and **maximum file size** as 28.4 MB using using `minFileSize` and `maxFileSize` properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,8 +50,7 @@ By default, the uploader component allows you to upload **minimum file size** as
 
 ## Maximum files count
 
-You can restrict uploading the maximum number of files using the **selected** event. In the selected event arguments, you can get the currently selected files details using the `getFilesData()`.
-You can modify the files details and assign the modified file list to the `eventArgs.modifiedFilesData`.
+You can restrict uploading the maximum number of files using the **selected** event. In the selected event arguments, you can get the currently selected files details using the `getFilesData()`. You can modify the files details and assign the modified file list to the `eventArgs.modifiedFilesData`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,8 +68,7 @@ You can modify the files details and assign the modified file list to the `event
 
 ## Duplicate files
 
-You can validate the duplicate files before uploading to server using the selected event.
-Compare the selected files with the existing files data and filter the file list by removing the duplicate files.
+You can validate the duplicate files before uploading to server using the selected event. Compare the selected files with the existing files data and filter the file list by removing the duplicate files.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

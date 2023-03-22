@@ -143,9 +143,9 @@ export class AppComponent {
 
 * Now, run the application in the browser using the following command.
 
-```shell
-npm start
-```
+  ```shell
+  npm start
+  ```
 
 The following code example depicts the way to initialize The Toolbar on a single element.
 

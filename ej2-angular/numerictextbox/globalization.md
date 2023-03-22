@@ -49,26 +49,26 @@ If you want to go with the different culture other than `English`, follow the be
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
-```
-npm install cldr-data --save
-```
+  ```
+  npm install cldr-data --save
+  ```
 
-Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
+ Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
 
 * Now import the installed CLDR JSON data into the `app.ts` file.
 
 * Now import the required culture from the installed location to `app.ts` file as like the below code snippets.
 
-```typescript
-declare var require: any;
+  ```typescript
+  declare var require: any;
 
-loadCldr(
+  loadCldr(
         require('cldr-data/main/de/numbers.json'),
         require('cldr-data/main/de/currencies.json'),
         require('cldr-data/supplemental/numberingSystems.json'),
         require('cldr-data/supplemental/currencyData.json')
     );
-```
+  ```
 
 * Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#locale) property.
 

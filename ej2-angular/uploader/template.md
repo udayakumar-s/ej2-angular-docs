@@ -14,9 +14,7 @@ You can customize the default appearance of the uploader using a template along 
 
 ## File list template
 
-The `template` property is used to customize the default appearance of each file in the list.
-It can be represented as the HTML element or string. The selected or dropped files are displayed as per the template layout provided.
-The remove and progress bar action is handled using the corresponding events when the template is defined.
+The `template` property is used to customize the default appearance of each file in the list. It can be represented as the HTML element or string. The selected or dropped files are displayed as per the template layout provided. The remove and progress bar action is handled using the corresponding events when the template is defined.
 
 For example, you can display file type icon along with default UI elements.
 

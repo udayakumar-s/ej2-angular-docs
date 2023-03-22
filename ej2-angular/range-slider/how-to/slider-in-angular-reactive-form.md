@@ -18,12 +18,12 @@ Follow below steps to validate slider within reactive forms.
 
 * Create [form group](https://angular.io/guide/reactive-forms#add-a-formgroup) with slider.
 
-```typescript
+  ```typescript
 
- sliderForm: FormGroup;
-  constructor(fb: FormBuilder) {
-    this.value = 30;
-    this.sliderForm = fb.group({
+   sliderForm: FormGroup;
+    constructor(fb: FormBuilder) {
+      this.value = 30;
+      this.sliderForm = fb.group({
       'slider': [0, Validators.min(10)]
     });
   }
