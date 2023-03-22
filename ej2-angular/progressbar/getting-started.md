@@ -25,25 +25,23 @@ Below is the list of minimum dependencies required to use the progressbar compon
 
 ## Installation and Configuration
 
-*You can use `Angular CLI` to setup your angular applications.
+* You can use `Angular CLI` to setup your angular applications.
 
-```shell
-npm install -g @angular/cli
-```
+  ```shell
+  npm install -g @angular/cli
+  ```
 
-For more information, refer to [Angular sample setup](https://angular.io/guide/setup)
+ For more information, refer to [Angular sample setup](https://angular.io/guide/setup)
 
 * Install progressbar packages using below command.
 
-```javascript
-npm install @syncfusion/ej2-angular-progressbar --save
-```
+  ```javascript
+  npm install @syncfusion/ej2-angular-progressbar --save
+  ```
 
-The above package installs `progressbar dependencies`
-which are required to render the component in Angular environment
+ The above package installs `progressbar dependencies` which are required to render the component in Angular environment
 
-* Syncfusion `ej2-angular-progressbar`
-packages needs to be mapped in `systemjs.config.js` configuration file.
+* Syncfusion `ej2-angular-progressbar` packages needs to be mapped in `systemjs.config.js` configuration file.
 
 ```javascript
 /**

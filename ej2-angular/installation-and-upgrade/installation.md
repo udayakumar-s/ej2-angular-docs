@@ -64,4 +64,4 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 2. Now, open the command prompt and run the `npm install` command line. This will install all npm dependencies in a single command line.
 
-> Refer the [documentation](https://docs.npmjs.com/files/package.json) for more details about npm package.json
+    > Refer the [documentation](https://docs.npmjs.com/files/package.json) for more details about npm package.json

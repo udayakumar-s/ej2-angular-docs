@@ -18,8 +18,7 @@ Each axis contains its own ranges, pointers and annotation.
 
 ## Axis Customization
 
-You can customize the width and color of an axis line by using [`lineStyle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/line) property.
-Background for an axis can be customized by using [`background`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axis/#background-string) property.
+You can customize the width and color of an axis line by using [`lineStyle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/line) property. Background for an axis can be customized by using [`background`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axis/#background-string) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,8 +37,7 @@ Background for an axis can be customized by using [`background`](https://ej2.syn
 
 ## Angles and Direction
 
-Circular gauge axis can sweep from 0 to 360 degrees.
-By default start angle of an axis is 200 degree and end angle is 160 degree and you can customize this option by using [`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axis/#startangle-number) and [`endAngle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axis/#endangle-number) property.
+Circular gauge axis can sweep from 0 to 360 degrees. By default start angle of an axis is 200 degree and end angle is 160 degree and you can customize this option by using [`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axis/#startangle-number) and [`endAngle`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axis/#endangle-number) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -75,8 +73,7 @@ The [`direction`](https://ej2.syncfusion.com/angular/documentation/api/circular-
 
 ## Axis Radius
 
-By default, radius of an axis is calculated based on the available size.
-You can customize this, by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axis/#radius-string) property.
+By default, radius of an axis is calculated based on the available size. You can customize this, by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axis/#radius-string) property.
 It takes value either in `percentage` or in `pixel`.
 
 **In Pixel**
@@ -139,9 +136,7 @@ By default, [`interval`](https://ej2.syncfusion.com/angular/documentation/api/ci
 
 **Tick Position**
 
-Both minor and major ticks can be moved by using [`offset`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tickModel/#offset-number) and [`position`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tickModel/#position-string) property.
-The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tickModel/#offset-number) defines the distance between the axis and ticks. By default, offset value is 0.
-The [`position`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tickModel/#position-string) will place the ticks either inside or outside of the axis.
+Both minor and major ticks can be moved by using [`offset`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tickModel/#offset-number) and [`position`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tickModel/#position-string) property. The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tickModel/#offset-number) defines the distance between the axis and ticks. By default, offset value is 0. The [`position`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tickModel/#position-string) will place the ticks either inside or outside of the axis.
 
 By default, ticks will be placed `inside` the axis.
 

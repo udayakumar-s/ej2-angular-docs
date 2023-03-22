@@ -104,8 +104,7 @@ The following code example shows the tooltip for the pointers, ranges and annota
 
 ## Pointer Drag
 
-Pointers can be dragged over the axis value.
-This can be achieved by clicking and dragging the pointer.
+Pointers can be dragged over the axis value. This can be achieved by clicking and dragging the pointer.
 To enable or disable the pointer drag, you can use [`enablePointerDrag`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/#enablepointerdrag-boolean) property.
 
 {% tabs %}

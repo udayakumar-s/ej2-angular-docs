@@ -69,50 +69,48 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 Import Bullet Chart module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
 
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the BulletChartModule for the Chart component
-import { BulletChartModule } from '@syncfusion/ej2-angular-charts';
-import { AppComponent }  from './app.component';
+   ```typescript
+     import { NgModule } from '@angular/core';
+     import { BrowserModule } from '@angular/platform-browser';
+     // import the BulletChartModule for the Chart component
+     import { BulletChartModule } from '@syncfusion/ej2-angular-charts';
+     import { AppComponent }  from './app.component';
 
-@NgModule({
-  //declaration of ChartModule into NgModule
-  imports:      [ BrowserModule, BulletChartModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
+   @NgModule({
+    //declaration of ChartModule into NgModule
+    imports:      [ BrowserModule, BulletChartModule ],
+    declarations: [ AppComponent ],
+     bootstrap:    [ AppComponent ]
+   })
+   export class AppModule { }
+  ```
 
 * Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component
 `[src/app/app.component.ts]`.
 
-```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+   ```typescript
+    import { Component, ViewEncapsulation } from '@angular/core';
 
-@Component({
-  selector: 'app-container',
-  // specifies the template string for the Bullet Charts component
-  template: `<ejs-bulletchart id='container'></ejs-bulletchart>`,
-  encapsulation: ViewEncapsulation.None
-})
-export class AppComponent  { }
-```
-
-<!-- markdownlint-disable MD033 -->
+   @Component({
+    selector: 'app-container',
+     // specifies the template string for the Bullet Charts component
+    template: `<ejs-bulletchart id='container'></ejs-bulletchart>`,
+    encapsulation: ViewEncapsulation.None
+  })
+   export class AppComponent  { }
+  ```
 
 Now use the <code>app-container</code> in the index.html instead of default one.
-
-```
-<app-container></app-container>
-```
+ 
+  ```
+   <app-container></app-container>
+  ```
 
 Now run the application in the browser using the below command.
 
-```
-npm start
-```
+   ```
+   npm start
+   ```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,7 +134,7 @@ Bullet Chart component are segregated into individual feature-wise modules. In o
 
 These modules should be injected to the provider section as follows,
 
-```typescript
+  ```typescript
     import { NgModule } from '@angular/core';
     import { BrowserModule } from '@angular/platform-browser';
     import { AppComponent } from './app.component';

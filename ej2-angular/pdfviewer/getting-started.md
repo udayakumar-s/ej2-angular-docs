@@ -162,12 +162,12 @@ The output will appear as follows.
 
 5. You can see that the PDF Viewer server instance runs in the local host with the port number `localhost:5001`and navigate to the PDF Viewer Web control `localhost:5001/pdfviewer`which returns the default get response method. We can bind the link to the `serviceUrl` property of PDF Viewer as below.
 
-```javascript
-export class AppComponent implements OnInit {
-    public service = 'https://localhost:5001/pdfviewer';
-    public document = 'PDF_Succinctly.pdf';
-    ngOnInit(): void {
-    }
-```
+   ```javascript
+   export class AppComponent implements OnInit {
+      public service = 'https://localhost:5001/pdfviewer';
+      public document = 'PDF_Succinctly.pdf';
+      ngOnInit(): void {
+      }
+   ```
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started).

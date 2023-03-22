@@ -352,8 +352,7 @@ You can show the relationship in tasks, by using the [`dependency`](https://ej2.
 
 ## Assigning resources
 
-You can display and assign the resource for each task in the Gantt control.
-Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [`resources`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property.
+You can display and assign the resource for each task in the Gantt control. Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [`resources`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resources) property.
 Map these fields to the Gantt control using the [`resourceFields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#resourceFields) property.
 
 {% tabs %}

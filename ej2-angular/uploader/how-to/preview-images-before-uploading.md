@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Preview images before uploading in Angular Uploader component
 
-The uploader component allows to create preview images before uploaded it. The preview images created by reading the file using selected event. Also, the user can create preview images after uploading to server using success event.
-Refer to the following link to learn about how to create image preview.
+The uploader component allows to create preview images before uploaded it. The preview images created by reading the file using selected event. Also, the user can create preview images after uploading to server using success event. Refer to the following link to learn about how to create image preview.
 
 [Image Preview](https://ej2.syncfusion.com/angular/demos/#/material/uploader/image-preview)
 

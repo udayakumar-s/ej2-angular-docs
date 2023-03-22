@@ -16,19 +16,19 @@ The steps to perform two-way binding.
 
 * Create [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started#getting-started) component and binds the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property as like the below code snippet.
 
-```
+  ```
 
-<input ejs-colorpicker type="color" class="form-control" id="colorpicker" required [(value)]="value" name="colorpicker" />
+  <input ejs-colorpicker type="color" class="form-control" id="colorpicker" required [(value)]="value" name="colorpicker" />
 
-```
+  ```
 
 * Create text box and bind the value using ngModel.
 
-```
+  ```
 
-<input type="text" id="name" name="name" class="form-control" [(ngModel)]="value" />
+  <input type="text" id="name" name="name" class="form-control" [(ngModel)]="value" />
 
-```
+  ```
 
 * And name the same variable name in both color picker and text box. Which will help to view the two-way binding i.e. changing value in color picker will change the textbox value and vice versa.
 
