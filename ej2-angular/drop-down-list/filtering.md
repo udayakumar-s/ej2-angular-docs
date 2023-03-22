@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The DropDownList has built-in support to filter data items when `allowFiltering` is enabled. The filter operation starts as soon as you start typing characters in the search box.
 
-To display filtered items in the popup, filter the required data and return it to the DropDownList via [updateData](https://ej2.syncfusion.com/angular/documentation/api/combo-box/filteringEventArgs/#updatedata) method by using the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#filtering) event.
+To display filtered items in the popup, filter the required data and return it to the DropDownList via [updateData](/api/drop-down-list/filteringEventArgs/#updatedata) method by using the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#filtering) event.
 
 The following sample illustrates how to query the data source and pass the data to the DropDownList through the `updateData` method in `filtering` event.
 

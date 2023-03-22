@@ -33,8 +33,8 @@ The latest Syncfusion npm package can be updated with the help of [`npm-check-up
 
 Run the following commands from the command prompt in the application root to update a specific npm package in `node_modules` and remove the installed duplicate package.
 
-  ```bash
+    ```bash
     npm update @syncfusion/ej2-grids
     npm update @syncfusion/ej2-angular-grids
     npm dedupe
-  ```
+    ```

@@ -61,9 +61,9 @@ The following steps show how to register the Syncfusion license key with the lic
 
 * Open the command prompt in the application root directory and activate the license key by using the below command,
 
-  ```sh
-  npx syncfusion-license activate
-  ```
+```sh
+npx syncfusion-license activate
+```
 
 * Once the Syncfusion license key is activated, the following console message will appear.
 
@@ -87,9 +87,9 @@ The following steps show how to set environment variable in different operating 
 
 * Open the command prompt and use [setx](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx) command to add the new environment variable.
 
-  ```sh
-  setx SYNCFUSION_LICENSE "license key"
-  ```
+```sh
+setx SYNCFUSION_LICENSE "license key"
+```
 
 #### Mac
 
@@ -97,15 +97,15 @@ The following steps show how to set environment variable in different operating 
 
 * You can set the environment variable by using below command,
 
-  ```sh
-  echo 'export SYNCFUSION_LICENSE="license key"' >> ~/.bash_profile
-  ```
+```sh
+echo 'export SYNCFUSION_LICENSE="license key"' >> ~/.bash_profile
+```
 
 * If you want to modify the environment variable in the bash profile. Use the below command,
 
-  ```sh
-  nano .bash_profile
-  ```
+```sh
+nano .bash_profile
+```
 
 * Once modified the variable. Press `ctrl+x` to exit then `Y` and `Enter` button to save the changes.
 
@@ -117,17 +117,17 @@ The following steps show how to set environment variable in different operating 
 
 * You can set or modify the [environment variable](https://help.ubuntu.com/community/EnvironmentVariables) by using below command,
 
-  ```sh
-  export SYNCFUSION_LICENSE='license key'
-  ```
+```sh
+export SYNCFUSION_LICENSE='license key'
+```
 
 * Once set the `SYNCFUSION_LICENSE` environment variable, restart the IDE or application terminal before using the license activation command.
 
 * Open the command prompt in the application root directory and activate the license key by using the below command,
 
-  ```sh
-  npx syncfusion-license activate
-  ```
+```sh
+npx syncfusion-license activate
+```
 
 * Once the Syncfusion license key is activated, the following console message will appear.
 
@@ -147,7 +147,7 @@ The following sections show how to use an environment variable in CI services.
 
 * Add the Syncfusion license activation command after running npm install or yarn like below,
 
-  ```bash
+```bash
   steps:
   - name: Install node modules
     run: npm install
@@ -156,7 +156,7 @@ The following sections show how to use an environment variable in CI services.
     run: npx syncfusion-license activate
     env:
       SYNCFUSION_LICENSE: ${{ secrets.SYNCFUSION_LICENSE }}
-  ```
+```
 
 #### Azure Pipelines (YAML)
 
