@@ -118,117 +118,117 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 * `+` – addition operator.
 
-```typescript
- Syntax: X + Y
-```
+   ```typescript
+     Syntax: X + Y
+   ```
 
 * `-` – subtraction operator.
 
-```typescript
-Syntax: X - Y
-```
+    ```typescript
+       Syntax: X - Y
+    ```
 
 * `*` – multiplication operator.
 
-```typescript
-Syntax: X * Y
-```
+    ```typescript
+       Syntax: X * Y
+    ```
 
 * `/` – division operator.
 
-```typescript
-Syntax: X / Y
-```
+    ```typescript
+       Syntax: X / Y
+    ```
 
 * `^` – power operator.
 
-```typescript
-Syntax: X^2
-```
+    ```typescript
+     Syntax: X^2
+    ```
 
 * `<` - less than operator.
 
-```typescript
-Syntax: X < Y
-```
+    ```typescript
+      Syntax: X < Y
+    ```
 
 * `<=` – less than or equal operator.
 
-```typescript
-Syntax: X <= Y
-```
+    ```typescript
+      Syntax: X <= Y
+    ```
 
 * `>` – greater than operator.
 
-```typescript
-Syntax: X > Y
-```
+    ```typescript
+      Syntax: X > Y
+    ```
 
 * `>=` – greater than or equal operator.
 
-```typescript
-Syntax: X >= Y
-```
+    ```typescript
+      Syntax: X >= Y
+    ```
 
 * `==` – equal operator.
 
-```typescript
-Syntax: X == Y
-```
+    ```typescript
+      Syntax: X == Y
+    ```
 
 * `!=` – not equal operator.
 
-```typescript
-Syntax: X != Y
-```
+    ```typescript
+     Syntax: X != Y
+    ```
 
 * `|` – OR operator.
 
-```typescript
-Syntax: X | Y
-```
+    ```typescript
+      Syntax: X | Y
+    ```
 
 * `&` – AND operator.
 
-```typescript
-Syntax: X & Y
-```
+     ```typescript
+      Syntax: X & Y
+     ```
 
 * `?` – conditional operator.
 
-```typescript
-Syntax: condition ? then : else
-```
+    ```typescript
+     Syntax: condition ? then : else
+   ```
 
 * `isNaN` – function that checks if the value is not a number.
 
-```typescript
-Syntax: isNaN(value)
-```
+    ```typescript
+    Syntax: isNaN(value)
+   ```
 
 * `!isNaN` – function that checks if the value is a number.
 
-```typescript
-Syntax: isNaN(value)
-```
+    ```typescript
+      Syntax: isNaN(value)
+    ```
 
 * `abs` – function that returns the absolute value of a number.
 
-```typescript
-Syntax: abs(number)
-```
+    ```typescript
+     Syntax: abs(number)
+    ```
 
 * `min` – function that returns the minimum value.
 
-```typescript
-Syntax: min(number1, number2)
-```
+    ```typescript
+     Syntax: min(number1, number2)
+    ```
 
 * `max` – function that returns the maximum value.
 
-```typescript
-Syntax: max(number1, number2)
-```
+    ```typescript
+     Syntax: max(number1, number2)
+    ```
 
  > Also, you can use JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object properties and methods directly to the formula.
 
@@ -282,11 +282,11 @@ The event [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/p
 
 * `actionName`: It holds the name of the current action began. The following are the UI actions and their names:
 
-| Action | Action Name|
-|------|-------------|
-| [`Calculated field button`](./calculated-field/#Calculated-Field)| Open calculated field dialog|
-| [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
-| [`Context menu in the tree view inside the calculated field dialog`](./calculated-field/#Calculated-Field)| Calculated field context menu|
+    | Action | Action Name|
+    |------|-------------|
+    | [`Calculated field button`](./calculated-field/#Calculated-Field)| Open calculated field dialog|
+    | [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
+    | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field/#Calculated-Field)| Calculated field context menu|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -318,10 +318,10 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 * `actionName`: It holds the name of the current action completed. The following are the UI actions and their names:
 
-| Action | Action Name|
-|------|-------------|
-| [`Calculated field button`](./calculated-field/#Calculated-Field)| Calculated field applied|
-| [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Calculated field edited|
+   | Action | Action Name|
+   |------|-------------|
+   | [`Calculated field button`](./calculated-field/#Calculated-Field)| Calculated field applied|
+   | [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Calculated field edited|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -349,11 +349,11 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 * `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
 
-| Action | Action Name |
-|------|-------------|
-| [`Calculated field button`](./calculated-field/#Calculated-Field)| Open calculated field dialog|
-| [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
-| [`Context menu in the tree view inside the calculated field dialog`](./calculated-field/#Calculated-Field)| Calculated field context menu|
+   | Action | Action Name |
+   |------|-------------|
+   | [`Calculated field button`](./calculated-field/#Calculated-Field)| Open calculated field dialog|
+   | [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
+   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field/#Calculated-Field)| Calculated field context menu|
 
 * `errorInfo`: It holds the error information of the current UI action.
 
