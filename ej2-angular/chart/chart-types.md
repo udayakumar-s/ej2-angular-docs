@@ -297,6 +297,24 @@ To render a stacked step area series, use series `type` as `StackingStepArea` an
   
 {% previewsample "page.domainurl/code-snippet/chart/series/area-cs7" %}
 
+**Range Step Area**
+
+To render the range step area series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#type) as a `RangeStepArea` and inject the `RangeStepAreaSeriesService` module using the `@NgModule.providers` method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/rangesteparea-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/rangesteparea-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/rangesteparea-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/chart/series/rangesteparea-cs1" %}
+
 **Multicolored area**
 
 To render a multicolored area series, use the series type as `MultiColoredArea`, and inject the `MultiColoredAreaSeriesService` into the `@NgModule.providers`.

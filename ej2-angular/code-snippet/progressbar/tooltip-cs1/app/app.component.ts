@@ -5,11 +5,14 @@ import { AnimationModel } from '@syncfusion/ej2-progressbar';
 @Component({
     selector: 'my-app',
     template:
-    `<ejs-progressbar  id='percentage' type='Circular' height='160px' width='160px'  trackColor='#FFD939' secondaryProgressColor: 'green' radius='100%' innerRadius='70%' progressColor='white' cornerRadius='Round' trackThickness=80 progressThickness=10 value=60 [animation]='animation'>
-     </ejs-progressbar>`
+    `<ejs-progressbar  id='percentage' type='Linear' height='90' value=90  [animation]='animation' [tooltip]='tooltip'>
+      </ejs-progressbar>`
 })
 export class AppComponent implements OnInit {
     public animation: AnimationModel;
+    public tooltip: Object = {
+        enable: true
+    };
     ngOnInit(): void {
         this.animation = { enable: true, duration: 2000, delay: 0 };
     }
