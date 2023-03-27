@@ -3,8 +3,8 @@ import { FileMenuSettingsModel, RibbonButtonSettingsModel, RibbonSplitButtonSett
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: 'app/app.component.html',
+  styleUrls: ['app/app.component.css']
 })
 export class AppComponent  {
 
@@ -39,7 +39,7 @@ export class AppComponent  {
   public fileSettings: FileMenuSettingsModel = {
     menuItems: [
       { text: "New", iconCss: "e-icons e-file-new", id: "new" },
-      { text: "Open", iconCss: "e-icons e-folder-open", id: "Open" },
+      { text: "Open", iconCss: "e-icons e-folder-open", id: "open" },
       { text: "Rename", iconCss: "e-icons e-rename", id: "rename" },
       { text: "Save as", iconCss: "e-icons e-save", id: "save" }
     ],

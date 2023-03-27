@@ -27,7 +27,7 @@ System.config({
         '@syncfusion/ej2-dropdowns': 'syncfusion:ej2-dropdowns/dist/ej2-dropdowns.umd.min.js',
         "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
         '@syncfusion/ej2-lists': 'syncfusion:ej2-lists/dist/ej2-lists.umd.min.js',
-        '@syncfusion/ej2-ribbon': 'syncfusion:ej2-ribbon/dist/ej2-inputs.umd.min.js',
+        '@syncfusion/ej2-ribbon': 'syncfusion:ej2-ribbon/dist/ej2-ribbon.umd.min.js',
         "@syncfusion/ej2-angular-base": "syncfusion:ej2-angular-base/dist/ej2-angular-base.umd.min.js",
         '@syncfusion/ej2-angular-ribbon': 'syncfusion:ej2-angular-ribbon/dist/ej2-angular-ribbon.umd.min.js',
 
