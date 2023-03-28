@@ -31,13 +31,8 @@ When a child element of any group is clicked, its contained group is selected in
 
 Multiple elements can be selected with the following ways:
 
-* Ctrl+Click
-
-During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
-
-* Selection rectangle/rubber band selection
-
-Clicking and dragging the diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
+* **Ctrl+Click** - During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
+* **Selection rectangle/rubber band selection** - Clicking and dragging the diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
 ![Multiple Rubberband Selection](images/multiselect_Highlight.gif)
 
@@ -66,7 +61,7 @@ The client-side method [`selectAll`](https://ej2.syncfusion.com/angular/document
 
 ![Resize](images/resize.gif)
 
->Note:  While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
+>Note: While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
 
 ## Rotate
 
@@ -128,7 +123,7 @@ Source and target points of the selected connectors are represented with two han
 
 ## Bezier thumbs
 
-* Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
+Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
 ![Bezier Segement Thumb](images/bezier-segement-thumb.gif)
 

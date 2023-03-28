@@ -11,6 +11,7 @@ domainurl: ##DomainURL##
 # Export in Angular Diagram component
 
 Diagram provides support to export its content as image/svg files. The client-side method [`exportDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#exportDiagram) helps to export the diagram. The following code illustrates how to export the diagram as image.
+
 >Note: To use Print and Export, you need to inject `PrintAndExport` in the diagram.
 
 <!-- markdownlint-disable MD033 -->
@@ -214,5 +215,4 @@ this.diagram.print(this.options);
 
 ## Limitations
 
-We have a limitation in exporting the image with HTML and Native node.  So, Syncfusion Essential PDF library is used, which supports HTML Content to Image conversion by using the advanced Qt WebKit rendering engine. You can refer to the following KB link for more details.
-[`https://www.syncfusion.com/kb/13298/how-to-print-or-export-the-html-and-native-node-into-image-format`]
+We have a limitation in exporting the image with HTML and Native node.  So, Syncfusion Essential PDF library is used, which supports HTML Content to Image conversion by using the advanced Qt WebKit rendering engine. You can refer to the following KB [link](https://www.syncfusion.com/kb/13298/how-to-print-or-export-the-html-and-native-node-into-image-format) for more details.

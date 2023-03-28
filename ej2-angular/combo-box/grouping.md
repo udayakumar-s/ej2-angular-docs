@@ -31,7 +31,6 @@ In the following sample, vegetables are grouped according on its category using 
 ## Customization
 
 The grouping header is also provided with customization option. This allows custom designing using the [groupTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#grouptemplate) property for both inline and fixed header.
-header.
 
 ## See Also
 

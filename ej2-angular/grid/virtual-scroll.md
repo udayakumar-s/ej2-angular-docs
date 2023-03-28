@@ -16,12 +16,9 @@ To use virtualization, you need to inject **VirtualScrollService** in Grid.
 
 ## Row Virtualization
 
-Row virtualization allows you to load and render rows only in content viewport. It is an alternative way of paging in which the data will load while scrolling vertically.
-To setup the row virtualization, you need to define [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) as true and content height by [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
+Row virtualization allows you to load and render rows only in content viewport. It is an alternative way of paging in which the data will load while scrolling vertically. To setup the row virtualization, you need to define [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) as true and content height by [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property.
 
-The number of records displayed in the Grid is determined implicitly by height of content area. Also you have an option to define visible number of records by [`pageSettings.pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/#pagesize) property.
-[`pageSettings.pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/#pagesize) property.
-The loaded data will be cached and reused when it is needed for next time.
+The number of records displayed in the Grid is determined implicitly by height of content area. Also you have an option to define visible number of records by [`pageSettings.pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettingsModel/#pagesize) property. The loaded data will be cached and reused when it is needed for next time.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,12 +36,9 @@ The loaded data will be cached and reused when it is needed for next time.
 
 ## Column Virtualization
 
-Column virtualization allows you to virtualize columns. It will render columns which are in viewport.
-You can scroll horizontally to view more columns.
+Column virtualization allows you to virtualize columns. It will render columns which are in viewport. You can scroll horizontally to view more columns.
 
 To setup the column virtualization, set the [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) and [`enableColumnVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablecolumnvirtualization) properties as `true`.
-[`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablevirtualization) and
-[`enableColumnVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablecolumnvirtualization) properties as `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,8 +54,7 @@ To setup the column virtualization, set the [`enableVirtualization`](https://ej2
   
 {% previewsample "page.domainurl/code-snippet/grid/paging1-cs9" %}
 
-> Column's [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) is required for column virtualization.
-If column's width is not defined then Grid will consider its value as **200px**.
+> Column's [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 
 ## Virtualization with Grouping
 
@@ -79,18 +72,17 @@ Both the row and column virtualization can be used along with grouping. At initi
 * Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items.
 To get these information regardless of the view items, refer to the [`Group with Page`](./grouping#group-with-paging) topic.
 * The page size provided must be two times larger than the number of visible rows in the grid. If the page size is failed to meet this condition then the size will be determined by grid.
-* The height of the grid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported. If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height.
-If the page size is failed to meet this condition then the size will be determined by grid.
+* The height of the grid content is calculated using the row height and total number of records in the data source and hence features which changes row height such as text wrapping are not supported. If you want to increase the row height to accommodate the content then you can specify the row height as below to ensure all the table rows are in same height. If the page size is failed to meet this condition then the size will be determined by grid.
 * The height of the grid content is calculated using the row height and total number of records
 in the data source and hence features which changes row height such as text wrapping are not supported.
 If you want to increase the row height to accommodate the content then you can specify the
  row height as below to ensure all the table rows are in same height.
 
-```css
-.e-grid .e-row {
-    height: 2em;
-}
-```
+    ```css
+    .e-grid .e-row {
+        height: 2em;
+    }
+    ```
 
 * Programmatic selection using [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) method is not supported in virtual scrolling.
 
@@ -104,13 +96,13 @@ For example, if the row height is set as 30px and the total record count is 1000
 
 This height limitation is not related to the Grid component. It fully depends on the default behavior of the browser. The same issue is reproduced in the normal HTML table too.
 
-The following image illustrates the height limitation issue of a normal HTML table in different browsers (Chrome and Firefox).
+<!-- The following image illustrates the height limitation issue of a normal HTML table in different browsers (Chrome and Firefox).
 
 ![Browser height limitation in HTML table](images/html-table.gif)
 
 Grid component also faced the same issue as mentioned in the below image.
 
-![Grid with browser height limitation](images/grid.gif)
+![Grid with browser height limitation](images/grid.gif) -->
 
 The Grid has an option to overcome this limitation of the browser in the following ways.
 
@@ -205,7 +197,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
  You can view the hosted link for this sample [here](https://ej2.syncfusion.com/aspnetcore/Load_millions_of_records).
 
-![Prevent browser height limitation](images/external-button.png)
+<!-- ![Prevent browser height limitation](images/external-button.png) -->
 
 > If you perform grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
 
@@ -215,7 +207,7 @@ You can reduce the [row height](https://ej2.syncfusion.com/angular/documentation
 
 In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
 
-![Row Height](images/row-height.gif)
+<!-- ![Row Height](images/row-height.gif) -->
 
 ### Solution 3: Using paging instead of virtual scrolling
 

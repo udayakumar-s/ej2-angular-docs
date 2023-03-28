@@ -27,33 +27,32 @@ To Export the Grid in server side, You need to call the [`serverExcelExport`](ht
 
 ```typescript
 
-        public ActionResult ExcelExport([FromForm] string gridModel)
-        {
-            GridExcelExport exp = new GridExcelExport();
-            Grid gridProperty = ConvertGridObject(gridModel);
-            return exp.ExcelExport<OrdersDetails>(gridProperty, orddata);
-        }
+public ActionResult ExcelExport([FromForm] string gridModel)
+{
+    GridExcelExport exp = new GridExcelExport();
+    Grid gridProperty = ConvertGridObject(gridModel);
+    return exp.ExcelExport<OrdersDetails>(gridProperty, orddata);
+}
 
-        private Grid ConvertGridObject(string gridProperty)
-        {
-           Grid GridModel = (Grid)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(Grid));
-           GridColumnModel cols = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
-           GridModel.Columns = cols.columns;
-           return GridModel;
-        }
+private Grid ConvertGridObject(string gridProperty)
+{
+    Grid GridModel = (Grid)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(Grid));
+    GridColumnModel cols = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
+    GridModel.Columns = cols.columns;
+    return GridModel;
+}
 
-        public class GridColumnModel
-        {
-            public List<GridColumn> columns { get; set; }
-        }
-        public IActionResult UrlDatasource([FromBody]DataManagerRequest dm)
-        {
-            IEnumerable DataSource = OrdersDetails.GetAllRecords();
-            DataOperations operation = new DataOperations();
-            int count = DataSource.Cast<OrdersDetails>().Count();
-            return dm.RequiresCounts ? Json(new { result = DataSource, count = count }) : Json(DataSource);
-        }
-
+public class GridColumnModel
+{
+    public List<GridColumn> columns { get; set; }
+}
+public IActionResult UrlDatasource([FromBody]DataManagerRequest dm)
+{
+    IEnumerable DataSource = OrdersDetails.GetAllRecords();
+    DataOperations operation = new DataOperations();
+    int count = DataSource.Cast<OrdersDetails>().Count();
+    return dm.RequiresCounts ? Json(new { result = DataSource, count = count }) : Json(DataSource);
+}
 
 ```
 

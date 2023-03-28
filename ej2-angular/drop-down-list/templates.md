@@ -18,9 +18,7 @@ To get started quickly with templates in angular DropDownList component, you can
 
 ## Item template
 
-The content of each list item within the DropDownList can be customized with the
-help of [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#itemtemplate)
-property.
+The content of each list item within the DropDownList can be customized with the help of [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#itemtemplate) property.
 
 In the following sample, each list item is split into two columns to display relevant data's.
 
@@ -66,9 +64,7 @@ In the following sample, the selected value is displayed as a combined text of b
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be
-customize with the help of [groupTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#grouptemplate-string) property.
-This template is common for both inline and floating group header template.
+The group header title under which appropriate sub-items are categorized can also be customize with the help of [groupTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#grouptemplate-string) property. This template is common for both inline and floating group header template.
 
 In the following sample, employees are grouped according to their city.
 
@@ -161,8 +157,7 @@ In the following sample, popup list content displays the notification of no data
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the
-[actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#actionfailuretemplate) property.
+There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#actionfailuretemplate) property.
 
 In the following sample, when the data fetch request fails, the DropDownList displays the notification.
 

@@ -48,8 +48,7 @@ To add a connection port, define the port object and add it to node’s ports co
 
 Add ports at runtime by using the client-side method [`addPorts`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addPorts). The following code illustrates how to add ports to node at runtime.
 
-The port’s ID property is used to define the unique ID for the port and its further used to find the port at runtime.
-If ID is not set, then default ID is automatically set.
+The port’s ID property is used to define the unique ID for the port and its further used to find the port at runtime. If ID is not set, then default ID is automatically set.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

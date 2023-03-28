@@ -117,8 +117,7 @@ export class AppModule { }
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
+The following CSS files are available in `../node_modules/@syncfusion` package folder. This can be referenced in [src/styles.css] using following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -132,8 +131,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding MultiSelect component
 
-Modify the template in [src/app/app.component.ts] file to render the Angular MultiSelect component.
-Add the Angular MultiSelect by using `<ejs-multiselect>` selector in `template` section of the app.component.ts file.
+Modify the template in [src/app/app.component.ts] file to render the Angular MultiSelect component. Add the Angular MultiSelect by using `<ejs-multiselect>` selector in `template` section of the app.component.ts file.
 
 ```javascript
 import { Component } from '@angular/core';
@@ -192,13 +190,10 @@ The following example illustrates the output in your browser.
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the
-MultiSelect input element's width, and the height auto adjust's according to the height of the popup list items.
+By default, the width of the popup list automatically adjusts according to the MultiSelect input element's width, and the height auto adjust's according to the height of the popup list items.
 
-The height and width of the popup list can also be customized using the
-[popupHeight](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#popupheight)
-&nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#popupwidth) properties
-respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#popupheight)
+&nbsp; and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#popupwidth) properties respectively.
 
 In the following sample, popup list's width and height are configured.
 

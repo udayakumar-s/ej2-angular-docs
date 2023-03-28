@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Edit in Angular Grid component
 
-The Grid component has options to dynamically insert, delete and update records.
-Editing feature requires a primary key column for CRUD operations.
-To define the primary key, set [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) to **true** in particular column.
+The Grid component has options to dynamically insert, delete and update records. Editing feature requires a primary key column for CRUD operations. To define the primary key, set [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) to **true** in particular column.
 
 You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#addrecord) method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid.
 
@@ -40,12 +38,10 @@ To learn about what are all the edit modes and edit types are available in Angul
 
 > * If [`columns.isIdentity`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
 > * You can disable editing for a particular column, by specifying [`columns.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowediting) to **false**.
-[`columns.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowediting) to **false**.
 
 ## Toolbar with edit option
 
-The grid toolbar has the [built-in items](../../toolbar/item-configuration) to execute Editing actions.
-You can define this by using the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property.
+The grid toolbar has the [built-in items](../../toolbar/item-configuration) to execute Editing actions. You can define this by using the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,8 +135,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 
 ## Troubleshoot editing works only for first row
 
-The Editing functionalities can be performed based upon the primary key value of the selected row.
-If **primaryKey** is not defined in the grid, then edit or delete action take places the first row.
+The Editing functionalities can be performed based upon the primary key value of the selected row. If **primaryKey** is not defined in the grid, then edit or delete action take places the first row.
 
 ## How to make a Grid column always editable
 

@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Drop down tree component
 
-This section explains you about how to create a simple **Dropdown Tree** component and configure its available
-functionalities in Angular.
+This section explains you about how to create a simple **Dropdown Tree** component and configure its available functionalities in Angular.
 
 ## Dependencies
 
@@ -121,13 +120,11 @@ Add Dropdown Tree component's styles as given below in `styles.css`.
 @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 ```
 
->Note: If you want to refer the combined component styles, please make use of
-our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+>Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Add Dropdown Tree component
 
-Modify the template in [src/app/app.component.ts] file to render the Dropdown Tree component.
-Add the Angular Dropdown Tree by using `ejs-dropdowntree` selector in `template` section of the app.component.ts file.
+Modify the template in [src/app/app.component.ts] file to render the Dropdown Tree component. Add the Angular Dropdown Tree by using `ejs-dropdowntree` selector in `template` section of the app.component.ts file.
 
 ```typescript
 import { Component } from '@angular/core';

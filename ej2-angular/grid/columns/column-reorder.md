@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Column reorder in Angular Grid component
 
-Reordering can be done by drag and drop of a particular column header from one index to another index within the grid.
-To enable reordering, set the [`allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowreordering) to true.
+Reordering can be done by drag and drop of a particular column header from one index to another index within the grid. To enable reordering, set the [`allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowreordering) to true.
 
 To use Reordering, you need to inject **ReorderService** in the provider section of **AppModule**.
 
@@ -73,9 +72,11 @@ In the below sample, **Ship City** and **Ship Region** column is reordered to la
 
 During the reorder action, the grid component triggers the below three events.
 
-1. The [`columnDragStart`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndragstart) event triggers when column header element drag (move) starts.
-2. The [`columnDrag`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrag) event triggers when column header element is dragged (moved) continuously.
-3. The [`columnDrop`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrop) event triggers when a column header element is dropped on the target column.
+1.The [`columnDragStart`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndragstart) event triggers when column header element drag (move) starts.
+
+2.The [`columnDrag`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrag) event triggers when column header element is dragged (moved) continuously.
+
+3.The [`columnDrop`](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrop) event triggers when a column header element is dropped on the target column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

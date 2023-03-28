@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Tool bar in Angular Grid component
 
-The Grid provides ToolBar support to handle grid actions. The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects for custom toolbar items or HTML element ID for toolbar template.
-To use Toolbar, you need to inject **ToolbarService** in the provider section of **AppModule**.
+The Grid provides ToolBar support to handle grid actions. The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects for custom toolbar items or HTML element ID for toolbar template. To use Toolbar, you need to inject **ToolbarService** in the provider section of **AppModule**.
 
 ## Enable or disable toolbar items
 

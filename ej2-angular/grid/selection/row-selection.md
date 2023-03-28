@@ -126,4 +126,4 @@ You can get the selected records using the [getSelectedRecords](https://ej2.sync
   
 {% previewsample "page.domainurl/code-snippet/grid/selection-cs12" %}
 
-> To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columnshttps://ej2.syncfusion.com/angular/documentationisPrimaryKey](./api-column.html#isprimarykey-boolean) property.
+> To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid#columns) property.

@@ -36,6 +36,7 @@ Diagram can also be saved as raster or vector image files. For more information 
 ## Load
 
 Diagram is loaded from the serialized string data by client-side method, [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loadDiagram).
+
 The following code illustrates how to load the diagram from serialized string data.
 
 ```typescript
@@ -50,6 +51,7 @@ this.diagram.loadDiagram(saveData);
 ## Prevent default values
 
 The diagram provides supports to simplifying the saved JSON object without adding the default properties that are presented in the diagram.
+
 The following code illustrates how to simplify the JSON object.
 
 ```typescript

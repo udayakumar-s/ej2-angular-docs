@@ -14,15 +14,13 @@ The scrollbar will be displayed in the grid when content exceeds the element [`w
 
 * The vertical scrollbar appears when the total height of rows present in the grid exceeds its element height.
 * The horizontal scrollbar appears when the sum of columns width exceeds the grid element width.
-* The [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width)
-are used to set the grid height and width, respectively.
+* The [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) are used to set the grid height and width, respectively.
 
 > The default value for [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) is `auto`.
 
 ## Set width and height
 
-To specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height)
-of scroller in pixel, set the pixel value as number.
+To specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) of scroller in pixel, set the pixel value as number.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,8 +38,7 @@ of scroller in pixel, set the pixel value as number.
 
 ## Responsive with parent container
 
-Specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) as **100%** to make the grid element fill its parent container.
-Setting the [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) to **100%** requires the grid parent element to have explicit height.
+Specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) as **100%** to make the grid element fill its parent container. Setting the [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) to **100%** requires the grid parent element to have explicit height.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

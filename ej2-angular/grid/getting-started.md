@@ -18,8 +18,7 @@ To get start quickly with Angular Grid using CLI and Schematics, you can check o
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
 ```bash
 npm install -g @angular/cli
@@ -107,8 +106,7 @@ export class AppComponent implements OnInit {
 
 ## Defining Row Data
 
-Bind data for the Grid component by using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
-It accepts either array of JavaScript object or [`DataManager`](./data-binding) instance.
+Bind data for the Grid component by using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. It accepts either array of JavaScript object or [`DataManager`](./data-binding) instance.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -131,6 +129,7 @@ export class AppComponent implements OnInit {
 ## Defining Columns
 
 The Grid has an option to define columns as directives. In these column directives, we have properties to customize columns.
+
 Let’s check the properties used here:
 
 * We have added [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) to map with a property name an array of JavaScript objects.
@@ -170,11 +169,7 @@ These modules should be injected into the **providers** section of root **NgModu
 
 ## Enable Paging
 
-The paging feature enables users to view the Grid record in a paged view.
-It can be enabled by setting [`allowPaging`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowpaging) property to true.
-Also, need to inject the **PageService** module in the provider section as follows.
-If we didn't inject the **PageService** module, then the pager will not be rendered in Grid.
-The pager can be customized using [`pageSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pagesettings) property.
+The paging feature enables users to view the Grid record in a paged view. It can be enabled by setting [`allowPaging`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowpaging) property to true. Also, need to inject the **PageService** module in the provider section as follows. If we didn't inject the **PageService** module, then the pager will not be rendered in Grid. The pager can be customized using [`pageSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pagesettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -192,11 +187,7 @@ The pager can be customized using [`pageSettings`](https://ej2.syncfusion.com/an
 
 ## Enable Sorting
 
-The sorting feature enables the user to order the records.
-It can be enabled by setting [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property as true.
-Also, need to inject the **SortService** module in the provider section as follow.
-If we didn't inject the **SortService** module, then user not able to sort when click on headers.
-Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortsettings) property.
+The sorting feature enables the user to order the records. It can be enabled by setting [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property as true. Also, need to inject the **SortService** module in the provider section as follow. If we didn't inject the **SortService** module, then user not able to sort when click on headers. Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -214,11 +205,7 @@ Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.
 
 ## Enable Filtering
 
-The filtering feature enables the user to view the reduced amount of records based on filter criteria.
-It can be enabled by setting [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property as true.
-Also, need to inject the **FilterService** module in the provider section as follow.
-If we didn't inject the **FilterService** module, then filter bar will not be rendered in Grid.
-Filtering feature can be customized using [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#filtersettings) property.
+The filtering feature enables the user to view the reduced amount of records based on filter criteria. It can be enabled by setting [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property as true. Also, need to inject the **FilterService** module in the provider section as follow. If we didn't inject the **FilterService** module, then filter bar will not be rendered in Grid. Filtering feature can be customized using [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#filtersettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -236,11 +223,7 @@ Filtering feature can be customized using [`filterSettings`](https://ej2.syncfus
 
 ## Enable Grouping
 
-The grouping feature enables users to view the Grid record in a grouped view.
-It can be enabled by setting [`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to true.
-Also, need to inject the **GroupService** module in the provider section as follow.
-If we didn't inject the **GroupService** module, then the group drop area will not be rendered in Grid.
-Grouping feature can be customized using [`groupSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#groupsettings) property.
+The grouping feature enables users to view the Grid record in a grouped view. It can be enabled by setting [`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to true. Also, need to inject the **GroupService** module in the provider section as follow. If we didn't inject the **GroupService** module, then the group drop area will not be rendered in Grid. Grouping feature can be customized using [`groupSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#groupsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

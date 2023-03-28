@@ -10,13 +10,11 @@ domainurl: ##DomainURL##
 
 # Aggregates in Angular Grid component
 
-Aggregate values are displayed in the footer, group footer and group caption of Grid. It can be configured through **e-aggregates** directive.
-The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#field) and [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) are the minimum properties required to represent an aggregate column.
+Aggregate values are displayed in the footer, group footer and group caption of Grid. It can be configured through **e-aggregates** directive. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#field) and [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) are the minimum properties required to represent an aggregate column.
 
 To use aggregate feature, you need to inject the **AggregateService** module into the **@NgModule.providers** section.
 
-By default, the aggregate value can be displayed in footer, group and caption cells, to show the aggregate value in any of these cells, use the [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#footertemplate), [`groupFooterTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#groupfootertemplate) and
-[`groupCaptionTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#groupcaptiontemplate) properties.
+By default, the aggregate value can be displayed in footer, group and caption cells, to show the aggregate value in any of these cells, use the [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#footertemplate), [`groupFooterTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#groupfootertemplate) and [`groupCaptionTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#groupcaptiontemplate) properties.
 
 ## Built-in aggregate types
 

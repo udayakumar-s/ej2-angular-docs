@@ -98,8 +98,7 @@ Annotation can be aligned relative to the node boundaries. It has [`margin`](htt
 
 The offset property of annotation is used to align the annotations based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
-Set the size for a nodes annotation by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#width-number) and
-[`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#height-number) properties.
+Set the size for a nodes annotation by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#height-number) properties.
 
 The following code shows the relationship between the annotation position (black color circle) and offset (fraction values).
 
@@ -174,6 +173,7 @@ The following code example illustrates how to align connector annotations.
 ## Margin
 
 [`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#margin-marginmodel) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property.
+
 The following code example illustrates how to align a annotation based on its `offset`, `horizontalAlignment`, `verticalAlignment`, and `margin` values.
 
 {% tabs %}
@@ -351,14 +351,14 @@ Diagram allows annotation to be interacted by selecting, dragging, rotating, and
 
 Diagram provides support to edit an annotation at runtime, either programmatically or interactively. By default, annotation is in view mode. But it can be brought to edit mode in two ways;
 
-* Programmatically
-By using [`startTextEdit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#startTextEdit) method, edit the text through programmatically.
+* Programmatically, by using [`startTextEdit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#startTextEdit) method, edit the text through programmatically.
 
 * Interactively
     1. By double-clicking the annotation.
     2. By selecting the item and pressing the F2 key.
 
 Double-clicking any annotation will enables editing and the node enables first annotation editing. When the focus of editor is lost, the annotation for the node is updated.
+
 When you double-click on the node/connector/diagram model, the [`doubleClick`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#doubleClick--emittypeidoubleClickeventargs) event gets triggered.
 
 ## Read-only annotations

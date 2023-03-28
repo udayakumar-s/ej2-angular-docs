@@ -14,9 +14,7 @@ You can show a tooltip as a table using the `template` property in `tooltipSetti
 
 The following steps describe how to show the table tooltip.
 
-**Step 1**:
-
-Initialize the tooltip template div as shown in the following html page.
+**Step 1**: Initialize the tooltip template div as shown in the following html page.
 
 ```html
 <script id="tooltipTemplate" type="text/x-template">
@@ -29,9 +27,7 @@ Initialize the tooltip template div as shown in the following html page.
 
 ```
 
-**Step 2**:
-
-Set the element id to the `template` property in `tooltipSettings` to show the tooltip template.
+**Step 2**: Set the element id to the `template` property in `tooltipSettings` to show the tooltip template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

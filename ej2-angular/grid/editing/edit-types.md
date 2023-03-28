@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Customize editors using params
 
-The [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edittype) is used to define the editor component for any particular column.
-You can set the [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edittype) based on data type of the column.
+The [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edittype) is used to define the editor component for any particular column. You can set the [`columns.editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edittype) based on data type of the column.
 
 * [`NumericTextBox`](../../numerictextbox) component for integers, double, and decimal data types.
 

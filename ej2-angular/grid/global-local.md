@@ -138,8 +138,6 @@ The below example demonstrates the Grid in **Deutsch** culture.
 ## Internationalization
 
 The [`Internationalization`](../common/globalization/internationalization) library is used to globalize number, date, and time values in grid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
-and time values in grid component using format strings in the
-[`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
 
 For importing **json** files in your application, you need to include the **json-typings.d.ts** file.
 
@@ -171,9 +169,7 @@ You need to load culture format files in **ngOnInit** function.
 
 ## Right to Left - RTL
 
-RTL provides an option to switch the text direction and layout of Grid component from right to left.
-It improves the user experiences and accessibility for users who use right-to-left languages(Arabic, Farsi, Urdu, etc).
-To enable RTL in the Grid, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablertl) to true.
+RTL provides an option to switch the text direction and layout of Grid component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages(Arabic, Farsi, Urdu, etc). To enable RTL in the Grid, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablertl) to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

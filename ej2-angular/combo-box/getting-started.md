@@ -216,8 +216,7 @@ The ComboBox allows the user to give input as custom value which is not required
 
 By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
 
-The height and width of the popup list can also be customized using the  [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupwidth) property
-respectively.
+The height and width of the popup list can also be customized using the  [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupheight) &nbsp;and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#popupwidth) property respectively.
 
 In the following sample, popup list's width and height are configured.
 

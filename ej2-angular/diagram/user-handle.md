@@ -87,7 +87,7 @@ To create fixed user handles, define and add them to the collection of nodes and
 
 ### Size
 
- Diagram allows you set size for fixed user handles by using the `width` and `height` property. The default value of the width and height property is 10.
+Diagram allows you set size for fixed user handles by using the `width` and `height` property. The default value of the width and height property is 10.
 
 ### Style
 
@@ -119,7 +119,7 @@ The following code explains how to customize the appearance of the fixed user ha
 
 ## Customizing node fixed user handle
 
-* The node fixed user handle can be aligned relative to the node boundaries. It has `margin` and `offset` settings. It is quite useful to position the node fixed userhandle and used together and gives you more control over the node fixed user handle positioning.
+The node fixed user handle can be aligned relative to the node boundaries. It has `margin` and `offset` settings. It is quite useful to position the node fixed userhandle and used together and gives you more control over the node fixed user handle positioning.
 
 ### Margin for node fixed user handle
 
@@ -182,7 +182,7 @@ The following table shows all the possible alignments visually shows the fixed u
 
 ### Displacement
 
-* The `displacement` property allows you to specify the space to be left from the connector segment based on the x and y value provided.
+The `displacement` property allows you to specify the space to be left from the connector segment based on the x and y value provided.
 
 The following table shows all the possible alignments visually shows the fixed user handle positions.
 

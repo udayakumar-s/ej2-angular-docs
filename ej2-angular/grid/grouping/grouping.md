@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 The Grid has options to group records by dragging and dropping the column header to the group drop area. When grouping is applied, grid records are organized into a hierarchical structure to facilitate easier expansion and collapse of records.
 
-To enable Grouping in the grid, set the [`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) to true.
-Grouping options can be configured in [`groupSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings).
+To enable Grouping in the grid, set the [`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) to true. Grouping options can be configured in [`groupSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings).
 
 To use Grouping, you need to inject **GroupService** in the provider section of **AppModule**.
 
@@ -72,10 +71,7 @@ To avoid ungrouping or further grouping of a column after initial column groupin
 
 ## Group with paging
 
-On grouping columns with paging feature, the aggregated information and total items are displayed based on the current page.
-The grid does not consider aggregated information and total items from other pages.
-To get additional details (aggregated information and total items) from other pages, set the [`groupSettings.disablePageWiseAggregates`](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablePageWiseAggregates) to false.
-set the [`groupSettings.disablePageWiseAggregates`](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablePageWiseAggregates) to false.
+On grouping columns with paging feature, the aggregated information and total items are displayed based on the current page. The grid does not consider aggregated information and total items from other pages. To get additional details (aggregated information and total items) from other pages, set the [`groupSettings.disablePageWiseAggregates`](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablePageWiseAggregates) to false.
 
 > If remote data is bound to grid dataSource, two requests will be sent when performing grouping action;
 one for getting the grouped data and another for getting aggregate details and total items count.
@@ -83,9 +79,7 @@ one for getting the grouped data and another for getting aggregate details and t
 ## Group by format
 
 By default, columns will be grouped by the data or value present for the particular row. To group numeric or datetime column based on the mentioned format, you have to enable the [`enableGroupByFormat`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#enablegroupbyformat) property of the corresponding grid columns.
-or datetime column based on the mentioned format, you have to enable the
-[`enableGroupByFormat`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#enablegroupbyformat) property of the corresponding
-grid columns.
+or datetime column based on the mentioned format, you have to enable the [`enableGroupByFormat`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#enablegroupbyformat) property of the corresponding grid columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,11 +97,7 @@ grid columns.
 
 ## Grouping Events
 
-During the group action, the grid component triggers two events. The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event triggers before the group action starts and the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event triggers after the group action is completed. Using these events you can perform any action.
-[`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event
-triggers before the group action starts and the
-[`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete)
-event triggers after the group action is completed. Using these events you can perform any action.
+During the group action, the grid component triggers two events. The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event triggers before the group action starts and the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event triggers after the group action is completed. Using these events you can perform any action. [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event triggers before the group action starts and the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event triggers after the group action is completed. Using these events you can perform any action.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,8 +113,7 @@ event triggers after the group action is completed. Using these events you can p
   
 {% previewsample "page.domainurl/code-snippet/grid/grouping1-cs6" %}
 
-> [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) is current action name.
-For example in grouping, the [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) value is 'grouping'.
+> [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) is current action name. For example in grouping, the [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) value is 'grouping'.
 
 ## Collapse by external button
 

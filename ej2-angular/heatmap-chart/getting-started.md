@@ -67,7 +67,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Registering Heatmap Module
 
-* Import Heatmap module into Angular application(app.module.ts) from the package `@syncfusion/ej2-ng-heatmap` `[src/app/app.module.ts]`.
+Import Heatmap module into Angular application(app.module.ts) from the package `@syncfusion/ej2-ng-heatmap` `[src/app/app.module.ts]`.
 
   ```javascript
   import { NgModule }      from '@angular/core';
@@ -87,8 +87,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Add Heatmap component
 
-* Modify the template in `app.component.ts` file to render the `ej2-ng-heatmap` component
-`[src/app/app.component.ts]`.
+Modify the template in `app.component.ts` file to render the `ej2-ng-heatmap` component `[src/app/app.component.ts]`.
 
   ```javascript
   import { Component, ViewEncapsulation } from '@angular/core';
@@ -110,7 +109,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
   <my-app></my-app>
   ```
 
-* Use the `npm run start` command to run the application in the browser.
+Use the `npm run start` command to run the application in the browser.
 
   ```
   npm start
