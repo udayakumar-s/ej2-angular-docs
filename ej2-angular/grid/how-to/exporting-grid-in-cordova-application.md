@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Exporting grid in cordova application in Angular Grid component
 
-Cordova application does not support direct file download. So we have to use the Blob stream to export the Grid.
-You can use corresponding exporting methods and exportComplete events to get the Blob stream.
+Cordova application does not support direct file download. So we have to use the Blob stream to export the Grid. You can use corresponding exporting methods and exportComplete events to get the Blob stream.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

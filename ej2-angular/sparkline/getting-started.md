@@ -14,8 +14,7 @@ This section explains you the steps required to create a Sparkline and demonstra
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
 ```bash
 npm install -g @angular/cli
@@ -44,8 +43,7 @@ npm install @syncfusion/ej2-angular-charts --save
 
 ## Registering Sparkline Module
 
-* Import Sparkline module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts`
-`[src/app/app.module.ts]`.
+* Import Sparkline module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
 
   ```typescript
   import { NgModule }      from '@angular/core';
@@ -63,8 +61,7 @@ npm install @syncfusion/ej2-angular-charts --save
   export class AppModule { }
   ```
 
-* Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component
-`[src/app/app.component.ts]`.
+Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component `[src/app/app.component.ts]`.
 
   ```javascript
   import { Component, ViewEncapsulation } from '@angular/core';
@@ -86,7 +83,7 @@ npm install @syncfusion/ej2-angular-charts --save
   <app-container></app-container>
   ```
 
-* Now run the application in the browser using the below command.
+Now run the application in the browser using the below command.
 
   ```
   npm start

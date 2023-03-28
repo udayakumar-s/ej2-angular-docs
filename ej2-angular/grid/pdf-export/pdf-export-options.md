@@ -209,17 +209,17 @@ The code example for changing default font,
 
 ```typescript
 
-    import { PdfStandardFont, PdfFontFamily, PdfFontStyle } from '@syncfusion/ej2-pdf-export';
+import { PdfStandardFont, PdfFontFamily, PdfFontStyle } from '@syncfusion/ej2-pdf-export';
 
-    ...
+...
 
-    const pdfExportProperties: PdfExportProperties = {
-        theme: {
-            header: {font:  new PdfStandardFont(PdfFontFamily.TimesRoman, 11, PdfFontStyle.Bold),
-            caption: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 9) },
-            record: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 10) }
-        }
-    };
+const pdfExportProperties: PdfExportProperties = {
+    theme: {
+        header: {font:  new PdfStandardFont(PdfFontFamily.TimesRoman, 11, PdfFontStyle.Bold),
+        caption: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 9) },
+        record: { font: new PdfStandardFont(PdfFontFamily.TimesRoman, 10) }
+    }
+};
 
 ```
 

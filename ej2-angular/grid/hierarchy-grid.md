@@ -10,10 +10,8 @@ domainurl: ##DomainURL##
 
 # Hierarchy grid in Angular Grid component
 
-The Grid allows display of table data in a hierarchical structure to visualize relations between parent and child records.
-This feature is enabled by defining the [`childGrid`](https://ej2.syncfusion.com/angular/documentation/api/grid/#childgrid) and [`childGrid.queryString`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring).
-The [`childGrid`](https://ej2.syncfusion.com/angular/documentation/api/grid/#childgrid) describes the options of grid and the [`childGrid.queryString`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring) describes the relation between parent and child grids.
-To use hierarchical binding, inject the **DetailRowService** in the provider section of **AppModule**.
+The Grid allows display of table data in a hierarchical structure to visualize relations between parent and child records. This feature is enabled by defining the [`childGrid`](https://ej2.syncfusion.com/angular/documentation/api/grid/#childgrid) and [`childGrid.queryString`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring).
+The [`childGrid`](https://ej2.syncfusion.com/angular/documentation/api/grid/#childgrid) describes the options of grid and the [`childGrid.queryString`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring) describes the relation between parent and child grids. To use hierarchical binding, inject the **DetailRowService** in the provider section of **AppModule**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,8 +31,7 @@ To use hierarchical binding, inject the **DetailRowService** in the provider sec
 
 ## ExpandAll by external button
 
-By default, grid renders in collapsed state.
-You can expand all child grid rows by invoking the [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expandall) method, and collapse all grid rows by invoking the [`collapseAll`](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#collapseall) through an external button.
+By default, grid renders in collapsed state. You can expand all child grid rows by invoking the [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#expandall) method, and collapse all grid rows by invoking the [`collapseAll`](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow/#collapseall) through an external button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -108,9 +105,7 @@ In the below sample, we have bound the child and parent grid with different fiel
 
 ## Adding Record in ChildGrid
 
-Parent and child grid are related by [`queryString`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring) field value.
-To maintain this relation in newly added record, You need to set value for [`queryString`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring) field in the added data
-by the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
+Parent and child grid are related by [`queryString`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring) field value. To maintain this relation in newly added record, you need to set value for [`queryString`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring) field in the added data by the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
 
 In the below demo, **EmployeeID** field relates the parent and child grids. To add a new record in child grid, We have to set the **EmployeeID** field with parent record's [`queryString`](https://ej2.syncfusion.com/angular/documentation/api/grid/#querystring) field value in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
 

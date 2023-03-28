@@ -25,6 +25,7 @@ By default, diagram displays a tooltip to provide the size, position, and angle 
 ## Common tooltip for all nodes and connectors
 
 The diagram provides support to show tooltip when the mouse hovers over any node/connector.
+
 To show tooltip on mouse over, the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram#tooltip) property of diagram model needs to be set with the tooltip [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) and [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#position) as shown in the following example.
 
 {% tabs %}
@@ -106,6 +107,7 @@ The following code example illustrates how to add formatted HTML content to the 
 ### Tooltip relative to object
 
 The diagram provides support to show tooltip around the node/connector that is hovered by the mouse. The tooltip can be aligned by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#position) property of the tooltip.
+
 The [`relativeMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#relativemode) property of the tooltip defines whether the tooltip has to be displayed around the object or at the mouse position.
 
 The following code example illustrates how to position the tooltip around object.
@@ -127,6 +129,7 @@ The following code example illustrates how to position the tooltip around object
 ### Tooltip relative to mouse position
 
 To display the tooltip at mouse position, need to set **mouse** option to the [`relativeMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#relativemode) property of the tooltip.
+
 The following code example illustrates how to show tooltip at mouse position.
 
 {% tabs %}

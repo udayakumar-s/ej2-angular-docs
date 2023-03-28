@@ -16,7 +16,7 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 ## Add group when initializing diagram
 
-A group can be added to the diagram model through [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nodes-NodeModel) collection. To define an object as group, add the child objects to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#children-string) collection of the group. The following code illustrates how to create a group node.
+A group can be added to the diagram model through [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nodes-NodeModel) collection. To define an object as group, add the child objects to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#children-string) collection of the group.
 
 * The [`padding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#padding-MarginModel) property of a group node defines the spacing between the group node’s edges and its children.
 
@@ -27,6 +27,8 @@ A group can be added to the diagram model through [`nodes`](https://ej2.syncfusi
 * The group’s `diagram.unGroup` method is used to define whether the group can be ungrouped or not.
 
 * A group can be added into a child of another group.
+
+The following code illustrates how to create a group node.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,7 +99,11 @@ The following code illustrates how a group node is added at runtime.
 ## Container
 
 Containers are used to automatically measure and arrange the size and position of the child elements in a predefined manner.
+
 There are two types of containers available.
+
+* Canvas
+* Stack
 
 ## Canvas
 
@@ -111,9 +117,7 @@ There are two types of containers available.
 
 * Child can be defined with the collection [`canvas.children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/canvas#children-DiagramElement) property.
 
-* Basic element can be defined with the collection of [`basicElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram#basicElements-DiagramElement)
-
-The following code illustrates how to add canvas panel
+* Basic element can be defined with the collection of [`basicElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram#basicElements-DiagramElement).
 
 ## Stack
 

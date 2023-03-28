@@ -51,7 +51,7 @@ To map the user defined JSON data with diagram, configure the fields of [`dataSo
 
 ## Remote Data
 
-You can bind the diagram with remote data by using [`dataManager`].
+You can bind the diagram with remote data by using `dataManager`.
 
 It uses two different classes: `DataManager` for processing and `Query` for serving data. `DataManager` communicates with data source and `Query` generates data queries that are read by the [`dataManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel).
 

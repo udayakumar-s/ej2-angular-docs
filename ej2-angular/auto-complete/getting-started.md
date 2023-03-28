@@ -116,8 +116,7 @@ export class AppModule { }
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in [src/styles.css] using following code.
+The following CSS files are available in `../node_modules/@syncfusion` package folder. This can be referenced in [src/styles.css] using following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -216,6 +215,7 @@ In the following sample, popup list's width and height are configured.
 ## Two-way binding
 
 In AutoComplete, the `value` property supports two-way binding functionality.
+
 The following example demonstrates how to work with the two-way binding functionality in AutoComplete.
 
 {% tabs %}

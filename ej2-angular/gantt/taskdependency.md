@@ -86,6 +86,24 @@ You can define an offset with various offset duration units for predecessors by 
   
 {% previewsample "page.domainurl/code-snippet/gantt/taskdependency/durationunits-cs1" %}
 
+## Disabling automatic dependency offset updates
+
+By default, the dependency offsets are automatically updated in the Gantt chart whenever a task's start or end date is changed. However, if you want to disable this feature, you can do so by disabling the [`updateOffsetOnTaskbarEdit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updateOffsetOnTaskbarEdit) property. Once this property is disabled, you can only update the offset value by editing the predecessor column cell or the offset column in the dependency tab of the edit dialog.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/taskdependency/durationunits-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/taskdependency/durationunits-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/taskdependency/durationunits-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/gantt/taskdependency/durationunits-cs2" %}
+
 ## Validate predecessor links on editing
 
 In the Gantt component, the task relationship link can be broken by editing the start date, end date, and duration value of task. When the task relationship is broken on any edit action, this can be handled in the Gantt component using the following two ways:

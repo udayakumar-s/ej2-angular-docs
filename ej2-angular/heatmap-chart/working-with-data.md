@@ -79,8 +79,7 @@ In JSON table data binding, each JSON object contains an X-axis data point as ro
 
 ### JSON data - Cell binding
 
-In JSON cell data binding, each JSON object consists a value for each cell along with a mapping value for row and column. You can bind the JSON cell data having information for each cell to the heat map using the [data](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#data) property in [dataSource](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#datasource). To achieve this, you should define the [adaptorType](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#adaptortype) property as `Cell` and enable the [isJsonData](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#isjsondata) property. Now, map the fields of data by using the [valueMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#valuemapping),
-[xDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#xdatamapping) and [yDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#ydatamapping) properties.
+In JSON cell data binding, each JSON object consists a value for each cell along with a mapping value for row and column. You can bind the JSON cell data having information for each cell to the heat map using the [data](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#data) property in [dataSource](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#datasource). To achieve this, you should define the [adaptorType](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#adaptortype) property as `Cell` and enable the [isJsonData](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#isjsondata) property. Now, map the fields of data by using the [valueMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#valuemapping), [xDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#xdatamapping) and [yDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#ydatamapping) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,9 +115,7 @@ The data points that use the `null` or `""` or `undefined` as value are consider
 
 ## Binding nested JSON data
 
-In complex data binding, you can bind the nested JSON data to the data points in the heat map.
-The nested data can be mapped using the [xDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#xdatamapping), [yDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#ydatamapping), [valueMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#valuemapping)
-and [bubbleDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#bubbledatamapping) properties as string value concatenated by a dot.
+In complex data binding, you can bind the nested JSON data to the data points in the heat map. The nested data can be mapped using the [xDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#xdatamapping), [yDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#ydatamapping), [valueMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#valuemapping) and [bubbleDataMapping](https://ej2.syncfusion.com/angular/documentation/api/heatmap/data/#bubbledatamapping) properties as string value concatenated by a dot.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

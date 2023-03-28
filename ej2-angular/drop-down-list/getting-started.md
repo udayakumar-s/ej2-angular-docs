@@ -38,6 +38,7 @@ To get started quickly with angular DropDownList component using angular CLI, yo
 
 {% youtube "https://www.youtube.com/watch?v=9wdvNqhSnUw" %}
 
+
 Install the CLI application globally to your machine.
 
 ```bash
@@ -137,8 +138,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding DropDownList component
 
-Modify the template in [src/app/app.component.ts] file to render the DropDownList component.
-Add the Angular DropDownList by using `<ejs-dropdownlist>` selector in `template` section of the app.component.ts file.
+Modify the template in [src/app/app.component.ts] file to render the DropDownList component. Add the Angular DropDownList by using `<ejs-dropdownlist>` selector in `template` section of the app.component.ts file.
 
 ```javascript
 import { Component } from '@angular/core';

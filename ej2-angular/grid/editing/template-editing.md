@@ -94,8 +94,7 @@ The following code example illustrates rendering the **OrderID** textbox, when a
 
 ## Set focus to editor
 
-By default, the first input element in the dialog will be focused while opening the dialog.
-If the first input element is in disabled or hidden state then you need to focused the valid input element in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event based on **requestType** as **beginEdit**.
+By default, the first input element in the dialog will be focused while opening the dialog. If the first input element is in disabled or hidden state then you need to focused the valid input element in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event based on **requestType** as **beginEdit**.
 
 ```typescript
 
@@ -144,65 +143,60 @@ You can use [`Tab`](../../../tab/index.html) component inside dialog edit UI usi
 
 To include tab components in the Dialog, please ensure the following steps:
 
-**Step 1**:
-
-To render the Tab component, use the [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid. Inside the content template of the tab items define
-the input elements.
+**Step 1**: To render the Tab component, use the [`editSettingsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#template) of the Grid. Inside the content template of the tab items define the input elements.
 
 ```
-
-    <ejs-tab #tab id="tab_wizard" showCloseButton=false (selecting)='selecting($event)'>
-        <e-tabitems>
-            <e-tabitem [header]="{ 'text': 'Details' }" >
-            <ng-template #content>
-            <div id="tab1">
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': OrderID.invalid && (OrderID.dirty || OrderID.touched)}">
-                    <input [(ngModel)]="data.OrderID" required id="OrderID" name="OrderID" type="text" [attr.disabled]="!data.isAdd ? '' : null" #OrderID="ngModel">
-                    <span class="e-float-line"></span>
-                    <label class="e-float-text e-label-top" for="OrderID"> Order ID</label>
-                </div>
-                <div id="OrderIDError" *ngIf='OrderID.invalid && (OrderID.dirty || OrderID.touched)'>
-                    <label class="e-error" for="OrderID" id="OrderID-info" style="display: block;">*Order ID is required</label>
-                </div>
+<ejs-tab #tab id="tab_wizard" showCloseButton=false (selecting)='selecting($event)'>
+    <e-tabitems>
+        <e-tabitem [header]="{ 'text': 'Details' }" >
+        <ng-template #content>
+        <div id="tab1">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': OrderID.invalid && (OrderID.dirty || OrderID.touched)}">
+                <input [(ngModel)]="data.OrderID" required id="OrderID" name="OrderID" type="text" [attr.disabled]="!data.isAdd ? '' : null" #OrderID="ngModel">
+                <span class="e-float-line"></span>
+                <label class="e-float-text e-label-top" for="OrderID"> Order ID</label>
+            </div>
+            <div id="OrderIDError" *ngIf='OrderID.invalid && (OrderID.dirty || OrderID.touched)'>
+                <label class="e-error" for="OrderID" id="OrderID-info" style="display: block;">*Order ID is required</label>
             </div>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': CustomerID.invalid && (CustomerID.dirty || CustomerID.touched)}">
-                    <input [(ngModel)]="data.CustomerID" required id="CustomerID" name="CustomerID" type="text" #CustomerID="ngModel">
-                    <span class="e-float-line"></span>
-                    <label class="e-float-text e-label-top" for="CustomerID">Customer Name</label>
-                </div>
-                <div id="CustomerIDError" *ngIf='CustomerID.invalid && (CustomerID.dirty || CustomerID.touched)'>
-                    <label class="e-error" for="CustomerID" id="CustomerID-info" style="display: block;">*Customer Name is required</label>
-                </div>
-            </div>
-        </div>
-        <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)="nextBtn($event)" >next</button>
     </div>
-            </ng-template></e-tabitem>
-            <e-tabitem [header]="{ 'text': 'Verify' }">
-            <ng-template #content>
-               <div id="tab2" style='display: none'>
-        <div class="form-row" >
-            <div class="form-group col-md-6">
-                <ejs-dropdownlist id="ShipCountry" name="ShipCountry" [(ngModel)]="data.ShipCountry" [dataSource]='shipCountryDistinctData' [fields]="{text: 'ShipCountry', value: 'ShipCountry' }" placeholder="Ship Country" popupHeight='300px' floatLabelType='Always'></ejs-dropdownlist>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': CustomerID.invalid && (CustomerID.dirty || CustomerID.touched)}">
+                <input [(ngModel)]="data.CustomerID" required id="CustomerID" name="CustomerID" type="text" #CustomerID="ngModel">
+                <span class="e-float-line"></span>
+                <label class="e-float-text e-label-top" for="CustomerID">Customer Name</label>
+            </div>
+            <div id="CustomerIDError" *ngIf='CustomerID.invalid && (CustomerID.dirty || CustomerID.touched)'>
+                <label class="e-error" for="CustomerID" id="CustomerID-info" style="display: block;">*Customer Name is required</label>
             </div>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <ejs-checkbox #Verified name="Verified" id="Verified" label="Verified" [checked]="data.Verified" ></ejs-checkbox>
-            </div>
-        </div>
-        <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)='submitBtn($event)'>submit</button>
     </div>
-            </ng-template>
-            </e-tabitem>
-        </e-tabitems>
-    </ejs-tab>
-
+    <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)="nextBtn($event)" >next</button>
+</div>
+        </ng-template></e-tabitem>
+        <e-tabitem [header]="{ 'text': 'Verify' }">
+        <ng-template #content>
+            <div id="tab2" style='display: none'>
+    <div class="form-row" >
+        <div class="form-group col-md-6">
+            <ejs-dropdownlist id="ShipCountry" name="ShipCountry" [(ngModel)]="data.ShipCountry" [dataSource]='shipCountryDistinctData' [fields]="{text: 'ShipCountry', value: 'ShipCountry' }" placeholder="Ship Country" popupHeight='300px' floatLabelType='Always'></ejs-dropdownlist>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <ejs-checkbox #Verified name="Verified" id="Verified" label="Verified" [checked]="data.Verified" ></ejs-checkbox>
+        </div>
+    </div>
+    <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)='submitBtn($event)'>submit</button>
+</div>
+        </ng-template>
+        </e-tabitem>
+    </e-tabitems>
+</ejs-tab>
 ```
 
 The following example, we have rendered tab control inside the edit dialog. The tab control has two tabs and once you fill the first tab and navigate to second one. The validation for first tab was done before navigate to second.

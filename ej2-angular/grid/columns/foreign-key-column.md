@@ -39,8 +39,8 @@ To use ForeignKeyColumn, you need to inject **ForeignKeyService** in the provide
 
 ## Use edit template in foreignkey column
 
-By default, foreign key column uses dropdown component for editing.
-You can render other than the dropdown by using the [`column.edit`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property.
+By default, foreign key column uses dropdown component for editing. You can render other than the dropdown by using the [`column.edit`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property.
+
 The following example demonstrates the way of using edit template in foreign column.
 
 In the following example, The **Employee Name** is a foreign key column and while editing, AutoComplete component is rendered instead of DropDownList.
@@ -62,6 +62,7 @@ In the following example, The **Employee Name** is a foreign key column and whil
 ## Customize filter UI in foreignkey column
 
 You can create your own filtering UI by using [`column.filter`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filter) property.
+
 The following example demonstrates the way to create a custom filtering UI in the foreign column.
 
 In the following example, The **Employee Name** is a foreign key column. DropDownList is rendered using Filter UI.
@@ -83,10 +84,10 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 ## Use filter bar template in foreignkey column
 
 You can use the filter bar template in foreign key column by defining the [`column.filterBarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) property.
+
 The following example demonstrates the way to use filter bar template in foreign column.
 
-In the following example, The **Employee Name** is a foreign key column.
-This column header shows the custom filter bar template and you can select filter value by using the **DropDown** options.
+In the following example, The **Employee Name** is a foreign key column. This column header shows the custom filter bar template and you can select filter value by using the **DropDown** options.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,8 +105,8 @@ This column header shows the custom filter bar template and you can select filte
 
 ## Perform aggregation in foreignkey column
 
-Default aggregations are not supported in a foreign key column.
-You can achieve aggregation for the foreign key column by using custom the aggregates.
+Default aggregations are not supported in a foreign key column. You can achieve aggregation for the foreign key column by using custom the aggregates.
+
 The following example demonstrates the way to achieve aggregation in foreign key column.
 
 In the following example, The **Employee Name** is a foreign key column and the aggregation for the foreign column was calculated in customAggregateFn.

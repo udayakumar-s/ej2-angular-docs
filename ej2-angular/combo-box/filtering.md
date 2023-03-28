@@ -18,6 +18,7 @@ To get started quickly with Grouping and Filtering in angular ComboBox component
 
 {% youtube "https://www.youtube.com/watch?v=TyePpp8m7pc" %}
 
+
 The following sample illustrates how to query the data source and pass the data to the ComboBox through the `updateData` method in `filtering` event.
 
 {% tabs %}

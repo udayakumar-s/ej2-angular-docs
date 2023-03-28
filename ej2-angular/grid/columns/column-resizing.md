@@ -29,12 +29,12 @@ To use the column resize, inject **ResizeService** in the provider section of **
 {% previewsample "page.domainurl/code-snippet/grid/resize-cs2" %}
 
 > You can disable Resizing for a particular column, by specifying [`columns.allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#allowresizing) to false.
+
 > In RTL mode, you can click and drag the left edge of header cell to resize the column.
 
 ## Min and max width
 
 Columns can be restricted to resize in between minimum and maximum width by defining the [`columns.minWidth`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#minwidth) and [`columns.maxWidth`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#maxwidth).
-[`columns.minWidth`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#minwidth) and [`columns.maxWidth`](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#maxwidth).
 
 In the below sample, **OrderID**, **Ship Name** and **Ship Country** columns are defined with minimum and maximum width.
 
@@ -86,9 +86,11 @@ The following screenshot represents the column resizing on the touch device.
 
 During the resizing action, the grid component triggers the below three events.
 
-1. The [`resizeStart`](https://ej2.syncfusion.com/angular/documentation/api/grid/#resizestart) event triggers when column resize starts.
-2. The [`resizing`](https://ej2.syncfusion.com/angular/documentation/api/grid/#resizing) event triggers when column header element is dragged (moved) continuously..
-3. The [`resizeStop`](https://ej2.syncfusion.com/angular/documentation/api/grid/#resizestop) event triggers when column resize ends.
+1.The [`resizeStart`](https://ej2.syncfusion.com/angular/documentation/api/grid/#resizestart) event triggers when column resize starts.
+
+2.The [`resizing`](https://ej2.syncfusion.com/angular/documentation/api/grid/#resizing) event triggers when column header element is dragged (moved) continuously..
+
+3.The [`resizeStop`](https://ej2.syncfusion.com/angular/documentation/api/grid/#resizestop) event triggers when column resize ends.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

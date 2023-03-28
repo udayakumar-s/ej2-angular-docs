@@ -78,7 +78,7 @@ The following code example illustrates how to customize the swimlane header.
 
 ### Dynamic customization of swimlane header
 
- You can customize the swimlane header style and text properties dynamically. The following code illustrates how to dynamically customize the lane header.
+You can customize the swimlane header style and text properties dynamically. The following code illustrates how to dynamically customize the lane header.
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,7 +97,9 @@ The following code example illustrates how to customize the swimlane header.
 ### Header editing
 
 Diagram provides the support to edit swimlane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
+
 The following image illustrates how to edit the swimlane header.
+
 ![Header Editing](images/swimlane-header-edit.gif)
 
 ## Lanes
@@ -285,7 +287,9 @@ The following image illustrates children interaction in lane.
 ### Lane header editing
 
 Diagram provides the support to edit Lane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
+
 The following image illustrates how to edit the lane header.
+
 ![Lane Header Editing](images/lane-header-edit.gif)
 
 ## Phase
@@ -365,7 +369,9 @@ The following code example illustrates how to customize the phase in swimlane.
 ### Phase header editing
 
 Diagram provides the support to edit phase headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
+
 The following image illustrates how to edit the swimlane header.
+
 ![Phase Header Editing](images/phase-header-edit.gif)
 
 ## Add swimlane to palette

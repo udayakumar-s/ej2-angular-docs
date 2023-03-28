@@ -94,8 +94,8 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 
 ## Export with filter options
 
-The excel export provides an option to export with filter option in excel by defining `enableFilter` as **true** .
-It requires the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to be true.
+The excel export provides an option to export with filter option in excel by defining `enableFilter` as **true**. It requires the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to be true.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs7/app/app.component.ts %}
@@ -112,8 +112,7 @@ It requires the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentat
 
 ## Exporting grouped records
 
-The excel export provides outline option for grouped records which hides the detailed data for better viewing.
-In grid, we have provided the outline option for the exported document when the data's are grouped.
+The excel export provides outline option for grouped records which hides the detailed data for better viewing. In grid, we have provided the outline option for the exported document when the data's are grouped.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

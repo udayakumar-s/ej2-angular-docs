@@ -103,31 +103,29 @@ export class AppModule { }
 * Modify the template in **app.component.ts** file to render the Linear Gauge component.
 `[src/app/app.component.ts]`.
 
-```javascript
-import { Component, ViewEncapsulation } from '@angular/core';
+   ```javascript
+    import { Component, ViewEncapsulation } from '@angular/core';
 
-@Component({
-  selector: 'app-container',
-  // specifies the template string for the LinearGauge component
-  template: `<ejs-lineargauge id='linear-container'></ejs-lineargauge>`,
-  encapsulation: ViewEncapsulation.None
-})
-export class AppComponent  { }
-```
+    @Component({
+     selector: 'app-container',
+     // specifies the template string for the LinearGauge component
+      template: `<ejs-lineargauge id='linear-container'></ejs-lineargauge>`,
+      encapsulation: ViewEncapsulation.None
+    })
+    export class AppComponent  { }
+  ```
 
-<!-- markdownlint-disable MD033 -->
+   Now use the `<code>app-container</code>` in the index.html instead of default one.
 
-Now use the `<code>app-container</code>` in the index.html instead of default one.
-
-```
-<app-container></app-container>
-```
+    ```
+    <app-container></app-container>
+    ```
 
 * Now run the application in the browser using the below command.
 
-```
-npm start
-```
+   ```
+    npm start
+   ```
 
 The below example shows a basic Linear Gauge.
 

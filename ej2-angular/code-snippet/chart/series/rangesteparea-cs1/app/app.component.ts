@@ -1,7 +1,6 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { splineRangeData } from 'datasource.ts';
 
 @Component({
     selector: 'app-container',

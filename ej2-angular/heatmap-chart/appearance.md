@@ -54,8 +54,7 @@ Enable or disable the cell highlighting while hovering over the heat map cells b
 
 ### Color gradient mode
 
-The [colorGradientMode](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettingsModel/#colorgradientmode) property can be used to set the minimum and maximum values for colors based on row and column.
-Three types of color gradient modes are available.
+The [colorGradientMode](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettingsModel/#colorgradientmode) property can be used to set the minimum and maximum values for colors based on row and column. Three types of color gradient modes are available.
 
 * **Table**: The minimum and maximum value colors calculated for overall data.
 * **Row**: The minimum and maximum value colors calculated for each row of data.

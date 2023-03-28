@@ -12,19 +12,18 @@ domainurl: ##DomainURL##
 
 Edited data can be persisted in the database using the RESTful web services.
 
-All the CRUD operations in the grid are done through [`DataManager`](../../data).
-The [`DataManager`](../../data) has an option to bind all the CRUD related data in server-side.
+All the CRUD operations in the grid are done through [`DataManager`](../../data). The [`DataManager`](../../data) has an option to bind all the CRUD related data in server-side.
 
 > For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
-In the below section, we have explained how to get the edited data details on the server-side using the
-[`UrlAdaptor`](../../data/adaptors/#url-adaptor).
+In the below section, we have explained how to get the edited data details on the server-side using the [`UrlAdaptor`](../../data/adaptors/#url-adaptor).
 
 ## Using URL adaptor
 
-You can use the [`UrlAdaptor`](../../data/adaptors/#url-adaptor) of [`DataManager`](../../data) when binding data source from remote data.
-In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of [`DataManager`](../../data).
+You can use the [`UrlAdaptor`](../../data/adaptors/#url-adaptor) of [`DataManager`](../../data) when binding data source from remote data. In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of [`DataManager`](../../data).
+
 You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties **insertUrl**, **removeUrl**, **updateUrl**, **crudUrl** and **batchUrl**.
+
 The following code example describes the above behavior.
 
 ```typescript
@@ -72,8 +71,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-Also, when using the **UrlAdaptor**, you need to return the data as JSON from the controller action and the JSON object must contain
-a property as **result** with dataSource as its value and one more property **count** with the dataSource total records count as its value.
+Also, when using the **UrlAdaptor**, you need to return the data as JSON from the controller action and the JSON object must contain a property as **result** with dataSource as its value and one more property **count** with the dataSource total records count as its value.
 
 The following code example describes the above behavior.
 
@@ -249,8 +247,7 @@ Please refer to the following screenshot to know about the action parameter.
 
 ### Batch URL
 
-The **batchUrl** property supports only for batch editing mode.
-You can specify the controller action mapping URL to perform batch operation on the server-side.
+The **batchUrl** property supports only for batch editing mode. You can specify the controller action mapping URL to perform batch operation on the server-side.
 
 The following code example describes the above behavior.
 

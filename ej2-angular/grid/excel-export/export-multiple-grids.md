@@ -14,9 +14,7 @@ The excel export provides an option to export multiple grid data in the same exc
 
 ## Same sheet
 
-The excel export provides support to export multiple grids in same sheet.
-To export in same sheet, define [`multipleExport.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#multipleexport) as **AppendToSheet** in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
-It have an option to provide blank rows between grids. These blank rows count can be defined by using the **multipleExport.blankRows**.
+The excel export provides support to export multiple grids in same sheet. To export in same sheet, define [`multipleExport.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#multipleexport) as **AppendToSheet** in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/). It have an option to provide blank rows between grids. These blank rows count can be defined by using the **multipleExport.blankRows**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,8 +34,7 @@ It have an option to provide blank rows between grids. These blank rows count ca
 
 ## New sheet
 
-Excel exporting provides support to export multiple grids in new sheet.
-To export in new sheet, define  **multipleExport.type** as **NewSheet** in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
+Excel exporting provides support to export multiple grids in new sheet. To export in new sheet, define  **multipleExport.type** as **NewSheet** in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

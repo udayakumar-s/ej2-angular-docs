@@ -33,8 +33,7 @@ To render checkbox in each grid row, you need to use checkbox column with type a
 
 ## Checkbox selection mode
 
-In checkbox selection, selection can also be done by clicking on rows. This selection provides two types of Checkbox Selection mode which can be set by using the following API,
-[`selectionSettings.checkboxMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#checkboxmode). The modes are;
+In checkbox selection, selection can also be done by clicking on rows. This selection provides two types of Checkbox Selection mode which can be set by using the following API, [`selectionSettings.checkboxMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#checkboxmode). The modes are;
 
 * **Default**: This is the default value of the checkboxMode. In this mode, user can select multiple rows by clicking rows one by one.
 * **ResetOnRowClick**: In ResetOnRowClick mode, when clicking on row it will reset previously selected row. Also you can perform multiple-selection in this mode by press and hold CTRL key and click the desired rows. To select range of rows, press and hold the SHIFT key and click the rows.

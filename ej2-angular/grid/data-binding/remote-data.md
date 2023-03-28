@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Remote data in Angular Grid component
 
-To bind remote data to grid component, assign service data as an instance of **DataManager** to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
-To interact with remote data source,  provide the endpoint **url**.
+To bind remote data to grid component, assign service data as an instance of **DataManager** to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. To interact with remote data source, provide the endpoint **url**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,8 +30,7 @@ To interact with remote data source,  provide the endpoint **url**.
 
 ## OData adaptor - Binding OData service
 
-[`OData`](http://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data.
-You can retrieve data from OData service using DataManager. You can refer to the following code example of remote data binding using OData service.
+[`OData`](http://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using DataManager. You can refer to the following code example of remote data binding using OData service.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,8 +48,7 @@ You can retrieve data from OData service using DataManager. You can refer to the
 
 ## OData v4 adaptor - Binding OData v4 service
 
-The ODataV4 is an improved version of OData protocols, and the **DataManager** can also retrieve and consume OData v4 services.
-For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197).
+The ODataV4 is an improved version of OData protocols, and the **DataManager** can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197).
 
 To bind OData v4 service, use the **ODataV4Adaptor**.
 
@@ -163,41 +160,41 @@ export class AppComponent implements OnInit {
 The following code example describes how to fetch the data from **ViewBag** in angular.
 
 ```
-    <script type="text/javascript">
-       window.griddata = '@Html.Raw(Json.Encode(ViewBag.dataSource))';
-    </script>
+<script type="text/javascript">
+    window.griddata = '@Html.Raw(Json.Encode(ViewBag.dataSource))';
+</script>
 ```
 
 The following code example describes the CRUD operations handled at server-side.
 
 ```json
-    public ActionResult Index()
-    {
-        ViewBag.dataSource = OrdersDetails.GetAllRecords().ToArray();
-        return View();
-    }
-    public ActionResult Update(OrdersDetails value)
-    {
-        ...
-        return Json(value);
-    }
-    public ActionResult Insert(OrdersDetails value)
-    {
-        ...
-        return Json(value);
-    }
-    public ActionResult Delete(int key)
-    {
-        ...
-        return Json(data);
-    }
+public ActionResult Index()
+{
+    ViewBag.dataSource = OrdersDetails.GetAllRecords().ToArray();
+    return View();
+}
+public ActionResult Update(OrdersDetails value)
+{
+    ...
+    return Json(value);
+}
+public ActionResult Insert(OrdersDetails value)
+{
+    ...
+    return Json(value);
+}
+public ActionResult Delete(int key)
+{
+    ...
+    return Json(data);
+}
 ```
 
 ## Custom adaptor
 
 You can create your own adaptor by extending the built-in adaptors. For the sake of demonstrating custom adaptor approach, we are going to see how to add a serial number for the records by overriding the built-in response processing using the **processResponse** method of the **ODataAdaptor**.
-we are going to see how to add a serial number for the records
-by overriding the built-in response processing using the **processResponse** method of the **ODataAdaptor**.
+
+we are going to see how to add a serial number for the records by overriding the built-in response processing using the **processResponse** method of the **ODataAdaptor**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -215,9 +212,7 @@ by overriding the built-in response processing using the **processResponse** met
 
 ## Offline mode
 
-On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side.
-To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side.
-To enable this behavior, use the **offline** property of **DataManager**.
+On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the **offline** property of **DataManager**.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
