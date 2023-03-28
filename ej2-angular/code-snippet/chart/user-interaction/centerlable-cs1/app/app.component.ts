@@ -1,31 +1,37 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { centerLabelData } from 'datasource.ts';
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
+        `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
         <e-accumulation-series-collection>
-            <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' innerRadius='65%' [centerLabel]='centerLabel'></e-accumulation-series>
+            <e-accumulation-series [dataSource]='centerLabel' xName='x' yName='y' innerRadius='65%' [centerLabel]='centerLabel'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
     public piedata: Object[];
     public legendSettings: Object;
-    public centerLabel: Object;
+    public centerLabel: Object = [
+        { x: 'Development', y: [22, 22, 23, 25, 25, 25, 26, 27, 27, 28, 28, 29, 30, 32, 34, 32, 34, 36, 35, 38] },
+        { x: 'Testing', y: [22, 33, 23, 25, 26, 28, 29, 30, 34, 33, 32, 31, 50] },
+        { x: 'HR', y: [22, 24, 25, 30, 32, 34, 36, 38, 39, 41, 35, 36, 40, 56] },
+        { x: 'Finance', y: [26, 27, 28, 30, 32, 34, 35, 37, 35, 37, 45] },
+        { x: 'R&D', y: [26, 27, 29, 32, 34, 35, 36, 37, 38, 39, 41, 43, 58] },
+        { x: 'Sales', y: [27, 26, 28, 29, 29, 29, 32, 35, 32, 38, 53] },
+        { x: 'Inventory', y: [21, 23, 24, 25, 26, 27, 28, 30, 34, 36, 38] },
+        { x: 'Graphics', y: [26, 28, 29, 30, 32, 33, 35, 36, 52] },
+        { x: 'Training', y: [28, 29, 30, 31, 32, 34, 35, 36] }
+    ];
     ngOnInit(): void {
-        this.piedata = centerLabelData;
         this.legendSettings = {
             visible: false
         };
         this.centerLabel = {
-            text : 'Mobile<br>Browsers<br>Statistics'
+            text: 'Mobile<br>Browsers<br>Statistics'
         }
-
     }
-
 }
 
 

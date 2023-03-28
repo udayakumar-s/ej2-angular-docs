@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Searching in Angular Grid component
 
-You can search records in a Grid, by using the [`search`](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) method with search key as a parameter.
-This also provides an option to integrate search text box in grid's toolbar by adding **Search** item to the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar).
+You can search records in a Grid, by using the [`search`](https://ej2.syncfusion.com/angular/documentation/api/grid/#search) method with search key as a parameter. This also provides an option to integrate search text box in grid's toolbar by adding **Search** item to the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar).
 
 To use Searching, you need to inject **SearchService** in the provider section of **AppModule**.
 
@@ -140,6 +139,7 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 ## Perform search operation in Grid using multiple keywords
 
 You can perform a searching operation in the Grid using multiple keywords. This can be achieved by the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event of the Grid.
+
 In the following sample, we have performed the searching with multiple keywords by using the query property of grid when the requestType is searching in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.
 
 {% tabs %}

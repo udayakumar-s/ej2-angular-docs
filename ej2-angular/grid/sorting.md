@@ -10,11 +10,9 @@ domainurl: ##DomainURL##
 
 # Sorting in Angular Grid component
 
-The Grid component has support to sort data bound columns in **ascending** or **descending** order.
-This can be achieved by setting [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property as true.
+The Grid component has support to sort data bound columns in **ascending** or **descending** order. This can be achieved by setting [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property as true.
 
-To dynamically sort a particular column, click on its column header.
-The order switch between **Ascending** and **Descending** each time you click a column header for sorting.
+To dynamically sort a particular column, click on its column header. The order switch between **Ascending** and **Descending** each time you click a column header for sorting.
 
 To use Sorting, you need to inject **SortService** in the provider section of **AppModule**.
 
@@ -38,9 +36,7 @@ To use Sorting, you need to inject **SortService** in the provider section of **
 
 ## Initial Sort
 
-By default, the Grid records are not sorted at initial rendering.
-To apply sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#field) and [`direction`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction) in [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns).
-[`direction`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction) in [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns).
+By default, the Grid records are not sorted at initial rendering. To apply sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#field) and [`direction`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel/#direction) in [`sortSettings.columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,6 +59,7 @@ You can sort more than one column in a Grid. To sort multiple columns, press and
 To clear sorting for a particular column, press the "Shift + mouse left click".
 
 > The [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) must be true while enabling multi-column sort.
+
 > Set [`allowMultiSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowmultisorting) property as **false** to disable multi-column sorting.
 
 {% tabs %}
@@ -131,56 +128,52 @@ export class AppComponent implements OnInit {
 The following code example describes the handling of sorting operation at the server side.
 
 ```cs
-    public class ItemsController : ODataController
+public class ItemsController : ODataController
+{
+    [EnableQuery]
+    public IQueryable<Item> Get()
     {
-        [EnableQuery]
-        public IQueryable<Item> Get()
+        List<Item> GridData = JsonConvert.DeserializeObject<Item[]>(Properties.Resources.ItemsJson).AsQueryable().ToList();
+        List<Brand> empData = JsonConvert.DeserializeObject<Brand[]>(Properties.Resources.BrandsJson).AsQueryable().ToList();
+        var queryString = HttpContext.Current.Request.QueryString;
+        var allUrlKeyValues = ControllerContext.Request.GetQueryNameValuePairs();
+        string key = allUrlKeyValues.LastOrDefault(x => x.Key == "$orderby").Value;
+        if (key != null)
         {
-            List<Item> GridData = JsonConvert.DeserializeObject<Item[]>(Properties.Resources.ItemsJson).AsQueryable().ToList();
-            List<Brand> empData = JsonConvert.DeserializeObject<Brand[]>(Properties.Resources.BrandsJson).AsQueryable().ToList();
-            var queryString = HttpContext.Current.Request.QueryString;
-            var allUrlKeyValues = ControllerContext.Request.GetQueryNameValuePairs();
-            string key = allUrlKeyValues.LastOrDefault(x => x.Key == "$orderby").Value;
-            if (key != null)
-            {
-                if (key == "EmployeeID") {
-                    GridData = SortFor(key); //Only for foreignKey Column ascending
-                }
-                else if(key == "EmployeeID desc") {
-                    GridData = SortFor(key); //Only for foreignKey Column descending
-                }
+            if (key == "EmployeeID") {
+                GridData = SortFor(key); //Only for foreignKey Column ascending
             }
-            var count = GridData.Count();
-            var data = GridData.AsQueryable();
-            return data;
-        }
-
-        public List<Item> SortFor(String Sorted)
-        {
-            List<Item> GridData = JsonConvert.DeserializeObject<Item[]>(Properties.Resources.ItemsJson).AsQueryable().ToList();
-            List<Brand> empData = JsonConvert.DeserializeObject<Brand[]>(Properties.Resources.BrandsJson).AsQueryable().ToList();
-            if (Sorted == "EmployeeID") //check whether ascending or descending
-                empData = empData.OrderBy(e => e.FirstName).ToList();
-            else if(Sorted == "EmployeeID desc")
-                empData = empData.OrderByDescending(e => e.FirstName).ToList();
-            List<Item> or = new List<Item>();
-            for (int i = 0; i < empData.Count(); i++) {
-                //Select the Field matching records
-                IEnumerable<Item> list = GridData.Where(pred => pred.EmployeeID == empData[i].EmployeeID).ToList();
-                or.AddRange(list);
+            else if(key == "EmployeeID desc") {
+                GridData = SortFor(key); //Only for foreignKey Column descending
             }
-            return or;
         }
+        var count = GridData.Count();
+        var data = GridData.AsQueryable();
+        return data;
     }
+
+    public List<Item> SortFor(String Sorted)
+    {
+        List<Item> GridData = JsonConvert.DeserializeObject<Item[]>(Properties.Resources.ItemsJson).AsQueryable().ToList();
+        List<Brand> empData = JsonConvert.DeserializeObject<Brand[]>(Properties.Resources.BrandsJson).AsQueryable().ToList();
+        if (Sorted == "EmployeeID") //check whether ascending or descending
+            empData = empData.OrderBy(e => e.FirstName).ToList();
+        else if(Sorted == "EmployeeID desc")
+            empData = empData.OrderByDescending(e => e.FirstName).ToList();
+        List<Item> or = new List<Item>();
+        for (int i = 0; i < empData.Count(); i++) {
+            //Select the Field matching records
+            IEnumerable<Item> list = GridData.Where(pred => pred.EmployeeID == empData[i].EmployeeID).ToList();
+            or.AddRange(list);
+        }
+        return or;
+    }
+}
 ```
 
 ## Sorting Events
 
-During the sort action, the Grid component triggers two events.
-[`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event triggers before the sort action start and [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event triggers after the sort action complete. Using these events you can perform any actions.
-triggers before the sort action start and
-[`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event
-triggers after the sort action complete. Using these events you can perform any actions.
+During the sort action, the Grid component triggers two events. [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event triggers before the sort action start and [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event triggers after the sort action complete. Using these events you can perform any actions. Triggers before the sort action start and [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event triggers after the sort action complete. Using these events you can perform any actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -196,13 +189,11 @@ triggers after the sort action complete. Using these events you can perform any 
   
 {% previewsample "page.domainurl/code-snippet/grid/sorting1-cs4" %}
 
-> [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) is current action name.
-For example in sorting, the [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) value is **sorting**.
+> [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) is current action name. For example in sorting, the [`args.requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) value is **sorting**.
 
 ## Sort Comparer
 
-You can customize the default sort action for a column by defining [`column.sortComparer`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#sortcomparer) property.
-The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
+You can customize the default sort action for a column by defining [`column.sortComparer`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
 
 In the following example, custom sort comparer function was defined in **Customer ID** column.
 
@@ -222,9 +213,7 @@ In the following example, custom sort comparer function was defined in **Custome
 
 ## Touch Interaction
 
-When you tap Grid header on touchscreen devices, then the selected column header is sorted.
-Also, it will show a popup ![Sorting](images/sorting.jpg)  for multi-column sorting.
-To sort multiple columns, tap the popup![Multi Sorting](images/msorting.jpg) and then tap the desired Grid headers.
+When you tap Grid header on touchscreen devices, then the selected column header is sorted. Also, it will show a popup ![Sorting](images/sorting.jpg)  for multi-column sorting. To sort multiple columns, tap the popup![Multi Sorting](images/msorting.jpg) and then tap the desired Grid headers.
 
 > The [`allowMultiSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowmultisorting) and [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) should be **true** then only the popup will be shown.
 

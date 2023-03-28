@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Selection in Angular Grid component
 
-Selection provides an option to highlight a row or cell or column.
-Selection can be done through simple Mouse down or Arrow keys.
-To disable selection in the Grid, set the [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowselection) to false.
+Selection provides an option to highlight a row or cell or column. Selection can be done through simple Mouse down or Arrow keys. To disable selection in the Grid, set the [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowselection) to false.
 
 The grid supports two types of selection that can be set by using the [`selectionSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type).They are:
 
 * **Single** - The **Single** value is set by default. Allows you to select only a single row or cell or column.
 * **Multiple** - Allows you to select multiple rows or cells or columns.
+
 To perform the multi-selection, press and hold CTRL key and click the desired rows or cells  or columns.
+
 To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
 
 {% tabs %}

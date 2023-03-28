@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Constraints in Angular Diagram component
 
-Constraints are used to enable/disable certain behaviors of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled using Bitwise operators (&, |, ~, <<, etc.).
+Constraints are used to enable/disable certain behaviors of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled using Bitwise operators `(&, |, ~, <<, etc.)`.
 
 To know more about Bitwise operators, refer to [`Bitwise Operations`](#bitwise-operations).
 
@@ -336,7 +336,7 @@ Bitwise operations are used to manipulate the flagged enumerations [enum]. In th
 
 ## Add operation
 
-You can add or enable multiple values at a time by using Bitwise ‘|’ (OR) operator.
+You can add or enable multiple values at a time by using Bitwise `|` (OR) operator.
 
 ```typescript
 node.constraints = NodeConstraints.Select | NodeConstraints.Rotate;

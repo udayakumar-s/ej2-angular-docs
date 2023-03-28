@@ -110,4 +110,4 @@ fr.json
 
 ```
 
-[Angular 5 sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/translate_header_text-841014797)
+> [Angular 5 sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/translate_header_text-841014797)

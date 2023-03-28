@@ -14,9 +14,7 @@ You can enable/disable the Grid and its actions by applying/removing correspondi
 
 To enable/disable the grid and its actions, follow the given steps:
 
-**Step 1**:
-
-Create CSS class with custom style to override the default style of Grid.
+**Step 1**: Create CSS class with custom style to override the default style of Grid.
 
 ```css
     .disablegrid {
@@ -29,9 +27,7 @@ Create CSS class with custom style to override the default style of Grid.
 
 ```
 
-**Step 2**:
-
-Add/Remove the CSS class to the Grid in the click event handler of Button.
+**Step 2**: Add/Remove the CSS class to the Grid in the click event handler of Button.
 
 ```typescript
     public btnClick():void {

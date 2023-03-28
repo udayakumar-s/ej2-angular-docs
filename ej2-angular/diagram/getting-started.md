@@ -35,8 +35,10 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+
+1.Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+
+2.Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
@@ -88,8 +90,7 @@ export class AppModule { }
 
 ## Adding CSS reference
 
-Combined CSS files are available in the Essential JS 2 package root folder.
-This can be referenced in [src/styles.css] using following code.
+Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in [src/styles.css] using following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-angular-diagrams/styles/material.css';
@@ -101,8 +102,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Add Diagram component
 
-Modify the template in [src/app/app.component.ts] file to render the diagram component.
-Add the Angular Diagram by using `<ejs-diagram>` selector in `template` section of the app.component.ts file.
+Modify the template in [src/app/app.component.ts] file to render the diagram component. Add the Angular Diagram by using `<ejs-diagram>` selector in `template` section of the app.component.ts file.
 
 ```typescript
 import { Component, OnInit, ViewEncapsulation} from '@angular/core';

@@ -14,8 +14,7 @@ Cell Selection can be done through simple Mouse down or Arrow keys(up, down, lef
 
 Grid supports two types of cell selection mode which can be set by using [`selectionSettings.cellSelectionMode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#cellselectionmode). They are:
 
-* **Flow** - The **Flow** value is set by default.
-Select range of cells between the start index and end index which includes in between cells of rows.
+* **Flow** - The **Flow** value is set by default. Select range of cells between the start index and end index which includes in between cells of rows.
 * **Box** - Select range of cells within the start and end column indexes which includes in between cells of rows within the range.
 
 {% tabs %}

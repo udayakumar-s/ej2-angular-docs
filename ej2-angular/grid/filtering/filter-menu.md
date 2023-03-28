@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # Filter menu in Angular Grid component
 
-You can enable filter menu by setting the [`filterSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) as **Menu**.
-The filter menu UI will be rendered based on its column type, which allows you to filter data.
-You can filter the records with different operators.
+You can enable filter menu by setting the [`filterSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) as **Menu**. The filter menu UI will be rendered based on its column type, which allows you to filter data. You can filter the records with different operators.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

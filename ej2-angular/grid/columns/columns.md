@@ -12,15 +12,18 @@ domainurl: ##DomainURL##
 
 The column definitions are used as the **dataSource** schema in the Grid. This plays a vital role in rendering column values in the required format. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/grid/column) is necessary to map the data source values in Grid columns.
 
-> 1. If the column with [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) is not in the dataSource, then the column values will be displayed as empty.
-> 2. If the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) name contains “dot” operator then it is considered as complex binding.
+> If the column with [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) is not in the dataSource, then the column values will be displayed as empty.
+
+> If the [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) name contains “dot” operator then it is considered as complex binding.
 
 ## Column types
 
 Column type can be specified using the [`columns.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. It specifies the type of data the column binds.
 
 If the [`format`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format)  is defined for a column, the column uses [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) to select the appropriate format option ([number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime)).
+
 Grid column supports the following types:
+
 * string
 * number
 * boolean
@@ -28,6 +31,7 @@ Grid column supports the following types:
 * datetime
 
 > If the [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) is not defined, then it will be determined from the first record of the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource).
+
 > Incase if the first record of the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) is null/blank value for a column then it is necessary to define the [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) for that column.
 
 ## ValueAccessor
@@ -51,8 +55,8 @@ The [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/
 ### Display array type columns
 
 You can bind an Array of Objects in a column by using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor) property. In this example, The Name field has an array of two objects FirstName and LastName. These two objects are joined and bind to a column using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
-In this example, The Name field has an array of two objects FirstName and LastName. These two objects are joined and bind to a column using
-[`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
+
+In this example, The Name field has an array of two objects FirstName and LastName. These two objects are joined and bind to a column using [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#valueaccessor).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -246,9 +250,7 @@ You can customise the appearance of header and content of the particular column 
 
 To customize the grid column, follow the given steps:
 
-**Step 1**:
-
-Create a css class with custom style to override the default style for rowcell and headercell.
+**Step 1**: Create a css class with custom style to override the default style for rowcell and headercell.
 
 ```css
 .e-grid .e-rowcell.customcss{
@@ -267,9 +269,7 @@ Create a css class with custom style to override the default style for rowcell a
 
 ```
 
-**Step 2**:
-
-Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
+**Step 2**: Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

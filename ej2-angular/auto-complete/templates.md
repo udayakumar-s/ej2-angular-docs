@@ -14,8 +14,7 @@ The AutoComplete has been provided with several options to customize each list i
 
 ## Item template
 
-The content of each list item within the AutoComplete can be customized with the help of
-[`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#itemtemplate) property.
+The content of each list item within the AutoComplete can be customized with the help of [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#itemtemplate) property.
 
 In the following sample, each list item is split into two columns to display relevant data's.
 
@@ -84,8 +83,7 @@ In the following sample, the list items and its headers are designed and display
 
 ## Footer template
 
-The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using
-[`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#footertemplate) property.
+The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#footertemplate) property.
 
 In the following sample, footer element displays the total number of list items present in the AutoComplete.
 

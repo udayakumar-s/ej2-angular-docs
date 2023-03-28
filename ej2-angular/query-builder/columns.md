@@ -40,8 +40,7 @@ By default, the column label is displayed from the column [`field`](https://ej2.
 
 ## Operators
 
-The operator for a column can be defined in the [`operators`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#operators) property.
-The available operators and its supported data types are:
+The operator for a column can be defined in the [`operators`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#operators) property. The available operators and its supported data types are:
 
 | Operators | Description | Supported Types |
 | ------------ | ----------------------- | ------------------ |
@@ -100,4 +99,5 @@ Validation allows you to validate the conditions and it display errors for inval
 {% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs3" %}
 
 > Set [`isRequired`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/validation/#isrequired) validation for `Operator` and `Value` fields.
+
 > Set [`max`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/validation/#max), [`min`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/validation/#min) values for number values.

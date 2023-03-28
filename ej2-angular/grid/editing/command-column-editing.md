@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Command column editing in Angular Grid component
 
-The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`column.commands`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#commands) property.
-To use CRUD, inject the **CommandColumnService** module into the **@NgModule.providers** section.
+The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`column.commands`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#commands) property. To use CRUD, inject the **CommandColumnService** module into the **@NgModule.providers** section.
 
 The available built-in command buttons are:
 

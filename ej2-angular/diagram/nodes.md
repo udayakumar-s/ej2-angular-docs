@@ -121,14 +121,11 @@ The diagram Provides support to flip the node. [`flip`](https://ej2.syncfusion.c
 give the mirrored image of the original element.
 The flip types are as follows:
 
-* HorizontalFlip
- [`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to change the element in horizontal direction.
+* HorizontalFlip - [`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to change the element in horizontal direction.
 
-* VerticalFlip
-[`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to change the element in vertical direction
+* VerticalFlip - [`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to change the element in vertical direction
 
-* Both
-[`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) which involves both vertical and horizontal changes of the element.
+* Both - [`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) which involves both vertical and horizontal changes of the element.
 
 The following code illustrates how to provide the mirror image of the original element.
 
@@ -296,11 +293,9 @@ The following code example illustrates how to create an icon of various shapes.
 
 ## Customizing collapse icon
 
-* Set the [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#borderColor-string),
-[`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#borderWidth-number), background color for an collapseIcon using borderColor, borderWidth, and [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#fill-string) properties.
+* Set the [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#borderColor-string), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#borderWidth-number), background color for an collapseIcon using borderColor, borderWidth, and [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#fill-string) properties.
 
-* Set a size for collapseIcon by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#width-number) and
-[`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#height-number) properties.
+* Set a size for collapseIcon by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#height-number) properties.
 
 * Like expand icon, collapse icon also can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 

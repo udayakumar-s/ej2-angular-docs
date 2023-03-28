@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 # Data binding in Angular Grid component
 
 The Grid uses **DataManager** which supports both RESTful JSON data services binding and local JavaScript object array binding.
+
 The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property can be assigned either with the instance of **DataManager** or JavaScript object array collection.
+
 It supports two kinds of data binding methods:
 * Local data
 * Remote data
@@ -22,8 +24,7 @@ To learn about how to bind local, remote or observables data to Angular Grid, yo
 
 ## Sending additional parameters to the server
 
-To add a custom parameter to the data request, use the **addParams** method of **Query** class.
-Assign the **Query** object with additional parameters to the grid [`query`](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property.
+To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the grid [`query`](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -136,7 +137,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-> * If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
+> If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
 ## See Also
 

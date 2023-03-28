@@ -50,10 +50,11 @@ The BPMN shapes and its types are explained as follows.
 
 An [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent) is notated with a circle and it represents an event in a business process. The type of events are as follows:
 
-    * Start
-    * End
-    * Intermediate
-The event property of the node allows you to define the type of the event. The default value of the event is **start**. The following code example illustrates how to create a BPMN event.
+* Start
+* End
+* Intermediate
+
+The event property of the node allows you to define the type of the event. The default value of the event is **Start**. The following code example illustrates how to create a BPMN event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -125,8 +126,8 @@ The [`activity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bp
 
 There are two types of activities. They are listed as follows:
 
-* Task: Occurs within a process and it is not broken down to a finer level of detail.
-* Subprocess: Occurs within a process and it is broken down to a finer level of detail.
+* **Task**: Occurs within a process and it is not broken down to a finer level of detail.
+* **Subprocess**: Occurs within a process and it is broken down to a finer level of detail.
 
 To create a BPMN activity, set the shape as **activity**. You also need to set the type of the BPMN activity by using the activity property of the node. By default, the type of the activity is set as **task**. The following code example illustrates how to create an activity.
 
@@ -198,8 +199,8 @@ A [`sub-process`](https://ej2.syncfusion.com/angular/documentation/api/diagram/b
 
 The different types of subprocess are as follows:
 
-    * Event subprocess
-    * Transaction
+* Event subprocess
+* Transaction
 
 ## Event subprocess
 
@@ -252,6 +253,7 @@ Processes is an array collection that defines the children values for BPMN subpr
 ## Loop
 
 [`Loop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnLoops) is a task that is internally being looped. The loop property of task allows you to define the type of loop. The default value for `loop` is **none**.
+
 You can define the loop property in subprocess BPMN shape as shown in the following code.
 
 {% tabs %}
@@ -493,7 +495,7 @@ The following table demonstrates the visual representation of association flows.
 | Directional | ![DirectionalImage](images/Directional1.png) |
 | BiDirectional | ![BiDirectionalImage](images/BiDirectional.png) |
 
->Note : The default value for the property `association` is **default**.
+> The default value for the property `association` is **default**.
 
 ## Sequence
 

@@ -95,6 +95,7 @@ The scroll limit allows you to define the scrollable region of the diagram. It i
 * The [`scrollLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollSettings) property of scroll settings helps to limit the scrolling.
 
 The scrollSettings [`scrollableArea`](https://ej2.syncfusion.com/angular/documentation/api/diagram/scrollSettings) allow to extend the scrollable region that is based on the scroll limit.
+
 The following code example illustrates how to specify the scroll limit.
 
 {% tabs %}

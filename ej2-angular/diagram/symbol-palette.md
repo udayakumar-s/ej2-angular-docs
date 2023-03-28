@@ -28,8 +28,7 @@ export class AppComponent {}
 
 ## Add palettes to SymbolPalette
 
-A palette allows to display a group of related symbols and it textually annotates the group with its header.
-A [`Palettes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#palettes-PaletteModel[]) can be added as a collection of symbol groups.
+A palette allows to display a group of related symbols and it textually annotates the group with its header. A [`Palettes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#palettes-PaletteModel[]) can be added as a collection of symbol groups.
 
 The collection of predefined symbols can be added in palettes using the [`symbols`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#symbols-[]) property.
 
@@ -68,6 +67,7 @@ The [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pal
 The [`description`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolDescription#description) defines the text to be displayed and how that is to be handled in `getSymbolInfo`.
 
 Also, any HTML element into a palette header can be embedded by defining the getSymbolInfo property.
+
 The following code example illustrates how to customize palette headers.
 
 {% tabs %}
@@ -87,6 +87,7 @@ The following code example illustrates how to customize palette headers.
 ## Restrict expansion of the palette panel
 
 The symbol palette panel can be restricted from getting expanded. The `cancel` argument of the `paletteExpanding` property defines whether the palette's panel should be expanded or collapsed. By default, the panel is expanded. This restriction can be done for each of the palettes in the symbol palette as desired.
+
 In the following code example, the basic shapes palette is restricted from getting collapsed whereas the swimlane shapes palette can be expanded or collapsed.
 
 {% tabs %}
@@ -145,14 +146,12 @@ The size of the individual symbol can be customized. The [`symbolWidth`](https:/
   
 {% previewsample "page.domainurl/code-snippet/diagram/symbolpalette/size-cs1" %}
 
-The [`symbolMargin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#symbolmargin) property is used to create the space around
-elements, outside of any defined borders.
+The [`symbolMargin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#symbolmargin) property is used to create the space around elements, outside of any defined borders.
 
 ## Symbol preview
 
 The symbol preview size of the palette items can be customized using [`symbolPreview`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview).
-The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#height-number) properties of SymbolPalette enables you to define the preview size to all the symbol palette items.
-The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#offset-PointModel) of the dragging helper relative to the mouse cursor.
+The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#height-number) properties of SymbolPalette enables you to define the preview size to all the symbol palette items. The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#offset-PointModel) of the dragging helper relative to the mouse cursor.
 
 The following code example illustrates how to change the preview size of a palette item.
 
@@ -191,8 +190,10 @@ While adding more number of symbols such as nodes and connectors to the palette,
 ## Adding symbol description for symbols in the palette
 
 The diagram provides support to add symbol description below each symbol of a palette. This descriptive representation of each symbol will enhance the details of the symbol visually. The height and width of the symbol description can also be set individually.
+
 * The property `getSymbolInfo`, can be used to add the symbol description at runtime.
- The following code is an example to set a symbol description for symbols in the palette.
+
+The following code is an example to set a symbol description for symbols in the palette.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

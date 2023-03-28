@@ -70,6 +70,7 @@ The following code illustrates how to arrange the nodes in a radial tree structu
 ## Organizational Chart
 
 An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of layout should be set as an `OrganizationalChart`.
+
 The following code example illustrates how to create an organizational chart.
 
 {% tabs %}
@@ -88,11 +89,10 @@ The following code example illustrates how to create an organizational chart.
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. The `getLayoutInfo` method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. The arrangements can be customized by overriding this function as explained.
 
-**GetLayoutInfo**
-Set chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, `diagram.layout.getLayoutInfo`. The [`getLayoutInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) method is called to configure every subtree of the organizational chart. It takes the following arguments.
+**GetLayoutInfo** - Set chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, `diagram.layout.getLayoutInfo`. The [`getLayoutInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
-    * node: Parent node to that options are to be customized.
-    * options: Object to set the customizable properties.
+* **node** - Parent node to that options are to be customized.
+* **options** - Object to set the customizable properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

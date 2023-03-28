@@ -10,11 +10,9 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Multi select component
 
-The MultiSelect loads the data either from local data sources or
-remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#datasource) property. It supports the data type of `array` or `DataManager`.
+The MultiSelect loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#datasource) property. It supports the data type of `array` or `DataManager`.
 
-The MultiSelect also supports different kinds of data services such as OData, OData V4,
-and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
+The MultiSelect also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -182,7 +180,8 @@ import { AppModule } from './app.module';
 enableProdMode();
 platformBrowserDynamic().bootstrapModule(AppModule);
 ```
-[View Sample in Github](https://github.com/SyncfusionExamples/angular-multiselect-async-pipe)
+
+> [View Sample in Github](https://github.com/SyncfusionExamples/angular-multiselect-async-pipe)
 
 ## See Also
 

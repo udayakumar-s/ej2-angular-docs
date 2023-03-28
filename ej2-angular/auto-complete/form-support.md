@@ -14,8 +14,7 @@ The AutoComplete supports both the reactive and template-driven form-building te
 
 ## Template-Driven Forms
 
-The template-drive forms uses the `ng` directives in view to handle the forms controls.
-To enable the template-driven,  import the FormsModule into corresponding app component.
+The template-drive forms uses the `ng` directives in view to handle the forms controls. To enable the template-driven, import the FormsModule into corresponding app component.
 
 For more details about template-driven Forms refer to:<https://angular.io/guide/forms#template-driven-forms>.
 

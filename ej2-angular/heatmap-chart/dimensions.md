@@ -15,9 +15,9 @@ domainurl: ##DomainURL##
 Heat map can be rendered to its container size. You can set the size through inline or CSS.
 
 ```javascript
-    <div id='container'>
-        <div id='element' style="width:650px; height:350px;"></div>
-    </div>
+<div id='container'>
+    <div id='element' style="width:650px; height:350px;"></div>
+</div>
 ```
 
 ## Size for heat map

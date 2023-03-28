@@ -93,7 +93,7 @@ The following code example illustrates how to update a connector's source point,
 * The [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourceid-string) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetid-string) properties allow to define the nodes to be connected.
 * The [`connectorSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#connectorSpacing-number) property allows you to define the distance between the source node and the connector. It is the minimum distance the connector will re-rout or the new segment will create.
 
-* The following code example illustrates how to connect two nodes.
+The following code example illustrates how to connect two nodes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -113,7 +113,7 @@ The following code example illustrates how to update a connector's source point,
 
 * When you remove both InConnect and OutConnect NodeConstraints from Default, the node restricts connector to establish connection in it.
 
-* The following code illustrates how to disable InConnect constraints.
+The following code illustrates how to disable InConnect constraints.
 
 ```typescript
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
@@ -141,6 +141,7 @@ export class AppComponent {
 ## Connections with ports
 
 The [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourceportid-string) and [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetportid-string) properties allow to create connections between some specific points of source/target nodes.
+
 The following code example illustrates how to create port to port connections.
 
 {% tabs %}
@@ -463,7 +464,7 @@ export class AppComponent {
 
 ```
 
-Also, the intermediate point of two adjacent bezier segments can be edited interactively based on the bezierSettings.segmentEditOrientation property of the connector class.
+Also, the intermediate point of two adjacent bezier segments can be edited interactively based on the `bezierSettings.segmentEditOrientation` property of the connector class.
 
 ### How to interact with the bezier segments efficiently
 
@@ -572,7 +573,7 @@ Also, the visibility of control points can be controlled using the bezierSetting
 
 * To create custom shape for source decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator#pathdata-string) property. Similarly, to create custom shape for target decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator#pathData-string) property.
 
-* The following code example illustrates how to create decorators of various shapes.
+The following code example illustrates how to create decorators of various shapes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -596,7 +597,7 @@ Padding is used to leave the space between the Connector's end point and the obj
 
 * The [`targetPadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetpadding) property of connector defines space between the end point and the target node of the connector.
 
-* The following code example illustrates how to leave space between the connection end points and source and target nodes.
+The following code example illustrates how to leave space between the connection end points and source and target nodes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -615,16 +616,12 @@ Padding is used to leave the space between the Connector's end point and the obj
 ## Flip
 
 The diagram Provides support to flip the connector. The [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#flip) is performed to give the mirrored image of the original element.
+
 The flip types are as follows:
 
-* HorizontalFlip
- [`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to interchange the connector source and target x points.
-
-* VerticalFlip
-[`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to interchange the connector source and target y points.
-
-* Both
-[`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to interchange the source point as target point and target point as source point
+* HorizontalFlip - [`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to interchange the connector source and target x points.
+* VerticalFlip - [`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to interchange the connector source and target y points.
+* Both - [`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to interchange the source point as target point and target point as source point
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -645,6 +642,7 @@ The flip types are as follows:
 ## Bridging
 
 Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bridgeDirection-BridgeDirection) is set to top. Depending upon the direction given bridging direction appears.
+
 Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
 
 {% tabs %}
@@ -665,7 +663,7 @@ Bridging can be enabled/disabled either with the `connector.constraints` or `dia
 
 The [`bridgeSpace`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#bridgespace-number) property of connectors can be used to define the width for line bridging.
 
-Limitation: Bezier segments do not support bridging.
+**Limitation**: Bezier segments do not support bridging.
 
 ## Corner radius
 
@@ -737,13 +735,13 @@ The following code example illustrates how to customize the appearance of the de
 
 ## Interaction
 
-* Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [`Connection Editing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorEditing).
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [`Connection Editing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorEditing).
 
 ## Automatic line routing
 
 Diagram provides additional flexibility to re-route the diagram connectors. A connector will frequently re-route itself when a shape moves next to it. The following screenshot illustrates how the connector automatically re-routes the segments.  
 
-* Dependency LineRouting module should be injected to the application as the following code snippet.
+1.Dependency LineRouting module should be injected to the application as the following code snippet.
 
 ```typescript
 
@@ -755,7 +753,7 @@ Diagram.Inject(LineRouting);
 
 ```
 
-* Now, the line routing constraints must be included to the default diagram constraints to enable automatic line routing support like below.
+2.Now, the line routing constraints must be included to the default diagram constraints to enable automatic line routing support like below.
 
 ```html
 
@@ -772,7 +770,7 @@ Diagram.Inject(LineRouting);
 
 ```
 
-* The following code block shows how to create the diagram with specifying nodes, connectors, constraints, and necessary modules for line routing.
+3.The following code block shows how to create the diagram with specifying nodes, connectors, constraints, and necessary modules for line routing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -788,7 +786,7 @@ Diagram.Inject(LineRouting);
   
 {% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorslinerouting-cs1" %}
 
-* In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#constraints-ConnectorConstraints) property of the connector like the following code snippet.
+4.In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#constraints-ConnectorConstraints) property of the connector like the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -806,9 +804,7 @@ Diagram.Inject(LineRouting);
 
 ## Constraints
 
-* The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#constraints-ConnectorConstraints) property of connector allows to enable/disable certain features of connectors.
-
-* To enable or disable the constraints, refer [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints).
+The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#constraints-ConnectorConstraints) property of connector allows to enable/disable certain features of connectors. To enable or disable the constraints, refer [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints).
 
 The following code illustrates how to disable selection.
 
@@ -828,7 +824,7 @@ The following code illustrates how to disable selection.
 
 ## Custom properties
 
-* The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#addinfo-Object) property of connectors allow you to maintain additional information to the connectors.
+The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#addinfo-Object) property of connectors allow you to maintain additional information to the connectors.
 
 ```html
 

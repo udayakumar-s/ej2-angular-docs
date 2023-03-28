@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # In line editing in Angular Grid component
 
-In Normal edit mode, when you start editing the currently selected record is changed to edit state.
-You can change the cell values and save edited data to the data source.
-To enable Normal edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Normal**.
+In Normal edit mode, when you start editing the currently selected record is changed to edit state. You can change the cell values and save edited data to the data source. To enable Normal edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Normal**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +100,8 @@ Grid methods can be used to perform CRUD operations programmatically. The [addRe
 
 ## Confirmation dialog
 
-The delete confirm dialog can be shown when deleting a record by defining the [`showDeleteConfirmDialog`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showdeleteconfirmdialog) as **true**
+The delete confirm dialog can be shown when deleting a record by defining the [`showDeleteConfirmDialog`](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showdeleteconfirmdialog) as **true**.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs29/app/app.component.ts %}
@@ -121,8 +120,7 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 
 ## Default column values on add new row
 
-The grid provides an option to set the default value for the columns when adding a new record in it.
-To set a default value for the particular column by defining the [`columns.defaultValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#defaultvalue).
+The grid provides an option to set the default value for the columns when adding a new record in it. To set a default value for the particular column by defining the [`columns.defaultValue`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#defaultvalue).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

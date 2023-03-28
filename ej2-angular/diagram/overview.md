@@ -28,10 +28,10 @@ The following code illustrates how to create overview.
 
 In overview, the view port of the Diagram is highlighted with a red colored rectangle. Diagram can be zoomed/panned by interacting with that. You can interact with overview as follows.
 
-*Resize the rectangle - Zooms in/out the Diagram
-*Drag the rectangle - Pans the Diagram
-*Click at a position - Navigates to the clicked region
-*Choose a particular region by clicking and dragging - Navigates to the specified region
+* Resize the rectangle - Zooms in/out the Diagram
+* Drag the rectangle - Pans the Diagram
+* Click at a position - Navigates to the clicked region
+* Choose a particular region by clicking and dragging - Navigates to the specified region
 
 The following image shows how the Diagram is zoomed/panned with overview.
 

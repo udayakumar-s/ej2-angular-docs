@@ -24,6 +24,7 @@ The following ARIA attributes are used in the sparkline chart:
 <td><b>Element</b></td>
 <td><b>Default description</b></td>
 </tr>
+<tr>
 <td>Maker</td>
 <td>Reads the Location x :  Location y value</td>
 </tr>

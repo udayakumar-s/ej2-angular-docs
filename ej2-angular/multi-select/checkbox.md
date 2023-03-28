@@ -32,14 +32,9 @@ To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
 
 The MultiSelect component has in-built support to select the all list items using `Select All` options in the header.
 
-When the [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#showselectall) property is set to true, by default Select All text will show.
-property is set to true, by default Select All text will show.
-You can customize the name attribute of the Select All option by using
-[`selectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#selectalltext).
+When the [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#showselectall) property is set to true, by default Select All text will show. You can customize the name attribute of the Select All option by using [`selectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#selectalltext).
 
-For the unSelect All option, by default unSelect All text will show. You can customize the name attribute of the unSelect All option by using [`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#unselectalltext).
-You can customize the name attribute of the unSelect All option by using
-[`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#unselectalltext).
+For the unSelect All option, by default unSelect All text will show. You can customize the name attribute of the unSelect All option by using [`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#unselectalltext). You can customize the name attribute of the unSelect All option by using [`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#unselectalltext).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

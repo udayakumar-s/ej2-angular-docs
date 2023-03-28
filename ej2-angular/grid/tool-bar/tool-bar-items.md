@@ -12,8 +12,7 @@ domainurl: ##DomainURL##
 
 ## Built-in toolbar items
 
-Built-in Toolbar Items execute standard actions of the Grid and it can be added by defining [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) as a collection of built-in items. It renders the button with icon and text.
-The following table shows Built-in toolbar items and its action.
+Built-in Toolbar Items execute standard actions of the Grid and it can be added by defining [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) as a collection of built-in items. It renders the button with icon and text. The following table shows Built-in toolbar items and its action.
 
 | Built-in Toolbar Items | Actions |
 |------------------------|---------|
@@ -43,7 +42,7 @@ The following table shows Built-in toolbar items and its action.
   
 {% previewsample "page.domainurl/code-snippet/grid/toolbar-cs1" %}
 
-> * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) has options to define both built-in and custom toolbar items.
+> The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 
 ### Show only icons in built-in toolbar items
 
@@ -74,7 +73,6 @@ This is demonstrated in the following sample:
 ## Custom toolbar items
 
 Custom toolbar items can be added by defining [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) as a collection of [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel). Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event.
-Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event.
 
 By default, Custom toolbar items are in position **Left**. You can change the position by using the [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) property. In the below sample, we have applied position **Right** for the **Collapse All** toolbar item.
 
