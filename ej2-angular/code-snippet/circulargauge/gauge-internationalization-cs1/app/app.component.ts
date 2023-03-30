@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         // Initialize objects.
         this.labelStyle= {
-            // Label format as currency.
+            // Label format set as currency.
             format: 'c'
         };
     }
