@@ -68,7 +68,7 @@ endsWith |Checks whether a value ends with specified value. |String
 contains |Checks whether a value contains with specified value. |String
 doesnotstartwith |Checks whether the value does not begin with the specified value. |String
 doesnotendwith |Checks whether the value does not end with the specified value. |String
-doesnotcontains |Checks whether the value does not contain the specified value. |String
+doesnotcontain |Checks whether the value does not contain the specified value. |String
 equal |Checks whether a value equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
 notEqual |Checks whether a value not equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
 greaterThan |Checks whether a value is greater than with specified value. |Number &#124; Date
