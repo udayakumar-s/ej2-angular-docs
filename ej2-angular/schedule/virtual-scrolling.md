@@ -26,6 +26,8 @@ To achieve better performance in the Scheduler when loading a large number of re
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs88" %}
 
+![Displaying Virtual Scrolling in Schedule](images/schedule-virtualscrolling.gif)
+
 > For now, the virtual loading of resources and events is available only `TimelineDay`, `TimelineWeek`, `TimelineWorkWeek`, `TimelineMonth` and `TimelineYear` (Vertical Orientation alone) views. In the future, we plan to port the same virtual loading on all other applicable Scheduler views.
 
 ## See Also

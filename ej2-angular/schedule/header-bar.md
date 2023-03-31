@@ -30,6 +30,8 @@ By default, the header bar holds the date and view navigation options, through w
   
 {% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs1" %}
 
+![Hide Header Bar](images/schedule-hide-header-bar.png)
+
 ## Customizing header bar
 
 Apart from the default date navigation and view options available on the header bar, you can add custom items into the Scheduler header bar by making use of the `actionBegin` event. Here, an employee image is added to the header bar, clicking on which will open the popup showing that person's short profile information.
@@ -66,6 +68,8 @@ By default, the header bar holds the view navigation options, through which the 
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs38" %}
 
+![Displaying Header Bar Popup](images/schedule-header-bar-popup.png)
+
 > Refer [here](./resources/#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
 
 ## Date header customization
@@ -89,6 +93,8 @@ The `dateHeaderTemplate` option is used to customize the date header cells of da
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/header-bar-cs3" %}
+
+![Date Header Customization](images/schedule-customize-dateheader.png)
 
 ### Using renderCell event
 

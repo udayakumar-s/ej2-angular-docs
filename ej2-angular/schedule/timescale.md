@@ -34,6 +34,8 @@ The `interval` and `slotCount` properties can be used together on the Scheduler 
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs63" %}
 
+![Time Slot Duration](images/schedule-timeslot.png)
+
 ## Customizing time cells using template
 
 The `timeScale` property also provides template option to allow customization of time slots which are as follows,
@@ -58,6 +60,8 @@ The `timeScale` property also provides template option to allow customization of
   
 {% previewsample "page.domainurl/code-snippet/schedule/timescale-cs1" %}
 
+![Customizing Time Cells](images/schedule-custom-timecell.png)
+
 ## Hide the timescale
 
 The grid lines which indicates the exact time duration can be enabled or disabled on the Scheduler, by setting `true` or `false` to the `enable` option within the `timeScale` property. It's default value is `true`.
@@ -76,6 +80,8 @@ The grid lines which indicates the exact time duration can be enabled or disable
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs64" %}
 
+![Hide Time Scale](images/schedule-hide-timecell.png)
+
 ## Highlighting current date and time
 
 By default, Scheduler indicates current date with a highlighted date header on all views, as well as marks accurately the system's current time on specific views such as Day, Week, Work Week, Timeline Day, Timeline Week and Timeline Work Week views. To stop highlighting the current time indicator on Scheduler views, set `false` to the `showTimeIndicator` property which defaults to `true`.
@@ -93,5 +99,7 @@ By default, Scheduler indicates current date with a highlighted date header on a
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs65" %}
+
+![Highlight current Time](images/schedule-highlight.png)
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

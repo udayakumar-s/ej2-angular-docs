@@ -43,6 +43,8 @@ The following example code depicts how to set the Scheduler to display Monday, W
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs89" %}
 
+![Set Working Days](images/schedule-workdays.png)
+
 ## Hiding weekend days
 
 The `showWeekend` property is used to either show or hide the weekend days of a week and it is not applicable on Work week view (as non-working days are usually not displayed on work week view). By default, it is set to `true`. The days which are not a part of the working days collection of a Scheduler are usually considered as non-working or weekend days.
@@ -63,6 +65,8 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs90" %}
 
+![Hiding Weekend Days](images/schedule-hide-weekend.png)
+
 ## Show week numbers
 
 It is possible to show the week number count of a week in the header bar of the Scheduler by setting true to `showWeekNumber` property. By default, its default value is `false`. In Month view, the week numbers are displayed as a first column.
@@ -82,6 +86,8 @@ It is possible to show the week number count of a week in the header bar of the 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs91" %}
+
+![Week Numbers](images/schedule-weeknumber.png)
 
 ### Different options in showing week numbers
 
@@ -133,6 +139,8 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs93" %}
 
+![Set Working Hours](images/schedule-workhours.png)
+
 ## Scheduler displaying custom hours
 
 It is possible to display the event Scheduler layout with specific time durations by hiding the unwanted hours. To do so, set the start and end hour for the Scheduler using the `startHour` and `endHour` properties respectively.
@@ -153,6 +161,8 @@ The following code example displays the Scheduler starting from the time range 7
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs94" %}
 
+![Displaying Custom Hours](images/schedule-displayhours.png)
+
 ## Setting start day of the week
 
 By default, Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, set the `firstDayOfWeek` property with the values ranging from 0 to 6.
@@ -172,6 +182,8 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs95" %}
+
+![Start Day of Week](images/schedule-week-firstday.png)
 
 ## Scroll to specific time and date
 
