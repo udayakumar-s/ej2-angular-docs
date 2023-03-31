@@ -38,6 +38,8 @@ You can change the header title and the text of buttons displayed at the footer 
   
 {% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs1" %}
 
+![Editing Window with Custom Local Words](images/schedule-editing-local-word.png)
+
 ### How to change the label text of default editor fields
 
 To change the default labels such as Subject, Location and other field names in the editor window, make use of the `title` property available within the field option of `eventSettings`.
@@ -56,6 +58,8 @@ To change the default labels such as Subject, Location and other field names in 
   
 {% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs2" %}
 
+![Editor Window with Custom Label](images/schedule-custom-label.png)
+
 ### Field validation
 
 It is possible to validate the required fields of the editor window from client-side before submitting it, by adding appropriate validation rules to each field. The appointment fields have been extended to accept both `string` and `object` type values. To perform validations, it is necessary to specify object values for the event fields.
@@ -73,6 +77,8 @@ It is possible to validate the required fields of the editor window from client-
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs3" %}
+
+![Editor window with Validation](images/schedule-validation.png)
 
 > Applicable validation rules can be referred from [form validation](http://ej2.syncfusion.com/documentation/form-validator/#validation-rules) documentation.
 
@@ -261,6 +267,8 @@ The resource field can be added within editor template with multiselect control 
   
 {% previewsample "page.domainurl/code-snippet/schedule/resource-field-cs1" %}
 
+![Add Resource Options within Editor Template](images/schedule-custom-window-with-resource.png)
+
 ### How to add recurrence options within editor template
 
 The following code example shows how to add recurrence options within the editor template by importing `RecurrenceEditor`.
@@ -279,6 +287,8 @@ The following code example shows how to add recurrence options within the editor
   
 {% previewsample "page.domainurl/code-snippet/schedule/resource-field-cs2" %}
 
+![Add Recurrence Options within Editor Template](images/schedule-custom-window-with-recurrence.png)
+
 ### Apply validations on editor template fields
 
 In the following code example, validation has been added to the status field.
@@ -296,6 +306,8 @@ In the following code example, validation has been added to the status field.
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/resource-field-cs3" %}
+
+![Editor Template with Validation](images/schedule-custom-window-validation.png)
 
 ### How to save the customized event editor using template
 
@@ -454,6 +466,8 @@ The following code example shows how to disable the display of such popups while
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs11" %}
+
+![More Event Popup](images/schedule-more-event-popup.png)
 
 ### How to customize the popup that opens on more indicator
 

@@ -40,6 +40,8 @@ The following example shows the Scheduler displaying all the available header ro
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs39" %}
 
+![Timeline Header Rows](images/schedule-headerrow-default.png)
+
 ## Display year and month rows in timeline views
 
 To display the timeline Scheduler simply with year and month names alone, define the option `Year` and `Month` within the `headerRows` property.
@@ -57,6 +59,8 @@ To display the timeline Scheduler simply with year and month names alone, define
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs40" %}
+
+![Display Year and Month rows in timeline views](images/schedule-headerrow-month-year.png)
 
 ## Display week numbers in timeline views
 
@@ -76,6 +80,8 @@ The week number can be displayed in a separate header row of the timeline Schedu
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs41" %}
 
+![Display Week numbers in timeline views](images/schedule-headerrow-weeknumber.png)
+
 ## Timeline view displaying dates of a complete year
 
 It is possible to display a complete year in a timeline view by setting `interval` value as 12 and defining **TimelineMonth** view option within the `views` property of Scheduler.
@@ -94,6 +100,8 @@ It is possible to display a complete year in a timeline view by setting `interva
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs42" %}
 
+![Display dates of a complete year in timeline views](images/schedule-headerrow-dates.png)
+
 ## Customizing the header rows using template
 
 You can customize the text of the header rows and display any images or formatted text on each individual header rows using the built-in `template` option available within the `headerRows` property.
@@ -111,5 +119,7 @@ You can customize the text of the header rows and display any images or formatte
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs43" %}
+
+![Display customize header rows using template](images/schedule-headerrow-custom-header.png)
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

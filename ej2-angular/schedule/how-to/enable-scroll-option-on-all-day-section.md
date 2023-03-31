@@ -27,3 +27,5 @@ When you have larger number of appointments in all-day row, it is difficult to v
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs46" %}
+
+![Scrolling](../images/schedule-scrolling.png)
