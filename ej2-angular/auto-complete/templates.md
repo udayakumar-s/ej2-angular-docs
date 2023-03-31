@@ -83,7 +83,11 @@ In the following sample, the list items and its headers are designed and display
 
 ## Footer template
 
+<<<<<<< HEAD
 The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#footertemplate) property.
+=======
+The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#footertemplate) property.
+>>>>>>> d32e521be289a767ca5f44734d079a40fef5dc14
 
 In the following sample, footer element displays the total number of list items present in the AutoComplete.
 
