@@ -1,7 +1,7 @@
 
 
 
-import { Component, ChangeDetectorRef } from '@angular/core';
+import { Component } from '@angular/core';
 @Component({
     selector: 'app-container',
     templateUrl: 'template.html',
@@ -10,9 +10,7 @@ import { Component, ChangeDetectorRef } from '@angular/core';
 
 export class AppComponent  {
     public data: { [key: string]: Object }[];
-    constructor(private cdr: ChangeDetectorRef) {}
     ngOnInit():void{
-            this.cdr.detectChanges();
             this.data = [
                 { text: 'JavaScript', pic: 'javascript', description: 'It is a lightweight interpreted or JIT-compiled programming language.' },
                 { text: 'TypeScript', pic: 'typeScript', description: 'It is a typed superset of Javascript that compiles to plain JavaScript.' },

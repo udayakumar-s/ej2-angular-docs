@@ -5,16 +5,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
+    `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [centerLabel]='centerLabel'>
         <e-accumulation-series-collection>
-            <e-accumulation-series [dataSource]='centerLabel' xName='x' yName='y' innerRadius='65%' [centerLabel]='centerLabel'></e-accumulation-series>
+            <e-accumulation-series [dataSource]='centerLabelData' xName='x' yName='y' innerRadius='65%' ></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
     public piedata: Object[];
     public legendSettings: Object;
-    public centerLabel: Object= [
+    public centerLabel: Object;
+    public centerLabelData: Object= [
         { x: 'Chrome', y: 61.3, text: 'Chrome: 61.3%' },
         { x: 'Safari', y: 24.6, text: 'Safari: 24.6%' },
         { x: 'Edge', y: 5.0, text: 'Edge: 5.00%' },
@@ -28,6 +29,7 @@ export class AppComponent implements OnInit {
         };
         this.centerLabel = {
             text : 'Mobile<br>Browsers<br>Statistics',
+            hoverTextFormat: '${point.x} <br> Browser Share <br> ${point.y}%',
             textStyle:{
                 fontWeight: '900',
                 size: '15px',

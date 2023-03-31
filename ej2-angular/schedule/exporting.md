@@ -32,6 +32,8 @@ The Scheduler allows you to export all its events into an Excel format file by u
   
 {% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs1" %}
 
+![Excel Exporting](images/schedule-excel-export.png)
+
 ### Exporting with custom fields
 
 By default, Scheduler exports all the default event fields that are mapped to it through the `eventSettings` property. To limit the number of fields on the exported excel file, it provides an option to export only the custom fields of the event data. To export such custom fields alone, define the required `fields` through the `ExportOptions` interface and pass it as argument to the `exportToExcel` method as shown in the following example. For example: `['Id', 'Subject', 'StartTime', 'EndTime', 'Location']`.
@@ -49,6 +51,8 @@ By default, Scheduler exports all the default event fields that are mapped to it
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs2" %}
+
+![Excel Exporting with custom Fields](images/schedule-excel-export-custom-fields.png)
 
 ### Exporting individual occurrences of a recurring series
 
@@ -105,6 +109,8 @@ Using fields property, we can only export the defined fields into excel without 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs5" %}
+
+![Excel Exporting with custom header texts](images/schedule-excel-export-custom-header.png)
 
 ### Export with custom file name
 

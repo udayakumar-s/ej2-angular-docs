@@ -150,6 +150,8 @@ The appointments belonging to the different resources will be displayed altogeth
   
 {% previewsample "page.domainurl/code-snippet/schedule/multiple-resource-cs1" %}
 
+![Multiple Resources](images/schedule-multipleresources.png)
+
 > Setting `allowMultiple` to `true` in the above code example allows you to select multiple resources from the event editor and also creates multiple copies of the same appointment in the Scheduler for each resources while rendering.
 
 ## Resource grouping
@@ -180,6 +182,8 @@ The following code example displays how the multiple resources are grouped and i
   
 {% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs1" %}
 
+![Vertical Resource View](images/schedule-resources-verticalview.png)
+
 ### Timeline resource view
 
 The following code example depicts how to group the multiple resources on Timeline Scheduler views and its relevant events are displayed accordingly under those resources.
@@ -197,6 +201,8 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs2" %}
+
+![Timeline Resource view](images/schedule-resource-timeline.png)
 
 ### Grouping single-level resources
 
@@ -217,6 +223,8 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/single-level-resource-cs1" %}
+
+![Grouping single-level resources](images/schedule-singlelevel.png)
 
 > The `name` field defined in the **resources** collection namely `Owners` will be mapped within the `group` property, in order to enable the grouping option with those resource levels on the Scheduler.
 
@@ -240,6 +248,8 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
   
 {% previewsample "page.domainurl/code-snippet/schedule/multiple-level-resource-cs1" %}
 
+![Grouping multi-level resources](images/schedule-multiplelevel.png)
+
 ### One-to-One grouping
 
 In multi-level grouping, Scheduler usually groups the resources on the child level based on the `GroupID` that maps with the `Id` field of parent level resources (as `byGroupID` set to true by default). There are also option which allows you to group all the child resource(s) against each of its parent resource(s). To enable this kind of grouping, set `false` to the `byGroupID` option within the `group` property. In the following code example, there are two levels of resources, on which all the 3 resources at the child level is mapped one to one with each resource on the first level.
@@ -257,6 +267,8 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/multiple-level-resource-cs2" %}
+
+![Grouping in Schedule](images/schedule-grouping.png)
 
 ### Grouping resources by date
 
@@ -277,6 +289,8 @@ It groups the number of resources under each date and is applicable only on the 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/group-by-date-cs1" %}
+
+![Grouping Resources by Date in Schedule](images/schedule-resource-by-date.png)
 
 > This kind of grouping by date is not applicable on any of the timeline views.
 
@@ -321,6 +335,8 @@ object will be maintained within the appointment collection, even if it is share
   
 {% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs3" %}
 
+![Grouping Resources as shared events](images/schedule-sharedevents.png)
+
 ## Simple resource header customization
 
 It is possible to customize the resource header cells using built-in template option and change the look and appearance of it in both the vertical and timeline view modes. All the resource related fields and other information can be accessed within the resource header template option.
@@ -340,6 +356,8 @@ It is possible to customize the resource header cells using built-in template op
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/resource-header-cs1" %}
+
+![Customizing Resources Header in Desktop](images/schedule-custom-resource-header.png)
 
 > To customize the resource header in compact mode properly make use of the class `e-device` as in the code example.
 
@@ -363,6 +381,8 @@ It is possible to customize the resource headers to display with multiple column
   
 {% previewsample "page.domainurl/code-snippet/schedule/resource-header-column-customization-cs1" %}
 
+![Schedule with Multiple columns](images/schedule-multiple-columns.png)
+
 ## Displaying tooltip for resource headers
 
 It is possible to display tooltips over the resource headers showing the resource information. By default, there won't be any tooltips displayed on the resource headers, and to enable it, you need to assign the customized template design to the `headerTooltipTemplate` option within the `group` property.
@@ -380,6 +400,8 @@ It is possible to display tooltips over the resource headers showing the resourc
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/header-tooltip-cs1" %}
+
+![tooltip for resource headers](images/schedule-tooltip.png)
 
 ## Choosing among resource colors for appointments
 
@@ -400,6 +422,8 @@ In the following example, the colors mentioned in the second level will get appl
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/multiple-resource-cs2" %}
+
+![tooltip for resource headers](images/schedule-resource-color.png)
 
 > The value of the `resourceColorField` field should be mapped with the `name` value given within the `resources` property.
 
@@ -445,6 +469,8 @@ Different working days can be set for the resources of Scheduler using the `work
   
 {% previewsample "page.domainurl/code-snippet/schedule/multiple-resource-cs3" %}
 
+![Resources with Different Workdays](images/schedule-resource-workdays.png)
+
 ### Set different work hours
 
 Working hours indicates the work hour duration of a day, which is highlighted visually with active color over the work cells. Each resource on the Scheduler can be defined with its own set of working hours as depicted in the following example.
@@ -465,6 +491,8 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/multiple-resource-cs4" %}
+
+![Resources with Different Workhours](images/schedule-different-workhour.png)
 
 In this example, a resource named `Will Smith` is depicted with working hours ranging from 8.00 AM to 3.00 PM and is visually illustrated with active colors, whereas the other two resources have different working hours set.
 
@@ -489,6 +517,8 @@ To use the [`hideNonWorkingDays`](../api/schedule/group/#hidenonworkingdays) pro
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/hide-non-working-days-cs1" %}
+
+![Hide non-working days when grouped by date](images/schedule-hide-non-working-days.png)
 
 > The [`hideNonWorkingDays`](../api/schedule/group/#hidenonworkingdays) property only applies when the Scheduler is grouped [`byDate`](../api/schedule/group/#bydate).
 
@@ -527,5 +557,7 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs4" %}
+
+![Resources in Adaptive UI](images/schedule-adaptiveui.png)
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

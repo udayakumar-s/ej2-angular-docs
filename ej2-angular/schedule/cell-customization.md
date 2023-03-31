@@ -30,6 +30,8 @@ The height and width of the Scheduler cells can be customized either to increase
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs21" %}
 
+![Cell Dimensions in Vertical Views](images/schedule-celldimension-verticalviews.png)
+
 ## Check for cell availability
 
 You can check whether the given time range slots are available for event creation or already occupied by other events using the `isSlotAvailable` method. In the following code example, if a specific time slot already contains an appointment, then no more appointments can be added to that cell.
@@ -69,6 +71,8 @@ The `cellTemplate` option accepts the template string and is used to customize t
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs23" %}
+
+![Using CellTemplate](images/schedule-celldimension-celltemplate.png)
 
 ### Using renderCell event
 

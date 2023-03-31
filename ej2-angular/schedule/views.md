@@ -115,6 +115,8 @@ Usually a day view displays a single day with all its related appointments. It i
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs73" %}
 
+![Displaying Day View](images/schedule-views-day.png)
+
 > All the above defined properties can be accessed within Day view except `allowVirtualScrolling` and `headerRows`.
 
 ### Week view
@@ -134,6 +136,8 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs74" %}
+
+![Displaying Week View](images/schedule-views-week.png)
 
 > All the above defined properties in the table can be accessed within Week and Work week views except `allowVirtualScrolling` and `headerRows`.
 
@@ -156,6 +160,8 @@ The following code example depicts how to change the working days only on the `W
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs75" %}
+
+![Displaying Work week View](images/schedule-views-workweek.png)
 
 > The Week, Work week and Day views can display the all-day row appointments in a separate all-day row with an expand/collapse option to view it.
 
@@ -180,6 +186,8 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs76" %}
+
+![Displaying Month View](images/schedule-views-month.png)
 
 ### Year view
 
@@ -223,6 +231,8 @@ The following code example depicts how to customize the display of events within
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs78" %}
 
+![Displaying Agenda View](images/schedule-views-agenda.png)
+
 > Schedule Height is mandatory to set in pixels for Agenda view.
 
 ### Month Agenda view
@@ -244,6 +254,8 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs79" %}
+
+![Displaying Month agenda View](images/schedule-views-monthagenda.png)
 
 > Schedule Height is mandatory to set in pixels for Month Agenda view.
 
@@ -283,6 +295,8 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs81" %}
 
+![Displaying Timeline Week View](images/schedule-views-timelineweek.png)
+
 The following code example depicts how to display the timeline work week view on Scheduler,
 
 {% tabs %}
@@ -319,6 +333,8 @@ A Timeline Month view displays the current month days along with its appointment
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs83" %}
 
+![Displaying Timeline Month View](images/schedule-views-timelinemonth.png)
+
 > Clicking on the dates in the date header bar of Timeline month will allow you to navigate to the Timeline day view.
 
 ### Timeline Year view
@@ -340,6 +356,8 @@ To make use of the timeline Year view on Scheduler, import and inject `TimelineY
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs84" %}
+
+![Displaying Timeline Year View](images/schedule-views-timelineyear.png)
 
 #### Resource grouping
 
@@ -396,6 +414,8 @@ You can provide the alternative display name for such customized views on the Sc
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs87" %}
+
+![Displaying Extending Intervals](images/schedule-views-interval.png)
 
 > The view intervals can be extended on all the Scheduler view modes except Agenda and Month-Agenda views.
 

@@ -186,6 +186,8 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 an
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs7" %}
 
+![Editing Events](images/schedule-editing-events.png)
+
 ### Recurrence options and rules
 
 Events can be repeated on a daily, weekly, monthly or yearly basis based on the recurrence rule which accepts the string value. The following details should be assigned to the `recurrenceRule` property to generate the recurring instances.
@@ -382,6 +384,8 @@ By default, the scheduler will render the overlapping events based on the start 
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/default-cs11" %}
+
+![Overlapping Events](images/schedule-overlapping-events.png)
 
 ## Drag and drop appointments
 
@@ -812,6 +816,8 @@ It is possible to block a set of dates or a particular time ranges on the Schedu
   
 {% previewsample "page.domainurl/code-snippet/schedule/event-cs11" %}
 
+![Block Date and Time](images/schedule-block-events.png)
+
 Block events can also be defined to repeat on several days as shown in the following code example.
 
 {% tabs %}
@@ -827,6 +833,8 @@ Block events can also be defined to repeat on several days as shown in the follo
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/event-cs12" %}
+
+![Block Several Date and Time](images/schedule-multiple-block-events.png)
 
 ## Readonly
 
@@ -922,6 +930,8 @@ We can show more indicator if more than one appointment is available in a same c
   
 {% previewsample "page.domainurl/code-snippet/schedule/event-cs17" %}
 
+![Differentiate Past Time Events](images/schedule-appointments-entirecell.png)
+
 ## Display tooltip for appointments
 
 The tooltip shows the Scheduler appointment's information in a formatted style by making use of the tooltip related options.
@@ -944,6 +954,8 @@ The tooltip can be displayed for appointments by setting `true` to the `enableTo
   
 {% previewsample "page.domainurl/code-snippet/schedule/event-cs18" %}
 
+![Built-in Tooltip](images/schedule-appointments-tooltip.png)
+
 ### Customizing event tooltip using template
 
 After enabling the default tooltip, it is possible to customize the display of needed event information on tooltip by making use of the `tooltipTemplate` option within the `eventSettings`.
@@ -964,6 +976,8 @@ After enabling the default tooltip, it is possible to customize the display of n
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/schedule/tooltip-cs1" %}
+
+![Tooltip](images/schedule-appointments-tooltip-template.png)
 
 > All the field names that are mapped from the Scheduler dataSource to the appropriate field properties such as subject, description, location, startTime and endTime within the `eventSettings` can be accessed within the template.
 
