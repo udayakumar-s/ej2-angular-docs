@@ -1,0 +1,12 @@
+
+    <div id="wrapper" style='margin-top: 20px'>
+	  <div id='content' style="margin: 0px auto; width:250px;">
+        <!-- specifies the template string for the AutoComplete component-->
+        <ejs-autocomplete id='atcelement' #sample [dataSource]='data' [placeholder]='text' (open)='onOpen($event)'>
+            <!--set the footerTemplate property-->
+            <ng-template #footerTemplate="" let-data="">
+                <span class='foot'> </span>
+            </ng-template>
+        </ejs-autocomplete>
+      </div>
+    </div>

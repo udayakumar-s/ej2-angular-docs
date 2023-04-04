@@ -1,0 +1,18 @@
+<div class="e-form">
+    <input type="number" id='OrderID' placeholder="Order ID" [(ngModel)]="edit.OrderID" />
+    <input type="text" id="CustomerID" placeholder="Customer ID" [(ngModel)]="edit.CustomerID" *ngIf="show"/>
+    <input type="number" id="EmployeeID" placeholder="Employee ID" [(ngModel)]="edit.EmployeeID" *ngIf="show"/>
+    <input type="button" [value]="text" id="manipulate" (click)="insert()" />
+</div>
+<table class='e-table'>
+    <tr>
+        <th>Order ID</th>
+        <th>Customer ID</th>
+        <th>Employee ID</th>
+    </tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td>
+        <td>{{item.CustomerID}}</td>
+        <td>{{item.EmployeeID}}</td>
+    </tr>
+</table>

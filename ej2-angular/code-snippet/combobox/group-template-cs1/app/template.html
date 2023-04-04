@@ -1,0 +1,12 @@
+
+    <div id="wrapper">
+	  <div id='content' style="margin: 40px auto 0; width:250px;">
+        <!-- specifies the template string for the ComboBox component-->
+        <ejs-combobox id='comboelement' #samples [dataSource]='data' [fields]='fields' [sortOrder]='sorting' [placeholder]='text' [groupTemplate]='groupTemplate' [query]='query'>
+            <ng-template #groupTemplate="" let-data="">
+                <!--set the value to groupTemplate property-->
+                <strong>{{data.City}}</strong>
+            </ng-template>
+        </ejs-combobox>
+      </div>
+    </div>
