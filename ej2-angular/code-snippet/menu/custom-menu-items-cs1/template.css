@@ -1,0 +1,146 @@
+/**
+* ej2 Menu template styles
+*/
+#menuTemplate .menu-control {
+  margin-top: 45px;
+  text-align: center;
+}
+
+/**
+  * Common customization 
+  */
+#menuTemplate .e-menu-wrapper.e-control ul.e-ul .e-menu-item {
+  display: flex;
+  height: auto;
+  padding: 0;
+}
+
+/**
+  * Avatar customization
+  */
+
+#menuTemplate .e-menu-wrapper ul .e-menu-item .e-avatar {
+  background-color: inherit;
+  background-position: 0;
+  background-size: 25px;
+  color: inherit;
+  font-size: inherit;
+  height: inherit;
+  justify-content: left;
+  margin: 0 10px;
+  width: 100%;
+  text-indent: 35px;
+}
+
+/**
+  * Badge customization
+  */
+#menuTemplate .e-menu-wrapper ul .e-menu-item ul li {
+  padding: 0 10px;
+}
+
+#menuTemplate .e-menu-wrapper ul .e-menu-item ul li .e-badge {
+  float: right;
+  margin: 13px 0px 0px 10px;
+}
+
+#menuTemplate .e-menu-wrapper ul .e-menu-item ul li:hover {
+  background-color: #eee;
+}
+
+/**
+  * Card customization
+  */
+#menuTemplate .e-menu-wrapper ul.e-ul .e-menu-item .e-card {
+  width: 290px;
+  font-size: inherit;
+  cursor: default;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+#menuTemplate .e-menu-wrapper ul.e-ul .e-menu-item .e-card .e-card-content {
+  white-space: normal;
+  color: inherit;
+  padding-top: 0;
+  text-align: justify;
+  font-size: inherit;
+}
+
+#menuTemplate .e-menu-wrapper ul.e-ul .e-menu-item .e-card .cb-icons {
+  width: 30px;
+  font-size: 30px;
+  height: 30px;
+}
+
+#menuTemplate .e-menu-wrapper ul.e-ul .e-menu-item .e-card .e-card-btn {
+  background-color: inherit;
+}
+
+
+/* Common ul & li styles */
+.e-bigger .e-template-menu.e-menu-wrapper ul.e-ul,
+.e-template-menu.e-menu-wrapper ul.e-ul {
+  padding: 0;
+}
+
+.e-bigger .e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item,
+.e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item {
+  display: flex;
+  padding: 0 10px;
+  outline-color: transparent;
+}
+
+/** Avatar customization */
+.e-template-menu.e-menu-wrapper ul .e-menu-item .e-avatar {
+  background-color: inherit;
+  font-size: 8px;
+  margin-right: 8px;
+  align-self: center;
+  width: auto;
+  overflow: visible;
+}
+
+.e-bigger .e-template-menu.e-menu-wrapper ul .e-menu-item .e-avatar {
+  font-size: 10px;
+}
+
+/** Badge customization */
+.e-template-menu.e-menu-wrapper ul .e-menu-item .e-badge {
+  margin-left: 10px;
+  align-self: center;
+  overflow: visible;
+}
+
+/** Card customization */
+.e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item .e-card {
+  width: 290px;
+  font-size: inherit;
+  background-color: inherit;
+  border-color: transparent;
+}
+
+/* custom code start*/
+.e-bigger .e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item .e-card {
+  width: 320px;
+}
+
+/* custom code end*/
+.e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item .e-card .e-card-content {
+  white-space: normal;
+  color: inherit;
+  padding-top: 0;
+  text-align: justify;
+  font-size: inherit;
+}
+
+.e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item#about {
+  height: auto;
+  padding: 0;
+}
+
+.e-template-menu.e-menu-wrapper ul.e-ul .e-menu-item#about.e-focused {
+  background-color: transparent;
+  outline-color: transparent;
+  pointer-events: none;
+}

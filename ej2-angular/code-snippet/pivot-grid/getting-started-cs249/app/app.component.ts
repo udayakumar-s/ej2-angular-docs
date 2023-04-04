@@ -1,0 +1,54 @@
+
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IDataOptions, DisplayOption, PivotChartService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
+import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
+import { Pivot_Data } from './datasource.ts';
+import { Button } from '@syncfusion/ej2-buttons';
+
+@Component({
+  selector: 'app-container',
+  providers: [PivotChartService],
+  // specifies the template string for the pivot table component
+  template: `<span><button ej-button id='chartprint'>Print</button></span><div><ejs-pivotview #pivotview id='PivotView' height='300' [dataSourceSettings]=dataSourceSettings [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview></div>`
+})
+export class AppComponent implements OnInit {
+    public dataSourceSettings: IDataOptions;
+    public chartSettings: ChartSettings;
+    public displayOption: DisplayOption;
+    public exportButton: Button;
+    public printButton: Button;
+
+    @ViewChild('pivotview', {static: false})
+    public pivotGridObj: PivotViewComponent;
+
+    ngOnInit(): void {
+
+        this.dataSourceSettings = {
+            dataSource: Pivot_Data,
+            expandAll: false,
+            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            filters: []
+        };
+
+        this.displayOption = { view: 'Chart' } as DisplayOPtion;
+        this.chartSettings = {
+            chartSeries: {
+                type: 'Column'
+            }
+        } as ChartSettings;
+
+        this.printButton = new Button({ isPrimary: true });
+        this.printButton.appendTo('#chartprint');
+
+        this.printButton.element.onclick = (): void => {
+            this.pivotGridObj.printChart();
+        };
+    }
+}
+
+
+
