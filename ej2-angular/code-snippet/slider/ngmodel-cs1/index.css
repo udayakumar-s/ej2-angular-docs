@@ -1,0 +1,9 @@
+.form-control{
+  border: 0;
+  box-shadow: none;
+}
+
+
+.ng-valid[required]{
+  border: none;
+}

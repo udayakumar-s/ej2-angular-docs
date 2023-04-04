@@ -1,0 +1,16 @@
+
+    <div id="wrapper">
+	  <div id='content' style="margin: 0px auto; width:300px;">
+        <!-- specifies the template string for the MultiSelect component-->
+        <ejs-multiselect id='multiselectelement' #sample [dataSource]='data' [fields]='fields' [mode]='box' [sortOrder]='sorting' [placeholder]='text' [query]='query'>
+            <ng-template #itemTemplate="" let-data="">
+                <!--set the value to itemTemplate property-->
+                <div><span class='name'>{{data.FirstName}}</span><span class ='city'>{{data.City}}</span></div>            
+            </ng-template>
+            <ng-template #valueTemplate="" let-data="">
+                <!--set the value to valueTemplate property-->
+                <span>{{data.FirstName}} - {{data.City}}</span>
+            </ng-template>
+        </ejs-multiselect>
+      </div>
+    </div>

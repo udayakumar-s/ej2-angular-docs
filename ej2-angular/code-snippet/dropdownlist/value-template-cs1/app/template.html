@@ -1,0 +1,16 @@
+
+    <div id="wrapper">
+	  <div id='content' style="margin: 0px auto; width:300px;">
+        <!-- specifies the template string for the DropDownList component-->
+        <ejs-dropdownlist id='ddlelement' #samples [dataSource]='data' [fields]='fields' [sortOrder]='sorting' [placeholder]='text' [query]='query' [itemTemplate]='itemTemplate' [valueTemplate]='valueTemplate'>
+            <ng-template #itemTemplate="" let-data="">
+                <!--set the value to itemTemplate property-->
+                <span><span class='name'> {{data.FirstName}}</span><span class ='city'>{{data.City}}</span></span>
+            </ng-template>
+            <ng-template #valueTemplate="" let-data="">
+                <!--set the value to valueTemplate property-->
+                <span class='value'>{{data.FirstName}} - {{data.City}}</span>
+            </ng-template>
+        </ejs-dropdownlist>
+      </div>
+    </div>
