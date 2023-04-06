@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
         };
         this.tooltip = {
             type:['Pointer', 'Range'],
-            format:'Pointer : {value}',
+            format:'Pointer : {value} ',
             enable: true,
             enableAnimation: false
         };
