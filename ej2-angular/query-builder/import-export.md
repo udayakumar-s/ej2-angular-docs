@@ -78,7 +78,11 @@ You can export the defined conditions to structured JSON object through the [`ge
 
 ## Exporting to SQL
 
+<<<<<<< HEAD
 You can export the defined conditions to SQL query through the [`getSqlFromRules`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getsqlfromrules) method.
+=======
+You can export the defined conditions to SQL query through the [`getRulesFromSQL`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getrulesfromsql) method.
+>>>>>>> 22e64a9051cff21a5598afef7e763b005b4d8ab3
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

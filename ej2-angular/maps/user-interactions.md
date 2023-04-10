@@ -297,94 +297,6 @@ export class AppComponent implements OnInit {
 
 ```
 
-### Customizing the zoom toolbar
-
-The zoom toolbar can be customized by using the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel/#toolbarsettings) option in the [zoomSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel). The following properties can be used to customize the zoom toolbar.
-
-* [backgroundColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#backgroundcolor) - It is used to customize the background color of the zoom toolbar.
-* [borderOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#borderopacity) - It is used to customize the opacity of the border of the zoom toolbar.
-* [borderWidth](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#borderwidth) - It is used to customize the thickness of the border of the zoom toolbar.
-* [borderColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#bordercolor) - It is used to customize the color of the border of the zoom toolbar.
-* [horizontalAlignment](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#horizontalalignment) - It is used to position the zoom toolbar in near, far, and center positions to customize its horizontal placement.
-* [verticalAlignment](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#verticalalignment) - It is used to position the zoom toolbar in near, far, and center positions to customize its vertical placement.
-* [orientation](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#orientation) - It is used to change the orientation (horizontal/vertical) of the zoom toolbar.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs105/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs105/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs105/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs105" %}
-
-<!-- markdownlint-disable MD036 -->
-**Customizing the buttons in the zoom toolbar**
-
-The appearance of the buttons in the zoom toolbar can be customized by using the [buttonSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#buttonsettings) option in the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel/#toolbarsettings) of the [zoomSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel). The following properties can be used to customize the zoom toolbar buttons.
-
-* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#fill) - It is used to set the background color of the buttons.
-* [color](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#color) - It is used to customize the color of the icons inside the button.
-* [borderOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#borderopacity) - It is used to set the opacity of the border of the zoom toolbar buttons.
-* [borderWidth](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#borderwidth) - It is used to set the thickness of the border of the zoom toolbar buttons.
-* [borderColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#bordercolor) - It is used to set the color of the border of the zoom toolbar buttons.
-* [radius](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#radius) - It is used to set the size of the button.
-* [selectionColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#selectioncolor) - It is used to set the color of the icons inside the button when selection is performed.
-* [highlightColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#highlightcolor) - It is used to change the color of the button when the mouse is hovered over it.
-* [padding](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#padding) - It is used to change the padding space between each button.
-* [opacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#opacity) - It is used to change the opacity of the button.
-* [toolbarItems](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#toolbaritems) - It is used to change the items that should be displayed in the zoom toolbar. By default, zoom-in, zoom-out, and reset buttons will be available. Other options include selection zoom and panning.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs106/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs106/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs106/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs106" %}
-
-<!-- markdownlint-disable MD036 -->
-**Customizing the tooltip of the zoom toolbar**
-
-The appearance of the tooltip of the zoom toolbar can be customized by using the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/) option in the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel/#toolbarsettings) of the [zoomSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel) property. The following properties are available to customize the zoom toolbar tooltip.
-
-* [visible](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#visible) - Enables or disables the tooltip of the zoom toolbar.
-* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fill) - It is used to change the background color of the tooltip of the zoom toolbar.
-* [borderOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#borderopacity) - It is used to change the opacity of the border of the zoom toolbar's tooltip.
-* [borderWidth](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#borderwidth) - It is used to change the thickness of the border of the zoom toolbar's tooltip.
-* [borderColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#bordercolor) - It is used to change the color of the border of the zoom toolbar's tooltip.
-* [fontColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontcolor) - It is used to change the color of the text in the tooltip of the zoom toolbar.
-* [fontFamily](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontfamily) - It is used to change the font family of the text in the tooltip of the zoom toolbar.
-* [fontStyle](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontstyle) - It is used to change the font style of the text in the tooltip of the zoom toolbar.
-* [fontWeight](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontweight) - It is used to change the font weight of the text in the tooltip of the zoom toolbar.
-* [fontSize](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontsize) - It is used to change the size of the text in the tooltip of the zoom toolbar.
-* [fontOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontopacity) - It is used to change the opacity of the text in the tooltip of the zoom toolbar.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs107/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs107/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs107/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs107" %}
-
 ### Zooming with animation
 
 To zoom in or zoom out the Maps with animation, use the [`animationDuration`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel/#animationduration) property in [`layers`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel).
@@ -433,7 +345,93 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs90" %}
 
-## Selection
+### Customizing the zoom toolbar
+
+The zoom toolbar can be customized by using the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel/#toolbarsettings) option in the [zoomSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel). The following properties can be used to customize the zoom toolbar.
+
+* [backgroundColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#backgroundcolor) - It is used to customize the background color of the zoom toolbar.
+* [borderOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#borderopacity) - It is used to customize the opacity of the border of the zoom toolbar.
+* [borderWidth](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#borderwidth) - It is used to customize the thickness of the border of the zoom toolbar.
+* [borderColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#bordercolor) - It is used to customize the color of the border of the zoom toolbar.
+* [horizontalAlignment](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#horizontalalignment) - It is used to position the zoom toolbar in near, far, and center positions to customize its horizontal placement.
+* [verticalAlignment](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#verticalalignment) - It is used to position the zoom toolbar in near, far, and center positions to customize its vertical placement.
+* [orientation](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#orientation) - It is used to change the orientation (horizontal/vertical) of the zoom toolbar.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs105/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs105/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs105/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs105" %}
+
+<!-- markdownlint-disable MD036 -->
+**Customizing the buttons in the zoom toolbar**
+
+The appearance of the buttons in the zoom toolbar can be customized by using the [buttonSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#buttonsettings) option in the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel/#toolbarsettings) of the [zoomSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel) property. The following properties can be used to customize the zoom toolbar buttons.
+
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#fill) - It is used to set the background color of the buttons.
+* [color](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#color) - It is used to customize the color of the icons inside the button.
+* [borderOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#borderopacity) - It is used to set the opacity of the border of the zoom toolbar buttons.
+* [borderWidth](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#borderwidth) - It is used to set the thickness of the border of the zoom toolbar buttons.
+* [borderColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#bordercolor) - It is used to set the color of the border of the zoom toolbar buttons.
+* [radius](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#radius) - It is used to set the size of the button.
+* [selectionColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#selectioncolor) - It is used to set the color of the icons inside the button when selection is performed.
+* [highlightColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#highlightcolor) - It is used to change the color of the button when the mouse is hovered over it.
+* [padding](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#padding) - It is used to change the padding space between each button.
+* [opacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#opacity) - It is used to change the opacity of the button.
+* [toolbarItems](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarButtonSettingsModel/#toolbaritems) - It is used to change the items that should be displayed in the zoom toolbar. By default, zoom-in, zoom-out, and reset buttons will be available. Other options include selection zoom and panning.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs106/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs106/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs106/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs106" %}
+
+<!-- markdownlint-disable MD036 -->
+**Customizing the tooltip of the zoom toolbar**
+
+The appearance of the tooltip of the zoom toolbar can be customized by using the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarSettingsModel/#tooltipsettings) option in the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel/#toolbarsettings) of the [zoomSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel) property. The following properties are available to customize the zoom toolbar tooltip.
+
+* [visible](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#visible) - Enables or disables the tooltip of the zoom toolbar.
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fill) - It is used to change the background color of the tooltip of the zoom toolbar.
+* [borderOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#borderopacity) - It is used to change the opacity of the border of the zoom toolbar's tooltip.
+* [borderWidth](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#borderwidth) - It is used to change the thickness of the border of the zoom toolbar's tooltip.
+* [borderColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#bordercolor) - It is used to change the color of the border of the zoom toolbar's tooltip.
+* [fontColor](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontcolor) - It is used to change the color of the text in the tooltip of the zoom toolbar.
+* [fontFamily](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontfamily) - It is used to change the font family of the text in the tooltip of the zoom toolbar.
+* [fontStyle](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontstyle) - It is used to change the font style of the text in the tooltip of the zoom toolbar.
+* [fontWeight](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontweight) - It is used to change the font weight of the text in the tooltip of the zoom toolbar.
+* [fontSize](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontsize) - It is used to change the size of the text in the tooltip of the zoom toolbar.
+* [fontOpacity](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomToolbarTooltipSettingsModel/#fontopacity) - It is used to change the opacity of the text in the tooltip of the zoom toolbar.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs107/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs107/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/datetime-cs107/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs107" %}
 
 Each shape in the Maps can be selected and deselected during interaction with the shapes. Selection is enabled by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#enable) property of [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel) to **true**.
 
@@ -523,7 +521,6 @@ LayerIndex, propertyName, country name, and selected value as a boolean state(tr
 
 The shape is initially selected using the [`initialShapeSelection`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialShapeSelectionSettingsModel), and the values are mapped to the [`shapePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialShapeSelectionSettingsModel/#shapepath) and [`shapeValue`](https://ej2.syncfusion.com/angular/documentation/api/maps/initialShapeSelectionSettingsModel/#shapevalue).
 
->initialShapeSelection is an Array property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
