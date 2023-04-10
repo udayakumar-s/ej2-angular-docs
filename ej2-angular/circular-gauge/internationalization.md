@@ -10,13 +10,12 @@ domainurl: ##DomainURL##
 
 # Internationalization in Angular Circular Gauge component
 
-Circular Gauge provide supports for internationalization for below gauge elements.
+Circular Gauge provides internationalization support for below elements.
 
 * Axis Labels
 * Tooltip
 
-For more information about number formatter you can refer
-[internationalization](http://ej2.syncfusion.com/documentation/base/intl.html).
+For more information about number formatter, you can refer [internationalization](https://ej2.syncfusion.com/documentation/common/internationalization/).
 
 ## Globalization
 
@@ -26,7 +25,7 @@ Internationalization library is used to globalize number in Circular Gauge using
 <!-- markdownlint-disable MD036 -->
 **Numeric Format**
 
-In the below example axis labels are `globalized` to **EUR**.
+In the below example, axis labels are globalized to **EUR**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +43,7 @@ In the below example axis labels are `globalized` to **EUR**.
 
 ## Right-to-left
 
-Circular Gauge can render its elements from right to left, which improves the user experience for certain language users. To do so, set the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge#enablertl) property to **true**. When this property is enabled, elements such as the tooltip and legend will be rendered from right to left. Meanwhile, the axis can be rendered from right to left by setting the [direction](https://helpej2.syncfusion.com/angular/documentation/api/circular-gauge/axisModel/#direction) property to **AntiClockWise**. For more information on axis, click [here](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-axes#angles-and-direction).
+Circular Gauge can render its elements from right to left, which improves the user experience for certain language users. To do so, set the [enableRtl](https://helpej2.syncfusion.com/angular/documentation/api/circular-gauge/#enablertl) property to **true**. When this property is enabled, elements such as the tooltip and legend will be rendered from right to left. Meanwhile, the axis can be rendered from right to left by setting the [direction](https://helpej2.syncfusion.com/angular/documentation/api/circular-gauge/axisModel/#direction) property to **AntiClockWise**. For more information on axis, click [here](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-axes#angles-and-direction).
 
 The following example illustrates the right to left rendering of the Circular Gauge.
 

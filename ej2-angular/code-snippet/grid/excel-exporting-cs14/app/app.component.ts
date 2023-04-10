@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
     beforeExcelExport(args) {
         args.isChild = true;
     }
-
+    
     toolbarClick(args: ClickEventArgs) {
         if (args.item.id === 'Grid_excelexport') {
             const exportProperties: ExcelExportProperties = {
