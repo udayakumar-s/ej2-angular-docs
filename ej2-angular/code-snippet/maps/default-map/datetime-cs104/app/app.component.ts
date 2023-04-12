@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Maps, Marker, Legend, MapsTooltip, IMarkerDragEvents } from '@syncfusion/ej2-angular-maps';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Maps, Marker, Legend, MapsTooltip, IMarkerDragEventArgs } from '@syncfusion/ej2-angular-maps';
 import { world_map } from 'world-map.ts';
 Maps.Inject(Marker, Legend, MapsTooltip);
 @Component({
@@ -19,10 +19,10 @@ export class AppComponent implements OnInit {
     public markerSettings: object;
     public shapeSettings: object;
     public zoomSettings: object;
-    public markerDragStart = (args: IMarkerDragEvents) => {
+    public markerDragStart = (args: IMarkerDragEventArgs) => {
       // When the marker begins to move on the map, the event is triggered.
     };
-    public markerDragEnd = (args: IMarkerDragEvents) => {
+    public markerDragEnd = (args: IMarkerDragEventArgs) => {
       // When the marker on the map stops dragging, the event is triggered.
       this.mapsInstance.layers[args.layerIndex].markerSettings[args.markerIndex].dataSource[args.dataIndex].name = 'Dragged Marker ' + (args.dataIndex + 1);
       this.mapsInstance.refresh();
