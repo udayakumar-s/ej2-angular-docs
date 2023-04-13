@@ -365,3 +365,4 @@ By default, cells in the grid will be blank if the corresponding column values i
 * [Format grid with auto generation columns in Angular Grid](https://www.syncfusion.com/forums/141181/format-grid-with-auto-generation-columns-in-angular-grid)
 * [Background color change for stacked headers and calculated columns in Angular Grid](https://www.syncfusion.com/forums/139804 background-color-change-for-stacked-headers-and-calculated-columns-in-angular-grid)
 * [Drag and Drop Between two grids in Angular Grid](https://www.syncfusion.com/forums/150058/drag-and-drop-between-two-grids-in-angular-grid)
+* [How to change the data source or columns dynamically](../data-binding/how-to-change-the-data-source-or-columns-dynamically.md)
