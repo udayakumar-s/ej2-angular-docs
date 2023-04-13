@@ -43,11 +43,11 @@ The following properties can be used to customize the `range area` series.
 {% include code-snippet/chart/series/rangearea-cs/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/rangearea.cs/app/main.ts %}
+{% include code-snippet/chart/series/rangearea-cs/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/rangearea.cs" %}
+{% previewsample "page.domainurl/code-snippet/chart/series/rangearea-cs" %}
 
 ## See Also
 
