@@ -72,13 +72,13 @@ export class AppComponent {
               'float': 'left'
           });
       }
-      this.pivotGridMdule = this.pivotObj;
+      this.fieldListObj.pivotGridModule = this.pivotObj;
       //Assigning report to pivot table component
       this.pivotObj.dataSourceSettings = this.fieldListObj.dataSourceSettings;
       //Generating page settings based on pivot table component’s size.
       this.pivotObj.updatePageSettings(true);
       //Assigning page settings to field list component.
-      fieldListObj.pageSettings = pivotObj.pageSettings;
+      this.fieldListObj.pageSettings = this.pivotObj.pageSettings;
     }
 
     ondataBound(): void {
