@@ -44,11 +44,11 @@ The following properties can be used to customize the `spline area` series.
 {% include code-snippet/chart/series/splinearea-cs/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/splinearea.cs/app/main.ts %}
+{% include code-snippet/chart/series/splinearea-cs/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/splinearea.cs" %}
+{% previewsample "page.domainurl/code-snippet/chart/series/splinearea-cs" %}
 
 ## See Also
 

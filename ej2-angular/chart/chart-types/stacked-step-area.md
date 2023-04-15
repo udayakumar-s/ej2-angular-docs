@@ -25,7 +25,7 @@ To render a Stacked Step Area series, use series [`type`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/rangesteparea-cs1" %}
+{% previewsample "page.domainurl/code-snippet/chart/series/stackedsteparea-cs1" %}
 
 ## Series customization
 
@@ -43,11 +43,11 @@ The following properties can be used to customize the `Stacked Step Area` series
 {% include code-snippet/chart/series/stackedsteparea-cs/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/stackedsteparea.cs/app/main.ts %}
+{% include code-snippet/chart/series/stackedsteparea-cs/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/stackedsteparea.cs" %}
+{% previewsample "page.domainurl/code-snippet/chart/series/stackedsteparea-cs" %}
 
 ## See Also
 
