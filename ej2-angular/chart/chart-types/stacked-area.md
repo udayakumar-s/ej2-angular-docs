@@ -43,11 +43,11 @@ The following properties can be used to customize the `100% stacked area` series
 {% include code-snippet/chart/series/100-stackedarea-cs/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/100-stackedarea.cs/app/main.ts %}
+{% include code-snippet/chart/series/100-stackedarea-cs/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/100-stackedarea.cs" %}
+{% previewsample "page.domainurl/code-snippet/chart/series/100-stackedarea-cs" %}
 
 ## See Also
 
