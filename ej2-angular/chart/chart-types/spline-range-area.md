@@ -45,11 +45,11 @@ The following properties can be used to customize the `spline range area` series
 {% include code-snippet/chart/series/splinerangearea-cs/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/splinerangearea.cs/app/main.ts %}
+{% include code-snippet/chart/series/splinerangearea-cs/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/splinerangearea.cs" %}
+{% previewsample "page.domainurl/code-snippet/chart/series/splinerangearea-cs" %}
 
 ## See Also
 
