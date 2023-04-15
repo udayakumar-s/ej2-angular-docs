@@ -44,7 +44,7 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/bar-cs1" %}
+{% previewsample "page.domainurl/code-snippet/chart/series/bar-cs" %}
 
 ## Grouped bar
 

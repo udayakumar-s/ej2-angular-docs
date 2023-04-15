@@ -43,11 +43,11 @@ The following properties can be used to customize the `step area` series.
 {% include code-snippet/chart/series/steparea-cs/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/steparea.cs/app/main.ts %}
+{% include code-snippet/chart/series/steparea-cs/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/steparea.cs" %}
+{% previewsample "page.domainurl/code-snippet/chart/series/steparea-cs" %}
 
 ## See Also
 

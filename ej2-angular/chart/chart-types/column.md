@@ -44,6 +44,8 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/chart/series/column-cs31" %}
+
 ## Grouped Column
 
 <!-- markdownlint-disable MD010 -->
