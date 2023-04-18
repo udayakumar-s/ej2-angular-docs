@@ -32,5 +32,5 @@ To render a pareto chart, use series [`type`](https://ej2.syncfusion.com/angular
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)
