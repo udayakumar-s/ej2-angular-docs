@@ -38,19 +38,19 @@ The following properties can be used to customize the `stacked bar` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/stackedbar-cs/app/app.component.ts %}
+{% include code-snippet/chart/series/stackbar-cs/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/stackedbar-cs/app/app.module.ts %}
+{% include code-snippet/chart/series/stackbar-cs/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/stackedbar-cs/app/main.ts %}
+{% include code-snippet/chart/series/stackbar-cs/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/stackedbar-cs" %}
+{% previewsample "page.domainurl/code-snippet/chart/series/stackbar-cs" %}
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

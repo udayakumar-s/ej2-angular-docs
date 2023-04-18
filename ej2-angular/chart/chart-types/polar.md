@@ -202,5 +202,5 @@ You can customize the radius of the polar series and polar series using [`coeffi
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

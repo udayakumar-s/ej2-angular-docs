@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = radarData;
         this.primaryXAxis = {
-            title: 'Year', coefficient: 90,
+            title: 'Year', coefficient: 50,
             minimum: 2004, maximum: 2012, interval: 1
             };
         this.title = 'Efficiency of oil-fired power production';
