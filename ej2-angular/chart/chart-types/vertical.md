@@ -31,5 +31,5 @@ You can use `isTransposed` property in chart to render a chart in vertical manne
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

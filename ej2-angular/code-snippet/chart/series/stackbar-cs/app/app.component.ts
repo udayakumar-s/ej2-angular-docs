@@ -7,9 +7,9 @@ import { stackData } from 'datasource.ts';
     template:
     `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y' name='Apple' fill='yellow' [border]='border' dashArray='5.5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y1' name='Orange' fill='green' [border]='border1' dashArray='5.5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y2' name='Wastage' fill='blue' [border]='border2' dashArray='5.5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingBar' xName='x' yName='y' name='Apple' fill='yellow' [border]='border' dashArray='5.5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingBar' xName='x' yName='y1' name='Orange' fill='green' [border]='border1' dashArray='5.5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingBar' xName='x' yName='y2' name='Wastage' fill='blue' [border]='border2' dashArray='5.5'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

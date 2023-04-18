@@ -53,5 +53,5 @@ The following properties can be used to customize the `100% stacked column` seri
 
 ## See Also
 
-* [Data label](./data-labels/)
-* [Tooltip](./tool-tip/)
+* [Data label](../data-labels/)
+* [Tooltip](../tool-tip/)

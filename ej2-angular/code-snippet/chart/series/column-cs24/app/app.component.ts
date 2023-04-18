@@ -7,7 +7,7 @@ import { columnData } from 'datasource.ts';
     template:
     `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' columnWidth='0.5' columnSpacing='0.5' xName='country' yName='gold' name='Gold' fill='red' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='Column' columnWidth='0.5' columnSpacing='0.5' xName='country' yName='gold' fill='yellow' [border]='border' dashArray='5.5' opacity='0.5'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
