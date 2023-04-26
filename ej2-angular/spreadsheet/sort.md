@@ -157,7 +157,7 @@ You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-ui
 
 ## See Also
 
-* [Sort a range by custom list](how-to/sort-a-range-by-custom-list)
+* [Sort a range by custom list](how-to/sort-a-range-by-custom-list.md)
 * [Hyperlink](./link)
 * [Filtering](./filter)
 * [Undo Redo](./undo-redo)
