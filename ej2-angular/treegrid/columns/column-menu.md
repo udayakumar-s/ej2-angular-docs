@@ -61,7 +61,7 @@ During the column menu open and column menu click, the tree grid component trigg
 
 ## Custom column menu item
 
-The Custom column menu items can be added by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuitems) as a collection of the [columnMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnMenuItemModel/).
+The Custom column menu items can be added by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuitems) as a collection of the `columnMenuItemModel`.
 
 Actions for these customized items can be defined in the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#columnmenuclick) event.
 
