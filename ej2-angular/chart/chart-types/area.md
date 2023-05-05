@@ -71,10 +71,10 @@ The following properties can be used to customize the `area` series.
 
 ## Area border
 
-The following properties in the [`bordermodel`](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/) can be used to customize the border of the Area Chart.
+The following properties in the [bordermodel](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/) can be used to customize the border of the Area Chart.
 
-[`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/#width) - Specifies the width for the border of the Area Chart.
-[`color`](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/#color) - Specifies the color for the border of the Area Chart.
+[width](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/#width) - Specifies the width for the border of the Area Chart.
+[color](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/#color) - Specifies the color for the border of the Area Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
