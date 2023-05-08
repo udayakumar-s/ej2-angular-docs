@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
-import { PageService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 
 /**
  * Module
@@ -11,10 +9,9 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule,DropDownListAllModule
+        GridModule,
     ],
     declarations: [AppComponent],
-    bootstrap: [AppComponent],
-    providers: [PageService]
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
