@@ -10,6 +10,9 @@
   background-color: greenyellow;
 }
 
+.e-attr {
+  background: #d7f0f4;
+}
 
 /* Row temmplate styles */
 .rowphoto img {

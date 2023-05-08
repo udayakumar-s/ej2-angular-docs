@@ -3,12 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { DetailRowService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
-import {
-    ButtonModule,
-    CheckBoxModule,
-    RadioButtonModule,
-    SwitchModule,
-  } from '@syncfusion/ej2-angular-buttons';
 
 /**
  * Module
@@ -16,11 +10,7 @@ import {
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule,
-        ButtonModule,
-        CheckBoxModule,
-        RadioButtonModule,
-        SwitchModule,      
+        GridModule        
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
