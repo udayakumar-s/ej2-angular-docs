@@ -32,6 +32,3 @@ export class AppComponent implements OnInit {
         this.grid.columnChooserModule.openColumnChooser(200, 50); // give X and Y axis
     }
 }
-
-
-
