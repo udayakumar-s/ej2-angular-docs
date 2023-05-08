@@ -5,7 +5,7 @@ export var inventoryData = [
         "Country": "Australia",
         "Number of INPADOC patents": 9839,
         "Active": "1994-2016",
-        "Mainfieldsofinvention": "Printing, Digital paper, Internet, Electronics,Lab-on-a-chip, MEMS, Mechanical, VLSI",
+        "MainFieldsofInvention": "Printing, Digital paper, Internet, Electronics,Lab-on-a-chip, MEMS, Mechanical, VLSI",
     },
     {
         "Inventor": "Shunpei Yamazaki",
@@ -13,7 +13,7 @@ export var inventoryData = [
         "Country": "Japan",
         "Number of INPADOC patents": "10000+",
         "Active": "1976-2016",
-        "Mainfieldsofinvention": "Thin film transistors, Liquid crystal displays, Solar cells, Flash memory, OLED",
+        "MainFieldsofInvention": "Thin film transistors, Liquid crystal displays, Solar cells, Flash memory, OLED",
     },
     {
         "Inventor": "Lowell L. Wood, Jr.",
@@ -21,7 +21,7 @@ export var inventoryData = [
         "Country": "USA",
         "Number of INPADOC patents": 1332,
         "Active": "1977-2016",
-        "Mainfieldsofinvention": "Mosquito laser, Nuclear weapons",
+        "MainFieldsofInvention": "Mosquito laser, Nuclear weapons",
     },
     {
         "Inventor": "Paul Lapstun",
@@ -29,7 +29,7 @@ export var inventoryData = [
         "Country": "Australia",
         "Number of INPADOC patents": 3099,
         "Active": "2000-2016",
-        "Mainfieldsofinvention": "Printing, Digital paper, Internet, Electronics, CGI, VLSI",
+        "MainFieldsofInvention": "Printing, Digital paper, Internet, Electronics, CGI, VLSI",
     },
     {
         "Inventor": "Gurtej Sandhu",
@@ -37,7 +37,7 @@ export var inventoryData = [
         "Country": "India",
         "Number of INPADOC patents": 2038,
         "Active": "1991-2016",
-        "Mainfieldsofinvention": "Thin film processes and materials, VLSI, Semiconductor device fabrication",
+        "MainFieldsofInvention": "Thin film processes and materials, VLSI, Semiconductor device fabrication",
     },
     {
         "Inventor": "Jun Koyama",
@@ -45,7 +45,7 @@ export var inventoryData = [
         "Country": "Japan",
         "Number of INPADOC patents": 4126,
         "Active": "1991-2016",
-        "Mainfieldsofinvention": "Thin film transistors, Liquid crystal displays, OLED",
+        "MainFieldsofInvention": "Thin film transistors, Liquid crystal displays, OLED",
     },
     {
         "Inventor": "Roderick A. Hyde",
@@ -53,7 +53,7 @@ export var inventoryData = [
         "Country": "USA",
         "Number of INPADOC patents": 3360,
         "Active": "2001-2016",
-        "Mainfieldsofinvention": "Various",
+        "MainFieldsofInvention": "Various",
     },
     {
         "Inventor": "Leonard Forbes",
@@ -61,7 +61,7 @@ export var inventoryData = [
         "Country": "Canada",
         "Number of INPADOC patents": 1398,
         "Active": "1991-2016",
-        "Mainfieldsofinvention": "Semiconductor Memories, CCDs, Thin film processes and materials, VLSI",
+        "MainFieldsofInvention": "Semiconductor Memories, CCDs, Thin film processes and materials, VLSI",
     },
     {
         "Inventor": "Thomas Edison",
@@ -69,7 +69,7 @@ export var inventoryData = [
         "Country": "USA",
         "Number of INPADOC patents": 2332,
         "Active": "1847(b)-1931(d)",
-        "Mainfieldsofinvention": "Electric power, Lighting, Batteries, Phonograph, Cement, Telegraphy, Mining",
+        "MainFieldsofInvention": "Electric power, Lighting, Batteries, Phonograph, Cement, Telegraphy, Mining",
     },
     {
         "Inventor": "Donald E. Weder",
@@ -77,7 +77,7 @@ export var inventoryData = [
         "Country": "USA",
         "Number of INPADOC patents": 1993,
         "Active": "1976-2015",
-        "Mainfieldsofinvention": "Florist supplies",
+        "MainFieldsofInvention": "Florist supplies",
     },
     {
         "Inventor": "George Albert Lyon",
@@ -85,7 +85,7 @@ export var inventoryData = [
         "Country": "Canada",
         "Number of INPADOC patents": "NA",
         "Active": "1882(b)-1961(d)",
-        "Mainfieldsofinvention": "Automotive, Stainless steel products",
+        "MainFieldsofInvention": "Automotive, Stainless steel products",
     },
     {
         "Inventor": "John F. O'Connor",
@@ -93,7 +93,7 @@ export var inventoryData = [
         "Country": "USA",
         "Number of INPADOC patents": "NA",
         "Active": "1864(b)-1938(d)",
-        "Mainfieldsofinvention": "Railway draft gearing",
+        "MainFieldsofInvention": "Railway draft gearing",
     },
     {
         "Inventor": "Melvin De Groote",
@@ -101,7 +101,7 @@ export var inventoryData = [
         "Country": "USA",
         "Number of INPADOC patents": "NA",
         "Active": "1895(b)-1963(d)",
-        "Mainfieldsofinvention": "Chemical de-emulsifiers",
+        "MainFieldsofInvention": "Chemical de-emulsifiers",
     },
     {
         "Inventor": "Jay S. Walker",
@@ -109,7 +109,7 @@ export var inventoryData = [
         "Country": "USA",
         "Number of INPADOC patents": 2206,
         "Active": "1998-2016",
-        "Mainfieldsofinvention": "Gaming machines",
+        "MainFieldsofInvention": "Gaming machines",
     },
     {
         "Inventor": "Edward K. Y. Jung",
@@ -117,7 +117,7 @@ export var inventoryData = [
         "Country": "USA",
         "Number of INPADOC patents": 2254,
         "Active": "1996-2016",
-        "Mainfieldsofinvention": "Various",
+        "MainFieldsofInvention": "Various",
     },
     {
         "Inventor": "Francis H. Richards",
@@ -125,6 +125,6 @@ export var inventoryData = [
         "Country": "USA",
         "Number of INPADOC patents": "NA",
         "Active": "1850(b)-19??(d)",
-        "Mainfieldsofinvention": "Mechanical, automation",
+        "MainFieldsofInvention": "Mechanical, automation",
     }
 ];
