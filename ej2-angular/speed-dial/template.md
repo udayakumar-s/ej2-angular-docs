@@ -26,6 +26,9 @@ You can use the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentatio
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/templates-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/speed-dial/templates-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/speed-dial/templates-cs1" %}
@@ -43,6 +46,9 @@ You can use the [`popupTemplate`](https://ej2.syncfusion.com/angular/documentati
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/templates-cs2/app/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/speed-dial/templates-cs2/index.css %}
 {% endhighlight %}
 {% endtabs %}
   

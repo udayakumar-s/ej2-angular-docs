@@ -1,7 +1,4 @@
-#container {
-    visibility: hidden;
-}
-
+/* Represents the styles for loader */
 #loader {
   color: #008cff;
   height: 40px;
@@ -11,17 +8,7 @@
   width: 30%;
 }
 
+/* Represents the styles for button */
 #hide{
   float: right;
-}
-
-button{
-  background-color: #aaa;
-  border: none;
-  border-radius: 5px;
-  color: black;
-  padding: 13px 28px;
-  text-align: center;
-  display: inline-block;
-  font-size: 15px;
 }

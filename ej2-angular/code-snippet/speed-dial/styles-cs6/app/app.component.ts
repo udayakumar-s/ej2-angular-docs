@@ -16,5 +16,3 @@ export class AppComponent {
     { iconCss: 'e-icons e-paste' }
   ];
 }
-
-
