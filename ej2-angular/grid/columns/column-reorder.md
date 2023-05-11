@@ -27,7 +27,7 @@ Here's an example for column reordering in your Grid component:
 {% include code-snippet/grid/reorder-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/code-snippet/grid/reorder-cs1" %}
 
 >* You can customize the appearance of the column headers during drag and drop by using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrop) events.
@@ -50,7 +50,7 @@ In this example, the **ShipCity** column is prevented from being reordered by se
 {% include code-snippet/grid/reorder-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/code-snippet/grid/reorder-cs6" %}
 
 ## Reorder columns externally
@@ -81,7 +81,7 @@ In this example, we are moving the column at index **1** to index **3**.
 {% include code-snippet/grid/reorder-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/code-snippet/grid/reorder-cs7" %}
 
 ### Reorder column based on target index
@@ -104,7 +104,7 @@ Here is an example of how to use the `reorderColumnByTargetIndex` method to reor
 {% include code-snippet/grid/reorder-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/code-snippet/grid/reorder-cs8" %}
 
 ### Reorder column based on field names
@@ -127,7 +127,7 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 {% include code-snippet/grid/reorder-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/code-snippet/grid/reorder-cs9" %}
 
 ## Reorder events
@@ -156,5 +156,5 @@ In the following example, we have implemented the `columnDragStart`, `columnDrag
 {% include code-snippet/grid/reorder-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/code-snippet/grid/reorder-cs4" %}
