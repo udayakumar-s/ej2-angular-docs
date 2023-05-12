@@ -8,7 +8,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
     selector: 'app-root',
     template:
     `<button ej-button id='reorderMultipleCols' (click)='reorderMultipleCols()'>Reorder Ship City and Ship Region to Last</button>
-    <ejs-grid #grid [dataSource]='data' [allowReordering]='true' height='280px'>
+    <ejs-grid #grid='' [dataSource]='data' [allowReordering]='true' height='280px'>
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
             <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>

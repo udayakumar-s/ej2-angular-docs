@@ -27,3 +27,7 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['ColumnChooser'];
     }
 }
+
+
+
+

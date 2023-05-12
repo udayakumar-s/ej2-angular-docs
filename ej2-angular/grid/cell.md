@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## Displaying the HTML content
 
-Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid component allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property by setting the value as **false** to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
+Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid component allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property by setting the value as false to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component component is added  to enable and disable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refresh](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method is called to refresh the grid and display the updated content.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added  to enable and disable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refresh](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method is called to refresh the grid and display the updated content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,12 +30,12 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
   
 {% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs3" %}
 
->* The [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property disables HTML encoding for the corresponding column in the grid. 
->* If the property is set to **true**, any HTML tags in the column's data will be displayed. 
->* If the property is set to **false**, the HTML tags is displayed in an encoded format.
->* Disabling HTML encoding can potentially introduce security vulnerabilities, so use caution when enabling this feature.
->* If [enablehtmlsanitizer](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablehtmlsanitizer) property of grid is set to **true**, then the content is sanitized to prevent any potential security vulnerabilities.
->* You can also disable the `disableHtmlEncode` property of the column using [getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumns) method on [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event of Switch component. This is demonstrated in the below code snippet, 
+> * The [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property disables HTML encoding for the corresponding column in the grid. 
+> * If the property is set to **true**, any HTML tags in the column's data will be displayed. 
+> * If the property is set to **false**, the HTML tags will be removed and displayed as plain text.
+> * Disabling HTML encoding can potentially introduce security vulnerabilities, so use caution when enabling this feature.
+> * If [enablehtmlsanitizer](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablehtmlsanitizer) property of grid is set to true, then the content is sanitized to prevent any potential security vulnerabilities.
+> * You can also disable the `disableHtmlEncode` property of the column using [getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumns) method on [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event of Switch component.This is demonstrated in the below code snippet, 
 
 ```typescript
 change(args) {
@@ -50,21 +50,21 @@ change(args) {
 
 ## Autowrap the grid content
 
-The autowrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion Grid, you should set the appropriate [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
+The auto wrap feature allows the cell content in the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion Grid, you should set the appropriate [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 
-To enable autowrap, set the `allowTextWrap` property to **true**. You can also configure the auto wrap mode by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings/#wrapmode) property.
+To enable auto wrap, set the [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowtextwrap) property to **true**. You can also configure the wrap mode by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings/#wrapmode) property.
 
 Grid provides the below three options for configuring:
 
-*	**Both**: This is the default value for wrapMode. With this option, both the grid **Header** and **Content** text is wrapped.
-*	**Header**: With this option, only the grid header text is wrapped.
-*	**Content**: With this option, only the grid content is wrapped.
+* **Both** - This is the default value for wrapMode. With this option, both the grid **Header** and **Content** text is wrapped.
+* **Header** - With this option, only the grid header text is wrapped.
+* **Content** - With this option, only the grid content is wrapped.
 
->* If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
->* If a column's header text contains no white space, the text may not be wrapped.
->* If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) properties of the column to customize the appearance of the header and cell content.
+> * If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
+> * If a column's header text contains no white space, the text may not be wrapped.
+> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) properties of the column to customize the appearance of the header and cell content.
 
-The following example demonstrates how to set the [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowtextwrap) property to **true** and specify the wrap mode as **Content** by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings/#wrapmode) property. Also change the `textWrapSettings.wrapMode` property to **Header** , **Content** and **Both** on changing the dropdown value using the [change](https://helpej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
+The following example demonstrates how to set the [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowtextwrap) property to **true** and specify the wrap mode as **Content** by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings/#wrapmode) property. Also change the `textWrapSettings.wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](https://helpej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -86,9 +86,9 @@ Customizing the grid cell styles allows you to modify the appearance of cells in
 
 ### Using event
 
-To customize the appearance of the grid cell, you can use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event of the grid and you can access the [QueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) object, which provides information about the cell such as row and column indexes, data, and cell element. This event is triggered for each cell in the grid when it is rendered. In the event handler, you can modify the cell's style based on the corresponding cell information like column indexes, data, cell element and etc.
+To customize the appearance of the grid cell, you can use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event of the grid and you can access the [QueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) object, which provides information about the cell such as row and column indexes, data, and cell element.This event is triggered for each cell in the grid when it is rendered. In the event handler, you can modify the cell's style based on the corresponding cell information like column indexes, data, cell element and etc.
 
-The following example demonstrates how to add a `queryCellInfo` event handler to the grid. In the event handler, checked whether the current column is **Freight** field and then applied the appropriate CSS class to the cell based on its value.
+The following example demonstrates how to add a [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event handler to the grid. In the event handler, checked whether the current column is **Freight** field and then applied the appropriate CSS class to the cell based on its value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ The following example demonstrates how to add a `queryCellInfo` event handler to
   
 {% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs1" %}
 
-> The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event is triggered for every cell of the grid, so it may impact the performance of the grid whether used to modify a large number of cells.
+> * The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event is triggered for every cell of the grid, so it may impact the performance of the grid whether used to modify a large number of cells.
 
 ### Using CSS
 
@@ -145,7 +145,7 @@ To customize the style of grid cells, define [customAttribute](https://ej2.syncf
   color:navy
 }
 ```
-Here, setting the customAttributes property of the **ShipCity** column to an object that contains the CSS class 'e-attr'. This CSS class will be applied to all the cells in the **ShipCity** column of the grid.
+Here, setting the customAttributes property of the **ShipCity** column to an object that contains the CSS class 'custom-css'. This CSS class will be applied to all the cells in the **ShipCity** column of the grid.
 
 ```typescript
 {
@@ -208,6 +208,7 @@ There are three types of [clipMode](https://ej2.syncfusion.com/angular/documenta
 
 The following example demonstrates, how to set the [clipMode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) property to **Clip** for the **Name of the Inventor** column, **Ellipsis** for the **Number of Patent Families** column, and **EllipsisWithTooltip** for the **Main Fields of Invention** column, on changing the dropdown value using the [change](https://helpej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
 
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/clipmode-cs1/app/app.component.ts %}
@@ -222,9 +223,9 @@ The following example demonstrates, how to set the [clipMode](https://ej2.syncfu
   
 {% previewsample "page.domainurl/code-snippet/grid/clipmode-cs1" %}
 
->* By default, [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) value is **Ellipsis**.
->* If you set the [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) property of a column, the clip mode feature will be automatically applied to that column if the content exceeds the specified width.
->* Be careful when using the Clip mode, as it may result in important information being cut off. It is generally recommended to use the Ellipsis or EllipsisWithTooltip modes instead.
+> * By default, [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) value is **Ellipsis**.
+> * If you set the [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) property of a column, the clip mode feature will be automatically applied to that column if the content exceeds the specified width.
+> * Be careful when using the Clip mode, as it may result in important information being cut off. It is generally recommended to use the Ellipsis or EllipsisWithTooltip modes instead.
 
 ## Tooltip
 
@@ -313,12 +314,12 @@ The following screenshot represents the Bootstrap tooltip for the **CustomerID**
 
 ![Bootstrap tooltip](./images/bootstrap-tooltip.gif)
 
-> The Bootstrap CDN link must be added to the HTML file.
-> The `ngAfterViewChecked` method is called after the component's view has been fully initialized, so it is a good place to initialize the Bootstrap tooltip.
+> * The Bootstrap CDN link must be added to the HTML file.
+> * The `ngAfterViewChecked` method is called after the component's view has been fully initialized, so it is a good place to initialize the Bootstrap tooltip.
 
 ### Display custom tooltip for columns
 
-The Grid provides a feature to display custom tooltips for its columns using the [EJ2 Tooltip](](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started) component. This allows you to provide additional information about the columns when the user hovers over them.
+The Grid provides a feature to display custom tooltips for its columns using the [EJ2 Tooltip](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started) component. This allows you to provide additional information about the columns when the user hovers over them.
 
 To enable custom tooltips for columns in the Grid, you can render the Grid control inside the Tooltip component and set the target as `.e-rowcell`. This will display the tooltip when hovering over the grid cells.
 
@@ -378,7 +379,7 @@ The following example demonstrates how to set the [gridLines](https://ej2.syncfu
   
 {% previewsample "page.domainurl/code-snippet/grid/autowrap-cs2" %}
 
-> By default, the grid renders with **Default** mode.
+>By default, the grid renders with **Default** mode.
 
 ## See Also
 
