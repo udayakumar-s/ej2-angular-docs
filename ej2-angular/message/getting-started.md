@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Message component
 
-This section explains the steps required to create a simple Angular Message component and configure its available functionalities.
+This section explains the steps required to create a simple [Angular Message](https://www.syncfusion.com/angular-components/angular-message) component and configure its available functionalities.
 
 ## Setup Angular Environment
 
@@ -133,3 +133,5 @@ The output will appear as follows.
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/message/getting-started-cs1" %}
+
+You can also explore our [Angular Message Example](https://ej2.syncfusion.com/aspnetcore/Message/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the Message in Angular.
