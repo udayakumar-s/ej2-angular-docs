@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { PageService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 
 /**
  * Module
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule
+        GridModule,
+        DropDownListAllModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],

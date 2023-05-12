@@ -6,8 +6,7 @@ import { QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [enableHover]='false' [allowSelection]='false' [height]='315'
-                (queryCellInfo)='customiseCell($event)'>
+    template: `<ejs-grid [dataSource]='data' [enableHover]='false' [allowSelection]='false' [height]='315' (queryCellInfo)='customizeCell($event)'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
                         <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
@@ -19,23 +18,26 @@ import { QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+  public data: object[];
 
-    ngOnInit(): void {
-        this.data = data;
-    }
+  ngOnInit(): void {
+    this.data = data;
+  }
 
-    customiseCell(args: QueryCellInfoEventArgs) {
-        if (args.column.field === 'Freight') {
-            if (args.data[args.column.field] < 30) {
-                args.cell.classList.add('below-30');
-            } else if (args.data[args.column.field] < 80) {
-                args.cell.classList.add('below-80');
-            } else {
-                args.cell.classList.add('above-80');
-            }
-        }
+  customizeCell(args: QueryCellInfoEventArgs) {
+    if (args.column.field === 'Freight') {
+      if (args.data[args.column.field] <= 30) {
+        args.cell.classList.add('below-30');
+      } else if (
+        args.data[args.column.field] > 30 &&
+        args.data[args.column.field] < 80
+      ) {
+        args.cell.classList.add('below-80');
+      } else {
+        args.cell.classList.add('above-80');
+      }
     }
+  }
 }
 
 

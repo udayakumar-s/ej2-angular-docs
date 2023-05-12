@@ -243,6 +243,9 @@ The following example illustrates how tabs, groups, collections, and items are u
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/getting-started-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="app.component.html" %}
+{% include code-snippet/ribbon/getting-started-cs1/app/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.css" %}
 {% include code-snippet/ribbon/getting-started-cs1/app/app.component.css %}
 {% endhighlight %}

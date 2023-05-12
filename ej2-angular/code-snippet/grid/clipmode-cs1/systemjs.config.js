@@ -10,7 +10,7 @@ System.config({
         }
     },
     paths: {
-        "syncfusion:": "https://cdn.syncfusion.com/ej2/20.2.43/",
+        "syncfusion:": "https://cdn.syncfusion.com/ej2/21.2.3/",
         "angular:": "https://unpkg.com/@angular/"
     },
     map: {
@@ -33,7 +33,7 @@ System.config({
         "@syncfusion/ej2-file-utils": "syncfusion:ej2-file-utils/dist/ej2-file-utils.umd.min.js",
         "@syncfusion/ej2-angular-base": "syncfusion:ej2-angular-base/dist/ej2-angular-base.umd.min.js",
         "@syncfusion/ej2-angular-grids": "syncfusion:ej2-angular-grids/dist/ej2-angular-grids.umd.min.js",
-
+        "@syncfusion/ej2-angular-dropdowns":"syncfusion:ej2-angular-dropdowns/dist/ej2-angular-dropdowns.umd.min.js",
         '@angular/core': 'angular:core@5.2.0/bundles/core.umd.js',
         '@angular/common': 'angular:common@5.2.0/bundles/common.umd.js',
         '@angular/compiler': 'angular:compiler@5.2.0/bundles/compiler.umd.js',
