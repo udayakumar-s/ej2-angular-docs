@@ -102,6 +102,9 @@ You can change the rating icon border color in rating component, you can use the
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/border-cs/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/rating/appearance/border-cs/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/rating/appearance/border-cs" %}
@@ -119,6 +122,9 @@ You can customize the fill colors of rated and un-rated icons in the rating comp
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/fill-color-cs/app/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/rating/appearance/fill-color-cs/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -140,6 +146,9 @@ You can change the space between the rating items in rating component, by using 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/spacing-cs/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/rating/appearance/spacing-cs/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/rating/appearance/spacing-cs" %}
@@ -157,6 +166,9 @@ You can change the rating item icon in rating component, you can use the `cssCla
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/icon-cs/app/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/rating/appearance/icon-cs/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

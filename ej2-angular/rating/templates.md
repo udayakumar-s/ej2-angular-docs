@@ -33,6 +33,9 @@ If the `fullTemplate` is not defined, the `emptyTemplate` will be used as the de
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/templates/emptytemplate-cs/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/rating/templates/emptytemplate-cs/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/rating/templates/emptytemplate-cs" %}
@@ -54,6 +57,9 @@ The `value` and `index` are available in the template context for accessing info
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/templates/fulltemplate-cs/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/rating/templates/fulltemplate-cs/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/rating/templates/fulltemplate-cs" %}
@@ -72,6 +78,9 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/templates/emoji-cs/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/rating/templates/emoji-cs/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/rating/templates/emoji-cs" %}
@@ -89,6 +98,9 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/templates/svg-cs/app/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/rating/templates/svg-cs/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

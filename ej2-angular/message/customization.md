@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Message component
 
-The [Angular Message](https://www.syncfusion.com/angular-components/angular-message) component allows the user to customize the content display positions and appearance. This section explains the details about changing the content alignments and border styles for messages.
+The Message component allows the user to customize the content display positions and appearance. This section explains the details about changing the content alignments and border styles for messages.
 
 ## Content Alignment
 
