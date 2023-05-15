@@ -60,6 +60,9 @@ You can customize the appearance of the tooltips using the `cssClass` property o
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/tooltip/custom-tooltip-cs/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/rating/tooltip/custom-tooltip-cs/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/rating/tooltip/custom-tooltip-cs" %}
