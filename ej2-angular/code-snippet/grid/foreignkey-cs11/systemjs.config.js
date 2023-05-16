@@ -10,7 +10,7 @@ System.config({
         }
     },
     paths: {
-        "syncfusion:": "https://cdn.syncfusion.com/ej2/20.2.43/",
+        "syncfusion:": "https://cdn.syncfusion.com/ej2/21.2.3/",
         "angular:": "https://unpkg.com/@angular/"
     },
     map: {

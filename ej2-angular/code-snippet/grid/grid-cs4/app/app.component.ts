@@ -1,7 +1,6 @@
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent, EditSettingsModel, EditService } from '@syncfusion/ej2-angular-grids';
+import { data } from './datasource';
 
 @Component({
     selector: 'app-root',
@@ -17,15 +16,11 @@ export class AppComponent implements OnInit {
     public grid: GridComponent;
 
     ngOnInit(): void {
-        this.data = [
-            { OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5 },
-            { OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6 },
-            { OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4 }];
+        this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
     }
-
-    dataBound(args: any) {
-        (this.grid.columns[0] as any).isPrimaryKey = 'true';
+    dataBound() {
+        this.grid.columns[0].isPrimaryKey = 'true';
     }
 }
 

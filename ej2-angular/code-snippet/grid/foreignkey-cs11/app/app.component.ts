@@ -21,8 +21,8 @@ export class AppComponent implements OnInit {
     public employeeData: object[];
 
     ngOnInit(): void {
-        this.data = data.slice(0, 5);
-        this.employeeData = employeeData.slice(0, 5);
+        this.data = data;
+        this.employeeData = employeeData;
     }
 }
 

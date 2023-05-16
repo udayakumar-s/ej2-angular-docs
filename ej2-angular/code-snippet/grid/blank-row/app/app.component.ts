@@ -24,12 +24,12 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data;
     }
-    
+
     rowDataBound(args: RowDataBoundEventArgs) {
         let count = 0;
         let keys = Object.keys(args.data);
         for (let i = 0; i < keys.length; i++) {
-            if ( args.data[keys[i]] == null || args.data[keys[i]] == '' || args.data[keys[i]] == undefined) {
+            if (args.data[keys[i]] == null || args.data[keys[i]] == '' || args.data[keys[i]] == undefined) {
                 count++;
             }
         }

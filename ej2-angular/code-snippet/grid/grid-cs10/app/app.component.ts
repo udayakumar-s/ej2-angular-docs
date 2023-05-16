@@ -11,21 +11,19 @@ import { data } from './datasource';
                         <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
                         <e-column field='Freight' headerText='Freight' textAlign='Right'
                          [valueAccessor]='currencyFormatter' width=80></e-column>
-                        <e-column field='ShipCity' headerText='Ship City' width=130 [valueAccessor]='valueAccess' ></e-column>
+                        <e-column field='ShipCity' headerText='Ship City' width=130 [valueAccessor]='concatenateFields' ></e-column>
                     </e-columns>
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 
     public data: object[];
-    public currencyFormatter = (field: string, data1: object, column: object) => {
-        const Freight = 'Freight';
-        return '€' + data1[Freight];
+    public currencyFormatter = (field: string, valueAccessordata: object, column: object) => {
+        return '€' + valueAccessordata["Freight"];
     }
 
-    public valueAccess = (field: string, data1: object, column: object) => {
-        const ShipRegion = 'ShipRegion';
-        return data1[field] + '-' + data1[ShipRegion];
+    public concatenateFields = (field: string, valueAccessordata: object, column: object) => {
+        return valueAccessordata[field] + ' - ' + valueAccessordata["ShipRegion"];
     }
 
     ngOnInit(): void {

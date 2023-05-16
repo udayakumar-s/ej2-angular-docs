@@ -8,9 +8,8 @@ import { data } from './datasource';
     template: `<ejs-grid [dataSource]='data' [height]='315'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+                    <e-column field='Freight' headerText='Freight' textAlign= 'Right' width=100 format= 'C2'></e-column>
                     <e-column field='Verified' headerText='Verified' [displayAsCheckBox]="true" width=150></e-column>
                 </e-columns>
                 </ejs-grid>`

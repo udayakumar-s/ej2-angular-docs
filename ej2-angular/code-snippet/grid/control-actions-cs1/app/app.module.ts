@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GridModule } from '@syncfusion/ej2-angular-grids';
-import { PageService, SortService, FilterService, GroupService, ReorderService, EditService } from '@syncfusion/ej2-angular-grids';
+import { GridModule, PageService, SortService, FilterService, GroupService, ReorderService, ToolbarService, ResizeService, } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
 
 /**
@@ -14,9 +13,6 @@ import { AppComponent } from './app.component';
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: [PageService, 
-                SortService, 
-                FilterService, EditService,
-                GroupService, ReorderService]
+    providers: [GroupService, PageService, SortService, ReorderService, FilterService, ToolbarService, ResizeService]
 })
 export class AppModule { }
