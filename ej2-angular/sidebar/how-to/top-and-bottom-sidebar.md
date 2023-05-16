@@ -26,6 +26,9 @@ In the following sample, the [`toggle`](https://ej2.syncfusion.com/angular/docum
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/top-bottom-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight css tabtitle="app.component.css" %}
+{% include code-snippet/sidebar/top-bottom-cs1/app/app.component.css %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/sidebar/top-bottom-cs1" %}
