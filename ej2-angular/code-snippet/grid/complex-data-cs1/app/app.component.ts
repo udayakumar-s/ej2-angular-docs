@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit } from '@angular/core';
 import { complexData } from './datasource';
 
@@ -19,7 +17,7 @@ export class AppComponent implements OnInit {
     public data: object[];
 
     ngOnInit(): void {
-        this.data = complexData.slice(0, 5);
+        this.data = complexData;
     }
 }
 

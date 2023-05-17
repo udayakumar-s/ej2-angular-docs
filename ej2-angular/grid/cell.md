@@ -86,7 +86,7 @@ Customizing the grid cell styles allows you to modify the appearance of cells in
 
 ### Using event
 
-To customize the appearance of the grid cell, you can use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event of the grid and you can access the [QueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) object, which provides information about the cell such as row and column indexes, data, and cell element.This event is triggered for each cell in the grid when it is rendered. In the event handler, you can modify the cell's style based on the corresponding cell information like column indexes, data, cell element and etc.
+To customize the appearance of the grid cell, you can use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event of the grid. This event is triggered when each header cell is rendered in the grid, and provides an object that contains information about the header cell. You can use this object to modify the styles of the header cell.
 
 The following example demonstrates how to add a [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event handler to the grid. In the event handler, checked whether the current column is **Freight** field and then applied the appropriate CSS class to the cell based on its value.
 

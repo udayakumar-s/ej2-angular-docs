@@ -10,7 +10,7 @@ import { ColumnModel } from '@syncfusion/ej2-angular-grids';
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' width='100' textAlign="Center" minWidth=10></e-column>
                     <e-column headerText='Order Details' [columns]='orderColumns'></e-column>
-                    <e-column headerText='Ship Details' [columns]='shipColumns'></e-column>
+                    <e-column headerText='Ship Details' [columns]='shipColumns' ></e-column>
                 </e-columns>
                 </ejs-grid>`
 })
@@ -30,7 +30,8 @@ export class AppComponent implements OnInit {
                 format: 'yMd',
                 width: 120,
                 textAlign: 'Right',
-                minWidth: 10
+                minWidth: 10,
+                allowResizing: 'false'
             },
             {
                 field: 'Freight',
@@ -47,7 +48,8 @@ export class AppComponent implements OnInit {
                 field: 'ShipCity',
                 headerText: 'Ship City',
                 width: 100,
-                minWidth: 10
+                minWidth: 10,
+                allowResizing: false
             },
             {
                 field: 'ShipCountry',

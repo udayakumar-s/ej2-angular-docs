@@ -12,7 +12,8 @@ import { data } from './datasource';
                         <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
                         <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
                     </e-columns>
-                </ejs-grid>`
+                </ejs-grid>`,
+    styleUrls: ['./app/app.component.css']
 })
 export class AppComponent implements OnInit{
 
