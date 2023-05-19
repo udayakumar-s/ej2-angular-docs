@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { ChipListModule } from '@syncfusion/ej2-angular-buttons';
 import { AppComponent } from './app.component';
 
 /**
@@ -13,7 +13,8 @@ import { AppComponent } from './app.component';
     imports: [
         BrowserModule,
         ButtonModule,
-        GridModule,DialogModule
+        GridModule,
+        ChipListModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
