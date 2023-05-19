@@ -34,7 +34,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 > * If the property is set to **true**, any HTML tags in the column's data will be displayed. 
 > * If the property is set to **false**, the HTML tags will be removed and displayed as plain text.
 > * Disabling HTML encoding can potentially introduce security vulnerabilities, so use caution when enabling this feature.
-> * If [enablehtmlsanitizer](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablehtmlsanitizer) property of grid is set to true, then the content is sanitized to prevent any potential security vulnerabilities.
+> * If [enableHtmlSanitizer](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablehtmlsanitizer) property of grid is set to true, then the content is sanitized to prevent any potential security vulnerabilities.
 > * You can also disable the `disableHtmlEncode` property of the column using [getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumns) method on [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event of Switch component.This is demonstrated in the below code snippet, 
 
 ```typescript
@@ -136,7 +136,7 @@ The following example demonstrates how to customize the appearance of a specific
 
 ### Using property
 
-To customize the style of grid cells, define [customAttribute](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property to the column definition object. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for grid cells. You can also set multiple CSS properties to the custom class using the customAttributes property.
+To customize the style of grid cells, define [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property to the column definition object. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for grid cells. You can also set multiple CSS properties to the custom class using the customAttributes property.
 
 ```CSS
 .custom-css {

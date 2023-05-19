@@ -34,7 +34,7 @@ System.config({
         "@syncfusion/ej2-compression": "syncfusion:ej2-compression/dist/ej2-compression.umd.min.js",  
         "@syncfusion/ej2-calendars": "syncfusion:ej2-calendars/dist/ej2-calendars.umd.min.js",
         "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js",
-        
+        "@syncfusion/ej2-angular-inputs":"syncfusion:ej2-angular-inputs/dist/ej2-angular-inputs.umd.min.js",
         '@angular/core': 'angular:core@5.2.0/bundles/core.umd.js',
         '@angular/common': 'angular:common@5.2.0/bundles/common.umd.js',
         '@angular/compiler': 'angular:compiler@5.2.0/bundles/compiler.umd.js',
