@@ -1,7 +1,4 @@
-#container {
-    visibility: hidden;
-}
-
+/* Represents the styles for loader */
 #loader {
   color: #008cff;
   height: 40px;
@@ -11,6 +8,7 @@
   width: 30%;
 }
 
+/* Represents the styles for button positioning */
 .e-fab.e-btn.custom-position {
   left: 40px;
   top: 40px;

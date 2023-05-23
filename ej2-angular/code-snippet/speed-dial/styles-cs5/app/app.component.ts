@@ -17,5 +17,3 @@ public items: SpeedDialItemModel[] = [
     { iconCss:'e-icons e-paste', title:'Paste' }
 ];
 }
-
-
