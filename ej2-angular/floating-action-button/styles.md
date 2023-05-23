@@ -69,6 +69,9 @@ The content will behave the same , when the `enableHtmlSantiizer` is enabled. Si
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/floating-action-button/styles-cs2/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/floating-action-button/styles-cs2/index.css %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/code-snippet/floating-action-button/styles-cs2" %}

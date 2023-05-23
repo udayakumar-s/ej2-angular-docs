@@ -18,5 +18,3 @@ export class AppComponent {
   public animation: SpeedDialAnimationSettingsModel =
     { effect: 'Zoom' };
 }
-
-

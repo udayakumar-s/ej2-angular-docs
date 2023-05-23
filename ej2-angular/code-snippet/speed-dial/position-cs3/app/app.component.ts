@@ -1,7 +1,7 @@
 
 
 import { Component, ViewChild, HostListener } from '@angular/core';
-import { SkeletonComponent } from '@syncfusion/ej2-angular-buttons';
+import { SpeedDialComponent,SpeedDialItemModel } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-root',

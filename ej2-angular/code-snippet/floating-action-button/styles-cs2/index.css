@@ -1,7 +1,4 @@
-#container {
-  visibility: hidden;
-}
-
+/* Represents the styles for loader */
 #loader {
   color: #008cff;
   height: 40px;
