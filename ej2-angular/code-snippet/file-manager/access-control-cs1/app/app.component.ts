@@ -22,7 +22,6 @@ export class AppComponent {
         };
         this.view = "Details";
     }
-
 }
 
 
