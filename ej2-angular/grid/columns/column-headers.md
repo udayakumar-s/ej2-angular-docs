@@ -741,7 +741,7 @@ Here's an example that demonstrates how to customize the appearance of a specifi
 
 ### Using property 
 
-You can customize the appearance of the column headers in Grid using the [customAttributes]((https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes)) property. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for grid header cells. You can also set multiple CSS properties to the custom class using the customAttributes property.
+You can customize the appearance of the column headers in Grid using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#customattributes) property. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for grid header cells. You can also set multiple CSS properties to the custom class using the customAttributes property.
 
 To customize the header of a column, you can follow the steps below:
 
