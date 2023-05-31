@@ -43,11 +43,15 @@ System.config({
         '@angular/platform-browser': 'angular:platform-browser@5.2.0/bundles/platform-browser.umd.js',
         '@angular/platform-browser-dynamic': 'angular:platform-browser-dynamic@5.2.0/bundles/platform-browser-dynamic.umd.js',
         '@angular/material': 'angular:material@5.2.0/bundles/material.umd.js',
+        "plugin-json": "https://cdnjs.cloudflare.com/ajax/libs/systemjs-plugin-json/0.3.0/json.min.js",
         'rxjs': 'https://unpkg.com/rxjs@5.5.10'
     },
     packages: {
         'app': { main: 'main', defaultExtension: 'ts' },
         'rxjs': { main: 'index' },
+    },
+    meta: { 
+       '*.json': { loader: 'plugin-json' }
     }
 });
 
