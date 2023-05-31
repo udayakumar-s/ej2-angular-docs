@@ -125,7 +125,7 @@ The following example demonstrates how to use [getRowByIndex](https://ej2.syncfu
   
 {% previewsample "page.domainurl/code-snippet/grid/rows-event-cs1" %}
 
-## Row Height
+## Row height
 
 The Syncfusion Grid allows you to customize the height of rows based on your needs. This feature can be useful when you need to display more content in a row or when you want to reduce the height of rows to fit its content. You can achieve this by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowheight) property of the Grid component. This property allows you to change the height of the entire grid row to your desired value.
 

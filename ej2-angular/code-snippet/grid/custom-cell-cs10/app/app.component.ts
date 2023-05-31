@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
 import { Internationalization } from '@syncfusion/ej2-base';
@@ -11,7 +9,8 @@ const instance: Internationalization = new Internationalization();
     template: `<ejs-grid #grid [dataSource]='data' height=335 width='auto'>
         <e-columns>
             <e-column headerText='Employee Image' width='150' textAlign='Center'></e-column>
-            <e-column headerText='Employee Details' width='300' textAlign='Left'></e-column>
+            <e-column headerText='Employee Details' width='300' textAlign='Center'>
+            </e-column>
         </e-columns>
         <ng-template #rowTemplate let-data>
             <tr>
@@ -21,29 +20,33 @@ const instance: Internationalization = new Internationalization();
                 <td class="details">
                     <table class="CardTable" cellpadding="3" cellspacing="2">
                         <colgroup>
-                            <col width="50%">
-                            <col width="50%">
+                            <col width="30%">
+                            <col width="10%">
                         </colgroup>
                         <tbody>
                             <tr>
                                 <td class="CardHeader"> First Name </td>
+                                <span>:</span>
                                 <td>{{data.FirstName}} </td>
                             </tr>
                             <tr>
                                 <td class="CardHeader"> Last Name </td>
+                                <span>:</span>
                                 <td>{{data.LastName}} </td>
                             </tr>
                             <tr>
                                 <td class="CardHeader"> Title </td>
-
+                                <span>:</span>
                                 <td>{{data.Title}}</td>
                             </tr>
                             <tr>
                                 <td class="CardHeader"> Birth Date </td>
+                                <span>:</span>
                                 <td>{{format(data.BirthDate)}}</td>
                             </tr>
                             <tr>
                                 <td class="CardHeader"> Hire Date </td>
+                                <span>:</span>
                                 <td>{{format(data.HireDate)}}</td>
                             </tr>
                         </tbody>
