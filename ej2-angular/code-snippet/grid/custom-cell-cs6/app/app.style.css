@@ -36,6 +36,10 @@
   }
 }
 
+#sample{
+  background-color: rgb(178, 236, 217);
+}
+
 .rowphoto,
 .details {
   border-color: #e0e0e0;
