@@ -17,7 +17,7 @@ import { orderDetails, customerData, employeeData } from './datasource.ts';
                         <e-column field='ShipCountry' headerText='Ship Country' width='150'></e-column>
                     </e-columns>
                 </ejs-grid>`,
-   providers: [ForeignKeyService, EditService, ToolbarService]
+    providers: [ForeignKeyService, EditService, ToolbarService]
 })
 export class AppComponent implements OnInit {
 

@@ -285,9 +285,9 @@ Here is an example of using the `textAlign` property to align the text of a Grid
 
 ## Render boolean value as checkbox
 
-The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property, which is available in the [Columns](https://helpej2.syncfusion.com/angular/documentation/api/grid/column/). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
+The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property, which is available in the [columns](https://helpej2.syncfusion.com/angular/documentation/api/grid/column/). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
 
-To enable the rendering of boolean values as checkboxes, you need to set the `displayAsCheckBox` property of the `column` to **true**.
+To enable the rendering of boolean values as checkboxes, you need to set the `displayAsCheckBox` property of the `columns` to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -376,7 +376,7 @@ You can enable this feature by setting the [autoFit](https://ej2.syncfusion.com/
 
 ### AutoFit columns when changing column visibility using column chooser
 
-In Syncfusion Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) method in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event. By using the **RequestType** property in the event arguments, you can differentiate between different actions, and then call the `autoFitColumns` method when the request type is **ColumnState**.
+In Syncfusion Grid, you can auto-fit columns when the column visibility is changed using the column chooser. This can be achieved by calling the [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) method in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event. By using the **requestType** property in the event arguments, you can differentiate between different actions, and then call the `autoFitColumns` method when the request type is **columnState**.
 
 Here's an example code snippet in Angular that demonstrates how to auto fit columns when changing column visibility using column chooser:
 
@@ -531,29 +531,31 @@ The Syncfusion Grid for Angular provides powerful features for manipulating colu
 
 To access columns in the Syncfusion Grid, you can use the following methods in the grid.
 
-**getColumns()**:
+* **[getColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumns)**:
 
 This method returns the array of columns defined in the grid.
 
 ```ts
 let columns = this.grid.getColumns();
 ```
-**getColumnByField(field)**:
+
+* **[getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield)**:
 
 This method returns the column object that matches the specified field name.
 
 ```ts
 let column = this.grid.getColumnByField('ProductName');
 ```
-**getColumnByIndex(index)**:
 
-This method returns the column object that matches the specified index.
+* **[getColumnByUid](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyuid)**:
+
+This method returns the column object that matches the specified UID.
 
 ```ts
-let column = this.grid.getColumnByIndex(0);
+let column = this.grid.getColumnByUid();
 ```
 
-**getVisibleColumns()**:
+* **[getVisibleColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#getvisiblecolumns)**:
 
 This method returns the array of visible columns.
 
@@ -561,7 +563,15 @@ This method returns the array of visible columns.
 let visibleColumns = this.grid.getVisibleColumns();
 ```
 
-**getColumnFieldNames()**
+* **[getForeignKeyColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#getforeignkeycolumns)**:
+
+This method returns the array of foreignkey columns.
+
+```ts
+let foreignKeyColumns = this.grid.getForeignKeyColumns();
+```
+
+* **[getColumnFieldNames](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnfieldnames)**
 
 This method returns an array of field names of all the columns in the Grid.
 
@@ -573,7 +583,7 @@ let fieldNames = this.grid.getColumnFieldNames()
 
 ### Updating column definitions
 
-You can update the column definitions in the Grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) property. You can modify the properties of the column objects in the columns array to update the columns dynamically. For example, you can change the headerText, width, visible, and other properties of a column to update its appearance and behavior in the grid and then call the `refreshColumns` method to apply the changes to the grid.
+You can update the column definitions in the Grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) property. You can modify the properties of the column objects in the columns array to update the columns dynamically. For example, you can change the headerText, width, visible, and other properties of a column to update its appearance and behavior in the grid and then call the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method to apply the changes to the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

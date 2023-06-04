@@ -41,8 +41,10 @@ export class AppComponent implements OnInit {
         destroy: () => { // to destroy the custom component.
             this.autoComplete.destroy();
         },
-        write: (args: { rowData: object, column: Column, foreignKeyData: object,
-             element: HTMLTableCellElement }) => { // to show the value for date picker
+        write: (args: {
+            rowData: object, column: Column, foreignKeyData: object,
+            element: HTMLTableCellElement
+        }) => { // to show the value for date picker
             this.autoComplete = new AutoComplete({
                 dataSource: employeeData,
                 fields: { value: args.column.foreignKeyValue },

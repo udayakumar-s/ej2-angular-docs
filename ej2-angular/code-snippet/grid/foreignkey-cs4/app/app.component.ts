@@ -1,8 +1,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ForeignKeyService, AggregateService, getForeignData, CustomSummaryType,
-     AggregateColumnModel, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { ForeignKeyService, AggregateService, getForeignData, CustomSummaryType, AggregateColumnModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data, employeeData } from './datasource';
 import { getValue } from '@syncfusion/ej2-base';
 
@@ -48,6 +47,6 @@ export class AppComponent implements OnInit {
         this.employeeData = employeeData;
     }
 }
-  
+
 
 
