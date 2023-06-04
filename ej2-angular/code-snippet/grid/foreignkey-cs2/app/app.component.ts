@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
     @ViewChild('grid') public grid: GridComponent;
     public employeeData: object[];
     public dropInstance: DropDownList;
-    public filteroption: FilterSettingsModel = { type: 'Menu'};
+    public filteroption: FilterSettingsModel = { type: 'Menu' };
     public filter: IFilter = {
         ui: {
             create: (args: { target: Element, column: object }) => {
