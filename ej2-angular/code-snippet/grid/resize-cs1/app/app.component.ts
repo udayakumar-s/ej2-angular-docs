@@ -6,7 +6,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 selector: 'app-root',
-template: `<ejs-grid #grid [dataSource]='data' height='315px' (dataBound)='dataBound()' >
+template: `<ejs-grid #grid [dataSource]='data' height='315px' gridLines='Both' (dataBound)='dataBound()' >
 <e-columns>
 <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
 <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
