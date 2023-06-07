@@ -4,7 +4,7 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { Ajax } from '@syncfusion/ej2-base';
+import { Fetch } from '@syncfusion/ej2-base';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { DataManager, WebApiAdaptor, UrlAdaptor } from '@syncfusion/ej2-data';
 
@@ -42,12 +42,12 @@ export class AppComponent {
     }
     bind(): void {
         const temp = this.ganttObj;
-        let ajax = new Ajax("https://ej2services.syncfusion.com/production/web-services/api/GanttData", "GET");
+        let fetch = new Fetch("https://ej2services.syncfusion.com/production/web-services/api/GanttData", "GET");
         temp.showSpinner();
-        ajax.send();
-        ajax.onSuccess = function (data: string) {
+        fetch.send();
+        fetch.onSuccess = function (data: any) {
             temp.hideSpinner();
-            temp.dataSource = (JSON.parse(data)).Items;
+            temp.dataSource = data.Items;
             temp.refresh();
         };
     };

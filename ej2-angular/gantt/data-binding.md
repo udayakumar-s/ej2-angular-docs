@@ -277,9 +277,9 @@ The argument passed to the `actionFailure` event contains the error details retu
   
 {% previewsample "page.domainurl/code-snippet/gantt/data-binding/actionFailure-cs1" %}
 
-#### Binding with Ajax
+#### Binding with Fetch
 
-You can use Gantt [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) property to bind the data source to Gantt from external Ajax request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to `dataSource` property by using `onSuccess` event of the Ajax.
+You can use Gantt [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using `onSuccess` event of the Fetch.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
