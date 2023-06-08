@@ -38,7 +38,7 @@ As a backward compatibility to create older format SFDT files, refer the followi
 
 ```
 @Component({
-    template: `<ejs-documenteditorcontainer [documentEditorSetting]="settings"></ejs-documenteditorcontainer>`
+    template: `<ejs-documenteditorcontainer [documentEditorSettings]="settings"></ejs-documenteditorcontainer>`
 })
 export class AppComponent {
   public settings: DocumentEditorSettingsModel = {
@@ -100,7 +100,7 @@ To convert from older format SFDT from a new optimized SFDT file, refer the foll
 
 ```
 @Component({
-    template: `<ejs-documenteditorcontainer [documentEditorSetting]="settings"></ejs-documenteditorcontainer>`
+    template: `<ejs-documenteditorcontainer [documentEditorSettings]="settings"></ejs-documenteditorcontainer>`
 })
 export class AppComponent {
   public settings: DocumentEditorSettingsModel = {
