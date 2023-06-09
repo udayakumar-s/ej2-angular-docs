@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting started with Angular Ribbon component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Ribbon component of Syncfusion Essential JS 2 and more details.
+description:  Learn here all about Getting started with Syncfusion Angular Ribbon component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Getting started 
+control: Ribbon 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -60,7 +60,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 
 Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-ribbon`](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35) package to the application.
+Add [@syncfusion/ej2-angular-ribbon](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-ribbon --save
@@ -70,7 +70,7 @@ npm install @syncfusion/ej2-angular-ribbon --save
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
 
-Add [`@syncfusion/ej2-angular-ribbon@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35-ngcc) package to the application.
+Add [@syncfusion/ej2-angular-ribbon@ngcc](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-ribbon@ngcc --save
@@ -181,7 +181,7 @@ export class AppComponent {}
 
 ## Adding Ribbon Item
 
-You can use the `<e-ribbon-collection>` selector to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `<e-ribbon-item>` selector and the `type` property to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
+You can use the `<e-ribbon-collection>` selector to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `<e-ribbon-item>` selector and the `type` property to specify the type of component to be rendered, like a button, a drop-down button, a combo box, and more.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -231,7 +231,7 @@ Run the application in the browser using the following command:
 ng serve
 ```
 
-The following example illustrates how tabs, groups, collections, and items are used in a ribbon control to form the ribbon layout.
+The following example illustrates how tabs, groups, collections, and items are used in a ribbon component to form the ribbon layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

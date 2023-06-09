@@ -1,11 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RibbonModule, RibbonAllModule } from '@syncfusion/ej2-angular-ribbon';
-import { AppComponent } from './app.component';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+
+// Import Syncfusion Ribbon module from ribbon package.
+import { RibbonModule, RibbonFileMenuService, RibbonColorPickerService } from "@syncfusion/ej2-angular-ribbon";
+
+import { AppComponent } from "./app.component";
 
 @NgModule({
-    imports: [BrowserModule, RibbonModule, RibbonAllModule],
-    declarations: [AppComponent],
-    bootstrap: [AppComponent]
+  imports: [BrowserModule, RibbonModule ], // Registering EJ2 Ribbon Module.
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+  providers: [ RibbonFileMenuService, RibbonColorPickerService ]
 })
-export class AppModule { }
+export class AppModule {}
