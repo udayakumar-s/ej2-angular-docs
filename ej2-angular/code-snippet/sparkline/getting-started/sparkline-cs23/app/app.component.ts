@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     </ejs-sparkline>`
 })
 export class AppComponent {
-    public data: object[] = [0, 6, 4, 1, 3, 2, 5];
+    public data: object[] = [0, 6, 4, 1, 3, 2, 5] as any;
     public rangeBandSettings: object[] = [
             {
                 startRange: 1,
