@@ -8,7 +8,7 @@
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
     })
     export class AppComponent  {
-        @ViewChild('defaultRTE') rteObj: RichTextEditorComponent;
+        @ViewChild('defaultRTE') rteObj: RichTextEditorComponent | undefined;
         public tools = {
             items: ['Bold', 'Italic', 'Underline', 'StrikeThrough',
         'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
@@ -18,11 +18,11 @@
         'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
         'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
         };
-        onCreate(e) {
+        onCreate(e: any) {
             document.onkeyup = function (e) {
                 if (e.altKey && e.keyCode === 84 /* t */) {
                     // press alt+t to focus the component.
-                    this.rteObj.focusIn();
+                    (this as any).rteObj.focusIn();
                 }
             }
         }

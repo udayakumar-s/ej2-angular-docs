@@ -1,14 +1,13 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { DecoratorModel, DiagramComponent, StrokeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 import {
     NodeModel, ConnectorModel, DiagramTools, Diagram, DataBinding, ComplexHierarchicalTree,
     SnapConstraints, SnapSettingsModel, LayoutModel, LayoutOrientation
 } from '@syncfusion/ej2-diagrams';
 import { DataManager } from '@syncfusion/ej2-data';
 import { ChangeEventArgs as NumericChangeEventArgs } from '@syncfusion/ej2-inputs';
-import * as Data from '../diagram-data.json';
 Diagram.Inject(DataBinding, ComplexHierarchicalTree);
 
 export interface DataInfo {
@@ -28,7 +27,7 @@ export interface DataInfo {
 
 export class AppComponent {
     @ViewChild('diagram')
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
 
     public nodeDefaults(obj: NodeModel): NodeModel {
         obj.width = 40; obj.height = 40;
@@ -72,14 +71,14 @@ export class AppComponent {
         }
     };
     public created(): void {
-        this.diagram.fitToPage();
+        (this.diagram as DiagramComponent).fitToPage();
     };
     public connDefaults(connector: ConnectorModel): void {
         connector.type = 'Orthogonal';
         connector.cornerRadius = 7;
-        connector.targetDecorator.height = 7;
-        connector.targetDecorator.width = 7;
-        connector.style.strokeColor = '#6d6d6d';
+        ((connector as ConnectorModel).targetDecorator as DecoratorModel).height = 7;
+        ((connector as ConnectorModel).targetDecorator as DecoratorModel).width = 7;
+        ((connector as ConnectorModel).style as StrokeStyleModel).strokeColor = '#6d6d6d';
     };
 
     public tool: DiagramTools = DiagramTools.ZoomPan;

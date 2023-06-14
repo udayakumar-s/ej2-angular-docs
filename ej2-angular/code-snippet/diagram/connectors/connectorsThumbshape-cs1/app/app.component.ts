@@ -16,10 +16,10 @@ Diagram.Inject(ConnectorEditing);
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public sourcePoint: PointModel;
-    public targetPoint: PointModel;
-    public segments: OrthogonalSegmentModel;
+    public diagram?: DiagramComponent;
+    public sourcePoint?: PointModel;
+    public targetPoint?: PointModel;
+    public segments?: OrthogonalSegmentModel;
     ngOnInit(): void {
         this.sourcePoint = { x: 250, y: 250 };
         this.targetPoint = { x: 350, y: 350 };
@@ -38,7 +38,7 @@ export class AppComponent {
             }
         ]
     }
-    public getConnectorDefaults(connector: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(connector: ConnectorModel): void {
         connector.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',

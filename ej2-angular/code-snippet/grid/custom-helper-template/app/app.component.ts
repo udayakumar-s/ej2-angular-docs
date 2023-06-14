@@ -18,11 +18,11 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     public formatCurrency(value: number): string {
         return '₹ ' + value.toFixed(3);
-      }
+    }
 
     ngOnInit(): void {
         this.data = data;

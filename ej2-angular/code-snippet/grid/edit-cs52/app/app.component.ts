@@ -19,17 +19,17 @@ import { EditSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids'
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
     }
     addRow() {
-        this.grid.addRecord(
+        (this.grid as any).addRecord(
          { OrderID: 3232, CustomerID: 'ALKIT', ShipCity: 'London', Freight: 40, ShipName: 'Que Delícia'}, 2);
     }
 }

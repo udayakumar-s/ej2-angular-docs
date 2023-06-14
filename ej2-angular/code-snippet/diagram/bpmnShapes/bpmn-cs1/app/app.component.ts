@@ -14,7 +14,7 @@ import { DiagramComponent, Diagram, BpmnDiagrams, NodeModel, BpmnShapeModel } fr
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public shape: BpmnShapeModel = {
         type: 'Bpmn',
         shape: 'Event',
@@ -22,7 +22,7 @@ export class AppComponent {
         event: {
             event: 'End'
         }
-    },
+    }
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;

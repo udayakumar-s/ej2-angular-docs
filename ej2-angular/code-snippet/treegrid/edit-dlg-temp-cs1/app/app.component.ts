@@ -62,14 +62,14 @@ import { FormGroup } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
     public data: Object[] = [];
-    public editSettings: Object;
-    public toolbar: string[];
-    public pageSettings: Object;
-    public taskData: ITaskModel;
+    public editSettings?: Object;
+    public toolbar?: string[];
+    public pageSettings?: Object;
+    public taskData?: ITaskModel | any;
     @ViewChild('taskForm')
-    public taskForm: FormGroup;
-    public progressDistinctData: Object;
-    public priorityDistinctData: Object;
+    public taskForm?: FormGroup;
+    public progressDistinctData?: Object;
+    public priorityDistinctData?: Object;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -85,7 +85,7 @@ export class AppComponent implements OnInit {
             this.taskData = Object.assign({}, args.rowData);
         }
         if (args.requestType === 'save') {
-            if (this.taskForm.valid) {
+            if ((this.taskForm as FormGroup).valid) {
                 args.data = this.taskData;
             } else {
                 args.cancel = true;
@@ -96,23 +96,24 @@ export class AppComponent implements OnInit {
     actionComplete(args: DialogEditEventArgs): void {
         if (args.requestType === 'beginEdit' || args.requestType === 'add') {
             // Disable the Validation Rules
-            args.form.ej2_instances[0].rules = {};
+            // Disable the Validation Rules
+            (args.form as HTMLFormElement)['ej2_instances'][0].rules = {};
             // Set initial Focus
             if (args.requestType === 'beginEdit') {
-                (args.form.elements.namedItem('taskName') as HTMLInputElement).focus();
+                ((args.form as HTMLFormElement).elements.namedItem('taskName') as HTMLInputElement).focus();
             } else if (args.requestType === 'add') {
-                (args.form.elements.namedItem('taskID') as HTMLInputElement).focus();
+                ((args.form as HTMLFormElement).elements.namedItem('taskID') as HTMLInputElement).focus();
             }
 
         }
     }
 
     public focusIn(target: HTMLElement): void {
-        target.parentElement.classList.add('e-input-focus');
+        (target.parentElement as HTMLElement).classList.add('e-input-focus');
     }
 
     public focusOut(target: HTMLElement): void {
-        target.parentElement.classList.remove('e-input-focus');
+        (target.parentElement as HTMLElement).classList.remove('e-input-focus');
     }
 }
 export interface ITaskModel {

@@ -3,7 +3,7 @@
 import { Component } from '@angular/core';
 import { EventSettingsModel, DayService, TimelineViewsService, TimelineMonthService, MonthService, AgendaService, DragAndDropService } from
     '@syncfusion/ej2-angular-schedule';
-import { scheduleData } from './datasource.ts';
+import { scheduleData } from './datasource';
 
 @Component({
     selector: 'app-root',

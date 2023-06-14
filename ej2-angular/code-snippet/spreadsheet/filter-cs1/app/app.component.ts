@@ -10,17 +10,17 @@ import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 })
 export class AppComponent implements OnInit {
 
-    public tradeData: object[];
-    @ViewChild('spreadsheet') public spreadsheetObj: SpreadsheetComponent;
+    public tradeData?: object[];
+    @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
     ngOnInit(): void {
         this.tradeData = tradeData;
     }
     dataBound(){
-         if (this.spreadsheetObj.activeSheetIndex === 0) {
+         if (this.spreadsheetObj!.activeSheetIndex === 0) {
             let departments: string[] = ['Sweden', 'Canada', 'UK'];
-            let predicateList: PredicateModel[] = []
+            let predicateList: any[] = []
             departments.forEach((department: string) => { predicateList.push({ field: 'D', predicate: 'or', operator: 'equal', value: department }); })
-            this.spreadsheetObj.applyFilter(predicateList);
+            this.spreadsheetObj!.applyFilter(predicateList);
         }
     };
 }

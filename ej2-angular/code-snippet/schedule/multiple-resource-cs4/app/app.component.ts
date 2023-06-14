@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import {
     WeekService, MonthService, TimelineViewsService, TimelineMonthService, EventSettingsModel, GroupModel
 } from '@syncfusion/ej2-angular-schedule';
-import { doctorData } from './datasource.ts';
+import { doctorData } from './datasource';
 @Component({
     selector: "app-root",
     providers: [WeekService, MonthService, TimelineViewsService, TimelineMonthService],

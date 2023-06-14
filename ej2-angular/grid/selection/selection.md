@@ -23,17 +23,17 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs13/app/app.component.ts %}
+{% include samples/grid/selection-cs13/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs13/app/app.module.ts %}
+{% include samples/grid/selection-cs13/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs13/app/main.ts %}
+{% include samples/grid/selection-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs13" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs13" %}
 
 ## Selection mode
 
@@ -45,17 +45,17 @@ Grid supports three types of selection mode which can be set by using [`selectio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs14/app/app.component.ts %}
+{% include samples/grid/selection-cs14/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs14/app/app.module.ts %}
+{% include samples/grid/selection-cs14/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs14/app/main.ts %}
+{% include samples/grid/selection-cs14/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs14" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs14" %}
 
 ## Touch interaction
 

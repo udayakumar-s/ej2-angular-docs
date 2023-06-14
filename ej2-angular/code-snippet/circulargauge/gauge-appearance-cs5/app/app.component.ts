@@ -22,11 +22,12 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public gaugeBorder: Object;
-    public majorTicks: Object;
-    public minorTicks: Object;
-    public lineStyle: Object;
-    public gaugeMargin: Object;
+    public gaugeBorder?: Object;
+    public majorTicks?: Object;
+    public minorTicks?: Object;
+    public lineStyle?: Object;
+    public gaugeMargin?: Object;
+    margin: { left: number; right: number; top: number; bottom: number; } | undefined;
     ngOnInit(): void {
         // Initialize objects.
         this.gaugeBorder = { color: "#FF0000", width: 2 };

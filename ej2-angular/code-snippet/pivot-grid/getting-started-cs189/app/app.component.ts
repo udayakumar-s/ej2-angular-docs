@@ -10,7 +10,8 @@ import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivot
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings?: IDataOptions;
+    public width?: string;
     ngOnInit(): void {
         this.dataSourceSettings = {
             catalog: 'Adventure Works DW 2008 SE',

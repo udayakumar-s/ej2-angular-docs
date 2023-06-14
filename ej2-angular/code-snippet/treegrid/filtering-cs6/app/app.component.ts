@@ -16,8 +16,8 @@ import { sampleData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public filterSettings: Object;
+    public data?: Object[];
+    public filterSettings?: Object;
     ngOnInit(): void {
         this.data = sampleData;
         this.filterSettings = {type: 'Menu'};

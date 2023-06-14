@@ -15,11 +15,11 @@ import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
                         <e-column field='ShipCity' headerText='Ship City' width=130 ></e-column>
                     </e-columns>
                 </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = data;
@@ -27,12 +27,12 @@ export class AppComponent implements OnInit {
 
     rowDataBound(args: RowDataBoundEventArgs) {
         const Freight = 'Freight';
-        if (args.data[Freight] < 30) {
-            args.row.classList.add('below-30');
-        } else if (args.data[Freight] < 80) {
-            args.row.classList.add('below-80');
+        if ((args as any).data[Freight] < 30) {
+            (args as any).row.classList.add('below-30');
+        } else if ((args as any).data[Freight] < 80) {
+            (args as any).row.classList.add('below-80');
         } else {
-            args.row.classList.add('above-80');
+            (args as any).row.classList.add('above-80');
         }
     }
 }

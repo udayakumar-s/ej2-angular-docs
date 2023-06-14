@@ -18,16 +18,17 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
 
-    rowSelected(args) {
-        alert('row index: ' + args.row.getAttribute('aria-rowindex'));
-        alert('column index: ' + args.target.getAttribute('aria-colindex'));
+    rowSelected(args: any) {
+        alert('row index: ' + (args as any).row.getAttribute('aria-rowindex'));
+        alert('column index: ' + (args as any).target.getAttribute('aria-colindex'));
     }
 
 }

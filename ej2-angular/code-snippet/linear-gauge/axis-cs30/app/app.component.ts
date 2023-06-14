@@ -22,7 +22,7 @@ import { AnnotationsService, LinearGaugeComponent } from '@syncfusion/ej2-angula
 })
 export class AppComponent {
   @ViewChild('gauge')
-  public gaugeObj: LinearGaugeComponent;
+  public gaugeObj: LinearGaugeComponent | any;
   clicked() {
     this.gaugeObj.setAnnotationValue(0, '50', 50);
   };

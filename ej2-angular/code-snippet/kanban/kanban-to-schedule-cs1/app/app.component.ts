@@ -7,7 +7,7 @@ import { CardSettingsModel, DragEventArgs, KanbanComponent } from '@syncfusion/e
 import { kanbanData, scheduleData } from './datasource';
 import {
     EventSettingsModel, View, GroupModel, TimelineViewsService, TimelineMonthService,
-    ResizeService, WorkHoursModel, DragAndDropService, ResourceDetails, ScheduleComponent, ScheduleDragEventArgs
+    ResizeService, WorkHoursModel, DragAndDropService, ResourceDetails, ScheduleComponent, ResourcesModel
 } from '@syncfusion/ej2-angular-schedule';
 @Component({
   selector: 'app-root',
@@ -51,11 +51,11 @@ import {
 })
 export class AppComponent {
   @ViewChild('Kanban')
-  public kanbanObj: KanbanComponent;
+  public kanbanObj?: KanbanComponent;
   @ViewChild('Schedule')
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public data: Object[] = kanbanData;
-  public scheduleDataSource: Object[] = <Object[]>extend([], scheduleData, null, true);
+  public scheduleDataSource: Object[] = <Object[]>extend([], scheduleData, undefined, true);
   public cardSettings: CardSettingsModel = {
     contentField: 'Name',
     headerField: 'Id'
@@ -89,12 +89,12 @@ export class AppComponent {
     };
 
   getConsultantName(value: ResourceDetails): string {
-        return (value as ResourceDetails).resourceData[(value as ResourceDetails).resource.textField] as string;
+        return (value as ResourceDetails).resourceData[((value as ResourceDetails).resource as ResourcesModel).textField as string] as string;
     }
 
     getConsultantStatus(value: ResourceDetails): boolean {
         let resourceName: string =
-            (value as ResourceDetails).resourceData[(value as ResourceDetails).resource.textField] as string;
+            (value as ResourceDetails).resourceData[((value as ResourceDetails).resource as ResourcesModel).textField as string] as string;
         if (resourceName === 'GENERAL' || resourceName === 'DENTAL') {
             return false;
         } else {
@@ -104,11 +104,11 @@ export class AppComponent {
 
     getConsultantDesignation(value: ResourceDetails): string {
         let resourceName: string =
-            (value as ResourceDetails).resourceData[(value as ResourceDetails).resource.textField] as string;
+            (value as ResourceDetails).resourceData[((value as ResourceDetails).resource as ResourcesModel).textField as string] as string;
         if (resourceName === 'GENERAL' || resourceName === 'DENTAL') {
             return '';
         } else {
-            return (value as ResourceDetails).resourceData.Designation as string;
+            return (value as ResourceDetails).resourceData['Designation'] as string;
         }
     }
 
@@ -119,17 +119,17 @@ export class AppComponent {
     onKanbanDragStop(args: DragEventArgs) {
     let scheduleElement: Element = <Element>closest(args.event.target as Element, '#Schedule');
         if (scheduleElement) {
-            this.kanbanObj.deleteCard(args.data);
-            this.scheduleObj.openEditor(args.data[0], 'Add', true);
+            (this.kanbanObj as KanbanComponent).deleteCard(args.data);
+            (this.kanbanObj as any).openEditor(args.data[0], 'Add', true);
             args.cancel = true;
         }
     };
-    scheduleDragStop(args: ScheduleDragEventArgs) {
+    scheduleDragStop(args: any) {
     let kanbanElement: Element = <Element>closest(args.event.target as Element, '#Kanban');
         if (kanbanElement) {
-            this.scheduleObj.deleteEvent(args.data.Id);
-             removeClass([this.scheduleObj.element.querySelector('.e-selected-cell')], 'e-selected-cell');
-             this.kanbanObj.openDialog('Add', args.data);
+            (this.scheduleObj as ScheduleComponent).deleteEvent(args.data.Id);
+             removeClass([(this.scheduleObj as ScheduleComponent).element.querySelector('.e-selected-cell') as Element], 'e-selected-cell');
+             this.kanbanObj?.openDialog('Add', args.data);
              args.cancel = true;
         }
     };

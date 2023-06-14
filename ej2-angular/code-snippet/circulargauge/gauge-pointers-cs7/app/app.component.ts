@@ -21,7 +21,7 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-   public lineStyle: Object;
+   public lineStyle?: Object;
    ngOnInit(): void {
         // Initialize objects
 		this.lineStyle = {

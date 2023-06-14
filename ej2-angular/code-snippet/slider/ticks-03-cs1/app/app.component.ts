@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
             [ticks] = 'ticks' ></ejs-slider>
         </div>
     </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {

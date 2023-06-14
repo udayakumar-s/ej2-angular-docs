@@ -24,8 +24,8 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public dropData: string[];
+    public data?: object[];
+    public dropData?: string[];
 
     ngOnInit(): void {
         this.data = data;

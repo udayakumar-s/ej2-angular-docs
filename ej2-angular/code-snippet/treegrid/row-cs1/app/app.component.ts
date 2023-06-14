@@ -17,12 +17,12 @@ import {RowDataBoundEventArgs} from '@syncfusion/ej2-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = sampleData;
     }
- rowBound(args: RowDataBoundEventArgs) {
+ rowBound(args: RowDataBoundEventArgs | any) {
     if (args.data['duration'] == 0 ) {
         args.row.style.background= '#336c12';
     } else if (args.data['duration'] < 3) {

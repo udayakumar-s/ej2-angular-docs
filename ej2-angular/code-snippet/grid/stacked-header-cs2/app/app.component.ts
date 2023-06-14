@@ -37,10 +37,10 @@ import { ColumnModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-  public data: Object[] = [];
-  public orderColumns: ColumnModel[];
-  public shipColumns: ColumnModel[];
-  public dropdownData: string[];
+  public data?: Object[] = [];
+  public orderColumns?: ColumnModel[];
+  public shipColumns?: ColumnModel[];
+  public dropdownData?: string[];
 
   public ngOnInit(): void {
 

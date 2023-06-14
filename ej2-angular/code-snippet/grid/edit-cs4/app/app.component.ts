@@ -22,18 +22,18 @@ import { NumericTextBox } from '@syncfusion/ej2-inputs';
 })
 export class AppComponent implements OnInit {
   @ViewChild('grid')
-  public grid: GridComponent;
-  public data: Object[];
-  public editSettings: EditSettingsModel;
-  public toolbar: ToolbarItems[];
-  public priceParams: IEditCell;
-  public stockParams: IEditCell;
+  public grid?: GridComponent;
+  public data?: Object[];
+  public editSettings?: EditSettingsModel;
+  public toolbar?: ToolbarItems[];
+  public priceParams?: IEditCell;
+  public stockParams?: IEditCell;
 
-  public priceElem: HTMLElement;
-  public priceObj: NumericTextBox;
+  public priceElem?: HTMLElement;
+  public priceObj?: NumericTextBox;
 
-  public stockElem: HTMLElement;
-  public stockObj: NumericTextBox;
+  public stockElem?: HTMLElement;
+  public stockObj?: NumericTextBox;
 
   ngOnInit(): void {
     this.data = productData;
@@ -46,56 +46,56 @@ export class AppComponent implements OnInit {
     this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
     this.priceParams = {
       create: () => {
-        this.priceElem = document.createElement('input');
-        return this.priceElem;
+        (this as any).priceElem = document.createElement('input');
+        return (this as any).priceElem;
       },
       read: () => {
-        return this.priceObj.value;
+        return this.priceObj?.value;
       },
       destroy: () => {
-        this.priceObj.destroy();
+        this.priceObj?.destroy();
       },
-      write: args => {
-        var rowData = args.rowData;
-        var rowIndex = this.grid.getRowInfo(args.row).rowIndex;
-        this.priceObj = new NumericTextBox({
-          value: args.rowData[args.column.field],
-          change: function(args) {
-            var totalCostValue = args.value * rowData['UnitsInStock'];
-            this.grid.updateCell(rowIndex, 'TotalCost', totalCostValue);
-          }.bind(this)
+      write: (args: any) => {
+        var rowData = (args as any).rowData;
+        var rowIndex = (this.grid as any).getRowInfo((args as any).row).rowIndex;
+        this.priceObj? = new NumericTextBox({
+          value: (args as any).rowData[(args as any).column.field],
+          change: ((args: any) => {
+            var totalCostValue = (args as any).value * rowData['UnitsInStock'];
+            (this.grid as any).updateCell(rowIndex, 'TotalCost', totalCostValue);
+          }).bind(this)
         });
-        this.priceObj.appendTo(this.priceElem);
+        this.priceObj?.appendTo((this as any).priceElem);
       }
     };
     this.stockParams = {
       create: () => {
-        this.stockElem = document.createElement('input');
-        return this.stockElem;
+        (this as any).stockElem = document.createElement('input');
+        return (this as any).stockElem;
       },
       read: () => {
-        return this.stockObj.value;
+        return (this as any).stockObj.value;
       },
       destroy: () => {
-        this.stockObj.destroy();
+        (this as any).stockObj.destroy();
       },
-      write: args => {
-        var rowData = args.rowData;
-        var rowIndex = this.grid.getRowInfo(args.row).rowIndex;
-        this.stockObj = new NumericTextBox({
-          value: args.rowData[args.column.field],
-          change: function(args) {
-            var totalCostValue = args.value * rowData['UnitPrice'];
-            this.grid.updateCell(rowIndex, 'TotalCost', totalCostValue);
-          }.bind(this)
+      write: (args: any) => {
+        var rowData = (args as any).rowData;
+        var rowIndex = (this.grid as any).getRowInfo((args as any).row).rowIndex;
+        (this as any).stockObj = new NumericTextBox({
+          value: (args as any).rowData[(args as any).column.field],
+          change: ((args: any) => {
+            var totalCostValue = (args as any).value * rowData['UnitPrice'];
+            (this.grid as any).updateCell(rowIndex, 'TotalCost', totalCostValue);
+          }).bind(this)
         });
-        this.stockObj.appendTo(this.stockElem);
+        (this as any).stockObj.appendTo((this as any).stockElem);
       }
     };
   }
-  cellEdit(args) {
-    if (args.columnName == 'TotalCost') {
-      args.cancel = true;
+  cellEdit(args: any) {
+    if ((args as any).columnName == 'TotalCost') {
+      (args as any).cancel = true;
     }
   }
 }

@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, BpmnFlowModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, BpmnFlowModel, DiagramConstraints, ConnectorConstraints, PointModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -15,11 +15,11 @@ import { DiagramComponent, Diagram, NodeModel, BpmnFlowModel } from '@syncfusion
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagramConstraints: DiagramConstraints;
-    public connectorConstraints: ConnectorConstraints;
-    public sourcePoint: PointModel;
-    public targetPoint:PointModel;
-    public shape: BpmnFlowModel;
+    public diagramConstraints?: DiagramConstraints;
+    public connectorConstraints?: ConnectorConstraints;
+    public sourcePoint?: PointModel;
+    public targetPoint?: PointModel;
+    public shape?: BpmnFlowModel;
     ngOnInit(): void {
         this.sourcePoint = { x: 100, y: 100 };
         this.targetPoint = { x: 200, y: 200 };

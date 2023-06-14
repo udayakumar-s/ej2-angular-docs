@@ -18,10 +18,10 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     onCreated(): void {
-        if (this.documentEditor.isDocumentLoaded) {
+        if ((this.documentEditor as DocumentEditorComponent).isDocumentLoaded) {
             let sfdt: string = `{
                 "sections": [
                     {
@@ -42,13 +42,13 @@ export class AppComponent {
                 ]
             }`;
             //Open the document in Document Editor
-            this.documentEditor.open(sfdt);
+            (this.documentEditor as DocumentEditorComponent).open(sfdt);
         }
     }
 
     public showOptionsPane(): void {
         //Open options pane.
-        this.documentEditor.showOptionsPane();
+        (this.documentEditor as DocumentEditorComponent).showOptionsPane();
     }
 }
 

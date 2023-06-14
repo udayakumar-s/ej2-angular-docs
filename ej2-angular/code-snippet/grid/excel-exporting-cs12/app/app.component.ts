@@ -30,11 +30,11 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public fData: object[];
-    public sData: object[];
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('grid1') public fGrid: GridComponent;
-    @ViewChild('grid2') public sGrid: GridComponent;
+    public fData?: object[];
+    public sData?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    @ViewChild('grid1') public fGrid?: GridComponent;
+    @ViewChild('grid2') public sGrid?: GridComponent;
 
     ngOnInit(): void {
         this.fData = data.slice(0, 5);
@@ -43,14 +43,14 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick = (args: ClickEventArgs) => {
-        if (args.item.id === 'FirstGrid_excelexport') { // 'Grid_excelexport' -> Grid component id + _ + toolbar item name
+        if ((args as any).item.id === 'FirstGrid_excelexport') { // 'Grid_excelexport' -> Grid component id + _ + toolbar item name
             const appendExcelExportProperties: ExcelExportProperties = {
                 multipleExport: { type: 'AppendToSheet', blankRows: 2 }
             };
 
-            const firstGridExport: Promise<any> = this.fGrid.excelExport(appendExcelExportProperties, true);
+            const firstGridExport: Promise<any> = (this.fGrid as any).excelExport(appendExcelExportProperties, true);
             firstGridExport.then((fData: any) => {
-                this.sGrid.excelExport(appendExcelExportProperties, false, fData);
+                (this.sGrid as any).excelExport(appendExcelExportProperties, false, fData);
             });
         }
     }

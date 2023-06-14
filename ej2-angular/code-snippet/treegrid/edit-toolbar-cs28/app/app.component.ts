@@ -21,10 +21,10 @@ import { EditSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-tr
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public editSettings: EditSettingsModel;
-    public data: object[];
+    public editSettings?: EditSettingsModel;
+    public data?: object[];
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -32,21 +32,21 @@ export class AppComponent implements OnInit {
     }
 
     clickEdit(){
-        this.treegrid.startEdit();
+        (this.treegrid as TreeGridComponent).startEdit();
     }
     clickAdd(){
-        this.treegrid.addRecord({ taskID: "150", taskName: "Newly Added", priority: "Normal", duration: "5",startDate: "2/3/2017"  });
+        (this.treegrid as TreeGridComponent).addRecord({ taskID: "150", taskName: "Newly Added", priority: "Normal", duration: "5",startDate: "2/3/2017"  });
     }
     clickDelete(){
-        this.treegrid.deleteRecord();
+        (this.treegrid as TreeGridComponent).deleteRecord();
     }
     clickUpdateRow(){
-        this.treegrid.updateRow(0, { taskID: 1, taskName: 'Updated', priority: 'Low', duration: 15, startDate: '12/3/2019' });
+        (this.treegrid as TreeGridComponent).updateRow(0, { taskID: 1, taskName: 'Updated', priority: 'Low', duration: 15, startDate: '12/3/2019' });
     }
     clickUpdateCell(){
-         this.treegrid.setCellValue((this.treegrid.getCurrentViewRecords()[0] as any).taskID,'taskName','Value Changed');
+        (this.treegrid as TreeGridComponent).setCellValue(((this.treegrid as TreeGridComponent).getCurrentViewRecords()[0] as any).taskID,'taskName','Value Changed');
     }
     clickupdateEntireRow() {
-        this.treegrid.setRowData((this.treegrid.getCurrentViewRecords()[1] as any).taskID, this.treegrid.flatData[35]);
+        (this.treegrid as TreeGridComponent).setRowData(((this.treegrid as TreeGridComponent).getCurrentViewRecords()[1] as any).taskID, (this.treegrid as TreeGridComponent).flatData[35]);
       }
 }

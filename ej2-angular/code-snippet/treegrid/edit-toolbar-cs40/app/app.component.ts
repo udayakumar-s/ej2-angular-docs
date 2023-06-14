@@ -17,20 +17,20 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: string[];
+    public data?: object[];
+    public toolbarOptions?: string[];
 
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData.slice(0, 2);
         this.toolbarOptions = ['Print', 'Search'];
     }
 
-    created() {
-    let toolbarOptions: HTMLElement = this.treegrid.element.querySelector('.e-toolbar');
-    this.treegrid.element.appendChild(toolbarOptions);
+    created(args: any) {
+        let toolbarOptions: HTMLElement = (this.treegrid as TreeGridComponent).element.querySelector('.e-toolbar') as HTMLElement;
+        (this.treegrid as TreeGridComponent).element.appendChild(toolbarOptions);
     }
 }
 

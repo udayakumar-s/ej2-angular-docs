@@ -6,10 +6,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app/template.html',
+    templateUrl: './template.html',
 })
 export class AppComponent {
-    skillForm: FormGroup;
+    skillForm?: FormGroup | any;
     build: FormBuilder;
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.build = builder;
@@ -21,11 +21,11 @@ export class AppComponent {
           username: ['', Validators.required],
         });
     }
-    get username() { return this.skillForm.get('username'); }
-    get mask() { return this.skillForm.get('mask'); }
+    get username() { return this.skillForm?.get('username'); }
+    get mask() { return this.skillForm?.get('mask'); }
 
     onSubmit() {
-      alert("You have entered the value: " + this.mask.value );
+      alert("You have entered the value: " + this.mask?.value );
   }
 }
 

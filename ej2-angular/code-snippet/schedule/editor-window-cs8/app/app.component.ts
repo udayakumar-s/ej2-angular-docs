@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs } from '@syncfusion/ej2-angular-schedule';
-import { eventData } from './datasource.ts';
+import { eventData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService],

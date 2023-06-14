@@ -14,9 +14,9 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent {
     @ViewChild("scheduleObj")
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     @ViewChild("editButton")
-    public editButton: ButtonComponent;
+    public editButton?: ButtonComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public scheduleViews: View[] = ['Day', 'Week', 'WorkWeek', 'Month'];
     public eventSettings: EventSettingsModel = {
@@ -37,10 +37,10 @@ export class AppComponent {
         }]
     }
     public onButtonClick(): void {
-        const data: Object[] = new DataManager(this.scheduleObj.getCurrentViewEvents()).executeLocal(new Query().where(new Predicate('StartTime', 'lessthanorequal', new Date(2018, 1, 11, 9, 0))));
-        data[0].Subject = 'edited';
-        this.scheduleObj.saveEvent(data[0],'EditOccurrence');
-        this.editButton.element.setAttribute('disabled','true');
+        const data: Object[] = new DataManager(this.scheduleObj?.getCurrentViewEvents()).executeLocal(new Query().where(new Predicate('StartTime', 'lessthanorequal', new Date(2018, 1, 11, 9, 0))));
+        (data[0] as any).Subject = 'edited';
+        this.scheduleObj?.saveEvent(data[0],'EditOccurrence');
+        this.editButton?.element.setAttribute('disabled','true');
     }
 }
 

@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ScrollSettingsModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ScrollSettingsModel, MarginModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -21,8 +21,8 @@ export class AppComponent {
     }
         }]
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public scrollSettings: ScrollSettingsModel;
+    public diagram?: DiagramComponent;
+    public scrollSettings?: ScrollSettingsModel;
     ngOnInit(): void {
         // Defines the pageSettings for the diagram
         this.scrollSettings = {
@@ -31,10 +31,10 @@ export class AppComponent {
         }
     }
     public getNodeDefaults(node: NodeModel): NodeModel {
-        node.margin.top = 0;
-        node.margin.bottom = 0;
-        node.margin.left = 25;
-        node.margin.right = 0;
+        ((node as NodeModel).margin as MarginModel).top = 0;
+        ((node as NodeModel).margin as MarginModel).bottom = 0;
+        ((node as NodeModel).margin as MarginModel).left = 25;
+        ((node as NodeModel).margin as MarginModel).right = 0;
         return node;
     }
 }

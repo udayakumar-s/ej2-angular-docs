@@ -3,7 +3,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps, DataLabel } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 
 Maps.Inject(DataLabel);
 @Component({
@@ -17,9 +17,9 @@ Maps.Inject(DataLabel);
 })
 
 export class AppComponent implements OnInit {
-    public shapeData: object;
-    public shapeSettings: object;
-    public dataLabelSettings: object;
+    public shapeData?: object;
+    public shapeSettings?: object;
+    public dataLabelSettings?: object;
     ngOnInit(): void {
         this.shapeData = world_map;
         this.shapeSettings = {

@@ -20,9 +20,9 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    @ViewChild('grid') public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_excelexport') { // 'Grid_excelexport' -> Grid component id + _ + toolbar item name
+        if ((args as any).item.id === 'Grid_excelexport') { // 'Grid_excelexport' -> Grid component id + _ + toolbar item name
             const excelExportProperties: ExcelExportProperties = {
                 theme:
                     {
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
                         caption: { fontName: 'Segoe UI', fontColor: '#666666' }
                     }
             };
-            this.grid.excelExport(excelExportProperties);
+            (this.grid as any).excelExport(excelExportProperties);
         }
     }
 }

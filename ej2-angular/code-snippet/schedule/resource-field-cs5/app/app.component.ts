@@ -8,7 +8,7 @@ import { FormValidators, FormValidator, TextBox } from "@syncfusion/ej2-angular-
 import { PopupOpenEventArgs, EventRenderedArgs, ScheduleComponent, MonthService, DayService, WeekService,
   WorkWeekService, EventSettingsModel, ResizeService, DragAndDropService, EJ2Instance
 } from "@syncfusion/ej2-angular-schedule";
-import { eventData } from './datasource.ts';
+import { eventData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [ MonthService, DayService, WeekService, WorkWeekService, ResizeService, DragAndDropService],
@@ -55,7 +55,7 @@ import { eventData } from './datasource.ts';
 })
 
 export class AppComponent {
-  @ViewChild("scheduleObj") scheduleObj: ScheduleComponent;
+  @ViewChild("scheduleObj") scheduleObj: ScheduleComponent | undefined;
   public selectedDate: Date = new Date(2018, 1, 15);
   public views: Array<string> = ['Day', 'Week', 'WorkWeek', 'Month'];
   public showQuickInfo: Boolean = false;
@@ -69,7 +69,7 @@ export class AppComponent {
       }
     }
   };
-  public validator: FormValidator;
+  public validator?: FormValidator;
   public statusFields: Object = { text: "StatusText", value: "StatusText" };
   public StatusData: Object[] = [
     { StatusText: "New", Id: 1 },
@@ -77,45 +77,45 @@ export class AppComponent {
     { StatusText: "Confirmed", Id: 3 }
   ];
 
-  private onPopupOpen(args: PopupOpenEventArgs): void {
+  public onPopupOpen(args: PopupOpenEventArgs): void {
     if (args.type === "Editor") {
-        let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
-        let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
+
+     let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
         if (subjectElement) {
-            subjectElement.value = ((<{ [key: string]: Object }>(args.data)).Subject as string) || "";
+            subjectElement.value = ((<{ [key: string]: Object; }>(args.data))["Subject"] as string) || "";
          }
         let statusElement: HTMLInputElement = args.element.querySelector('#EventType') as HTMLInputElement;
         if (!statusElement.classList.contains('e-dropdownlist')) {
             let dropDownListObject: DropDownList = new DropDownList({
-                placeholder: 'Choose status', value: ((<{ [key: string]: Object }>(args.data)).EventType as string),
+                placeholder: 'Choose status', value: ((<{ [key: string]: Object; }>(args.data))["EventType"] as string),
                     dataSource: ['New', 'Requested', 'Confirmed']
             });
             dropDownListObject.appendTo(statusElement);
         }
         let startElement: HTMLInputElement = args.element.querySelector('#StartTime') as HTMLInputElement;
         if (!startElement.classList.contains('e-datetimepicker')) {
-            startElement.value = (<{ [key: string]: Object }>(args.data)).StartTime as string;
+            startElement.value = (<{ [key: string]: Object; }>(args.data))["StartTime"] as string;
             new DateTimePicker({ value: new Date(startElement.value) || new Date() }, startElement);
         }
         let endElement: HTMLInputElement = args.element.querySelector('#EndTime') as HTMLInputElement;
         if (!endElement.classList.contains('e-datetimepicker')) {
-            endElement.value = (<{ [key: string]: Object }>(args.data)).EndTime as string;
+            endElement.value = (<{ [key: string]: Object; }>(args.data))["EndTime"] as string;
             new DateTimePicker({ value: new Date(endElement.value) || new Date() }, endElement);
         }
         let descriptionElement: HTMLInputElement = args.element.querySelector('#Description') as HTMLInputElement;
         if (descriptionElement) {
-            descriptionElement.value = (<{ [key: string]: Object }>(args.data)).Description as string || "";
+            descriptionElement.value = (<{ [key: string]: Object; }>(args.data))["Description"] as string || "";
         }
       const formElement: HTMLElement = args.element.querySelector(".e-schedule-form") as HTMLElement;
       this.validator = (formElement as EJ2Instance).ej2_instances[0] as FormValidator;
       this.validator.addRules("EventType", { required: [true, "This field is required."]});
-      if (args.target.classList.contains("e-work-cells")) {
-        args.element.querySelector(".e-event-save").classList.add("e-custom-disable");
+      if (args.target!.classList.contains("e-work-cells")) {
+        args.element.querySelector(".e-event-save")!.classList.add("e-custom-disable");
       }
     }
   }
 
-  public onChange(args) {
+  public onChange(args : any) {
     let form = (document.querySelector(".e-schedule-form") as any).ej2_instances[0];
     if (args.element && !args.e) {
       return;
@@ -125,7 +125,7 @@ export class AppComponent {
       form.validateRules(e);
     });
     let isValidated = false;
-    let errorElements = document.querySelector(".e-dlg-content").querySelectorAll(".e-schedule-error");
+    let errorElements = document.querySelector(".e-dlg-content")!.querySelectorAll(".e-schedule-error");
     for (let i = 0; i < errorElements.length; i++) {
       isValidated =(errorElements[i] as any).style.display === "none" ? true : false;
       if (isValidated === false) {
@@ -136,7 +136,7 @@ export class AppComponent {
     if (isValidated && saveBtn) {
       saveBtn.classList.remove("e-custom-disable");
     } else if (!isValidated && !saveBtn) {
-      document.querySelector(".e-event-save").classList.add("e-custom-disable");
+      document.querySelector(".e-event-save")!.classList.add("e-custom-disable");
     }
   }
 }

@@ -12,7 +12,7 @@ enableRipple(true);
  */
 @NgModule({
     imports: [
-        BrowserModule,FormsModule, ColorPickerModule
+        BrowserModule, FormsModule, ColorPickerModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent]

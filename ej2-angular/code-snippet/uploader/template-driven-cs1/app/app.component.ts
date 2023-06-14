@@ -18,7 +18,7 @@ import { EmitType } from '@syncfusion/ej2-base';
                         <span class="e-float-line"></span>
                         <label class="e-float-text e-label-top" for="name">Name</label>
                         <div *ngIf="(nameval.invalid && (nameval.dirty || nameval.touched))">
-                            <div class="e-error" *ngIf="nameval.errors.required">
+                            <div class="e-error" *ngIf="nameval.errors">
                                 * Enter your name
                             </div>
                         </div>
@@ -31,7 +31,7 @@ import { EmitType } from '@syncfusion/ej2-base';
                           <span class="e-float-line"></span>
                           <label class="e-float-text e-label-top" for="upload">Choose a file</label>
                           <div *ngIf="(uploadval.invalid && (uploadval.dirty || uploadval.touched))">
-                              <div class="e-error" *ngIf="uploadval.errors.required">
+                              <div class="e-error" *ngIf="uploadval.errors">
                                   * Select a file
                               </div>
                           </div>
@@ -54,7 +54,7 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 export class AppComponent  {
   @ViewChild('Dialog')
-  public dialogObj: DialogComponent;
+  public dialogObj?: DialogComponent;
   public width: string = '335px';
   public visible: boolean = false;
   public multiple: boolean = false;
@@ -68,13 +68,13 @@ export class AppComponent  {
   };
   public uploadInput: string = '';
   public dlgBtnClick: EmitType<object> = () => {
-    this.dialogObj.hide();
+    (this.dialogObj as DialogComponent).hide();
   }
   public dlgButtons: Object[] = [{ click: this.dlgBtnClick.bind(this), buttonModel: { content: 'Ok', isPrimary: true } }];
     @ViewChild('formElement') element: any;
 
   public browseClick() {
-     document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button').click(); return false;
+     (document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button') as HTMLButtonElement).click(); return false;
    }
    public Submit(): void {
     this.onFormSubmit();
@@ -84,7 +84,7 @@ export class AppComponent  {
  }
 
  public onFormSubmit(): void {
-   this.dialogObj.show();
+   (this.dialogObj as DialogComponent).show();
  }
 }
 

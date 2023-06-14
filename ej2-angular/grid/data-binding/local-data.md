@@ -14,17 +14,17 @@ To bind local data to the grid, you can assign a JavaScript object array to the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs1/app/app.component.ts %}
+{% include samples/grid/databinding-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs1/app/app.module.ts %}
+{% include samples/grid/databinding-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs1/app/main.ts %}
+{% include samples/grid/databinding-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs1" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs1" %}
 
 > By default, **DataManager** uses **JsonAdaptor** for local data-binding.
 
@@ -47,14 +47,14 @@ this.grid.dataSource.splice(selectedRow, 1); // Delete a record.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/change-headertext-cs2/app/app.component.ts %}
+{% include samples/grid/change-headertext-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/change-headertext-cs2/app/app.module.ts %}
+{% include samples/grid/change-headertext-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/change-headertext-cs2/app/main.ts %}
+{% include samples/grid/change-headertext-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/change-headertext-cs2" %}
+{% previewsample "page.domainurl/samples/grid/change-headertext-cs2" %}

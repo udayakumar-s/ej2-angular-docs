@@ -47,8 +47,8 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 })
 export class AppComponent  {
     @ViewChild('Dialog')
-    public dialogObj: DialogComponent;
-    public form: FormGroup;
+    public dialogObj?: DialogComponent;
+    public form?: FormGroup | any;
     public width: string = '335px';
     public visible: boolean = false;
     public multiple: boolean = false;
@@ -60,15 +60,15 @@ export class AppComponent  {
     public animationSettings: any = {
           effect: 'Zoom'
       };
-   private formSumitAttempt: boolean;
+   private formSumitAttempt?: boolean;
    public dlgBtnClick: EmitType<object> = () => {
-    this.dialogObj.hide();
+    this.dialogObj?.hide();
   }
   public dlgButtons: Object[] = [{ click: this.dlgBtnClick.bind(this), buttonModel: { content: 'Ok', isPrimary: true } }];
   public uploadInput: string = '';
   public browseClick() {
-      document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button').click(); return false;
-    }
+    (document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button') as HTMLButtonElement).click(); return false;
+  }
   public Submit(): void {
     this.onFormSubmit();
   }
@@ -78,11 +78,11 @@ export class AppComponent  {
 
   public onFormSubmit(): void {
     this.formSumitAttempt = true;
-    if (this.form.valid) {
-      this.dialogObj.show();
+    if (this.form?.valid) {
+      (this.dialogObj as DialogComponent).show();
       this.form.reset();
     } else {
-      this.validateAllFormFields(this.form);
+      this.validateAllFormFields(this.form as any);
     }
   }
 
@@ -96,8 +96,8 @@ export class AppComponent  {
   }
 
   isFieldValid(field: string) {
-    return ((!this.form.get(field).valid && this.form.get(field).touched) ||
-    (this.form.get(field).untouched && this.formSumitAttempt));
+    return ((!(this.form  as any).get(field).valid && (this.form as any).get(field).touched) ||
+    ((this.form as any).get(field).untouched && this.formSumitAttempt));
   }
 
   validateAllFormFields(formGroup: FormGroup) {

@@ -21,7 +21,7 @@ import { RuleModel } from '@syncfusion/ej2-angular-querybuilder';
 
 export class AppComponent implements OnInit {
 
-    public importRules: RuleModel;
+    public importRules?: RuleModel;
     public values: string[] = ['Mr.', 'Mrs.'];
 
     ngOnInit(): void {

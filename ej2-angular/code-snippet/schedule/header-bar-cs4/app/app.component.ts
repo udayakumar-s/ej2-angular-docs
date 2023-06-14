@@ -2,7 +2,7 @@
 
 import { Component, ViewEncapsulation } from '@angular/core';
 import { EventSettingsModel, MonthService, RenderCellEventArgs } from '@syncfusion/ej2-angular-schedule';
-import { scheduleData } from './datasource.ts';
+import { scheduleData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [MonthService],
@@ -29,7 +29,7 @@ export class AppComponent {
         if (args.elementType === 'monthCells') {
             let ele: Element = document.createElement('div');
             ele.innerHTML = this.getWeather(args.date);
-            (args.element).appendChild(ele.firstChild);
+            (args.element).appendChild((ele as any).firstChild);
         }
     }
     getWeather: Function = (value: Date) => {

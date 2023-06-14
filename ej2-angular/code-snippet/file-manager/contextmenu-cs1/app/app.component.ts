@@ -6,13 +6,13 @@ import { MenuOpenEventArgs, MenuClickEventArgs } from '@syncfusion/ej2-filemanag
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='filemanager' [ajaxSettings]='ajaxSettings' [contextMenuSettings]='contextMenuSettings' (menuOpen)='menuOpen($event)' (menuClick)='menuClick($event)'>
     </ejs-filemanager>`
 })
 export class AppComponent {
-    public ajaxSettings: object;
-    public contextMenuSettings: object;
+    public ajaxSettings?: object;
+    public contextMenuSettings?: object;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {
@@ -28,7 +28,7 @@ export class AppComponent {
             visible: true
         };
     }
-menuOpen(args: MenuOpenEventArgs) {
+menuOpen(args: MenuOpenEventArgs | any) {
    for(var i=0;i<args.items.length;i++) {
         if (args.items[i].text === 'Custom') {
             args.items[i].iconCss= 'e-icons e-fe-tick';
@@ -37,7 +37,7 @@ menuOpen(args: MenuOpenEventArgs) {
 }
 
 // event for custom menu item
-menuClick(args: MenuClickEventArgs) {
+menuClick(args: MenuClickEventArgs | any) {
     if (args.item.text === 'Custom') {
         alert('You have clicked custom menu item')
     }

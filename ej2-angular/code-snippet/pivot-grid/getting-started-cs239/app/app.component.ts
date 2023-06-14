@@ -1,9 +1,9 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,14 +13,14 @@ import { Pivot_Data } from './datasource.ts';
   [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
-    public chartSettings: ChartSettings;
-    public displayOption: DisplayOption;
+    public dataSourceSettings?: IDataOptions;
+    public chartSettings?: ChartSettings;
+    public displayOption?: DisplayOption;
 
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
@@ -30,12 +30,12 @@ export class AppComponent implements OnInit {
             filters: []
         };
 
-        this.displayOption = { view: 'Chart' } as DisplayOPtion;
+        this.displayOption = { view: 'Chart' } as DisplayOption;
         this.chartSettings = { 
             title: 'Sales Analysis', value: 'Amount', chartSeries: { type: 'Column' }, 
             enableMultipleAxis: true, showPointColorByMembers: true, multipleAxisMode: 'Stacked',
             primaryYAxis: {border: {width: '0'}}
-        } as ChartSettings;
+        } as any as ChartSettings;
     }
 }
 

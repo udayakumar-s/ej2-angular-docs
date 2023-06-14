@@ -9,17 +9,17 @@ import { scheduleData } from './datasource';
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService],
   // specifies the template string for the Schedule component
-  templateUrl: 'app/app.component.html'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   @ViewChild('scheduleObj')
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2018, 1, 15);
   public scrollToHour: Date = new Date(2018, 1, 15, 9);
   public scheduleViews: View[] = ['Day', 'Week', 'WorkWeek'];
   public eventSettings: EventSettingsModel = { dataSource: scheduleData };
   onChange(args: ChangeEventArgs): void {
-    this.scheduleObj.scrollTo(args.text);
+    this.scheduleObj!.scrollTo((args as any).text);
   }
  }
 

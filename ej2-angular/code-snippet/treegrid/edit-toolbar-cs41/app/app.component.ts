@@ -26,39 +26,39 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 export class AppComponent implements OnInit {
     public data: object[] = [];
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
     }
     expandAll() {
-        this.treegrid.expandAll();
+        this.treegrid?.expandAll();
     }
     collapseAll() {
-        this.treegrid.collapseAll();
+        this.treegrid?.collapseAll();
     }
     collapseAtLevel() {
-        this.treegrid.collapseAtLevel(1);
+        this.treegrid?.collapseAtLevel(1);
         // Here 1 is the level of record to be collapsed.
     }
     expandAtLevel() {
-        this.treegrid.expandAtLevel(1);
+        this.treegrid?.expandAtLevel(1);
         // Here 1 is the level of record to be expanded.
     }
     collapseRow() {
-        var rowToBeCollapse = this.treegrid.getRows()[0]; // 1st row details are fetch here.
-        this.treegrid.collapseRow(rowToBeCollapse);
+        var rowToBeCollapse = this.treegrid?.getRows()[0]; // 1st row details are fetch here.
+        this.treegrid?.collapseRow(rowToBeCollapse as HTMLTableRowElement);
     }
     expandRow() {
-        var rowToBeExpand = this.treegrid.getRows()[0];
-        this.treegrid.expandRow(rowToBeExpand);
+        var rowToBeExpand = this.treegrid?.getRows()[0];
+        this.treegrid?.expandRow(rowToBeExpand as HTMLTableRowElement);
     }
     collapseByKey() {
-        this.treegrid.collapseByKey((this.treegrid.getCurrentViewRecords()[0] as any).taskID);
+        this.treegrid?.collapseByKey((this.treegrid?.getCurrentViewRecords()[0] as any).taskID);
         // taskID is the PrimaryKey, 1 is the value which the record needs to be collapsed.
         // Here the first record will be collapsed.
     }
     expandByKey() {
-        this.treegrid.expandByKey((this.treegrid.getCurrentViewRecords()[0] as any).taskID);
+        this.treegrid?.expandByKey((this.treegrid?.getCurrentViewRecords()[0] as any).taskID);
         // taskID is the PrimaryKey, 1 is the value which the record needs to be expanded.
         // Here the first record will be expanded.
     }

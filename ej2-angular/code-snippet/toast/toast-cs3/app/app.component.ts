@@ -1,8 +1,4 @@
 
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
@@ -45,27 +41,27 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') toastObj;
-    @ViewChild('dropDownShow') dropShow;
-    @ViewChild('dropDownHide') drophide;
+    @ViewChild('element') public toastObj: any;
+    @ViewChild('dropDownShow') public dropShow: any;
+    @ViewChild('dropDownHide') public drophide: any;
     public position = { X: 'Right', Y : 'Bottom' };
     public animation = { show: { effect: 'SlideRightIn' }, hide: { effect: 'SlideLeftOut' }
 };
     public AnimationShowDB = ['FadeIn', 'FadeZoomIn', 'FadeZoomOut', 'FlipLeftDownIn', 'FlipLeftDownOut', 'FlipLeftUpIn', 'FlipLeftUpOut', 'FlipRightDownIn', 'FlipRightDownOut', 'SlideBottomIn', 'SlideBottomOut', 'ZoomIn', 'ZoomOut'];
     public AnimationHideDB = ['Fadeout', 'FadeZoomIn', 'FadeZoomOut', 'FlipLeftDownIn', 'FlipLeftDownOut', 'FlipLeftUpIn', 'FlipLeftUpOut', 'FlipRightDownIn', 'FlipRightDownOut', 'SlideBottomIn', 'SlideBottomOut', 'ZoomIn', 'ZoomOut'];
 
-    onCreate() {
+    onCreate(args: any) {
       this.toastShow();
     }
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
 
-    showAnimationChange(e) {
+    showAnimationChange(e: any) {
       this.toastObj.animation.show.effect = this.dropShow.value;
     }
 
-    hideAnimationChange(e) {
+    hideAnimationChange(e: any) {
       this.toastObj.animation.hide.effect = this.drophide.value;
     }
 

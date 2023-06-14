@@ -24,17 +24,17 @@ To specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/gr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs1/app/app.component.ts %}
+{% include samples/grid/scrolling-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs1/app/app.module.ts %}
+{% include samples/grid/scrolling-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs1/app/main.ts %}
+{% include samples/grid/scrolling-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/scrolling-cs1" %}
+{% previewsample "page.domainurl/samples/grid/scrolling-cs1" %}
 
 ## Responsive with parent container
 
@@ -42,17 +42,17 @@ Specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs2/app/app.component.ts %}
+{% include samples/grid/scrolling-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs2/app/app.module.ts %}
+{% include samples/grid/scrolling-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs2/app/main.ts %}
+{% include samples/grid/scrolling-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/scrolling-cs2" %}
+{% previewsample "page.domainurl/samples/grid/scrolling-cs2" %}
 
 ## Sticky Header
 
@@ -62,17 +62,17 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs3/app/app.component.ts %}
+{% include samples/grid/scrolling-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs3/app/app.module.ts %}
+{% include samples/grid/scrolling-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs3/app/main.ts %}
+{% include samples/grid/scrolling-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/scrolling-cs3" %}
+{% previewsample "page.domainurl/samples/grid/scrolling-cs3" %}
 
 ## Scroll To Selected Row
 
@@ -80,17 +80,17 @@ You can scroll the grid content to the selected row position by using the [`rowS
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/app/app.component.ts %}
+{% include samples/grid/scrolling-select-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/app/app.module.ts %}
+{% include samples/grid/scrolling-select-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/app/main.ts %}
+{% include samples/grid/scrolling-select-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/scrolling-select-cs1" %}
+{% previewsample "page.domainurl/samples/grid/scrolling-select-cs1" %}
 
 ## Hide the scrollbar when the content is not overflown
 
@@ -100,14 +100,14 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs4/app/app.component.ts %}
+{% include samples/grid/scrolling-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs4/app/app.module.ts %}
+{% include samples/grid/scrolling-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs4/app/main.ts %}
+{% include samples/grid/scrolling-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/scrolling-cs4" %}
+{% previewsample "page.domainurl/samples/grid/scrolling-cs4" %}

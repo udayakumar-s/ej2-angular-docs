@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, PointModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -14,13 +14,13 @@ import { DiagramComponent, Diagram, NodeModel, PointModel } from '@syncfusion/ej
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public pivot: PointModel;
+    public diagram?: DiagramComponent;
+    public pivot?: PointModel;
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
     ngOnInit(): void {
@@ -28,7 +28,7 @@ export class AppComponent {
     }
     public created(args: Object): void {
         //Add Node
-        this.diagram.select([this.diagram.nodes[0]]);
+        (this.diagram as Diagram).select([(this.diagram as Diagram).nodes[0]]);
     }
 }
 

@@ -9,9 +9,9 @@ import { FontModel, AnimationModel, IProgressValueEventArgs } from '@syncfusion/
     </ejs-progressbar>`
  })
 export class AppComponent implements OnInit {
-    public animation: AnimationModel;
-    public labelStyle: FontModel;
-    public showProgressValue: boolean;
+    public animation?: AnimationModel;
+    public labelStyle?: FontModel;
+    public showProgressValue?: boolean;
     public progressCompleted(args: IProgressValueEventArgs): void {
         args.progressColor = '#2BB20E';
     }

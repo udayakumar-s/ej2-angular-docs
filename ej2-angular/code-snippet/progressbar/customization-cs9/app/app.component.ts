@@ -9,9 +9,9 @@ import { FontModel, AnimationModel } from '@syncfusion/ej2-progressbar';
     </ejs-progressbar>`
  })
 export class AppComponent implements OnInit {
-    public animation: AnimationModel;
-    public labelStyle: FontModel;
-    public showProgressValue: boolean;
+    public animation?: AnimationModel;
+    public labelStyle?: FontModel;
+    public showProgressValue?: boolean;
     ngOnInit(): void {
         this.animation = { enable: true, duration: 2000, delay: 0 };
         this.labelStyle = { color: '#FFFFFF' };

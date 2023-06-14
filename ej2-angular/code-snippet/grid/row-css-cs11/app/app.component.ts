@@ -20,19 +20,19 @@ import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = data;
     }
     rowDataBound(args: RowDataBoundEventArgs) {
         const Freight = 'Freight';
-        if (args.data[Freight] < 30) {
-            args.row.classList.add('below-30');
-        } else if (args.data[Freight] >= 30 && args.data[Freight] < 80) {
-            args.row.classList.add('below-80');
+        if ((args as any).data[Freight] < 30) {
+            (args as any).row.classList.add('below-30');
+        } else if ((args as any).data[Freight] >= 30 && (args as any).data[Freight] < 80) {
+            (args as any).row.classList.add('below-80');
         } else {
-            args.row.classList.add('above-80');
+            (args as any).row.classList.add('above-80');
         }
     }
 }

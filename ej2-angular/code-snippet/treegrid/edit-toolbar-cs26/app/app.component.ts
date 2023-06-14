@@ -2,7 +2,8 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { summaryData } from './datasource';
-import { EditSettingsModel, ToolbarItems, TreeGridComponent, IEditCell } from '@syncfusion/ej2-angular-treegrid';
+import { EditSettingsModel, ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { IEditCell } from '@syncfusion/ej2-angular-grids';
 import { NumericTextBox } from '@syncfusion/ej2-inputs';
 
 @Component({
@@ -20,18 +21,18 @@ import { NumericTextBox } from '@syncfusion/ej2-inputs';
 
 export class AppComponent implements OnInit {
   @ViewChild('treegrid')
-  public treegrid: TreeGridComponent;
-  public data: Object[];
-  public editSettings: EditSettingsModel;
-  public toolbarOptions: ToolbarItems[];
-  public unitsParams: IEditCell;
-  public unitPriceParams: IEditCell;
+  public treegrid?: TreeGridComponent;
+  public data?: Object[];
+  public editSettings?: EditSettingsModel;
+  public toolbarOptions?: ToolbarItems[];
+  public unitsParams?: IEditCell;
+  public unitPriceParams?: IEditCell;
 
-  public unitsElem: HTMLElement;
-  public unitsObj: NumericTextBox;
+  public unitsElem?: HTMLElement;
+  public unitsObj?: NumericTextBox;
 
-  public unitPriceElem: HTMLElement;
-  public unitPriceObj: NumericTextBox;
+  public unitPriceElem?: HTMLElement;
+  public unitPriceObj?: NumericTextBox;
 
   ngOnInit(): void {
     this.data = summaryData;
@@ -48,20 +49,19 @@ export class AppComponent implements OnInit {
         return this.unitsElem;
       },
       read: () => {
-        return this.unitsObj.value;
+        return (this.unitsObj as NumericTextBox).value;
       },
       destroy: () => {
-        this.unitsObj.destroy();
+        (this.unitsObj as NumericTextBox).destroy();
       },
-      write: args => {
+      write: (args: any) => {
         this.unitsObj = new NumericTextBox({
           value: args.rowData[args.column.field],
-          change: function(args) {
-            var formEle = this.treegrid.element.querySelector('form')
-              .ej2_instances[0];
+          change: (() => {
+            var formEle = (((this.treegrid as TreeGridComponent).element as HTMLElement).querySelector('form') as HTMLFormElement)['ej2_instances'][0];
             var totalCostFieldEle = formEle.getInputElement('price');
-            totalCostFieldEle.value = this.unitsObj.value * this.unitPriceObj.value;
-          }.bind(this)
+            totalCostFieldEle.value = (this.unitsObj as NumericTextBox).value * (this.unitPriceObj as NumericTextBox).value;
+          }).bind(this)
         });
         this.unitsObj.appendTo(this.unitsElem);
       }
@@ -72,26 +72,25 @@ export class AppComponent implements OnInit {
         return this.unitPriceElem;
       },
       read: () => {
-        return this.unitPriceObj.value;
+        return (this.unitPriceObj as NumericTextBox).value;
       },
       destroy: () => {
-        this.unitPriceObj.destroy();
+        (this.unitPriceObj as NumericTextBox).destroy();
       },
-      write: args => {
+      write: (args: any) => {
         this.unitPriceObj = new NumericTextBox({
           value: args.rowData[args.column.field],
-          change: function(args) {
-            var formEle = this.treegrid.element.querySelector('form')
-              .ej2_instances[0];
+          change: (() => {
+            var formEle = (((this.treegrid as TreeGridComponent).element as HTMLElement).querySelector('form') as HTMLFormElement)['ej2_instances'][0];
             var totalCostFieldEle = formEle.getInputElement('price');
-            totalCostFieldEle.value = this.unitsObj.value * this.unitPriceObj.value;
-          }.bind(this)
+            totalCostFieldEle.value = (this.unitsObj as NumericTextBox).value * (this.unitPriceObj as NumericTextBox).value;
+          }).bind(this)
         });
         this.unitPriceObj.appendTo(this.unitPriceElem);
       }
     };
   }
-  cellEdit(args) {
+  cellEdit(args: any) {
     if (args.columnName == 'price') {
       args.cancel = true;
     }

@@ -15,20 +15,20 @@ If [`groupFooterTemplate`](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/aggregates-group-cs1/app/app.component.ts %}
+{% include samples/grid/aggregates-group-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-group-cs1/app/app.template.html %}
+{% include samples/grid/aggregates-group-cs1/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-group-cs1/app/app.module.ts %}
+{% include samples/grid/aggregates-group-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/aggregates-group-cs1/app/main.ts %}
+{% include samples/grid/aggregates-group-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-group-cs1" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-group-cs1" %}
 
 > * Use the template reference variable name as **#groupFooterTemplate** to specify the group footer template and as **#groupCaptionTemplate** to specify the group caption template.
 > * The aggregate values must be accessed inside the template using their corresponding [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name.

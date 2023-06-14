@@ -23,7 +23,7 @@ import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
 export class AppComponent {
 
     @ViewChild('diagram')
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
 
     public shape: HtmlModel = {
         type:'HTML'

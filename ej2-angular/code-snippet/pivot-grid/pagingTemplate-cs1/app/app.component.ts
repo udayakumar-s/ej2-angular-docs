@@ -13,43 +13,43 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
     providers: [PagerService]
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
-    public remoteData: DataManager;
-    public width: string;
-    public gridSettings: GridSettings;
-    public pageSettings: PageSettings;
-    public pagerSettings: PagerSettings;
-    public rowPager: Pager;
-    public columnPager: Pager;
+    public dataSourceSettings?: IDataOptions;
+    public remoteData?: DataManager;
+    public width?: string;
+    public gridSettings?: GridSettings;
+    public pageSettings?: PageSettings;
+    public pagerSettings?: PagerSettings;
+    public rowPager?: Pager;
+    public columnPager?: Pager;
 
     @ViewChild('pivotview', { static: false })
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     dataBound() {
         this.updateTemplate();
     }
 
     updateTemplate() {
-        if (!isNullOrUndefined(this.rowPager)) {
-            this.rowPager.destroy();
-            this.rowPager = null;
+        if (!isNullOrUndefined(this.rowPager as Pager)) {
+            this.rowPager?.destroy();
+            this.rowPager = undefined;
         }
         this.rowPager = new Pager({
-            pageSize: this.pivotGridObj.pageSettings.rowPageSize,
-            totalRecordsCount: this.pivotGridObj.engineModule.rowCount,
-            currentPage: this.pivotGridObj.pageSettings.currentRowPage,
+            pageSize: this.pivotGridObj?.pageSettings.rowPageSize,
+            totalRecordsCount: this.pivotGridObj?.engineModule.rowCount,
+            currentPage: this.pivotGridObj?.pageSettings.currentRowPage,
             pageCount: 5,
             click: this.rowPageClick
         });
         this.rowPager.appendTo('#row-pager');
-        if (!isNullOrUndefined(this.columnPager)) {
-            this.columnPager.destroy();
-            this.columnPager = null;
+        if (!isNullOrUndefined(this.columnPager as Pager)) {
+            this.columnPager?.destroy();
+            this.columnPager = undefined;
         }
         this.columnPager = new Pager({
-            pageSize: this.pivotGridObj.pageSettings.columnPageSize,
-            totalRecordsCount: this.pivotGridObj.engineModule.columnCount,
-            currentPage: this.pivotGridObj.pageSettings.currentColumnPage,
+            pageSize: this.pivotGridObj?.pageSettings.columnPageSize,
+            totalRecordsCount: this.pivotGridObj?.engineModule.columnCount,
+            currentPage: this.pivotGridObj?.pageSettings.currentColumnPage,
             pageCount: 5,
             click: this.columnPageClick
         });
@@ -57,13 +57,13 @@ export class AppComponent implements OnInit {
     }
 
     rowPageClick(args: any) {
-        this.pivotGridObj.pageSettings.currentRowPage = args.currentPage;
-        this.pivotGridObj.refreshData();
+        this.pivotGridObj!.pageSettings.currentRowPage = args.currentPage;
+        this.pivotGridObj?.refreshData();
     }
 
     columnPageClick(args: any) {
-        this.pivotGridObj.pageSettings.currentColumnPage = args.currentPage;
-        this.pivotGridObj.refreshData();
+        this.pivotGridObj!.pageSettings.currentColumnPage = args.currentPage;
+        this.pivotGridObj?.refreshData();
     }
 
     ngOnInit(): void {
@@ -78,11 +78,11 @@ export class AppComponent implements OnInit {
             columnPageSize: 5,
             currentColumnPage: 1,
             currentRowPage: 1
-        };
+        } as PageSettings;
         this.pagerSettings = {
             template: '#template'
-        };
-        this.gridSettings = { columnWidth: 120 };
+        } as PagerSettings;
+        this.gridSettings = { columnWidth: 120 } as GridSettings;
         this.dataSourceSettings = {
             dataSource: this.remoteData,
             expandAll: true,

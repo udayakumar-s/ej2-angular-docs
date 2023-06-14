@@ -10,8 +10,8 @@ import { SpreadsheetComponent, SortDescriptor } from '@syncfusion/ej2-angular-sp
 })
 export class AppComponent implements OnInit {
 
-    public tradeData: object[];
-    @ViewChild('spreadsheet') public spreadsheetObj: SpreadsheetComponent;
+    public tradeData?: object[];
+    @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
     ngOnInit(): void {
         this.tradeData = tradeData;
     }
@@ -29,12 +29,12 @@ export class AppComponent implements OnInit {
                 field: 'C',
                 order: 'Descending'
             }];
-            if (this.spreadsheetObj.activeSheetIndex === 0) {
-                this.spreadsheetObj.sort({ sortDescriptors: sortDescriptors, containsHeader: true }, 'A1:H30');
+            if (this.spreadsheetObj!.activeSheetIndex === 0) {
+                this.spreadsheetObj!.sort({ sortDescriptors: sortDescriptors, containsHeader: true }, 'A1:H30');
             }
     };
-    sortComplete (args) {
-        this.spreadsheetObj.selectRange(args.range);
+    sortComplete (args : any) {
+        this.spreadsheetObj!.selectRange(args.range);
         // code here.
     }
 }

@@ -14,14 +14,14 @@ Custom Toolbar is used to customize the whole toolbar. It can be added by defini
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbar-template-cs1/app/app.component.ts %}
+{% include samples/grid/toolbar-template-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-template-cs1/app/app.module.ts %}
+{% include samples/grid/toolbar-template-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbar-template-cs1/app/main.ts %}
+{% include samples/grid/toolbar-template-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/toolbar-template-cs1" %}
+{% previewsample "page.domainurl/samples/grid/toolbar-template-cs1" %}

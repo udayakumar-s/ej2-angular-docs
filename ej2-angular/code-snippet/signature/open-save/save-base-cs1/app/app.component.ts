@@ -18,13 +18,13 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('signature')
-    public signature: SignatureComponent;
+    public signature?: SignatureComponent;
     @ViewChild('dialog')
-    public Dialog: DialogComponent;
+    public Dialog?: DialogComponent;
     public animationSettings: Object = { effect: 'Zoom',  duration: 400 };
     onSave() {
-        this.Dialog.content = this.signature.getSignature();
-        this.Dialog.show();
+        this.Dialog!.content = this.signature!.getSignature();
+        this.Dialog!.show();
     }
 }
 

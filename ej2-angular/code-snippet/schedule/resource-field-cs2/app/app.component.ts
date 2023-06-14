@@ -3,7 +3,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, RecurrenceEditor, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
-import { eventData } from './datasource.ts';
+import { eventData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService],
@@ -50,7 +50,7 @@ import { eventData } from './datasource.ts';
 
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public views: Array<string> = ['Day', 'Week', 'WorkWeek', 'Month'];
     public showQuickInfo: Boolean = false;
@@ -67,14 +67,14 @@ export class AppComponent {
             if (!endElement.classList.contains('e-datetimepicker')) {
                 new DateTimePicker({ value: new Date(endElement.value) || new Date() }, endElement);
             }
-            let recurElement: HTMLElement = args.element.querySelector('#RecurrenceEditor');
+            let recurElement: HTMLElement = args.element.querySelector('#RecurrenceEditor') as HTMLElement;
             if (!recurElement.classList.contains('e-recurrenceeditor')) {
                 let recurrObject: RecurrenceEditor = new RecurrenceEditor({
                 });
                 recurrObject.appendTo(recurElement);
-                (this.scheduleObj.eventWindow as any).recurrenceEditor = recurrObject;
+                (this.scheduleObj?.eventWindow as any).recurrenceEditor = recurrObject;
             }
-            document.getElementById('RecurrenceEditor').style.display = (this.scheduleObj.currentAction == "EditOccurrence") ? 'none' : 'block';
+            document.getElementById('RecurrenceEditor')!.style.display = (this.scheduleObj!.currentAction == "EditOccurrence") ? 'none' : 'block';
         }
     }
 }

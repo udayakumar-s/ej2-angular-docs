@@ -22,17 +22,17 @@ import { employeeData } from './datasource';
 })
 
 export class AppComponent implements OnInit {
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
      @ViewChild('querybuilder')
-    public qryBldrObj: QueryBuilderComponent;
+    public qryBldrObj?: QueryBuilderComponent;
     public validateRule: { [key: string]: Boolean } = { isRequired: true };
     public values: string[] = ['Mr.', 'Mrs.'];
     ngOnInit(): void {
         this.data = employeeData;
     }
     validate(): void {
-        this.qryBldrObj.validateFields();
+        this.qryBldrObj!.validateFields();
     }
 
 }

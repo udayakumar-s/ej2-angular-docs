@@ -22,13 +22,13 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-  @ViewChild('element') element;
+  @ViewChild('element') public element: any;
   public position = { X: 'Right', Y: 'Top' };
 
-  onCreate() {
+  onCreate(args: any) {
     this.element.show();
   }
-  btnClick() {
+  btnClick(args: any) {
     this.element.show();
   }
 }

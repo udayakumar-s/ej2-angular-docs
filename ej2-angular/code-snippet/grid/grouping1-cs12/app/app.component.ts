@@ -19,19 +19,16 @@ import { FilterService, PageService, GridComponent } from '@syncfusion/ej2-angul
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
     addColumn() {
-        let obj = { field: "Freight", headerText: 'Freight', width: 120 }
-        this.grid.columns.push(obj as any); //you can add the columns by using the Grid columns method
-        this.grid.refreshColumns();
+        let obj = { field: "Freight", headerText: 'Freight', width: 120 };
+        (this.grid as any).columns.push(obj as any); //you can add the columns by using the Grid columns method
+        (this.grid as any).refreshColumns();
    }
 }
-
-
-

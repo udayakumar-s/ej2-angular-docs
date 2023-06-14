@@ -23,9 +23,9 @@ import { scheduleData } from './datasource';
 })
 export class AppComponent {
     public selectedDate: Date = new Date(2018, 1, 15);
-    public monthInterval: Boolean = 24;
-    public weekInterval: Boolean = 3;
-    public dayInterval: Boolean = 4;
+    public monthInterval: Boolean | Number = 24;
+    public weekInterval: Boolean | Number = 3;
+    public dayInterval: Boolean | Number = 4;
     public eventSettings: EventSettingsModel = { dataSource: scheduleData };
 }
 

@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { foreignKeyData, dropData } from './datasource';
-import { TreeGridComponent,EditService, ToolbarService, ITreeData } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent,EditService, ToolbarService, ITreeData, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
 import {  QueryCellInfoEventArgs, Column, IEditCell } from '@syncfusion/ej2-angular-grids';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
@@ -23,10 +23,10 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public formatOptions: Object;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public employeeParams: IEditCell;
+    public formatOptions?: Object;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public employeeParams?: IEditCell;
 
     ngOnInit(): void {
         this.data = foreignKeyData;
@@ -42,15 +42,15 @@ export class AppComponent implements OnInit {
             }  
          };
     }
-    queryCellInfo(args: QueryCellInfoEventArgs) {
+    queryCellInfo(args: QueryCellInfoEventArgs | any) {
         if ((args.column as Column).field === "EmployeeID") {
             for (var i = 0; i < dropData.length; i++) {
-                let data: Object = args.data as Object;
-                if (data[(args.column as Column).field] === dropData[i]["EmployeeID"]) {
-                    (args.cell as HTMLElement).innerText = dropData[i]["EmployeeName"]; // assign the foreignkey field value to the innertext
+                let data: Object[] = args.data as Object[];
+                if (data[(args.column).field] === (dropData as any)[i]["EmployeeID"]) {
+                    (args.cell as HTMLElement).innerText = (dropData as any)[i]["EmployeeName"]; // assign the foreignkey field value to the innertext
+                }
+            }
         }
-      }
-    }
     }
 
 }

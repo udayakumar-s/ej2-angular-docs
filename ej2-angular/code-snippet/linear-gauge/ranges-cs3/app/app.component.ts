@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-  public labelStyle: Object;
+  public labelStyle?: Object;
   ngOnInit(): void {
     this.labelStyle = {
       useRangeColor: true

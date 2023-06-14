@@ -17,15 +17,15 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public customAttributes: object;
+    public data?: object[];
+    public customAttributes?: object;
 
     ngOnInit(): void {
         this.data = data;
         this.customAttributes = { class: 'orientationcss' };
     }
-    setHeaderHeight(args) {
-        const textWidth = document.querySelector('.orientationcss > div').scrollWidth; // Obtain the width of the headerText content.
+    setHeaderHeight(args: any) {
+        const textWidth = (document.querySelector('.orientationcss > div') as any).scrollWidth; // Obtain the width of the headerText content.
         const headerCell: NodeList = document.querySelectorAll('.e-headercell');
         for (let i = 0; i < headerCell.length; i++) {
             // Assign the obtained textWidth as the height of the headerCell.

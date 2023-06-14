@@ -21,16 +21,16 @@ import { MouseEventArgs } from '@syncfusion/ej2-base';
 
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
     }
     rowDataBound(args: RowDataBoundEventArgs) {
-        let gridElement = document.getElementById('grid').ej2_instances[0];
-        args.row.addEventListener('mouseover', function(e) {
+        let gridElement: any = (document.getElementById('grid') as any).ej2_instances[0];
+        (args as any).row.addEventListener('mouseover', function(e: any) {
         console.log(gridElement.getRowInfo(e.target))
     })
     }

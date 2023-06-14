@@ -34,32 +34,32 @@ import { data } from './datasource';
                   </e-column>
                 </e-columns>
               </ejs-grid>
-            </div>`,
-  styleUrls: ['./app/app.component.css'],
+            </div>`
 })
 export class AppComponent {
 
-  public data: Object[] = data;
+  public data?: Object[] = data;
   public columns: Object[] = [
     { text: 'Order ID', value: 'OrderID' },
     { text: 'Customer ID', value: 'CustomerID' },
     { text: 'Freight', value: 'Freight' },
     { text: 'Order Date', value: 'OrderDate' },
   ];
-  public field: Object = { text: 'text', value: 'value' };
+  public field?: Object = { text: 'text', value: 'value' };
 
-  @ViewChild('dropdown') public dropdown: DropDownListComponent;
-  @ViewChild('textbox') public textbox: any;
-  @ViewChild('grid') public grid: GridComponent;
+  @ViewChild('dropdown') public dropdown?: DropDownListComponent;
+  @ViewChild('textbox') public textbox?: any;
+  @ViewChild('grid')
+    public grid?: GridComponent;
 
   public headerValueAccessor = (field: string, columns: ColumnModel): void => {
     if (this.textbox && this.textbox.value && this.textbox.value.trim() !== ''
-      && columns.field === this.dropdown.value) {
+      && columns.field === (this.dropdown as any).value) {
       columns.headerText = this.textbox.value;
     }
   };
   public changeHeaderText(): void {
-    this.grid.refreshHeader();
+    (this.grid as any).refreshHeader();
   }
 
 }

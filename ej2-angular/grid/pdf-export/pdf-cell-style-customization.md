@@ -18,17 +18,17 @@ In the below sample, we have set the background color for **Freight** column in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs9/app/app.component.ts %}
+{% include samples/grid/exporting-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs9/app/app.module.ts %}
+{% include samples/grid/exporting-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs9/app/main.ts %}
+{% include samples/grid/exporting-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs9" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs9" %}
 
 ## Theme
 
@@ -38,16 +38,16 @@ To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs10/app/app.component.ts %}
+{% include samples/grid/exporting-cs10/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs10/app/app.module.ts %}
+{% include samples/grid/exporting-cs10/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs10/app/main.ts %}
+{% include samples/grid/exporting-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs10" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs10" %}
 
 > By default, material theme is applied to exported PDF document.

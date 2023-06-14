@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SwimLaneModel,Diagram, NodeModel,Node, LaneModel,HeaderModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, SwimLaneModel,Diagram, NodeModel,Node, LaneModel,HeaderModel, ShapeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -16,9 +16,9 @@ export class AppComponent {
                 type: 'SwimLane',
                 orientation: 'Horizontal',
                 // customize the swimlane header
-                 header: {
-                annotation: { content: 'SALES PROCESS FLOW CHART', },
-                height: 70, style: { fontSize: 11 }, style: { fill: 'pink' },
+                header: {
+                    annotation: { content: 'SALES PROCESS FLOW CHART', },
+                    height: 70, style: { fontSize: 11, fill: 'pink' }
                 },
                 lanes: [
                     {
@@ -39,10 +39,10 @@ export class AppComponent {
         },
       ]
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-     public created(args: Object): void {
-        this.diagram.nodes[0].shape.header.style.fill = 'red';
-        this.diagram.dataBind();
+    public diagram?: DiagramComponent;
+     public created(args: Object): void { 
+        ((this.diagram as Diagram).nodes[0].shape as ShapeModel | any).header.style.fill = 'red';
+        (this.diagram as Diagram).dataBind();
     }
 }
 

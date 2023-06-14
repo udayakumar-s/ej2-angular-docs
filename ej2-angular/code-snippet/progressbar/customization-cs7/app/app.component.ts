@@ -12,16 +12,16 @@ import { ProgressBar, FontModel, AnimationModel, IProgressValueEventArgs } from 
 })
 
 export class AppComponent implements OnInit {
-    public animation: AnimationModel;
-    public labelStyle: FontModel;
-    public showProgressValue: boolean;
+    public animation?: AnimationModel;
+    public labelStyle?: FontModel;
+    public showProgressValue?: boolean;
     @ViewChild('charts')
-    public charts: ProgressBar;
+    public charts?: ProgressBar;
     public valueChanged(args: IProgressValueEventArgs): void {
         args.progressColor = '#2BB20E';
     }
     public onClick = () => {
-        this.charts.value = 50;
+        this.charts!.value = 50;
     }
     ngOnInit(): void {
         this.animation = { enable: true, duration: 2000, delay: 0 };

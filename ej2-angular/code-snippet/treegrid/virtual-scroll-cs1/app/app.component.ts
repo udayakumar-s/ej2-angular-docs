@@ -19,7 +19,7 @@ providers: [VirtualScrollService]
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         dataSource();

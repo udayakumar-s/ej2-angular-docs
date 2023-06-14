@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { createElement } from '@syncfusion/ej2-base';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs } from '@syncfusion/ej2-angular-schedule';
-import { eventsData} from './datasource.ts';
+import { eventsData} from './datasource';
 @Component({
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService, MonthService],
@@ -24,8 +24,8 @@ export class AppComponent {
             // Create required custom elements in initial time
             if (!args.element.querySelector('.custom-field-row')) {
                 let row: HTMLElement = createElement('div', { className: 'custom-field-row' });
-                let formElement: HTMLElement = args.element.querySelector('.e-schedule-form');
-                formElement.firstChild.insertBefore(row, args.element.querySelector('.e-title-location-row'));
+                let formElement: HTMLElement = args.element.querySelector('.e-schedule-form') as HTMLElement;
+                formElement.firstChild?.insertBefore(row, args.element.querySelector('.e-title-location-row'));
                 let container: HTMLElement = createElement('div', { className: 'custom-field-container' });
                 let inputEle: HTMLInputElement = createElement('input', {
                     className: 'e-field', attrs: { name: 'EventType' }
@@ -40,7 +40,7 @@ export class AppComponent {
                         { text: 'Family Event', value: 'family-event' }
                     ],
                     fields: { text: 'text', value: 'value' },
-                    value: (<{ [key: string]: Object }>(args.data)).EventType as string,
+                    value: (<{ [key: string]: Object; }>(args.data))['EventType'] as string,
                     floatLabelType: 'Always', placeholder: 'Event Type'
                 });
                 dropDownList.appendTo(inputEle);

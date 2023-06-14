@@ -17,24 +17,24 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
 
 export class AppComponent {
     @ViewChild('imageEditor')
-    public imageEditorObj: ImageEditorComponent;
+    public imageEditorObj?: ImageEditorComponent;
 
       public created(): void {
         if (Browser.isDevice) {
-            this.imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
         } else {
-            this.imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
         }
     }
     zoomInClick(): void {
-        this.imageEditorObj.zoom(.1) // zoom in
+        this.imageEditorObj?.zoom(.1) // zoom in
     }
     zoomOutClick(): void {
-        this.imageEditorObj.zoom(-.1) // zoom out
+        this.imageEditorObj?.zoom(-.1) // zoom out
     }
     panClick(): void {
-        this.imageEditorObj.zoom(.1) // zoom in
-        this.imageEditorObj.pan(true);
+        this.imageEditorObj?.zoom(.1) // zoom in
+        this.imageEditorObj?.pan(true);
     }
 }
 

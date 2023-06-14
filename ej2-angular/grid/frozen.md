@@ -18,17 +18,17 @@ In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documenta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/frozenrows-cs1/app/app.component.ts %}
+{% include samples/grid/frozenrows-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/frozenrows-cs1/app/app.module.ts %}
+{% include samples/grid/frozenrows-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/frozenrows-cs1/app/main.ts %}
+{% include samples/grid/frozenrows-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/frozenrows-cs1" %}
+{% previewsample "page.domainurl/samples/grid/frozenrows-cs1" %}
 
 > * Frozen rows and columns should not be set outside the grid view port.
 > * Frozen Grid will support row and column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
@@ -55,17 +55,17 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/frozenrows-cs2/app/app.component.ts %}
+{% include samples/grid/frozenrows-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/frozenrows-cs2/app/app.module.ts %}
+{% include samples/grid/frozenrows-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/frozenrows-cs2/app/main.ts %}
+{% include samples/grid/frozenrows-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/frozenrows-cs2" %}
+{% previewsample "page.domainurl/samples/grid/frozenrows-cs2" %}
 
 > * Freeze Direction is not compatible with the [`isFrozen`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) and [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) properties.
 
@@ -95,16 +95,16 @@ Validation rules for the 'EmployeeID' and 'Freight' columns can be added in the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/frozenrows-cs3/app/app.component.ts %}
+{% include samples/grid/frozenrows-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/frozenrows-cs3/app/app.module.ts %}
+{% include samples/grid/frozenrows-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/frozenrows-cs3/app/main.ts %}
+{% include samples/grid/frozenrows-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/frozenrows-cs3" %}
+{% previewsample "page.domainurl/samples/grid/frozenrows-cs3" %}
 
 > This is applicable when a frozen column is enabled and the edit mode is set as "**Normal**" in the Grid.

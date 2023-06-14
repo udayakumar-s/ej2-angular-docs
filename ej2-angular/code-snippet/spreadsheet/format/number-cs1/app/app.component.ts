@@ -43,7 +43,7 @@ import { dataSource } from './datasource';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
 
@@ -52,18 +52,18 @@ export class AppComponent {
 
     // Applied number formatting to the range of cells using 'numberFormat' method once the component is loaded
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', fontSize: '12pt', backgroundColor: '#279377', textAlign: 'center',
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', fontSize: '12pt', backgroundColor: '#279377', textAlign: 'center',
           color: '#ffffff', borderBottom: '1px solid #e0e0e0' }, 'A2:F2');
-        this.spreadsheetObj.cellFormat({ borderTop: '1px solid #e0e0e0', backgroundColor: '#EEEEEE' }, 'A11:F11');
-        this.spreadsheetObj.setBorder({ border: '1px solid #e0e0e0' }, 'A2:F11', 'Outer');
+        this.spreadsheetObj!.cellFormat({ borderTop: '1px solid #e0e0e0', backgroundColor: '#EEEEEE' }, 'A11:F11');
+        this.spreadsheetObj!.setBorder({ border: '1px solid #e0e0e0' }, 'A2:F11', 'Outer');
         // Applied Accounting format to the cells from C3 to E10 range.
-        this.spreadsheetObj.numberFormat('_($* #,##0.00_);_($* (#,##0.00);_($* "-"??_);_(@_)', 'C3:E10');
+        this.spreadsheetObj!.numberFormat('_($* #,##0.00_);_($* (#,##0.00);_($* "-"??_);_(@_)', 'C3:E10');
         // Applied Percentage format to the cells from C3 to E11 range.
-        this.spreadsheetObj.numberFormat('0%', 'F3:F10');
+        this.spreadsheetObj!.numberFormat('0%', 'F3:F10');
         // applied the custom number format for cell form D3 to D10 range
-        this.spreadsheetObj.numberFormat('[Red][<=2000]$#,##0.00;[Blue][>2000]$#,##0.00', 'D3:D10');
+        this.spreadsheetObj!.numberFormat('[Red][<=2000]$#,##0.00;[Blue][>2000]$#,##0.00', 'D3:D10');
         // applied the custom number format for cell from F3 to F10 range
-        this.spreadsheetObj.numberFormat('#,##0.00_);[Red](#,##0.00)', 'F3:F10');
+        this.spreadsheetObj!.numberFormat('#,##0.00_);[Red](#,##0.00)', 'F3:F10');
 
     }
 }

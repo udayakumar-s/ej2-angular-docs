@@ -19,7 +19,7 @@ import { FormGroup } from '@angular/forms';
         </div>
       </form>
     </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {

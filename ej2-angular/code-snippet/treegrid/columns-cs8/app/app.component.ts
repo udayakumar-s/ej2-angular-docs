@@ -20,16 +20,16 @@ import { TreeGridComponent,ReorderService } from '@syncfusion/ej2-angular-treegr
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
 
     }
-     btnClick(e: any): any{
-            this.treeGridObj.reorderColumns(['taskID','duration'],'progress');
+     btnClick(): any{
+            (this.treeGridObj as TreeGridComponent).reorderColumns(['taskID','duration'],'progress');
 }
 }
 

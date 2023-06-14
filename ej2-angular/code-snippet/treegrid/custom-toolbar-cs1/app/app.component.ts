@@ -19,10 +19,10 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: object[];
+    public data?: object[];
+    public toolbarOptions?: object[];
 
-    @ViewChild('treegrid') public treegrid: TreeGridComponent;
+    @ViewChild('treegrid') public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -32,11 +32,11 @@ export class AppComponent implements OnInit {
 
     clickHandler(args: ClickEventArgs): void {
         if (args.item.id === 'expandall') {
-            this.treegrid.expandAll();
+            (this.treegrid as TreeGridComponent).expandAll();
         }
 
         if (args.item.id === 'collapseall') {
-            this.treegrid.collapseAll();
+            (this.treegrid as TreeGridComponent).collapseAll();
         }
     }
 }

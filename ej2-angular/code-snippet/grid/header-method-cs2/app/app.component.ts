@@ -21,22 +21,22 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-  public data: Object[];
+  public data?: Object[];
   @ViewChild('grid')
-  public grid: GridComponent;
+  public grid?: GridComponent;
 
   ngOnInit() {
     this.data = orderDetails;
   }
-  dataBound(args) {
-    this.grid.getColumnHeaderByIndex(0).style.color = '#0d0b0b';
-    this.grid.getColumnHeaderByField('CustomerName').style.background = '#f45ddeab';
-    this.grid.getColumnHeaderByField('CustomerName').style.color = '#0d0b0b';
-    this.grid.getColumnHeaderByUid('grid-column2').style.background = '#f45ddeab';
-    const columnIndex = this.grid.getColumnIndexByField('ShipCountry');
-    this.grid.getColumnHeaderByIndex(columnIndex).style.color = '#0d0b0b';
-    const index = this.grid.getColumnIndexByUid('grid-column2');
-    this.grid.getColumnHeaderByIndex(index).style.color = '#0d0b0b';
+  dataBound(args: any) {
+    (this.grid as any).getColumnHeaderByIndex(0).style.color = '#0d0b0b';
+    (this.grid as any).getColumnHeaderByField('CustomerName').style.background = '#f45ddeab';
+    (this.grid as any).getColumnHeaderByField('CustomerName').style.color = '#0d0b0b';
+    (this.grid as any).getColumnHeaderByUid('grid-column2').style.background = '#f45ddeab';
+    const columnIndex = (this.grid as any).getColumnIndexByField('ShipCountry');
+    (this.grid as any).getColumnHeaderByIndex(columnIndex).style.color = '#0d0b0b';
+    const index = (this.grid as any).getColumnIndexByUid('grid-column2');
+    (this.grid as any).getColumnHeaderByIndex(index).style.color = '#0d0b0b';
   }
 
 }

@@ -4,8 +4,8 @@ import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'default.html',
-    styleUrls: ['index.css']
+    templateUrl: './default.html',
+    styleUrls: ['./index.css']
 })
 
 export class AppComponent {
@@ -15,8 +15,8 @@ export class AppComponent {
         removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
     };
     ngAfterViewInit(): void {
-        document.getElementById('browse').onclick = (args) => {
-            document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button').click();
+        (document.getElementById('browse') as HTMLElement).onclick = (args) => {
+            (document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button') as HTMLButtonElement).click();
         };
     }
 }

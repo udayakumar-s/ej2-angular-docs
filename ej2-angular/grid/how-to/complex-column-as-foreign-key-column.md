@@ -16,14 +16,14 @@ In the following example, **Employee.EmployeeID** is a complex column and also d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/app/app.component.ts %}
+{% include samples/grid/foreignkey-cs11/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/app/app.module.ts %}
+{% include samples/grid/foreignkey-cs11/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/app/main.ts %}
+{% include samples/grid/foreignkey-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs11" %}
+{% previewsample "page.domainurl/samples/grid/foreignkey-cs11" %}

@@ -17,18 +17,18 @@ import { ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegri
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
         this.toolbarOptions = ['Search'];
     }
-    created(): void {
-        document.getElementById(this.treegrid.grid.element.id + "_searchbar").addEventListener('keyup', () => {
-                this.treegrid.search((event.target as HTMLInputElement).value)
+    created(args: any): void {
+        (document.getElementById((this.treegrid as TreeGridComponent).grid.element.id + "_searchbar") as HTMLElement).addEventListener('keyup', () => {
+                (this.treegrid as TreeGridComponent).search(((event as any).target as HTMLInputElement).value)
         });
     }
 }

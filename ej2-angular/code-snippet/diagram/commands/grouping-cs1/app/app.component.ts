@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -25,19 +25,21 @@ import { DiagramComponent, Diagram, NodeModel, ConnectorModel } from '@syncfusio
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public children: string[];
+    public diagram?: DiagramComponent;
+    public children?: string[];
+sourcePoint1: any;
+targetPoint1: any;
     ngOnInit(): void {
         this.children = ['node1', 'node2', 'connector'];
     }
-    public getNodeDefaults(node: NodeModel): NodeModel {
+    public getNodeDefaults(node: NodeModel | any): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',
@@ -52,9 +54,9 @@ export class AppComponent {
     }
     public created(args: Object): void {
         //Selects the diagram
-        this.diagram.selectAll();
+        (this.diagram as DiagramComponent).selectAll();
         //Groups the selected elements.
-        this.diagram.group();
+        (this.diagram as DiagramComponent).group();
     }
 }
 

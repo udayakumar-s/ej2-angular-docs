@@ -16,17 +16,17 @@ PDF export provides an option to export the current page into PDF. To export cur
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs11/app/app.component.ts %}
+{% include samples/grid/exporting-cs11/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs11/app/app.module.ts %}
+{% include samples/grid/exporting-cs11/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs11/app/main.ts %}
+{% include samples/grid/exporting-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs11" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs11" %}
 
 ## Export the selected records only
 
@@ -36,17 +36,17 @@ In the below exporting demo, We can get the selected records using [`getSelected
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs3/app/app.component.ts %}
+{% include samples/grid/exporting-filtered-data-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs3/app/app.module.ts %}
+{% include samples/grid/exporting-filtered-data-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs3/app/main.ts %}
+{% include samples/grid/exporting-filtered-data-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-filtered-data-cs3" %}
+{% previewsample "page.domainurl/samples/grid/exporting-filtered-data-cs3" %}
 
 ## Export filtered data only
 
@@ -56,17 +56,17 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs4/app/app.component.ts %}
+{% include samples/grid/exporting-filtered-data-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs4/app/app.module.ts %}
+{% include samples/grid/exporting-filtered-data-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs4/app/main.ts %}
+{% include samples/grid/exporting-filtered-data-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-filtered-data-cs4" %}
+{% previewsample "page.domainurl/samples/grid/exporting-filtered-data-cs4" %}
 
 ## Export hidden columns
 
@@ -74,17 +74,17 @@ PDF export provides an option to export hidden columns of Grid by defining the [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs12/app/app.component.ts %}
+{% include samples/grid/exporting-cs12/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs12/app/app.module.ts %}
+{% include samples/grid/exporting-cs12/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs12/app/main.ts %}
+{% include samples/grid/exporting-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs12" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs12" %}
 
 ## Show or hide columns
 
@@ -98,17 +98,17 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs13/app/app.component.ts %}
+{% include samples/grid/exporting-cs13/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs13/app/app.module.ts %}
+{% include samples/grid/exporting-cs13/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs13/app/main.ts %}
+{% include samples/grid/exporting-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs13" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs13" %}
 
 ## Change page orientation
 
@@ -116,17 +116,17 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs14/app/app.component.ts %}
+{% include samples/grid/exporting-cs14/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs14/app/app.module.ts %}
+{% include samples/grid/exporting-cs14/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs14/app/main.ts %}
+{% include samples/grid/exporting-cs14/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs14" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs14" %}
 
 ## Change page size
 
@@ -163,17 +163,17 @@ Supported page sizes are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs15/app/app.component.ts %}
+{% include samples/grid/exporting-cs15/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs15/app/app.module.ts %}
+{% include samples/grid/exporting-cs15/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs15/app/main.ts %}
+{% include samples/grid/exporting-cs15/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs15" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs15" %}
 
 ## Define file name
 
@@ -181,17 +181,17 @@ You can assign the file name for the exported document by defining [fileName](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs16/app/app.component.ts %}
+{% include samples/grid/exporting-cs16/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs16/app/app.module.ts %}
+{% include samples/grid/exporting-cs16/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs16/app/main.ts %}
+{% include samples/grid/exporting-cs16/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs16" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs16" %}
 
 ## Font customization
 
@@ -231,16 +231,16 @@ In the following example, we have used Algeria font to export the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs17/app/app.component.ts %}
+{% include samples/grid/exporting-cs17/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs17/app/app.module.ts %}
+{% include samples/grid/exporting-cs17/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs17/app/main.ts %}
+{% include samples/grid/exporting-cs17/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs17" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs17" %}
 
 > **PdfTrueTypeFont** accepts base 64 format of the Custom Font.

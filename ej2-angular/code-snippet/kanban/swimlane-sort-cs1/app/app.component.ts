@@ -24,7 +24,7 @@ export class AppComponent {
     public swimlaneSettings: SwimlaneSettingsModel = {
         keyField: 'Assignee',
         sortBy: 'Descending'
-    };
+    } as SwimlaneSettingsModel;
 }
 
 

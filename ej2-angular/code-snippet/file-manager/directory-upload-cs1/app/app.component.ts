@@ -9,15 +9,15 @@ import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='file' #fileObj [ajaxSettings]='ajaxSettings' (created)="onCreated($event)">
     </ejs-filemanager>`
 })
 
 export class AppComponent{
     @ViewChild('fileObj')
-    public fileObj: FileManagerComponent;
-    public ajaxSettings: object;
+    public fileObj?: FileManagerComponent;
+    public ajaxSettings?: object;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {
@@ -31,7 +31,7 @@ export class AppComponent{
     public items: ItemModel[] = [{ text: 'Folder' }, { text: 'Files' }];
 
   onCreated(args: any) {
-    let customBtn: HTMLElement = document.getElementById('file_tb_upload');
+    let customBtn: HTMLElement = document.getElementById('file_tb_upload') as HTMLElement;
     customBtn.onclick = (e) => {
       e.stopPropagation();
     };
@@ -40,14 +40,14 @@ export class AppComponent{
         items: this.items,
         select: (args) => {
           if (args.item.text === 'Folder') {
-            this.fileObj.uploadSettings.directoryUpload = true;
+            (this.fileObj as FileManagerComponent).uploadSettings.directoryUpload = true;
           } else {
-            this.fileObj.uploadSettings.directoryUpload = false;
+            (this.fileObj as FileManagerComponent).uploadSettings.directoryUpload = false;
           }
           setTimeout(function () {
             let uploadBtn: HTMLElement = document.querySelector(
               '.e-file-select-wrap button'
-            );
+            ) as HTMLElement;
             uploadBtn.click();
           }, 100);
         },

@@ -29,13 +29,13 @@ import { L10n } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('element') editObj: InPlaceEditorComponent;
+  @ViewChild('element') editObj?: InPlaceEditorComponent;
   public model: object = { placeholder: 'Enter some text' };
   public editableOnData: string[] = ['Click', 'DblClick', 'EditIconClick'];
   public onChange(e: ChangeEventArgs): void {
     let editType: EditableType = e.itemData.value as EditableType;
-    this.editObj.editableOn = editType;
-    this.editObj.dataBind();
+    (this.editObj as InPlaceEditorComponent).editableOn = editType;
+    this.editObj?.dataBind();
   }
   ngOnInit(): void {
     L10n.load({

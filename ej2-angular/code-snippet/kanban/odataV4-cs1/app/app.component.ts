@@ -19,7 +19,7 @@ export class AppComponent {
         contentField: 'ContactName',
         headerField: 'SupplierID'
     };
-    private dataManager: DataManager = new DataManager({
+    public dataManager: DataManager = new DataManager({
        url: 'https://services.odata.org/v4/northwind/northwind.svc/Suppliers',
        adaptor: new ODataV4Adaptor,
     });

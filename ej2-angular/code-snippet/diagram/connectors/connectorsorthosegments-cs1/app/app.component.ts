@@ -15,10 +15,10 @@ import { DiagramComponent, Diagram, NodeModel, ConnectorModel, OrthogonalSegment
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public sourcePoint: PointModel;
-    public targetPoint: PointModel;
-    public segments: OrthogonalSegmentModel;
+    public diagram?: DiagramComponent;
+    public sourcePoint?: PointModel;
+    public targetPoint?: PointModel;
+    public segments?: OrthogonalSegmentModel;
     ngOnInit(): void {
         this.sourcePoint = { x: 100, y: 100 };
         this.targetPoint = { x: 200, y: 200 };
@@ -35,7 +35,7 @@ export class AppComponent {
             }
         ]
     }
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',

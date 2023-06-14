@@ -38,53 +38,53 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     onCreated(): void {
-        this.documentEditor.editor.insertTable(2, 2);
+        (this.documentEditor as DocumentEditorComponent).editor.insertTable(2, 2);
     }
 
     public toolbarButtonClick(arg: any) {
         switch (arg.item.id) {
             case 'table':
                 //Insert table API to add table
-                this.documentEditor.editor.insertTable(3, 2);
+                (this.documentEditor as DocumentEditorComponent).editor.insertTable(3, 2);
                 break;
             case 'insert_above':
                 //Insert the specified number of rows to the table above to the row at cursor position
-                this.documentEditor.editor.insertRow(true, 2);
+                (this.documentEditor as DocumentEditorComponent).editor.insertRow(true, 2);
                 break;
             case 'insert_below':
                 //Insert the specified number of rows to the table below to the row at cursor position
-                this.documentEditor.editor.insertRow();
+                (this.documentEditor as DocumentEditorComponent).editor.insertRow();
                 break;
             case 'insert_left':
                 //Insert the specified number of columns to the table left to the column at cursor position
-                this.documentEditor.editor.insertColumn(true, 2);
+                (this.documentEditor as DocumentEditorComponent).editor.insertColumn(true, 2);
                 break;
             case 'insert_right':
                 //Insert the specified number of columns to the table right to the column at cursor position
-                this.documentEditor.editor.insertColumn();
+                (this.documentEditor as DocumentEditorComponent).editor.insertColumn();
                 break;
             case 'delete_table':
                 //Delete the entire table
-                this.documentEditor.editor.deleteTable();
+                (this.documentEditor as DocumentEditorComponent).editor.deleteTable();
                 break;
             case 'delete_row':
                 //Delete the selected number of rows
-                this.documentEditor.editor.deleteRow();
+                (this.documentEditor as DocumentEditorComponent).editor.deleteRow();
                 break;
             case 'delete_column':
                 //Delete the selected number of columns
-                this.documentEditor.editor.deleteColumn();
+                (this.documentEditor as DocumentEditorComponent).editor.deleteColumn();
                 break;
             case 'merge_cell':
                 //Merge the selected cells into one (both vertically and horizontally)
-                this.documentEditor.editor.mergeCells();
+                (this.documentEditor as DocumentEditorComponent).editor.mergeCells();
                 break;
             case 'table_dialog':
                 //Opens insert table dialog
-                this.documentEditor.showDialog('Table');
+                (this.documentEditor as DocumentEditorComponent).showDialog('Table');
                 break;
         }
     }

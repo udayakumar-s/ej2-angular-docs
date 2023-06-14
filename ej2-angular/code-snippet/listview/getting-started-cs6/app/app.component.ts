@@ -2,6 +2,7 @@
 
 
 import { Component, ViewChild } from "@angular/core";
+import { ListViewComponent } from "@syncfusion/ej2-angular-lists";
 import { enableRipple } from "@syncfusion/ej2-base";
 import { DataManager, Query, ODataV4Adaptor } from "@syncfusion/ej2-data";
 enableRipple(true);
@@ -37,18 +38,19 @@ export class AppComponent {
 
  public fields: Object = { text: "text", id: "id" };
    @ViewChild('list')
-   listObj: ListViewComponent;
+   listObj?: ListViewComponent;
    @ViewChild('textbox')textboxEle: any;
-    onkeyup(event){
+Ascending: any;
+    onkeyup(event: any){
       let value = this.textboxEle.nativeElement.value;
       let data = new DataManager(this.listData).executeLocal(new Query().where("text", "startswith", value, true));
-  if (!value) {
-    this.listObj.dataSource = this.listData.slice();
-  } else {
-    this.listObj.dataSource = data;
-  }
-  this.listObj.dataBind();
+    if (!value) {
+      (this.listObj as ListViewComponent).dataSource = (this.listData as any).slice();
+    } else {
+      ((this.listObj as ListViewComponent).dataSource as any) = data;
     }
+    this.listObj?.dataBind();
+  }
 }
 
 

@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, FieldListService, DataSourceSettings } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -12,15 +12,15 @@ import { Pivot_Data } from './datasource.ts';
   width=width (dataBound)='ondataBound()' showFieldList='true'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
 
     @ViewChild('pivotview',{static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     ondataBound(): void {
-        if (this.pivotGridObj && this.pivotGridObj.dataSourceSettings.values.length === 0) {
-            (this.pivotGridObj.pivotFieldListModule.dialogRenderer as any).onShowFieldList();
+        if (this.pivotGridObj && (this.pivotGridObj?.dataSourceSettings as DataSourceSettings).values.length === 0) {
+            (this.pivotGridObj?.pivotFieldListModule.dialogRenderer as any).onShowFieldList();
         }
     }
 
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
         };
     }
 }

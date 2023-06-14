@@ -16,8 +16,8 @@ import { formatData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public formatoption:Object;
+    public data?: Object[];
+    public formatoption?:Object;
 
     ngOnInit(): void {
         this.data = formatData;

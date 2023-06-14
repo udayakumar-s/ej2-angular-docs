@@ -21,14 +21,14 @@ export class AppComponent {
                     height: 50, style: { fontSize: 11 },
                 },
                 lanes: [
-                  {
-                       id: 'stackCanvas1',
+                    {
+                        id: 'stackCanvas1',
                         height: 100,
                         // customization of lane header
-                         header: {
-                        annotation: { content: 'Online Consumer' }, width: 30,
-                        style: { fontSize: 11 },style: { fill: 'red' }
-                    },
+                        header: {
+                            annotation: { content: 'Online Consumer' }, width: 30,
+                            style: { fontSize: 11, fill: 'red' },
+                        },
                     },
                 ],
                 phases: [{
@@ -44,11 +44,11 @@ export class AppComponent {
         },
       ]
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-     public created(args: Object): void {
-         let lane = [{id:"lane1",height:100,}];
-        this.diagram.addLanes(this.diagram.nodes[0],lane,1);
-        this.diagram.dataBind();
+    public diagram?: DiagramComponent;
+    public created(args: Object): void {
+        let lane = [{id:"lane1",height:100,}];
+        (this.diagram as Diagram).addLanes((this.diagram as Diagram).nodes[0],lane,1);
+        (this.diagram as Diagram).dataBind();
     }
 }
 

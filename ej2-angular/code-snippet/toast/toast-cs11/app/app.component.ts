@@ -1,7 +1,4 @@
 
-
-
-
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
@@ -21,23 +18,22 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') public element: any;
     public position = { X: 'Right', Y: 'Bottom' };
 
 
-    onBeforeOpen(e) {
+    onBeforeOpen(e: any) {
       let audio: HTMLAudioElement = new Audio('https://drive.google.com/uc?export=download&id=1M95VOpto1cQ4FQHzNBaLf0WFQglrtWi7');
      audio.play();
     }
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
     toastShow() {
-          setTimeout(
-        () => {
+        setTimeout(() => {
             this.element.show();
-               }
         }, 0);
+    }
     ngAfterViewInit() {
     }
 }

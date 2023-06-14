@@ -21,13 +21,13 @@ import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, 
 })
 
 export class AppComponent implements OnInit {
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-    public editSettings: EditSettingsModel;
-    public pageOptions: PageSettingsModel;
-    public toolbar: ToolbarItems[];
-    public ddElem: HTMLElement;
-    public multiSelectObj: MultiSelect;
+    public data?: object[];
+    @ViewChild('grid') public grid?: GridComponent;
+    public editSettings?: EditSettingsModel;
+    public pageOptions?: PageSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public ddElem?: HTMLElement;
+    public multiSelectObj?: MultiSelect;
     public multiselectDatasource = [
         { ShipCity: 'Reims', Id: '1' },
         { ShipCity: 'Münster', Id: '2' },
@@ -35,37 +35,38 @@ export class AppComponent implements OnInit {
         { ShipCity: 'Lyon', Id: '4' },
         { ShipCity: 'Charleroi', Id: '5' }
     ];
-    public dsParams: IEditCell;
+    public dsParams?: IEditCell;
+    public orderidrules?: any;
 
     public createShipCityFn = () => {
-        this.ddElem = document.createElement('input');
-        return this.ddElem;
+        (this as any).ddElem = document.createElement('input');
+        return (this as any).ddElem;
     };
     public readShipCityFn = () => {
-        return this.multiSelectObj.value.join(',');
+        return this.multiSelectObj?.value.join(',');
     };
     public destroyShipCityFn = () => {
-        this.multiSelectObj.destroy();
+        this.multiSelectObj?.destroy();
     };
-    public writeShipCityFn = (args) => {
-        let multiSelectVal = args.rowData[args.column.field]
-            ? args.rowData[args.column.field].split(',')
+    public writeShipCityFn = (args: any) => {
+        let multiSelectVal = (args as any).rowData[(args as any).column.field]
+            ? (args as any).rowData[(args as any).column.field].split(',')
             : [];
-        this.multiSelectObj = new MultiSelect({
+            this.multiSelectObj? = new MultiSelect({
         value: multiSelectVal,
-        dataSource: this.multiselectDatasource,
+        dataSource: (this as any).multiselectDatasource,
         fields: { value: 'ShipCity', text: 'ShipCity' },
         floatLabelType: 'Never',
         mode: 'Box'
         });
-        this.multiSelectObj.appendTo(this.ddElem);
+        this.multiSelectObj?.appendTo((this as any).ddElem);
     };
 
     ngOnInit(): void {
         this.data = purchaseData;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+        (this as any).editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.pageOptions = { pageSizes: true, pageSize: 8 };
+        (this as any).pageOptions = { pageSizes: true, pageSize: 8 };
         this.dsParams = {
             create: this.createShipCityFn,
             read: this.readShipCityFn,

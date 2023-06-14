@@ -5,8 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { ILegendRenderEventArgs } from '@syncfusion/ej2-angular-heatmap';
 @Component({
     selector: 'app-container',
-    template:
-       `<ejs-heatmap id='container' style="display:block;" [dataSource]='dataSource' [xAxis]='xAxis'  [yAxis]='yAxis'
+    template: `<ejs-heatmap id='container' style="display:block;" [dataSource]='dataSource' [xAxis]='xAxis'  [yAxis]='yAxis'
        [titleSettings]='titleSettings' [paletteSettings]='paletteSettings' [legendSettings]='legendSettings' [cellSettings]='cellSettings' (legendRender)='legendRender($event)'>
         </ejs-heatmap>`,
     encapsulation: ViewEncapsulation.None
@@ -26,11 +25,12 @@ dataSource: Object[] = [
     [25000, 25000, 10000, 12000, 78000, 14000],
     [25000, 56000, 55000, 58000, 12000, 82000],
     [74000, 33000, 88000, 23000, 86000, 59000]];
+legendSettings: any;
 
-    public legendRender(args: ILegendRenderEventArgs): void {
+    public legendRender(args: ILegendRenderEventArgs | any): void {
         if(args.text=='25,000' || args.text=='50,000'|| args.text=='99,000'){
             args.text = args.text.replace(/,/, "");
-            args.text = `${parseInt(args.text/1000)}` + "k "+"$";
+            args.text = `${parseInt((args.text/1000 as any))}` + "k "+"$";
         } else {
             args.cancel=true;
         }

@@ -21,7 +21,7 @@ import { DetailRowService, GridModel, GridComponent } from '@syncfusion/ej2-angu
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
+    public pData?: object[];
     public childGrid: GridModel = {
         dataSource: data,
         queryString: 'EmployeeID',
@@ -33,18 +33,18 @@ export class AppComponent implements OnInit {
         ],
     };
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.pData = employeeData;
     }
 
     expand(): void {
-        this.grid.detailRowModule.expandAll();
+        (this.grid as any).detailRowModule.expandAll();
     }
 
     collapse(): void {
-        this.grid.detailRowModule.collapseAll();
+        (this.grid as any).detailRowModule.collapseAll();
     }
 
 }

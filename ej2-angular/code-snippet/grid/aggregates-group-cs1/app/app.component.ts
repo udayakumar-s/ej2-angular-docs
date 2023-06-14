@@ -6,11 +6,11 @@ import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.template.html'
+    templateUrl: 'app.template.html'
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     public groupOptions: GroupSettingsModel = { showDropArea: false, columns: ['ShipCountry'] };
 
     ngOnInit(): void {

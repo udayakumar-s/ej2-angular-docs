@@ -14,7 +14,7 @@ import { scheduleData } from './datasource';
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public eventSettings: EventSettingsModel = { dataSource: scheduleData };
     editor(): void {
@@ -22,7 +22,7 @@ export class AppComponent {
         startTime: new Date(2018, 1, 15, 10, 0),
         endTime: new Date(2018, 1, 15, 11, 0),
     };
-    this.scheduleObj.openEditor(cellData,'Add');
+    this.scheduleObj?.openEditor(cellData,'Add');
     }
     eventEditor(): void {
     let eventData: Object ={
@@ -31,7 +31,7 @@ export class AppComponent {
         StartTime: new Date(2018, 1, 14, 13, 0),
         EndTime: new Date(2018, 1, 14, 14, 30)
     };
-    this.scheduleObj.openEditor(eventData,'Save');
+    this.scheduleObj?.openEditor(eventData,'Save');
     }
 }
 

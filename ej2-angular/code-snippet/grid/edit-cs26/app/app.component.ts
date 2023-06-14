@@ -22,18 +22,18 @@ import { NumericTextBox } from '@syncfusion/ej2-inputs';
 })
 export class AppComponent implements OnInit {
   @ViewChild('grid')
-  public grid: GridComponent;
-  public data: Object[];
-  public editSettings: EditSettingsModel;
-  public toolbar: ToolbarItems[];
-  public priceParams: IEditCell;
-  public stockParams: IEditCell;
+  public grid?: GridComponent;
+  public data?: Object[];
+  public editSettings?: EditSettingsModel;
+  public toolbar?: ToolbarItems[];
+  public priceParams?: IEditCell;
+  public stockParams?: IEditCell;
 
-  public priceElem: HTMLElement;
-  public priceObj: NumericTextBox;
+  public priceElem?: HTMLElement;
+  public priceObj?: NumericTextBox;
 
-  public stockElem: HTMLElement;
-  public stockObj: NumericTextBox;
+  public stockElem?: HTMLElement;
+  public stockObj?: NumericTextBox;
 
   ngOnInit(): void {
     this.data = productData;
@@ -43,52 +43,52 @@ export class AppComponent implements OnInit {
       allowDeleting: true
     };
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    this.priceParams = {
+    (this as any).priceParams = {
       create: () => {
-        this.priceElem = document.createElement('input');
-        return this.priceElem;
+        (this as any).priceElem = document.createElement('input');
+        return (this as any).priceElem;
       },
       read: () => {
-        return this.priceObj.value;
+        return this.priceObj?.value;
       },
       destroy: () => {
-        this.priceObj.destroy();
+        this.priceObj?.destroy();
       },
-      write: args => {
-        this.priceObj = new NumericTextBox({
-          value: args.rowData[args.column.field],
-          change: function(args) {
-            var formEle = this.grid.element.querySelector('form')
+      write: (args: any) => {
+        this.priceObj? = new NumericTextBox({
+          value: (args as any).rowData[(args as any).column.field],
+          change: ((args: any) => {
+            var formEle = this.grid?.element.querySelector('form')
               .ej2_instances[0];
             var totalCostFieldEle = formEle.getInputElement('TotalCost');
-            totalCostFieldEle.value = this.priceObj.value * this.stockObj.value;
-          }.bind(this)
+            totalCostFieldEle.value = this.priceObj?.value * (this as any).stockObj.value;
+          }).bind(this)
         });
-        this.priceObj.appendTo(this.priceElem);
+        this.priceObj?.appendTo((this as any).priceElem);
       }
     };
-    this.stockParams = {
+    (this as any).stockParams = {
       create: () => {
-        this.stockElem = document.createElement('input');
-        return this.stockElem;
+        (this as any).stockElem = document.createElement('input');
+        return (this as any).stockElem;
       },
       read: () => {
-        return this.stockObj.value;
+        return (this as any).stockObj.value;
       },
       destroy: () => {
-        this.stockObj.destroy();
+        (this as any).stockObj.destroy();
       },
-      write: args => {
+      write: (args: any) => {
         this.stockObj = new NumericTextBox({
-          value: args.rowData[args.column.field],
-          change: function(args) {
-            var formEle = this.grid.element.querySelector('form')
+          value: (args as any).rowData[(args as any).column.field],
+          change: ((args: any) => {
+            var formEle = (this.grid as any).element.querySelector('form')
               .ej2_instances[0];
             var totalCostFieldEle = formEle.getInputElement('TotalCost');
-            totalCostFieldEle.value = this.priceObj.value * this.stockObj.value;
-          }.bind(this)
+            totalCostFieldEle.value = this.priceObj?.value * (this as any).stockObj.value;
+          }).bind(this)
         });
-        this.stockObj.appendTo(this.stockElem);
+        (this as any).stockObj.appendTo((this as any).stockElem);
       }
     };
   }

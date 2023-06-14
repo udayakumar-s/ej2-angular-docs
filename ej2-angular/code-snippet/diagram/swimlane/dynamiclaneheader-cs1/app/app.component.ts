@@ -27,7 +27,7 @@ export class AppComponent {
                         // customization of lane header
                          header: {
                         annotation: { content: 'Online Consumer' }, width: 30,
-                        style: { fontSize: 11 },style: { fill: 'red' }
+                        style: { fontSize: 11, fill: 'red' }
                     },
                     },
                 ],
@@ -44,11 +44,11 @@ export class AppComponent {
         },
       ]
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-     public created(args: Object): void {
+    public diagram?: DiagramComponent;
+    public created(args: Object): void {
         // Update the connector properties at the run time
-        this.diagram.nodes[0].shape.lanes[0].header.style.fill = 'blue';
-        this.diagram.dataBind();
+        ((this.diagram as Diagram).nodes[0].shape as any).lanes[0].header.style.fill = 'blue';
+        (this.diagram as Diagram).dataBind();
     }
 }
 

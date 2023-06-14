@@ -1,13 +1,10 @@
 
-
-
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { Maps } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-maps id='rn-container' >
+    template: `<ejs-maps id='rn-container' >
     <e-layers>
     <e-layer  [shapeData]= 'shapeData'  [shapePropertyPath]= 'shapePropertyPath' [shapeDataPath]= 'shapeDataPath' [dataSource] = 'dataSource' [shapeSettings] = 'shapeSettings'></e-layer>
     </e-layers>
@@ -15,11 +12,11 @@ import { world_map } from 'world-map.ts';
 })
 
 export class AppComponent implements OnInit {
-    public dataSource: object[];
-    public shapeData: object;
-    public shapePropertyPath: string;
-    public shapeDataPath: string;
-    public shapeSettings: object;
+    public dataSource?: object[];
+    public shapeData?: object;
+    public shapePropertyPath?: string;
+    public shapeDataPath?: string;
+    public shapeSettings?: object;
     ngOnInit(): void {
         this.dataSource = [{  "Country": "China", "Membership": "Permanent"},
             {"Country": "France","Membership": "Permanent" },

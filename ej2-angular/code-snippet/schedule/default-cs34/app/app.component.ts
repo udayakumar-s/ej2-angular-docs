@@ -13,9 +13,9 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent {
     @ViewChild("scheduleObj")
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     @ViewChild("deleteButton")
-    public deleteButton: ButtonComponent;
+    public deleteButton?: ButtonComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public scheduleViews: View[] = ['Day', 'Week', 'WorkWeek', 'Month'];
     public eventSettings: EventSettingsModel = {
@@ -45,8 +45,8 @@ export class AppComponent {
             IsAllDay: false,
             RecurrenceRule: 'FREQ=DAILY;INTERVAL=1;COUNT=2'
         }];
-        this.scheduleObj.deleteEvent(scheduleData,'DeleteSeries');
-        this.deleteButton.element.setAttribute('disabled','true');
+        this.scheduleObj?.deleteEvent(scheduleData,'DeleteSeries');
+        this.deleteButton?.element.setAttribute('disabled','true');
     }
 }
 

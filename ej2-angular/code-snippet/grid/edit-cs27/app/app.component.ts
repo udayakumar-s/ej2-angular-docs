@@ -19,10 +19,10 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public isAddable: boolean = true;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public isAddable?: boolean = true;
 
     ngOnInit(): void {
         this.data = data;
@@ -30,25 +30,25 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
 
-    actionBegin(args) {
-        if (args.requestType == 'beginEdit') {
-            if (args.rowData['Role'].toLowerCase() == 'employee') {
-                args.cancel = true;
+    actionBegin(args: any) {
+        if ((args as any).requestType == 'beginEdit') {
+            if ((args as any).rowData['Role'].toLowerCase() == 'employee') {
+                (args as any).cancel = true;
             }
         }
-        if (args.requestType == 'delete') {
-            if (args.data[0]['Role'].toLowerCase() == 'employee') {
-                args.cancel = true;
+        if ((args as any).requestType == 'delete') {
+            if ((args as any).data[0]['Role'].toLowerCase() == 'employee') {
+                (args as any).cancel = true;
             }
         }
-        if (args.requestType == 'add') {
+        if ((args as any).requestType == 'add') {
             if (!this.isAddable) {
-                args.cancel = true;
+                (args as any).cancel = true;
             }
         }
     }
-    btnClick(args) {
-        args.target.innerText == 'Grid is Addable' ? (args.target.innerText = 'Grid is Not Addable') : (args.target.innerText = 'Grid is Addable');
+    btnClick(args: any) {
+        (args as any).target.innerText == 'Grid is Addable' ? ((args as any).target.innerText = 'Grid is Not Addable') : ((args as any).target.innerText = 'Grid is Addable');
         this.isAddable = !this.isAddable;
     }
 }

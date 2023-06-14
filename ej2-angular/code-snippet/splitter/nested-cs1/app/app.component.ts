@@ -53,7 +53,7 @@ export class AppComponent {
     constructor() {
     }
 
-    @ViewChild('splitterInstance') splitterObj: SplitterComponent;
+    @ViewChild('splitterInstance') splitterObj?: SplitterComponent;
     public onCreated () {
         let splitterObj1 = new Splitter({
             height: '310px',

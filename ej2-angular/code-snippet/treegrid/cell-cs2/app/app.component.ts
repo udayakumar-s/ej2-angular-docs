@@ -2,7 +2,6 @@
 
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import {  QueryCellInfoEventArgs } from '@syncfusion/ej2-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -18,12 +17,12 @@ import {  QueryCellInfoEventArgs } from '@syncfusion/ej2-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = sampleData;
     }
- customizeCell(args: QueryCellInfoEventArgs) {
+ customizeCell(args: any) {
     if (args.column.field === 'progress' && +args.cell.innerHTML > 90 && +args.cell.innerHTML <= 100){
         args.cell.setAttribute('style', 'background-color:#336c12;color:white;');
     } else if (+args.cell.innerHTML > 20 && args.column.field === 'progress') {

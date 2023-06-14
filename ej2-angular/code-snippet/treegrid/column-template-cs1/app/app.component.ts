@@ -1,47 +1,63 @@
 
 
-import { Component, OnInit,ViewChild,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { textdata, getSparkData } from './datasource';;
-import { TreeGridComponent,ResizeService} from '@syncfusion/ej2-angular-treegrid';
-import { EmitType } from '@syncfusion/ej2-base';
-import { Sparkline, ISparklineLoadEventArgs, SparklineTheme } from '@syncfusion/ej2-charts';
-import { RowDataBoundEventArgs, getObject } from '@syncfusion/ej2-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { sampleData } from './datasource';
+import { getValue, isNullOrUndefined } from '@syncfusion/ej2-base';
+import { BeforeOpenCloseEventArgs } from '@syncfusion/ej2-inputs';
+import { MenuEventArgs } from '@syncfusion/ej2-navigations';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' width='auto' childMapping='Children' [treeColumnIndex]='1' >
+    template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' [allowPaging]='true' pageSettings='pager'
+    [contextMenuItems]='contextMenuItems' [treeColumnIndex]='1'
+    (contextMenuClick)='contextMenuClick($event)' (contextMenuOpen)='contextMenuOpen($event)'  childMapping='subtasks'>
         <e-columns>
-            <e-column field='EmpID' headerText='Employee ID' width='85' ></e-column>
-            <e-column field='Name' headerText='Name' width='95'></e-column>
-            <e-column field='DOB' headerText='DOB' width='85' format="yMd" textAlign='Right'></e-column>
-            <e-column  headerText='Tax per annum' width='90' textAlign='Center'>
-                <ng-template #template let-data>
-                    <ejs-sparkline id='treegridline{{data.EmployeeID}}' [dataSource]='getSparkLine(data.EmployeeID)' height='50px' width='150px' lineWidth='2' valueType='Numeric' fill='#3C78EF' (load)="sparkload($event)"></ejs-sparkline>
-                </ng-template>
-            </e-column>
+                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
+                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=120></e-column>
+                    <e-column field='duration' headerText='Duration' textAlign='Right' width=110></e-column>
         </e-columns>
-    </ejs-treegrid>`,
-    providers: [ResizeService ],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA]
+                </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public data: Object[] = [];
-    public sparkData: Object[] = [];
 
+    public data?: Object[];
+    public pager?: Object;
+    public editSettings?: Object;
+    public contextMenuItems?: Object[];
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
-        this.data = textdata;
-        this.sparkData = getSparkData('line' + getObject('EmployeeID',textdata[0]));
+        this.data = sampleData;
+        this.editSettings = {allowEditing: true, allowAdding: true, allowDeleting: true, mode:"Row"};
+        this.contextMenuItems =  [
+                {text: 'Collapse the Row', target: '.e-content', id: 'collapserow'},
+                {text: 'Expand the Row', target: '.e-content', id: 'expandrow'}
+            ];
+        this.pager = { pageSize: 8 }
     }
-    getSparkLine (val: number) {
-        return getSparkData('line', val);
+    contextMenuClick(args?: MenuEventArgs): void {
+        (this.treeGridObj as TreeGridComponent).getColumnByField('taskID');
+        if ((args as MenuEventArgs ).item.id === 'collapserow') {
+            (this.treeGridObj as TreeGridComponent).collapseRow(<HTMLTableRowElement>((this.treeGridObj as TreeGridComponent).getSelectedRows()[0]));
+        } else {
+            (this.treeGridObj as TreeGridComponent).expandRow(<HTMLTableRowElement>((this.treeGridObj as TreeGridComponent).getSelectedRows()[0]));
+            }
     }
-
-     sparkload: EmitType<ISparklineLoadEventArgs> = (args: ISparklineLoadEventArgs) => {
-        let theme: string = location.hash.split('/')[1];
-        theme = theme ? theme : 'Material';
-        args.sparkline.theme = <SparklineTheme>(theme.charAt(0).toUpperCase() + theme.slice(1));
+    contextMenuOpen(arg?: BeforeOpenCloseEventArgs) : void {
+        let elem: Element = (arg as BeforeOpenCloseEventArgs ).event.target as Element;
+        let uid: string = (elem.closest('.e-row') as Element).getAttribute('data-uid') as string;
+        if (isNullOrUndefined(getValue('hasChildRecords', (this.treeGridObj as TreeGridComponent).grid.getRowObjectFromUID(uid).data))) {
+           ( arg as BeforeOpenCloseEventArgs ).cancel = true;
+        } else {
+            let flag: boolean = getValue('expanded', (this.treeGridObj as TreeGridComponent).grid.getRowObjectFromUID(uid).data);
+            let val: string = flag ? 'none' : 'block';
+            document.querySelectorAll('li#expandrow')[0].setAttribute('style', 'display: ' + val + ';');
+            val = !flag ? 'none' : 'block';
+            document.querySelectorAll('li#collapserow')[0].setAttribute('style', 'display: ' + val + ';');
+        }
     }
 }
 

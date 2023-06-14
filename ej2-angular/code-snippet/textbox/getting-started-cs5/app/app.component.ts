@@ -14,12 +14,12 @@ import { Input } from '@syncfusion/ej2-inputs';
 
 export class AppComponent {
     ngOnInit() {
-        let element: HTMLInputElement = document.getElementById('textbox');
+        let element: HTMLInputElement = document.getElementById('textbox') as HTMLInputElement;
         Input.createInput ({
             element: element
         });
 
-        let element1: HTMLInputElement = document.getElementById('textbox-icon');
+        let element1: HTMLInputElement = document.getElementById('textbox-icon') as HTMLInputElement;
         Input.createInput ({
             element: element1,
             buttons: ['e-input-group-icon e-input-down'],

@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, IconShapeModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -17,12 +17,12 @@ import { DiagramComponent, Diagram, NodeModel, IconShapeModel } from '@syncfusio
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
     public group: NodeModel[] = [{
@@ -31,7 +31,7 @@ export class AppComponent {
         }]
     public created(args: Object): void {
         // Add the group into the diagram
-        this.diagram.add(this.group);
+        (this.diagram as DiagramComponent).add(this.group as any);
     }
 }
 

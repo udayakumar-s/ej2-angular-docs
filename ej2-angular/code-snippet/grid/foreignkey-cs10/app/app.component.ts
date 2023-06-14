@@ -1,5 +1,4 @@
 
-
 import { Component, OnInit } from '@angular/core';
 import { ForeignKeyService, EditSettingsModel, ToolbarItems, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { data, employeeData } from './datasource';
@@ -19,10 +18,10 @@ import { data, employeeData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public employeeData: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public employeeData?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;

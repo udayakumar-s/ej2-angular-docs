@@ -16,17 +16,17 @@ To use excel export, inject **ExcelExportService** in the provider section of **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs10/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs10/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs10/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs10/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs10/app/main.ts %}
+{% include samples/grid/excel-exporting-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs10" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs10" %}
 
 ## Show spinner while exporting
 
@@ -40,17 +40,17 @@ In the below demo, we have rendered the default spinner component when exporting
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs1/app/app.component.ts %}
+{% include samples/grid/exporting-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs1/app/app.module.ts %}
+{% include samples/grid/exporting-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs1/app/main.ts %}
+{% include samples/grid/exporting-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs1" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs1" %}
 
 ## Custom data source
 
@@ -59,17 +59,17 @@ To export data dynamically, define the [`dataSource`](https://ej2.syncfusion.com
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs11/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs11/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs11/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs11/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs11/app/main.ts %}
+{% include samples/grid/excel-exporting-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs11" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs11" %}
 
 ## Passing additional parameters to the server when exporting
 
@@ -79,17 +79,17 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs2/app/app.component.ts %}
+{% include samples/grid/exporting-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs2/app/app.module.ts %}
+{% include samples/grid/exporting-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs2/app/main.ts %}
+{% include samples/grid/exporting-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs2" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs2" %}
 
 ## See Also
 

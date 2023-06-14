@@ -55,11 +55,11 @@ const instance: Internationalization = new Internationalization();
             </tr>
         </ng-template>
     </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = employeeData;

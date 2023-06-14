@@ -18,20 +18,20 @@ In the following example, Employee Information with Employee Photo is presented 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs9/app/app.component.ts %}
+{% include samples/grid/custom-cell-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.html" %}
-{% include code-snippet/grid/custom-cell-cs9/app/app.component.html %}
+{% include samples/grid/custom-cell-cs9/app/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs9/app/app.module.ts %}
+{% include samples/grid/custom-cell-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs9/app/main.ts %}
+{% include samples/grid/custom-cell-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs9" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs9" %}
 
 ## Row template with formatting
 
@@ -45,17 +45,17 @@ Here is an example of how to define a global formatting function for a date colu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs10/app/app.component.ts %}
+{% include samples/grid/custom-cell-cs10/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs10/app/app.module.ts %}
+{% include samples/grid/custom-cell-cs10/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs10/app/main.ts %}
+{% include samples/grid/custom-cell-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs10" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs10" %}
 
 
 >When using the `rowTemplate` feature in Syncfusion Grid, keep in mind that any formatting applied to columns using the `columns.format` property will not work inside the template.
@@ -70,17 +70,17 @@ Here is an example that demonstrates rendering Syncfusion controls within a row 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-template-cs3/app/app.component.ts %}
+{% include samples/grid/row-template-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-template-cs3/app/app.module.ts %}
+{% include samples/grid/row-template-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-template-cs3/app/main.ts %}
+{% include samples/grid/row-template-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/row-template-cs3" %}
+{% previewsample "page.domainurl/samples/grid/row-template-cs3" %}
 
 ## Limitations
 

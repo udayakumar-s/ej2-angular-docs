@@ -18,7 +18,7 @@ import { SelectedEventArgs } from '@syncfusion/ej2-inputs';
 })
 export class AppComponent {
   @ViewChild('scheduleObj')
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2018, 1, 15);
   public scheduleViews: View[] = ['Day', 'Week', 'WorkWeek', 'Month', 'Agenda'];
   public eventSettings: EventSettingsModel = { dataSource: scheduleData };
@@ -28,7 +28,7 @@ export class AppComponent {
   public buttons: Object = { browse: 'Choose file' };
 
   public onSelected(args: SelectedEventArgs): void {
-    this.scheduleObj.importICalendar((<HTMLInputElement>args.event.target).files[0]);
+    this.scheduleObj?.importICalendar(((<HTMLInputElement>args.event.target) as any).files[0]);
   }
  }
 

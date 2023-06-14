@@ -2,6 +2,7 @@
 
 
 import { Component } from '@angular/core';
+import { SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'my-app',
@@ -17,7 +18,7 @@ import { Component } from '@angular/core';
             (tooltipChange)='tooltipChangeHandler($event)' (renderingTicks)='renderingTicksHandler($event)'></ejs-slider>
         </div>
     </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {

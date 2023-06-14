@@ -3,7 +3,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Internationalization } from '@syncfusion/ej2-base';
 import { EventSettingsModel, DayService, WeekService, AgendaService, TimelineViewsService, TimelineMonthService } from '@syncfusion/ej2-angular-schedule';
-import { scheduleData } from './datasource.ts';
+import { scheduleData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [DayService, WeekService, AgendaService, TimelineViewsService, TimelineMonthService],

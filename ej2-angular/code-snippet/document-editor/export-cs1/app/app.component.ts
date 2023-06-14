@@ -16,11 +16,11 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public saveAsSfdt(): void {
         //Download the document as SFDT.
-        this.documentEditor.save('sample', 'Sfdt');
+        (this.documentEditor as DocumentEditorComponent).save('sample', 'Sfdt');
     }
 }
 

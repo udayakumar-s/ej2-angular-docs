@@ -14,11 +14,11 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public lineStyle: Object;
-    public labelStyle: Object;
-    public majorTicks: Object;
-    public minorTicks: Object;
-    public pointers: Object[];
+    public lineStyle?: Object;
+    public labelStyle?: Object;
+    public majorTicks?: Object;
+    public minorTicks?: Object;
+    public pointers?: Object[];
     public pointerRadialGradient : Object = {
         radius: '50%',
         innerPosition: { x: '50%', y: '50%' },

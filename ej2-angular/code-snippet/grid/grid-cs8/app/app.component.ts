@@ -18,20 +18,19 @@ import { SortSettingsModel } from '@syncfusion/ej2-angular-grids';
             <e-column field='ShipCountry' headerText='Ship Country' [visible]='false' width='150'></e-column>
             <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
         </e-columns>
-    </ejs-grid>
-                `,
+    </ejs-grid>`,
     providers: [SortService, ColumnMenuService, PageService]
 })
 export class AppComponent implements OnInit {
 
     @ViewChild('grid')
-    public grid: GridComponent;
-    public data: object[];
-    public columnMenuItems: any = [{ text: 'Clear Sorting', id: 'gridclearsorting' }];
-    public sortSettings: SortSettingsModel =  {columns: [{direction: 'Ascending', field: 'OrderID'}]};
+    public grid?: GridComponent;
+    public data?: object[];
+    public columnMenuItems?: any = [{ text: 'Clear Sorting', id: 'gridclearsorting' }];
+    public sortSettings?: SortSettingsModel =  {columns: [{direction: 'Ascending', field: 'OrderID'}]};
     public columnMenuClick(args: MenuEventArgs) {
-        if (args.item.id === 'gridclearsorting') {
-            this.grid.clearSorting();
+        if ((args as any).item.id === 'gridclearsorting') {
+            (this.grid as any).clearSorting();
         }
     }
     ngOnInit(): void {

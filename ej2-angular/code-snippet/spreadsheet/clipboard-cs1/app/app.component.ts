@@ -28,7 +28,7 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     priceData: object[] = dataSource1;
     public items: ItemModel[] = [
@@ -43,15 +43,15 @@ export class AppComponent {
         }];
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
     }
     public itemSelect(args: MenuEventArgs) {
     if (args.item.text === 'Copy')
-      this.spreadsheetObj.copy();
+      this.spreadsheetObj!.copy();
     if (args.item.text === 'Cut')
-      this.spreadsheetObj.cut();
+      this.spreadsheetObj!.cut();
     if (args.item.text === 'Paste')
-      this.spreadsheetObj.paste();
+      this.spreadsheetObj!.paste();
   }
 }
 

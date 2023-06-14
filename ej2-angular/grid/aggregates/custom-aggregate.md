@@ -20,19 +20,19 @@ The custom aggregate function will be invoked with different arguments for Total
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/aggregates-custom-cs1/app/app.component.ts %}
+{% include samples/grid/aggregates-custom-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-custom-cs1/app/app.template.html %}
+{% include samples/grid/aggregates-custom-cs1/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-custom-cs1/app/app.module.ts %}
+{% include samples/grid/aggregates-custom-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/aggregates-custom-cs1/app/main.ts %}
+{% include samples/grid/aggregates-custom-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-custom-cs1" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-custom-cs1" %}
 
 > To access the custom aggregate value inside template, use the key as **Custom**

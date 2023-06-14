@@ -18,9 +18,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppComponent implements OnInit {
-    public border: Object;
-    public margin: Object;
-    public isMargin: boolean;
+    public border?: Object;
+    public margin?: Object;
+    public isMargin?: boolean;
     ngOnInit(): void {
       this.isMargin = false;
       this.margin = {

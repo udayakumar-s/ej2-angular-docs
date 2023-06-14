@@ -6,7 +6,7 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    styleUrls: ['./app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None,
     template: `<ejs-treegrid #treegrid [dataSource]='data' idMapping='TaskID' parentIdMapping='parentID' [height]='194' [treeColumnIndex]='1' (created)='setHeaderHeight($event)'  >
         <e-columns>
@@ -22,14 +22,14 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public customAttributes: Object;
+    public customAttributes?: Object;
 
     ngOnInit(): void {
         this.data = projectData;
         this.customAttributes = { class: 'orientationcss' };
     }
-    setHeaderHeight(args) {
-        const textWidth = document.querySelector('.orientationcss > div').scrollWidth; // Obtain the width of the headerText content.
+    setHeaderHeight(args: any) {
+        const textWidth: number = (document.querySelector('.orientationcss > div') as Element).scrollWidth as number; // Obtain the width of the headerText content.
         const headerCell: NodeList = document.querySelectorAll('.e-headercell');
         for (let i = 0; i < headerCell.length; i++) {
             // Assign the obtained textWidth as the height of the headerCell.

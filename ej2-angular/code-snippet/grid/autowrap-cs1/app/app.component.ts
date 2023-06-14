@@ -27,10 +27,10 @@ import { GridComponent, TextWrapSettingsModel } from '@syncfusion/ej2-angular-gr
 })
 export class AppComponent implements OnInit {
 
-  public data: object[];
-  public wrapSettings: TextWrapSettingsModel;
+  public data?: object[];
+  public wrapSettings?: TextWrapSettingsModel;
   @ViewChild('grid')
-  public grid: GridComponent;
+  public grid?: GridComponent;
   public ddlData: Object[] = [
     { text: 'Content', value: 'Content' },
     { text: 'Both', value: 'Both' },
@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
   }
 
   valueChange(args: any): void {
-    this.grid.textWrapSettings.wrapMode = args.value;
+    (this.grid as any).textWrapSettings.wrapMode = (args as any).value;
   }
 
 }

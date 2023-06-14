@@ -9,8 +9,8 @@ import { AnimationModel } from '@syncfusion/ej2-progressbar';
       </ejs-progressbar>`
 })
 export class AppComponent implements OnInit {
-    public isIndeterminate: boolean;
-    public animation: AnimationModel;
+    public isIndeterminate?: boolean;
+    public animation?: AnimationModel;
     ngOnInit(): void {
         this.animation = {enable: true};
         this.animation = { enable: true, duration: 2000, delay: 0 };

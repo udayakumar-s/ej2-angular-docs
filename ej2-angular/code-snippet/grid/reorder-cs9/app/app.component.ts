@@ -6,8 +6,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template:
-        `<button ejs-button id='reordersingle' cssClass="e-info" (click)='reorderSingleColumnUsingFieldName()'>Reorder single Column</button>
+    template: `<button ejs-button id='reordersingle' cssClass="e-info" (click)='reorderSingleColumnUsingFieldName()'>Reorder single Column</button>
      <button ejs-button id='reordermultiple' cssClass="e-info" (click)='reorderMultipleColumnsUsingFieldName()'>Reorder Multiple Columns</button>
     <ejs-grid #grid [dataSource]='data' [allowReordering]='true' height='280px'>
         <e-columns>
@@ -21,17 +20,17 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public gridObj: GridComponent;
+    public data?: object[];
+    @ViewChild('grid') public gridObj?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
     reorderSingleColumnUsingFieldName(): void {
-        this.gridObj.reorderColumns("ShipCity", "OrderID");
+        (this.gridObj as any).reorderColumns("ShipCity", "OrderID");
     }
     reorderMultipleColumnsUsingFieldName(): void {
-        this.gridObj.reorderColumns(['ShipCity', 'ShipRegion', 'ShipName'], 'OrderID');
+        (this.gridObj as any).reorderColumns(['ShipCity', 'ShipRegion', 'ShipName'], 'OrderID');
     }
 }
 

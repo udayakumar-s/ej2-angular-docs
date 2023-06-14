@@ -14,7 +14,7 @@ export class AppComponent {
     @ViewChild('draggable',{static: false})element1: any;
 
     ngAfterViewInit() {
-        let draggable: Draggable = new Draggable(document.getElementById('draggable'), { clone: false, dragArea: "#droppable" });
+        let draggable: Draggable = new Draggable(document.getElementById('draggable') as HTMLElement, { clone: false, dragArea: "#droppable" });
     }
 }
  

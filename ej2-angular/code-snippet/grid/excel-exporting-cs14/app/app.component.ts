@@ -21,8 +21,8 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public pData?: object[];
+    @ViewChild('grid') public grid?: GridComponent;
     public childGrid: GridModel = {
         dataSource: data,
         queryString: 'EmployeeID',
@@ -37,16 +37,16 @@ export class AppComponent implements OnInit {
         this.pData = employeeData;
     }
 
-    beforeExcelExport(args) {
-        args.isChild = true;
+    beforeExcelExport(args: any) {
+        (args as any).isChild = true;
     }
     
     toolbarClick(args: ClickEventArgs) {
-        if (args.item.id === 'Grid_excelexport') {
+        if ((args as any).item.id === 'Grid_excelexport') {
             const exportProperties: ExcelExportProperties = {
                 hierarchyExportMode: 'Expanded'
             };
-            this.grid.excelExport(exportProperties);
+            (this.grid as any).excelExport(exportProperties);
         }
     }
 

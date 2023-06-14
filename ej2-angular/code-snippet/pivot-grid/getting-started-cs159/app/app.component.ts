@@ -1,10 +1,10 @@
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { IDataOptions, PivotView, IAxisSet, IFieldOptions, PivotViewComponent, FieldListService, PivotCellSelectedEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, PivotView, IAxisSet, IFieldOptions, PivotViewComponent, FieldListService, PivotCellSelectedEventArgs, CellSelectedObject, DataSourceSettings, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Chart, Category, Legend, Tooltip, ColumnSeries, LineSeries, SeriesModel } from '@syncfusion/ej2-charts';
-import { renewableEnergy } from './datasource.ts';
+import { renewableEnergy } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -15,24 +15,24 @@ import { renewableEnergy } from './datasource.ts';
 
 export class AppComponent implements OnInit {
 
-    public width: string;
-    public height: number;
-    public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
+    public width?: string;
+    public height?: number;
+    public dataSourceSettings?: IDataOptions;
+    public gridSettings?: GridSettings;
     public onInit: boolean = true;
     public measureList: { [key: string]: string } = {};
-    public chart: Chart;
-    public selectedCells: CellSelectedObject[];
-    public chartSeries: SeriesModel[];
+    public chart?: Chart;
+    public selectedCells?: CellSelectedObject[];
+    public chartSeries?: SeriesModel[];
 
     @ViewChild('pivotview',{static: false})
-    public pivotObj: PivotViewComponent;
+    public pivotObj?: PivotViewComponent;
 
     frameChartSeries(): SeriesModel[] {
         let columnGroupObject: { [key: string]: { x: string, y: number }[] } = {};
-        for (let cell of this.selectedCells) {
+        for (let cell of this.selectedCells!) {
         if (cell.measure !== '') {
-            let columnSeries = (this.pivotObj.dataSourceSettings.values.length > 1 && this.measureList[cell.measure]) ?
+            let columnSeries = ((this.pivotObj?.dataSourceSettings as DataSourceSettings ).values.length > 1 && this.measureList[cell.measure]) ?
             (cell.columnHeaders.toString() + ' ~ ' + this.measureList[cell.measure]) : cell.columnHeaders.toString();
             if (columnGroupObject[columnSeries]) {
             columnGroupObject[columnSeries].push({ x: cell.rowHeaders == '' ? 'Grand Total' : cell.rowHeaders.toString(), y: Number(cell.value) });
@@ -68,28 +68,28 @@ export class AppComponent implements OnInit {
                     enable: true
                 },
                 primaryYAxis: {
-                    title: this.pivotObj.dataSourceSettings.values.map(function (args) { return args.caption || args.name }).join(' ~ '),
+                    title: (this.pivotObj?.dataSourceSettings as DataSourceSettings).values.map(function (args: IFieldOptions) { return args.caption || args.name }).join(' ~ '),
                 },
                 primaryXAxis: {
                     valueType: 'Category',
-                    title: this.pivotObj.dataSourceSettings.rows.map(function (args) { return args.caption || args.name }).join(' ~ '),
+                    title: (this.pivotObj?.dataSourceSettings as DataSourceSettings).rows.map(function (args: IFieldOptions) { return args.caption || args.name }).join(' ~ '),
                     labelIntersectAction: 'Rotate45'
                 },
                 series: this.chartSeries,
             }, '#Chart');
         } else {
-            this.chart.series = this.chartSeries;
-            this.chart.primaryXAxis.title = this.pivotObj.dataSourceSettings.rows.map(function (args) { return args.caption || args.name }).join(' ~ ');
-            this.chart.primaryYAxis.title = this.pivotObj.dataSourceSettings.values.map(function (args) { return args.caption || args.name }).join(' ~ ');
-            this.chart.refresh();
+            (this.chart as Chart).series = this.chartSeries as SeriesModel[];
+            (this.chart as Chart).primaryXAxis.title = (this.pivotObj?.dataSourceSettings as DataSourceSettings).rows.map(function (args: IFieldOptions) { return args.caption || args.name }).join(' ~ ');
+            (this.chart as Chart).primaryYAxis.title = (this.pivotObj?.dataSourceSettings as DataSourceSettings).values.map(function (args: IFieldOptions) { return args.caption || args.name }).join(' ~ ');
+            this.chart?.refresh();
         }
     }
-    dataBound(): void {
+    dataBound(args: any): void {
         if(this.onInit) {
-            for (let value of this.pivotObj.dataSourceSettings.values) {
-                this.measureList[value.name] = value.caption || value.name;
+            for (let value of (this.pivotObj?.dataSourceSettings as DataSourceSettings).values) {
+                this.measureList[(value as any).name] = (value.caption || value.name) as string;
             }
-            this.pivotObj.grid.selectionModule.selectCellsByRange(
+            this.pivotObj?.grid.selectionModule.selectCellsByRange(
             { cellIndex: 1, rowIndex: 1 },
             { cellIndex: 3, rowIndex: 3 }
             );
@@ -115,11 +115,11 @@ export class AppComponent implements OnInit {
             mode: 'Cell',
             type: 'Multiple',
             cellSelectionMode: 'Box',
-            }
-        };
+            } 
+        } as GridSettings;
 
         this.dataSourceSettings = {
-            dataSource: renewableEnergy,
+            dataSource: renewableEnergy as IDataSet[],
             expandAll: true,
             enableSorting: true,
             drilledMembers: [{ name: 'Year', items: ['FY 2015', 'FY 2017', 'FY 2018'] }],

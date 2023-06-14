@@ -29,14 +29,14 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 })
 
 export class AppComponent {
-  @ViewChild('element') editObj: InPlaceEditorComponent;
+  @ViewChild('element') editObj?: InPlaceEditorComponent;
   public model: Object = {  placeholder: 'Enter some text' };
   public modeData: string[] = ['Inline', 'Popup'];
 
   public onChange(e: ChangeEventArgs): void {
     const mode: RenderMode = e.itemData.value as RenderMode;
-    this.editObj.mode = mode;
-    this.editObj.dataBind();
+    (this.editObj as InPlaceEditorComponent).mode = mode;
+    this.editObj?.dataBind();
   }
 }
 

@@ -20,16 +20,16 @@ import { SelectionSettingsModel, EditSettingsModel, ToolbarItems } from '@syncfu
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public selectionOptions?: SelectionSettingsModel;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;
         this.selectionOptions = { type: 'Multiple', mode: 'Cell', cellSelectionMode: 'Box' };
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
-            this.toolbar = ['Add', 'Update', 'Cancel'];
+        this.toolbar = ['Add', 'Update', 'Cancel'];
     }
 }
 

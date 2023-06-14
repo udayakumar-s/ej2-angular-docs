@@ -62,33 +62,33 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-    public focusIn(target: HTMLElement): void {
-        let parent: HTMLElement = target.parentElement;
+    public focusIn(target: any): void {
+        let parent: HTMLElement = target.parentElement as HTMLElement;
         if (parent.classList.contains('e-input-in-wrap')) {
-            parent.parentElement.classList.add('e-input-focus');
+            (parent.parentElement as HTMLElement).classList.add('e-input-focus');
         } else {
             parent.classList.add('e-input-focus');
         }
     }
 
-    public focusOut(target: HTMLElement): void {
-        let parent: HTMLElement = target.parentElement;
+    public focusOut(target: any): void {
+        let parent: HTMLElement = target.parentElement as HTMLElement;
         if (parent.classList.contains('e-input-in-wrap')) {
-            parent.parentElement.classList.remove('e-input-focus');
+            (parent.parentElement as HTMLElement).classList.remove('e-input-focus');
         } else {
             parent.classList.remove('e-input-focus');
         }
     }
 
-    public onMouseDown(target: HTMLElement): void {
+    public onMouseDown(target: any): void {
         target.classList.add('e-input-btn-ripple');
     }
 
-    public onMouseUp(target: HTMLElement): void {
+    public onMouseUp(target: any): void {
         let ele: HTMLElement = target;
         setTimeout(
-                () => {ele.classList.remove('e-input-btn-ripple'); },
-                500);
+            () => {ele.classList.remove('e-input-btn-ripple'); 
+        }, 500);
     }
  }
 

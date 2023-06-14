@@ -1,5 +1,4 @@
 
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ForeignKeyService, AggregateService, getForeignData, CustomSummaryType,
      AggregateColumnModel, GridComponent } from '@syncfusion/ej2-angular-grids';
@@ -32,14 +31,15 @@ import { getValue } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-    public employeeData: object[];
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public employeeData?: object[];
 
     // Custom Aggregate function for foreign column
     public customAggregateFn: CustomSummaryType = (data1: any, column: AggregateColumnModel) => {
         return data1.result.filter((dObj: object) => {
-            return getValue('FirstName', getForeignData(this.grid.getColumnByField(column.field), dObj)[0]) === 'Margaret';
+            return getValue('FirstName', getForeignData((this.grid as any).getColumnByField((column as any).field), dObj)[0]) === 'Margaret';
         }).length;
     }
 

@@ -9,24 +9,24 @@ import {
     selector: 'app-root',
     providers: [DayService, TimelineViewsService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
-    templateUrl: 'app/app.component.html',
-    styleUrls: ['app/index.css'],
+    templateUrl: './app.component.html',
+    styleUrls: ['./index.css'],
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public eventSettings: EventSettingsModel = {
         dataSource: eventsData
     };
     onClick() {
-        document.getElementById('EventLog').innerHTML = '';
+        (document.getElementById('EventLog') as any).innerHTML = '';
     }
     onEventClick(args: EventClickArgs): void {
-        let event: Object = this.scheduleObj.getEventDetails(args.element);
+        let event: Object = (this.scheduleObj as any).getEventDetails(args.element);
         let span: HTMLElement = document.createElement('span');
-        span.innerHTML = event.Subject + '<hr>';
-        let log: HTMLElement = document.getElementById('EventLog');
+        span.innerHTML = (event as any).Subject + '<hr>';
+        let log: HTMLElement = document.getElementById('EventLog') as HTMLElement;
         log.insertBefore(span, log.firstChild);
     }
 }

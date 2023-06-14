@@ -9,9 +9,9 @@ import { DataManager, WebApiAdaptor, Query, ReturnOption, ODataAdaptor } from '@
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
-  public data: DataManager;
-  public width: string;
+  public dataSourceSettings?: IDataOptions;
+  public data?: DataManager;
+  public width?: string;
 
   ngOnInit(): void {
     this.data = new DataManager({

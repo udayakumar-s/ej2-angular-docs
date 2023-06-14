@@ -18,17 +18,17 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs3/app/app.component.ts %}
+{% include samples/grid/custom-cell-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs3/app/app.module.ts %}
+{% include samples/grid/custom-cell-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs3/app/main.ts %}
+{% include samples/grid/custom-cell-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs3" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs3" %}
 
 > * The [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property disables HTML encoding for the corresponding column in the grid. 
 > * If the property is set to **true**, any HTML tags in the column's data will be displayed. 
@@ -68,17 +68,17 @@ The following example demonstrates how to set the [allowTextWrap](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/autowrap-cs1/app/app.component.ts %}
+{% include samples/grid/autowrap-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/autowrap-cs1/app/app.module.ts %}
+{% include samples/grid/autowrap-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/autowrap-cs1/app/main.ts %}
+{% include samples/grid/autowrap-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/autowrap-cs1" %}
+{% previewsample "page.domainurl/samples/grid/autowrap-cs1" %}
 
 ## Customize cell styles
 
@@ -92,17 +92,17 @@ The following example demonstrates how to add a [queryCellInfo](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs1/app/app.component.ts %}
+{% include samples/grid/custom-cell-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs1/app/app.module.ts %}
+{% include samples/grid/custom-cell-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs1/app/main.ts %}
+{% include samples/grid/custom-cell-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs1" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs1" %}
 
 > * The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event is triggered for every cell of the grid, so it may impact the performance of the grid whether used to modify a large number of cells.
 
@@ -122,17 +122,17 @@ The following example demonstrates how to customize the appearance of a specific
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs12/app/app.component.ts %}
+{% include samples/grid/custom-cell-cs12/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.style.css" %}
-{% include code-snippet/grid/custom-cell-cs12/app/app.style.css %}
+{% include samples/grid/custom-cell-cs12/app/app.style.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs12/app/main.ts %}
+{% include samples/grid/custom-cell-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs12" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs12" %}
 
 ### Using property
 
@@ -156,17 +156,17 @@ The following example demonstrates how to customize the appearance of the **Orde
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs2/app/app.component.ts %}
+{% include samples/grid/custom-cell-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.style.css" %}
-{% include code-snippet/grid/custom-cell-cs2/app/app.style.css %}
+{% include samples/grid/custom-cell-cs2/app/app.style.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs2/app/main.ts %}
+{% include samples/grid/custom-cell-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs2" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs2" %}
 
 > Custom attributes can be used to customize any cell in the grid, including header and footer cells.
 
@@ -182,17 +182,17 @@ The following example demonstrates how to use [getColumnHeaderByIndex](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs13/app/app.component.ts %}
+{% include samples/grid/custom-cell-cs13/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs13/app/app.module.ts %}
+{% include samples/grid/custom-cell-cs13/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs13/app/main.ts %}
+{% include samples/grid/custom-cell-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs13" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs13" %}
 
 > Make sure to pass the correct row and column indices to [getCellFromIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcellfromindex) method, or else the appearance of the wrong cell might get customized.
 
@@ -211,17 +211,17 @@ The following example demonstrates, how to set the [clipMode](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/clipmode-cs1/app/app.component.ts %}
+{% include samples/grid/clipmode-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/clipmode-cs1/app/app.module.ts %}
+{% include samples/grid/clipmode-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/clipmode-cs1/app/main.ts %}
+{% include samples/grid/clipmode-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/clipmode-cs1" %}
+{% previewsample "page.domainurl/samples/grid/clipmode-cs1" %}
 
 > * By default, [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) value is **Ellipsis**.
 > * If you set the [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) property of a column, the clip mode feature will be automatically applied to that column if the content exceeds the specified width.
@@ -339,17 +339,17 @@ The following example demonstrates how to customize the tooltip content for the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-tooltip-cs1/app/app.component.ts %}
+{% include samples/grid/custom-tooltip-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-tooltip-cs1/app/app.module.ts %}
+{% include samples/grid/custom-tooltip-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-tooltip-cs1/app/main.ts %}
+{% include samples/grid/custom-tooltip-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/grid/custom-tooltip-cs1" %}
 
 ## Grid lines
 
@@ -367,17 +367,17 @@ The following example demonstrates how to set the [gridLines](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/autowrap-cs2/app/app.component.ts %}
+{% include samples/grid/autowrap-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/autowrap-cs2/app/app.module.ts %}
+{% include samples/grid/autowrap-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/autowrap-cs2/app/main.ts %}
+{% include samples/grid/autowrap-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/autowrap-cs2" %}
+{% previewsample "page.domainurl/samples/grid/autowrap-cs2" %}
 
 >By default, the grid renders with **Default** mode.
 

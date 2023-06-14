@@ -36,9 +36,9 @@ import { DragAndDropEventArgs } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent {
   @ViewChild('Kanban')
-  public kanbanObj: KanbanComponent;
+  public kanbanObj?: KanbanComponent;
   @ViewChild('TreeView')
-  public treeObj: TreeViewComponent;
+  public treeObj?: TreeViewComponent;
   public data: Object[] = kanbanData;
   public cardSettings: CardSettingsModel = {
     contentField: 'Summary',
@@ -50,8 +50,8 @@ export class AppComponent {
   onKanbanDragStop(args: DragEventArgs) {
     let treeViewElement: Element = <Element>closest(args.event.target as Element, '#TreeView');
     if (treeViewElement) {
-      this.kanbanObj.deleteCard(args.data);
-      this.treeObj.addNodes(args.data);
+      (this.kanbanObj as KanbanComponent).deleteCard(args.data);
+      (this.treeObj as TreeViewComponent).addNodes(args.data);
       args.cancel = true;
     }
   };
@@ -59,11 +59,11 @@ export class AppComponent {
     let kanbanElement: Element = <Element>closest(args.event.target as Element, '#Kanban');
     if (kanbanElement) {
       let treeData: { [key: string]: Object }[] =
-        this.treeObj.fields.dataSource as { [key: string]: Object }[];
+      (this.treeObj as TreeViewComponent).fields.dataSource as { [key: string]: Object }[];
       const filteredData: { [key: string]: Object }[] =
-        treeData.filter((item: any) => item.Id === parseInt(args.draggedNodeData.id as string, 10));
-      this.treeObj.removeNodes([args.draggedNodeData.id] as string[]);
-      this.kanbanObj.openDialog('Add', filteredData[0]);
+        treeData.filter((item: any) => item.Id === parseInt(args.draggedNodeData['id'] as string, 10));
+        (this.treeObj as TreeViewComponent).removeNodes([args.draggedNodeData['id']] as string[]);
+        (this.kanbanObj as KanbanComponent).openDialog('Add', filteredData[0]);
       args.cancel = true;
     }
   };

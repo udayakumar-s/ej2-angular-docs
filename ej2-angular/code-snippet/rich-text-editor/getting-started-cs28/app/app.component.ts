@@ -2,7 +2,7 @@
 
 
     import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableService } from '@syncfusion/ej2-angular-richtexteditor';
+import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableService, QuickToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
 selector: 'app-root',
 template: `<ejs-richtexteditor id='iframeRTE' [toolbarSettings]='tools' [quickToolbarSettings]='quickToolbarSettings'>
@@ -31,7 +31,7 @@ providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, TableS
 export class AppComponent  {
     public tools: object = {
         items: ['CreateTable'],
-    },
+    };
  public quickToolbarSettings: QuickToolbarSettingsModel = {
         table: ['TableHeader', 'TableRows', 'TableColumns', 'TableCell', '-', 'BackgroundColor', 'TableRemove', 'TableCellVerticalAlign', 'Styles']
     };

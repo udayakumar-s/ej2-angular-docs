@@ -9,12 +9,12 @@ import { FontModel,AnimationModel, ITextRenderEventArgs } from '@syncfusion/ej2-
     </ejs-progressbar>`
 })
 export class AppComponent implements OnInit {
-    public animation: AnimationModel;
-    public value: number;
-    public trackThickness: number;
-    public progressThickness: number;
-    public labelStyle: FontModel;
-    public showProgressValue: boolean;
+    public animation?: AnimationModel;
+    public value?: number;
+    public trackThickness?: number;
+    public progressThickness?: number;
+    public labelStyle?: FontModel;
+    public showProgressValue?: boolean;
     public textRender2(args: ITextRenderEventArgs): void {
         args.text = '50';
      }

@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { projectData } from './datasource';
-import { TreeGridComponent, EditService, ToolbarService } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent, EditService, ToolbarService, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Query, DataManager } from '@syncfusion/ej2-data';
 import { IEditCell } from '@syncfusion/ej2-angular-grids';
@@ -23,13 +23,16 @@ import { IEditCell } from '@syncfusion/ej2-angular-grids';
     </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
+tooltip($event: any) {
+throw new Error('Method not implemented.');
+}
 
     public data: Object[] = [];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public editOptions: Object;
-    public formatOptions: Object;
-    public priorityParams: IEditCell;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public editOptions?: Object;
+    public formatOptions?: Object;
+    public priorityParams?: IEditCell;
 
     public priorityData : object[] = [
         { priorityName: 'Normal', priorityId: '1' },
@@ -55,6 +58,4 @@ export class AppComponent implements OnInit {
             }
         };
     }
-
-
-
+}

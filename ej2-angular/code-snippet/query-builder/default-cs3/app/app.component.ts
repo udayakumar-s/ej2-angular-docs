@@ -21,7 +21,7 @@ import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data?: DataManager;
     public values: string[] = ['Mr.', 'Mrs.'];
     ngOnInit(): void {
         this.data = new DataManager({

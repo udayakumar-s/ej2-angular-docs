@@ -25,11 +25,12 @@ import { employeeData } from './datasource';
 
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
      @ViewChild('querybuilder')
-    public qryBldrObj: QueryBuilderComponent;
+    public qryBldrObj?: QueryBuilderComponent;
     public showButtons: Object = {ruleDelete: true, groupInsert: true, groupDelete: true};
+values: any;
     ngOnInit(): void {
         this.data = employeeData;
         this.importRules = {
@@ -51,15 +52,15 @@ export class AppComponent implements OnInit {
         };
     }
     addRule(): void {
-        this.qryBldrObj.addRules([{'label': 'City','field': 'City','type': 'string','operator': 'equal','value': 'US'}], 'group0');
+        this.qryBldrObj!.addRules([{'label': 'City','field': 'City','type': 'string','operator': 'equal','value': 'US'}], 'group0');
     }
 
     addGroup(): void {
-        this.qryBldrObj.addGroups([{'condition': 'and','rules': [{'label': 'First Name','field': 'FirstName','type': 'string','operator': 'startswith','value': 'v' }]}], 'group0');
+        this.qryBldrObj!.addGroups([{'condition': 'and','rules': [{'label': 'First Name','field': 'FirstName','type': 'string','operator': 'startswith','value': 'v' }]}], 'group0');
     }
 
     deleteGroup(): void {
-        this.qryBldrObj.deleteGroups(['group1']);
+        this.qryBldrObj!.deleteGroups(['group1']);
     }
 
 }

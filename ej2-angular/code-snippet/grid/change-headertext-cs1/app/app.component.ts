@@ -6,7 +6,7 @@ import { data } from './datasource';
 @Component({
   selector: 'app-root',
   template: `<div style="display: flex">
-              <label style="padding: 30px 20px 0 0" > Select column name  :</label>
+             <label style="padding: 30px 20px 0 0" > Select column name  :</label>
               <ejs-dropdownlist  #dropdown style="padding: 26px 0 0 0" index='0' width="220" 
               [dataSource]="columns"  [fields]="field"></ejs-dropdownlist>
             </div>
@@ -32,30 +32,31 @@ import { data } from './datasource';
                 </e-columns>
               </ejs-grid>
             </div>`,
-  styleUrls: ['./app/app.component.css']
+  // styleUrls: ['./app.component.css']
 
 })
 export class AppComponent {
 
-  public data: Object[] = data;
+  public data?: Object[] = data;
   public columns: Object[] = [
     { text: 'Order ID', value: 'OrderID' },
     { text: 'Customer ID', value: 'CustomerID' },
     { text: 'Freight', value: 'Freight' },
     { text: 'Order Date', value: 'OrderDate' },
   ];
-  public field: Object = { text: 'text', value: 'value' };
-  @ViewChild('dropdown') public dropdown: DropDownListComponent;
-  @ViewChild('textbox') public textbox: any;
-  @ViewChild('grid') public grid: GridComponent;
+  public field?: Object = { text: 'text', value: 'value' };
+  @ViewChild('dropdown') public dropdown?: DropDownListComponent;
+  @ViewChild('textbox') public textbox?: any;
+  @ViewChild('grid')
+    public grid?: GridComponent;
 
   public ChangeHeaderText(): void {
     if (this.textbox.element.value.trim() !== '') {
-      const column: any = this.grid.getColumnByField(
-        this.dropdown.value as any
+      const column: any = (this.grid as any).getColumnByField(
+        (this.dropdown  as any).value
       );
       column.headerText = this.textbox.element.value;
-      this.grid.refreshHeader();
+      (this.grid as any).refreshHeader();
     }
   }
 

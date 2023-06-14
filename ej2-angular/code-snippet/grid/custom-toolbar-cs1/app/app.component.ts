@@ -20,11 +20,12 @@ import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbar: object[];
-    public groupOptions: GroupSettingsModel;
+    public data?: object[];
+    public toolbar?: object[];
+    public groupOptions?: GroupSettingsModel;
 
-    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -34,12 +35,12 @@ export class AppComponent implements OnInit {
     }
 
     clickHandler(args: ClickEventArgs): void {
-        if (args.item.id === 'expandall') {
-            this.grid.groupModule.expandAll();
+        if ((args as any).item.id === 'expandall') {
+            (this.grid as any).groupModule.expandAll();
         }
 
-        if (args.item.id === 'collapseall') {
-            this.grid.groupModule.collapseAll();
+        if ((args as any).item.id === 'collapseall') {
+            (this.grid as any).groupModule.collapseAll();
         }
     }
 }

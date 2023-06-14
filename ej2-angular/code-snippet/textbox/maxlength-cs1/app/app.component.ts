@@ -2,10 +2,11 @@
 
 
 import { Component, ViewChild } from '@angular/core';
+import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'app-container',
-    styleUrls: ['index.css'],
+    styleUrls: ['./index.css'],
     template: `<label class="label">Add maxlength attribute through inline</label>
                 <div class="multiline">
                 <ejs-textbox [multiline]='true' maxlength='15' floatLabelType='Auto' placeholder='Enter your address' ></ejs-textbox>
@@ -19,10 +20,10 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class AppComponent {
     @ViewChild('default')
-    public textareaObj: TextBoxComponent;
+    public textareaObj?: TextBoxComponent;
 
-    public clickHandler() {
-        this.textareaObj.addAttributes({maxlength: 15});
+    public clickHandler(args: any) {
+        (this.textareaObj as TextBoxComponent).addAttributes({maxlength: 15} as any);
  }
 }
 

@@ -6,7 +6,7 @@ import { data } from './datasource';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.template.html',
+    templateUrl: './app.template.html',
     styles: [`
             .e-table {
                 border: solid 1px #e0e0e0;
@@ -38,34 +38,34 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public items: object[];
-    public edit: { OrderID: string, CustomerID: string, EmployeeID: string };
-    public dm: DataManager;
+    public items?: object[] | any;
+    public edit?: { OrderID: string, CustomerID: string, EmployeeID: string } | any;
+    public dm?: DataManager;
     public changes: { changedRecords: object[], addedRecords: object[], deletedRecords: object[] } =
     { changedRecords: [], addedRecords: [], deletedRecords: [] };
-    public text: string;
+    public text?: string;
     public ngOnInit(): void {
       this.text = 'Update';
-      this.edit = { OrderID: null, CustomerID: null, EmployeeID: null };
+      this.edit = { OrderID: null, CustomerID: null, EmployeeID: null } as any;
       this.dm = new DataManager(data.slice(0, 5));
       this.dm.executeQuery(new Query())
         .then((e: ReturnOption) => this.items = e.result as object[]).catch((e) => true);
     }
 
     public save(): void {
-        this.dm.saveChanges(this.changes);
-        this.dm.executeQuery(new Query())
-        .then((e: ReturnOption) => this.items = e.result as object[]).catch((e) => true);
+        (this.dm as DataManager).saveChanges(this.changes);
+        (this.dm as DataManager).executeQuery(new Query())
+            .then((e: ReturnOption) => this.items = e.result as object[]).catch((e) => true);
         this.changes = { changedRecords: [], addedRecords: [], deletedRecords: [] };
     }
 
-    public insert(action?: string): void {
-        this.changes[action].push({
-          OrderID: this.edit.OrderID,
-          CustomerID: this.edit.CustomerID,
-          EmployeeID: this.edit.EmployeeID
+    public insert(action: string): void {
+        (this.changes as any)[action].push({
+          OrderID: this.edit?.OrderID,
+          CustomerID: this.edit?.CustomerID,
+          EmployeeID: this.edit?.EmployeeID
         });
-        this.edit = { OrderID: null, CustomerID: null, EmployeeID: null };
+        this.edit = { OrderID: null, CustomerID: null, EmployeeID: null } as any;
     }
 }
 

@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
           <ejs-slider id='slider'  [type]= 'type' [tooltip] = 'tooltip' [value]=30></ejs-slider>
       </div>
     </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {

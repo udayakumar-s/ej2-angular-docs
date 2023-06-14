@@ -42,15 +42,15 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     priceData: object[] = dataSource1;
 
     budgetData: object[] = dataSource2;
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Budget Details!A1:D1');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Budget Details!A1:D1');
     }
 }
 

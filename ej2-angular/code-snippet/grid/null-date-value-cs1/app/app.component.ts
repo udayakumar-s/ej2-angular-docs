@@ -21,16 +21,16 @@ let action: string;
 
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     ngOnInit(): void {
         this.data = data;
     }
     actionBegin(args: SortEventArgs) {
-        if (args.requestType === 'sorting') {
-            action = args.direction;
+        if ((args as any).requestType === 'sorting') {
+            action = (args as any).direction;
         }
     }
-    sortComparer(reference, comparer) {
+    sortComparer(reference: any, comparer: any) {
         const sortAsc = action === 'Ascending' ? true : false;
         if (sortAsc && reference === null) {
             return 1;

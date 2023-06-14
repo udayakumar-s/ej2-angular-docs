@@ -17,7 +17,7 @@ import { DataManager } from '@syncfusion/ej2-data';
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data?: DataManager;
 
     public ngOnInit(): void {
         this.data = new DataManager(data as JSON[]);

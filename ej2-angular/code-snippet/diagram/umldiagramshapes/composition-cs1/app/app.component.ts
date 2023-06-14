@@ -10,7 +10,7 @@ import { ConnectorModel } from '@syncfusion/ej2-diagrams';
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
 
     public connectors: ConnectorModel[] = [
     {

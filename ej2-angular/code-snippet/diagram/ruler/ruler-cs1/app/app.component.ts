@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent,OverviewComponent, Diagram, NodeModel, ConnectorModel,OverviewModel, SnapSettingsModel, LayoutModel, DataSourceModel,  } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent,OverviewComponent, Diagram, NodeModel, ConnectorModel,OverviewModel, SnapSettingsModel, LayoutModel, DataSourceModel, RulerSettingsModel,  } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 @Component({
@@ -11,7 +11,7 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
 })
 export class AppComponent {
      @ViewChild('diagram')
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public rulerSettings: RulerSettingsModel = { showRulers: true}
 }
 

@@ -8,7 +8,7 @@ import { ILoadedEventArgs } from '@syncfusion/ej2-circulargauge';
 @Component({
     selector: 'app-container',
     template:
-    `<ejs-circulargauge id="circular-container" (loaded)='loaded($event)'>
+    `<ejs-circulargauge id="circular-container" (loaded)='loaded!($event)'>
         <e-axes>
             <e-axis minimum=0 maximum=12 startAngle=0 endAngle=360 [lineStyle]="lineStyle" [labelStyle]="labelStyle">
                 <e-annotations>
@@ -39,15 +39,15 @@ import { ILoadedEventArgs } from '@syncfusion/ej2-circulargauge';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public labelStyle: Object;
-    public lineStyle: Object;
-    public pointerBorder: Object;
-    public pointerCap: Object;
-    public pointerTail: Object;
-    public pointerAnimation: Object;
-    public pointerCap1: Object;
-    public pointerTail1: Object;
-    public loaded: Function;
+    public labelStyle?: Object;
+    public lineStyle?: Object;
+    public pointerBorder?: Object;
+    public pointerCap?: Object;
+    public pointerTail?: Object;
+    public pointerAnimation?: Object;
+    public pointerCap1?: Object;
+    public pointerTail1?: Object;
+    public loaded?: Function;
     ngOnInit(): void {
         // Initialize objects
         this.labelStyle = {
@@ -83,7 +83,7 @@ export class AppComponent implements OnInit {
             color: 'rgba(168,145,102,1)',
             length: '20%'
         };
-        this.loaded = (args: ILoadedEventArgs): void {
+        this.loaded = (args: ILoadedEventArgs): void=> {
             let gauge: CircularGauge = new CircularGauge({
                 axes: [{
                     minimum: 0,

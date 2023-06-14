@@ -21,10 +21,10 @@ import { hardwareData } from './datasource';
 })
 
 export class AppComponent implements OnInit {
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
      @ViewChild('querybuilder')
-    public qryBldrObj: QueryBuilderComponent;
+    public qryBldrObj?: QueryBuilderComponent;
     ngOnInit(): void {
         this.data = hardwareData;
         this.importRules = {
@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
     };
     }
      setRules(): void {
-        this.qryBldrObj.setRules(this.importRules);
+        this.qryBldrObj!.setRules((this as any).importRules);
     }
 }
 

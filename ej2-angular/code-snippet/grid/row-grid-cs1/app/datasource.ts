@@ -114,7 +114,7 @@ export function getData(dataCount?: number): object {
   if (typeof dataCount === 'string') {
     dataCount = parseInt(dataCount);
   }
-  for (let i: number = 1; i <= dataCount; i++) {
+  for (let i: number = 1; i <= (dataCount as any); i++) {
     let code = 10000;
     let Software = Math.random() * 100;
     if (Software <= 20) Software = Software + 30;
@@ -24951,7 +24951,7 @@ export const customerData: Object[] = [
 ];
 
 type cType = { CustomerID: string; ContactName: string; CustomerName: string };
-export const data: Object[] = orderData.map((item: cType) => {
+export const data: Object[] = orderData.map((item: cType | any) => {
   let name: cType = (<cType[]>customerData).filter((cItem: cType) => {
     return cItem.CustomerID === item.CustomerID;
   })[0];
@@ -27375,7 +27375,7 @@ export const orderDataSource: Object[] = JSON.parse(
   }
 );
 
-export const data1: Object[] = orderDataSource.map((item: cType) => {
+export const data1: Object[] = orderDataSource.map((item: cType | any) => {
   let name1: cType = (<cType[]>customerData).filter((cItem: cType) => {
     return cItem.CustomerID === item.CustomerID;
   })[0];

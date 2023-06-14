@@ -16,8 +16,8 @@ import { DataManager,Query, WebApiAdaptor } from '@syncfusion/ej2-data';
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
-    public query: Query;
+    public data?: DataManager;
+    public query?: Query;
 
     ngOnInit(): void {
         this.data = new DataManager({

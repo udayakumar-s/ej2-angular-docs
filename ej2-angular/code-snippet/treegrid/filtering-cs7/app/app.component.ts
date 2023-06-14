@@ -17,8 +17,8 @@ import { FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public filterOptions: FilterSettingsModel;
+    public data?: object[];
+    public filterOptions?: FilterSettingsModel;
 
     ngOnInit(): void {
         this.data = sampleData;

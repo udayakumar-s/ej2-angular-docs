@@ -19,11 +19,11 @@ import { TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public dropData: Object[];
-    public fields: Object;
+    public data?: Object[];
+    public dropData?: Object[];
+    public fields?: Object;
      @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -37,8 +37,8 @@ export class AppComponent implements OnInit {
     }
         onChange(e: ChangeEventArgs): any {
         let mode: any = <string>e.value;
-        this.treeGridObj.filterSettings.hierarchyMode = mode;
-        this.treeGridObj.clearFiltering();
+        (this.treeGridObj as TreeGridComponent).filterSettings.hierarchyMode = mode;
+        this.treeGridObj?.clearFiltering();
     }
 }
 

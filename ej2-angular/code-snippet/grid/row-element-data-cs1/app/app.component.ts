@@ -31,27 +31,28 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 export class AppComponent {
 
   public data: Object[] = [];
-  public rowIndex: number;
+  public rowIndex?: number;
   public hiddenRows: number[] = [];
-  @ViewChild('grid') public grid: GridComponent;
+  @ViewChild('grid')
+    public grid?: GridComponent;
 
   ngOnInit(): void {
     this.data = orderDetails;
   }
   public onCheckBoxChange(args: any) {
-    if (args.checked) {
-      for (let i = 0; i < this.grid.getRowsObject().length; i++) {
-        if ((this.grid.getRowsObject()[i].data as any).CustomerID === 'VINET') {
+    if ((args as any).checked) {
+      for (let i = 0; i < (this.grid as any).getRowsObject().length; i++) {
+        if (((this.grid as any).getRowsObject()[i].data as any).CustomerID === 'VINET') {
           // check the row value
-          this.rowIndex = this.grid.getRowsObject()[i].index; //get particular row index
-          (this.grid.getRowByIndex(this.rowIndex) as any).style.display = 'none'; //hide row
-          this.hiddenRows.push(this.rowIndex); // add row index to hiddenRows array
+          this.rowIndex = (this.grid as any).getRowsObject()[i].index; //get particular row index
+          ((this.grid as any).getRowByIndex(this.rowIndex) as any).style.display = 'none'; //hide row
+          (this as any).hiddenRows.push((this as any).rowIndex); // add row index to hiddenRows array
         }
       }
     } else {
       // Show hidden rows
-      this.hiddenRows.forEach((rowIndex: number) => {
-        (this.grid.getRowByIndex(rowIndex) as any).style.display = '';
+      (this as any).hiddenRows.forEach((rowIndex: number) => {
+        ((this.grid as any).getRowByIndex(rowIndex) as any).style.display = '';
       });
       this.hiddenRows = [];
     }

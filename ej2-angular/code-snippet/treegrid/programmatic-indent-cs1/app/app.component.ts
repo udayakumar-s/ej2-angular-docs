@@ -2,6 +2,7 @@
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -18,19 +19,19 @@ import { sampleData } from './datasource';
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public treegrid: TreeGridComponent;
-    public data: Object[];
+    public treegrid?: TreeGridComponent;
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = sampleData;
     }
 
     public Indenting(): void {
-        this.treegrid.indent(this.treegrid.getCurrentViewRecords()[2]);
+        this.treegrid?.indent(this.treegrid.getCurrentViewRecords()[2]);
     }
 
     public Outdenting(): void {
-        this.treegrid.outdent(this.treegrid.getCurrentViewRecords()[2]);
+        this.treegrid?.outdent(this.treegrid.getCurrentViewRecords()[2]);
     }
 }
 

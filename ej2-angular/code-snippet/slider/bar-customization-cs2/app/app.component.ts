@@ -19,7 +19,7 @@ import { SliderComponent, SliderChangeEventArgs } from '@syncfusion/ej2-angular-
             <div class="slider-labeltext slider_userselect">Dynamic thumb and selection bar color</div>
             <ejs-slider id='dynamic_color_slider' [value]='dynamic_value' [min]='min' [max]='max' [type]='range' (created)='created()' (change)='change($event)'></ejs-slider>
         </div>`,
-    styleUrls : ["app/app.component.css"],
+    styleUrls : ["./app.component.css"],
     encapsulation: ViewEncapsulation.None
 })
 
@@ -29,18 +29,18 @@ export class AppComponent {
     public max: number = 100;
     public gradient_value: number = 30;
     public range: string = 'MinRange';
-    public sliderTrack: HTMLElement;
-    public sliderHandle: HTMLElement;
+    public sliderTrack?: HTMLElement;
+    public sliderHandle?: HTMLElement;
     public dynamic_value: number = 30;
     // Handler used for slider created event
     created() {
-        this.sliderTrack = document.getElementById('dynamic_color_slider').querySelector('.e-range');
-        this.sliderHandle = document.getElementById('dynamic_color_slider').querySelector('.e-handle');
+        this.sliderTrack = (document.getElementById('dynamic_color_slider') as HTMLElement).querySelector('.e-range') as HTMLElement;
+        this.sliderHandle = (document.getElementById('dynamic_color_slider') as HTMLElement).querySelector('.e-handle') as HTMLElement;
         (this.sliderHandle as HTMLElement).style.backgroundColor = 'green';
         (this.sliderTrack as HTMLElement).style.backgroundColor = 'green';
     }
     // Handler used for slider change event
-    change(args: SliderChangeEventArgs) {
+    change(args: SliderChangeEventArgs | any) {
         if (args.value > 0 && args.value <= 25) {
             // Change handle and range bar color to green when
             (this.sliderHandle as HTMLElement).style.backgroundColor = 'green';

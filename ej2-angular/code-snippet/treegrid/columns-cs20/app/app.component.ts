@@ -16,17 +16,17 @@ import { formatData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = formatData;
     }
 
- currencyFormatter(field: string, data: Object, column: Object): string {
+ currencyFormatter(field: string, data: Object | any, column: Object): string {
     return '€' + data['price'];
 }
 
- orderFormatter(field: string, data: Object, column: Object): string {
+ orderFormatter(field: string, data: Object | any, column: Object): string {
     return data[field] + '-' + data['Category'];
 }
 }

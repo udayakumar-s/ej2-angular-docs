@@ -30,13 +30,13 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') public element: any;
     public position = { X: 'Right', Y: 'Bottom' };
 
-    onCreate() {
+    onCreate(args: any) {
       this.element.show();
     }
-    btnClick() {
+    btnClick(args: any) {
       const value = parseInt((document.getElementById('toast_input_index') as HTMLInputElement).value, 10);
       this.element.show({timeOut: value});
     }

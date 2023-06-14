@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -20,11 +20,11 @@ import { ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public toolbarOptions: ToolbarItems[];
-    public pager: Object;
+    public data?: Object[];
+    public toolbarOptions?: ToolbarItems[] | any;
+    public pager?: Object;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -32,20 +32,20 @@ export class AppComponent implements OnInit {
         this.pager = { pageSize: 8 }
     }
 
-    toolbarClick(args: Object): void{
+    toolbarClick(args: Object | any): void{
         if (args.item.text === 'QuickFilter') {
-            this.treeGridObj.filterByColumn('taskName', 'startswith', 'Testing');
+            this.treeGridObj?.filterByColumn('taskName', 'startswith', 'Testing');
         }
         if (args.item.text === 'ClearFilter') {
-            this.treeGridObj.clearFiltering();
+            this.treeGridObj?.clearFiltering();
         }
     }
     enableClick() {
-        this.treeGridObj.toolbarModule.enableItems([this.treeGridObj.element.id + '_gridcontrol_QuickFilter', this.treeGridObj.element.id + '_gridcontrol_ClearFilter'], true);// enable toolbar items.
+        this.treeGridObj?.toolbarModule.enableItems([this.treeGridObj?.element.id + '_gridcontrol_QuickFilter', this.treeGridObj.element.id + '_gridcontrol_ClearFilter'], true);// enable toolbar items.
     };
 
     disableClick() {
-        this.treeGridObj.toolbarModule.enableItems([this.treeGridObj.element.id + '_gridcontrol_QuickFilter', this.treeGridObj.element.id + '_gridcontrol_ClearFilter'], false);// disable toolbar items.
+        this.treeGridObj?.toolbarModule.enableItems([this.treeGridObj?.element.id + '_gridcontrol_QuickFilter', this.treeGridObj.element.id + '_gridcontrol_ClearFilter'], false);// disable toolbar items.
     };
 }
 

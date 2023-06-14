@@ -29,14 +29,14 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 })
 
 export class AppComponent {
-  @ViewChild('element') editObj: InPlaceEditorComponent;
+  @ViewChild('element') editObj?: InPlaceEditorComponent;
   public model: Object = {  placeholder: 'Enter some text' };
   public blurActionData: string[] = ['Submit', 'Cancel', 'Ignore'];
 
   public onChange(e: ChangeEventArgs): void {
     let editType: ActionBlur = e.itemData.value as ActionBlur;
-    this.editObj.actionOnBlur = editType;
-    this.editObj.dataBind();
+    (this.editObj as InPlaceEditorComponent).actionOnBlur = editType;
+    this.editObj?.dataBind();
   }
 }
 

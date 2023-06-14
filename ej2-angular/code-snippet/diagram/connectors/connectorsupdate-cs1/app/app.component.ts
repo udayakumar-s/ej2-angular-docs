@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, PointModel, StrokeStyleModel, DecoratorModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -15,14 +15,14 @@ import { DiagramComponent, Diagram, NodeModel, ConnectorModel, PointModel } from
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public sourcePoint: PointModel;
-    public targetPoint: PointModel;
+    public diagram?: DiagramComponent;
+    public sourcePoint?: PointModel;
+    public targetPoint?: PointModel;
     ngOnInit(): void {
         this.sourcePoint = { x: 100, y: 100 };
         this.targetPoint = { x: 200, y: 200 };
     }
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',
@@ -37,14 +37,14 @@ export class AppComponent {
     }
     public created(args: Object): void {
         // Update the connector properties at the run time
-        this.diagram.connectors[0].style.strokeColor = '#6BA5D7';
-        this.diagram.connectors[0].style.fill = '#6BA5D7';
-        this.diagram.connectors[0].style.strokeWidth = 2;
-        this.diagram.connectors[0].targetDecorator.style.fill = '#6BA5D7';
-        this.diagram.connectors[0].targetDecorator.style.strokeColor = '#6BA5D7';
-        this.diagram.connectors[0].sourcePoint.x = 150;
-        this.diagram.connectors[0].targetPoint.x = 150;
-        this.diagram.dataBind();
+        ((this.diagram as DiagramComponent).connectors[0].style as StrokeStyleModel).strokeColor = '#6BA5D7';
+        ((this.diagram as DiagramComponent).connectors[0].style as StrokeStyleModel).fill = '#6BA5D7';
+        ((this.diagram as DiagramComponent).connectors[0].style as StrokeStyleModel).strokeWidth = 2;
+        (((this.diagram as DiagramComponent).connectors[0].targetDecorator as DecoratorModel).style as StrokeStyleModel).fill = '#6BA5D7';
+        (((this.diagram as DiagramComponent).connectors[0].targetDecorator as DecoratorModel).style as ShapeStyleModel).strokeColor = '#6BA5D7';
+        ((this.diagram as DiagramComponent).connectors[0].sourcePoint as PointModel).x = 150;
+        ((this.diagram as DiagramComponent).connectors[0].targetPoint as PointModel).x = 150;
+        (this.diagram as DiagramComponent).dataBind();
     }
 }
 

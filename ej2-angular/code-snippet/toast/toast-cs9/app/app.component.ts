@@ -21,18 +21,18 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') public element: any;
     public position = { X: 'Left', Y: 'Bottom' };
 
-    onClick(e) {
+    onClick(e: any) {
       e.clickToClose = true;
     }
 
-    onCreate() {
+    onCreate(args: any) {
       this.element.show();
     }
 
-    btnClick() {
+    btnClick(args: any) {
       this.element.show();
     }
 }

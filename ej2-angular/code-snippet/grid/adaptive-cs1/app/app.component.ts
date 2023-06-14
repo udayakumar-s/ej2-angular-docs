@@ -12,7 +12,7 @@ import { data } from './datasource';
                            <ejs-grid #adaptive id="adaptivebrowser" [dataSource]='data' enableAdaptiveUI='true'
                     height='100%' allowPaging='true' allowFiltering='true'
                     allowSorting='true' [editSettings]='editSettings'
-                    [filterSettings]='filterSettings' [toolbar]='toolbar' (load)='onLoad($event)'>
+                    [filterSettings]='filterSettings' [toolbar]='toolbar' (load)='onLoad()'>
                     <e-columns>
                         <e-column field='SNO' headerText='S NO' width='150' isPrimaryKey='true' [validationRules]='orderidrules'>
                         </e-column>
@@ -37,15 +37,15 @@ import { data } from './datasource';
 
 export class AppComponent implements OnInit {
     @ViewChild('adaptive')
-    public grid: GridComponent;
-    public data: object[];
-    public editSettings: Object;
-    public toolbar: string[];
-    public orderidrules: Object;
-    public customeridrules: Object;
-    public filterSettings: Object;
-    public menuFilter: Object;
-    public checkboxFilter: Object;
+    public grid?: GridComponent;
+    public data?: object[];
+    public editSettings?: Object;
+    public toolbar?: string[];
+    public orderidrules?: Object;
+    public customeridrules?: Object;
+    public filterSettings?: Object;
+    public menuFilter?: Object;
+    public checkboxFilter?: Object;
 
     ngOnInit(): void {
         this.data = data;
@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
     }
 
     public onLoad(): void {
-        this.grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
+        (this.grid as any).adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
     }
 }
 

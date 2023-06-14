@@ -4,6 +4,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { ToolbarItems, SearchSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { SearchEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Predicate, Query } from '@syncfusion/ej2-data';
 
 @Component({
@@ -18,15 +19,15 @@ import { Predicate, Query } from '@syncfusion/ej2-data';
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public values;
+    public values?: any;
     public key = '';
     public refresh = false;
     public removeQuery = false;
     public valueAssign = false;
-    public data: Object[];
-    public toolbarOptions: ToolbarItems[];
-    public searchOptions: SearchSettingsModel;
-    @ViewChild('treegrid') public treegrid: TreeGridComponent;
+    public data?: Object[];
+    public toolbarOptions?: ToolbarItems[];
+    public searchOptions?: SearchSettingsModel;
+    @ViewChild('treegrid') public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -42,16 +43,16 @@ export class AppComponent implements OnInit {
         };
         this.toolbarOptions = ['Search'];
     }
-    actionBegin(args:SearchEventArgs) {
+    actionBegin(args: SearchEventArgs) {
         if (args.requestType == 'searching') {
-            const keys = args.searchString.split(',');
+            const keys = (args as any).searchString.split(',');
             var flag = true;
-            var predicate;
+            var predicate: any;
             if (keys.length > 1) {
-                if (this.treegrid.grid.searchSettings.key !== '') {
+                if ((this.treegrid as TreeGridComponent).grid.searchSettings.key !== '') {
                     this.values = args.searchString;
-                    keys.forEach((key) => {
-                        this.treegrid.getColumns().forEach((col) => {
+                    keys.forEach((key: any) => {
+                        (this.treegrid as TreeGridComponent).getColumns().forEach((col) => {
                             if (flag) {
                                 predicate = new Predicate(col.field, 'contains', key, true);
                                 flag = false;
@@ -62,29 +63,29 @@ export class AppComponent implements OnInit {
                             }
                         });
                     });
-                    this.treegrid.query = new Query().where(predicate);
-                    this.treegrid.grid.searchSettings.key = '';
+                    (this.treegrid as TreeGridComponent).query = new Query().where(predicate);
+                    (this.treegrid as TreeGridComponent).grid.searchSettings.key = '';
                     this.refresh = true;
                     this.valueAssign = true;
                     this.removeQuery = true;
-                    this.treegrid.refresh();
+                    (this.treegrid as TreeGridComponent).refresh();
                 }
             }
         }
     }
-    actionComplete(args:SearchEventArgs) {
+    actionComplete(args: SearchEventArgs) {
         if (args.requestType === 'refresh' && this.valueAssign) {
             (
-                document.getElementById(this.treegrid.grid.element.id + '_searchbar') as any
+                document.getElementById(this.treegrid?.grid.element.id + '_searchbar') as any
             ).value = this.values;
             this.valueAssign = false;
         }
         else if (
-            (document.getElementById(this.treegrid.grid.element.id + '_searchbar') as any).value === '' && args.requestType === 'refresh' &&
+            (document.getElementById(this.treegrid?.grid.element.id + '_searchbar') as any).value === '' && args.requestType === 'refresh' &&
             this.removeQuery) {
-                this.treegrid.query = new Query();
+                (this.treegrid as TreeGridComponent).query = new Query();
                 this.removeQuery = false;
-                this.treegrid.refresh();
+                (this.treegrid as TreeGridComponent).refresh();
             }
     }
 }

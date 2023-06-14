@@ -17,7 +17,7 @@ export class AppComponent {
         let intl: Internationalization = new Internationalization();
         let dFormatter: Function = intl.getDateFormat({ skeleton: 'full', type: 'dateTime' });
         let formattedString: string = dFormatter(new Date('1/12/2014 10:20:33'));
-        document.querySelector('.result').innerHTML = formattedString;
+        (document.querySelector('.result') as Element).innerHTML = formattedString;
         }
         }
 

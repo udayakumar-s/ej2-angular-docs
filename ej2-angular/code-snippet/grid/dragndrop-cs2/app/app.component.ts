@@ -60,26 +60,27 @@ import {GridComponent, RowDDService, SelectionService} from '@syncfusion/ej2-ang
             </div>
 `,
 providers: [RowDDService, SelectionService],
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['app.style.css']
 })
 export class AppComponent {
-    public data: Object[] = [];
-    public selectOptions: Object;
-    public rowDropOptions: object;
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: Object[] = [];
+    public selectOptions?: Object;
+    public rowDropOptions?: object;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
         this.selectOptions = { type: 'Multiple' };
         this.rowDropOptions = { targetID: 'Grid' };
     }
-    rowDrop(args) {
-        args.cancel = true;
+    rowDrop(args: any) {
+        (args as any).cancel = true;
         var value = [];
-        for (var r = 0; r < args.rows.length; r++) {
-            value.push(args.fromIndex + r);
+        for (var r = 0; r < (args as any).rows.length; r++) {
+            value.push((args as any).fromIndex + r);
         }
-        this.grid.reorderRows(value, args.dropIndex);
+        (this.grid as any).reorderRows(value, (args as any).dropIndex);
     }
 }
 

@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-   public markerSize: number;
+   public markerSize?: number;
    ngOnInit(): void {
         // Initialize objects
         this.markerSize = 15;

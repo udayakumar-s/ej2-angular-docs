@@ -32,7 +32,7 @@ L10n.load({
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [locale]='de-DE' [allowGrouping]='true' [allowPaging]='true' [pageSettings]='pageOptions' height='220px'>
+    template: `<ejs-grid [dataSource]='data' [locale]='"de-DE"' [allowGrouping]='true' [allowPaging]='true' [pageSettings]='pageOptions' height='220px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
@@ -43,8 +43,8 @@ L10n.load({
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pageOptions: PageSettingsModel;
+    public data?: Object[];
+    public pageOptions?: PageSettingsModel;
 
     ngOnInit(): void {
         this.data = data;

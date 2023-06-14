@@ -24,10 +24,10 @@ import {data} from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data; // Initialize an empty array
@@ -41,8 +41,8 @@ export class AppComponent implements OnInit {
             Freight: this.generateFreight(),
             ShipName: this.generateShipName()
         };
-        
-        this.grid.addRecord(newRecord, 0);
+
+        (this.grid as any).addRecord(newRecord, 0);
     }
     // Generate a random OrderID
     generateOrderId(): number {

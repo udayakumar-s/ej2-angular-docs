@@ -42,20 +42,22 @@ import {NgForm} from '@angular/forms';
         </div>
       </form>
     </div>`,
-    styleUrls:['index.css'],
+    styleUrls:['./index.css'],
     encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
-  @ViewChild('sliderForm') form: NgForm;
-     onSubmit() {
-       this.validated = true;
-       console.log(this.form.valid)
+  @ViewChild('sliderForm') form?: NgForm;
+  validated: any;
+  public value =70;
+  onSubmit() {
+    this.validated = true;
+    console.log(this.form?.valid)
   }
 
   ngOnInit() {
-   public value =70;
- }
+  
+  }
 }
 
 

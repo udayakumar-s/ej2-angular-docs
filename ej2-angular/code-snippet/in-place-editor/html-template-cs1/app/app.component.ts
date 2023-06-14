@@ -18,10 +18,10 @@ import { InPlaceEditorComponent, ActionBeginEventArgs } from '@syncfusion/ej2-an
 })
 
 export class AppComponent {
-    @ViewChild('element') editObj: InPlaceEditorComponent;
+    @ViewChild('element') editObj?: InPlaceEditorComponent;
     public actionBegin(e: ActionBeginEventArgs): void {
-        const value = (<any>this.editObj.element.querySelector('#date')).value;
-        this.editObj.value = value;
+        const value = (<any>(this.editObj as InPlaceEditorComponent).element.querySelector('#date')).value;
+        (this.editObj as InPlaceEditorComponent).value = value;
         (<any>e).value = value;
     }
 }

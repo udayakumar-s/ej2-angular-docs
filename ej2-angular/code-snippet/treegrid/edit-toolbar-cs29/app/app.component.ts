@@ -18,9 +18,9 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegri
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;

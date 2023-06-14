@@ -28,14 +28,14 @@ import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 })
 
 export class AppComponent {
-  @ViewChild('element') editorObj: InPlaceEditorComponent;
+  @ViewChild('element') editorObj?: InPlaceEditorComponent;
   public model: Object = {  placeholder: 'Enter some text' };
   public saveButton: object = { content: 'Ok', cssClass: 'e-outline'};
   public cancelButton: object = { content: 'Cancel', cssClass: 'e-outline'};
 
   public onChange(e: ChangeEventArgs): void {
-    this.editorObj.showButtons = e.checked;
-    this.editorObj.dataBind();
+    (this.editorObj as InPlaceEditorComponent).showButtons = e.checked as boolean;
+    this.editorObj?.dataBind();
   }
 }
 

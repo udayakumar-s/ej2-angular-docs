@@ -15,18 +15,18 @@ import { closest} from '@syncfusion/ej2-base';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') public element: any;
     public position = { X: "Right", Y: "Bottom" };
     public buttons = [{ model: { content: "Ignore" }, click: this.btnToastClick.bind(this)}, {model: { content: "reply" }}];
 
-    btnToastClick(e) {
+    btnToastClick(e: any) {
       const toastEle = closest(e.target, '.e-toast');
       this.element.hide(toastEle);
     }
-    onCreate() {
+    onCreate(args: any) {
       this.toastShow();
     }
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
     toastShow() {

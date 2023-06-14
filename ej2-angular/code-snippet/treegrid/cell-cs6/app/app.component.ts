@@ -16,7 +16,7 @@ import { htmlData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = htmlData;

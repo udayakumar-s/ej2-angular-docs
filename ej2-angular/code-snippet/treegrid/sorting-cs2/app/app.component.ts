@@ -16,8 +16,8 @@ import { sortData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public initialSort: Object;
+    public data?: Object[];
+    public initialSort?: Object;
     ngOnInit(): void {
         this.data = sortData;
         this.initialSort = { columns: [{ field: 'Category', direction: 'Ascending' }, { field: 'orderName', direction: 'Ascending' }] };

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { SignatureComponent } from '@syncfusion/ej2-angular-inputs';
+import { SignatureModule } from '@syncfusion/ej2-angular-inputs';
 import { enableRipple } from '@syncfusion/ej2-base';
 
 enableRipple(true);
@@ -12,9 +12,9 @@ enableRipple(true);
  */
 @NgModule({
     imports: [
-        BrowserModule,FormsModule
+        BrowserModule,FormsModule,SignatureModule
     ],
-    declarations: [AppComponent, SignatureComponent],
+    declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

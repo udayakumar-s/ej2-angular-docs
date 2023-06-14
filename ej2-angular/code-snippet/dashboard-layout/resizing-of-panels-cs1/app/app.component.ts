@@ -4,7 +4,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/default-style.css'],
+    styleUrls: ['./default-style.css'],
     template: `
     <div class="control-section">
         <ejs-dashboardlayout id='defaultLayout' #defaultLayout [columns]='5' [cellSpacing]='cellSpacing' [panels]='panels' [allowResizing]='allowResizing' [resizableHandles]='resizableHandles'
@@ -26,7 +26,7 @@ export class AppComponent {
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 2, content: '<div class="content">5</div>' },
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 3, content: '<div class="content">6</div>' }
     ];
-
+    public $this: any = this;
     //Dashboard Layout's resizestart event function
     onResizeStart(args: any) {
         console.log("Resize start");

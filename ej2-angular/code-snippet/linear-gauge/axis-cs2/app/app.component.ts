@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-    public line:Object;
+    public line?:Object;
     ngOnInit(): void {
         this.line = {
             height: 150,

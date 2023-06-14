@@ -13,14 +13,14 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') public element: any;
     public position = { X: 'Right', Y: 'Bottom' };
-    public templateEle = document.getElementById('template_toast_ele').innerHTML;
+    public templateEle = (document.getElementById('template_toast_ele') as HTMLElement).innerHTML;
 
-    onCreate() {
+    onCreate(args: any) {
       this.toastShow();
     }
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
     toastShow() {

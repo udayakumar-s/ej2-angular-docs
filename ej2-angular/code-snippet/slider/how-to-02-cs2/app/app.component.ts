@@ -2,6 +2,7 @@
 
 
 import { Component } from '@angular/core';
+import { SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'my-app',
@@ -12,7 +13,7 @@ import { Component } from '@angular/core';
                 (tooltipChange)='tooltipChangeHandler($event)' (renderingTicks)='renderingTicksHandler($event)'></ejs-slider>
         </div>
     </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {
@@ -25,13 +26,13 @@ export class AppComponent {
 
     tooltipChangeHandler(args: SliderTooltipEventArgs): void {
         let totalMiliSeconds = Number(args.text);
-        let custom = { hour: '2-digit', minute: '2-digit' };
+        let custom: any = { hour: '2-digit', minute: '2-digit' };
         args.text = new Date(totalMiliSeconds).toLocaleTimeString("en-us", custom);
     }
 
     renderingTicksHandler(args: SliderTickEventArgs): void {
         let totalMiliSeconds = Number(args.value);
-        let custom = { hour: '2-digit', minute: '2-digit' };
+        let custom: any = { hour: '2-digit', minute: '2-digit' };
         args.text = new Date(totalMiliSeconds).toLocaleTimeString("en-us", custom);
     }
 }

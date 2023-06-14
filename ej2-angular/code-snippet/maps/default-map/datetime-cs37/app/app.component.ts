@@ -3,7 +3,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 @Component({
     selector: 'app-container',
     template:
@@ -15,12 +15,12 @@ import { world_map } from 'world-map.ts';
 })
 
 export class AppComponent implements OnInit {
-    public titleSettings: object;
-    public dataSource: object[];
-    public shapeData: object;
-    public shapePropertyPath: string;
-    public shapeDataPath: string;
-    public shapeSettings: object;
+    public titleSettings?: object;
+    public dataSource?: object[];
+    public shapeData?: object;
+    public shapePropertyPath?: string;
+    public shapeDataPath?: string;
+    public shapeSettings?: object;
     ngOnInit(): void {
         this.titleSettings = {
          text: 'World map membership',

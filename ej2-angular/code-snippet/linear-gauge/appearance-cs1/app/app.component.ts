@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-    public border: Object;
-    public margin: Object;
+    public border?: Object;
+    public margin?: Object;
     ngOnInit(): void {
       this.border = { color: "#FF0000", width: 2 };
       this.margin = { left: 20, top: 20, right: 20, bottom: 20}

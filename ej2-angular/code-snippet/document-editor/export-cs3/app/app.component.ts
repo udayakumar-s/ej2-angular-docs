@@ -16,11 +16,11 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public saveAsTxt(): void {
         //Downlod the document as txt file.
-        this.documentEditor.save('sample', 'Txt');
+        (this.documentEditor as DocumentEditorComponent).save('sample', 'Txt');
     }
 
 }

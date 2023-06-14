@@ -2,7 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps, Marker } from '@syncfusion/ej2-angular-maps';
-import { usa_map } from 'usa.ts';
+import { usa_map } from './usa';
 Maps.Inject(Marker);
 @Component({
     selector: 'app-container',
@@ -15,8 +15,8 @@ Maps.Inject(Marker);
 })
 
 export class AppComponent implements OnInit {
-    public shapeData: object;
-    public markerSettings: object;
+    public shapeData?: object;
+    public markerSettings?: object;
     ngOnInit(): void {
         this.shapeData = usa_map;
         this.markerSettings = [{

@@ -3,6 +3,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
     selector: 'app-root',
@@ -49,14 +50,14 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public sortOptions;
+    public data?: object[];
+    public sortOptions?: any;
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
     @ViewChild('dropdownColumn') 
-    public dropDownColumn: DropDownListComponent;
+    public dropDownColumn?: DropDownListComponent;
     @ViewChild('dropdownDirection')
-    public dropDownDirection: DropDownListComponent;
+    public dropDownDirection?: DropDownListComponent;
     public columns: Object[] = [
         { text: 'Order ID', value: 'OrderID' },
         { text: 'Customer ID', value: 'CustomerID' },
@@ -78,9 +79,9 @@ export class AppComponent implements OnInit {
     }
 
     addSortColumn() {
-        this.grid.sortColumn(
-          this.dropDownColumn.value as any,
-          this.dropDownDirection.value as any,
+        this.grid?.sortColumn(
+          (this as any).dropDownColumn.value as any,
+          (this as any).dropDownDirection.value as any,
           true
         );
       }

@@ -22,7 +22,7 @@ import { extend } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
+    public pData?: object[];
     public expandedChildGrid: object = {};
     public childGrid: GridModel = {
         dataSource: data,
@@ -34,20 +34,21 @@ export class AppComponent implements OnInit {
             { field: 'ShipName', headerText: 'Ship Name', width: 150 }
         ]
     };
-    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.pData = employeeData;
-        this.grid.on(printGridInit, this.printInit, this);
+        (this.grid as any).on(printGridInit, this.printInit, this);
     }
 
-    actionBegin(args) {
-        if (args.requestType === 'paging') {
-            this.expandedChildGrid = extend({}, this.expandedChildGrid, this.getExpandedState(this.grid, 'Expanded', args.previousPage));
+    actionBegin(args: any) {
+        if ((args as any).requestType === 'paging') {
+            this.expandedChildGrid = extend({}, this.expandedChildGrid, this.getExpandedState((this.grid as any), 'Expanded', (args as any).previousPage));
         }
     }
 
-    printInit(gridModel) {
+    printInit(gridModel: any) {
         gridModel.printgrid.expandedRows = extend({}, this.expandedChildGrid, gridModel.expandedRows);
     }
 
@@ -57,10 +58,10 @@ export class AppComponent implements OnInit {
         for (const row of rows) {
             if (row.isExpand && !row.isDetailRow) {
                 const index: number = gObj.allowPaging ? row.index +
-                    (currentPage * gObj.pageSettings.pageSize) - gObj.pageSettings.pageSize : row.index;
-                obj[index] = {};
-                obj[index].isExpand = true;
-                obj[index].gridModel = getPrintGridModel(row.childGrid, hierarchyPrintMode);
+                    (currentPage * (gObj as any).pageSettings.pageSize) - (gObj as any).pageSettings.pageSize : row.index;
+                (obj as any)[index] = {};
+                (obj as any)[index].isExpand = true;
+                (obj as any)[index].gridModel = getPrintGridModel(row.childGrid, hierarchyPrintMode);
             }
         }
         return obj;

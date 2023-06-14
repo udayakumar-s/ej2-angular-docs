@@ -18,10 +18,10 @@ import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public groupSettings: GroupSettingsModel;
+    public data?: object[];
+    public groupSettings?: GroupSettingsModel;
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -29,16 +29,13 @@ export class AppComponent implements OnInit {
     }
 
     collapse() {
-        if (this.grid.getSelectedRowIndexes().length) {
-            let currentTr: Element = this.grid.getRows()[this.grid.getSelectedRowIndexes()[0]];
+        if ((this.grid as any).getSelectedRowIndexes().length) {
+            let currentTr: Element = (this.grid as any).getRows()[(this.grid as any).getSelectedRowIndexes()[0]];
             while (currentTr.classList && currentTr.classList.length) {
                 currentTr = currentTr.previousSibling as Element;
             }
             const collapseElement = currentTr.querySelector('.e-recordplusexpand');
-            this.grid.groupModule.expandCollapseRows(collapseElement); // pass the collapse row element.
+            (this.grid as any).groupModule.expandCollapseRows(collapseElement); // pass the collapse row element.
         }
     }
 }
-
-
-

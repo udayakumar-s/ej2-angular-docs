@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Maps, Marker, Legend, MapsTooltip, IMarkerDragEventArgs } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 Maps.Inject(Marker, Legend, MapsTooltip);
 @Component({
     selector: 'app-container',
@@ -14,20 +14,20 @@ Maps.Inject(Marker, Legend, MapsTooltip);
 
 export class AppComponent implements OnInit {
     @ViewChild('maps')
-    public mapsInstance: Maps;
-    public shapeData: object;
-    public markerSettings: object;
-    public shapeSettings: object;
-    public zoomSettings: object;
+    public mapsInstance?: Maps;
+    public shapeData?: object;
+    public markerSettings?: object;
+    public shapeSettings?: object;
+    public zoomSettings?: object;
     public markerDragStart = (args: IMarkerDragEventArgs) => {
       // When the marker begins to move on the map, the event is triggered.
     };
     public markerDragEnd = (args: IMarkerDragEventArgs) => {
       // When the marker on the map stops dragging, the event is triggered.
-      this.mapsInstance.layers[args.layerIndex].markerSettings[args.markerIndex].dataSource[args.dataIndex].name = 'Dragged Marker ' + (args.dataIndex + 1);
-      this.mapsInstance.refresh();
+      (this.mapsInstance as any).layers[args.layerIndex].markerSettings[args.markerIndex].dataSource[args.dataIndex].name = 'Dragged Marker ' + (args.dataIndex + 1);
+      (this.mapsInstance as Maps).refresh();
     };
-    public legendSettings: object;
+    public legendSettings?: object;
 
     ngOnInit(): void {
         this.shapeData = world_map;

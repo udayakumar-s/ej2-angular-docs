@@ -14,9 +14,9 @@ import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public data: DataManager;
-    public loadingIndicator;
-    public pageSettings: Object;
+    public data?: DataManager;
+    public loadingIndicator?: any;
+    public pageSettings?: Object;
     ngOnInit(): void {
         this.data = new DataManager({
             url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/',

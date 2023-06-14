@@ -27,23 +27,24 @@ import { data } from './datasource';
                 </e-columns>
               </ejs-grid>
             <div>`,
-  styleUrls: ['./app/app.component.css']
+  // styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
 
-  public data: Object[];
+  public data?: Object[];
   @ViewChild('grid')
-  public grid: GridComponent;
+  public grid?: GridComponent;
 
   ngOnInit(): void {
     this.data = data;
   }
   changeHeaderHeight(event: MouseEvent): void {
     const heightMap = { small: '20px', medium: '42px', big: '60px' };
-    const headerCells = this.grid.getHeaderContent().querySelectorAll('.e-headercell');
-    headerCells.forEach((headerCell) => {
-      (headerCell as HTMLElement).style.height = heightMap[
-        (event.target as HTMLButtonElement).id];
+    const headerCells = (this.grid as GridComponent).getHeaderContent().querySelectorAll('.e-headercell');
+    headerCells.forEach((headerCell: any) => {
+      (headerCell as HTMLElement).style.height = (heightMap as any)[
+        (event.target as HTMLButtonElement).id
+      ];
     });
   }
 

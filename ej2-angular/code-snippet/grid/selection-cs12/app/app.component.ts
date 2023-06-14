@@ -20,12 +20,12 @@ import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncf
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
-    public pageOptions: PageSettingsModel;
+    public data?: object[];
+    public selectionOptions?: SelectionSettingsModel;
+    public pageOptions?: PageSettingsModel;
 
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     }
 
     click(): void{
-        let selectedrecords: Object[] = this.grid.getSelectedRecords(); // get the selected records.
+        let selectedrecords: Object[] = (this.grid as any).getSelectedRecords(); // get the selected records.
         let selectedRecordsCount: number = selectedrecords.length
         alert(selectedRecordsCount); // to alert the selected records count.
     }

@@ -13,7 +13,7 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') public element: any;
     public position = { X: 'Right', Y: 'Bottom' };
     public toasts = [
     { title: 'Warning !', content: 'There was a problem with your network connection.' },
@@ -23,7 +23,7 @@ export class AppComponent {
     public maxCount: number = 3;
     public toastFlag:number = 0;
 
-    onBeforeOpen(e) {
+    onBeforeOpen(e: any) {
       if (this.maxCount === this.element.element.childElementCount) {
    e.cancel =true;
   } else {
@@ -31,11 +31,11 @@ export class AppComponent {
   }
     }
 
-    onCreate() {
+    onCreate(args: any) {
       this.element.show(this.toasts[this.toastFlag]);
       ++this.toastFlag;
     }
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
     toastShow() {

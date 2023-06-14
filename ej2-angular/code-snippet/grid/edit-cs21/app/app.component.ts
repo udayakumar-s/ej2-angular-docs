@@ -19,9 +19,9 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;
@@ -29,10 +29,10 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Edit', 'Update', 'Cancel'];
     }
 
-    actionBegin(args) {
-        if (args.requestType === 'beginEdit') {
-            if (args.rowData.ShipCountry === 'France') {
-                args.cancel = true;
+    actionBegin(args: any) {
+        if ((args as any).requestType === 'beginEdit') {
+            if ((args as any).rowData.ShipCountry === 'France') {
+                (args as any).cancel = true;
             }
         }
     }

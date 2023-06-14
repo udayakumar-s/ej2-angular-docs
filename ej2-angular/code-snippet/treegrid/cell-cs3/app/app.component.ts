@@ -13,12 +13,12 @@ import { sampleData } from './datasource';
                     <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
         </e-columns>
                 </ejs-treegrid>`,
-                styleUrls: ['app/app.style.css'],
+                styleUrls: ['./app.style.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     ngOnInit(): void {
         this.data = sampleData;
     }

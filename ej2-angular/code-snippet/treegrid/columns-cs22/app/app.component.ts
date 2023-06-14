@@ -17,13 +17,13 @@ import { formatData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = formatData;
     }
 
-totalPrice(field: string, data: { units: number, Fat: number, unitprice: number }, column: Object): number {
+totalPrice(field: string, data: { units: number, Fat: number, unitprice: number } | any, column: Object): number {
     return data.units * data.unitPrice;
 };
 }

@@ -9,9 +9,10 @@ import { BarcodeGeneratorComponent,DisplayTextModel } from '@syncfusion/ej2-angu
   template: `<ejs-barcodegenerator style="display: block;" #barcode id="barcode" width="200px"  height="150px" [displayText] = 'displayText' mode="SVG" type="Code128" value="SYNCFUSION"></ejs-barcodegenerator>`,
 })
 export class AppComponent {
-   @ViewChild('barcode')
+  //  @ViewChild('barcode')
    @ViewChild('displayText')
-   public displayText: DisplayTextModel;
+   public displayText?: DisplayTextModel;
+
    ngOnInit(): void {  
 
      this.displayText = {

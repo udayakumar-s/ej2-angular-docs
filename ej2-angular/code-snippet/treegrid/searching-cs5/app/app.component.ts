@@ -18,10 +18,10 @@ import { ToolbarItems, SearchSettingsModel, TreeGridComponent } from '@syncfusio
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    public searchSettings: SearchSettingsModel;
-    @ViewChild('treegrid') public treegridObj: TreeGridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    public searchSettings?: SearchSettingsModel;
+    @ViewChild('treegrid') public treegridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     }
 
     clearSearch() {
-        this.treegridObj.searchSettings.key = '';
+        (this.treegridObj as TreeGridComponent).searchSettings.key = '';
     }
 }
 

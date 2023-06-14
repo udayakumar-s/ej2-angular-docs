@@ -22,13 +22,13 @@ import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 export class AppComponent implements OnInit {
 
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
-    public data: object[];
+    public treegrid?: TreeGridComponent;
+    public data?: object[];
     public columnMenuItems: any = [{ text: 'Clear Sorting', id: 'treegridclearsorting' }];
     public sortSettings: SortSettingsModel =  {columns: [{direction: 'Descending', field: 'taskID'}]};
     public columnMenuClick(args: MenuEventArgs) {
         if (args.item.id === 'treegridclearsorting') {
-            this.treegrid.clearSorting();
+            (this.treegrid as TreeGridComponent).clearSorting();
         }
     }
     ngOnInit(): void {

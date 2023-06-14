@@ -18,17 +18,17 @@ Here's an example code snippet that demonstrates how to define columns manually 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging-cs1/app/app.component.ts %}
+{% include samples/grid/paging-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging-cs1/app/app.module.ts %}
+{% include samples/grid/paging-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging-cs1/app/main.ts %}
+{% include samples/grid/paging-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/paging-cs1" %}
+{% previewsample "page.domainurl/samples/grid/paging-cs1" %}
 
 ## Auto generated columns
 
@@ -38,17 +38,17 @@ You can use the following code snippet to enable auto-generated columns in the S
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs3/app/app.component.ts %}
+{% include samples/grid/grid-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs3/app/app.module.ts %}
+{% include samples/grid/grid-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs3/app/main.ts %}
+{% include samples/grid/grid-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs3" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs3" %}
 
 >* When the columns are auto-generated, the column [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) is determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource).
 >* If you have a large dataset, auto-generating columns can result in performance issues. In this case, it is recommended to specify the columns manually in the columns property during initialization or else use column virtualization feature by setting [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablecolumnvirtualization) property value as **true**.
@@ -63,17 +63,17 @@ Here is an example code snippet that shows how to set a primary key for an auto-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs4/app/app.component.ts %}
+{% include samples/grid/grid-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs4/app/app.module.ts %}
+{% include samples/grid/grid-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs4/app/main.ts %}
+{% include samples/grid/grid-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs4" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs4" %}
 
 If the column [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) name is known, the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield) method can be used to retrieve the column object. Then, the `isPrimaryKey` property can be set to **true** for that column, as demonstrated in the code snippet below:
 
@@ -94,17 +94,17 @@ In the below example, `width` is set for **OrderID** column, **date** `type` is 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs5/app/app.component.ts %}
+{% include samples/grid/grid-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs5/app/app.module.ts %}
+{% include samples/grid/grid-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs5/app/main.ts %}
+{% include samples/grid/grid-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs5" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs5" %}
 
 ## Dynamic column generation 
 
@@ -118,17 +118,17 @@ Here is an example for dynamically generate columns in the grid using ngFor dire
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/dynamic-column-cs1/app/app.component.ts %}
+{% include samples/grid/dynamic-column-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dynamic-column-cs1/app/app.module.ts %}
+{% include samples/grid/dynamic-column-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/dynamic-column-cs1/app/main.ts %}
+{% include samples/grid/dynamic-column-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dynamic-column-cs1" %}
+{% previewsample "page.domainurl/samples/grid/dynamic-column-cs1" %}
 
 > You can change the data source or columns dynamically in the Syncfusion Grid by using the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#changedatasource) method. For more information, please refer to [this](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/how-to-change-the-data-source-or-columns-dynamically) section.
 
@@ -144,17 +144,17 @@ In the provided code, the **currencyFormatter** function takes the Freight value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs10/app/app.component.ts %}
+{% include samples/grid/grid-cs10/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs10/app/app.module.ts %}
+{% include samples/grid/grid-cs10/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs10/app/main.ts %}
+{% include samples/grid/grid-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs10" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs10" %}
 
 > The `valueAccessor` function can have performance implications if it is used to access a large number of data records or to perform complex data manipulations. To avoid performance issues, you can enable the virtualization feature while using the valueAccessor property. This ensures that only the visible rows are rendered, resulting in faster rendering times.
 
@@ -168,17 +168,17 @@ This will display the concatenated value of **FirstName** and **LastName** in th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs11/app/app.component.ts %}
+{% include samples/grid/grid-cs11/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs11/app/app.module.ts %}
+{% include samples/grid/grid-cs11/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs11/app/main.ts %}
+{% include samples/grid/grid-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs11" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs11" %}
 
 ### Expression column
 
@@ -188,17 +188,17 @@ In this example, we have a grid with columns **Food Name**, **Protein**, **Fat**
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/expression-cs1/app/app.component.ts %}
+{% include samples/grid/expression-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/expression-cs1/app/app.module.ts %}
+{% include samples/grid/expression-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/expression-cs1/app/main.ts %}
+{% include samples/grid/expression-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/expression-cs1" %}
+{% previewsample "page.domainurl/samples/grid/expression-cs1" %}
 
 ### Display serial number
 
@@ -210,17 +210,17 @@ Here is an example code snippet that demonstrates how to display serial numbers 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs31/app/app.component.ts %}
+{% include samples/grid/grid-cs31/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs31/app/app.module.ts %}
+{% include samples/grid/grid-cs31/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs31/app/main.ts %}
+{% include samples/grid/grid-cs31/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs31" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs31" %}
 
 ## Complex data binding
 
@@ -234,17 +234,17 @@ In the below example, we have bound the nested **Employee** object's **FirstName
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs18/app/app.component.ts %}
+{% include samples/grid/grid-cs18/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs18/app/app.module.ts %}
+{% include samples/grid/grid-cs18/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs18/app/main.ts %}
+{% include samples/grid/grid-cs18/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs18" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs18" %}
 
 ### Using remote data
 
@@ -254,17 +254,17 @@ In the below example, we have used the `expand` query to load the nested Employe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/complex-data-cs2/app/app.component.ts %}
+{% include samples/grid/complex-data-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/complex-data-cs2/app/app.module.ts %}
+{% include samples/grid/complex-data-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/complex-data-cs2/app/main.ts %}
+{% include samples/grid/complex-data-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/complex-data-cs2" %}
+{% previewsample "page.domainurl/samples/grid/complex-data-cs2" %}
 
 ### Complex data binding with list of array of objects
 
@@ -274,17 +274,17 @@ The following example shows how to set complex field for datasource having array
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/complex-data-cs1/app/app.component.ts %}
+{% include samples/grid/complex-data-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/complex-data-cs1/app/app.module.ts %}
+{% include samples/grid/complex-data-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/complex-data-cs1/app/main.ts %}
+{% include samples/grid/complex-data-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/complex-data-cs1" %}
+{% previewsample "page.domainurl/samples/grid/complex-data-cs1" %}
 
 ### How to set complex column as foreign key column
 
@@ -294,14 +294,14 @@ The following example demonstrates how to set the **Employee.EmployeeID** column
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/app/app.component.ts %}
+{% include samples/grid/foreignkey-cs11/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/app/app.module.ts %}
+{% include samples/grid/foreignkey-cs11/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/app/main.ts %}
+{% include samples/grid/foreignkey-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs11" %}
+{% previewsample "page.domainurl/samples/grid/foreignkey-cs11" %}

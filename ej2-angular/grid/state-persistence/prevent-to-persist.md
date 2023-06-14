@@ -20,14 +20,14 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs9/app/app.component.ts %}
+{% include samples/grid/grouping1-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs9/app/app.module.ts %}
+{% include samples/grid/grouping1-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs9/app/main.ts %}
+{% include samples/grid/grouping1-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs9" %}
+{% previewsample "page.domainurl/samples/grid/grouping1-cs9" %}

@@ -17,7 +17,7 @@ Diagram.Inject(ConnectorEditing)
 
 export class AppComponent {
     @ViewChild('diagram')
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     ngOnInit(): void {}
         public sourcePoint: PointModel = { x: 100, y: 100 };
         public targetPoint: PointModel = { x: 200, y: 200 }

@@ -21,11 +21,11 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public sortOptions
+    public data?: object[];
+    public sortOptions?: any;
 
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     }
 
     onExternalSort() {
-        this.grid.clearSorting();
+        this.grid?.clearSorting();
     }
 }
 

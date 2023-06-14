@@ -34,10 +34,10 @@ providers: [DetailRowService]
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = textdata;

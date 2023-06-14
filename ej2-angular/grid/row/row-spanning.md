@@ -20,17 +20,17 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/spanning-cs2/app/app.component.ts %}
+{% include samples/grid/spanning-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/spanning-cs2/app/app.module.ts %}
+{% include samples/grid/spanning-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/spanning-cs2/app/main.ts %}
+{% include samples/grid/spanning-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/spanning-cs2" %}
+{% previewsample "page.domainurl/samples/grid/spanning-cs2" %}
 
 > To disable the spanning for particular grid page, you need to use **requestType** from `queryCellInfo` event argument.
 > The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.

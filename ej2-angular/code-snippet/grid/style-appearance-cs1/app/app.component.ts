@@ -17,15 +17,15 @@ import { data } from './datasource';
       providers: [PageService]
 })
 export class AppComponent implements OnInit {
-  public data: Object[];
-  public grid: GridComponent;
-  public pageSettings: Object;
-  public selectionOptions: SelectionSettingsModel;
+  public data?: Object[];
+  public grid?: GridComponent;
+  public pageSettings?: Object;
+  public selectionOptions?: SelectionSettingsModel;
 
   ngOnInit(): void {
     this.data = data;
     this.pageSettings = { pageSize: 8 };
-     this.selectionOptions = { type: 'Multiple' };
+    this.selectionOptions = { type: 'Multiple' };
   }
 }
 

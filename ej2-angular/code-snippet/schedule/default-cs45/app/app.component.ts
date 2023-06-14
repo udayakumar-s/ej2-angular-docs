@@ -16,13 +16,13 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     @ViewChild('addButtonObj')
-    public addButtonObj: ButtonComponent;
+    public addButtonObj?: ButtonComponent;
     @ViewChild('editButtonObj')
-    public editButtonObj: ButtonComponent;
+    public editButtonObj?: ButtonComponent;
     @ViewChild('deleteButtonObj')
-    public deleteButtonObj: ButtonComponent;
+    public deleteButtonObj?: ButtonComponent;
     public data: object[] = [{
         Id: 3,
         Subject: 'Testing',
@@ -49,18 +49,18 @@ export class AppComponent {
             IsAllDay: false,
             RecurrenceRule: 'FREQ=DAILY;INTERVAL=1;COUNT=2'
         }];
-        this.scheduleObj.addEvent(Data);
-        this.addButtonObj.element.setAttribute('disabled', 'true');
+        this.scheduleObj?.addEvent(Data);
+        this.addButtonObj?.element.setAttribute('disabled', 'true');
     }
     edit(): void {
-        let data: Object = new DataManager(this.scheduleObj.getCurrentViewEvents()).executeLocal(new Query().where('RecurrenceID', 'equal', 3));
+        let data:  any[] = new DataManager(this.scheduleObj?.getCurrentViewEvents()).executeLocal(new Query().where('RecurrenceID', 'equal', 3));
         data[0].Subject = 'Occurence edited';
-        this.scheduleObj.saveEvent(data[0], 'EditOccurrence');
-        this.editButtonObj.element.setAttribute('disabled', 'true');
+        this.scheduleObj?.saveEvent(data[0], 'EditOccurrence');
+        this.editButtonObj?.element.setAttribute('disabled', 'true');
     }
     delete(): void {
-        this.scheduleObj.deleteEvent(4, 'DeleteSeries');
-        this.deleteButtonObj.element.setAttribute('disabled', 'true');
+        this.scheduleObj?.deleteEvent(4, 'DeleteSeries');
+        this.deleteButtonObj?.element.setAttribute('disabled', 'true');
     }
 }
 

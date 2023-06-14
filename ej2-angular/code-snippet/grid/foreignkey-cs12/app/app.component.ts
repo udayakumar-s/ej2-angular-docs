@@ -19,16 +19,16 @@ import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data'
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
-    public employeeData: DataManager;
+    public data?: DataManager;
+    public employeeData?: DataManager;
 
     ngOnInit(): void {
-        this.data = new DataManager({
+        (this as any).data = new DataManager({
             url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/',
             adaptor: new ODataV4Adaptor(),
             crossDomain: true,
         });
-        this.employeeData = new DataManager({
+        (this as any).employeeData = new DataManager({
             url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Employees/',
             adaptor: new ODataV4Adaptor(),
             crossDomain: true,

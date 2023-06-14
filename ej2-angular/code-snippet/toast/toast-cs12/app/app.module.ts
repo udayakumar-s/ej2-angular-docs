@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
     imports: [
         BrowserModule, ToastModule, ButtonModule, CheckBoxModule , RadioButtonModule, DropDownListModule, DatePickerModule
     ],
-    declarations: [AppComponent ],
+    declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

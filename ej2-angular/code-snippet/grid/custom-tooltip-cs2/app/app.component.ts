@@ -18,15 +18,15 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = data;
     }
     tooltip(args: QueryCellInfoEventArgs) {
         const tooltip: Tooltip = new Tooltip({
-            content: args.data[args.column.field].toString()
-        }, args.cell as HTMLTableCellElement);
+            content: (args as any).data[(args as any).column.field].toString()
+        }, (args as any).cell as HTMLTableCellElement);
     }
 }
 

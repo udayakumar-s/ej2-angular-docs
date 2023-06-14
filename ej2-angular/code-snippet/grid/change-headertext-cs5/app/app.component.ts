@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent} from '@syncfusion/ej2-angular-grids';
+import { Column, ColumnModel, GridComponent} from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({
@@ -20,9 +20,9 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[] = [];
+    public data?: object[] = [];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
     public headerTextMap: { [key: string]: string } = {
         'OrderID': 'Order ID',
         'CustomerID': 'Customer ID',
@@ -34,10 +34,10 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
     changeHeaderText(): void {
-        this.grid.columns.forEach((column: any) => {
-            column.headerText = this.headerTextMap[column.field];
+        this.grid?.columns.forEach((column: ColumnModel) => {
+            column.headerText = this.headerTextMap[column.field as string];
         });
-        this.grid.refreshHeader();
+        this.grid?.refreshHeader();
     }
 
 }

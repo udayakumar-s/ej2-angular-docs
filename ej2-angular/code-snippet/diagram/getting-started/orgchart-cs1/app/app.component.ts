@@ -9,6 +9,7 @@ import {
   DataSourceModel
 } from "@syncfusion/ej2-diagrams";
 import { DataManager } from "@syncfusion/ej2-data";
+import { ShapeStyleModel } from "@syncfusion/ej2-angular-diagrams";
 export interface EmployeeInfo {
   Name: string;
   Role: string;
@@ -21,8 +22,8 @@ export interface EmployeeInfo {
 </ejs-diagram>`
 })
 export class AppComponent {
-  @ViewChild("diagram") public layout: LayoutModel;
-  public dataSourceSettings: DataSourceModel;
+  @ViewChild("diagram") public layout?: LayoutModel;
+  public dataSourceSettings?: DataSourceModel;
   public data: Object[] = [
     {
       Name: "Elizabeth",
@@ -71,7 +72,7 @@ export class AppComponent {
     node.annotations = [
       { content: (node.data as EmployeeInfo).Name, style: { color: "white" } }
     ];
-    node.style.fill = codes[(node.data as EmployeeInfo).Role];
+    ((node as NodeModel).style as ShapeStyleModel).fill = (codes as any)[(node.data as EmployeeInfo).Role] as string;
     return node;
   }
 

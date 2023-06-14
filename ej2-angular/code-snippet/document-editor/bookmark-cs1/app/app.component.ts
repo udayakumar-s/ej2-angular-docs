@@ -16,11 +16,11 @@ import {
 })
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public showBookmarkDialog(): void {
           //Open the bookmark dialog.
-          this.documentEditor.showDialog('Bookmark');
+          (this.documentEditor as DocumentEditorComponent).showDialog('Bookmark');
     }
 }
 

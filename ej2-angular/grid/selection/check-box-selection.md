@@ -16,17 +16,17 @@ To render checkbox in each grid row, you need to use checkbox column with type a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs3/app/app.component.ts %}
+{% include samples/grid/selection-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs3/app/app.module.ts %}
+{% include samples/grid/selection-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs3/app/main.ts %}
+{% include samples/grid/selection-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs3" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs3" %}
 
 > By default selection is allowed by clicking a grid row or checkbox in that row. To allow Selection only through checkbox, you can set [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#checkboxonly) property to true.
 > Selection can be persisted on all the operations using [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#persistselection) property. For persisting selection on the Grid, any one of the column should be defined as a primary key using [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property.
@@ -40,17 +40,17 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs4/app/app.component.ts %}
+{% include samples/grid/selection-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs4/app/app.module.ts %}
+{% include samples/grid/selection-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs4/app/main.ts %}
+{% include samples/grid/selection-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs4" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs4" %}
 
 ## Prevent specific rows from being selected in checkbox selection
 
@@ -60,14 +60,14 @@ In the following sample, the selection of specific rows has been prevented based
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs5/app/app.component.ts %}
+{% include samples/grid/selection-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs5/app/app.module.ts %}
+{% include samples/grid/selection-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs5/app/main.ts %}
+{% include samples/grid/selection-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs5" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs5" %}

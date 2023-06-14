@@ -2,6 +2,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
+import { ListViewComponent } from '@syncfusion/ej2-angular-lists';
 import { Ajax } from '@syncfusion/ej2-base';
 
 @Component({
@@ -13,7 +14,7 @@ import { Ajax } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent {
-  public listtemplate;
+  public listtemplate?: ListViewComponent;
   public data =  [
     { name: 'Network & Internet', id: '0', description: 'Wi-Fi, mobile, data usage, hotspot' },
     { name: 'Connected devices', id: '1', description: 'Bluetooth, cast, NFC' },
@@ -25,7 +26,7 @@ export class AppComponent {
   public fields: Object = {text: 'name', id: 'id'};
     ngOnInit(){
         let ajax = new Ajax('./template.html', 'GET', false);
-        ajax.onSuccess = (e)=>{
+        ajax.onSuccess = (e: any)=>{
           this.listtemplate = e;
         };
         ajax.send();

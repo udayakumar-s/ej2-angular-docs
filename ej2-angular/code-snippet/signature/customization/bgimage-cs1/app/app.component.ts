@@ -18,10 +18,10 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('signature')
-    public signature: SignatureComponent;
+    public signature?: SignatureComponent;
     setBgImage(): void {
-        let bgImage = document.getElementById('text').value;
-        this.signature.backgroundImage = bgImage;
+        let bgImage = (document.getElementById('text') as any).value;
+        this.signature!.backgroundImage = bgImage;
     }
 }
 

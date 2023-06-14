@@ -2,13 +2,12 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { DecoratorModel, DiagramComponent, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 import {
     NodeModel, ConnectorModel, Diagram, DataBinding, ComplexHierarchicalTree,
     SnapConstraints, SnapSettingsModel, LayoutModel, LayoutOrientation, LineDistribution, ConnectionPointOrigin
 } from '@syncfusion/ej2-diagrams';
 import { DataManager } from '@syncfusion/ej2-data';
-import * as Data from '../diagram-data.json';
 Diagram.Inject(DataBinding, ComplexHierarchicalTree, LineDistribution);
 
 @Component({
@@ -21,7 +20,7 @@ Diagram.Inject(DataBinding, ComplexHierarchicalTree, LineDistribution);
 
 export class AppComponent {
     @ViewChild('diagram')
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
 
     public nodeDefaults(obj: NodeModel): NodeModel {
         obj.width = 40; obj.height = 40;
@@ -54,16 +53,16 @@ export class AppComponent {
         ],),
     };
     public created(): void {
-        this.diagram.fitToPage();
+        (this.diagram as DiagramComponent).fitToPage();
     };
-    public connDefaults(connector: ConnectorModel): void {
+    public connDefaults(connector: ConnectorModel) {
         connector.type = 'Orthogonal';
         connector.cornerRadius = 7;
-        connector.targetDecorator.height = 7;
-        connector.targetDecorator.width = 7;
+        ((connector as ConnectorModel).targetDecorator as DecoratorModel).height = 7;
+        ((connector as ConnectorModel).targetDecorator as DecoratorModel).width = 7;
         connector.style = { strokeColor: '#6BA5D7', strokeWidth: 1 };
-        connector.targetDecorator.style.fill  =  '#6BA5D7';
-        connector.targetDecorator.style.strokeColor  =  '#6BA5D7';
+        (((connector as ConnectorModel).targetDecorator as DecoratorModel).style as ShapeStyleModel).fill  =  '#6BA5D7';
+        (((connector as ConnectorModel).targetDecorator as DecoratorModel).style as ShapeStyleModel).strokeColor  =  '#6BA5D7';
         return connector;
     };
     public snapSettings: SnapSettingsModel = { constraints: SnapConstraints.None };

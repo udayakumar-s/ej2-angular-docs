@@ -5,13 +5,13 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [allowDragAndDrop]='allowDragAndDrop' (fileDragStart)='onFileDragStart($event)' (fileDragStop)='onFileDragStop($event)' (fileDragging)='onFileDragging($event)' (fileDropped)='onFileDropped($event)' >
     </ejs-filemanager>`
 })
 export class AppComponent {
-    public ajaxSettings: object;
-    public allowDragAndDrop: boolean;
+    public ajaxSettings?: object;
+    public allowDragAndDrop?: boolean;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {

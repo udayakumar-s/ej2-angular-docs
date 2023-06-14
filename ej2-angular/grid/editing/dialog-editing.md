@@ -14,17 +14,17 @@ In Dialog edit mode, when you start editing the currently selected row data will
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs7/app/app.component.ts %}
+{% include samples/grid/edit-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs7/app/app.module.ts %}
+{% include samples/grid/edit-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs7/app/main.ts %}
+{% include samples/grid/edit-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs7" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs7" %}
 
 ## Customize edit dialog
 
@@ -38,17 +38,17 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs8/app/app.component.ts %}
+{% include samples/grid/edit-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs8/app/app.module.ts %}
+{% include samples/grid/edit-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs8/app/main.ts %}
+{% include samples/grid/edit-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs8" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs8" %}
 
 > The Grid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog's height up to 658px.
 
@@ -62,17 +62,17 @@ In the following example, the CustomerID column is rendered as a hidden column, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs9/app/app.component.ts %}
+{% include samples/grid/edit-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs9/app/app.module.ts %}
+{% include samples/grid/edit-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs9/app/main.ts %}
+{% include samples/grid/edit-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs9" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs9" %}
 
 ## Use wizard like dialog editing
 
@@ -82,20 +82,20 @@ The following example demonstrate the wizard like editing in the grid with the u
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/wizardtemplate-cs1/app/app.component.ts %}
+{% include samples/grid/wizardtemplate-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="wizardtemplate.html" %}
-{% include code-snippet/grid/wizardtemplate-cs1/app/wizardtemplate.html %}
+{% include samples/grid/wizardtemplate-cs1/app/wizardtemplate.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/wizardtemplate-cs1/app/app.module.ts %}
+{% include samples/grid/wizardtemplate-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/wizardtemplate-cs1/app/main.ts %}
+{% include samples/grid/wizardtemplate-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/wizardtemplate-cs1" %}
+{% previewsample "page.domainurl/samples/grid/wizardtemplate-cs1" %}
 
 ## Customize Add/Edit Dialog footer
 
@@ -105,14 +105,14 @@ In the following sample, using the `dialog` argument of the `actionComplete` eve
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs10/app/app.component.ts %}
+{% include samples/grid/edit-cs10/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs10/app/app.module.ts %}
+{% include samples/grid/edit-cs10/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs10/app/main.ts %}
+{% include samples/grid/edit-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs10" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs10" %}

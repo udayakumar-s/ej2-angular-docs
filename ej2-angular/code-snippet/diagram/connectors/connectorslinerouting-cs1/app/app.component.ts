@@ -12,7 +12,7 @@ Diagram.Inject(LineRouting);
 })
 export class AppComponent {
     @ViewChild('diagram')
-  public diagram: DiagramComponent;
+  public diagram?: DiagramComponent;
   public constraints: DiagramConstraints = DiagramConstraints.Default | DiagramConstraints.LineRouting;
   public nodes: NodeModel[] = [
   { id: 'shape1', offsetX: 100, offsetY: 100, width: 120, height: 50 },

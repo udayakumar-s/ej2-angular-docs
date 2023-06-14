@@ -9,9 +9,9 @@ import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width spinnerTemplate="<i class='fa fa-cog fa-spin fa-3x fa-fw'></i>"></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
-  public data: DataManager;
-  public width: string;
+  public dataSourceSettings?: IDataOptions;
+  public data?: DataManager;
+  public width?: string;
 
     ngOnInit(): void {
 

@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { ColorPickerComponent } from '@syncfusion/ej2-angular-inputs';
-import { SplitButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
+import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs';
+import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons';
 
 /**
  * Module
  */
 @NgModule({
     imports: [
-        BrowserModule,FormsModule
+        BrowserModule,FormsModule,ColorPickerModule,SplitButtonModule
     ],
-    declarations: [AppComponent, ColorPickerComponent, SplitButtonComponent],
+    declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

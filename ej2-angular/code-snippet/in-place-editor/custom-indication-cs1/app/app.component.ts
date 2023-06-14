@@ -16,10 +16,10 @@ import { isNullOrUndefined as isNOU } from '@syncfusion/ej2-base';
 
 export class AppComponent {
     public model: object = { placeholder: 'Enter some text' };
-    public actionSuccess(e: ActionEventArgs): void {
+    public actionSuccess(e: ActionEventArgs | any): void {
         let pk: string = e.data['PrimaryKey'];
         if (isNOU(pk) || pk === '') {
-            document.querySelector('.e-editable-value').classList.add('e-send-error');
+            (document.querySelector('.e-editable-value') as Element).classList.add('e-send-error');
         }
     }
 }

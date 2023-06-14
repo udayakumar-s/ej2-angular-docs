@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, NodeModel, PointPortModel, PortVisibility } from '@syncfusion/ej2-angular-diagrams';
+import { Diagram, DiagramComponent, NodeModel, PointPortModel, PortVisibility, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
   selector: "app-container",
@@ -14,7 +14,7 @@ import { DiagramComponent, NodeModel, PointPortModel, PortVisibility } from '@sy
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public ports: PointPortModel[] = [{
         // Sets the position for the port
         offset: {
@@ -26,17 +26,17 @@ export class AppComponent {
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
     public created(args: Object): void {
         // Method to add ports through run time
-        this.diagram.nodes[0].ports[0].offset = {
+        ((this.diagram as Diagram).nodes[0] as any).ports[0].offset = {
             x: 1,
             y: 1
         };
-        this.diagram.dataBind();
+        (this.diagram as Diagram).dataBind();
     }
 }
 

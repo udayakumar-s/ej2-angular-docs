@@ -60,7 +60,7 @@ export class AppComponent {
         { Name: 'Know: What is Coming from Microsoft this Fall ', content: 'On October 17, Microsoft will release its Fall Creators Update for the Windows 10 platform...', id: '5', image: 'https://ej2.syncfusion.com/demos/src/listview/images/6.png', timeStamp: 'Syncfusion Blog - October 17, 2017'  }
     ];
 public fields: Object = { text: 'Name' };
-public templatecheck:boolean;
+public templatecheck?:boolean;
 constructor(){
     this.templatecheck = Browser.isDevice;
 }

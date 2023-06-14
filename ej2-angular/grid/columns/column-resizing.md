@@ -18,17 +18,17 @@ To use the column resize, inject **ResizeService** in the provider section of **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs2/app/app.component.ts %}
+{% include samples/grid/resize-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs2/app/app.module.ts %}
+{% include samples/grid/resize-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs2/app/main.ts %}
+{% include samples/grid/resize-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/resize-cs2" %}
+{% previewsample "page.domainurl/samples/grid/resize-cs2" %}
 
 >* You can disable Resizing for a particular column, by specifying [columns.allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#allowresizing) to **false**.
 >* In RTL mode, you can click and drag the left edge of header cell to resize the column.
@@ -44,17 +44,17 @@ In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs3/app/app.component.ts %}
+{% include samples/grid/resize-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs3/app/app.module.ts %}
+{% include samples/grid/resize-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs3/app/main.ts %}
+{% include samples/grid/resize-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/resize-cs3" %}
+{% previewsample "page.domainurl/samples/grid/resize-cs3" %}
 
 >* The [columns.minWidth](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#minwidth) and [columns.maxWidth](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#maxwidth) properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
 >* When setting the `minWidth` and `maxWidth` properties, ensure that the values are appropriate for your data and layout requirements.
@@ -68,17 +68,17 @@ You can disable resizing for a particular column by setting the [allowResizing](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs7/app/app.component.ts %}
+{% include samples/grid/resize-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs7/app/app.module.ts %}
+{% include samples/grid/resize-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs7/app/main.ts %}
+{% include samples/grid/resize-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/resize-cs7" %}
+{% previewsample "page.domainurl/samples/grid/resize-cs7" %}
 
 > You can also prevent resizing by setting `args.cancel` to **true** in the [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/grid/#resizestart) event.
 
@@ -90,17 +90,17 @@ In this below code, we have disabled resize for **Ship City** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs4/app/app.component.ts %}
+{% include samples/grid/resize-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs4/app/app.module.ts %}
+{% include samples/grid/resize-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs4/app/main.ts %}
+{% include samples/grid/resize-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/resize-cs4" %}
+{% previewsample "page.domainurl/samples/grid/resize-cs4" %}
 
 ## Resizing modes
 
@@ -114,17 +114,17 @@ The following example demonstrates how to set the [resizeSettings.mode](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs8/app/app.component.ts %}
+{% include samples/grid/resize-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs8/app/app.module.ts %}
+{% include samples/grid/resize-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs8/app/main.ts %}
+{% include samples/grid/resize-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/resize-cs8" %}
+{% previewsample "page.domainurl/samples/grid/resize-cs8" %}
 
 > When the [autoFit](https://helpej2.syncfusion.com/angular/documentation/api/grid/#autofit) property is set to **true**, the Grid will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the Grid will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Grid will ignore any empty space.
 
@@ -154,17 +154,17 @@ The following example demonstrates how to resize the columns in a grid. This is 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs6/app/app.component.ts %}
+{% include samples/grid/resize-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs6/app/app.module.ts %}
+{% include samples/grid/resize-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs6/app/main.ts %}
+{% include samples/grid/resize-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/resize-cs6" %}
+{% previewsample "page.domainurl/samples/grid/resize-cs6" %}
 
 >  The [refreshColumns](https://helpej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method is used to refresh the grid after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
 
@@ -182,16 +182,16 @@ The following is an example of using the resizing events, the [resizeStart](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs5/app/app.component.ts %}
+{% include samples/grid/resize-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.style.css" %}
-{% include code-snippet/grid/resize-cs5/app/app.style.css %}
+{% include samples/grid/resize-cs5/app/app.style.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs5/app/main.ts %}
+{% include samples/grid/resize-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/resize-cs5" %}
+{% previewsample "page.domainurl/samples/grid/resize-cs5" %}
 
 >The ResizeArgs object passed to the events contains information such as the current column width, new column width, column index, and the original event. The [resizing](https://ej2.syncfusion.com/angular/documentation/api/grid/#resizing) event is triggered multiple times during a single resize operation, so be careful when performing heavy operations in this event.

@@ -7,7 +7,7 @@ import { Data } from '@syncfusion/ej2-angular-grids';
 const old = Data.prototype.generateQuery;
 Data.prototype.generateQuery = function() {
     const query = old.call(this, true);
-    this.pageQuery(query);
+    (this as any).pageQuery(query);
     return query;
 };
 
@@ -27,9 +27,9 @@ Data.prototype.generateQuery = function() {
 
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public groupOptions: object;
-    public initialPage: object;
+    public data?: object[];
+    public groupOptions?: object;
+    public initialPage?: object;
 
     ngOnInit(): void {
         this.data = data;

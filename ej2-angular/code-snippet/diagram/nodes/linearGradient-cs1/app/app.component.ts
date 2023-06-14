@@ -14,8 +14,8 @@ import { DiagramComponent, Diagram, NodeModel, ShapeStyleModel, LinearGradientMo
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public style: ShapeStyleModel;
+    public diagram?: DiagramComponent;
+    public style?: ShapeStyleModel;
     public linearGradient: LinearGradientModel = {
         //Start point of linear gradient
         x1: 0,

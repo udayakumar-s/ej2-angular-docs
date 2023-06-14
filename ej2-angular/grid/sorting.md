@@ -18,17 +18,17 @@ To use the sorting feature, you need to inject the **SortService** in the provid
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs1/app/app.component.ts %}
+{% include samples/grid/sorting1-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs1/app/app.module.ts %}
+{% include samples/grid/sorting1-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs1/app/main.ts %}
+{% include samples/grid/sorting1-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs1" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs1" %}
 
 > * Grid column sorted in **Ascending** order. If you click on an already sorted column, then toggles the sort direction.
 > * You can apply and clear sorting by using the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortcolumn) and [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#clearsorting) methods.
@@ -42,17 +42,17 @@ The following example demonstrates how to set [sortSettings.columns](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs2/app/app.component.ts %}
+{% include samples/grid/sorting1-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs2/app/app.module.ts %}
+{% include samples/grid/sorting1-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs2/app/main.ts %}
+{% include samples/grid/sorting1-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs2" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs2" %}
 
 > The initial sorting defined in [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings/#columns) will override any sorting applied through user interaction.
 
@@ -67,17 +67,17 @@ To clear multi-column sorting for a particular column, press the "Shift + mouse 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs3/app/app.component.ts %}
+{% include samples/grid/sorting1-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs3/app/app.module.ts %}
+{% include samples/grid/sorting1-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs3/app/main.ts %}
+{% include samples/grid/sorting1-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs3" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs3" %}
 
 ## Sort order
 
@@ -93,17 +93,17 @@ The following example demonstrates how to define custom sort comparer function f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs5/app/app.component.ts %}
+{% include samples/grid/sorting1-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs5/app/app.module.ts %}
+{% include samples/grid/sorting1-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs5/app/main.ts %}
+{% include samples/grid/sorting1-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs5" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs5" %}
 
 > The customSortComparer function takes two parameters: a and b. The a and b parameters are the values to be compared. The function returns -1, 0, or 1, depending on the comparison result.
 
@@ -129,17 +129,17 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs10/app/app.component.ts %}
+{% include samples/grid/sorting1-cs10/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs10/app/app.module.ts %}
+{% include samples/grid/sorting1-cs10/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs10/app/main.ts %}
+{% include samples/grid/sorting1-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs10" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs10" %}
 
 **Sort foreign key column based on text for remote data**
 
@@ -236,17 +236,17 @@ In the following example, sorting is performed based on the **"ar"** locale usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/localization-cs4/app/app.component.ts %}
+{% include samples/grid/localization-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs4/app/app.module.ts %}
+{% include samples/grid/localization-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/localization-cs4/app/main.ts %}
+{% include samples/grid/localization-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/localization-cs4" %}
+{% previewsample "page.domainurl/samples/grid/localization-cs4" %}
 
 ## How to customize sort icon
 
@@ -265,17 +265,17 @@ In the below sample, grid is rendered with a customized sort icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs7/app/app.component.ts %}
+{% include samples/grid/sorting1-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.style.css" %}
-{% include code-snippet/grid/sorting1-cs7/app/app.style.css %}
+{% include samples/grid/sorting1-cs7/app/app.style.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs7/app/main.ts %}
+{% include samples/grid/sorting1-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs7" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs7" %}
 
 ## Sort columns externally
 
@@ -289,17 +289,17 @@ The following example demonstrates how to add sort columns to a grid. It utilize
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs9/app/app.component.ts %}
+{% include samples/grid/sorting1-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs9/app/app.module.ts %}
+{% include samples/grid/sorting1-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs9/app/main.ts %}
+{% include samples/grid/sorting1-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs9" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs9" %}
 
 ### Remove sort columns
 
@@ -309,17 +309,17 @@ The following example demonstrates how to remove sort columns. It utilizes the D
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs8/app/app.component.ts %}
+{% include samples/grid/sorting1-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs8/app/app.module.ts %}
+{% include samples/grid/sorting1-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs8/app/main.ts %}
+{% include samples/grid/sorting1-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs8" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs8" %}
 
 ### Clear sorting 
 
@@ -329,17 +329,17 @@ The following example demonstrates how to clear the sorting using `clearSorting`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs6/app/app.component.ts %}
+{% include samples/grid/sorting1-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs6/app/app.module.ts %}
+{% include samples/grid/sorting1-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs6/app/main.ts %}
+{% include samples/grid/sorting1-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs6" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs6" %}
 
 ## Sorting Events
 
@@ -353,17 +353,17 @@ The following example demonstrates how the [actionBegin](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs4/app/app.component.ts %}
+{% include samples/grid/sorting1-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs4/app/app.module.ts %}
+{% include samples/grid/sorting1-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs4/app/main.ts %}
+{% include samples/grid/sorting1-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/sorting1-cs4" %}
+{% previewsample "page.domainurl/samples/grid/sorting1-cs4" %}
 
 > * [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) refers to the current action being performed. For example in sorting, the `args.requestType` value is **sorting**.
 > * The code for the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event is placed inside the setTimeout function since the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and `actionComplete` events trigger adjacently to visualize the changes.

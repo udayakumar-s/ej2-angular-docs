@@ -7,12 +7,12 @@ import { OpenEventArgs } from '@syncfusion/ej2-angular-inputs';
     selector: 'app-root',
     template: `<h4>Choose Color</h4>
                <!-- custom picker -->
-               <input ejs-colorpicker type="color" id="element" value="#344aae" cssClass="e-custom-picker" [modeSwitcher]="false" (open)="onOpen($event)" />`
+               <ejs-input ejs-colorpicker type="color" id="element" value="#344aae" cssClass="e-custom-picker" [modeSwitcher]="false" (open)="onOpen($event)" />`
 })
 
 export class AppComponent {
     onOpen(args: OpenEventArgs): void {
-        args.element.querySelector('.e-handler').classList.add('e-icons');
+        (args.element.querySelector('.e-handler') as Element).classList.add('e-icons');
     }
 }
 

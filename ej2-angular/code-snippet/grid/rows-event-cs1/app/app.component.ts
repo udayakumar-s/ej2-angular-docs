@@ -20,13 +20,14 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-  public data: object[];
-  @ViewChild('grid') public grid: GridComponent;
+  public data?: object[];
+  @ViewChild('grid')
+    public grid?: GridComponent;
 
   ngOnInit(): void {
     this.data = data;
   }
-  public customizeRows(args) {
-    (this.grid.getRowByIndex(2) as any).style.background = 'rgb(193, 228, 234)';
+  public customizeRows(args: any) {
+    ((this.grid as any).getRowByIndex(2) as any).style.background = 'rgb(193, 228, 234)';
   }
 }

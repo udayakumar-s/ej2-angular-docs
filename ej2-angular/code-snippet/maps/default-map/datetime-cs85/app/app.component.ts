@@ -14,8 +14,8 @@ Maps.Inject(Zoom);
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-    public zoomSettings: object;
-    public urlTemplate: string;
+    public zoomSettings?: object;
+    public urlTemplate?: string;
     ngOnInit(): void {
            this.urlTemplate = 'https://tile.openstreetmap.org/level/tileX/tileY.png';
            this.zoomSettings = {

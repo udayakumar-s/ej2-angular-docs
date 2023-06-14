@@ -16,8 +16,8 @@ import { sampleData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public textSettings: Object;
+    public data?: Object[];
+    public textSettings?: Object;
     ngOnInit(): void {
         this.data = sampleData;
         this.textSettings = { wrapMode: 'Content' };

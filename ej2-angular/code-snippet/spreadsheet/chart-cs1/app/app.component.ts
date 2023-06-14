@@ -38,13 +38,13 @@ import { chartData } from './datasource';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
     public chart: ChartModel[] = [{ type: "Column", range: "A3:F8" }];
     data: Object[] = chartData;
     created() {
-        this.spreadsheetObj.cellFormat({ backgroundColor: '#357cd2', color: '#fff', fontWeight: 'bold', textAlign: 'center' }, 'A3:F3');
-        this.spreadsheetObj.numberFormat(getFormatFromType('Currency'), 'B4:F8');
-        this.spreadsheetObj.merge('A1:F1');
+        this.spreadsheetObj!.cellFormat({ backgroundColor: '#357cd2', color: '#fff', fontWeight: 'bold', textAlign: 'center' }, 'A3:F3');
+        this.spreadsheetObj!.numberFormat(getFormatFromType('Currency'), 'B4:F8');
+        this.spreadsheetObj!.merge('A1:F1');
     }
 }
 

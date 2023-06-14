@@ -106,11 +106,12 @@ public dataSource: { [key: string]: Object }[] = [
 ];
 
 public  fields: Object = { iconCss: 'icon', tooltip: 'text' };
+wintemplate: any;
 
 //Select event to add new list item in child page
 onSelect(args: SelectEventArgs) {
     //Add new file to the child page of selected list item
-    (this.dataSource[args.index].child as Object[]).push({ id: '01-02', text: 'Newly Added File', icon: 'file', htmlAttributes: { role: 'li', class: 'list' } });
+    ((this.dataSource[args.index] as any).child as Object[]).push({ id: '01-02', text: 'Newly Added File', icon: 'file', htmlAttributes: { role: 'li', class: 'list' } });
 }
 }
 

@@ -25,17 +25,17 @@ Here is an example of how to specify column types in a grid using the types ment
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/column-type-cs1/app/app.component.ts %}
+{% include samples/grid/column-type-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-type-cs1/app/app.module.ts %}
+{% include samples/grid/column-type-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/column-type-cs1/app/main.ts %}
+{% include samples/grid/column-type-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/column-type-cs1" %}
+{% previewsample "page.domainurl/samples/grid/column-type-cs1" %}
 
 >* If the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) is not defined, then it will be determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource).
 >* Incase if the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) is null/blank value for a column then it is necessary to define the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) for that column. This is because the grid uses the column type to determine which filter dialog to display for that column
@@ -91,17 +91,17 @@ The column width is specified as an absolute pixel value. For example, a column 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/column-width-cs1/app/app.component.ts %}
+{% include samples/grid/column-width-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-width-cs1/app/app.module.ts %}
+{% include samples/grid/column-width-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/column-width-cs1/app/main.ts %}
+{% include samples/grid/column-width-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/column-width-cs1" %}
+{% previewsample "page.domainurl/samples/grid/column-width-cs1" %}
 
 ## Column formatting
 
@@ -111,17 +111,17 @@ You can use the [columns.format](https://ej2.syncfusion.com/angular/documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs12/app/app.component.ts %}
+{% include samples/grid/grid-cs12/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs12/app/app.module.ts %}
+{% include samples/grid/grid-cs12/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs12/app/main.ts %}
+{% include samples/grid/grid-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs12" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs12" %}
 
 >* The grid uses the [Internalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
 >* By default, the [number](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization).
@@ -143,17 +143,17 @@ The following example code demonstrates the formatting of data for **Mark 1** an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/column-format-cs3/app/app.component.ts %}
+{% include samples/grid/column-format-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-format-cs3/app/app.module.ts %}
+{% include samples/grid/column-format-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/column-format-cs3/app/main.ts %}
+{% include samples/grid/column-format-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/column-format-cs3" %}
+{% previewsample "page.domainurl/samples/grid/column-format-cs3" %}
 
 >To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) section.
 
@@ -173,17 +173,17 @@ Format | Formatted value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs13/app/app.component.ts %}
+{% include samples/grid/grid-cs13/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs13/app/app.module.ts %}
+{% include samples/grid/grid-cs13/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs13/app/main.ts %}
+{% include samples/grid/grid-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs13" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs13" %}
 
 >To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting). 
 
@@ -195,17 +195,17 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/localization-cs3/app/app.component.ts %}
+{% include samples/grid/localization-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs3/app/app.module.ts %}
+{% include samples/grid/localization-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/localization-cs3/app/main.ts %}
+{% include samples/grid/localization-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/localization-cs3" %}
+{% previewsample "page.domainurl/samples/grid/localization-cs3" %}
 
 ### Format template column value 
 
@@ -220,17 +220,17 @@ Template columns in Grid provide a way to customize the appearance of column val
 ```
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/column-format-cs1/app/app.component.ts %}
+{% include samples/grid/column-format-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-format-cs1/app/app.module.ts %}
+{% include samples/grid/column-format-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/column-format-cs1/app/main.ts %}
+{% include samples/grid/column-format-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/column-format-cs1" %}
+{% previewsample "page.domainurl/samples/grid/column-format-cs1" %}
 
 > You can use other Angular pipes, such as **currency, decimal, percent,** etc., to format other types of values in the column template based on your requirements.
 
@@ -242,17 +242,17 @@ In the below example, the **numberFormatOptions** object is used as the `format`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/column-format-cs2/app/app.component.ts %}
+{% include samples/grid/column-format-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-format-cs2/app/app.module.ts %}
+{% include samples/grid/column-format-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/column-format-cs2/app/main.ts %}
+{% include samples/grid/column-format-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/column-format-cs2" %}
+{% previewsample "page.domainurl/samples/grid/column-format-cs2" %}
 
 >To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-number-formatting-and-parsing). 
 
@@ -269,17 +269,17 @@ Here is an example of using the `textAlign` property to align the text of a Grid
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs17/app/app.component.ts %}
+{% include samples/grid/grid-cs17/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs17/app/app.module.ts %}
+{% include samples/grid/grid-cs17/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs17/app/main.ts %}
+{% include samples/grid/grid-cs17/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs17" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs17" %}
 
 >* The `textAlign` property only changes the alignment content not the column header. If you want to align both the column header and content, you can use the [headerTextAlign](https://ej2.syncfusion.com/documentation/api/grid/column/#headerTextAlign) property.
 
@@ -291,17 +291,17 @@ To enable the rendering of boolean values as checkboxes, you need to set the `di
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs14/app/app.component.ts %}
+{% include samples/grid/grid-cs14/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs14/app/app.module.ts %}
+{% include samples/grid/grid-cs14/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs14/app/main.ts %}
+{% include samples/grid/grid-cs14/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs14" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs14" %}
 
 >* The `displayAsCheckBox` property is only applicable to boolean values in Grid columns.
 >* When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Grid column, with checked state indicating **true** and unchecked state indicating **false**.
@@ -314,17 +314,17 @@ Here is an example of how you can prevent a checkbox from being displayed in a b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/blank-row/app/app.component.ts %}
+{% include samples/grid/blank-row/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/blank-row/app/app.module.ts %}
+{% include samples/grid/blank-row/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/blank-row/app/main.ts %}
+{% include samples/grid/blank-row/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/blank-row" %}
+{% previewsample "page.domainurl/samples/grid/blank-row" %}
 
 ## AutoFit columns
 
@@ -338,17 +338,17 @@ To use `autoFitColumns` method, you need to inject **ResizeService** in the prov
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs1/app/app.component.ts %}
+{% include samples/grid/resize-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs1/app/app.module.ts %}
+{% include samples/grid/resize-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs1/app/main.ts %}
+{% include samples/grid/resize-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/resize-cs1" %}
+{% previewsample "page.domainurl/samples/grid/resize-cs1" %}
 
 > You can autofit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
@@ -360,17 +360,17 @@ You can enable this feature by setting the [autoFit](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/autofit-cs1/app/app.component.ts %}
+{% include samples/grid/autofit-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/autofit-cs1/app/app.module.ts %}
+{% include samples/grid/autofit-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/autofit-cs1/app/main.ts %}
+{% include samples/grid/autofit-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/autofit-cs1" %}
+{% previewsample "page.domainurl/samples/grid/autofit-cs1" %}
 
 > If any one of the column width is undefined, then the particular column will automatically adjust to fill the entire width of the grid table, even if you have enabled the `autoFit` property of grid.
 
@@ -382,17 +382,17 @@ Here's an example code snippet in Angular that demonstrates how to auto fit colu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/autofit-cs2/app/app.component.ts %}
+{% include samples/grid/autofit-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/autofit-cs2/app/app.module.ts %}
+{% include samples/grid/autofit-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/autofit-cs2/app/main.ts %}
+{% include samples/grid/autofit-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/autofit-cs2" %}
+{% previewsample "page.domainurl/samples/grid/autofit-cs2" %}
 
 ## Locked columns
 
@@ -402,20 +402,20 @@ Here's an example of how you can use the `lockColumn` property to lock a column 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/reorder-cs5/app/app.component.ts %}
+{% include samples/grid/reorder-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reorder-cs5/app/app.module.ts %}
+{% include samples/grid/reorder-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/reorder-cs5/app/main.ts %}
+{% include samples/grid/reorder-cs5/app/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.html" %}
-{% include code-snippet/grid/reorder-cs5/index.html %}
+{% include samples/grid/reorder-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/reorder-cs5" %}
+{% previewsample "page.domainurl/samples/grid/reorder-cs5" %}
 
 ## Show or hide columns
 
@@ -429,17 +429,17 @@ In the below example, the **ShipCity** column is defined with `visible` property
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs15/app/app.component.ts %}
+{% include samples/grid/grid-cs15/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs15/app/app.module.ts %}
+{% include samples/grid/grid-cs15/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs15/app/main.ts %}
+{% include samples/grid/grid-cs15/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs15" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs15" %}
 
 >* Hiding a column using the `visible` property only affects the UI representation of the grid. The data for the hidden column will still be available in the underlying data source, and can be accessed or modified programmatically.
 >* When a column is hidden, its width is not included in the calculation of the total grid width.
@@ -457,17 +457,17 @@ Here's an example of how to show or hide a column based on the HeaderText in the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs16/app/app.component.ts %}
+{% include samples/grid/grid-cs16/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs16/app/app.module.ts %}
+{% include samples/grid/grid-cs16/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs16/app/main.ts %}
+{% include samples/grid/grid-cs16/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs16" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs16" %}
 
 **Based on field**
 
@@ -477,17 +477,17 @@ Here's an example of how to show or hide a column based on the field in the Angu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs30/app/app.component.ts %}
+{% include samples/grid/grid-cs30/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs30/app/app.module.ts %}
+{% include samples/grid/grid-cs30/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs30/app/main.ts %}
+{% include samples/grid/grid-cs30/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs30" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs30" %}
 
 ## Controlling Grid actions
 
@@ -505,17 +505,17 @@ Here is an example code that demonstrates how to control grid actions for specif
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/control-actions-cs1/app/app.component.ts %}
+{% include samples/grid/control-actions-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/control-actions-cs1/app/app.module.ts %}
+{% include samples/grid/control-actions-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/control-actions-cs1/app/main.ts %}
+{% include samples/grid/control-actions-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/control-actions-cs1" %}
+{% previewsample "page.domainurl/samples/grid/control-actions-cs1" %}
 
 ## Customize column styles
 
@@ -587,17 +587,17 @@ You can update the column definitions in the Grid using the [columns](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/column-cs1/app/app.component.ts %}
+{% include samples/grid/column-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-cs1/app/app.module.ts %}
+{% include samples/grid/column-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/column-cs1/app/main.ts %}
+{% include samples/grid/column-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/column-cs1" %}
+{% previewsample "page.domainurl/samples/grid/column-cs1" %}
 
 ### Adding/Removing Columns
 
@@ -609,17 +609,17 @@ Here's an example of how you can add and remove a column from the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/column-cs2/app/app.component.ts %}
+{% include samples/grid/column-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-cs2/app/app.module.ts %}
+{% include samples/grid/column-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/column-cs2/app/main.ts %}
+{% include samples/grid/column-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/column-cs2" %}
+{% previewsample "page.domainurl/samples/grid/column-cs2" %}
 
 ### How to refresh columns
 
@@ -637,17 +637,17 @@ In this example, we have a Grid that displays data with three columns: **Order I
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs21/app/app.component.ts %}
+{% include samples/grid/grid-cs21/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs21/app/app.module.ts %}
+{% include samples/grid/grid-cs21/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs21/app/main.ts %}
+{% include samples/grid/grid-cs21/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs21" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs21" %}
 
 ## See Also
 

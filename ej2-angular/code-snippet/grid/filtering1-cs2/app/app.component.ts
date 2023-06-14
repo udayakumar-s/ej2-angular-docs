@@ -18,11 +18,11 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public templateOptions: IFilterUI;
+    public data?: object[];
+    public templateOptions?: IFilterUI;
 
     @ViewChild('grid')
-    public gridObj: GridComponent;
+    public gridObj?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
                     fields: { text: 'EmployeeID', value: 'EmployeeID' },
                     placeholder: 'Select a value',
                     popupHeight: '200px',
-                    change: function(e){
+                    change: function(e: any){
                         var gridObj = (document.getElementsByClassName('e-grid')[0] as any).ej2_instances[0];
                         if(e.value =='All') {
                             gridObj.removeFilteredColsByField('EmployeeID');

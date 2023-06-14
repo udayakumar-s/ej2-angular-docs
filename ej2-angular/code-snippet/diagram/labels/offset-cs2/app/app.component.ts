@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, VerticalAlignment, HorizontalAlignment } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, VerticalAlignment, HorizontalAlignment, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -19,20 +19,20 @@ import { DiagramComponent, Diagram, NodeModel, VerticalAlignment, HorizontalAlig
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public verticalAlignment: VerticalAlignment;
-    public horizontalAlignment: HorizontalAlignment;
+    public diagram?: DiagramComponent;
+    public verticalAlignment?: VerticalAlignment;
+    public horizontalAlignment?: HorizontalAlignment;
     ngOnInit(): void {
         // Sets the horizontal alignment as left
-        this.horizontalAlignment: 'Left',
+        this.horizontalAlignment = 'Left';
         // Sets the vertical alignment as Center
-        this.verticalAlignment: 'Center'
+        this.verticalAlignment = 'Center';
     }
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
 }

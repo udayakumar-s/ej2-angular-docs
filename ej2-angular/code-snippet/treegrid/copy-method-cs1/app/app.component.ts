@@ -23,11 +23,11 @@ import { TreeGridComponent, SelectionSettingsModel  } from '@syncfusion/ej2-angu
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public selectionOptions: SelectionSettingsModel;
-    public pageSettings: Object ;
+    public data?: Object[];
+    public selectionOptions?: SelectionSettingsModel;
+    public pageSettings?: Object ;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -36,11 +36,11 @@ export class AppComponent implements OnInit {
     }
 
     copy() {
-        this.treeGridObj.copy();
+        (this.treeGridObj as TreeGridComponent).copy();
     }
 
     copyHeader() {
-        this.treeGridObj.copy(true);
+        (this.treeGridObj as TreeGridComponent).copy(true);
     }
 }
 

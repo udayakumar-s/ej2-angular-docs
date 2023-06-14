@@ -1,9 +1,9 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Internationalization, createElement, ScheduleComponent } from '@syncfusion/ej2-base';
-import { EventSettingsModel, MonthService, PopupOpenEventArgs } from '@syncfusion/ej2-angular-schedule';
-import { scheduleData } from './datasource.ts';
+import { Internationalization, createElement } from '@syncfusion/ej2-base';
+import { EventSettingsModel, MonthService, PopupOpenEventArgs,  ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
+import { scheduleData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [MonthService],
@@ -23,7 +23,7 @@ import { scheduleData } from './datasource.ts';
 
 
 export class AppComponent {
-    @ViewChild('scheduleObj') public scheduleObj: ScheduleComponent;
+    @ViewChild('scheduleObj') public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 1);
     public views: Array<string> = ['Month'];
     public eventSettings: EventSettingsModel = {
@@ -39,8 +39,8 @@ export class AppComponent {
         if (args.type === 'EventContainer') {
             let appointments = args.element.querySelectorAll('.e-appointment');
             for (let i = 0; i < appointments.length; i++) {
-                let eventData = this.scheduleObj.getEventDetails(appointments[i]) as { [key: string]: Object };
-                let time = this.getTimeString(eventData.StartTime as Date) + ' - ' + this.getTimeString(eventData.EndTime as Date);
+                let eventData = this.scheduleObj?.getEventDetails(appointments[i]) as { [key: string]: Object };
+                let time = this.getTimeString(eventData['StartTime'] as Date) + ' - ' + this.getTimeString(eventData['EndTime'] as Date);
                 let customElement = createElement('div', { className: 'e-more-popup-event-time' });
                 customElement.innerText = time;
                 appointments[i].insertBefore(customElement, appointments[i].firstChild);

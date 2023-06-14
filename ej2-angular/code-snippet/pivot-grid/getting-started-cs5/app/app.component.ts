@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 import { IDataOptions, IDataSet, PivotView, GroupingBarService, AggregateEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -12,15 +12,15 @@ import { Pivot_Data } from './datasource.ts';
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
-    public width: string;
-    conditionalFormatting(args: AggregateEventArgs) {
+    public dataSourceSettings?: IDataOptions;
+    public width?: string;
+    aggregateCell(args: AggregateEventArgs) {
         args.skipFormatting = true;
     }
 
     ngOnInit(): void {
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],

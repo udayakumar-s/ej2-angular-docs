@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `<h4>Choose Color</h4>
                <!-- To set color value. -->
-               <input ejs-colorpicker type="color" id="element" value="035a" />`
+               <ejs-input ejs-colorpicker type="color" id="element" value="035a" />`
 })
 
 export class AppComponent { }

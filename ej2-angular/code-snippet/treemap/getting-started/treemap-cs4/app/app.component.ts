@@ -21,7 +21,7 @@ export class AppComponent {
     public leafItemSettings: object = {
         labelPath: 'Car'
     };
-    public palette: object= ['red','green'],
+    public palette: object= ['red','green'];
     }
 
 

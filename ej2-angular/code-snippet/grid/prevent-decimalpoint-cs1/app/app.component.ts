@@ -19,10 +19,10 @@ import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angu
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public numericParams: IEditCell;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public numericParams?: IEditCell;
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };

@@ -11,16 +11,16 @@ import { DragAndDropEventArgs } from '@syncfusion/ej2-navigations';
 import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.component.html',
-    styleUrls: ['app/index.css'],
+    templateUrl: './app.component.html',
+    styleUrls: ['./index.css'],
     encapsulation: ViewEncapsulation.None,
 
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     @ViewChild('treeObj')
-    public treeObj: TreeViewComponent;
+    public treeObj?: TreeViewComponent;
 
     public isTreeItemDropped: boolean = false;
     public draggedItemId: string = '';
@@ -55,12 +55,12 @@ export class AppComponent {
     public allowDragAndDrop: boolean = true;
 
     getConsultantName(value: ResourceDetails): string {
-        return (value as ResourceDetails).resourceData[(value as ResourceDetails).resource.textField] as string;
+        return (value as ResourceDetails).resourceData[((value as ResourceDetails).resource as any).textField] as string;
     }
 
     getConsultantStatus(value: ResourceDetails): boolean {
         let resourceName: string =
-            (value as ResourceDetails).resourceData[(value as ResourceDetails).resource.textField] as string;
+            (value as ResourceDetails).resourceData[((value as ResourceDetails).resource as any).textField] as string;
         if (resourceName === 'GENERAL' || resourceName === 'DENTAL') {
             return false;
         } else {
@@ -70,11 +70,11 @@ export class AppComponent {
 
     getConsultantDesignation(value: ResourceDetails): string {
         let resourceName: string =
-            (value as ResourceDetails).resourceData[(value as ResourceDetails).resource.textField] as string;
+            (value as ResourceDetails).resourceData[((value as ResourceDetails).resource as any).textField] as string;
         if (resourceName === 'GENERAL' || resourceName === 'DENTAL') {
             return '';
         } else {
-            return (value as ResourceDetails).resourceData.Designation as string;
+            return (value as ResourceDetails).resourceData['Designation'] as string;
         }
     }
 
@@ -83,8 +83,8 @@ export class AppComponent {
     }
 
     onItemDrag(event: any): void {
-        if (this.scheduleObj.isAdaptive) {
-            let classElement: HTMLElement = this.scheduleObj.element.querySelector('.e-device-hover');
+        if (this.scheduleObj?.isAdaptive) {
+            let classElement: HTMLElement = this.scheduleObj.element.querySelector('.e-device-hover') as HTMLElement;
             if (classElement) {
                 classElement.classList.remove('e-device-hover');
             }
@@ -106,10 +106,10 @@ export class AppComponent {
 
     onActionBegin(event: ActionEventArgs): void {
         if (event.requestType === 'eventCreate' && this.isTreeItemDropped) {
-            let treeViewdata: { [key: string]: Object }[] = this.treeObj.fields.dataSource as { [key: string]: Object }[];
+            let treeViewdata: { [key: string]: Object }[] = this.treeObj?.fields.dataSource as { [key: string]: Object }[];
             const filteredPeople: { [key: string]: Object }[] =
                 treeViewdata.filter((item: any) => item.Id !== parseInt(this.draggedItemId, 10));
-            this.treeObj.fields.dataSource = filteredPeople;
+            this.treeObj!.fields.dataSource = filteredPeople;
             let elements: NodeListOf<HTMLElement> = document.querySelectorAll('.e-drag-item.treeview-external-drag');
             for (let i: number = 0; i < elements.length; i++) {
                 remove(elements[i]);
@@ -119,7 +119,7 @@ export class AppComponent {
 
     onTreeDragStop(event: DragAndDropEventArgs): void {
         let treeElement: Element = <Element>closest(event.target, '.e-treeview');
-        let classElement: HTMLElement = this.scheduleObj.element.querySelector('.e-device-hover');
+        let classElement: HTMLElement = this.scheduleObj?.element.querySelector('.e-device-hover') as HTMLElement;
         if (classElement) {
             classElement.classList.remove('e-device-hover');
         }
@@ -128,24 +128,24 @@ export class AppComponent {
             let scheduleElement: Element = <Element>closest(event.target, '.e-content-wrap');
             if (scheduleElement) {
                 let treeviewData: { [key: string]: Object }[] =
-                    this.treeObj.fields.dataSource as { [key: string]: Object }[];
+                    this.treeObj?.fields.dataSource as { [key: string]: Object }[];
                 if (event.target.classList.contains('e-work-cells')) {
                     const filteredData: { [key: string]: Object }[] =
-                        treeviewData.filter((item: any) => item.Id === parseInt(event.draggedNodeData.id as string, 10));
-                    let cellData: CellClickEventArgs = this.scheduleObj.getCellDetails(event.target);
-                    let resourceDetails: ResourceDetails = this.scheduleObj.getResourcesByIndex(cellData.groupIndex);
+                        treeviewData.filter((item: any) => item.Id === parseInt(event.draggedNodeData['id'] as string, 10));
+                    let cellData: CellClickEventArgs = this.scheduleObj!.getCellDetails(event.target);
+                    let resourceDetails: ResourceDetails = this.scheduleObj!.getResourcesByIndex((cellData as any).groupIndex);
                     let eventData: { [key: string]: Object } = {
-                        Name: filteredData[0].Name,
+                        Name: filteredData[0]['Name'],
                         StartTime: cellData.startTime,
                         EndTime: cellData.endTime,
                         IsAllDay: cellData.isAllDay,
-                        Description: filteredData[0].Description,
-                        DepartmentID: resourceDetails.resourceData.GroupId,
-                        ConsultantID: resourceDetails.resourceData.Id
+                        Description: filteredData[0]['Description'],
+                        DepartmentID: resourceDetails.resourceData['GroupId'],
+                        ConsultantID: resourceDetails.resourceData['Id']
                     };
-                    this.scheduleObj.addEvent(eventData);
+                    this.scheduleObj?.addEvent(eventData);
                     this.isTreeItemDropped = true;
-                    this.draggedItemId = event.draggedNodeData.id as string;
+                    this.draggedItemId = event.draggedNodeData['id'] as string;
                 }
             }
         }

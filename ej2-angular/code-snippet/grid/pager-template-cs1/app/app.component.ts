@@ -7,11 +7,11 @@ import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.template.html'
+    templateUrl: 'app.template.html'
 })
 export class AppComponent implements OnInit {
-    public data: object[];
-    public initialPage: PageSettingsModel;
+    public data?: object[];
+    public initialPage?: PageSettingsModel;
 
     ngOnInit(): void {
         this.data = data;
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     }
 
     change(args: ChangeEventArgs) {
-        this.initialPage = { currentPage: args.value };
+        this.initialPage = { currentPage: (args as any).value };
     }
 }
 

@@ -41,7 +41,7 @@ export class AppComponent {
     });
     showSpinner(this.spinnerEle.nativeElement);
    }
-   onActionComplete(){
+   onActionComplete(args:any){
     this.spinnerEle.nativeElement.style.display = "none";
    }
 }

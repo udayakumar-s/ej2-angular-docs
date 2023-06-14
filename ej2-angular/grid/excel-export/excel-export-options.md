@@ -18,17 +18,17 @@ The excel export provides an option to export the current page into excel. To ex
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs4/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs4/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs4/app/main.ts %}
+{% include samples/grid/excel-exporting-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs4" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs4" %}
 
 ## Export the selected records only
 
@@ -38,17 +38,17 @@ In the below exporting demo, We can get the selected records using [`getSelected
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs1/app/app.component.ts %}
+{% include samples/grid/exporting-filtered-data-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs1/app/app.module.ts %}
+{% include samples/grid/exporting-filtered-data-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs1/app/main.ts %}
+{% include samples/grid/exporting-filtered-data-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-filtered-data-cs1" %}
+{% previewsample "page.domainurl/samples/grid/exporting-filtered-data-cs1" %}
 
 ## Export hidden columns
 
@@ -56,17 +56,17 @@ The excel export provides an option to export hidden columns of grid by defining
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs5/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs5/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs5/app/main.ts %}
+{% include samples/grid/excel-exporting-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs5" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs5" %}
 
 ## Show or hide columns
 
@@ -80,17 +80,17 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs6/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs6/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs6/app/main.ts %}
+{% include samples/grid/excel-exporting-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs6" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs6" %}
 
 ## Export with filter options
 
@@ -98,17 +98,17 @@ The excel export provides an option to export with filter option in excel by def
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs7/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs7/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs7/app/main.ts %}
+{% include samples/grid/excel-exporting-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs7" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs7" %}
 
 ## Exporting grouped records
 
@@ -116,17 +116,17 @@ The excel export provides outline option for grouped records which hides the det
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs8/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs8/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs8/app/main.ts %}
+{% include samples/grid/excel-exporting-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs8" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs8" %}
 
 ## Define file name
 
@@ -134,17 +134,17 @@ You can assign the file name for the exported document by defining [`fileName`](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs9/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs9/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs9/app/main.ts %}
+{% include samples/grid/excel-exporting-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs9" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs9" %}
 
 ## Export the master detail grid
 
@@ -154,14 +154,14 @@ To export the master-detail grid on the same sheet in the following sample, you 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/export-masterdetail-grid/app/app.component.ts %}
+{% include samples/grid/export-masterdetail-grid/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/export-masterdetail-grid/app/app.module.ts %}
+{% include samples/grid/export-masterdetail-grid/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/export-masterdetail-grid/app/main.ts %}
+{% include samples/grid/export-masterdetail-grid/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/export-masterdetail-grid %}
+{% previewsample "page.domainurl/samples/grid/export-masterdetail-grid %}

@@ -16,14 +16,14 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/spanning-cs1/app/app.component.ts %}
+{% include samples/grid/spanning-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/spanning-cs1/app/app.module.ts %}
+{% include samples/grid/spanning-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/spanning-cs1/app/main.ts %}
+{% include samples/grid/spanning-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/spanning-cs1" %}
+{% previewsample "page.domainurl/samples/grid/spanning-cs1" %}

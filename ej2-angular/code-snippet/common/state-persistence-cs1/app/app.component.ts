@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
+// import { data } from './datasource';
 import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -15,11 +15,11 @@ import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public pageSettings: PageSettingsModel;
+    public data?: object[];
+    public pageSettings?: PageSettingsModel;
 
     ngOnInit(): void {
-        this.data = data;
+        // this.data = data;
         this.pageSettings = { pageSize: 6 };
     }
 }

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `<h4>Choose Color</h4>
                <!-- To hide control buttons. -->
-               <input ejs-colorpicker type="color" id="element" [showButtons]="false" />`
+               <ejs-input ejs-colorpicker type="color" id="element" [showButtons]="false" />`
 })
 
 export class AppComponent { }

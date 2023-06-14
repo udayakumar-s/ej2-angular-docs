@@ -29,15 +29,15 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 })
 
 export class AppComponent {
-  @ViewChild('element') editObj: InPlaceEditorComponent;
+  @ViewChild('element') editObj?: InPlaceEditorComponent;
   public model: Object = {  placeholder: 'Enter some text' };
   public popupSettingsModel: object = { title: 'Enter name', model : { position: 'BottomCenter' }};
   public positionData: string[] = ['TopLeft', 'TopCenter',
   'TopRight', 'BottomLeft', 'BottomCenter', 'BottomRight', 'LeftTop', 'LeftCenter', 'LeftBottom', 'RightTop', 'RightCenter', 'RightBottom'];
 
   public onChange(e: ChangeEventArgs): void {
-    this.editObj.popupSettings.model.position = e.value as string;
-    this.editObj.dataBind();
+    (this.editObj as any).popupSettings.model.position = e.value;
+    this.editObj?.dataBind();
   }
 }
 

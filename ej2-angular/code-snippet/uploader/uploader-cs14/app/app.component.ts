@@ -2,9 +2,10 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import {  FileInfo, SelectedEventArgs  } from '@syncfusion/ej2-inputs';
+import {  FileInfo, SelectedEventArgs } from '@syncfusion/ej2-inputs';
 import { detach } from '@syncfusion/ej2-base';
 import { createSpinner, showSpinner, hideSpinner } from '@syncfusion/ej2-popups';
+import { UploaderComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'app-root',
@@ -17,11 +18,11 @@ export class AppComponent {
       saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
       removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove' };
     @ViewChild('defaultupload')
-    public uploadObj: UploaderComponent;
+    public uploadObj?: UploaderComponent;
     public onFileSelected(args : SelectedEventArgs) : void {
         // Filter the 5 files only to showcase
         args.filesData.splice(5);
-        let filesData : FileInfo[] = this.uploadObj.getFilesData();
+        let filesData : FileInfo[] = (this.uploadObj as UploaderComponent).getFilesData();
         let allFiles : FileInfo[] = filesData.concat(args.filesData);
         if (allFiles.length > 5) {
             for (let i : number = 0; i < allFiles.length; i++) {
@@ -36,10 +37,10 @@ export class AppComponent {
         args.isModified = true;
     }
     public onUploadSuccess(args: any): void {
-        let li: HTMLElement = this.uploadObj.uploadWrapper.querySelector('[data-file-name="' + args.file.name + '"]');
+        let li: HTMLElement = (this.uploadObj as any).uploadWrapper.querySelector('[data-file-name="' + args.file.name + '"]');
         if (args.operation === 'upload') {
             (li.querySelector('.e-file-delete-btn') as HTMLElement).onclick = () => {
-                this.generateSpinner(this.uploadObj.uploadWrapper);
+                this.generateSpinner((this.uploadObj as any).uploadWrapper);
             };
             (li.querySelector('.e-file-delete-btn') as HTMLElement).onkeydown = (e: any) => {
                 if (e.keyCode === 13) {
@@ -47,8 +48,8 @@ export class AppComponent {
                 }
             };
         } else {
-            hideSpinner(this.uploadObj.uploadWrapper);
-            detach(this.uploadObj.uploadWrapper.querySelector('.e-spinner-pane'));
+            hideSpinner((this.uploadObj as any).uploadWrapper);
+            detach((this.uploadObj as any).uploadWrapper.querySelector('.e-spinner-pane'));
         }
     }
     public generateSpinner(targetElement: HTMLElement): void {

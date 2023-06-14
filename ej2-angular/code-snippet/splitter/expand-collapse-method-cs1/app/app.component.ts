@@ -26,14 +26,14 @@ export class AppComponent {
     constructor() {
     }
 
-    @ViewChild('splitterInstance') splitterObj: SplitterComponent;
+    @ViewChild('splitterInstance') splitterObj?: SplitterComponent;
 
     public expandClick: any = () => {
-       this.splitterObj.collapse(0);
+       this.splitterObj?.collapse(0);
     }
 
     public collapseClick: any = () => {
-       this.splitterObj.expand(0);
+       this.splitterObj?.expand(0);
     }
 }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView, VirtualScrollService, PDFExportService, BeforeExportEventArgs  } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, PivotView, VirtualScrollService, PDFExportService, BeforeExportEventArgs, IDataSet  } from '@syncfusion/ej2-angular-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -12,12 +12,12 @@ import { Pivot_Data } from './datasource.ts';
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public button: Button;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public button?: Button;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     beforeExport(args: BeforeExportEventArgs) {
         args.columnSize = 6;
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             rows: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
         this.button.appendTo('#export');
 
         this.button.element.onclick = (): void => {
-            this.pivotGridObj.pdfExport();
+            this.pivotGridObj?.pdfExport();
         };
     }
 }

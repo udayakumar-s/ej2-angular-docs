@@ -18,14 +18,14 @@ If you wish to restore all these column properties, then you can achieve it by c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs8/app/app.component.ts %}
+{% include samples/grid/grouping1-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs8/app/app.module.ts %}
+{% include samples/grid/grouping1-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs8/app/main.ts %}
+{% include samples/grid/grouping1-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs8" %}
+{% previewsample "page.domainurl/samples/grid/grouping1-cs8" %}

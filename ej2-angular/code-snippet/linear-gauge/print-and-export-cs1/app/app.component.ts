@@ -13,7 +13,7 @@ import { IPrintEventArgs } from '@syncfusion/ej2-lineargauge';
 })
 export class AppComponent {
   @ViewChild('gauge')
-  public gaugeObj: LinearGaugeComponent;
+  public gaugeObj: LinearGaugeComponent | any;
   print() {
     this.gaugeObj.print();
   };

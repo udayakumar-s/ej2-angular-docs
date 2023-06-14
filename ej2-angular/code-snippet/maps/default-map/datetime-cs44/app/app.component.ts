@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { usa_map } from 'usa.ts';
+import { usa_map } from './usa';
 
 @Component({
     selector: 'app-container',

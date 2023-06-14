@@ -17,8 +17,8 @@ import { dataSource, virtualData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pageSettings: Object;
+    public data?: Object[];
+    public pageSettings?: Object;
 
     ngOnInit(): void {
         dataSource();

@@ -6,8 +6,8 @@ import { Browser } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/template.html',
-    styleUrls:['index.css']
+    templateUrl: './template.html',
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {

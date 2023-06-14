@@ -16,8 +16,8 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public sortOptions: object;
+    public data?: object[];
+    public sortOptions?: object;
 
     ngOnInit(): void {
         this.data = data;

@@ -29,7 +29,7 @@ import { dataSource } from './datasource';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
     // Rows model that is going to insert dynamically
@@ -47,15 +47,15 @@ export class AppComponent {
 
     created() {
         // Applies style formatting before inserting the rows
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'B1:H1');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'B1:H1');
         // inserting a empty row at 0th index
-        this.spreadsheetObj.insertRow();
+        this.spreadsheetObj!.insertRow();
         // inserting 2 rows at the 9th index with data
-        this.spreadsheetObj.insertRow(this.rowsModel);
+        this.spreadsheetObj!.insertRow(this.rowsModel);
         // Applies style formatting after the rows are inserted
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'B3:B12');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'D3:D12');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'F3:H12');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'B3:B12');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'D3:D12');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'F3:H12');
     }
 }
 

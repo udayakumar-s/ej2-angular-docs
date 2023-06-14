@@ -18,10 +18,10 @@ import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    @ViewChild('Grid') public grid: GridComponent;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    @ViewChild('Grid') public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -33,8 +33,8 @@ export class AppComponent implements OnInit {
         if ((event.target as any).classList.contains('e-rowcell')) {
             const index: number = parseInt((event.target as any).getAttribute('Index'), 10);
             const colindex: number = parseInt((event.target as any).getAttribute('aria-colindex'), 10);
-            const field: string = this.grid.getColumns()[colindex].field;
-            this.grid.editModule.editCell(index, field);
+            const field: string = (this.grid as any).getColumns()[colindex].field;
+            (this.grid as any).editModule.editCell(index, field);
         }
     }
 }

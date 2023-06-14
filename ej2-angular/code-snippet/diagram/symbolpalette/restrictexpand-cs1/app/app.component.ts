@@ -12,19 +12,18 @@ import { ExpandMode } from '@syncfusion/ej2-navigations';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    public expandMode: ExpandMode;
-    public palettes: PaletteModel[];
-    public symbolPreview: SymbolPreviewModel[];
-    public paletteExpanding(args) {
+    public expandMode?: ExpandMode;
+    public palettes?: PaletteModel[];
+    public symbolPreview?: SymbolPreviewModel[];
+    public paletteExpanding(args: any) {
         if(args.palette.id === 'basic') {
             // Basic shapes panel does not collapse
             args.cancel = true;
             } else {
             // Swimlane shapes panel collapse and expand
             args.cancel = false;
-            }
-      };
-    public expandMode: ExpandMode;
+        }   
+    };
     public getBasicShapes(): NodeModel[] {
         let basicShapes: NodeModel[] = [{
                 id: 'Rectangle',

@@ -6,7 +6,7 @@ import { TreeGridComponent, ColumnMenuService } from '@syncfusion/ej2-angular-tr
 
 @Component({
     selector: 'app-container',
-    styleUrls: ['./app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None,
     providers: [ColumnMenuService],
     template: `<ejs-treegrid #treegrid [dataSource]='data' idMapping='TaskID' parentIdMapping='parentID' [treeColumnIndex]='1' [height]='315' showColumnMenu=true>
@@ -28,5 +28,5 @@ export class AppComponent implements OnInit {
         this.data = projectData;
     }
 
-
+}
 

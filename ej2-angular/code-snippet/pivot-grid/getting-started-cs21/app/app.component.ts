@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -10,13 +10,13 @@ import { Pivot_Data } from './datasource.ts';
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
-    public width: string;
+    public dataSourceSettings?: IDataOptions;
+    public width?: string;
 
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],

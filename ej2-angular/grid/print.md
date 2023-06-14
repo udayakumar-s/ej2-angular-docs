@@ -14,17 +14,17 @@ To print the Grid, use the [`print`](https://ej2.syncfusion.com/angular/document
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/print-cs2/app/app.component.ts %}
+{% include samples/grid/print-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs2/app/app.module.ts %}
+{% include samples/grid/print-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/print-cs2/app/main.ts %}
+{% include samples/grid/print-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/print-cs2" %}
+{% previewsample "page.domainurl/samples/grid/print-cs2" %}
 
 ## Page Setup
 
@@ -41,17 +41,17 @@ To print the grid from an external button, invoke the [`Print`](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging-api-cs1/app/app.component.ts %}
+{% include samples/grid/paging-api-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging-api-cs1/app/app.module.ts %}
+{% include samples/grid/paging-api-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging-api-cs1/app/main.ts %}
+{% include samples/grid/paging-api-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging-api-cs1" %}
+{% previewsample "page.domainurl/samples/grid/paging-api-cs1" %}
 
 ## Print visible Page
 
@@ -59,17 +59,17 @@ By default, the grid prints all the pages. To print the current page alone, set 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/print-api-cs1/app/app.component.ts %}
+{% include samples/grid/print-api-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-api-cs1/app/app.module.ts %}
+{% include samples/grid/print-api-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/print-api-cs1/app/main.ts %}
+{% include samples/grid/print-api-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/print-api-cs1" %}
+{% previewsample "page.domainurl/samples/grid/print-api-cs1" %}
 
 ## Print the hierarchy grid
 
@@ -83,17 +83,17 @@ By default, the grid will be print the master and expanded child grids alone. yo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs14/app/app.component.ts %}
+{% include samples/grid/default-cs14/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs14/app/app.module.ts %}
+{% include samples/grid/default-cs14/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs14/app/main.ts %}
+{% include samples/grid/default-cs14/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs14" %}
+{% previewsample "page.domainurl/samples/grid/default-cs14" %}
 
 ## Print the master detail grid
 
@@ -103,17 +103,17 @@ In the following sample, the detail grid is added to the `element` argument of t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/print-grid/app/app.component.ts %}
+{% include samples/grid/print-grid/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-grid/app/app.module.ts %}
+{% include samples/grid/print-grid/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/print-grid/app/main.ts %}
+{% include samples/grid/print-grid/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/print-grid" %}
+{% previewsample "page.domainurl/samples/grid/print-grid" %}
 
 ## Print large number of columns
 
@@ -135,17 +135,17 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/print-api-cs2/app/app.component.ts %}
+{% include samples/grid/print-api-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-api-cs2/app/app.module.ts %}
+{% include samples/grid/print-api-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/print-api-cs2/app/main.ts %}
+{% include samples/grid/print-api-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/print-api-cs2" %}
+{% previewsample "page.domainurl/samples/grid/print-api-cs2" %}
 
 ## Limitations of Printing Large Data
 

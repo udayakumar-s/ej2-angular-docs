@@ -13,7 +13,7 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element', null) element;
+  @ViewChild('element') public element?: any;
   public position = { X: 'Center' };
   public prevDuplicates: boolean = false;
   public toastFlag: number = 0;
@@ -24,13 +24,13 @@ export class AppComponent {
     { title: 'Error !', content: 'A problem has been occurred while submitting your data.', isOpen: false }
   ];
 
-  onBeforeOpen(e) {
+  onBeforeOpen(e: any) {
     if(this.preventDuplicate(e)){
       e.cancel =true;
     };
   }
 
-  preventDuplicate(e) {
+  preventDuplicate(e: any) {
     for (let i: number = 0; i < this.toasts.length; i++) {
       if (this.toasts[i].title === e.options.title && !this.toasts[i].isOpen) {
         this.toasts[i].isOpen = true;
@@ -40,7 +40,7 @@ export class AppComponent {
     return true;
   }
 
-  onClose(e) {
+  onClose(e: any) {
     for (let i: number = 0; i < this.toasts.length; i++) {
       if (this.toasts[i].title === e.options.title) {
         this.toasts[i].isOpen = false;
@@ -48,12 +48,12 @@ export class AppComponent {
     }
   }
 
-  onCreate() {
+  onCreate(args: any) {
     this.element.show(this.toasts[this.toastFlag]);
     ++this.toastFlag;
   }
 
-  btnClick() {
+  btnClick(args: any) {
     this.toastShow();
   }
 

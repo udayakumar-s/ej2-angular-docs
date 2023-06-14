@@ -22,10 +22,10 @@ import { EditSettingsModel,  GridComponent } from '@syncfusion/ej2-angular-grids
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public editSettings: EditSettingsModel;
-    public data: object[];
+    public editSettings?: EditSettingsModel;
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -33,19 +33,19 @@ export class AppComponent implements OnInit {
     }
 
     clickEdit(){
-        this.grid.startEdit();
+        (this.grid as any).startEdit();
     }
     clickAdd(){
-        this.grid.addRecord({ "OrderID": "10248", "CustomerID": "RTER", "ShipCity": "America", "ShipName": "Hanari"  });
+        (this.grid as any).addRecord({ "OrderID": "10248", "CustomerID": "RTER", "ShipCity": "America", "ShipName": "Hanari"  });
     }
     clickDelete(){
-        this.grid.deleteRecord();
+        (this.grid as any).deleteRecord();
     }
     clickUpdateRow(){
-        this.grid.updateRow(0, { OrderID: 10248, CustomerID: 'RTER', ShipCity: 'America', ShipName: 'Hanari'});
+        (this.grid as any).updateRow(0, { OrderID: 10248, CustomerID: 'RTER', ShipCity: 'America', ShipName: 'Hanari'});
     }
     clickUpdateCell(){
-         this.grid.setCellValue((this.grid.currentViewData[0] as any).OrderID,'CustomerID','Value Changed');
+        (this.grid as any).setCellValue(((this.grid as any).currentViewData[0] as any).OrderID,'CustomerID','Value Changed');
     }
 }
 

@@ -16,8 +16,8 @@ import { Component } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-    public maximum: number;
-    public isLabel: boolean;
+    public maximum?: number;
+    public isLabel?: boolean;
     ngOnInit(): void {
         this.maximum = 115;
         this.isLabel = true;

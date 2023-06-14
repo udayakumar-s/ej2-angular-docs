@@ -20,7 +20,7 @@ import { Input } from '@syncfusion/ej2-inputs';
 
 export class AppComponent {
     ngOnInit() {
-        let element: HTMLInputElement = document.getElementById('textbox');
+        let element: HTMLInputElement = document.getElementById('textbox') as HTMLInputElement;
         Input.createInput ({
             element: element,
             floatLabelType: "Auto",
@@ -28,7 +28,7 @@ export class AppComponent {
                 placeholder:'Enter Name'
             }
         });
-        let element1: HTMLInputElement = document.getElementById('textbox-01');
+        let element1: HTMLInputElement = document.getElementById('textbox-01') as HTMLInputElement;
         Input.createInput ({
             element: element1,
             floatLabelType: "Always",
@@ -36,7 +36,7 @@ export class AppComponent {
                 placeholder:'Enter Name'
             }
         });
-        let element2: HTMLInputElement = document.getElementById('textbox-02');
+        let element2: HTMLInputElement = document.getElementById('textbox-02') as HTMLInputElement;
         Input.createInput ({
             element: element2,
             floatLabelType: "Never",
@@ -45,7 +45,7 @@ export class AppComponent {
             }
         });
 
-        let element3: HTMLInputElement = document.getElementById('textbox-icon');
+        let element3: HTMLInputElement = document.getElementById('textbox-icon') as HTMLInputElement;
         Input.createInput ({
             element: element3,
             floatLabelType: "Auto",

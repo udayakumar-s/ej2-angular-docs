@@ -89,20 +89,20 @@ import { dataSource } from './datasource';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:S1');
-        this.spreadsheetObj.numberFormat('h:mm AM/PM', 'C1:S1');
-        this.spreadsheetObj.cellFormat({ verticalAlign: 'middle' }, 'A1:S11');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:S1');
+        this.spreadsheetObj!.numberFormat('h:mm AM/PM', 'C1:S1');
+        this.spreadsheetObj!.cellFormat({ verticalAlign: 'middle' }, 'A1:S11');
           // Merging the `K4:M4` cells using method
-        this.spreadsheetObj.merge('K4:M4');
+        this.spreadsheetObj!.merge('K4:M4');
         // Merging the 5th and 6th row cells across 11th, 12th and 13th column
-        this.spreadsheetObj.merge('K5:M6', 'Vertically');
+        this.spreadsheetObj!.merge('K5:M6', 'Vertically');
         // Merging the 18th and 19th column cells across 2nd, 3rd and 4th row
-        this.spreadsheetObj.merge('N4:O6', 'Horizontally');
+        this.spreadsheetObj!.merge('N4:O6', 'Horizontally');
     }
 }
 

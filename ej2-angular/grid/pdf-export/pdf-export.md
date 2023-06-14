@@ -16,17 +16,17 @@ To use PDF export, inject **PdfExportService** in the provider section of **AppM
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs18/app/app.component.ts %}
+{% include samples/grid/exporting-cs18/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs18/app/app.module.ts %}
+{% include samples/grid/exporting-cs18/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs18/app/main.ts %}
+{% include samples/grid/exporting-cs18/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs18" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs18" %}
 
 ## Show spinner while exporting
 
@@ -40,17 +40,17 @@ In the below demo, we have rendered the default spinner component when exporting
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs19/app/app.component.ts %}
+{% include samples/grid/exporting-cs19/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs19/app/app.module.ts %}
+{% include samples/grid/exporting-cs19/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs19/app/main.ts %}
+{% include samples/grid/exporting-cs19/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs19" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs19" %}
 
 ## Custom data source
 
@@ -58,17 +58,17 @@ PDF export provides an option to define datasource dynamically before exporting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs20/app/app.component.ts %}
+{% include samples/grid/exporting-cs20/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs20/app/app.module.ts %}
+{% include samples/grid/exporting-cs20/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs20/app/main.ts %}
+{% include samples/grid/exporting-cs20/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs20" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs20" %}
 
 ## Passing additional parameters to the server when exporting
 
@@ -78,17 +78,17 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs21/app/app.component.ts %}
+{% include samples/grid/exporting-cs21/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs21/app/app.module.ts %}
+{% include samples/grid/exporting-cs21/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs21/app/main.ts %}
+{% include samples/grid/exporting-cs21/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs21" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs21" %}
 
 ## See Also
 

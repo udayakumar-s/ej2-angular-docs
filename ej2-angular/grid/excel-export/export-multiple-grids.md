@@ -18,17 +18,17 @@ The excel export provides support to export multiple grids in same sheet. To exp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs12/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs12/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs12/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs12/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs12/app/main.ts %}
+{% include samples/grid/excel-exporting-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs12" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs12" %}
 
 >By default, **multipleExport.blankRows** value is 5.
 
@@ -38,14 +38,14 @@ Excel exporting provides support to export multiple grids in new sheet. To expor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/excel-exporting-cs13/app/app.component.ts %}
+{% include samples/grid/excel-exporting-cs13/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs13/app/app.module.ts %}
+{% include samples/grid/excel-exporting-cs13/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/excel-exporting-cs13/app/main.ts %}
+{% include samples/grid/excel-exporting-cs13/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs13" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs13" %}

@@ -24,14 +24,14 @@ import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
             <button ejs-button isPrimary="true" type="submit" id="submit_btn" (click)="btnClick($event)">Submit</button>
       </div>
     </div>`,
-    styleUrls:['index.css'],
+    styleUrls:['./index.css'],
     encapsulation: ViewEncapsulation.None
 
 })
 export class AppComponent {
     @ViewChild('formId') element:any;
-    @ViewChild('default') sliderObj: SliderComponent;
-    public formObject: FormValidator;
+    @ViewChild('default') sliderObj?: SliderComponent;
+    public formObject?: FormValidator;
     public ticks: Object = {
         placement: 'Before',
         largeStep: 20,
@@ -51,8 +51,8 @@ export class AppComponent {
       this.formObject = new FormValidator(this.element.nativeElement, options);
     }
 
-    public btnClick(): void {
-      if (this.sliderObj.value < 5) {
+    public btnClick(args: any): void {
+      if ((this.sliderObj as SliderComponent | any).value < 5) {
         alert("Please select value greater than 30");
       } else {
         alert("Submitted");
@@ -60,7 +60,7 @@ export class AppComponent {
       }
     }
     public onChanged(): void {
-      this.formObject.validate();
+      this.formObject?.validate();
     }
 }
 

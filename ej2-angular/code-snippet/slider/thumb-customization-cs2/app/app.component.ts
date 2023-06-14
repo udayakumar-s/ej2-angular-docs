@@ -23,7 +23,7 @@ import { SliderComponent } from '@syncfusion/ej2-angular-inputs';
             <div class="labelText slider-userselect">Custom image</div>
             <ejs-slider id='image_slider' [value]='value' [min]='min' [max]='max' [ticks]='ticks'></ejs-slider>
         </div>`,
-    styleUrls : ["app/app.component.css"],
+    styleUrls : ["./app.component.css"],
     encapsulation: ViewEncapsulation.None
 })
 

@@ -19,7 +19,7 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public insertImageButtonClick(): void {
         let pictureUpload: HTMLInputElement = document.getElementById("insertImageButton") as HTMLInputElement;

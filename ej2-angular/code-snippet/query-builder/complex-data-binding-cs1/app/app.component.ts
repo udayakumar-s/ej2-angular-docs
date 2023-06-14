@@ -11,14 +11,14 @@ import { RadioButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
   selector: 'app-root',
-  templateUrl: `app/template-driven.html`
+  templateUrl: `template-driven.html`
 })
 export class AppComponent implements OnInit {
-  @ViewChild('querybuilder') qryBldrObj: QueryBuilderComponent;
-  public importRules: RuleModel;
-  public columns1: ColumnsModel[];
-  public columns2: ColumnsModel[];
-  public columns3: ColumnsModel[];
+  @ViewChild('querybuilder') qryBldrObj: QueryBuilderComponent | undefined;
+  public importRules?: RuleModel;
+  public columns1?: ColumnsModel[];
+  public columns2?: ColumnsModel[];
+  public columns3?: ColumnsModel[];
   ngOnInit(): void {
     this.importRules = {
       condition: 'and',
@@ -79,17 +79,17 @@ export class AppComponent implements OnInit {
     { field: 'Name', label: 'Name', type: 'string'}
     ]
   }
-  
+
   onReset(e: Event): void {
-    this.qryBldrObj.reset();
+    this.qryBldrObj?.reset();
   }
   onSetSqlRules(e:Event): void {
-    this.qryBldrObj.setRulesFromSql("Employee.ID = 0 AND Name.LastName LIKE ('%malan%') AND (Country.State.City LIKE ('U%') AND Country.Region LIKE ('%c') AND Country.Name IS NOT EMPTY)");
+    this.qryBldrObj?.setRulesFromSql("Employee.ID = 0 AND Name.LastName LIKE ('%malan%') AND (Country.State.City LIKE ('U%') AND Country.Region LIKE ('%c') AND Country.Name IS NOT EMPTY)");
   }
   onSetRules(e:Event): void {
-    this.qryBldrObj.setRules(this.importRules);
+    this.qryBldrObj?.setRules((this as any).importRules);
   }
-  
+
 }
 
 

@@ -29,7 +29,7 @@ import { resourceData } from "./datasource";
 })
 export class AppComponent {
   @ViewChild('scheduleObj')
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2018, 3, 1);
   public views: Array<string> = ["Week", "Month", "TimelineWeek", "TimelineMonth", "Agenda"];
   public eventSettings: EventSettingsModel = {
@@ -49,8 +49,10 @@ export class AppComponent {
     { OwnerText: "Steven", Id: 2, OwnerGroupId: 2, OwnerColor: "#f8a398" },
     { OwnerText: "Michael", Id: 3, OwnerGroupId: 1, OwnerColor: "#7499e1" }
   ];
+currentView: any;
+allowMultipleCategory: any;
   public onChange(args: ChangeArgs): void {
-    this.scheduleObj.eventSettings.resourceColorField = args.value;
+    this.scheduleObj!.eventSettings.resourceColorField = args.value;
   }
 }
 

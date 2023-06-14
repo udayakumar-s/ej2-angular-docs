@@ -24,12 +24,12 @@ import { PdfExportProperties } from '@syncfusion/ej2-angular-grids';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public editOptions: Object;
-    public formatOptions: Object;
-    public toolbarOptions: ToolbarItems[];
-    public initialPage: object;
+    public editOptions?: Object;
+    public formatOptions?: Object;
+    public toolbarOptions?: ToolbarItems[];
+    public initialPage?: object;
     @ViewChild('treegridObj')
-    public treegridObj: TreeGridComponent;
+    public treegridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = projectData;
@@ -52,5 +52,5 @@ export class AppComponent implements OnInit {
     }
   }
 
-
+}
 

@@ -23,7 +23,7 @@ export class AppComponent {
     public tooltipSettings: object = {
             visible: true,
             format:'Name:${fruit} - TotalCount:${count}'
-    },
+    };
 }
 
 

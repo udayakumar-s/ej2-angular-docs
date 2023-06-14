@@ -6,8 +6,7 @@ import { SelectionSettingsModel, GridComponent } from '@syncfusion/ej2-angular-g
 
 @Component({
     selector: 'app-root',
-    template:
-    `<button ej-button id='copy' (click)='copy()'>Copy</button>
+    template: `<button ej-button id='copy' (click)='copy()'>Copy</button>
      <button ej-button id='copyHeader' (click)='copyHeader()'>CopyHeader</button>
         <ejs-grid #grid='' [dataSource]='data' height='280px' [selectionSettings]='selectionOptions'>
             <e-columns>
@@ -20,9 +19,9 @@ import { SelectionSettingsModel, GridComponent } from '@syncfusion/ej2-angular-g
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
-    @ViewChild('grid') public gridObj: GridComponent;
+    public data?: object[];
+    public selectionOptions?: SelectionSettingsModel;
+    @ViewChild('grid') public gridObj?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -30,11 +29,11 @@ export class AppComponent implements OnInit {
     }
 
     copy() {
-        this.gridObj.copy();
+        (this.gridObj as any).copy();
     }
 
     copyHeader() {
-        this.gridObj.copy(true);
+        (this.gridObj as any).copy(true);
     }
 }
 

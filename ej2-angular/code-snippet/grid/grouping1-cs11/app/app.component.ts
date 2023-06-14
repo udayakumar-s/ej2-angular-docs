@@ -19,19 +19,16 @@ import { FilterService, PageService, GridComponent } from '@syncfusion/ej2-angul
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
 
-    actionHandler() {
-        this.grid.query.addParams('$filter', 'EmployeeID eq 1');
+    actionHandler(args: any) {
+        (this.grid as any).query.addParams('$filter', 'EmployeeID eq 1');
     }
 
 }
-
-
-

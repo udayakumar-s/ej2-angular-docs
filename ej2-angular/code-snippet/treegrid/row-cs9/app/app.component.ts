@@ -36,14 +36,14 @@ let instance: Internationalization = new Internationalization();
                 </tr>
         </ng-template>
 </ejs-treegrid>`,
-styleUrls: ['./app/app.style.css']
+styleUrls: ['./app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = textdata;

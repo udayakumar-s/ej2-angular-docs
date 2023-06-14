@@ -8,18 +8,18 @@
     providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService]
     })
     export class AppComponent  {
-        @ViewChild('defaultRTE') rteObj: RichTextEditorComponent;
+        @ViewChild('defaultRTE') rteObj: RichTextEditorComponent | undefined;
         public tools = {
            items: ['Bold', 'Italic', 'StrikeThrough', '|',
             'Formats', 'OrderedList', 'UnorderedList', '|',
             'CreateLink', 'Image', '|','Undo', 'Redo']
         };
         public mode = 'Markdown';
-        onCreate(e) {
+        onCreate(e: any) {
             document.onkeyup = function (e) {
                 if (e.altKey && e.keyCode === 84 /* t */) {
                     // press alt+t to focus the component.
-                    this.rteObj.focusIn();
+                    (this as any).rteObj.focusIn();
                 }
             }
         }

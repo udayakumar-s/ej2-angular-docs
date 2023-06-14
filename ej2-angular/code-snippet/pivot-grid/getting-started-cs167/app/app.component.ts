@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
-import { pivotNullData } from './datasource.ts';
+import { pivotNullData } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,15 +13,15 @@ import { pivotNullData } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
 
     ngOnInit(): void {
 
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: pivotNullData,
+            dataSource: pivotNullData as IDataSet[],
             expandAll: false,
             rows: [{ name: 'Country' }, { name: 'State'}],
             columns: [{ name: 'Product', showNoDataItems: true }, { name: 'Date' }],

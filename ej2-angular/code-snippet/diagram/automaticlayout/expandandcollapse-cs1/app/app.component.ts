@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, SelectorModel, SelectorConstraints, SnapSettingsModel, LayoutModel, DataSourceModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, SelectorModel, SelectorConstraints, SnapSettingsModel, LayoutModel, DataSourceModel, DecoratorModel, ShapeStyleModel, TreeInfo } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 @Component({
@@ -12,12 +12,12 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public selectedItems: SelectorModel;
-    public snapSettings: SnapSettingsModel;
-    public items: DataManager;
-    public layout: LayoutModel;
-    public dataSourceSettings: DataSourceModel;
+    public diagram?: DiagramComponent;
+    public selectedItems?: SelectorModel;
+    public snapSettings?: SnapSettingsModel;
+    public items?: DataManager;
+    public layout?: LayoutModel;
+    public dataSourceSettings?: DataSourceModel;
     //Initializes data source
     public data: object[] = [{
             'Id': 'parent1',
@@ -55,7 +55,7 @@ export class AppComponent {
         }
     ];
     //Sets the default properties for all the Nodes
-    public getNodeDefaults(obj: NodeModel, diagram: Diagram): NodeModel {
+    public getNodeDefaults(obj: NodeModel | any, diagram: Diagram): NodeModel {
         obj.expandIcon = {
             height: 15,
             width: 15,
@@ -65,11 +65,11 @@ export class AppComponent {
                 x: .5,
                 y: .85
             }
-        }
+        };
         obj.collapseIcon.offset = {
             x: .5,
             y: .85
-        }
+        };
         obj.collapseIcon.height = 15;
         obj.collapseIcon.width = 15;
         obj.collapseIcon.shape = "Minus";
@@ -89,9 +89,9 @@ export class AppComponent {
             strokeColor: '#6BA5D7',
             strokeWidth: 2
         };
-        connector.targetDecorator.style.fill  =  '#6BA5D7';
-        connector.targetDecorator.style.strokeColor  =  '#6BA5D7';
-        connector.targetDecorator.shape = 'None';
+        (((connector as ConnectorModel).targetDecorator as DecoratorModel).style as ShapeStyleModel).fill  =  '#6BA5D7';
+        (((connector as ConnectorModel).targetDecorator as DecoratorModel).style as ShapeStyleModel).strokeColor  =  '#6BA5D7';
+        ((connector as ConnectorModel).targetDecorator as DecoratorModel).shape = 'None';
         connector.type = 'Orthogonal';
         return connector;
     }
@@ -111,7 +111,7 @@ export class AppComponent {
             margin: {
                 top: 20
             },// define the getLayoutInfo
-            getLayoutInfo: (node: Node, tree: TreeInfo) => {
+            getLayoutInfo: (node: Node, tree: TreeInfo | any) => {
                 if (!tree.hasSubTree) {
                     tree.orientation = 'vertical';
                     tree.type = 'alternate';

@@ -19,10 +19,10 @@ import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angu
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public countryParams: IEditCell;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public countryParams?: IEditCell;
 
     public country: object[] = [
         { countryName: 'United States', countryId: '1' },

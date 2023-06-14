@@ -6,19 +6,19 @@ import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-
 const SERVICE_URI: string =  'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders';
 
 class SerialNoAdaptor extends ODataAdaptor {
-    public processResponse(): object {
+    public override processResponse(): object {
         let i: number = 0;
         //calling base class processResponse function
-        let original: object[] = super.processResponse.apply(this, arguments);
+        let original: object[] | any = super.processResponse.apply(this, arguments as any);
         //Adding serial number
-        original.forEach((item: object) => item['Sno'] = ++i);
+        original.forEach((item: object | any) => item['Sno'] = ++i);
         return original;
     }
 }
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.template.html',
+    templateUrl: './app.template.html',
     styles: [`
             .e-table {
                 border: solid 1px #e0e0e0;
@@ -43,7 +43,7 @@ class SerialNoAdaptor extends ODataAdaptor {
 })
 export class AppComponent implements OnInit {
 
-    public items: object[];
+    public items?: object[] | any;
 
     public ngOnInit(): void {
         new DataManager({ url: SERVICE_URI, adaptor: new SerialNoAdaptor })

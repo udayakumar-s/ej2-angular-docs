@@ -20,16 +20,16 @@ export class AppComponent implements OnInit {
     public data: object[] = [];
     @ViewChild('treegrid')
 
-    public treegrid: TreeGridComponent;
-    public toolbar: string[];
+    public treegrid?: TreeGridComponent;
+    public toolbar?: string[];
     ngOnInit(): void {
         this.data = sampleData;
         this.toolbar = ['ColumnChooser'];
     }
     click() {
-        var visiblColumns: object[] = this.treegrid.getVisibleColumns(); // get visible columns
+        var visiblColumns: object[] = (this.treegrid as TreeGridComponent).getVisibleColumns(); // get visible columns
         var columnsCount: number = visiblColumns.length;
-        var visibleRecords: object[] = this.treegrid.getVisibleRecords(); //get visible records
+        var visibleRecords: object[] = (this.treegrid as TreeGridComponent).getVisibleRecords(); //get visible records
         var visibleRecordsCount: number = visibleRecords.length
         alert('Columns Count : ' + columnsCount + ' and Row count : ' + '' + visibleRecordsCount);
     }

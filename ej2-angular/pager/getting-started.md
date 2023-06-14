@@ -124,17 +124,17 @@ export class AppComponent implements OnInit {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pager/pager-cs1/app/app.component.ts %}
+{% include samples/pager/pager-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs1/app/app.module.ts %}
+{% include samples/pager/pager-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pager/pager-cs1/app/main.ts %}
+{% include samples/pager/pager-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pager/pager-cs1" %}
+{% previewsample "page.domainurl/samples/pager/pager-cs1" %}
 
 ## Page Count
 
@@ -144,17 +144,17 @@ and [`pageSize`](#page-size) values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pager/pager-cs2/app/app.component.ts %}
+{% include samples/pager/pager-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs2/app/app.module.ts %}
+{% include samples/pager/pager-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pager/pager-cs2/app/main.ts %}
+{% include samples/pager/pager-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pager/pager-cs2" %}
+{% previewsample "page.domainurl/samples/pager/pager-cs2" %}
 
 ## Run the application
 
@@ -168,14 +168,14 @@ Output will be appears as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pager/pager-cs3/app/app.component.ts %}
+{% include samples/pager/pager-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs3/app/app.module.ts %}
+{% include samples/pager/pager-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pager/pager-cs3/app/main.ts %}
+{% include samples/pager/pager-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pager/pager-cs3" %}
+{% previewsample "page.domainurl/samples/pager/pager-cs3" %}

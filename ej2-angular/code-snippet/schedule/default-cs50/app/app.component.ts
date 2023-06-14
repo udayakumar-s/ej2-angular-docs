@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { EventSettingsModel, RenderCellEventArgs, DayService, WeekService, WorkWeekService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, RenderCellEventArgs, DayService, WeekService, WorkWeekService, MonthService, View } from '@syncfusion/ej2-angular-schedule';
 import { removeClass } from '@syncfusion/ej2-base';
 import { scheduleData } from './datasource';
 

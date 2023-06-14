@@ -15,12 +15,12 @@ import { getComponent, createElement } from '@syncfusion/ej2-base';
 
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
      @ViewChild('querybuilder')
-    public qryBldrObj: QueryBuilderComponent;
-    public filter: ColumnsModel[];
-    public paymentTemplate: TemplateColumn;
+    public qryBldrObj?: QueryBuilderComponent;
+    public filter?: ColumnsModel[];
+    public paymentTemplate?: TemplateColumn;
     public inOperators: string[] = ['in', 'notin'];
     ngOnInit(): void {
         this.data = expenseData;
@@ -29,11 +29,11 @@ export class AppComponent implements OnInit {
             return createElement('input', { attrs: { 'type': 'text' } });
         },
         destroy: (args: { elementId: string }) => {
-            let multiSelect: MultiSelect = (getComponent(document.getElementById(args.elementId), 'multiselect') as MultiSelect);
+            let multiSelect: MultiSelect = (getComponent(document.getElementById(args.elementId) as any, 'multiselect') as MultiSelect);
             if (multiSelect) {
                 multiSelect.destroy();
             }
-            let dropdown: DropDownList = (getComponent(document.getElementById(args.elementId), 'dropdownlist') as DropDownList);
+            let dropdown: DropDownList = (getComponent(document.getElementById(args.elementId) as any, 'dropdownlist') as DropDownList);
             if (dropdown) {
                 dropdown.destroy();
             }
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
                     mode: 'CheckBox',
                     placeholder: 'Select Transaction',
                     change: (e: any) => {
-                        this.qryBldrObj.notifyChange(e.value, e.element);
+                        this.qryBldrObj!.notifyChange(e.value, e.element);
                     }
                 });
                 multiSelectObj.appendTo('#' + args.elements.id);
@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
                     dataSource: ds,
                     value: args.values as string,
                     change: (e: any) => {
-                        this.qryBldrObj.notifyChange(e.itemData.value, e.element);
+                        this.qryBldrObj!.notifyChange(e.itemData.value, e.element);
                     }
                 });
                 dropDownObj.appendTo('#' + args.elements.id);

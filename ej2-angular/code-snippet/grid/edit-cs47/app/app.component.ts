@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -22,25 +22,26 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('Grid') public grid: GridComponent;
-    public sortOptions: object;
+    public data?: object[];
+    @ViewChild('Grid') public grid?: GridComponent;
+    public sortOptions?: object;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;
         this.sortOptions = { columns: [{ field: 'OrderID', direction: 'Ascending' }, { field: 'CustomerID', direction: 'Descending' }] };
     }
     public SingleClearSort(): void {
-        const column: any = this.grid.sortSettings.columns;
+        const column: any = (this.grid as any).sortSettings.columns;
         for (let i = 0; i < column.length; i++) {
             if (column[i].field === 'OrderID') {
                 column.splice(i, 1);
-                this.grid.refresh();
+                (this.grid as any).refresh();
             }
         }
     }
     public MultiClearSort(): void {
-        this.grid.clearSorting();
+        (this.grid as any).clearSorting();
     }
 }
 

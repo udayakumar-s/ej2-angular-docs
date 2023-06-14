@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `<h4>Select Color</h4>
                <!-- To render Picker. -->
-               <input ejs-colorpicker type="color" id="element" mode="Palette" [modeSwitcher]="false" [showButtons]="false" />`
+               <ejs-input ejs-colorpicker type="color" id="element" mode="Palette" [modeSwitcher]="false" [showButtons]="false" />`
 })
 
 export class AppComponent { }

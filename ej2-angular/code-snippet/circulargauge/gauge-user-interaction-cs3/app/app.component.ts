@@ -21,12 +21,12 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public lineStyle: Object;
-    public majorTicks: Object;
-    public minorTicks: Object;
-    public tooltip: Object;
-    public cap: Object;
-    public annotaions;
+    public lineStyle?: Object;
+    public majorTicks?: Object;
+    public minorTicks?: Object;
+    public tooltip?: Object;
+    public cap?: Object;
+    public annotaions : any;
     ngOnInit(): void {
         // Initialize objects
         this.tooltip = {

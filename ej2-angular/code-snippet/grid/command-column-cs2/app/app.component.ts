@@ -20,10 +20,11 @@ import { closest } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public commands: CommandModel[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public commands?: CommandModel[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -32,7 +33,7 @@ export class AppComponent implements OnInit {
     }
 
     commandClick(args: CommandClickEventArgs): void {
-        alert(JSON.stringify(args.rowData));
+        alert(JSON.stringify((args as any).rowData));
     }
 }
 

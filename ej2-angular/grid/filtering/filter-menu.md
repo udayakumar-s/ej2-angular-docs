@@ -14,17 +14,17 @@ You can enable filter menu by setting the [`filterSettings.type`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs4/app/app.component.ts %}
+{% include samples/grid/filtering1-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs4/app/app.module.ts %}
+{% include samples/grid/filtering1-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs4/app/main.ts %}
+{% include samples/grid/filtering1-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs4" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs4" %}
 
 > * [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) must be set as true to enable filter menu.
 > * Setting [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) as false will prevent  filter menu rendering for a particular column.
@@ -41,17 +41,17 @@ To implement custom filter ui, define the following functions:
 In the following sample, dropdown is used  as custom component in the OrderID column.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs5/app/app.component.ts %}
+{% include samples/grid/filtering1-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs5/app/app.module.ts %}
+{% include samples/grid/filtering1-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs5/app/main.ts %}
+{% include samples/grid/filtering1-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs5" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs5" %}
 
 ## Customizing filter menu operators list
 
@@ -65,17 +65,17 @@ You can customize the default filter operator list by defining the [`filterSetti
 In the following sample, we have customized string filter operators.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs6/app/app.component.ts %}
+{% include samples/grid/filtering1-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs6/app/app.module.ts %}
+{% include samples/grid/filtering1-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs6/app/main.ts %}
+{% include samples/grid/filtering1-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs6" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs6" %}
 
 ## Enable different filter for a column
 
@@ -85,17 +85,17 @@ In the following sample menu filter is enabled by default and checkbox filter is
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs7/app/app.component.ts %}
+{% include samples/grid/filtering1-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs7/app/app.module.ts %}
+{% include samples/grid/filtering1-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs7/app/main.ts %}
+{% include samples/grid/filtering1-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs7" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs7" %}
 
 ## Filter by multiple keywords using filter menu
 
@@ -105,17 +105,17 @@ In the following sample, filtering action with multiple keywords can be done by 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs8/app/app.component.ts %}
+{% include samples/grid/filtering1-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs8/app/app.module.ts %}
+{% include samples/grid/filtering1-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs8/app/main.ts %}
+{% include samples/grid/filtering1-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs8" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs8" %}
 
 ## See also
 

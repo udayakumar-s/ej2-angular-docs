@@ -12,7 +12,7 @@ import {
       <e-resources>
         <e-resource field="OwnerId" title="Owner" name="Owners"
           [dataSource]="ownerDataSource" [allowMultiple]="allowMultipleOwner"
-          textField='text' idField='id' colorField='color' workDaysField: 'workDays'>
+          textField='text' idField='id' colorField='color' [workDaysField]='workDays'>
         </e-resource>
       </e-resources>
     </ejs-schedule>`
@@ -29,4 +29,5 @@ export class AppComponent {
     { text: 'Alice', id: 1, color: '#1aaa55', workDays: [1, 2, 3, 4] },
     { text: 'Smith', id: 2, color: '#7fa900', workDays: [2, 3, 5] }
   ];
+workDays: any;
 }

@@ -15,10 +15,10 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
     onCreated(): void {
-        if (this.documentEditor.isDocumentLoaded) {
-            let sfdt: string = {
+        if ((this.documentEditor as DocumentEditorComponent).isDocumentLoaded) {
+            let sfdt: any = {
                 "sections": [
                     {
                         "blocks": [
@@ -69,9 +69,9 @@ export class AppComponent {
                 ]
             };
             //Open the default document in Document Editor.
-            this.documentEditor.open(JSON.stringify(sfdt));
+            (this.documentEditor as DocumentEditorComponent).open(JSON.stringify(sfdt));
             //Scroll to specified page number.
-            this.documentEditor.scrollToPage(2);
+            (this.documentEditor as DocumentEditorComponent).scrollToPage(2);
         }
     }
 }

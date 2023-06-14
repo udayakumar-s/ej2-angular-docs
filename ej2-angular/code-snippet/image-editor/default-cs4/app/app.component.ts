@@ -15,17 +15,17 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
 
 export class AppComponent {
     @ViewChild('imageEditor')
-    public imageEditorObj: ImageEditorComponent;
+    public imageEditorObj?: ImageEditorComponent;
 
       public created(): void {
         if (Browser.isDevice) {
-            this.imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
         } else {
-            this.imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
         }
     }
     btnClick(): void {
-        this.imageEditorObj.drawEllipse(500, 500, 400, 400, 2, "#fff", 'green');
+        this.imageEditorObj?.drawEllipse(500, 500, 400, 400, 2, "#fff", 'green');
     }
 }
 

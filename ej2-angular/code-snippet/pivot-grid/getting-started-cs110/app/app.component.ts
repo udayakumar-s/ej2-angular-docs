@@ -2,8 +2,8 @@
 
 import { Component } from '@angular/core';
 import { L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
-import { IDataOptions, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -14,7 +14,8 @@ import { Pivot_Data } from './datasource.ts';
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings?: IDataOptions;
+    public width?: string;
     ngOnInit(): void {
         setCulture('de');
         setCurrencyCode('EUR');
@@ -59,7 +60,7 @@ export class AppComponent {
             }
         });
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],

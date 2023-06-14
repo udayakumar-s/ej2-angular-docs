@@ -8,7 +8,7 @@ import { getValue, select } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: ` <div class="filemanagerContainer">
                     <ejs-filemanager id='file-manager' #fileObj [ajaxSettings]='ajaxSettings' (fileLoad)="fileLoad($event)">
                     </ejs-filemanager>
@@ -16,8 +16,8 @@ import { getValue, select } from '@syncfusion/ej2-base';
 })
 export class AppComponent {
     @ViewChild('fileObj',{ static: true })
-    public fileObj: FileManagerComponent;
-    public ajaxSettings: object;
+    public fileObj?: FileManagerComponent;
+    public ajaxSettings?: object;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {
@@ -30,7 +30,7 @@ export class AppComponent {
 
     fileLoad (args: FileLoadEventArgs) {
         //Native tooltip customization to display additonal information in new line
-        let target: Element = args.element;
+        let target: Element = args.element as Element;
         if (args.module==='DetailsView') {
             let element: Element = select('[title]', args.element);
             let title: string = getValue('name', args.fileDetails) +

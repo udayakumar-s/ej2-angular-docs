@@ -2,7 +2,8 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent, RowSelectEventArgs } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent,  } from '@syncfusion/ej2-angular-treegrid';
+import { RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-container',
@@ -17,19 +18,19 @@ import { TreeGridComponent, RowSelectEventArgs } from '@syncfusion/ej2-angular-t
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
     }
 
     rowSelected(args: RowSelectEventArgs) {
-        const selectedrowindex: number[] = this.treegrid.getSelectedRowIndexes();  // Get the selected row indexes.
+        const selectedrowindex: number[] = (this.treegrid as TreeGridComponent).getSelectedRowIndexes();  // Get the selected row indexes.
         alert(selectedrowindex); // To alert the selected row indexes.
-        const selectedrecords: object[] = this.treegrid.getSelectedRecords();  // Get the selected records.
+        const selectedrecords: object[] = (this.treegrid as TreeGridComponent).getSelectedRecords();  // Get the selected records.
     }
 }
 

@@ -15,7 +15,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
     public legendSettings: Object = {
       visible: true,
-        visible: true,
         position: 'Top',
         height: 100,
         width: 200

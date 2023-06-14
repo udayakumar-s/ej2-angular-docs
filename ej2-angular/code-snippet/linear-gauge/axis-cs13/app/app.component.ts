@@ -15,8 +15,8 @@ import { Component } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-    public label1:Object;
-    public label2:Object;
+    public label1?:Object;
+    public label2?:Object;
     ngOnInit(): void {
         this.label1 =  {
             format: '{value}°C'

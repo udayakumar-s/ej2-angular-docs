@@ -30,17 +30,17 @@ Built-in Toolbar Items execute standard actions of the Grid and it can be added 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbar-cs1/app/app.component.ts %}
+{% include samples/grid/toolbar-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-cs1/app/app.module.ts %}
+{% include samples/grid/toolbar-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbar-cs1/app/main.ts %}
+{% include samples/grid/toolbar-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/grid/toolbar-cs1" %}
 
 > The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 
@@ -58,17 +58,17 @@ This is demonstrated in the following sample:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbaricon-cs1/app/app.component.ts %}
+{% include samples/grid/toolbaricon-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbaricon-cs1/app/app.module.ts %}
+{% include samples/grid/toolbaricon-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbaricon-cs1/app/main.ts %}
+{% include samples/grid/toolbaricon-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/toolbaricon-cs1" %}
+{% previewsample "page.domainurl/samples/grid/toolbaricon-cs1" %}
 
 ## Custom toolbar items
 
@@ -78,17 +78,17 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs1/app/app.component.ts %}
+{% include samples/grid/custom-toolbar-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs1/app/app.module.ts %}
+{% include samples/grid/custom-toolbar-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs1/app/main.ts %}
+{% include samples/grid/custom-toolbar-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/grid/custom-toolbar-cs1" %}
 
 > * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 > * If a toolbar item does not match with built-in items, it will be treated as custom toolbar item.
@@ -101,17 +101,17 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs53/app/app.component.ts %}
+{% include samples/grid/edit-cs53/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs53/app/app.module.ts %}
+{% include samples/grid/edit-cs53/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs53/app/main.ts %}
+{% include samples/grid/edit-cs53/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs53" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs53" %}
 
 ## Custom toolbar component in a specific position
 
@@ -119,14 +119,14 @@ By default, Custom toolbar items are in the Left position. You can change the po
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs2/app/app.component.ts %}
+{% include samples/grid/custom-toolbar-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs2/app/app.module.ts %}
+{% include samples/grid/custom-toolbar-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs2/app/main.ts %}
+{% include samples/grid/custom-toolbar-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-toolbar-cs2" %}
+{% previewsample "page.domainurl/samples/grid/custom-toolbar-cs2" %}

@@ -39,17 +39,17 @@ Items| Description
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs1/app/app.component.ts %}
+{% include samples/grid/default-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs1/app/app.module.ts %}
+{% include samples/grid/default-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs1/app/main.ts %}
+{% include samples/grid/default-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs1" %}
+{% previewsample "page.domainurl/samples/grid/default-cs1" %}
 
 ## Custom context menu items
 
@@ -57,17 +57,17 @@ The custom context menu items can be added by defining the [`contextMenuItems`](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs2/app/app.component.ts %}
+{% include samples/grid/default-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs2/app/app.module.ts %}
+{% include samples/grid/default-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs2/app/main.ts %}
+{% include samples/grid/default-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs2" %}
+{% previewsample "page.domainurl/samples/grid/default-cs2" %}
 
 ## Show context menu on left click
 
@@ -79,17 +79,17 @@ This is demonstrated in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs3/app/app.component.ts %}
+{% include samples/grid/default-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs3/app/app.module.ts %}
+{% include samples/grid/default-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs3/app/main.ts %}
+{% include samples/grid/default-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs3" %}
+{% previewsample "page.domainurl/samples/grid/default-cs3" %}
 
 > You can hide or show an item in context menu for specific area inside of grid by defining the [`target`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/#target) property.
 
@@ -101,14 +101,14 @@ In the following sample, the Copy item is enabled or disabled based on some cond
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs4/app/app.component.ts %}
+{% include samples/grid/default-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs4/app/app.module.ts %}
+{% include samples/grid/default-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs4/app/main.ts %}
+{% include samples/grid/default-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs4" %}
+{% previewsample "page.domainurl/samples/grid/default-cs4" %}

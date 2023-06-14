@@ -22,7 +22,7 @@ export class AppComponent {
     };
     public tooltipSettings: object = {
             visible: true
-    },
+    };
 }
 
 

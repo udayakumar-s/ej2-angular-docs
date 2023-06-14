@@ -26,13 +26,13 @@ import {
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     public contextMenuItems: ContextMenuItem[] = ['AutoFit', 'AutoFitAll', 'SortAscending', 'SortDescending',
         'Copy', 'Edit', 'Delete', 'Save', 'Cancel',
         'PdfExport', 'ExcelExport', 'CsvExport', 'FirstPage', 'PrevPage',
         'LastPage', 'NextPage', 'Group', 'Ungroup'];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
     public editing: EditSettingsModel = { allowEditing: true, allowDeleting: true };
 
     ngOnInit(): void {

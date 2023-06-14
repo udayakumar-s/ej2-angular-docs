@@ -29,7 +29,7 @@ export class AppComponent {
     { Category: 'Employees', Country: 'France', JobDescription: 'Technical', JobGroup: 'Testers', EmployeesCount: 70 },
     { Category: 'Employees', Country: 'France', JobDescription: 'Marketing', EmployeesCount: 100 }
     ];
-    public palette: object= ["#f44336", "#29b6f6", "#ab47bc", "#ffc107", "#5c6bc0", "#009688"],
+    public palette: object= ["#f44336", "#29b6f6", "#ab47bc", "#ffc107", "#5c6bc0", "#009688"];
     public levels: object = [
         { groupPath: 'Country', border: { color: 'black', width: 0.5 } },
         { groupPath: 'JobDescription', border: { color: 'black', width: 0.5 } },

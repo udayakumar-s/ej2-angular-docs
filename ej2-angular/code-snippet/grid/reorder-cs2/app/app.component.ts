@@ -2,12 +2,11 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template:
-    `<button ej-button id='reorderSingleCol' (click)='reorderSingleCol()'>Reorder Ship City to Last</button>
+    template: `<button ej-button id='reorderSingleCol' (click)='reorderSingleCol()'>Reorder Ship City to Last</button>
     <ejs-grid #grid='' [dataSource]='data' [allowReordering]='true' height='280px'>
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
@@ -20,16 +19,16 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('grid')
-    public gridObj: GridComponent;
+    public gridObj?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
 
     reorderSingleCol(): void {
-        this.gridObj.reorderColumns('ShipCity','ShipName');
+        (this.gridObj as any).reorderColumns('ShipCity','ShipName');
     }
 }
 

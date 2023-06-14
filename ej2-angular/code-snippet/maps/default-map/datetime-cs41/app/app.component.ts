@@ -1,8 +1,8 @@
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { africa_continent } from 'africa-continent.ts';
-import { world_map } from 'world-map.ts';
+import { africa_continent } from './africa-continent';
+import { world_map } from './world-map';
 
 @Component({
     selector: 'app-container',

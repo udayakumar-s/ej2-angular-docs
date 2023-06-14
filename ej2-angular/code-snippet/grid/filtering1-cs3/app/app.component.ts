@@ -17,11 +17,11 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
     dataBound() {
-        Object.assign((this.grid.filterModule as any).filterOperators, { startsWith: 'contains' });
+        Object.assign(((this.grid as any).filterModule as any).filterOperators, { startsWith: 'contains' });
     }
 
     ngOnInit(): void {

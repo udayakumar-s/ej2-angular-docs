@@ -19,16 +19,16 @@ import { TreeGridComponent,ResizeService  } from '@syncfusion/ej2-angular-treegr
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
 
     }
     onDataBound() {
-            this.treeGridObj.autoFitColumns(['taskName']);
+            (this.treeGridObj as TreeGridComponent).autoFitColumns(['taskName']);
     }
 }
 

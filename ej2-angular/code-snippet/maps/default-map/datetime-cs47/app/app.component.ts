@@ -3,8 +3,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps } from '@syncfusion/ej2-angular-maps';
-import { usa_map } from 'usa.ts';
-import { california } from 'california.ts';
+import { usa_map } from './usa';
+import { california } from './california';
 
 @Component({
     selector: 'app-container',
@@ -17,11 +17,11 @@ import { california } from 'california.ts';
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-    public shapeData: object;
-    public shapeSettings: object;
-    public shapeData1: object;
-    public  type: string;
-    public shapeSettings1: object;
+    public shapeData?: object;
+    public shapeSettings?: object;
+    public shapeData1?: object;
+    public type?: string;
+    public shapeSettings1?: object;
     ngOnInit(): void {
         this.shapeData = usa_map;
         this.shapeSettings = {

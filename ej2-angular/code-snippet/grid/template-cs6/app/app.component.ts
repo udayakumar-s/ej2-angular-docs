@@ -23,16 +23,16 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     public modeSettings = 'Palette'
-    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('grid') public grid?: GridComponent;
 
-    change(args) {
-        const selectedRows = this.grid.getSelectedRows() as HTMLElement[];
+    change(args: any) {
+        const selectedRows = (this.grid as any).getSelectedRows() as HTMLElement[];
         for (const row of selectedRows) {
-            row.style.backgroundColor = args.value;
+            row.style.backgroundColor = (args as any).value;
         }
-        this.grid.clearSelection();
+        (this.grid as any).clearSelection();
     }
 
     ngOnInit(): void {

@@ -23,10 +23,10 @@ import { Dialog } from '@syncfusion/ej2-popups';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public editOptions: Object;
-    public formatOptions: Object;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public editOptions?: Object;
+    public formatOptions?: Object;
 
     ngOnInit(): void {
         this.data = projectData;
@@ -41,9 +41,10 @@ export class AppComponent implements OnInit {
             const TaskName = 'TaskName';
             dialog.height = 400;
             // change the header of the dialog
-            dialog.header = args.requestType === 'beginEdit' ? 'Record of ' + args.rowData[TaskName] : 'New Customer';
+            dialog.header = args.requestType === 'beginEdit' ? 'Record of ' + (args as any).rowData[TaskName] : 'New Customer';
         }
     }
 
 
 
+}

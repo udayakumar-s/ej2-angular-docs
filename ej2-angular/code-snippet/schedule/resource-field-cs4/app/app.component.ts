@@ -5,7 +5,7 @@ import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, PopupCloseEventArgs } from '@syncfusion/ej2-angular-schedule';
-import { eventData } from './datasource.ts';
+import { eventData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService],
@@ -61,53 +61,53 @@ export class AppComponent {
         if (args.type === 'Editor') {
             let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
             if (subjectElement) {
-                subjectElement.value = ((<{ [key: string]: Object }>(args.data)).Subject as string) || "";
+                subjectElement.value = ((<{ [key: string]: Object; }>(args.data))['Subject'] as string) || "";
             }
             let statusElement: HTMLInputElement = args.element.querySelector('#EventType') as HTMLInputElement;
             if (!statusElement.classList.contains('e-dropdownlist')) {
                 let dropDownListObject: DropDownList = new DropDownList({
-                    placeholder: 'Choose status', value: ((<{ [key: string]: Object }>(args.data)).EventType as string),
+                    placeholder: 'Choose status', value: ((<{ [key: string]: Object; }>(args.data))['EventType'] as string),
                     dataSource: ['New', 'Requested', 'Confirmed']
                 });
                 dropDownListObject.appendTo(statusElement);
             }
             let startElement: HTMLInputElement = args.element.querySelector('#StartTime') as HTMLInputElement;
             if (!startElement.classList.contains('e-datetimepicker')) {
-                startElement.value = (<{ [key: string]: Object }>(args.data)).StartTime as string;
+                startElement.value = (<{ [key: string]: Object; }>(args.data))['StartTime'] as string;
                 new DateTimePicker({ value: new Date(startElement.value) || new Date() }, startElement);
             }
             let endElement: HTMLInputElement = args.element.querySelector('#EndTime') as HTMLInputElement;
             if (!endElement.classList.contains('e-datetimepicker')) {
-                endElement.value = (<{ [key: string]: Object }>(args.data)).EndTime as string;
+                endElement.value = (<{ [key: string]: Object; }>(args.data))['EndTime'] as string;
                 new DateTimePicker({ value: new Date(endElement.value) || new Date() }, endElement);
             }
             let descriptionElement: HTMLInputElement = args.element.querySelector('#Description') as HTMLInputElement;
             if (descriptionElement) {
-                descriptionElement.value = (<{ [key: string]: Object }>(args.data)).Description as string || "";
+                descriptionElement.value = (<{ [key: string]: Object; }>(args.data))['Description'] as string || "";
             }
         }
     }
     onPopupClose(args: PopupCloseEventArgs) : void {
-        if (args.type === 'Editor' && !isNullOrUndefined(args.data)) {
+        if (args.type === 'Editor' && !isNullOrUndefined((args as any).data)) {
             let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
             if (subjectElement ) {
-                (<{ [key: string]: Object }>(args.data)).Subject = subjectElement.value;
+                (<{ [key: string]: Object; }>(args.data))['Subject'] = subjectElement.value;
             }
             let statusElement: HTMLInputElement = args.element.querySelector('#EventType') as HTMLInputElement;
             if (statusElement) {
-                ((<{ [key: string]: Object }>(args.data)).EventType as string) = statusElement.value;
+                ((<{ [key: string]: Object; }>(args.data))['EventType'] as string) = statusElement.value;
             }
             let startElement: HTMLInputElement = args.element.querySelector('#StartTime') as HTMLInputElement;
             if (startElement) {
-                (<{ [key: string]: Object }>(args.data)).StartTime = startElement.value;
+                (<{ [key: string]: Object; }>(args.data))['StartTime'] = startElement.value;
             }
             let endElement: HTMLInputElement = args.element.querySelector('#EndTime') as HTMLInputElement;
             if (endElement) {
-                (<{ [key: string]: Object }>(args.data)).EndTime = endElement.value;
+                (<{ [key: string]: Object; }>(args.data))['EndTime'] = endElement.value;
             }
             let descriptionElement: HTMLInputElement = args.element.querySelector('#Description') as HTMLInputElement;
             if (descriptionElement) {
-                ((<{ [key: string]: Object }>(args.data)).Description as string) = descriptionElement.value;
+                ((<{ [key: string]: Object; }>(args.data))['Description'] as string) = descriptionElement.value;
             }
         }
     }

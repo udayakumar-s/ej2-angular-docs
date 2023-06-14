@@ -13,9 +13,9 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent {
     @ViewChild("scheduleObj")
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     @ViewChild("refButton")
-    public refButton: ButtonComponent;
+    public refButton?: ButtonComponent;
     public selectedDate: Date = new Date(2021, 10, 15);
     public eventSettings: EventSettingsModel = {
         dataSource: [{
@@ -33,8 +33,8 @@ export class AppComponent {
         }]
     }
     public onButtonClick(): void {
-        this.scheduleObj.refreshLayout();
-        this.refButton.element.setAttribute('disabled', 'true');
+        this.scheduleObj?.refreshLayout();
+        this.refButton?.element.setAttribute('disabled', 'true');
     }
 }
 

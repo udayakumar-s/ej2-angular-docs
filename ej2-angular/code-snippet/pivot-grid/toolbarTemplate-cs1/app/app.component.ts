@@ -8,7 +8,7 @@ import {
 } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
 enableRipple(false);
 
@@ -29,14 +29,14 @@ enableRipple(false);
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
-    public toolbarOptions: string;
-    public btnExpand: Button;
-    public btnCollapse: Button;
+    public dataSourceSettings?: IDataOptions;
+    public gridSettings?: GridSettings;
+    public toolbarOptions?: string;
+    public btnExpand?: Button;
+    public btnCollapse?: Button;
 
     @ViewChild('pivotview')
-    public pivotObj: PivotView;
+    public pivotObj?: PivotView;
 
        enablertl() {
               this.pivotObj.dataSourceSettings.expandAll=true;
@@ -58,7 +58,7 @@ export class AppComponent {
             columns: [{ name: 'Year' }, { name: 'Order_Source', caption: 'Order Source' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             values: [{ name: 'Sold', caption: 'Units Sold' },
             { name: 'Amount', caption: 'Sold Amount' }],

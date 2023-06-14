@@ -23,8 +23,8 @@ import { QueryCellInfoEventArgs, RowDataBoundEventArgs } from '@syncfusion/ej2-a
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public formatOptions: Object;
-    public commands: Object[];  
+    public formatOptions?: Object;
+    public commands?: Object[];  
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -44,5 +44,4 @@ export class AppComponent implements OnInit {
         }
     }
 
-
-
+}

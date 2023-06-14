@@ -9,8 +9,8 @@ import { Internationalization } from '@syncfusion/ej2-base';
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
     // specifies the template string for the Schedule component
-    templateUrl: 'app/app.component.html',
-    styleUrls: ['app/index.css'],
+    templateUrl: './app.component.html',
+    styleUrls: ['./index.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
@@ -19,6 +19,7 @@ export class AppComponent {
         dataSource: webinarData,
     };
     private instance: Internationalization = new Internationalization();
+readonly: any;
     getTimeString(value: Date): string {
         return this.instance.formatDate(value, { skeleton: 'hm' });
     }

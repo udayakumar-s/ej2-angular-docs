@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -17,11 +17,11 @@ import { ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public toolbarOptions: ToolbarItems[];
-    public pager: Object;
+    public data?: Object[];
+    public toolbarOptions?: ToolbarItems[] | any;
+    public pager?: Object;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -29,9 +29,9 @@ export class AppComponent implements OnInit {
         this.pager = { pageSize: 8 }
     }
 
-    toolbarClick(args: Object): void {
+    toolbarClick(args: Object | any): void {
         if (args.item.id === 'toolbarfilter') {
-            this.treeGridObj.filterByColumn('taskName', 'startswith', 'Testing');
+            (this.treeGridObj as TreeGridComponent).filterByColumn('taskName', 'startswith', 'Testing');
         }
     }
 }

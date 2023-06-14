@@ -23,17 +23,17 @@ The available built-in command buttons are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/command-column-cs1/app/app.component.ts %}
+{% include samples/grid/command-column-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/command-column-cs1/app/app.module.ts %}
+{% include samples/grid/command-column-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/command-column-cs1/app/main.ts %}
+{% include samples/grid/command-column-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/command-column-cs1" %}
+{% previewsample "page.domainurl/samples/grid/command-column-cs1" %}
 
 ## Custom command column
 
@@ -41,14 +41,14 @@ The custom command buttons can be added in a column by using the [`column.comman
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/command-column-cs2/app/app.component.ts %}
+{% include samples/grid/command-column-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/command-column-cs2/app/app.module.ts %}
+{% include samples/grid/command-column-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/command-column-cs2/app/main.ts %}
+{% include samples/grid/command-column-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/command-column-cs2" %}
+{% previewsample "page.domainurl/samples/grid/command-column-cs2" %}

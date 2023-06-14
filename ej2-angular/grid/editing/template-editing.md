@@ -18,20 +18,20 @@ In the below sample, We have created the **FormGroup** with **FormControls** for
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/reactive-form-cs1/app/app.component.ts %}
+{% include samples/grid/reactive-form-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="reactive-form.html" %}
-{% include code-snippet/grid/reactive-form-cs1/app/reactive-form.html %}
+{% include samples/grid/reactive-form-cs1/app/reactive-form.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reactive-form-cs1/app/app.module.ts %}
+{% include samples/grid/reactive-form-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/reactive-form-cs1/app/main.ts %}
+{% include samples/grid/reactive-form-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/reactive-form-cs1" %}
+{% previewsample "page.domainurl/samples/grid/reactive-form-cs1" %}
 
 ## Template-driven forms
 
@@ -43,20 +43,20 @@ In the below sample, We have created the **FormGroup** by using **ngForm** direc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/dialogTemplate-cs1/app/app.component.ts %}
+{% include samples/grid/dialogTemplate-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="template-driven.html" %}
-{% include code-snippet/grid/dialogTemplate-cs1/app/template-driven.html %}
+{% include samples/grid/dialogTemplate-cs1/app/template-driven.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dialogTemplate-cs1/app/app.module.ts %}
+{% include samples/grid/dialogTemplate-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/dialogTemplate-cs1/app/main.ts %}
+{% include samples/grid/dialogTemplate-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dialogTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/grid/dialogTemplate-cs1" %}
 
 > The form editors should have **name** attribute.
 
@@ -203,17 +203,17 @@ The following example, we have rendered tab control inside the edit dialog. The 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/tablikeedit-cs1/app/app.component.ts %}
+{% include samples/grid/tablikeedit-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="tablikeedit.html" %}
-{% include code-snippet/grid/tablikeedit-cs1/app/tablikeedit.html %}
+{% include samples/grid/tablikeedit-cs1/app/tablikeedit.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/tablikeedit-cs1/app/app.module.ts %}
+{% include samples/grid/tablikeedit-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/tablikeedit-cs1/app/main.ts %}
+{% include samples/grid/tablikeedit-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/tablikeedit-cs1" %}
+{% previewsample "page.domainurl/samples/grid/tablikeedit-cs1" %}

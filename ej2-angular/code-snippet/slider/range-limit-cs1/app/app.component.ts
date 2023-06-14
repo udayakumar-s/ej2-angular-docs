@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
             [limits]='limits'></ejs-slider>
         </div>
      </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {

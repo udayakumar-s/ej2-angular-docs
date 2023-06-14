@@ -1,6 +1,4 @@
 
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
 import { GridComponent, ForeignKeyService, FilterService, IFilter, FilterSettingsModel, Filter } from '@syncfusion/ej2-angular-grids';
@@ -24,16 +22,17 @@ import { data, fEmployeeData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-    public employeeData: object[];
-    public dropInstance: DropDownList;
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public employeeData?: object[];
+    public dropInstance?: DropDownList;
     public filteroption: FilterSettingsModel = { type: 'Menu'};
     public filter: IFilter = {
         ui: {
             create: (args: { target: Element, column: object }) => {
                 const flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
-                args.target.appendChild(flValInput);
+                (args as any).target.appendChild(flValInput);
                 this.dropInstance = new DropDownList({
                     dataSource: new DataManager(fEmployeeData),
                     fields: { text: 'FirstName', value: 'EmployeeID' },
@@ -46,10 +45,10 @@ export class AppComponent implements OnInit {
                 column: object, target: Element, parent: any,
                 filteredValue: number | string
             }) => {
-                this.dropInstance.text = args.filteredValue as string || '';
+                (this.dropInstance as DropDownList).text = (args as any).filteredValue as string || '';
             },
             read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {
-                args.fltrObj.filterByColumn(args.column.field, args.operator, this.dropInstance.text);
+                (args as any).fltrObj.filterByColumn((args as any).column.field, (args as any).operator, this.dropInstance?.text);
             }
         }
     };

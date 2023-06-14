@@ -71,6 +71,9 @@ export class AppComponent {
         contentField: 'Summary',
         headerField: 'Id'
     };
+    statusData: any;
+    assigneeData: any;
+    priorityData: any;
 }
 
 

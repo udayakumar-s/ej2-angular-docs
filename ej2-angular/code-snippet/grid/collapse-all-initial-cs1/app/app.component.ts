@@ -18,10 +18,11 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public initial = true;
-    public groupOptions: object;
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public initial: boolean = true;
+    public groupOptions?: object;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -29,7 +30,7 @@ export class AppComponent implements OnInit {
     }
     dataBound() {
         if (this.initial === true) {
-            this.grid.groupModule.collapseAll();
+            (this.grid as any).groupModule.collapseAll();
             this.initial = false;
         }
     }

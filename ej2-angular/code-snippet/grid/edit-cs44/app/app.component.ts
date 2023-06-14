@@ -16,17 +16,17 @@ import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    @ViewChild('grid') Grid: GridComponent;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    @ViewChild('grid') grid?: GridComponent;
     load() {
         document.getElementsByClassName('e-grid')[0].addEventListener('keydown', this.keyDownHandler.bind(this));
     }
 
     keyDownHandler(e: any) {
         if (e.keyCode === 13) {
-            this.Grid.addRecord();
+            (this.grid as any).addRecord();
         }
     }
 

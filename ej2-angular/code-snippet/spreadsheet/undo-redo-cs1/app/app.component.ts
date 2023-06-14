@@ -11,15 +11,15 @@ import { SpreadsheetComponent, getRangeIndexes } from '@syncfusion/ej2-angular-s
 })
 export class AppComponent implements OnInit {
 
-    public defaultData: object[];
-    @ViewChild('spreadsheet') public spreadsheetObj: SpreadsheetComponent;
+    public defaultData?: object[];
+    @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
     ngOnInit(): void {
         this.defaultData = defaultData;
     }
-    actionComplete (args) {
+    actionComplete (args: any) {
         let actionEvents: any = args;
         if (actionEvents.eventArgs.action == "customCSS") {
-            let Element:HTMLElement = this.spreadsheetObj.getCell(actionEvents.eventArgs.rowIdx,actionEvents.eventArgs.colIdx);
+            let Element:HTMLElement = this.spreadsheetObj!.getCell(actionEvents.eventArgs.rowIdx,actionEvents.eventArgs.colIdx);
             if (actionEvents.eventArgs.requestType == "undo") {
                 removeClass([Element],'customClass'); // To remove the custom class in undo action
             }
@@ -29,12 +29,12 @@ export class AppComponent implements OnInit {
         }
     }
     updateCollection() {
-        var cell = this.spreadsheetObj.getActiveSheet().activeCell;
-        var cellIdx = getRangeIndexes(cell);
-        var Element= this.spreadsheetObj.getCell(cellIdx[0], cellIdx[1]);
+        var cell = this.spreadsheetObj!.getActiveSheet().activeCell;
+        var cellIdx = getRangeIndexes(cell as any);
+        var Element= this.spreadsheetObj!.getCell(cellIdx[0], cellIdx[1]);
         if (!Element.classList.contains("customClass")) {
             Element.classList.add('customClass'); // To add the custom class in active cell element
-            this.spreadsheetObj.updateUndoRedoCollection({ eventArgs: { class: 'customClass', rowIdx: cellIdx[0], colIdx: cellIdx[1], action: 'customCSS' } }); // To update the undo redo collection
+            this.spreadsheetObj!.updateUndoRedoCollection({ eventArgs: { class: 'customClass', rowIdx: cellIdx[0], colIdx: cellIdx[1], action: 'customCSS' } }); // To update the undo redo collection
         }
   }
 }

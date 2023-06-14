@@ -31,17 +31,17 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
 
     created() {
         // Applies style formatting to the active sheet before inserting a new sheet
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'D2:H11');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'D2:H11');
         // inserting a new sheet with data at 1st index
         // You can also insert empty sheets by specifying the start and end sheet index instead of sheet model
-        this.spreadsheetObj.insertSheet([{
+        this.spreadsheetObj!.insertSheet([{
             index: 1,
             name: 'Inserted Sheet',
             ranges: [{ dataSource: this.data }],
@@ -49,8 +49,8 @@ export class AppComponent {
                 { width: 85 }]
         }]);
         // Applies style formatting for the inserted sheet
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Inserted Sheet!A1:H1');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'Inserted Sheet!D2:H11');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Inserted Sheet!A1:H1');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'Inserted Sheet!D2:H11');
     }
 }
 

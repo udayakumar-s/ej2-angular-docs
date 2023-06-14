@@ -16,10 +16,10 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     onCreated(): void {
-        if (this.documentEditor.isDocumentLoaded) {
+        if ((this.documentEditor as DocumentEditorComponent).isDocumentLoaded) {
             let sfdt: string = `{
                 "sections": [
                     {
@@ -71,9 +71,9 @@ export class AppComponent {
                 ]
             }`;
             //Open the document in Document Editor.
-            this.documentEditor.open(JSON.stringify(sfdt));
+            (this.documentEditor as DocumentEditorComponent).open(JSON.stringify(sfdt));
             //Navigate to specified page number.
-            this.documentEditor.selection.goToPage(2);
+            (this.documentEditor as DocumentEditorComponent).selection.goToPage(2);
         }
     }
 }

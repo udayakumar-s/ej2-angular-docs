@@ -16,8 +16,9 @@ template: `<ejs-grid #grid [dataSource]='data' allowResizing= 'true' height= '40
 })
 export class AppComponent implements OnInit {
 
-public data: object[];
-@ViewChild('grid') public grid: GridComponent;
+public data?: object[];
+@ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;

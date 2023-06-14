@@ -1,5 +1,5 @@
 import { AppComponent } from './app.component';
-import { HttpModule, JsonpModule } from '@angular/http';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -11,10 +11,10 @@ import { ToolbarAllModule, ContextMenuAllModule, TreeViewAllModule } from '@sync
 import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { DropDownListAllModule, MultiSelectAllModule } from '@syncfusion/ej2-angular-dropdowns';
 @NgModule({
-    imports: [CommonModule, HttpModule, ScheduleAllModule, RecurrenceEditorAllModule, NumericTextBoxAllModule,
+    imports: [CommonModule, ScheduleAllModule, RecurrenceEditorAllModule, NumericTextBoxAllModule,
         DatePickerAllModule, TimePickerAllModule, DateTimePickerAllModule, CheckBoxAllModule, ToolbarAllModule,
         DropDownListAllModule, ContextMenuAllModule, TreeViewAllModule,
-        MaskedTextBoxModule, MultiSelectAllModule,  HttpModule, JsonpModule, BrowserModule],
+        MaskedTextBoxModule, MultiSelectAllModule, BrowserModule],
 declarations: [AppComponent],
 bootstrap: [AppComponent]
 })

@@ -3,7 +3,7 @@
 
 import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { Maps, NavigationLine } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 Maps.Inject(NavigationLine);
 @Component({
     selector: 'app-container',
@@ -15,8 +15,8 @@ Maps.Inject(NavigationLine);
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-    public shapeData: object;
-    public navigationLineSettings: object[];
+    public shapeData?: object;
+    public navigationLineSettings?: object[];
     ngOnInit(): void {
         this.shapeData = world_map;
         this.navigationLineSettings = [{

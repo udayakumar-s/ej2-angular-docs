@@ -10,7 +10,8 @@ import { Component } from '@angular/core';
               `
 })
 export class AppComponent {
-public path: Object = {
+
+    public path: Object = {
       saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
       removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove' };
       public onUploadSuccess(args: any): void  {
@@ -23,9 +24,9 @@ public path: Object = {
     console.log('File failed to upload');
     }
 
-    public dropEle: HTMLElement ;
+    public dropEle?: HTMLElement ;
     ngOnInit() {
-          this.dropEle = document.getElementById('droparea');
+        this.dropEle = document.getElementById('droparea') as HTMLElement;
     }
 
     constructor() {

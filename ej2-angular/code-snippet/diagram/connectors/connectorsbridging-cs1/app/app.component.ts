@@ -15,14 +15,14 @@ import { DiagramComponent, Diagram, ConnectorModel, DecoratorModel, PointModel, 
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public sourcePoint1: PointModel;
-    public targetPoint1: PointModel;
-    public sourcePoint2: PointModel;
-    public targetPoint2: PointModel;
-    public sourceDecorator: DecoratorModel;
-    public targetDecorator: DecoratorModel;
-    public constraints: DiagramConstraints;
+    public diagram?: DiagramComponent;
+    public sourcePoint1?: PointModel;
+    public targetPoint1?: PointModel;
+    public sourcePoint2?: PointModel;
+    public targetPoint2?: PointModel;
+    public sourceDecorator?: DecoratorModel;
+    public targetDecorator?: DecoratorModel;
+    public constraints?: DiagramConstraints;
     ngOnInit(): void {
         this.sourcePoint1 = { x: 100, y: 100 };
         this.targetPoint1 = { x: 200, y: 200 };
@@ -30,7 +30,7 @@ export class AppComponent {
         this.targetPoint2 = { x: 100, y: 200 };
         this.constraints = DiagramConstraints.Default | DiagramConstraints.Bridging;
     }
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',

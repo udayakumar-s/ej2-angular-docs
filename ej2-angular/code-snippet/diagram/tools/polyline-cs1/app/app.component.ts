@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, ConnectorModel, DiagramTools } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, ConnectorModel, DiagramTools, BasicShapeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -11,16 +11,16 @@ import { DiagramComponent, Diagram, ConnectorModel, DiagramTools } from '@syncfu
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public drawingshape: BasicShapeModel;
-    public connector: ConnectorModel;
+    public diagram?: DiagramComponent;
+    public drawingshape?: BasicShapeModel;
+    public connector?: ConnectorModel;
     public created(args: Object): void {
         //JSON to create a rectangle
         this.connector = { id: 'connector1', type: 'Polyline' };
-        this.diagram.drawingObject = this.connector;
+        (this.diagram as Diagram).drawingObject = this.connector;
         //To draw an object once, activate draw once
-        this.diagram.tool = DiagramTools.DrawOnce;
-        this.diagram.dataBind();
+        (this.diagram as Diagram).tool = DiagramTools.DrawOnce;
+        (this.diagram as Diagram).dataBind();
     }
 }
 

@@ -13,14 +13,15 @@ import { ImageExportService, CircularGaugeComponent } from '@syncfusion/ej2-angu
 })
 export class AppComponent implements OnInit {
     @ViewChild('gauge')
-    public gaugeObj: CircularGaugeComponent;
+    public gaugeObj?: CircularGaugeComponent;
     ngOnInit(): void {
-        public export() {
-            const promise = this.gaugeObj.export('PNG','Gauge',null,false);
-            promise.then((data)=> {
-                document.writeln(data);
-            })
-        }
+
+    }
+    public export() {
+        const promise = this.gaugeObj!.export('PNG','Gauge',undefined,false);
+        promise.then((data)=> {
+            document.writeln(data);
+        })
     }
 }
 

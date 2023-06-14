@@ -14,7 +14,7 @@ import { PdfExportService } from '@syncfusion/ej2-angular-treemap';
 })
 export class AppComponent {
     @ViewChild('treemap')
-    public treemap: TreeMap;
+    public treemap?: TreeMap;
     public data: object[] = [
     {State:"United States", GDP:17946, percentage:11.08, Rank:1},
     {State:"China", GDP:10866, percentage: 28.42, Rank:2},
@@ -39,7 +39,7 @@ export class AppComponent {
             },
     };
     public export() {
-        this.treemap.export('PDF', 'TreeMap', 0);
+        this.treemap!.export('PDF', 'TreeMap', 0);
         };
 }
 

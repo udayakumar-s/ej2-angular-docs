@@ -7,14 +7,14 @@ import {
 } from '@syncfusion/ej2-angular-inputs';
 @Component({
   selector: 'app-root',
-  styleUrls: ['app/app.component.css'],
-  templateUrl: 'app/app.component.html',
+  styleUrls: ['./app.component.css'],
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   @ViewChild('default', { static: true })
-  public textbox: TextBoxComponent;
+  public textbox?: TextBoxComponent;
   ngAfterViewInit() {
-    this.textbox.addIcon('append', 'e-icons e-input-eye');
+    (this.textbox as TextBoxComponent).addIcon('append', 'e-icons e-input-eye');
     document
       .getElementsByClassName('e-input-eye')[0]
       .addEventListener('click', function (e) {

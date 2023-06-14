@@ -63,10 +63,10 @@ import { ToolbarItems } from '@syncfusion/ej2-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pager: Object;
-    public toolbarOptions: ToolbarItems[];
-    public filters: Object;
+    public data?: Object[];
+    public pager?: Object;
+    public toolbarOptions?: ToolbarItems[];
+    public filters?: Object;
     ngOnInit(): void {
         this.data = sampleData;
         this.pager = {pageSize: 7};

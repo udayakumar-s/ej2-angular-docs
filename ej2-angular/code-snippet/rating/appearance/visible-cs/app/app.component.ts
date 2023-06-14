@@ -13,9 +13,9 @@ import { RatingComponent } from '@syncfusion/ej2-angular-inputs';
 export class AppComponent {
 
   @ViewChild('rating')
-  public rating: RatingComponent;
+  public rating?: RatingComponent;
 
   public visible() {
-    this.rating.visible = !this.rating.visible;
+    this.rating!.visible = !this.rating?.visible;
   }
 }

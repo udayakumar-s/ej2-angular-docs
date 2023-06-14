@@ -20,9 +20,9 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public majorTicks: Object;
-    public minorTicks: Object;
-    public labelStyle: Object;
+    public majorTicks?: Object;
+    public minorTicks?: Object;
+    public labelStyle?: Object;
     ngOnInit(): void {
         // Initialize objects.
         this.majorTicks = {

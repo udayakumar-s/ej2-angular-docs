@@ -6,7 +6,7 @@ import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { FormValidator } from '@syncfusion/ej2-inputs';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, EJ2Instance} from '@syncfusion/ej2-angular-schedule';
-import { eventData } from './datasource.ts';
+import { eventData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService],
@@ -62,9 +62,9 @@ export class AppComponent {
     };
     onPopupOpen(args: PopupOpenEventArgs): void {
         if (args.type === 'Editor') {
-            if (!isNullOrUndefined(document.getElementById("EventType_Error"))) {
-                document.getElementById("EventType_Error").style.display = "none";
-                document.getElementById("EventType_Error").style.left = "351px";
+            if (!isNullOrUndefined(document.getElementById("EventType_Error")as any)) {
+                document.getElementById("EventType_Error")!.style.display = "none";
+                document.getElementById("EventType_Error")!.style.left = "351px";
             }
             let formElement: HTMLElement = <HTMLElement>args.element.querySelector('.e-schedule-form');
             let statusElement: HTMLInputElement = args.element.querySelector('#EventType') as HTMLInputElement;
@@ -73,8 +73,8 @@ export class AppComponent {
                     placeholder: 'Choose status', value: statusElement.value,
                     dataSource: ['New', 'Requested', 'Confirmed'],
                     select: function(args) {
-                        if (!isNullOrUndefined(document.getElementById("EventType_Error"))) {
-                            document.getElementById("EventType_Error").style.display = "none";
+                        if (!isNullOrUndefined(document.getElementById("EventType_Error")as any)) {
+                            document.getElementById("EventType_Error")!.style.display = "none";
                         }
                     }
                 });

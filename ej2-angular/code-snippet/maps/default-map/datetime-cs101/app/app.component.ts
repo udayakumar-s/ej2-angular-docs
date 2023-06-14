@@ -3,7 +3,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps, MapsTooltip } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 Maps.Inject(MapsTooltip);
 @Component({
     selector: 'app-container',
@@ -15,8 +15,8 @@ Maps.Inject(MapsTooltip);
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-    public tooltipSettings: object;
-    public shapeData: object;
+    public tooltipSettings?: object;
+    public shapeData?: object;
     ngOnInit(): void {
         this.tooltipSettings ={
             visible: true,

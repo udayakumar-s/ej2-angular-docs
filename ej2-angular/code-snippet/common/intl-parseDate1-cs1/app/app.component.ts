@@ -15,8 +15,8 @@ import { Internationalization } from  '@syncfusion/ej2-base';
 export class AppComponent {
     ngAfterViewInit() {
         let intl:Internationalization = new Internationalization();
-        let val:number =  intl.parseDate('11/2016',{skeleton: 'yM'});
-        document.querySelector('.result').innerHTML = val.toString();
+        let val: number | any =  intl.parseDate('11/2016',{skeleton: 'yM'});
+        (document.querySelector('.result') as Element).innerHTML = val.toString();
         }
         }
 

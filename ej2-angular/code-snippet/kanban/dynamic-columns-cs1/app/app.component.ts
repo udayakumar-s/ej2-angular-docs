@@ -18,17 +18,17 @@ import { kanbanData } from './datasource';
             </ejs-kanban>`
 })
 export class AppComponent {
-    @ViewChild("kanbanObj") kanbanObj: KanbanComponent;
+    @ViewChild("kanbanObj") kanbanObj?: KanbanComponent;
     public data: Object[] = kanbanData;
     public cardSettings: CardSettingsModel = {
         contentField: 'Summary',
         headerField: 'Id'
     };
     public toggle = (): void => {
-        this.kanbanObj.columns[1].allowToggle= true;
+        (this.kanbanObj as KanbanComponent).columns[1].allowToggle = true;
     }
     public change = (): void => {
-        this.kanbanObj.columns = [
+        (this.kanbanObj as KanbanComponent).columns = [
             { headerText: 'To Do', keyField: 'Open' },
             { headerText: 'Done', keyField: 'Close' }
         ]

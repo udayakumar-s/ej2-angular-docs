@@ -22,14 +22,14 @@ import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = data;
     }
     public rowDataBound(args: RowDataBoundEventArgs) {
-        if (args.data['OrderID'] === 10249) {
-            args.rowHeight = 90;
+        if ((args as any).data['OrderID'] === 10249) {
+            (args as any).rowHeight = 90;
         }
     }
 }

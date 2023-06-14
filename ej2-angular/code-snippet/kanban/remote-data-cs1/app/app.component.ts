@@ -20,7 +20,7 @@ export class AppComponent {
         contentField: 'Summary',
         headerField: 'Id'
     };
-    private dataManager: DataManager = new DataManager({
+    public dataManager: DataManager = new DataManager({
        url: 'https://ej2services.syncfusion.com/production/web-services/api/Kanban',
        adaptor: new ODataAdaptor,
        crossDomain: true

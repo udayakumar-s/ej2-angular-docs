@@ -3,7 +3,7 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { Maps, Legend } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 import { PdfExportService, ImageExportService, MapsComponent, LegendService } from '@syncfusion/ej2-angular-maps';
 
 @Component({
@@ -19,13 +19,13 @@ import { PdfExportService, ImageExportService, MapsComponent, LegendService } fr
 
 export class AppComponent {
     @ViewChild('maps')
-    public mapObj: MapsComponent;
+    public mapObj?: MapsComponent;
     public urlTemplate = 'https://tile.openstreetmap.org/level/tileX/tileY.png';
     public titleSettings: object = {
         text: 'OSM'
     };
     public export() {
-        this.mapObj.export('JPEG', 'Maps');
+        this.mapObj?.export('JPEG', 'Maps');
     };
 }
 

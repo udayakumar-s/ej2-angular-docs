@@ -35,13 +35,13 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 })
 export class AppComponent {
     @ViewChild('signature')
-    public signature: SignatureComponent;
+    public signature?: SignatureComponent;
     @ViewChild('font')
-    public font: DropDownListComponent;
+    public font?: DropDownListComponent;
     @ViewChild('size')
-    public size: DropDownListComponent;
+    public size?: DropDownListComponent;
     public fontValue: string = 'Arial';
-    public sizeValue: number = '20';
+    public sizeValue: number = 20;
     public height: string = '200px';
     public fontItems: Object[] = [
         { value: 'Arial' },
@@ -59,8 +59,8 @@ export class AppComponent {
     ];
     public sizefields: Object = { text: 'value', value: 'value' };
     onDraw(): void {
-        let text = document.getElementById('text').value;
-        this.signature.draw(text, this.font.value, this.size.value);
+        let text = (document.getElementById('text') as any).value;
+        this.signature!.draw(text, (this.font as any).value, (this.size as any).value);
     }
 }
 

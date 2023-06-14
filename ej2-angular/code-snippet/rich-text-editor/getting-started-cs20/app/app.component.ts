@@ -56,7 +56,7 @@ import * as CodeMirror from 'codemirror';
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, CountService]
 })
 export class AppComponent implements AfterViewInit  {
-    @ViewChild('toolsRTE') public rteObj: RichTextEditorComponent;
+    @ViewChild('toolsRTE') public rteObj?: RichTextEditorComponent;
     public tools: object = {
         items: ['Bold', 'Italic', 'Underline', 'StrikeThrough',
         'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
@@ -67,32 +67,32 @@ export class AppComponent implements AfterViewInit  {
         'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
     };
     public maxLength: number = 1000;
-    public textArea: HTMLElement;
-    public myCodeMirror: any;
+    public textArea?: HTMLElement;
+    public myCodeMirror?: any;
   ngAfterViewInit(): void {
-    let rteObj: RichTextEditorComponent = this.rteObj;
-    setTimeout(() => { this.textArea = rteObj.contentModule.getEditPanel() as HTMLElement; }, 600);
+    let rteObj: RichTextEditorComponent = this.rteObj as any;
+    setTimeout(() => { this.textArea = (rteObj.contentModule as any).getEditPanel() as HTMLElement; }, 600);
 }
 public mirrorConversion(e?: any): void {
-    let id: string = this.rteObj.getID() + 'mirror-view';
-    let mirrorView: HTMLElement = this.rteObj.element.querySelector('#' + id) as HTMLElement;
-    let charCount: HTMLElement = this.rteObj.element.querySelector('.e-rte-character-count') as HTMLElement;
+    let id: string = this.rteObj!.getID() + 'mirror-view';
+    let mirrorView: HTMLElement = this.rteObj!.element.querySelector('#' + id) as HTMLElement;
+    let charCount: HTMLElement = this.rteObj!.element.querySelector('.e-rte-character-count') as HTMLElement;
     if (e.targetItem === 'Preview') {
-        this.textArea.style.display = 'block';
+        this.textArea!.style.display = 'block';
         mirrorView.style.display = 'none';
-        this.textArea.innerHTML = this.myCodeMirror.getValue();
+        this.textArea!.innerHTML = this.myCodeMirror.getValue();
         charCount.style.display = 'block';
     } else {
         if (!mirrorView) {
             mirrorView = createElement('div', { className: 'e-content' });
             mirrorView.id = id;
-            this.textArea.parentNode.appendChild(mirrorView);
+            this.textArea!.parentNode!.appendChild(mirrorView);
         } else {
             mirrorView.innerHTML = '';
         }
-        this.textArea.style.display = 'none';
+        this.textArea!.style.display = 'none';
         mirrorView.style.display = 'block';
-        this.renderCodeMirror(mirrorView, this.rteObj.value);
+        this.renderCodeMirror(mirrorView, this.rteObj!.value);
         charCount.style.display = 'none';
     }
 }
@@ -108,10 +108,10 @@ public renderCodeMirror(mirrorView: HTMLElement, content: string): void {
 }
 public actionCompleteHandler(e: any): void {
     if (e.targetItem && (e.targetItem === 'SourceCode' || e.targetItem === 'Preview')) {
-        (this.rteObj.sourceCodeModule.getPanel() as HTMLTextAreaElement).style.display = 'none';
+        (this.rteObj!.sourceCodeModule.getPanel() as HTMLTextAreaElement).style.display = 'none';
         this.mirrorConversion(e);
     } else {
-        setTimeout(() => { this.rteObj.toolbarModule.refreshToolbarOverflow(); }, 400);
+        setTimeout(() => { this.rteObj!.toolbarModule.refreshToolbarOverflow(); }, 400);
     }
 }
 }

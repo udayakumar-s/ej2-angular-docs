@@ -10,7 +10,7 @@ import { DiagramComponent, SnapSettingsModel, SnapConstraints } from '@syncfusio
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public snapSettings: SnapSettingsModel = {
         // Display both Horizontal and Vertical gridlines
         constraints:  SnapConstraints.ShowLines

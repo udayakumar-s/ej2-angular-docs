@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
 
 @Component({
@@ -10,22 +10,22 @@ import { Button } from '@syncfusion/ej2-buttons';
   template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='200' [dataSourceSettings]=dataSourceSettings  width=width (load)="load($event)"></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
-  public button: Button;
-  public width: string;
+  public dataSourceSettings?: IDataOptions;
+  public button?: Button;
+  public width?: string;
 
     @ViewChild('pivotview',{static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
-    load(): void {
-        if(this.pivotGridObj) {
-          this.pivotGridObj.minHeight = 200;
-        }
+    load(args: any): void {
+      if(this.pivotGridObj) {
+        this.pivotGridObj.minHeight = 200;
+      }
     }
 
     ngOnInit(): void {
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],

@@ -18,9 +18,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-    public textboxValue;
+  public textboxValue?: string;
+  tb1Focused?: any;
 
-     ngOnInit() {
+  ngOnInit() {
     this.textboxValue = '';
   }
 }

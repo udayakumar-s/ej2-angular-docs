@@ -1,9 +1,9 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -12,15 +12,15 @@ import { Pivot_Data } from './datasource.ts';
   width=width (dataBound)='ondataBound()' showFieldList='true'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public gridSettings?: GridSettings;
 
     @ViewChild('pivotview',{static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     ondataBound(): void {
-        this.pivotGridObj.pivotFieldListModule.dialogRenderer.fieldListDialog.target = document.body;
+        (this.pivotGridObj as PivotView).pivotFieldListModule.dialogRenderer.fieldListDialog.target = document.body;
     }
 
     ngOnInit(): void {
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],

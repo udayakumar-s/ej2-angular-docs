@@ -2,7 +2,7 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { Diagram, NodeModel, TextModel, TextStyleModel } from '@syncfusion/ej2-diagrams';
-import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 
 @Component({
@@ -18,7 +18,7 @@ import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
 export class AppComponent {
 
     @ViewChild('diagram')
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
 
     public shape: TextModel = {
         type: 'Text',
@@ -27,8 +27,8 @@ export class AppComponent {
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill =  'none';
-        node.style.strokeColor =  'none';
+        ((node as NodeModel).style as ShapeStyleModel).fill =  'none';
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor =  'none';
         (node.style as TextStyleModel).color =  'black';
         (node.style as TextStyleModel).textAlign =  'Center';
         return node;

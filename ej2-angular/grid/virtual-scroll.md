@@ -22,17 +22,17 @@ The number of records displayed in the Grid is determined implicitly by height o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs8/app/app.component.ts %}
+{% include samples/grid/paging1-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs8/app/app.module.ts %}
+{% include samples/grid/paging1-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging1-cs8/app/main.ts %}
+{% include samples/grid/paging1-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging1-cs8" %}
+{% previewsample "page.domainurl/samples/grid/paging1-cs8" %}
 
 ## Column Virtualization
 
@@ -42,17 +42,17 @@ To setup the column virtualization, set the [`enableVirtualization`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs9/app/app.component.ts %}
+{% include samples/grid/paging1-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs9/app/app.module.ts %}
+{% include samples/grid/paging1-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging1-cs9/app/main.ts %}
+{% include samples/grid/paging1-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging1-cs9" %}
+{% previewsample "page.domainurl/samples/grid/paging1-cs9" %}
 
 > Column's [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 

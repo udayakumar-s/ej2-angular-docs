@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid';
 import { AppComponent } from './app.component';
-import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 /**
  * Module
@@ -12,8 +12,9 @@ import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
     imports: [
         BrowserModule,
         TreeGridModule,
+        NumericTextBoxModule
     ],
-    declarations: [AppComponent,NumericTextBoxComponent],
+    declarations: [AppComponent],
     bootstrap: [AppComponent],
     providers: [PageService,
                 SortService,

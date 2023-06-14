@@ -17,7 +17,7 @@ loadCldr(numberingSystems, currencyData, numbers, currencies);
     // sets the 'EUR' currency format
     template: `<ejs-numerictextbox locale='de' currency='EUR' format='c2' value='100'></ejs-numerictextbox>`
 })
-export class AppComponent implements onInit {
+export class AppComponent implements OnInit {
     constructor() {
     }
     ngOnInit(): void {

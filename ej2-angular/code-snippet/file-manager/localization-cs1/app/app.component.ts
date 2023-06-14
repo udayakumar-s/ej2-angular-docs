@@ -6,13 +6,13 @@ import { L10n } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [locale]='locale'>
     </ejs-filemanager>`
 })
 export class AppComponent {
-    public ajaxSettings: object;
-    public locale: string;
+    public ajaxSettings?: object;
+    public locale?: string;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
     L10n.load({

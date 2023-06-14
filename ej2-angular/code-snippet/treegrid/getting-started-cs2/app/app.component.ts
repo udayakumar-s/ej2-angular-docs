@@ -18,8 +18,8 @@ import {PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pageSettings: PageSettingsModel;
+    public data?: Object[];
+    public pageSettings?: PageSettingsModel;
 
     ngOnInit(): void {
         this.data = sampleData;

@@ -31,17 +31,17 @@ N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs1/app/app.component.ts %}
+{% include samples/grid/filtering1-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs1/app/app.module.ts %}
+{% include samples/grid/filtering1-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs1/app/main.ts %}
+{% include samples/grid/filtering1-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs1" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs1" %}
 
 ## Filter bar template with custom component
 
@@ -53,17 +53,17 @@ In the following sample dropdown is used  as custom component in EmployeeID colu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs2/app/app.component.ts %}
+{% include samples/grid/filtering1-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs2/app/app.module.ts %}
+{% include samples/grid/filtering1-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs2/app/main.ts %}
+{% include samples/grid/filtering1-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs2" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs2" %}
 
 ## Change default filterbar operator
 
@@ -71,17 +71,17 @@ You can change the default filter operator by extending [`filterModule.filterOpe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs3/app/app.component.ts %}
+{% include samples/grid/filtering1-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs3/app/app.module.ts %}
+{% include samples/grid/filtering1-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs3/app/main.ts %}
+{% include samples/grid/filtering1-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs3" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs3" %}
 
 ## See also
 

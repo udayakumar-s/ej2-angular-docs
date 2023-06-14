@@ -19,9 +19,9 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;
@@ -29,14 +29,14 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete'];
     }
 
-    actionComplete(args) {
-        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+    actionComplete(args: any) {
+        if ((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add') {
             let newFooterButton = {
                 buttonModel: { content: 'custom' },
                 click: this.onCustomButtonClick
             };
-            args.dialog.buttons.push(newFooterButton);
-            args.dialog.refresh();
+            (args as any).dialog.buttons.push(newFooterButton);
+            (args as any).dialog.refresh();
         }
     }
     onCustomButtonClick() {

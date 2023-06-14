@@ -2,7 +2,7 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
-import { dataSource } from './datasource';
+
 
 @Component({
     selector: 'app-container',
@@ -11,11 +11,11 @@ import { dataSource } from './datasource';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
      contextMenuBeforeOpen() {
         // To add context menu items.
-      this.spreadsheetObj.removeContextMenuItems(["Insert Column"], false); //Items that needs to be removed, Set `true` if the given `text` is a unique id.
+      this.spreadsheetObj!.removeContextMenuItems(["Insert Column"], false); //Items that needs to be removed, Set `true` if the given `text` is a unique id.
     }
 }
 

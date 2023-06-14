@@ -3,7 +3,7 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { Maps, Legend } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 import { ImageExportService, LegendService, MapsComponent } from '@syncfusion/ej2-angular-maps';
 
 @Component({
@@ -19,7 +19,7 @@ import { ImageExportService, LegendService, MapsComponent } from '@syncfusion/ej
 
 export class AppComponent {
      @ViewChild('maps')
-    public mapObj: MapsComponent;
+    public mapObj?: MapsComponent;
     public dataSource: object[] = [
         {  "Country": "China", "Membership": "Permanent"},
         {"Country": "France","Membership": "Permanent" },
@@ -44,9 +44,9 @@ export class AppComponent {
         visible: true
     };
     public export() {
-        const promise = this.mapObj.export('PNG','Maps',null,false);
+        const promise = (this.mapObj as MapsComponent).export('PNG','Maps', undefined , false);
             promise.then((data)=>{
-                document.getElementById('data').innerHTML = data;
+                (document.getElementById('data') as HTMLElement).innerHTML = data;
             })
     };
 }

@@ -46,16 +46,16 @@ import { data } from './datasource';
 
 export class AppComponent implements OnInit {
     @ViewChild('adaptive')
-    public grid: GridComponent;
-    public data: object[];
-    public editSettings: Object;
-    public toolbar: string[];
-    public orderidrules: Object;
-    public customeridrules: Object;
-    public filterSettings: Object;
-    public menuFilter: Object;
-    public checkboxFilter: Object;
-    public rowMode: string;
+    public grid?: GridComponent;
+    public data?: object[];
+    public editSettings?: Object;
+    public toolbar?: string[];
+    public orderidrules?: Object;
+    public customeridrules?: Object;
+    public filterSettings?: Object;
+    public menuFilter?: Object;
+    public checkboxFilter?: Object;
+    public rowMode?: string;
 
     ngOnInit(): void {
         this.data = data;
@@ -73,8 +73,8 @@ export class AppComponent implements OnInit {
         };
     }
 
-    public onLoad(): void {
-        this.grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
+    public onLoad(args: any): void {
+        (this.grid as any).adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
     }
 }
 

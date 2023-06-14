@@ -2,6 +2,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
+import { SplitterComponent } from '@syncfusion/ej2-angular-layouts';
 
 @Component({
     selector: 'app-root',
@@ -34,9 +35,9 @@ import { Component, ViewChild } from '@angular/core';
 export class AppComponent {
     constructor() {
     }
-    @ViewChild('horizontal') splitterObj: SplitterComponent;  
+    @ViewChild('horizontal') splitterObj?: SplitterComponent;  
   ngAfterViewInit() {
-    this.splitterObj.paneSettings = [
+    this.splitterObj!.paneSettings = [
       { size: '25%', min: '60px', content: '#left-pane-content' },
       { size: '50%', min: '60px', content: '#middle-pane-content' },
       { size: '25%', min: '60px', content: '#last-pane-content' }]

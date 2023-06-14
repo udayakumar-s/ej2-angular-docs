@@ -16,7 +16,7 @@ import {
 })
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public onKeyDown(args: DocumentEditorKeyDownEventArgs): void {
           let keyCode: number = args.event.which || args.event.keyCode;
@@ -30,11 +30,11 @@ export class AppComponent {
               //To prevent default save operation, set the isHandled property to true
               args.isHandled = true;
               //Download the document in docx format.
-              this.documentEditor.save('sample', 'Docx');
+              (this.documentEditor as DocumentEditorComponent).save('sample', 'Docx');
               args.event.preventDefault();
           } else if (isCtrlKey && isAltKey && keyCode === 83) {
               //Download the document in sfdt format.
-              this.documentEditor.save('sample', 'Sfdt');
+              (this.documentEditor as DocumentEditorComponent).save('sample', 'Sfdt');
           }
     }
 }

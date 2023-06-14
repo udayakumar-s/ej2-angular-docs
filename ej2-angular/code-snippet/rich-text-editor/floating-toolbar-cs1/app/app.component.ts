@@ -27,14 +27,14 @@ import { CheckBoxComponent } from '@syncfusion/ej2-angular-buttons';
     providers: [ToolbarService, HtmlEditorService, QuickToolbarService]
 })
 export class AppComponent  {
-@ViewChild('float') rteFloatObj: CheckBoxComponent;
-@ViewChild('typeRTE') rteObj: RichTextEditorComponent;
+@ViewChild('float') rteFloatObj: CheckBoxComponent | undefined;
+@ViewChild('typeRTE') rteObj: RichTextEditorComponent | undefined;
   public tools: object = {
       enableFloating: false
   };
   public onChangeFloat(): void {
-      this.rteObj.toolbarSettings.enableFloating = this.rteFloatObj.checked;
-      this.rteObj.dataBind();
+      this.rteObj!.toolbarSettings.enableFloating = this.rteFloatObj!.checked;
+      this.rteObj!.dataBind();
   }
 }
 

@@ -21,10 +21,10 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -32,31 +32,31 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') {
-            this.grid.pdfExport();
+        if ((args as any).item.id === 'Grid_pdfexport') {
+            (this.grid as any).pdfExport();
         }
     }
 
     pdfQueryCellInfo(args: any): void {
-        if (args.column.field === 'Freight') {
-            if (args.value < 30) {
-                args.style = { backgroundColor: '#99ffcc' };
-            } else if (args.value < 60) {
-                args.style = { backgroundColor: '#ffffb3' };
+        if ((args as any).column.field === 'Freight') {
+            if ((args as any).value < 30) {
+                (args as any).style = { backgroundColor: '#99ffcc' };
+            } else if ((args as any).value < 60) {
+                (args as any).style = { backgroundColor: '#ffffb3' };
             } else {
-                args.style = { backgroundColor: '#ff704d' };
+                (args as any).style = { backgroundColor: '#ff704d' };
             }
         }
     }
 
     queryCellInfo(args: any): void {
-        if (args.column.field === 'Freight') {
-            if (args.data[args.column.field] < 30) {
-                args.cell.bgColor = '#99ffcc';
-            } else if (args.data[args.column.field] < 60) {
-                args.cell.bgColor = '#ffffb3';
+        if ((args as any).column.field === 'Freight') {
+            if ((args as any).data[(args as any).column.field] < 30) {
+                (args as any).cell.bgColor = '#99ffcc';
+            } else if ((args as any).data[(args as any).column.field] < 60) {
+                (args as any).cell.bgColor = '#ffffb3';
             } else {
-                args.cell.bgColor = '#ff704d';
+                (args as any).cell.bgColor = '#ff704d';
             }
         }
     }

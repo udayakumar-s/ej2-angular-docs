@@ -32,7 +32,7 @@ EmptyDataSourceError: 'DataSource darf bei der Erstauslastung nicht leer sein, d
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [locale]='de-DE' [allowGrouping]='true' [allowPaging]='true'
+    template: `<ejs-grid [dataSource]='data' [locale]='locale' [allowGrouping]='true' [allowPaging]='true'
              [pageSettings]='pageOptions' height='220px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
@@ -44,8 +44,9 @@ EmptyDataSourceError: 'DataSource darf bei der Erstauslastung nicht leer sein, d
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public pageOptions: PageSettingsModel;
+    public data?: object[];
+    public pageOptions?: PageSettingsModel;
+    public locale: any = "de-DE";
 
     ngOnInit(): void {
         this.data = data;

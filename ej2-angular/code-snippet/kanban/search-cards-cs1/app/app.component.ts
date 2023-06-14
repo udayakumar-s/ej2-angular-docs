@@ -27,8 +27,8 @@ import { kanbanData } from './datasource';
             </ejs-kanban>`
 })
 export class AppComponent {
-    @ViewChild('search') textBoxObj: TextBoxComponent;
-    @ViewChild('kanban') kanbanObj: KanbanComponent;
+    @ViewChild('search') textBoxObj?: TextBoxComponent;
+    @ViewChild('kanban') kanbanObj?: KanbanComponent;
     public data: Object[] = kanbanData;
     public cardSettings: CardSettingsModel = {
         contentField: 'Summary',
@@ -40,11 +40,11 @@ export class AppComponent {
         if (searchValue !== '') {
             searchQuery = new Query().search(searchValue, ['Id', 'Summary'], 'contains', true);
         }
-        this.kanbanObj.query = searchQuery;
+        (this.kanbanObj as KanbanComponent).query = searchQuery;
     }
     reset(): void {
-        this.textBoxObj.value = '';
-        this.kanbanObj.query = new Query();
+        (this.textBoxObj as TextBoxComponent).value = '';
+        (this.kanbanObj as KanbanComponent).query = new Query();
     }
 }
 

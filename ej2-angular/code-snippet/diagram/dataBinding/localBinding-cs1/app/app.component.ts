@@ -3,6 +3,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Diagram, NodeModel, ConnectorModel, SnapConstraints, SnapSettingsModel, DiagramTools } from '@syncfusion/ej2-diagrams';
 import { DataManager } from '@syncfusion/ej2-data';
+import { DecoratorModel, StrokeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 let species: object[] = [
     { 'Name': 'Species', 'fillColor': '#3DD94A' },
     { 'Name': 'Plants', 'Category': 'Species' },
@@ -33,7 +34,7 @@ let species: object[] = [
   </ejs-diagram>`
 })
 export class AppComponent {
-    public node: NodeModel;
+    public node?: NodeModel;
     public nodeDefaults(node: NodeModel): NodeModel {
         let obj: NodeModel = {};
         obj.shape = { type: 'Basic', shape: 'Rectangle' };
@@ -58,8 +59,8 @@ export class AppComponent {
 
     public connDefaults(connector: ConnectorModel): void {
         connector.type = 'Orthogonal';
-        connector.style.strokeColor = '#4d4d4d';
-        connector.targetDecorator.shape = 'None';
+        ((connector as ConnectorModel).style as StrokeStyleModel).strokeColor = '#4d4d4d';
+        ((connector as ConnectorModel).targetDecorator as DecoratorModel).shape = 'None';
     };
 
     public tool: DiagramTools = DiagramTools.ZoomPan;

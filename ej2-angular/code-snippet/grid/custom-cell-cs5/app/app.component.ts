@@ -22,18 +22,18 @@ import { DetailDataBoundEventArgs, Grid } from '@syncfusion/ej2-angular-grids';
                     <div class = 'custom-grid' ></div>
                 </ng-template>
             </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    // styleUrls: ['./app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = employeeData;
     }
-    detailDataBound(e: DetailDataBoundEventArgs) {
+    detailDataBound(e: DetailDataBoundEventArgs | any) {
         let detail = new Grid({
-            dataSource: data.filter((item: Object) => item['EmployeeID'] === e.data['EmployeeID']),
+            dataSource: data.filter((item: Object) => (item as any)['EmployeeID'] === e.data['EmployeeID']),
             columns: [
                 { field: 'OrderID', headerText: 'Order ID', width: 110 },
                 { field: 'CustomerID', headerText: 'Customer Name', width: 140 },

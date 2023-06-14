@@ -21,15 +21,15 @@ import { hardwareData } from './datasource';
 })
 
 export class AppComponent implements OnInit {
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
      @ViewChild('querybuilder')
-    public qryBldrObj: QueryBuilderComponent;
+    public qryBldrObj?: QueryBuilderComponent;
     ngOnInit(): void {
         this.data = hardwareData;
     }
     setRules(): void {
-        this.qryBldrObj.setRulesFromSql("TaskID = 1 and Status LIKE ('Assigned%')");
+        this.qryBldrObj!.setRulesFromSql("TaskID = 1 and Status LIKE ('Assigned%')");
     }
 }
 

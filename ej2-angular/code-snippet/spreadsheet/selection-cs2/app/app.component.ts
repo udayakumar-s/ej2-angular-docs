@@ -26,14 +26,14 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     priceData: object[] = dataSource1;
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        var rowCount = this.spreadsheetObj.getActiveSheet().rowCount;
-        this.spreadsheetObj.selectRange(getRangeAddress([0, 2, rowCount, 2]));
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        var rowCount = this.spreadsheetObj!.getActiveSheet().rowCount;
+        this.spreadsheetObj!.selectRange(getRangeAddress([0, 2, rowCount as any, 2]));
     }
 }
 

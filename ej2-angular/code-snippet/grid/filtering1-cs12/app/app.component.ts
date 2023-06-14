@@ -17,9 +17,9 @@ import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public filterParams: object;
-    public filterOption: FilterSettingsModel = { type: 'Menu'};
+    public data?: object[];
+    public filterParams?: object;
+    public filterOption?: FilterSettingsModel = { type: 'Menu'};
     public height = '220px';
     ngOnInit(): void {
         this.data = data;

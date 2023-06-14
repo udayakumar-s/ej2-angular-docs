@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
-import { scheduleData } from './datasource.ts';
+import { scheduleData } from './datasource';
 import { L10n, loadCldr } from '@syncfusion/ej2-base';
 import * as numberingSystems from './numberingSystems.json';
 import * as gregorian from './ca-gregorian.json';

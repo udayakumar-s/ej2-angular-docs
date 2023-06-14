@@ -6,11 +6,11 @@ import {  RuleModel } from '@syncfusion/ej2-querybuilder';
 
 @Component({
   selector: 'app-root',
-  templateUrl: `app/template-driven.html`
+  templateUrl: `template-driven.html`
 })
 export class AppComponent implements OnInit {
-  @ViewChild('querybuilder') qryBldrObj: QueryBuilderComponent;
-  public importRules: RuleModel;
+  @ViewChild('querybuilder') qryBldrObj: QueryBuilderComponent | undefined;
+  public importRules?: RuleModel;
   ngOnInit(): void {
     this.importRules = {
       'condition': 'and',

@@ -22,8 +22,8 @@ import { TreeGridComponent, PageService  } from '@syncfusion/ej2-angular-treegri
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public formatOptions: Object;
-    public initialPage: object;
+    public formatOptions?: Object;
+    public initialPage?: object;
 
     ngOnInit(): void {
         this.data = projectData;
@@ -31,5 +31,5 @@ export class AppComponent implements OnInit {
         this.initialPage = { pageSizes: ['5', '10', 'All'], };
     }
 
-
+}
 

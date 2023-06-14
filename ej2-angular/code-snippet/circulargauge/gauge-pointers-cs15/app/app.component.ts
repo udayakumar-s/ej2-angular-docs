@@ -20,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public animation: Object;
+    public animation?: Object;
     ngOnInit(): void { }
 }
 

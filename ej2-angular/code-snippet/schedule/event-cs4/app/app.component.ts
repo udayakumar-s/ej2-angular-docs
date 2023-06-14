@@ -19,7 +19,10 @@ export class AppComponent {
         dataSource: scheduleData,
     };
     onResizeStart(event: ResizeEventArgs): void {
-        event.scroll = { enable: false };
+        event.scroll = { enable: false,
+            scrollBy:30,
+            timeDelay: 500
+         };
     }
 }
 

@@ -24,12 +24,12 @@ import { hardwareData } from './datasource';
 })
 
 export class AppComponent implements OnInit {
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
     @ViewChild('querybuilder')
-    public qryBldrObj: QueryBuilderComponent;
+    public qryBldrObj?: QueryBuilderComponent;
     @ViewChild('dialog')
-    public Dialog: DialogComponent;
+    public Dialog?: DialogComponent;
     public animationSettings: Object = { effect: 'Zoom',  duration: 400 };
     public showCloseIcon: Boolean = true;
     public hidden: Boolean = false;
@@ -50,12 +50,12 @@ export class AppComponent implements OnInit {
     };
     }
      getSql(): void {
-        this.Dialog.content = this.qryBldrObj.getSqlFromRules(this.qryBldrObj.getRules());
-        this.Dialog.show();
+        this.Dialog!.content = this.qryBldrObj!.getSqlFromRules(this.qryBldrObj!.getRules());
+        this.Dialog!.show();
     }
      getJson(): void {
-         this.Dialog.content =  '<pre>' + JSON.stringify({ condition: this.qryBldrObj.rule.condition, rules: this.qryBldrObj.rule.rules }, null, 4) + '</pre>';
-        this.Dialog.show();
+         this.Dialog!.content =  '<pre>' + JSON.stringify({ condition: this.qryBldrObj!.rule.condition, rules: this.qryBldrObj!.rule.rules }, null, 4) + '</pre>';
+        this.Dialog!.show();
     }
 }
 

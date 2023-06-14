@@ -2,7 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps, Annotations } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 
 Maps.Inject(Annotations);
 @Component({
@@ -16,8 +16,8 @@ Maps.Inject(Annotations);
 })
 
 export class AppComponent implements OnInit {
-    public annotations: object;
-    public shapeData: object;
+    public annotations?: object;
+    public shapeData?: object;
         ngOnInit(): void {
             this.annotations = [{
                 content: '<div id="first"><h1>Maps</h1></div>',

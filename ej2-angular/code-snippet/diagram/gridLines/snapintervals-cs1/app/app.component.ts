@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SnapSettingsModel, SnapConstraints, NodeModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, SnapSettingsModel, SnapConstraints, NodeModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
   selector: "app-container",
@@ -14,7 +14,7 @@ import { DiagramComponent, SnapSettingsModel, SnapConstraints, NodeModel } from 
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public snapSettings: SnapSettingsModel = {
         horizontalGridlines: {
             // Defines the snap interval for object
@@ -28,8 +28,8 @@ export class AppComponent {
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
 }

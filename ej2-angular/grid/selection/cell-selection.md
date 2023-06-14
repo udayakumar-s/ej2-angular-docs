@@ -19,17 +19,17 @@ Grid supports two types of cell selection mode which can be set by using [`selec
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs1/app/app.component.ts %}
+{% include samples/grid/selection-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs1/app/app.module.ts %}
+{% include samples/grid/selection-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs1/app/main.ts %}
+{% include samples/grid/selection-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs1" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs1" %}
 
 > Cell Selection requires the [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to be **Cell** or  **Both** and [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) should be **Multiple**.
 [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) should be **Multiple**.
@@ -40,16 +40,16 @@ The Toggle selection allows to perform selection and unselection of the particul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs2/app/app.component.ts %}
+{% include samples/grid/selection-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs2/app/app.module.ts %}
+{% include samples/grid/selection-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs2/app/main.ts %}
+{% include samples/grid/selection-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs2" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs2" %}
 
 > If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.

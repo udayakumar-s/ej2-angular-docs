@@ -21,33 +21,33 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
             this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
-    created = (args) => {
-        this.grid.getContentTable().addEventListener('click', (args) => {
-            if ((args.target as any).classList.contains('e-rowcell')) {
-                this.grid.editModule.editCell(parseInt((args.target as any).getAttribute('index')),
-                this.grid.getColumnByIndex(parseInt(args.target.getAttribute('data-colindex'))).field);
+    created = (args: any) => {
+        (this.grid as any).getContentTable().addEventListener('click', (args: any) => {
+            if (((args as any).target as any).classList.contains('e-rowcell')) {
+                (this.grid as any).editModule.editCell(parseInt(((args as any).target as any).getAttribute('index')),
+                (this.grid as any).getColumnByIndex(parseInt((args as any).target.getAttribute('data-colindex'))).field);
             }
         });
     };
-    load = (args) => {
-        this.grid.element.addEventListener('keydown', (e) => {
+    load = (args: any) => {
+        (this.grid as any).element.addEventListener('keydown', (e: any) => {
             var closesttd = (e.target as any).closest('td');
             if (e.keyCode === 39 && !isNullOrUndefined(closesttd.nextSibling)) {
                 this.editACell(closesttd.nextSibling);
             }
             if (e.keyCode === 37 && !isNullOrUndefined(closesttd.previousSibling) &&
-                !this.grid.getColumnByIndex(
+                !(this.grid as any).getColumnByIndex(
                     parseInt(closesttd.previousSibling.getAttribute('data-colindex'))).isPrimaryKey)
             {
                 this.editACell(closesttd.previousSibling);
@@ -64,10 +64,10 @@ export class AppComponent implements OnInit {
             }
         });
     };
-    public editACell(args) {
-        this.grid.editModule.editCell(
-            parseInt(args.getAttribute('index')),
-            this.grid.getColumnByIndex(parseInt(args.getAttribute('data-colindex'))).field);
+    public editACell(args: any) {
+        (this.grid as any).editModule.editCell(
+            parseInt((args as any).getAttribute('index')),
+            (this.grid as any).getColumnByIndex(parseInt((args as any).getAttribute('data-colindex'))).field);
     }
 }
 

@@ -1,8 +1,8 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, CellEditSettings } from '@syncfusion/ej2-angular-pivotview';
-import { pivot_flatdata } from './datasource.ts';
+import { IDataOptions, PivotView, CellEditSettings, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { pivot_flatdata } from './datasource';
 
 @Component({
   selector: 'app-container',  
@@ -14,23 +14,24 @@ import { pivot_flatdata } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public editSettings: CellEditSettings
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public editSettings?: CellEditSettings
+    public dataSourceSettings?: IDataOptions;
+    public gridSettings?: any;
 
     ngOnInit(): void {
 
         this.width = "100%";
         this.dataSourceSettings = {
-            dataSource: pivot_flatdata,
+            dataSource: pivot_flatdata as IDataSet[],
             expandAll: true,
             rows: [{ name: 'Country'}],
             columns: [{ name: 'Date' }, { name: 'Product' }],
-            values: [{ name: 'Quantity' caption: 'Units Sold' },{ name: 'Amount' caption: 'Sold Amount' }],
+            values: [{ name: 'Quantity', caption: 'Units Sold' },{ name: 'Amount', caption: 'Sold Amount' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             showColumnSubTotals:false
             };
-        this.editSettings= { allowEditing: true, allowInlineEditing:true }
+        this.editSettings= { allowEditing: true, allowInlineEditing:true } as CellEditSettings;
     }
  }
 

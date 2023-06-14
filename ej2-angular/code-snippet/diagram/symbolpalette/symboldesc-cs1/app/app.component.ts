@@ -12,14 +12,13 @@ import { ExpandMode } from '@syncfusion/ej2-navigations';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    public expandMode: ExpandMode;
-    public palettes: PaletteModel[];
-    public symbolPreview: SymbolPreviewModel[];
-    public getSymbolInfo(symbol) {
+    public expandMode?: ExpandMode;
+    public palettes?: PaletteModel[];
+    public symbolPreview?: SymbolPreviewModel[];
+    public getSymbolInfo(symbol: any) {
     //Defines the symbol description
       return { width: 75, height: 40, description: { text: symbol.shape['shape'] } }
     };
-    public expandMode: ExpandMode;
     public getBasicShapes(): NodeModel[] {
         let basicShapes: NodeModel[] = [{
                 id: 'Rectangle',

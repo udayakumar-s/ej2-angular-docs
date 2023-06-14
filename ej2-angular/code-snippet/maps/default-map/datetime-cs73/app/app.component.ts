@@ -2,7 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps, Marker, Legend, Zoom } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 Maps.Inject(Marker, Legend, Zoom);
 @Component({
     selector: 'app-container',
@@ -15,10 +15,10 @@ Maps.Inject(Marker, Legend, Zoom);
 })
 
 export class AppComponent implements OnInit {
-    public shapeData: object;
-    public markerSettings: object;
-    public zoomSettings: object;
-    public markerClusterSettings: object;
+    public shapeData?: object;
+    public markerSettings?: object;
+    public zoomSettings?: object;
+    public markerClusterSettings?: object;
     ngOnInit(): void {
         this.shapeData = world_map;
         this.markerSettings = [{

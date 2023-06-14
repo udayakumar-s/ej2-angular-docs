@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView, PDFExportService, DisplayOption } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, PDFExportService, DisplayOption } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { Button } from '@syncfusion/ej2-buttons';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,18 +13,18 @@ import { Pivot_Data } from './datasource.ts';
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public displayOption: DisplayOption;
-    public chartSettings: ChartSettings;
-    public button: Button;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public displayOption?: DisplayOption;
+    public chartSettings?: ChartSettings;
+    public button?: Button;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     ngOnInit(): void {
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             rows: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
         this.button.appendTo('#export');
 
         this.button.element.onclick = (): void => {
-            this.pivotGridObj.pdfExport(null, false, null, false, true);
+            this.pivotGridObj?.pdfExport(undefined, false, undefined, false, true);
         };
     }
 }

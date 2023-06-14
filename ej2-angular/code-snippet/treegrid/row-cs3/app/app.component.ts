@@ -17,9 +17,9 @@ import { sampleData } from './datasource';
     `
 })
 export class AppComponent implements OnInit {
-    public data: Object[];
-    public rowDrop: Object;
-    public selectionSettings: Object;
+    public data?: Object[];
+    public rowDrop?: Object;
+    public selectionSettings?: Object;
     ngOnInit(): void {
         this.data = sampleData;
     }

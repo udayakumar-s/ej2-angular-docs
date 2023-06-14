@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
-import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 /**
  * Module
@@ -10,9 +10,10 @@ import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule
+        GridModule,
+        NumericTextBoxModule
     ],
-    declarations: [AppComponent, NumericTextBoxComponent],
+    declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

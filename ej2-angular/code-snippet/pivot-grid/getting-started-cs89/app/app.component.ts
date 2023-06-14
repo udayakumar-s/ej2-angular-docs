@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 import { IDataOptions, IDataSet, PivotView, FieldListService, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,8 +13,8 @@ import { Pivot_Data } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
 
     actionBegin(args: PivotActionBeginEventArgs): void {
         if (args.actionName == 'Open field list') {
@@ -27,7 +27,7 @@ export class AppComponent {
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             allowLabelFilter: true,
             allowValueFilter: true,

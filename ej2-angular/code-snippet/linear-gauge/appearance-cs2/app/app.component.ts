@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-    public titleStyle: Object;
+    public titleStyle?: Object;
     ngOnInit(): void {
       this.titleStyle = {
         fontFamily: "Arial",

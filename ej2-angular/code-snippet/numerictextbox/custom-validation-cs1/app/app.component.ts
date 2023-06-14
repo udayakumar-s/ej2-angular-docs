@@ -21,12 +21,12 @@ import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 })
 
 export class AppComponent {
-    @ViewChild('formElement') element;
-    @ViewChild('numeric') numeric: NumericTextBoxComponent;
-    public formObject: FormValidator;
+    @ViewChild('formElement') element: any;
+    @ViewChild('numeric') numeric?: NumericTextBoxComponent | any;
+    public formObject?: FormValidator;
     ngAfterViewInit() {
         let customFn: (args: { [key: string]: string }) => boolean = (args: { [key: string]: string }) => {
-            if(numeric.value>=10 && numeric.value<=100) {
+            if(this.numeric.value>=10 && this.numeric.value<=100) {
                 return true;
             }
             else {
@@ -40,7 +40,7 @@ export class AppComponent {
             },
             //to place the error message in custom position
             customPlacement: (inputElement: HTMLElement, errorElement: HTMLElement) => {
-                inputElement.parentNode.parentNode.parentNode.appendChild(errorElement);
+                (inputElement as HTMLElement | any).parentNode.parentNode.parentNode.appendChild(errorElement);
             }
         };
         this.formObject = new FormValidator(this.element.nativeElement, options);
@@ -49,18 +49,18 @@ export class AppComponent {
         var proxy = this;
     }
     // validates NumericTextBox while value changes
-    public onChange(args){
-        if (numeric.value != null)
-            this.formObject.validate("numericRange");
+    public onChange(args: any){
+        if (this.numeric.value != null)
+            this.formObject?.validate("numericRange");
     }
-    public onCreate(){
-          document.getElementById("numeric").setAttribute("name", "numericRange");
+    public onCreate(args: any){
+          (document.getElementById("numeric") as HTMLElement).setAttribute("name", "numericRange");
     }
     public btnClick(): void {
         // validates the NumericTextBox
-        this.formObject.validate("numericRange");
+        this.formObject?.validate("numericRange");
         // checks for incomplete value and alerts the form
-        let ele: HTMLInputElement = <HTMLInputElement>document.getElementById('numeric');
+        let ele: HTMLInputElement | any = <HTMLInputElement>document.getElementById('numeric');
             if (ele.value !== "" && ele.value >=10 && ele.value<=100) {
                 alert("Submitted");
             }

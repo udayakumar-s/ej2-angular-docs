@@ -14,8 +14,8 @@ import { DiagramComponent, Diagram, NodeModel, ShapeStyleModel, RadialGradientMo
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public style: ShapeStyleModel;
+    public diagram?: DiagramComponent;
+    public style?: ShapeStyleModel;
     public radialGradient: RadialGradientModel = {
         //Center point of outer circle
         cx: 50,

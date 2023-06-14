@@ -10,17 +10,17 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
     }
-    dataBound() {
-        this.grid.columns[0].isPrimaryKey = 'true';
+    dataBound(args: any) {
+        ((this.grid as GridComponent).columns[0] as any).isPrimaryKey = 'true';
     }
 }
 

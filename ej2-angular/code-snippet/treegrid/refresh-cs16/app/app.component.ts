@@ -24,11 +24,11 @@ import { getValue } from '@syncfusion/ej2-base';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public formatOptions: Object;
-    public selectionOptions: SelectionSettingsModel;
+    public formatOptions?: Object;
+    public selectionOptions?: SelectionSettingsModel;
     public selIndex: number[] = [];
     @ViewChild('treegridObj')
-    public treegridObj: TreeGridComponent;
+    public treegridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = projectData;
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
         .getAttribute('aria-rowindex') as string, 0));
     }
     }
-    dataBound() {
+    dataBound(args: any) {
       if (this.treegridObj && this.selIndex.length) {
         this.treegridObj.selectRows(this.selIndex);
         this.selIndex = [];
@@ -49,4 +49,4 @@ export class AppComponent implements OnInit {
     }
 
 
-
+}

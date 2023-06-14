@@ -1,9 +1,9 @@
 
 
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { Maps, ILoadEventArgs } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
-import { markerDataSource } from 'markerdata.ts';
+import { world_map } from './world-map';
+import { markerDataSource } from './markerdata';
 
 @Component({
     selector: 'app-container',
@@ -25,12 +25,12 @@ import { markerDataSource } from 'markerdata.ts';
 })
 
 export class AppComponent implements OnInit {
-  public shapeData: object;
-  public shapeDataPath: string;
-  public shapePropertyPath: string;
-  public shapeSettings: object;
-  public markerSettings: object;
-  public legendSettings: object;
+  public shapeData?: object;
+  public shapeDataPath?: string;
+  public shapePropertyPath?: string;
+  public shapeSettings?: object;
+  public markerSettings?: object;
+  public legendSettings?: object;
   ngOnInit(): void {
     this.shapeData = world_map;
     this.shapeDataPath = 'name';

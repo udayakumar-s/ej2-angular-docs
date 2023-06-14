@@ -14,11 +14,11 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public majorTicks: Object;
-    public minorTicks: Object;
-    public majorTicks1: Object;
-    public minorTicks1: Object;
-    public pointers: Object;
+    public majorTicks?: Object;
+    public minorTicks?: Object;
+    public majorTicks1?: Object;
+    public minorTicks1?: Object;
+    public pointers?: Object;
     ngOnInit(): void {
         // Initialize objects
         this.pointers = [];

@@ -14,17 +14,17 @@ import { TreeGridComponent, EditSettingsModel, ToolbarItems } from '@syncfusion/
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public data: Object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
+    public data?: Object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
     @ViewChild('treegrid')
-    public treegrid!: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, showDeleteConfirmDialog: true, mode: 'Batch' };
         this.toolbarOptions = ['Add', 'Delete', 'Update', 'Cancel'];
     }
     save() {
-        this.treegrid.saveCell();
+        (this.treegrid as TreeGridComponent).saveCell();
     }
 }

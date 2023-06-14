@@ -15,11 +15,11 @@ import {
 })
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public saveAsDocx(): void {
         //Export the document in docx format.
-        this.documentEditor.save('sample', 'Docx');
+        (this.documentEditor as DocumentEditorComponent).save('sample', 'Docx');
     }
 }
 

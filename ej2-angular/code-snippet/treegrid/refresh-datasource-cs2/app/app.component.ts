@@ -22,9 +22,9 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('treegridObj')
-    public treegridObj: TreeGridComponent;
+    public treegridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = projectData;

@@ -18,8 +18,8 @@ import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
+    public data?: object[];
+    public selectionOptions?: SelectionSettingsModel;
 
     ngOnInit(): void {
         this.data = data;

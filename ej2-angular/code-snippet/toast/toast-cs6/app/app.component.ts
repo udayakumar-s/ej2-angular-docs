@@ -47,13 +47,13 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') toast;
+    @ViewChild('element') public toast: any;
     public position = { X: 'Center', Y: 'Bottom' };
 
-    onCreate() {
+    onCreate(args: any) {
       this.toastShow();
     }
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
     toastShow() {
@@ -63,7 +63,7 @@ export class AppComponent {
         }, 700);
     }
 
-    bottomChange(e) {
+    bottomChange(e: any) {
       let toast = this.toast;
         if (e.event.target.checked) {
       toast.position.Y = "Bottom";
@@ -72,7 +72,7 @@ export class AppComponent {
     }
     }
 
-    topChange(e) {
+    topChange(e: any) {
       let toast = this.toast;
       if (e.event.target.checked) {
       toast.position.Y = "Top";
@@ -81,7 +81,7 @@ export class AppComponent {
     }
     }
 
-    checkBoxChange(e) {
+    checkBoxChange(e: any) {
       let toast = this.toast;
         if (e.checked) {
             toast.hide('All');

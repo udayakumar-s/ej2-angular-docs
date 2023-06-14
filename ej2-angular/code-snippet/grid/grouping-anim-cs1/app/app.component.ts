@@ -1,7 +1,4 @@
 
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { ActionEventArgs, GridComponent, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
@@ -19,12 +16,9 @@ import { ActionEventArgs, GridComponent, GroupSettingsModel } from '@syncfusion/
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     public groupSettings: GroupSettingsModel = { columns: ['ShipCity'], allowReordering: true };
     ngOnInit(): void {
         this.data = data;
     }
 }
-
-
-

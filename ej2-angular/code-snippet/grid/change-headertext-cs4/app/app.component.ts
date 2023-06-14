@@ -19,16 +19,17 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
     click(): void {
-        const column = this.grid.getColumnByField('ShipCity'); // get the JSON object of the column corresponding to the field name
+        const column = (this.grid as any).getColumnByField('ShipCity'); // get the JSON object of the column corresponding to the field name
         column.headerText = 'Changed Text'; // assign a new header text to the column
-        this.grid.refreshHeader();
+        (this.grid as any).refreshHeader();
     }
 }
 

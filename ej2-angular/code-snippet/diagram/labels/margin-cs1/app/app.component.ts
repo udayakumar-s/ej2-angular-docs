@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, VerticalAlignment, HorizontalAlignment, MarginModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, VerticalAlignment, HorizontalAlignment, MarginModel, PointModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -19,11 +19,11 @@ import { DiagramComponent, Diagram, NodeModel, VerticalAlignment, HorizontalAlig
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public margin: MarginModel;
-    public offset: PointModel;
-    public verticalAlignment: VerticalAlignment;
-    public horizontalAlignment: HorizontalAlignment;
+    public diagram?: DiagramComponent;
+    public margin?: MarginModel;
+    public offset?: PointModel;
+    public verticalAlignment?: VerticalAlignment;
+    public horizontalAlignment?: HorizontalAlignment;
     ngOnInit(): void {
         // Sets the margin for the content
         this.margin = { top: 10 }
@@ -34,8 +34,8 @@ export class AppComponent {
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
 }

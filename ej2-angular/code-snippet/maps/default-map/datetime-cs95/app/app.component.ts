@@ -2,7 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps, Selection} from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 Maps.Inject(Selection);
 @Component({
     selector: 'app-container',
@@ -15,9 +15,9 @@ Maps.Inject(Selection);
 })
 
 export class AppComponent implements OnInit {
-    public shapeData: object;
-    public initialShapeSelection: object;
-    public selectionSettings: object;
+    public shapeData?: object;
+    public initialShapeSelection?: object;
+    public selectionSettings?: object;
     ngOnInit(): void {
         this.shapeData = world_map;
         this.initialShapeSelection = [

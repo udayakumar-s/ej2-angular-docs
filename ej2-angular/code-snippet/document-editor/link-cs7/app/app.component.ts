@@ -19,13 +19,13 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     @ViewChild('document_editor_preview')
-    public documentEditorPreview: DocumentEditorComponent;
+    public documentEditorPreview?: DocumentEditorComponent;
 
     public onPrint(): void {
-        let sfdtData = this.documentEditor.serialize();
+        let sfdtData = (this.documentEditor as DocumentEditorComponent).serialize();
         //Open the document in preview document editor.
         this.documentEditorPreview.open(sfdtData);
         //Set A5 paper size

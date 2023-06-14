@@ -2,19 +2,19 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { PivotFieldListComponent, PivotViewComponent, FieldListService, IDataOptions, IDataSet,
-    EnginePopulatedEventArgs, VirtualScrollService } from '@syncfusion/ej2-angular-pivotview';
+    EnginePopulatedEventArgs, VirtualScrollService, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { Browser, setStyleAttribute, prepend } from '@syncfusion/ej2-base';
 
 @Component({
   selector: 'app-container',
   providers: [FieldListService, VirtualScrollService],
-  styleUrls: ['app/app.component.css'],
+  styleUrls: ['./app.component.css'],
   template: `<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings renderMode="Fixed" (enginePopulated)='afterPopulate($event)' allowCalculatedField='true' (load)='onLoad()' (dataBound)='ondataBound()'></ejs-pivotfieldlist>
   <ejs-pivotview #pivotview id='PivotViewFieldList' width='99%' height='530' enableVirtualization='true '(enginePopulated)='afterEnginePopulate($event)'></ejs-pivotview>`
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings?: IDataOptions;
     data(count: number) {
       let result: Object[] = [];
       let dt: number = 0;
@@ -47,10 +47,10 @@ export class AppComponent {
     }
 
     @ViewChild('pivotview', {static: false})
-    public pivotObj: PivotViewComponent;
+    public pivotObj?: PivotViewComponent;
 
     @ViewChild('pivotfieldlist')
-    public fieldListObj: PivotFieldListComponent;
+    public fieldListObj?: PivotFieldListComponent;
 
     afterPopulate(arge: EnginePopulatedEventArgs): void {
       if (this.fieldListObj && this.pivotObj) {
@@ -64,26 +64,26 @@ export class AppComponent {
     }
     onLoad(): void {
       if (Browser.isDevice) {
-          this.fieldListObj.renderMode = 'Popup';
-          this.fieldListObj.target = '.control-section';
-          document.getElementById('PivotFieldList').removeAttribute('style');
-          setStyleAttribute(document.getElementById('PivotFieldList'), {
+        (this.fieldListObj as PivotFieldListComponent).renderMode = 'Popup';
+          (this.fieldListObj as PivotFieldListComponent).target = '.control-section';
+          (document.getElementById('PivotFieldList') as HTMLElement).removeAttribute('style');
+          setStyleAttribute(document.getElementById('PivotFieldList') as HTMLElement, {
               'height': 0,
               'float': 'left'
           });
       }
-      this.fieldListObj.pivotGridModule = this.pivotObj;
+      (this.fieldListObj as PivotFieldListComponent).pivotGridModule = this.pivotObj as PivotViewComponent;
       //Assigning report to pivot table component
-      this.pivotObj.dataSourceSettings = this.fieldListObj.dataSourceSettings;
+      (this.pivotObj as PivotViewComponent).dataSourceSettings = (this.fieldListObj as PivotFieldListComponent).dataSourceSettings;
       //Generating page settings based on pivot table component’s size.
-      this.pivotObj.updatePageSettings(true);
+      (this.pivotObj as PivotViewComponent).updatePageSettings(true);
       //Assigning page settings to field list component.
-      this.fieldListObj.pageSettings = this.pivotObj.pageSettings;
+      (this.fieldListObj as PivotFieldListComponent).pageSettings = (this.pivotObj as PivotViewComponent).pageSettings;
     }
 
     ondataBound(): void {
       if (Browser.isDevice) {
-          prepend([document.getElementById('PivotFieldList')], document.getElementById('PivotView'));
+        prepend([document.getElementById('PivotFieldList') as HTMLElement], document.getElementById('PivotView') as HTMLElement);
       }
     }
 

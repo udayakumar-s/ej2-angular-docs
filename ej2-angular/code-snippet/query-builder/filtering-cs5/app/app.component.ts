@@ -29,13 +29,13 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
 
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
      @ViewChild('querybuilder')
-    public qryBldrObj: QueryBuilderComponent;
+    public qryBldrObj?: QueryBuilderComponent;
     public values: string[] = ['Mr.', 'Mrs.'];
-    public items: Object[];
-    public  dataManagerQuery:Query;
+    public items?: Object[]| any;
+    public  dataManagerQuery!:Query;
     ngOnInit(): void {
         this.data = employeeData ;
         this.importRules = {
@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
         };
     }
       refreshTable(): void {
-        this.dataManagerQuery = new Query().select(['EmployeeID', 'Title', 'City']).where(this.qryBldrObj.getPredicate(this.qryBldrObj.rule)).take(8);
+        this.dataManagerQuery = new Query().select(['EmployeeID', 'Title', 'City']).where(this.qryBldrObj!.getPredicate(this.qryBldrObj!.rule)).take(8);
         this.items = [];
         this.items = new DataManager(<JSON[]>this.data).executeLocal(this.dataManagerQuery);
     }

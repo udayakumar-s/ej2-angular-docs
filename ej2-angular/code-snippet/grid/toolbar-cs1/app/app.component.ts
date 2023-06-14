@@ -1,6 +1,4 @@
 
-
-
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { ToolbarItems } from '@syncfusion/ej2-angular-grids';
@@ -18,8 +16,8 @@ import { ToolbarItems } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;

@@ -22,17 +22,17 @@ The Grid supports two types of filter, they are
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs9/app/app.component.ts %}
+{% include samples/grid/filtering1-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs9/app/app.module.ts %}
+{% include samples/grid/filtering1-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs9/app/main.ts %}
+{% include samples/grid/filtering1-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs9" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs9" %}
 
 > * You can apply and clear filtering, by using [`filterByColumn`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#clearfiltering) methods.
 > * To disable Filtering for a particular column, by specifying [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowfiltering) to false.
@@ -43,17 +43,17 @@ To apply the filter at initial rendering, set the filter [`predicate`](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs10/app/app.component.ts %}
+{% include samples/grid/filtering1-cs10/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs10/app/app.module.ts %}
+{% include samples/grid/filtering1-cs10/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs10/app/main.ts %}
+{% include samples/grid/filtering1-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs10" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs10" %}
 
 ## Filter operators
 
@@ -131,17 +131,17 @@ In the following sample, type **aero** in **Name** column to filter diacritic ch
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-diacritics-cs1/app/app.component.ts %}
+{% include samples/grid/filter-diacritics-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-diacritics-cs1/app/app.module.ts %}
+{% include samples/grid/filter-diacritics-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-diacritics-cs1/app/main.ts %}
+{% include samples/grid/filter-diacritics-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filter-diacritics-cs1" %}
+{% previewsample "page.domainurl/samples/grid/filter-diacritics-cs1" %}
 
 ## Filter bar
 
@@ -151,17 +151,17 @@ The following example demonstrates the way to use filter template for a column w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-template-cs2/app/app.component.ts %}
+{% include samples/grid/filter-template-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-template-cs2/app/app.module.ts %}
+{% include samples/grid/filter-template-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-template-cs2/app/main.ts %}
+{% include samples/grid/filter-template-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filter-template-cs2" %}
+{% previewsample "page.domainurl/samples/grid/filter-template-cs2" %}
 
 ## Filter menu
 
@@ -171,17 +171,17 @@ The following example demonstrates the way to use filter template for a column w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-template-cs3/app/app.component.ts %}
+{% include samples/grid/filter-template-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-template-cs3/app/app.module.ts %}
+{% include samples/grid/filter-template-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-template-cs3/app/main.ts %}
+{% include samples/grid/filter-template-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filter-template-cs3" %}
+{% previewsample "page.domainurl/samples/grid/filter-template-cs3" %}
 
 ## See Also
 

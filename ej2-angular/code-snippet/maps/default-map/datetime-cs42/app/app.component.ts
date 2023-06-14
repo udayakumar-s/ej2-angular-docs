@@ -2,8 +2,8 @@
 
 import { Component, ViewEncapsulation,ViewChild } from '@angular/core';
 import { IShapeSelectedEventArgs, MapsComponent} from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
-import { africa_continent } from 'africa-continent.ts';
+import { world_map } from './world-map';
+import { africa_continent } from './africa-continent';
 export interface ShapeData { continent?: string; }
 
 @Component({
@@ -32,20 +32,20 @@ export interface ShapeData { continent?: string; }
             display: block;
             margin: auto;
         }
-       </style>`,
+    </style>`,
     encapsulation: ViewEncapsulation.None
   })
 
 export class AppComponent {
-    public worldmap=world_map;
-    public africa=africa_continent;
+    public worldmap = world_map;
+    public africa = africa_continent;
     @ViewChild('drilldown')
-    public maps: MapsComponent;
+    public maps?: MapsComponent;
     public shapeSelected = (args: IShapeSelectedEventArgs) : void => {
-        let shape: string = (args.shapeData as ShapeData).continent;
+        let shape: string = (args.shapeData as ShapeData).continent as string;
         if (shape === 'Africa') {
-            this.maps.baseLayerIndex=1;
-            this.maps.refresh();
+            (this.maps as MapsComponent).baseLayerIndex=1;
+            this.maps?.refresh();
         }
     };
     public shapeSettings = {
@@ -67,6 +67,7 @@ export class AppComponent {
         enable: true,
         fill: '#80306A'
     };
+    dataSource: any;
 }
 
 

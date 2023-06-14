@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 import { Maps, ProjectionType } from '@syncfusion/ej2-angular-maps';
 
 @Component({

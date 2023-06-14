@@ -15,11 +15,11 @@ import { RowDataBoundEventArgs, EditSettingsModel, GridComponent, PageSettingsMo
                </ejs-grid>`,
 })
 export class AppComponent implements OnInit {
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public pageSettings: PageSettingsModel;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public pageSettings?: PageSettingsModel;
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
     ngOnInit(): void {
         this.data = data;
         this.editSettings = {
@@ -30,11 +30,11 @@ export class AppComponent implements OnInit {
         this.pageSettings = { pageSize: 8 };
     }
     rowDataBound(args: RowDataBoundEventArgs) {
-        var rowIndex = parseInt(args.row.getAttribute('aria-rowIndex'));
-        var currentPageNumber = this.grid.pageSettings.currentPage;
-        var pageSize = this.grid.pageSettings.pageSize;
-        var startIndex = (currentPageNumber - 1) * pageSize;
-        args.row.querySelector('.e-rowcell').innerHTML = (
+        var rowIndex = parseInt((args as any).row.getAttribute('aria-rowIndex'));
+        var currentPageNumber = (this.grid as GridComponent).pageSettings.currentPage;
+        var pageSize = (this.grid as GridComponent).pageSettings.pageSize;
+        var startIndex = ((currentPageNumber as number) - 1) * (pageSize as number);
+        (args as any).row.querySelector('.e-rowcell').innerHTML = (
             startIndex + rowIndex
         ).toString();
     }

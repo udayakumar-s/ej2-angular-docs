@@ -5,7 +5,7 @@ import { MultiSelect } from '@syncfusion/ej2-dropdowns';
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { isNullOrUndefined } from '@syncfusion/ej2-base'
 import { ScheduleComponent, EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, GroupModel } from '@syncfusion/ej2-angular-schedule';
-import { eventData } from './datasource.ts';
+import { eventData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService],
@@ -60,7 +60,7 @@ import { eventData } from './datasource.ts';
 
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public views: Array<string> = ['Day', 'Week', 'WorkWeek', 'Month'];
     public showQuickInfo: Boolean = false;
@@ -83,13 +83,13 @@ export class AppComponent {
             if (!endElement.classList.contains('e-datetimepicker')) {
                 new DateTimePicker({ value: new Date(endElement.value) || new Date() }, endElement);
             }
-            let processElement: HTMLInputElement= args.element.querySelector('#OwnerId');
+            let processElement: HTMLInputElement= args.element.querySelector('#OwnerId') as HTMLInputElement;
             if (!processElement.classList.contains('e-multiselect')) {
                 let multiSelectObject: MultiSelect = new MultiSelect({
                     placeholder: 'Choose a owner',
                     fields: { text: 'text', value: 'id'},
                     dataSource: <any>this.ownerDataSource,
-                    value: <string[]>((args.data.OwnerId instanceof Array) ? args.data.OwnerId : [args.data.OwnerId])
+                    value: <string[]>((args.data!['OwnerId'] instanceof Array) ? args.data!['OwnerId'] : [args.data!['OwnerId']])
                 });
                 multiSelectObject.appendTo(processElement);
             }

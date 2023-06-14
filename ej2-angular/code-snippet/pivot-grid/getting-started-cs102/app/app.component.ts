@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, GroupingBarService, FieldListService, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, GroupingBarService, FieldListService, PivotActionBeginEventArgs, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -11,8 +11,8 @@ import { Pivot_Data } from './datasource.ts';
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' showFieldList='true' (actionBegin)='actionBegin($event)' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
 
     actionBegin(args: PivotActionBeginEventArgs): void {
         if (args.actionName == 'Filter field') {
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
         this.width = "100%";
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],

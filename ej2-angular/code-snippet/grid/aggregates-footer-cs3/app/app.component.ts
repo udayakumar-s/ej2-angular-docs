@@ -33,13 +33,14 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
     ngOnInit(): void {
         this.data = data;
     }
     dataBound() {
-        this.grid.getHeaderContent().append(this.grid.getFooterContent());
+        (this.grid as any).getHeaderContent().append((this.grid as any).getFooterContent());
     }
 }
 

@@ -121,17 +121,17 @@ The below code illustrates the pdf export customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs5/app/app.component.ts %}
+{% include samples/grid/exporting-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs5/app/app.module.ts %}
+{% include samples/grid/exporting-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs5/app/main.ts %}
+{% include samples/grid/exporting-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs5" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs5" %}
 
 ## Repeat column header on every page
 
@@ -141,14 +141,14 @@ In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQue
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs6/app/app.component.ts %}
+{% include samples/grid/exporting-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs6/app/app.module.ts %}
+{% include samples/grid/exporting-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs6/app/main.ts %}
+{% include samples/grid/exporting-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs6" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs6" %}

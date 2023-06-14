@@ -22,8 +22,8 @@ import numberingSystems from './numberingSystems.json'
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public formatOptions: object;
+    public data?: object[];
+    public formatOptions?: object;
 
     ngOnInit(): void {
         setCulture('ar');
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 
-    public sortComparer = (reference, comparer, sortOrder) => {
+    public sortComparer = (reference: any, comparer: any, sortOrder: any) => {
         const referenceDate = new Date(reference);
         const comparerDate = new Date(comparer);
         if (typeof reference === 'number' && typeof comparer === 'number') {
@@ -49,7 +49,6 @@ export class AppComponent implements OnInit {
             // Date column sorting
             return sortOrder === 'Ascending' ? comparerDate.getTime() - referenceDate.getTime() : referenceDate.getTime() - comparerDate.getTime();
         }
-
         else {
             // Default sorting for other types
             const intlCollator = new Intl.Collator(undefined, { sensitivity: 'variant', usage: 'sort' });

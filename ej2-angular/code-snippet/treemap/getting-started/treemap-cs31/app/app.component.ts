@@ -17,7 +17,7 @@ export class AppComponent {
                        { fruit:'Papaya', count:1200 },
                        { fruit:'Melon', count:4500 }
     ];
-    public rangeColorValuePath: object ='count';
+    public rangeColorValuePath: object | string ='count';
     public legendSettings: object= {
         visible: true,
         alignment:'Far',

@@ -19,17 +19,17 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('tooltip', null)
-    public tooltip: TooltipComponent;
+    public data?: object[];
+    @ViewChild('tooltip')
+    public tooltip?: TooltipComponent;
     ngOnInit(): void {
         this.data = data;
     }
-    beforeRender(args): void {
-    if (args.target.classList.contains('e-rowcell')) {
-        this.tooltip.content = 'This is value "' + args.target.innerText + '" ';
+    beforeRender(args: any): void {
+        if ((args as any).target.classList.contains('e-rowcell')) {
+            (this.tooltip as any).content = 'This is value "' + (args as any).target.innerText + '" ';
+        }
     }
-  }
 }
 
 

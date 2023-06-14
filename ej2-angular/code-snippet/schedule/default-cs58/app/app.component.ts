@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 import { TimelineViewsService, TimelineMonthService, EventSettingsModel, GroupModel, RenderCellEventArgs } from '@syncfusion/ej2-angular-schedule';
-import { resourceData } from './datasource.ts';
+import { resourceData } from './datasource';
 
 @Component({
     selector: "app-root",
@@ -39,7 +39,7 @@ export class AppComponent {
     ];
     public onRenderCell(args: RenderCellEventArgs): void {
       if (args.elementType == 'resourceGroupCells' && args.element.className.indexOf('e-work-hours') > 0) {
-        args.element.style.background = "#FAFAE3";
+        (args.element as any).style.background = "#FAFAE3";
       }
     }
 }

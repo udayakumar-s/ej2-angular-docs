@@ -75,23 +75,23 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
 
     beforeDataBound() {
         // Adding name dynamically for `last year spending` and `percentage change` ranges.
-        this.spreadsheetObj.addDefinedName({ name: 'LastYearSpendings', refersTo: '=D3:D11' });
-        this.spreadsheetObj.addDefinedName({ name: 'PercentageChange', refersTo: '=E3:E11' });
+        this.spreadsheetObj!.addDefinedName({ name: 'LastYearSpendings', refersTo: '=D3:D11' });
+        this.spreadsheetObj!.addDefinedName({ name: 'PercentageChange', refersTo: '=E3:E11' });
     }
 
     created() {
         // Removing the unwanted `PercentageChange` named range
-        this.spreadsheetObj.removeDefinedName('PercentageChange', '');
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:E2');
-        this.spreadsheetObj.numberFormat('$#,##0', 'B3:D12');
-        this.spreadsheetObj.numberFormat('0%', 'E3:E12');
-        this.spreadsheetObj.setRowHeight(30,1);
+        this.spreadsheetObj!.removeDefinedName('PercentageChange', '');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:E2');
+        this.spreadsheetObj!.numberFormat('$#,##0', 'B3:D12');
+        this.spreadsheetObj!.numberFormat('0%', 'E3:E12');
+        this.spreadsheetObj!.setRowHeight(30,1);
     }
 }
 

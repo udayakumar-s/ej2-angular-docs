@@ -11,7 +11,7 @@ import { PrintService, LinearGaugeComponent } from '@syncfusion/ej2-angular-line
 })
 export class AppComponent {
   @ViewChild('gauge')
-  public gaugeObj: LinearGaugeComponent;
+  public gaugeObj: LinearGaugeComponent | any;
   print() {
     this.gaugeObj.print();
   };

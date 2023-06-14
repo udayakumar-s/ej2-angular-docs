@@ -9,16 +9,16 @@ import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } f
 
 @Component({
     selector: 'app-root',
-    templateUrl: `./app/tablikeedit.html`
+    templateUrl: `tablikeedit.html`
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public shipCountryDistinctData: object;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public shipCountryDistinctData?: object;
     @ViewChild('grid')
-    grid: GridComponent;
+    grid?: GridComponent;
     @ViewChild('orderForm')
     orderForm: FormGroup
     @ViewChild('tab')
@@ -32,12 +32,12 @@ export class AppComponent implements OnInit {
     }
 
     actionComplete(args: DialogEditEventArgs) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
+        if (((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add')) {
             // Disable deafault valdation.
-            args.form.ej2_instances[0].rules = {};
+            (args as any).form.ej2_instances[0].rules = {};
             // Set initail Focus
-            if (args.requestType === 'beginEdit') {
-                (args.form.elements.namedItem('CustomerID')as HTMLInputElement).focus();
+            if ((args as any).requestType === 'beginEdit') {
+                ((args as any).form.elements.namedItem('CustomerID')as HTMLInputElement).focus();
             }
         }
     }
@@ -46,23 +46,24 @@ export class AppComponent implements OnInit {
         this.moveNext();
     }
 
-    selecting(e) {
-     if(e.isSwiped){
-       e.cancel = true;
-     }
-     if(e.selectingIndex === 1) {
-       e.cancel = !this.orderForm.valid;
-     }
+    selecting(e: any) {
+        if(e.isSwiped){
+            e.cancel = true;
+        }
+        if(e.selectingIndex === 1) {
+            e.cancel = !this.orderForm.valid;
+        }
     }
 
     moveNext() {
-        if (this.orderForm.valid)) {
+        if (this.orderForm.valid) {
             this.tabObj.select(1);
         }
     }
+
     submitBtn() {
         if (this.orderForm.valid) {
-            this.grid.endEdit();
+            (this.grid as any).endEdit();
         }
     }
 }

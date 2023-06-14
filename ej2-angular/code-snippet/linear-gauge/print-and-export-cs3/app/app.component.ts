@@ -11,7 +11,7 @@ import { ImageExportService, LinearGaugeComponent } from '@syncfusion/ej2-angula
 })
 export class AppComponent {
     @ViewChild('gauge')
-    public gaugeObj: LinearGaugeComponent;
+    public gaugeObj: LinearGaugeComponent | any;
     public export() {
       this.gaugeObj.export('PNG', 'Gauge');
     };

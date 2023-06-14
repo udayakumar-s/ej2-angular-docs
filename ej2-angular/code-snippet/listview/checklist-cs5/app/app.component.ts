@@ -39,7 +39,7 @@ export class AppComponent {
   ];
   public fields: Object = { id: "id", isChecked: "isChecked" };
 
-  onClick(event) {
+  onClick(event: any) {
     let selecteditem = this.element.getSelectedItems();
     this.valEle.nativeElement.innerHTML = "";
     for (let i = 0; i < selecteditem["data"].length; i++) {

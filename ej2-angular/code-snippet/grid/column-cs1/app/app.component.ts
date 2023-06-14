@@ -18,19 +18,19 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid') grid?: GridComponent;
     ngOnInit(): void {
         this.data = data;
     }
     updateColumns(): void {
       // Modifying column properties
-      this.grid.columns[0].textAlign = 'Center';
-      this.grid.columns[0].width = '100';
-      this.grid.columns[2].visible = false;
-      this.grid.columns[1].customAttributes = { class: 'customcss' };
+      (this.grid as any).columns[0].textAlign = 'Center';
+      (this.grid as any).columns[0].width = '100';
+      (this.grid as any).columns[2].visible = false;
+      (this.grid as any).columns[1].customAttributes = { class: 'customcss' };
       // Applying changes to the grid
-      this.grid.refreshColumns();
+      (this.grid as any).refreshColumns();
     }
 }
 

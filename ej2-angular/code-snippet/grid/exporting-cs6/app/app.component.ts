@@ -21,10 +21,10 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = purchaseData;
@@ -32,13 +32,13 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') {
-            this.grid.pdfExport();
+        if ((args as any).item.id === 'Grid_pdfexport') {
+            (this.grid as any).pdfExport();
         }
     }
 
     pdfHeaderQueryCellInfo(args: any): void {
-         args.cell.row.pdfGrid.repeatHeader = true;
+         (args as any).cell.row.pdfGrid.repeatHeader = true;
     }
 
 }

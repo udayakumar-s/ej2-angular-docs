@@ -31,11 +31,11 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public fData: object[];
-    public sData: object[];
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('grid1') public fGrid: GridComponent;
-    @ViewChild('grid2') public sGrid: GridComponent;
+    public fData?: object[];
+    public sData?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    @ViewChild('grid1') public fGrid?: GridComponent;
+    @ViewChild('grid2') public sGrid?: GridComponent;
 
     ngOnInit(): void {
         this.fData = data.slice(0, 5);
@@ -44,10 +44,10 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick = (args: ClickEventArgs) => {
-        if (args.item.id === 'FirstGrid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
-            const firstGridPdfExport: Promise<object> = this.fGrid.pdfExport({}, true);
+        if ((args as any).item.id === 'FirstGrid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
+            const firstGridPdfExport: Promise<object> = (this.fGrid as any).pdfExport({}, true);
             firstGridPdfExport.then((pdfData: object) => {
-                this.sGrid.pdfExport({}, false, pdfData);
+                (this.sGrid as any).pdfExport({}, false, pdfData);
             });
         }
     }

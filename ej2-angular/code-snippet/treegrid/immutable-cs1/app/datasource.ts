@@ -6,7 +6,7 @@
 export let virtualData: Object[] = [];
 export function dataSource(): void {
     let parent: number = -1;
-    let parentId: number = null;
+    let parentId: number | any = null;
     let names: string[] = ['VINET', 'TOMSP', 'HANAR', 'VICTE', 'SUPRD', 'HANAR', 'CHOPS', 'RICSU', 'WELLI', 'HILAA', 'ERNSH', 'CENTC',
     'OTTIK', 'QUEDE', 'RATTC', 'ERNSH', 'FOLKO', 'BLONP', 'WARTH', 'FRANK', 'GROSR', 'WHITC', 'WARTH', 'SPLIR', 'RATTC', 'QUICK', 'VINET',
     'MAGAA', 'TORTU', 'MORGK', 'BERGS', 'LEHMS', 'BERGS', 'ROMEY', 'ROMEY', 'LILAS', 'LEHMS', 'QUICK', 'QUICK', 'RICAR', 'REGGC', 'BSBEV',
@@ -21,7 +21,7 @@ export function dataSource(): void {
         if (i % 5 !== 0) {
             let crew: string = 'Crew';
             let num: number = isNaN((virtualData.length % parent) - 1) ?  0 : (virtualData.length % parent) - 1;
-            virtualData[num][crew].push({
+            (virtualData as any)[num][crew].push({
                 'TaskID': i + 1,
                 'FIELD1': names[Math.floor(Math.random() * names.length)],
                 'FIELD2': 1967 + (i % 10),

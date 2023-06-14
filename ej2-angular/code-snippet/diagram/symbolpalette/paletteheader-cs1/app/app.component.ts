@@ -11,8 +11,8 @@ import { ExpandMode } from '@syncfusion/ej2-navigations';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    public expandMode: ExpandMode;
-    public palettes: PaletteModel[];
+    public expandMode?: ExpandMode;
+    public palettes?: PaletteModel[];
     public getBasicShapes(): NodeModel[] {
         let basicShapes: NodeModel[] = [{
                 id: 'Rectangle',

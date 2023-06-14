@@ -14,7 +14,7 @@ import {
 
 export class AppComponent {
     @ViewChild('diagram')
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public connectors: ConnectorModel[] = [{
       id: 'connector1', type: 'Orthogonal', sourceID: 'node1', targetID: 'node2'
     },

@@ -21,40 +21,41 @@ import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, 
   providers: [ToolbarService, EditService, PageService],
 })
 export class AppComponent implements OnInit {
-  public data: object[];
-  @ViewChild('grid') public grid: GridComponent;
-  public editSettings: EditSettingsModel;
-  public pageOptions: PageSettingsModel;
-  public toolbar: ToolbarItems[];
-  public tpElem: HTMLElement;
-  public dpParams: IEditCell;
-  public timeObject: TimePicker;
+  public data?: object[];
+  @ViewChild('grid') public grid?: GridComponent;
+  public editSettings?: EditSettingsModel;
+  public pageOptions?: PageSettingsModel;
+  public toolbar?: ToolbarItems[];
+  public tpElem?: HTMLElement;
+  public dpParams?: IEditCell;
+  public timeObject?: TimePicker;
+  public orderidrules?: any;
 
   public createOrderDateFn() {
-    this.tpElem = document.createElement('input');
-    return this.tpElem;
+    (this as any).tpElem = document.createElement('input');
+    return (this as any).tpElem;
   }
   public destroyOrderDateFn() {
-    this.timeObject.destroy();
+    (this as any).timeObject.destroy();
   }
   public readOrderDateFn() {
-    return this.timeObject.value;
+    return (this as any).timeObject.value;
   }
-  public writeOrderDateFn(args) {
+  public writeOrderDateFn(args: any) {
     enableRipple(true);
-    this.timeObject = new TimePicker({
-      value: args.rowData[args.column.field],
+    (this as any).timeObject = new TimePicker({
+      value: (args as any).rowData[(args as any).column.field],
       step: 60,
     });
-    this.timeObject.appendTo(this.tpElem);
+    (this as any).timeObject.appendTo((this as any).tpElem);
   }
 
   ngOnInit(): void {
     this.data = purchaseData;
     this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    this.pageOptions = { pageSizes: true, pageSize: 8 };
-    this.dpParams = {
+    (this as any).pageOptions = { pageSizes: true, pageSize: 8 };
+    (this as any).dpParams = {
       create: this.createOrderDateFn,
       read: this.readOrderDateFn,
       destroy: this.destroyOrderDateFn,

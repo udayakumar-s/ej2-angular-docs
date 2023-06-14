@@ -2,7 +2,8 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { EditSettingsModel, ToolbarItems, TreeGridComponent, Column, SaveEventArgs, EditEventArgs } from '@syncfusion/ej2-angular-treegrid';
+import { EditSettingsModel, ToolbarItems, TreeGridComponent, Column } from '@syncfusion/ej2-angular-treegrid';
+import { SaveEventArgs, EditEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-container',
@@ -18,10 +19,10 @@ import { EditSettingsModel, ToolbarItems, TreeGridComponent, Column, SaveEventAr
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('treegrid') treegrid: TreeGridComponent;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
+    @ViewChild('treegrid') treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -31,7 +32,7 @@ export class AppComponent implements OnInit {
 
     actionBegin(args: EditEventArgs) {
         if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            for (const cols of this.treegrid.grid.columns) {
+            for (const cols of (this.treegrid as TreeGridComponent).grid.columns) {
                 if ((cols as Column).field === 'priority') {
                     (cols as Column).visible = true;
                 } else if ((cols as Column).field === 'duration') {
@@ -43,7 +44,7 @@ export class AppComponent implements OnInit {
 
     actionComplete(args: SaveEventArgs) {
         if (args.requestType === 'save') {
-            for (const cols of this.treegrid.grid.columns) {
+            for (const cols of (this.treegrid as TreeGridComponent).grid.columns) {
                 if ((cols as Column).field === 'priority') {
                     (cols as Column).visible = false;
                 } else if ((cols as Column).field === 'duration') {

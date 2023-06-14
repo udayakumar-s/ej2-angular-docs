@@ -27,7 +27,7 @@ import { dataSource } from './datasource';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
     // Cells model that you are going to update in the inserted 5th column dynamically
@@ -37,20 +37,20 @@ export class AppComponent {
 
     created() {
         // Applies style formatting before inserting the column
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:G2');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:G2');
         // inserting a empty column at 0th index
-        this.spreadsheetObj.insertColumn();
+        this.spreadsheetObj!.insertColumn();
         // inserting 1 column at the 5th index with column model
-        this.spreadsheetObj.insertColumn([{ index: 5, width: 90 }]);
+        this.spreadsheetObj!.insertColumn([{ index: 5, width: 90 }]);
         let rowIndex = 1;
         // Updating the 5th column data
         this.cellsModel.forEach((cell: CellModel): void => {
-            this.spreadsheetObj.updateCell(cell, getCellAddress(rowIndex, 5)); rowIndex++;
+            this.spreadsheetObj!.updateCell(cell, getCellAddress(rowIndex, 5)); rowIndex++;
         });
         // Applies style formatting after the columns are inserted
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'B3:B12');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'D3:D12');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'F3:H12');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'B3:B12');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'D3:D12');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'F3:H12');
     }
 }
 

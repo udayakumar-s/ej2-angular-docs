@@ -23,11 +23,11 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    public selectionSettings: SelectionSettingsModel;
-    public initialPage: object;
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    public selectionSettings?: SelectionSettingsModel;
+    public initialPage?: object;
+    @ViewChild('grid') public grid?: GridComponent;
     ngOnInit(): void {
         this.data = data;
         this.toolbarOptions = ['PdfExport', 'ExcelExport'];
@@ -35,18 +35,18 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs) {
-        if (args.item.id === 'Grid_pdfexport') {
-            const selectedRecords = this.grid.getSelectedRecords();
+        if ((args as any).item.id === 'Grid_pdfexport') {
+            const selectedRecords = (this.grid as any).getSelectedRecords();
             const exportProperties = {
                 dataSource: selectedRecords
             };
-            this.grid.pdfExport(exportProperties);
-        } else if (args.item.id === 'Grid_excelexport') {
-            const selectedRecords = this.grid.getSelectedRecords();
+            (this.grid as any).pdfExport(exportProperties);
+        } else if ((args as any).item.id === 'Grid_excelexport') {
+            const selectedRecords = (this.grid as any).getSelectedRecords();
             const exportProperties = {
                 dataSource: selectedRecords
             };
-            this.grid.excelExport(exportProperties);
+            (this.grid as any).excelExport(exportProperties);
         }
     }
 }

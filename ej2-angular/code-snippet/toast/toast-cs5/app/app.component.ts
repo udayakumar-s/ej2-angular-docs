@@ -20,13 +20,13 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') public element: any;
     public position = { X: 'Center' };
 
-    onCreate() {
+    onCreate(args: any) {
       this.element.show();
     }
-    btnClick() {
+    btnClick(args: any) {
       this.element.show();
     }
 }

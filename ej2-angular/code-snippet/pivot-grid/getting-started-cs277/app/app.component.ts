@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, GroupingBarService, HeadersSortEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, GroupingBarService, HeadersSortEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -11,8 +11,8 @@ import { Pivot_Data } from './datasource.ts';
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showGroupingBar='true' (onHeadersSort)='onHeadersSort($event)' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
 
     onHeadersSort(args: HeadersSortEventArgs): void {
         if (args.fieldName == 'Country') {
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
         this.width = "100%";
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],

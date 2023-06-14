@@ -3,8 +3,10 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
-import { ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-treegrid';
-import { image } from './image.ts';
+import { ToolbarItems } from '@syncfusion/ej2-treegrid';
+import { PdfExportProperties } from '@syncfusion/ej2-grids';
+import { image } from './image';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -19,18 +21,18 @@ import { image } from './image.ts';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pager: Object;
+    public data?: Object[];
+    public pager?: Object;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
-    public toolbarOptions: ToolbarItems[];
+    public treeGridObj?: TreeGridComponent;
+    public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;
         this.pager = { pageSize: 7 };
         this.toolbarOptions = ['PdfExport'];
     }
-    toolbarClick(args: Object) : void {
+    toolbarClick(args: Object | any) : void {
         if (args['item'].text === 'PDF Export') {
             let pdfExportProperties: PdfExportProperties = {
                 header: {
@@ -59,7 +61,7 @@ export class AppComponent implements OnInit {
                     ]
                 }
             };
-            this.treeGridObj.pdfExport(pdfExportProperties);
+            (this.treeGridObj as TreeGridComponent).pdfExport(pdfExportProperties);
         }
     }
 }

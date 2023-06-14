@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { EventSettingsModel, DayService, WeekService, MonthService, View } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, DayService, WeekService, MonthService, View ,WeekRule} from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 
 @Component({
@@ -14,7 +14,7 @@ export class AppComponent {
   public selectedDate: Date = new Date(2020, 1, 15);
   public workWeekDays: number[] = [1, 3, 4, 5];
   public showWeekNumber: boolean = true;
-  public weekRule: WeekRule = 'FirstFourDayWeek',
+  public weekRule: WeekRule = 'FirstFourDayWeek';
   public scheduleViews: View[] = ['Day', 'Week', 'Month'];
   public eventSettings: EventSettingsModel = {
     dataSource: [

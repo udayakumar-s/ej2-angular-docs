@@ -1,5 +1,4 @@
 
-
 import { Component, OnInit } from '@angular/core';
 import { data, employeeData } from './datasource';
 
@@ -17,8 +16,8 @@ import { data, employeeData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public employeeData: object[];
+    public data?: object[];
+    public employeeData?: object[];
 
     ngOnInit(): void {
         this.data = data;

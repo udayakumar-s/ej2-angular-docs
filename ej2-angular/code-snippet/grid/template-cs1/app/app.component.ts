@@ -19,11 +19,11 @@ import { employeeData } from './datasource';
                         <e-column field='City' headerText='City' width=100></e-column>
                     </e-columns>
                 </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = employeeData;

@@ -18,17 +18,17 @@ To use Searching, you need to inject **SearchService** in the provider section o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs1/app/app.component.ts %}
+{% include samples/grid/searching-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs1/app/app.module.ts %}
+{% include samples/grid/searching-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs1/app/main.ts %}
+{% include samples/grid/searching-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/searching-cs1" %}
+{% previewsample "page.domainurl/samples/grid/searching-cs1" %}
 
 ## Initial search
 
@@ -36,17 +36,17 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs2/app/app.component.ts %}
+{% include samples/grid/searching-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs2/app/app.module.ts %}
+{% include samples/grid/searching-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs2/app/main.ts %}
+{% include samples/grid/searching-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/searching-cs2" %}
+{% previewsample "page.domainurl/samples/grid/searching-cs2" %}
 
 > By default, grid searches all the bound column values. To customize this behavior define the [`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#fields) property.
 
@@ -70,17 +70,17 @@ To search grid records from an external button, invoke the [`search`](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs3/app/app.component.ts %}
+{% include samples/grid/searching-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs3/app/app.module.ts %}
+{% include samples/grid/searching-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs3/app/main.ts %}
+{% include samples/grid/searching-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/searching-cs3" %}
+{% previewsample "page.domainurl/samples/grid/searching-cs3" %}
 
 ## Search Specific Columns
 
@@ -88,17 +88,17 @@ By default, grid searches all visible columns. You can search specific columns b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs4/app/app.component.ts %}
+{% include samples/grid/searching-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs4/app/app.module.ts %}
+{% include samples/grid/searching-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs4/app/main.ts %}
+{% include samples/grid/searching-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/searching-cs4" %}
+{% previewsample "page.domainurl/samples/grid/searching-cs4" %}
 
 ## Clear search by external button
 
@@ -106,17 +106,17 @@ To clear the searched grid records from the external button, set [`searchSetting
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs5/app/app.component.ts %}
+{% include samples/grid/searching-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs5/app/app.module.ts %}
+{% include samples/grid/searching-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs5/app/main.ts %}
+{% include samples/grid/searching-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/searching-cs5" %}
+{% previewsample "page.domainurl/samples/grid/searching-cs5" %}
 
 ## Search on each key stroke
 
@@ -124,17 +124,17 @@ You can search the Grid data on each key stroke by binding the `keyup` event for
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs6/app/app.component.ts %}
+{% include samples/grid/searching-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs6/app/app.module.ts %}
+{% include samples/grid/searching-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs6/app/main.ts %}
+{% include samples/grid/searching-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/searching-cs6" %}
+{% previewsample "page.domainurl/samples/grid/searching-cs6" %}
 
 ## Perform search operation in Grid using multiple keywords
 
@@ -144,17 +144,17 @@ In the following sample, we have performed the searching with multiple keywords 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs7/app/app.component.ts %}
+{% include samples/grid/searching-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs7/app/app.module.ts %}
+{% include samples/grid/searching-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs7/app/main.ts %}
+{% include samples/grid/searching-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/searching-cs7" %}
+{% previewsample "page.domainurl/samples/grid/searching-cs7" %}
 
 ## See also
 

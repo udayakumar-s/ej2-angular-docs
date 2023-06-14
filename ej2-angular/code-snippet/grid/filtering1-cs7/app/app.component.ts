@@ -17,9 +17,9 @@ import { FilterSettingsModel, IFilter } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public filterOptions: FilterSettingsModel;
-    public filter: IFilter;
+    public data?: object[];
+    public filterOptions?: FilterSettingsModel;
+    public filter?: IFilter;
 
     ngOnInit(): void {
         this.data = data;

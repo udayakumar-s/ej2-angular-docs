@@ -23,11 +23,11 @@ import {  IEditCell } from '@syncfusion/ej2-angular-grids';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public formatOptions: Object;
-    public numericFormatOptions: Object;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public numericParams: IEditCell
+    public formatOptions?: Object;
+    public numericFormatOptions?: Object;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public numericParams?: IEditCell
 
     ngOnInit(): void {
         this.data = stackedData;

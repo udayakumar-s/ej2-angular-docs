@@ -19,20 +19,20 @@ import { SortEventArgs } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public message: string
+    public data?: object[];
+    public message?: string;
 
     ngOnInit(): void {
         this.data = data;
     }
 
     actionBegin(args: SortEventArgs) {
-        if (args.requestType === 'sorting' && args.columnName === 'OrderID') {
-            args.cancel = true;
+        if ((args as any).requestType === 'sorting' && (args as any).columnName === 'OrderID') {
+            (args as any).cancel = true;
         }
     }
     actionComplete(args: SortEventArgs) {
-        this.message = args.requestType + ' action completed for ' + args.columnName + ' column';
+        this.message = (args as any).requestType + ' action completed for ' + (args as any).columnName + ' column';
     }
 }
 

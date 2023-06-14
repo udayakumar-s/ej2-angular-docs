@@ -22,14 +22,14 @@ import { Component } from '@angular/core';
           </div>
       </div>
     </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {
   public minType: string = "MinRange";
   public rangeType: string = "Range";
   public minValue: number = 30;
-  public rangeValue: number = [30, 70];
+  public rangeValue: number[] = [30, 70];
 }
 
 

@@ -29,9 +29,9 @@ import { TooltipComponent } from "@syncfusion/ej2-angular-popups";
 })
 export class AppComponent implements OnInit  {
 
-  public data: object[]=data;
+  public data?: object[]=data;
   @ViewChild('tooltip')
-  public toolTip: TooltipComponent;
+  public toolTip?: TooltipComponent;
   public columnDescriptions: Object ={
     "Order ID": "A unique number assigned to each order.",
     "Freight": "The cost of shipping the order.",
@@ -43,10 +43,10 @@ export class AppComponent implements OnInit  {
   ngOnInit(): void {
     this.data = data;
   }
-  beforeRender(args) {
-    const description = this.columnDescriptions[args.target.innerText];
+  beforeRender(args: any) {
+    const description = (this.columnDescriptions as any)[(args as any).target.innerText];
     if (description) {
-      this.toolTip.content = args.target.innerText + ": " + description;
+      (this.toolTip as TooltipComponent).content = (args as any).target.innerText + ": " + description;
     }
   }
   

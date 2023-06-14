@@ -18,9 +18,9 @@ import { EditSettingsModel, ToolbarItems, CellEditArgs } from '@syncfusion/ej2-a
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;
@@ -29,8 +29,8 @@ export class AppComponent implements OnInit {
     }
 
     cellEdit(args: CellEditArgs) {
-        if (args.value === 'France') {
-            args.cancel = true;
+        if ((args as any).value === 'France') {
+            (args as any).cancel = true;
         }
     }
 }

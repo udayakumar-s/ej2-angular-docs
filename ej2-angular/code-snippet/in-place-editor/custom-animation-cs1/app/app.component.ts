@@ -29,14 +29,14 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 })
 
 export class AppComponent {
-    @ViewChild('element') editObj: InPlaceEditorComponent;
+    @ViewChild('element') editObj?: InPlaceEditorComponent;
     public model: object = { placeholder: 'Enter some text' };
     public popupSettings: object = { model: { animation: { open: {effect: 'ZoomIn', duration: 1000, delay: 0}}}};
     public openAnimateData: string[] = ['None', 'FadeIn', 'FadeZoomIn', 'ZoomIn'];
 
     public onChange(e: ChangeEventArgs): void {
-        this.editObj.popupSettings.model.animation.open.effect = e.value;
-        this.editObj.dataBind();
+        (this.editObj as any).popupSettings.model.animation.open.effect = e.value;
+        this.editObj?.dataBind();
     }
 }
 

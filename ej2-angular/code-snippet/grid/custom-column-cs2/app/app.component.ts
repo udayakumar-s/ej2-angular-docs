@@ -13,12 +13,12 @@ import { data } from './datasource';
                         <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
                     </e-columns>
                 </ejs-grid>`,
-    styleUrls: ['./app/app.component.css']
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
 
-    public data: object[];
-    public customAttributes: object;
+    public data?: object[];
+    public customAttributes?: object;
 
     ngOnInit(): void{
         this.data = data;

@@ -17,9 +17,9 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegri
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['Edit', 'Update', 'Cancel'];
     }
 
-    actionBegin(args) {
+    actionBegin(args: any) {
         if (args.requestType === 'beginEdit') {
             if (args.rowData.priority === 'Normal') {
                 args.cancel = true;

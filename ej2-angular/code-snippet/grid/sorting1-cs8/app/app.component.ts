@@ -3,6 +3,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
     selector: 'app-root',
@@ -39,11 +40,11 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public sortOptions;
+    public data?: object[];
+    public sortOptions?: any;
     @ViewChild('grid')
-    public grid: GridComponent;
-    @ViewChild('dropdown') public dropDown: DropDownListComponent;
+    public grid?: GridComponent;
+    @ViewChild('dropdown') public dropDown?: DropDownListComponent;
 
     public columns: Object[] = [
         { text: 'Customer ID', value: 'CustomerID' },        
@@ -64,7 +65,7 @@ export class AppComponent implements OnInit {
     }
 
     removeSortColumn() {
-        this.grid.removeSortColumn(this.dropDown.value as any);
+        this.grid?.removeSortColumn((this as any).dropDown.value as any);
     }
 }
 

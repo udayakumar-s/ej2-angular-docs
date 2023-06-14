@@ -22,17 +22,17 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     change(args: any) {
-        if (args.checked) {
-            this.grid.getColumnByField('CustomerID').disableHtmlEncode = false;
+        if ((args as any).checked) {
+            (this.grid as any).getColumnByField('CustomerID').disableHtmlEncode = false;
         } else {
-            this.grid.getColumnByField('CustomerID').disableHtmlEncode = true;
+            (this.grid as any).getColumnByField('CustomerID').disableHtmlEncode = true;
         }
-        this.grid.refresh();
+        (this.grid as any).refresh();
     }
 
     ngOnInit(): void {

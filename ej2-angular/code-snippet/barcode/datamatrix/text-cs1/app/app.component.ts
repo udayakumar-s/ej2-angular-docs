@@ -1,7 +1,7 @@
 
 
-import { Component } from "@angular/core";
 import { Component ,ViewChild ,ViewEncapsulation} from "@angular/core";
+import { DisplayTextModel } from "@syncfusion/ej2-angular-barcode-generator";
 
 @Component({
   selector: "app-container",
@@ -9,9 +9,9 @@ import { Component ,ViewChild ,ViewEncapsulation} from "@angular/core";
   template: `<ejs-datamatrixgenerator style="display: block;"  #barcode id="barcode" width="200px"  height="200px" [displayText] = 'displayText' mode="SVG" type="DataMatrix" value="Syncfusion"></ejs-datamatrixgenerator>`
 })
 export class AppComponent {
-   @ViewChild('barcode')
+  //  @ViewChild('barcode')
    @ViewChild('displayText')
-   public displayText: DisplayTextModel;
+   public displayText?: DisplayTextModel;
    ngOnInit(): void {  
 
      this.displayText = {

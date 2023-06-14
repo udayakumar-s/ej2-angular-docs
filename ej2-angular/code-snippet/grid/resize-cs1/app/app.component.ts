@@ -18,14 +18,15 @@ template: `<ejs-grid #grid [dataSource]='data' height='315px' gridLines='Both' (
 })
 export class AppComponent implements OnInit {
 
-public data: object[];
-@ViewChild('grid') public grid: GridComponent;
+public data?: object[];
+@ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
     dataBound() {
-        this.grid.autoFitColumns(['ShipAddress', 'ShipName']);
+        (this.grid as any).autoFitColumns(['ShipAddress', 'ShipName']);
     }
 }
 

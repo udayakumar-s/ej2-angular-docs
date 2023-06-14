@@ -20,11 +20,11 @@ import { data } from './datasource';
 
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public toolbar?: ToolbarItems[];
     @ViewChild('grid')
-    public grid: GridComponent;
-    public editSettings: EditSettingsModel;
+    public grid?: GridComponent;
+    public editSettings?: EditSettingsModel;
     public isDropdown = false;
 
     ngOnInit(): void {
@@ -32,24 +32,24 @@ export class AppComponent implements OnInit {
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
-    load(args){
-        this.grid.element.addEventListener('mouseup', (e: MouseEventArgs) => {
+    load(args: any){
+        (this.grid as any).element.addEventListener('mouseup', (e: MouseEventArgs) => {
             if ((e.target as HTMLElement).classList.contains("e-rowcell")) {
-              if (this.grid.isEdit)
-                  this.grid.endEdit();
-              let rowInfo = this.grid.getRowInfo(e.target);
+              if ((this.grid as any).isEdit)
+                  (this.grid as any).endEdit();
+              let rowInfo = (this.grid as any).getRowInfo(e.target);
               if (rowInfo.column.field === "ShipCountry")
                   this.isDropdown = true;
-              this.grid.selectRow(rowInfo.rowIndex);
-              this.grid.startEdit();
+              (this.grid as any).selectRow(rowInfo.rowIndex);
+              (this.grid as any).startEdit();
             }
         });
     }
 
-    onActionComplete(args) {
-        if (args.requestType =="beginEdit" && this.isDropdown) {
+    onActionComplete(args: any) {
+        if ((args as any).requestType =="beginEdit" && this.isDropdown) {
             this.isDropdown = false;
-            let dropdownObj = args.form.querySelector('.e-dropdownlist').ej2_instances[0];
+            let dropdownObj = (args as any).form.querySelector('.e-dropdownlist').ej2_instances[0];
             dropdownObj.element.focus();
             dropdownObj.showPopup();
         }

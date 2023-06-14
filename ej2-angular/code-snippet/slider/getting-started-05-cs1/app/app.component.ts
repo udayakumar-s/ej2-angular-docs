@@ -11,12 +11,12 @@ import { Component } from '@angular/core';
           <ejs-slider id='slider'  [type]= 'type' [showButtons]=true [value] = 'value' ></ejs-slider>
       </div>
     </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {
   public type: string ="Range";
-  public value: number[] =[30, 70];
+  public value: number[] = [30, 70];
 }
 
 

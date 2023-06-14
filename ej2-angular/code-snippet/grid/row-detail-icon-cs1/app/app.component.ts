@@ -68,13 +68,13 @@ let instance: Internationalization = new Internationalization();
                     </e-columns>
                 </ejs-grid>
             </div>`,
-    styleUrls: ['./app/app.style.css'],
+    // styleUrls: ['./app/app.style.css'],
     providers: [DetailRowService],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
 
-    public data: any;
+    public data?: any;
 
     ngOnInit(): void {
         this.data = employeeData;

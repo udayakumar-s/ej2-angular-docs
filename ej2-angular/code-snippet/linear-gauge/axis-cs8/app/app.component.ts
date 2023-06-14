@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-    public label:Object;
+    public label?:Object;
     ngOnInit(): void {
         this.label =  {
             format: '{value}°C'

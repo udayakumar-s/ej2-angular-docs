@@ -22,9 +22,10 @@ import { employeeData } from './datasource';
 
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public importRules: RuleModel;
-    public employeeOperators: Object[];
+    public data?: Object[];
+    public importRules?: RuleModel;
+    public employeeOperators?: Object[];
+values: any;
     ngOnInit(): void {
         this.data = employeeData;
         this.importRules = {

@@ -16,8 +16,8 @@ import { Component } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-  public height: number;
-  public width: number;
+  public height?: number;
+  public width?: number;
   ngOnInit(): void {
     this.height = 15;
     this.width= 15;

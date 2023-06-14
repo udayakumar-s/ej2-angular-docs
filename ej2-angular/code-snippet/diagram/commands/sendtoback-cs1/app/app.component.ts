@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -19,23 +19,23 @@ import { DiagramComponent, Diagram, NodeModel, ConnectorModel } from '@syncfusio
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public selArray: (NodeModel | ConnectorModel)[] = [];
-    public getNodeDefaults(node: NodeModel): NodeModel {
+    public getNodeDefaults(node: NodeModel | any): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
     public created(args: Object): void {
         this.selArray = [];
-        //this.diagram.appendTo('#element');
-        this.selArray.push(this.diagram.nodes[2]);
+        //(this.diagram as Diagram).appendTo('#element');
+        this.selArray.push((this.diagram as DiagramComponent).nodes[2]);
         //Selects the nodes
-        this.diagram.select(this.selArray);
+        (this.diagram as DiagramComponent).select(this.selArray);
         //Sends to back
-        this.diagram.sendToBack();
+        (this.diagram as DiagramComponent).sendToBack();
     }
 }
 

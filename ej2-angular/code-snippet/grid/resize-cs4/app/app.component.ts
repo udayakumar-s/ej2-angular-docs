@@ -16,9 +16,9 @@ import { ColumnModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public orderColumns: ColumnModel[];
-    public shipColumns: ColumnModel[];
+    public data?: object[];
+    public orderColumns?: ColumnModel[];
+    public shipColumns?: ColumnModel[];
 
 
     ngOnInit(): void {
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
                 width: 120,
                 textAlign: 'Right',
                 minWidth: 10,
-                allowResizing: 'false'
+                allowResizing: false
             },
             {
                 field: 'Freight',

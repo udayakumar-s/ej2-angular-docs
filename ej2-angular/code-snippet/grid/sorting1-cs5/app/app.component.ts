@@ -16,7 +16,7 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     // The custom function
     public sortComparer = (reference: string, comparer: string) => {
         if (reference < comparer) {

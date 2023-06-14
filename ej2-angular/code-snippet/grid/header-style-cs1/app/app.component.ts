@@ -20,12 +20,12 @@ import { data } from './datasource';
                 </e-columns>
               </ejs-grid>
             </div>`,
-  styleUrls: ['./app/app.component.css']
+  styleUrls: ['./app.component.css']
 
 })
 export class AppComponent implements OnInit {
 
-  public data: object[];
+  public data?: object[];
 
   ngOnInit() {
     this.data = data;

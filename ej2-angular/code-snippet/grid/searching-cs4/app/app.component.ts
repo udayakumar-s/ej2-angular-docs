@@ -17,9 +17,9 @@ import { ToolbarItems, SearchSettingsModel } from '@syncfusion/ej2-angular-grids
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public searchSettings: SearchSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public searchSettings?: SearchSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;

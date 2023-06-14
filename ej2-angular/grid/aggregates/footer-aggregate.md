@@ -14,20 +14,20 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/aggregates-footer-cs1/app/app.component.ts %}
+{% include samples/grid/aggregates-footer-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-footer-cs1/app/app.template.html %}
+{% include samples/grid/aggregates-footer-cs1/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-footer-cs1/app/app.module.ts %}
+{% include samples/grid/aggregates-footer-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/aggregates-footer-cs1/app/main.ts %}
+{% include samples/grid/aggregates-footer-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-footer-cs1" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-footer-cs1" %}
 
 > * Use the template reference variable name as **#footerTemplate** to specify the footer template.
 > * The aggregate values must be accessed inside the template using their corresponding [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name.
@@ -38,20 +38,20 @@ You can format the aggregate value result by using the [`format`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/aggregates-footer-cs2/app/app.component.ts %}
+{% include samples/grid/aggregates-footer-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-footer-cs2/app/app.template.html %}
+{% include samples/grid/aggregates-footer-cs2/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-footer-cs2/app/app.module.ts %}
+{% include samples/grid/aggregates-footer-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/aggregates-footer-cs2/app/main.ts %}
+{% include samples/grid/aggregates-footer-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-footer-cs2" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-footer-cs2" %}
 
 ## How to place aggregates on top of the Grid
 
@@ -61,14 +61,14 @@ In the following, footer content is appended to the header content using the `da
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/aggregates-footer-cs3/app/app.component.ts %}
+{% include samples/grid/aggregates-footer-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-footer-cs3/app/app.module.ts %}
+{% include samples/grid/aggregates-footer-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/aggregates-footer-cs3/app/main.ts %}
+{% include samples/grid/aggregates-footer-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-footer-cs3" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-footer-cs3" %}

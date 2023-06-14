@@ -2,8 +2,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
-import { HyperLinkSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/hyperlinksettings';
-import { Pivot_Data } from './datasource.ts';
+import { HyperlinkSettings } from '@syncfusion/ej2-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -11,14 +11,14 @@ import { Pivot_Data } from './datasource.ts';
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [hyperlinkSettings]=hyperlinkSettings width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public hyperlinkSettings: HyperLinkSettings;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public hyperlinkSettings?: HyperlinkSettings;
 
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Year', items: ['FY 2015'] }, { name: 'Country', items: ['France'] }],
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
                 value1: 500
             }],
             cssClass: 'e-custom-class'
-        };
+        } as HyperlinkSettings;
         this.width = '100%';
     }
 }

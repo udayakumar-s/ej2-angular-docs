@@ -19,10 +19,10 @@ import { ToolbarItems, SearchSettingsModel, GridComponent } from '@syncfusion/ej
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    public searchOptions: SearchSettingsModel;
-    @ViewChild('grid') public gridObj: GridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    public searchOptions?: SearchSettingsModel;
+    @ViewChild('grid') public gridObj?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     }
 
     clearSearch() {
-        this.gridObj.searchSettings.key = '';
+        (this.gridObj as any).searchSettings.key = '';
     }
 }
 

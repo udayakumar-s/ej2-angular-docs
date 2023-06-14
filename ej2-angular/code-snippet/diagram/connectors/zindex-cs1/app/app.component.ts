@@ -15,18 +15,18 @@ import { DiagramComponent, Diagram, ConnectorModel, DecoratorModel, PointModel, 
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public sourcePoint1: PointModel;
-    public targetPoint1: PointModel;
-    public sourcePoint2: PointModel;
-    public targetPoint2: PointModel;
+    public diagram?: DiagramComponent;
+    public sourcePoint1?: PointModel;
+    public targetPoint1?: PointModel;
+    public sourcePoint2?: PointModel;
+    public targetPoint2?: PointModel;
     ngOnInit(): void {
         this.sourcePoint1 = { x: 100, y: 100 };
         this.targetPoint1 = { x: 200, y: 200 };
         this.sourcePoint2 = { x: 200, y: 100 };
         this.targetPoint2 = { x: 100, y: 200 };
     }
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',

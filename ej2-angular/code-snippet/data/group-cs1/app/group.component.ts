@@ -24,6 +24,6 @@ import { Component, OnInit, Input } from '@angular/core';
             }`]
 })
 export class GroupComponent implements OnInit {
-    @Input() public data: object;
+    @Input() public data?: object | any;
     ngOnInit() { }
 }

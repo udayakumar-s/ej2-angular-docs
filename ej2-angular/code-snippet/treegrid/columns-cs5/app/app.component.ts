@@ -4,7 +4,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent, SortService, ColumnMenuService, PageService, FilterService } from '@syncfusion/ej2-angular-treegrid';
-import { ColumnMenuItemModel, ColumnMenuOpenEventArgs, FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';
+import { FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -22,15 +22,15 @@ import { ColumnMenuItemModel, ColumnMenuOpenEventArgs, FilterSettingsModel } fro
 export class AppComponent implements OnInit {
 
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
-    public data: object[];
+    public treegrid?: TreeGridComponent;
+    public data?: object[];
     public filterSettings: FilterSettingsModel = { type: 'Menu' };
-    public columnMenuOpen(args: ColumnMenuOpenEventArgs) {
+    public columnMenuOpen(args: any) {
         for (const item of args.items) {
             if (item.text === 'Filter' && args.column.field === 'taskName') {
-                (item as ColumnMenuItemModel).hide = true;
+                (item as any).hide = true;
             } else {
-                (item as ColumnMenuItemModel).hide = false;
+                (item as any).hide = false;
             }
         }
     }

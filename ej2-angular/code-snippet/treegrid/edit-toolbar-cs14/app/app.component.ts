@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { EditSettingsModel, ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { Column, EditSettingsModel, ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { TimePicker } from '@syncfusion/ej2-calendars';
 
 @Component({
@@ -17,14 +17,14 @@ import { TimePicker } from '@syncfusion/ej2-calendars';
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-  public data: Object[];
-  public editSettings: EditSettingsModel;
-  public editOptions: Object;
-  public elem: HTMLElement;
-  public timeObject: TimePicker;
+  public data?: Object[];
+  public editSettings?: EditSettingsModel;
+  public editOptions?: Object;
+  public elem?: HTMLElement;
+  public timeObject?: TimePicker;
   @ViewChild('treegrid')
-  public treeGridObj: TreeGridComponent;
-  public toolbarOptions: ToolbarItems[];
+  public treeGridObj?: TreeGridComponent;
+  public toolbarOptions?: ToolbarItems[];
 
   ngOnInit(): void {
     this.data = sampleData;
@@ -42,12 +42,12 @@ export class AppComponent implements OnInit {
         return this.elem;
       },
       read: () => {
-        return this.timeObject.value;
+        return (this.timeObject as TimePicker).value;
       },
       destroy: () => {
-        this.timeObject.destroy();
+        (this.timeObject as TimePicker).destroy();
       },
-      write: (args: { rowData: Object; column: Column }) => {
+      write: (args: { rowData: Object; column: Column } | any) => {
         this.timeObject = new TimePicker({
           value: args.rowData[args.column.field],
           step: 60,

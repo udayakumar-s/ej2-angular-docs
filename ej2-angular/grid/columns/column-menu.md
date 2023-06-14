@@ -29,17 +29,17 @@ The default items are displayed in following table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs6/app/app.component.ts %}
+{% include samples/grid/grid-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs6/app/app.module.ts %}
+{% include samples/grid/grid-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs6/app/main.ts %}
+{% include samples/grid/grid-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs6" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs6" %}
 
 > You can disable column menu for a particular column by defining the [`columns.showColumnMenu`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showcolumnmenu) as false.
 
@@ -55,17 +55,17 @@ During the resizing action, the grid component triggers the below two events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs7/app/app.component.ts %}
+{% include samples/grid/grid-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs7/app/app.module.ts %}
+{% include samples/grid/grid-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs7/app/main.ts %}
+{% include samples/grid/grid-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs7" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs7" %}
 
 ## Custom column menu item
 
@@ -73,17 +73,17 @@ Custom column menu items can be added by defining the [`columnMenuItems`](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs8/app/app.component.ts %}
+{% include samples/grid/grid-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs8/app/app.module.ts %}
+{% include samples/grid/grid-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs8/app/main.ts %}
+{% include samples/grid/grid-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs8" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs8" %}
 
 ## Customize menu items for particular columns
 
@@ -93,17 +93,17 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs9/app/app.component.ts %}
+{% include samples/grid/grid-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs9/app/app.module.ts %}
+{% include samples/grid/grid-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs9/app/main.ts %}
+{% include samples/grid/grid-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs9" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs9" %}
 
 ## Customize the icon of column menu
 
@@ -119,14 +119,14 @@ In the below sample, grid is rendered with a customized column menu icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-column-menu-icon-cs1/app/app.component.ts %}
+{% include samples/grid/custom-column-menu-icon-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-menu-icon-cs1/app/app.module.ts %}
+{% include samples/grid/custom-column-menu-icon-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-column-menu-icon-cs1/app/main.ts %}
+{% include samples/grid/custom-column-menu-icon-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-column-menu-icon-cs1" %}
+{% previewsample "page.domainurl/samples/grid/custom-column-menu-icon-cs1" %}

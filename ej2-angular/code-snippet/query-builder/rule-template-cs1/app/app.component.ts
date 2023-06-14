@@ -9,13 +9,13 @@ import { employeeData } from './datasource';
 
 @Component({
     selector: 'app-root',
-    templateUrl: `app/template-driven.html`
+    templateUrl: `template-driven.html`
 })
 
 export class AppComponent implements OnInit {
-@ViewChild('querybuilder') qryBldrObj: QueryBuilderComponent;
-  public importRules: RuleModel;
-  public rangeticks: Object;
+@ViewChild('querybuilder') qryBldrObj: QueryBuilderComponent | undefined;
+  public importRules?: RuleModel;
+  public rangeticks?: Object;
 
   ngOnInit(): void {
     this.importRules = {
@@ -33,40 +33,40 @@ export class AppComponent implements OnInit {
 
   actionBegin(args: ActionEventArgs): void {
     if (args.requestType === 'template-initialize') {
-      args.rule.operator = 'greaterthanorequal';
-      if (args.rule.value === '') {
-        args.rule.value = 30;
+      args.rule!.operator = 'greaterthanorequal';
+      if (args.rule!.value === '') {
+        args.rule!.value = 30;
       }
     }
   }
-  
+
   fieldChange(e: any): void {
-      this.qryBldrObj.notifyChange(e.value, e.element, 'field');
+      this.qryBldrObj!.notifyChange(e.value, e.element, 'field');
   };
 
   valueChange(e: any, ruleID: string): void {
-    let elem: HTMLElement = document.getElementById(ruleID);
-    this.qryBldrObj.notifyChange(e.value as Date, elem, 'value');
-    this.refreshTable(this.qryBldrObj.getRule(elem), ruleID);
+    let elem: HTMLElement = document.getElementById(ruleID) as HTMLElement;
+    this.qryBldrObj!.notifyChange(e.value as Date, elem, 'value');
+    this.refreshTable(this.qryBldrObj!.getRule(elem), ruleID);
   }
 
   viewDetails(ruleID: string): void {
-    let ruleElem: HTMLElement = document.getElementById(ruleID);
-    let element: HTMLElement = document.getElementById(ruleID + '_section');
+    let ruleElem: HTMLElement = document.getElementById(ruleID) as HTMLElement;
+    let element: HTMLElement = document.getElementById(ruleID + '_section') as HTMLElement;
     if (element.className.indexOf('e-hide') > -1) {
-      this.refreshTable(this.qryBldrObj.getRule(ruleElem), ruleID);
+      this.refreshTable(this.qryBldrObj!.getRule(ruleElem), ruleID);
       element.className = element.className.replace('e-hide', '');
-      document.getElementById(ruleID + '_option').querySelector('.e-content').textContent = 'Hide Details';
+      document.getElementById(ruleID + '_option')!.querySelector('.e-content')!.textContent = 'Hide Details';
     } else {
       element.className += ' e-hide';
-      document.getElementById(ruleID + '_option').querySelector('.e-content').textContent = 'View Details';
+      document.getElementById(ruleID + '_option')!.querySelector('.e-content')!.textContent = 'View Details';
     }
   }
 
   refreshTable(rule: RuleModel, ruleID: string): void {
     let template: string = '<tr><td>${EmployeeID}</td><td>${FirstName}</td><td>${Age}</td></tr>';
     let compiledFunction: any = compile(template);
-    let dataManagerQuery: Query = this.qryBldrObj.getDataManagerQuery({condition: 'and', rules: [rule]});
+    let dataManagerQuery: Query = this.qryBldrObj!.getDataManagerQuery({condition: 'and', rules: [rule]});
     let dataManager: DataManager = new DataManager(employeeData);
     dataManager.defaultQuery = dataManagerQuery;
     let result: object[] = dataManager.executeLocal();
@@ -77,9 +77,9 @@ export class AppComponent implements OnInit {
       } else {
         table.style.display = 'none';
       }
-      table.querySelector('tbody').innerHTML = '';
+      table.querySelector('tbody')!.innerHTML = '';
       result.forEach((data) => {
-          table.querySelector('tbody').appendChild(compiledFunction(data)[0].querySelector('tr'));
+          table.querySelector('tbody')!.appendChild(compiledFunction(data)[0].querySelector('tr'));
       });
     }
   }

@@ -2,7 +2,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { EditSettingsModel, ToolbarItems, CellEditArgs } from '@syncfusion/ej2-angular-treegrid';
+import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { CellEditArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-container',
@@ -17,9 +18,9 @@ import { EditSettingsModel, ToolbarItems, CellEditArgs } from '@syncfusion/ej2-a
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;

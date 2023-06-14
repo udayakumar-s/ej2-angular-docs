@@ -22,9 +22,9 @@ import { IFilter } from '@syncfusion/ej2-angular-grids';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public formatOptions: Object;
-    public filterParams: IFilter;
-    public filterOption: FilterSettingsModel;
+    public formatOptions?: Object;
+    public filterParams?: IFilter;
+    public filterOption?: FilterSettingsModel;
 
     ngOnInit(): void {
         this.data = projectData;
@@ -34,4 +34,4 @@ export class AppComponent implements OnInit {
     }
 
 
-
+}

@@ -1,6 +1,6 @@
 
 
-import { RowSelectEventArgs } from '@syncfusion/ej2-treegrid';
+import { RowSelectEventArgs } from '@syncfusion/ej2-grids';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
@@ -22,23 +22,23 @@ import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = sampleData;
     }
 
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
     @ViewChild('numerictext')
-    public numeric: NumericTextBoxComponent;
-    onChange(): void {
-        this.treeGridObj.selectRow(parseInt(this.numeric.getText(), 10));
+    public numeric?: NumericTextBoxComponent;
+    onChange(args: any): void {
+        this.treeGridObj?.selectRow(parseInt((this.numeric as NumericTextBoxComponent).getText(), 10));
     }
 
     rowSelected(args: RowSelectEventArgs) {
-        let rowHeight: number = this.treeGridObj.getRows()[this.treeGridObj.getSelectedRowIndexes()[0]].scrollHeight;
-        this.treeGridObj.getContent().children[0].scrollTop = rowHeight * this.treeGridObj.getSelectedRowIndexes()[0];
+        let rowHeight: number = (this.treeGridObj as TreeGridComponent).getRows()[(this.treeGridObj as TreeGridComponent).getSelectedRowIndexes()[0]].scrollHeight;
+        (this.treeGridObj as TreeGridComponent).getContent().children[0].scrollTop = rowHeight * (this.treeGridObj as TreeGridComponent).getSelectedRowIndexes()[0];
     }
 }
 

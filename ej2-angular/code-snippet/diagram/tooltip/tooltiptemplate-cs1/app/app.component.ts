@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, NodeConstraints, DiagramTooltipModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, NodeConstraints, DiagramTooltipModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -15,14 +15,14 @@ import { DiagramComponent, Diagram, NodeModel, NodeConstraints, DiagramTooltipMo
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public tooltip: DiagramTooltipModel;
-    public constraints: NodeConstraints;
+    public diagram?: DiagramComponent;
+    public tooltip?: DiagramTooltipModel;
+    public constraints?: NodeConstraints;
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
     public getContent(): HTMLElement {

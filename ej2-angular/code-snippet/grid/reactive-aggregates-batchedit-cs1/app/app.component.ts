@@ -34,10 +34,10 @@ import { GroupSettingsModel, EditSettingsModel } from '@syncfusion/ej2-angular-g
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar : string[];
-    public groupOptions: GroupSettingsModel;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar ?: string[];
+    public groupOptions?: GroupSettingsModel;
 
     ngOnInit(): void {
         this.data = data;

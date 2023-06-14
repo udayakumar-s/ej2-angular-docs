@@ -16,7 +16,7 @@ import { Component, OnInit } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent implements OnInit {
-    public tooltip:Object;
+    public tooltip?:Object;
     ngOnInit(): void {
         this.tooltip = {
              enable: true,

@@ -33,10 +33,10 @@
     })
     export class AppComponent  {
          @ViewChild('defaultRTE')
-        public rteObj: RichTextEditorComponent;
+        public rteObj?: RichTextEditorComponent;
 
         @ViewChild('shiftEnterOption')
-        public shiftEnterObj: DropDownListComponent;
+        public shiftEnterObj?: DropDownListComponent;
 
         public shiftEnterData: { [key: string]: Object }[] = [
             { Text: 'Create a new <br>', Value: 'BR' },
@@ -45,18 +45,18 @@
         ];
 
         public shiftEnterPlaceHolder: string = 'When pressing the shift + enter key';
-        public floatLabel: FloatLabelType = 'Always';
+        public floatLabel: string = 'Always';
         public fields: FieldSettingsModel = { text: 'Text', value: 'Value' };
         public rteHeight = 220;
         public height: string = '200px';
         public shiftEnterValue: string = 'BR';
         public shiftEnterChange(): void {
-            if (this.shiftEnterObj.value === 'BR') {
-                this.rteObj.shiftEnterKey = 'BR';
-            } else if (this.shiftEnterObj.value === 'DIV') {
-                this.rteObj.shiftEnterKey = 'DIV';
-            } else if (this.shiftEnterObj.value === 'P') {
-                this.rteObj.shiftEnterKey = 'P';
+            if (this.shiftEnterObj!.value === 'BR') {
+                this.rteObj!.shiftEnterKey = 'BR';
+            } else if (this.shiftEnterObj!.value === 'DIV') {
+                this.rteObj!.shiftEnterKey = 'DIV';
+            } else if (this.shiftEnterObj!.value === 'P') {
+                this.rteObj!.shiftEnterKey = 'P';
             }
         }
     }

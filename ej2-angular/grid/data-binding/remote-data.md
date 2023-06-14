@@ -14,17 +14,17 @@ To bind remote data to grid component, assign service data as an instance of **D
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs2/app/app.component.ts %}
+{% include samples/grid/databinding-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs2/app/app.module.ts %}
+{% include samples/grid/databinding-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs2/app/main.ts %}
+{% include samples/grid/databinding-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs2" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs2" %}
 
 > By default, **DataManager** uses **ODataAdaptor** for remote data-binding.
 
@@ -34,17 +34,17 @@ To bind remote data to grid component, assign service data as an instance of **D
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs3/app/app.component.ts %}
+{% include samples/grid/databinding-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs3/app/app.module.ts %}
+{% include samples/grid/databinding-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs3/app/main.ts %}
+{% include samples/grid/databinding-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs3" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs3" %}
 
 ## OData v4 adaptor - Binding OData v4 service
 
@@ -54,17 +54,17 @@ To bind OData v4 service, use the **ODataV4Adaptor**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs4/app/app.component.ts %}
+{% include samples/grid/databinding-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs4/app/app.module.ts %}
+{% include samples/grid/databinding-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs4/app/main.ts %}
+{% include samples/grid/databinding-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs4" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs4" %}
 
 ## Web API adaptor
 
@@ -198,17 +198,17 @@ we are going to see how to add a serial number for the records by overriding the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/databinding-cs5/app/app.component.ts %}
+{% include samples/grid/databinding-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/databinding-cs5/app/app.module.ts %}
+{% include samples/grid/databinding-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/databinding-cs5/app/main.ts %}
+{% include samples/grid/databinding-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs5" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs5" %}
 
 ## Offline mode
 

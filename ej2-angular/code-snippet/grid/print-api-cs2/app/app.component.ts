@@ -19,12 +19,13 @@ import { ToolbarItems, PageSettingsModel, GridComponent, Column } from '@syncfus
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    public pageOptions: PageSettingsModel;
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    public pageOptions?: PageSettingsModel;
+    @ViewChild('grid')
+    public grid?: GridComponent;
     toolbarClick() {
-        for (const columns of this.grid.columns) {
+        for (const columns of (this.grid as any).columns) {
             if ((columns as Column).field === 'CustomerID') {
                 (columns as Column).visible = true;
             } else if ((columns as Column).field === 'ShipCity') {
@@ -34,7 +35,7 @@ export class AppComponent implements OnInit {
     }
 
     printComplete() {
-        for (const columns of this.grid.columns) {
+        for (const columns of (this.grid as any).columns) {
             if ((columns as Column).field === 'CustomerID') {
                 (columns as Column).visible = false;
             } else if ((columns as Column).field === 'ShipCity') {

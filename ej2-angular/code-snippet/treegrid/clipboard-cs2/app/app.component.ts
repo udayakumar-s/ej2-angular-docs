@@ -4,7 +4,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { sampleData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
+import { SelectionSettingsModel, TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -22,13 +22,13 @@ import { TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public dropData: Object[];
-    public fields: Object;
-    public selectionOptions: SelectionSettingsModel;
-    public pageSettings: Object ;
+    public data?: Object[];
+    public dropData?: Object[];
+    public fields?: Object;
+    public selectionOptions?: SelectionSettingsModel;
+    public pageSettings?: Object ;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
 
     onChange(e: ChangeEventArgs): any {
         let mode: any = <string>e.value;
-        this.treeGridObj.copyHierarchyMode = mode;
+        (this.treeGridObj as TreeGridComponent).copyHierarchyMode = mode;
     }
 }
 

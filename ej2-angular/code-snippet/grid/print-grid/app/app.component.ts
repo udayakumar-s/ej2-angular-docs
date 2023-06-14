@@ -29,27 +29,29 @@ type carType = { CustomerID: string, CustomerName: string, ContactName: string }
 })
 export class AppComponent implements OnInit {
 
-    public names: string[] = ['AROUT', 'BERGS', 'BLONP', 'CHOPS', 'ERNSH'];
-    public toolbar: ToolbarItems[];
+    public names?: string[] = ['AROUT', 'BERGS', 'BLONP', 'CHOPS', 'ERNSH'];
+    public toolbar?: ToolbarItems[];
 
-    @ViewChild('mastergrid') public mastergrid: GridComponent;
-    @ViewChild('detailgrid') public detailgrid: GridComponent;
+    @ViewChild('mastergrid') public mastergrid?: GridComponent;
+    @ViewChild('detailgrid') public detailgrid?: GridComponent;
 
-    public masterdata: Object[];
+    public masterdata?: Object[];
+
+    public data: any = data;
 
     ngOnInit(): void {
-        this.masterdata = customerData.filter((e: carType) => this.names.indexOf(e.CustomerID) !== -1);
+        this.masterdata = customerData.filter((e: any) => (this.names as any).indexOf(e.CustomerID) !== -1);
         this.toolbar = ['Print'];
     }
     public onRowSelected(args: RowSelectEventArgs): void {
-        let selectedRecord: carType = args.data as carType;
-        this.detailgrid.dataSource = data.filter((record: carType) => record.CustomerName === selectedRecord.ContactName).slice(0, 5);
-        document.getElementById('key').innerHTML = selectedRecord.ContactName;
+        let selectedRecord: carType = (args as any).data as carType;
+        (this.detailgrid as GridComponent).dataSource = data.filter((record: any) => record.CustomerName === selectedRecord.ContactName).slice(0, 5);
+        (document.getElementById('key') as any).innerHTML = selectedRecord.ContactName;
     }
-    public beforePrint(args): void {
+    public beforePrint(args: any): void {
         let customEle = document.createElement('div');
-        customEle.innerHTML = document.getElementsByClassName('e-statustext')[0].innerHTML + this.detailgrid.element.innerHTML;
+        customEle.innerHTML = document.getElementsByClassName('e-statustext')[0].innerHTML + (this.detailgrid as GridComponent).element.innerHTML;
         customEle.appendChild(document.createElement('br'));
-        args.element.append(customEle);
+        (args as any).element.append(customEle);
     }
 }

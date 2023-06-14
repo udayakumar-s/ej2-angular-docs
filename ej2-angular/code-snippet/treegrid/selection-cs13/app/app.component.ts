@@ -16,16 +16,16 @@ import { count } from 'console';
 })
 export class AppComponent implements OnInit {
     public data: Object[] = [];
-    public selectionOptions: SelectionSettingsModel;
+    public selectionOptions?: SelectionSettingsModel;
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
         this.selectionOptions = { cellSelectionMode: 'Flow', type: 'Multiple' };
     }
     rowSelected(args: RowSelectEventArgs) {
         debugger
-        var selectedRows: Element[] = this.treegrid.getSelectedRows();
+        var selectedRows: Element[] = (this.treegrid as TreeGridComponent).getSelectedRows();
         var selectedRowsCount: number = selectedRows.length;
         alert('Selected rows count : ' + selectedRowsCount)
     }

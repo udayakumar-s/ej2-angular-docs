@@ -24,17 +24,17 @@ To learn about what are all the edit modes and edit types are available in Angul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs18/app/app.component.ts %}
+{% include samples/grid/edit-cs18/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs18/app/app.module.ts %}
+{% include samples/grid/edit-cs18/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs18/app/main.ts %}
+{% include samples/grid/edit-cs18/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs18" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs18" %}
 
 > * If [`columns.isIdentity`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
 > * You can disable editing for a particular column, by specifying [`columns.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowediting) to **false**.
@@ -45,17 +45,17 @@ The grid toolbar has the [built-in items](../../toolbar/item-configuration) to e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs19/app/app.component.ts %}
+{% include samples/grid/edit-cs19/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs19/app/app.module.ts %}
+{% include samples/grid/edit-cs19/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs19/app/main.ts %}
+{% include samples/grid/edit-cs19/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs19" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs19" %}
 
 ## Disable editing for particular column
 
@@ -65,17 +65,17 @@ In the following demo, editing is disabled for the **CustomerID** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs20/app/app.component.ts %}
+{% include samples/grid/edit-cs20/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs20/app/app.module.ts %}
+{% include samples/grid/edit-cs20/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs20/app/main.ts %}
+{% include samples/grid/edit-cs20/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs20" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs20" %}
 
 ## Disable editing for a particular row or cell
 
@@ -85,33 +85,33 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs21/app/app.component.ts %}
+{% include samples/grid/edit-cs21/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs21/app/app.module.ts %}
+{% include samples/grid/edit-cs21/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs21/app/main.ts %}
+{% include samples/grid/edit-cs21/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs21" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs21" %}
 
 For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs22/app/app.component.ts %}
+{% include samples/grid/edit-cs22/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs22/app/app.module.ts %}
+{% include samples/grid/edit-cs22/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs22/app/main.ts %}
+{% include samples/grid/edit-cs22/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs22" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs22" %}
 
 ## Editing template column
 
@@ -121,17 +121,17 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs23/app/app.component.ts %}
+{% include samples/grid/edit-cs23/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs23/app/app.module.ts %}
+{% include samples/grid/edit-cs23/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs23/app/main.ts %}
+{% include samples/grid/edit-cs23/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs23" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs23" %}
 
 ## Troubleshoot editing works only for first row
 
@@ -145,17 +145,17 @@ In the following example, the textbox is rendered in the Freight column using a 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs24/app/app.component.ts %}
+{% include samples/grid/edit-cs24/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs24/app/app.module.ts %}
+{% include samples/grid/edit-cs24/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs24/app/main.ts %}
+{% include samples/grid/edit-cs24/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs24" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs24" %}
 
 ## See Also
 

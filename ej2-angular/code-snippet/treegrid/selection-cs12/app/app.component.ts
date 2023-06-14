@@ -15,15 +15,15 @@ import { CellSelectEventArgs } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
     public data: Object[] = [];
-    public selectionOptions: SelectionSettingsModel;
+    public selectionOptions?: SelectionSettingsModel;
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
         this.selectionOptions = { cellSelectionMode: 'Flow', type: 'Multiple', mode:'Cell' };
     }
     cellSelected(args: CellSelectEventArgs) {
-        var cellSelected: object[] = this.treegrid.getSelectedRowCellIndexes();
+        var cellSelected: object[] = this.treegrid?.getSelectedRowCellIndexes() as object[];
         var cellSelectedCount: number = cellSelected.length;
         alert('Selected row cell count : ' + cellSelectedCount)
     }

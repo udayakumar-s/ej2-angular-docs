@@ -23,13 +23,13 @@ import { employeeData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = employeeData;
     }
 
-    onClick(event, firstName) {
+    onClick(event: any, firstName: any) {
         var url = 'https://www.meaningofthename.com/';
         var searchUrl = url + firstName; 
         window.open(searchUrl);

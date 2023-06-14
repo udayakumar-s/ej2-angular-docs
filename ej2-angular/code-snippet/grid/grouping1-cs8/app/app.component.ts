@@ -23,28 +23,25 @@ import { FilterService, PageService, GridComponent } from '@syncfusion/ej2-angul
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
     ngOnInit(): void {
         this.data = data;
     }
 
     clickHandler() {
-        var savedProperties = JSON.parse(this.grid.getPersistData());
-        var gridColumnsState = Object.assign([], this.grid.getColumns());
-        savedProperties.columns.forEach(function (col) {
-            var headerText = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerText'];
-            var colTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['template'];
-            var headerTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerTemplate'];
+        var savedProperties = JSON.parse((this.grid as any).getPersistData());
+        var gridColumnsState = Object.assign([], (this.grid as any).getColumns());
+        savedProperties.columns.forEach(function (col: any) {
+            var headerText = gridColumnsState.find(function (colColumnsState: any) { return colColumnsState.field === col.field; })['headerText'];
+            var colTemplate = gridColumnsState.find(function (colColumnsState: any) { return colColumnsState.field === col.field; })['template'];
+            var headerTemplate = gridColumnsState.find(function (colColumnsState: any) { return colColumnsState.field === col.field; })['headerTemplate'];
             col.headerText = 'Text Changed';
             col.template = colTemplate;
             col.headerTemplate = headerTemplate;
         });
         console.log(savedProperties);
-        this.grid.setProperties(savedProperties);
+        (this.grid as any).setProperties(savedProperties);
    }
 }
-
-
-

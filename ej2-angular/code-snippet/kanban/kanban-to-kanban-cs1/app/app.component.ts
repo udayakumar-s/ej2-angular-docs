@@ -33,9 +33,9 @@ import { kanbanAData, kanbanBData } from './datasource';
 })
 export class AppComponent {
   @ViewChild('KanbanA')
-    public kanbanObjA: KanbanComponent;
+    public kanbanObjA?: KanbanComponent;
     @ViewChild('KanbanB')
-    public kanbanObjB: KanbanComponent;
+    public kanbanObjB?: KanbanComponent;
     public dataA: Object[] = kanbanAData;
     public dataB: Object[] = kanbanBData;
     public cardSettings: CardSettingsModel = {
@@ -47,16 +47,16 @@ export class AppComponent {
     onKanbanADragStop(args: DragEventArgs) {
       let kanbanBElement: Element = <Element>closest(args.event.target as Element, '#KanbanB');
       if (kanbanBElement) {
-        this.kanbanObjA.deleteCard(args.data);
-        this.kanbanObjB.addCard(args.data, args.dropIndex);
+        (this.kanbanObjA as KanbanComponent).deleteCard(args.data);
+        (this.kanbanObjB as KanbanComponent).addCard(args.data, args.dropIndex);
         args.cancel = true;
     }
     };
     onKanbanBDragStop(args: DragEventArgs) {
       let kanbanAElement: Element = <Element>closest(args.event.target as Element, '#KanbanA');
       if (kanbanAElement) {
-        this.kanbanObjB.deleteCard(args.data);
-        this.kanbanObjA.addCard(args.data, args.dropIndex);
+        (this.kanbanObjB as KanbanComponent).deleteCard(args.data);
+        (this.kanbanObjA as KanbanComponent).addCard(args.data, args.dropIndex);
         args.cancel = true;
     }
     };

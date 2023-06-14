@@ -6,7 +6,7 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    styleUrls: ['./app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None,
     template: `<ejs-treegrid [dataSource]='data' idMapping='TaskID' parentIdMapping='parentID' [treeColumnIndex]='1' [height]='317'>
         <e-columns>
@@ -21,7 +21,7 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public customAttributes: Object;
+    public customAttributes?: Object;
 
     ngOnInit(): void {
         this.data = projectData;

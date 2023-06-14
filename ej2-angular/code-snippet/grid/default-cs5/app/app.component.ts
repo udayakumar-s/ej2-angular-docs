@@ -19,7 +19,7 @@ import { DetailRowService, GridModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
+    public pData?: object[];
     public childGrid: GridModel = {
         dataSource: data,
         queryString: 'EmployeeID',

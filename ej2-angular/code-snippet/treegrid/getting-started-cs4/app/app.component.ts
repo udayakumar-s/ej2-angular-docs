@@ -18,9 +18,9 @@ import {PageSettingsModel, SortSettingsModel } from '@syncfusion/ej2-angular-tre
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public sortSettings: SortSettingsModel;
-    public pageSettings: PageSettingsModel;
+    public data?: Object[];
+    public sortSettings?: SortSettingsModel;
+    public pageSettings?: PageSettingsModel;
 
     ngOnInit(): void {
         this.data = sampleData;

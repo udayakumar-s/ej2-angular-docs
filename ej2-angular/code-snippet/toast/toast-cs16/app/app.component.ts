@@ -14,7 +14,7 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') public element: any;
     public position = { X: 'Right', Y: 'Bottom' };
     public toasts = [
     { title: 'Warning !', content: 'There was a problem with your network connection.', cssClass: 'e-toast-warning' },
@@ -24,11 +24,11 @@ export class AppComponent {
     public toastFlag: number = 0;
 
 
-    onCreate() {
+    onCreate(args: any) {
       this.element.show(this.toasts[this.toastFlag]);
       ++this.toastFlag;
     }
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
     toastShow() {

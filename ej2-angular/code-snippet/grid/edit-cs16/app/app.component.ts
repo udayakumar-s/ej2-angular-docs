@@ -3,7 +3,9 @@ import {Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, G
 import {EditService, ToolbarService, PageService} from '@syncfusion/ej2-angular-grids';
 import {RichTextEditor, Toolbar as RTEToolbar, Image, Link, HtmlEditor, Table, QuickToolbar, NodeSelection} from '@syncfusion/ej2-richtexteditor';
 import { data } from './datasource';
+
 RichTextEditor.Inject(RTEToolbar, Link, Image, HtmlEditor, QuickToolbar);
+
 @Component({
   selector: 'app-root',
   template: `<ejs-grid #normalgrid id="Normalgrid" [dataSource]="data" allowPaging="true" [pageSettings]="pageSettings" [editSettings]="editSettings" [toolbar]="toolbar" (created)="created($event)">
@@ -16,59 +18,61 @@ RichTextEditor.Inject(RTEToolbar, Link, Image, HtmlEditor, QuickToolbar);
     </ejs-grid>`,
   providers: [ToolbarService, EditService, PageService],
 })
+
 export class AppComponent implements OnInit {
-  public data: object[];
-  @ViewChild('normalgrid') public grid: GridComponent;
-  public editSettings: EditSettingsModel;
-  public pageOptions: PageSettingsModel;
-  public toolbar: ToolbarItems[];
-  public formatOptions: object[];
-  public orderidrules: Object;
-  public customeridrules: Object;
-  public freightrules: Object;
-  public editParams: IEditCell;
-  public disableHtmlEncode;
-  public richTextEditor;
-  public rteElement: HTMLElement;
-  public formatoptions: Object;
+  public data?: object[];
+  @ViewChild('normalgrid') public grid?: GridComponent;
+  public editSettings?: EditSettingsModel;
+  public pageOptions?: PageSettingsModel;
+  public toolbar?: ToolbarItems[];
+  public formatOptions?: object[];
+  public orderidrules?: Object;
+  public customeridrules?: Object;
+  public freightrules?: Object;
+  public editParams?: IEditCell;
+  public disableHtmlEncode?: boolean;
+  public richTextEditor?: RichTextEditor;
+  public rteElement?: HTMLElement;
+  public formatoptions?: Object;
   public createShipAddressFn = () => {
-    this.rteElement = document.createElement('textarea');
-    return this.rteElement;
+    (this as any).rteElement = document.createElement('textarea');
+    return (this as any).rteElement;
   };
   public readShipAddressFn = () => {
-    return this.richTextEditor.value;
+    return this.richTextEditor?.value;
   };
-  public writeShipAddressFn = (args) => {
+  public writeShipAddressFn = (args: any) => {
     this.richTextEditor = new RichTextEditor({
-      value: args.rowData[args.column.field],
+      value: (args as any).rowData[(args as any).column.field],
     });
-    this.richTextEditor.appendTo(this.rteElement);
+    this.richTextEditor?.appendTo((this as any).rteElement);
   };
   public destroyShipAddressFn = () => {
-    this.richTextEditor.destroy();
+    this.richTextEditor?.destroy();
   };
   public valueAccessor = (field: string, sdata: object, column: object) => {
-    var value = sdata[field];
+    var value = (sdata as any)[field as string];
     if (value != undefined) {
       return value.split('\n').join('<br>');
     } else {
       return '';
     }
   };
+  public pageSettings?: any;
   ngOnInit(): void {
     this.data = data;
-    this.editSettings = {
+    (this as any).editSettings = {
       allowEditing: true,
       allowAdding: true,
       allowDeleting: true,
     };
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    this.pageOptions = { pageSizes: true, pageSize: 8 };
-    this.disableHtmlEncode = false;
-    this.orderidrules = { required: true, number: true };
-    this.customeridrules = { required: true };
-    this.freightrules = { required: true };
-    this.formatoptions = { type: 'dateTime', format: 'M/d/y hh:mm a' };
+    (this as any).pageOptions = { pageSizes: true, pageSize: 8 };
+    (this as any).disableHtmlEncode = false;
+    (this as any).orderidrules = { required: true, number: true };
+    (this as any).customeridrules = { required: true };
+    (this as any).freightrules = { required: true };
+    (this as any).formatoptions = { type: 'dateTime', format: 'M/d/y hh:mm a' };
     this.editParams = {
       create: this.createShipAddressFn,
       read: this.readShipAddressFn,
@@ -76,7 +80,7 @@ export class AppComponent implements OnInit {
       destroy: this.destroyShipAddressFn,
     };
   }
-  created = (args) => {
+  created = (args: any) => {
     (this.grid as any).keyConfigs.enter = '';
   };
 }

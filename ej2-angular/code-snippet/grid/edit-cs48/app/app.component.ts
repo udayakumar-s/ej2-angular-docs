@@ -29,9 +29,9 @@ L10n.load({
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;
@@ -39,14 +39,14 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
 
-    actionComplete(args) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            const dialog = args.dialog;
+    actionComplete(args: any) {
+        if (((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add')) {
+            const dialog = (args as any).dialog;
             const CustomerID = 'CustomerID';
             dialog.showCloseIcon = false;
             dialog.height = 400;
             // change the header of the dialog
-            dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + args.rowData['CustomerID'] : 'New Customer';
+            dialog.header = (args as any).requestType === 'beginEdit' ? 'Edit Record of ' + (args as any).rowData['CustomerID'] : 'New Customer';
         }
     }
 }

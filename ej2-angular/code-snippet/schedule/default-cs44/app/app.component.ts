@@ -15,13 +15,13 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent {
     @ViewChild('scheduleObj', { static: true })
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     @ViewChild('addButtonObj', { static: true })
-    public addButtonObj: ButtonComponent;
+    public addButtonObj?: ButtonComponent;
     @ViewChild('editButtonObj', { static: true })
-    public editButtonObj: ButtonComponent;
+    public editButtonObj?: ButtonComponent;
     @ViewChild('deleteButtonObj', { static: true })
-    public deleteButtonObj: ButtonComponent;
+    public deleteButtonObj?: ButtonComponent;
     public data: object [] = [{
         Id: 3,
         Subject: 'Testing',
@@ -51,8 +51,8 @@ export class AppComponent {
             EndTime: new Date(2018, 1, 15, 11, 30),
             IsAllDay: false
             }];
-        this.scheduleObj.addEvent(Data);
-        this.addButtonObj.element.setAttribute('disabled','true');
+        this.scheduleObj?.addEvent(Data);
+        this.addButtonObj?.element.setAttribute('disabled','true');
     }
     edit(): void {
         let data: { [key: string]: Object; } = {
@@ -62,12 +62,12 @@ export class AppComponent {
             EndTime: new Date(2018, 1, 11, 11, 0),
             IsAllDay: false
         };
-        this.scheduleObj.saveEvent(data);
-        this.editButtonObj.element.setAttribute('disabled','true');
+        this.scheduleObj?.saveEvent(data);
+        this.editButtonObj?.element.setAttribute('disabled','true');
     }
     delete(): void {
-        this.scheduleObj.deleteEvent(4);
-        this.deleteButtonObj.element.setAttribute('disabled','true');
+        this.scheduleObj?.deleteEvent(4);
+        this.deleteButtonObj?.element.setAttribute('disabled','true');
     }
 }
 

@@ -19,7 +19,7 @@ import { DetailRowService, GridModel, ToolbarService, GridComponent } from '@syn
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
+    public pData?: object[];
     public childGrid: GridModel = {
         dataSource: data,
         queryString: 'EmployeeID',
@@ -30,7 +30,8 @@ export class AppComponent implements OnInit {
             { field: 'ShipName', headerText: 'Ship Name', width: 150 }
         ],
     };
-    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.pData = employeeData;

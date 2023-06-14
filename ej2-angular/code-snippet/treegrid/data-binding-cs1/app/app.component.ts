@@ -3,6 +3,7 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { Ajax } from '@syncfusion/ej2-base';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { DataManager } from '@syncfusion/ej2-data';
 
 @Component({
     selector: 'app-container',
@@ -18,18 +19,18 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data?: DataManager;
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
     ngOnInit(): void {
-}
- click(e: any): any{
+    }
+    click(): any{
     let ajax = new Ajax("https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData","GET");
     let trgrid = this.treegrid;
     ajax.send();
     ajax.onSuccess = function (data: string) {
-        trgrid.hideSpinner();
-        trgrid.dataSource = JSON.parse(data);
+        (trgrid as TreeGridComponent).hideSpinner();
+        (trgrid as TreeGridComponent).dataSource = JSON.parse(data);
     };
 }
 }

@@ -2,8 +2,8 @@
 
 import { Component } from '@angular/core';
 import { loadCldr, L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
-import { IDataOptions, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 import * as currencies from './currencies.json';
 import * as cagregorian from './ca-gregorian.json';
 import * as numbers from './numbers.json';
@@ -23,8 +23,8 @@ setCurrencyCode('EUR');
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
-    
+    public dataSourceSettings?: IDataOptions;
+    public width?: string;
     ngOnInit(): void {
         
         L10n.load({
@@ -68,7 +68,7 @@ export class AppComponent {
             }
         });
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],

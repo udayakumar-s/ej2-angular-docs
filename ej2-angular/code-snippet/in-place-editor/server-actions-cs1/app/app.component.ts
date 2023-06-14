@@ -14,13 +14,13 @@ import { InPlaceEditorComponent, ActionEventArgs } from '@syncfusion/ej2-angular
 })
 
 export class AppComponent {
-    @ViewChild('element') editObj: InPlaceEditorComponent;
+    @ViewChild('element') editObj?: InPlaceEditorComponent;
     public value: string[] =  ['JavaScript', 'jQuery'];
     public url = 'https://ej2services.syncfusion.com/development/web-services/api/Editor/UpdateData';
     public frameWorkList: string[] = ['Android', 'JavaScript', 'jQuery', 'TypeScript', 'Angular', 'React', 'Vue', 'Ionic'];
     public model: object = { mode: 'Box', dataSource: this.frameWorkList, placeholder: 'Select skill' };
     chipOnCreate() {
-        this.editObj.element.querySelector('.e-editable-value').innerHTML = this.chipCreation(this.editObj.value, true);
+        (this.editObj?.element.querySelector('.e-editable-value') as Element).innerHTML = this.chipCreation(this.editObj?.value, true);
     }
     public actionSuccess(e: ActionEventArgs): void {
         e.value = this.chipCreation(e.value.split(','), true);
@@ -31,7 +31,7 @@ export class AppComponent {
     public created(): void {
         this.chipOnCreate();
     }
-    chipCreation(data, isSuccess): string {
+    chipCreation(data: any, isSuccess: boolean): string | any {
         let value = '<div class="e-chip-list">';
         [].slice.call(data).forEach((val: string) => {
             value += '<div class="e-chip"> <span class="e-chip-text' + (!isSuccess ? 'e-highlight' : '') + '"> ' + val + '</span></div>';

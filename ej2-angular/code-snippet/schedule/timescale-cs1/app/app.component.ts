@@ -9,7 +9,7 @@ import { Internationalization } from '@syncfusion/ej2-base';
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
   // specifies the template string for the Schedule component
-  templateUrl: 'app/app.component.html'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
     public selectedDate: Date = new Date(2018, 1, 15);

@@ -25,7 +25,7 @@ import { getObject, CustomSummaryType } from '@syncfusion/ej2-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     ngOnInit(): void {
         this.data = summaryData;
     }

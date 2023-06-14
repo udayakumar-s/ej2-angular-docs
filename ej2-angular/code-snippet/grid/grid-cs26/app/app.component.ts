@@ -27,9 +27,9 @@ import { data } from './datasource';
 })
 export class AppComponent {
 
-  public data: Object[] = data;
+  public data?: Object[] = data;
   @ViewChild('grid')
-  public grid: GridComponent;
+  public grid?: GridComponent;
   public alignmentData: Object[] = [
     { text: 'Left', value: 'Left' },
     { text: 'Right', value: 'Right' },
@@ -38,10 +38,10 @@ export class AppComponent {
   ];
 
   public changeAlignment(args: any): void {
-    this.grid.columns.forEach((col) => {
-      col.headerTextAlign = args.value;
+    (this.grid as GridComponent).columns.forEach((col: any) => {
+      col.headerTextAlign = (args as any).value;
     });
-    this.grid.refreshHeader();
+    (this.grid as GridComponent).refreshHeader();
   }
 
 }

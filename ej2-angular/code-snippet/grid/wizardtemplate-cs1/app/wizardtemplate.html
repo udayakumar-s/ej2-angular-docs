@@ -46,8 +46,8 @@
                 </div>
             </div>
             <div id='footer'>
-                <button ejs-button type="button" cssClass="e-info e-btn" style="float: left" (click)="previousBtn($event)" [hidden]="hidden">Previous</button>
-                <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)='nextBtn($event)' [disabled]='next === "Next" && (CustomerID.invalid || OrderID.invalid)'>{{next}}</button>
+                <button ejs-button type="button" cssClass="e-info e-btn" style="float: left" (click)="previousBtn()" [hidden]="hidden">Previous</button>
+                <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)='nextBtn()' [disabled]='next === "Next" && (CustomerID.invalid || OrderID.invalid)'>{{next}}</button>
             </div>
         </div>
     </ng-template>

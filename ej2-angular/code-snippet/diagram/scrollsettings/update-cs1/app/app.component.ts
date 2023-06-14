@@ -11,12 +11,12 @@ import { DiagramComponent, Diagram } from '@syncfusion/ej2-angular-diagrams';
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public created(args: Object): void {
         //Updates scroll settings
-        this.diagram.scrollSettings.horizontalOffset=200;
-        this.diagram.scrollSettings.verticalOffset=30
-        this.diagram.dataBind();
+        (this.diagram as Diagram).scrollSettings.horizontalOffset = 200;
+        (this.diagram as Diagram).scrollSettings.verticalOffset = 30;
+        (this.diagram as Diagram).dataBind();
     }
 }
 

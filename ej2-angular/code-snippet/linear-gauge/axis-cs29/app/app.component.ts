@@ -18,7 +18,7 @@ import { LinearGaugeComponent } from '@syncfusion/ej2-angular-lineargauge';
 })
 export class AppComponent {
   @ViewChild('gauge')
-  public gaugeObj: LinearGaugeComponent;
+  public gaugeObj: LinearGaugeComponent| any;
   clicked() {
     this.gaugeObj.setPointerValue(0, 0, 30);
   };

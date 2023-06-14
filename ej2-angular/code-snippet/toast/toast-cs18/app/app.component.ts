@@ -1,8 +1,6 @@
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
+import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
+import { ToastComponent } from '@syncfusion/ej2-angular-notifications';
 
 @Component({
     selector: 'app-root',
@@ -86,75 +84,75 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') toastObj;
-    @ViewChild('dropDown') dropDownList;
+    @ViewChild('element') toastObj?: ToastComponent;
+    @ViewChild('dropDown') dropDownList?: DropDownList;
 
     public position = { X: 'Right', Y: 'Bottom' };
     public dropdownDB = ['Top Left', 'Top Right', 'Top Center', 'Bottom Left', 'Bottom Right', 'Bottom Center' ];
     public customFlag = false;
 
-    onCreate() {
+    onCreate(args: any) {
       this.toastShow();
     }
-    btnClick() {
+    btnClick(args: any) {
     if (this.customFlag) {
         this.setcustomPosValue();
     }
-    this.toastObj.hide('All');
+    this.toastObj?.hide('All');
     this.toastShow();
     }
 
-    positionChange(e) {
+    positionChange(e: any) {
       if (e.event.target.checked) {
-        this.toastObj.hide('All');
-        document.getElementById('dropdownChoose').style.display = 'table-cell';
-        document.getElementById('customChoose').style.display = 'none';
-        this.setToastPosValue(this.dropDownList.value.toString());
+        this.toastObj?.hide('All');
+        (document.getElementById('dropdownChoose') as HTMLElement).style.display = 'table-cell';
+        (document.getElementById('customChoose') as HTMLElement ).style.display = 'none';
+        this.setToastPosValue((this.dropDownList as DropDownList).value.toString());
         this.customFlag = false;
         this.toastShow();
       }
     }
 
-    customePosition(e) {
+    customePosition(e: any) {
       if (e.event.target.checked) {
-        this.toastObj.hide('All');
-        document.getElementById('dropdownChoose').style.display = 'none';
-        document.getElementById('customChoose').style.display = 'table-cell';
+        this.toastObj?.hide('All');
+        (document.getElementById('dropdownChoose') as HTMLElement ).style.display = 'none';
+        (document.getElementById('customChoose') as HTMLElement).style.display = 'table-cell';
         this.setcustomPosValue();
         this.customFlag = true;
         this.toastShow();
       }
     }
 
-    dropDownChange(e) {
-    this.toastObj.hide('All');
+    dropDownChange(e: any) {
+    this.toastObj?.hide('All');
     this.setToastPosValue(e.value);
     this.toastShow();
     }
-    globalTargetChange(e) {
+    globalTargetChange(e: any) {
       if (e.event.target.checked) {
-        this.toastObj.hide('All');
-        this.toastObj.target = document.body;
+        this.toastObj?.hide('All');
+        this.toastObj!.target = document.body;
         this.toastShow();
       }
     }
 
-    targetChange(e) {
+    targetChange(e: any) {
       if (e.event.target.checked) {
-        this.toastObj.hide('All');
-        this.toastObj.target = '#toast_pos_target';
+        this.toastObj?.hide('All');
+        this.toastObj!.target = '#toast_pos_target';
         this.toastShow();
       }
     }
 
      setcustomPosValue(): void {
-    this.toastObj.position.X = parseInt((<any>document.getElementById('xPos')).value, 10);
-    this.toastObj.position.Y = parseInt((<any>document.getElementById('yPos')).value, 10);
+    this.toastObj!.position.X = parseInt((<any>document.getElementById('xPos')).value, 10);
+    this.toastObj!.position.Y = parseInt((<any>document.getElementById('yPos')).value, 10);
      }
 
  setToastPosValue(value: string): void {
     value = value.toLowerCase().replace(' ', '');
-    let toastObj = this.toastObj;
+    let toastObj: ToastComponent = this.toastObj as ToastComponent;
     switch (value) {
         case 'topleft':
             toastObj.position.X = 'Left'; toastObj.position.Y = 'Top'; break;
@@ -178,7 +176,7 @@ export class AppComponent {
     toastShow() {
             setTimeout(
         () => {
-            this.toastObj.show();
+            this.toastObj?.show();
         }, 700);
     }
 }

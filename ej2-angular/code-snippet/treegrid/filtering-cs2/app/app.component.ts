@@ -4,6 +4,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { DataUtil } from '@syncfusion/ej2-data';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
+import { Grid } from '@syncfusion/ej2-grids';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
@@ -24,9 +25,9 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
-    public data: Object[];
-    public filterSettings: Object;
+    public treegrid?: TreeGridComponent;
+    public data?: Object[];
+    public filterSettings?: Object;
     public dropdata: string[] = [];
     public fields: object = { text: 'taskName', value: 'taskName' };
     public height = '220px';
@@ -35,7 +36,7 @@ export class AppComponent implements OnInit {
         this.filterSettings = {type: 'Excel'};
     }
     created(args: any): void{
-        this.dropdata = DataUtil.distinct(this.treegrid.grid.dataSource, 'taskName') as string[];
+        this.dropdata = DataUtil.distinct(((this.treegrid as TreeGridComponent).grid as Grid).dataSource as any, 'taskName') as string[];
     }
 }
 

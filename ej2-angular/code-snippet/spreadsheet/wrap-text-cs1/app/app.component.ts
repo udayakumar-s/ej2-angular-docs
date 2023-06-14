@@ -50,20 +50,20 @@ import { dataSource } from './datasource';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        this.spreadsheetObj.cellFormat({ verticalAlign: 'middle' }, 'A1:H5');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'A2:B5');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'D2:D5');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.spreadsheetObj!.cellFormat({ verticalAlign: 'middle' }, 'A1:H5');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'A2:B5');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'D2:D5');
 
         // To wrap the cells from E2 to E5 range
-        this.spreadsheetObj.wrap('E2:E5');
+        this.spreadsheetObj!.wrap('E2:E5');
         // To unwrap the H3 cell
-        this.spreadsheetObj.wrap('H3', false);
+        this.spreadsheetObj!.wrap('H3', false);
     }
 }
 

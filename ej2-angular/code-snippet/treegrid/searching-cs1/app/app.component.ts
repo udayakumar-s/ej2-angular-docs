@@ -16,8 +16,8 @@ import { sampleData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public toolbarOption: string[];
+    public data?: Object[];
+    public toolbarOption?: string[];
 
     ngOnInit(): void {
         this.data = sampleData;

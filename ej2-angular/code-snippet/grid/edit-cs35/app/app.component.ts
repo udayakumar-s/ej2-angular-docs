@@ -37,17 +37,17 @@ let salaryDetails: { [key: string]: Object }[] = [
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public data: object[];
-    public rules: object;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public roleParams: IEditCell;
-    public salaryParams: IEditCell;
-    public valChange(args) {
-        window['role'] = args.value;
+    public data?: object[];
+    public rules?: object;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public roleParams?: IEditCell;
+    public salaryParams?: IEditCell;
+    public valChange(args: any) {
+        (window as any)['role'] = (args as any).value;
     }
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     public ngOnInit(): void {
         (window as any).role = '';
@@ -77,55 +77,55 @@ export class AppComponent implements OnInit {
         };
   }
 
-public customFn(args) {
-    switch (window['role']) {
-        case 'Engineer':
-            if (args.value > 10000 && args.value < 15000) {
-                return true;
-            } else {
-                this.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary';
-            }
-        break;
+    public customFn(args: any) {
+        switch ((window as any)['role']) {
+            case 'Engineer':
+                if ((args as any).value > 10000 && (args as any).value < 15000) {
+                    return true;
+                } else {
+                    (this.rules as any)['Salary']['required'][1] = 'Please enter valid Engineer Salary';
+                }
+            break;
 
-        case 'TeamLead':
-            if (args.value > 15000 && args.value < 20000) {
-                return true;
-            } else {
-                this.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary';
-            }
-        break;
+            case 'TeamLead':
+                if ((args as any).value > 15000 && (args as any).value < 20000) {
+                    return true;
+                } else {
+                    (this.rules as any)['Salary']['required'][1] = 'Please enter valid TeamLead Salary';
+                }
+            break;
 
-        case 'Manager':
-            if (args.value > 20000 && args.value < 25000) {
-                return true;
-            } else {
-                this.rules['Salary']['required'][1] = 'Please enter valid Manager Salary';
-            }
-        break;
+            case 'Manager':
+                if ((args as any).value > 20000 && (args as any).value < 25000) {
+                    return true;
+                } else {
+                    (this.rules as any)['Salary']['required'][1] = 'Please enter valid Manager Salary';
+                }
+            break;
 
-        case 'Sales':
-            if (args.value > 5000 && args.value < 25000) {
-                return true;
-            } else {
-                this.rules['Salary']['required'][1] = 'Please enter valid Manager Salary';
-            }
-        break;
+            case 'Sales':
+                if ((args as any).value > 5000 && (args as any).value < 25000) {
+                    return true;
+                } else {
+                    (this.rules as any)['Salary']['required'][1] = 'Please enter valid Manager Salary';
+                }
+            break;
 
-        case 'Support':
-            if (args.value > 10000 && args.value < 19000) {
-                return true;
-            } else {
-                this.rules['Salary']['required'][1] = 'Please enter valid Manager Salary';
+            case 'Support':
+                if ((args as any).value > 10000 && (args as any).value < 19000) {
+                    return true;
+                } else {
+                    (this.rules as any)['Salary']['required'][1] = 'Please enter valid Manager Salary';
+            }
+            break;
         }
-        break;
+        return false;
     }
-    return false;
-  }
 
-    load(): void {
-        var column = this.grid.getColumnByField('Salary');
+    load(args: any): void {
+        var column = (this.grid as any).getColumnByField('Salary');
         column.validationRules = {
-            required: [this.customFn, window['Please enter valid salary']],
+            required: [this.customFn, (window as any)['Please enter valid salary']],
        };
     }
 }

@@ -36,7 +36,7 @@ export class AppComponent {
         { groupPath: 'JobGroup', headerAlignment:'Near',
         headerFormat:'${JobGroup}-${EmployeesCount}', border: { color: 'black', width: 0.5 } },
     ]
-    public palette: object =["#f44336", "#29b6f6", "#ab47bc", "#ffc107", "#5c6bc0", "#009688"],
+    public palette: object =["#f44336", "#29b6f6", "#ab47bc", "#ffc107", "#5c6bc0", "#009688"];
 }
 
 

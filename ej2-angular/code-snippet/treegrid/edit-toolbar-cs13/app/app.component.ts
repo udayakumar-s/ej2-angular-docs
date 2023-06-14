@@ -2,7 +2,7 @@
 
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { EditSettingsModel, ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { Column, EditSettingsModel, ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 
 @Component({
@@ -18,14 +18,14 @@ import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public editSettings: EditSettingsModel;
-    public editOptions: Object;
-    public elem: HTMLElement;
-    public autoCompleteObj: AutoComplete;
+    public data?: Object[];
+    public editSettings?: EditSettingsModel;
+    public editOptions?: Object;
+    public elem?: HTMLElement;
+    public autoCompleteObj?: AutoComplete;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
-    public toolbarOptions: ToolbarItems[];
+    public treeGridObj?: TreeGridComponent;
+    public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -37,14 +37,14 @@ export class AppComponent implements OnInit {
                     return this.elem;
                 },
                 read: () => {
-                    return this.autoCompleteObj.value;
+                    return (this.autoCompleteObj as AutoComplete).value;
                 },
                 destroy: () => {
-                    this.autoCompleteObj.destroy();
+                    (this.autoCompleteObj as AutoComplete).destroy();
                 },
-                write: (args: { rowData: Object, column: Column }) => {
+                write: (args: { rowData: Object, column: Column } | any) => {
                     this.autoCompleteObj = new AutoComplete({
-                        dataSource: <{key: string, value: any}[]>this.treeGridObj.grid.dataSource,
+                        dataSource: <{key: string, value: any}[]>(this.treeGridObj as TreeGridComponent).grid.dataSource,
                         fields: { value: 'taskName' },
                         value: args.rowData[args.column.field]
                     });

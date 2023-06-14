@@ -7,7 +7,6 @@ import { SplitButton, ItemModel, MenuEventArgs, DropDownButton } from '@syncfusi
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { Button, ChangeEventArgs, CheckBox } from '@syncfusion/ej2-buttons';
 import { ColorPicker, ColorPickerEventArgs, NumericTextBox, PaletteTileEventArgs, Signature, SignatureFileType } from '@syncfusion/ej2-inputs';
-import { debugOutputAstAsTypeScript } from '@angular/compiler';
 import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
 import { enableRipple } from '@syncfusion/ej2-base';
 
@@ -41,7 +40,7 @@ enableRipple(true);
     </div>`
 })
 export class AppComponent {
-    @ViewChild('signature') signature: SignatureComponent;
+    @ViewChild('signature') signature?: SignatureComponent;
     public strokeWidth: number = 2;
     public items: ItemModel[] = [
     {
@@ -58,13 +57,13 @@ export class AppComponent {
         label: 'Disabled',
         checked: false,
         change: (args: ChangeEventArgs) => {
-            this.signature.disabled = args.checked;
+            (this.signature as SignatureComponent).disabled = args.checked as boolean;
         }
     });
 
     public change(): void {
-        let saveBtn: SplitButton = getComponent(document.getElementById("save-option"), 'split-btn');
-        if (!this.signature.isEmpty()) {
+        let saveBtn: SplitButton = getComponent((document.getElementById("save-option") as HTMLElement), 'split-btn');
+        if (!this.signature?.isEmpty()) {
             this.clearButton();
            saveBtn.disabled = false;
         }
@@ -77,7 +76,7 @@ export class AppComponent {
             width: '60',
             value: 2,
             change: function(args) {
-                let signature: Signature = getComponent(document.getElementById("signature"), 'signature');
+                let signature: Signature = getComponent((document.getElementById("signature") as HTMLElement), 'signature');
                 signature.maxStrokeWidth = args.value;
             }
         });
@@ -87,7 +86,7 @@ export class AppComponent {
             items: this.items,
             content: 'Save',
             select: (args: MenuEventArgs) => {
-                this.signature.save(args.item.text as SignatureFileType, 'Signature');
+                this.signature?.save(args.item.text as SignatureFileType, 'Signature');
             },
             disabled: true
         }, '#save-option');
@@ -106,12 +105,12 @@ export class AppComponent {
             mode: 'Palette',
             cssClass: 'e-stroke-color',
             change: (args: ColorPickerEventArgs) => {
-                if (this.signature.disabled) {
+                if (this.signature?.disabled) {
                     return;
                 }
-                let selElem: HTMLElement = strokeColor.element.nextElementSibling.querySelector('.e-selected-color') as HTMLElement;
+                let selElem: HTMLElement = (strokeColor as any).element.nextElementSibling.querySelector('.e-selected-color') as HTMLElement;
                 selElem.style.borderBottomColor = args.currentValue.rgba;
-                this.signature.strokeColor = args.currentValue.rgba;
+                this.signature!.strokeColor = args.currentValue.rgba;
             }
         });
         strokeColor.appendTo('#stroke-color');
@@ -131,18 +130,18 @@ export class AppComponent {
             mode: 'Palette',
             cssClass: 'e-bg-color',
             change: (args:ColorPickerEventArgs) => {
-                if (this.signature.disabled) {
+                if (this.signature!.disabled) {
                     return;
                 }
-                let selElem: HTMLElement = bgColor.element.nextElementSibling.querySelector('.e-selected-color') as HTMLElement;
-                this.signature.backgroundColor = args.currentValue.rgba;
+                let selElem: HTMLElement = (bgColor.element as HTMLInputElement | any).nextElementSibling.querySelector('.e-selected-color') as HTMLElement;
+                this.signature!.backgroundColor = args.currentValue.rgba;
                 selElem.style.borderBottomColor = args.currentValue.rgba;
             }
         });
         bgColor.appendTo('#bg-color');
-        addClass([strokeColor.element.nextElementSibling.querySelector('.e-selected-color')], 'e-sign-icons');
-        addClass([bgColor.element.nextElementSibling.querySelector('.e-selected-color')], 'e-sign-icons');
-        document.getElementById('save-option').addEventListener('click', this.saveBtnClick);
+        addClass([(strokeColor.element as any).nextElementSibling.querySelector('.e-selected-color')], 'e-sign-icons');
+        addClass([(bgColor.element as any).nextElementSibling.querySelector('.e-selected-color')], 'e-sign-icons');
+        (document.getElementById('save-option') as HTMLElement).addEventListener('click', this.saveBtnClick);
         this.clearButton();
         let toolbarlItems: NodeListOf<Element> = document.querySelectorAll('.e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-tbtn-txt');
         for (var i = 0; i < toolbarlItems.length; i++) {
@@ -158,28 +157,28 @@ export class AppComponent {
     }
 
     public clicked(args: ClickEventArgs): void {
-        let saveBtn: SplitButton = getComponent(document.getElementById("save-option"), 'split-btn');
-        if (this.signature.disabled && args.item.tooltipText != 'Disabled') {
+        let saveBtn: SplitButton = getComponent((document.getElementById("save-option") as HTMLElement), 'split-btn');
+        if (this.signature?.disabled && args.item.tooltipText != 'Disabled') {
             return;
         }
         switch (args.item.tooltipText) {
             case 'Undo (Ctrl + Z)':
-                if (this.signature.canUndo()) {
+                if (this.signature?.canUndo()) {
                     this.signature.undo();
                     this.updateUndoRedo();
                     this.updateSaveBtn();
                 }
                 break;
             case 'Redo (Ctrl + Y)':
-                if (this.signature.canRedo()) {
+                if (this.signature?.canRedo()) {
                     this.signature.redo();
                     this.updateUndoRedo();
                     this.updateSaveBtn();
                 }
                 break;
             case 'Clear':
-                this.signature.clear();
-                if (this.signature.isEmpty) {
+                this.signature?.clear();
+                if (this.signature?.isEmpty) {
                     this.clearButton();
                     saveBtn.disabled = true;
                 }
@@ -188,7 +187,7 @@ export class AppComponent {
     }
 
     public saveBtnClick(): void {
-        let signature: Signature = getComponent(document.getElementById("signature"), 'signature');
+        let signature: Signature = getComponent((document.getElementById("signature") as HTMLElement), 'signature');
         signature.save();
     }
 
@@ -197,7 +196,7 @@ export class AppComponent {
         for (var i = 0; i < tlItems.length; i++) {
             if (tlItems[i].children[0].classList.contains('e-clear')) {
                 let clrBtn: Button = getComponent(tlItems[i] as HTMLElement, 'btn');
-                if (this.signature.isEmpty()) {
+                if (this.signature?.isEmpty()) {
                     clrBtn.disabled = true;
                 } else {
                     clrBtn.disabled = false;
@@ -207,8 +206,8 @@ export class AppComponent {
     }
 
     public updateSaveBtn() {
-        let saveBtn: SplitButton = getComponent(document.getElementById("save-option"), 'split-btn');
-        if (this.signature.isEmpty()) {
+        let saveBtn: SplitButton = getComponent((document.getElementById("save-option") as HTMLElement), 'split-btn');
+        if (this.signature?.isEmpty()) {
             saveBtn.disabled = true;
         }
     }
@@ -224,15 +223,15 @@ export class AppComponent {
                 redoButton = getComponent(tlItems[i] as HTMLElement, 'btn');
             }
         }
-        if (this.signature.canUndo()) {
-            undoButton.disabled = false;
+        if (this.signature?.canUndo()) {
+            undoButton!.disabled = false;
         } else {
-            undoButton.disabled = true;
+            undoButton!.disabled = true;
         }
-        if (this.signature.canRedo()) {
-            redoButton.disabled = false;
+        if (this.signature?.canRedo()) {
+            redoButton!.disabled = false;
         } else {
-            redoButton.disabled = true;
+            redoButton!.disabled = true;
         }
     }
 }

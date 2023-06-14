@@ -7,7 +7,7 @@ import { TabAllModule } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: ` <div class="control-section e-tab-section">
                     <div class="e-sample-resize-container">
                         <!-- Render the Tab Component -->
@@ -32,8 +32,8 @@ import { TabAllModule } from '@syncfusion/ej2-angular-navigations';
                 </div>`
 })
 export class AppComponent {
-    public headerText: Object = [{ text: 'Overview' }, { text: 'FileManager' }];
-    public ajaxSettings: object;
+    public headerText: Object | any = [{ text: 'Overview' }, { text: 'FileManager' }];
+    public ajaxSettings?: object;
     // Mapping Tab items showCloseButton property
     public enableClose: boolean = true;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';

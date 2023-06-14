@@ -1,18 +1,18 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, PivotView, VirtualScrollService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, VirtualScrollService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
   selector: 'app-container',
   providers: [VirtualScrollService, GroupingBarService],
-  template: `<ejs-pivotview #pivotview id='PivotView' [dataSource]=dataSource showGroupingBar='true 'enableVirtualization='true' maxNodeLimitInEditor='100' width='710' height='260'></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]='dataSourceSettings' showGroupingBar='true' enableVirtualization='true' maxNodeLimitInEditor='100' width='710' height='260'></ejs-pivotview>`
 })
 
 export class AppComponent implements OnInit  {
-public dataSource: IDataOptions;
-public date1: number;
-public date2: number;
+public dataSourceSettings?: IDataOptions;
+public date1?: number;
+public date2?: number;
 data(count: number) {
   let result: Object[] = [];
   let dt: number = 0;
@@ -43,12 +43,12 @@ data(count: number) {
   return result;
 }
     ngOnInit(): void {
-        this.dataSource = {
-        data: this.data(1000) as IDataSet[],
-        enableSorting: false,
-        rows: [{ name: 'ProductID' }],
-        columns: [{ name: 'Year' }],
-        values: [{ name: 'Sold', caption: 'Unit Sold' }]
+        this.dataSourceSettings = {
+          dataSource: this.data(1000) as IDataSet[],
+          enableSorting: false,
+          rows: [{ name: 'ProductID' }],
+          columns: [{ name: 'Year' }],
+          values: [{ name: 'Sold', caption: 'Unit Sold' }]
         };
     }
 }

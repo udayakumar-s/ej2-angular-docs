@@ -21,7 +21,7 @@ import { Component } from '@angular/core';
             </div>
         </div>
     </div>`,
-    styleUrls : ["app/app.component.css"]
+    styleUrls : ["./app.component.css"]
 })
 
 export class AppComponent {
@@ -34,12 +34,12 @@ export class AppComponent {
 
   public value = this.customvalues[this.slidervalue];
 
-  public change(args) {
+  public change(args: any) {
     this.value = this.customvalues[args.value];
   }
 
-  public renderedTicks(event) {
-    event.tickElements.forEach((element) => {
+  public renderedTicks(event: any) {
+    event.tickElements.forEach((element: any) => {
       if (element.title !== '10' && element.title !== '100' && element.title !== '500') {
         element.classList.add('e-display-none');
       }

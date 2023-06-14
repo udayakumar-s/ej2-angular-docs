@@ -10,7 +10,7 @@ import { ConnectorModel } from '@syncfusion/ej2-diagrams';
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
 
     public connectors: ConnectorModel[] = [
     {
@@ -28,14 +28,14 @@ export class AppComponent {
         //Set source label to connector
         source: {
           optional: true,
-          lowerBounds: 89,
-          upperBounds: 67
+          lowerBounds: '89',
+          upperBounds: '67'
         },
         //Set target label to connector
         target: {
           optional: true,
-          lowerBounds: 78,
-          upperBounds: 90
+          lowerBounds: '78',
+          upperBounds: '90'
         }
       }
     }
