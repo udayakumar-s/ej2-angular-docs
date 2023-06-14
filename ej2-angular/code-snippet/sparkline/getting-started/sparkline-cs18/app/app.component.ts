@@ -2,7 +2,7 @@
 
 
 import { Component } from '@angular/core';
-import { TooltipSettingsModel } from '@syncfusion/ej2-sparkline';
+import { TooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',
@@ -11,7 +11,7 @@ import { TooltipSettingsModel } from '@syncfusion/ej2-sparkline';
     </ejs-sparkline>`
 })
 export class AppComponent {
-    public data: object[] = [0, 6, 4, 1, 3, 2, 5];   
+    public data: object[] = [0, 6, 4, 1, 3, 2, 5] as any;   
 }
 
 
