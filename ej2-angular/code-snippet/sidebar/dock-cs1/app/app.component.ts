@@ -6,7 +6,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: ` <ejs-sidebar #dockBar id="dockSidebar" [enableDock]='enableDock' [width]='width' [dockSize]='dockSize'>
                     <div class="dock">
                         <ul>
@@ -41,12 +41,12 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
                 </div>`
 })
 export class AppComponent {
-    @ViewChild('dockBar') dockBar: SidebarComponent;
+    @ViewChild('dockBar') dockBar?: SidebarComponent;
     public enableDock: boolean = true;
     public width: string = '220px';
     public dockSize: string = '72px';
     toggleClick() {
-        this.dockBar.toggle();
+        this.dockBar?.toggle();
     }
 }
 

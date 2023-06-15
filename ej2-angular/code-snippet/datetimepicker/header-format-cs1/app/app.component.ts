@@ -2,7 +2,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { DateTimePickerComponent } from '@syncfusion/ej2-angular-calendars';
+import { DateTimePickerComponent, DayHeaderFormats } from '@syncfusion/ej2-angular-calendars';
 import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
@@ -23,11 +23,11 @@ import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-d
         `
 })
 
-export class AppComponent {
+export class AppComponent {
     @ViewChild('default')
-    public datetimepickerObj: DateTimePickerComponent;
+    public datetimepickerObj?: DateTimePickerComponent;
     @ViewChild('select')
-    public dayHeaderFormat: DropDownListComponent;
+    public dayHeaderFormat?: DropDownListComponent;
      // define the JSON of data
     public formatData: Object[] = [
         { Id: 'Short', Label: 'Short' },
@@ -39,11 +39,6 @@ export class AppComponent {
     public waterMark: string = 'Select format type';
     public value: string ='Short';
     public formatHandler(args: ChangeEventArgs): void {
-        this.datetimepickerObj.dayHeaderFormat = args.value;
-
-        }
+        (this.datetimepickerObj as DateTimePickerComponent ).dayHeaderFormat = args.value as DayHeaderFormats;
     }
 }
-
-
-

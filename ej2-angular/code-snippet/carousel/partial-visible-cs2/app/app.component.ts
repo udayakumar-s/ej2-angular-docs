@@ -4,8 +4,6 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: "app-root",
-  partialVisible: true,
-  loop: false,
   template: `<!-- To Render Carousel. -->
     <div class="control-container">
       <ejs-carousel>

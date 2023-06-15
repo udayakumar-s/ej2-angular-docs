@@ -10,15 +10,15 @@ import { CalendarComponent } from '@syncfusion/ej2-angular-calendars';
 })
 
 export class AppComponent {
-    @ViewChild('ejCalendar') ejCalendar: CalendarComponent;
+    @ViewChild('ejCalendar') ejCalendar: any;
     public dateValue: Date = new Date();
     constructor() {
     }
     ngAfterViewInit(): void {
-        document.getElementById('output').textContent = "" + this.ejCalendar.value;
+        (document.getElementById('output') as HTMLElement).textContent = "" + this.ejCalendar.value;
     }
-    onChange(args) {
-        document.getElementById('output').textContent = "" + args.value;
+    onChange(args:any) {
+        (document.getElementById('output') as HTMLElement).textContent = "" + args.value;
     }
 }
 

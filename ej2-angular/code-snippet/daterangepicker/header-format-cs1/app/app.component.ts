@@ -7,7 +7,7 @@ import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-d
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template: `
         <div id="container">
             <div id="daterangepicker">
@@ -25,9 +25,9 @@ import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-d
 
 export class AppComponent {
     @ViewChild('default')
-    public daterangepickerObj: DateRangePickerComponent;
+    public daterangepickerObj?: DateRangePickerComponent;
     @ViewChild('select')
-    public dayHeaderFormat: DropDownListComponent;
+    public dayHeaderFormat?: DropDownListComponent;
      // define the JSON of data
     public formatData: Object[] = [
         { Id: 'Short', Label: 'Short' },
@@ -39,11 +39,10 @@ export class AppComponent {
     public waterMark: string = 'Select format type';
     public value: string ='Short';
     public formatHandler(args: ChangeEventArgs): void {
-        this.daterangepickerObj.dayHeaderFormat = args.value;
-
-        }
+        (this.daterangepickerObj as DateRangePickerComponent | any).dayHeaderFormat = args.value;
     }
 }
+
 
 
 

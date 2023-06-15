@@ -2,9 +2,10 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
+import { DropDownListModel, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 import { enableRipple } from '@syncfusion/ej2-base';
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 /**
  * Adaptive Tab Component
  */
@@ -60,8 +61,8 @@ import { enableRipple } from '@syncfusion/ej2-base';
  </div>`
     })
 export class AppComponent {
-    @ViewChild('element') tabObj: TabComponent;
-    @ViewChild('iconPosition') listObj: DropDownListComponent;
+    @ViewChild('element') tabObj?: TabComponent;
+    @ViewChild('iconPosition') listObj?: DropDownListComponent;
     public positionData: Object[] = [
         { position: 'left', text: 'Left' },
         { position: 'right', text: 'Right'},
@@ -72,9 +73,9 @@ export class AppComponent {
     public height: string = '220px';
     public value: string = 'left';
     public onChange(ChangeEventArgs: any): void {
-          let items: any = this.tabObj.items;
+          let items: any = (this.tabObj as TabComponent).items;
           for(let i: number = 0; i < items.length; i++) {
-             items[i].header.iconPosition = this.listObj.value;
+             items[i].header.iconPosition = this.listObj?.value;
           }
     }
     public headerText: Object = [{ 'text': 'Twitter', 'iconCss': 'e-twitter' }, { 'text': 'Facebook', 'iconCss': 'e-facebook' },{ 'text': 'WhatsApp', 'iconCss': 'e-whatsapp' }];

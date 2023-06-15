@@ -79,23 +79,23 @@ export class AppComponent {
 
     public field:Object ={  dataSource: this.hierarchicalData , id: 'id', text: 'name', child: 'child' };
 
-    @ViewChild ('treevalidate') tree: TreeViewComponent;
+    @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
     // Triggers on node selection
     public onSelect(args: NodeSelectEventArgs): void {
       this.setHeight(args.node);
     }
-    public onCreate() {
+    public onCreate(args: any) {
     // Triggers on mouse hover/keydown event
     ['mouseover','keydown'].forEach( evt =>
-        this.tree.element.addEventListener(evt, (event)=>{this.setHeight(event.target); }));
+        this.tree?.element.addEventListener(evt, (event)=>{this.setHeight(event.target); }));
     }
 
 
     // Sets e-fullrow to be the same as e-text-content
-    public setHeight(element) {
-      if(this.tree.fullRowSelect) {
-        if(element.classList.contains("e-treeview")) {
+    public setHeight(element: any) {
+      if(this.tree?.fullRowSelect) {
+        if(element?.classList.contains("e-treeview")) {
           element = element.querySelector(".e-node-focus").querySelector(".e-fullrow");
         }
         else if(element.classList.contains("e-list-parent")) {

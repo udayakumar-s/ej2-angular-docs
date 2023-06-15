@@ -6,7 +6,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `  <div id='container'>
                         <!-- declaration of sidebar element -->
                         <div id="wrapper">
@@ -213,13 +213,13 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent {
     @ViewChild('sidebar')
-    public sidebar: SidebarComponent;
+    public sidebar?: SidebarComponent;
     public width: string = '290px';
     public onCreated(args: any) {
-         this.sidebar.element.style.visibility = '';
+        (this.sidebar as SidebarComponent).element.style.visibility = '';
     }
     openClick(): void {
-        this.sidebar.toggle();
+        this.sidebar?.toggle();
     }
 
 }

@@ -18,10 +18,10 @@ enableRipple(true);
 
 export class AppComponent {
     @ViewChild('menu')
-    private menuObj: MenuComponent;
+    public menuObj?: MenuComponent;
 
     //Menu items definition
-    private menuItems: MenuItemModel[] = [
+    public menuItems: MenuItemModel[] = [
         {
             text: 'Events',
             items: [
@@ -54,25 +54,25 @@ export class AppComponent {
         { text: 'Services' }
     ];
 
-    private disableItems: string[] = ['Conferences', 'Music', 'Directory'];
+    public disableItems: string[] = ['Conferences', 'Music', 'Directory'];
 
-    private beforeOpen(args: BeforeOpenCloseMenuEventArgs): void {
+    public beforeOpen(args: BeforeOpenCloseMenuEventArgs): void {
         //Handling sub menu items
         for (let i: number = 0; i < args.items.length; i++) {
-            if (this.disableItems.indexOf(args.items[i].text) > -1) {
-                this.menuObj.enableItems([args.items[i].text], false, false);
+            if (this.disableItems.indexOf(args.items[i].text as string) > -1) {
+                this.menuObj?.enableItems([args.items[i].text as string], false, false);
             }
         }
     }
 
-    private created(): void {
+    public created(): void {
         //Disable items
-        this.menuObj.enableItems(this.disableItems, false, false);
+        this.menuObj?.enableItems(this.disableItems, false, false);
     }
 
-    private btnClick(): void {
+    public btnClick(): void {
         //Enable items
-        this.menuObj.enableItems(this.disableItems, true, false);
+        this.menuObj?.enableItems(this.disableItems, true, false);
         this.disableItems = [];
     }
 }

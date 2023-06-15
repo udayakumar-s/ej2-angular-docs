@@ -28,7 +28,7 @@ loadCldr(numberingSystems, gregorian, numbers, detimeZoneNames);
 export class AppComponent {
 
   @ViewChild('dateObj')
-  public dateObj: any;
+  public dateObj?: any;
 
   ngOnInit(): void {
     /*loads the localization text*/
@@ -43,21 +43,21 @@ export class AppComponent {
   }
   constructor() {}
 
-  onChange(args) {
+  onChange(args: any) {
     if (args.value) {
-      document.getElementById('parsed').innerText = this.dateObj.globalize.parseDate(this.dateObj.inputElement.value, {
+      (document.getElementById('parsed') as HTMLElement ).innerText = this.dateObj.globalize.parseDate(this.dateObj.inputElement.value, {
         format: 'dd MMMM yyyy',
         type: 'dateTime',
         skeleton: 'yMd',
       });
-      document.getElementById('formatted').innerText = this.dateObj.globalize.formatDate(this.dateObj.value, {
+      (document.getElementById('formatted') as HTMLElement ).innerText = this.dateObj.globalize.formatDate(this.dateObj.value, {
         format: 'dd MMMM yyyy',
         type: 'dateTime',
         skeleton: 'yMd',
       });
     } else {
-      document.getElementById('parsed').innerText = '';
-      document.getElementById('formatted').innerText = '';
+      (document.getElementById('parsed') as HTMLElement ).innerText = '';
+      (document.getElementById('formatted') as HTMLElement ).innerText = '';
     }
   }
 }

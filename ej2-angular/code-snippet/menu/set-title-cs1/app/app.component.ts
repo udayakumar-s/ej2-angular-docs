@@ -18,7 +18,7 @@ enableRipple(true);
 
 export class AppComponent {
   
-    private menuItems: MenuItemModel[] = [
+    public menuItems: MenuItemModel[] = [
         {
             id: 'settingIcon',
             iconCss: 'em-icons e-file',

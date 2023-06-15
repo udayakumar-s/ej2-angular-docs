@@ -172,7 +172,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     template: `<!-- To Render SpeedDial component. -->
-        <button ejs-speeddial id="speeddial" content='Edit' (beforeItemRender)='beforeItemRender($event) [items]='items'></button>`
+        <button ejs-speeddial id="speeddial" content='Edit' (beforeItemRender)='beforeItemRender($event)' [items]='items'></button>`
 })
 
 export class AppComponent {

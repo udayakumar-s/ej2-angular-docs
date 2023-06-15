@@ -30,11 +30,11 @@ enableRipple(true);
 
 export class AppComponent {
     @ViewChild('sidebar')
-    private sidebarObj: SidebarComponent;
+    public sidebarObj?: SidebarComponent;
     @ViewChild('accordion')
-    private accordionObj: AccordionComponent;
+    public accordionObj?: AccordionComponent;
 
-    private data: { [key: string]: Object }[] = [
+    public data: { [key: string]: Object }[] = [
         {
             header: 'Appliances',
             content: '<div id="Appliances_Items"></div>',
@@ -119,9 +119,9 @@ export class AppComponent {
     ];
 
     //Expanding Event function for Accordion component.
-    private expand(e: ExpandEventArgs): void {
+    public expand(e: ExpandEventArgs): void {
         if (e.isExpanded) {
-            if (e.element.getElementsByClassName('e-acrdn-content')[0].children[0].classList.contains('e-accordion')) {
+            if ((e.element as HTMLElement).getElementsByClassName('e-acrdn-content')[0].children[0].classList.contains('e-accordion')) {
                 return;
             }
             //Initialize Nested Accordion component
@@ -131,25 +131,25 @@ export class AppComponent {
                 clicked: this.clicked
             });
 
-            let elemId: string = e.element.getElementsByClassName('e-acrdn-content')[0].children[0].id;
+            let elemId: string = (e.element as HTMLElement).getElementsByClassName('e-acrdn-content')[0].children[0].id;
             //Render initialized Nested Accordion component
             nestAcrdn.appendTo('#' + elemId);
         }
     }
 
-    private clicked(e: AccordionClickArgs): void {
-        if (!e.item && !(e.originalEvent.target as HTMLElement).closest('.e-acrdn-item').getElementsByClassName('e-tgl-collapse-icon').length) {
-            this.sidebarObj.hide();
+    public clicked(e: AccordionClickArgs): void {
+        if (!e.item && !(((e.originalEvent as Event).target as HTMLElement).closest('.e-acrdn-item') as Element).getElementsByClassName('e-tgl-collapse-icon').length) {
+            this.sidebarObj?.hide();
         }
     }
 
-    private hamburgerClick(): void {
-        this.sidebarObj.show();
-        this.accordionObj.refresh();
+    public hamburgerClick(): void {
+        this.sidebarObj?.show();
+        (this.accordionObj as AccordionComponent).refresh();
     }
 
-    private close(): void {
-        this.sidebarObj.hide();
+    public close(): void {
+        this.sidebarObj?.hide();
     }
 }
 

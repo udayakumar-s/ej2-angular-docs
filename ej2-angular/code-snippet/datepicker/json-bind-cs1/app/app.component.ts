@@ -21,14 +21,14 @@ export interface JSONUser {
     </div>`
 })
 export class AppComponent {
-    public user: User;
+    public user?: User|any;
     public JSONData: JSONUser = JSON.parse('{ "selectedDate": "2018-12-18T08:56:00+00:00"}');
     public model_result: string = JSON.stringify(this.JSONData);
 
     public ngOnInit() {
         this.user = this.JSONData;
     }
-    onChange(args) {
+    onChange(args: any) {
         this.JSONData.selectedDate = args.value;
         this.model_result = JSON.stringify(this.JSONData);
     }

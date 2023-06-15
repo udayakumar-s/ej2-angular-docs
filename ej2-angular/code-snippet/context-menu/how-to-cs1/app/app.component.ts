@@ -26,7 +26,7 @@ export class AppComponent  {
         }];
 
     btnClick() {
-        let contextmenuObj: ContextMenu = getInstance(document.getElementById("contextmenu_0"), ContextMenu) as ContextMenu;
+        let contextmenuObj: ContextMenu = getInstance(document.getElementById("contextmenu_0") as HTMLElement, ContextMenu) as ContextMenu;
         contextmenuObj.open(40, 20);
     }
 }

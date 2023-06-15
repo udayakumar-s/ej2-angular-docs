@@ -13,7 +13,7 @@ import { TreeViewComponent, NodeSelectEventArgs } from '@syncfusion/ej2-angular-
 export class AppComponent {
 
   @ViewChild('tree')
-  public tree: TreeViewComponent;
+  public tree?: TreeViewComponent;
   // Self-referential list data source for TreeView component
   public localData: Object[] = [
     { id: 1, name: 'Parent 1', hasChild: true, expanded: true },
@@ -27,31 +27,31 @@ export class AppComponent {
   ];
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
   public allowMultiSelection: boolean = true;
-  public parent: any; public child: any;
+  public parent?: any; public child?: any;
   public count: boolean = false;
   public childCount: boolean = false;
   // Triggers when you select any node
   public onNodeSelecting(args: NodeSelectEventArgs): void {
     console.log(args.nodeData);
-    let id: any = args.nodeData.parentID;
+    let id: any = args.nodeData['parentID'];
     if (!this.count) {
        this.parent = id;
        this.count = true;
     }
     if (!this.childCount){
-       this.child = args.nodeData.id;
+       this.child = args.nodeData['id'];
        this.childCount = true
     }
     if (id != null && id === this.parent) {
-      let element: HTMLElement = this.tree.element.querySelector('[data-uid="' + id + '"]');
+      let element: HTMLElement = this.tree?.element.querySelector('[data-uid="' + id + '"]') as HTMLElement;
       let liElements: any = element.querySelectorAll('ul li');
       for (let i: number = 0; i < liElements.length; i++) {
-        let nodeData: any = this.tree.getNode(liElements[i]);
-        if (nodeData.selected && args.action === "select" && this.child !== args.nodeData.id) {
+        let nodeData: any = this.tree?.getNode(liElements[i]);
+        if (nodeData.selected && args.action === "select" && this.child !== args.nodeData['id']) {
           args.cancel = true;
         }
         // For unselect the selectedNodes
-        else  if (args.action === "un-select" && this.child === args.nodeData.id) {
+        else  if (args.action === "un-select" && this.child === args.nodeData['id']) {
           this.childCount = false;
           this.child = null;
           this.parent = null;

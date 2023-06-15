@@ -4,7 +4,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { AccordionComponent } from '@syncfusion/ej2-angular-navigations';
 import { Accordion, ExpandEventArgs, AccordionClickArgs, AccordionItemModel } from '@syncfusion/ej2-navigations';
-import { accordion } from './datasource.ts';
+import { accordion } from './datasource';
 
 let dbFlag: number = 0;
 let dynamciAcrdnCount: number = 2;
@@ -43,16 +43,16 @@ let dynamciAcrdnCount: number = 2;
 })
 
 export class AppComponent {
-    @ViewChild('element') acrdnInstance: AccordionComponent;
+    @ViewChild('element') acrdnInstance?: AccordionComponent;
     public expanded(e: ExpandEventArgs) {
          let Elementindex = document.getElementsByClassName("e-expand-state e-selected e-active")[0];
-         if([].slice.call(e.element.parentElement.children).indexOf(e.element) == [].slice.call(e.element.parentElement.children).indexOf(Elementindex)) {
+         if([].slice.call(((e.element as HTMLElement).parentElement as HTMLElement).children).indexOf((e as any).element as never) == [].slice.call(((e.element as HTMLElement).parentElement as HTMLElement).children).indexOf(Elementindex as never)) {
             let array: AccordionItemModel[] = accordion as AccordionItemModel[];
             for(let i: number = 0 ; i < dynamciAcrdnCount; i++)
             {
             if (dbFlag === array.length) {
                 return; }
-            this.acrdnInstance.addItem( array[dbFlag] , this.acrdnInstance.items.length );
+            (this.acrdnInstance as AccordionComponent).addItem( array[dbFlag] , (this.acrdnInstance as AccordionComponent).items.length );
             ++dbFlag;
             }
          }

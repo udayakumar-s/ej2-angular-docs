@@ -29,7 +29,7 @@ export class AppComponent  {
                 ele.classList.remove('e-selected');
             }
             let checkbox: HTMLElement = closest(args.event.target as Element, '.e-checkbox-wrapper') as HTMLElement;
-            let frame: HTMLElement = checkbox.querySelector('.e-frame');
+            let frame: HTMLElement = checkbox.querySelector('.e-frame') as HTMLElement;
             if (checkbox && frame.classList.contains('e-check')) {
                 frame.classList.remove('e-check');
             } else if (checkbox) {

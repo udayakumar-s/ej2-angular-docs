@@ -4,7 +4,7 @@
 import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: ` <ejs-sidebar id="default-sidebar" #sidebar [width]="width" [mediaQuery]= "mediaQuery" [closeOnDocumentClick]='colseOnDocumentClick'>
                     <div class="title"> Sidebar content</div>
                 </ejs-sidebar>
@@ -18,6 +18,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
     public width: string = '280px';
     public mediaQuery: object = window.matchMedia('(max-width: 400px)');
+colseOnDocumentClick: any;
 }
 
 

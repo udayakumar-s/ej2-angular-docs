@@ -21,7 +21,7 @@ loadCldr(numberingSystems, gregorian, numbers);
         `
 })
 
-export class AppComponent {
+export class AppComponent {
     public locale: string = 'ar';
     public isRTL: boolean = true;
     public dateValue: Date = new Date();

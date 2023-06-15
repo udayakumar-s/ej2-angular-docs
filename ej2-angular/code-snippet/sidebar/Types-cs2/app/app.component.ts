@@ -7,7 +7,7 @@ import { ButtonComponent, RadioButtonComponent } from '@syncfusion/ej2-angular-b
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default-sidebar" #sidebar [type]='type' [target]='target' (created)="onCreated($event)" style="visibility: hidden">
                         <div class="title"> Sidebar content</div>
                         <div class="sub-title">
@@ -43,35 +43,37 @@ import { ButtonComponent, RadioButtonComponent } from '@syncfusion/ej2-angular-b
                         </div>`
 })
 export class AppComponent {
-    @ViewChild('sidebar') sidebar: SidebarComponent;
-    @ViewChild('togglebtn') togglebtn: ButtonComponent;
+    onCreated($event: any) {
+    }
+    @ViewChild('sidebar') sidebar?: SidebarComponent;
+    @ViewChild('togglebtn') togglebtn?: ButtonComponent;
 
     public type: string = 'Push';
     public target: string = '.content';
     btnClick(){
-        if(this.togglebtn.element.classList.contains('e-active')){
-            this.togglebtn.content = 'Open';
-            this.sidebar.hide();
+        if((this.togglebtn as ButtonComponent).element.classList.contains('e-active')){
+            (this.togglebtn as ButtonComponent).content = 'Open';
+            this.sidebar?.hide();
         }
         else{
-            this.togglebtn.content = 'Close';
-            this.sidebar.show();
+            (this.togglebtn as ButtonComponent).content = 'Close';
+            this.sidebar?.show();
         }
     }
     closeClick() {
-         this.sidebar.hide();
-         this.togglebtn.element.classList.remove('e-active');
-         this.togglebtn.content = 'Open'
+        this.sidebar?.hide();
+        (this.togglebtn as ButtonComponent).element.classList.remove('e-active');
+        (this.togglebtn as ButtonComponent).content = 'Open'
     }
     changeHandler(args: any) : void {
         if(args.event.target.ej2_instances[0].label == 'Over') {
-            this.sidebar.type = 'Over';
+            (this.sidebar as SidebarComponent).type = 'Over';
         } else if (args.event.target.ej2_instances[0].label == 'Push') {
-             this.sidebar.type = 'Push';
+            (this.sidebar as SidebarComponent).type = 'Push';
         } else if (args.event.target.ej2_instances[0].label == 'Slide') {
-             this.sidebar.type = 'Slide';
+            (this.sidebar as SidebarComponent).type = 'Slide';
         } else {
-             this.sidebar.type = 'Auto';
+            (this.sidebar as SidebarComponent).type = 'Auto';
         }
     }
 }

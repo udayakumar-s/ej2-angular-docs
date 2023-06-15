@@ -16,7 +16,7 @@ export class AppComponent {
     public dateValue: Date = new Date('3/7/2017');
     constructor() {
     }
-    customDates(args): void {
+    customDates(args: any): void {
          let span: HTMLElement;
     //defines the custom HTML element to be added.
     span = document.createElement('span');

@@ -26,7 +26,7 @@ import { CheckBox, RadioButton  } from '@syncfusion/ej2-buttons';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') element?: any;
     public data: string[] = ['Badminton', 'Basketball', 'Cricket', 'Golf', 'Hockey', 'Rugby'];
     public templateEle: any = new NumericTextBox({ format: 'c2', value: 1, width: 150 });
     public templateDropdown: any = new DropDownList({ dataSource: this.data, width: 120, index: 2 });

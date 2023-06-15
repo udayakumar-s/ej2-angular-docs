@@ -8,19 +8,19 @@ import {
   AccordionClickArgs
 } from "@syncfusion/ej2-navigations";
 import { closest } from "@syncfusion/ej2-base";
-import { AccordionComponent } from "@syncfusion/ej2-angular-navigations";
+import { AccordionComponent, AccordionItemModel } from "@syncfusion/ej2-angular-navigations";
 import { CheckBoxComponent } from "@syncfusion/ej2-angular-buttons";
 
 @Component({
   selector: "app-container",
-  templateUrl: "app/app.component.html"
+  templateUrl: "./app.component.html"
 })
 export class AppComponent {
-  @ViewChild("element") acrdnInstance: AccordionComponent;
-  @ViewChild("checkbox1") chk1Instance: CheckBoxComponent;
-  @ViewChild("checkbox2") chk2Instance: CheckBoxComponent;
-  @ViewChild("checkbox3") chk3Instance: CheckBoxComponent;
-  public clickEventArgs: Event;
+  @ViewChild("element") acrdnInstance?: AccordionComponent;
+  @ViewChild("checkbox1") chk1Instance?: CheckBoxComponent;
+  @ViewChild("checkbox2") chk2Instance?: CheckBoxComponent;
+  @ViewChild("checkbox3") chk3Instance?: CheckBoxComponent;
+  public clickEventArgs?: Event;
   public expanding(e: ExpandEventArgs) {
     if (this.clickEventArgs) {
       let header = closest(
@@ -36,34 +36,34 @@ export class AppComponent {
         return;
       }
     }
-    let index = this.acrdnInstance.items.indexOf(e.item);
-    if (index == 0 && !this.chk1Instance.checked) {
+    let index = (this.acrdnInstance as AccordionComponent).items.indexOf(e.item as AccordionItemModel);
+    if (index == 0 && !(this.chk1Instance as CheckBoxComponent).checked) {
       e.cancel = true;
       return;
     }
-    if (index == 1 && !this.chk2Instance.checked) {
+    if (index == 1 && !(this.chk2Instance as CheckBoxComponent).checked) {
       e.cancel = true;
       return;
     }
-    if (index == 2 && !this.chk3Instance.checked) {
+    if (index == 2 && !(this.chk3Instance as CheckBoxComponent).checked) {
       e.cancel = true;
       return;
     }
   }
-  public onClick(e) {
+  public onClick(e: any) {
     this.clickEventArgs = e.originalEvent;
   }
   public changeHandler1() {
-    this.clickEventArgs = null;
-    this.acrdnInstance.expandItem(true, 0);
+    this.clickEventArgs = null as any;
+    (this.acrdnInstance as AccordionComponent).expandItem(true, 0);
   }
   public changeHandler2() {
-    this.clickEventArgs = null;
-    this.acrdnInstance.expandItem(true, 1);
+    this.clickEventArgs = null as any;
+    (this.acrdnInstance as AccordionComponent).expandItem(true, 1);
   }
   public changeHandler3() {
-    this.clickEventArgs = null;
-    this.acrdnInstance.expandItem(true, 2);
+    this.clickEventArgs = null as any;
+    (this.acrdnInstance as AccordionComponent).expandItem(true, 2);
   }
 }
 

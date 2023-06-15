@@ -12,10 +12,12 @@ import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 })
 
 export class AppComponent implements OnInit {
+    ngOnInit(): void {
+    }
 
-    @ViewChild('element') tabObj: TabComponent;
-    @ViewChild('dropDownMode') dropMode: DropDownListComponent;
-    @ViewChild('dropDownPosition') dropPosition: DropDownListComponent;
+    @ViewChild('element') tabObj?: TabComponent;
+    @ViewChild('dropDownMode') dropMode?: DropDownListComponent;
+    @ViewChild('dropDownPosition') dropPosition?: DropDownListComponent;
 
     public ModeDB = [{ id: 'scrollable', mode: 'Scrollable' },
         { id: 'popup', mode: 'Popup' }];
@@ -76,13 +78,13 @@ export class AppComponent implements OnInit {
                 'both game development and the creation of desktop applications.';
 
     public modeChange(e: Object): void {
-        this.tabObj.overflowMode  = this.dropMode.text as any;
-        this.tabObj.dataBind();
+        (this.tabObj as TabComponent).overflowMode  = this.dropMode?.text as any;
+        (this.tabObj as TabComponent).dataBind();
     }
 
     public positionChange(e: Object): void {
-        this.tabObj.headerPlacement = this.dropPosition.text as any;
-        this.tabObj.dataBind();
+        (this.tabObj as TabComponent).headerPlacement = this.dropPosition?.text as any;
+        (this.tabObj as TabComponent).dataBind();
     }
 
 }

@@ -16,8 +16,8 @@ import { isNullOrUndefined } from "@syncfusion/ej2-base";
 })
 
 export class AppComponent {
-    @ViewChild('tabObj') tabObj: TabComponent;
-    @ViewChild('treeObj') treeObj: TreeViewComponent;
+    @ViewChild('tabObj') tabObj?: TabComponent;
+    @ViewChild('treeObj') treeObj?: TreeViewComponent;
 
     public headerText: Object = [{ 'text': 'India' }, { 'text': 'Australia' }, { 'text': 'USA' }, { 'text': 'France' }];
 
@@ -48,14 +48,14 @@ export class AppComponent {
     onNodeDragStop(args: DragAndDropEventArgs): void {
         let dropElement: HTMLElement = <HTMLElement>args.target.closest('#draggableTab .e-toolbar-item');
         if (dropElement != null) {
-            let tabElement: HTMLElement = document.querySelector('#draggableTab');
-            let dropItemIndex: number = [].slice.call(tabElement.querySelectorAll('.e-toolbar-item')).indexOf(dropElement);
+            let tabElement: HTMLElement = document.querySelector('#draggableTab') as HTMLElement;
+            let dropItemIndex: number = [].slice.call(tabElement.querySelectorAll('.e-toolbar-item')).indexOf(dropElement as never);
             let newTabItem: TabItemModel[] = [{
-                header: { 'text': args.draggedNodeData.text.toString() },
-                content: args.draggedNodeData.text.toString() + ' Content'
+                header: { 'text': args.draggedNodeData['text'].toString() },
+                content: args.draggedNodeData['text'].toString() + ' Content'
             }];
-            this.tabObj.addTab(newTabItem, dropItemIndex);
-            this.treeObj.removeNodes([args.draggedNode]);
+            (this.tabObj as TabComponent).addTab(newTabItem, dropItemIndex);
+            this.treeObj?.removeNodes([args.draggedNode]);
             args.cancel = true;
         } else {
             let dropNode: HTMLElement = <HTMLElement>args.target.closest('#draggableTreeview .e-list-item ');
@@ -66,9 +66,9 @@ export class AppComponent {
     }
 
     onNodeDrag(args: DragAndDropEventArgs): void {
-        if (!isNullOrUndefined(args.target.closest('.tab-content'))) {
+        if (!isNullOrUndefined((args.target as HTMLElement).closest('.tab-content') as Element)) {
             args.dropIndicator = 'e-no-drop';
-        } else if (!isNullOrUndefined(args.target.closest('#draggableTab .e-tab-header'))) {
+        } else if (!isNullOrUndefined(args.target.closest('#draggableTab .e-tab-header') as Element)) {
             args.dropIndicator = 'e-drop-in';
         }
     }

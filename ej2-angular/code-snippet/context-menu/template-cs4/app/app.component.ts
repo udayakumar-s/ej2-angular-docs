@@ -26,7 +26,7 @@ export class AppComponent {
 
     public itemBeforeEvent (args: MenuEventArgs) {
         let shortCutSpan: HTMLElement = createElement('span');
-        let text: string = args.item.text;
+        let text: string = args.item.text as string;
         let shortCutText: string = text === 'Save as...' ? 'Ctrl + S' : (text === 'View page source' ? 'Ctrl + U'      : 'Ctrl + Shift + I');
         shortCutSpan.textContent = shortCutText;
         args.element.appendChild(shortCutSpan);

@@ -37,15 +37,15 @@ import { Ajax } from '@syncfusion/ej2-base';
             </ejs-tab>`
 })
 export class AppComponent {
-    @ViewChild('tab_html_markup') tabObj: TabComponent;
+    @ViewChild('tab_html_markup') tabObj?: TabComponent;
     public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
 
    ngOnInit() {
     let ajax: Ajax = new Ajax('./ajax.html', 'GET', true);
     ajax.send().then();
     ajax.onSuccess = (data: string): void => {
-       this.tabObj.items[2].content = data;
-       this.tabObj.refresh();
+       (this.tabObj as TabComponent).items[2].content = data;
+       (this.tabObj as TabComponent).refresh();
     };
     }
 }

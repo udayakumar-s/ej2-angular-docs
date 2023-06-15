@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { TabComponent } from '@syncfusion/ej2-angular-navigations';
+import { HeightStyles, TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-container',
@@ -8,8 +8,8 @@ import { TabComponent } from '@syncfusion/ej2-angular-navigations';
     templateUrl: 'app/app.component.html'
 })
 export class AppComponent {
-    @ViewChild('element') tabObj: TabComponent;
-    @ViewChild('contentHeight') listObj: DropDownListComponent;
+    @ViewChild('element') tabObj?: TabComponent;
+    @ViewChild('contentHeight') listObj?: DropDownListComponent;
     public heightData: Object[] = [
         { mode: 'None', text: 'None' },
         { mode: 'Content', text: 'Content' },
@@ -20,7 +20,7 @@ export class AppComponent {
     public height: string = '220px';
     public value: string = 'Content';
     public onChange(args: ChangeEventArgs): void {
-        this.tabObj.heightAdjustMode = this.listObj.value as string;
+        (this.tabObj as TabComponent).heightAdjustMode = (this.listObj as DropDownListComponent).value as string as HeightStyles;
     }
     public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' }, { 'text': 'WhatsApp' }];
 }

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['index.css'],
+    styleUrls: ['./index.css'],
     template: `<ejs-daterangepicker placeholder='Select a range'>
             <e-presets>
                 <e-preset label="This Week" [start]='weekStart' [end]='weekEnd'></e-preset>

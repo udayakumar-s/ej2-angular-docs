@@ -13,8 +13,8 @@ enableRipple(true);
         `
 })
 
-export class AppComponent {
-   @ViewChild('keyboard') timeObj: TimePickerComponent;
+export class AppComponent {
+   @ViewChild('keyboard') timeObj: any;
     public dateValue: Date = new Date();
     @HostListener('document:keyup', ['$event'])
     handleKeyboardEvent(event: KeyboardEvent) {

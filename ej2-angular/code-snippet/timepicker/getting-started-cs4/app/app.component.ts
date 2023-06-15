@@ -13,7 +13,7 @@ enableRipple(true);
         `
 })
 
-export class AppComponent {
+export class AppComponent {
     public watermark: string = 'Select a time';
     // sets the format property to display the time value in 24 hours format.
     public formatString: string = 'HH:mm';

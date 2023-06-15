@@ -10,7 +10,7 @@ import { TreeViewComponent, NodeSelectEventArgs } from '@syncfusion/ej2-angular-
 })
 export class AppComponent {
     @ViewChild('tree')
-    public tree: TreeViewComponent;
+    public tree?: TreeViewComponent;
 
     constructor() {
     }
@@ -49,7 +49,7 @@ export class AppComponent {
     public selectedNodes: string[] = ['2','6'];
     //Bind the nodeSelected event
     public nodeSelected(e: NodeSelectEventArgs) {
-        alert("The selected node's id: " + this.tree.selectedNodes); // To alert the selected node's id.
+        alert("The selected node's id: " + this.tree?.selectedNodes); // To alert the selected node's id.
     };
 }
 

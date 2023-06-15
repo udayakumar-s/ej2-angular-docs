@@ -1,6 +1,7 @@
 
 
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NodeCheckEventArgs, TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-container',
@@ -9,6 +10,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     @ViewChild('samples')
+    public tree?: TreeViewComponent;
     constructor() {
     }
     // defined the array of data
@@ -107,7 +109,7 @@ export class AppComponent {
     //Bind the nodeChecked event
     public editing(args: NodeCheckEventArgs) {
             //check whether node is root node or not
-            if (args.node.parentNode.parentNode.nodeName !== "LI") {
+            if (args.node.parentNode?.parentNode?.nodeName !== "LI") {
                 args.cancel = true;
             }
     };

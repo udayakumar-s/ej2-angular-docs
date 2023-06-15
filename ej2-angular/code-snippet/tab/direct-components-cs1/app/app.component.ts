@@ -3,9 +3,8 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { enableRipple, createElement } from '@syncfusion/ej2-base';
-import { TabComponent, selectEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 import { ComboBoxComponent } from '@syncfusion/ej2-angular-dropdowns';
-import { CalenderComponent } from '@syncfusion/ej2-angular-calendars';
 
 enableRipple(true);
 
@@ -56,7 +55,7 @@ enableRipple(true);
 })
 
 export class AppComponent {
-    @ViewChild('element') tabInstance: TabComponent;
+    @ViewChild('element') tabInstance?: TabComponent;
 
     // defined the array of data
     public data: string[] = ['Badminton', 'Basketball', 'Cricket', 'Golf', 'Hockey', 'Rugby'];

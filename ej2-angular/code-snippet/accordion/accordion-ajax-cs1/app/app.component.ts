@@ -30,17 +30,17 @@ import { AccordionComponent} from '@syncfusion/ej2-angular-navigations';
 })
 
 export class AppComponent {
-    @ViewChild('acrdnInstance') acrdnInstance: AccordionComponent;
-    public contentData: string;
+    @ViewChild('acrdnInstance') acrdnInstance?: AccordionComponent;
+    public contentData?: string;
 
     ngOnInit() {
     let ajax: Ajax = new Ajax('./ajax.html', 'GET', true);
     ajax.send().then();
     ajax.onSuccess = (data: string): void => {
-       this.acrdnInstance.items[2].content = data;
-       this.acrdnInstance.refresh();
+       (this.acrdnInstance as AccordionComponent).items[2].content = data;
+       (this.acrdnInstance as AccordionComponent).refresh();
     };
     }
-}}
+}
 
 

@@ -6,7 +6,7 @@ import { SidebarComponent, TreeViewComponent } from '@syncfusion/ej2-angular-nav
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `  <div id="wrapper">
                         <div class="col-lg-12 col-sm-12 col-md-12" id="sidebar-section">
                             <div class="col-lg-12 col-sm-12 col-md-12">
@@ -74,9 +74,9 @@ import { SidebarComponent, TreeViewComponent } from '@syncfusion/ej2-angular-nav
 })
 export class AppComponent {
     @ViewChild('sidebarTreeviewInstance')
-    public sidebarTreeviewInstance: SidebarComponent;
+    public sidebarTreeviewInstance?: SidebarComponent;
     @ViewChild('treeviewInstance')
-    public treeviewInstance: TreeViewComponent;
+    public treeviewInstance?: TreeViewComponent;
     public width: string = '290px';
     public enableDock: boolean = true;
     public dockSize:string ="44px";
@@ -134,20 +134,20 @@ export class AppComponent {
     public field:Object ={ dataSource: this.data, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'iconCss' };
 
     public onCreated(args: any) {
-         this.sidebarTreeviewInstance.element.style.visibility = '';
+        (this.sidebarTreeviewInstance as SidebarComponent).element.style.visibility = '';
     }
     public onClose(args: any) {
-        this.treeviewInstance.collapseAll();
+        (this.treeviewInstance as TreeViewComponent).collapseAll();
     }
     openClick() {
-        if(this.sidebarTreeviewInstance.isOpen)
+        if((this.sidebarTreeviewInstance as SidebarComponent).isOpen)
         {
-            this.sidebarTreeviewInstance.hide();
-            this.treeviewInstance.collapseAll();
+            (this.sidebarTreeviewInstance as SidebarComponent).hide();
+            (this.treeviewInstance as TreeViewComponent).collapseAll();
         }
         else {
-            this.sidebarTreeviewInstance.show();
-            this.treeviewInstance.expandAll();
+            (this.sidebarTreeviewInstance as SidebarComponent).show();
+            (this.treeviewInstance as TreeViewComponent).expandAll();
         }  
     }
   };

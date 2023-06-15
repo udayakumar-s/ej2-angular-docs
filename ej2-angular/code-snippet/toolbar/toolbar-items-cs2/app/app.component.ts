@@ -19,7 +19,7 @@ import { ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') element?: any;
      public boldAttribute: any = { 'class': 'custom_bold', 'id': 'itemId' };
      public italicAttribute: any = { 'class': 'custom_italic' };
      public underAttribute: any = { 'class': 'custom_underline' };

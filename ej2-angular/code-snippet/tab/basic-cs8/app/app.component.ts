@@ -3,7 +3,7 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
-import { selectEventArgs } from '@syncfusion/ej2-navigations';
+import { SelectEventArgs } from '@syncfusion/ej2-navigations';
 
 /**
  * Prevent content swipe selection
@@ -45,8 +45,8 @@ import { selectEventArgs } from '@syncfusion/ej2-navigations';
             </ejs-tab>`
 })
 export class AppComponent {
-    @ViewChild('element') tabInstance: TabComponent;
-    public select (e: selectEventArgs) {
+    @ViewChild('element') tabInstance?: TabComponent;
+    public select (e: SelectEventArgs) {
       if (e.isSwiped) {
         e.cancel = true;
       }

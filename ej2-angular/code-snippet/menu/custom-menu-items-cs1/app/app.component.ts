@@ -8,7 +8,7 @@ enableRipple(false);
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['template.css'],
+    styleUrls: ['./template.css'],
     template: `
     <div id="menuTemplate" class="menu-section">
     <div class="menu-control">
@@ -44,11 +44,12 @@ enableRipple(false);
 })
 
 export class AppComponent {
-      constructor(@Inject('sourceFiles') private sourceFiles: any) {
+animation: any;
+      constructor(@Inject('sourceFiles') public sourceFiles: any) {
         sourceFiles.files = ['template.css'];
     }
     //Template datasource
-    private dataSource: { [key: string]: Object }[] = [
+    public dataSource: { [key: string]: Object }[] = [
      {
             category: 'Products',
             options: [
@@ -83,7 +84,7 @@ export class AppComponent {
     ];
 
     // Menu fields definition
-    private menuFields: object = {
+    public menuFields: object = {
         text: ['category', 'value'],
         children: ['options']
     };

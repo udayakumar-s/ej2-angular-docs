@@ -43,16 +43,16 @@ export class AppComponent {
     // Enable the checkbox for TreeView
     public showCheckBox:boolean = true;
 
-    @ViewChild ('treevalidate') treevalidate: TreeViewComponent;
+    @ViewChild ('treevalidate') treevalidate?: TreeViewComponent;
 
-    public nodeCheck(args: NodeKeyPressEventArgs | NodeClickEventArgs): void {
+    public nodeCheck(args: NodeKeyPressEventArgs | NodeClickEventArgs | any): void {
       let checkedNode: any = [args.node];
-      if (args.event.target.classList.contains('e-fullrow') || args.event.key == "Enter") {
-        let getNodeDetails: any = this.treevalidate.getNode(args.node);
+      if ((args.event.target as EventTarget | any).classList.contains('e-fullrow') || args.event.key == "Enter") {
+        let getNodeDetails: any = (this.treevalidate as TreeViewComponent ).getNode(args.node);
         if (getNodeDetails.isChecked == 'true') {
-          this.treevalidate.uncheckAll(checkedNode);
+          (this.treevalidate as TreeViewComponent ).uncheckAll(checkedNode);
         } else {
-          this.treevalidate.checkAll(checkedNode);
+          (this.treevalidate as TreeViewComponent ).checkAll(checkedNode);
         }
       }
     }

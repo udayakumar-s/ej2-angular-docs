@@ -2,7 +2,7 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
-import { TabComponent } from '@syncfusion/ej2-angular-navigations';
+import { TabActionSettingsModel, TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-container',
@@ -58,16 +58,16 @@ import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 })
 
 export class AppComponent {
-    @ViewChild('element') tabInstance: TabComponent;
-    @ViewChild('previousAnimation') previousInstance: DropDownListComponent;
-    @ViewChild('nextAnimation') nextInstance: DropDownListComponent;
+    @ViewChild('element') tabInstance?: TabComponent;
+    @ViewChild('previousAnimation') previousInstance?: DropDownListComponent;
+    @ViewChild('nextAnimation') nextInstance?: DropDownListComponent;
     public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
     public animationData: string[] = ['SlideLeftIn', 'SlideRightIn', 'FadeIn', 'FadeOut', 'FadeZoomIn', 'FadeZoomOut', 'ZoomIn', 'ZoomOut', 'None'];
     public previousAnimationChange(): void {
-       this.tabInstance.animation.previous.effect = this.previousInstance.value;
+       ((this.tabInstance as TabComponent).animation.previous as TabActionSettingsModel).effect = (this.previousInstance as DropDownListComponent).value as any;
     }
     public nextAnimationChange(): void {
-      this.tabInstance.animation.next.effect = this.nextInstance.value;
+      ((this.tabInstance as TabComponent).animation.next as TabActionSettingsModel).effect = (this.nextInstance as DropDownListComponent).value as any;
     }
 }
 

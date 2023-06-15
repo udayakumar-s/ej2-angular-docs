@@ -24,14 +24,14 @@ import { ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') element?: any;
 
     ngAfterViewInit() {
-    document.onkeyup = function (e) {
-    if (e.altKey && e.keyCode === 84) {
-        document.getElementById('Toolbar').focus();
-    }
-    };
+        document.onkeyup = function (e) {
+            if (e.altKey && e.keyCode === 84) {
+                (document.getElementById('Toolbar') as HTMLElement).focus();
+            }
+        };
     }
 }
 

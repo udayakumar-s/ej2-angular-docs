@@ -13,7 +13,7 @@ enableRipple(true);
 
 export class AppComponent {
     //Menu items definition
-    private menuItems: MenuItemModel[] = [
+    public menuItems: MenuItemModel[] = [
         {
             text: 'File',
             iconCss: 'em-icons e-file',

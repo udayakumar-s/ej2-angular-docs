@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AccordionComponent, AccordionItemDirective, AccordionItemsDirective } from '@syncfusion/ej2-angular-navigations';
+import { AccordionComponent, AccordionItemDirective, AccordionItemsDirective, AccordionModule } from '@syncfusion/ej2-angular-navigations';
 import { AppComponent } from './app.component';
 
 /**
@@ -9,8 +9,9 @@ import { AppComponent } from './app.component';
 @NgModule({
     imports: [
         BrowserModule,
+        AccordionModule
     ],
-    declarations: [AppComponent,AccordionComponent,AccordionItemsDirective,AccordionItemDirective ],
+    declarations: [AppComponent ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,7 +6,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default-sidebar" #sidebar [width]="width">
                         <div class="title1">Menu</div>
                             <div class="closebtn">
@@ -34,7 +34,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
                     </div>`
 })
 export class AppComponent {
-    @ViewChild('sidebar') sidebar: SidebarComponent;
+    @ViewChild('sidebar') sidebar?: SidebarComponent;
     public width: string = '100%';
     public type: string = 'Over';
     public data: Object[] = [
@@ -45,10 +45,10 @@ export class AppComponent {
     ];
 
     toggleClick() {
-        this.sidebar.toggle();
+        this.sidebar?.toggle();
     }
     closeClick() {
-        this.sidebar.hide();
+        this.sidebar?.hide();
     }
 }
 

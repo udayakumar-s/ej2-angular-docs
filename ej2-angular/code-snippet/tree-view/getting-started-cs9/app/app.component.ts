@@ -1,6 +1,7 @@
 
 
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-container',
@@ -9,6 +10,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     @ViewChild('samples')
+    public tree?: TreeViewComponent;
+
     constructor() {
     }
     // defined the array of data

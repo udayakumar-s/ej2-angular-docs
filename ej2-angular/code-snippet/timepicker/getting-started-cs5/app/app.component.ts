@@ -13,8 +13,8 @@ import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 export class AppComponent implements OnInit {
     @ViewChild('formElement') element: any;
-    @ViewChild('ejTime') ejTime: TimePickerComponent;
-    public formObject: FormValidator;
+    @ViewChild('ejTime') ejTime: any;
+    public formObject?: FormValidator;
     ngOnInit() {
         // custom validator function.
         let customFn: (args: {
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
                 }
             },
             customPlacement: (inputElement: HTMLElement, errorElement: HTMLElement) => {
-                inputElement.parentElement.parentElement.appendChild(errorElement);
+                inputElement.parentElement?.appendChild(errorElement);
             }
         };
         this.formObject = new FormValidator('#form-element', options);
@@ -42,12 +42,12 @@ export class AppComponent implements OnInit {
     }
     // Form validation takes place when focus() event of timepicker is triggered.
     public onFocusOut(): void {
-        this.formObject.validate("timepicker");
+        this.formObject?.validate("timepicker");
     }
     // Custom validation takes place when value is changed.
     public onChange(args: any) {
         if (this.ejTime.value != null)
-            this.formObject.validate("timepicker");
+            this.formObject?.validate("timepicker");
     }
 }
 

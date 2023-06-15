@@ -9,8 +9,8 @@ import { TabComponent } from '@syncfusion/ej2-angular-navigations';
     templateUrl: 'app/app.component.html'
     })
 export class AppComponent {
-    @ViewChild('element') tabObj: TabComponent;
-    @ViewChild('headerStyles') listObj: DropDownListComponent;
+    @ViewChild('element') tabObj?: TabComponent;
+    @ViewChild('headerStyles') listObj?: DropDownListComponent;
     public headerText: Record<string, any>[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
     public headerData: Object[] = [
         { Id: 'header1', headerStyle: 'default', text: 'Default' },
@@ -23,18 +23,18 @@ export class AppComponent {
     public value: string = 'default';
     public onChange(args: ChangeEventArgs): void {
         this.removeStyleClass();
-        if (this.listObj.value === 'fill') {
-            this.tabObj.element.classList.add('e-fill');
-        } else if (this.listObj.value === 'background') {
-            this.tabObj.element.classList.add('e-background');
-        } else if (this.listObj.value === 'accent') {
-            this.tabObj.element.classList.add('e-background');
-            this.tabObj.element.classList.add('e-accent');
+        if (this.listObj?.value === 'fill') {
+            (this.tabObj as TabComponent).element.classList.add('e-fill');
+        } else if (this.listObj?.value === 'background') {
+            (this.tabObj as TabComponent).element.classList.add('e-background');
+        } else if (this.listObj?.value === 'accent') {
+            (this.tabObj as TabComponent).element.classList.add('e-background');
+            (this.tabObj as TabComponent).element.classList.add('e-accent');
         }
     }
     public removeStyleClass(): void {
-        this.tabObj.element.classList.remove('e-fill');
-        this.tabObj.element.classList.remove('e-background');
-        this.tabObj.element.classList.remove('e-accent');
+        (this.tabObj as TabComponent).element.classList.remove('e-fill');
+        (this.tabObj as TabComponent).element.classList.remove('e-background');
+        (this.tabObj as TabComponent).element.classList.remove('e-accent');
     }    
 }

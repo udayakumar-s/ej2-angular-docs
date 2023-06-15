@@ -12,12 +12,12 @@ import { DateTimePickerComponent } from '@syncfusion/ej2-angular-calendars';
 })
 export class ChildComponent {
   @ViewChild('child')
-  public DateValue: DateTimePickerComponent;
-  @Input() xvalue: Date;
+  public DateValue?: DateTimePickerComponent;
+  @Input() xvalue?: Date;
   @Output() valueChange = new EventEmitter();
 
   ValueChange() {
-  this.xvalue = this.DateValue.value;
-  this.valueChange.emit(this.DateValue.value);
+  this.xvalue = this.DateValue?.value;
+  this.valueChange.emit(this.DateValue?.value);
   }
 }

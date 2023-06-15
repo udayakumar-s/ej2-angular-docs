@@ -71,9 +71,9 @@ import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 export class AppComponent {
   @ViewChild('tabObj')
-  public tabObj: TabComponent;
+  public tabObj?: TabComponent;
   @ViewChild('addButton')
-  public addButton: ButtonComponent;
+  public addButton?: ButtonComponent;
   public isBool: boolean = false;
   // Mapping Tab items Header property
   public headerText: Object = [
@@ -83,7 +83,7 @@ export class AppComponent {
   ];
   public onButtonClick(): void {
     this.isBool = !this.isBool;
-    this.tabObj.hideTab(0, this.isBool);
+    (this.tabObj as TabComponent).hideTab(0, this.isBool);
   }
 }
 

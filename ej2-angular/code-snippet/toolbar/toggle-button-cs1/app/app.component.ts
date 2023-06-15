@@ -6,15 +6,15 @@ import { Button } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-container',
-    templateUrl: 'app/app.component.html',
+    templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultToolbarComponent {
-    public undoBtn: any;
-    public zoomBtn: any;
-    public mediaBtn: any;
-    public filterBtn: any;
-    public visibleBtn: any;
+    public undoBtn?: any;
+    public zoomBtn?: any;
+    public mediaBtn?: any;
+    public filterBtn?: any;
+    public visibleBtn?: any;
 
     public create(): void {
         this.zoomBtn = new Button({ cssClass: `e-flat`, iconCss: 'e-icons e-zoomin-icon', isToggle: true });
@@ -67,11 +67,11 @@ export class DefaultToolbarComponent {
 
         this.visibleBtn.element.onclick = (): void => {
             if (this.visibleBtn.element.classList.contains('e-active')) {
-                document.getElementById('content').style.display = 'none';
+                (document.getElementById('content') as HTMLElement).style.display = 'none';
                 this.visibleBtn.content = 'Show';
                 this.visibleBtn.iconCss = 'e-icons e-show-icon';
             } else {
-                document.getElementById('content').style.display = 'block';
+                (document.getElementById('content') as HTMLElement).style.display = 'block';
                 this.visibleBtn.content = 'Hide';
                 this.visibleBtn.iconCss = 'e-icons e-hide-icon';
             }

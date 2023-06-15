@@ -15,7 +15,7 @@ import { DateRangePickerComponent } from '@syncfusion/ej2-angular-calendars';
 export class AppComponent {
     value: Date;
     constructor() {
-        this.value = [new Date('1/1/2020'), new Date('2/1/2023')];
+        this.value = [new Date('1/1/2020'), new Date('2/1/2023')] as any;
     }
 }
 

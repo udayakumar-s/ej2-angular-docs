@@ -16,14 +16,14 @@ import { isNullOrUndefined } from "@syncfusion/ej2-base";
 })
 
 export class AppComponent {
-    @ViewChild('firstTabObj') public firstTabObj: TabComponent;
-    @ViewChild('secondTabObj') public secondTabObj: TabComponent;
+    @ViewChild('firstTabObj') public firstTabObj?: TabComponent;
+    @ViewChild('secondTabObj') public secondTabObj?: TabComponent;
 
     public headerText: Object = [{ 'text': 'India' }, { 'text': 'Australia' }, { 'text': 'USA' }, { 'text': 'France' }, { 'text': 'HTML' }, { 'text': 'C Sharp(C#)' }, { 'text': 'Java' }, { 'text': 'VB.Net' }];
     public firstTabitem: Object[] = [];
     public secondTabitem: Object[] = [];
-    public dragItemIndex: number;
-    public dragItemContainer: HTMLElement;
+    public dragItemIndex?: number;
+    public dragItemContainer?: HTMLElement;
 
     public content0: string = 'India officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area, the second-most populous country with over 1.2 billion people, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the south-west, and the Bay of Bengal on the south-east, it shares land borders with Pakistan to the west;China, Nepal, and Bhutan to the north-east; and Burma and Bangladesh to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; in addition, India Andaman and Nicobar Islands share a maritime border with Thailand and Indonesia.';
 
@@ -42,43 +42,43 @@ export class AppComponent {
     public content7: string = 'The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.';
 
     firstTabdragStart(args: DragEventArgs): void {
-        this.firstTabitem = [this.firstTabObj.items[args.index]];
+        this.firstTabitem = [(this.firstTabObj as TabComponent).items[args.index]];
         args.draggedItem.style.visibility = 'hidden';
         this.dragItemContainer = <HTMLElement>args.draggedItem.closest('.e-tab');
     }
 
     firstTabDragStop(args: DragEventArgs): void {
-        if (!isNullOrUndefined(args.target.closest('.e-tab')) && !this.dragItemContainer.isSameNode(args.target.closest('.e-tab'))) {
+        if (!isNullOrUndefined((args.target as HTMLElement).closest('.e-tab') as Element ) && !(this.dragItemContainer as HTMLElement).isSameNode(args.target.closest('.e-tab'))) {
             args.cancel = true;
             let TabElement: HTMLElement = <HTMLElement>args.target.closest('.e-tab');
             let dropItem: HTMLElement = <HTMLElement>args.target.closest('.e-toolbar-item');
             if (TabElement != null && dropItem != null) {
-                this.dragItemIndex = Array.prototype.indexOf.call(this.firstTabObj.element.querySelectorAll('.e-toolbar-item'), args.draggedItem);
-                let dropItemContainer: Element = args.target.closest('.e-toolbar-items');
-                let dropItemIndex: number = (dropItemContainer != null) ? (Array.prototype.slice.call(dropItemContainer.querySelectorAll('.e-toolbar-item'))).indexOf(dropItem) : '';
-                this.secondTabObj.addTab(this.firstTabitem, dropItemIndex);
-                this.firstTabObj.removeTab(this.dragItemIndex);
+                this.dragItemIndex = Array.prototype.indexOf.call((this.firstTabObj as TabComponent).element.querySelectorAll('.e-toolbar-item'), args.draggedItem);
+                let dropItemContainer: Element = args.target.closest('.e-toolbar-items') as Element;
+                let dropItemIndex: number = (dropItemContainer != null) ? (Array.prototype.slice.call(dropItemContainer.querySelectorAll('.e-toolbar-item'))).indexOf(dropItem) as number : '' as any;
+                (this.secondTabObj as TabComponent).addTab(this.firstTabitem, dropItemIndex);
+                (this.firstTabObj as TabComponent ).removeTab(this.dragItemIndex);
             }
         }
     }
 
     secondTabDragStart(args: DragEventArgs): void {
-        this.secondTabitem = [this.secondTabObj.items[args.index]];
+        this.secondTabitem = [(this.secondTabObj as TabComponent).items[args.index]];
         args.draggedItem.style.visibility = 'hidden';
         this.dragItemContainer = <HTMLElement>args.draggedItem.closest('.e-tab');
     }
 
     secondTabDragStop(args: DragEventArgs): void {
-        if (!isNullOrUndefined(args.target.closest('.e-tab')) && !this.dragItemContainer.isSameNode(args.target.closest('.e-tab'))) {
+        if (!isNullOrUndefined(args.target.closest('.e-tab') as Element) && !(this.dragItemContainer as HTMLElement).isSameNode(args.target.closest('.e-tab'))) {
             args.cancel = true;
             let TabElement: HTMLElement = <HTMLElement>args.target.closest('.e-tab');
             let dropItem: HTMLElement = <HTMLElement>args.target.closest('.e-toolbar-item');
             if (TabElement != null && dropItem != null) {
-                this.dragItemIndex = Array.prototype.indexOf.call(this.secondTabObj.element.querySelectorAll('.e-toolbar-item'), args.draggedItem);
-                let dropItemContainer: Element = args.target.closest('.e-toolbar-items');
-                let dropItemIndex: number = (dropItemContainer != null) ? (Array.prototype.slice.call(dropItemContainer.querySelectorAll('.e-toolbar-item'))).indexOf(dropItem) : '';
-                this.firstTabObj.addTab(this.secondTabitem, dropItemIndex);
-                this.secondTabObj.removeTab(this.dragItemIndex);
+                this.dragItemIndex = Array.prototype.indexOf.call((this.secondTabObj as TabComponent).element.querySelectorAll('.e-toolbar-item'), args.draggedItem);
+                let dropItemContainer: Element = args.target.closest('.e-toolbar-items') as Element;
+                let dropItemIndex: number = (dropItemContainer != null) ? (Array.prototype.slice.call(dropItemContainer.querySelectorAll('.e-toolbar-item'))).indexOf(dropItem) as number : '' as any;
+                (this.firstTabObj as TabComponent ).addTab(this.secondTabitem, dropItemIndex);
+                (this.secondTabObj as TabComponent).removeTab(this.dragItemIndex);
             }
         }
     }

@@ -80,7 +80,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     template: `<!-- To Render SpeedDial component in disabled state -->
-        <button ejs-speeddial id="speeddial" content='Edit' [disbaled]='true'></button>`
+        <button ejs-speeddial id="speeddial" content='Edit' [disabled]='true'></button>`
 })
 
 export class AppComponent { }

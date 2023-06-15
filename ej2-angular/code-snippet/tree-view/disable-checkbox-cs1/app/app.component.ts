@@ -42,11 +42,11 @@ export class AppComponent {
 
     public field:Object ={  dataSource: this.Countries, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' };
 
-    @ViewChild ('treevalidate') tree: TreeViewComponent;
+    @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
     // Disables the checkbox alone in treeview
     public drawNode(args: DrawNodeEventArgs): void {
-      let ele: HTMLElement = args.node.querySelector('.e-checkbox-wrapper');
+      let ele: HTMLElement = args.node.querySelector('.e-checkbox-wrapper') as HTMLElement;
       ele.classList.add('e-checkbox-disabled');
     }
 }

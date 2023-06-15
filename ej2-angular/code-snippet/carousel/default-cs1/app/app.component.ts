@@ -1,7 +1,7 @@
 
 
 import { Component } from "@angular/core";
-import { CarouselAnimationSettingsModel } from "@syncfusion/ej2-angular-navigations";
+import { CarouselAnimationEffect } from "@syncfusion/ej2-angular-navigations";
 
 @Component({
   selector: "app-root",

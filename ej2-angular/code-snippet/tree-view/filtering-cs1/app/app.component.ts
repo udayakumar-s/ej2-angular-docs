@@ -1,7 +1,7 @@
 
 
 
-import {TreeViewComponent} from "@syncfusion/ej2-angular-navigations"
+import {FieldsSettingsModel, TreeViewComponent} from "@syncfusion/ej2-angular-navigations"
 import {MaskedTextBoxComponent} from "@syncfusion/ej2-angular-inputs"
 import { Component, Inject, ViewChild } from '@angular/core';
 import { DataManager, Query, ReturnOption, Predicate } from '@syncfusion/ej2-data';
@@ -15,9 +15,9 @@ import { DataManager, Query, ReturnOption, Predicate } from '@syncfusion/ej2-dat
 })
 export class AppComponent {
 
-    @ViewChild("treeviewObj") listTreeObj:TreeViewComponent;
+    @ViewChild("treeviewObj") listTreeObj?: TreeViewComponent;
 
-    @ViewChild("maskObj") maskObj:MaskedTextBoxComponent;
+    @ViewChild("maskObj") maskObj?: MaskedTextBoxComponent;
 
     // list data source for TreeView component
     public localData: Object[] = [
@@ -51,30 +51,30 @@ export class AppComponent {
     public field:Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild', expanded: "expanded" }
 
    //Change the dataSource for TreeView
-    public changeDataSource(data) {
-        this.listTreeObj.fields = {
+    public changeDataSource(data: Object[]) {
+        (this.listTreeObj as TreeViewComponent).fields = {
             dataSource: data, id: 'id', text: 'name',parentID: 'pid', hasChildren: 'hasChild'
-        }
+        } as FieldsSettingsModel;
     }
 
     //Filtering the TreeNodes
-    public searchNodes(args) {
-        let _text = this.maskObj.element.value;
+    public searchNodes(args: any) {
+        let _text = this.maskObj?.element.value;
         let predicats = [], _array = [], _filter = [];
         if (_text == "") {
             this.changeDataSource(this.localData);
         }
         else {
-            let predicate = new Predicate('name', 'startswith', _text, true);
+            let predicate = new Predicate('name', 'startswith', _text as string, true);
             let filteredList = new DataManager(this.localData).executeLocal(new Query().where(predicate));
             console.log(filteredList)
             for (let j = 0; j < filteredList.length; j++) {
-                _filter.push(filteredList[j]["id"]);
+                _filter.push((filteredList as any)[j]["id"]);
                 let filters = this.getFilterItems(filteredList[j], this.localData);
                 for (let i = 0; i < filters.length; i++) {
                     if (_array.indexOf(filters[i]) == -1 && filters[i] != null) {
                         _array.push(filters[i]);
-                        predicats.push(new Predicate('id', 'equal', filters[i], false));
+                        predicats.push(new Predicate('id', 'equal', filters[i] as any, false));
                     }
                 }
             }
@@ -85,17 +85,17 @@ export class AppComponent {
                 let newList = new DataManager(this.localData).executeLocal(query);
                 this.changeDataSource(newList);
                 let proxy = this;
-                setTimeout(function (this) {
-                    proxy.listTreeObj.expandAll();
+                setTimeout(function (this: any) {
+                    proxy.listTreeObj?.expandAll();
                 }, 100);
             }
         }
     }
 
     //Find the Parent Nodes for corresponding childs
-    public getFilterItems(fList, list) {
+    public getFilterItems(fList: Object | any, list: Object[]): Object[] {
         let nodes = [];
-        nodes.push(fList["id"]);
+        nodes.push(fList["id"] as any);
         let query2 = new Query().where('id', 'equal', fList["pid"], false);
         let fList1 = new  DataManager(list).executeLocal(query2);
         if (fList1.length != 0) {
@@ -103,13 +103,9 @@ export class AppComponent {
             for (let i = 0; i < pNode.length; i++) {
                 if (nodes.indexOf(pNode[i]) == -1 && pNode[i] != null)
                     nodes.push(pNode[i]);
-                }
-                return nodes;
             }
             return nodes;
         }
+        return nodes;
     }
 }
-
-
-

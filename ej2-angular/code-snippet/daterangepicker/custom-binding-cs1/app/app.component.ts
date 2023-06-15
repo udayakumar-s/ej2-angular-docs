@@ -16,13 +16,13 @@ import { DateRangePickerComponent } from '@syncfusion/ej2-angular-calendars';
 })
 export class ParentComponent {
     @ViewChild('range')
-    public DateRange: DateRangePickerComponent;
+    public DateRange?: DateRangePickerComponent;
     value: Date[];
     constructor() {
         this.value = [new Date("1/1/2019"), new Date("2/1/2020")]
     }
     deposit() {
-        this.value = this.DateRange.value;
+        this.value = (this.DateRange as DateRangePickerComponent ).value as Date[];
     }
     valuecheck(args: any) {
         this.value = args;

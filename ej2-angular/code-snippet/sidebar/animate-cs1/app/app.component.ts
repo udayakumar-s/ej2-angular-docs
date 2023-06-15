@@ -5,7 +5,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: ` <ejs-sidebar id="default-sidebar" #sidebar (created)="onCreated($event)" style="visibility: hidden" [animate]="animate" [enableRtl]="enableRtl">
                     <div class="title"> Sidebar content</div>
                     <div class="sub-title">
@@ -24,19 +24,19 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
                 </div>`
 })
 export class AppComponent {
-    @ViewChild('sidebar') sidebar: SidebarComponent;
+    @ViewChild('sidebar') sidebar?: SidebarComponent;
     public animate: boolean = false;
     public enableRtl: boolean = true;
     public type: string = 'Push';
     public onCreated(args: any) {
-         this.sidebar.element.style.visibility = '';
+        (this.sidebar as SidebarComponent).element.style.visibility = '';
     }
     closeClick(): void {
-        this.sidebar.hide();
+        this.sidebar?.hide();
     };
 
     toggleClick():void{
-      this.sidebar.toggle();
+      this.sidebar?.toggle();
     }
 }
 

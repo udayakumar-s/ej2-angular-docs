@@ -1,6 +1,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
+import { AccordionComponent, AccordionItemModel } from '@syncfusion/ej2-angular-navigations';
 import { Accordion, ExpandEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
@@ -49,24 +50,24 @@ import { Accordion, ExpandEventArgs } from '@syncfusion/ej2-navigations';
 })
 
 export class AppComponent {
-    @ViewChild('element') acrdnInstance: AccordionComponent;
+    @ViewChild('element') acrdnInstance?: AccordionComponent;
     public initialLoad = true;
     public isCollapsed = false;
-    public expandIndex;
+    public expandIndex?: number;
     public expanding(e: ExpandEventArgs) {
         if (e.isExpanded && !this.initialLoad && !this.isCollapsed) {
             e.cancel = true;
-            this.expandIndex = this.acrdnInstance.items.indexOf(e.item);
+            this.expandIndex = (this.acrdnInstance as AccordionComponent).items.indexOf((e as ExpandEventArgs).item as AccordionItemModel);
             this.isCollapsed = true;
       }
     }
     public expanded(e: ExpandEventArgs) {
        if (!e.isExpanded && !this.initialLoad && this.isCollapsed) {
-           this.acrdnInstance.expandItem(true, this.expandIndex);
+           (this.acrdnInstance as AccordionComponent).expandItem(true, this.expandIndex);
            this.isCollapsed = false;
       }
     }
-    public created(): void {
+    public created(args: any): void {
         this.initialLoad = false;
     }
     constructor() {

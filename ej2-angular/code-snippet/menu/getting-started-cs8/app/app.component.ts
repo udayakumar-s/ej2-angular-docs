@@ -14,10 +14,10 @@ enableRipple(true);
 
 export class AppComponent {
     @ViewChild('menu')
-    private menuObj: MenuComponent;
+    public menuObj?: MenuComponent;
 
     //Menu datasource
-    private data: { [key: string]: Object }[] = [
+    public data: { [key: string]: Object }[] = [
         {
             continent: 'Asia',
             countries: [
@@ -54,12 +54,12 @@ export class AppComponent {
     ];
 
     //Menu fields definition
-    private menuFields: FieldSettingsModel = {
+    public menuFields: FieldSettingsModel = {
         text: ['continent', 'country'],
         children: ['countries']
     };
 
-    private created(): void {
+    public created(): void {
         let insertItem: { [key: string]: Object }[] = [
             {
                 continent: 'Europe',
@@ -70,7 +70,7 @@ export class AppComponent {
             }
         ];
         //Add items before to 'Oceania'
-        this.menuObj.insertBefore(insertItem, 'Oceania', false);
+        this.menuObj?.insertBefore(insertItem, 'Oceania', false);
 
         insertItem = [
             {
@@ -82,10 +82,10 @@ export class AppComponent {
         ];
 
         //Add items after to 'Asia'
-        this.menuObj.insertAfter(insertItem, 'Asia', false);
+        this.menuObj?.insertAfter(insertItem, 'Asia', false);
 
         //Remove items
-        this.menuObj.removeItems(['South America', 'Mexico'], false);
+        this.menuObj?.removeItems(['South America', 'Mexico'], false);
     }
 }
 

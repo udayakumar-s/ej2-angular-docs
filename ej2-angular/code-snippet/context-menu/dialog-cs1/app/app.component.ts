@@ -14,7 +14,7 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 export class AppComponent {
   @ViewChild('dialog')
-  public alertDialog: DialogComponent;
+  public alertDialog?: DialogComponent;
 
   name = 'Angular';
   data= [
@@ -46,19 +46,19 @@ export class AppComponent {
   public position: any = {X: 100, Y: 100};
 
   public alertDlgButtons: Object[] = [{
-        buttonModel: {
-            isPrimary: true,
-            content: 'Submit',
-            cssClass: 'e-flat',
+      buttonModel: {
+        isPrimary: true,
+        content: 'Submit',
+        cssClass: 'e-flat',
         },
         click: function () {
-            this.hide();
+          (this as any).hide();
         }
     }];
 
   public itemSelect(args: MenuEventArgs): void {
     if (args.item.text === "Save As...") {
-      this.alertDialog.show();
+      (this.alertDialog as DialogComponent).show();
     }
   }
 }

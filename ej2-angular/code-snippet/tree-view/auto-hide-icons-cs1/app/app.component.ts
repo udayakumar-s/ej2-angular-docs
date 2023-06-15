@@ -41,16 +41,16 @@ export class AppComponent {
     ];
     public field:Object ={ dataSource: this.countries, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' };
 
-    @ViewChild ('treevalidate') tree: TreeViewComponent;
+    @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
-    public onCreate(): void {
-      let collapse: NodeListOf<Element> = this.tree.element.querySelectorAll('.e-icons.e-icon-collapsible');
-      let expand: NodeListOf<Element> = this.tree.element.querySelectorAll('.e-icons.e-icon-expandable');
+    public onCreate(args: any): void {
+      let collapse: NodeListOf<Element> = this.tree?.element.querySelectorAll('.e-icons.e-icon-collapsible') as NodeListOf<Element>;
+      let expand: NodeListOf<Element> = this.tree?.element.querySelectorAll('.e-icons.e-icon-expandable') as NodeListOf<Element>;
       this.hideIcon(expand, collapse);
-      this.tree.element.addEventListener('mouseenter', (event:any) => {
+      this.tree?.element.addEventListener('mouseenter', (event:any) => {
         this.showIcon(expand, collapse);
       });
-      this.tree.element.addEventListener('mouseleave', (event:any) => {
+      this.tree?.element.addEventListener('mouseleave', (event:any) => {
         this.hideIcon(expand, collapse);
       });
     }
@@ -67,10 +67,10 @@ export class AppComponent {
   // shows expand/collapse icon while leaving the mouse
   public showIcon(expand: NodeListOf<Element>, collapse: NodeListOf<Element>) {
     for(let i: number = 0; i < collapse.length; i++ ){
-      collapse[i].setAttribute('style',"visibility", "");
+      collapse[i].setAttribute('style',"visibility");
     }
     for(let j: number = 0; j < expand.length; j++ ){
-      expand[j].setAttribute('style',"visibility", "");
+      expand[j].setAttribute('style',"visibility");
     }
   }
 }

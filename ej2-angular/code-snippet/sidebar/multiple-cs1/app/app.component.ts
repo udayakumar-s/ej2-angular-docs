@@ -6,7 +6,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default" #leftSidebar [width]='width' [type]='type' [closeOnDocumentClick]='closeOnDocumentClick'>
                         <div class="title"> Left Sidebar content</div>
                     </ejs-sidebar>
@@ -26,18 +26,19 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
                     </div>`
 })
 export class AppComponent {
-    @ViewChild('leftSidebar') leftSidebar: SidebarComponent;
-    @ViewChild('rightSidebar') rightSidebar: SidebarComponent;
+    @ViewChild('leftSidebar') leftsidebar?: SidebarComponent;
+    @ViewChild('rightSidebar') rightsidebar?: SidebarComponent;
 
     public width:string='250px';
     public position:string='Right';
     public type:string='Push';
+closeOnDocumentClick: any;
 
     leftToggle() {
-        this.leftSidebar.toggle();
+        this.leftsidebar?.toggle();
     }
     rightToggle() {
-        this.rightSidebar.toggle();
+        this.rightsidebar?.toggle();
     }
 }
 

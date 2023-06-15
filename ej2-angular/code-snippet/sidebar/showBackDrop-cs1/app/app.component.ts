@@ -5,7 +5,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: ` <ejs-sidebar id="default-sidebar" #sidebar (created)="onCreated($event)" style="visibility: hidden" [width]="width" [showBackdrop]="showBackdrop" [closeOnDocumentClick]="closeOnDocumentClick">
                     <div class="title"> Sidebar content</div>
                     <div class="sub-title">
@@ -24,20 +24,20 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
                 </div>`
 })
 export class AppComponent {
-    @ViewChild('sidebar') sidebar: SidebarComponent;
+    @ViewChild('sidebar') sidebar?: SidebarComponent;
     public showBackdrop: boolean = true;
     public type: string = 'Push';
     public width: string ='280px';
     public closeOnDocumentClick: boolean = true;
     public onCreated(args: any) {
-         this.sidebar.element.style.visibility = '';
+        (this.sidebar as SidebarComponent).element.style.visibility = '';
     }
     closeClick(): void {
-        this.sidebar.hide();
+        this.sidebar?.hide();
     };
 
     toggleClick():void{
-      this.sidebar.show();
+      this.sidebar?.show();
     }
 }
 

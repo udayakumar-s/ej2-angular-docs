@@ -2,7 +2,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { TabComponent, DragEventArgs, TabItemModel, TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
+import { TabComponent, DragEventArgs, TabItemModel, TreeViewComponent, HeaderModel } from '@syncfusion/ej2-angular-navigations';
 import { isNullOrUndefined } from "@syncfusion/ej2-base";
 
 /**
@@ -16,8 +16,8 @@ import { isNullOrUndefined } from "@syncfusion/ej2-base";
 })
 
 export class AppComponent {
-    @ViewChild('tabObj') tabObj: TabComponent;
-    @ViewChild('treeObj') treeObj: TreeViewComponent;
+    @ViewChild('tabObj') tabObj?: TabComponent;
+    @ViewChild('treeObj') treeObj?: TreeViewComponent;
 
     public headerText: Object = [{ 'text': 'India' }, { 'text': 'Australia' }, { 'text': 'USA' }, { 'text': 'France' }];
 
@@ -48,24 +48,24 @@ export class AppComponent {
     public i: number = 0;
 
     onTabCreate(): void {
-        let tabElement: HTMLElement = document.getElementById('draggableTab');
+        let tabElement: HTMLElement = document.getElementById('draggableTab') as HTMLElement;
         if (!isNullOrUndefined(tabElement)) {
-            tabElement.querySelector('.e-tab-header').classList.add('e-droppable');
-            tabElement.querySelector('.e-content').classList.add('tab-content');
+            ((tabElement as HTMLElement).querySelector('.e-tab-header') as Element).classList.add('e-droppable');
+            ((tabElement as HTMLElement).querySelector('.e-content') as Element).classList.add('tab-content');
         }
     }
 
     tabDragStop(args: DragEventArgs): void {
-        let dragTabIndex: number = Array.prototype.indexOf.call(this.tabObj.element.querySelectorAll('.e-toolbar-item'), args.draggedItem);
-        let dragItem: TabItemModel = this.tabObj.items[dragTabIndex];
+        let dragTabIndex: number = Array.prototype.indexOf.call((this.tabObj as TabComponent).element.querySelectorAll('.e-toolbar-item'), args.draggedItem);
+        let dragItem: TabItemModel = (this.tabObj as TabComponent).items[dragTabIndex];
         let dropNode: HTMLElement = <HTMLElement>args.target.closest('#draggableTreeview .e-list-item');
         if (dropNode != null && !args.target.closest('#draggableTab .e-toolbar-item')) {
             args.cancel = true;
-            let dropContainer: NodeListOf<Element> = (document.querySelector('.treeview-external-drop-tab')).querySelectorAll('.e-list-item');
+            let dropContainer: NodeListOf<Element> = (document.querySelector('.treeview-external-drop-tab') as Element).querySelectorAll('.e-list-item');
             let dropIndex: number = Array.prototype.indexOf.call(dropContainer, dropNode);
-            let newNode: { [key: string]: Object }[] = [{ id: 'list' + this.i, text: dragItem.header.text  }];
-            this.tabObj.removeTab(dragTabIndex);
-            this.treeObj.addNodes(newNode, 'Treeview' , dropIndex);
+            let newNode: { [key: string]: Object }[] = [{ id: 'list' + this.i, text: (dragItem.header as HeaderModel).text as any }];
+            (this.tabObj as TabComponent).removeTab(dragTabIndex);
+            this.treeObj?.addNodes(newNode, 'Treeview' , dropIndex);
         }
     }
 }

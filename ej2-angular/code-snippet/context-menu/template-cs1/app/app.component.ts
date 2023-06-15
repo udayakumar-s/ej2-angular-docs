@@ -13,7 +13,7 @@ import { ContextMenuComponent, MenuEventArgs, MenuItemModel } from '@syncfusion/
 
 export class AppComponent {
      @ViewChild('contextmenu')
-    public contextmenu: ContextMenuComponent;
+    public contextmenu?: ContextMenuComponent;
 
     public menuItems: MenuItemModel[] = [
     {
@@ -50,9 +50,9 @@ export class AppComponent {
     }];
 
     onCreated(): void {
-      this.contextmenu.insertAfter([{text: 'Sort By'}] , 'Refresh');
-      this.contextmenu.insertBefore([{text: 'Display Settings'}] , 'Personalize');
-      this.contextmenu.removeItems(['Paste']);
+      (this.contextmenu as ContextMenuComponent).insertAfter([{text: 'Sort By'}] , 'Refresh');
+      (this.contextmenu as ContextMenuComponent).insertBefore([{text: 'Display Settings'}] , 'Personalize');
+      (this.contextmenu as ContextMenuComponent).removeItems(['Paste']);
     }
 
 }

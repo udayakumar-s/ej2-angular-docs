@@ -6,7 +6,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="top-sidebar" #topSidebar [type]="type" (open)="top_sidebar_open()" (close)="top_sidebar_close()">
                         <div class="title">
                             <div style="display:inline-block"> Top Sidebar </div>
@@ -36,8 +36,8 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
                     </div>`
 })
 export class AppComponent {
-    @ViewChild('topSidebar', { static: true }) topSidebar: SidebarComponent;
-    @ViewChild('bottomSidebar', { static: true }) bottomSidebar: SidebarComponent;
+    @ViewChild('topSidebar', { static: true }) topSidebar?: SidebarComponent;
+    @ViewChild('bottomSidebar', { static: true }) bottomSidebar?: SidebarComponent;
 
     public type: string = 'Push';
     // only for sample browser use
@@ -45,19 +45,19 @@ export class AppComponent {
 
     }
     topBtnClick() {
-        this.topSidebar.toggle();
+        this.topSidebar?.toggle();
     }
     bottomBtnClick() {
-        this.bottomSidebar.toggle();
+        this.bottomSidebar?.toggle();
     }
     top_sidebar_open() {
         let element: Element = document.getElementsByClassName("e-content-animation")[0];
         (<HTMLElement>element).style.height = ((<HTMLElement>element).offsetHeight - 75) + "px";
         element.classList.add("top_content_animation");
         // Remove the e-left class in sidebar
-        this.topSidebar.element.classList.remove("e-left");
+        (this.topSidebar as SidebarComponent).element.classList.remove("e-left");
         // Add the custom class to sidebar
-        this.topSidebar.element.classList.add("top_sidebar");
+        (this.topSidebar as SidebarComponent).element.classList.add("top_sidebar");
     }
     top_sidebar_close() {
         let element: Element = document.getElementsByClassName("e-content-animation")[0];
@@ -70,9 +70,9 @@ export class AppComponent {
         (<HTMLElement>element).style.height = ((<HTMLElement>element).offsetHeight - 75) + "px";
         element.classList.add("bottom_animation_content");
         // Remove the e-left class in sidebar
-        this.bottomSidebar.element.classList.remove("e-left");
+        (this.bottomSidebar as SidebarComponent).element.classList.remove("e-left");
         // Add the custom class to sidebar
-        this.bottomSidebar.element.classList.add("bottom_sidebar");
+        (this.bottomSidebar as SidebarComponent).element.classList.add("bottom_sidebar");
     }
 
     bottom_sidebar_close() {

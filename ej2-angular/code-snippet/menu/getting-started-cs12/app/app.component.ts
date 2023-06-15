@@ -13,7 +13,7 @@ enableRipple(true);
 
 export class AppComponent {
     //Menu items definition
-    private menuItems: MenuItemModel[] = [
+    public menuItems: MenuItemModel[] = [
         {
             text: 'Appliances',
             items: [
@@ -41,7 +41,7 @@ export class AppComponent {
         { text: 'Offers', url: 'https://www.google.com/search?q=offers' }
     ];
 
-    private beforeItemRender(args: MenuEventArgs): void {
+    public beforeItemRender(args: MenuEventArgs): void {
         if (args.item.url) {
             // To open url in blank page.
             args.element.getElementsByTagName('a')[0].setAttribute('target', '_blank');

@@ -56,18 +56,18 @@ export class AppComponent {
 
     public field:Object ={  dataSource: this.data, id: 'code', text: 'name', child: 'countries' };
 
-    @ViewChild ('treevalidate') tree: TreeViewComponent;
+    @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
-    public onCreate(): void {
+    public onCreate(args: any): void {
         let proxy = this.tree;
-        document.getElementById("btn").addEventListener("click",(event)=>{
-            let id = document.getElementById('Nodes').value
-            let element= proxy.element.querySelector('[data-uid="' + id + '"]');
+        (document.getElementById("btn") as HTMLElement).addEventListener("click",(event)=>{
+            let id = (document.getElementById('Nodes') as HTMLElement | any).value
+            let element= proxy?.element.querySelector('[data-uid="' + id + '"]');
             // Gets the child Element
-            let liElements = element.querySelectorAll('ul li');
+            let liElements = element?.querySelectorAll('ul li');
             let arr= [];
-            for (let i = 0; i < liElements.length; i++) {
-                let nodeData= proxy.getNode(liElements[i]);
+            for (let i = 0; i < (liElements as NodeListOf<Element>).length; i++) {
+                let nodeData= proxy?.getNode((liElements as NodeListOf<Element>)[i]);
                 arr.push(nodeData);
             }
             alert(JSON.stringify(arr));

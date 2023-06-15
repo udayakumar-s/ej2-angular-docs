@@ -6,7 +6,7 @@ import { TimePickerComponent } from '@syncfusion/ej2-angular-calendars';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template: `
         <!-- two-way binding using the value binding and model binding in the TimePicker --->
         <ejs-timepicker id="firsttime" #ejTimePicker [(value)]='value' width="230px"></ejs-timepicker>

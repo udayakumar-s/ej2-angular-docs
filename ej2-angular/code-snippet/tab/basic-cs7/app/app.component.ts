@@ -16,7 +16,7 @@ const SERVICE_URI: string = 'https://js.syncfusion.com/ejServices/Wcf/Northwind.
     template: `<ejs-tab #tab></ejs-tab>`
 })
 export class AppComponent implements OnInit {
-    @ViewChild('tab') tabObj: TabComponent;
+    @ViewChild('tab') tabObj?: TabComponent;
     public itemsData: any = [];
     public mapping =  { header: 'FirstName', content: 'Notes' };
 
@@ -28,8 +28,8 @@ export class AppComponent implements OnInit {
             for(let i: number = 0; i < result.length; i++) {
                 this.itemsData.push({ header: {text: result[i][this.mapping.header]}, content: result[i][this.mapping.content] });
             }
-            this.tabObj.items = this.itemsData;
-            this.tabObj.dataBind();
+            (this.tabObj as TabComponent).items = this.itemsData;
+            (this.tabObj as TabComponent).dataBind();
         });
     }
 }

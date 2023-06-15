@@ -10,7 +10,7 @@ import { Component,HostListener,ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-   @ViewChild('ejCalendar') ejCalendar: CalendarComponent;
+   @ViewChild('ejCalendar') ejCalendar: any;
     public dateValue: Date = new Date();
     @HostListener('document:keyup', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {

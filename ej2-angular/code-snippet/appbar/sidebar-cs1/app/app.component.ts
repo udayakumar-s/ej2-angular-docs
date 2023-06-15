@@ -48,7 +48,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent {
   @ViewChild('sidebarTreeviewInstance')
-  public sidebarTreeviewInstance: SidebarComponent;
+  public sidebarTreeviewInstance?: SidebarComponent;
   public data: { [key: string]: Object }[] = [
     {
         nodeId: '01', nodeText: 'Installation',
@@ -76,7 +76,7 @@ export class AppComponent {
   public mediaQuery: string = '(min-width: 600px)';
   public fields: object = { dataSource: this.data, id: 'nodeId', text: 'nodeText', child: 'nodeChild' };
   toggle() {
-    this.sidebarTreeviewInstance.toggle();
+    (this.sidebarTreeviewInstance as SidebarComponent).toggle();
   };
 }
 

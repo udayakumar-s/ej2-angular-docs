@@ -21,11 +21,11 @@ enableRipple(true);
 })
 
 export class AppComponent {
-  @ViewChild('element') tabObj: TabComponent;
-  @ViewChild('DatePickertemplateRef') public DatePickertemplate: TemplateRef<any>;
-  @ViewChild('FirstDropDowntemplateRef') public FirstDropDowntemplate: TemplateRef<any>;
-  @ViewChild('SecondDropDowntemplateRef') public SecondDropDowntemplate: TemplateRef<any>;
-  @ViewChild('ThirdDropDowntemplateRef') public ThirdDropDowntemplate: TemplateRef<any>;
+  @ViewChild('element') tabObj?: TabComponent;
+  @ViewChild('DatePickertemplateRef') public DatePickertemplate?: TemplateRef<any>;
+  @ViewChild('FirstDropDowntemplateRef') public FirstDropDowntemplate?: TemplateRef<any>;
+  @ViewChild('SecondDropDowntemplateRef') public SecondDropDowntemplate?: TemplateRef<any>;
+  @ViewChild('ThirdDropDowntemplateRef') public ThirdDropDowntemplate?: TemplateRef<any>;
 
   public firstDropDownData: string[] = [
     'Badminton',
@@ -60,11 +60,11 @@ export class AppComponent {
     var newtabItem = [
       { header: { text: 'DynamicTabItem' }, content: this.ThirdDropDowntemplate }
     ];
-    this.tabObj.addTab(newtabItem,1);
+    (this.tabObj as TabComponent).addTab(newtabItem as any,1);
   }
 
   public removeButtonClicked(e: any): void {
-    this.tabObj.removeTab(1);
+    (this.tabObj as TabComponent).removeTab(1);
   }
 
 }

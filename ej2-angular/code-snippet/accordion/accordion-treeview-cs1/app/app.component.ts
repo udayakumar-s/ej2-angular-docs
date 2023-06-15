@@ -2,9 +2,9 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { AccordionComponent } from '@syncfusion/ej2-angular-navigations';
+import { AccordionComponent, AccordionItemModel } from '@syncfusion/ej2-angular-navigations';
 import { Accordion, ExpandEventArgs, TreeView } from '@syncfusion/ej2-navigations';
-import { DocDB, DownloadDB, PicDB } from './datasource.ts';
+import { DocDB, DownloadDB, PicDB } from './datasource';
 
 @Component({
     selector: 'app-container',
@@ -41,9 +41,9 @@ import { DocDB, DownloadDB, PicDB } from './datasource.ts';
 })
 
 export class AppComponent {
-    @ViewChild('element') acrdnInstance: AccordionComponent;
+    @ViewChild('element') acrdnInstance?: AccordionComponent;
     public expanded(e: ExpandEventArgs) {
-  if (e.isExpanded && [].indexOf.call(this.acrdnInstance.items, e.item) === 0 && e.element.querySelector('#treeDoc').childElementCount === 0) {
+  if (e.isExpanded && [].indexOf.call((this.acrdnInstance as AccordionComponent).items, e.item as never) === 0 && ((e.element as HTMLElement).querySelector('#treeDoc') as Element).childElementCount === 0) {
     //Initialize TreeView component
         let treeObj: TreeView = new TreeView({
         fields: { dataSource: DocDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' },
@@ -52,14 +52,14 @@ export class AppComponent {
     //Render initialized TreeView component
     treeObj.appendTo('#treeDoc');
   }
-    if (e.isExpanded && [].indexOf.call(this.acrdnInstance.items, e.item) === 1 && e.element.querySelector('#treeDownload').childElementCount === 0) {
+    if (e.isExpanded && [].indexOf.call((this.acrdnInstance as AccordionComponent).items, (e.item as never) ) === 1 && ((e.element as HTMLElement).querySelector('#treeDownload') as Element).childElementCount === 0) {
         let treeObj: TreeView = new TreeView({
         fields: { dataSource: DownloadDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' },
         sortOrder: 'Ascending'
     });
     treeObj.appendTo('#treeDownload');
   }
-      if (e.isExpanded && [].indexOf.call(this.acrdnInstance.items, e.item) === 2 && e.element.querySelector('#treePic').childElementCount === 0) {
+      if (e.isExpanded && [].indexOf.call((this.acrdnInstance as AccordionComponent).items, e.item as never) === 2 && ((e.element as HTMLElement).querySelector('#treePic') as Element).childElementCount === 0) {
         let treeObj: TreeView = new TreeView({
         fields: { dataSource: PicDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' },
         sortOrder: 'Ascending'
