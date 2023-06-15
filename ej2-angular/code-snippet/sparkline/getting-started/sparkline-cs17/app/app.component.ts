@@ -2,7 +2,7 @@
 
 
 import { Component } from '@angular/core';
-import { TooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
+import { TooltipSettingsModel } from '@syncfusion/ej2-sparkline';
 
 @Component({
     selector: 'app-container',
@@ -11,7 +11,7 @@ import { TooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
     </ejs-sparkline>`
 })
 export class AppComponent {
-    public data: object[] = [30000, 60000, 40000, 10000, 30000, 20000, 50000] as any;
+    public data: object[] = [30000, 60000, 40000, 10000, 30000, 20000, 50000];
     public containerArea: object= {
         border: { color: '#033e96', width: 2 }
     };

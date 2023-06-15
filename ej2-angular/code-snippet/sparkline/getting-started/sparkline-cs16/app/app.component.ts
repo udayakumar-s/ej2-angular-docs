@@ -2,7 +2,7 @@
 
 
 import { Component } from '@angular/core';
-import { TooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
+import { TooltipSettingsModel } from '@syncfusion/ej2-charts';
 
 @Component({
     selector: 'app-container',
@@ -24,6 +24,7 @@ export class AppComponent {
         { xval: 10, yval: 22507620 },
     ];
     public tooltipSettings: TooltipSettingsModel = {
+        visible: true,
         format: '${xval} : ${yval}'
     };
 }
