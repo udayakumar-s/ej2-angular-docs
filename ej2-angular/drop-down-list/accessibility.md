@@ -59,4 +59,4 @@ You can use the following key shortcuts to access the DropDownList without inter
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs1" %}

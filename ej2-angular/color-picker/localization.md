@@ -40,7 +40,7 @@ The below example demonstrates the ColorPicker in `Deutsch` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/how-to-cs5" %}
+{% previewsample "page.domainurl/samples/colorpicker/how-to-cs5" %}
 
 ## Right to Left - RTL
 
@@ -61,7 +61,7 @@ The following example illustrates how to enable right-to-left support in ColorPi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/how-to-cs6" %}
+{% previewsample "page.domainurl/samples/colorpicker/how-to-cs6" %}
 
 ## See Also
 

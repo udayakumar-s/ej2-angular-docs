@@ -28,7 +28,7 @@ In the following example, Shopping Cart details are used as breadcrumb Items and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/template-cs1" %}
+{% previewsample "page.domainurl/samples/breadcrumb/template-cs1" %}
 
 ## Separator Template
 
@@ -46,7 +46,7 @@ In the  following example, the separators are customized with icons using `separ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/template-cs2" %}
+{% previewsample "page.domainurl/samples/breadcrumb/template-cs2" %}
 
 ## Customize Specific Item Template
 
@@ -64,4 +64,4 @@ The specific breadcrumb item can be customizable using itemTemplate with conditi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/template-cs3" %}
+{% previewsample "page.domainurl/samples/breadcrumb/template-cs3" %}

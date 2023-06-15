@@ -137,7 +137,7 @@ The below example shows a basic Diagrams
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/getting-started/initialize-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/getting-started/initialize-cs1" %}
 
 Now, run the application by using npm start command. Open the browser with the generated link and you can see an empty diagram.
 
@@ -204,7 +204,7 @@ Create and add a `node` (JSON data) with specific position, size, label, and sha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/getting-started/connectnode-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/getting-started/connectnode-cs1" %}
 
 ### Connect two Nodes with a Connector
 
@@ -222,7 +222,7 @@ Add two node to the diagram as shown in the previous example. Connect these node
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/getting-started/connectnode-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/getting-started/connectnode-cs2" %}
 
 Default values for all `nodes` and `connectors` can be set using the `getNodeDefaults` and `getConnectorDefaults` properties, respectively. For example, if all nodes have the same width and height, such properties can be moved into `getNodeDefaults`.
 
@@ -242,7 +242,7 @@ Similarly, the required nodes and connectors can be added to form a complete flo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/getting-started/flowdiagram-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/getting-started/flowdiagram-cs1" %}
 
 ## Automatic Organization Chart
 
@@ -365,6 +365,6 @@ The following code examples indicate how to define the default appearance of nod
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/getting-started/orgchart-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/getting-started/orgchart-cs1" %}
 
 >Note: Please note that project generated through angular CLI project will always the changes made into application and compiled it automatically. We don’t need to run “npm start” command for each changes made into the application.

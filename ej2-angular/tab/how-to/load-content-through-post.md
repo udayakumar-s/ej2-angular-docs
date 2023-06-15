@@ -28,4 +28,4 @@ The Tab supports to load external contents through `AJAX` library. Refer to the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/ajax-cs1" %}
+{% previewsample "page.domainurl/samples/tab/ajax-cs1" %}

@@ -26,4 +26,4 @@ The following sample demonstrate how to modify the result data.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs17" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs17" %}

@@ -27,7 +27,7 @@ The following example demonstrates the TimePicker in `strictMode` with min/max r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/timepicker/getting-started-cs6" %}
 
 By default, the TimePicker act in strictMode `false` state, that allows to enter the invalid or out-of-range time in textbox.
 
@@ -48,6 +48,6 @@ If you are entering the out-of-range or invalid time value, then the model value
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/timepicker/getting-started-cs7" %}
 
 > If the value of `min` or `max` property is changed through code behind, update the `value` property to set within the range.

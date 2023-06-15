@@ -14,16 +14,16 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/aggregates-footer-cs1/app/app.component.ts %}
+{% include code-snippet/grid/aggregates-footer-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include samples/grid/aggregates-footer-cs1/app/app.template.html %}
+{% include code-snippet/grid/aggregates-footer-cs1/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/aggregates-footer-cs1/app/app.module.ts %}
+{% include code-snippet/grid/aggregates-footer-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/aggregates-footer-cs1/app/main.ts %}
+{% include code-snippet/grid/aggregates-footer-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,16 +38,16 @@ You can format the aggregate value result by using the [`format`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/aggregates-footer-cs2/app/app.component.ts %}
+{% include code-snippet/grid/aggregates-footer-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include samples/grid/aggregates-footer-cs2/app/app.template.html %}
+{% include code-snippet/grid/aggregates-footer-cs2/app/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/aggregates-footer-cs2/app/app.module.ts %}
+{% include code-snippet/grid/aggregates-footer-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/aggregates-footer-cs2/app/main.ts %}
+{% include code-snippet/grid/aggregates-footer-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -61,13 +61,13 @@ In the following, footer content is appended to the header content using the `da
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/aggregates-footer-cs3/app/app.component.ts %}
+{% include code-snippet/grid/aggregates-footer-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/aggregates-footer-cs3/app/app.module.ts %}
+{% include code-snippet/grid/aggregates-footer-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/aggregates-footer-cs3/app/main.ts %}
+{% include code-snippet/grid/aggregates-footer-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

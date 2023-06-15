@@ -37,7 +37,7 @@ To restrict either save or cancel button rendering into a DOM, simply pass empty
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/show-buttons-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/show-buttons-cs1" %}
 
 ## See Also
 

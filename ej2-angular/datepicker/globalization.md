@@ -86,7 +86,7 @@ The following example demonstrates the DatePicker in `German` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/local-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/local-cs1" %}
 
 ## Right-To-Left
 
@@ -105,4 +105,4 @@ The following code example initialize the DatePicker component in `Arabic` cultu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/local-rtl-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/local-rtl-cs1" %}

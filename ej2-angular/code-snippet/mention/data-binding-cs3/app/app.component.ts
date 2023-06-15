@@ -10,7 +10,7 @@ import { FieldSettingsModel } from '@syncfusion/ej2-dropdowns';
   template: `<label id="comment" >Comments</label>
   <div id="mentionElement" placeholder = "Type @ and tag user"></div>
   <ejs-mention [dataSource]='searchData' [query]='query' [fields]='fields' [popupWidth]='popupWidth' [target]='mentionTarget'></ejs-mention>`,
-  styleUrls: ['index.css']
+
 
 })
 export class AppComponent {

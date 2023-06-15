@@ -28,7 +28,7 @@ You can set validation rules by defining the [`columns.validationRules`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs31" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs31" %}
 
 ## Custom validation
 
@@ -48,4 +48,4 @@ In the below demo, custom validation applied for `Priority` column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs32" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs32" %}

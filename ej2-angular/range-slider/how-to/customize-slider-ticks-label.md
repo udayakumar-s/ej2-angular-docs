@@ -45,4 +45,4 @@ applied to the value of the `child_number` in the slider.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/ticks-customization-cs2" %}
+{% previewsample "page.domainurl/samples/slider/ticks-customization-cs2" %}

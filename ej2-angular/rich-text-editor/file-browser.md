@@ -60,4 +60,4 @@ The following example explains about how to configure the file browser within th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/file-browser-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/file-browser-cs1" %}

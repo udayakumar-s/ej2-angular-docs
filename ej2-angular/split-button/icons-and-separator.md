@@ -28,7 +28,7 @@ The following example illustrates how to place icon in SplitButton component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/icon-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/icon-cs1" %}
 
 > The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
 You can also use third party icons on the splitBtn using the `iconCss`property.
@@ -51,7 +51,7 @@ The following example illustrates how to vertical support in SplitButton compone
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/vertical-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/vertical-cs1" %}
 
 > The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
 You can also use third party icons on the SplitButton using the `iconCss`property.
@@ -74,7 +74,7 @@ The following example illustrates how to enable separator support in SplitButton
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/separator-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/separator-cs1" %}
 
 ## See Also
 

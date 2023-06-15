@@ -38,7 +38,7 @@ The following sample demonstrates the above functionalities of the spinner.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs8" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs8" %}
 
 ## Progress
 
@@ -58,7 +58,7 @@ The [`content`](https://ej2.syncfusion.com/angular/documentation/api/progress-bu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs9" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs9" %}
 
 ### Change step of the ProgressButton
 
@@ -76,7 +76,7 @@ The progress can be visualized at the specified interval by changing the [`step`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs10" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs10" %}
 
 > The class `e-hide-spinner` hides the spinner in the ProgressButton, For more information, see [hide spinner](./how-to/hide-spinner) section.
 
@@ -96,7 +96,7 @@ The progress can be changed dynamically by modifying the [`percent`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs11" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs11" %}
 
 > The method [`dataBind`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#databind) applies the property changes immediately to the component.
 
@@ -116,7 +116,7 @@ You can pause and resume the progress using the [`stop`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs12" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs12" %}
 
 ## See Also
 

@@ -26,4 +26,4 @@ The below samples illustrates, how the list is generated with the nested source.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/nested-list-cs1" %}
+{% previewsample "page.domainurl/samples/listview/nested-list-cs1" %}

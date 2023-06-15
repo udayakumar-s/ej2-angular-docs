@@ -36,12 +36,12 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('ejDialog') ejDialog: DialogComponent;
-    @ViewChild('ejInnerDialog') ejInnerDialog: DialogComponent;
+    @ViewChild('ejDialog') ejDialog: DialogComponent | undefined;
+    @ViewChild('ejInnerDialog') ejInnerDialog: DialogComponent | undefined;
    // Create element reference for dialog target element.
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef }) container: ElementRef | undefined;
     // The Dialog shows within the target element.
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
 
     //To get all element of the dialog component after component get initialized.
     ngOnInit() {
@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
     public visible1: boolean = false;
     // Initialize the Dialog component target element.
     public initilaizeTarget: EmitType<object> = () => {
-      this.targetElement = this.container.nativeElement.parentElement;
+      this.targetElement = this.container!.nativeElement.parentElement;
     }
     // Dialog animation
     public dialogAnimation: Object= { effect: 'Zoom', duration: 400, delay: 0 };
@@ -64,14 +64,14 @@ export class AppComponent implements OnInit {
     // Dialog footer template content
     footerTemplate: string='<span style="float: left;font-size: 14px;padding-left: 15px;color: rgba(0, 0, 0, 0.54);">Click the close button to Exit</span>';
     // Sample level code to handle the button click action
-    public onOpenDialog = function(event: any): void {
-        this.ejDialog.show();
+    public onOpenDialog = (event: any): void => {
+        this.ejDialog!.show();
     }
     public getDynamicContent: EmitType<object> = () => {
-      let input: HTMLInputElement =  document.getElementById('dialog').querySelector('#name');
-      let email: HTMLInputElement =  document.getElementById('dialog').querySelector('#email');
-      let contact: HTMLInputElement =  document.getElementById('dialog').querySelector('#contact');
-      let address: HTMLTextAreaElement =  document.getElementById('dialog').querySelector('#address');
+      let input: HTMLInputElement =  document.getElementById('dialog')!.querySelector('#name') as HTMLInputElement;
+      let email: HTMLInputElement =  document.getElementById('dialog')!.querySelector('#email') as HTMLInputElement;
+      let contact: HTMLInputElement =  document.getElementById('dialog')!.querySelector('#contact') as HTMLInputElement;
+      let address: HTMLTextAreaElement =  document.getElementById('dialog')!.querySelector('#address') as HTMLTextAreaElement;
       let template: string = "<div class='row'><div class='col-xs-6 col-sm-6 col-lg-6 col-md-6'><b>Confirm your details</b></div>" +
       "</div><div class='row'><div class='col-xs-6 col-sm-6 col-lg-6 col-md-6'><span id='name'> Name: </span>" +
       "</div><div class='col-xs-6 col-sm-6 col-lg-6 col-md-6'><span id='nameValue'>"+ input.value + "</span> </div></div>" +
@@ -84,18 +84,18 @@ export class AppComponent implements OnInit {
       return template;
     }
     public nestedbuttonClick: EmitType<object> = () =>  {
-        this.ejInnerDialog.hide();
-        this.ejDialog.show();
+        this.ejInnerDialog!.hide();
+        this.ejDialog!.show();
     }
     public footerbuttonclick: EmitType<object> = () => {
-        this.ejInnerDialog.hide();
+        this.ejInnerDialog!.hide();
     }
     public onOpenInnerDialog: EmitType<object> = () => {
-        this.ejDialog.hide();
-        this.ejInnerDialog.content = this.getDynamicContent();
-        this.ejInnerDialog.buttons = [{click: this.footerbuttonclick.bind(this), buttonModel: { content: 'Yes', isPrimary: true }},
+        this.ejDialog!.hide();
+        this.ejInnerDialog!.content = this.getDynamicContent();
+        this.ejInnerDialog!.buttons = [{click: this.footerbuttonclick.bind(this), buttonModel: { content: 'Yes', isPrimary: true }},
         {click: this.nestedbuttonClick.bind(this), buttonModel: { content: 'No', isPrimary: true }}];
-        this.ejInnerDialog.show();
+        this.ejInnerDialog!.show();
     }
     // Enables the footer buttons
     public buttons: Object = [

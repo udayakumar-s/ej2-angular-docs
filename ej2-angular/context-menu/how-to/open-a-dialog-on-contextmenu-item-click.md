@@ -26,4 +26,4 @@ In the following sample, Dialog will open while clicking `Save As...` item:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/dialog-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/dialog-cs1" %}

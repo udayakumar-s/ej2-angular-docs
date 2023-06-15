@@ -27,7 +27,7 @@ Set **type** to Linear to get the linear progress bar. It also support secondary
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/types-cs1" %}
+{% previewsample "page.domainurl/samples/progressbar/types-cs1" %}
 
 ## Circular
 
@@ -45,4 +45,4 @@ Set **type** to Circular to get the circular progress bar. It also support secon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/types-cs2" %}
+{% previewsample "page.domainurl/samples/progressbar/types-cs2" %}

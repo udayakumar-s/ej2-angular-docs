@@ -30,7 +30,7 @@ The range band feature is used to highlight a particular range along with the y-
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs22" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs22" %}
 
 ## Multiple range band customization
 
@@ -50,4 +50,4 @@ You can define multiple range bands to a sparkline as shown in the following cod
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs23" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs23" %}

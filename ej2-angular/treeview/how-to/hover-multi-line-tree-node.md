@@ -24,4 +24,4 @@ This section demonstrates how to hover and select a multi-line tree node. Here, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/multi-line-tree-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/multi-line-tree-cs1" %}

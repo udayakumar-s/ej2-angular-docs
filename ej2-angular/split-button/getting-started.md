@@ -155,4 +155,4 @@ The below example shows a basic splitbutton component,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/getting-started-cs1" %}

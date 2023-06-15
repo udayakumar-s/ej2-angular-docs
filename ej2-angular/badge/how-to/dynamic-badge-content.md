@@ -24,4 +24,4 @@ Badges in real-time needs to be updated dynamically based on the requirements. I
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/dynamic-badge-cs2" %}
+{% previewsample "page.domainurl/samples/badge/dynamic-badge-cs2" %}

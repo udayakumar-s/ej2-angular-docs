@@ -55,4 +55,4 @@ onBeforeRender(args: TooltipEventArgs): void {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/dynamic-content-cs2" %}
+{% previewsample "page.domainurl/samples/tooltip/dynamic-content-cs2" %}

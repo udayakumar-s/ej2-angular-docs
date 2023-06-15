@@ -26,4 +26,4 @@ Here below sample demonstrates preventing duplicate title Toast element displayi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs12" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs12" %}

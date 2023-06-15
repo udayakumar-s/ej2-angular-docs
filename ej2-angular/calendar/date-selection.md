@@ -26,4 +26,4 @@ The following example demonstrates the Calendar with selected date and [`change`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs7" %}

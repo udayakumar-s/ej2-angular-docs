@@ -26,4 +26,4 @@ The following example shows enabling and disabling toolbar items on button click
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/toolbar-items-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/toolbar-items-cs1" %}

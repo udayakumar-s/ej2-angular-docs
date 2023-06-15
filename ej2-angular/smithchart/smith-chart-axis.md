@@ -34,7 +34,7 @@ Axis labels are used to denote what kind of data is bound for smithchart. Using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs8" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs8" %}
 
 ## Gridlines
 
@@ -61,7 +61,7 @@ We can customize following things, in major as well as minor gridlines.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs9" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs9" %}
 
 ## Axisline
 
@@ -83,4 +83,4 @@ As name suggests that, it is a line in smithchart that can be configured to deno
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs10" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs10" %}

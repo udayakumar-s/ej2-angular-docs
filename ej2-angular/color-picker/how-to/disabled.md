@@ -26,4 +26,4 @@ The following example shows the `disabled` state of ColorPicker component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/how-to-cs2" %}
+{% previewsample "page.domainurl/samples/colorpicker/how-to-cs2" %}

@@ -35,7 +35,7 @@ The following example  demonstrates how to achieve a two-way data binding.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/form-support-cs1" %}
+{% previewsample "page.domainurl/samples/autocomplete/form-support-cs1" %}
 
 ## Reactive Forms
 
@@ -60,4 +60,4 @@ The following example demonstrates  how to use the reactive forms.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/reactive-form-cs1" %}
+{% previewsample "page.domainurl/samples/autocomplete/reactive-form-cs1" %}

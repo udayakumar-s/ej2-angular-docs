@@ -7,7 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './reactive-form.html'
+    templateUrl: 'reactive-form.html'
 })
 export class AppComponent {
     // defined the array of data
@@ -18,7 +18,7 @@ export class AppComponent {
                                       'J#' , 'Lisp' , 'Logo' , 'PHP'
                                   ];
     public placeholder: String = 'e.g: ActionScript';
-    skillForm: FormGroup;
+    skillForm: FormGroup | undefined;
     fb: FormBuilder;
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.fb = builder;

@@ -43,7 +43,7 @@ Member sorting can also be configured using the [`sortSettings`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs273" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs273" %}
 
 ### Alphanumeric Sorting
 
@@ -61,7 +61,7 @@ Usually string sorting is applied to field members even if it starts with number
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs274" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs274" %}
 
 ### Custom Sorting
 
@@ -83,7 +83,7 @@ Allows to sort field headers (aka, members) in rows and columns based on user-de
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs275" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs275" %}
 
 ## Value Sorting
 
@@ -111,7 +111,7 @@ The value sorting can also be configured using the [`valueSortSettings`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs276" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs276" %}
 
 ## Event
 
@@ -141,7 +141,7 @@ When sorting is applied, the event [`onHeadersSort`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs277" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs277" %}
 
 ### ActionBegin
 
@@ -176,7 +176,7 @@ In the below sample, sort action can be restricted by setting the **args.cancel*
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs278" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs278" %}
 
 ### ActionComplete
 
@@ -209,7 +209,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs279" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs279" %}
 
 ### ActionFailure
 
@@ -236,4 +236,4 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs280" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs280" %}

@@ -28,4 +28,4 @@ The below example demonstrates the Calendar to select a date within a range from
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs4" %}

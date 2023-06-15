@@ -51,7 +51,7 @@ In the following example, directory upload is enabled/disabled on DropDownButton
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/directory-upload-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/directory-upload-cs1" %}
 
 ### Physical file service provider
 

@@ -28,7 +28,7 @@ In the following example, the `SortOrder` is set as `Descending`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs16" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs16" %}
 
 ## Grouping
 
@@ -48,4 +48,4 @@ In the following example, vegetables are grouped based on its category.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs17" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs17" %}

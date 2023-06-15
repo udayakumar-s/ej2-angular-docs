@@ -27,7 +27,7 @@ by adding custom class or directly selecting the avatar class from the CSS.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/color-cs2" %}
+{% previewsample "page.domainurl/samples/avatar/color-cs2" %}
 
 ## Customize avatar sizes
 
@@ -47,7 +47,7 @@ designed in such a way that the width and height will be relative to font-size. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/custom-size-cs2" %}
+{% previewsample "page.domainurl/samples/avatar/custom-size-cs2" %}
 
 ## Use various media in avatar
 
@@ -66,7 +66,7 @@ etc. Some of them are given below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/media-formats-cs2" %}
+{% previewsample "page.domainurl/samples/avatar/media-formats-cs2" %}
 
 ## Dynamic avatar rendering from datasource
 
@@ -87,4 +87,4 @@ data-source from the server or remote data or AJAX. We have also rendered the av
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/angular-avatar-cs2" %}
+{% previewsample "page.domainurl/samples/avatar/angular-avatar-cs2" %}

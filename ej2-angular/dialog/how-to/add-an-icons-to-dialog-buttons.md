@@ -26,7 +26,7 @@ In the following sample, dialog footer buttons are customized with icons using `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-buttons-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-buttons-cs1" %}
 
 In the following sample, dialog footer buttons are customized with icons using `footerTemplate` property.
 
@@ -42,4 +42,4 @@ In the following sample, dialog footer buttons are customized with icons using `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-footer-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-footer-cs1" %}

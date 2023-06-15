@@ -26,4 +26,4 @@ The following examples, showcase that how to work autofill with ComboBox.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs16" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs16" %}

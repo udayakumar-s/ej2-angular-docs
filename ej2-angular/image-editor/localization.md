@@ -70,4 +70,4 @@ The following list of properties and its values are used in the Image  Editor.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs7" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs7" %}

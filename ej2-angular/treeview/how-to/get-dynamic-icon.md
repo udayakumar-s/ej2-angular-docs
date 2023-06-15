@@ -24,4 +24,4 @@ In TreeView component, you can get the original bound data using the `getTreeDat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/icon-css-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/icon-css-cs1" %}

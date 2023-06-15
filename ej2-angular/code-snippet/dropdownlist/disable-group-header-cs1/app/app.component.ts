@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     // specifies the template string for the DropDownList component
     template: `<ejs-dropdownlist id='ddlelement' #samples [dataSource]='data' [fields]='fields' [placeholder]='text' [popupHeight]='height'></ejs-dropdownlist>`,
-    styleUrls: ['index.css']
+    
 })
 export class AppComponent {
     constructor() {

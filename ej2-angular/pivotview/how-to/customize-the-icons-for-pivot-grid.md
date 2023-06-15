@@ -34,4 +34,4 @@ In the below sample, pivot table is rendered with a customized pivot button icon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/icon-customization-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/icon-customization-cs1" %}

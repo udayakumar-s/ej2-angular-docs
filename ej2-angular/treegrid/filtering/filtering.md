@@ -30,7 +30,7 @@ You can check this video to learn about Filtering feature in Angular TreeGrid.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs9" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs9" %}
 
 > * You can apply and clear filtering by using [`filterByColumn`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#clearfiltering) methods.
 > * To disable filtering for a particular column, set [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#allowfiltering) to false.
@@ -60,7 +60,7 @@ The below are the type of filter mode available in TreeGrid.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs10" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs10" %}
 
 ## Initial filter
 
@@ -78,7 +78,7 @@ To apply the filter at initial rendering, set the filter `predicate` object in [
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs11" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs11" %}
 
 ## Filter operators
 
@@ -118,6 +118,6 @@ In the following sample, type **aero** in `Name` column to filter diacritic char
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs12" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs12" %}
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

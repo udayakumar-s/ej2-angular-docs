@@ -44,4 +44,4 @@ In this following example, two way binding for Switch is illustrated with CheckB
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/binding-cs1" %}
+{% previewsample "page.domainurl/samples/switch/binding-cs1" %}

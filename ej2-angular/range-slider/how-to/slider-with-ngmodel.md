@@ -60,4 +60,4 @@ Follow the below steps to perform two-way binding with ngModel.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/ngmodel-cs2" %}
+{% previewsample "page.domainurl/samples/slider/ngmodel-cs2" %}

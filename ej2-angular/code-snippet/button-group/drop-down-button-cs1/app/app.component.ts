@@ -15,7 +15,7 @@ import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 })
 
 export class AppComponent {
-    private items: ItemModel[] = [
+    public items: ItemModel[] = [
     {
         text: 'Learn SQL'
     },

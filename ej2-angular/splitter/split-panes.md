@@ -28,7 +28,7 @@ By default, Splitter will render in horizontal orientation. Splitter container w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/horizontal-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/horizontal-cs1" %}
 
 ## Vertical layout
 
@@ -46,7 +46,7 @@ By setting [orientation](https://ej2.syncfusion.com/angular/documentation/api/sp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/vertical-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/vertical-cs1" %}
 
 ## Multiple panes
 
@@ -64,7 +64,7 @@ You can render the multiple panes with both `Horizontal` and `Vertical` orientat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/multiple-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/multiple-cs1" %}
 
 ## Separator
 
@@ -85,7 +85,7 @@ By default, pane separator will be render with `1px` width/height. You can custo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/separator-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/separator-cs1" %}
 
 ## Nested Splitter
 
@@ -105,7 +105,7 @@ Splitter provides support to render the nested pane to achieve the complex layou
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/nested-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/nested-cs1" %}
 
 ## Add or remove pane
 
@@ -127,7 +127,7 @@ You can add the panes dynamically in the splitter by passing [pane properties](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/add-pane-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/add-pane-cs1" %}
 
 ### Remove pane
 
@@ -145,7 +145,7 @@ You can remove the split panes dynamically by passing the pane index to [removeP
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/remove-pane-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/remove-pane-cs1" %}
 
 ## See Also
 

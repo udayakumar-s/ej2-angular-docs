@@ -31,4 +31,4 @@ In the following sample, the [`toggle`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/top-bottom-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/top-bottom-cs1" %}

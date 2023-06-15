@@ -36,7 +36,7 @@ The following options are available to customize the legend position:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs30" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs30" %}
 
 Legend Alignment is used to align the legend items in specific location. The following options are available to customize the legend alignment:
 
@@ -56,7 +56,7 @@ Legend Alignment is used to align the legend items in specific location. The fol
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs31" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs31" %}
 
 ## Legend mode
 
@@ -80,7 +80,7 @@ In default mode, the legends have symbols with legend labels that are used to id
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs32" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs32" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -100,7 +100,7 @@ The legends can be made interactive with an arrow mark that indicates exact rang
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs33" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs33" %}
 
 ## Legend size
 
@@ -118,7 +118,7 @@ Customize the legend size by modifying the [`height`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs34" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs34" %}
 
 ### Paging support
 
@@ -136,7 +136,7 @@ TreeMap support legend paging, if the legend items cannot be placed within the p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs35" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs35" %}
 
 ## Legend for items excluded from color mapping
 
@@ -154,7 +154,7 @@ Based on the mapping ranges in the data source, get the excluded ranges from the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs36" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs36" %}
 
 ## Hide desired legend items
 
@@ -172,7 +172,7 @@ To enable or disable the desired legend item for each color mapping, set the [`s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs37" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs37" %}
 
 ## Hide legend items based data source value
 
@@ -190,7 +190,7 @@ To enable or disable the legend visibility for each item through the data source
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs38" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs38" %}
 
 ## Bind legend item text from data source
 
@@ -208,7 +208,7 @@ To show the legend item text from the data source, bind the property name from d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs39" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs39" %}
 
 ## Hide duplicate legend items
 
@@ -226,7 +226,7 @@ To enable or disable the duplicate legend items, set the [`removeDuplicateLegend
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs40" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs40" %}
 
 ## Legend Responsiveness
 
@@ -244,4 +244,4 @@ Use a responsive legend that switches positions between the right and the bottom
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs41" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs41" %}

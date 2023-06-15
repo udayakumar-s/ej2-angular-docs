@@ -19,12 +19,12 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('ejDialog') ejDialog: DialogComponent;
-    @ViewChild('ejDialog1') ejDialog1: DialogComponent;
+    @ViewChild('ejDialog') ejDialog: DialogComponent | undefined;
+    @ViewChild('ejDialog1') ejDialog1: DialogComponent | undefined;
     // Create element reference for dialog target element.
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef }) container: ElementRef | undefined;
     // The Dialog shows within the target element.
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
 
     //To get all element of the dialog component after component get initialized.
     ngOnInit() {
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
 
     // Initialize the Dialog component's target element.
     public initilaizeTarget: EmitType<object> = () => {
-      this.targetElement = this.container.nativeElement.parentElement;
+      this.targetElement = this.container!.nativeElement.parentElement;
     }
 }
 

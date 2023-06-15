@@ -26,7 +26,7 @@ CRUD actions can be manually performed on appointments using `addEvent`, `saveEv
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs44" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs44" %}
 
 ## Recurrence event
 
@@ -42,4 +42,4 @@ CRUD actions can be manually performed on appointments using `addEvent`, `saveEv
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs45" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs45" %}

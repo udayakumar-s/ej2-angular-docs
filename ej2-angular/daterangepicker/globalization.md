@@ -144,7 +144,7 @@ The following sample demonstrate the DateRangePicker component in `German` cultu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/internationalization-cs1" %}
+{% previewsample "page.domainurl/samples/daterangepicker/internationalization-cs1" %}
 
 ## Right-To-Left
 
@@ -209,7 +209,7 @@ The following example demonstrates the DateRangePicker in `Hebrew` culture with 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/daterangepicker/rtl-cs1" %}
 
 ## Date format customization
 
@@ -230,4 +230,4 @@ In below sample, the date strings are formatted to `yyyy-MM-dd` and separator be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/daterangepicker/getting-started-cs7" %}

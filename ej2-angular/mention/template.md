@@ -30,7 +30,7 @@ In the following sample, each list item is split into two columns to display rel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/item-template-cs1" %}
+{% previewsample "page.domainurl/samples/mention/item-template-cs1" %}
 
 ## Display template
 
@@ -50,7 +50,7 @@ In the following sample, the selected value is displayed as a combined text of b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/item-template-cs2" %}
+{% previewsample "page.domainurl/samples/mention/item-template-cs2" %}
 
 ## No records template
 
@@ -70,7 +70,7 @@ In the following sample, popup list content displays the notification of no data
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/item-template-cs3" %}
+{% previewsample "page.domainurl/samples/mention/item-template-cs3" %}
 
 ## Spinner template
 
@@ -90,4 +90,4 @@ In the following sample, customized spinner is shown while fetching the data fro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/item-template-cs4" %}
+{% previewsample "page.domainurl/samples/mention/item-template-cs4" %}

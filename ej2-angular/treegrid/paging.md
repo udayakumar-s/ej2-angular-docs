@@ -27,7 +27,7 @@ To use paging, inject the [`Page`](https://ej2.syncfusion.com/angular/documentat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/page-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/page-cs1" %}
 
 > You can achieve better performance by using treegrid paging to fetch only a pre-defined number of records from the data source.
 > You can navigate to the target pages programmatically by passing the page number into the [`goToPage`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#gotopage) method in the tree grid.
@@ -53,7 +53,7 @@ With [`pageSizeMode`](https://ej2.syncfusion.com/angular/documentation/api/treeg
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/page-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/page-cs2" %}
 
 ## Template
 
@@ -73,7 +73,7 @@ Inside this template, you can access the [`currentPage`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pager-template-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/pager-template-cs1" %}
 
 ## Pager with Page Size Dropdown
 
@@ -101,7 +101,7 @@ By default, Pager will be rendered at the bottom of the TreeGrid. You can also r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/page-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/page-cs3" %}
 
 > During the paging action, the pager component triggers the below three events.
 > * The `created` event triggers when Pager is created.

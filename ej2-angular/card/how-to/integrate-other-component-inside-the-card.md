@@ -24,4 +24,4 @@ You can integrate any component inside the card element. Here ListView component
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card-with-list-cs1" %}
+{% previewsample "page.domainurl/samples/card/card-with-list-cs1" %}

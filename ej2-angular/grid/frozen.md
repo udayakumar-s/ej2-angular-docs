@@ -18,13 +18,13 @@ In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documenta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/frozenrows-cs1/app/app.component.ts %}
+{% include code-snippet/grid/frozenrows-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/frozenrows-cs1/app/app.module.ts %}
+{% include code-snippet/grid/frozenrows-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/frozenrows-cs1/app/main.ts %}
+{% include code-snippet/grid/frozenrows-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -55,13 +55,13 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/frozenrows-cs2/app/app.component.ts %}
+{% include code-snippet/grid/frozenrows-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/frozenrows-cs2/app/app.module.ts %}
+{% include code-snippet/grid/frozenrows-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/frozenrows-cs2/app/main.ts %}
+{% include code-snippet/grid/frozenrows-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -95,13 +95,13 @@ Validation rules for the 'EmployeeID' and 'Freight' columns can be added in the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/frozenrows-cs3/app/app.component.ts %}
+{% include code-snippet/grid/frozenrows-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/frozenrows-cs3/app/app.module.ts %}
+{% include code-snippet/grid/frozenrows-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/frozenrows-cs3/app/main.ts %}
+{% include code-snippet/grid/frozenrows-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

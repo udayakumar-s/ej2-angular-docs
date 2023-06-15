@@ -39,7 +39,7 @@ In the following sample, built-in and injectable based **In-place Editor** compo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/controls-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/controls-cs1" %}
 
 ## Model configuration
 

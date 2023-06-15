@@ -50,7 +50,7 @@ In the following example, you can using the drawText method in the button click 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs1" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs1" %}
 
 ## Freehand Draw
 
@@ -74,7 +74,7 @@ In the following example, the [`freeHandDraw`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs2" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs2" %}
 
 ## Shapes
 
@@ -116,7 +116,7 @@ In the following example, the [`drawRectangle`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs3" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs3" %}
 
 ### Ellipse
 
@@ -154,7 +154,7 @@ In the following example, the [`drawEllipse`](https://ej2.syncfusion.com/angular
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs4" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs4" %}
 
 ### Line
 
@@ -190,4 +190,4 @@ In the following example, the [`drawLine`](https://ej2.syncfusion.com/angular/do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs5" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs5" %}

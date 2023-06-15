@@ -26,7 +26,7 @@ The rendered smithchart can be printed directly from the browser by calling the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs25" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs25" %}
 
 ## Export
 
@@ -44,4 +44,4 @@ The rendered smithchart can be exported to JPEG , PNG, SVG or PDF format by usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs26" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs26" %}

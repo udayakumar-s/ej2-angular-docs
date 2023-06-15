@@ -25,4 +25,4 @@ These can be achieved by using 'nodeDragStop' and 'nodeDragging' event of TreeVi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/restrict-drag-drop-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/restrict-drag-drop-cs1" %}

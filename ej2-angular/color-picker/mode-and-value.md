@@ -28,7 +28,7 @@ In the following sample, it will render the `Palette` at initial load.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/getting-started/default-cs3" %}
+{% previewsample "page.domainurl/samples/colorpicker/getting-started/default-cs3" %}
 
 ## Color value
 
@@ -48,7 +48,7 @@ In the following sample, the color value sets as `four` digit hex code, the last
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/value-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/value-cs1" %}
 
 >> The [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property supports hex code with or without `#` prefix.
 

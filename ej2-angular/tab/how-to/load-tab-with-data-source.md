@@ -30,4 +30,4 @@ In the below demo, Data is fetched from an `OData` service using `DataManager`. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs7" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs7" %}

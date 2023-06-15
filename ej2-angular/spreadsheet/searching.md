@@ -75,7 +75,7 @@ In the following sample, searching can be done by following ways:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/searching-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/searching-cs1" %}
 
 ## Limitations
 

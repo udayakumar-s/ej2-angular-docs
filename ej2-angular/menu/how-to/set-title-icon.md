@@ -24,4 +24,4 @@ In this sample , the title for settings icon can be achievable by using 'beforeI
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/set-title-cs1" %}
+{% previewsample "page.domainurl/samples/menu/set-title-cs1" %}

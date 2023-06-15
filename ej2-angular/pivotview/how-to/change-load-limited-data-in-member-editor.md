@@ -30,4 +30,4 @@ In the following example, the limit of data in the member editor is set to 100. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs157" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs157" %}

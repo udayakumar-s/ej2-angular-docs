@@ -24,4 +24,4 @@ By enabling the `showCheckBox` property, you can render check box before each no
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/remove-parent-checkbox-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/remove-parent-checkbox-cs1" %}

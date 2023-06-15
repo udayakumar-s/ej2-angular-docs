@@ -128,7 +128,7 @@ The [`getNumberFormat`](https://ej2.syncfusion.com/documentation/api/base/intern
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/intl-getNumber-format-cs3" %}
+{% previewsample "page.domainurl/samples/common/intl-getNumber-format-cs3" %}
 
 #### `formatNumber`
 
@@ -146,7 +146,7 @@ The [`formatNumber`](https://ej2.syncfusion.com/documentation/api/base/internati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/intl-getNumber-format-cs4" %}
+{% previewsample "page.domainurl/samples/common/intl-getNumber-format-cs4" %}
 
 ### Parsing
 
@@ -166,7 +166,7 @@ The [`getNumberParser`](https://ej2.syncfusion.com/documentation/api/base/intern
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/intl-parseNumber1-cs2" %}
+{% previewsample "page.domainurl/samples/common/intl-parseNumber1-cs2" %}
 
 #### `parseNumber`
 
@@ -184,7 +184,7 @@ The [`parseNumber`](https://ej2.syncfusion.com/documentation/api/base/internatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/intl-parseNumber-cs2" %}
+{% previewsample "page.domainurl/samples/common/intl-parseNumber-cs2" %}
 
 ## Manipulating DateTime
 
@@ -330,7 +330,7 @@ The [`getDateFormat`](https://ej2.syncfusion.com/documentation/api/base/internat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/intl-formatDate-cs3" %}
+{% previewsample "page.domainurl/samples/common/intl-formatDate-cs3" %}
 
 #### `formatDate`
 
@@ -348,7 +348,7 @@ The [`formatDate`](https://ej2.syncfusion.com/documentation/api/base/internation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/intl-formatDate-cs4" %}
+{% previewsample "page.domainurl/samples/common/intl-formatDate-cs4" %}
 
 <!-- markdownlint-enable MD036 -->
 
@@ -370,7 +370,7 @@ The `getDateParser` method which will return a function that parses given string
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/intl-parseDate-cs2" %}
+{% previewsample "page.domainurl/samples/common/intl-parseDate-cs2" %}
 
 #### `parseDate`
 
@@ -388,4 +388,4 @@ The [`parseDate`](https://ej2.syncfusion.com/documentation/api/base/internationa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/intl-parseDate1-cs2" %}
+{% previewsample "page.domainurl/samples/common/intl-parseDate1-cs2" %}

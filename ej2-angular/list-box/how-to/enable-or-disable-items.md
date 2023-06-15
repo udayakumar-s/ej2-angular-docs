@@ -24,4 +24,4 @@ To enable or disable items in the list box, [`enableItems`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs9" %}

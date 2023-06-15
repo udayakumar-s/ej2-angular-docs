@@ -24,4 +24,4 @@ By using [`default`](https://ej2.syncfusion.com/angular/documentation/api/rich-t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/save-on-blur-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/save-on-blur-cs1" %}

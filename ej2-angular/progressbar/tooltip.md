@@ -25,7 +25,7 @@ The tooltip for the progress bar is used to represent the progress value. During
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/progressbar/tooltip-cs1" %}
 
 ## Format
 
@@ -43,7 +43,7 @@ By default, the tooltip shows information about progress. In addition to that, s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/tooltip-cs2" %}
+{% previewsample "page.domainurl/samples/progressbar/tooltip-cs2" %}
 
 ## Customization
 
@@ -61,4 +61,4 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/to
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/progressbar/tooltip-cs3" %}
+{% previewsample "page.domainurl/samples/progressbar/tooltip-cs3" %}

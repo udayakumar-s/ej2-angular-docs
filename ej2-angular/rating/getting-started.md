@@ -148,7 +148,7 @@ The following example shows a default Rating component.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/getting-started/default-cs" %}
+{% previewsample "page.domainurl/samples/rating/getting-started/default-cs" %}
 
 ## Value
 
@@ -166,4 +166,4 @@ You can set the rating value by using the [`value`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/getting-started/value-cs" %}
+{% previewsample "page.domainurl/samples/rating/getting-started/value-cs" %}

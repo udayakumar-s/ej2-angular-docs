@@ -175,7 +175,7 @@ The following example shows a basic `ContextMenu` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/getting-started-cs1" %}
 
 ## Rendering items with Separator
 
@@ -193,7 +193,7 @@ The Separators are the horizontal lines used to separate the menu items. You `ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/separators-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/separators-cs1" %}
 
 > The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#separator) property should not be given along with
 the other fields in the [`MenuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel).

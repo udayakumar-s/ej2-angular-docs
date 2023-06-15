@@ -32,6 +32,6 @@ The following example illustrates how to disable the particular and the whole Bu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs4" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs4" %}
 
 > To disable radio/checkbox type ButtonGroup, the `disabled` attribute should be added to the particular input element.

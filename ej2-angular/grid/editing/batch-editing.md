@@ -14,13 +14,13 @@ In Batch edit mode, when you double-click on the grid cell, then the target cell
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs3/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs3/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs3/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs3/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs3/app/main.ts %}
+{% include code-snippet/grid/edit-cs3/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs4/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs4/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs4/app/main.ts %}
+{% include code-snippet/grid/edit-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs5/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs5/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs5/app/main.ts %}
+{% include code-snippet/grid/edit-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -72,13 +72,13 @@ By default, grid will show the confirm dialog when saving or canceling or perfor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs6/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs6/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs6/app/main.ts %}
+{% include code-snippet/grid/edit-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -95,13 +95,13 @@ In the following sample, the [load](https://ej2.syncfusion.com/angular/documenta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/batch-edit/app/app.component.ts %}
+{% include code-snippet/grid/batch-edit/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/batch-edit/app/app.module.ts %}
+{% include code-snippet/grid/batch-edit/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/batch-edit/app/main.ts %}
+{% include code-snippet/grid/batch-edit/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

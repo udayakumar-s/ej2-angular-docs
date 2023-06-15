@@ -38,13 +38,13 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 export class AppComponent {
   @ViewChild('btn')
-  private btn: ButtonComponent;
+  public btn: ButtonComponent| any;
   @ViewChild('clear')
-  private clear: ButtonComponent;
-  private timeout: any;
-  private spanElem: HTMLElement;
-  private log: HTMLElement;
-  
+  public clear: ButtonComponent | any;
+  public timeout: any;
+  public spanElem: HTMLElement | any;
+  public log: HTMLElement | any;
+
   mousedown() {
     this.timeout = setInterval(() => {
       this.spanElem = document.createElement('span');
@@ -79,7 +79,7 @@ export class AppComponent {
   };
 
   clearEvt() {
-    document.getElementById('eventlog').innerHTML = '';
+    document.getElementById('eventlog')!.innerHTML = '';
   };
 }
 

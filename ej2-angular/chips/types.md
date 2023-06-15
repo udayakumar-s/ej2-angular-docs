@@ -33,7 +33,7 @@ Input Chip holds information in compact form. It converts user input into chips.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/types/input-cs1" %}
+{% previewsample "page.domainurl/samples/chips/types/input-cs1" %}
 
 ## Choice Chip
 
@@ -51,7 +51,7 @@ Choice Chip allows you to select a single chip from the set of ChipList/ChipColl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/types/input-cs2" %}
+{% previewsample "page.domainurl/samples/chips/types/input-cs2" %}
 
 ## Filter Chip
 
@@ -69,7 +69,7 @@ Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/types/input-cs3" %}
+{% previewsample "page.domainurl/samples/chips/types/input-cs3" %}
 
 ## Action Chip
 
@@ -87,7 +87,7 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/types/input-cs4" %}
+{% previewsample "page.domainurl/samples/chips/types/input-cs4" %}
 
 ### Deletable Chip
 
@@ -105,4 +105,4 @@ Deletable Chip allows you to delete a chip from ChipList/ChipCollection. It can 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/types/input-cs5" %}
+{% previewsample "page.domainurl/samples/chips/types/input-cs5" %}

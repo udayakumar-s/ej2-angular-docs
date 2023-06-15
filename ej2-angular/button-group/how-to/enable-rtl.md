@@ -26,4 +26,4 @@ The following example illustrates how to create ButtonGroup with RTL support.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs6" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs6" %}

@@ -30,4 +30,4 @@ The following example demonstrate how to add item in between in DropDownList.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/add-item-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/add-item-cs1" %}

@@ -31,7 +31,7 @@ To use column chooser, inject **ColumnChooserService** in the provider section o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-chooser-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-chooser-cs1" %}
 
 ## Open column chooser by external button
 
@@ -50,4 +50,4 @@ the [`openColumnChooser`](https://ej2.syncfusion.com/angular/documentation/api/t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-chooser-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-chooser-cs2" %}

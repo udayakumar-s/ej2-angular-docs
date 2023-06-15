@@ -25,4 +25,4 @@ used to match the size of the list item. Letters and images are also used as ava
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/listview-cs2" %}
+{% previewsample "page.domainurl/samples/avatar/listview-cs2" %}

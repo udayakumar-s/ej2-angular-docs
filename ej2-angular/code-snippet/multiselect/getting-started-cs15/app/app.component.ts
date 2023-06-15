@@ -7,11 +7,11 @@ import { CheckBoxSelectionService } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
     selector: 'app-root',
     // specifies the template string for the MultiSelect component
-    template: `<ejs-multiselect id='multiselectelement' [dataSource]='vegetableData' [fields]='fields'[placeholder]='placeholder' [popupHeight]='height' [mode]='mode' [enableGroupCheckBox]='enableGroupCheckBox' [allowFiltering]='allowFiltering' [filterBarPlaceholder]='filterBarPlaceholder' [showSelectAll]='showSelectAll'></ejs-multiselect>`
+    template: `<ejs-multiselect id='multiselectelement' [dataSource]='vegetableData' [fields]='fields'[placeholder]='placeholder' [popupHeight]='height' [mode]='mode' [enableGroupCheckBox]='enableGroupCheckBox' [allowFiltering]='allowFiltering' [filterBarPlaceholder]='filterBarPlaceholder' [showSelectAll]='showSelectAll'></ejs-multiselect>`,
     providers: [CheckBoxSelectionService]
 })
 export class AppComponent {
-    public mode: string;
+    public mode?: string;
     constructor() {
     }
     //define the data with category

@@ -24,4 +24,4 @@ The center position zooming can be achieved by using the [`centerPosition`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs45" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs45" %}

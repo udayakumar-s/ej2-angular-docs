@@ -198,7 +198,7 @@ The following samples shows the basic file manager component in browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/getting-started-cs1" %}
 
 ## File Download support
 
@@ -258,7 +258,7 @@ To perform the image preview support in the File Manager component, need to init
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/file-manager/getting-started-cs2" %}
 
 ## Injecting feature modules
 
@@ -298,7 +298,7 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/overview-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/overview-cs1" %}
 
 >**Note:** The appearance of the File Manager can be customized by using [cssClass](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#cssclass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
@@ -319,7 +319,7 @@ When the File Manager is initially rendered, [created](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/view-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/view-cs1" %}
 
 ## Maintaining component state on page reload
 
@@ -342,7 +342,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/persistence-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/persistence-cs1" %}
 
 >**Note:** The files of the current folder opened in the File manager can be refreshed programatically by calling [refreshFiles](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#refreshfiles) method.
 
@@ -362,7 +362,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/rtl-cs1" %}
 
 ## Specifying the current path of the File Manager
 

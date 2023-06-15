@@ -81,7 +81,7 @@ Image feature allows you to view and insert an image in a spreadsheet, and you c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/image-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/image-cs1" %}
 
 ### Limitations of Image
 
@@ -159,7 +159,7 @@ Chart feature allows you to view and insert a chart in a spreadsheet, and you ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/chart-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/chart-cs1" %}
 
 ### Limitations of Chart
 

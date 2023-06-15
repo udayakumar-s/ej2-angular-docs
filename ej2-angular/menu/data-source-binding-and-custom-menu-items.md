@@ -35,7 +35,7 @@ The Menu can generate its menu items through an array of complex data source by 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/menu/data-binding-cs1" %}
 
 #### Data Service
 
@@ -56,7 +56,7 @@ The following example displays five employees' **FirstName** from **Employees** 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/data-service-cs1" %}
+{% previewsample "page.domainurl/samples/menu/data-service-cs1" %}
 
 ### Self-referential data
 
@@ -80,7 +80,7 @@ In the following example, the **id**, **pId**, and **text** columns from self-re
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs2" %}
 
 ## Custom menu items
 
@@ -101,7 +101,7 @@ In the following example, the menu has been rendered with customized menu items.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/custom-menu-items-cs1" %}
+{% previewsample "page.domainurl/samples/menu/custom-menu-items-cs1" %}
 
 >To prevent sub menu closing, set `args.cancel` to `true` in [`beforeClose`](../api/menu#beforeclose) event.
 

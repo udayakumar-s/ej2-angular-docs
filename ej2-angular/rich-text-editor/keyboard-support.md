@@ -60,7 +60,7 @@ You can use the following key shortcuts when the Rich Text Editor renders with H
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs13" %}
 
 ## Markdown formation shortcut key
 
@@ -100,7 +100,7 @@ You can use the following key shortcuts when the Rich Text Editor renders with M
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs14" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs14" %}
 
 ## Custom key config
 
@@ -120,4 +120,4 @@ In the below sample, you have customize the bold, italic, underline toolbar acti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs15" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs15" %}

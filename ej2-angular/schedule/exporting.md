@@ -30,7 +30,7 @@ The Scheduler allows you to export all its events into an Excel format file by u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs1" %}
 
 ![Excel Exporting](images/schedule-excel-export.png)
 
@@ -50,7 +50,7 @@ By default, Scheduler exports all the default event fields that are mapped to it
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs2" %}
 
 ![Excel Exporting with custom Fields](images/schedule-excel-export-custom-fields.png)
 
@@ -70,7 +70,7 @@ By default, the Scheduler exports recurring events as a single data by exporting
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs3" %}
 
 ### Exporting custom event data
 
@@ -90,7 +90,7 @@ By default, the whole event collection bound to the Scheduler gets exported as a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs4" %}
 
 ### Customizing column header with custom fields exporting
 
@@ -108,7 +108,7 @@ Using fields property, we can only export the defined fields into excel without 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs5" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs5" %}
 
 ![Excel Exporting with custom header texts](images/schedule-excel-export-custom-header.png)
 
@@ -128,7 +128,7 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs6" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs6" %}
 
 ### Excel file formats
 
@@ -146,7 +146,7 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs7" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs7" %}
 
 ### Custom separator in CSV
 
@@ -164,7 +164,7 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/excel-export-cs8" %}
+{% previewsample "page.domainurl/samples/schedule/excel-export-cs8" %}
 
 ## Exporting calendar events as ICS file
 
@@ -184,7 +184,7 @@ The following code example shows how the Scheduler events are exported to a cale
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/calendar-export-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/calendar-export-cs1" %}
 
 ### Exporting calendar with custom file name
 
@@ -204,7 +204,7 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/calendar-export-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/calendar-export-cs2" %}
 
 ## Import events from other calendars
 
@@ -226,7 +226,7 @@ The following example shows how to import an ICS file into Scheduler, using the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/calendar-export-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/calendar-export-cs3" %}
 
 ## How to print the Scheduler element
 
@@ -253,7 +253,7 @@ You can print the Schedule element with the current view by using the `print` me
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/print-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/print-cs1" %}
 
 ### Using a print method with options
 
@@ -271,6 +271,6 @@ You can print the Schedule element based on your needs using the `print` method 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/print-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/print-cs2" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

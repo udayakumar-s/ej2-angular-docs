@@ -29,13 +29,13 @@ The default items are displayed in following table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/grid-cs6/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/grid-cs6/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/grid-cs6/app/main.ts %}
+{% include code-snippet/grid/grid-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -55,13 +55,13 @@ During the resizing action, the grid component triggers the below two events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/grid-cs7/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/grid-cs7/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/grid-cs7/app/main.ts %}
+{% include code-snippet/grid/grid-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -73,13 +73,13 @@ Custom column menu items can be added by defining the [`columnMenuItems`](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/grid-cs8/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/grid-cs8/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/grid-cs8/app/main.ts %}
+{% include code-snippet/grid/grid-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/grid-cs9/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/grid-cs9/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/grid-cs9/app/main.ts %}
+{% include code-snippet/grid/grid-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -119,13 +119,13 @@ In the below sample, grid is rendered with a customized column menu icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/custom-column-menu-icon-cs1/app/app.component.ts %}
+{% include code-snippet/grid/custom-column-menu-icon-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/custom-column-menu-icon-cs1/app/app.module.ts %}
+{% include code-snippet/grid/custom-column-menu-icon-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/custom-column-menu-icon-cs1/app/main.ts %}
+{% include code-snippet/grid/custom-column-menu-icon-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

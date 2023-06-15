@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template:  `<!-- Primary Button - Used to represent a primary action. -->
                 <button ejs-button cssClass="e-primary">Primary</button>
 

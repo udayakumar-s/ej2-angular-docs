@@ -41,7 +41,7 @@ The following code example shows the options for inserting rows in the spreadshe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/insert/row-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/insert/row-cs1" %}
 
 ### Column
 
@@ -64,7 +64,7 @@ The following code example shows the options for inserting columns in the spread
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/insert/column-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/insert/column-cs1" %}
 
 ## Delete
 
@@ -89,7 +89,7 @@ The following code example shows the delete operation of rows and columns in the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/delete/row-column-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/delete/row-column-cs1" %}
 
 ## Limitations
 
@@ -134,7 +134,7 @@ The following code example shows the hide/show rows and columns operation in the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/hide-show-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/hide-show-cs1" %}
 
 ## Note
 

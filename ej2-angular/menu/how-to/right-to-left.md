@@ -26,4 +26,4 @@ The following example illustrates how to enable right-to-left support in Menu co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs10" %}

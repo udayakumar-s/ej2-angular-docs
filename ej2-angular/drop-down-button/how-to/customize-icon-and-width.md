@@ -27,4 +27,4 @@ and size of the font icon as `40px` by adding `e-custom` class.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/custom-width-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/custom-width-cs1" %}

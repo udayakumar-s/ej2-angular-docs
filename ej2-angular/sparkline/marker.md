@@ -39,7 +39,7 @@ The following code example shows enabling markers for all points.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs19" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs19" %}
 
 ## Adding marker to special point
 
@@ -59,7 +59,7 @@ In sparkline, markers can be enabled for particular points such as the start, en
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs20" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs20" %}
 
 ## Customizing markers
 
@@ -79,4 +79,4 @@ Sparkline markers can be customized in terms of fill color, border color, width,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs21" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs21" %}

@@ -30,7 +30,7 @@ You can check this video to learn about how to perform Exporting and its customi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/excel-export-cs7" %}
+{% previewsample "page.domainurl/samples/treegrid/excel-export-cs7" %}
 
 ## Persist collapsed state
 
@@ -48,7 +48,7 @@ You can persist the collapsed state in the exported document by defining `isColl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/excel-export-cs8" %}
+{% previewsample "page.domainurl/samples/treegrid/excel-export-cs8" %}
 
 > The CSV export allows exporting tree grid data to text document. Use the [`csvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelexport) method for exporting. To enable CSV export in the treegrid, set the [`allowCsvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowexcelexport-boolean) as true.
 
@@ -68,6 +68,6 @@ The excel export provides an option to define datasource dynamically before expo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/excel-export-cs9" %}
+{% previewsample "page.domainurl/samples/treegrid/excel-export-cs9" %}
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

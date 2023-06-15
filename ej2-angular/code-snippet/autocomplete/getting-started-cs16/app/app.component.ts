@@ -11,9 +11,9 @@ import { AutoCompleteComponent, FilteringEventArgs } from '@syncfusion/ej2-angul
 })
 export class AppComponent {
   @ViewChild('local')
-  public localObj: AutoCompleteComponent;
+  public localObj : AutoCompleteComponent | any;
   public suggestList: Array<string> = [];
-  public countries: { [key: string]: Object; }[] = [
+  public countries?: { [key: string]: Object; }[] = [
     { Name: 'Australia', Code: 'AU' },
     { Name: 'Bermuda', Code: 'BM' },
     { Name: 'Canada', Code: 'CA' },
@@ -27,7 +27,7 @@ export class AppComponent {
   onChange() {
     localStorage.setItem("value", this.localObj.value as string);
     if (localStorage.getItem('value') !== 'null') {
-      this.suggestList.push(localStorage.getItem('value'));
+      this.suggestList.push((localStorage as any).getItem('value'));
       var proxy = this;
       this.suggestList = this.suggestList.filter(function (item, pos, self) {
         return proxy.suggestList.indexOf(item) == pos;
@@ -46,7 +46,7 @@ export class AppComponent {
   onFiltering(e: FilteringEventArgs){
     let query: any = new Query();
     query = (e.text !== '') ? query.where('Name', 'startswith', e.text, true) : query;
-    e.updateData(this.countries, query);
+    e.updateData((this as any).countries, query);
     (this.localObj as any).popupObj.element.classList.remove('e-suggestion');
         }
 }

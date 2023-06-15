@@ -30,7 +30,7 @@ The following example demonstrates the DateTimePicker with strictMode `true`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/accessibility-cs7" %}
+{% previewsample "page.domainurl/samples/datetimepicker/accessibility-cs7" %}
 
 By default, the DateTimePicker act in strictMode `false` state, that allows to enter the invalid or out-of-range datetime in textbox.
 
@@ -51,6 +51,6 @@ If you are entering the out-of-range or invalid datetime value, then the model v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/accessibility-cs8" %}
+{% previewsample "page.domainurl/samples/datetimepicker/accessibility-cs8" %}
 
 > If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.

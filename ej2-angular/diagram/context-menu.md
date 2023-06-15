@@ -32,7 +32,7 @@ The following code illustrates how to enable the default context menu items.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/contextmenu/contextmenu-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/contextmenu/contextmenu-cs1" %}
 
 Context menu can be defined for individual node with the desired context menu items.
 
@@ -62,7 +62,7 @@ The following code example illustrates how to add custom context menu items.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/contextmenu/custom-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/contextmenu/custom-cs1" %}
 
 To display the custom context menu items alone, set  the [`showCustomMenuOnly`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettingsModel#showCustomMenuOnly) property to true.
 
@@ -84,7 +84,7 @@ To display the custom context menu items alone, set  the [`showCustomMenuOnly`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/contextmenu/menutemplate-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/contextmenu/menutemplate-cs1" %}
 
 ## Context menu events
 
@@ -103,4 +103,4 @@ The following code example illustrates how to define those events.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/contextmenu/events-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/contextmenu/events-cs1" %}

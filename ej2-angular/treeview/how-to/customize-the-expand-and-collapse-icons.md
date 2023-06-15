@@ -25,4 +25,4 @@ Refer to the sample to customize expand/collapse icons.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs9" %}

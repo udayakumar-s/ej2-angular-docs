@@ -25,4 +25,4 @@ To create a block button, set the [`cssClass`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/block-cs1" %}
+{% previewsample "page.domainurl/samples/button/block-cs1" %}

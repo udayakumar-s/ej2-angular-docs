@@ -33,7 +33,7 @@ By Default, File Manager is rendered with largeicons view. The following example
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/large-icons-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/large-icons-cs1" %}
 
 ## Details View
 
@@ -51,4 +51,4 @@ Details view is an injectable module in the file manager so, it should be inject
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/details-view-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/details-view-cs1" %}

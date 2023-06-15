@@ -26,4 +26,4 @@ In the below sample, value of input elements within the dialog has been checked 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-values-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-values-cs1" %}

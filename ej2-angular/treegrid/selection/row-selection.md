@@ -26,7 +26,7 @@ To select a row at initial rendering, set the [`selectedRowIndex`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs4" %}
 
 ## Get selected row indexes
 
@@ -44,7 +44,7 @@ Selected row indexes can be obtained by using the [`getSelectedRowIndexes`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs5" %}
 
 ## Clear selection programmatically
 
@@ -64,7 +64,7 @@ In the demo below, we initially selected the third row using [selectedRowIndex](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs6" %}
 
 ## Get selected records on various pages
 
@@ -86,7 +86,7 @@ You can get the selected records using the [getSelectedRecords](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs7" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs7" %}
 
 > To persist the tree grid selection, it is necessary to define any one of the columns as a primary key using the [columns.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) property.
 
@@ -106,4 +106,4 @@ Selected rows can be obtained by using the [`getSelectedRows`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs13" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs13" %}

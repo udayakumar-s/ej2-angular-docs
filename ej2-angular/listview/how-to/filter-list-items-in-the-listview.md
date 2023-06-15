@@ -30,6 +30,6 @@ The filtered data can be displayed in the ListView component depending upon on u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/listview/getting-started-cs6" %}
 
 > In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](https://ej2.syncfusion.com/documentation/api/data/query/#where) clause instead of `startswith`.

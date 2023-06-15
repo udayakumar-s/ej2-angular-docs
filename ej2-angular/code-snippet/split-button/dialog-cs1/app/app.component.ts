@@ -1,5 +1,5 @@
 
- 
+
 import { Component, ViewChild } from '@angular/core';
 import { ItemModel, MenuEventArgs  } from '@syncfusion/ej2-angular-splitbuttons';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
@@ -15,7 +15,7 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 export class AppComponent {
     @ViewChild('dialog')
-    public alertDialog: DialogComponent;
+    public alertDialog?: DialogComponent;
 
     public items: ItemModel[] = [
     {
@@ -34,7 +34,7 @@ export class AppComponent {
             content: 'Ok',
         },
         click: function () {
-            this.hide();
+            (this as any).hide();
         }
     },
     {
@@ -43,13 +43,13 @@ export class AppComponent {
             content: 'Cancel',
         },
         click: function () {
-            this.hide();
+            (this as any).hide();
         }
     }];
 
     public select (args: MenuEventArgs) {
         if (args.item.text === 'Update...') {
-            this.alertDialog.show();
+            this.alertDialog!.show();
         }
     }
 }

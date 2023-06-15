@@ -26,4 +26,4 @@ In this following example, ListView is created and its element is set as [`targe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/listview-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/listview-cs1" %}

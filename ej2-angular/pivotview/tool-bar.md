@@ -46,7 +46,7 @@ The following table shows built-in toolbar options and its actions.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs288" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs288" %}
 
 ## Show desired chart types in the dropdown menu
 
@@ -64,7 +64,7 @@ By default, all chart types are displayed in the dropdown menu included in the t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs289" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs289" %}
 
 ## Switch the chart to multiple axes
 
@@ -103,7 +103,7 @@ In addition to the existing built-in toolbar items, new toolbar item(s) may also
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs290" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs290" %}
 
 In the above topic, we have seen how to add an icon as one of the toolbar item in toolbar panel. In the next topic, we are going to see how to frame the entire toolbar panel and how to add a custom control in it.
 
@@ -125,7 +125,7 @@ Here, the entire toolbar panel can be framed in HTML elements that are appended 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/toolbarTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/toolbarTemplate-cs1" %}
 
 Another option allows to frame a custom toolbar item using HTML elements and include in the toolbar panel at the desired position. The custom toolbar items can be declared as control **instance** or element **id** in the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar) property in pivot table.
 
@@ -141,7 +141,7 @@ Another option allows to frame a custom toolbar item using HTML elements and inc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/toolbarTemplate-cs2" %}
+{% previewsample "page.domainurl/samples/pivot-grid/toolbarTemplate-cs2" %}
 
 >Note: For both options, the actions for the toolbar template items can be defined in the event [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbarclick). Also, if the toolbar item is a custom control then its built-in events can also be accessed.
 
@@ -163,7 +163,7 @@ The current pivot report can be saved as a JSON file in the desired path and loa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs291" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs291" %}
 
 ## Save and load reports to a SQL database
 
@@ -1042,7 +1042,7 @@ The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs292" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs292" %}
 
 ### BeforeExport
 
@@ -1062,7 +1062,7 @@ For example, you can add the header and footer for the pdf document by setting t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs293" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs293" %}
 
 ### ActionBegin
 
@@ -1105,7 +1105,7 @@ In the below sample, toolbar UI actions such as add new report and save current 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs294" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs294" %}
 
 ### ActionComplete
 
@@ -1145,7 +1145,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs295" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs295" %}
 
 ### ActionFailure
 
@@ -1184,7 +1184,7 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs296" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs296" %}
 
 ## See Also
 

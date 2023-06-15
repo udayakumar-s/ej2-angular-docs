@@ -38,7 +38,7 @@ The position values of Speed Dial are as follows:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/position-cs1" %}
+{% previewsample "page.domainurl/samples/speed-dial/position-cs1" %}
 
 ## Opens items on hover
 
@@ -83,7 +83,7 @@ Below example demonstrates open/close action items on button click.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/position-cs2" %}
+{% previewsample "page.domainurl/samples/speed-dial/position-cs2" %}
 
 ## Programmatically refresh the position
 
@@ -104,4 +104,4 @@ You can refresh the position of the Speed Dial using [`refreshPosition`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/position-cs3" %}
+{% previewsample "page.domainurl/samples/speed-dial/position-cs3" %}

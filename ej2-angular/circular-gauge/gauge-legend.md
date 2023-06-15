@@ -96,7 +96,7 @@ The following code example shows how to add legend in the gauge.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-legend-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-legend-cs1" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Toggle option in legend
@@ -115,7 +115,7 @@ The toggle option has been provided for legend. So, if you toggle the legend, th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-legend-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-legend-cs2" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Paging support in legend
@@ -134,7 +134,7 @@ By default, paging will be enabled if the legend items exceed the legend bounds.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-legend-cs3" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-legend-cs3" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Legend text customization
@@ -153,7 +153,7 @@ You can customize the legend text using `legendText` property in `ranges`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-legend-cs4" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-legend-cs4" %}
 <!-- markdownlint-disable MD036 -->
 
 `legendRendering` event will be triggered before rendering each legend item, using this event you can customize needed legend items using following arguments.

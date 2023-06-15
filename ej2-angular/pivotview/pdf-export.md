@@ -24,7 +24,7 @@ PDF export allows exporting pivot table data as PDF document. To enable PDF expo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs208" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs208" %}
 
 ## Multiple pivot table exporting
 
@@ -42,7 +42,7 @@ PDF export provides an option for exporting multiple pivot tables to same file. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs209" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs209" %}
 
 ## Export table and chart into the same document
 
@@ -60,7 +60,7 @@ When the [`displayOption`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs306" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs306" %}
 
 ## Customization during PDF export
 
@@ -168,7 +168,7 @@ The below code illustrates the PDF export customization options.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs210" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs210" %}
 
 ### Changing the file name while exporting
 
@@ -186,7 +186,7 @@ The PDF export provides an option to change file name of the document before exp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs211" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs211" %}
 
 ### Changing page orientation while exporting
 
@@ -204,7 +204,7 @@ The PDF export provides an option to change page orientation of the document bef
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs212" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs212" %}
 
 ### Changing page size while exporting
 
@@ -225,7 +225,7 @@ Arche, Flsa, HalfLetter, Letter11x17, Ledger.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs213" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs213" %}
 
 ### Changing document width and height while exporting
 
@@ -245,7 +245,7 @@ Before exporting, you can change the height and width of the PDF document. To ac
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs307" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs307" %}
 
 ### Customize the table column count while exporting
 
@@ -265,7 +265,7 @@ Before exporting, you can split and export the pivot table columns on each page 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs308" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs308" %}
 
 ## Changing the pivot table style while exporting
 
@@ -285,7 +285,7 @@ The PDF export provides an option to change colors for headers, caption and reco
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs214" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs214" %}
 
 <!-- markdownlint-disable MD009 -->
 
@@ -332,7 +332,7 @@ In addition to existing built-in fonts, custom fonts can also be used. The custo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs215" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs215" %}
 
 > The non-English alphabets can also be exported properly by setting its appropriate font.
 
@@ -355,7 +355,7 @@ You can export the pivot table virtual scroll data as PDF document by using Pivo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs216" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs216" %}
 
 ### Repeat row headers
 
@@ -376,7 +376,7 @@ Repeat row headers on each page can be achieved using PivotEngine export option.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs217" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs217" %}
 
 ### Export all pages
 
@@ -396,7 +396,7 @@ The pivot engine exports the entire virtual data of the pivot table (i.e. the da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs218" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs218" %}
 
 ## Events
 
@@ -421,7 +421,7 @@ The event `pdfQueryCellInfo` triggers on framing each row and value cell during 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs219" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs219" %}
 
 ### PdfHeaderQueryCellInfo
 
@@ -442,7 +442,7 @@ The event `pdfHeaderQueryCellInfo` triggers on framing each column header cell d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs220" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs220" %}
 
 ### ExportComplete
 
@@ -463,7 +463,7 @@ The event [`exportComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs221" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs221" %}
 
 ## See Also
 

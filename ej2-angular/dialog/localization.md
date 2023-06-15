@@ -35,4 +35,4 @@ text.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/dialog/getting-started-cs8" %}

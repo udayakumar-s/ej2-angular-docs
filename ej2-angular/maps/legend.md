@@ -38,7 +38,7 @@ The legends can be made interactive with an arrow mark indicating the exact rang
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs49" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs49" %}
 
 ## Positioning of the legend
 
@@ -74,7 +74,7 @@ The above four positions can be aligned with combination of **Near**, **Center**
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs50" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs50" %}
 
 ## Legend for shapes
 
@@ -94,7 +94,7 @@ The below code snippet demonstrate the equal color mapping legends for the shape
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs51" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs51" %}
 
 ### Legend shape
 
@@ -142,7 +142,7 @@ The following properties are available in legend to customize the legend shape a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs52" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs52" %}
 
 ### Legend for items excluded from color mapping
 
@@ -190,7 +190,7 @@ In the following example, color mapping is added for the ranges from **0** to **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs53" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs53" %}
 
 ### Hide desired legend items
 
@@ -208,7 +208,7 @@ Use the [`showLegend`](https://ej2.syncfusion.com/angular/documentation/api/maps
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs54" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs54" %}
 
 ### Hide legend items based data source value
 
@@ -226,7 +226,7 @@ Depending on the boolean values provided in the data source, the legend items wi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs55" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs55" %}
 
 ### Binding legend item text from data source
 
@@ -244,7 +244,7 @@ To show the legend text based on values provided in the data source, use the [`v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs56" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs56" %}
 
 ### Hide duplicate legend items
 
@@ -262,7 +262,7 @@ To hide the duplicate legend items in Maps, set the [`removeDuplicateLegend`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs57" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs57" %}
 
 ### Toggle option in legend
 
@@ -287,7 +287,7 @@ The following properties are available to customize the toggle option in legend.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs58" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs58" %}
 
 ## Enable legend for bubbles
 
@@ -305,7 +305,7 @@ To enable the legend for the bubble by setting the [`visible`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs59" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs59" %}
 
 ## Enable legend for markers
 
@@ -323,7 +323,7 @@ To enable legend for marker by setting the [`visible`](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs60" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs60" %}
 
 ### Imitate/Map marker shape to the legend shape
 
@@ -341,4 +341,4 @@ To imitate or map the marker shape with its legend item shape, set the [`useMark
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs61" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs61" %}

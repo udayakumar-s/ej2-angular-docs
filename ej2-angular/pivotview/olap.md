@@ -193,7 +193,7 @@ In this sample, "Product Categories" is added in column, "Customer Geography" in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs189" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs189" %}
 
 ### Applying formatting to a value field
 
@@ -213,7 +213,7 @@ Formatting defines a way in which values should be displayed. For example, forma
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs190" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs190" %}
 
 ### Enable grouping bar
 
@@ -233,7 +233,7 @@ The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs191" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs191" %}
 
 ### Enable pivot field list
 
@@ -253,7 +253,7 @@ The component provides a built-in Field List similar to Microsoft Excel. It allo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs192" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs192" %}
 
 ### Exploring filter axis
 
@@ -271,7 +271,7 @@ The filter axis contains collection of [OLAP cube elements](#olap-cube-elements)
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs193" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs193" %}
 
 ### Calculated field
 
@@ -306,7 +306,7 @@ Also calculated fields can be added at run time through the built-in dialog. The
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs194" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs194" %}
 
 Users can add a calculated field at runtime through the built-in dialog by using the following steps.
 
@@ -424,7 +424,7 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs195" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs195" %}
 
 ##### Limitations for virtual scrolling
 
@@ -452,7 +452,7 @@ ng serve --open
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs196" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs196" %}
 
 ## Data Binding
 
@@ -477,7 +477,7 @@ To bind OLAP datasource to the pivot table, you need to specify following proper
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs197" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs197" %}
 
 ### Fields
 
@@ -497,7 +497,7 @@ By default, the measures are plotted in column axis. To plot those measures in r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs198" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs198" %}
 
 #### Measures in different position
 
@@ -515,7 +515,7 @@ You can place measures in different position in row or column axis either thorou
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs199" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs199" %}
 
 ### Named set
 
@@ -535,7 +535,7 @@ You can bind the named sets in the pivot table by setting it's unique name in th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs200" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs200" %}
 
 ### Configuring authentication
 

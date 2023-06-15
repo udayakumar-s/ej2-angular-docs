@@ -31,7 +31,7 @@ To sort, inject the [`Sort`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/sorting-cs1" %}
 
 > * TreeGrid columns are sorted in the `Ascending` order. If you click the already sorted column, the sort direction toggles.
 > * You can apply and clear sorting by invoking [`sortColumn`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#sortcolumn) and
@@ -54,7 +54,7 @@ To sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/sorting-cs2" %}
 
 ## Multi-column sorting
 
@@ -77,7 +77,7 @@ To clear sorting for a particular column, press the "Shift + mouse left click."
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/sorting-cs3" %}
 
 > To sort the column, you can use [`sortByColumn`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#sortbycolumn) method in the tree grid. In this method you need to pass the column name, and the direction of sorting as parameters.
 
@@ -106,7 +106,7 @@ In the following example, the custom sort comparer function was defined in the *
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/sorting-cs4" %}
 
 ## Sorting events
 
@@ -124,7 +124,7 @@ During the sort action, the treegrid component triggers two events. The [`action
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/sorting-cs5" %}
 
 > The `args.requestType` is the current action name. For example, in sorting the `args.requestType` value is 'sorting'.
 
@@ -146,7 +146,7 @@ In the following example, custom sort comparer function was defined in the `Cate
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/sorting-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/sorting-cs6" %}
 
 > The sort comparer function will work only for the local data. -->
 

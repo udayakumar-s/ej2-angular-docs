@@ -139,6 +139,6 @@ The following example shows a basic Image Editor component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs6" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs6" %}
 
 > You can also explore our [Angular Image Editor example](https://ej2.syncfusion.com/angular/demos/#/material/image-editor/default.html) that shows how to render the Image Editor in Angular.

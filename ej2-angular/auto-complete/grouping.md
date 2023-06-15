@@ -26,7 +26,7 @@ In the following sample, vegetables are grouped according on its category using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs14" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs14" %}
 
 ## Customization
 

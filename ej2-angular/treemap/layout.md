@@ -37,7 +37,7 @@ The `Squarified` layout displays the nested rectangles based on aspect ratio in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs23" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs23" %}
 
 ### SliceAndDiceVertical
 
@@ -55,7 +55,7 @@ The `SliceAndDiceVertical` layout creates rectangles with high aspect ratio and 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs24" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs24" %}
 
 ### SliceAndDiceHorizontal
 
@@ -73,7 +73,7 @@ The `SliceAndDiceHorizontal` layout creates rectangles with high aspect ratio an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs25" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs25" %}
 
 ### SliceAndDiceAuto
 
@@ -91,4 +91,4 @@ The `SliceAndDiceAuto` layout creates rectangles with high aspect ratio and disp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs26" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs26" %}

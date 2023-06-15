@@ -40,7 +40,7 @@ CssClass is used for AppBar customization based on the custom class. In the exam
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/cssclass-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/cssclass-cs1" %}
 
 ## HtmlAttributes
 
@@ -58,4 +58,4 @@ It can be used for additional inline attributes by specifying as inline attribut
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/htmlattributes-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/htmlattributes-cs1" %}

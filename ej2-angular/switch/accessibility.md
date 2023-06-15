@@ -46,4 +46,4 @@ When the switch has focus, pressing the Space key changes the state of the switc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/state-cs1" %}
+{% previewsample "page.domainurl/samples/switch/state-cs1" %}

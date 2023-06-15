@@ -26,4 +26,4 @@ In the following example, Sidebar has been rendered with ListView component in i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/listview-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/listview-cs1" %}

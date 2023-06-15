@@ -24,4 +24,4 @@ You can change the appearance of the NumericTextBox by adding custom `cssClass` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/custom-css-cs1" %}
+{% previewsample "page.domainurl/samples/numerictextbox/custom-css-cs1" %}

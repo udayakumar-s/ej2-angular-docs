@@ -28,4 +28,4 @@ Check out this video to learn about integrating other UI components inside the A
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/direct-components-cs1" %}
+{% previewsample "page.domainurl/samples/tab/direct-components-cs1" %}

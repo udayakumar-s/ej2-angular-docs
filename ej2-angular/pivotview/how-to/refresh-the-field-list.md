@@ -24,4 +24,4 @@ You can refresh pivot table and field list with new data source dynamically.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs169" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs169" %}

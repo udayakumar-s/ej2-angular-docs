@@ -24,4 +24,4 @@ Smithchart will display details about the points through tooltip, when the mouse
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs29" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs29" %}

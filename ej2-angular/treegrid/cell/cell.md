@@ -27,7 +27,7 @@ The [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treeg
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/cell-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/cell-cs2" %}
 
 > You can get the cell details by using the [`getCellFromIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcellfromindex) method in tree grid. In this method, you need to pass the row index and column index as parameters to get the cell details.
 
@@ -61,7 +61,7 @@ In the below example, we have customized the cells of `TaskID` and `StartDate` c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/cell-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/cell-cs3" %}
 
 ## Grid lines
 
@@ -89,7 +89,7 @@ The available modes of grid lines are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/cell-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/cell-cs4" %}
 
 >By default, the treegrid renders with `Default` mode.
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

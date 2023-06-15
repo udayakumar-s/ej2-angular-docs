@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
                      <h4>Group B</h4>
                      <ejs-listbox [dataSource]="groupB" [allowDragAndDrop]="true" [fields]="setfield" scope="combined-list" height="290px"></ejs-listbox>
                      </div></div>`,
-    styleUrls: ['draganddrop.css'],
+    
 })
 
 export class AppComponent {

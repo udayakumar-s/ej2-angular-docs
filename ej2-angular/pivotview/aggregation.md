@@ -62,7 +62,7 @@ For each value field, the aggregation type can be set using the property [`type`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs1" %}
 
 > By default, the aggregation will be considered as **Sum** to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as **Count**.
 
@@ -92,7 +92,7 @@ By default, all the aggregation types are displayed in the dropdown menu availab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs2" %}
 
 ## Hiding aggregation type from button text
 
@@ -110,7 +110,7 @@ By default, in value axis each field would be displayed by its name and aggregat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs3" %}
 
 ## Hiding aggregation type icon from UI
 
@@ -130,7 +130,7 @@ By default, the icon to set aggregation type is enabled in the grouping bar. To 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs4" %}
 
 ## Event
 
@@ -160,7 +160,7 @@ The event [`aggregateCellInfo`](https://ej2.syncfusion.com/angular/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs5" %}
 
 ### ActionBegin
 
@@ -190,7 +190,7 @@ In the following example, action taken during aggregation type selection via dro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs6" %}
 
 ### ActionComplete
 
@@ -216,7 +216,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs7" %}
 
 ### ActionFailure
 
@@ -238,4 +238,4 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs8" %}

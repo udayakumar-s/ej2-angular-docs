@@ -28,7 +28,7 @@ To use Infinite scrolling, set `enableInfiniteScrolling` property as true and in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/infinite-scroll-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/infinite-scroll-cs1" %}
 
 ## InitialBlocks
 
@@ -48,7 +48,7 @@ In the below demo, we have changed this property value to load five page records
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/infinite-scroll-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/infinite-scroll-cs2" %}
 
 ## Cache Mode
 
@@ -68,7 +68,7 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/infinite-scroll-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/infinite-scroll-cs3" %}
 
 ## Limitations for Virtualization
 

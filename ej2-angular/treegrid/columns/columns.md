@@ -34,7 +34,7 @@ To format cell values based on specific culture, use the [`columns.format`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs14" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs14" %}
 
 > By default, the [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values are formatted in `en-US` locale.
 
@@ -78,7 +78,7 @@ Format | Formatted value
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs15" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs15" %}
 
 ## Visibility
 
@@ -96,7 +96,7 @@ Hide any particular column in the tree grid before rendering by defining the [vi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs16" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs16" %}
 
 ## Column type
 
@@ -131,7 +131,7 @@ It is also possible to select the rows hierarchically using checkboxes in TreeGr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs17" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs17" %}
 
 > Using [`selectCheckboxes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectcheckboxes) method, we can check the checkboxes by passing the desired row Indexes. When we pass the parent record index in the [`selectCheckboxes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectcheckboxes) method, all children record checkboxes for the corresponding parent record will be selected. So, there is no need to pass the child record index along with the parent record index.
 >  1. You can get the checked records detail by the [`getCheckedRecords`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcheckedrecords) method in tree grid.
@@ -154,7 +154,7 @@ You can enable or disable treegrid action for a particular column by setting the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs18" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs18" %}
 
 ## Show/hide columns by external button
 
@@ -172,7 +172,7 @@ You can show or hide treegrid columns dynamically using external buttons by invo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs19" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs19" %}
 
 ## ValueAccessor
 
@@ -190,7 +190,7 @@ The [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/treeg
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs20" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs20" %}
 
 ### Display array type columns
 
@@ -209,7 +209,7 @@ In this example, the name field has an array of two objects, FirstName and LastN
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs21" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs21" %}
 
 ### Expression column
 
@@ -227,7 +227,7 @@ You can achieve the expression column by using the [`valueAccessor`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs22" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs22" %}
 
 ## How to render boolean values as checkbox
 
@@ -245,7 +245,7 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs23" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs23" %}
 
 ## Display custom tooltip for columns
 
@@ -274,7 +274,7 @@ tooltip (args: QueryCellInfoEventArgs) {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/custom-tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/custom-tooltip-cs1" %}
 
 ## Align the text of tree grid content and header
 
@@ -298,7 +298,7 @@ The Tree Grid column supports the following alignments:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/custom-tooltip-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/custom-tooltip-cs2" %}
 
 ## Get column uid by field name using external button
 
@@ -316,7 +316,7 @@ You can get the unique id of the column by field name using [`getUidByColumnFiel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/column-uid-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/column-uid-cs1" %}
 
 > You can get the column name by uid in the tree grid by passing the uid as a parameter to the [`getColumnByUid`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyuid) method.
 > You can get the column index by field name by passing the field name as a parameter to the [`getColumnIndexByField`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnindexbyfield) method in tree grid.

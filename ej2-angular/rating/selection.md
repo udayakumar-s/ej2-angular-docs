@@ -24,7 +24,7 @@ The rating component allows users to rate something using a visual scale, and th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/selection/selection-cs" %}
+{% previewsample "page.domainurl/samples/rating/selection/selection-cs" %}
 
 ## Min value
 
@@ -42,7 +42,7 @@ You can use the [`min`](https://ej2.syncfusion.com/angular/documentation/api/rat
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/selection/min-cs" %}
+{% previewsample "page.domainurl/samples/rating/selection/min-cs" %}
 
 ## Single selection
 
@@ -60,7 +60,7 @@ You can use the [`enableSingleSelection`](https://ej2.syncfusion.com/angular/doc
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/selection/singleselection-cs" %}
+{% previewsample "page.domainurl/samples/rating/selection/singleselection-cs" %}
 
 ## Show or hide reset button
 
@@ -78,4 +78,4 @@ You can reset the rating value to its default by using the [`allowReset`](https:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/selection/allowreset-cs" %}
+{% previewsample "page.domainurl/samples/rating/selection/allowreset-cs" %}

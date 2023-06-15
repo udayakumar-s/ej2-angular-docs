@@ -26,7 +26,7 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/indent-outdent-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/indent-outdent-cs1" %}
 
 ## Indent/Outdent a row programmatically
 
@@ -45,4 +45,4 @@ To get the records you can use [`getCurrentViewRecords`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/programmatic-indent-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/programmatic-indent-cs1" %}

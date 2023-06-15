@@ -26,4 +26,4 @@ The following example illustrates how to enable right-to-left support in DropDow
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/disabled-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/disabled-cs1" %}

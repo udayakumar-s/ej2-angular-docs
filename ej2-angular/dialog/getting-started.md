@@ -228,7 +228,7 @@ Run the `ng serve` command in command window, it will serve your application and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/dialog/getting-started-cs2" %}
 
 > In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document.body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
 If the dialog is rendered based on the body, then the dialog will get the height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, we can set the CSS style for the html and body to get the dialog height.
@@ -261,7 +261,7 @@ While the user clicks the overlay, the action can be handled through the [`overl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/dialog/getting-started-cs3" %}
 
 ## Enable header
 
@@ -279,7 +279,7 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/dialog/getting-started-cs4" %}
 
 ## Enable footer
 
@@ -303,7 +303,7 @@ The below sample render with button and its click event.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/dialog/getting-started-cs5" %}
 
 ## Draggable
 
@@ -324,7 +324,7 @@ From `16.2.x` version, enabled draggable support for modal Dialog also.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/dialog/getting-started-cs6" %}
 
 ## Positioning
 
@@ -347,7 +347,7 @@ The below example demonstrates the different Dialog positions.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/position-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/position-cs1" %}
 
 > You can refer to our [Angular Dialog](https://www.syncfusion.com/angular-ui-components/angular-modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dialog example](https://ej2.syncfusion.com/angular/demos/#/material/dialog/default) that shows how to render the dialog.
 

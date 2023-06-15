@@ -34,7 +34,7 @@ To change the pointer value dynamically, use the [`setPointerValue`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs29" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs29" %}
 
 ## setAnnotationValue
 
@@ -58,7 +58,7 @@ To change the annotation content dynamically, use the [`setAnnotationValue`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs30" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs30" %}
 
 ## refresh
 
@@ -76,4 +76,4 @@ The [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/linear-gaug
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs31" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs31" %}

@@ -47,7 +47,7 @@ The following sample demonstrates the positioning of panels within the dashboard
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dashboard-layout/positioning-of-panels-cs1" %}
+{% previewsample "page.domainurl/samples/dashboard-layout/positioning-of-panels-cs1" %}
 
 ## Sizing of panels
 
@@ -67,6 +67,6 @@ The following sample demonstrates the sizing of panels within the dashboard layo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dashboard-layout/sizing-of-panels-cs1" %}
+{% previewsample "page.domainurl/samples/dashboard-layout/sizing-of-panels-cs1" %}
 
 > You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to knows how to present and manipulate data.

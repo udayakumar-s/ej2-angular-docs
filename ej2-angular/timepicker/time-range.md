@@ -29,6 +29,6 @@ The following example allows you to select a time value within a range of `9:00 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/timepicker/getting-started-cs8" %}
 
 > If the value of `min` or `max` property is changed through code behind you have to update the `value` property to set within the range.

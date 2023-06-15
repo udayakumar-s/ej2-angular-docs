@@ -34,7 +34,7 @@ To use grouping bar, You need to inject the `GroupingBarService` module in pivot
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs125" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs125" %}
 
 The grouping bar provides some additional options to customize it's UI using `groupingBarSettings` property.
 
@@ -54,7 +54,7 @@ The fields panel, which is positioned above the grouping bar, displays the field
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs126" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs126" %}
 
 ## Show or hide all filter icon
 
@@ -74,7 +74,7 @@ The Grouping Bar has an option to filter members of particular fields at runtime
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs127" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs127" %}
 
 ## Show or hide specific filter icon
 
@@ -94,7 +94,7 @@ In the below sample, the filter icon of "Quarter" and "Products" fields have bee
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs128" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs128" %}
 
 ## Show or hide all sort icon
 
@@ -114,7 +114,7 @@ The Grouping Bar has an option to order members of a particular fields either in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs129" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs129" %}
 
 ## Show or hide specific sort icon
 
@@ -134,7 +134,7 @@ In the below sample, the sort icon of "Quarter" and "Country" fields have been h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs130" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs130" %}
 
 ## Show or hide all remove icon
 
@@ -154,7 +154,7 @@ The Grouping Bar has an option to remove any field at runtime. To remove a field
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs131" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs131" %}
 
 ## Show or hide specific remove icon
 
@@ -174,7 +174,7 @@ In the below sample, the remove icon of fields "Year", "Sold" and "Products" hav
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs132" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs132" %}
 
 ## Disable all fields from dragging
 
@@ -192,7 +192,7 @@ The Grouping Bar has an option to drag-and-drop fields between row, column, valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs133" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs133" %}
 
 ## Disable specific field from dragging
 
@@ -212,7 +212,7 @@ In the below sample, the drag and drop of the fields "Year" and "Products" have 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs134" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs134" %}
 
 ## Remove specific field(s) from displaying
 
@@ -232,7 +232,7 @@ When a report is bound to the pivot table, fields will be automatically populate
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs135" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs135" %}
 
 ## Changing aggregation type of value fields at runtime
 
@@ -250,7 +250,7 @@ End user can perform calculations over a group of values using the aggregation o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs136" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs136" %}
 
 ## Show or hide specific dropdown icon
 
@@ -270,7 +270,7 @@ In the below sample, the dropdown icon of field "Sold" is hidden.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs137" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs137" %}
 
  >The property [`showFilterIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#showfiltericon), [`showSortIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#showsorticon), [`showValueTypeIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#showvaluetypeicon) and [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#allowdraganddrop) in fields of [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) are applicable for both grouping bar and field list.
 
@@ -292,7 +292,7 @@ During runtime, the **Values** button in the grouping bar can be moved to a diff
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs138" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs138" %}
 
 ## Event
 
@@ -312,7 +312,7 @@ The event[`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs139" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs139" %}
 
 ### FieldDragStart
 
@@ -340,7 +340,7 @@ In the below sample, the drag operation for the fields in row axis alone is rest
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs140" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs140" %}
 
 ### FieldDrop
 
@@ -374,7 +374,7 @@ In the below sample, dropping of any fields in value axis alone is restricted.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs141" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs141" %}
 
 ### FieldRemove
 
@@ -404,7 +404,7 @@ In the below sample, the field "Country" could not be removed from report by any
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs142" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs142" %}
 
 ### AggregateMenuOpen
 
@@ -432,7 +432,7 @@ In the below sample, the aggregate types of the field "Amount" has been customiz
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs143" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs143" %}
 
  >The events [`aggregateMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#aggregatemenuopen), [`fieldRemove`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fieldremove), [`fieldDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fielddrop), [`fieldDragStart`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fielddragstart) and [`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#onfielddropped) are applicable for both grouping bar and field list.
 
@@ -472,7 +472,7 @@ In the below sample, grouping bar UI actions such as sorting and filtering can b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs144" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs144" %}
 
 ### ActionComplete
 
@@ -508,7 +508,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs145" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs145" %}
 
 ### ActionFailure
 
@@ -538,7 +538,7 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs146" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs146" %}
 
 ## See Also
 

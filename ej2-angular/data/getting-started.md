@@ -99,7 +99,7 @@ The DataManager can act as gateway for both local and remote data source which w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs6" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs6" %}
 
 ### Binding to OData
 
@@ -121,7 +121,7 @@ Now all **DataManager** operations will address the provided service end point.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs7" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs7" %}
 
 ## Filter
 
@@ -143,7 +143,7 @@ The filter expression can be built easily using **where** method of **Query** cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs8" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs8" %}
 
 ## Sort
 
@@ -164,7 +164,7 @@ The data can be ordered either in ascending or descending using **sortBy** metho
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs9" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs9" %}
 
 ## Page
 
@@ -185,7 +185,7 @@ The **page** method of the Query class is used to get range of data based on the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs10" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs10" %}
 
 ## Component binding
 
@@ -207,7 +207,7 @@ A DataSource can be created in-line with other Syncfusion component configuratio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/component-local-cs1" %}
+{% previewsample "page.domainurl/samples/data/getting-started/component-local-cs1" %}
 
 ### Remote data binding
 
@@ -225,4 +225,4 @@ To bind remote data to Syncfusion component, you can assign a service data as an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/component-local-cs2" %}
+{% previewsample "page.domainurl/samples/data/getting-started/component-local-cs2" %}

@@ -28,7 +28,7 @@ To apply conditions initially, you can define the [`rule`](https://ej2.syncfusio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs8" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs8" %}
 
 ## Post rendering
 
@@ -48,7 +48,7 @@ You can set the conditions from structured JSON object through the [`setRules`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs9" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs9" %}
 
 ### Importing from SQL
 
@@ -66,7 +66,7 @@ You can set the conditions from SQL query through the [`setRulesFromSql`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs10" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs10" %}
 
 # Exporting
 
@@ -92,4 +92,4 @@ You can export the defined conditions to SQL query through the [`getSqlFromRules
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/export-cs1" %}
+{% previewsample "page.domainurl/samples/query-builder/export-cs1" %}

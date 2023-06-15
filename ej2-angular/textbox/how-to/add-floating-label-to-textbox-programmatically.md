@@ -46,4 +46,4 @@ Type     | Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs4" %}

@@ -43,7 +43,7 @@ The ComboBox has support to load array of primitive data such as strings and num
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs2" %}
 
 ### 2. Array of JSON data
 
@@ -65,7 +65,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs3" %}
 
 ### 3. Array of Complex data
 
@@ -86,7 +86,7 @@ In the following example, `Code.Id` column and `'Country.Name` column from compl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs4" %}
 
 ## Binding remote data
 
@@ -107,7 +107,7 @@ In the following sample, displayed first 6 contacts from `customer` table of `No
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs5" %}
 
 ## Data binding using Async pipe
 

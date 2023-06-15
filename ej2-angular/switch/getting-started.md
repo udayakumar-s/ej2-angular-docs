@@ -143,7 +143,7 @@ The below example shows a basic Switch component,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/switch/getting-started-cs1" %}
 
 ## Set text on Switch
 
@@ -163,6 +163,6 @@ and [`offLabel`](https://ej2.syncfusion.com/angular/documentation/api/switch#off
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/text-cs1" %}
+{% previewsample "page.domainurl/samples/switch/text-cs1" %}
 
 > Switch does not have text support for material themes, and does not support long custom text.

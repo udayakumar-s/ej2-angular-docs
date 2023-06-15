@@ -26,4 +26,4 @@ The following example demonstrates how to achieve **two-way binding** by binding
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/two-way-cs1" %}
+{% previewsample "page.domainurl/samples/timepicker/two-way-cs1" %}

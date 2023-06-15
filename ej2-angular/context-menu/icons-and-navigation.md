@@ -26,7 +26,7 @@ The ContextMenu item can have an icon/image in it to provide visual representati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/icons-and-navigation-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/icons-and-navigation-cs1" %}
 
 ## Navigation
 
@@ -45,7 +45,7 @@ In the following sample, Navigation URL for Flipkart, Amazon, and Snapdeal menu 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/icons-and-navigation-cs2" %}
+{% previewsample "page.domainurl/samples/context-menu/icons-and-navigation-cs2" %}
 
 > To open the links in new tab, set `target` attribute with the value `_blank` in the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#beforeitemrender) event.
 

@@ -24,4 +24,4 @@ You can render your own custom component to the dialog content. The below exampl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/ng-content-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/ng-content-cs1" %}

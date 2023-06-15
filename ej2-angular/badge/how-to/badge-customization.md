@@ -26,7 +26,7 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/color-cs2" %}
+{% previewsample "page.domainurl/samples/badge/color-cs2" %}
 
 ## Customize badge size
 
@@ -45,7 +45,7 @@ adjust the `font size` of the badge.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/size-cs2" %}
+{% previewsample "page.domainurl/samples/badge/size-cs2" %}
 
 ## Custom position
 
@@ -64,4 +64,4 @@ This can be done by adding a custom class to the badge element to override the d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/custom-position-cs2" %}
+{% previewsample "page.domainurl/samples/badge/custom-position-cs2" %}

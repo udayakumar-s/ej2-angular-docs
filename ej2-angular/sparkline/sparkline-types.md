@@ -40,7 +40,7 @@ The [`Line`] type is used to render the sparkline series as line.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs27" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs27" %}
 
 **Column**
 
@@ -60,7 +60,7 @@ The [`Column`] type is used to render the sparkline series as column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs28" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs28" %}
 
 **Pie**
 
@@ -80,7 +80,7 @@ The [`Pie`] type is used to render the sparkline series as pie.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs29" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs29" %}
 
 **Pie**
 
@@ -100,7 +100,7 @@ The [`Pie`] type is used to render the sparkline series as pie.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs30" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs30" %}
 
 **Win Loss**
 
@@ -120,7 +120,7 @@ The [`WinLoss`] type is used to render the sparkline series as Win Loss.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs31" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs31" %}
 
 **Area**
 
@@ -140,4 +140,4 @@ The [`Area`] type is used to render the sparkline series as area.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs32" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs32" %}

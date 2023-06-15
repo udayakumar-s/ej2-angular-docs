@@ -32,4 +32,4 @@ content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></ifra
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/html-page-cs3" %}
+{% previewsample "page.domainurl/samples/tooltip/html-page-cs3" %}

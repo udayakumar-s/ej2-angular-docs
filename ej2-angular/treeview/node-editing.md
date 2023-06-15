@@ -35,7 +35,7 @@ In the following example, the first level node’s text cannot be changed, but a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs12" %}
 
 ## See Also
 

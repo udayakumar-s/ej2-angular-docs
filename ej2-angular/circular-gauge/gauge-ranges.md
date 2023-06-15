@@ -29,7 +29,7 @@ Start and end value of a range in an axis can be customized by using [`start`](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-ranges-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-ranges-cs1" %}
 
 ## Customization
 
@@ -47,7 +47,7 @@ Color and thickness of the range can be customized by using [`color`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-ranges-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-ranges-cs2" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -73,7 +73,7 @@ You can set the radius of the range in pixel as demonstrated below,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-ranges-cs3" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-ranges-cs3" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -94,7 +94,7 @@ For example, when the radius is ‘50%’, range renders to half of the axis rad
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-ranges-cs4" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-ranges-cs4" %}
 
 <!-- markdownlint-disable MD010 -->
 
@@ -114,7 +114,7 @@ The ranges can be dragged on the axis line by clicking and dragging the same. To
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs15" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs15" %}
 
 ## Multiple Ranges
 
@@ -134,7 +134,7 @@ You can add multiple ranges to an axis with the above customization as demonstra
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-ranges-cs5" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-ranges-cs5" %}
 
 ## Rounded corner radius
 
@@ -152,7 +152,7 @@ You can customize the corner radius using the `roundedCornerRadius` property in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-ranges-cs6" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-ranges-cs6" %}
 
 ## Gradient Color
 
@@ -179,7 +179,7 @@ To apply linear gradient to the range, follow the below code sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-ranges-cs7" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-ranges-cs7" %}
 
 ### Radial Gradient
 
@@ -199,7 +199,7 @@ To apply radial gradient to the range, follow the below code sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-ranges-cs8" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-ranges-cs8" %}
 
 ## See also
 

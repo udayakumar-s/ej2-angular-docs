@@ -28,7 +28,7 @@ In the following sample, the icons for edit, delete, mark as read  and like mess
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/popup-icon-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/popup-icon-cs1" %}
 
 ## Navigations
 
@@ -48,7 +48,7 @@ In the following sample, navigation URL for Flipkart, Amazon, and Snapdeal actio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/navigation-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/navigation-cs1" %}
 
 ## Template
 
@@ -70,7 +70,7 @@ The following popup template is customized using `beforeItemRender` event by app
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/template-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/template-cs1" %}
 
 ### Popup templating
 
@@ -90,7 +90,7 @@ In the following sample, the whole popup item is customized as table template by
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/popup-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/popup-cs1" %}
 
 ## Separator
 
@@ -111,7 +111,7 @@ In the following sample, cut, copy, and paste popup items are grouped using the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/accessibility-cs2" %}
+{% previewsample "page.domainurl/samples/drop-down-button/accessibility-cs2" %}
 
 ## See Also
 

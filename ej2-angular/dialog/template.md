@@ -41,7 +41,7 @@ The below example demonstrates the usage of header, footer and content as templa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/template-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/template-cs1" %}
 
 ## See Also
 

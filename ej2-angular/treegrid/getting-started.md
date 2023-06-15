@@ -175,7 +175,7 @@ Tree Column is used to expand or collapse child rows is defined by using the [`t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/getting-started-cs1" %}
 
 In the above code example, the hierarchical data binding is represented in which the [`childMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#childmapping) property denotes the hierarchy relationship; whereas in self-referencing data binding [`idMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#idmapping) and [`parentIdMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#parentidmapping) denotes the hierarchy relationship.
 
@@ -211,7 +211,7 @@ In root-level paging mode, paging is based on the root-level rows only i.e., it 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/getting-started-cs2" %}
 
 ## Enable Sorting
 
@@ -233,7 +233,7 @@ Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/getting-started-cs3" %}
 
 ## Enable Filtering
 
@@ -253,7 +253,7 @@ By default, filtered records are shown along with its parent records. This behav
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/getting-started-cs4" %}
 
 > You can render the records in a collapsed state in the initial render of the tree grid by enabling the [`enableCollapseAll`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablecollapseall) property.
 
@@ -279,6 +279,6 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/getting-started-cs5" %}
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

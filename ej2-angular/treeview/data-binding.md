@@ -53,7 +53,7 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs3" %}
 
 ### Self-referential Data
 
@@ -75,7 +75,7 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs4" %}
 
 ## Remote data
 
@@ -120,4 +120,4 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs5" %}

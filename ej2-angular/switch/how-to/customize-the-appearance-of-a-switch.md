@@ -28,7 +28,7 @@ Switch bar and handle can be customized as per requirement using CSS rules. Swit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/switch/how-to-cs1" %}
 
 ## Color the Switch
 
@@ -46,4 +46,4 @@ Switch colors can be customized as per the requirement using CSS rules. Switch b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/on-off-cs1" %}
+{% previewsample "page.domainurl/samples/switch/on-off-cs1" %}

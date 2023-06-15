@@ -47,4 +47,4 @@ It supports the below list of shortcut keys.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs13" %}

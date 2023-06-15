@@ -24,4 +24,4 @@ The HTML tags can be displayed in the TreeGrid header and content by enabling th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/cell-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/cell-cs6" %}

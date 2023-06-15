@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { SpeedDialItemModel } from '@syncfusion/ej2-angular-buttons';
+import { SpeedDialItemEventArgs, SpeedDialItemModel } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-root',
@@ -18,7 +18,7 @@ export class AppComponent {
   ];
   public clicked(args: SpeedDialItemEventArgs) {
     alert(args.item.text + ' is clicked');
-  }  
+  }
 }
 
 

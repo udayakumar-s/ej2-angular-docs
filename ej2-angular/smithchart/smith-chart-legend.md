@@ -30,7 +30,7 @@ By default visibility of the legend is false. To enable the legend, kindly set v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs14" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs14" %}
 
 Other than these positions, you can place the legend anywhere in the smithchart. To achieve this, you have to set position as custom in legendSettings and specify the x and y coordinates using the x and y properties in the location.
 
@@ -46,7 +46,7 @@ Other than these positions, you can place the legend anywhere in the smithchart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs15" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs15" %}
 
 **Legend Alignment**
 
@@ -64,7 +64,7 @@ Other than positioning the legend in the smithchart, you can customize its align
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs16" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs16" %}
 
 ## Customization
 
@@ -84,7 +84,7 @@ By default, legend is rendered in the circle shape and the color of the shape is
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs17" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs17" %}
 
 **Legend Size**
 
@@ -102,7 +102,7 @@ By default, legend takes 20% - 25% of the chart's height horizontally, when it i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs18" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs18" %}
 
 **Padding**
 
@@ -120,7 +120,7 @@ You can customize the space between two legend items and space between legend sh
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs19" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs19" %}
 
 ## Toggle Visibility
 
@@ -138,4 +138,4 @@ By default series name is displayed in the legend. You can collapse the visibili
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs20" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs20" %}

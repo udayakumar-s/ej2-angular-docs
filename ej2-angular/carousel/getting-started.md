@@ -189,6 +189,6 @@ The following example shows a basic `Carousel` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/carousel/getting-started-cs1" %}
 
 N> You can also explore our [Angular Carousel example](https://ej2.syncfusion.com/angular/demos/#/material/carousel/default) that shows you how to configure the Carousel in Angular.

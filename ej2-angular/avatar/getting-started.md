@@ -119,7 +119,7 @@ The following example shows a basic avatar component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/getting-started-cs1" %}
 
 ## See Also
 

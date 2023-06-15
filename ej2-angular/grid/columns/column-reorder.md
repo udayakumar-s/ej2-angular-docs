@@ -18,13 +18,13 @@ Here's an example for column reordering in your Grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/reorder-cs1/app/app.component.ts %}
+{% include code-snippet/grid/reorder-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/reorder-cs1/app/app.module.ts %}
+{% include code-snippet/grid/reorder-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/reorder-cs1/app/main.ts %}
+{% include code-snippet/grid/reorder-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,13 +41,13 @@ In this example, the **ShipCity** column is prevented from being reordered by se
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/reorder-cs6/app/app.component.ts %}
+{% include code-snippet/grid/reorder-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/reorder-cs6/app/app.module.ts %}
+{% include code-snippet/grid/reorder-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/reorder-cs6/app/main.ts %}
+{% include code-snippet/grid/reorder-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,13 +72,13 @@ In this example, we are moving the column at index **1** to index **3**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/reorder-cs7/app/app.component.ts %}
+{% include code-snippet/grid/reorder-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/reorder-cs7/app/app.module.ts %}
+{% include code-snippet/grid/reorder-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/reorder-cs7/app/main.ts %}
+{% include code-snippet/grid/reorder-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,13 +95,13 @@ Here is an example of how to use the `reorderColumnByTargetIndex` method to reor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/reorder-cs8/app/app.component.ts %}
+{% include code-snippet/grid/reorder-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/reorder-cs8/app/app.module.ts %}
+{% include code-snippet/grid/reorder-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/reorder-cs8/app/main.ts %}
+{% include code-snippet/grid/reorder-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -118,13 +118,13 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/reorder-cs9/app/app.component.ts %}
+{% include code-snippet/grid/reorder-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/reorder-cs9/app/app.module.ts %}
+{% include code-snippet/grid/reorder-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/reorder-cs9/app/main.ts %}
+{% include code-snippet/grid/reorder-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -144,16 +144,16 @@ In the following example, we have implemented the `columnDragStart`, `columnDrag
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/reorder-cs4/app/app.component.ts %}
+{% include code-snippet/grid/reorder-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/reorder-cs4/app/app.module.ts %}
+{% include code-snippet/grid/reorder-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/reorder-cs4/app/main.ts %}
+{% include code-snippet/grid/reorder-cs4/app/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.html" %}
-{% include samples/grid/reorder-cs4/index.html %}
+{% include code-snippet/grid/reorder-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

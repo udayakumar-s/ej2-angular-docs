@@ -24,7 +24,7 @@ The [`rowTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/row-cs8" %}
+{% previewsample "page.domainurl/samples/treegrid/row-cs8" %}
 
 The [`rowTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate) property accepts only the TR element.
 
@@ -44,7 +44,7 @@ If the [`rowTemplate`](https://ej2.syncfusion.com/angular/documentation/api/tree
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/row-cs9" %}
+{% previewsample "page.domainurl/samples/treegrid/row-cs9" %}
 
 ## Limitations
 

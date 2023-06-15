@@ -24,4 +24,4 @@ You can disable the check box alone in TreeView instead of disabling the whole n
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/disable-checkbox-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/disable-checkbox-cs1" %}

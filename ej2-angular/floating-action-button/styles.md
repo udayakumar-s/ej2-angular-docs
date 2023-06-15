@@ -37,7 +37,7 @@ The Angular Floating Action Button supports the following predefined styles that
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/floating-action-button/styles-cs1" %}
+{% previewsample "page.domainurl/samples/floating-action-button/styles-cs1" %}
 
 > Predefined Floating Action Button styles provide only the visual indication. So, Floating Action Button [`content`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#content) property should define the Floating Action Button style for the users of assistive technologies such as screen readers.
 
@@ -74,4 +74,4 @@ The content will behave the same , when the `enableHtmlSantiizer` is enabled. Si
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/floating-action-button/styles-cs2" %}
+{% previewsample "page.domainurl/samples/floating-action-button/styles-cs2" %}

@@ -26,4 +26,4 @@ The preview demonstrates setting up the delay to the Schedule tooltip. You can c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs53" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs53" %}

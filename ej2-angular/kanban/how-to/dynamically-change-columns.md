@@ -26,4 +26,4 @@ In the below sample, you can dynamically change the [`allowToggle`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/dynamic-columns-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/dynamic-columns-cs1" %}

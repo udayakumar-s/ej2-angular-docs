@@ -49,7 +49,7 @@ In normal edit mode, when user starts editing, the state of the currently select
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs53" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs53" %}
 
 ## Dialog
 
@@ -67,7 +67,7 @@ In dialog edit mode, when user starts editing, the currently selected row data w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs54" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs54" %}
 
 ## Batch
 
@@ -85,7 +85,7 @@ In batch edit mode, when user double-clicks any data grid cell, the state of tar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs55" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs55" %}
 
 ## Command column
 
@@ -112,7 +112,7 @@ The available built-in command buttons are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs56" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs56" %}
 
 ## Inline Editing
 
@@ -130,7 +130,7 @@ Allows editing of a value cell directly without the use of an external edit dial
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs57" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs57" %}
 
 ## Editing using the pivot chart
 
@@ -148,7 +148,7 @@ Users can also add, delete, or update the underlying raw items of any data point
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs58" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs58" %}
 
 ## Events
 
@@ -172,7 +172,7 @@ The event [`editCompleted`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs59" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs59" %}
 
 ### DrillThrough
 
@@ -213,7 +213,7 @@ In the below sample, editing actions such as add and save can be restricted by s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs60" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs60" %}
 
 ### ActionComplete
 
@@ -244,7 +244,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs61" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs61" %}
 
 ### ActionFailure
 
@@ -273,4 +273,4 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs62" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs62" %}

@@ -100,4 +100,4 @@ In the following example, the paste cleanup related settings are explained with 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/toolbar/multirow-cs2" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/toolbar/multirow-cs2" %}

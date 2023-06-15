@@ -41,4 +41,4 @@ In the below demo, designed for simple train reservation module that enable/disa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/wizard-cs1" %}
+{% previewsample "page.domainurl/samples/tab/wizard-cs1" %}

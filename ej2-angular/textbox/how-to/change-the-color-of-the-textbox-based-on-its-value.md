@@ -24,4 +24,4 @@ You can change the color of the TextBox by validating its value using regular ex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs6" %}

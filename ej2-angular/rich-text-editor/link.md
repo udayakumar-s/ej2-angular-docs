@@ -39,7 +39,7 @@ To use use image and link tool, inject `ImageService, LinkService` in the provid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs16" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs16" %}
 
 > The Rich Text Editor link tool validates the URLs, as you type in the Web Address. URLs considered invalid will be highlighted with red color by clicking the insert button in the `Insert Link` dialog.
 
@@ -78,4 +78,4 @@ The quick toolbar for the Link has the following options.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs17" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs17" %}

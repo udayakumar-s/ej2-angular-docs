@@ -24,4 +24,4 @@ The different Switch sizes available are default and small. To reduce the size o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/state-cs2" %}
+{% previewsample "page.domainurl/samples/switch/state-cs2" %}

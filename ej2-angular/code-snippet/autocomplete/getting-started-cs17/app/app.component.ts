@@ -10,7 +10,7 @@ import { L10n } from '@syncfusion/ej2-base';
     // specifies the template string for the AutoComplete component
     template: `<ejs-autocomplete id='atcelement' [dataSource]='data' [query]='query' [fields]='fields' [placeholder]='text' [locale]='locale'></ejs-autocomplete>`
 })
-export class AppComponent implements onInit {
+export class AppComponent implements OnInit {
     constructor() {
     }
     //set the placeholder text in french to AutoComplete input

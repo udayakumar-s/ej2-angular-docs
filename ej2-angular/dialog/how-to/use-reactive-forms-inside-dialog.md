@@ -25,4 +25,4 @@ For more details, refer to the [Angular Documentation](https://angular.io/guide/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/reactive-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/reactive-cs1" %}

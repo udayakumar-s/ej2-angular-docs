@@ -24,4 +24,4 @@ By default, the maxHeight for the Dialog is calculated based on the target. If t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/max-height-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/max-height-cs1" %}

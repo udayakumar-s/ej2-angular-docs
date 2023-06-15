@@ -42,4 +42,4 @@ The editor checks the following settings on validation:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs31" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs31" %}

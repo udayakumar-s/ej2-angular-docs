@@ -36,7 +36,7 @@ In the following sample, French culture is set to the DropDownList and no data i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs20" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs20" %}
 
 ## See Also
 

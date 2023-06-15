@@ -38,7 +38,7 @@ The below example demonstrates the NumericTextBox in `German` culture with the s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs9" %}
 
 ## Internationalization
 
@@ -86,7 +86,7 @@ The below example demonstrates the NumericTextBox in `German` culture with the `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/internationalization-cs1" %}
+{% previewsample "page.domainurl/samples/numerictextbox/internationalization-cs1" %}
 
 ## Right to Left(RTL)
 
@@ -104,4 +104,4 @@ RTL provides an option to switch the text direction and layout of the NumericTex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/numerictextbox/rtl-cs1" %}

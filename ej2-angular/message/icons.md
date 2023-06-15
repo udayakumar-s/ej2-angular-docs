@@ -30,7 +30,7 @@ The following example demonstrates the different severity messages without the s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/severity-cs1" %}
+{% previewsample "page.domainurl/samples/message/severity-cs1" %}
 
 ## Custom Icon
 
@@ -50,7 +50,7 @@ The following example demonstrates how the default message is rendered with a cu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/custom-icon-cs1" %}
+{% previewsample "page.domainurl/samples/message/custom-icon-cs1" %}
 
 ## Close Icon
 
@@ -72,4 +72,4 @@ In the following example, the messages are rendered with the close icon.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/close-icon-cs1" %}
+{% previewsample "page.domainurl/samples/message/close-icon-cs1" %}

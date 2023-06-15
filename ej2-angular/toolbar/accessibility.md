@@ -50,4 +50,4 @@ Keyboard navigation is enabled by default. Possible keys are
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs1" %}

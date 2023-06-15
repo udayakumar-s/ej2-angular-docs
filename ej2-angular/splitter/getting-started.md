@@ -210,7 +210,7 @@ Run the `ng serve` command in command window, it will serve your application and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/getting-started-cs1" %}
 
 ## See Also
 

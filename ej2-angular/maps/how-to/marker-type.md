@@ -30,7 +30,7 @@ Initialize the Maps component with marker settings. Here, a marker has been adde
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs43" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs43" %}
 
 **Step 2**:
 
@@ -48,4 +48,4 @@ Customize the above option for n number of markers as mentioned in the following
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs44" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs44" %}

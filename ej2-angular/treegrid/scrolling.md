@@ -34,7 +34,7 @@ To specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/tr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs28" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs28" %}
 
 ## Responsive with parent container
 
@@ -53,7 +53,7 @@ Setting the [`height`](https://ej2.syncfusion.com/angular/documentation/api/tree
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/responsive-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/responsive-cs1" %}
 
 ## Scroll to selected row
 
@@ -71,7 +71,7 @@ Scroll the tree grid content to the selected row position by using the [`rowSele
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/scroll-selection-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/scroll-selection-cs1" %}
 
 ## Hide the scrollbar when the content is not overflown
 
@@ -91,4 +91,4 @@ In the following sample, the [`hideScroll`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/scroll-selection-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/scroll-selection-cs2" %}

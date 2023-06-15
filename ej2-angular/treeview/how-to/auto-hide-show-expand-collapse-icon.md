@@ -24,4 +24,4 @@ You can display the expand icon by hovering the mouse over TreeView and hide the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/auto-hide-icons-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/auto-hide-icons-cs1" %}

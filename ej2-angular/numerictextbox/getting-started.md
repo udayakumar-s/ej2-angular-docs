@@ -169,7 +169,7 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs4" %}
 
 ## Range validation
 
@@ -191,7 +191,7 @@ The below example demonstrates range validation.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs5" %}
 
 ## Formatting the value
 
@@ -211,7 +211,7 @@ The below example demonstrates format the value by using currency format value `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs6" %}
 
 ## Precision of numbers
 
@@ -233,7 +233,7 @@ Else, number of decimals will be restricted while typing in the NumericTextBox.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs7" %}
 
 ## Two way binding
 
@@ -252,7 +252,7 @@ The below example demonstrates two-way binding functionality with the NumericTex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs8" %}
 
 ## Reactive form
 
@@ -278,7 +278,7 @@ The following example demonstrates how to use the reactive forms.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/reactive-forms-cs1" %}
+{% previewsample "page.domainurl/samples/numerictextbox/reactive-forms-cs1" %}
 
 ## See Also
 

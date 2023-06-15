@@ -20,15 +20,17 @@ import { rippleMouseHandler } from '@syncfusion/ej2-buttons';
 })
 
 export class AppComponent implements OnInit {
+    parentElement: any;
     ngOnInit(): void {
-                document.querySelector('.lRipple label').addEventListener('mouseup', rippleHandler);
-                document.querySelector('.lRipple label').addEventListener('mousedown', rippleHandler);
-                function rippleHandler(e: MouseEvent): void  {
-                    let rippleSpan: Element = this.parentElement.nextElementSibling.querySelector('.e-ripple-container');
-                    if (rippleSpan) {
-                        rippleMouseHandler(e, rippleSpan);
-                    }
-                }
+        const rippleHandler = (e: MouseEvent): void =>  {
+            let rippleSpan: Element = this.parentElement.nextElementSibling.querySelector('.e-ripple-container') as Element;
+            if (rippleSpan) {
+                rippleMouseHandler(e, rippleSpan);
+            }
+        }
+                (document as any).querySelector('.lRipple label')!.addEventListener('mouseup', rippleHandler);
+                (document as any).querySelector('.lRipple label')!.addEventListener('mousedown', rippleHandler);
+
             }
     }
 

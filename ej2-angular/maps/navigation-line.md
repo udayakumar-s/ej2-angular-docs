@@ -37,7 +37,7 @@ To navigate the line between two cities on the world map, [`latitude`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs75" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs75" %}
 
 ## Enabling the arrows
 
@@ -60,4 +60,4 @@ To enable the arrow in the navigation line, set the [`showArrow`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs76" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs76" %}

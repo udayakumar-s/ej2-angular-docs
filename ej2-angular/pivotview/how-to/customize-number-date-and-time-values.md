@@ -33,7 +33,7 @@ For numbers, the formatting settings required to apply through code behind are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs163" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs163" %}
 
 ## Date and Time formatting
 
@@ -57,7 +57,7 @@ For date and time, the formatting settings required to apply through code behind
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs164" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs164" %}
 
 ## Limitations of date formatting
 

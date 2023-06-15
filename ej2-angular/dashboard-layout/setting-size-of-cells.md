@@ -34,7 +34,7 @@ The following sample demonstrates how to modify a cell size using the `columns` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dashboard-layout/modifying-cell-size-cs1" %}
+{% previewsample "page.domainurl/samples/dashboard-layout/modifying-cell-size-cs1" %}
 
 ## Setting cell spacing
 
@@ -54,7 +54,7 @@ The following sample demonstrates the usage of the `cellSpacing` property, which
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dashboard-layout/setting-cell-spacing-cs1" %}
+{% previewsample "page.domainurl/samples/dashboard-layout/setting-cell-spacing-cs1" %}
 
 ## Graphical representation of layout
 
@@ -74,7 +74,7 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dashboard-layout/graphical-representation-of-layout-cs1" %}
+{% previewsample "page.domainurl/samples/dashboard-layout/graphical-representation-of-layout-cs1" %}
 
 ## Rendering component in right-to-left direction
 
@@ -94,6 +94,6 @@ The following sample demonstrates Dashboard Layout in right-to-left direction.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dashboard-layout/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/dashboard-layout/rtl-cs1" %}
 
 > You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to knows how to present and manipulate data.

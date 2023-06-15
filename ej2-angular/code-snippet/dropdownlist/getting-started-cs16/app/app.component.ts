@@ -22,14 +22,14 @@ export class AppComponent {
     // maps the appropriate column to fields property
     public fields: Object = {
         text: 'ContactName', value: 'CustomerID', itemCreated: (e: any) => {
-            highlightSearch(e.item, this.queryString, true, 'StartsWith');
+            highlightSearch(e.item, (this as any).queryString, true, 'StartsWith');
         }
     };
     // set the placeholder to the DropDownList input
     public text: string = "Select a customer";
     //sort the result items
     public sorting: string = 'Ascending';
-    public queryString: string;
+    public queryString?: string;
     //Bind the filter event
     public onFiltering: any = (e: FilteringEventArgs) => {
         // take text for highlight the character in list items.

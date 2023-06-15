@@ -46,4 +46,4 @@ Template mode, the `value` property not handled by the **In-place Editor** compo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/html-template-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/html-template-cs1" %}

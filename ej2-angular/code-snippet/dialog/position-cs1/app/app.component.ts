@@ -41,11 +41,11 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('ejDialog') ejDialog: DialogComponent;
+    @ViewChild('ejDialog') ejDialog: DialogComponent |any;
    // Create element reference for dialog target element.
-    @ViewChild('container', { read: ElementRef, static: true }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef, static: true }) container: ElementRef | any;
     // The Dialog shows within the target element.
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
 
     //To get all element of the dialog component after component get initialized.
     ngOnInit() {
@@ -62,13 +62,13 @@ export class AppComponent implements OnInit {
     public closeOnEscape: boolean =false;
 
     // Sample level code to handle the button click action
-    public onOpenDialog = function(event: any): void {
+    public onOpenDialog = (event: any): void => {
         // Call the show method to open the Dialog
         this.ejDialog.show();
     }
-    public changePosition = function(event: any): void{
+    public changePosition = (event: any): void =>{
       this.ejDialog.position = { X: event.currentTarget.value.split(" ")[0], Y: event.currentTarget.value.split(" ")[1] };
-      document.getElementById("posvalue").innerHTML = 'Position: {X: "' + event.currentTarget.value.split(" ")[0] + '", Y: "' + event.currentTarget.value.split(" ")[1] + '"}';
+      document.getElementById("posvalue")!.innerHTML = 'Position: {X: "' + event.currentTarget.value.split(" ")[0] + '", Y: "' + event.currentTarget.value.split(" ")[1] + '"}';
     }
 }
 

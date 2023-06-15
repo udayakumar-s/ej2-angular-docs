@@ -34,7 +34,7 @@ In the following sample, French culture is set to the mention component and no d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs8" %}
 
 ## See Also
 

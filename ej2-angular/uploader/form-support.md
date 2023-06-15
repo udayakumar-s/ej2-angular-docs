@@ -33,7 +33,7 @@ When you reset the form, the file list and data will be cleared.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/formsupport-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/formsupport-cs1" %}
 
 ## Template-driven forms
 
@@ -54,7 +54,7 @@ The following sample demonstrates how to render uploader component with required
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/template-driven-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/template-driven-cs1" %}
 
 ## Reactive forms
 
@@ -76,6 +76,6 @@ The following sample demonstrates how to render uploader component with required
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/reactive-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/reactive-cs1" %}
 
 > You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.

@@ -30,7 +30,7 @@ The Syncfusion's [`Draggable`](https://ej2.syncfusion.com/documentation/api/base
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/draggable-default-cs1" %}
+{% previewsample "page.domainurl/samples/common/draggable-default-cs1" %}
 
 ### Clone draggable element
 
@@ -48,7 +48,7 @@ Syncfusion provides the option to create a clone of a draggable element while th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/clone-draggable" %}
+{% previewsample "page.domainurl/samples/common/clone-draggable" %}
 
 ### Drag area
 
@@ -66,7 +66,7 @@ A drag area is a specific area within a user interface that is designated for dr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/drag-area" %}
+{% previewsample "page.domainurl/samples/common/drag-area" %}
 
 ## Droppable
 
@@ -88,4 +88,4 @@ Refer to the following code snippet to enable droppable zones.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/drag-drop-action-cs1" %}
+{% previewsample "page.domainurl/samples/common/drag-drop-action-cs1" %}

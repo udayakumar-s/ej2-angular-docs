@@ -24,7 +24,7 @@ You can use the [`showLabel`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/labels/showlabel-cs" %}
+{% previewsample "page.domainurl/samples/rating/labels/showlabel-cs" %}
 
 ## Label position
 
@@ -49,7 +49,7 @@ The following label positions are supported:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/labels/label-position-cs" %}
+{% previewsample "page.domainurl/samples/rating/labels/label-position-cs" %}
 
 ## Label template
 
@@ -67,4 +67,4 @@ You can use the [`labelTemplate`](https://ej2.syncfusion.com/angular/documentati
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/labels/label-template-cs" %}
+{% previewsample "page.domainurl/samples/rating/labels/label-template-cs" %}

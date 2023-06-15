@@ -26,4 +26,4 @@ The following example illustrates how to show selected state on initial render.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs8" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs8" %}

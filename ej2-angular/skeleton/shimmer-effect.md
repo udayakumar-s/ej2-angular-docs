@@ -40,4 +40,4 @@ Below example demonstrates a list with pulse effect skeleton.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/skeleton/effect-cs1" %}
+{% previewsample "page.domainurl/samples/skeleton/effect-cs1" %}

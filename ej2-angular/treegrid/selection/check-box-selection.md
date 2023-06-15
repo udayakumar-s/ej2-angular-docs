@@ -27,7 +27,7 @@ column [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs2" %}
 
 > By default selection is allowed by clicking a treegrid row or checkbox in that row. To allow Selection only through checkbox, you can set [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#checkboxonly) property to true.
 > Selection can be persisted on all the operations using [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#persistselection) property.
@@ -52,4 +52,4 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs3" %}

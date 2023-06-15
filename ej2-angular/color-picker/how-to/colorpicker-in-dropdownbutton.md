@@ -26,4 +26,4 @@ In the below sample, the color picker is rendered as inline type by setting [`in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/dropdownbtn-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/dropdownbtn-cs1" %}

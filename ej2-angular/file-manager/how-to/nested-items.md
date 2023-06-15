@@ -31,7 +31,7 @@ The following example shows the file manager component rendered inside the dialo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/file-dialog-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/file-dialog-cs1" %}
 
 ## Adding file manager inside the tab
 
@@ -49,4 +49,4 @@ The following example demonstrate that the file manager component is placed insi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/file-tab-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/file-tab-cs1" %}

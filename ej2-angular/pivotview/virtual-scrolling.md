@@ -30,7 +30,7 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module in to th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs300" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs300" %}
 
 **Limitations for virtual scrolling**
 
@@ -61,7 +61,7 @@ When we bind one million raw data, the pivot table will process all raw data to 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs301" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs301" %}
 
 **Limitations during data compression**
 
@@ -91,4 +91,4 @@ Virtual scrolling automatically works with "Popup" field list on setting the [`e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs302" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs302" %}

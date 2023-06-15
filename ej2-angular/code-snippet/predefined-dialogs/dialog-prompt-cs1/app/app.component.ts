@@ -10,9 +10,12 @@ import { DialogUtility } from '@syncfusion/ej2-popups';
 })
 
 export class AppComponent implements OnInit {
-    public dialogObj;
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+    public dialogObj : any;
     public promptBtnClick = (): void => {
-    document.getElementById('statusText').style.display = 'none';
+    document.getElementById('statusText')!.style.display = 'none';
     this.dialogObj = DialogUtility.confirm({
       title: 'Join Chat Group',
       width: '300px',
@@ -26,21 +29,21 @@ export class AppComponent implements OnInit {
     value = (document.getElementById('inputEle') as any).value;
     if (value == '') {
       this.dialogObj.hide();
-      document.getElementById('statusText').innerHTML =
+      document.getElementById('statusText')!.innerHTML =
         'The user\'s input is returned as" " ';
-      document.getElementById('statusText').style.display = 'block';
+      document.getElementById('statusText')!.style.display = 'block';
     } else {
       this.dialogObj.hide();
-      document.getElementById('statusText').innerHTML =
+      document.getElementById('statusText')!.innerHTML =
         "The user's input is returned as" + ' ' + value;
-      document.getElementById('statusText').style.display = 'block';
+      document.getElementById('statusText')!.style.display = 'block';
     }
   }
   private promptCancelAction(): void {
     this.dialogObj.hide();
-    document.getElementById('statusText').innerHTML =
+    document.getElementById('statusText')!.innerHTML =
       'The user canceled the prompt dialog';
-    document.getElementById('statusText').style.display = 'block';
+    document.getElementById('statusText')!.style.display = 'block';
   }
 }
 

@@ -29,7 +29,7 @@ To enable the chunk upload, set the size to [chunkSize](https://ej2.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/chunk-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/chunk-cs1" %}
 
 The chunk upload functionality separates the selected files into blobs of the data or chunks. These chunks are transmitted to the server using an AJAX request.
 The chunks are sent in **sequential** order, and the next chunk can be sent to the server according to the [success](https://ej2.syncfusion.com/angular/documentation/api/uploader/#chunksuccess) of the previous chunk. If any one of the chunk failed, then the remaining chunk cannot be sent to the server.
@@ -59,7 +59,7 @@ The following sample specifies the chunk upload delay with 3000 milliseconds and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/retry-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/retry-cs1" %}
 
 ## Resumable upload
 
@@ -79,7 +79,7 @@ Allows you to resume an upload operation after a network failure or manually int
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/resumable-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/resumable-cs1" %}
 
 ## Cancel upload
 
@@ -101,7 +101,7 @@ The following example explains about chunk upload with cancel support.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/cancel-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/cancel-cs1" %}
 
 > The retry action has different working behavior for chunk upload and default upload.
 * Chunk upload - Retries to upload the failed request where it is failed previously.

@@ -26,4 +26,4 @@ Range represents the entire span of the ProgressBar and can be defined using the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/customization-cs9" %}
+{% previewsample "page.domainurl/samples/progressbar/customization-cs9" %}

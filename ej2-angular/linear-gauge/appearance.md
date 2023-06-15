@@ -32,7 +32,7 @@ The following properties are available in the [`ejs-lineargauge`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/appearance-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/appearance-cs1" %}
 
 ## Setting up the Linear Gauge title
 
@@ -57,7 +57,7 @@ The title for the Linear Gauge can be set using [`title`](api/linear-gauge/#titl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/appearance-cs2" %}
+{% previewsample "page.domainurl/samples/linear-gauge/appearance-cs2" %}
 
 ## Customizing the Linear Gauge container
 
@@ -91,7 +91,7 @@ The **Normal** type will render the container as a rectangle and this is the def
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/appearance-cs3" %}
+{% previewsample "page.domainurl/samples/linear-gauge/appearance-cs3" %}
 
 ### Rounded Rectangle
 
@@ -109,7 +109,7 @@ The **RoundedRectangle** type will render the container as a rectangle with roun
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/appearance-cs4" %}
+{% previewsample "page.domainurl/samples/linear-gauge/appearance-cs4" %}
 
 ### Thermometer
 
@@ -127,7 +127,7 @@ The **Thermometer** type will render the container similar to the appearance of 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/appearance-cs5" %}
+{% previewsample "page.domainurl/samples/linear-gauge/appearance-cs5" %}
 
 ## Fitting the Linear Gauge to the control
 
@@ -145,6 +145,6 @@ The Linear Gauge component is rendered with margin by default. To remove the mar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/appearance-cs6" %}
+{% previewsample "page.domainurl/samples/linear-gauge/appearance-cs6" %}
 
 >To use this feature, set the [`allowMargin`](api/linear-gauge/#allowmargin) property to **false**, the [`width`](api/linear-gauge/#width) property to **100%** and the properties of [`margin`](api/linear-gauge/#margin) to **0**.

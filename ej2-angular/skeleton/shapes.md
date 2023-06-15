@@ -83,4 +83,4 @@ Below example demonstrates the above functionalities of a Skeleton component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/skeleton/shapes-cs1" %}
+{% previewsample "page.domainurl/samples/skeleton/shapes-cs1" %}

@@ -13,9 +13,9 @@ import { EmitType } from '@syncfusion/ej2-base';
       width='300px' [showCloseIcon]='showCloseIcon'>
       <ng-template #footerTemplate>
           <div>
-            <button id="Button1" class="e-control e-btn e-primary e-flat" (click)="btnclick($event)" data-ripple="true">
+            <button id="Button1" class="e-control e-btn e-primary e-flat" (click)="btnclick()" data-ripple="true">
             <span class="e-btn-icon e-icons e-ok-icon e-icon-left"></span>Yes</button>
-            <button id="Button2" class="e-control e-btn e-flat" (click)="btnclick($event)" data-ripple="true">
+            <button id="Button2" class="e-control e-btn e-flat" (click)="btnclick()" data-ripple="true">
             <span class="e-btn-icon e-icons e-close-icon e-icon-left"></span>No</button>
           </div>
       </ng-template>
@@ -24,11 +24,14 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('ejDialog') ejDialog: DialogComponent;
+dialogClose() {
+throw new Error('Method not implemented.');
+}
+    @ViewChild('ejDialog') ejDialog: DialogComponent | undefined;
     // Create element reference for dialog target element.
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef }) container: ElementRef | undefined;
     // The Dialog shows within the target element.
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
 
     //To get all element of the dialog component after component get initialized.
     ngOnInit() {
@@ -37,7 +40,7 @@ export class AppComponent implements OnInit {
 
     // Initialize the Dialog component's target element.
     initilaizeTarget: EmitType<object> = () => {
-      this.targetElement = this.container.nativeElement.parentElement;
+      this.targetElement = this.container!.nativeElement.parentElement;
     }
 
     //Animation options
@@ -46,17 +49,17 @@ export class AppComponent implements OnInit {
     public showCloseIcon: boolean = true;
     // Hide the Dialog when click the footer button.
     public hideDialog: EmitType<object> = () => {
-        this.ejDialog.hide();
+        this.ejDialog!.hide();
     }
 
-    public btnclick = function(): void {
-        this.ejDialog.hide();
+    public btnclick = (): void => {
+        this.ejDialog!.hide();
     }
 
     // Sample level code to handle the button click action
-    public onOpenDialog = function(event: any): void {
+    public onOpenDialog = (event: any): void => {
         // Call the show method to open the Dialog
-        this.ejDialog.show();
+        this.ejDialog!.show();
     }
 }
 

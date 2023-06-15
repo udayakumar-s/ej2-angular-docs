@@ -30,7 +30,7 @@ To set the `width` and `height`, you can provide the pixel values either in numb
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs114" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs114" %}
 
 ## Grid Settings
 
@@ -56,7 +56,7 @@ In the below example, the `rowHeight` is set as '60px'.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs115" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs115" %}
 
 ### Column Width
 
@@ -76,7 +76,7 @@ In the below example, the `columnWidth` is set as '120px'.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs116" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs116" %}
 
 ### Reorder
 
@@ -94,7 +94,7 @@ Reordering can be done by simple drag and drop of a particular column header fro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs117" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs117" %}
 
 ### Column Resizing
 
@@ -114,7 +114,7 @@ Column width can be resized by clicking and dragging the right edge of the colum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs118" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs118" %}
 
 > In RTL mode, you can click and drag the left edge of the header cell to resize the column.
 
@@ -134,7 +134,7 @@ The text wrap allows to wrap the cell content to the next line when it exceeds t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs119" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs119" %}
 
 ## Grid Lines
 
@@ -164,7 +164,7 @@ Available modes of grid lines are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs120" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs120" %}
 
 ### Selection
 
@@ -188,7 +188,7 @@ To perform the multi-selection, press and hold CTRL key and click the desired ro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs121" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs121" %}
 
 #### Selection Mode
 
@@ -211,7 +211,7 @@ The pivot table supports four types of selection mode that can be set using `sel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs122" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs122" %}
 
 #### Cell Selection
 
@@ -234,7 +234,7 @@ The pivot table supports two types of cell selection mode that can be set using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs123" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs123" %}
 
 > Cell selection requires `selectionSettings.mode` property to be `Cell` or `Both`, and `selectionSettings.type` property should be `Multiple`.
 
@@ -260,7 +260,7 @@ The clip mode provides options to display its overflow cell content in the pivot
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs124" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs124" %}
 
 ## See Also
 

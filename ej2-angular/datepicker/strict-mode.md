@@ -32,7 +32,7 @@ The following example demonstrates the DatePicker with strictMode `true`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs12" %}
 
 By default, the DatePicker act in strictMode `false` state, that allows to enter the invalid or out-of-range date in textbox.
 
@@ -53,6 +53,6 @@ If you are entering out-of-range or invalid date value, then the model value wil
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs13" %}
 
 > If the value of min or max properties changed through code behind, then you have to update the `value` property to set within the range.

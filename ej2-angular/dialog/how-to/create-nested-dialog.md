@@ -36,4 +36,4 @@ Set the inner Dialog target as `#dialog`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/dialog/getting-started-cs7" %}

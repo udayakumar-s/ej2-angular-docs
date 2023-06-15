@@ -51,7 +51,7 @@ The following example demonstrates the usage of standard mask elements.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/getting-started-cs4" %}
 
 ## Custom mask elements
 
@@ -75,7 +75,7 @@ In the following example, non-mask element `P` accepts the values `P, A, p, a` a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/getting-started-cs5" %}
 
 ### Regular expression
 
@@ -96,7 +96,7 @@ In the following example, regular expression has been set for each input places.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/regularExpression-cs1" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/regularExpression-cs1" %}
 
 ## Prompt character
 
@@ -117,4 +117,4 @@ The following example demonstrates the MaskedTextBox with customized prompt char
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/getting-started-cs6" %}

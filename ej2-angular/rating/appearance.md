@@ -28,7 +28,7 @@ You can specify the number of rating items using the [`itemsCount`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/appearance/items-count-cs" %}
+{% previewsample "page.domainurl/samples/rating/appearance/items-count-cs" %}
 
 ## Disabled
 
@@ -46,7 +46,7 @@ You can disable the rating component by using the [`disabled`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/appearance/disabled-cs" %}
+{% previewsample "page.domainurl/samples/rating/appearance/disabled-cs" %}
 
 ## Visible
 
@@ -64,7 +64,7 @@ You can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/appearance/visible-cs" %}
+{% previewsample "page.domainurl/samples/rating/appearance/visible-cs" %}
 
 ## Read only
 
@@ -82,7 +82,7 @@ You can use the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/appearance/readonly-cs" %}
+{% previewsample "page.domainurl/samples/rating/appearance/readonly-cs" %}
 
 ## CssClass
 
@@ -107,7 +107,7 @@ You can change the rating icon border color in rating component, you can use the
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/appearance/border-cs" %}
+{% previewsample "page.domainurl/samples/rating/appearance/border-cs" %}
 
 ### Changing rated/un-rated symbol fill color
 
@@ -128,7 +128,7 @@ You can customize the fill colors of rated and un-rated icons in the rating comp
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/appearance/fill-color-cs" %}
+{% previewsample "page.domainurl/samples/rating/appearance/fill-color-cs" %}
 
 This will customize the rated fill color to `#ffe814` and un-rated fill color to `#d8d7d4`. `--rating-value` in the linear-gradient provides the current value of the rating item.
 
@@ -151,7 +151,7 @@ You can change the space between the rating items in rating component, by using 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/appearance/spacing-cs" %}
+{% previewsample "page.domainurl/samples/rating/appearance/spacing-cs" %}
 
 ## Changing icon using CssClass
 
@@ -172,4 +172,4 @@ You can change the rating item icon in rating component, you can use the `cssCla
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/appearance/icon-cs" %}
+{% previewsample "page.domainurl/samples/rating/appearance/icon-cs" %}

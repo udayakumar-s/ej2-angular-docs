@@ -26,4 +26,4 @@ In the following example, filtering is done based on text and value fields.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/filter-cs1" %}
+{% previewsample "page.domainurl/samples/autocomplete/filter-cs1" %}

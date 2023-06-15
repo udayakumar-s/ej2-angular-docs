@@ -25,7 +25,7 @@ public data: { [key: string]: Object }[] = [
 ];
 
 created():void{
-   let listboxobj:ListBox = getInstance(document.getElementById("listbox"), ListBox) as ListBox;
+   let listboxobj:ListBox = getInstance((document as any).getElementById("listbox"), ListBox) as ListBox;
     listboxobj.selectItems(['Bugatti Chiron']);
 }
 }

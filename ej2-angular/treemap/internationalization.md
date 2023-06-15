@@ -73,7 +73,7 @@ If set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/tr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs17" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs17" %}
 
 ## Tooltip with Rtl support
 
@@ -91,7 +91,7 @@ If the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/treema
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs18" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs18" %}
 
 ## Treemap Item Rendering Direction
 
@@ -118,7 +118,7 @@ The following example demonstrate, how to render the treemap in the RTL directio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs19" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs19" %}
 
 The following example demonstrate, how to render the treemap in the RTL direction with `TopRightBottomLeft`.
 
@@ -134,7 +134,7 @@ The following example demonstrate, how to render the treemap in the RTL directio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs20" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs20" %}
 
 The following example demonstrate, how to render the treemap in the RTL direction with `BottomRightTopLeft`.
 
@@ -150,7 +150,7 @@ The following example demonstrate, how to render the treemap in the RTL directio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs21" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs21" %}
 
 The following example demonstrate, how to render the treemap in the RTL direction with `BottomLeftTopRight`.
 
@@ -166,4 +166,4 @@ The following example demonstrate, how to render the treemap in the RTL directio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs22" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs22" %}

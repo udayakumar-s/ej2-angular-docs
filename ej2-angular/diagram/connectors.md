@@ -34,7 +34,7 @@ The following code example illustrates how to add a connector through connector 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectors-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectors-cs1" %}
 
 ## Add connector at runtime
 
@@ -54,7 +54,7 @@ The following code example illustrates how to add connector at runtime.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsatruntime-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsatruntime-cs1" %}
 
 ## Connectors from palette
 
@@ -86,7 +86,7 @@ The following code example illustrates how to update a connector's source point,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsupdate-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsupdate-cs1" %}
 
 ## Connect nodes
 
@@ -107,7 +107,7 @@ The following code example illustrates how to connect two nodes.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectNode-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectNode-cs1" %}
 
 * When you remove NodeConstraints [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an outgoing connection to dock in it. Similarly, when you remove NodeConstraints [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an incoming connection to dock in it.
 
@@ -156,7 +156,7 @@ The following code example illustrates how to create port to port connections.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsport-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsport-cs1" %}
 
 Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by changing the port [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourceportid-string) or [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetportid-string).
 
@@ -172,7 +172,7 @@ Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsportupdate-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsportupdate-cs1" %}
 
 * When you set PortConstraints to [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints), the port accepts only an incoming connection to dock in it. Similarly, when you set PortConstraints to [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints), the port accepts only an outgoing connection to dock in it.
 
@@ -227,7 +227,7 @@ To create a straight line, specify the [`type`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorssegments-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorssegments-cs1" %}
 
 The [`point`](https://ej2.syncfusion.com/angular/documentation/api/diagram/straightSegment#point-PointModel) property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
@@ -243,7 +243,7 @@ The [`point`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strai
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorssegmentspoints-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorssegmentspoints-cs1" %}
 
 ## Orthogonal
 
@@ -271,7 +271,7 @@ The property [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsortho-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsortho-cs1" %}
 
 The [`length`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment) and [`direction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment) properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
@@ -287,7 +287,7 @@ The [`length`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orth
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsorthosegments-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsorthosegments-cs1" %}
 
 >Note: You need to mention the segment type as same as what you mentioned in connector type. There should be no contradiction between connector type and segment type.
 
@@ -307,7 +307,7 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectoroverlapping-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectoroverlapping-cs1" %}
 
 ## How to customize Orthogonal Segment Thumb Shape
 
@@ -340,7 +340,7 @@ The orthogonal connector has a number of segments in between the source and the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsThumbshape-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsThumbshape-cs1" %}
 
 ![Segment Thumb Shape](./images/thumbshape.png)
 
@@ -374,7 +374,7 @@ To create a bezier segment, the [`segment.type`](https://ej2.syncfusion.com/angu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsbezier-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsbezier-cs1" %}
 
 The [`point1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#point1-PointModel) and [`point2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#point2-PointModel) properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the bezier segments with control points.
 
@@ -390,7 +390,7 @@ The [`point1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsbezierpoints-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsbezierpoints-cs1" %}
 
 The [`vector1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#vector1-VectorModel) and [`vector2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#vector2-VectorModel) properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
 
@@ -406,7 +406,7 @@ The [`vector1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bez
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsbeziervector-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsbeziervector-cs1" %}
 
 ## Avoid overlapping with bezier
 
@@ -563,7 +563,7 @@ Also, the visibility of control points can be controlled using the bezierSetting
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorBezierAvoidOverlapping-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorBezierAvoidOverlapping-cs1" %}
 
 ## Decorator
 
@@ -587,7 +587,7 @@ The following code example illustrates how to create decorators of various shape
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsdecorator-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsdecorator-cs1" %}
 
 ## Padding
 
@@ -611,7 +611,7 @@ The following code example illustrates how to leave space between the connection
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectNode-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectNode-cs2" %}
 
 ## Flip
 
@@ -635,7 +635,7 @@ The flip types are as follows:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsdecorator-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsdecorator-cs2" %}
 
 >Note: The flip is not applicable when the connectors connect in nodes.
 
@@ -657,7 +657,7 @@ Bridging can be enabled/disabled either with the `connector.constraints` or `dia
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsbridging-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsbridging-cs1" %}
 
 >Note: You need to inject connector bridging module into the diagram.
 
@@ -681,7 +681,7 @@ Corner radius allows to create connectors with rounded corners. The radius of th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorscornerradius-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorscornerradius-cs1" %}
 
 ## Appearance
 
@@ -707,7 +707,7 @@ The following code example illustrates how to customize the segment appearance.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorssegappear-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorssegappear-cs1" %}
 
 ## Decorator appearance
 
@@ -731,7 +731,7 @@ The following code example illustrates how to customize the appearance of the de
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsdecappearance-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsdecappearance-cs1" %}
 
 ## Interaction
 
@@ -784,7 +784,7 @@ Diagram.Inject(LineRouting);
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorslinerouting-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorslinerouting-cs1" %}
 
 4.In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#constraints-ConnectorConstraints) property of the connector like the following code snippet.
 
@@ -800,7 +800,7 @@ Diagram.Inject(LineRouting);
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorslineroutingdisabled-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorslineroutingdisabled-cs1" %}
 
 ## Constraints
 
@@ -820,7 +820,7 @@ The following code illustrates how to disable selection.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/connectorsconstraints-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsconstraints-cs1" %}
 
 ## Custom properties
 
@@ -852,7 +852,7 @@ The following code illustrates how to render connector based on the stack order.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/zindex-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/zindex-cs1" %}
 
 ## Enable Connector Splitting
 
@@ -872,7 +872,7 @@ The following code illustrates how to split the connector and create a connectio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/connectors/ConnectorSplit-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/ConnectorSplit-cs1" %}
 
 ![Enable Connector Split](./images/EnableSplit.gif)
 

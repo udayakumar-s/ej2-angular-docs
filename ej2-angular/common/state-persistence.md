@@ -24,7 +24,7 @@ Syncfusion Angular UI components support persisting their state across page refr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/state-persistence-cs1" %}
+{% previewsample "page.domainurl/samples/common/state-persistence-cs1" %}
 
 ## State Persistence supported components and properties
 

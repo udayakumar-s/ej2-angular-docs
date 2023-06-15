@@ -29,7 +29,7 @@ The [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/row-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/row-cs1" %}
 
 ## Styling alternate rows
 
@@ -64,7 +64,7 @@ Please refer to the following example.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/alt-row-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/alt-row-cs1" %}
 
 ## Perform Expand/Collapse on parent row programmatically
 
@@ -92,7 +92,7 @@ To get row element you can use [`getRows`](https://ej2.syncfusion.com/angular/do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs41" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs41" %}
 
 > You can get the row elements by [`getDataRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getdatarows) method in the tree grid.
 > Refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.

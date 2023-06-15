@@ -26,4 +26,4 @@ The following sample demonstrates configuration of custom value support with the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs2" %}

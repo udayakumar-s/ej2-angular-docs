@@ -28,7 +28,7 @@ You can render the HTML element directly to the Splitter pane content using ng-t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/template-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/template-cs1" %}
 
 ## Angular UI Components
 
@@ -52,7 +52,7 @@ You can add the plain text as a pane contents using either inner HTML or [conten
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/plain-content-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/plain-content-cs1" %}
 
 ## HTML Markup
 
@@ -70,7 +70,7 @@ Splitter is a layout based container component. You can render the pane contents
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/html-content-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/html-content-cs1" %}
 
 ## Pane content using selector
 
@@ -90,4 +90,4 @@ The following code demonstrates how to fetch an element from the document and lo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/selector-content-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/selector-content-cs1" %}

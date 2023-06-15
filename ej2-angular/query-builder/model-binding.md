@@ -24,4 +24,4 @@ Model binding allows to bind properties for the components used in field, operat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/model-binding-cs1" %}
+{% previewsample "page.domainurl/samples/query-builder/model-binding-cs1" %}

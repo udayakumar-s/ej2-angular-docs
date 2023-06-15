@@ -28,7 +28,7 @@ Customize the labels for each item using the [`labelFormat`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs9" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs9" %}
 
 ## Template
 
@@ -46,7 +46,7 @@ The template supports customizing labels of each leaf node using the [`labelTemp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs10" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs10" %}
 
 ## InterSectAction
 
@@ -64,4 +64,4 @@ When the label size in each item exceeds the actual size, use the [`interSectAct
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs11" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs11" %}

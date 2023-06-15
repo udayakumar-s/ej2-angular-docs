@@ -28,7 +28,7 @@ In Shipping cart we can be able to select or unselect the desired items before c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/checklist-cs1" %}
+{% previewsample "page.domainurl/samples/listview/checklist-cs1" %}
 
 ## Checkbox Position
 
@@ -47,4 +47,4 @@ This can be achieved by `checkBoxPositon` property. By default, checkbox will be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/checklist-cs2" %}
+{% previewsample "page.domainurl/samples/listview/checklist-cs2" %}

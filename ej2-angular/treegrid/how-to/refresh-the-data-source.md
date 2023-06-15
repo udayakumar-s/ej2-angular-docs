@@ -53,7 +53,7 @@ Refresh the Tree Grid after the datasource change by assign the modified data to
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/refresh-datasource-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/refresh-datasource-cs2" %}
 
 > Refresh the header by using the [`refreshHeader`](https://ej2.syncfusion.com/angular/documentation/api/treerid/#refreshheader) method in the tree grid.
 > Refresh both the header and the content by using the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refresh) method in the tree grid.

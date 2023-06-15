@@ -178,7 +178,7 @@ The below example shows a uploader component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs8" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs8" %}
 
 ## Adding drop area
 
@@ -199,7 +199,7 @@ In the following sample, external element is configured as drop target to upload
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/draganddrop-cs2" %}
+{% previewsample "page.domainurl/samples/uploader/draganddrop-cs2" %}
 
 ## Configure asynchronous settings
 
@@ -218,7 +218,7 @@ Define the properties `saveUrl` and `removeUrl` to handle the save and remove ac
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs9" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs9" %}
 
 ## Handle success and failed upload
 
@@ -237,7 +237,7 @@ To handle these events, define the function and assign it to corresponding event
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs10" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs10" %}
 
 > You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
 

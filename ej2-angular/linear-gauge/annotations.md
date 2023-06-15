@@ -76,7 +76,7 @@ To change the stack order of an annotation element, the [`zIndex`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/annotations-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/annotations-cs1" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -96,7 +96,7 @@ The annotation can be placed anywhere in the Linear Gauge by setting the pixel v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/annotations-cs2" %}
+{% previewsample "page.domainurl/samples/linear-gauge/annotations-cs2" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -116,7 +116,7 @@ The annotation can be aligned horizontally and vertically by using the [`horizon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/annotations-cs3" %}
+{% previewsample "page.domainurl/samples/linear-gauge/annotations-cs3" %}
 
 ## Multiple annotations
 
@@ -134,4 +134,4 @@ Multiple annotations can be added to the Linear Gauge component by adding the mu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/annotations-cs4" %}
+{% previewsample "page.domainurl/samples/linear-gauge/annotations-cs4" %}

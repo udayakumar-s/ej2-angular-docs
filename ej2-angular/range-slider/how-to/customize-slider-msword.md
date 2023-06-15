@@ -75,4 +75,4 @@ To customize the Slider Button, refer to the below code snippet.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/msword-customization-cs1" %}
+{% previewsample "page.domainurl/samples/slider/msword-customization-cs1" %}

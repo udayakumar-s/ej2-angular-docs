@@ -37,7 +37,7 @@ Using addFormField method, the form fields can be added to the PDF document prog
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pdfviewer/addformfield-cs1" %}
+{% previewsample "page.domainurl/samples/pdfviewer/addformfield-cs1" %}
 
 ## Edit/Update form field programmatically
 
@@ -55,7 +55,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pdfviewer/updateformfield-cs1" %}
+{% previewsample "page.domainurl/samples/pdfviewer/updateformfield-cs1" %}
 
 ## Delete form field programmatically
 
@@ -73,7 +73,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pdfviewer/deleteformfield-cs1" %}
+{% previewsample "page.domainurl/samples/pdfviewer/deleteformfield-cs1" %}
 
 The following code illustrates how to delete a signature from the signature field using the `retrieveFormFields` and `clearFormFields` APIs.
 

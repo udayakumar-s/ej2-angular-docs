@@ -28,7 +28,7 @@ You can customize the points by initializing the point colors. The customization
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs33" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs33" %}
 
 **Tie point color**
 
@@ -48,4 +48,4 @@ Tie point color is used to configure the win-loss series type sparkline's y-valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs34" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs34" %}

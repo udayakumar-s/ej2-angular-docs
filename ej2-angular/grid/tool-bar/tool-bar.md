@@ -18,13 +18,13 @@ You can enable/disable toolbar items by using the **enableItems** method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/toolbar-enable-cs1/app/app.component.ts %}
+{% include code-snippet/grid/toolbar-enable-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/toolbar-enable-cs1/app/app.module.ts %}
+{% include code-snippet/grid/toolbar-enable-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/toolbar-enable-cs1/app/main.ts %}
+{% include code-snippet/grid/toolbar-enable-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ You can add the Grid toolbar component at the bottom of Grid using the ['created
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/toolbar-enable-cs2/app/app.component.ts %}
+{% include code-snippet/grid/toolbar-enable-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/toolbar-enable-cs2/app/app.module.ts %}
+{% include code-snippet/grid/toolbar-enable-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/toolbar-enable-cs2/app/main.ts %}
+{% include code-snippet/grid/toolbar-enable-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -26,7 +26,7 @@ Pointers are used to indicate values on an axis. The value of the pointer can be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/pointers-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/pointers-cs1" %}
 
 ## Types of pointer
 
@@ -66,7 +66,7 @@ An image can be rendered instead of rendering a shape as a pointer. It can be ac
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/pointers-cs2" %}
+{% previewsample "page.domainurl/samples/linear-gauge/pointers-cs2" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -96,7 +96,7 @@ The marker pointer can be customized using the following properties.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/pointers-cs3" %}
+{% previewsample "page.domainurl/samples/linear-gauge/pointers-cs3" %}
 
 ### Bar Pointer
 
@@ -114,7 +114,7 @@ The bar pointer is used to track the axis value. The bar pointer starts from the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/pointers-cs4" %}
+{% previewsample "page.domainurl/samples/linear-gauge/pointers-cs4" %}
 
 <!-- markdownlint-disable MD013 -->
 
@@ -144,7 +144,7 @@ The bar pointer can be customized using following properties.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/pointers-cs5" %}
+{% previewsample "page.domainurl/samples/linear-gauge/pointers-cs5" %}
 
 ## Multiple pointers
 
@@ -162,7 +162,7 @@ Multiple pointers can be added to the Linear Gauge by adding multiple [`e-pointe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/pointers-cs6" %}
+{% previewsample "page.domainurl/samples/linear-gauge/pointers-cs6" %}
 
 ## Pointer animation
 
@@ -180,7 +180,7 @@ Pointer is animated on loading the gauge. This can be handled by using the [`ani
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/pointers-cs7" %}
+{% previewsample "page.domainurl/samples/linear-gauge/pointers-cs7" %}
 
 ## Gradient Color
 
@@ -205,7 +205,7 @@ Using linear gradient, colors will be applied in a linear progression. The start
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/pointers-cs8" %}
+{% previewsample "page.domainurl/samples/linear-gauge/pointers-cs8" %}
 
 ### Radial Gradient
 
@@ -223,6 +223,6 @@ Using radial gradient, colors will be applied in circular progression. The inner
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/pointers-cs9" %}
+{% previewsample "page.domainurl/samples/linear-gauge/pointers-cs9" %}
 
 >If we set both gradients, only the linear gradient gets rendered. If we set the [`startValue`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient/#startvalue) and [`endValue`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient/#endvalue) property of the [`linearGradient`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient/) as empty strings, then the radial gradient gets rendered in the pointer of the Linear Gauge.

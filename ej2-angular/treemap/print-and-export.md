@@ -26,7 +26,7 @@ To use the print functionality, we should inject the `PrintService` into the `@N
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs47" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs47" %}
 
 ## Export
 
@@ -50,7 +50,7 @@ To use the image export functionality, we should inject the `ImageExportService`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs48" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs48" %}
 
 We can get the image file as base64 string for the JPEG and PNG formats. The treemap can be exported to image as a base64 string using the [`export`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#export) method. There are four parameters required: image type, file name, orientation of the exported PDF document which must be set as **null** for image export and finally **allowDownload** which should be set as **false** to return base64 string.
 
@@ -66,7 +66,7 @@ We can get the image file as base64 string for the JPEG and PNG formats. The tre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs49" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs49" %}
 
 ### PDF Export
 
@@ -84,6 +84,6 @@ To use the PDF export functionality, we should inject the `PdfExportService` int
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs50" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs50" %}
 
 >The exporting of the treemap as base64 string is not supported in the PDF export.

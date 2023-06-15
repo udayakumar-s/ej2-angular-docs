@@ -26,7 +26,7 @@ In the following sample, vegetables are grouped according on its category using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs15" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs15" %}
 
 ## Customization
 

@@ -181,7 +181,7 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs8" %}
 
 > You can also explore our [Angular TreeView](https://ej2.syncfusion.com/angular/demos/#/material/treeview/default) example to knows how to present and manipulate data.
 

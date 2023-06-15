@@ -84,7 +84,7 @@ You can use the [`addParams`](https://ej2.syncfusion.com/documentation/api/data/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs11" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs11" %}
 
 ## Adding custom headers
 

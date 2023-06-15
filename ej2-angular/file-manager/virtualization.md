@@ -54,7 +54,7 @@ In the instance below, a sizable collection of files can be found in the folders
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/file-manager/virtualization-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/virtualization-cs1" %}
 
 ## Limitations for Virtualization
 

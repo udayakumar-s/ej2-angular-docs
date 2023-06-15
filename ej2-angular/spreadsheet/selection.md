@@ -59,7 +59,7 @@ The following sample shows the row selection in the spreadsheet, here selecting 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/selection-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/selection-cs1" %}
 
 ## Column selection
 
@@ -88,7 +88,7 @@ The following sample shows the column selection in the spreadsheet, here selecti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/selection-cs2" %}
+{% previewsample "page.domainurl/samples/spreadsheet/selection-cs2" %}
 
 ## How to remove selection in the spreadsheet
 
@@ -106,7 +106,7 @@ The following sample shows, how to remove the selection in the spreadsheet. Here
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/selection-cs3" %}
+{% previewsample "page.domainurl/samples/spreadsheet/selection-cs3" %}
 
 ## Limitations
 

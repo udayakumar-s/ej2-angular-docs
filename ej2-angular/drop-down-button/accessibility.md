@@ -74,4 +74,4 @@ Opens the popup</td></tr>
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/accessibility-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/accessibility-cs1" %}

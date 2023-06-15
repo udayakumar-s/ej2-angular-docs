@@ -36,7 +36,7 @@ Page settings enable to customize the appearance, width, and height of the diagr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/pagesettings/pagesettings-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/pagesettings/pagesettings-cs1" %}
 
 ## Set background image
 
@@ -56,7 +56,7 @@ The following code illustrates how to stretch and align the background image.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/pagesettings/background-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/pagesettings/background-cs1" %}
 
 ## Multiple page and page breaks
 
@@ -78,7 +78,7 @@ The following code illustrates how to enable multiple page and page break lines.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/pagesettings/pagebreak-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/pagesettings/pagebreak-cs1" %}
 
 ## Boundary constraints
 
@@ -98,4 +98,4 @@ The following code example illustrates how to define boundary constraints with r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/pagesettings/boundary-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/pagesettings/boundary-cs1" %}

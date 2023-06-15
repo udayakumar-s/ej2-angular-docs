@@ -35,7 +35,7 @@ The selected files are organized in a list for every file selection until you cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs1" %}
 
 ## Single file upload
 
@@ -57,7 +57,7 @@ The following example explains about single file upload settings.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs2" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs2" %}
 
 ## Save action
 
@@ -82,7 +82,7 @@ You can cancel the upload process by setting the upload event argument **eventar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs3" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs3" %}
 
 ### Server-side configuration for save action
 
@@ -161,7 +161,7 @@ In this case, the success or failure events will not be triggered.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs4" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs4" %}
 
 ### Server-side configuration for remove action
 
@@ -221,7 +221,7 @@ You can change those buttons text using the `buttons` property in the Uploader c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs5" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs5" %}
 
 ## Sequential Upload
 
@@ -239,7 +239,7 @@ By default, the uploader component process multiple files to upload simultaneous
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/sequential-upload-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/sequential-upload-cs1" %}
 
 ## Preload files
 
@@ -264,7 +264,7 @@ The following properties are mandatory to configure the preloaded files:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs6" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs6" %}
 
 ## Adding additional HTTP headers with upload action
 

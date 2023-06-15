@@ -7,7 +7,7 @@ import { Query, DataManager } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
     // specifies the template path for the ComboBox component
-    templateUrl: `./app/cascading.html`
+    templateUrl: `cascading.html`
 })
 export class AppComponent {
     constructor() {
@@ -46,13 +46,13 @@ export class AppComponent {
     public cityWatermark: string = "Select a city";
     @ViewChild('country')
     // create object for country comboBox
-    public countryObj: ComboBoxComponent;
+    public countryObj?: ComboBoxComponent | any;
     @ViewChild('state')
     // create object for state comboBox
-    public stateObj: ComboBoxComponent;
+    public stateObj: ComboBoxComponent | any;
     @ViewChild('city')
     // create object for city comboBox
-    public cityObj: ComboBoxComponent;
+    public cityObj?: ComboBoxComponent | any;
     public countryChange(): void {
         let tempQuery: Query = new Query().where('CountryId', 'equal', this.countryObj.value);
         //Query the data source based on country ComboBox selected value

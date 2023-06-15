@@ -26,7 +26,7 @@ To enable Dialog edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs8" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs8" %}
 
 ## Customize edit dialog
 
@@ -48,7 +48,7 @@ Also the locale text for the **Save** and **Cancel** buttons has been changed by
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs9" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs9" %}
 
 ## Show or hide columns in dialog editing
 
@@ -72,4 +72,4 @@ In the below example, we have rendered the tree grid columns **priority** as hid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs10" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs10" %}

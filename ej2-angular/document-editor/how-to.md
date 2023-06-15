@@ -28,7 +28,7 @@ The following code shows how to prevent the `CTRL + C` keyboard shortcut for cop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/prevent-keyboard-cs1" %}
+{% previewsample "page.domainurl/samples/document-editor/prevent-keyboard-cs1" %}
 
 ## Override or define the keyboard shortcut
 
@@ -48,4 +48,4 @@ For example, `Ctrl + S` keyboard shortcut saves the document in SFDT format by d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/override-keyboard-cs1" %}
+{% previewsample "page.domainurl/samples/document-editor/override-keyboard-cs1" %}

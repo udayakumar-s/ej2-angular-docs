@@ -27,7 +27,7 @@ This is the default state. You can use it when the progress estimation is known.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/modes-cs1" %}
+{% previewsample "page.domainurl/samples/progressbar/modes-cs1" %}
 
 ## Indeterminate
 
@@ -45,7 +45,7 @@ By enabling the **IsIndeterminate** property, the state of the progress bar can 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/modes-cs2" %}
+{% previewsample "page.domainurl/samples/progressbar/modes-cs2" %}
 
 ## Buffer
 
@@ -63,4 +63,4 @@ You can use a secondary progress indicator when the primary progress depends on 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/modes-cs3" %}
+{% previewsample "page.domainurl/samples/progressbar/modes-cs3" %}

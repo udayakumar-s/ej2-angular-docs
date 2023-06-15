@@ -26,4 +26,4 @@ The following example demonstrate how to add a custom icon in largeicons view.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/custom-thumbnail-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/custom-thumbnail-cs1" %}

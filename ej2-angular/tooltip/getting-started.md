@@ -153,7 +153,7 @@ The following code example depicts the way to initialize Tooltip on a single ele
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs7" %}
 
 ### Initialize Tooltip within a container
 
@@ -173,7 +173,7 @@ Refer the following code example, to create a Tooltip on multiple targets within
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs8" %}
 
 > In the above sample, `details` refers to the container's id, and the target `.e-info` refers to the target elements available
 > within that container.

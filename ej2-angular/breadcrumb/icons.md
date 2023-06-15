@@ -32,7 +32,7 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/icons-cs1" %}
+{% previewsample "page.domainurl/samples/breadcrumb/icons-cs1" %}
 
 ### Breadcrumb with Image
 
@@ -50,7 +50,7 @@ In the Breadcrumb component, images can be added for the items using the `iconCs
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/icons-cs2" %}
+{% previewsample "page.domainurl/samples/breadcrumb/icons-cs2" %}
 
 ### Breadcrumb with SVG Image
 
@@ -68,7 +68,7 @@ In the Breadcrumb component, SVG image can be added for the items using the `ico
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/icons-cs3" %}
+{% previewsample "page.domainurl/samples/breadcrumb/icons-cs3" %}
 
 ## Icon Position
 
@@ -86,7 +86,7 @@ By default, the icon is positioned to the left side of the item in the Breadcrum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/icons-cs4" %}
+{% previewsample "page.domainurl/samples/breadcrumb/icons-cs4" %}
 
 ## Icon Only
 
@@ -104,7 +104,7 @@ To display only icons for the items, add icons using the `iconCss` property. In 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/icons-cs5" %}
+{% previewsample "page.domainurl/samples/breadcrumb/icons-cs5" %}
 
 ## Show icon only for first item
 
@@ -122,4 +122,4 @@ To show icon only for the first item in the Breadcrumb component, add icons to t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/icons-cs6" %}
+{% previewsample "page.domainurl/samples/breadcrumb/icons-cs6" %}

@@ -48,7 +48,7 @@ The following code example shows `sort` functionality in the Spreadsheet control
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/sort-by-cell-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/sort-by-cell-cs1" %}
 
 ## Data contains header
 
@@ -126,7 +126,7 @@ The multi-column sorting can also be performed manually by passing sort options 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/passing-sort-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/passing-sort-cs1" %}
 
 ## Custom sort comparer
 

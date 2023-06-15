@@ -51,7 +51,7 @@ On initializing the Tooltip, you can set the position property with any one of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs34" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs34" %}
 
 ## Tip pointer positioning
 
@@ -80,7 +80,7 @@ The following code example illustrates how to set the pointer to the start posit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs35" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs35" %}
 
 By default, tip pointers are auto adjusted so that the arrow does not point outside the target element.
 
@@ -100,7 +100,7 @@ The Tooltip and its tip pointer can be positioned dynamically based on the targe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs36" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs36" %}
 
 ## Mouse trailing
 
@@ -119,7 +119,7 @@ By default, it is set to `false`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs37" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs37" %}
 
 > When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and
 > other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
@@ -146,6 +146,6 @@ The following code example illustrates how to set offset values.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs38" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs38" %}
 
 > By default, collision is handled automatically and therefore when collision is detected the Tooltip fits horizontally and flips vertically.

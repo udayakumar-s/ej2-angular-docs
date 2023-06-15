@@ -40,4 +40,4 @@ Even though we have hidden the checkbox the functionality will be same for the l
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/hide-checkbox-cs2" %}
+{% previewsample "page.domainurl/samples/listview/hide-checkbox-cs2" %}

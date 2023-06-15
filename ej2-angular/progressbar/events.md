@@ -28,7 +28,7 @@ domainurl: ##DomainURL##
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/customization-cs7" %}
+{% previewsample "page.domainurl/samples/progressbar/customization-cs7" %}
 
 ## ProgressCompleted
 
@@ -47,4 +47,4 @@ domainurl: ##DomainURL##
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/customization-cs8" %}
+{% previewsample "page.domainurl/samples/progressbar/customization-cs8" %}

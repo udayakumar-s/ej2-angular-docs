@@ -12,7 +12,7 @@ export class AppComponent {
     constructor() {
         // bind the onscroll event to window
         window.onscroll = () => {
-            this.dropDownListObject.hidePopup();
+            this.dropDownListObject!.hidePopup();
         }
     }
     // defined the array of data
@@ -20,7 +20,7 @@ export class AppComponent {
     // set placeholder text to DropDownList input element
     public placeholder: string = 'Select a game';
     @ViewChild('ddlelement')
-    public dropDownListObject: DropDownListComponent;
+    public dropDownListObject?: DropDownListComponent;
 }
 
 

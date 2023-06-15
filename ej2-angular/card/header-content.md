@@ -55,7 +55,7 @@ Card header has an option for adding images in the header. It is aligned with ei
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card-header-img-cs1" %}
+{% previewsample "page.domainurl/samples/card/card-header-img-cs1" %}
 
 ## Content
 
@@ -76,4 +76,4 @@ Content in Card holds texts, images, links and all possible HTML elements. Its a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card-content-cs1" %}
+{% previewsample "page.domainurl/samples/card/card-content-cs1" %}

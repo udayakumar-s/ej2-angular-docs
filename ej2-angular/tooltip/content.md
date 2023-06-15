@@ -33,7 +33,7 @@ The following sample demonstrates how to add content template in tooltip.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs5" %}
 
 ## Dynamic content via AJAX
 
@@ -51,4 +51,4 @@ The Tooltip content can be dynamically loaded  by making use of the AJAX call. T
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/ajax-content-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/ajax-content-cs1" %}

@@ -26,6 +26,6 @@ In the following example, the **Display Settings** in parent items and **Medium 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/template-cs3" %}
+{% previewsample "page.domainurl/samples/context-menu/template-cs3" %}
 
 > To disable sub menu items, use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu#beforeopen) event.

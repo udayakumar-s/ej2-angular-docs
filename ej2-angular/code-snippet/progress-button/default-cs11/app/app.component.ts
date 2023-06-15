@@ -9,20 +9,20 @@ import { ProgressEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 })
 
 export class AppComponent {
-    private content: string = 'Progress';
+    public content: string = 'Progress';
 
-    private begin(args: ProgressEventArgs): void {
+    public begin(args: ProgressEventArgs): void {
         this.content = 'Progress ' + args.percent + '%';
     }
 
-    private progress(args: ProgressEventArgs): void {
+    public progress(args: ProgressEventArgs): void {
         this.content = 'Progress ' + args.percent + '%';
         if (args.percent === 40) {
             args.percent = 90;
         }
     }
 
-    private end(args: ProgressEventArgs): void {
+    public end(args: ProgressEventArgs): void {
         this.content = 'Progress ' + args.percent + '%';
     }
 }

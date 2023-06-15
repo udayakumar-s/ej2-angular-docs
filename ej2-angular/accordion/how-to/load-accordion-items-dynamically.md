@@ -34,4 +34,4 @@ and [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-items-dynamically-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-items-dynamically-cs1" %}

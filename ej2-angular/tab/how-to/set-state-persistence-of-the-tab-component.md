@@ -28,4 +28,4 @@ The following sample demonstrates how to set state persistence of the Tab compon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/persistence-cs1" %}
+{% previewsample "page.domainurl/samples/tab/persistence-cs1" %}

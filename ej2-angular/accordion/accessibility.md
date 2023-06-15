@@ -51,4 +51,4 @@ Keyboard navigation is enabled by default. Possible keys are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-cs1" %}

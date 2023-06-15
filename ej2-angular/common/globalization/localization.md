@@ -30,7 +30,7 @@ For example, to load translations for English and French, you can do the followi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/locale-cs1" %}
+{% previewsample "page.domainurl/samples/common/locale-cs1" %}
 
 ## Changing current locale
 

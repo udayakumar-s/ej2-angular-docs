@@ -24,4 +24,4 @@ Card Image titles are placed as always Bottom-Left Corner only, You can manually
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card-img-title-pos-cs1" %}
+{% previewsample "page.domainurl/samples/card/card-img-title-pos-cs1" %}

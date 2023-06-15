@@ -24,4 +24,4 @@ The spin buttons allow you to increase or decrease the value with the predefined
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs10" %}

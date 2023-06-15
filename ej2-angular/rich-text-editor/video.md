@@ -49,7 +49,7 @@ To configure the `Video` toolbar item, refer to the below code.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/video-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/video-cs1" %}
 
 ## Insert a video from the web
 

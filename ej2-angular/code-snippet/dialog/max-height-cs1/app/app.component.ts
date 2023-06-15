@@ -31,11 +31,11 @@ import { EmitType } from '@syncfusion/ej2-base';
       </ejs-dialog> `
 })
 export class AppComponent implements OnInit {
-    @ViewChild('ejDialog') ejDialog: DialogComponent;
+    @ViewChild('ejDialog') ejDialog: DialogComponent |any;
     // Create element reference for dialog target element.
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef }) container: ElementRef| any;
     // The Dialog shows within the target element.
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
     position = { X: 'center', Y: 'center' };
     //To get all element of the dialog component after component get initialized.
     ngOnInit() {
@@ -51,12 +51,12 @@ export class AppComponent implements OnInit {
         this.ejDialog.hide();
     }
     // Sample level code to handle the button click action.
-    public onOpenDialog = function(event: any): void {
+    public onOpenDialog = (event: any): void => {
         // Call the show method to open the Dialog.
         this.ejDialog.show();
     }
-    public onCreated = function(): void {
-      document.getElementById('dlgContent').style.display = 'block';
+    public onCreated = (): void => {
+      document.getElementById('dlgContent')!.style.display = 'block';
       this.ejDialog.refreshPosition();
     }
     public onBeforeOpen = function(args: any): void {

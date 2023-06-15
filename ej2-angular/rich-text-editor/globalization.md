@@ -326,7 +326,7 @@ The below sample demonstrate that, the Rich Text Editor control rendered with 'd
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs3" %}
 
 ## RTL
 
@@ -346,4 +346,4 @@ Specifies the direction of the Rich Text Editor component using the [`enableRtl`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs4" %}

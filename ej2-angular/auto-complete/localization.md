@@ -36,7 +36,7 @@ In the following sample, French culture is set to the AutoComplete and no data i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs17" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs17" %}
 
 ## See Also
 

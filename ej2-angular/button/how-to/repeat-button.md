@@ -26,4 +26,4 @@ The following example explains about how to achieve repeat button in mouse and t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/repeat-button-cs1" %}
+{% previewsample "page.domainurl/samples/button/repeat-button-cs1" %}

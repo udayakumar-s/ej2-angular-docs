@@ -30,7 +30,7 @@ Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/doc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs20" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs20" %}
 
 ## Static toast
 
@@ -48,7 +48,7 @@ We can prevent auto hiding in a toast as visible like static. For this, we need 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs21" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs21" %}
 
 ## See Also
 

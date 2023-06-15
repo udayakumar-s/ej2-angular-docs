@@ -26,4 +26,4 @@ The [`draw`](https://ej2.syncfusion.com/angular/documentation/api/signature/#dra
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/draw-cs1" %}
+{% previewsample "page.domainurl/samples/signature/draw-cs1" %}

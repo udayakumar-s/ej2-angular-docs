@@ -32,7 +32,7 @@ The top AppBar is the default one in which it positions the AppBar at the top of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/top-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/top-cs1" %}
 
 ## Bottom AppBar
 
@@ -50,7 +50,7 @@ This position can be set to the AppBar by setting `Bottom` to the property [posi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/bottom-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/bottom-cs1" %}
 
 ## Sticky AppBar
 
@@ -68,4 +68,4 @@ This position can be set to the AppBar by setting `true` to the property [isStic
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/sticky-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/sticky-cs1" %}

@@ -30,7 +30,7 @@ The [`columns`](https://ej2.syncfusion.com/angular/documentation/api/query-build
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs1" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs1" %}
 
 > When columns are auto-generated, the column type will be determined from the first record of the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource).
 
@@ -78,7 +78,7 @@ The Query Builder formats date and number values. Use the [`format`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs2" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs2" %}
 
 ## Validations
 
@@ -96,7 +96,7 @@ Validation allows you to validate the conditions and it display errors for inval
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs3" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs3" %}
 
 > Set [`isRequired`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/validation/#isrequired) validation for `Operator` and `Value` fields.
 

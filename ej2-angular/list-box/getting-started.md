@@ -183,4 +183,4 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs7" %}

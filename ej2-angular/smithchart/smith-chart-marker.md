@@ -30,7 +30,7 @@ Default visibility of marker is false. You can enable the marker by setting prop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs21" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs21" %}
 
 **Marker Customization**
 
@@ -55,7 +55,7 @@ Using marker settings in series, you can customize the marker for each series di
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs22" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs22" %}
 
 ## Datalabels
 
@@ -73,7 +73,7 @@ By default, datalabel is disabled. You can enable the datalabel by setting prope
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs23" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs23" %}
 
 **Datalabel customization**
 
@@ -96,4 +96,4 @@ Using datalabel settings in marker, you can customize the datalabel for each ser
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs24" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs24" %}

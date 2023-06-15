@@ -27,4 +27,4 @@ Also our DatePicker component supports the ISO formatted date value, so parsed J
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/json-bind-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/json-bind-cs1" %}

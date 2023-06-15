@@ -16,13 +16,13 @@ To use Row Drag and Drop, you need to inject **RowDDService** in the provider se
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/dragndrop-cs1/app/app.component.ts %}
+{% include code-snippet/grid/dragndrop-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/dragndrop-cs1/app/app.module.ts %}
+{% include code-snippet/grid/dragndrop-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/dragndrop-cs1/app/main.ts %}
+{% include code-snippet/grid/dragndrop-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ By setting the [targetID](https://ej2.syncfusion.com/angular/documentation/api/g
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/dragndrop-cs2/app/app.component.ts %}
+{% include code-snippet/grid/dragndrop-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/dragndrop-cs2/app/app.module.ts %}
+{% include code-snippet/grid/dragndrop-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/dragndrop-cs2/app/main.ts %}
+{% include code-snippet/grid/dragndrop-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

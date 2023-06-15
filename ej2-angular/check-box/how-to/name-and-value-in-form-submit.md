@@ -29,4 +29,4 @@ In the following code snippet, Cricket and Hockey are in the checked state, Tenn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/form-cs1" %}
+{% previewsample "page.domainurl/samples/check-box/form-cs1" %}

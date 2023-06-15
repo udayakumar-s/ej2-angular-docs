@@ -24,4 +24,4 @@ You can sort the TreeView nodes based on their level. When using the `sortOrder`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/sort-tree-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/sort-tree-cs1" %}

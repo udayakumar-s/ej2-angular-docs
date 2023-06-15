@@ -148,7 +148,7 @@ The appointments belonging to the different resources will be displayed altogeth
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/multiple-resource-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/multiple-resource-cs1" %}
 
 ![Multiple Resources](images/schedule-multipleresources.png)
 
@@ -180,7 +180,7 @@ The following code example displays how the multiple resources are grouped and i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/resource-grouping-cs1" %}
 
 ![Vertical Resource View](images/schedule-resources-verticalview.png)
 
@@ -200,7 +200,7 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/resource-grouping-cs2" %}
 
 ![Timeline Resource view](images/schedule-resource-timeline.png)
 
@@ -222,7 +222,7 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/single-level-resource-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/single-level-resource-cs1" %}
 
 ![Grouping single-level resources](images/schedule-singlelevel.png)
 
@@ -246,7 +246,7 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/multiple-level-resource-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/multiple-level-resource-cs1" %}
 
 ![Grouping multi-level resources](images/schedule-multiplelevel.png)
 
@@ -266,7 +266,7 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/multiple-level-resource-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/multiple-level-resource-cs2" %}
 
 ![Grouping in Schedule](images/schedule-grouping.png)
 
@@ -288,7 +288,7 @@ It groups the number of resources under each date and is applicable only on the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/group-by-date-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/group-by-date-cs1" %}
 
 ![Grouping Resources by Date in Schedule](images/schedule-resource-by-date.png)
 
@@ -310,7 +310,7 @@ In timeline view work cells of parent resource can be customized by checking the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs58" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs58" %}
 
 ## Working with shared events
 
@@ -333,7 +333,7 @@ object will be maintained within the appointment collection, even if it is share
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/resource-grouping-cs3" %}
 
 ![Grouping Resources as shared events](images/schedule-sharedevents.png)
 
@@ -355,7 +355,7 @@ It is possible to customize the resource header cells using built-in template op
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-header-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/resource-header-cs1" %}
 
 ![Customizing Resources Header in Desktop](images/schedule-custom-resource-header.png)
 
@@ -379,7 +379,7 @@ It is possible to customize the resource headers to display with multiple column
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-header-column-customization-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/resource-header-column-customization-cs1" %}
 
 ![Schedule with Multiple columns](images/schedule-multiple-columns.png)
 
@@ -399,7 +399,7 @@ It is possible to display tooltips over the resource headers showing the resourc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/header-tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/header-tooltip-cs1" %}
 
 ![tooltip for resource headers](images/schedule-tooltip.png)
 
@@ -421,7 +421,7 @@ In the following example, the colors mentioned in the second level will get appl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/multiple-resource-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/multiple-resource-cs2" %}
 
 ![tooltip for resource headers](images/schedule-resource-color.png)
 
@@ -445,7 +445,7 @@ To remove the resources dynamically, `removeResource` method is used which accep
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/dynamic-resource-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/dynamic-resource-cs1" %}
 
 ## Setting different working days and hours for resources
 
@@ -467,7 +467,7 @@ Different working days can be set for the resources of Scheduler using the `work
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/multiple-resource-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/multiple-resource-cs3" %}
 
 ![Resources with Different Workdays](images/schedule-resource-workdays.png)
 
@@ -490,7 +490,7 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/multiple-resource-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/multiple-resource-cs4" %}
 
 ![Resources with Different Workhours](images/schedule-different-workhour.png)
 
@@ -516,7 +516,7 @@ To use the [`hideNonWorkingDays`](../api/schedule/group/#hidenonworkingdays) pro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/hide-non-working-days-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/hide-non-working-days-cs1" %}
 
 ![Hide non-working days when grouped by date](images/schedule-hide-non-working-days.png)
 
@@ -556,7 +556,7 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-grouping-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/resource-grouping-cs4" %}
 
 ![Resources in Adaptive UI](images/schedule-adaptiveui.png)
 

@@ -28,4 +28,4 @@ To change the [`tooltipText`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs4" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs4" %}

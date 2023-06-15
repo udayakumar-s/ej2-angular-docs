@@ -26,4 +26,4 @@ The Numeric processing is demonstrated below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/how-to-03-cs2" %}
+{% previewsample "page.domainurl/samples/slider/how-to-03-cs2" %}

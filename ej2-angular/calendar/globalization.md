@@ -119,7 +119,7 @@ The following example demonstrates the Calendar in `German` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/culture-cs1" %}
+{% previewsample "page.domainurl/samples/calendar/culture-cs1" %}
 
 ## Right-To-Left
 
@@ -139,4 +139,4 @@ The following example demonstrates the Calendar in `Arabic` culture with `enable
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/calendar/rtl-cs1" %}

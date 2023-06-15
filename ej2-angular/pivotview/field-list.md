@@ -37,7 +37,7 @@ To use field list, you need to inject the `FieldListService` module in pivot tab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs76" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs76" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -57,7 +57,7 @@ The field list can be rendered in a static position, anywhere in web page layout
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs77" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs77" %}
 
 ## Search desired field
 
@@ -79,7 +79,7 @@ To enable search box in the static field list UI, set the [`enableFieldSearching
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs78" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs78" %}
 
 To enable search box in the pivot table's built-in popup field list UI, set the [`enableFieldSearching`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablefieldsearching) property to **true** in `ejs-pivotview`.
 
@@ -95,7 +95,7 @@ To enable search box in the pivot table's built-in popup field list UI, set the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs79" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs79" %}
 
 ## Group fields under desired folder name
 
@@ -115,7 +115,7 @@ In the field list UI, you can display fields by grouping them under the desired 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs80" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs80" %}
 
 ## Add or remove fields
 
@@ -139,7 +139,7 @@ When a data source is bound to the component, fields will be automatically popul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs81" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs81" %}
 
 ## Re-arranging fields
 
@@ -210,7 +210,7 @@ The sample code below shows the built-in field list dialog using `document.body
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs82" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs82" %}
 
 ## Show field list using toolbar
 
@@ -228,7 +228,7 @@ It can also be viewed in toolbar by setting [`showFieldList`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs83" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs83" %}
 
 ## Invoking dynamic Field List (Customized)
 
@@ -251,7 +251,7 @@ The below sample code illustrates the field list dialog invoked on an external b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs84" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs84" %}
 
 ## Set caption to fields which isn’t bound to the report
 
@@ -271,7 +271,7 @@ In the sample, we have set caption to the fields `Year` and `Quarter` dynamicall
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs85" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs85" %}
 
 ## Show values button
 
@@ -291,7 +291,7 @@ During runtime, the **Values** button in the field list can be moved to a differ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs86" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs86" %}
 
 ## Events
 
@@ -325,7 +325,7 @@ For example, if we perform a sort operation within the field list, the field lis
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs87" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs87" %}
 
 ### OnFieldDropped
 
@@ -343,7 +343,7 @@ The event [`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs88" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs88" %}
 
 ### ActionBegin
 
@@ -383,7 +383,7 @@ In the below sample, opening pop-up field list can be restricted by setting the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs89" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs89" %}
 
 ### ActionComplete
 
@@ -421,7 +421,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs90" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs90" %}
 
 ### ActionFailure
 
@@ -453,7 +453,7 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs91" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs91" %}
 
 ## See Also
 

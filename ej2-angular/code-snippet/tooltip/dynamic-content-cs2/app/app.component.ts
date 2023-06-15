@@ -3,7 +3,7 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { Fetch } from '@syncfusion/ej2-base';
-import {TooltipEventArgs } from '@synfusion/ej2-popus';
+import { TooltipComponent, TooltipEventArgs, TooltipModule } from '@syncfusion/ej2-angular-popups';
 @Component({
     selector: 'my-app',
     template: `
@@ -25,7 +25,7 @@ import {TooltipEventArgs } from '@synfusion/ej2-popus';
 
 export class AppComponent  {
    @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent;
+    public tooltipControl: TooltipComponent | any;
   constructor(){}
   onBeforeRender(args: TooltipEventArgs): void {
     this.tooltipControl.content = 'Loading...';

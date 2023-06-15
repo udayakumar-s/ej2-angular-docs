@@ -86,4 +86,4 @@ technology in the screen readers. ButtonGroup component contains the `group` rol
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/util-cs1" %}
+{% previewsample "page.domainurl/samples/button-group/util-cs1" %}

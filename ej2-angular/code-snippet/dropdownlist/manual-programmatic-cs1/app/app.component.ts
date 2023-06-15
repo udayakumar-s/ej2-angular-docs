@@ -6,14 +6,14 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
     selector: 'app-root',
     // specifies the template path for DropDownList component
-    templateUrl: `./app/template.html`
+    templateUrl: `template.html`
 })
 export class AppComponent {
     constructor() {
     }
     ngAfterViewInit(){
-        document.getElementById('btn').onclick = () => {
-            this.dropDownListObject.value = 'game3';
+        document.getElementById('btn')!.onclick = () => {
+            this.dropDownListObject!.value = 'game3';
         }
     }
     // defined the array of data
@@ -24,15 +24,15 @@ export class AppComponent {
     //set the placeholder to DropDownList input
     public text: string = "Select a game";
     @ViewChild('ddlelement')
-    public dropDownListObject: DropDownListComponent;
-    onChange(args): void {
+    public dropDownListObject?: DropDownListComponent;
+    onChange(args: any): void {
         let element: HTMLElement = document.createElement('p');
         if (args.isInteracted) {
             element.innerText = 'Changes happened by Interaction';
         } else {
             element.innerText = 'Changes happened by programmatic';
         }
-        document.getElementById('event').append(element);
+        document.getElementById('event')!.append(element);
     }
 }
 

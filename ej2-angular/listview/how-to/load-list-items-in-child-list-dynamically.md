@@ -30,4 +30,4 @@ Refer to the following steps to load list item into the child list:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/checklist-cs6" %}
+{% previewsample "page.domainurl/samples/listview/checklist-cs6" %}

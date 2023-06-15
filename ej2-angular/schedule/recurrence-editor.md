@@ -38,7 +38,7 @@ It is possible to customize the recurrence editor to display only the specific r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs57" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs57" %}
 
 The other properties available in recurrence editor are tabulated below,
 
@@ -73,7 +73,7 @@ There is a `change` event available in recurrence editor, that triggers on every
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/recur-editor-cs1" %}
 
 ## Set specific value on recurrence editor
 
@@ -91,7 +91,7 @@ It is possible to display the recurrence editor with specific options loaded ini
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/recur-editor-cs2" %}
 
 ## Recurrence date generation
 
@@ -117,7 +117,7 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/recur-editor-cs3" %}
 
 > Above example will generate two dates January 7, 2018 & January 9 2018 by excluding the in between dates January 8 2018 & January 10 2018, since those dates were given in the exclusion list. Generated dates can then be utilised to create appointments.
 
@@ -143,6 +143,6 @@ In case, if the rule is given in "NEVER ENDS" category, then you can mention the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/recur-editor-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/recur-editor-cs4" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

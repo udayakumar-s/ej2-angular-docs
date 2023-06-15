@@ -24,4 +24,4 @@ The edit mode of **In-place Editor** can be disabled by setting the [disabled](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/disable-edit-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/disable-edit-cs1" %}

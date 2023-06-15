@@ -71,4 +71,4 @@ public btnClick() {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/chat-window-cs2" %}
+{% previewsample "page.domainurl/samples/listview/chat-window-cs2" %}

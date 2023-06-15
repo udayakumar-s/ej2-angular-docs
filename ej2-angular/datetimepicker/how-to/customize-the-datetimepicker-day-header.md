@@ -33,4 +33,4 @@ You can find the possible formats on below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/header-format-cs1" %}
+{% previewsample "page.domainurl/samples/datetimepicker/header-format-cs1" %}

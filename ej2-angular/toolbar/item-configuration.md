@@ -42,7 +42,7 @@ The `Separator` type adds a vertical separation between the Toolbar's single/mul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs5" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs5" %}
 
 > If `Separator` is added as first or last item, it is not visible.
 
@@ -113,7 +113,7 @@ Above steps applicable for all 'Syncfusion' input based components.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs6" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs6" %}
 
 ### Enabling tab key navigation in Toolbar
 
@@ -187,7 +187,7 @@ Here is an example of how you can use the [`tabIndex`](../api/toolbar/item/#tabi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/tab-key-navigation-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/tab-key-navigation-cs1" %}
 
 With the above code, the user can switch between the Toolbar items using the Tab and Shift+Tab keys, and the items will be navigated based on the element order.
 

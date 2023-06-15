@@ -24,4 +24,4 @@ You can open menu items and sub menu on menu item click by setting [`showItemOnC
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs9" %}

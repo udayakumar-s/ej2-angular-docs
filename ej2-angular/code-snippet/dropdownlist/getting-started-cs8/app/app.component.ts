@@ -29,7 +29,7 @@ export class AppComponent {
     //sort the result items
     public sorting: string = 'Ascending';
     //Bind the filter event
-    public onFiltering: EmitType =  (e: FilteringEventArgs) => {
+    public onFiltering: EmitType<FilteringEventArgs>  =  (e: FilteringEventArgs) => {
         // load overall data when search key empty.
         if (e.text === '') {
             e.updateData(this.data);

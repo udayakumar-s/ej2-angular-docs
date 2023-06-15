@@ -27,7 +27,7 @@ You can specify the dimension values in both pixels and percentage format to cha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/alert-dimension-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/alert-dimension-cs1" %}
 
 ## Confirm dimension
 
@@ -43,7 +43,7 @@ You can specify the dimension values in both pixels and percentage format to cha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/confirm-dimension-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/confirm-dimension-cs1" %}
 
 ## Prompt dimension
 
@@ -59,7 +59,7 @@ You can specify the dimension values in both pixels and percentage format to cha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/prompt-dimension-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/prompt-dimension-cs1" %}
 
 ## Max-width and max-height
 
@@ -79,7 +79,7 @@ Use the following code to customize the max-width and max-height for alert dialo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/max-width-height-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/max-width-height-cs1" %}
 
 ## Min-width and min-height
 
@@ -99,4 +99,4 @@ Use the following code to customize the min-width and min-height for alert dialo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/min-width-height-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/min-width-height-cs1" %}

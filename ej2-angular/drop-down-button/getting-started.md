@@ -162,4 +162,4 @@ The following example shows a basic Button component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/default-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/default-cs1" %}

@@ -25,7 +25,7 @@ You can enable Excel like filter by defining.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs1" %}
 
 ## Custom component in excel filter
 
@@ -45,7 +45,7 @@ The following example demonstrates the way to use filter template for a column w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs2" %}
 
 ## Change default excel filter operator
 
@@ -63,4 +63,4 @@ You can change the default excel-filter operator by changing the column operator
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs3" %}

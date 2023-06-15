@@ -34,4 +34,4 @@ In the below sample, we have rendered `ListView` with search engines URL.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/navigation-cs2" %}
+{% previewsample "page.domainurl/samples/listview/navigation-cs2" %}

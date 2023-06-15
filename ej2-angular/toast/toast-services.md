@@ -34,7 +34,7 @@ The Toast component support 4 types of predefined toast with essential colors fo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs22" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs22" %}
 
 ## Show Toast with ToastModel
 
@@ -52,4 +52,4 @@ The utility function can be called using the [ToastModel](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs23" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs23" %}

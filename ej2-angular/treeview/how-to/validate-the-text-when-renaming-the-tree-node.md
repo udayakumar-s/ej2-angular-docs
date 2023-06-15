@@ -25,4 +25,4 @@ Following is an example that shows how to validate and prevent empty values in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/validation-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/validation-cs1" %}

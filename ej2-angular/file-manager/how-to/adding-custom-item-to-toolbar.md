@@ -28,4 +28,4 @@ The new toolbar button is added using [toolbarSettings](https://ej2.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/toolbar-cs1" %}

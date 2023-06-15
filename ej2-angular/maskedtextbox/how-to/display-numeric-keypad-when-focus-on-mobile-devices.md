@@ -25,4 +25,4 @@ Refer to the following example to enable numeric keypad in MaskedTextBox.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/cursor-position-any-cs1" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/cursor-position-any-cs1" %}

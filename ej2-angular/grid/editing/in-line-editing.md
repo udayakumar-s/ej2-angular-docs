@@ -14,13 +14,13 @@ In Normal edit mode, when you start editing the currently selected record is cha
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs25/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs25/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs25/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs25/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs25/app/main.ts %}
+{% include code-snippet/grid/edit-cs25/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ In the below demo, we have update the `TotalCost` column value based on the `Uni
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs26/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs26/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs26/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs26/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs26/app/main.ts %}
+{% include code-snippet/grid/edit-cs26/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ In the below demo, we prevent the CRUD operation based on the `Role` column valu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs27/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs27/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs27/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs27/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs27/app/main.ts %}
+{% include code-snippet/grid/edit-cs27/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ Grid methods can be used to perform CRUD operations programmatically. The [addRe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs28/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs28/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs28/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs28/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs28/app/main.ts %}
+{% include code-snippet/grid/edit-cs28/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -104,13 +104,13 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs29/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs29/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs29/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs29/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs29/app/main.ts %}
+{% include code-snippet/grid/edit-cs29/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ The grid provides an option to set the default value for the columns when adding
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs30/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs30/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs30/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs30/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs30/app/main.ts %}
+{% include code-snippet/grid/edit-cs30/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -142,13 +142,13 @@ By default, a new row will be added at the top of the grid. You can change it by
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs31/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs31/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs31/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs31/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs31/app/main.ts %}
+{% include code-snippet/grid/edit-cs31/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -162,13 +162,13 @@ The [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/gri
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs32/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs32/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs32/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs32/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs32/app/main.ts %}
+{% include code-snippet/grid/edit-cs32/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

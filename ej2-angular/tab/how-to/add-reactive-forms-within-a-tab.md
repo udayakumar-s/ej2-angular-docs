@@ -33,4 +33,4 @@ The following example demonstrates how to add the reactive forms within a Tab it
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/reactive-forms-cs1" %}
+{% previewsample "page.domainurl/samples/tab/reactive-forms-cs1" %}

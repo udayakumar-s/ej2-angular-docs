@@ -33,7 +33,7 @@ You can also choose which accordion pane is expanded state at initial rendering 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs2" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-cs2" %}
 
 ## Multiple
 
@@ -51,7 +51,7 @@ Default [`expandMode`](https://ej2.syncfusion.com/angular/documentation/api/acco
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs3" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-cs3" %}
 
 ## See Also
 

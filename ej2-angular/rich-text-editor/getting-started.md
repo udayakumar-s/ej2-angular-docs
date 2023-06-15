@@ -212,7 +212,7 @@ Run the `ng serve` command in command window, it will serve your application and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-value-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-value-cs1" %}
 
 ## Initialize Rich Text Editor from `<iframe>` element
 
@@ -232,7 +232,7 @@ Initialize the Rich Text Editor on div element and set the enable field [`iframe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-iframe-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-iframe-cs1" %}
 
 ## Module Injection
 
@@ -268,7 +268,7 @@ Configure the toolbar with custom tools using items field of toolbarSettings pro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-toolbar-cs1" %}
 
 ## Insert images and links
 
@@ -290,7 +290,7 @@ Specifies the items to be rendered in the quick toolbar based on the target elem
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs2" %}
 
 ## Retrieve the formatted content
 

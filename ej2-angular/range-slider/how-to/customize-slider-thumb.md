@@ -55,4 +55,4 @@ Slider appearance can be customized through CSS. By overriding the slider CSS cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/thumb-customization-cs2" %}
+{% previewsample "page.domainurl/samples/slider/thumb-customization-cs2" %}

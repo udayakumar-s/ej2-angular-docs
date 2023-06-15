@@ -32,7 +32,7 @@ In the following example, the `allowMultiSelection` property is enabled.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs10" %}
 
 ## Selected nodes
 
@@ -58,7 +58,7 @@ When a node is selected, the selected node’s ID is displayed in alert.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs11" %}
 
 ## See Also
 

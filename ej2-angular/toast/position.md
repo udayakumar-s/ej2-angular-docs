@@ -44,7 +44,7 @@ Custom `X` and `Y` Position can be given as pixels/numbers/percentage. The numbe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs18" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs18" %}
 
 ## See Also
 

@@ -9,7 +9,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
             Show tooltip
     </ejs-tooltip>
     `,
-    styleUrls: ['./custom.css'],
+    styleUrls: ['custom.css'],
     encapsulation: ViewEncapsulation.None
 })
 

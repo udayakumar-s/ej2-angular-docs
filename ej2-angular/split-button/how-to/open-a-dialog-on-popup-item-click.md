@@ -26,4 +26,4 @@ In the following example, Dialog will open while selecting `Update...` item:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/dialog-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/dialog-cs1" %}

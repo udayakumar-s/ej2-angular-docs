@@ -48,10 +48,10 @@ import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 })
 
 export class AppComponent {
-  public context: any;
-  public circlecontext: any;
-  @ViewChild('triangle')canvasRef: ElementRef;
-  @ViewChild('circle')circleRef: ElementRef;
+  public context?: any;
+  public circlecontext?: any;
+  @ViewChild('triangle')canvasRef: ElementRef | any;
+  @ViewChild('circle')circleRef: ElementRef | any;
   ngOnInit(){
 if (this.canvasRef.nativeElement.getContext) {
     this.context = this.canvasRef.nativeElement.getContext('2d');

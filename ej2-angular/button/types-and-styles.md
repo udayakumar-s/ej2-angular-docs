@@ -37,7 +37,7 @@ The Essential JS 2 Button has the following predefined styles that can be define
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/button-style-cs1" %}
+{% previewsample "page.domainurl/samples/button/button-style-cs1" %}
 
 > Predefined Button styles provide only the visual indication. So, Button content should define the Button
 style for the users of assistive technologies such as screen readers.
@@ -75,7 +75,7 @@ The basic Button types are explained below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/basic-types-cs1" %}
+{% previewsample "page.domainurl/samples/button/basic-types-cs1" %}
 
 ### Flat Button
 
@@ -104,7 +104,7 @@ To create a round Button, set the [`cssClass`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/button-type-cs1" %}
+{% previewsample "page.domainurl/samples/button/button-type-cs1" %}
 
 ### Toggle Button
 
@@ -123,7 +123,7 @@ property to `true`. In the following code snippet, the toggle Button text change
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/toggle-button-cs1" %}
+{% previewsample "page.domainurl/samples/button/toggle-button-cs1" %}
 
 ## Icons
 
@@ -144,7 +144,7 @@ by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/icon-cs1" %}
+{% previewsample "page.domainurl/samples/button/icon-cs1" %}
 
 ### Button with SVG image
 
@@ -164,7 +164,7 @@ In the following example, SVG image is added using the iconCss class `e-search-i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/svg-cs1" %}
+{% previewsample "page.domainurl/samples/button/svg-cs1" %}
 
 > The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button#iconcss) property.
 
@@ -184,7 +184,7 @@ The two types of Button sizes are default and small. To change the size of the d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/size-cs1" %}
+{% previewsample "page.domainurl/samples/button/size-cs1" %}
 
 ## See Also
 

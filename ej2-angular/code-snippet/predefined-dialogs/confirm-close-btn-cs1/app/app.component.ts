@@ -6,10 +6,13 @@ import { DialogUtility } from '@syncfusion/ej2-popups';
 
 @Component({
     selector: 'app-root',
-    template: `<button ejs-button cssClass="e-success" #confirmButton (click)="confirmBtnClick()">Confirm</button`
+    template: `<button ejs-button cssClass="e-success" #confirmButton (click)="confirmBtnClick()">Confirm</button>`
 })
 
 export class AppComponent implements OnInit {
+    ngOnInit(): void {
+      throw new Error('Method not implemented.');
+    }
     public confirmBtnClick = (): void => {
     DialogUtility.confirm({
       title: 'Delete Multiple Items',

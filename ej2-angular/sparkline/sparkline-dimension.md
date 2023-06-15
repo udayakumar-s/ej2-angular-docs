@@ -28,7 +28,7 @@ Sparkline can be rendered to its container size. You can set the size through in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs24" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs24" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -56,7 +56,7 @@ You can set the size for sparkline in pixel as demonstrated in the following cod
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs25" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs25" %}
 
 **In percentage**
 
@@ -76,4 +76,4 @@ By setting values in percentage, sparkline gets its dimension with respect to it
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs26" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs26" %}

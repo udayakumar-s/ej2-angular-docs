@@ -33,4 +33,4 @@ The following sample illustrates how to open Menu with `FadeIn` [`effect`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs5" %}

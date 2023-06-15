@@ -7,15 +7,15 @@ import { Button } from '@syncfusion/ej2-buttons';
 @Component({
     selector: 'control-content',
     // specifies the template string for the DropDownList component with change event
-    templateUrl: `./clear.html`
+    templateUrl: `clear.html`
 })
 export class AppComponent {
     constructor() {
     }
     ngAfterViewInit() {
       // Set null value to value property for clear the selected item
-        document.getElementById('btn').onclick = () => {
-          this.dropDownListObject.value = null;
+        document.getElementById('btn')!.onclick = () => {
+          (this.dropDownListObject as any).value = null;
         }
     }
     // defined the array of data
@@ -23,7 +23,7 @@ export class AppComponent {
     // set placeholder text to DropDownList input element
     public placeholder: string = 'Select a game';
      @ViewChild('ddlelement')
-    public dropDownListObject: DropDownListComponent;
+    public dropDownListObject?: DropDownListComponent;
 }
 
 

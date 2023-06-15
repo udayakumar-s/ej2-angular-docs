@@ -32,7 +32,7 @@ The following example illustrates how to add requestNavigate event for DocumentE
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/link-cs2" %}
+{% previewsample "page.domainurl/samples/document-editor/link-cs2" %}
 
 ### Add the requestNavigate event for DocumentEditorContainer component
 
@@ -110,7 +110,7 @@ Refer to the following example.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/link-cs3" %}
+{% previewsample "page.domainurl/samples/document-editor/link-cs3" %}
 
 ## Customize screen tip
 
@@ -148,7 +148,7 @@ Document Editor provides dialog support to insert or edit a hyperlink. Refer to 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/link-cs4" %}
+{% previewsample "page.domainurl/samples/document-editor/link-cs4" %}
 
 You can use the following keyboard shortcut to open the hyperlink dialog if the selection is in hyperlink.
 

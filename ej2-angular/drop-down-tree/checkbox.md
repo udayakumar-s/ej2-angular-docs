@@ -26,7 +26,7 @@ In the following example, the `showCheckBox` property is enabled.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/checkboxes-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/checkboxes-cs1" %}
 
 ## Auto Check
 
@@ -52,7 +52,7 @@ In the following example, the `autoCheck` property is enabled.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/autocheck-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/autocheck-cs1" %}
 
 ## Select All
 
@@ -74,4 +74,4 @@ By default, `Select All` and `unSelect All` text values will be showcased along 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/select-all-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/select-all-cs1" %}

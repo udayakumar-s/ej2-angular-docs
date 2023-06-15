@@ -51,4 +51,4 @@ The following list of keys can be used to interact with the ColorPicker after th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/getting-started/default-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/getting-started/default-cs1" %}

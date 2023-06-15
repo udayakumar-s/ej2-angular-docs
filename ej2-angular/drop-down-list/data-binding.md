@@ -44,7 +44,7 @@ The DropDownList has support to load array of primitive data such as strings and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs2" %}
 
 ### 2. Array of JSON data
 
@@ -66,7 +66,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs3" %}
 
 ### 3. Array of Complex data
 
@@ -87,7 +87,7 @@ In the following example, `Code.Id` column and `Country.Name` column from comple
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs4" %}
 
 ## Binding remote data
 
@@ -108,7 +108,7 @@ The following sample displays the first 6 contacts from “Customers” table of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs5" %}
 
 ## Data binding using Async pipe
 

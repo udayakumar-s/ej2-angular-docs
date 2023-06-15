@@ -10,16 +10,16 @@ import { ProgressButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
 
 export class AppComponent {
     @ViewChild('progressBtn')
-    private progressBtn : ProgressButtonComponent;
-    private content: string = 'Download';
-    private iconCss: string = 'e-btn-sb-icon e-download';
+    public progressBtn : ProgressButtonComponent | any;
+    public content: string = 'Download';
+    public iconCss: string = 'e-btn-sb-icon e-download';
 
-    private end(): void {
+    public end(): void {
         this.content = 'Download';
         this.iconCss = 'e-btn-sb-icon e-download';
     }
 
-    private btnClick(): void {
+    public btnClick(): void {
         if(this.content === 'Download') {
             this.content = 'Pause';
             this.iconCss = 'e-btn-sb-icon e-pause';

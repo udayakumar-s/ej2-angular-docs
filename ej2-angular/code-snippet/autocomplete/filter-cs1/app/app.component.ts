@@ -11,6 +11,7 @@ import { Query, DataManager,Predicate } from '@syncfusion/ej2-data';
 })
 
 export class AppComponent {
+query: any;
     constructor() {
     }
     // defined the array of data
@@ -39,7 +40,7 @@ export class AppComponent {
     // set the placeholder to the AutoComplete input
     public text: string = "Find a country";
     public itemTemplate:string= "<span><span class='name'>${Name}</span>-<span class ='code'>${Code}</span></span>";
-    public onFiltering (e)
+    public onFiltering (e : any)
     {
       e.preventDefaultAction=true;
            var predicate = new Predicate('Name', 'contains', e.text);

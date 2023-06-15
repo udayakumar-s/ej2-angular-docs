@@ -28,4 +28,4 @@ and bind custom click handler for the Tab headers.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/collapse-cs1" %}
+{% previewsample "page.domainurl/samples/tab/collapse-cs1" %}

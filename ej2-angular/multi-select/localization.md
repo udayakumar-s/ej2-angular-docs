@@ -41,7 +41,7 @@ appropriately. The `overflowCountTemplate` displays its overflow of the value fr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs16" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs16" %}
 
 ## See Also
 

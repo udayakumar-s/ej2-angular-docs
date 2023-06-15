@@ -36,7 +36,7 @@ To enable the panning feature, set the [`enablePanning`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs89" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs89" %}
 
 **app.module.ts**
 Injecting ZoomService into NgModule.
@@ -343,7 +343,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs90" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs90" %}
 
 ### Customizing the zoom toolbar
 
@@ -369,7 +369,7 @@ The zoom toolbar can be customized by using the [toolbarSettings](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs105" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs105" %}
 
 <!-- markdownlint-disable MD036 -->
 **Customizing the buttons in the zoom toolbar**
@@ -400,7 +400,7 @@ The appearance of the buttons in the zoom toolbar can be customized by using the
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs106" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs106" %}
 
 <!-- markdownlint-disable MD036 -->
 **Customizing the tooltip of the zoom toolbar**
@@ -431,7 +431,7 @@ The appearance of the tooltip of the zoom toolbar can be customized by using the
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs107" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs107" %}
 
 ## Selection
 
@@ -458,7 +458,7 @@ By tapping on the specific legend, the shapes which are bounded to the selected 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs91" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs91" %}
 
 ### Enable selection for bubbles
 
@@ -478,7 +478,7 @@ To enable the selection for bubbles in Maps, set the [`selectionSettings`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs92" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs92" %}
 
 ### Enable selection for markers
 
@@ -498,7 +498,7 @@ To enable the selection for markers in Maps, set the [`selectionSettings`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs93" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs93" %}
 
 ### Public method for the shape selection
 
@@ -517,7 +517,7 @@ LayerIndex, propertyName, country name, and selected value as a boolean state(tr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs94" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs94" %}
 
 ### Initial shape selection
 
@@ -537,7 +537,7 @@ The shape is initially selected using the [`initialShapeSelection`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs95" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs95" %}
 
 ### Initial marker selection
 
@@ -557,7 +557,7 @@ Using the [`initialMarkerSelection`](https://ej2.syncfusion.com/angular/document
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs96" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs96" %}
 
 ## Highlight
 
@@ -583,7 +583,7 @@ Hovering on the specific legend, the shapes which are bounded to the selected le
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs97" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs97" %}
 
 ### Enable highlight for bubbles
 
@@ -603,7 +603,7 @@ To enable the highlight for bubbles in Maps, set the [`highlightSettings`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs98" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs98" %}
 
 ### Enable highlight for markers
 
@@ -623,7 +623,7 @@ To enable the highlight for markers in Maps, set the [`highlightSettings`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs99" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs99" %}
 
 ## Tooltip
 
@@ -645,7 +645,7 @@ On mouse over or touch end event, the tooltip is used to get more information ab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs100" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs100" %}
 
 **app.module.ts**
 Injecting MapsTooltipService into NgModule.
@@ -688,7 +688,7 @@ The following properties are available to customize the tooltip of the Maps comp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs101" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs101" %}
 
 ### Tooltip template
 
@@ -706,4 +706,4 @@ The HTML element can be rendered in the tooltip of the Maps using the [`template
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs102" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs102" %}

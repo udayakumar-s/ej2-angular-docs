@@ -26,7 +26,7 @@ PDF export provides an option to export the current page into PDF. To export cur
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs4" %}
 
 ## Export the selected records only
 
@@ -46,7 +46,7 @@ In the following demo, get the selected records using the [`getSelectedRecords`]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs5" %}
 
 ## Export hidden columns
 
@@ -64,7 +64,7 @@ PDF export provides an option to export hidden columns of the TreeGrid by defini
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs6" %}
 
 ## Show or hide columns on exported PDF
 
@@ -88,7 +88,7 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs7" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs7" %}
 
 ## How to change page orientation
 
@@ -106,7 +106,7 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs8" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs8" %}
 
 ## How to change page size
 
@@ -153,7 +153,7 @@ Supported page sizes are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs9" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs9" %}
 
 ## To customize PDF export
 
@@ -175,7 +175,7 @@ You can assign the file name for the exported document by defining `fileName` pr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs10" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs10" %}
 
 ### Default fonts for PDF exporting
 
@@ -222,6 +222,6 @@ In the following example, we have used Advent Pro font to export the treegrid wi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs11" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs11" %}
 
 > `PdfTrueTypeFont` accepts base 64 format of the Custom Font.

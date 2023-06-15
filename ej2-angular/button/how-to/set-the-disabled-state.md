@@ -27,4 +27,4 @@ The following example demonstrates button in `disabled` state.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/block-cs3" %}
+{% previewsample "page.domainurl/samples/button/block-cs3" %}

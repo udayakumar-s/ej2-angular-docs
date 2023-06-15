@@ -30,4 +30,4 @@ The following example demonstrate, how to check whether value change happened by
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/manual-programmatic-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/manual-programmatic-cs1" %}

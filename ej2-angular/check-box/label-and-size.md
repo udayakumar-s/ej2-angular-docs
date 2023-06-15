@@ -28,7 +28,7 @@ The CheckBox caption can be defined using the [`label`](https://ej2.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/label-and-size-cs3" %}
+{% previewsample "page.domainurl/samples/check-box/label-and-size-cs3" %}
 
 ## Size
 
@@ -46,7 +46,7 @@ The different CheckBox size are default and small. To reduce the size of default
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/label-and-size-cs4" %}
+{% previewsample "page.domainurl/samples/check-box/label-and-size-cs4" %}
 
 ## See Also
 

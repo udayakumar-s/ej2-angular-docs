@@ -38,7 +38,7 @@ If the `fullTemplate` is not defined, the `emptyTemplate` will be used as the de
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/templates/emptytemplate-cs" %}
+{% previewsample "page.domainurl/samples/rating/templates/emptytemplate-cs" %}
 
 > The current value of the rating item available in the template context as `value` and in the rating item element as CSS Variable (`--rating-value`) can be used to support precision in templates.
 
@@ -62,7 +62,7 @@ The `value` and `index` are available in the template context for accessing info
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/templates/fulltemplate-cs" %}
+{% previewsample "page.domainurl/samples/rating/templates/fulltemplate-cs" %}
 
 ## Using Emoji icon as rating symbol
 
@@ -83,7 +83,7 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/templates/emoji-cs" %}
+{% previewsample "page.domainurl/samples/rating/templates/emoji-cs" %}
 
 ## Using SVG icon as rating symbol
 
@@ -104,7 +104,7 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/templates/svg-cs" %}
+{% previewsample "page.domainurl/samples/rating/templates/svg-cs" %}
 
 ## Using PNG image as rating symbol
 
@@ -122,4 +122,4 @@ You can use PNG images of your choice as rating symbol by specifying them as tem
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/templates/png-cs" %}
+{% previewsample "page.domainurl/samples/rating/templates/png-cs" %}

@@ -26,4 +26,4 @@ Also our TimePicker component supports the ISO formatted date value, so parsed J
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/json-bind-cs1" %}
+{% previewsample "page.domainurl/samples/timepicker/json-bind-cs1" %}

@@ -24,4 +24,4 @@ The following example demonstrates how to select the week dates of chosen date i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/how-to-multiselect-cs1" %}
+{% previewsample "page.domainurl/samples/calendar/how-to-multiselect-cs1" %}

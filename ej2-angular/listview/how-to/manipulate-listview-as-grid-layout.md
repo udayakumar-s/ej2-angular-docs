@@ -52,7 +52,7 @@ In the below sample, we have rendered List items in grid layout.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/grid-layout-cs2" %}
+{% previewsample "page.domainurl/samples/listview/grid-layout-cs2" %}
 
 ## Data manipulation
 
@@ -131,4 +131,4 @@ In the below sample, we can filter fruit items with the help of search text box.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/grid-manipulation-cs2" %}
+{% previewsample "page.domainurl/samples/listview/grid-manipulation-cs2" %}

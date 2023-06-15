@@ -24,7 +24,7 @@ You can include action Buttons into toast by adding [`buttons`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs2" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs2" %}
 
 ## See Also
 

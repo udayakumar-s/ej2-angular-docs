@@ -28,4 +28,4 @@ The following example demonstrates the severity of the messages.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/severity-cs2" %}
+{% previewsample "page.domainurl/samples/message/severity-cs2" %}

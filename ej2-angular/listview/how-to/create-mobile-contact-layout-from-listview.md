@@ -63,4 +63,4 @@ You can customize the ListView using the [template](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/avatar-template-cs3" %}
+{% previewsample "page.domainurl/samples/listview/avatar-template-cs3" %}

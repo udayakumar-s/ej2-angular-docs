@@ -11,7 +11,7 @@ import { Tooltip, TooltipEventArgs } from '@syncfusion/ej2-popups';
 export class AppComponent {
     constructor() {
     }
-    public tooltip : Tooltip;
+    public tooltip ?: Tooltip| any;
     ngAfterViewInit(){
       //Initialize Tooltip component
       this.tooltip = new Tooltip({
@@ -47,12 +47,12 @@ export class AppComponent {
    onBeforeRender(args: TooltipEventArgs): void {
         // get the target element
         let listElement = document.getElementById('ddltooltip');
-        let result: Object[] = listElement.ej2_instances[0].dataSource;
+        let result: Object[] = (listElement! as any).ej2_instances[0].dataSource;
         let i: number;
         for ( i = 0; i < result.length; i++) {
-            if (result[i].text === args.target.textContent) {
-                this.content = result[i].content;
-                this.dataBind();
+            if ((result[i] as any).text === args.target.textContent) {
+                (this as any).content = (result[i] as any).content;
+                (this as any).dataBind();
                 break;
             }
         }

@@ -39,7 +39,7 @@ The following code example shows the calculation of data using supported and cus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/formula-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/formula-cs1" %}
 
 ## Formula bar
 
@@ -68,7 +68,7 @@ The following code example shows the usage of named ranges support.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/defined-name-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/defined-name-cs1" %}
 
 ## Supported Formulas
 

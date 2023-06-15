@@ -26,7 +26,7 @@ By default, column header title is displayed from column [`field`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs25" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs25" %}
 
 > * If both the [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) and [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertext) are not defined in the column, the column renders with “empty” header text.
 
@@ -46,7 +46,7 @@ You can customize the header element by using the [`headerTemplate`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-header-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-header-cs1" %}
 
 ### Header template for stacked header column
 
@@ -64,7 +64,7 @@ By using the headerTemplate template reference for the ng template, you can cust
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-header-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-header-cs2" %}
 
 > You can get the header table element by using the [`getHeaderTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getheadertable) method in tree grid.
 > You can get the column header element by field by using the [`getColumnHeaderByField`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyfield) method in tree grid. In this method you need to pass the field name as parameter.

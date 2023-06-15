@@ -27,4 +27,4 @@ By default, Tooltips will not be displayed on disabled elements. However, it is 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs10" %}

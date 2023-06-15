@@ -20,13 +20,13 @@ To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/lazy-load-grouping-cs1/app/app.component.ts %}
+{% include code-snippet/grid/lazy-load-grouping-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/lazy-load-grouping-cs1/app/app.module.ts %}
+{% include code-snippet/grid/lazy-load-grouping-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/lazy-load-grouping-cs1/app/main.ts %}
+{% include code-snippet/grid/lazy-load-grouping-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ This is demonstrated in the following sample:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/lazy-load-grouping-cs2/app/app.component.ts %}
+{% include code-snippet/grid/lazy-load-grouping-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/lazy-load-grouping-cs2/app/app.module.ts %}
+{% include code-snippet/grid/lazy-load-grouping-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/lazy-load-grouping-cs2/app/main.ts %}
+{% include code-snippet/grid/lazy-load-grouping-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

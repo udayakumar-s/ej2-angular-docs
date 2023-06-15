@@ -209,7 +209,7 @@ The following code illustrates how to execute the clipboard commands.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/commands/clipboard-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/commands/clipboard-cs1" %}
 
 ## Grouping
 
@@ -233,7 +233,7 @@ The following code illustrates how to execute the grouping commands.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/commands/grouping-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/commands/grouping-cs1" %}
 
 ## Z-Order command
 
@@ -255,7 +255,7 @@ The [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/diagra
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/commands/bringtofront-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/commands/bringtofront-cs1" %}
 
 ### sendToBack command
 
@@ -273,7 +273,7 @@ The [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/diagram#
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/commands/sendtoback-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/commands/sendtoback-cs1" %}
 
 ### moveForward command
 
@@ -291,7 +291,7 @@ The [`moveForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/commands/moveforward-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/commands/moveforward-cs1" %}
 
 ### sendBackward command
 
@@ -309,7 +309,7 @@ The [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagra
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/commands/sendbackward-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/commands/sendbackward-cs1" %}
 
 ## Zoom
 

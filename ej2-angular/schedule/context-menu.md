@@ -33,7 +33,7 @@ The deletion of appointments can be done by using the `deleteEvent` public metho
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/context-menu-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/context-menu-cs1" %}
 
 ![Context Menu](images/schedule-contextmenu.png)
 

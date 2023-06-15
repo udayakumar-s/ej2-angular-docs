@@ -24,4 +24,4 @@ The following examples demonstrates how to prevent the popup from closing.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs10" %}

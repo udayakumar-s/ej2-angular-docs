@@ -25,4 +25,4 @@ The [`hideAtMedia`](https://ej2.syncfusion.com/angular/documentation/api/treegri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs26" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs26" %}

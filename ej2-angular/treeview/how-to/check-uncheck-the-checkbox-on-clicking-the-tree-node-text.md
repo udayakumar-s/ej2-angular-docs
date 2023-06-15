@@ -24,4 +24,4 @@ You can check and uncheck the checkboxes of tree view by clicking the tree node 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/treeview-node-check-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/treeview-node-check-cs1" %}

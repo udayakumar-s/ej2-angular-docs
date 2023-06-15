@@ -28,4 +28,4 @@ For example, if the raw data for the field 'Country' is defined as **"United Kin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs167" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs167" %}

@@ -147,7 +147,7 @@ The output will display the kanban header.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/getting-started-empty-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/getting-started-empty-cs1" %}
 
 ## Populating cards
 
@@ -165,7 +165,7 @@ To populate the empty Kanban with cards, define the local JSON data or remote da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/getting-started-key-field-cs2" %}
+{% previewsample "page.domainurl/samples/kanban/getting-started-key-field-cs2" %}
 
 ## Enable swimlane
 
@@ -183,4 +183,4 @@ To populate the empty Kanban with cards, define the local JSON data or remote da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/getting-started-swimlane-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/getting-started-swimlane-cs1" %}

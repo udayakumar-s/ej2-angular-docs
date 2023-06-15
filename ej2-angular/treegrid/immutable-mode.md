@@ -28,7 +28,7 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/immutable-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/immutable-cs1" %}
 
 ## Limitations
 

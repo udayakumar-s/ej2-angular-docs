@@ -24,4 +24,4 @@ By default, all Accordion panels are collapsible. You can customize the Accordio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs7" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-cs7" %}

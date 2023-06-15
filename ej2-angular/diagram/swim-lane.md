@@ -30,7 +30,7 @@ The following code example illustrates how to define a swimlane object.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/swimlaneheader-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/swimlaneheader-cs1" %}
 
 ### Headers
 
@@ -52,7 +52,7 @@ The following code example illustrates how to define a swimlane header.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/swimlaneheader-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/swimlaneheader-cs2" %}
 
 ### Customization of headers
 
@@ -74,7 +74,7 @@ The following code example illustrates how to customize the swimlane header.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/headercustomise-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/headercustomise-cs1" %}
 
 ### Dynamic customization of swimlane header
 
@@ -92,7 +92,7 @@ You can customize the swimlane header style and text properties dynamically. The
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/dynamicheader-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/dynamicheader-cs1" %}
 
 ### Header editing
 
@@ -128,7 +128,7 @@ The following code example illustrates how to define a swimlane with lane.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/emptylane-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/emptylane-cs1" %}
 
 ### Create lane header
 
@@ -148,7 +148,7 @@ The following code example illustrates how to define a lane header.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/laneheader-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/laneheader-cs1" %}
 
 ### Customizing lane header
 
@@ -169,7 +169,7 @@ The following code example illustrates how to customize the lane header.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/laneheadercustomize-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/laneheadercustomize-cs1" %}
 
 ### Dynamic customization of lane header
 
@@ -186,7 +186,7 @@ The following code example illustrates how to customize the lane header.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/dynamiclaneheader-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/dynamiclaneheader-cs1" %}
 
 ### Add lane at runtime
 
@@ -204,7 +204,7 @@ You can add the a lane at runtime by using the client side API method called `ad
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/addlanes-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/addlanes-cs1" %}
 
 ### Add children to lane
 
@@ -224,7 +224,7 @@ The following code example illustrates how to add nodes to lane.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/lanechildern-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/lanechildern-cs1" %}
 
 ### Lane interaction
 
@@ -264,7 +264,7 @@ The following code illustrates how to disable swimlane lane swapping.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/addlanes-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/addlanes-cs2" %}
 
 ### Resize helper
 
@@ -310,7 +310,7 @@ The following code example illustrates how to add phase at swimlane.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/phase-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/phase-cs1" %}
 
 ### Dynamically add phase to lane
 
@@ -328,7 +328,7 @@ You can add the a phase at runtime by using client side API method called `addPh
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/addphases-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/addphases-cs1" %}
 
 ### Customizing phase
 
@@ -351,7 +351,7 @@ The following code example illustrates how to customize the phase in swimlane.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/phasecustomize-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/phasecustomize-cs1" %}
 
 ### Phase interaction
 
@@ -390,7 +390,7 @@ Diagram provides the support to add swimlane and phases to symbol palette. The f
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/swimlane/palette-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/swimlane/palette-cs1" %}
 
 ### Drag and drop swimlane to palette
 

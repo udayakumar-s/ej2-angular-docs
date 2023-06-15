@@ -26,4 +26,4 @@ In the following sample, the model dialog is centered based on its current scrol
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/center-the-dialog-cs2" %}
+{% previewsample "page.domainurl/samples/dialog/center-the-dialog-cs2" %}

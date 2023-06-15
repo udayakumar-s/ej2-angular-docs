@@ -155,7 +155,7 @@ The following example shows a basic `Breadcrumb` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/breadcrumb/getting-started-cs5" %}
 
 ## Add Items to the Breadcrumb Component
 
@@ -173,7 +173,7 @@ Use `items` property to bind items for Breadcrumb component. The below example d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/breadcrumb/getting-started-cs6" %}
 
 ## Enable or Disable Navigation
 
@@ -191,4 +191,4 @@ This feature enables or disables the item navigation. By default, the navigation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/enable-navigation-cs1" %}
+{% previewsample "page.domainurl/samples/breadcrumb/enable-navigation-cs1" %}

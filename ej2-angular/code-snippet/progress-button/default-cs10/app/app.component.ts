@@ -9,7 +9,7 @@ import { ProgressEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 })
 
 export class AppComponent {
-    private begin(args: ProgressEventArgs): void {
+    public begin(args: ProgressEventArgs): void {
         args.step = 20;
     }
 }

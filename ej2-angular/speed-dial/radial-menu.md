@@ -102,4 +102,4 @@ Below example demonstrates the radial menu settings of the Speed Dial.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/radial-cs2" %}
+{% previewsample "page.domainurl/samples/speed-dial/radial-cs2" %}

@@ -37,4 +37,4 @@ After that, the DatePicker value will be selected based on the ngModel value.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/template-driven-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/template-driven-cs1" %}

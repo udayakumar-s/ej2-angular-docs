@@ -41,4 +41,4 @@ The below sample demonstrates customization of text appearance in a textbox, pop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/timepicker/how-to-cs1" %}

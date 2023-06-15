@@ -144,7 +144,7 @@ The below example shows a basic CheckBox component,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/check-box/getting-started-cs1" %}
 
 ## Change the CheckBox state
 
@@ -172,4 +172,4 @@ CheckBox indeterminate state can be set through [`indeterminate`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/label-and-size-cs2" %}
+{% previewsample "page.domainurl/samples/check-box/label-and-size-cs2" %}

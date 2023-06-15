@@ -24,4 +24,4 @@ By default, the value of the NumericTextBox sets to null. In some applications, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/nullable-input-cs1" %}
+{% previewsample "page.domainurl/samples/numerictextbox/nullable-input-cs1" %}

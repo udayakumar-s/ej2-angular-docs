@@ -24,7 +24,7 @@ export class AppComponent {
     // set the placeholder to the ComboBox input
     public text: string = "Select a country";
     //Bind the filter event
-    public onFiltering: EmitType =  (e: FilteringEventArgs) => {
+    public onFiltering: EmitType<FilteringEventArgs>  =  (e: FilteringEventArgs) => {
         let query = new Query();
         //frame the query based on search string with filter type.
         query = (e.text != "") ? query.where("Country", "startswith", e.text, true) : query;

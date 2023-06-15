@@ -26,4 +26,4 @@ In the following sample, `default` badges are used and there is no need to custo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/listview-cs2" %}
+{% previewsample "page.domainurl/samples/badge/listview-cs2" %}

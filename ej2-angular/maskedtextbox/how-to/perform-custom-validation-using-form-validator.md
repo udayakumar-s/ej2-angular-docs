@@ -26,4 +26,4 @@ In the following example, the MaskedTextBox is validated for invalid mobile numb
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/getting-started-cs3" %}

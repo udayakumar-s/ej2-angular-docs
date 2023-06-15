@@ -14,7 +14,7 @@ import { SpeedDialComponent,SpeedDialItemModel } from '@syncfusion/ej2-angular-b
 
 export class AppComponent {
     @ViewChild('speeddial')
-    public speeddialObj:SpeedDialComponent;
+    public speeddialObj :SpeedDialComponent | any;
 
     public items: SpeedDialItemModel[] = [
         { iconCss: 'e-icons e-cut' },

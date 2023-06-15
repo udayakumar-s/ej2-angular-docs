@@ -26,4 +26,4 @@ To achieve the client side validation in a DatePicker component by using `FormVa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/how-to-cs1" %}

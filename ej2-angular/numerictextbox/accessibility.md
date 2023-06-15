@@ -48,4 +48,4 @@ The below table shows shortcut keys and its corresponding usage.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs1" %}

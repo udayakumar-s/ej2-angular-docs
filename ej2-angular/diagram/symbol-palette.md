@@ -50,7 +50,7 @@ The following code example illustrates how to define a palette and how its added
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/symbolpalette/palettes-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes-cs1" %}
 
 ## Customize the palette header
 
@@ -82,7 +82,7 @@ The following code example illustrates how to customize palette headers.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/symbolpalette/paletteheader-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/paletteheader-cs1" %}
 
 ## Restrict expansion of the palette panel
 
@@ -102,7 +102,7 @@ In the following code example, the basic shapes palette is restricted from getti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/symbolpalette/restrictexpand-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/restrictexpand-cs1" %}
 
 ## Stretch the symbols into the palette
 
@@ -120,7 +120,7 @@ The [`fit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolI
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/symbolpalette/fit-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/fit-cs1" %}
 
 ## Add/Remove symbols to palette at runtime
 
@@ -144,7 +144,7 @@ The size of the individual symbol can be customized. The [`symbolWidth`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/symbolpalette/size-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/size-cs1" %}
 
 The [`symbolMargin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#symbolmargin) property is used to create the space around elements, outside of any defined borders.
 
@@ -167,7 +167,7 @@ The following code example illustrates how to change the preview size of a palet
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/symbolpalette/fit-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/fit-cs2" %}
 
 ## Default settings
 
@@ -185,7 +185,7 @@ While adding more number of symbols such as nodes and connectors to the palette,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/symbolpalette/default-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/default-cs1" %}
 
 ## Adding symbol description for symbols in the palette
 
@@ -207,7 +207,7 @@ The following code is an example to set a symbol description for symbols in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/symbolpalette/symboldesc-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/symboldesc-cs1" %}
 
 ## Palette interaction
 

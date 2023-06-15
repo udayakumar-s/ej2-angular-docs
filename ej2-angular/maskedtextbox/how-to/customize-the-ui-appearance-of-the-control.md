@@ -25,4 +25,4 @@ Refer to the following example to change the appearance of the MaskedTextBox.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/custom-css-cs1" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/custom-css-cs1" %}

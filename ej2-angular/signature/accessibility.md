@@ -33,4 +33,4 @@ The following list of keys can be used to interact with the Signature component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/getting-started/default-cs1" %}
+{% previewsample "page.domainurl/samples/signature/getting-started/default-cs1" %}

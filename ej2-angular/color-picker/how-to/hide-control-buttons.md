@@ -24,4 +24,4 @@ ColorPicker can be rendered without control buttons (Apply/Cancel). In this case
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/how-to-cs3" %}
+{% previewsample "page.domainurl/samples/colorpicker/how-to-cs3" %}

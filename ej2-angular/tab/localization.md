@@ -35,4 +35,4 @@ text.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs10" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs10" %}

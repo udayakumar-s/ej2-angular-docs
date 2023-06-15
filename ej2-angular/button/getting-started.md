@@ -144,7 +144,7 @@ The following example shows a basic Button component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/default-cs1" %}
+{% previewsample "page.domainurl/samples/button/default-cs1" %}
 
 ## Change Button type
 
@@ -162,4 +162,4 @@ To change the default Button to flat Button, set the [`cssClass`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/default-cs2" %}
+{% previewsample "page.domainurl/samples/button/default-cs2" %}

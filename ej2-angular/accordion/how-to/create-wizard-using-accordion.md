@@ -29,4 +29,4 @@ The below Wizard sample is designed for Online Shopping model. In this, each Acc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-disable-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-disable-cs1" %}

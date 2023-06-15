@@ -24,4 +24,4 @@ The following sample demonstrates how to use the template-driven forms with requ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/template-driven-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/template-driven-cs1" %}

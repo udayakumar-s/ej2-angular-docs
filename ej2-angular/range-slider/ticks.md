@@ -24,7 +24,7 @@ The Ticks in Slider supports you to easily identify the current value/values of 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/ticks-01-cs1" %}
+{% previewsample "page.domainurl/samples/slider/ticks-01-cs1" %}
 
 ## Step
 
@@ -42,7 +42,7 @@ When the Slider is moved, it increases/decreases the value based on the step val
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/ticks-02-cs1" %}
+{% previewsample "page.domainurl/samples/slider/ticks-02-cs1" %}
 
 ## Min and Max
 
@@ -60,4 +60,4 @@ Enables the minimum/starting and maximum/ending value of the Slider, by using th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/ticks-03-cs1" %}
+{% previewsample "page.domainurl/samples/slider/ticks-03-cs1" %}

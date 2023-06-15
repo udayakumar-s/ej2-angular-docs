@@ -210,7 +210,7 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs4" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs4" %}
 
 > In the above sample code, `#element` is the `id` of the HTML element in a page to which the Tab is initialized.
 
@@ -249,7 +249,7 @@ You need to follow the below structure of `ng-template` to render the Tab,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs5" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs5" %}
 
 ## Initialize the Tab using HTML elements
 
@@ -284,7 +284,7 @@ You need to follow the below structure of HTML elements to render the Tab,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/tab-container-cs1" %}
+{% previewsample "page.domainurl/samples/tab/tab-container-cs1" %}
 
 > You can refer to our [Angular Tab](https://www.syncfusion.com/angular-ui-components/angular-tabs) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tab example](https://ej2.syncfusion.com/angular/demos/#/material/tab/default) that shows you how to render the Tabs in Angular.
 

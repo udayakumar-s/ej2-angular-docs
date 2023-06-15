@@ -30,6 +30,6 @@ There are three types of [`clipMode`](https://ej2.syncfusion.com/angular/documen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/cell-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/cell-cs5" %}
 
 >By default, [`columns.clipMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#clipmode) value is `Ellipsis`.

@@ -37,7 +37,7 @@ The adaptor can be assigned using the **adaptor** property of the [`DataManager`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs1" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs1" %}
 
 ## Url adaptor
 
@@ -87,7 +87,7 @@ The sample response object should be as follows,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs2" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs2" %}
 
 > By default, **ODataAdaptor** is used by [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/).
 
@@ -111,7 +111,7 @@ You can use the **ODataV4Adaptor** to interact with ODataV4 service.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs3" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs3" %}
 
 ## Web API adaptor
 
@@ -372,4 +372,4 @@ For the sake of demonstrating custom adaptor approach, we are going to see how t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/custom-adaptor-cs1" %}
+{% previewsample "page.domainurl/samples/data/custom-adaptor-cs1" %}

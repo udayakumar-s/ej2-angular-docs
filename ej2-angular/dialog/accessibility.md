@@ -74,7 +74,7 @@ to last focusable element</td></tr>
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/keyboard-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/keyboard-cs1" %}
 
 ## See Also
 

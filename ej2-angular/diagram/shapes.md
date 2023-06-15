@@ -38,7 +38,7 @@ Texts can be added to the diagram as [`text`](https://ej2.syncfusion.com/angular
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/text-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/text-cs1" %}
 
 ## Image
 
@@ -58,7 +58,7 @@ The following code illustrates how an image node is created.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/image-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/image-cs1" %}
 
 **Base64 Encoded Image Into The Image Node:**
 
@@ -76,7 +76,7 @@ The following code illustrates how add Base64 image into image node.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/image-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/image-cs2" %}
 
 >Note: Deploy your HTML file in the web application and export the diagram (image node) or else the image node will not be exported in the Chrome and Firefox due to security issues. Refer to the following link.
 
@@ -104,7 +104,7 @@ The following code illustrates how to scale or stretch the content of the image 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/alignment-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/alignment-cs1" %}
 
 The following table illustrates all the possible scale options for the image node.
 
@@ -131,7 +131,7 @@ Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/html-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/html-cs1" %}
 
 >Note: HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation.
 
@@ -151,7 +151,7 @@ Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/html-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/html-cs2" %}
 
 ## Native
 
@@ -169,7 +169,7 @@ Diagram provides support to embed SVG element into a node. The shape property of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/native-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/native-cs1" %}
 
 >Note: Like HTML node, the native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template.
 
@@ -208,7 +208,7 @@ The following code example illustrates how to create a basic shape.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/basic-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/basic-cs1" %}
 
 >Note: By default, the `shape` property of the node is set as **basic**.
 
@@ -236,7 +236,7 @@ The [`Path`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/path-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/path-cs1" %}
 
 ## Flow Shapes
 
@@ -254,7 +254,7 @@ The [`flow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/shapes/path-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/shapes/path-cs2" %}
 
 The list of flow shapes are as follows.
 

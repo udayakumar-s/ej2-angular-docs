@@ -26,4 +26,4 @@ In the following example, the ContextMenu is opened using the [`open`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/how-to-cs1" %}

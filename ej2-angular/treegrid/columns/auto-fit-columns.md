@@ -24,6 +24,6 @@ The [`autoFitColumns`](https://ej2.syncfusion.com/angular/documentation/api/tree
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs1" %}
 
 > You can autofit all the columns by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#autofitcolumns) method without column names.

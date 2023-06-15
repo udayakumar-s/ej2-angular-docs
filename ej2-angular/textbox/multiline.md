@@ -30,7 +30,7 @@ You can convert the default textbox into the multiline textbox by setting the [m
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/textarea-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/textarea-cs1" %}
 
 ## Implementing floating label
 
@@ -48,7 +48,7 @@ You can achieve the floating label behavior in the multiline textbox by setting 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/float-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/float-cs1" %}
 
 ## Auto resizing
 
@@ -66,7 +66,7 @@ By default, you can manually resize the multiline textbox. But you can also crea
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/resize-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/resize-cs1" %}
 
 ## Disable resizing
 
@@ -94,7 +94,7 @@ By default, the multiline textbox is rendered with resizable. You can disable th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/disable-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/disable-cs1" %}
 
 ## Limit the text length
 
@@ -112,7 +112,7 @@ By default, the text length of the multiline textbox is unlimited. You can limit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/maxlength-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/maxlength-cs1" %}
 
 ## Count characters
 
@@ -130,4 +130,4 @@ You can show the number of characters entered inside the textarea by calculating
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/count-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/count-cs1" %}

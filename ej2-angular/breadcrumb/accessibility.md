@@ -60,4 +60,4 @@ Navigate to the previous item also previous item in the popup of menu type overf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/breadcrumb/accessibility-cs1" %}
+{% previewsample "page.domainurl/samples/breadcrumb/accessibility-cs1" %}

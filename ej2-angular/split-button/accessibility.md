@@ -74,4 +74,4 @@ Opens the popup.</td></tr>
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/accessibility-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/accessibility-cs1" %}

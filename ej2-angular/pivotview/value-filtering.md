@@ -54,7 +54,7 @@ Operators that can be used in label filtering are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs298" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs298" %}
 
 ## See Also
 

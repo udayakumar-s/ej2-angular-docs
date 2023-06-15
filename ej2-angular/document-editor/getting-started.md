@@ -268,7 +268,7 @@ Output will be displayed as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/document-editor/getting-started-cs1" %}
 
 ### DocumentEditorContainer Component
 
@@ -342,7 +342,7 @@ DocumentEditorContainer output will be displayed as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/document-editor-container-cs2" %}
+{% previewsample "page.domainurl/samples/document-editor/document-editor-container-cs2" %}
 
 ## Frequently Asked Questions
 

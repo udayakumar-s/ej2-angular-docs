@@ -51,7 +51,7 @@ In the following example, disable the drag and drop behavior on the Kanban board
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/drag-and-drop-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/drag-and-drop-cs1" %}
 
 ### Swimlane drag and drop
 
@@ -71,7 +71,7 @@ Enabling the `dragAndDrop` property allows you to drag the cards across the swim
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/swimlane-drag-and-drop-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/swimlane-drag-and-drop-cs1" %}
 
 ## External drag and drop
 
@@ -97,7 +97,7 @@ In the following example, Drag the card from one Kanban and drop it into another
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/kanban-to-kanban-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/kanban-to-kanban-cs1" %}
 
 ### Treeview to Kanban
 
@@ -117,7 +117,7 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/kanban-to-treeview-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/kanban-to-treeview-cs1" %}
 
 ### Schedule to Kanban
 
@@ -137,4 +137,4 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/kanban-to-schedule-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/kanban-to-schedule-cs1" %}

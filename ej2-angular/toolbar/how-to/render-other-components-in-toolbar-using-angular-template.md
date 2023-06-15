@@ -24,4 +24,4 @@ You can render other components inside Toolbar using Angular **ng-template**. Th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/direct-components-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/direct-components-cs1" %}

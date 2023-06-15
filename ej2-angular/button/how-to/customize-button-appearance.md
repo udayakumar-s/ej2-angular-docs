@@ -25,4 +25,4 @@ In the following code snippet the background color, text color, height, width, a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/howto-cs1" %}
+{% previewsample "page.domainurl/samples/button/howto-cs1" %}

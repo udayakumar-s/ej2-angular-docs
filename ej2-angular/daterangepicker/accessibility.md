@@ -75,4 +75,4 @@ Use the following list of keys to navigate the currently focused Calendar after 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/daterangepicker/getting-started-cs1" %}

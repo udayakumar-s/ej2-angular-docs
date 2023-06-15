@@ -28,4 +28,4 @@ The following sample demonstrates, how to expand the collapsed Accordion item af
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-actions-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-actions-cs1" %}

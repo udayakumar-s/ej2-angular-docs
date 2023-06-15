@@ -24,7 +24,7 @@ When the [iframeSettings](https://ej2.syncfusion.com/angular/documentation/api/r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs5" %}
 
 ## IFrame attributes
 
@@ -42,7 +42,7 @@ The editor allows you to pass an additional attribute to body tag of a < iframe 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs6" %}
 
 ## Adding external CSS/Script file
 
@@ -62,6 +62,6 @@ Likewise, add the external script file to the `< iframe >` element using the [`s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs7" %}
 
 > You can also explore our [iframe in Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/iframe) that shows how to render the iframe in Angular Rich Text Editor.

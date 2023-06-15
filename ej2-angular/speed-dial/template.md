@@ -31,7 +31,7 @@ You can use the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/templates-cs1" %}
+{% previewsample "page.domainurl/samples/speed-dial/templates-cs1" %}
 
 ## Popup template
 
@@ -52,4 +52,4 @@ You can use the [`popupTemplate`](https://ej2.syncfusion.com/angular/documentati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/templates-cs2" %}
+{% previewsample "page.domainurl/samples/speed-dial/templates-cs2" %}

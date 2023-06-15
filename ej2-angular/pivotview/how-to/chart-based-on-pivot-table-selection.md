@@ -24,4 +24,4 @@ The cell selection support is enabled using the [`allowSelection`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs159" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs159" %}

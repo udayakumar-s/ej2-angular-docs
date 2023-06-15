@@ -28,7 +28,7 @@ You can enable the tooltip by setting the [showTooltip](https://ej2.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/tooltip/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/tooltip/tooltip-cs1" %}
 
 ## Tooltip template
 
@@ -46,7 +46,7 @@ In heat map, you can customize the tooltip using the [tooltipRender](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/tooltip/tooltiptemplate-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/tooltip/tooltiptemplate-cs1" %}
 
 ## Customize the appearance of Tooltip
 
@@ -64,6 +64,6 @@ The  [fill](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltip
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/tooltip/tooltipSettings-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/tooltip/tooltipSettings-cs1" %}
 
 >Note: To use tooltip feature, we need to inject `Tooltip` using `HeatMap.Inject(Tooltip)`.

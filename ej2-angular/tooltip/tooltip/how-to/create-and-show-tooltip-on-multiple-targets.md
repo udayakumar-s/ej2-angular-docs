@@ -26,4 +26,4 @@ In this case, the tooltip content is assigned from the title attribute of the ta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/form-valid-cs3" %}
+{% previewsample "page.domainurl/samples/tooltip/form-valid-cs3" %}

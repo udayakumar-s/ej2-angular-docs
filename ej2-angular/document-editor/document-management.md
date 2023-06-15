@@ -56,7 +56,7 @@ The following code shows Restrict Editing Pane. To unprotect the document, use p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/document-editor-container-cs1" %}
+{% previewsample "page.domainurl/samples/document-editor/document-editor-container-cs1" %}
 
 ## See Also
 

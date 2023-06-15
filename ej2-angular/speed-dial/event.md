@@ -201,4 +201,4 @@ Below example demonstrates the clicked event of the Speed Dial component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/action-cs1" %}
+{% previewsample "page.domainurl/samples/speed-dial/action-cs1" %}

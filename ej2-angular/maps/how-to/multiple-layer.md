@@ -24,4 +24,4 @@ The multilayer support allows loading multiple shape files in a single container
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/map-cs1" %}
+{% previewsample "page.domainurl/samples/maps/default-map/map-cs1" %}

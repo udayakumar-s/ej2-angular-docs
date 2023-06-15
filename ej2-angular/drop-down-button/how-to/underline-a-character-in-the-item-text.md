@@ -26,4 +26,4 @@ In the following example, `C` is underlined in the text `Copy`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/default-cs2" %}
+{% previewsample "page.domainurl/samples/drop-down-button/default-cs2" %}

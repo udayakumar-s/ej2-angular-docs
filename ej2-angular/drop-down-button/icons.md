@@ -28,7 +28,7 @@ In the following example, the DropdownButton with default iconPosition and iconP
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/dd-icons-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/dd-icons-cs1" %}
 
 ### Icon only DropDownButton
 
@@ -47,7 +47,7 @@ down arrow `e-caret-hide` class is added using [`cssClass`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/icon-only-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/icon-only-cs1" %}
 
 > The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
 You can also use third party icons on the DropDownButton using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button#iconcss) property.
@@ -70,7 +70,7 @@ In this following example, `e-image` class is added with background url of the s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/sprite-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/sprite-cs1" %}
 
 > The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element.
 You can also use third party icons on the DropDownButton using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button#iconcss) property.
@@ -92,7 +92,7 @@ using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-dow
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/vertical-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/vertical-cs1" %}
 
 ## See Also
 

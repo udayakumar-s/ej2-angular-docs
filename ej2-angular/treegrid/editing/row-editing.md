@@ -26,7 +26,7 @@ To enable Row edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/ang
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs25" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs25" %}
 
 ## Automatically update the column based on another column edited value
 
@@ -46,7 +46,7 @@ In the following demo, the **price** column value is updated based on the **unit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs26" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs26" %}
 
 ## Cancel edit based on condition
 
@@ -66,7 +66,7 @@ In the following demo, the CRUD operation is prevented based on the **priority**
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs27" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs27" %}
 
 ## Perform CRUD action programmatically
 
@@ -98,7 +98,7 @@ The Tree Grid methods can be used to perform CRUD operations programmatically. T
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs28" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs28" %}
 
 > You can cancel the editing programmatically by the [`closeEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#closeedit) method in Row and Dialog edit mode of tree grid.
 > You can delete the row by the [`deleteRow`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterow) method in tree grid. In this method, you need to pass the row element of the record that need to be deleted.
@@ -119,7 +119,7 @@ The delete confirm dialog can be shown when deleting a record by defining the [s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs29" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs29" %}
 
 > The **showDeleteConfirmDialog** supports all type of edit modes.
 
@@ -139,4 +139,4 @@ The [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/tre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs30" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs30" %}

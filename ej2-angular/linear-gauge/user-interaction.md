@@ -30,7 +30,7 @@ Linear Gauge displays the details about a pointer value through [`tooltip`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/user-interaction-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/user-interaction-cs1" %}
 
 <!-- markdownlint-disable MD013 -->
 
@@ -52,7 +52,7 @@ Tooltip in the Linear Gauge control can be formatted using the [`format`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/user-interaction-cs2" %}
+{% previewsample "page.domainurl/samples/linear-gauge/user-interaction-cs2" %}
 
 ### Tooltip Template
 
@@ -70,7 +70,7 @@ The HTML element can be rendered in the tooltip of the Linear Gauge using the [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/user-interaction-cs3" %}
+{% previewsample "page.domainurl/samples/linear-gauge/user-interaction-cs3" %}
 
 ### Customize the appearance of the tooltip
 
@@ -94,7 +94,7 @@ The tooltip can be customized using the following properties in [`tooltip`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/user-interaction-cs4" %}
+{% previewsample "page.domainurl/samples/linear-gauge/user-interaction-cs4" %}
 
 ### Positioning the tooltip
 
@@ -112,7 +112,7 @@ The tooltip is positioned at the **End** of the pointer. To change the position 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/user-interaction-cs5" %}
+{% previewsample "page.domainurl/samples/linear-gauge/user-interaction-cs5" %}
 
 ## Pointer Drag
 
@@ -130,4 +130,4 @@ To drag either marker or bar pointer to the desired axis value, set the [`enable
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/user-interaction-cs6" %}
+{% previewsample "page.domainurl/samples/linear-gauge/user-interaction-cs6" %}

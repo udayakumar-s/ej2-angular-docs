@@ -29,7 +29,7 @@ By default, Tooltips will not be displayed on disabled elements. However, it is 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs9" %}
 
 ## Load HTML tags into tooltip
 
@@ -51,7 +51,7 @@ Here, Bold, Italic, Underline, and Anchor tags are used.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/load-html-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/load-html-cs1" %}
 
 ## Define tooltip open mode property
 
@@ -96,7 +96,7 @@ Tooltip is not triggered by any default action. So, bind your own events and use
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/open-mode-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/open-mode-cs1" %}
 
 ## Create and show tooltip on multiple targets
 
@@ -116,7 +116,7 @@ In this case, the tooltip content is assigned from the title attribute of the ta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/form-valid-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/form-valid-cs1" %}
 
 ## Change tooltip content dynamically
 
@@ -166,7 +166,7 @@ onBeforeRender(args: TooltipEventArgs): void {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/dynamic-content-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/dynamic-content-cs1" %}
 
 ## Tooltip Content Template
 
@@ -184,7 +184,7 @@ The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/load-html-cs2" %}
+{% previewsample "page.domainurl/samples/tooltip/load-html-cs2" %}
 
 ## Customize tooltip
 
@@ -249,7 +249,7 @@ The arrow tip pointer can also be disabled by using the [`showTipPointer`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/tip-custom-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/tip-custom-cs1" %}
 
 ## Display tooltip on SVG and canvas elements
 
@@ -289,7 +289,7 @@ Create the canvas circle element and refer to the following code snippet to rend
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/svg-canvas-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/svg-canvas-cs1" %}
 
 ## Load HTML pages into tooltip
 
@@ -315,4 +315,4 @@ content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></ifra
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/html-page-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/html-page-cs1" %}

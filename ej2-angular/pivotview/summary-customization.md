@@ -29,7 +29,7 @@ End user can also hide grand totals for row or columns separately by setting the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs283" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs283" %}
 
 ## Show Grand Totals at Top
 
@@ -47,7 +47,7 @@ Allows to show grand totals either at top or bottom in rows and columns using th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs284" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs284" %}
 
 ## Show or hide sub-totals
 
@@ -67,7 +67,7 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs285" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs285" %}
 
 ## Show or hide sub-totals for specific fields
 
@@ -87,7 +87,7 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs286" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs286" %}
 
 ## Show sub-totals at top or bottom
 
@@ -107,7 +107,7 @@ To show sub-totals at top of the header group in rows and columns, set the [`sub
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs303" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs303" %}
 
 To show sub-totals at bottom of the header group in rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subTotalsPosition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to **Bottom**.
 
@@ -123,7 +123,7 @@ To show sub-totals at bottom of the header group in rows and columns, set the [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs304" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs304" %}
 
 ## Show or hide totals using toolbar
 
@@ -143,4 +143,4 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs287" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs287" %}

@@ -37,4 +37,4 @@ by getting the element and defining the required TreeView properties.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-treeview-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-treeview-cs1" %}

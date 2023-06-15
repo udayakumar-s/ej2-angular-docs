@@ -28,7 +28,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/treemap/select
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs51" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs51" %}
 
 ## Highlight
 
@@ -48,4 +48,4 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/treemap/highli
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs52" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs52" %}

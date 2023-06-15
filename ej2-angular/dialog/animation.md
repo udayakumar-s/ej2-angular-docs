@@ -52,4 +52,4 @@ and close with `ZoomOut` effects.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/getting-started-cs1" %}

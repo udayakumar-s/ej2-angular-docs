@@ -34,4 +34,4 @@ The following code shows, how to bind a flat collection as data source to the Tr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs8" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs8" %}

@@ -26,4 +26,4 @@ To render the nested Tab, initialize the component using the id of Tab from [`se
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs6" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs6" %}

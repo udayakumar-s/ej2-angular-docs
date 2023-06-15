@@ -31,4 +31,4 @@ The following example demonstrates the default message with different variant ty
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/variants-cs1" %}
+{% previewsample "page.domainurl/samples/message/variants-cs1" %}

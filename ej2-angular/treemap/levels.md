@@ -32,7 +32,7 @@ In the following example, three levels are added and each level is configured us
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs42" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs42" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -52,7 +52,7 @@ The [`groupGap`](https://ej2.syncfusion.com/angular/documentation/api/treemap/le
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs43" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs43" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -72,7 +72,7 @@ Customize header using the [`headerFormat`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs44" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs44" %}
 
 ## Header height and style
 
@@ -90,7 +90,7 @@ Customize the font color, family, weight, opacity and size using the [`headerSty
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs45" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs45" %}
 
 ## Header template and position
 
@@ -108,4 +108,4 @@ The TreeMap header supports to customize header of each item using the [`headerT
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs46" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs46" %}

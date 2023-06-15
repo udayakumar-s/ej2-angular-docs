@@ -39,7 +39,7 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/types-cs1" %}
+{% previewsample "page.domainurl/samples/badge/types-cs1" %}
 
 ## Badge types
 
@@ -69,7 +69,7 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/circle-cs1" %}
+{% previewsample "page.domainurl/samples/badge/circle-cs1" %}
 
 ### Pill
 
@@ -87,7 +87,7 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/pill-cs1" %}
+{% previewsample "page.domainurl/samples/badge/pill-cs1" %}
 
 ### Link
 
@@ -105,7 +105,7 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/link-cs1" %}
+{% previewsample "page.domainurl/samples/badge/link-cs1" %}
 
 ### Notification
 
@@ -125,7 +125,7 @@ While using the notification badge, set the parent element to `position: relativ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/notification-cs1" %}
+{% previewsample "page.domainurl/samples/badge/notification-cs1" %}
 
 ### Dot
 
@@ -145,7 +145,7 @@ element to `position: relative` .
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/dot-cs1" %}
+{% previewsample "page.domainurl/samples/badge/dot-cs1" %}
 
 ### Overlap
 
@@ -165,7 +165,7 @@ parent element to `position: relative`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/overlap-cs1" %}
+{% previewsample "page.domainurl/samples/badge/overlap-cs1" %}
 
 ### Position
 
@@ -185,4 +185,4 @@ with dot badge to display the status in the avatar as shown in the following sam
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/position-cs1" %}
+{% previewsample "page.domainurl/samples/badge/position-cs1" %}

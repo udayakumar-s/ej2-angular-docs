@@ -24,4 +24,4 @@ You can change the text content and styles of the ProgressButton during progress
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs4" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs4" %}

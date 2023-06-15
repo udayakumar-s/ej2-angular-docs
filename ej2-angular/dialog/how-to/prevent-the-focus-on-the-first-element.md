@@ -26,4 +26,4 @@ Bind the open event and enable the preventFocus argument within an event like th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-focus-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-focus-cs1" %}

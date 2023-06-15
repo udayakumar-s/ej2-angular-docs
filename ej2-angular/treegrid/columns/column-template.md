@@ -24,7 +24,7 @@ The column [`template`](https://ej2.syncfusion.com/angular/documentation/api/tre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/column-template-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/column-template-cs1" %}
 
 > TreeGrid actions such as editing, filtering and sorting etc. will depend upon the column [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field). If the [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) is not specified in the template column, the treegrid actions cannot be performed.
 
@@ -57,4 +57,4 @@ In the following code, checkbox is rendered based on `Approved` field value.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs13" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs13" %}

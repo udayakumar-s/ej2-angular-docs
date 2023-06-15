@@ -40,7 +40,7 @@ The `Linear` directions of Speed Dial are as follows:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/radial-cs1" %}
+{% previewsample "page.domainurl/samples/speed-dial/radial-cs1" %}
 
 ## Radial display mode (Radial Menu)
 

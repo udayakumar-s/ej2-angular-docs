@@ -28,7 +28,7 @@ This can be achieved by appending table layout while `li` rendering by using `be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/table-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/table-cs1" %}
 
 ## Show UI components in ContextMenu
 
@@ -48,4 +48,4 @@ In the following example, CheckBox component is placed inside each `li` element 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/how-to-cs2" %}
+{% previewsample "page.domainurl/samples/context-menu/how-to-cs2" %}

@@ -48,13 +48,13 @@ In the below demo, the expand/collapse icon in the row with **EmployeeID** as **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/template-cs4/app/app.component.ts %}
+{% include code-snippet/grid/template-cs4/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/template-cs4/app/app.module.ts %}
+{% include code-snippet/grid/template-cs4/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/template-cs4/app/main.ts %}
+{% include code-snippet/grid/template-cs4/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

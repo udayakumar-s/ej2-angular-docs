@@ -206,7 +206,7 @@ Run the `ng serve` command in command window, it will serve your application and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs7" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs7" %}
 
 ## See Also
 

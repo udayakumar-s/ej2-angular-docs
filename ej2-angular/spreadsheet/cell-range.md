@@ -36,7 +36,7 @@ The following code example shows the wrap text functionality in spreadsheet.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/wrap-text-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/wrap-text-cs1" %}
 
 ### Limitations of Wrap text
 
@@ -78,7 +78,7 @@ The following code example shows the merge cells operation in spreadsheet.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/merge-cells-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/merge-cells-cs1" %}
 
 ### Limitations of Merge
 
@@ -141,7 +141,7 @@ You can clear the highlighted invalid data by using the following ways,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/data-validation-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/data-validation-cs1" %}
 
 ### Limitations of Data validation
 
@@ -227,7 +227,7 @@ In the following sample, you can enable/disable the fill option on the button cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/autofill-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/autofill-cs1" %}
 
 ### Limitations of Autofill
 
@@ -272,7 +272,7 @@ Clear the cell contents and formats in the Spreadsheet document by using the [cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/clear-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/clear-cs1" %}
 
 ## Note
 

@@ -26,4 +26,4 @@ The following sample demonstrate how to achieve the client side validation in Da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/daterangepicker/how-to-cs1" %}

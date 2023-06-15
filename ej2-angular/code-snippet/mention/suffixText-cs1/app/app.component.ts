@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   template: `<label id="comment" >Comments</label>
   <div id="mentionElement" placeholder = "Type @ and tag country"></div>
   <ejs-mention [dataSource]='userData' [showMentionChar]='mentionShow' [suffixText]='textSuffix' [target]='mentionTarget' [fields]='fields' ></ejs-mention>`,
-  styleUrls: ['index.css']
+
 
 })
 export class AppComponent {

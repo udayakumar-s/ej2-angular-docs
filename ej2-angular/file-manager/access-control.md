@@ -115,4 +115,4 @@ The following example demonstrate the file manager rendered with access control 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/access-control-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/access-control-cs1" %}

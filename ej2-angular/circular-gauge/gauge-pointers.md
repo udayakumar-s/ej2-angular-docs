@@ -25,7 +25,7 @@ Pointers are used to indicate values on the axis. Value of the pointer can be mo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs1" %}
 
 Gauge supports 3 types of pointers such as `Needle`, `RangeBar` and `Marker`.
 You can choose any one of the pointer by using [`type`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#type-string) property.
@@ -50,7 +50,7 @@ The needle and tail length takes value either in `percentage` or `pixel`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs2" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -71,7 +71,7 @@ Cap and tails can be customized by using [`cap`](https://ej2.syncfusion.com/angu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs3" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs3" %}
 
 <!-- markdownlint-disable MD010 -->
 
@@ -89,7 +89,7 @@ The appearance of the needle pointer can be customized by using [`needleStartWid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs4" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs4" %}
 
 ## RangeBar Pointer
 
@@ -108,7 +108,7 @@ RangeBar starts from the beginning of the gauge and ends at the pointer value.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs5" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs5" %}
 
 **Customization**
 
@@ -126,7 +126,7 @@ RangeBar can be customized in terms of color, border and thickness by using [`co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs6" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs6" %}
 
 <!-- markdownlint-disable MD010 -->
 
@@ -146,7 +146,7 @@ The start and end pointers of range bar in the circular gauge are rounded to for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs7" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs7" %}
 
 ## Marker Pointer
 
@@ -173,7 +173,7 @@ We can use image instead of rendering marker shape to denote the pointer value. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs8" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs8" %}
 
 **Customization**
 
@@ -191,7 +191,7 @@ The marker can be customized in terms of color, border, width and height by usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs9" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs9" %}
 
 <!-- markdownlint-disable MD010 -->
 
@@ -211,7 +211,7 @@ The pointers can be dragged over the axis line by clicking and dragging the same
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs10" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs10" %}
 
 ## Multiple Pointers
 
@@ -229,7 +229,7 @@ In addition to the default pointer, you can add n number of pointer to an axis b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs11" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs11" %}
 
 ## Animation
 
@@ -249,7 +249,7 @@ The [`duration`](https://ej2.syncfusion.com/angular/documentation/api/circular-g
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs12" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs12" %}
 
 ## Gradient Color
 
@@ -276,7 +276,7 @@ The linear gradient can be applied to all pointer types like marker, range bar a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs13" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs13" %}
 
 ### Radial Gradient
 
@@ -296,4 +296,4 @@ The radial gradient can be applied to all pointer types like marker, range bar a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-pointers-cs14" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs14" %}

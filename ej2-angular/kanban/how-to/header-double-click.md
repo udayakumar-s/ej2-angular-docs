@@ -24,4 +24,4 @@ You can bind the header double click event using [`dataBound`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/auto-cs2" %}
+{% previewsample "page.domainurl/samples/kanban/auto-cs2" %}

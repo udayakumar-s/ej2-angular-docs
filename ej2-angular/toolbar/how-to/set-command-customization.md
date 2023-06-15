@@ -28,4 +28,4 @@ Single or multiple CSS classes can be added to the Toolbar commands using the To
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs2" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs2" %}

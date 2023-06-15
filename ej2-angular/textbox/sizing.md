@@ -29,4 +29,4 @@ Property   | Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs10" %}

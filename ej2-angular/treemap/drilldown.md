@@ -28,7 +28,7 @@ The TreeMap items can be drilled by setting the [`enableDrillDown`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs12" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs12" %}
 
 ## On-demand data loading
 
@@ -46,7 +46,7 @@ All the child items are rendered during the normal drill-down process, and visib
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs13" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs13" %}
 
 ## Breadcrumb support
 
@@ -64,4 +64,4 @@ TreeMap items are drilled, up to any level of parent using breadcrumb navigation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs14" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs14" %}

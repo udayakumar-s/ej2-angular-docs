@@ -26,7 +26,7 @@ To use the column resize, inject `Resize` module in the treegrid.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs10" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs10" %}
 
 > * You can disable resizing for a particular column by setting the [`columns.allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#allowresizing) to false.
 > * In RTL mode, you can click and drag the left edge of the header cell to resize the column.
@@ -49,7 +49,7 @@ In the following sample, minimum and maximum width are defined for `Duration`, a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs11" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs11" %}
 
 ## Resize stacked column
 
@@ -67,7 +67,7 @@ Stacked columns can be resized by clicking and dragging the right edge of the st
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs12" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs12" %}
 
 ## Touch interaction
 
@@ -99,4 +99,4 @@ During the resizing action, the tree grid component triggers the following three
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/resize-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/resize-cs1" %}

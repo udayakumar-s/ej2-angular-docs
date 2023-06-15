@@ -26,7 +26,7 @@ To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/checkbox-cs1" %}
+{% previewsample "page.domainurl/samples/multiselect/checkbox-cs1" %}
 
 ## Select All
 
@@ -48,7 +48,7 @@ For the unSelect All option, by default unSelect All text will show. You can cus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/checkbox-cs2" %}
+{% previewsample "page.domainurl/samples/multiselect/checkbox-cs2" %}
 
 ## Selection Limit
 
@@ -66,7 +66,7 @@ Defines the limit of the selected items using [`maximumSelectionLength`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/checkbox-cs3" %}
+{% previewsample "page.domainurl/samples/multiselect/checkbox-cs3" %}
 
 ## Selection Reordering
 
@@ -84,7 +84,7 @@ Using [`enableSelectionOrder`](https://ej2.syncfusion.com/angular/documentation/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/checkbox-cs4" %}
+{% previewsample "page.domainurl/samples/multiselect/checkbox-cs4" %}
 
 ## See Also
 

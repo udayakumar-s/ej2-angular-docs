@@ -25,19 +25,19 @@ import { ChangeEventArgs, RadioButtonComponent } from '@syncfusion/ej2-angular-b
 
 export class AppComponent {
     @ViewChild('radio1')
-    public radio1: RadioButtonComponent;
+    public radio1?: RadioButtonComponent;
     @ViewChild('radio2')
-    public radio2: RadioButtonComponent;
+    public radio2?: RadioButtonComponent;
     @ViewChild('radio3')
-    public radio3: RadioButtonComponent;
+    public radio3?: RadioButtonComponent;
     public changeOption1 (args: ChangeEventArgs) {
-        document.getElementById('text').innerText = 'Selected : ' + this.radio1.label;
+        document.getElementById('text')!.innerText = 'Selected : ' + this.radio1!.label;
     }
     public changeOption2 (args: ChangeEventArgs) {
-        document.getElementById('text').innerText = 'Selected : ' + this.radio2.label;
+        document.getElementById('text')!.innerText = 'Selected : ' + this.radio2!.label;
     }
     public changeOption3 (args: ChangeEventArgs) {
-        document.getElementById('text').innerText = 'Selected : ' + this.radio3.label;
+        document.getElementById('text')!.innerText = 'Selected : ' + this.radio3!.label;
     }
 }
 

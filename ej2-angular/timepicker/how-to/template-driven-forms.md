@@ -37,4 +37,4 @@ The following example  demonstrates template driven forms with TimePicker compon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/template-driven-cs1" %}
+{% previewsample "page.domainurl/samples/timepicker/template-driven-cs1" %}

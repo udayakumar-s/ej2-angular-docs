@@ -29,4 +29,4 @@ You can also show reverse progress by adding custom class to the [`cssClass`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs5" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs5" %}

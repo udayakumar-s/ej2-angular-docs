@@ -30,13 +30,13 @@ Built-in Toolbar Items execute standard actions of the Grid and it can be added 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/grid/toolbar-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/grid/toolbar-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/toolbar-cs1/app/main.ts %}
+{% include code-snippet/grid/toolbar-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ This is demonstrated in the following sample:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/toolbaricon-cs1/app/app.component.ts %}
+{% include code-snippet/grid/toolbaricon-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/toolbaricon-cs1/app/app.module.ts %}
+{% include code-snippet/grid/toolbaricon-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/toolbaricon-cs1/app/main.ts %}
+{% include code-snippet/grid/toolbaricon-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -78,13 +78,13 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/custom-toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/grid/custom-toolbar-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/custom-toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/grid/custom-toolbar-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/custom-toolbar-cs1/app/main.ts %}
+{% include code-snippet/grid/custom-toolbar-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs53/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs53/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs53/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs53/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs53/app/main.ts %}
+{% include code-snippet/grid/edit-cs53/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -119,13 +119,13 @@ By default, Custom toolbar items are in the Left position. You can change the po
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/custom-toolbar-cs2/app/app.component.ts %}
+{% include code-snippet/grid/custom-toolbar-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/custom-toolbar-cs2/app/app.module.ts %}
+{% include code-snippet/grid/custom-toolbar-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/custom-toolbar-cs2/app/main.ts %}
+{% include code-snippet/grid/custom-toolbar-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

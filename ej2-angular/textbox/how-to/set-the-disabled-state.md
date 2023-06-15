@@ -24,4 +24,4 @@ Disable the TextBox by adding the `e-disabled` to the input parent element and s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs8" %}

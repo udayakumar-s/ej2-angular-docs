@@ -35,7 +35,7 @@ The following example shows how to export documents in document editor as Syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/export-cs1" %}
+{% previewsample "page.domainurl/samples/document-editor/export-cs1" %}
 
 ## Word export
 
@@ -55,7 +55,7 @@ The following example shows how to export the document as Word document (.docx).
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/export-cs2" %}
+{% previewsample "page.domainurl/samples/document-editor/export-cs2" %}
 
 ## Text export
 
@@ -73,7 +73,7 @@ The following example shows how to export document as text document (.txt).
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/export-cs3" %}
+{% previewsample "page.domainurl/samples/document-editor/export-cs3" %}
 
 ## Export as blob
 

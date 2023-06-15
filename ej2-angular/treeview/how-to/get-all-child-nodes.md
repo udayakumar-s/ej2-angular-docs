@@ -24,4 +24,4 @@ This section demonstrates how to get the child nodes from corresponding parent I
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/get-child-nodes-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/get-child-nodes-cs1" %}

@@ -26,4 +26,4 @@ You can set the visibility of tooltip using `showTooltip` in the pivot table.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs171" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs171" %}

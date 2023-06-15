@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector:  'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template:  `<!-- Small Button. -->
                 <button ejs-button cssClass="e-small">Small</button>
 

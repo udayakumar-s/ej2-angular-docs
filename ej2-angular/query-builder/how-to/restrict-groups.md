@@ -24,6 +24,6 @@ You can restrict the condition set by defining the [`maxGroupCount`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs7" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs7" %}
 
 > You can use this property in the mobile mode to restrict the nested group creation.

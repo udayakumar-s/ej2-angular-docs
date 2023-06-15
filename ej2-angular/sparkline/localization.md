@@ -32,7 +32,7 @@ Sparkline tooltip supports localization. The following code sample shows tooltip
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs17" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs17" %}
 
 ## Rtl
 
@@ -52,4 +52,4 @@ The following example shows the sparkline is render from "Right-to-left".
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs18" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs18" %}

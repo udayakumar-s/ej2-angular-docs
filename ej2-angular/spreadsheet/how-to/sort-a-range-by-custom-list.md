@@ -26,7 +26,7 @@ In the following demo, the `Trustworthiness` column is sorted based on the custo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/custom-sort-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/custom-sort-cs1" %}
 
 ## See Also
 

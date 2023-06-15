@@ -150,7 +150,7 @@ The below example shows a basic ProgressButton component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs2" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs2" %}
 
 > ProgressButton supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/angular/documentation/button/). In addition, it also supports `top` and `bottom` icon positions.
 
@@ -170,4 +170,4 @@ You can enable the background filler UI by setting the [`enableProgress`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs3" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs3" %}

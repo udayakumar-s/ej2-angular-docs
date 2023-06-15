@@ -27,7 +27,7 @@ To use the print functionality, we should inject the `PrintService` into the `@N
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-print-and-export-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-print-and-export-cs1" %}
 
 ## Export
 
@@ -51,7 +51,7 @@ To use the image export functionality, we should inject the `ImageExportService`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-print-and-export-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-print-and-export-cs2" %}
 
 We can get the image file as base64 string for the JPEG and PNG formats. The circular gauge can be exported to image as a base64 string using the [`export`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/#export) method. There are four parameters required: image type, file name, orientation of the exported PDF document which must be set as **null** for image export and finally **allowDownload** which should be set as **false** to return base64 string.
 
@@ -67,7 +67,7 @@ We can get the image file as base64 string for the JPEG and PNG formats. The cir
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-print-and-export-cs3" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-print-and-export-cs3" %}
 
 ### PDF Export
 
@@ -85,6 +85,6 @@ To use the PDF export functionality, we should inject the `PdfExportService` int
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-print-and-export-cs4" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-print-and-export-cs4" %}
 
 >Note: The exporting of the circular gauge as base64 string is not supported in the PDF export.

@@ -39,4 +39,4 @@ setSpinner({ type: 'Bootstrap'});
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spinner/default-sample-cs1" %}
+{% previewsample "page.domainurl/samples/spinner/default-sample-cs1" %}

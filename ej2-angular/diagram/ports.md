@@ -42,7 +42,7 @@ To add a connection port, define the port object and add it to node’s ports co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/ports/port-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/ports/port-cs1" %}
 
 ## Add ports at runtime
 
@@ -62,7 +62,7 @@ The port’s ID property is used to define the unique ID for the port and its fu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/ports/add-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/ports/add-cs1" %}
 
 ## Remove ports at runtime
 
@@ -80,7 +80,7 @@ Remove ports at runtime by using client-side method [`removePorts`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/ports/remove-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/ports/remove-cs1" %}
 
 ## Update port at runtime
 
@@ -100,7 +100,7 @@ The following code example illustrates how to change the port properties.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/ports/node-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/ports/node-cs1" %}
 
 ## Appearance
 
@@ -127,7 +127,7 @@ The following code illustrates how to change the appearance of port.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/ports/appear-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/ports/appear-cs1" %}
 
 ## Offset
 

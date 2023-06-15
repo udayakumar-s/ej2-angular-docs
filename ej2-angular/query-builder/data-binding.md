@@ -31,7 +31,7 @@ To bind local data to the query builder, you can assign the [`dataSource`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs4" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs4" %}
 
 > By default, `DataManager` uses `JsonAdaptor` for local data-binding.
 
@@ -51,7 +51,7 @@ To bind remote  data to the query builder, assign service data as an instance of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs1" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs1" %}
 
 > By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
 
@@ -71,7 +71,7 @@ To bind remote  data to the query builder, assign service data as an instance of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs2" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs2" %}
 
 ### Binding with OData v4 services
 
@@ -89,7 +89,7 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs3" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs3" %}
 
 ### Web API
 
@@ -161,7 +161,7 @@ You can use the created conditions in DataManager through the getPredicate metho
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs5" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs5" %}
 
 ## Complex Data Binding
 
@@ -181,4 +181,4 @@ In the following sample, complex data was bound in nested columns.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/complex-data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/query-builder/complex-data-binding-cs1" %}

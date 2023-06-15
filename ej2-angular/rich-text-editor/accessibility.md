@@ -44,4 +44,4 @@ For further details of Toolbar ARIA attributes, please look in to [`Accessibilit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs1" %}

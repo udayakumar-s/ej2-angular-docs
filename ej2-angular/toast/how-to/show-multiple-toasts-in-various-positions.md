@@ -26,4 +26,4 @@ Here below sample demonstrates to add multiple toasts adding in the different po
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs17" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs17" %}

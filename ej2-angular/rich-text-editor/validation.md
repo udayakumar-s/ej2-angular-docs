@@ -35,7 +35,7 @@ The following example demonstrates how to achieve a two-way data binding.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/form-support-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/form-support-cs1" %}
 
 ## Reactive forms
 
@@ -59,4 +59,4 @@ The following example demonstrates how to use the reactive forms.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/form-support-cs2" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/form-support-cs2" %}

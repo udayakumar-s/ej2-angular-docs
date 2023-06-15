@@ -24,7 +24,7 @@ The rating component supports tooltip to show additional information in rating i
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/tooltip/showtooltip-cs" %}
+{% previewsample "page.domainurl/samples/rating/tooltip/showtooltip-cs" %}
 
 ## Tooltip template
 
@@ -42,7 +42,7 @@ You can use the [`tooltipTemplate`](https://ej2.syncfusion.com/angular/documenta
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/tooltip/tooltip-template-cs" %}
+{% previewsample "page.domainurl/samples/rating/tooltip/tooltip-template-cs" %}
 
 ## Tooltip customization
 
@@ -65,4 +65,4 @@ You can customize the appearance of the tooltips using the `cssClass` property o
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/tooltip/custom-tooltip-cs" %}
+{% previewsample "page.domainurl/samples/rating/tooltip/custom-tooltip-cs" %}

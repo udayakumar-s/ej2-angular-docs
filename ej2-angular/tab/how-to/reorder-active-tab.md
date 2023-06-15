@@ -24,4 +24,4 @@ We can able to prevent the changing of the active tab item on resizing the brows
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs9" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs9" %}

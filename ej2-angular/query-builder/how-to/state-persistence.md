@@ -24,4 +24,4 @@ State persistence allows you to maintain the current state in the browser’s `l
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs10" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs10" %}

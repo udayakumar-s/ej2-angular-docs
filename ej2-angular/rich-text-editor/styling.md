@@ -50,7 +50,7 @@ The following sample demonstrates the option to add the font name and font size 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs24" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs24" %}
 
 ## Custom fonts and size
 
@@ -69,7 +69,7 @@ If you want to add additional font names and font sizes to font drop-down, pass 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs25" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs25" %}
 
 ## Font and Background color
 
@@ -91,7 +91,7 @@ The `FontColor` and the `BackgroundColor` property has two mode of `Picker` and 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs26" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs26" %}
 
 ## Editor content styles
 

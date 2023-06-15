@@ -36,7 +36,7 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/alert-action-btn-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/alert-action-btn-cs1" %}
 
 ## Confirm action buttons
 
@@ -52,7 +52,7 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/confirm-action-btn-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/confirm-action-btn-cs1" %}
 
 ## Prompt action buttons
 
@@ -68,7 +68,7 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/prompt-action-btn-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/prompt-action-btn-cs1" %}
 
 ## Show or hide dialog close button
 
@@ -95,7 +95,7 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/alert-close-btn-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/alert-close-btn-cs1" %}
 
 ## Confirm dialog close button
 
@@ -111,7 +111,7 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/confirm-close-btn-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/confirm-close-btn-cs1" %}
 
 ## Prompt dialog close button
 
@@ -127,7 +127,7 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/prompt-close-btn-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/prompt-close-btn-cs1" %}
 
 ## Customize dialog content
 
@@ -147,4 +147,4 @@ Use the following code to customize the dialog content to render the custom Text
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/custom-dialog-content-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/custom-dialog-content-cs1" %}

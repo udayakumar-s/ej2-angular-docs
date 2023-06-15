@@ -24,4 +24,4 @@ The following example demonstrates about how to set limit the search result on f
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs18" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs18" %}

@@ -51,7 +51,7 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/locale-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/locale-cs1" %}
 
 ## Right to left (RTL)
 
@@ -69,4 +69,4 @@ The Kanban provides an option to switch its text direction and layout from right
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/rtl-cs1" %}

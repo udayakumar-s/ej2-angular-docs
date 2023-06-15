@@ -32,7 +32,7 @@ In the following example, we have rendered Listview with customized header which
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/headerTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/listview/headerTemplate-cs1" %}
 
 ## Template
 
@@ -66,7 +66,7 @@ In the following example, we have customized list items with built-in CSS classe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/avatar-template-cs1" %}
+{% previewsample "page.domainurl/samples/listview/avatar-template-cs1" %}
 
 ## Group template
 
@@ -88,4 +88,4 @@ In the following example, we have grouped Listview based on the category. The ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/item-count-cs1" %}
+{% previewsample "page.domainurl/samples/listview/item-count-cs1" %}

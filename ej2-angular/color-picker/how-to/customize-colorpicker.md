@@ -28,7 +28,7 @@ The following sample demonstrates the above functionalities.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/custom/palette-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/custom/palette-cs1" %}
 
 ## Hide input area from picker
 
@@ -48,7 +48,7 @@ In the following sample, the ColorPicker is rendered without input area.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/how-to-cs1" %}
 
 ## Custom handle
 
@@ -68,7 +68,7 @@ The following sample show the customized color picker handle.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/custom/handle-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/custom/handle-cs1" %}
 
 ## Custom primary button
 
@@ -88,7 +88,7 @@ In the following sample, the `picker` icon is added to primary button and using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/icon-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/icon-cs1" %}
 
 >> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icon to customize the primary button.
 
@@ -110,7 +110,7 @@ The following sample shows the color picker with input.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/input-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/input-cs1" %}
 
 ## Custom UI
 
@@ -128,4 +128,4 @@ The color picker UI can be customized in all possible ways. The following sample
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/position-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/position-cs1" %}

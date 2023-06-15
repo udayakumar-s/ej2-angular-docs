@@ -153,7 +153,7 @@ The [`dataSource`] property is used for binding data source to Sparkline. This p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs14" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs14" %}
 
 ## Change the type of Sparkline
 
@@ -173,7 +173,7 @@ We can change the Sparkline types by setting the [`type`] property as [`Line`],[
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs15" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs15" %}
 
 ## Enable tooltip for Sparkline
 
@@ -193,4 +193,4 @@ Sparkline will displays the sparkline details through tooltip, when the mouse is
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs16" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs16" %}

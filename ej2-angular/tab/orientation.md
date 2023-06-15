@@ -39,4 +39,4 @@ It is also adaptable to the available space when the tab items exceed the view s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/orientation-tab-cs1" %}
+{% previewsample "page.domainurl/samples/tab/orientation-tab-cs1" %}

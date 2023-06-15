@@ -36,7 +36,7 @@ The Chip control has the following predefined styles that can be defined using t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/customization/styles-cs1" %}
+{% previewsample "page.domainurl/samples/chips/customization/styles-cs1" %}
 
 ## Leading Icon
 
@@ -54,7 +54,7 @@ You can add and customize the leading icon of chip using the `leadingIconCss` pr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/customization/styles-cs2" %}
+{% previewsample "page.domainurl/samples/chips/customization/styles-cs2" %}
 
 ## Avatar
 
@@ -72,7 +72,7 @@ You can add and customize the avatar of chip using the `avatarIconCss` property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/customization/styles-cs3" %}
+{% previewsample "page.domainurl/samples/chips/customization/styles-cs3" %}
 
 ## Avatar Content
 
@@ -90,7 +90,7 @@ You can add and customize the avatar content of chip using the `avatarText` prop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/customization/styles-cs4" %}
+{% previewsample "page.domainurl/samples/chips/customization/styles-cs4" %}
 
 ## Trailing Icon
 
@@ -108,7 +108,7 @@ You can add and customize the trailing icon of chip using the `trailingIconCss` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/customization/styles-cs5" %}
+{% previewsample "page.domainurl/samples/chips/customization/styles-cs5" %}
 
 ## Outline Chip
 
@@ -126,4 +126,4 @@ Outline chip has the border with the background transparent. It can be set using
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/customization/styles-cs6" %}
+{% previewsample "page.domainurl/samples/chips/customization/styles-cs6" %}

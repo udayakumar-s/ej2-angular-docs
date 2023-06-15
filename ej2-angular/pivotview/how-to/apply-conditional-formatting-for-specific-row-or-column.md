@@ -32,4 +32,4 @@ To use the conditional formatting feature, You need to inject the `ConditionalFo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs156" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs156" %}

@@ -32,7 +32,7 @@ You can place any custom element on the axis area by assigning the id of the ele
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-annotations-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-annotations-cs1" %}
 
 ## Position
 
@@ -54,7 +54,7 @@ By setting value in percentage, annotation gets its position with respect to its
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-annotations-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-annotations-cs2" %}
 
 ## Sub Gauge
 
@@ -72,7 +72,7 @@ As the annotation allows you to place any custom element, we can initialize a ga
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-annotations-cs3" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-annotations-cs3" %}
 
 ## See also
 

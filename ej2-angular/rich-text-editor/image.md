@@ -55,7 +55,7 @@ In the following sample, the image has been loaded from the local machine and it
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs8" %}
 
 ## Delete Image
 
@@ -84,7 +84,7 @@ The following sample explains, how to configure `removeUrl` to remove a saved im
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs9" %}
 
 ## Insert from web
 
@@ -124,7 +124,7 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs10" %}
 
 ## Image with link
 
@@ -156,7 +156,7 @@ In the following sample, you can see feature demo.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs11" %}
 
 ### Drag and drop with specific extension images
 

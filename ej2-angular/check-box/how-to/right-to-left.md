@@ -26,4 +26,4 @@ The following example illustrates how to enable right-to-left support in CheckBo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/check-box/rtl-cs1" %}

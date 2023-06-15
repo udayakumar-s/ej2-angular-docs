@@ -38,7 +38,7 @@ The context menu settings like, items to be displayed on files, folders and layo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/context-menu-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/context-menu-cs1" %}
 
 ## Details view customization
 
@@ -56,7 +56,7 @@ The details view settings like, column width, header text, template for each fie
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/detailsview-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/detailsview-cs1" %}
 
 ## Navigation pane customization
 
@@ -74,7 +74,7 @@ The navigation pane settings like, minimum and maximum width and visibility can 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/navigationpane-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/navigationpane-cs1" %}
 
 ## Show/Hide file extension
 
@@ -94,7 +94,7 @@ In File Manager [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/fileextension-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/fileextension-cs1" %}
 
 ## Show/Hide hidden items
 
@@ -112,7 +112,7 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/hiddenitems-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/hiddenitems-cs1" %}
 
 ## Show/Hide thumbnail images in large icons view
 
@@ -130,7 +130,7 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/disablethumbnail-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/disablethumbnail-cs1" %}
 
 ## Toolbar customization
 
@@ -148,7 +148,7 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/toolbar-customize-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/toolbar-customize-cs1" %}
 
 ## Upload customization
 
@@ -166,7 +166,7 @@ The upload settings like, minimum and maximum file size and enabling auto upload
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/upload-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/upload-cs1" %}
 
 ## Tooltip customization
 
@@ -184,4 +184,4 @@ The tooltip value can be customized by adding extra content to the title of the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/tooltip-cs1" %}

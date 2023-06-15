@@ -28,7 +28,7 @@ import { TooltipComponent, TooltipAnimationSettings } from '@syncfusion/ej2-angu
 
 export class AppComponent {
     @ViewChild('tooltipAnimate')
-    public tooltipControl: TooltipComponent;
+    public tooltipControl : TooltipComponent | any;
     onCustomClick(args: any): void {
         if (args.target.getAttribute('data-tooltip-id')) {
             let closeAnimation: TooltipAnimationSettings = { effect: 'FadeOut', duration: 1000 }

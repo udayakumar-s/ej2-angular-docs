@@ -28,7 +28,7 @@ The rendered Linear Gauge can be printed directly from the browser by calling th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/print-and-export-cs2" %}
+{% previewsample "page.domainurl/samples/linear-gauge/print-and-export-cs2" %}
 
 ## Export
 
@@ -54,7 +54,7 @@ To use the image export functionality, set the [`allowImageExport`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/print-and-export-cs3" %}
+{% previewsample "page.domainurl/samples/linear-gauge/print-and-export-cs3" %}
 
 ### PDF Export
 
@@ -72,7 +72,7 @@ To use the PDF export functionality, set the [`allowPdfExport`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/print-and-export-cs4" %}
+{% previewsample "page.domainurl/samples/linear-gauge/print-and-export-cs4" %}
 
 ### Exporting Linear Gauge as base64 string of the file
 
@@ -90,6 +90,6 @@ The Linear Gauge can be exported as base64 string for the JPEG, PNG and PDF form
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/print-and-export-cs5" %}
+{% previewsample "page.domainurl/samples/linear-gauge/print-and-export-cs5" %}
 
 >The exporting of the Linear Gauge as base64 string is not applicable for the SVG format.

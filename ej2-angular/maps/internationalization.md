@@ -39,4 +39,4 @@ The numeric formats such as currency, percentage and so on can be displayed in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs46" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs46" %}

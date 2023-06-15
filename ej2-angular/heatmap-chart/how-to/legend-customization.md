@@ -24,4 +24,4 @@ You can change the legend label using the `legendRender` client-side event. You 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/how-to/legend-label-customization-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/how-to/legend-label-customization-cs1" %}

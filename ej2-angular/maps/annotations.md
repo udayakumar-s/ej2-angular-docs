@@ -30,7 +30,7 @@ By using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/ma
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs1" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs1" %}
 
 ## Annotation customization
 
@@ -50,7 +50,7 @@ The stack order of an annotation element can be changed using the [`zIndex`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs2" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs2" %}
 
 ### Positioning an annotation
 
@@ -68,7 +68,7 @@ Annotations can be placed anywhere in the Maps by specifying pixel or percentage
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs3" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs3" %}
 
 ### Alignment of an annotation
 
@@ -86,7 +86,7 @@ Annotations can be aligned using the [`horizontalAlignment`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs4" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs4" %}
 
 ## Multiple Annotation
 
@@ -104,4 +104,4 @@ Multiple annotations can be added to the Maps using the [`annotations`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs5" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs5" %}

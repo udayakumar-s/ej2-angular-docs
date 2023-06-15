@@ -26,7 +26,7 @@ Refer to the following example for showing a document and print it.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/link-cs5" %}
+{% previewsample "page.domainurl/samples/document-editor/link-cs5" %}
 
 Refer to the following example for creating a document and print it.
 
@@ -42,7 +42,7 @@ Refer to the following example for creating a document and print it.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/link-cs6" %}
+{% previewsample "page.domainurl/samples/document-editor/link-cs6" %}
 
 ## Improve print quality
 
@@ -129,4 +129,4 @@ The following example shows how to customize layout options only for printing.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/link-cs7" %}
+{% previewsample "page.domainurl/samples/document-editor/link-cs7" %}

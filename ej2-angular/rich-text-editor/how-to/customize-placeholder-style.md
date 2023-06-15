@@ -24,4 +24,4 @@ By using `e-rte-placeholder` class, you can customize the placeholder style.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/placeholder-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/placeholder-cs1" %}

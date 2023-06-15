@@ -24,4 +24,4 @@ This section explains how to render model dialog with the Rich Text Editor compo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/model-dialog-with-rte-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/model-dialog-with-rte-cs1" %}

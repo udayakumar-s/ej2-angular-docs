@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 @Component({
     selector: 'app-root',
-    templateUrl: './form-support.html'
+    templateUrl: 'form-support.html'
 })
 export class AppComponent {
     // defined the array of data

@@ -34,7 +34,7 @@ The following code example displays an appointment from 9.00 AM to 10.00 AM when
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs66" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs66" %}
 
 ## Scheduler set to specific timezone
 
@@ -52,7 +52,7 @@ When a time zone is set to Scheduler through `timezone` property, the appointmen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs67" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs67" %}
 
 ## Display events on same time everywhere with no time difference
 
@@ -70,7 +70,7 @@ Setting `timezone` to UTC for Scheduler will display the appointments on same ti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs68" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs68" %}
 
 ## Set specific timezone for events
 
@@ -88,7 +88,7 @@ It is possible to set different timezone for Scheduler events by setting `startT
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs69" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs69" %}
 
 ## Add or remove timezone names to/from the timezone collection
 
@@ -106,7 +106,7 @@ Instead of displaying all the timezone names within the timezone collection (mor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs70" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs70" %}
 
 ## Timezone methods
 

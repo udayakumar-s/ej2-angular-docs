@@ -24,6 +24,6 @@ You can bind the actions to the buttons inside the footer using the buttons prop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/button-actions-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/button-actions-cs1" %}
 
 To access the current component within the button actions, add **bind(this)** along with function name in action binding.

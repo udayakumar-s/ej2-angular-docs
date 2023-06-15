@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template:   `<form>
                     <!-- Submit type button -->
                     <button type="submit" ejs-button>Submit</button>

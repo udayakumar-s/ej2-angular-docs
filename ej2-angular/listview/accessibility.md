@@ -33,7 +33,7 @@ We can use the following key shortcuts to access ListView component without any 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/accessibility-cs1" %}
+{% previewsample "page.domainurl/samples/listview/accessibility-cs1" %}
 
 ## ARIA attributes
 

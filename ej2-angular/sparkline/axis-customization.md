@@ -35,7 +35,7 @@ You can assign date-time values to the sparkline by setting the [`valueType`] pr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs5" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs5" %}
 <!-- markdownlint-disable MD036 -->
 
 **Category**
@@ -56,7 +56,7 @@ You can assign category values to the sparkline by setting [`valueType`] to [`Ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs6" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs6" %}
 
 **Numeric**
 
@@ -76,7 +76,7 @@ You can assign numeric values to the sparkline by setting the [`valueType`] to [
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs7" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs7" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Change min and max values of axis
@@ -97,7 +97,7 @@ You can change the min and max values of x-axis by setting the [`minX`] and [`ma
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs8" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs8" %}
 
 ## Change value of axis
 
@@ -117,7 +117,7 @@ You can set horizontal axis line value of the sparkline by setting [`value`] to 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs9" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs9" %}
 
 ## Axis line customization
 
@@ -137,4 +137,4 @@ Axis of the sparkline can be collapsed using the [`visible`] property in [`lineS
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs10" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs10" %}

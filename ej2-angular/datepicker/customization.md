@@ -49,7 +49,7 @@ Here we have used the `e-disabled` class to highlight the disabled date.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs2" %}
 
 ## Adding mandatory asterisk to placeholder and float label
 
@@ -67,7 +67,7 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/asterisk-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/asterisk-cs1" %}
 
 ## See Also
 

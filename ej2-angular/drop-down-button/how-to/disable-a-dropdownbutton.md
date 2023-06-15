@@ -25,4 +25,4 @@ To disable DropdownButton component, the disabled property can be set as `true`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/disabled-cs2" %}
+{% previewsample "page.domainurl/samples/drop-down-button/disabled-cs2" %}

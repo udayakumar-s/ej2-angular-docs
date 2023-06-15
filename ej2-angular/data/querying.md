@@ -32,7 +32,7 @@ The [`from`](https://ej2.syncfusion.com/documentation/api/data/query/#from) meth
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs12" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs12" %}
 
 ## Projection using `select`
 
@@ -53,7 +53,7 @@ The [`select`](https://ej2.syncfusion.com/documentation/api/data/query/#select) 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs13" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs13" %}
 
 ## Eager loading navigation properties
 
@@ -75,7 +75,7 @@ values are accessed using appropriate field names separated by dot(.) sign.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/expand-cs1" %}
+{% previewsample "page.domainurl/samples/data/expand-cs1" %}
 
 ## Sorting
 
@@ -99,7 +99,7 @@ specify the second argument of [`sortBy`](https://ej2.syncfusion.com/documentati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs14" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs14" %}
 
 > Multi sorting can be performed by simply chaining the multiple `sortBy` methods.
 
@@ -123,7 +123,7 @@ records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query.h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs15" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs15" %}
 
 ### Filter Operators
 
@@ -163,7 +163,7 @@ complex filter criteria, in such cases we can use [`Predicate`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs16" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs16" %}
 
 ## Searching
 
@@ -186,7 +186,7 @@ source whereas filter criteria will be applied to a particular field.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs17" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs17" %}
 
 > You can search particular fields by passing the field name collection in the second argument of [`search`](https://ej2.syncfusion.com/documentation/api/data/query/#search) method.
 
@@ -210,7 +210,7 @@ source whereas filter criteria will be applied to a particular field.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/group-cs1" %}
+{% previewsample "page.domainurl/samples/data/group-cs1" %}
 
 > Multiple grouping can be done by simply chaining the [`group`](https://ej2.syncfusion.com/documentation/api/data/query/#group) method.
 
@@ -234,7 +234,7 @@ particular set of records based on the page size and index.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs18" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs18" %}
 
 ## Aggregation
 
@@ -265,7 +265,7 @@ The built-in aggregate types are,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/aggregate-cs1" %}
+{% previewsample "page.domainurl/samples/data/aggregate-cs1" %}
 
 ## Hierarchical query
 
@@ -291,4 +291,4 @@ accepts a selector function which selects the records from the foreign table.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/hierarchy-cs1" %}
+{% previewsample "page.domainurl/samples/data/hierarchy-cs1" %}

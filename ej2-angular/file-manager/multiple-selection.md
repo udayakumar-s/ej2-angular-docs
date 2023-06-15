@@ -24,6 +24,6 @@ The file manager allows you to select multiple files by enabling the [allowMulti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/multiselect-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/multiselect-cs1" %}
 
 >Note: The File Manager has support to select files and folders initially or dynamically by specifying their names in [selectedItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#selecteditems) property.

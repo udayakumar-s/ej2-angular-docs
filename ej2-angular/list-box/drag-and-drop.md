@@ -38,7 +38,7 @@ The following sample illustrates how to drag and drop an item within the same li
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs6" %}
 
 ## Multiple listbox
 
@@ -58,4 +58,4 @@ In the following sample, the `allowDragAndDrop` property is set as `true` and `s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/multiple-listbox-cs1" %}
+{% previewsample "page.domainurl/samples/listbox/multiple-listbox-cs1" %}

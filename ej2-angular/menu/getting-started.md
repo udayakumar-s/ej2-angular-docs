@@ -191,7 +191,7 @@ The following example shows a basic `Menu` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs3" %}
 
 > This example demonstrates the basic rendering of Menu with items support.
 For more information about data source support, refer to the [`Data Source Binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
@@ -214,7 +214,7 @@ The `Open` and `Save` sub menu items are grouped using the `separator` property 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs4" %}
 
 > The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property should not be given along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel).
 You can also enable the separator to group **horizontal** menu items.

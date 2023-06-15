@@ -26,4 +26,4 @@ The following example illustrates how to enable right-to-left support in Switch 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/switch/rtl-cs1" %}

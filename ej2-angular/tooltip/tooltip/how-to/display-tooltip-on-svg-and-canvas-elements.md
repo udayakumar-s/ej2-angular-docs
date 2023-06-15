@@ -46,4 +46,4 @@ Create the canvas circle element and refer to the following code snippet to rend
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/svg-canvas-cs3" %}
+{% previewsample "page.domainurl/samples/tooltip/svg-canvas-cs3" %}

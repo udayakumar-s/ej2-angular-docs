@@ -26,4 +26,4 @@ The following sample demonstrates preventing toast close with mobile swipe eleme
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs13" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs13" %}

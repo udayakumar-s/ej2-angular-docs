@@ -28,7 +28,7 @@ Label is represented by item name or value. Label will be appeared by specifying
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs27" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs27" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -48,7 +48,7 @@ Positioning the leaf item label using the [`labelPosition`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs28" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs28" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -109,4 +109,4 @@ The [`gap`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafIte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs29" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs29" %}

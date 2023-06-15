@@ -24,4 +24,4 @@ By default, the work hours of the Scheduler is highlighted based on the start an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs52" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs52" %}

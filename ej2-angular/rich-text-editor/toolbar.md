@@ -39,7 +39,7 @@ The default mode of [`toolbar`](https://ej2.syncfusion.com/angular/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/toolbar/expand-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/toolbar/expand-cs1" %}
 
 ## Multi-row Toolbar
 
@@ -57,7 +57,7 @@ Set the type as `MultiRow` in [`toolbarSettings`](https://ej2.syncfusion.com/ang
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/toolbar/multirow-cs3" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/toolbar/multirow-cs3" %}
 
 ## Floating Toolbar
 
@@ -77,7 +77,7 @@ Can Enable or disable the floating toolbar using [`enableFloating`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/floating-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/floating-toolbar-cs1" %}
 
 ## Toolbar Items
 
@@ -192,7 +192,7 @@ In the following sample the Dialog component will be created in Rich Text Editor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs30" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs30" %}
 
 ## Quick inline toolbar
 
@@ -221,6 +221,6 @@ The following sample demonstrates the option to insert the image to the Rich Tex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/quick-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/quick-toolbar-cs1" %}
 
 > To use quick toolbar feature, inject `QuickToolbarService, ImageService, LinkService` in the provider section of `AppModule`.

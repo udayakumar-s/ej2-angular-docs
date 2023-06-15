@@ -26,4 +26,4 @@ To achieve the client side validation in a DateTimePicker component by using `Fo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/datetimepicker/how-to-cs1" %}

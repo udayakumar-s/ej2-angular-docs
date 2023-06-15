@@ -186,7 +186,7 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs12" %}
 
 ## Configure the popup list
 
@@ -209,6 +209,6 @@ In the following sample, popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs13" %}
 
 > You can refer to our [Angular MultiSelect](https://www.syncfusion.com/angular-ui-components/angular-multiselect-dropdown) feature tour page for its groundbreaking feature representations. You can also explore our [Angular MultiSelect example](https://ej2.syncfusion.com/angular/demos/#/material/multi-select/default) that shows how to render the MultiSelect Dropdown in Angular.

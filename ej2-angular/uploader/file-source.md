@@ -29,7 +29,7 @@ Refer to the following example.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs7" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs7" %}
 
 ### Save action for paste to upload
 
@@ -74,7 +74,7 @@ Refer to the following example to upload files to the server.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/directory-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/directory-cs1" %}
 
 ### Save action for directory upload
 
@@ -138,7 +138,7 @@ The element can be represented as HTML element or element’s ID.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/draganddrop-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/draganddrop-cs1" %}
 
 ### Customize drop area
 
@@ -157,7 +157,7 @@ The class **e-upload-drag-hover** is available to handle this customization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/cus_draganddrop-cs1" %}
+{% previewsample "page.domainurl/samples/uploader/cus_draganddrop-cs1" %}
 
 > You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
 

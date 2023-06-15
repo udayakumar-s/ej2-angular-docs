@@ -31,7 +31,7 @@ The following example disables the weekends of every month by using `renderDayCe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/accessibility-cs2" %}
+{% previewsample "page.domainurl/samples/datetimepicker/accessibility-cs2" %}
 
 ## Adding mandatory asterisk to placeholder and float label
 
@@ -49,7 +49,7 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/asterisk-cs1" %}
+{% previewsample "page.domainurl/samples/datetimepicker/asterisk-cs1" %}
 
 ## See Also
 

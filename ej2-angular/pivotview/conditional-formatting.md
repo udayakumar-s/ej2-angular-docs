@@ -26,7 +26,7 @@ The conditional formatting can be applied at runtime through the built-in dialog
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs16" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs16" %}
 
 Conditional formatting can also be included in the pivot table through code-behind using the [`conditionalFormatSetting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/conditionalFormatSettings/). The required properties to apply a new conditional formatting are,
 
@@ -59,7 +59,7 @@ To use the conditional formatting feature, User need to inject the `ConditionalF
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs17" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs17" %}
 
 ## Conditional formatting for all fields
 
@@ -77,7 +77,7 @@ Allows end user to apply conditional formatting commonly for all value fields ju
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs18" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs18" %}
 
 ## Conditional formatting for specific value field
 
@@ -95,7 +95,7 @@ Allows end user to apply conditional formatting to a specific value field by set
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs19" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs19" %}
 
 ## Editing and removing existing conditional format
 
@@ -129,7 +129,7 @@ The event [`conditionalFormatting`](https://ej2.syncfusion.com/angular/documenta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs20" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs20" %}
 
 ## See Also
 

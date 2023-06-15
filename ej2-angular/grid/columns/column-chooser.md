@@ -16,13 +16,13 @@ To use column chooser, inject **ColumnChooserService** in the provider section o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/columnchooser-cs1/app/app.component.ts %}
+{% include code-snippet/grid/columnchooser-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/columnchooser-cs1/app/app.module.ts %}
+{% include code-snippet/grid/columnchooser-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/columnchooser-cs1/app/main.ts %}
+{% include code-snippet/grid/columnchooser-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ The Column chooser can be displayed on a page through external button by invokin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/columnschooser-method-cs1/app/app.component.ts %}
+{% include code-snippet/grid/columnschooser-method-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/columnschooser-method-cs1/app/app.module.ts %}
+{% include code-snippet/grid/columnschooser-method-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/columnschooser-method-cs1/app/main.ts %}
+{% include code-snippet/grid/columnschooser-method-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

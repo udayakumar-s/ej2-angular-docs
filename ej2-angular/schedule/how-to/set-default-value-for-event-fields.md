@@ -24,4 +24,4 @@ Event window default fields name like Title, Location, etc.. can be customized a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs51" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs51" %}

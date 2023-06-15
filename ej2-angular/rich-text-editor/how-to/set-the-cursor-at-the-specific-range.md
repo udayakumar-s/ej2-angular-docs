@@ -24,4 +24,4 @@ This can be achieved by using `setRange` method in the RTE using `NodeSelection`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/cut-copy-cs2" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/cut-copy-cs2" %}

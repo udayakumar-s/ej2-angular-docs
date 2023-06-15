@@ -15,13 +15,13 @@ The [`childGrid`](https://ej2.syncfusion.com/angular/documentation/api/grid/#chi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/default-cs5/app/app.component.ts %}
+{% include code-snippet/grid/default-cs5/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/default-cs5/app/app.module.ts %}
+{% include code-snippet/grid/default-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/default-cs5/app/main.ts %}
+{% include code-snippet/grid/default-cs5/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -35,13 +35,13 @@ By default, grid renders in collapsed state. You can expand all child grid rows 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/default-cs6/app/app.component.ts %}
+{% include code-snippet/grid/default-cs6/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/default-cs6/app/app.module.ts %}
+{% include code-snippet/grid/default-cs6/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/default-cs6/app/main.ts %}
+{% include code-snippet/grid/default-cs6/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -53,13 +53,13 @@ You can expand a particular child grid at initial rendering by invoking the [`ex
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/default-cs7/app/app.component.ts %}
+{% include code-snippet/grid/default-cs7/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/default-cs7/app/app.module.ts %}
+{% include code-snippet/grid/default-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/default-cs7/app/main.ts %}
+{% include code-snippet/grid/default-cs7/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -71,13 +71,13 @@ You can dynamically load child grid dataSource by using the [`load`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/default-cs8/app/app.component.ts %}
+{% include code-snippet/grid/default-cs8/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/default-cs8/app/app.module.ts %}
+{% include code-snippet/grid/default-cs8/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/default-cs8/app/main.ts %}
+{% include code-snippet/grid/default-cs8/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -91,13 +91,13 @@ In the below sample, we have bound the child and parent grid with different fiel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/default-cs9/app/app.component.ts %}
+{% include code-snippet/grid/default-cs9/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/default-cs9/app/app.module.ts %}
+{% include code-snippet/grid/default-cs9/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/default-cs9/app/main.ts %}
+{% include code-snippet/grid/default-cs9/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ In the below demo, **EmployeeID** field relates the parent and child grids. To a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/default-cs10/app/app.component.ts %}
+{% include code-snippet/grid/default-cs10/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/default-cs10/app/app.module.ts %}
+{% include code-snippet/grid/default-cs10/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/default-cs10/app/main.ts %}
+{% include code-snippet/grid/default-cs10/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -131,13 +131,13 @@ In the below sample, we have shown custom image in **Employee Image** column of 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/default-cs11/app/app.component.ts %}
+{% include code-snippet/grid/default-cs11/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/default-cs11/app/app.module.ts %}
+{% include code-snippet/grid/default-cs11/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/default-cs11/app/main.ts %}
+{% include code-snippet/grid/default-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -151,13 +151,13 @@ While expanding the child Grid, the `detailDataBound` event will be triggered. I
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/default-cs12/app/app.component.ts %}
+{% include code-snippet/grid/default-cs12/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/default-cs12/app/app.module.ts %}
+{% include code-snippet/grid/default-cs12/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/default-cs12/app/main.ts %}
+{% include code-snippet/grid/default-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

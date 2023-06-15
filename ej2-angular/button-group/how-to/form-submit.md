@@ -27,4 +27,4 @@ Now, the value that is in checked state will be sent on form submit.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs7" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs7" %}

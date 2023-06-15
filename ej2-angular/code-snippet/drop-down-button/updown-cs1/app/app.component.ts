@@ -11,7 +11,7 @@ import { ItemModel, BeforeOpenCloseMenuEventArgs, DropDownButtonComponent  } fro
 
 export class AppComponent {
    @ViewChild('dropdownbutton')
-   public dropdownbutton: DropDownButtonComponent;
+   public dropdownbutton: DropDownButtonComponent | any;
    // Initialize action items.
    public items: ItemModel[] = [
     {

@@ -7,7 +7,7 @@ import { Query, DataManager, Predicate } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
     // specifies the template path for MultiSelect component
-    templateUrl: `./app/cascading.html`
+    templateUrl: `cascading.html`
 })
 export class AppComponent {
     constructor() {
@@ -45,14 +45,14 @@ export class AppComponent {
     //set the placeholder to city MultiSelect input
     public cityWatermark: string = "Select cities";
     @ViewChild('country')
-    public countryObj: MultiSelectComponent;
+    public countryObj?: MultiSelectComponent | any;
     @ViewChild('state')
-    public stateObj: MultiSelectComponent;
+    public stateObj?: MultiSelectComponent | any;
     @ViewChild('city')
-    public cityObj: MultiSelectComponent;
+    public cityObj?: MultiSelectComponent | any;
     public countryChange(): void {
       //Query the data source based on country MultiSelect selected value
-        let pred:Predicate;
+        let pred:Predicate | any;
         if(this.countryObj.value)
             for(var d=0;d<this.countryObj.value.length;d++){
                 if(pred)
@@ -73,7 +73,7 @@ export class AppComponent {
     }
     public stateChange(): void {
          //Query the data source based on country MultiSelect selected value
-        let pred:Predicate,temp:any;
+        let pred:Predicate| any,temp:any;
         if(this.stateObj.value)
             for(var d=0;d<this.stateObj.value.length;d++){
                 if(pred)

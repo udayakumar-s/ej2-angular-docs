@@ -26,7 +26,7 @@ The predefined dialogs supports dragging within its target container by grabbing
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/alert-drag-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/alert-drag-cs1" %}
 
 ## Confirm drag
 
@@ -42,7 +42,7 @@ The predefined dialogs supports dragging within its target container by grabbing
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/confirm-drag-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/confirm-drag-cs1" %}
 
 ## Prompt drag
 
@@ -58,4 +58,4 @@ The predefined dialogs supports dragging within its target container by grabbing
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/prompt-drag-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/prompt-drag-cs1" %}

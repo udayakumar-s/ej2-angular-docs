@@ -10,6 +10,9 @@ import { DialogUtility } from '@syncfusion/ej2-popups';
 })
 
 export class AppComponent implements OnInit {
+    ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
     public promptBtnClick = (): void => {
     DialogUtility.confirm({
         title: 'Join Chat Group',

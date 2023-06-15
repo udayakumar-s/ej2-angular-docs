@@ -42,7 +42,7 @@ In the following sample, the table has been injected from table module.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs27" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs27" %}
 
 ## Quick Toolbar
 
@@ -144,4 +144,4 @@ The following image explains the table split action.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs28" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs28" %}

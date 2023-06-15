@@ -28,7 +28,7 @@ By default, it initialize target to the body element. [`target`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/custom-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/custom-cs1" %}
 
 ## See Also
 

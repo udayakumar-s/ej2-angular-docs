@@ -28,4 +28,4 @@ You can display the suggestions list items in a specific order. It has possible 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs9" %}

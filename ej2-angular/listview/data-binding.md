@@ -55,7 +55,7 @@ ListView supports to load the array of primitive data like string and numbers. H
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/listview/data-binding-cs1" %}
 
 ### Array of JSON data
 
@@ -75,7 +75,7 @@ In below example, role column has mapped with text field.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/data-binding-cs2" %}
+{% previewsample "page.domainurl/samples/listview/data-binding-cs2" %}
 
 ## Bind to remote data
 
@@ -95,4 +95,4 @@ In the below sample, displayed first 6 Products from Product table of NorthWind 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/data-binding-cs3" %}
+{% previewsample "page.domainurl/samples/listview/data-binding-cs3" %}

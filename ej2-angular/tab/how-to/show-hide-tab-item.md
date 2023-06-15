@@ -24,4 +24,4 @@ The [`hideTab`](https://ej2.syncfusion.com/angular/documentation/api/tab#hideTab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/show-hide-tab-cs1" %}
+{% previewsample "page.domainurl/samples/tab/show-hide-tab-cs1" %}

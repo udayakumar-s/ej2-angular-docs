@@ -28,7 +28,7 @@ When the pointer animation is completed, the [`animationComplete`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs14" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs14" %}
 
 ## annotationRender
 
@@ -46,7 +46,7 @@ Before the annotation is rendered in the Linear Gauge, the [`annotationRender`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs15" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs15" %}
 
 ## axisLabelRender
 
@@ -64,7 +64,7 @@ Before each axis label is rendered in the Linear Gauge, the [`axisLabelRender`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs16" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs16" %}
 
 ## beforePrint
 
@@ -82,7 +82,7 @@ The [`beforePrint`](https://ej2.syncfusion.com/angular/documentation/api/linear-
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/print-and-export-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/print-and-export-cs1" %}
 
 ## dragEnd
 
@@ -100,7 +100,7 @@ The [`dragEnd`](https://ej2.syncfusion.com/angular/documentation/api/linear-gaug
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs17" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs17" %}
 
 ## dragMove
 
@@ -118,7 +118,7 @@ The [`dragMove`](https://ej2.syncfusion.com/angular/documentation/api/linear-gau
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs18" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs18" %}
 
 ## dragStart
 
@@ -136,7 +136,7 @@ When the pointer drag begins, the [`dragStart`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs19" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs19" %}
 
 ## gaugeMouseDown
 
@@ -154,7 +154,7 @@ When mouse is pressed down on the gauge, the [`gaugeMouseDown`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs20" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs20" %}
 
 ## gaugeMouseLeave
 
@@ -172,7 +172,7 @@ When mouse pointer moves over the gauge, the [`gaugemouseleave`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs21" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs21" %}
 
 ## gaugeMouseMove
 
@@ -190,7 +190,7 @@ When mouse pointer leaves the gauge, the [`gaugeMouseMove`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs22" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs22" %}
 
 ## gaugeMouseUp
 
@@ -208,7 +208,7 @@ When the mouse pointer is released over the Linear Gauge, the [`gaugeMouseUp`](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs23" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs23" %}
 
 ## load
 
@@ -226,7 +226,7 @@ Before the Linear Gauge is loaded, the [`load`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs24" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs24" %}
 
 ## loaded
 
@@ -244,7 +244,7 @@ After the Linear Gauge has been loaded, the [`loaded`](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs25" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs25" %}
 
 ## resized
 
@@ -262,7 +262,7 @@ After the window resizing, the [`resized`](https://ej2.syncfusion.com/angular/do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs26" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs26" %}
 
 ## tooltipRender
 
@@ -280,7 +280,7 @@ The [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/linea
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs27" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs27" %}
 
 ## valueChange
 
@@ -298,4 +298,4 @@ The [`valueChange`](https://ej2.syncfusion.com/angular/documentation/api/linear-
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs28" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs28" %}

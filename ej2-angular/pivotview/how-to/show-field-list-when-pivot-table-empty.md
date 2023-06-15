@@ -24,4 +24,4 @@ When there are no fields in a pivot table's row, column, value, and filter axes,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs170" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs170" %}

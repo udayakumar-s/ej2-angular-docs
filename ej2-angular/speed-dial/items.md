@@ -40,7 +40,7 @@ You can show icon only in SpeedDial items by setting [`iconCss`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/items-cs1" %}
+{% previewsample "page.domainurl/samples/speed-dial/items-cs1" %}
 
 ### Text only
 
@@ -58,7 +58,7 @@ You can show only text in Speed Dial items by setting [`text`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/items-cs2" %}
+{% previewsample "page.domainurl/samples/speed-dial/items-cs2" %}
 
 ### Icon with text
 
@@ -76,7 +76,7 @@ You can show icon along with text in Speed Dial items by setting [`iconCss`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/items-cs3" %}
+{% previewsample "page.domainurl/samples/speed-dial/items-cs3" %}
 
 ### Disabled
 
@@ -94,7 +94,7 @@ You can disable Speed Dial items by setting [`disabled`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/items-cs4" %}
+{% previewsample "page.domainurl/samples/speed-dial/items-cs4" %}
 
 ## Animation
 
@@ -114,7 +114,7 @@ Below example demonstrates the Speed Dial items with applied Zoom effect.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/items-cs5" %}
+{% previewsample "page.domainurl/samples/speed-dial/items-cs5" %}
 
 ## Template
 

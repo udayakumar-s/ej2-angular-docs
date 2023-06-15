@@ -26,4 +26,4 @@ The following example illustrates how to add link to a Button.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/round-button-cs1" %}
+{% previewsample "page.domainurl/samples/button/round-button-cs1" %}

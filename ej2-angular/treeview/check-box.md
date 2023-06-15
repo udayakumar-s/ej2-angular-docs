@@ -38,7 +38,7 @@ In the following example, the `showCheckBox` property is enabled.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs1" %}
 
 ## Checked nodes
 
@@ -60,7 +60,7 @@ If any more nodes are checked, the checked nodes' IDs will be displayed in alert
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs2" %}
 
 ## See Also
 

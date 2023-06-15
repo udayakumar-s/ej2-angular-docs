@@ -18,13 +18,13 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/reactive-aggregates-batchedit-cs1/app/app.component.ts %}
+{% include code-snippet/grid/reactive-aggregates-batchedit-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/reactive-aggregates-batchedit-cs1/app/app.module.ts %}
+{% include code-snippet/grid/reactive-aggregates-batchedit-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/reactive-aggregates-batchedit-cs1/app/main.ts %}
+{% include code-snippet/grid/reactive-aggregates-batchedit-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ In the following code, the input event for the Freight column editor has been re
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/reactive-aggregates-inlineedit-cs1/app/app.component.ts %}
+{% include code-snippet/grid/reactive-aggregates-inlineedit-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/reactive-aggregates-inlineedit-cs1/app/app.module.ts %}
+{% include code-snippet/grid/reactive-aggregates-inlineedit-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/reactive-aggregates-inlineedit-cs1/app/main.ts %}
+{% include code-snippet/grid/reactive-aggregates-inlineedit-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

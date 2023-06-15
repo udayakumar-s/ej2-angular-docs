@@ -47,7 +47,7 @@ Other properties include:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs184" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs184" %}
 
 You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`allowNumberFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allownumberformatting) property to **true**. The same has been discussed in some of the upcoming topics.
 
@@ -81,7 +81,7 @@ You can add any custom format directly to the [`format`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs185" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs185" %}
 
 ## Toolbar
 
@@ -99,7 +99,7 @@ You can enable formatting dialog option in the toolbar by adding `NumberFormatti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs186" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs186" %}
 
 ## Invoking formatting dialog through external button
 
@@ -117,7 +117,7 @@ You can invoke the formatting dialog by clicking an external button using the `S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs187" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs187" %}
 
 ## Events
 
@@ -145,7 +145,7 @@ In the below sample, the customization done in number formatting dialog for the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs188" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs188" %}
 
 ## See Also
 

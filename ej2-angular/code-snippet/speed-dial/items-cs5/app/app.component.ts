@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-
+import { SpeedDialAnimationSettingsModel, SpeedDialItemModel } from '@syncfusion/ej2-angular-buttons';
 @Component({
     selector: 'app-root',
     template: `<div id="targetElement" style="position:relative;min-height:350px;border:1px solid;"><div>

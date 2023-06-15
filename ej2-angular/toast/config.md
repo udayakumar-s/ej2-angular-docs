@@ -30,7 +30,7 @@ Toast can be created with the notification message. The message contains [`title
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs4" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs4" %}
 
 ## Specifying custom target
 
@@ -66,7 +66,7 @@ Here below sample demonstrates the combination of `target`, `showCloseButton`, `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs5" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs5" %}
 
 ## Width and height
 
@@ -91,7 +91,7 @@ Both width and height property allows setting pixels/numbers/percentage. The num
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs6" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs6" %}
 
 ## See Also
 

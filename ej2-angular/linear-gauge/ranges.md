@@ -25,7 +25,7 @@ Range is the set of values in the axis. The range can be defined using the [`sta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/ranges-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/ranges-cs1" %}
 
 ## Customizing the range
 
@@ -50,7 +50,7 @@ Ranges can be customized using the following properties in [`e-range`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/ranges-cs2" %}
+{% previewsample "page.domainurl/samples/linear-gauge/ranges-cs2" %}
 
 ## Setting the range color for the labels
 
@@ -68,7 +68,7 @@ To set the color of the labels like the range color, set the [`useRangeColor`](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/ranges-cs3" %}
+{% previewsample "page.domainurl/samples/linear-gauge/ranges-cs3" %}
 
 ## Multiple ranges
 
@@ -86,7 +86,7 @@ Multiple ranges can be added to the Linear Gauge by adding collections of [`e-ra
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/ranges-cs4" %}
+{% previewsample "page.domainurl/samples/linear-gauge/ranges-cs4" %}
 
 ## Gradient Color
 
@@ -111,7 +111,7 @@ Using linear-gradient, colors will be applied in a linear progression. The start
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/ranges-cs5" %}
+{% previewsample "page.domainurl/samples/linear-gauge/ranges-cs5" %}
 
 ### Radial Gradient
 
@@ -129,6 +129,6 @@ Using radial gradient, colors will be applied in circular progression. The inner
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/ranges-cs6" %}
+{% previewsample "page.domainurl/samples/linear-gauge/ranges-cs6" %}
 
 >If we set both gradients for the range, only the linear gradient gets rendered. If we set the [`startValue`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient/#startvalue) and [`endValue`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient/#endvalue) property of the [`linearGradient`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient/) as empty strings, then the radial gradient gets rendered in the range of the Linear Gauge.

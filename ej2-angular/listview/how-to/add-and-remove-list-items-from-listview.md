@@ -37,4 +37,4 @@ delete icon list item to
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/addItem-cs2" %}
+{% previewsample "page.domainurl/samples/listview/addItem-cs2" %}

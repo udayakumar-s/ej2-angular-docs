@@ -28,4 +28,4 @@ The following sample demonstrates how to config the InsertCode button in toolbar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/format-code-block-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/format-code-block-cs1" %}

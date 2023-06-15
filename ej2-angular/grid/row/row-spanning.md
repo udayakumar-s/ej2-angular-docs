@@ -20,13 +20,13 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/spanning-cs2/app/app.component.ts %}
+{% include code-snippet/grid/spanning-cs2/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/spanning-cs2/app/app.module.ts %}
+{% include code-snippet/grid/spanning-cs2/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/spanning-cs2/app/main.ts %}
+{% include code-snippet/grid/spanning-cs2/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

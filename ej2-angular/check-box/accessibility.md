@@ -45,4 +45,4 @@ When the checkbox has focus, pressing the Space key changes the state of the che
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/label-and-size-cs1" %}
+{% previewsample "page.domainurl/samples/check-box/label-and-size-cs1" %}

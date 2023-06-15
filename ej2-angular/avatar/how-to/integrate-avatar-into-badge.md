@@ -26,4 +26,4 @@ badges (.`e-badge-notification`) in the following sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/badge-cs2" %}
+{% previewsample "page.domainurl/samples/avatar/badge-cs2" %}

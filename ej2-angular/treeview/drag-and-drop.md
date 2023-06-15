@@ -42,7 +42,7 @@ In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs6" %}
 
 ## Multiple-node drag and drop
 
@@ -64,7 +64,7 @@ In the following sample,  the `allowMultiSelection` property is  enabled along w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/tree-view/getting-started-cs7" %}
 
 ## See Also
 

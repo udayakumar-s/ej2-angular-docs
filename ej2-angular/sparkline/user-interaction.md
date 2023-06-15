@@ -32,7 +32,7 @@ The following code example shows enabling tooltip for sparkline with format.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs35" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs35" %}
 
 ### Tooltip customization
 
@@ -52,7 +52,7 @@ The fill color, text styles, format, and border of the tooltip can be customized
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs36" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs36" %}
 
 ### Tooltip template
 
@@ -83,7 +83,7 @@ Sparkline tooltip has template support. By using tooltip template, you can custo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs37" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs37" %}
 
 ## Track line
 
@@ -107,4 +107,4 @@ To use track line in sparkline, inject the `SparklineTooltip` module to sparklin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs38" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs38" %}

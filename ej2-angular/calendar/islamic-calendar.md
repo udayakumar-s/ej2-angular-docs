@@ -32,4 +32,4 @@ The following example demonstrates how to display the Islamic Calendar (Hijri Ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/islamic-calendar-cs1" %}
+{% previewsample "page.domainurl/samples/calendar/islamic-calendar-cs1" %}

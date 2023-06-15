@@ -34,4 +34,4 @@ DropDownList. Here, the `dataBind` method is used to reflect the property change
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/cascading-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/cascading-cs1" %}

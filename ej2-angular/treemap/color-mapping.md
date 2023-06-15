@@ -28,7 +28,7 @@ Range color mapping is used to apply color to the items by giving specific range
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs1" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs1" %}
 
 ## Equal color mapping
 
@@ -46,7 +46,7 @@ Equal color mapping is used to fill colors to each item by specifying equal valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs2" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs2" %}
 
 ## Desaturation color mapping
 
@@ -64,7 +64,7 @@ Desaturation color mapping is used to apply colors to the items based on the [`m
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs3" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs3" %}
 
 ## Palette color mapping
 
@@ -82,7 +82,7 @@ The palette color mapping is used to fill the color to each group or leaf item b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs4" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs4" %}
 
 ## Desaturation with multiple colors
 
@@ -100,7 +100,7 @@ Multiple colors are used as gradient effect to specific shapes based on the rang
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs5" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs5" %}
 
 ## Color for items excluded from color mapping
 
@@ -118,7 +118,7 @@ Get the excluded ranges from data source using the color mapping and apply the s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs6" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs6" %}
 
 ## Bind the colors to the items from data source
 
@@ -136,4 +136,4 @@ To set the color for each item from the data source, bind the data source proper
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs7" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs7" %}

@@ -52,4 +52,4 @@ In the following preview sample, focusing the input element through `tab` key op
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs1" %}

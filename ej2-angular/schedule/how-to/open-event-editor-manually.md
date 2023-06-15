@@ -26,7 +26,7 @@ Schedule allows user to manually open the event editor on specific time or on ce
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs48" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs48" %}
 
 ## Open editor window on single click
 
@@ -44,4 +44,4 @@ By default, Scheduler Editor window will open when double clicking the cells or 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs49" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs49" %}

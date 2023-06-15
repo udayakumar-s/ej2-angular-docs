@@ -27,4 +27,4 @@ property which is used to customize the Tab component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/custom-styles-cs1" %}
+{% previewsample "page.domainurl/samples/tab/custom-styles-cs1" %}

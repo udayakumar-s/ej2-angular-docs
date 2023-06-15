@@ -39,7 +39,7 @@ In the below example, axis labels are globalized to **EUR**.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-internationalization-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-internationalization-cs1" %}
 
 ## Right-to-left
 
@@ -59,4 +59,4 @@ The following example illustrates the right to left rendering of the Circular Ga
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-rtl-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-rtl-cs1" %}

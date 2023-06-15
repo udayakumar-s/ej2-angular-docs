@@ -61,6 +61,6 @@ In the below demo, the button click will enable/disable the Tree Grid and its ac
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/enable-disable-actions-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/enable-disable-actions-cs1" %}
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

@@ -24,7 +24,7 @@ public data: { [key: string]: Object }[] = [
 ];
 
 btnclick(){
-    let listboxobj:ListBox = getInstance(document.getElementById("listbox"), ListBox) as ListBox;
+    let listboxobj:ListBox = getInstance((document as any).getElementById("listbox"), ListBox) as ListBox;
     let addItem: { [key: string]: Object }[] = [
       { text: 'Bugatti Veyron Super Sport', id: 'list-03' }, { text: 'SSC Ultimate Aero', id: 'list-04' }
     ];

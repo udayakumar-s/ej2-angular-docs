@@ -36,7 +36,7 @@ To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/node-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/node-cs1" %}
 
 >Note: Node id should not begin with numbers(should begin with a letter).Node Id should be unique for all the shapes and connectors.
 
@@ -60,7 +60,7 @@ The following code illustrates how to add a node.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/run-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/run-cs1" %}
 
 ## Add node from palette
 
@@ -113,7 +113,7 @@ The following code illustrates how to change the `pivot` value.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/position-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/position-cs1" %}
 
 ## Flip
 
@@ -141,7 +141,7 @@ The following code illustrates how to provide the mirror image of the original e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/position-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/position-cs2" %}
 
 >Note: The flip is also applicable for group and BPMN shapes.
 
@@ -165,7 +165,7 @@ The following code illustrates how to customize the appearance of the shape.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/appear-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/appear-cs1" %}
 
 ## Gradient
 
@@ -199,7 +199,7 @@ There are two types of gradients as follows:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/linearGradient-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/linearGradient-cs1" %}
 
 ## Radial gradient
 
@@ -219,7 +219,7 @@ There are two types of gradients as follows:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/radialGradient-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/radialGradient-cs1" %}
 
 ## Shadow
 
@@ -237,7 +237,7 @@ Diagram provides support to add [`shadow`](https://ej2.syncfusion.com/angular/do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/shadow-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/shadow-cs1" %}
 
 ## Customizing shadow
 
@@ -255,7 +255,7 @@ The angle, distance, and opacity of the shadow can be customized with the shadow
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/shadow2-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/shadow2-cs1" %}
 
 ## Icon
 
@@ -281,7 +281,7 @@ The following code example illustrates how to create an icon of various shapes.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/nodes/icon-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/nodes/icon-cs1" %}
 
 ## Customizing expand icon
 

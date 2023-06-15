@@ -34,4 +34,4 @@ The ListView component triggers events based on its actions. The events can be u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/listview/getting-started-cs7" %}

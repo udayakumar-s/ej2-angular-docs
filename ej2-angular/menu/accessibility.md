@@ -83,4 +83,4 @@ Focuses the last item.</td></tr>
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs1" %}

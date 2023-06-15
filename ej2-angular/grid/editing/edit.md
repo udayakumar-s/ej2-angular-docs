@@ -24,13 +24,13 @@ To learn about what are all the edit modes and edit types are available in Angul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs18/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs18/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs18/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs18/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs18/app/main.ts %}
+{% include code-snippet/grid/edit-cs18/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -45,13 +45,13 @@ The grid toolbar has the [built-in items](../../toolbar/item-configuration) to e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs19/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs19/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs19/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs19/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs19/app/main.ts %}
+{% include code-snippet/grid/edit-cs19/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -65,13 +65,13 @@ In the following demo, editing is disabled for the **CustomerID** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs20/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs20/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs20/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs20/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs20/app/main.ts %}
+{% include code-snippet/grid/edit-cs20/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -85,13 +85,13 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs21/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs21/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs21/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs21/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs21/app/main.ts %}
+{% include code-snippet/grid/edit-cs21/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs22/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs22/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs22/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs22/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs22/app/main.ts %}
+{% include code-snippet/grid/edit-cs22/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -121,13 +121,13 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs23/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs23/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs23/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs23/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs23/app/main.ts %}
+{% include code-snippet/grid/edit-cs23/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -145,13 +145,13 @@ In the following example, the textbox is rendered in the Freight column using a 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include samples/grid/edit-cs24/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs24/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include samples/grid/edit-cs24/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs24/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include samples/grid/edit-cs24/app/main.ts %}
+{% include code-snippet/grid/edit-cs24/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
