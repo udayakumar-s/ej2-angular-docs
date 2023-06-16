@@ -72,13 +72,13 @@ export class AppComponent {
         enable: true,
     };
     // custom code start
-    public seriesRender(args: ISeriesRenderEventArgs): void {
+    public seriesRender(args: ISeriesRenderEventArgs | any): void {
         for (let i = 0; i < args.data.length; i++) {
             if (!total[args.data[i].x]) total[args.data[i].x] = 0;
             total[args.data[i].x] += parseInt(args.data[i].y);
         }
     }
-    public textRender(args: ITextRenderEventArgs): void {
+    public textRender(args: ITextRenderEventArgs | any): void {
         let percentage: number | string = (parseInt(args.text) / total[args.point.x]) * 100;
         percentage = percentage % 1 === 0 ? percentage : percentage.toFixed(2);
         args.text = percentage + '%';

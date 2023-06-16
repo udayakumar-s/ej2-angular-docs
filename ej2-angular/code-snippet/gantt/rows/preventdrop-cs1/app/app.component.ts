@@ -13,8 +13,8 @@ import { Gantt } from '@syncfusion/ej2-gantt';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    public data: object[];
-    public taskSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
     public ngOnInit(): void {
         this.data = ganttData;
         this.taskSettings = {

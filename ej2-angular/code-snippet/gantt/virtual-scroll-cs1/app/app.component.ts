@@ -15,11 +15,11 @@ import { GanttComponent, VirtualScrollService } from '@syncfusion/ej2-angular-ga
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
-    public labelSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
+    public labelSettings?: object;
     public ngOnInit(): void {
         let tempData: any[] = [
     {

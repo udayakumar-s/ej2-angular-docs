@@ -26,7 +26,7 @@ Error bars are graphical representations of the variability of data and used on 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/errorbar-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/errorbar-cs1" %}
 
 ## Error bar type
 
@@ -44,7 +44,7 @@ To change the error bar rendering type using [`type`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/errorbar-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/errorbar-cs2" %}
 
 ## Customizing error bar type
 
@@ -62,7 +62,7 @@ To customize the error bar type, set error bar [`type`](https://ej2.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/errorbar-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/errorbar-cs3" %}
 
 ## Error bar mode
 
@@ -80,7 +80,7 @@ Error bar mode is used to define whether the error bar line has to be drawn hori
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/errorbar-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/errorbar-cs4" %}
 
 ## Error bar direction
 
@@ -98,7 +98,7 @@ To change the error bar direction to plus, minus or both side using [`direction`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/errorbar-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/errorbar-cs5" %}
 
 ## Customizing error bar cap
 
@@ -116,7 +116,7 @@ To customize the error bar cap length, width and fill color, you can use [`error
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/errorbar-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/errorbar-cs6" %}
 
 ## Customizing error bar color
 
@@ -134,7 +134,7 @@ To customize the error bar color for individual errors, use the [`errorBarColorM
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/errorbar-cs7" %}
+{% previewsample "page.domainurl/samples/chart/series/errorbar-cs7" %}
 
 ## See Also
 

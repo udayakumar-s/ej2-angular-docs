@@ -14,12 +14,12 @@ import { projectNewData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public columns: object[];
-    public splitterSettings: object;
-    public searchSettings: SearchSettingsModel;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public columns?: object[];
+    public splitterSettings?: object;
+    public searchSettings?: SearchSettingsModel;
+    public toolbar?: ToolbarItem[];
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {

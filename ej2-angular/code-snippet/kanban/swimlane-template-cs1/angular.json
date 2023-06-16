@@ -25,14 +25,7 @@
             ],
             "assets": [
 							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.css", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""}
+							{"glob": "*.css", "input": "", "output": ""}
             ]
           },
           "configurations": {

@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'
             [chartArea]="chartArea" [tooltip]="tooltip">
         <e-series-collection>
             <e-series [dataSource]='columnData' type='Column' xName='x' yName='y' width="2" [marker]="marker" [dragSettings]="dragSettings"></e-series>
@@ -14,15 +13,15 @@ import { Component, OnInit } from '@angular/core';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public columnData: Object[];
-    public lineData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public chartArea: Object;
-    public marker: Object;
-    public dragSettings: Object;
-    public tooltip: Object;
+    public primaryXAxis?: Object;
+    public columnData?: Object[];
+    public lineData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public chartArea?: Object;
+    public marker?: Object;
+    public dragSettings?: Object;
+    public tooltip?: Object;
     ngOnInit(): void {
         this.columnData = [
                  { x: '2005', y: 21 }, { x: '2006', y: 60 },

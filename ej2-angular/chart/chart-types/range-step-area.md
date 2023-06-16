@@ -25,7 +25,7 @@ To render a range step area series, use series [`type`](https://ej2.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/rangesteparea-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/rangesteparea-cs1" %}
 
 ## Series customization
 
@@ -47,7 +47,7 @@ The following properties can be used to customize the `range step area` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/rangesteparea-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/rangesteparea-cs" %}
 
 ## See Also
 

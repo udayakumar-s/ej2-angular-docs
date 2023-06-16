@@ -39,4 +39,4 @@ In the below example axis labels, tooltip and crosshair labels are globalized to
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/internationalization-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/internationalization-cs1" %}

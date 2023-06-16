@@ -24,4 +24,4 @@ The excel export provides an option to define datasource dynamically before expo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/customData-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/customData-cs1" %}

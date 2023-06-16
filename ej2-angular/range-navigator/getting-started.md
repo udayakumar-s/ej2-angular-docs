@@ -160,7 +160,7 @@ Since the JSON contains Datetime data, set the `valueType` as `DateTime`. By def
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started/default-cs6" %}
+{% previewsample "page.domainurl/samples/rangenavigator/getting-started/default-cs6" %}
 
 >Note: Get data from [here](https://ej2.syncfusion.com/demos/src/range-navigator/data-source/default-data.json).
 
@@ -182,4 +182,4 @@ The tooltip is useful to show the selected data. You can enable tooltip by setti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/getting-started/tooltip-cs1" %}

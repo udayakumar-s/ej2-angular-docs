@@ -20,23 +20,24 @@ import { GanttComponent, ToolbarItem, EditSettingsModel, SelectionSettingsModel 
 })
 export class AppComponent{
     // Data for Gantt
-   public data: object[];
-    public taskSettings: object;
-    public columns: object[];
-    public labelSettings: object;
-    public selectionSettings: object;
-    public projectStartDate: Date;
-    public projectEndDate: Date;
-    public toolbar: object;
-    public splitterSettings: object;
-    public editSettings: object;
-    public gridLines: string;
-    public resources: object[];
-    public resourceFields: object;
+   public data?: object[];
+    public taskSettings?: object;
+    public columns?: object[];
+    public labelSettings?: object;
+    public selectionSettings?: object;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    public toolbar?: object;
+    public splitterSettings?: object;
+    public editSettings?: object;
+    public gridLines?: string;
+    public resources?: object[];
+    public resourceFields?: object;
     public field: Object = { dataSource: editingResources, id: 'resourceId', text: 'resourceName' };
     public allowDragAndDrop: boolean = true;
     @ViewChild('gantt')
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
+timelineSettings: any;
     public ngOnInit(): void {
         this.data = editingData;
         this.resources = editingResources;

@@ -28,7 +28,7 @@ By using the <code>content</code> option of annotation property, you can specify
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs1" %}
 
 >Note: To use annotation feature in accumulation chart, we need to inject `AccumulationAnnotationService` into the `@NgModule.providers`.
 
@@ -48,7 +48,7 @@ The annotation can be placed with respect to either `Series` or `Chart`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs2" %}
 
 ## Co-ordinate Units
 
@@ -66,7 +66,7 @@ Specifies the coordinate units of an annotation either in `Pixel` or `Point`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs3" %}
 
 ## Alignment
 
@@ -85,4 +85,4 @@ The `verticalAlignment` property can be customized via `Top`, `Bottom` or `Middl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs4" %}

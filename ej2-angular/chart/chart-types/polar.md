@@ -34,7 +34,7 @@ To render a line draw type, use series [`drawType`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs3" %}
 
 ### Spline
 
@@ -52,7 +52,7 @@ To render a spline line draw type, use series [`drawType`](https://ej2.syncfusio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs4" %}
 
 ### Area
 
@@ -70,7 +70,7 @@ To render a area line draw type, use series [`drawType`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs5" %}
 
 ### Stacked Area
 
@@ -88,7 +88,7 @@ To render a stacked area draw type, use series [`drawType`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs6" %}
 
 ### Column
 
@@ -106,7 +106,7 @@ To render a column draw type, use series [`drawType`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs7" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs7" %}
 
 ### Stacked Column
 
@@ -124,7 +124,7 @@ To render a stacked column draw type, use series [`drawType`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs8" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs8" %}
 
 ### Range Column
 
@@ -142,7 +142,7 @@ To render a range column draw type, use series [`drawType`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs9" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs9" %}
 
 ### Scatter
 
@@ -160,7 +160,7 @@ To render a scatter draw type, use series [`drawType`](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs10" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs10" %}
 
 ## Series Customization
 
@@ -180,7 +180,7 @@ You can customize the start angle of the polar series using [`startAngle`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs" %}
 
 ## Radius
 
@@ -198,7 +198,7 @@ You can customize the radius of the polar series and polar series using [`coeffi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs01" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs01" %}
 
 ## See Also
 

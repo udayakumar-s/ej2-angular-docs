@@ -36,7 +36,7 @@ To known about Zooming and Panning, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/zoom-cs5" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs5" %}
 
 >Note: To use zooming feature, we need to inject `ZoomService` into the `NgModule.providers`.
 
@@ -65,7 +65,7 @@ There are three types of mode.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/zoom-cs6" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs6" %}
 
 ## Toolbar
 
@@ -83,7 +83,7 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/zoom-cs7" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs7" %}
 
 ## Enable pan
 
@@ -101,7 +101,7 @@ Using [`enablePan`](https://ej2.syncfusion.com/angular/documentation/api/chart/z
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/zoom-cs8" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs8" %}
 
 ## Enable Scrollbar
 
@@ -119,7 +119,7 @@ Using `enableScrollbar` property, you can able to add scrollbar for zoomed chart
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/scrollbar-cs1" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/scrollbar-cs1" %}
 
 ## Auto interval on zooming
 
@@ -137,4 +137,4 @@ By using [`enableAutoIntervalOnZooming`](https://ej2.syncfusion.com/angular/docu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/zoom-cs9" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs9" %}

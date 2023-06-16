@@ -5,8 +5,7 @@ import { IPointRenderEventArgs, ChartShape, ILegendRenderEventArgs } from '@sync
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' (legendRender)='legendRender($event)'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' (legendRender)='legendRender($event)'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StepArea' xName='x' yName='y' name='Renewable' width=2 [marker]='marker'></e-series>
              <e-series [dataSource]='chartData1' type='StepArea' xName='x' yName='y' name='Non-Renewable' width=2 [marker]='marker'></e-series>
@@ -14,11 +13,12 @@ import { IPointRenderEventArgs, ChartShape, ILegendRenderEventArgs } from '@sync
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public chartData1: Object[];
-    public title: string;
-    public primaryYAxis: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public chartData1?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    marker: any;
     public legendRender(args: ILegendRenderEventArgs): void {
     if (args.text === 'Renewable') {
     args.shape = 'Circle';

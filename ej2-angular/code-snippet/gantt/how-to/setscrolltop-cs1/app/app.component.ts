@@ -17,11 +17,11 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {

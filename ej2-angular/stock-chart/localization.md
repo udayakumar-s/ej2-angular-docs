@@ -61,4 +61,4 @@ For more information about localization, refer this [`localization`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/localization-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/localization-cs1" %}

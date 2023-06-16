@@ -28,7 +28,7 @@ The following code example shows how to display the critical path in the Gantt c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/criticalpath/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/criticalpath/default-cs1" %}
 
 ## Customize taskbar in critical path
 
@@ -48,4 +48,4 @@ The following code example shows how to customize the critical path taskbar in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/customizeCriticalPath/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/customizeCriticalPath/default-cs1" %}

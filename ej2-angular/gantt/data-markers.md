@@ -35,4 +35,4 @@ The following code example demonstrates how to implement data markers in the Gan
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/datamarkers/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/datamarkers/default-cs1" %}

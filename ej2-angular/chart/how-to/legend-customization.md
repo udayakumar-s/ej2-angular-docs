@@ -30,4 +30,4 @@ Set the shape value `args.shape` to the argument to change the legend shape by u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs11" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs11" %}

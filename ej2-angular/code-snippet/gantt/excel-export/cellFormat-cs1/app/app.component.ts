@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+
 import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { editingData } from './data';
@@ -15,14 +15,14 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
-    public columns: object[];
-    public labelSettings: object;
-    public splitterSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
+    public columns?: object[];
+    public labelSettings?: object;
+    public splitterSettings?: object;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -40,7 +40,7 @@ export class AppComponent{
             { field: 'Progress', headerText: 'Progress', width: '150' },
             { field: 'StartDate', headerText: 'Start Date', width: '150' },
             { field: 'Duration', headerText: 'Duration', width: '150' }
-        ]:
+        ];
         this.labelSettings = {
             taskLabel: '${Progress}%'
         };
@@ -50,10 +50,10 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault_excelexport') {
-                this.ganttObj.excelExport();
+                this.ganttObj!.excelExport();
             }
     };
-    public  excelQueryCellInfo(args: ExcelQueryCellInfoEventArgs): void {
+    public  excelQueryCellInfo(args: any): void {
         if(args.column.field == 'Progress'){
             if(args.value > 80) {
                 args.style = { backColor: '#A569BD' };

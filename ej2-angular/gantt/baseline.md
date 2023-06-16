@@ -24,4 +24,4 @@ The baseline feature enables users to view the deviation between the planned dat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/baseline/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/baseline/default-cs1" %}

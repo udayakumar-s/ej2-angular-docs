@@ -52,7 +52,7 @@ The following example demonstrates how to prevent Gantt columns from persisting.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/column-prevent/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/column-prevent/default-cs1" %}
 
 ## Persist the header template and header Text
 
@@ -72,4 +72,4 @@ If you wish to restore all these column properties, then you can achieve it by c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/column-persist/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/column-persist/default-cs1" %}

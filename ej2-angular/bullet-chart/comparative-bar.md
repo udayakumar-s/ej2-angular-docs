@@ -25,7 +25,7 @@ The line marker that runs perpendicular to the orientation of the graph is known
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs13" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs13" %}
 
 ## Types of Target Bar
 
@@ -43,7 +43,7 @@ The shape of the target bar can be customized using the [`targetTypes`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs14" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs14" %}
 
 ## Target Bar Customization
 
@@ -64,4 +64,4 @@ The following properties can be used to customize the Target Bar.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs15" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs15" %}

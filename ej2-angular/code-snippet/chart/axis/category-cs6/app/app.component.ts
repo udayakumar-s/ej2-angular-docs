@@ -1,11 +1,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { multipleData } from 'datasource.ts';
+import { multipleData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-axes>
             <e-axis rowIndex=0 name='yAxis1' opposedPosition='true' title='Temperature (Celsius)' [majorGridLines]='majorGridLines' labelFormat='{value}°C'
                    [minimum]='24' [maximum]='36' [interval]='2' [lineStyle]='lineStyle'>
@@ -18,10 +17,13 @@ import { multipleData } from 'datasource.ts';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public marker: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public marker?: Object;
+    primaryYAxis: any;
+    lineStyle: any;
+    majorGridLines: any;
     ngOnInit(): void {
         this.chartData = multipleData;
         this.primaryXAxis = {

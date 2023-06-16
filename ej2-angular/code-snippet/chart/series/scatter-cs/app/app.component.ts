@@ -5,8 +5,7 @@ import { ChartData } from './chartdata.service';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='series1' type='Scatter' xName='x' yName='y' name='Male' opacity=0.9 [marker]='marker' fill='orange'></e-series>
             <e-series [dataSource]='series2' type='Scatter' xName='x' yName='y' name='Female' opacity=0.9 [marker]='marker' fill='red'></e-series>
@@ -14,13 +13,13 @@ import { ChartData } from './chartdata.service';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public series1: Object;
-    public series2: Object;
-    public marker: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public series1?: Object;
+    public series2?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.primaryXAxis = {
             title: 'Height (cm)',

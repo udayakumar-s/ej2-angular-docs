@@ -16,13 +16,13 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 export class AppComponent{
     // Data for Gantt
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
-    public data: object[];
-    public taskSettings: object;
-    public editSettings: EditSettingsModel;
-    public columns: object[];
-    public elem: HTMLElement;
-    public dropdownlistObj: DropDownList;
+    public ganttObj?: GanttComponent| any;
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: EditSettingsModel;
+    public columns?: object[];
+    public elem?: HTMLElement;
+    public dropdownlistObj?: DropDownList| any;
     public ngOnInit(): void {
         this.data =  [
             {
@@ -78,12 +78,12 @@ export class AppComponent{
                         this.dropdownlistObj = new DropDownList({
                             dataSource: this.ganttObj.treeGrid.grid.dataSource,
                             fields: { value: 'TaskName' },
-                            value: args.rowData[args.column.field],
+                            value: (args as any).rowData[(args as any).column.field],
                             floatLabelType: 'Auto',
                         });
                         this.dropdownlistObj.appendTo(this.elem);
                     }
-                }  
+                }
             },
             { field: 'StartDate', headerText: 'Start Date' },
             { field: 'Duration', headerText: 'Duration' },

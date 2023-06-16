@@ -129,7 +129,7 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/global/locale-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/global/locale-cs1" %}
 
 ## Internationalization
 
@@ -147,7 +147,7 @@ The [`Internationalization`](../common/internationalization) library is used to 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/global/internationalization-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/global/internationalization-cs1" %}
 
 > * In the above sample, `Timeline` is formatted by `NumberFormatOptions` and `DateFormatOptions`.
 > * By default, [`locale`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale) value is `en-US`. If you want to change `en-US` culture, then set the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#locale).
@@ -168,7 +168,7 @@ RTL provides an option to switch the text direction and layout of the Gantt comp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/global/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/global/rtl-cs1" %}
 
 ## See Also
 

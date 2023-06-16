@@ -7,7 +7,7 @@ import {
 
 @Component({
       selector: 'app-container',
-      styleUrls: ['styles.css'],
+      styleUrls: ['./style.css'],
       //specifies the template string for the Document Editor component
       template: `<div>
       <div>

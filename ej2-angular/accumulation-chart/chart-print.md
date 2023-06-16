@@ -26,7 +26,7 @@ The rendered chart can be printed directly from the browser by calling the publi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/radius-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/radius-cs2" %}
 
 ## Export
 
@@ -45,4 +45,4 @@ Input parameters for this method are `Export` Type for `format` and `fileName
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/radius-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/radius-cs3" %}

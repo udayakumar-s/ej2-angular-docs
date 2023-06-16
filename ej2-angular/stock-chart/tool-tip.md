@@ -30,7 +30,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/tooltip-cs1" %}
 
 <!-- markdownlint-disable MD013 -->
 
@@ -52,7 +52,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/tooltip-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/tooltip-cs2" %}
 
 <!-- markdownlint-disable MD013 -->
 
@@ -72,7 +72,7 @@ Any HTML elements can be displayed in the tooltip by using the ‘template’ pr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/tooltip-cs3" %}
+{% previewsample "page.domainurl/samples/stock-chart/tooltip-cs3" %}
 
 ## Customize the Appearance of Tooltip
 
@@ -90,4 +90,4 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipS
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/tooltip-cs4" %}
+{% previewsample "page.domainurl/samples/stock-chart/tooltip-cs4" %}

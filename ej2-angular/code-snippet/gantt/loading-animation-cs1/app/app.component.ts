@@ -11,12 +11,12 @@ import { tempData, virtualData } from './data';
 })
 export class AppComponent {
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public loadingIndicator: object;
-    public columns: object[];
-    public labelSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public loadingIndicator?: object;
+    public columns?: object[];
+    public labelSettings?: object;
     public ngOnInit(): void {
         let projId: number = 1;
         for (let i: number = 0; i < 50; i++) {

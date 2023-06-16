@@ -27,7 +27,7 @@ To render a spline range area series, use series [`type`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/area-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs3" %}
 
 ## Series customization
 
@@ -50,7 +50,7 @@ The following properties can be used to customize the `spline range area` series
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/splinerangearea-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/splinerangearea-cs" %}
 
 ## See Also
 

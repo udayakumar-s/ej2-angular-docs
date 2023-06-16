@@ -26,7 +26,7 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/crosshair-cs1" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-cs1" %}
 
 ## Tooltip for axis
 
@@ -45,7 +45,7 @@ property of `crosshairTooltip` in the corresponding axis.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/crosshair-cs2" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-cs2" %}
 
 ## Customization
 
@@ -63,7 +63,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshai
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/crosshair-cs3" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-cs3" %}
 
 >Note: To use crosshair feature, we need to inject `CrosshairService` into the `NgModule.providers`.
 
@@ -85,7 +85,7 @@ Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/trackball-cs1" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/trackball-cs1" %}
 
 To known about Crosshair and Trackball, you can check on this video:
 

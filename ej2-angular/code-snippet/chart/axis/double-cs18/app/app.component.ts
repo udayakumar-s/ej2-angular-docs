@@ -1,21 +1,20 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { formatData } from 'datasource.ts';
+import { formatData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='formatData' type='Area' xName='x' yName='y' name='Product X' opacity=0.6></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public formatData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
+    public primaryXAxis?: Object;
+    public formatData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
     ngOnInit(): void {
         this.formatData = formatData;
         this.primaryXAxis = {

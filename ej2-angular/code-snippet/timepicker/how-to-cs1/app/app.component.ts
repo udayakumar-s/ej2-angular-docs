@@ -8,7 +8,7 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template: `
         <ejs-timepicker [placeholder]='watermark' [cssClass]='customClass'></ejs-timepicker>
         `

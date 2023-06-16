@@ -34,7 +34,7 @@ To calculate the signal line [`volume`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/ad-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/ad-cs1" %}
 
 ## Average True Range (ATR)
 
@@ -52,7 +52,7 @@ ATR measures the stock volatility by comparing the current value with the previo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/atr-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/atr-cs1" %}
 
 ## Bollinger Band
 
@@ -72,7 +72,7 @@ Bollinger band will be represented by three lines (upperLine, lowerLine, signalL
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/bollinger-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/bollinger-cs1" %}
 
 **Customization of BollingerBand**
 
@@ -90,7 +90,7 @@ Bollinger band will be represented by three lines (upperLine, lowerLine, signalL
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/bollinger-cs2" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/bollinger-cs2" %}
 
 ## Exponential Moving Average (EMA)
 
@@ -108,7 +108,7 @@ Moving average Indicators are used to define the direction of the trend. To rend
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/ema-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/ema-cs1" %}
 
 ## Momentum
 
@@ -126,7 +126,7 @@ Momentum shows the speed at which the price of the stock is changing. To render 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/momentum-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/momentum-cs1" %}
 
 **Customization of MomentumIndicator**
 
@@ -144,7 +144,7 @@ Momentum shows the speed at which the price of the stock is changing. To render 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/momentum-cs2" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/momentum-cs2" %}
 
 ## Moving Average Convergence Divergence (MACD)
 
@@ -162,7 +162,7 @@ MACD is based on the difference between two EMA's. To render a MACD Indicator, u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/macd-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/macd-cs1" %}
 
 **Customization of MACD**
 
@@ -180,7 +180,7 @@ MACD is based on the difference between two EMA's. To render a MACD Indicator, u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/macd-cs2" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/macd-cs2" %}
 
 ## Relative Strength Index (RSI)
 
@@ -198,7 +198,7 @@ RSI shows how strongly a stock is moving in its current direction. To render a R
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/rsi-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/rsi-cs1" %}
 
 ## Simple Moving Average (SMA)
 
@@ -216,7 +216,7 @@ Moving average Indicators are used to define the direction of the trend. To rend
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/sma-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/sma-cs1" %}
 
 ## Stochastic
 
@@ -236,7 +236,7 @@ In stochastic indicator the upperBand value and lowerBand value is customized by
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/stochastic-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/stochastic-cs1" %}
 
 **Customization of StochasticIndicator**
 
@@ -254,7 +254,7 @@ In stochastic indicator the upperBand value and lowerBand value is customized by
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/stochastic-cs2" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/stochastic-cs2" %}
 
 ## Triangular Moving Average (TMA)
 
@@ -272,7 +272,7 @@ Moving average indicators are used to define the direction of the trend. To rend
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/tma-cs1" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/tma-cs1" %}
 
 **Customization of Technical Indicators**
 
@@ -290,7 +290,7 @@ Moving average indicators are used to define the direction of the trend. To rend
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/sma-cs2" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/sma-cs2" %}
 
 **Data Source**
 
@@ -310,7 +310,7 @@ Technical indicators can also be added without series using [`dataSource`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/technical-indicators/sma-cs3" %}
+{% previewsample "page.domainurl/samples/chart/technical-indicators/sma-cs3" %}
 
 **Module Dependencies**
 To render a Indicator, it is mandatory to inject `LineSeriesService` module..

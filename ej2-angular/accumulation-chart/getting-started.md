@@ -132,4 +132,4 @@ By default pie series will be rendered on assigning JSON data to the series by u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs7" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs7" %}

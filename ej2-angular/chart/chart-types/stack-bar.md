@@ -25,7 +25,7 @@ To render a stacked bar series, use series [`type`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/bar-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/bar-cs2" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ The following properties can be used to customize the `stacked bar` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/stackbar-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/stackbar-cs" %}
 
 ## See Also
 

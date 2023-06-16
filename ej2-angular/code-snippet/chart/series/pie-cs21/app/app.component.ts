@@ -1,11 +1,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { data } from 'datasource.ts';
+import { data } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-accumulationchart id="container" width='92%' [legendSettings]="legendSettings" [title]="title" [enableAnimation]= 'enableAnimation' [center]='center'>
+    template: `<ejs-accumulationchart id="container" width='92%' [legendSettings]="legendSettings" [title]="title" [enableAnimation]= 'enableAnimation' [center]='center'>
             <e-accumulation-series-collection>
                 <e-accumulation-series name='Browser' [dataSource]='pieData' xName='x' yName='y' [startAngle]="startAngle" [endAngle]="endAngle" innerRadius="0%" radius="70%" [explode]='explode' explodeOffset='10%' [explodeIndex]='0'>
                 </e-accumulation-series>
@@ -13,14 +12,14 @@ import { data } from 'datasource.ts';
     </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
-    public pieData: Object[];
-    public startAngle: number;
-    public endAngle: number;
-    public center: Object ;
-    public explode: boolean ;
-    public enableAnimation: boolean ;
-    public title: string ;
-    public legendSettings: Object;
+    public pieData?: Object[];
+    public startAngle?: number;
+    public endAngle?: number;
+    public center?: Object ;
+    public explode?: boolean ;
+    public enableAnimation?: boolean ;
+    public title?: string ;
+    public legendSettings?: Object;
     ngOnInit(): void {
     this.pieData = data;
         this.legendSettings = {

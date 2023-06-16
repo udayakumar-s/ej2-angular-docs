@@ -39,7 +39,7 @@ The Gantt component supports three types of selection modes that can be set by u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/bothcellrow-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/bothcellrow-cs1" %}
 
 ## Toggle selection
 
@@ -57,7 +57,7 @@ The toggle selection allows you to select and deselect a specific row or cell. T
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/toggleselection-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/toggleselection-cs1" %}
 
 ## Clear selection
 
@@ -75,7 +75,7 @@ You can clear the selected cells and selected rows by using a method called [`cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/clearselection-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/clearselection-cs1" %}
 
 ## Get selected row indexes and records
 
@@ -93,7 +93,7 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/rowIndex-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/rowIndex-cs1" %}
 
 ## Multiple Selection based on condition
 
@@ -113,7 +113,7 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/multipleSelection-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/multipleSelection-cs1" %}
 
 ## See Also
 

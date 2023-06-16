@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template: `
         <!-- To customize day calendar appearance -->
         <!-- Refer the "special,highlight-day" class details in "styles.css"-->

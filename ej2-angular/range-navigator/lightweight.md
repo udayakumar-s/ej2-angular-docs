@@ -24,7 +24,7 @@ By default, when the [`dataSource`](https://ej2.syncfusion.com/angular/documenta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/lightweight/default-cs2" %}
+{% previewsample "page.domainurl/samples/rangenavigator/lightweight/default-cs2" %}
 
 ## See Also
 

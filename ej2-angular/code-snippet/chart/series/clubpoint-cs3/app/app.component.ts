@@ -5,18 +5,17 @@ import { IAccTextRenderEventArgs, IAccPointRenderEventArgs } from '@syncfusion/e
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-accumulationchart id="chart-container" >
+    template: `<ejs-accumulationchart id="chart-container" >
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' groupTo='11' [dataLabel]='datalabel' [explode]='explode' [explodeOffset]='explodeOffset'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
-    public piedata: Object[];
-    public datalabel: Object;
-    public explode: boolean;
-    public explodeOffset: string;
+    public piedata?: Object[];
+    public datalabel?: Object;
+    public explode?: boolean;
+    public explodeOffset?: string;
     ngOnInit(): void {
         this.datalabel = { visible: true, name: 'text', position: 'Outside' };
         this.piedata = [

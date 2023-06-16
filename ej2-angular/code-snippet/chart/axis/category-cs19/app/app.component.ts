@@ -2,21 +2,21 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { data } from 'datasource.ts';
+import { Browser } from '@syncfusion/ej2-base';
+import { data } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Bar' xName='x' yName='y' width=2 ></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public primaryYAxis: Object;
-    public chartData: Object[];
-    public title: string;
+    public primaryXAxis?: Object;
+    public primaryYAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
     ngOnInit(): void {
         this.chartData = data;
         this.primaryXAxis = {
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
         majorGridLines: { width: 0 },
         enableTrim: false,
         };
-        this.primaryYAis = {
+        this.primaryYAxis = {
         minimum: 0,
         maximum: 800,
         labelFormat: Browser.isDevice ? '{value}' : '{value}M',

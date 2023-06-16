@@ -2,7 +2,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+
 import { editingData } from './data';
 
 @Component({
@@ -13,10 +13,10 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {

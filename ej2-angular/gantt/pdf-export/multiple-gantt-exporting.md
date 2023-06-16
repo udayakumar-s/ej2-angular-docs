@@ -25,7 +25,7 @@ PDF export provides an option for exporting multiple Gantt to same file. In this
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-multiple-export-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-multiple-export-cs1" %}
 
 ## To customize PDF export
 
@@ -47,7 +47,7 @@ You can assign a file name for the exported document by defining the `fileName` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs1" %}
 
 ### How to change page orientation
 
@@ -65,7 +65,7 @@ Page orientation can be changed to `Portrait` (Default Landscape) for the export
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs2" %}
 
 ### How to change page size
 
@@ -112,7 +112,7 @@ The supported page sizes are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs3" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs3" %}
 
 ### Export current view data
 
@@ -130,7 +130,7 @@ PDF export provides an option to export the current view data into PDF. To expor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs4" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs4" %}
 
 ### Enable footer
 
@@ -148,7 +148,7 @@ By default, we render the default footer for a PDF file, this can be enabled or 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs5" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs5" %}
 
 ### Export hidden columns
 
@@ -166,7 +166,7 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs6" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs6" %}
 
 ### Export predecessor lines
 
@@ -184,7 +184,7 @@ By using `showPredecessorLines`, you can hide or show predecessor lines in the e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs7" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs7" %}
 
 ### Show or hide columns on exported PDF
 
@@ -206,7 +206,7 @@ In the following example, there is a hidden column `Duration` in the Gantt. Whil
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs8" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs8" %}
 
 ### Conditional cell formatting
 
@@ -226,7 +226,7 @@ In the following sample, the background color is set for `Progress` column in th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs9" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs9" %}
 
 ### Timeline cell formatting
 
@@ -246,7 +246,7 @@ In the following sample, the header background color is set for timeline cells i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs10" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs10" %}
 
 ### Taskbar formatting
 
@@ -266,7 +266,7 @@ In the following sample, the taskbar background color is customized in the chart
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs11" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs11" %}
 
 ### Theme
 
@@ -291,7 +291,7 @@ The available themes are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs12" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs12" %}
 
 ### Customized Theme
 
@@ -311,4 +311,4 @@ To customize the Gantt style in exported PDF, define the 'ganttStyle' in `pdfExp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs13" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs13" %}

@@ -95,7 +95,7 @@ The following code snippet shows how to assign the resource for each task and ma
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/resources/assign-resources-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/resources/assign-resources-cs1" %}
 
 ## Add/Edit resource collection
 

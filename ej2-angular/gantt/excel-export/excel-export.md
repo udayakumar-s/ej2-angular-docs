@@ -26,4 +26,4 @@ To export data to Excel and CSV, inject the `ExcelExportService` in the provider
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/excelExport-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/excelExport-cs1" %}

@@ -26,7 +26,7 @@ To render a column series, use series [`type`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs18" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs18" %}
 
 ## Column spacing and width
 
@@ -44,7 +44,7 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs31" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs31" %}
 
 ## Grouped Column
 
@@ -63,7 +63,7 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs23" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs23" %}
 
 ## Series customization
 
@@ -86,7 +86,7 @@ The following properties can be used to customize the `column` series.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs24" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs24" %}
 
 ## See Also
 

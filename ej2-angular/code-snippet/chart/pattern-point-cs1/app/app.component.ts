@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='data' type='Column' xName='x' yName='y' name='Tiger' width=2 [marker]='marker' [cornerRadius]='radius'
              [pointColorMapping]='pointColorMapping'></e-series>
@@ -13,12 +12,13 @@ import { Component, OnInit } from '@angular/core';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public title: string;
-    public primaryYAxis: Object;
-    public data: Object[];
-    public pointColorMapping:string;
-    public radius: Object;
+    public primaryXAxis?: Object;
+    public title?: string;
+    public primaryYAxis?: Object;
+    public data?: Object[];
+    public pointColorMapping?:string;
+    public radius?: Object;
+    marker: any;
     ngOnInit(): void {
         this.data =  [
                     { x: 'BGD', y: 106, text: 'Bangaladesh', color: 'url(#chess)' },

@@ -13,15 +13,15 @@ import { baselineData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: Object[];
-    public taskSettings: object;
-    public columns: object[];
-    public timelineSettings: object;
-    public labelSettings: object;
-    public tooltipSettings: object;
-    public projectStartDate: Date;
-    public projectEndDate: Date;
-    public dayWorkingTime: object[];
+    public data?: Object[];
+    public taskSettings?: object;
+    public columns?: object[];
+    public timelineSettings?: object;
+    public labelSettings?: object;
+    public tooltipSettings?: object;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    public dayWorkingTime?: object[];
     public ngOnInit(): void {
         this.data = baselineData;
         this.taskSettings = {

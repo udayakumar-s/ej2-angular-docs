@@ -29,7 +29,7 @@ The Excel export provides support to export multiple Gantt data in the same shee
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/sameSheet-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/sameSheet-cs1" %}
 
 >By default, `multipleExport.blankRows` value is 5.
 
@@ -49,7 +49,7 @@ The Excel exporting provides support to export multiple Gantt in new sheet. To e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/newSheet-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/newSheet-cs1" %}
 
 ## Customize the Excel export
 
@@ -71,7 +71,7 @@ In Gantt, the Excel export provides an option to export hidden columns by defini
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/exportHidden-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/exportHidden-cs1" %}
 
 ### Show or hide columns on exported Excel
 
@@ -93,7 +93,7 @@ Similarly, in the excelExportComplete event, you can revert the columns visibili
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/showHide-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/showHide-cs1" %}
 
 ### Cell formatting during export
 
@@ -113,7 +113,7 @@ In the following sample, the background color has been customized for `TaskID` c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/cellFormat-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/cellFormat-cs1" %}
 
 ### Theme
 
@@ -133,7 +133,7 @@ To apply theme in exported Excel, define the `theme` in `ExcelExportProperties`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/theme-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/theme-cs1" %}
 
 > By default, material theme is applied to the exported Excel document.
 
@@ -153,7 +153,7 @@ The Excel export also allows users to include header and footer contents to the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/headerFooter-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/headerFooter-cs1" %}
 
 ### File name for exported document
 
@@ -171,4 +171,4 @@ You can set the required file name for the exported document by defining the `fi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/excel-export/fileName-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/fileName-cs1" %}

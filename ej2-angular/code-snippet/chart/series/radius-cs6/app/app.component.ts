@@ -4,15 +4,15 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ej-accumulationchart id="chart-container">
+    template: `<ej-accumulationchart id="chart-container">
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' [emptyPointSettings]='empty'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ej-accumulationchart>`
 })
 export class AppComponent implements OnInit {
-    public piedata: Object[];
+    public piedata?: Object[];
+    empty?: Object;
     ngOnInit(): void {
         this.piedata = [
                 { x: 'Jan', y: 3, text: 'Jan: 3' }, { x: 'Feb', y: 3.5, text: 'Feb: 3.5' },

@@ -28,7 +28,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/legend-cs1" %}
 
 [`Custom`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/legendSettings/#position) position is used to position the legend anywhere in the Stock Chart using x, y coordinates.
 
@@ -44,7 +44,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/legend-cs2" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -66,7 +66,7 @@ The legend can be align as `Center`, `Far` or `Near` to the Stock Chart using [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs3" %}
+{% previewsample "page.domainurl/samples/stock-chart/legend-cs3" %}
 
 ## Customization
 
@@ -84,7 +84,7 @@ To change the legend icon shape, [`legendShape`](https://ej2.syncfusion.com/angu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs4" %}
+{% previewsample "page.domainurl/samples/stock-chart/legend-cs4" %}
 
 **Legend Size**
 
@@ -102,7 +102,7 @@ By default, legend takes 20% - 25% of the Stock Chart's height horizontally, whe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs5" %}
+{% previewsample "page.domainurl/samples/stock-chart/legend-cs5" %}
 
 **Legend Item Size**
 
@@ -120,7 +120,7 @@ The size of the legend items can customized by using the [`shapeHeight`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs6" %}
+{% previewsample "page.domainurl/samples/stock-chart/legend-cs6" %}
 
 ## Collapsing Legend Item
 
@@ -138,7 +138,7 @@ By default, series name will be displayed as legend. To skip the legend for a pa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs7" %}
+{% previewsample "page.domainurl/samples/stock-chart/legend-cs7" %}
 
 ## Legend Title
 
@@ -156,6 +156,6 @@ The title for legend can be set using [`title`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/legend-cs8" %}
+{% previewsample "page.domainurl/samples/stock-chart/legend-cs8" %}
 
 >Note: To use legend feature, we need to inject `StockLegendService` into the `@NgModule.Providers`.

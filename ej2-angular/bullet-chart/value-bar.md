@@ -25,7 +25,7 @@ To display the primary data or the current value of the data being measured know
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs36" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs36" %}
 
 ## Types of Actual Bar
 
@@ -43,7 +43,7 @@ The shape of the actual bar can be customized using the [`type`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs37" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs37" %}
 
 ## Actual Bar Customization
 
@@ -63,7 +63,7 @@ Using the [`valueBorder`](https://ej2.syncfusion.com/angular/documentation/api/b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs38" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs38" %}
 
 ### Fill color and height Customization
 
@@ -81,4 +81,4 @@ Customize the fill color and height of the actual bar using the [`valueFill`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs39" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs39" %}

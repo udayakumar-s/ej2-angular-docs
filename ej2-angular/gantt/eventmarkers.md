@@ -26,4 +26,4 @@ To highlight the days, inject the `DayMarkersService` in the provider section of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/eventmarkers/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/eventmarkers/default-cs1" %}

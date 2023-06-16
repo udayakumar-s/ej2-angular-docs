@@ -60,7 +60,7 @@ Task relationship is defined in the data source as a string value, and this valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/taskdependency/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/taskdependency/default-cs1" %}
 
 ## Predecessor offset with duration units
 
@@ -84,7 +84,7 @@ You can define an offset with various offset duration units for predecessors by 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/taskdependency/durationunits-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/taskdependency/durationunits-cs1" %}
 
 ## Disabling automatic dependency offset updates
 
@@ -102,7 +102,7 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/taskdependency/durationunits-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/taskdependency/durationunits-cs2" %}
 
 ## Validate predecessor links on editing
 
@@ -136,7 +136,7 @@ The following sample explains enabling the `respectLink` validation mode while e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/taskdependency/predecessor-links-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/taskdependency/predecessor-links-cs1" %}
 
 ### Using validation dialog
 
@@ -169,4 +169,4 @@ The following code example shows how to enable the predecessor validation dialog
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/taskdependency/validation-dialog-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/taskdependency/validation-dialog-cs1" %}

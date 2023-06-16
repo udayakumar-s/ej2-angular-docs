@@ -25,7 +25,7 @@ To render a 100% stacked bar series, use series [`type`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/bar-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/bar-cs3" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ The following properties can be used to customize the `100% stacked bar` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/stackedbar-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/stackedbar-cs" %}
 
 ## See Also
 

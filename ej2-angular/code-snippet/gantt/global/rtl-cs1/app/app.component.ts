@@ -115,9 +115,9 @@ L10n.load({
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
     public ngOnInit(): void {
         this.data = Ganttdata;
         this.toolbar =  ['ExpandAll', 'CollapseAll'];

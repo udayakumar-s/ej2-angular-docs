@@ -24,7 +24,7 @@ You can toggle the column visibility based on media queries, which are defined i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/responsivecolumn-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/responsivecolumn-cs1" %}
 
 ## Change tree/expander column
 
@@ -42,7 +42,7 @@ The tree/expander column is a column in the Gantt component, that has icons to e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/treecolumn-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs1" %}
 
 ## Show or Hide columns dynamically
 
@@ -60,4 +60,4 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/showhide-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/showhide-cs1" %}

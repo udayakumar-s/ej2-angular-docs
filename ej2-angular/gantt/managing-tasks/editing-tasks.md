@@ -38,7 +38,7 @@ The following code example demonstrates how to enable cell editing in the Gantt 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/celledit-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/celledit-cs1" %}
 
 `Note:` When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
 
@@ -58,7 +58,7 @@ Modify the task details through the edit dialog by setting the edit [`mode`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/dialogedit-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/dialogedit-cs1" %}
 
 `Note:` In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
 
@@ -78,7 +78,7 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/addedit-tab-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/addedit-tab-cs1" %}
 
 ## Limiting data fields in general tab
 
@@ -96,6 +96,6 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/addedit-field-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/addedit-field-cs1" %}
 
 `Note:` You can also define the custom fields in the add/edit dialog General tab using the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/#fields)property.

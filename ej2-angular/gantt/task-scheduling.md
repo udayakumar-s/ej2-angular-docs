@@ -36,7 +36,7 @@ When the [`taskMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/task-scheduling/automatic-tasks-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/task-scheduling/automatic-tasks-cs1" %}
 
 ## Manually Scheduled Tasks
 
@@ -55,7 +55,7 @@ We can restrict this mode in predecessor validation alone. That is, we can autom
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/task-scheduling/manual-tasks-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/task-scheduling/manual-tasks-cs1" %}
 
 ## Custom
 
@@ -73,7 +73,7 @@ When the [`taskMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/task-scheduling/custom-tasks-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/task-scheduling/custom-tasks-cs1" %}
 
 ## Unscheduled Tasks
 
@@ -104,7 +104,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/task-scheduling/unscheduled-tasks-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/task-scheduling/unscheduled-tasks-cs1" %}
 
 > NOTE
 > If the [`allowUnscheduledTasks`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowunscheduledtasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
@@ -127,7 +127,7 @@ The following code snippet explains how to define the working time range for the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/task-scheduling/working-timerange-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/task-scheduling/working-timerange-cs1" %}
 
 > NOTE
 >* Individual tasks can lie between any time within the defined working time range of the project.
@@ -149,7 +149,7 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/task-scheduling/non-workingdays-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/task-scheduling/non-workingdays-cs1" %}
 
 > By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
 > In the Gantt control, you can make weekend as working day by setting the [`includeWeekend`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#includeweekend) property to `true`.

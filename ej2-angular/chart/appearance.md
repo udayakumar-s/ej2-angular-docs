@@ -26,7 +26,7 @@ You can customize the default color of series or points by providing a custom co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs1" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs1" %}
 
 ## Point Level Customization
 
@@ -44,7 +44,7 @@ Marker, datalabel and fill color of each data point can be customized with [`poi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs1" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -69,7 +69,7 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs2" %}
 
 **Chart Margin**
 
@@ -87,7 +87,7 @@ You can set margin for chart from its container through [`margin`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs3" %}
 
 **Chart Area Customization**
 
@@ -105,7 +105,7 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs4" %}
 
 ## Animation
 
@@ -123,7 +123,7 @@ You can customize animation for a particular series using [`animation`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs5" %}
 
 ## Chart Title
 
@@ -141,7 +141,7 @@ Chart can be given a title using [`title`](https://ej2.syncfusion.com/angular/do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/chart-title-cs1" %}
+{% previewsample "page.domainurl/samples/chart/chart-title-cs1" %}
 
 ## Annotation
 
@@ -163,6 +163,6 @@ You can add annotations to the chart by using the <code>annotations</code> optio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs6" %}
 
 >Note: To use annotation feature in chart, we need to inject `ChartAnnotationService` into the `@NgModule.providers`.

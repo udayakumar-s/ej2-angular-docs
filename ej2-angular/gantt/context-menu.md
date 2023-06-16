@@ -43,7 +43,7 @@ Items| Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/contextmenu/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/contextmenu/default-cs1" %}
 
 ## Custom context menu items
 
@@ -66,6 +66,6 @@ The following sample shows context menu item for parent rows to expand or collap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/contextmenu/custom-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/contextmenu/custom-cs1" %}
 
 > You can show an specific item in context menu for header/content area in the Gantt control by defining the `target` property.

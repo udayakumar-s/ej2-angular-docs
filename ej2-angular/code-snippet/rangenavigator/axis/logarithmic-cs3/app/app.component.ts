@@ -5,8 +5,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-rangenavigator id="rn-container" [value]='value' valueType='Logarithmic' [logBase]='log'>
+    template: `<ejs-rangenavigator id="rn-container" [value]='value' valueType='Logarithmic' [logBase]='log'>
             <e-rangenavigator-series-collection>
                 <e-rangenavigator-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' width=2>
                 </e-rangenavigator-series>
@@ -16,9 +15,9 @@ import { Component, OnInit } from '@angular/core';
 
 export class AppComponent implements OnInit {
 
-    public value: Object[];
-    public chartData: Object[];
-    public log: number;
+    public value?: Object[];
+    public chartData?: Object[];
+    public log?: number;
     ngOnInit(): void {
         this.value = [4,6];
         this.chartData = [];

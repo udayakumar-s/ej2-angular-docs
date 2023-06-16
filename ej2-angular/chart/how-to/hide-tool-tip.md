@@ -31,4 +31,4 @@ If it is true then we cancel the tooltip by setting the value for `args.cancel` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs9" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs9" %}

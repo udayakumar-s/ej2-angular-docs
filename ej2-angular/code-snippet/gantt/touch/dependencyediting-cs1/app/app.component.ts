@@ -4,21 +4,21 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
-import { EJ2Instance } from '@syncfusion/ej2-navigations';
+
 
 @Component({
     selector: 'app-root',
     template:
-       `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" (load)="load($event)"></ejs-gantt>`,
+       `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" (load)="load()"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: object;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = [
             {
@@ -58,7 +58,7 @@ export class AppComponent{
         };
     }
     public load() {
-        let ganttObj: any = ((<EJ2Instance>document.getElementById('ganttDefault'))).ej2_instances[0];
+        let ganttObj: any = (((document as any).getElementById('ganttDefault'))).ej2_instances[0];
         ganttObj.isAdaptive = true;  // Forcing desktop layout to change as mobile layout
     };
 }

@@ -12,8 +12,9 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    editSettings: { allowEditing: boolean; editMode: string; allowTaskbarEditing: boolean; } | undefined;
     public ngOnInit(): void {
         this.data = [
             {

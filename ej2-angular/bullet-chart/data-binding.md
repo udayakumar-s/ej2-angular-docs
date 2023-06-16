@@ -29,4 +29,4 @@ The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/bullet-c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs20" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs20" %}

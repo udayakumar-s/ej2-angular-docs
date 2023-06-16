@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { TooltipSettingsModel } from '@syncfusion/ej2-sparkline';
+import { TooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
 
 
 @Component({

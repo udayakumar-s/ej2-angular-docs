@@ -75,7 +75,7 @@ Taskbar state |Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/touch/dependencyediting-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/touch/dependencyediting-cs1" %}
 
 >Note: In mobile device, you cannot create dependency other than `FS` by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
 

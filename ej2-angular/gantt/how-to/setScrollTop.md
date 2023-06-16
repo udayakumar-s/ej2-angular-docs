@@ -24,4 +24,4 @@ In the Gantt component, you can set the vertical scroller position dynamically b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/setscrolltop-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/setscrolltop-cs1" %}

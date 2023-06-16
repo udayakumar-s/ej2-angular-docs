@@ -30,4 +30,4 @@ Change the element value in chart by using the [`annotationRender`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs19" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs19" %}

@@ -27,7 +27,7 @@ The series are rendered in the order as it is added to the series array.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs37" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs37" %}
 
 ## Combination Series
 
@@ -47,7 +47,7 @@ Combination of different types like Line, column etc, can be rendered in a chart
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/combination-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/combination-cs1" %}
 
 ## Enable Complex Property in Series
 
@@ -65,4 +65,4 @@ By setting `enableComplexProperty` value as `true` in series you can bind comple
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/combination-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/combination-cs2" %}

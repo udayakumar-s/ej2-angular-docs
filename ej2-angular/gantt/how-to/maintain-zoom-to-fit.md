@@ -28,7 +28,7 @@ We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/maintainzoomtofit-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/maintainzoomtofit-cs1" %}
 
 ## Maintain zoomToFit after change dataSource dynamically
 
@@ -46,4 +46,4 @@ We can maintain `zoomToFit` after change dataSource dynamically, by calling [`fi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/maintainzoomtofitdatasource-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/maintainzoomtofitdatasource-cs1" %}

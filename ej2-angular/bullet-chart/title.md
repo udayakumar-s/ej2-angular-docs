@@ -27,7 +27,7 @@ The title of the Bullet Chart displays the information about the data plotted by
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs26" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs26" %}
 
 ## Subtitle
 
@@ -45,7 +45,7 @@ To show additional information about the data plotted, the Bullet Chart can also
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs27" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs27" %}
 
 ## Title and SubTitle Position
 
@@ -67,7 +67,7 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs28" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs28" %}
 
 ### Position as Right
 
@@ -85,7 +85,7 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs29" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs29" %}
 
 ### Position as Top
 
@@ -103,7 +103,7 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs30" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs30" %}
 
 ### Position as Bottom
 
@@ -121,7 +121,7 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs31" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs31" %}
 
 ## Title Customization
 
@@ -139,7 +139,7 @@ The title color, opacity, font size, font family, font weight, and font style ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs32" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs32" %}
 
 ## SubTitle Customization
 
@@ -157,4 +157,4 @@ The sub-title color, opacity, font size, font family, font weight, and font styl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs33" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs33" %}

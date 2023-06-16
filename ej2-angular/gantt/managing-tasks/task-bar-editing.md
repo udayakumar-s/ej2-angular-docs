@@ -24,7 +24,7 @@ Modify the task details through user interaction such as resizing and dragging t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/taskbaredit-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/taskbaredit-cs1" %}
 
 ## Prevent taskbar editing for particular task
 
@@ -42,7 +42,7 @@ On taskbar edit action, the [`taskbarEditing`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/prevent-taskbaredit-cs1" %}
 
 ## Task dependencies
 
@@ -68,7 +68,7 @@ The following code example demonstrates how to enable task dependency editing in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/dependencyedit-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/dependencyedit-cs1" %}
 
 ![Alt text](images/user-interaction.png)
 
@@ -100,7 +100,7 @@ The tasks value can be dynamically updated by using the [`updateRecordById`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/updaterecord-dynamic-cs1" %}
 
 >NOTE: Using the [`updateRecordById`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#updaterecordbyid) method, you cannot update the task ID value.
 
@@ -145,7 +145,7 @@ Edit Type |Component |Example
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/editParams-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/editParams-cs1" %}
 
 ## Cell Edit Template
 
@@ -171,7 +171,7 @@ The cell edit template is used to create a custom component for a particular col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/cellEditTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/cellEditTemplate-cs1" %}
 
 ## Disable editing for particular column
 
@@ -191,4 +191,4 @@ In the following demo, editing is disabled for the `TaskName` column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/disableedit-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs1" %}

@@ -1,11 +1,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { polarCategory } from 'datasource.ts';
+import { polarCategory } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [title]='title' >
             <e-series-collection>
                 <e-series [dataSource]='data' type='Polar' xName='x' yName='y' drawType='Spline' name='London'> </e-series>
@@ -13,10 +12,10 @@ import { polarCategory } from 'datasource.ts';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public title: string;
-    public primaryYAxis: Object;
-    public data: Object[];
+    public primaryXAxis?: Object;
+    public title?: string;
+    public primaryYAxis?: Object;
+    public data?: Object[];
     ngOnInit(): void {
         this.data = polarCategory;
         this.primaryXAxis = {

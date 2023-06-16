@@ -26,7 +26,7 @@ To search records, inject the `FilterService` in the provider section of `AppMod
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/default-search-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/default-search-cs1" %}
 
 ## Initial search
 
@@ -45,7 +45,7 @@ To apply search at initial rendering, set the value for [`fields`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/initialsearch-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/initialsearch-cs1" %}
 
 > By default, Gantt searches all the bound column values. To customize this behavior, define the [`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings/#fields) property.
 
@@ -81,7 +81,7 @@ To search the Gantt records from an external button, invoke the [`search`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/externalbutton-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/externalbutton-cs1" %}
 
 >Note: You should set the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) property to `true` for searching the content externally.
 
@@ -101,7 +101,7 @@ By default, the Gantt component searches all the columns. You can search specifi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/specific-column-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/specific-column-cs1" %}
 
 > In above sample, you can search only `TaskName` and `Duration` column values.
 
@@ -121,4 +121,4 @@ You can set [`searchSettings.key`](https://ej2.syncfusion.com/angular/documentat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/clearSearch-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/clearSearch-cs1" %}

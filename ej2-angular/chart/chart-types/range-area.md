@@ -25,7 +25,7 @@ To render a range area series, use series [`type`](https://ej2.syncfusion.com/an
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/area-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs2" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ The following properties can be used to customize the `range area` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/rangearea-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/rangearea-cs" %}
 
 ## See Also
 

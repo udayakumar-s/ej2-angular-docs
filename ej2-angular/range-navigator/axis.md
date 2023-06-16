@@ -28,7 +28,7 @@ The numeric scale is used to represent the numeric values of data in a Range Sel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/numeric-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/numeric-cs1" %}
 
 ### Range
 
@@ -46,7 +46,7 @@ The minimum and the maximum of the scale will be calculated automatically based 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/numeric-cs2" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/numeric-cs2" %}
 
 ### Label Format
 
@@ -64,7 +64,7 @@ The numeric labels can be formatted using the [`labelFormat`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/numeric-cs3" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/numeric-cs3" %}
 
 The following table describes the result of applying some commonly used label formats on numeric values.
 
@@ -142,7 +142,7 @@ The Range Selector also supports the Custom Label formats using the placeholders
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/numeric-cs4" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/numeric-cs4" %}
 
 ## Logarithmic Axis
 
@@ -160,7 +160,7 @@ The Logarithmic supports the logarithmic scale, and it is used to visualize the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/logarithmic-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/logarithmic-cs1" %}
 
 >To use logarithmic scale,  inject the `LogarithmicService` into the `@NgModule.providers`, and then set the valueType to Logarithmic.
 
@@ -180,7 +180,7 @@ The minimum and the maximum of the Range Selector will be calculated automatical
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/logarithmic-cs2" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/logarithmic-cs2" %}
 
 ### Logarithmic Base
 
@@ -198,7 +198,7 @@ The Logarithmic Base can be customized using the [`logBase`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/logarithmic-cs3" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/logarithmic-cs3" %}
 
 ## Date-time
 
@@ -216,7 +216,7 @@ The Range Selector supports the DateTime scale and displays the DateTime values 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/datetime-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/datetime-cs1" %}
 
 >Note: To use date-time scale,  inject the `DateTimeService` into the `@NgModule.providers`.
 
@@ -246,7 +246,7 @@ DateTime supports the following interval types:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/datetime-cs2" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/datetime-cs2" %}
 
 ### Label Format
 
@@ -264,7 +264,7 @@ The [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/range-n
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/datetime-cs3" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/datetime-cs3" %}
 
 The following table shows the results of applying some common DateTime formats to the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#labelformat) property.
 

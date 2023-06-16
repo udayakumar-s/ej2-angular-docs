@@ -13,10 +13,10 @@ import { ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public toolbar?: ToolbarItem[];
     public ngOnInit(): void {
         this.data = [
     {

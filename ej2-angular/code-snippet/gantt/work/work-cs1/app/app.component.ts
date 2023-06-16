@@ -12,12 +12,16 @@ import { Gantt, Toolbar, Edit, Selection } from '@syncfusion/ej2-gantt';
 })
 export class AppComponent {
     // Data for Gantt
-    public data: object[];
-    public resources: object[];
-    public taskSettings: object;
-    public labelSettings: object;
-    public projectStartDate: Date;
-    public projectEndDate: Date;
+    public data?: object[];
+    public resources?: object[];
+    public taskSettings?: object;
+    public labelSettings?: object;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    editSettings: { allowAdding: boolean; allowEditing: boolean; allowDeleting: boolean; allowTaskbarEditing: boolean; showDeleteConfirmDialog: boolean; } | undefined;
+    resourceFields: { id: string; name: string; unit: string; } | undefined;
+    toolbar: string[] | undefined;
+    columns: ({ field: string; visible: boolean; headerText?: undefined; width?: undefined; } | { field: string; headerText: string; width: string; visible?: undefined; } | { field: string; width: string; visible?: undefined; headerText?: undefined; })[] | undefined;
     public ngOnInit(): void {
         this.data = [
             {

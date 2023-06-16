@@ -30,4 +30,4 @@ By using the [`pointClick`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs1" %}

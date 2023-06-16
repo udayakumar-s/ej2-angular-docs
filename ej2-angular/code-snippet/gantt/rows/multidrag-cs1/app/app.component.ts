@@ -14,9 +14,9 @@ import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    public data: object[];
-    public taskSettings: object;
-    public selectionSettings: SelectionSettingsModel;
+    public data?: object[];
+    public taskSettings?: object;
+    public selectionSettings?: SelectionSettingsModel;
     public ngOnInit(): void {
         this.data = ganttData;
         this.taskSettings = {

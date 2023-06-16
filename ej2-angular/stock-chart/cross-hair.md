@@ -26,7 +26,7 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/cross-hair-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/cross-hair-cs1" %}
 
 ## Tooltip for axis
 
@@ -44,7 +44,7 @@ Tooltip label for an axis can be enabled by using [`enable`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/cross-hair-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/cross-hair-cs2" %}
 
 ## Customization
 
@@ -63,4 +63,4 @@ Color and width of the crosshair line can be customized by using the [`line`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/cross-hair-cs3" %}
+{% previewsample "page.domainurl/samples/stock-chart/cross-hair-cs3" %}

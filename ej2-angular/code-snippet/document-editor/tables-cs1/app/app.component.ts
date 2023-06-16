@@ -7,7 +7,7 @@ import {
 
 @Component({
         selector: 'app-container',
-        styleUrls: ['styles.css'],
+        styleUrls: ['./style.css'],
         template: `<div>
         <div>
             <ejs-toolbar (clicked)='toolbarButtonClick($event)'>

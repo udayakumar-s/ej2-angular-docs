@@ -14,12 +14,12 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-     public timelineSettings: object;
-     public editSettings: EditSettingsModel;
-     public dayWorkingTime: object;
-    public splitterSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+     public timelineSettings?: object;
+     public editSettings?: EditSettingsModel;
+     public dayWorkingTime?: object;
+    public splitterSettings?: object;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {

@@ -32,7 +32,7 @@ Markers can be added to the points by enabling the [`visible`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/marker-cs1" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/marker-cs1" %}
 
 ## Shape
 
@@ -50,7 +50,7 @@ Markers can be assigned with different shapes such as Rectangle, Circle, Diamond
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/marker-cs2" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/marker-cs2" %}
 
 >Note : To know more about the marker shape type refer the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettings/#shape).
 
@@ -70,7 +70,7 @@ Apart from the shapes, you can also add custom images to mark the data point usi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/marker-cs3" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/marker-cs3" %}
 
 ## Customization
 
@@ -88,7 +88,7 @@ Marker's color and border can be customized using `fill` and `border` properties
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/marker-cs4" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/marker-cs4" %}
 
 ## Customizing specific point
 
@@ -106,7 +106,7 @@ You can also customize the specific marker and label using [`pointRender`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/marker-cs5" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/marker-cs5" %}
 
 ## Fill marker with series color
 
@@ -124,7 +124,7 @@ Marker can be filled with the series color by setting the [`isFilled`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/marker-cs6" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/marker-cs6" %}
 
 ## See Also
 

@@ -17,11 +17,11 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public ganttChart: GanttComponent;
+    public ganttChart?: GanttComponent;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -39,7 +39,7 @@ export class AppComponent{
                 let exportProperties: PdfExportProperties = {
                    fileName:"new.pdf"
                 };
-                this.ganttChart.pdfExport(exportProperties);
+                this.ganttChart!.pdfExport(exportProperties);
             }
     };
 }

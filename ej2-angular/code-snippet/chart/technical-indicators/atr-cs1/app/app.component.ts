@@ -1,6 +1,6 @@
 
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 let chartData: Object[] = [
     {x: new Date('2012-10-15'), open: 90.3357, high: 93.2557, low: 87.0885,close: 87.12,volume: 646996264},
@@ -75,11 +75,16 @@ let chartData: Object[] = [
         </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public primaryYAxis: Object;
-    public axes: Object[];
+    public primaryXAxis?: Object;
+    public primaryYAxis?: Object;
+    public axes?: Object[];
+    chartData: Object[]| any;
     public data: Object[] = chartData;
-     public crosshair: Object;
+     public crosshair?: Object;
+title: any = 'AAPL 2012-2017';
+chartArea: any;
+period: any;
+
         ngOnInit(): void {
             this.chartData = chartData;
              this.crosshair = { enable: true };
@@ -103,9 +108,7 @@ export class AppComponent implements OnInit {
         majorGridLines: { width: 0 },
             }];
         }
-    this.title = 'AAPL 2012-2017';
-
-
-}
+  
+    }
 
 

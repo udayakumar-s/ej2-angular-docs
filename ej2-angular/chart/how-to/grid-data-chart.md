@@ -35,4 +35,4 @@ By using the grid’s `databound` event, you can update the current page records
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/grid-visual-cs2" %}
+{% previewsample "page.domainurl/samples/chart/grid-visual-cs2" %}

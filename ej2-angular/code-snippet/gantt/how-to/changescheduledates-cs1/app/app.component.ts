@@ -17,10 +17,10 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -33,7 +33,7 @@ export class AppComponent{
         };
     }
     change(): void {
-        this.ganttObj.updateProjectDates(new Date('04/10/2019'),new Date('06/20/2019'),true);
+        this.ganttObj!.updateProjectDates(new Date('04/10/2019'),new Date('06/20/2019'),true);
         };
 }
 

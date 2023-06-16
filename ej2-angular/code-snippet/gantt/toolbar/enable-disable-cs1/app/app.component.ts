@@ -5,7 +5,6 @@ import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { EJ2Instance } from '@syncfusion/ej2-navigations';
 import { ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { editingData } from './data';
@@ -21,11 +20,11 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: any;
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: any;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {

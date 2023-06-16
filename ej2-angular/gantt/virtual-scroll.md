@@ -32,7 +32,7 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/virtual-scroll-cs1" %}
 
 ## Limitations for Virtual Scroll
 

@@ -25,7 +25,7 @@ Ranges represent the quality of a specific range such as **Good**, **Bad** and *
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs24" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs24" %}
 
 ## Color Customization
 
@@ -43,4 +43,4 @@ Enhance the readability of ranges with color and opacity. It can be applied usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs25" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs25" %}

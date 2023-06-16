@@ -11,11 +11,11 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public taskSettings: object;
-    public ganttChart: GanttComponent;
-    public splitterSettings: object;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public ganttChart?: GanttComponent;
+    public splitterSettings?: object;
+    public columns?: object[];
     public ngOnInit(): void {
         this.data = [
             {
@@ -59,13 +59,13 @@ export class AppComponent implements OnInit {
     }
 
     clickHandler() {
-        let gantt = document.getElementsByClassName('e-gantt')[0].ej2_instances[0];
+        let gantt = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
         var savedProperties = JSON.parse(gantt.getPersistData());
         var gridColumnsState = Object.assign([], gantt.ganttColumns);
-        savedProperties.columns.forEach(function (col) {
-            var headerText = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerText'];
-            var colTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['template'];
-            var headerTemplate = gridColumnsState.find(function (colColumnsState) { return colColumnsState.field === col.field; })['headerTemplate'];
+        savedProperties.columns.forEach(function (col: { field: any; headerText: string; template: any; headerTemplate: any; }) {
+            var headerText = gridColumnsState.find(function (colColumnsState: { field: any; }) { return colColumnsState.field === col.field; })['headerText'];
+            var colTemplate = gridColumnsState.find(function (colColumnsState: { field: any; }) { return colColumnsState.field === col.field; })['template'];
+            var headerTemplate = gridColumnsState.find(function (colColumnsState: { field: any; }) { return colColumnsState.field === col.field; })['headerTemplate'];
             col.headerText = 'Text Changed';
             col.template = colTemplate;
             col.headerTemplate = headerTemplate;

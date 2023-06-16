@@ -26,7 +26,7 @@ The rendered stock chart can be printed directly using print button in period se
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/export-print-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/export-print-cs1" %}
 
 ## Disable Export and print
 
@@ -44,4 +44,4 @@ To empty the value of `exportType` for to disable the Export button.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/export-print-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/export-print-cs2" %}

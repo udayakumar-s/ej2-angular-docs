@@ -15,10 +15,10 @@ import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {

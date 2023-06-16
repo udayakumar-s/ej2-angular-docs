@@ -30,7 +30,7 @@ To known about logarithmic axis, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/log-cs5" %}
+{% previewsample "page.domainurl/samples/chart/axis/log-cs5" %}
 
 >Note: To use log axis, we need to inject `LogarithmicService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `Logarithmic`.
 
@@ -50,7 +50,7 @@ Range of an axis, will be calculated automatically based on the provided data, y
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/log-cs6" %}
+{% previewsample "page.domainurl/samples/chart/axis/log-cs6" %}
 
 ## Logarithmic Base
 
@@ -70,7 +70,7 @@ For example when the logBase is 5, the axis values follows 5<sup>-2</sup>, 5<su
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/log-cs7" %}
+{% previewsample "page.domainurl/samples/chart/axis/log-cs7" %}
 
 ## Logarithmic Interval
 
@@ -88,4 +88,4 @@ Logarithmic axis interval can be customized by using the [`interval`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/log-cs8" %}
+{% previewsample "page.domainurl/samples/chart/axis/log-cs8" %}

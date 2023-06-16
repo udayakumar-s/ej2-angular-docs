@@ -5,20 +5,19 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [legendSettings]='legendSettings' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [legendSettings]='legendSettings' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales' name='Sales' [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public primaryYAxis: Object;
-    public legendSettings: Object;
-    public marker: Object;
-    public title: string;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public primaryYAxis?: Object;
+    public legendSettings?: Object;
+    public marker?: Object;
+    public title?: string;
     ngOnInit(): void {
         // Data label for chart series
         this.marker = {

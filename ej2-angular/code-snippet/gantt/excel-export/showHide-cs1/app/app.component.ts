@@ -10,17 +10,17 @@ import { GanttData } from './data';
     selector: 'app-root',
     template:
        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar"
-       (toolbarClick)="toolbarClick($event)" (excelExportComplete)='excelExportComplete($event)' allowExcelExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
+       (toolbarClick)="toolbarClick($event)" (excelExportComplete)='excelExportComplete()' allowExcelExport='true' [treeColumnIndex]="1"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
+    public columns?: object[];
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.data = GanttData;
         this.taskSettings = {

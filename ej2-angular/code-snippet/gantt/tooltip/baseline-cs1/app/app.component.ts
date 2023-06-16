@@ -8,23 +8,23 @@ import { baselineData } from './data';
 @Component({
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [timelineSettings]="timelineSettings" [renderBaseline]="true" [treeColumnIndex]="1" height="450px" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [dayWorkingTime]="dayWorkingTime" baselineColor='red'>
+        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [timelineSettings]="timelineSettings" [renderBaseline]="true" [treeColumnIndex]="1" height="450px" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [dayWorkingTime]="dayWorkingTime" baselineColor='red'>
        <ng-template #tooltipSettingsBaseline let-data>
        <div> <ng-container>Baseline StartDate : {{data.BaselineStartDate}}</ng-container> </div>
        </ng-template></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    // Data for Gantt
-    public data: Object[];
-    public taskSettings: object;
-    public columns: object[];
-    public timelineSettings: object;
-    public labelSettings: object;
-    public tooltipSettings: object;
-    public projectStartDate: Date;
-    public projectEndDate: Date;
-    public dayWorkingTime: object[];
+
+    public data?: Object[];
+    public taskSettings?: object;
+    public columns?: object[];
+    public timelineSettings?: object;
+    public labelSettings?: object;
+    public tooltipSettings?: object;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    public dayWorkingTime?: object[];
     public ngOnInit(): void {
         this.data = baselineData;
         this.taskSettings = {

@@ -1,11 +1,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { groupData } from 'datasource.ts';
+import { groupData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Bar' xName='x' yName='y' name='John' groupName='JohnandAndrew'></e-series>
             <e-series [dataSource]='chartData' type='Bar' xName='x' yName='y1' name='Andrew' groupName='JohnandAndrew' columnWidth='0.6'></e-series>
@@ -15,8 +14,10 @@ import { groupData } from 'datasource.ts';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public chartData: Object[];
-    public title: string;
+    public chartData?: Object[];
+    public title?: string;
+    primaryXAxis: any;
+    primaryYAxis: any;
     ngOnInit(): void {
         this.chartData = groupData;
         this.title = 'Sales by year';

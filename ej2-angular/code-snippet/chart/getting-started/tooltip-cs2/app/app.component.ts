@@ -5,8 +5,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
     [legendSettings]='legendSettings' [tooltip]='tooltip' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales' name='Sales' [marker]='marker'></e-series>
@@ -14,13 +13,13 @@ import { Component, OnInit } from '@angular/core';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public primaryYAxis: Object;
-    public legendSettings: Object;
-    public tooltip: Object;
-    public title: string;
-    public marker: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public primaryYAxis?: Object;
+    public legendSettings?: Object;
+    public tooltip?: Object;
+    public title?: string;
+    public marker?: Object;
     ngOnInit(): void {
         // Tooltip for chart
         this.tooltip = {

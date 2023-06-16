@@ -197,7 +197,7 @@ The data source fields that are required to render the tasks are mapped to the G
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/binding-data-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/binding-data-cs1" %}
 
 ## Defining timeline
 
@@ -214,7 +214,7 @@ The Gantt has an option to define timeline using [`timelineSettings`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/timeline-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/timeline-cs1" %}
 
 ## Enabling toolbar
 
@@ -234,7 +234,7 @@ To use toolbar, inject the `ToolbarService` in the provider section of `AppModul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/toolbar-cs1" %}
 
 ## Enabling editing
 
@@ -265,7 +265,7 @@ Modify the task details through cell editing by setting the edit [`mode`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/editing-cell-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/editing-cell-cs1" %}
 
 `Note:` When the edit mode is set to `Auto`, you can change the cells to editable mode by double-clicking anywhere at the TreeGrid and edit the task details in the edit dialog by double-clicking anywhere at the chart.
 
@@ -285,7 +285,7 @@ Modify the task details through dialog by setting edit [`mode`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/editing-dialog-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/editing-dialog-cs1" %}
 
 `Note:` In dialog editing mode, the edit dialog will appear while performing double-click action in both TreeGrid and chart sides.
 
@@ -305,7 +305,7 @@ Modify the task details through user interaction such as resizing and dragging t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/editing-taskbar-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/editing-taskbar-cs1" %}
 
 ### Dependency editing
 
@@ -323,7 +323,7 @@ Modify the task dependencies using mouse interactions by enabling the [`allowTas
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/editing-dependency-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/editing-dependency-cs1" %}
 
 ## Enabling predecessors or task relationships
 
@@ -348,7 +348,7 @@ You can show the relationship in tasks, by using the [`dependency`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/task-relationship-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/task-relationship-cs1" %}
 
 ## Assigning resources
 
@@ -367,7 +367,7 @@ Map these fields to the Gantt control using the [`resourceFields`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/resources-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/resources-cs1" %}
 
 ## Enable filtering
 
@@ -387,7 +387,7 @@ To use filter, inject the `FilterService` in the provider section of `AppModule`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/filtering-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/filtering-cs1" %}
 
 ## Enable sorting
 
@@ -407,7 +407,7 @@ To use sort, inject the [`SortService`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/sorting-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/sorting-cs1" %}
 
 ## Defining eventmarkers
 
@@ -427,7 +427,7 @@ To highlight the days, inject the `DayMarkersService` in the provider section of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/event-markers-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/event-markers-cs1" %}
 
 ## Run the application
 
@@ -451,4 +451,4 @@ The following example shows a basic Gantt:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/getting-started/run-application-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/getting-started/run-application-cs1" %}

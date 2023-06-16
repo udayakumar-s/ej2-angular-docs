@@ -28,7 +28,7 @@ The tooltip is not visible by default. To make it visible, set the [`enable`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs34" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs34" %}
 
 ## Tooltip Template
 
@@ -46,7 +46,7 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/bullet-chart/user-interaction/tooltipTemplate-cs1" %}
 
 ## Tooltip Customization
 
@@ -68,4 +68,4 @@ The following properties can be used to customize the Bullet Chart tooltip.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs35" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs35" %}

@@ -25,7 +25,7 @@ Data Labels are used to identify the value of actual bar in the Bullet Chart com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs21" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs21" %}
 
 ## Data Label Customization
 
@@ -43,4 +43,4 @@ Data Labels color, opacity, font size, font family, font weight, and font style 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs22" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs22" %}

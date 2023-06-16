@@ -36,7 +36,7 @@ This support is used to view all the tasks available in a project within availab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/zooming/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/zooming/default-cs1" %}
 
 ## Customizing zooming levels
 
@@ -54,7 +54,7 @@ In Gantt, the zoom in and zoom out actions are performed based on the predefined
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/zooming/custom-zooming-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/zooming/custom-zooming-cs1" %}
 
 ## Zoom action by methods
 
@@ -75,4 +75,4 @@ You can perform the various zoom actions dynamically or on external click action
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/zooming/method-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/zooming/method-cs1" %}

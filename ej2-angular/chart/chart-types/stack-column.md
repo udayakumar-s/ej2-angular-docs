@@ -25,7 +25,7 @@ To render a stacked column series, use series [`type`](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs20" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs20" %}
 
 ## Stacking Group
 
@@ -46,7 +46,7 @@ Columns with same group name are stacked on top of each other.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs22" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs22" %}
 
 ## Series customization
 
@@ -69,7 +69,7 @@ The following properties can be used to customize the `stacked column` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/stackedcolumn-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/stackedcolumn-cs" %}
 
 ## See Also
 

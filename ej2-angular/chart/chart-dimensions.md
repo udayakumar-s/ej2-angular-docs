@@ -50,7 +50,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/datasource-cs1" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs1" %}
 
 ## Size for Chart
 
@@ -74,7 +74,7 @@ You can set the size of chart in pixel as demonstrated below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/datasource-cs2" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs2" %}
 
 **In Percentage**
 
@@ -93,6 +93,6 @@ when the height is ‘50%’, chart renders to half of the container height.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/datasource-cs3" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs3" %}
 
 > Note:  When you do not specify the size, it takes `450px` as the height and window size as its width.

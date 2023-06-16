@@ -26,7 +26,7 @@ Stock Chart can render to its container size. You can set the size via inline or
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/chart-dimensions-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/chart-dimensions-cs1" %}
 
 ## Size for Stock Chart
 
@@ -50,7 +50,7 @@ You can set the size of chart in pixel as demonstrated below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/chart-dimensions-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/chart-dimensions-cs2" %}
 
 **In Percentage**
 
@@ -68,6 +68,6 @@ By setting value in percentage, Stock Chart gets its dimension with respect to i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/chart-dimensions-cs3" %}
+{% previewsample "page.domainurl/samples/stock-chart/chart-dimensions-cs3" %}
 
 >Note: When you do not specify the size, it takes `450px` as the height and window size as its width.

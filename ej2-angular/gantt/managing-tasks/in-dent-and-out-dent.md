@@ -28,7 +28,7 @@ Indent and Outdent of a task are used to update the level of the task in hierarc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/indent-outdent-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/indent-outdent-cs1" %}
 
 ## Read-only Gantt
 
@@ -46,4 +46,4 @@ In Gantt, all create, update, delete operations can be disabled by set `readOnly
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/readOnly-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/readOnly-cs1" %}

@@ -40,7 +40,7 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/week-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/week-cs1" %}
 
 ### Month timeline mode
 
@@ -58,7 +58,7 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/month-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/month-cs1" %}
 
 ### Year timeline mode
 
@@ -76,7 +76,7 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/year-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/year-cs1" %}
 
 ### Day timeline mode
 
@@ -94,7 +94,7 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/day-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/day-cs1" %}
 
 ### Hour timeline mode
 
@@ -112,7 +112,7 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/hour-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/hour-cs1" %}
 
 ## Week start day customization
 
@@ -130,7 +130,7 @@ In the Gantt component, you can customize the week start day using the [`weekSta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/week-startday-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/week-startday-cs1" %}
 
 ## Customize automatic timescale update action
 
@@ -148,4 +148,4 @@ In the Gantt component, the schedule timeline will be automatically updated when
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/timescale-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/timescale-cs1" %}

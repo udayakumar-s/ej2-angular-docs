@@ -52,4 +52,4 @@ To refresh the chart, invoke the `refresh` method.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs12" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs12" %}

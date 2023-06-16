@@ -6,7 +6,7 @@ import { CalendarComponent } from '@syncfusion/ej2-angular-calendars';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template: `
         <!-- Bind created event to add the clear button --->
         <ejs-calendar #ejCalendar (created)='onCreate()'></ejs-calendar>

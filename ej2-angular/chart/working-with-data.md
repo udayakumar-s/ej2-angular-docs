@@ -30,7 +30,7 @@ You can bind a simple JSON data to the chart using [`dataSource`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs25" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs25" %}
 
 ### Common Datasource
 
@@ -48,7 +48,7 @@ You can also bind a JSON data common to all series using [`dataSource`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs26" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs26" %}
 
 ## Lazy loading
 
@@ -66,7 +66,7 @@ Lazy loading allows you to load data for chart on demand. Chart will fire the sc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs27" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs27" %}
 
 ## Remote Data
 
@@ -84,7 +84,7 @@ You can also bind remote data to the chart using `DataManager`. The DataManager 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs28" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs28" %}
 
 ## Empty points
 
@@ -103,7 +103,7 @@ When the data is provided by using the points property, By using `emptyPointSett
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs29" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs29" %}
 
 **Customizing empty point**
 
@@ -121,4 +121,4 @@ Specific color for empty point can be set by `fill` property in `emptyPointSetti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs30" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs30" %}

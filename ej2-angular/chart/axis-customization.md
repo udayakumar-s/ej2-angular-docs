@@ -30,7 +30,7 @@ An axis can be positioned in the chart area using `crossesAt` and `crossesInAxis
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs2" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs2" %}
 
 ## Title
 
@@ -48,7 +48,7 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs3" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs3" %}
 
 ## Title Rotation
 
@@ -66,7 +66,7 @@ By using the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs3.1" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs3.1" %}
 
 ## Tick Lines Customization
 
@@ -84,7 +84,7 @@ You can customize the  `width`, `color` and `size` of the minor and major 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs4" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs4" %}
 
 ## Grid Lines Customization
 
@@ -102,7 +102,7 @@ You can customize the `width`, `color` and `dashArray` of the minor and maj
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs5" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs5" %}
 
 ## Multiple Axis
 
@@ -120,7 +120,7 @@ In addition to primary X and Y axis, we can add n number of axis to the chart. S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs6" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs6" %}
 
 ## Inversed Axis
 
@@ -140,7 +140,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs7" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs7" %}
 
 ## Opposed Position
 
@@ -160,6 +160,6 @@ To place an axis opposite from its original position, set [`opposedPosition`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs8" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs8" %}
 
 

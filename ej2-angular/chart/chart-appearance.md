@@ -26,7 +26,7 @@ You can customize the default color of series or points by providing a custom co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs25" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs25" %}
 
 ## Data Point Customization
 
@@ -48,7 +48,7 @@ You can bind the color for the points from [`dataSource`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs26" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs26" %}
 
 ### Range Color Mapping
 
@@ -66,7 +66,7 @@ You can differentiate data points based on their y values using [`rangeColorSett
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs27" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs27" %}
 
 ## Point Level Customization
 
@@ -84,7 +84,7 @@ Marker, datalabel and fill color of each data point can be customized with [`poi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs12" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs12" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -109,7 +109,7 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs13" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs13" %}
 
 **Chart Margin**
 
@@ -127,7 +127,7 @@ You can set margin for chart from its container through [`margin`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs14" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs14" %}
 
 **Chart Area Background**
 
@@ -145,7 +145,7 @@ The chart area background can be customized by using the [`background`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs15" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs15" %}
 
 ## Animation
 
@@ -163,7 +163,7 @@ You can customize animation for a particular series using [`animation`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs16" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs16" %}
 
 ## Fluid Animation
 
@@ -181,7 +181,7 @@ Fluid animation used to animate series with updated dataSource continues animati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs17" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs17" %}
 
 ## Chart Title
 
@@ -199,7 +199,7 @@ Chart can be given a title using [`title`](https://ej2.syncfusion.com/angular/do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/chart-title-cs2" %}
+{% previewsample "page.domainurl/samples/chart/chart-title-cs2" %}
 
 **Title wrap**
 
@@ -217,7 +217,7 @@ Chart can be given a title using [`title`](https://ej2.syncfusion.com/angular/do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/chart-title-cs3" %}
+{% previewsample "page.domainurl/samples/chart/chart-title-cs3" %}
 
 ## Chart SubTitle
 
@@ -235,7 +235,7 @@ Chart can be given a subtitle using [`subTitle`](https://ej2.syncfusion.com/angu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/chart-title-cs4" %}
+{% previewsample "page.domainurl/samples/chart/chart-title-cs4" %}
 
 ## See Also
 

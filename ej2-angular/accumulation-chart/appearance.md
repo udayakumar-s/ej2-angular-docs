@@ -26,7 +26,7 @@ You can customize the default color of series or points by providing a custom co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs5" %}
 
 ## Animation
 
@@ -46,4 +46,4 @@ Fluid animation used to animate series with updated dataSource continues animati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/radius-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/radius-cs1" %}

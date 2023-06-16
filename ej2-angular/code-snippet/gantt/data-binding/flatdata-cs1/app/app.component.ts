@@ -12,8 +12,8 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
     public ngOnInit(): void {
         this.data =  [
             { TaskID: 1,TaskName: 'Project Initiation',StartDate: new Date('04/02/2019'),EndDate: new Date('04/21/2019')},

@@ -1,22 +1,23 @@
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" #gantt [dataSource]="data" [taskFields]="taskSettings" [dayWorkingTime]="dayWorkingTime" (actionComplete)="actionComplete()" [timelineSettings]="timelineSettings" timezone="America/New_York" durationUnit="Hour" dateFormat="hh:mm a" height="450px" [includeWeekend]="true">`,
+       `<ejs-gantt id="ganttDefault" #gantt [dataSource]="data" [taskFields]="taskSettings" [dayWorkingTime]="dayWorkingTime" (actionComplete)="actionComplete($event)" [timelineSettings]="timelineSettings" timezone="America/New_York" durationUnit="Hour" dateFormat="hh:mm a" height="450px" [includeWeekend]="true">`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    public ganttObj: GanttComponent;
-    public data: object[];
-    public taskSettings: object;
-    public timelineSettings: object;
+    public ganttObj?: GanttComponent;
+    public data?: object[];
+    public taskSettings?: object;
+    public timelineSettings?: object;
     public timezoneValue: string = 'UTC';
-    public dayWorkingTime: object[];
-    public editSettings: object;
+    public dayWorkingTime?: object[];
+    public editSettings?: object;
     public ngOnInit(): void {
         this.data = [
           {

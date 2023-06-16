@@ -25,7 +25,7 @@ Here, the legend for a point can be collapsed by giving the empty string to the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/legend-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/legend-cs2" %}
 
 ## Position and Alignment
 
@@ -44,7 +44,7 @@ You can also align the legend to `center`, `far` or `near` of the chart usi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs8" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs8" %}
 
 ## Legend Reverse
 
@@ -62,7 +62,7 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs9" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs9" %}
 
 ## Legend Shape
 
@@ -80,7 +80,7 @@ To change the legend icon shape, use the `legendShape` property in the `series
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs10" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs10" %}
 
 ## Legend Size
 
@@ -98,7 +98,7 @@ The legend size can be changed by using the `width` and `height` properties of t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs11" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs11" %}
 
 ## Legend Item Size
 
@@ -116,7 +116,7 @@ You can customize the size of the legend items by using the `shapeHeight` and `s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs12" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs12" %}
 
 ## Enable Animation
 
@@ -134,7 +134,7 @@ You can customize the animation while clicking legend by setting enableAnimation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs13" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs13" %}
 
 ## Paging for Legend
 
@@ -152,7 +152,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs14" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs14" %}
 
 ## Legend Text Wrap
 
@@ -170,7 +170,7 @@ When the legend text exceeds the container, the text can be wrapped by using `te
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs15" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs15" %}
 
 ## Legend Title
 
@@ -188,7 +188,7 @@ You can set title for legend using `title` property in `legendSettings`. You can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs16" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs16" %}
 
 ## Arrow Page Navigation
 
@@ -206,7 +206,7 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs17" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs17" %}
 
 ## Legend Item Padding
 
@@ -224,4 +224,4 @@ The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/accumul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs18" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs18" %}

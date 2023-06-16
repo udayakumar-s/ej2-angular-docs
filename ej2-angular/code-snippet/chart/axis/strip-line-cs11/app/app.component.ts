@@ -1,22 +1,21 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { stripData } from 'datasource.ts';
+import { stripData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryYAxis]='primaryYAxis'>
+    template: `<ejs-chart id="chart-container" [primaryYAxis]='primaryYAxis'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' [marker]='marker'></e-series>>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public primaryYAxis: Object;
-    public marker: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public primaryYAxis?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = [
             {x: 1, y: 5},{x: 2, y: 39},{x: 3, y: 21},{x: 4, y: 51},{x: 5, y: 30},

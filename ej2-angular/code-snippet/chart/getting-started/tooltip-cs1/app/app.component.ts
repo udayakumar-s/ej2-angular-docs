@@ -5,8 +5,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
     [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales' name='Sales'></e-series>
@@ -14,10 +13,10 @@ import { Component, OnInit } from '@angular/core';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public primaryYAxis: Object;
-    public title: string;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public primaryYAxis?: Object;
+    public title?: string;
     ngOnInit(): void {
         // Title for chart
         this.title = 'Sales Analysis';

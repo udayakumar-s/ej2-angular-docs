@@ -12,11 +12,11 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
-    public filterSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
+    public filterSettings?: object;
     public ngOnInit(): void {
         this.data = [
     {

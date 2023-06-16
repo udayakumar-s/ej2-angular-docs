@@ -26,4 +26,4 @@ In the following demo, **Work1**  cells have been spanned.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/columnspan-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/columnspan-cs1" %}

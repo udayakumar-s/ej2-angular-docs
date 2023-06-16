@@ -24,7 +24,7 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/checkbox-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/checkbox-cs1" %}
 
 ## Controlling Grid actions
 
@@ -42,7 +42,7 @@ You can enable or disable gantt action for a particular column by setting the [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/gridactions-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/gridactions-cs1" %}
 
 ## Column type
 

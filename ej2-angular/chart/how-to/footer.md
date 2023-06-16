@@ -55,4 +55,4 @@ Use the `x` and `y` option of the annotation object to create footer for chart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs8" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs8" %}

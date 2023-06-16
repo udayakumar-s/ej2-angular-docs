@@ -7,19 +7,19 @@ import { editingData } from './data';
 import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 @Component({
     selector: 'app-root',
-    template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [columns]="columns" [editSettings]="editSettings" [tooltipSettings]="tooltipSettings">
+    template: `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [columns]="columns" [editSettings]="editSettings" [tooltipSettings]="tooltipSettings">
        <ng-template #tooltipSettingsEditing let-data>
         <div> <ng-container>Duration : {{data.duration}}</ng-container> </div>
        </ng-template></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public tooltipSettings: object;
-    public editSettings: EditSettingsModel;
+
+    public data?: object[];
+    public taskSettings?: object;
+    public tooltipSettings?: object;
+    public editSettings?: EditSettingsModel;
+columns: any;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -40,6 +40,7 @@ export class AppComponent{
         this.tooltipSettings = {
                 showTooltip: true
         };
+
     }
 }
 

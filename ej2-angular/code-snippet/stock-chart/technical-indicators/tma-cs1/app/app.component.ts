@@ -1,7 +1,7 @@
 
 
-import { Component, ViewEncapsulation } from '@angular/core';
-import { chartData } from 'datasource.ts';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { chartData } from './datasource';
 
 @Component({
     selector: 'app-container',
@@ -34,7 +34,10 @@ export class AppComponent implements OnInit {
     };
     constructor() {
         //code
-    };
+    } ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
+;
 }
 
 

@@ -38,7 +38,7 @@ The Gantt supports a set of filtering modes with the [`filterSettings.hierarchyM
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/filterhierarchy-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/filterhierarchy-cs1" %}
 
 ### Initial filter
 
@@ -56,7 +56,7 @@ To apply the filter at initial rendering, set the filter to predicate object in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/initialfilter-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/initialfilter-cs1" %}
 
 ### Filter operators
 
@@ -96,7 +96,7 @@ In the following sample, type **Project** in the `TaskName` column to filter dia
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/diacritics-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/diacritics-cs1" %}
 
 ## Filtering a specific column by method
 
@@ -114,7 +114,7 @@ You can filter the columns dynamically by using the [`filterByColumn`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/filtercolumn-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/filtercolumn-cs1" %}
 
 ## Clear filtered columns
 
@@ -132,4 +132,4 @@ You can clear all the filtering conditions done in the Gantt component by using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/clearfilter-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/clearfilter-cs1" %}

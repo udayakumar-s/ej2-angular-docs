@@ -24,4 +24,4 @@ Generally in Gantt, Custom fields are displayed in the Custom Tab of the Add/Edi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/customfield-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/customfield-cs1" %}

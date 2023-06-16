@@ -19,7 +19,7 @@ import { editingData} from './data';
 
 export class AppComponent{
     // Data for Gantt
-    public divElement: any;
+    public divElement?: any;
     public inputs = {
        booleanedit: CheckBox,
        dropdownedit: DropDownList,
@@ -29,16 +29,16 @@ export class AppComponent{
        numericedit: NumericTextBox,
        stringedit: TextBox
     };
-    public editingData: object[];
-    public taskSettings: object;
-    public editSettings: object;
-    public editDialogFields: object[];
-    public addDialogFields: object[];
-    public columns: object[];
-    public toolbar: ToolbarItem[];
-    public selectionSettings: SelectionSettingsModel;
+    public editingData?: object[];
+    public taskSettings?: object;
+    public editSettings?: object;
+    public editDialogFields?: object[];
+    public addDialogFields?: object[];
+    public columns?: object[];
+    public toolbar?: ToolbarItem[];
+    public selectionSettings?: SelectionSettingsModel;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.editingData = editingData;
         this.taskSettings = {
@@ -99,14 +99,14 @@ public actionBegin(args: any) {
             placeholder: "CustomField",
             value: args.rowData.CustomField
           };
-          var inputObj = new this.inputs[column.editType](input);
+          var inputObj = new (this as any).inputs[column.editType](input);
           inputObj.appendTo(inputElement);
         }
     };
 public actionComplete(args: any) {
         if (args.requestType === "openEditDialog" || args.requestType === "openAddDialog") {
           var generalTab = document.getElementById(this.ganttObj.controlId + "GeneralTabContainer");
-          generalTab.appendChild(this.divElement);
+          generalTab!.appendChild(this.divElement);
         }
     };
 }

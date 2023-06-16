@@ -5,19 +5,18 @@ import { IPointRenderEventArgs, ChartShape } from '@syncfusion/ej2-angular-chart
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' (pointRender)='pointRender($event)'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' (pointRender)='pointRender($event)'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' name='India' width=2 [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public marker: Object;
-    public primaryYAxis: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public marker?: Object;
+    public primaryYAxis?: Object;
     public shapes: string[] = [
    'Diamond', 'Circle','Rectangle', 'Line', 'Triangle', 'Rectangle'
    ];

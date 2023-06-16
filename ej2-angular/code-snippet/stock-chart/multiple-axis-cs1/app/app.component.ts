@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-stockchart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-stockchart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-stockchart-axes>
             <e-stockchart-axis rowIndex=1 name='yAxis1' opposedPosition='true' title='Temperature (Celsius)' [majorGridLines]='majorGridLines' labelFormat='{value}°C'
                    [minimum]='24' [maximum]='36' [interval]='2' [lineStyle]='lineStyle'>
@@ -22,14 +21,14 @@ import { Component, OnInit } from '@angular/core';
     </ejs-stockchart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public majorGridLines: Object;
-    public primaryYAxis: Object;
-    public lineStyle: Object;
-    public marker: Object;
-    public rows: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public majorGridLines?: Object;
+    public primaryYAxis?: Object;
+    public lineStyle?: Object;
+    public marker?: Object;
+    public rows?: Object;
     ngOnInit(): void {
         this.chartData = [
                 { x: new Date(2000, 2, 11), y: 15, y1: 29 },

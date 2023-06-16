@@ -41,4 +41,4 @@ To show that datalabel template, set the element id to the `template` property i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/datalabel-cs1" %}
+{% previewsample "page.domainurl/samples/chart/datalabel-cs1" %}

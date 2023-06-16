@@ -24,4 +24,4 @@ You can enable Excel like filter by defining [`filterSettings.type`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/filtermenu-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/filtermenu-cs1" %}

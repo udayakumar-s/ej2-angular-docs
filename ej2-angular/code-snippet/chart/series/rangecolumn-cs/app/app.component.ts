@@ -1,12 +1,11 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { data1 } from 'datasource.ts';
-import { data2 } from 'datasource.ts';
+import { data1 } from './datasource';
+import { data2 } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='data1' type='RangeColumn' xName='x' low='low' high='high' fill='yellow' [border]='border' dashArray='5.5'></e-series>
             <e-series [dataSource]='data2' type='RangeColumn' xName='x' low='low' high='high' fill='yellow' [border]='border' dashArray='5.5'></e-series>
@@ -15,11 +14,11 @@ import { data2 } from 'datasource.ts';
 })
 
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public border: Object;
-    public title: string;
-    public data1: Object[];
-    public data2: Object[];
+    public primaryXAxis?: Object;
+    public border?: Object;
+    public title?: string;
+    public data1?: Object[];
+    public data2?: Object[];
     ngOnInit(): void {
         this.data1 = data1;
         this.data2 = data2;

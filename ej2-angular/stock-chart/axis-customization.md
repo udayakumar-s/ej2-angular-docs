@@ -26,7 +26,7 @@ An axis can be positioned in the Stock Chart area using [`crossesAt`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/axis-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/axis-cs1" %}
 
 ## Title
 
@@ -44,7 +44,7 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/axis-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/axis-cs2" %}
 
 ## Tick Lines Customization
 
@@ -62,7 +62,7 @@ You can customize the  `width`, `color` and `size` of the minor and major 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/axis-cs3" %}
+{% previewsample "page.domainurl/samples/stock-chart/axis-cs3" %}
 
 ## Grid Lines Customization
 
@@ -80,7 +80,7 @@ You can customize the `width`, `color` and `dashArray` of the minor and maj
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/axis-cs4" %}
+{% previewsample "page.domainurl/samples/stock-chart/axis-cs4" %}
 
 ## Multiple Axis
 
@@ -98,7 +98,7 @@ In addition to primary X and Y axis, we can add n number of axis to the Stock Ch
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/multiple-axis-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/multiple-axis-cs1" %}
 
 ## Inversed Axis
 
@@ -118,7 +118,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/axis-cs5" %}
+{% previewsample "page.domainurl/samples/stock-chart/axis-cs5" %}
 
 ## Opposed Position
 
@@ -136,4 +136,4 @@ To place an axis opposite from its original position, set [`opposedPosition`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/axis-cs6" %}
+{% previewsample "page.domainurl/samples/stock-chart/axis-cs6" %}

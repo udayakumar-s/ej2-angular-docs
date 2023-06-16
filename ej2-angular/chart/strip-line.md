@@ -34,7 +34,7 @@ Striplines are rendered in the specified start to end range and you can add more
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs5" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs5" %}
 
 ## Vertical Striplines
 
@@ -53,7 +53,7 @@ Striplines are rendered in the specified start to end range and you can add more
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs6" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs6" %}
 
 ## Customize the strip line
 
@@ -72,7 +72,7 @@ Size of the strip line is customized by `size`. Border for the stripline is cust
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs7" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs7" %}
 
 ## Customize the stripline text
 
@@ -91,7 +91,7 @@ Horizontal and Vertical alignment of stripline text can be changed by `horizonta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs8" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs8" %}
 
 ## Dash Array
 
@@ -109,7 +109,7 @@ You can create dash array stripline by using `dashArray` property. The Stripline
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs9" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs9" %}
 
 ## Recurrence Stripline
 
@@ -131,7 +131,7 @@ The strip lines to be drawn repeatedly at the regular intervals – this will be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs10" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs10" %}
 
 ## Size Type
 
@@ -158,7 +158,7 @@ The `sizeType` property refers the size of the stripline. They are,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs18" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs18" %}
 
 ## Segment Stripline
 
@@ -181,7 +181,7 @@ You can create stripline in a particular region with respect to segment. You can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs11" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs11" %}
 
 ## See Also
 

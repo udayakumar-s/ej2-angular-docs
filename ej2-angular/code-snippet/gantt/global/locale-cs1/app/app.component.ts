@@ -28,8 +28,8 @@ L10n.load({
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
     public ngOnInit(): void {
         this.data = Ganttdata;
         this.taskSettings = {

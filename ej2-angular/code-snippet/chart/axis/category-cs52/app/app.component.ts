@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings'>
         <e-series-collection>
             <e-series [dataSource]='chartData' [marker]='marker' type='Line' name='December 2007' xName='x' yName='y'></e-series>
             <e-series [dataSource]='chartData' [marker]='marker' type='Line' name='December 2008' xName='x' yName='y1'></e-series>
@@ -15,12 +14,12 @@ import { Component, OnInit } from '@angular/core';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public legendSettings: Object;
-    public marker: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public legendSettings?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = [
     { x: 'WW', y: 12, y1: 22, y2: 38.3, y3: 50 },

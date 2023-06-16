@@ -13,10 +13,10 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-     public timelineSettings: object;
-     public editSettings: EditSettingsModel;
+    public data?: object[];
+    public taskSettings?: object;
+     public timelineSettings?: object;
+     public editSettings?: EditSettingsModel;
     public ngOnInit(): void {
         this.data = [
         {

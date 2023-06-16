@@ -15,12 +15,12 @@ import { editingData} from './data';
 
 export class AppComponent{
     // Data for Gantt
-    public editingData: object[];
-    public taskSettings: object;
-    public editSettings: object;
-    public contextMenuItems: (string | ContextMenuItemModel)[];
+    public editingData?: object[];
+    public taskSettings?: object;
+    public editSettings?: object;
+    public contextMenuItems?: (string | ContextMenuItemModel)[];
     @ViewChild('customcontextmenu', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.editingData = editingData;
         this.taskSettings = {
@@ -47,26 +47,26 @@ export class AppComponent{
     public contextMenuClick (args: ContextMenuClickEventArgs) {
         let record = args.rowData;
         if (args.item.id === 'collapserow') {
-            this.ganttObj.collapseByID(Number(record.ganttProperties.taskId));
+            this.ganttObj.collapseByID(Number(record!.ganttProperties!.taskId));
             }
         if (args.item.id === 'expandrow') {
-            this.ganttObj.expandByID(Number(record.ganttProperties.taskId));
+            this.ganttObj.expandByID(Number(record!.ganttProperties!.taskId));
             }
         if (args.item.id === 'hidecols') {
-            this.ganttObj.hideColumn(args.column.headerText);
+            this.ganttObj.hideColumn(args.column!.headerText);
         }
     }
     public contextMenuOpen (args: ContextMenuOpenEventArgs) {
         let record = args.rowData;
             if (args.type !== 'Header') {
-                if (!record.hasChildRecords) {
-                    args.hideItems.push('Collapse the Row');
-                    args.hideItems.push('Expand the Row');
+                if (!record!.hasChildRecords) {
+                    args.hideItems!.push('Collapse the Row');
+                    args.hideItems!.push('Expand the Row');
                 } else {
-                    if(record.expanded){
-                        args.hideItems.push("Expand the Row");
+                    if(record!.expanded){
+                        args.hideItems!.push("Expand the Row");
                     } else {
-                        args.hideItems.push("Collapse the Row");
+                        args.hideItems!.push("Collapse the Row");
                     }
                 }
         }

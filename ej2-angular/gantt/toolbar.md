@@ -47,7 +47,7 @@ The following table shows built-in toolbar items and its actions.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/toolbar/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/toolbar/default-cs1" %}
 
 > * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) has options to define both built-in and custom toolbar items.
 
@@ -70,7 +70,7 @@ By default, the custom toolbar items are at left position. You can change the po
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/toolbar/custom-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/toolbar/custom-toolbar-cs1" %}
 
 > * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) has options to define both built-in and custom toolbar items.
 > * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
@@ -93,7 +93,7 @@ In the following example, the `ExpandAll` and `CollapseAll` are built-in toolbar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/toolbar/builtin-custom-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/toolbar/builtin-custom-cs1" %}
 
 ## Enable/disable toolbar items
 
@@ -111,7 +111,7 @@ You can enable or disable the toolbar items by using the `enableItems` method.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/toolbar/enable-disable-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/toolbar/enable-disable-cs1" %}
 
 ## Add input elements in toolbar
 
@@ -129,4 +129,4 @@ In the Gantt toolbar, you can add EJ2 editor elements like numeric text box, dro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/toolbar/input-elements-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/toolbar/input-elements-cs1" %}

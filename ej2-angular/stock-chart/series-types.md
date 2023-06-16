@@ -54,4 +54,4 @@ To render a candle series, use series [`type`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/series-types/candle-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/series-types/candle-cs1" %}

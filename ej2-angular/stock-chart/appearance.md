@@ -26,7 +26,7 @@ StockChart can be given a title using [`title`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/chart-title-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/chart-title-cs1" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -46,7 +46,7 @@ The `textStyle` property of stockchart title provides options to customize the `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/chart-title-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/chart-title-cs2" %}
 
 ## Stock Chart Theme
 
@@ -66,7 +66,7 @@ Changing Stock Chart theme will affect background color, grid lines, tooltip col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/chart-title-cs3" %}
+{% previewsample "page.domainurl/samples/stock-chart/chart-title-cs3" %}
 
 ## See Also
 

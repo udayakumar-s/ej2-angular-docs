@@ -124,7 +124,7 @@ Now run the application in the browser using the below command.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/initialize-cs1" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/initialize-cs1" %}
 
 ## Module Injection
 
@@ -184,7 +184,7 @@ Now assign the local data to [`dataSource`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/datasource-cs1" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/datasource-cs1" %}
 
 ## Add Bullet Chart Title
 
@@ -202,7 +202,7 @@ You can add a title using [`title`](https://ej2.syncfusion.com/angular/documenta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/title-cs1" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/title-cs1" %}
 
 ## Ranges
 
@@ -220,7 +220,7 @@ You can add a range using [`ranges`](https://ej2.syncfusion.com/angular/document
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs23" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs23" %}
 
 ## Enable Tooltip
 
@@ -238,4 +238,4 @@ The tooltip is useful when you cannot display information by using the data labe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/tooltip-cs1" %}

@@ -30,7 +30,7 @@ To use sort, inject the [`SortService`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/sorting/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/sorting/default-cs1" %}
 
 > * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
 > * To disable sorting for a particular column, set the [`columns.allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowsorting) property to `false`.
@@ -51,7 +51,7 @@ The Gantt component can be rendered with sorted columns initially, and this can 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/sorting/sort-initial-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/sorting/sort-initial-cs1" %}
 
 ## Sorting column dynamically
 
@@ -69,7 +69,7 @@ Columns in the Gantt component can be sorted dynamically using the [`sortColumn`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/sorting/sort-dynamic-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/sorting/sort-dynamic-cs1" %}
 
 ## Clear all the sorting dynamically
 
@@ -87,7 +87,7 @@ In the Gantt component, you can clear all the sorted columns and return to previ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/sorting/clearsort-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/sorting/clearsort-cs1" %}
 
 ## Sorting events
 
@@ -105,7 +105,7 @@ During the sort action, the Gantt component triggers two events. The [`actionBeg
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/sorting/events-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/sorting/events-cs1" %}
 
 > The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is **sorting**.
 
@@ -127,4 +127,4 @@ The following code snippets explains how to achieve this.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/sorting/sort-custom-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/sorting/sort-custom-cs1" %}

@@ -26,7 +26,7 @@ The Range Selector can be customized by using the [`navigatorStyleSettings`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started/default-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/getting-started/default-cs1" %}
 
 ## Thumb
 
@@ -44,7 +44,7 @@ The thumb property allows to customize the border, fill color, size, and type of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started/default-cs2" %}
+{% previewsample "page.domainurl/samples/rangenavigator/getting-started/default-cs2" %}
 
 ## Border customization
 
@@ -62,7 +62,7 @@ Using the [`navigatorBorder`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started/default-cs3" %}
+{% previewsample "page.domainurl/samples/rangenavigator/getting-started/default-cs3" %}
 
 ## Deferred update
 
@@ -80,7 +80,7 @@ If the [`enableDeferredUpdate`](https://ej2.syncfusion.com/angular/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/deferred-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/deferred-cs1" %}
 
 ## Allow snapping
 
@@ -98,7 +98,7 @@ The [`allowSnapping`](https://ej2.syncfusion.com/angular/documentation/api/range
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started/default-cs4" %}
+{% previewsample "page.domainurl/samples/rangenavigator/getting-started/default-cs4" %}
 
 ## Animation
 
@@ -116,7 +116,7 @@ The speed of the animation can be controlled using the [`animationDuration`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started/default-cs5" %}
+{% previewsample "page.domainurl/samples/rangenavigator/getting-started/default-cs5" %}
 
 ## See Also
 

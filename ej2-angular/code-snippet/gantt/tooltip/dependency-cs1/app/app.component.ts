@@ -8,17 +8,15 @@ import { editingData } from './data';
 @Component({
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [columns]="columns" [tooltipSettings]="tooltipSettings">
-        <ng-template #tooltipSettingsConnectorLine let-data>
-       <div> <ng-container> Offset : {{data.offsetString}}</ng-container> </div>
-       </ng-template></ejs-gantt>`,
+       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [columns]="columns" [tooltipSettings]="tooltipSettings"><ng-template #tooltipSettingsConnectorLine let-data><div> <ng-container> Offset : {{data.offsetString}}</ng-container> </div></ng-template></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public tooltipSettings: object;
+
+    public data?: object[];
+    public taskSettings?: object;
+    public tooltipSettings?: object;
+columns: any;
 
     public ngOnInit(): void {
         this.data = editingData;

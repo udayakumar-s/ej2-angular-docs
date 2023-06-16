@@ -1,6 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
@@ -10,12 +11,12 @@ import { Gantt } from '@syncfusion/ej2-gantt';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    public ganttObj: GanttComponent;
-    public data: object[];
-    public taskSettings: object;
-    public timelineSettings: object;
+    public ganttObj?: GanttComponent| any;
+    public data?: object[];
+    public taskSettings?: object;
+    public timelineSettings?: object;
     public timezoneValue: string = 'UTC';
-    public dayWorkingTime: object[];
+    public dayWorkingTime?: object[];
     public ngOnInit(): void {
         this.data = [
             { taskID: 1, taskName: 'Project Schedule', startDate: new Date('02/04/2019 08:00'), endDate: new Date('03/10/2019')},

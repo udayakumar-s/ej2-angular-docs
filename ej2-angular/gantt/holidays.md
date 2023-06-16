@@ -33,4 +33,4 @@ The following code example shows how to display the non-working days in the Gant
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/holidays/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/holidays/default-cs1" %}

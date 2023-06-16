@@ -26,7 +26,7 @@ Stock Events visualizes stock events in stock chart. 'SplineSeries' is used to r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/stock-events-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/stock-events-cs1" %}
 
 **Stock Events for individual series**
 
@@ -46,4 +46,4 @@ By default, stock events will be showed for all series. Now, you can set the sto
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/stock-events-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/stock-events-cs2" %}

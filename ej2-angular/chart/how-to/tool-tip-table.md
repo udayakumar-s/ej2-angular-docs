@@ -46,4 +46,4 @@ To show that tooltip template, set the element id to the `template` property in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/table-cs1" %}
+{% previewsample "page.domainurl/samples/chart/table-cs1" %}

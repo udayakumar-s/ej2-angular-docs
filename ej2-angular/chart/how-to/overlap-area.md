@@ -24,4 +24,4 @@ You can add a new range area series to show the overlapped area in different col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs14" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs14" %}

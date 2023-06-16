@@ -4,15 +4,14 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' opacity=0.4 fill='red' [border]='border'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
+    public primaryXAxis?: Object;
     public chartData: Object[] =  [
         { x: 'Jan', high: 14, low: 7, high1: 29, low1: 19 },
         { x: 'Feb', high: 17, low: 7, high1: 32, low1: 22 },
@@ -27,9 +26,9 @@ export class AppComponent implements OnInit {
         { x: 'Nov', high: 20, low: 10, high1: 35, low1: 25 },
         { x: 'Dec', high: 20, low: 7, high1: 32, low1: 22 }
     ];
-    public title: string;
-    public primaryYAxis: Object;
-    public border: Object;
+    public title?: string;
+    public primaryYAxis?: Object;
+    public border?: Object;
     ngOnInit(): void {
         this.primaryXAxis = {
            valueType: 'Category',

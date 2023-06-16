@@ -533,7 +533,7 @@ export let textdata: Object[] = [{
                 'Country': 'UK',
                 'Contact': '(71) 555-3636',
                 'DOB': new Date('11/06/1990')
-            },
+            }
             ]
 
         },

@@ -14,9 +14,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   public i:number = 0;
   public id:string ='chart-container';
-  public chartData: Object[];
-  public marker: Object;
-  public title: string;
+  public chartData?: Object[];
+  public marker?: Object;
+  public title?: string;
   public items:any =[];
   ngOnInit(): void {
     this.chartData = [{ x: 1, y: 21 }, { x: 2, y: 24 }, { x: 3, y: 36 },

@@ -42,7 +42,7 @@ We have different type of selection mode for selecting the data. They are,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs1" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs1" %}
 
 >Note: To use select feature, we need to Inject `SelectionService` into the `NgModule.providers`.
 
@@ -62,7 +62,7 @@ We have different type of selection mode for selecting the data. They are,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs2" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs2" %}
 
 ## Cluster
 
@@ -80,7 +80,7 @@ You can select the points that corresponds to the same index in all the series, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs3" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs3" %}
 
 ## Rectangular selection
 
@@ -107,7 +107,7 @@ The selected data’s are returned as an array collection in the [`dragComplete`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/drag-cs1" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/drag-cs1" %}
 
 ## Lasso selection
 
@@ -125,7 +125,7 @@ To select a region by drawing freehand shapes to fetch a collection of data use 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/drag-cs2" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/drag-cs2" %}
 
 ## Multi-region selection
 
@@ -143,7 +143,7 @@ To select multiple region on the chart, set the `allowMultiSelection` property t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/drag-cs3" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/drag-cs3" %}
 
 ## Selection type
 
@@ -161,7 +161,7 @@ You can select multiple points or series, by enabling the [`isMultiSelect`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs4" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs4" %}
 
 ## Selection on load
 
@@ -179,7 +179,7 @@ You can able to select a point or series programmatically on a chart using [`sel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs5" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs5" %}
 
 ## Selection through on legend
 
@@ -196,7 +196,7 @@ You can able to select a point or series through on legend using [`toggleVisibil
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs6" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs6" %}
 
 ## Customization for selection
 
@@ -214,7 +214,7 @@ You can apply custom style to selected points or series with [`selectionStyle`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs7" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs7" %}
 
 ## See Also
 

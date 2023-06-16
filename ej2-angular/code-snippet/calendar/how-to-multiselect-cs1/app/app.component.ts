@@ -3,11 +3,11 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { CalendarComponent } from '@syncfusion/ej2-angular-calendars';
-import moment from 'moment';
+import * as moment from 'moment';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template: `
         <!-- Rendering the Calendar with Multi selection option--->
         <div class="wrapelement">
@@ -40,7 +40,7 @@ export class AppComponent {
 
     onChange(args: any) {
         var startOfWeek = moment(args.value).startOf('week');
-        var endOfWeek = moment(args.value).endOf('week');
+        var endOfWeek: any = moment(args.value).endOf('week');
         if (this.CalendarInstance?.element.classList.contains('workweek')) {
             this.getWeekArray(startOfWeek.day(1), endOfWeek.day(5), this);
         } else if (this.CalendarInstance?.element.classList.contains("week")) {

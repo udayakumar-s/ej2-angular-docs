@@ -6,8 +6,7 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<div id="target">
+    template: `<div id="target">
   <ejs-chart align='center' id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis'>
     <e-series-collection>
       <e-series [dataSource]='data' type='Column' xName='x' yName='y' name='Germany' width=2>
@@ -34,38 +33,38 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 })
 export class AppComponent {
 
-public data: Object[] = [
+  public data: Object[] = [
     { x: new Date(2005, 0, 1), y: 21 }, { x: new Date(2006, 0, 1), y: 24 },
     { x: new Date(2007, 0, 1), y: 36 }, { x: new Date(2008, 0, 1), y: 38 },
     { x: new Date(2009, 0, 1), y: 54 }, { x: new Date(2010, 0, 1), y: 57 },
     { x: new Date(2011, 0, 1), y: 70 }
-];
-public data1: Object[] = [
+  ];
+  public data1: Object[] = [
     { x: new Date(2005, 0, 1), y: 28 }, { x: new Date(2006, 0, 1), y: 44 },
     { x: new Date(2007, 0, 1), y: 48 }
-];
-@ViewChild('Dialog')
-public Dialog: DialogComponent;
-public visible: boolean = false;
-public showCloseIcon: Boolean = true;
-public width: string = '500px';
-public height: string = '450px';
-public target: Element = document.getElementById('target');
-public content: string = '<div id="container2"></div>';
-//Initializing Primary X Axis
-public primaryXAxis: Object = {
+  ];
+  @ViewChild('Dialog')
+  public Dialog?: DialogComponent;
+  public visible: boolean = false;
+  public showCloseIcon: Boolean = true;
+  public width: string = '500px';
+  public height: string = '450px';
+  public target: Element = document.getElementById('target') as Element;
+  public content: string = '<div id="container2"></div>';
+  //Initializing Primary X Axis
+  public primaryXAxis: Object = {
     valueType: 'DateTime',
     labelFormat: 'y',
     intervalType: 'Years',
     edgeLabelPlacement: 'Shift'
-};
-public title: string = 'Inflation - Consumer Price';
-public BtnClick = function(event: any): void {
-    this.Dialog.show();
-};
-constructor() {
+  };
+  public title: string = 'Inflation - Consumer Price';
+  public BtnClick = (event: any): void => {
+    this.Dialog?.show();
+  };
+  constructor() {
    //code
-};
+  };
 }
 
 

@@ -1,13 +1,12 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { loadCldr, L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
+import { loadCldr, L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
 setCurrencyCode('EUR');
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'[tooltip]='tooltip'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'[tooltip]='tooltip'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Product X' [marker]='marker'></e-series>
             <e-series [dataSource]='chartData' type='Column' xName='x' yName='y1' name='Product Y ' [marker]='marker'></e-series>
@@ -15,12 +14,12 @@ setCurrencyCode('EUR');
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public tooltip: Object;
-    public marker: Object;
-    public primaryYAxis: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public tooltip?: Object;
+    public marker?: Object;
+    public primaryYAxis?: Object;
     ngOnInit(): void {
         this.chartData = [
                 { x: 1900, y: 4, y1: 2.6, y2: 2.8 }, { x: 1920, y: 3.0, y1: 2.8, y2: 2.5 },

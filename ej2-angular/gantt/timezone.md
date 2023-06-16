@@ -32,7 +32,7 @@ Setting `timezone` to UTC for Gantt will display the same time as in the databas
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timezone/same-time-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timezone/same-time-cs1" %}
 
 ## CRUD operations with timezone
 
@@ -50,7 +50,7 @@ CRUD operations can be performed with timezone, and the gantt is rendered based 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timezone/timezone-CRUD-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timezone/timezone-CRUD-cs1" %}
 
 ## Timezone methods
 

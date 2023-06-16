@@ -26,7 +26,7 @@ You can customize the width and height of the shapes by using `width` and `heigh
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs3" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs3" %}
 
 # Customizing point color and data label value
 
@@ -46,4 +46,4 @@ By default datalabel values shows y values of the datasource. You can customize 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs4" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs4" %}

@@ -27,5 +27,5 @@ In the following sample, the Shimmer indicator is displayed while the gantt is s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/loading-animation-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/loading-animation-cs1" %}
 

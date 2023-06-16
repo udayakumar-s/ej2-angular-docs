@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule ,ExcelExportService,ExcelExport, GanttAllModule} from '@syncfusion/ej2-angular-gantt';
 import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt';
 
 /**
@@ -9,10 +9,10 @@ import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/
  */
 @NgModule({
     imports: [
-        BrowserModule, GanttModule
+        BrowserModule, GanttModule,GanttAllModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: [ToolbarService, PdfExportService, SelectionService]
+    providers: [ToolbarService, PdfExportService, SelectionService, ExcelExportService]
 })
 export class AppModule { }

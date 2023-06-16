@@ -2,12 +2,12 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties, PdfPaddings, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { Gantt, Toolbar, PdfExport, Selection, PdfExportProperties, PdfPaddings, GanttComponent, ToolbarItem, IGanttStyle } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
-import { PdfPaddings } from '@syncfusion/ej2-gantt/src/export/pdf-base/pdf-borders';
+
 import { editingData } from './data';
-import { EJ2Instance } from '@syncfusion/ej2-navigations';
+
 
 @Component({
     selector: 'app-root',
@@ -18,11 +18,11 @@ import { EJ2Instance } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent {
   // Data for Gantt
-  public data: object[];
-  public taskSettings: object;
-  public toolbar: ToolbarItem[];
+  public data?: object[];
+  public taskSettings?: object;
+  public toolbar?: ToolbarItem[];
   @ViewChild('gantt', { static: true })
-  public ganttObj: GanttComponent;
+  public ganttObj?: GanttComponent;
 
   public ngOnInit(): void {
     this.data = editingData;
@@ -38,14 +38,14 @@ export class AppComponent {
   };
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_pdfexport') {
-      let exportProperties: PdfExportProperties = {
-        fontFamily: 1,
+      let exportProperties: PdfExportProperties| IGanttStyle| any = {
+        fontFamily: 'Arial',
         columnHeader: {
           backgroundColor: new PdfColor(179, 219, 255),
         },
         taskbar: {
           taskColor: new PdfColor(240, 128, 128),
-          taskBorderColor: new PdfColor('red'),
+          taskBorderColor: new PdfColor(255, 0, 0),
           progressColor: new PdfColor(205, 92, 92),
         },
         connectorLineColor: new PdfColor(128, 0, 0),
@@ -67,7 +67,7 @@ export class AppComponent {
           borderColor: new PdfColor(179, 219, 255),
         },
       }
-      this.ganttObj.pdfExport(exportProperties);
+      this.ganttObj!.pdfExport(exportProperties);
 
     }
   }

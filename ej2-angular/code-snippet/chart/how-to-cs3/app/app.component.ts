@@ -3,8 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 @Component({
     selector: 'app-container',
-    template:
-    `
+    template: `
     <ejs-chart style='display:block;' [chartArea]='chartArea'  align='center' id='chartcontainer' [title]='title'
             [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'>
             <e-series-collection>

@@ -24,7 +24,7 @@ The Gantt component contains two tiers layout in timeline, you can customize the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/top-bottom-tier-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/top-bottom-tier-cs1" %}
 
 ## Combining timeline cells
 
@@ -42,7 +42,7 @@ In the Gantt component, the timeline cells in top and bottom tiers can be combin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/combine-cells-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/combine-cells-cs1" %}
 
 ## Format value of timeline cell
 
@@ -60,7 +60,7 @@ In the Gantt component, you can format the value of top and bottom timeline cell
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/format-value-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/format-value-cs1" %}
 
 ## Timeline cell width
 
@@ -78,4 +78,4 @@ In the Gantt component, you can define the width value of timeline cell using th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/timeline/cell-width-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/timeline/cell-width-cs1" %}

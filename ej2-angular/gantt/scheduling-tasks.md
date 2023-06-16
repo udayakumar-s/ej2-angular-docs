@@ -40,7 +40,7 @@ The following code snippet explains mapping the data source field of the duratio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/scheduling-tasks/mapping-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/scheduling-tasks/mapping-cs2" %}
 
 > NOTE
 The default value of the [`durationUnit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#durationunit) property is `day`.
@@ -61,7 +61,7 @@ A duration unit for a task can be defined along with duration value, the followi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/scheduling-tasks/durationfield-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/scheduling-tasks/durationfield-cs2" %}
 
 >NOTE:
 The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
@@ -108,7 +108,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/scheduling-tasks/unscheduledtasks-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/scheduling-tasks/unscheduledtasks-cs1" %}
 
 > NOTE
 > If the [`allowUnscheduledTasks`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowunscheduledtasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
@@ -131,7 +131,7 @@ The following code snippet explains how to define the working time range for the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/scheduling-tasks/workingtimerange-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/scheduling-tasks/workingtimerange-cs1" %}
 
 > NOTE
 >* Individual tasks can lie between any time within the defined working time range of the project.
@@ -153,7 +153,7 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/scheduling-tasks/changenonworkingday-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/scheduling-tasks/changenonworkingday-cs1" %}
 
 > By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
 > In the Gantt component, you can make weekend as working day by setting the [`includeWeekend`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#includeweekend) property to `true`.

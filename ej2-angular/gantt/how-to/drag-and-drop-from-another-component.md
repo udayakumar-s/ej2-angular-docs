@@ -24,7 +24,7 @@ In Gantt, it is possible to drag a record from another component and drop it in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/drag-and-drop-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/drag-and-drop-cs1" %}
 
 The following screenshot shows dropping record from another component in to Gantt, and **Rose Fuller** is added as resource for the task **Develop floor plan estimation**.
 

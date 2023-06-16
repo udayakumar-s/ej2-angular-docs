@@ -26,7 +26,7 @@ The work is the total hours required to complete a task. Work can be mapped from
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/work/work-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/work/work-cs1" %}
 
 ## Task type
 
@@ -49,7 +49,7 @@ The work, duration and resource unit fields of a task depends upon each other an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/work/tasktype-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/work/tasktype-cs1" %}
 
 Following table explains how the work, duration and resource unit fields will gets updated on changing any of the fields
 

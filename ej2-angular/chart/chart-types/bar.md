@@ -26,7 +26,7 @@ To render a bar series, use series [`type`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/bar-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/bar-cs1" %}
 
 ## Bar space and width
 
@@ -44,7 +44,7 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/bar-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/bar-cs" %}
 
 ## Grouped bar
 
@@ -62,7 +62,7 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/bar-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/bar-cs5" %}
 
 ## Series customization
 
@@ -85,7 +85,7 @@ The following properties can be used to customize the `bar` series.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/bar-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/bar-cs6" %}
 
 ## See Also
 

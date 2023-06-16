@@ -26,7 +26,7 @@ Histogram type charts can provide a visual display of large amounts of data that
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/histogram-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/histogram-cs1" %}
 
 ## See Also
 

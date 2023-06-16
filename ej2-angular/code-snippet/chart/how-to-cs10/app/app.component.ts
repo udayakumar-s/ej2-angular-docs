@@ -5,8 +5,7 @@ import { ILoadedEventArgs, Series } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart style='display:block' align='center' id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: `<ejs-chart style='display:block' align='center' id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [tooltip]='tooltip' (load)='load($event)'[zoomSettings]='zoomSettings' >
             <e-series-collection>
                 <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' name='Germany' width=2 [marker]='marker'> </e-series>
@@ -14,11 +13,11 @@ import { ILoadedEventArgs, Series } from '@syncfusion/ej2-angular-charts';
         </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public marker: Object;
-    public primaryYAxis: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public marker?: Object;
+    public primaryYAxis?: Object;
     public tooltip: Object = {
         enable: true
     };

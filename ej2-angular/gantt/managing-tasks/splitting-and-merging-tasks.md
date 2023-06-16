@@ -36,7 +36,7 @@ The task can be split dynamically, either by using the context menu or dialog.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/split-tasks-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/split-tasks-cs1" %}
 
 ## Merge tasks
 

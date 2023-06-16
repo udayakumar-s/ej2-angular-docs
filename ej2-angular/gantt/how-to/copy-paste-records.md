@@ -24,4 +24,4 @@ You can copy and paste a record in the Gantt chart by using the `addRecord` meth
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/copypaste-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/copypaste-cs1" %}

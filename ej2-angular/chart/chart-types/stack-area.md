@@ -25,7 +25,7 @@ To render a stacked area series, use series [`type`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/area-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs4" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ The following properties can be used to customize the `stacked area` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/stackedarea-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/stackedarea-cs" %}
 
 ## See Also
 

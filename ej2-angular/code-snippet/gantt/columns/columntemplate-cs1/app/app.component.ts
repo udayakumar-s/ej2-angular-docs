@@ -26,12 +26,12 @@ import { editingResources } from './data';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public resources: object[];
-    public resourceFields: object;
+    
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public resources?: object[];
+    public resourceFields?: object;
     public ngOnInit(): void {
         this.data = [
     {

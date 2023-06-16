@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id='chartcontainer' [selectionMode]="selectionMode" [chartArea]='chartArea' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [legendSettings]='legendSettings'>
+    template: `<ejs-chart id='chartcontainer' [selectionMode]="selectionMode" [chartArea]='chartArea' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [legendSettings]='legendSettings'>
     <e-series-collection>
         <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='USA' [animation]='animation' [cornerRadius]='cornerRadius'> </e-series>
     </e-series-collection>
@@ -17,18 +16,18 @@ import { Component, OnInit } from '@angular/core';
 </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public colors1: string[];
-    public colors2: string[];
-    public colors3: string[];
-    public selectionMode: string;
-    public cornerRadius: Object;
-    public chartArea: Object;
-    public legendSettings: Object;
-    public animation: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public colors1?: string[];
+    public colors2?: string[];
+    public colors3?: string[];
+    public selectionMode?: string;
+    public cornerRadius?: Object;
+    public chartArea?: Object;
+    public legendSettings?: Object;
+    public animation?: Object;
     ngOnInit(): void {
         this.chartData = [
             { x: "Jan", y: 6.96 },

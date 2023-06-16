@@ -27,7 +27,7 @@ You can pass array of ID of elements or element to this method. By default it ta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs1" %}
 
 ## Export
 
@@ -51,7 +51,7 @@ The optional parameters for this method are,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs2" %}
 
 ## Multiple Chart Export
 
@@ -78,4 +78,4 @@ export method.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/add-series-cs1" %}
+{% previewsample "page.domainurl/samples/chart/add-series-cs1" %}

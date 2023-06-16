@@ -24,7 +24,7 @@ Data label can be added to a chart series by enabling the [`visible`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs3" %}
 
 >Note: To use the data label feature, inject the `DataLabel` into the `@NgModule.providers`.
 
@@ -44,7 +44,7 @@ Accumulation chart provides support for placing the data label either `inside` o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs4" %}
 
 ## DataLabel rotation
 
@@ -62,7 +62,7 @@ Using `angle` property, you can rotate the data label by its given angle.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs5" %}
 
 >Note: when the `enableRotation` is true, the data label is rotated along the slice.
 
@@ -82,7 +82,7 @@ Data labels will be arranged smartly without overlapping with each other. You ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs6" %}
 
 ## Format
 
@@ -100,7 +100,7 @@ Data label for the accumulation chart can be formatted using [`format`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs7" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs7" %}
 <table>
   <tr>
     <th>Value</th>
@@ -175,7 +175,7 @@ Label content can be formatted by using the template option. Inside the template
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs8" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs8" %}
 
 ## Connector Line
 
@@ -194,7 +194,7 @@ The connector line can be customized using the `type`, `color`, `width`, `length
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs9" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs9" %}
 
 ## Text Mapping
 
@@ -212,7 +212,7 @@ The fill color and the text in the data source can be mapped to the chart using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs6" %}
 
 ## Customization
 
@@ -230,7 +230,7 @@ Individual text can be customized using the `textRender` event.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs10" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs10" %}
 
 ## Text wrap
 
@@ -248,7 +248,7 @@ When the data label text exceeds the container, the text can be wrapped by using
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs13" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs13" %}
 
 ## Show percentages in data labels of pie chart
 
@@ -270,7 +270,7 @@ You can customize the data label of pie chart using [textRender](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs11" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs11" %}
 
 ### Using template
 
@@ -288,4 +288,4 @@ You can display the percentage values in data label of pie chart using `template
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs12" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs12" %}

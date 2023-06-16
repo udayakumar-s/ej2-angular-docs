@@ -4,17 +4,16 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ej-accumulationchart id="chart-container" [enableSmartLabels]='enableSmartLabels'>
+    template: `<ej-accumulationchart id="chart-container" [enableSmartLabels]='enableSmartLabels'>
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' [dataLabel]='datalabel'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ej-accumulationchart>`
 })
 export class AppComponent implements OnInit {
-    public piedata: Object[];
-    public datalabel: Object;
-    public enableSmartLabels: boolean;
+    public piedata?: Object[];
+    public datalabel?: Object;
+    public enableSmartLabels?: boolean;
     ngOnInit(): void {
         this.datalabel = { visible: true, name: 'text', position: 'Outside', template: '<div>${point.x}</div><div>${point.y}</div>' };
         this.enableSmartLabels = true;

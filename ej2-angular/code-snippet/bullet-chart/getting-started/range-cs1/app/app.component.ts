@@ -24,6 +24,7 @@ export class AppComponent {
     ];
   public majorTickLines: Object = { color: 'blue', width: 5 };
   public minorTickLines: Object = { color: 'red', width: 5 };
+animation: any;
 }
 
 

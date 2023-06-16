@@ -15,11 +15,11 @@ import { GanttData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = GanttData;
         this.taskSettings = {
@@ -34,9 +34,9 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault_excelexport') {
-                this.ganttObj.excelExport();
+                this.ganttObj!.excelExport();
             } else if(args.item.id === 'ganttDefault_csvexport') {
-                this.ganttObj.csvExport();
+                this.ganttObj!.csvExport();
             }
     };
 }

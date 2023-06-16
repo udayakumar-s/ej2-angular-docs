@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "syncfusion-component": {
-      "projectType": "syncfusion-component",
+      "projectType": "application",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
@@ -24,17 +24,8 @@
               "app/styles.css"
             ],
             "assets": [
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.png", "input": "", "output": ""},
-							{"glob": "*.css", "input": "", "output": ""}
+							{"glob": "*.css", "input": "", "output": ""},
+              {"glob": "*.png", "input": "", "output": ""}
             ]
           },
           "configurations": {

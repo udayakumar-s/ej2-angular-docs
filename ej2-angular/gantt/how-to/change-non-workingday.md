@@ -24,7 +24,7 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/changenonworkingday-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/changenonworkingday-cs1" %}
 
 > By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
 > In the Gantt component, you can make weekend as working day by setting the `includeWeekend` property to true.

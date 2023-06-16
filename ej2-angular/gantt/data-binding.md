@@ -48,7 +48,7 @@ The following code example shows how to bind the hierarchical local data into th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/data-binding/hierarchydata-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/data-binding/hierarchydata-cs1" %}
 
 ### Self-referential data binding (Flat data)
 
@@ -68,7 +68,7 @@ The Gantt component can be bound with self-referential data by mapping the data 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/data-binding/flatdata-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/data-binding/flatdata-cs1" %}
 
 ## Remote data
 
@@ -86,7 +86,7 @@ To bind remote data to the Gantt component, assign service data as an instance o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/data-binding/remotedata-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/data-binding/remotedata-cs1" %}
 
 ### URL Adaptor
 
@@ -275,7 +275,7 @@ The argument passed to the `actionFailure` event contains the error details retu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/data-binding/actionFailure-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/data-binding/actionFailure-cs1" %}
 
 #### Binding with Fetch
 
@@ -293,7 +293,7 @@ You can use Gantt [`dataSource`](https://ej2.syncfusion.com/angular/documentatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/data-binding/bindajax-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/data-binding/bindajax-cs1" %}
 
 >Note: If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
@@ -332,7 +332,7 @@ To split a task at load time in hierarchical way, we need to define the segment 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/data-binding/split-task-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/data-binding/split-task-cs1" %}
 
 ### Self-referential
 
@@ -364,7 +364,7 @@ We can also define segment details as a flat data and this collection can be map
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/data-binding/split-selfreferential-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/data-binding/split-selfreferential-cs1" %}
 
 >Note: Segment id field contains id of a task which should be split at load time.
 
@@ -384,7 +384,7 @@ The [`autoCalculateDateScheduling`](https://ej2.syncfusion.com/angular/documenta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/virtual-scroll-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/virtual-scroll-cs2" %}
 
 ## Limitations
 

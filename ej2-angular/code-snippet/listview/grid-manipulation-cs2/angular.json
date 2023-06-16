@@ -26,15 +26,7 @@
             "assets": [
 							{"glob": "*.png", "input": "", "output": ""},
 							{"glob": "*.jpg", "input": "", "output": ""},
-							{"glob": "*.jpg", "input": "", "output": ""},
-							{"glob": "*.jpg", "input": "", "output": ""},
-							{"glob": "*.jpg", "input": "", "output": ""},
-							{"glob": "*.jpg", "input": "", "output": ""},
-							{"glob": "*.css", "input": "", "output": ""},
-							{"glob": "*.jpg", "input": "", "output": ""},
-							{"glob": "*.jpg", "input": "", "output": ""},
-							{"glob": "*.jpg", "input": "", "output": ""},
-							{"glob": "*.jpg", "input": "", "output": ""}
+							{"glob": "*.css", "input": "", "output": ""}
             ]
           },
           "configurations": {
