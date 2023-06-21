@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column spanning in Angular Grid component
 
-The grid has option to span the adjacent cells. You need to define the [`colSpan`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs/#colspan) attribute to span cells in the [`QueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event.
+The column spanning feature in the Syncfusion Grid allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs/#colspan) attribute in the [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event, you can easily span cells and customize the appearance of the grid.
 
 In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00 AM, so that cells have spanned.
 
@@ -27,3 +27,21 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/spanning-cs1" %}
+
+## Change the border color while column spanning
+
+You can change the border color for the spanned cells by the using [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event. This event triggers before the cell element is appended to the Grid element.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/spanning-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/spanning-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/spanning-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/spanning-cs3" %}

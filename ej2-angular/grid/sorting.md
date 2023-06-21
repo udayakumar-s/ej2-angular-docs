@@ -285,7 +285,7 @@ The Grid component in Syncfusion's Angular suite allows you to customize the sor
 
 To sort a column externally, you can utilize the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortcolumn) method with parameters **columnName**, **direction** and **isMultiSort** provided by the Grid component. This method allows you to programmatically sort a specific column based on your requirements.
 
-The following example demonstrates how to add sort columns to a grid. It utilizes the DropDownList component to select the column and sort direction. When an external button is clicked, the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortcolumn) method is called with the specified **columnName**, **direction**, and **isMultiSort** parameters. 
+The following example demonstrates how to add sort columns to a grid. It utilizes the **DropDownList** component to select the column and sort direction. When an external button is clicked, the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortcolumn) method is called with the specified **columnName**, **direction**, and **isMultiSort** parameters. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -305,7 +305,7 @@ The following example demonstrates how to add sort columns to a grid. It utilize
 
 To remove a sort column externally, you can use the `removeSortColumn` method provided by the Grid component. This method allows you to remove the sorting applied to a specific column.
 
-The following example demonstrates how to remove sort columns. It utilizes the DropDownList component to select the column. When an external button is clicked, the `removeSortColumn` method is called to remove the selected sort column.
+The following example demonstrates how to remove sort columns. It utilizes the **DropDownList** component to select the column. When an external button is clicked, the `removeSortColumn` method is called to remove the selected sort column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -365,8 +365,8 @@ The following example demonstrates how the [actionBegin](https://ej2.syncfusion.
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs4" %}
 
-> * [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) refers to the current action being performed. For example in sorting, the `args.requestType` value is **sorting**.
-> * The code for the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event is placed inside the setTimeout function since the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and `actionComplete` events trigger adjacently to visualize the changes.
+> [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) refers to the current action being performed. For example in sorting, the `args.requestType` value is **sorting**.
+
 
 ## See Also
 
