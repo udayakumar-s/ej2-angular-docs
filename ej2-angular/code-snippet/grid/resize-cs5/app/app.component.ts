@@ -18,7 +18,8 @@ import { data } from './datasource';
             <e-column field='ShipAddress' headerText='Ship Address' width=120></e-column>
             <e-column field='Freight' headerText='Freight' width=80></e-column>
         </e-columns>
-    </ejs-grid>`
+    </ejs-grid>`,
+    styleUrls: ['./app.style.css']
 })
 export class AppComponent implements OnInit {
 
