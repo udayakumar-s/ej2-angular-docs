@@ -28,17 +28,18 @@ enableRipple(true);
 })
 
 export class AppComponent {
-  public fields: Object;
-  public firstListData:any; secondListData: any;
-  constructor(){
-   this.firstListData  = [
-  { text: "Hennessey Venom", id: "list-01" },
-  { text: "Bugatti Chiron", id: "list-02" },
-  { text: "Bugatti Veyron Super Sport", id: "list-03" },
-  { text: "SSC Ultimate Aero", id: "list-04" },
-  { text: "Koenigsegg CCR", id: "list-05" },
-  { text: "McLaren F1", id: "list-06" }
-];
+    public fields?: Object;
+    public firstListData?:any; secondListData: any;
+    Ascending: any;
+    constructor(){
+    this.firstListData  = [
+        { text: "Hennessey Venom", id: "list-01" },
+        { text: "Bugatti Chiron", id: "list-02" },
+        { text: "Bugatti Veyron Super Sport", id: "list-03" },
+        { text: "SSC Ultimate Aero", id: "list-04" },
+        { text: "Koenigsegg CCR", id: "list-05" },
+        { text: "McLaren F1", id: "list-06" }
+    ];
 
    this.secondListData = [
     { text: 'Aston Martin One- 77', id: 'list-07' },
@@ -49,79 +50,79 @@ export class AppComponent {
 
  this.fields = { text: "text", id: "id" };
   }
-    @ViewChild('list1')firstListObj: ListViewComponent;
-    @ViewChild('list2')secondListObj: ListViewComponent;
-    @ViewChild('btn1')firstBtnObj: ButtonComponent;
-    @ViewChild('btn2')secondBtnObj: ButtonComponent;
-    @ViewChild('btn3')thirdBtnObj: ButtonComponent;
-    @ViewChild('btn4')fourthBtnObj: ButtonComponent;
+    @ViewChild('list1')firstListObj?: ListViewComponent;
+    @ViewChild('list2')secondListObj?: ListViewComponent;
+    @ViewChild('btn1')firstBtnObj?: ButtonComponent;
+    @ViewChild('btn2')secondBtnObj?: ButtonComponent;
+    @ViewChild('btn3')thirdBtnObj?: ButtonComponent;
+    @ViewChild('btn4')fourthBtnObj?: ButtonComponent;
     @ViewChild('textbox')textboxEle: any;
     @ViewChild('text')textEle: any;
     ngAfterViewInit(){
-        this.firstListData = this.firstListObj.dataSource.slice();
-        this.secondListData = this.secondListObj.dataSource.slice();
+        this.firstListData = (this.firstListObj as ListViewComponent | any).dataSource.slice();
+        this.secondListData = (this.secondListObj as ListViewComponent | any).dataSource.slice();
     }
        //Here, all list items are moved to the second list on clicking move all button
     firstbtnclick() {
-        this.secondListObj.dataSource = Array.prototype.concat.call(this.firstListObj.dataSource, this.secondListObj.dataSource);
+        (this.secondListObj as ListViewComponent).dataSource = Array.prototype.concat.call((this.firstListObj as ListViewComponent).dataSource, (this.secondListObj as ListViewComponent).dataSource);
         this.updateFirstListData();
-        this.firstListObj.removeMultipleItems(this.firstListObj.liCollection);
-        this.firstListData = this.firstListData.concat(this.firstListObj.dataSource);
-        this.secondListData = this.secondListObj.dataSource.slice();
-        this.firstBtnObj.disabled = true;
-        this.onFirstKeyUp();
+        this.firstListObj?.removeMultipleItems((this.firstListObj as ListViewComponent | any).liCollection);
+        this.firstListData = this.firstListData.concat((this.firstListObj as ListViewComponent).dataSource);
+        this.secondListData = (this.secondListObj as ListViewComponent | any).dataSource.slice();
+        (this.firstBtnObj as ButtonComponent).disabled = true;
+        this.onFirstKeyUp((e: any) => {});;
         this.setButtonState();
     }
 
     //Here, the selected list items are moved to the second list on clicking move button
   secondbtnclick() {
-        let e = this.firstListObj.getSelectedItems();
-        this.secondListObj.dataSource = Array.prototype.concat.call(this.secondListObj.dataSource, e.data);
-        this.firstListObj.removeItem(e.item);
-        this.firstListData = this.firstListObj.dataSource;
-        this.secondListData = this.secondListObj.dataSource.slice();
-        this.onFirstKeyUp();
-        this.secondBtnObj.disabled = true;
+        let e = this.firstListObj?.getSelectedItems();
+        (this.secondListObj as ListViewComponent).dataSource = Array.prototype.concat.call((this.secondListObj as ListViewComponent).dataSource, (e as any).data);
+        this.firstListObj?.removeItem((e as any).item);
+        this.firstListData = (this.firstListObj as ListViewComponent).dataSource;
+        this.secondListData = (this.secondListObj as ListViewComponent | any).dataSource.slice();
+        this.onFirstKeyUp((e: any) => {});;
+        (this.secondBtnObj as ButtonComponent).disabled = true;
         this.setButtonState();
     }
 
     //Here, the selected list items are moved to the first list on clicking move button
    thirdbtnclick () {
-        let e = this.secondListObj.getSelectedItems();
-        this.firstListObj.dataSource = Array.prototype.concat.call(this.firstListObj.dataSource, e.data);
-        this.secondListObj.removeItem(e.item);
-        this.secondListData = this.secondListObj.dataSource;
-        this.firstListData = this.firstListObj.dataSource.slice();
-        this.onSecondKeyUp();
-        this.thirdBtnObj.disabled = true;
+        let e = this.secondListObj?.getSelectedItems();
+        (this.firstListObj as ListViewComponent).dataSource = Array.prototype.concat.call((this.firstListObj as ListViewComponent).dataSource, (e as any).data);
+        this.secondListObj?.removeItem((e as any).item);
+        this.secondListData = (this.secondListObj as ListViewComponent).dataSource;
+        this.firstListData = (this.firstListObj as ListViewComponent | any).dataSource.slice();
+        this.onSecondKeyUp((e: any) => {});
+        (this.thirdBtnObj as ButtonComponent).disabled = true;
         this.setButtonState();
 
     }
 
     //Here, all list items are moved to the first list on clicking move all button
    fourthbtnclick() {
-        this.firstListObj.dataSource = Array.prototype.concat.call(this.firstListObj.dataSource, this.secondListObj.dataSource);
+        (this.firstListObj as ListViewComponent).dataSource = Array.prototype.concat.call((this.firstListObj as ListViewComponent).dataSource, (this.secondListObj as ListViewComponent).dataSource);
         this.updateSecondListData();
-        this.secondListObj.removeMultipleItems(this.secondListObj.liCollection);
-        this.secondListData = this.secondListData.concat(this.secondListObj.dataSource);
-        this.firstListData = this.firstListObj.dataSource.slice();
-        this.onSecondKeyUp();
+        this.secondListObj?.removeMultipleItems((this.secondListObj as ListViewComponent | any).liCollection);
+        this.secondListData = this.secondListData.concat((this.secondListObj as ListViewComponent).dataSource);
+        this.firstListData = (this.firstListObj as ListViewComponent | any).dataSource.slice();
+        this.onSecondKeyUp((e: any) => {});
         this.setButtonState();
 
     }
 
     //Here, the ListView data source is updated to the first list
     updateFirstListData() {
-        Array.prototype.forEach.call(this.firstListObj.liCollection, (list) => {
-            this.firstListData.forEach((data, index) => {
+        Array.prototype.forEach.call((this.firstListObj as ListViewComponent | any).liCollection, (list) => {
+            this.firstListData.forEach((data: any, index: any) => {
                 if (list.innerText.trim() === data.text) {
                     delete this.firstListData[index];
                 }
             });
         });
         this.textboxEle.nativeElement.value= '';
-        let ds = [];
-        this.firstListData.forEach((data) => {
+        let ds: any[] = [];
+        this.firstListData.forEach((data: any) => {
             ds.push(data);
         })
         this.firstListData = ds;
@@ -130,8 +131,8 @@ export class AppComponent {
 
     //Here, the ListView dataSource is updated for the second list
     updateSecondListData() {
-        Array.prototype.forEach.call(this.secondListObj.liCollection, (list) => {
-            this.secondListData.forEach((data, index) => {
+        Array.prototype.forEach.call((this.secondListObj as ListViewComponent | any).liCollection, (list) => {
+            this.secondListData.forEach((data: any, index: string | number) => {
                 if (list.innerText.trim() === data.text) {
                     delete this.secondListData[index];
                 }
@@ -139,55 +140,55 @@ export class AppComponent {
 
         });
         this.textEle.nativeElement.value = '';
-        let ds = [];
-        this.secondListData.forEach((data) => {
+        let ds: any = [];
+        this.secondListData.forEach((data: any) => {
             ds.push(data);
         })
         this.secondListData = ds;
 
     }
     onFirstListSelect() {
-        this.secondBtnObj.disabled = false;
+        (this.secondBtnObj as ButtonComponent).disabled = false;
     }
     onSecondListSelect() {
-        this.thirdBtnObj.disabled = false;
+        (this.thirdBtnObj as ButtonComponent).disabled = false;
     }
 
     //Here, filtering is handled using the dataManager for the first list
-    onFirstKeyUp(e) {
+    onFirstKeyUp(e: any) {
         let value = this.textboxEle.nativeElement.value;
         let data = new DataManager(this.firstListData).executeLocal(new Query().where('text', 'startswith', value, true));
         if (!value) {
-            this.firstListObj.dataSource = this.firstListData.slice();
+            (this.firstListObj as ListViewComponent).dataSource = this.firstListData.slice();
         } else {
-            this.firstListObj.dataSource = data;
+            (this.firstListObj as ListViewComponent | any).dataSource = data;
         }
     }
     //Here, filtering is handled using the dataManager for the second list
-     onSecondKeyUp(e) {
+     onSecondKeyUp(e: any) {
         let value =this.textEle.nativeElement.value;
         let data = new DataManager(this.secondListData).executeLocal(new Query().where('text', 'startswith', value, true));
         if (!value) {
-            this.secondListObj.dataSource = this.secondListData.slice();
+            (this.secondListObj as ListViewComponent).dataSource = this.secondListData.slice();
         } else {
-            this.secondListObj.dataSource = data;
+            (this.secondListObj as ListViewComponent | any).dataSource = data;
         }
     }
 
     //Here, the state of the button is changed
     setButtonState() {
-        if (this.firstListObj.dataSource.length) {
-            this.firstBtnObj.disabled = false;
+        if ((this.firstListObj as ListViewComponent | any).dataSource.length) {
+            (this.firstBtnObj as ButtonComponent).disabled = false;
         } else {
-            this.firstBtnObj.disabled = true;
-            this.secondBtnObj.disabled = true;
+            (this.firstBtnObj as ButtonComponent).disabled = true;
+            (this.secondBtnObj as ButtonComponent).disabled = true;
         }
 
-        if (this.secondListObj.dataSource.length) {
-            this.fourthBtnObj.disabled = false;
+        if ((this.secondListObj as ListViewComponent | any).dataSource.length) {
+            (this.fourthBtnObj as ButtonComponent).disabled = false;
         } else {
-            this.fourthBtnObj.disabled = true;
-            this.thirdBtnObj.disabled = true;
+            (this.fourthBtnObj as ButtonComponent).disabled = true;
+            (this.thirdBtnObj as ButtonComponent).disabled = true;
         }
 
     }

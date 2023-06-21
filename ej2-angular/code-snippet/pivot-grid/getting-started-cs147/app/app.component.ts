@@ -1,8 +1,8 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, GroupingBarService, GroupingService } from '@syncfusion/ej2-angular-pivotview';
-import { Group_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, GroupingBarService, GroupingService } from '@syncfusion/ej2-angular-pivotview';
+import { Group_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,9 +13,9 @@ import { Group_Data } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public height: number;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public height?: number;
+    public dataSourceSettings?: IDataOptions;
 
     ngOnInit(): void {
 
@@ -23,7 +23,7 @@ export class AppComponent {
         this.height = 350;
 
         this.dataSourceSettings = {
-            dataSource: Group_Data,
+            dataSource: Group_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             formatSettings: [{ name: 'Amount', format: 'C' }, { name: 'Product_ID', format: 'N0' },

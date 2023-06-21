@@ -60,4 +60,4 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs1" %}

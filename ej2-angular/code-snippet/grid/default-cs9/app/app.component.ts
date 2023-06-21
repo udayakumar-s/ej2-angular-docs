@@ -19,8 +19,9 @@ import { DetailRowService, GridModel, GridComponent} from '@syncfusion/ej2-angul
     providers: [DetailRowService]
 })
 export class AppComponent implements OnInit {
-    @ViewChild('grid') public grid: GridComponent;
-    public pData: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public pData?: object[];
     public childGrid: GridModel | GridComponent = {
         queryString: 'ID',
         dataSource: data,
@@ -32,7 +33,7 @@ export class AppComponent implements OnInit {
         ],
         load() {
             const EmployeeID = 'EmployeeID';
-            (this as GridComponent).parentDetails.parentKeyFieldValue = (<{ EmployeeID?: string}>(this as GridComponent).parentDetails.parentRowData)[EmployeeID];
+            (this as any).parentDetails.parentKeyFieldValue = (<{ EmployeeID?: string}>(this as any).parentDetails.parentRowData)[EmployeeID];
         }
     };
 

@@ -26,6 +26,6 @@ The below example allows you to select a date within a range from 7th to 27th da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs6" %}
 
 > If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range. Or else, if the value is out of specified date range and less than `min` date, value property will be updated with min date or the value is higher than max date, value property will be updated with `max` date.

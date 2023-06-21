@@ -37,7 +37,7 @@ In the following sample, each list item is split into two columns to display rel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/template-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/template-cs1" %}
 
 ## Value template
 
@@ -60,7 +60,7 @@ In the following sample, the selected value is displayed as a combined text of b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/value-template-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/value-template-cs1" %}
 
 ## Group template
 
@@ -83,7 +83,7 @@ In the following sample, employees are grouped according to their city.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/group-template-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/group-template-cs1" %}
 
 ## Header template
 
@@ -108,7 +108,7 @@ In the following sample, the list items and its headers are designed and display
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/header-template-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/header-template-cs1" %}
 
 ## Footer template
 
@@ -132,7 +132,7 @@ In the following sample, footer element displays the total number of list items 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/footer-template-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/footer-template-cs1" %}
 
 ## No records template
 
@@ -153,7 +153,7 @@ In the following sample, popup list content displays the notification of no data
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/norecords-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/norecords-cs1" %}
 
 ## Action failure template
 
@@ -173,7 +173,7 @@ In the following sample, when the data fetch request fails, the DropDownList dis
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/norecords-cs2" %}
+{% previewsample "page.domainurl/samples/dropdownlist/norecords-cs2" %}
 
 ## See Also
 

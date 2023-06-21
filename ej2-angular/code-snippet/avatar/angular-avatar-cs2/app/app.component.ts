@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-    public dataSource: { [key: string]: string }[] = [
+    public dataSource: { [key: string]: string }[] | any = [
         { src: 'https://ej2.syncfusion.com/demos/src/grid/images/2.png', size: 'e-avatar-xsmall' },
         { src: 'https://ej2.syncfusion.com/demos/src/grid/images/2.png', size: 'e-avatar-small' },
         { src: 'https://ej2.syncfusion.com/demos/src/grid/images/2.png', size: 'e-avatar' },

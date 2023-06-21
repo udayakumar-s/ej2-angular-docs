@@ -78,4 +78,4 @@ Press Ctrl key with up / down arrow or mouse to select multiple items.</td></tr>
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs1" %}

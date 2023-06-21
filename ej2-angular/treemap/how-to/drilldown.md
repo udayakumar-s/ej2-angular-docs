@@ -78,4 +78,4 @@ Customize the population for drilled countries or states in the header element w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/how-to/header-template-cs1" %}
+{% previewsample "page.domainurl/samples/treemap/how-to/header-template-cs1" %}

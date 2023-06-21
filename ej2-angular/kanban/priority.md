@@ -49,4 +49,4 @@ Column B having Card D with priority value `5`. Dropped Card D between Card A an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/priority-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/priority-cs1" %}

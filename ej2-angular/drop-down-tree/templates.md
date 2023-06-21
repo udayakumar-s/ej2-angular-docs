@@ -18,7 +18,7 @@ The content of each list item within the Dropdown Tree can be customized with th
 
 In the following sample, the Dropdown Tree list items are customized with employee information such as **name** and **job** using the **itemTemplate** property.
 
-The template expression should be provided inside the {{...}} interpolation syntax.
+The template expression should be provided inside the "{{...}}" interpolation syntax.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ The template expression should be provided inside the {{...}} interpolation synt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/template/itemTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/template/itemTemplate-cs1" %}
 
 ## Header template
 
@@ -52,7 +52,7 @@ In the following sample, the header is customized with the custom element.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/template/headerTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/template/headerTemplate-cs1" %}
 
 ## Footer template
 
@@ -72,7 +72,7 @@ In the following sample, the footer element displays the total number of employe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/template/footerTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/template/footerTemplate-cs1" %}
 
 ## No records template
 
@@ -92,7 +92,7 @@ In the following sample, popup list content displays the notification of no data
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/template/noRecordsTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/template/noRecordsTemplate-cs1" %}
 
 ## Action failure template
 
@@ -112,7 +112,7 @@ In the following sample, when the data fetch request fails, the Dropdown Tree di
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/template/actionFailureTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/template/actionFailureTemplate-cs1" %}
 
 ## Custom template to show selected items in input
 
@@ -134,7 +134,7 @@ In the following sample, the Dropdown Tree is rendered with default value of the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/template/customTemplate-mode-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/template/customTemplate-mode-cs1" %}
 
 In the following sample, the Dropdown Tree is rendered with custom value of the **customTemplate** property like **Selected items count: 2**.
 
@@ -150,4 +150,4 @@ In the following sample, the Dropdown Tree is rendered with custom value of the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/template/customTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/template/customTemplate-cs1" %}

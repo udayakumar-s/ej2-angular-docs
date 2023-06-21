@@ -17,19 +17,19 @@ import { GridComponent, RowSelectEventArgs } from '@syncfusion/ej2-angular-grids
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
 
     rowSelected(args: RowSelectEventArgs) {
-        const selectedrowindex: number[] = this.grid.getSelectedRowIndexes();  // Get the selected row indexes.
+        const selectedrowindex: number[] = (this.grid as any).getSelectedRowIndexes();  // Get the selected row indexes.
         alert(selectedrowindex); // To alert the selected row indexes.
-        const selectedrecords: object[] = this.grid.getSelectedRecords();  // Get the selected records.
+        const selectedrecords: object[] = (this.grid as any).getSelectedRecords();  // Get the selected records.
     }
 }
 

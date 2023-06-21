@@ -45,7 +45,7 @@ The following table shows built-in toolbar items and its actions.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs38" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs38" %}
 
 > * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) has options to define both built-in and custom toolbar items.
 
@@ -65,4 +65,4 @@ By default, the custom toolbar items are in the left position. Change the positi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/custom-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/custom-toolbar-cs1" %}

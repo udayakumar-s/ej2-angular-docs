@@ -25,7 +25,7 @@ export class AppComponent {
     public ngOnInit() {
         for (let i: number = 10; i <= 1010; i++) {
             let index: number = parseInt((Math.random() * 10).toString());
-            this.listData.push({ text: this.listData[index].text, id: i.toString() });
+            this.listData.push({ text: (this.listData[index] as any).text, id: i.toString() });
         }
     }
 }

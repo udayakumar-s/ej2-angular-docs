@@ -21,10 +21,10 @@ import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') {
+        if ((args as any).item.id === 'Grid_pdfexport') {
             const pdfExportProperties: PdfExportProperties = {
                 theme: {
                     header: { font: new PdfTrueTypeFont(base64AlgeriaFont, 12) },
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
                     record: { font: new PdfTrueTypeFont(base64AlgeriaFont, 9) }
                 }
             };
-            this.grid.pdfExport(pdfExportProperties);
+            (this.grid as any).pdfExport(pdfExportProperties);
         }
     }
 }

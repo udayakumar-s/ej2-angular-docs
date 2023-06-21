@@ -28,4 +28,4 @@ Property | Purpose
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/daterangepicker/getting-started-cs8" %}

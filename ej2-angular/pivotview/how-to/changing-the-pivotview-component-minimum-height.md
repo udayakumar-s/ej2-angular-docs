@@ -24,4 +24,4 @@ The `minHeight` property allows you to change the minimum height for the pivot t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs158" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs158" %}

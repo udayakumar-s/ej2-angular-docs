@@ -24,4 +24,4 @@ The time formatting can be achieved same as the date formatting using `rendering
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/how-to-02-cs2" %}
+{% previewsample "page.domainurl/samples/slider/how-to-02-cs2" %}

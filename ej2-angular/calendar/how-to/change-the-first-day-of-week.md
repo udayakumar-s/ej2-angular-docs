@@ -29,4 +29,4 @@ The following example demonstrates the Calendar with `Tuesday` as first day of t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs10" %}

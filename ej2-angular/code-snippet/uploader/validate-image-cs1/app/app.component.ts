@@ -2,11 +2,12 @@
 
 import { Component } from '@angular/core';
 import { EmitType } from '@syncfusion/ej2-base';
-import { SelectedEventArgs } from '@syncfusion/ej2-angular-inputs';
+import { SelectedEventArgs, UploaderComponent } from '@syncfusion/ej2-angular-inputs';
+import {  } from '@syncfusion/ej2-angular-inputs';
 @Component({
     selector: 'app-root',
-    templateUrl: 'default.html',
-    styleUrls: ['index.css']
+    templateUrl: './default.html',
+    styleUrls: ['./index.css']
 })
 
 export class AppComponent {
@@ -16,7 +17,7 @@ export class AppComponent {
        removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
    };
     public onSelected: EmitType<SelectedEventArgs> = (args: any) =>  {
-        if (event.type === 'drop') {
+        if (event!.type === 'drop') {
             let allImages: Array<string> = ['png', 'jpg', 'jpeg', 'gif', 'tiff', 'bpg'];
             let files = args.filesData;
             let modifiedFiles = [];

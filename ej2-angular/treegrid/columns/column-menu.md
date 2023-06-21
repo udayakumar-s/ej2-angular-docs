@@ -36,7 +36,7 @@ The default items are displayed in following table.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs2" %}
 
 ## Column menu events
 
@@ -57,7 +57,7 @@ During the column menu open and column menu click, the tree grid component trigg
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs3" %}
 
 ## Custom column menu item
 
@@ -77,7 +77,7 @@ Actions for these customized items can be defined in the [columnMenuClick](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs4" %}
 
 ## Customize menu items for particular columns
 
@@ -97,6 +97,6 @@ In the following sample, the **Filter** item was hidden in the column menu when 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs5" %}
 
 > * You can disable column menu for a particular column by defining the [columns.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#showcolumnmenu) as false.

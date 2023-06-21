@@ -30,7 +30,7 @@ The following example illustrates the single selection behavior in ButtonGroup.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs9" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs9" %}
 
 ### Multiple selection
 
@@ -50,7 +50,7 @@ The following example illustrates the multiple selection behavior in ButtonGroup
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs10" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs10" %}
 
 ## Nesting
 
@@ -79,7 +79,7 @@ In the following example, the DropDownButton component is rendered in `app.compo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/drop-down-button-cs1" %}
+{% previewsample "page.domainurl/samples/button-group/drop-down-button-cs1" %}
 
 ### SplitButton
 
@@ -99,7 +99,7 @@ In the following example, the SplitButton component is rendered in `app.componen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/split-button-cs1" %}
+{% previewsample "page.domainurl/samples/button-group/split-button-cs1" %}
 
 ## See Also
 

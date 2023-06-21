@@ -2,14 +2,13 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps, MapsTooltip, DataLabel } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { Maps, MapsTooltip, DataLabel, DataLabelSettings } from '@syncfusion/ej2-angular-maps';
+import { world_map } from './world-map';
 
 Maps.Inject(MapsTooltip, DataLabel);
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-maps id='rn-container'  >
+    template: `<ejs-maps id='rn-container'>
     <e-layers>
     <e-layer  [shapeData]= 'shapeData' [shapeSettings] = 'shapeSettings' [dataLabelSettings] = 'dataLabelSettings'[tooltipSettings] = 'tooltipSettings'></e-layer>
     </e-layers>
@@ -17,9 +16,10 @@ Maps.Inject(MapsTooltip, DataLabel);
 })
 
 export class AppComponent implements OnInit {
-    public shapeData: object;
-    public shapeSettings: object;
-    public tooltipSettings: object;
+    public shapeData?: object;
+    public shapeSettings?: object;
+    public tooltipSettings?: object;
+    public dataLabelSettings?: DataLabelSettings;
     ngOnInit(): void {
         this.shapeData = world_map;
         this.shapeSettings = {
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
             visible: true,
             labelPath: 'name',
             smartLabelMode: 'Trim'
-        };
+        } as DataLabelSettings;
         this.tooltipSettings = {
             visible: true,
             valuePath: 'name'

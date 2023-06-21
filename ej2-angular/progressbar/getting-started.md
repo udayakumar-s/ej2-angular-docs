@@ -162,4 +162,4 @@ The below example shows a basic Progressbar.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/progressbar/getting-started-cs1" %}

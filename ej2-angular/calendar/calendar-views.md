@@ -33,7 +33,7 @@ The following example demonstrates how to set the `year` as the start view of th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs2" %}
 
 ## View Restriction
 
@@ -55,7 +55,7 @@ By defining the start and depth property with the different view, drill-down and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs3" %}
 
 You can restrict the calendar's drill down navigation by defining the [`start`](https://ej2.syncfusion.com/angular/documentation/api/calendar#start) and [`depth`](https://ej2.syncfusion.com/angular/documentation/api/calendar#depth) property with same view that allows to select the date on that view itself.
 
@@ -73,4 +73,4 @@ The following example demonstrates how to select the dates in `year` view.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs4" %}

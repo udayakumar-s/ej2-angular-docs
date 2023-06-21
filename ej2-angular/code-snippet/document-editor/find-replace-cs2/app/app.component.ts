@@ -40,10 +40,10 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     onCreated(): void {
-        if (this.documentEditor.isDocumentLoaded) {
+        if ((this.documentEditor as DocumentEditorComponent).isDocumentLoaded) {
             let sfdt: string = `{
             "sections": [
                 {
@@ -63,7 +63,7 @@ export class AppComponent {
                 }
             ]
         }`;
-            this.documentEditor.open(sfdt);
+            (this.documentEditor as DocumentEditorComponent).open(sfdt);
         }
     }
 
@@ -72,10 +72,10 @@ export class AppComponent {
         let textToReplace: string = (document.getElementById('replace_text') as HTMLInputElement).value;
         if (textToFind !== '') {
             // Find all the occurences of given text
-            this.documentEditor.searchModule.findAll(textToFind);
-            if (this.documentEditor.searchModule.searchResults.length > 0) {
+            (this.documentEditor as DocumentEditorComponent).searchModule.findAll(textToFind);
+            if ((this.documentEditor as DocumentEditorComponent).searchModule.searchResults.length > 0) {
                 // Replace all the occurences of given text
-                this.documentEditor.searchModule.searchResults.replaceAll(textToReplace);
+                (this.documentEditor as DocumentEditorComponent).searchModule.searchResults.replaceAll(textToReplace);
             }
         }
     }

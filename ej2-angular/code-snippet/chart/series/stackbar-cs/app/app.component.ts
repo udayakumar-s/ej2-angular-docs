@@ -1,11 +1,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { stackData } from 'datasource.ts';
+import { stackData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StackingBar' xName='x' yName='y' name='Apple' fill='yellow' [border]='border' dashArray='5.5'></e-series>
             <e-series [dataSource]='chartData' type='StackingBar' xName='x' yName='y1' name='Orange' fill='green' [border]='border1' dashArray='5.5'></e-series>
@@ -14,12 +13,13 @@ import { stackData } from 'datasource.ts';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public border: Object;
-    public border1: Object;
-    public border2: Object;
-    public chartData: Object[];
-    public title: string;
+    public primaryXAxis?: Object;
+    public border?: Object;
+    public border1?: Object;
+    public border2?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    primaryYAxis: any;
     ngOnInit(): void {
         this.chartData = stackData;
         this.border = {

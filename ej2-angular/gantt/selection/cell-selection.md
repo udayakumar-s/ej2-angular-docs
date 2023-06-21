@@ -26,7 +26,7 @@ Refer to the following code example to enable the cell selection in Gantt.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/cell-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/cell-cs1" %}
 
 ## Selecting multiple cells
 
@@ -44,7 +44,7 @@ You can select multiple cells by setting the [`selectionSettings.type`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/multiplecell-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/multiplecell-cs1" %}
 
 ## Selecting a cell dynamically
 
@@ -62,7 +62,7 @@ You can select a cell dynamically using the [`selectCell`](https://ej2.syncfusio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/selectcell-dynamic-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/selectcell-dynamic-cs1" %}
 
 ## Customize cell selection action
 
@@ -80,4 +80,4 @@ While selecting a cell in Gantt, the [`cellSelecting`](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/customize-cellselection-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/customize-cellselection-cs1" %}

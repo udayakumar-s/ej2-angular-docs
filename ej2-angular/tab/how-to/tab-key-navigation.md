@@ -28,7 +28,7 @@ To use the [`tabIndex`](../api/tab/tabItem/#tabindex) property, you can assign a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/tab-key-navigation-cs1" %}
+{% previewsample "page.domainurl/samples/tab/tab-key-navigation-cs1" %}
 
 With this code, the user will be able to switch between the tab items using the Tab and Shift+Tab keys, in the order specified by the [`tabIndex`](../api/tab/tabItem/#tabindex) values.
 It's important to note that the [`tabIndex`](../api/tab/tabItem/#tabindex) property only affects the ability to navigate between tab items using the Tab key. The user will still be able to use the arrow keys to switch between tab items, regardless of the value of the [`tabIndex`](../api/tab/tabItem/#tabindex) property.

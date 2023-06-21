@@ -15,10 +15,10 @@ import { projectNewData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItem[];
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {

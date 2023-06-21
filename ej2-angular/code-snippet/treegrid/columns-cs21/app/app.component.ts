@@ -16,12 +16,12 @@ import { stringData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = stringData;
     }
- orderFormatter(field: string, data: Object, column: Object): string {
+ orderFormatter(field: string, data: Object | any, column: Object): string {
     return data[field].map(function (s: {lastName: string, firstName: string}): string {
         return s.lastName || s.firstName }).join(' ');
 }

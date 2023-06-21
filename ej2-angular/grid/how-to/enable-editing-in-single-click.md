@@ -28,7 +28,7 @@ Bind the **mouseup** event for Grid and in the event handler call the [`startEdi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/single-click-batch-editing-cs1" %}
+{% previewsample "page.domainurl/samples/grid/single-click-batch-editing-cs1" %}
 
 ### Open dropdown edit popup on single click
 
@@ -46,4 +46,4 @@ You can open the default dropdown edit popup with single click edit by focusing 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/open-dropdown-popup-cs1" %}
+{% previewsample "page.domainurl/samples/grid/open-dropdown-popup-cs1" %}

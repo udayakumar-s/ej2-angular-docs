@@ -6,26 +6,26 @@ import { PivotFieldListComponent, PivotViewComponent, FieldListService, IDataOpt
 import { Browser, setStyleAttribute, prepend } from '@syncfusion/ej2-base';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { Button } from '@syncfusion/ej2-buttons';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
   providers: [FieldListService],
-  styleUrls: ['app/app.component.css'],
+  styleUrls: ['./app.component.css'],
   // specifies the template string for the pivot table component
   template: `<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings renderMode="Popup" (enginePopulated)='afterPopulate($event)' target='#fieldlisttarget' allowCalculatedField='true' (load)='onLoad()' (dataBound)='ondataBound()'></ejs-pivotfieldlist> <ejs-pivotview #pivotview id='PivotView' height='530' (enginePopulated)='afterEnginePopulate($event)' [gridSettings]='gridSettings'></ejs-pivotview> <div class="col-md-2"><button ej-button id='fieldlistbtn'>Open Field List</button></div><div id='fieldlisttarget'></div>`
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
-    public button: Button;
+    public dataSourceSettings?: IDataOptions;
+    public gridSettings?: GridSettings;
+    public button?: Button;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotViewComponent;
+    public pivotGridObj?: PivotViewComponent;
 
     @ViewChild('pivotfieldlist')
-    public fieldlistObj: PivotFieldListComponent;
+    public fieldlistObj?: PivotFieldListComponent;
 
     afterPopulate(arge: EnginePopulatedEventArgs): void {
         if (this.fieldlistObj && this.pivotGridObj) {
@@ -39,10 +39,10 @@ export class AppComponent {
     }
     onLoad(): void {
         if (Browser.isDevice) {
-            this.fieldlistObj.renderMode = 'Popup';
-            this.fieldlistObj.target = '.control-section';
-            document.getElementById('PivotFieldList').removeAttribute('style');
-            setStyleAttribute(document.getElementById('PivotFieldList'), {
+            (this.fieldlistObj as PivotFieldListComponent).renderMode = 'Popup';
+            (this.fieldlistObj as PivotFieldListComponent).target = '.control-section';
+            (document.getElementById('PivotFieldList') as HTMLElement).removeAttribute('style');
+            setStyleAttribute(document.getElementById('PivotFieldList') as HTMLElement, {
                 'height': 0,
                 'float': 'left'
             });
@@ -51,7 +51,7 @@ export class AppComponent {
 
     ondataBound(): void {
         if (Browser.isDevice) {
-            prepend([document.getElementById('PivotFieldList')], document.getElementById('PivotView'));
+            prepend([document.getElementById('PivotFieldList') as HTMLElement], document.getElementById('PivotView') as HTMLElement);
         }
     }
 
@@ -62,7 +62,7 @@ export class AppComponent {
         } as GridSettings;
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
@@ -77,7 +77,7 @@ export class AppComponent {
         this.button.appendTo('#fieldlistbtn');
 
         this.button.element.onclick = (): void => {
-            this.fieldlistObj.dialogRenderer.fieldListDialog.show();
+            (this.fieldlistObj as PivotFieldListComponent).dialogRenderer.fieldListDialog.show();
         };
     }
  }

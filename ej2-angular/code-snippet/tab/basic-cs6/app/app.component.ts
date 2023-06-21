@@ -4,7 +4,7 @@
 import { Component, OnInit } from '@angular/core';
 import { isNullOrUndefined as isNOU } from '@syncfusion/ej2-base';
 import { Tab, TabComponent, SelectEventArgs } from '@syncfusion/ej2-angular-navigations';
-import { nested_tab_items, usa_items, france_items, australia_items } from '../datasource.ts';
+import { nested_tab_items, usa_items, france_items, australia_items } from './datasource';
 
 /**
  * Add nested Tabs
@@ -17,10 +17,10 @@ import { nested_tab_items, usa_items, france_items, australia_items } from '../d
         </ejs-tab>`
 })
 export class AppComponent implements OnInit {
-    public tabItems: Object[];
-    public usaItems: Object[];
-    public franceItems: Object[];
-    public australiaItems: Object[];
+    public tabItems?: Object[];
+    public usaItems?: Object[];
+    public franceItems?: Object[];
+    public australiaItems?: Object[];
 
     public ngOnInit(): void {
         this.tabItems = nested_tab_items;
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     }
 
     public handleCreatedEvent(): void {
-      if (isNOU(document.querySelector('#usa_tab.e-tab'))) {
+      if (isNOU(document.querySelector('#usa_tab.e-tab') as Element)) {
        let usa_obj: Tab = new Tab({
         items: this.usaItems
        });
@@ -39,12 +39,12 @@ export class AppComponent implements OnInit {
   }
 
     public handleSelectEvent(e: SelectEventArgs): void {
-        if (e.selectedIndex === 1 && isNOU(document.querySelector('#france_tab.e-tab'))) {
+        if (e.selectedIndex === 1 && isNOU(document.querySelector('#france_tab.e-tab') as Element)) {
             let france_obj: Tab = new Tab({
                 items: this.franceItems
             });
             france_obj.appendTo('#france_tab');
-        } else if (e.selectedIndex === 2 && isNOU(document.querySelector('#australia_tab.e-tab'))) {
+        } else if (e.selectedIndex === 2 && isNOU(document.querySelector('#australia_tab.e-tab') as Element)) {
             let australia_obj: Tab = new Tab({
                 items: this.australiaItems
             });

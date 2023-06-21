@@ -9,7 +9,7 @@ import { PreventableEventArgs } from '@syncfusion/ej2-angular-calendars';
     template: `<ejs-datepicker (close)='onClose($event)' placeholder='Enter date'></ejs-datepicker>`
 })
 export class AppComponent {
-    onClose(args: PreventableEventArgs): void {
+    onClose(args: PreventableEventArgs | any): void {
         args.preventDefault();
     }
 }

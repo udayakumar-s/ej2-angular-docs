@@ -30,7 +30,7 @@ Change the width, color, and radius of the heat map cells by using the [border](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/cellborder-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/cellborder-cs1" %}
 
 ### Cell highlighting
 
@@ -50,7 +50,7 @@ Enable or disable the cell highlighting while hovering over the heat map cells b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/cellhighlighting-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/cellhighlighting-cs1" %}
 
 ### Color gradient mode
 
@@ -74,7 +74,7 @@ The [colorGradientMode](https://ej2.syncfusion.com/angular/documentation/api/hea
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/colormode-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/colormode-cs1" %}
 
 ## Background color
 
@@ -92,7 +92,7 @@ The background color of the heat map can be customized using the [backgroundColo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/background-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/background-cs1" %}
 
 ## Margin
 
@@ -110,7 +110,7 @@ Set the margin for the heatmap from its container by using the [margin](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/cellmargin-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/cellmargin-cs1" %}
 
 ## Title
 
@@ -128,7 +128,7 @@ The title is used to provide a quick information about the data plotted in heatm
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/celltitle-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/celltitle-cs1" %}
 
 ## Data label
 
@@ -146,7 +146,7 @@ The visibility of data labels can be toggled using the [showLabel](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/datalabel-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/datalabel-cs1" %}
 
 ### Customize the data label
 
@@ -164,7 +164,7 @@ The label displayed in the heat map cell can be changed using the [cellRender](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/cellrender-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/cellrender-cs1" %}
 
 ### Text style
 
@@ -182,7 +182,7 @@ The text attributes of the data label such as font-family, font-size, and color 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/textStyle-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/textStyle-cs1" %}
 
 ## Format
 
@@ -200,7 +200,7 @@ The format of the data label, such as currency, decimal, percent etc. can be cha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/appearance/format-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/appearance/format-cs1" %}
 
 ## See Also
 

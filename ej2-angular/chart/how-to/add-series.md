@@ -32,4 +32,4 @@ To remove the new series from chart dynamically, pass the series index to the `r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/add-series-cs2" %}
+{% previewsample "page.domainurl/samples/chart/add-series-cs2" %}

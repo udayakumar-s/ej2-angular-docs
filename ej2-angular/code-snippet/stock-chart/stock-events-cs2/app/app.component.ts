@@ -1,12 +1,11 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { chartData } from 'datasource.ts';
+import { chartData } from './datasource';
 import { IStockChartEventArgs, ChartTheme, ITooltipRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-stockchart id='stockChartEvents' [enablePeriodSelector]='enable' [title]='title' [titleStyle]='titleStyle'
+    template: `<ejs-stockchart id='stockChartEvents' [enablePeriodSelector]='enable' [title]='title' [titleStyle]='titleStyle'
             [chartArea]='chartArea' [primaryXAxis]='primaryXAxis' style="display:block;" [tooltip]='tooltip'
             [crosshair]='crosshair' [primaryYAxis]='primaryYAxis' (tooltipRender)='tooltipRender($event)' [seriesType]='seriesType'
             [indicatorType]='indicatorType'>
@@ -75,12 +74,21 @@ import { IStockChartEventArgs, ChartTheme, ITooltipRenderEventArgs } from '@sync
         </ejs-stockchart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public data1: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public marker: Object;
-    public tooltip: Object;
+    indicatorType: any;
+    crosshair: any;
+    chartArea: any;
+    onSeries: any;
+    titleStyle: any;
+    seriesType: any;
+    tooltipRender($event: any) {
+        throw new Error('Method not implemented.');
+    }
+    public primaryXAxis?: Object;
+    public data1?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public marker?: Object;
+    public tooltip?: Object;
     public date1:  Date = new Date(2012, 3, 1);
     public date2:  Date = new Date(2012, 3, 20);
     public date3:  Date = new Date(2012, 6, 1);
@@ -112,11 +120,12 @@ export class AppComponent implements OnInit {
     public seriesIndex1: number[] = [0];
     public seriesIndex2: number[] = [1];
     public seriesIndex3: number[] = [0];
-    public seriesIndex5: number[] = [1];
+    public seriesIndex4: number[] = [1];
     public seriesIndex5: number[] = [0];
     public seriesIndex6: number[] = [1];
     public seriesIndex7: number[] = [0];
     public seriesIndex8: number[] = [1];
+enable: any;
     ngOnInit(): void {
         this.data1 = chartData;
         this.primaryXAxis = {
@@ -125,7 +134,7 @@ export class AppComponent implements OnInit {
         this.tooltip = { enable: true };
         this.marker = { visible: true, width: 10, height: 10 };
         this.title = 'Unemployment Rates 1975-2010';
-
+    }
 }
 
 

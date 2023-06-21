@@ -169,4 +169,4 @@ The following samples shows the sidebar component in browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/sidebar/getting-started-cs2" %}

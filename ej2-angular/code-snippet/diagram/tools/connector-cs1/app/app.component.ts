@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, ConnectorModel, DiagramTools } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, ConnectorModel, DiagramTools, NodeModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -11,13 +11,13 @@ import { DiagramComponent, Diagram, ConnectorModel, DiagramTools } from '@syncfu
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public connectors: ConnectorModel;
+    public diagram?: DiagramComponent;
+    public connectors?: ConnectorModel;
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
     public created(args: Object): void {
@@ -26,11 +26,11 @@ export class AppComponent {
             id: 'connector1',
             type: 'Straight',
             segments: [{ type: "polyline" }]
-        };
-        this.diagram.drawingObject = this.connectors;
+        } as any as ConnectorModel;
+        (this.diagram as Diagram).drawingObject = this.connectors;
         //To draw an object once, activate draw once
-        this.diagram.tool = DiagramTools.DrawOnce;
-        this.diagram.dataBind();
+        (this.diagram as Diagram).tool = DiagramTools.DrawOnce;
+        (this.diagram as Diagram).dataBind();
     }
 }
 

@@ -26,4 +26,4 @@ In the below sample, to customize the matched character in suggestion list by `e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/highlight-cs1" %}
+{% previewsample "page.domainurl/samples/autocomplete/highlight-cs1" %}

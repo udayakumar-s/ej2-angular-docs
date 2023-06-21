@@ -162,7 +162,7 @@ An alert dialog box used to display an errors, warnings, and information alerts 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/dialog-alert-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/dialog-alert-cs1" %}
 
 ## Confirm dialog
 
@@ -180,7 +180,7 @@ A confirm dialog box used to displays a specified message along with the â€˜OKâ€
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/dialog-confirm-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/dialog-confirm-cs1" %}
 
 ## Prompt dialog
 
@@ -198,4 +198,4 @@ A prompt dialog is used to get the input from the user. When the user clicks the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/dialog-prompt-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/dialog-prompt-cs1" %}

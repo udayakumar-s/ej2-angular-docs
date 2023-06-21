@@ -34,7 +34,7 @@ A linear trendline is a best fit straight line that is used with simpler data se
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/linear-cs1" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/linear-cs1" %}
 
 ## Exponential
 
@@ -56,7 +56,7 @@ use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/char
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/exponential-cs1" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/exponential-cs1" %}
 
 ## Logarithmic
 
@@ -78,7 +78,7 @@ To render a logarithmic trendline, use trendline [`type`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/logarithmic-cs1" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/logarithmic-cs1" %}
 
 ## Polynomial
 
@@ -100,7 +100,7 @@ To render a polynomial trendline, use trendline [`type`](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/polynomial-cs1" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/polynomial-cs1" %}
 
 ## Power
 
@@ -121,7 +121,7 @@ To render a power trendline, use trendline [`type`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/power-cs1" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/power-cs1" %}
 
 ## Moving Average
 
@@ -143,7 +143,7 @@ To render a moving average trendline, use trendline [`type`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/movingaverage-cs1" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/movingaverage-cs1" %}
 
 **Customization of Trendlines**
 
@@ -162,7 +162,7 @@ properties are used to customize the appearance of the trendline.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/movingaverage-cs2" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/movingaverage-cs2" %}
 
 ## Forecasting
 
@@ -189,7 +189,7 @@ The value set for forwardForecast is used to determine the distance moving towar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/movingaverage-cs3" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/movingaverage-cs3" %}
 
 **Backward Forecasting**
 
@@ -207,7 +207,7 @@ The value set for the backwardForecast is used to determine the past trends.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/movingaverage-cs4" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/movingaverage-cs4" %}
 
 ## Show or hide a trendline
 
@@ -225,4 +225,4 @@ You can show or hide the trendline by setting trendline `visible` property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/trendlines/linear-cs2" %}
+{% previewsample "page.domainurl/samples/chart/trendlines/linear-cs2" %}

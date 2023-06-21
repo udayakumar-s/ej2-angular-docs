@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    ` <ejs-chart style='display:block;' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: ` <ejs-chart style='display:block;' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
                 [title]='title' >
                 <e-series-collection>
                     <e-series [dataSource]='data' type='Waterfall' xName='x' yName='y' name='USA' [columnWidth]='columnWidth'
@@ -14,12 +13,12 @@ import { Component, OnInit } from '@angular/core';
      </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public title: string;
-    public primaryYAxis: Object;
-    public data: Object[];
-    public marker: Object;
-    public connector: Object;
+    public primaryXAxis?: Object;
+    public title?: string;
+    public primaryYAxis?: Object;
+    public data?: Object[];
+    public marker?: Object;
+    public connector?: Object;
     public sum: number[] = [8];
     public intermediate: number[] = [4, 7];
     public columnWidth: number = 0.6;

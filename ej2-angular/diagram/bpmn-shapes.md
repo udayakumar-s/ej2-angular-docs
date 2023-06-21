@@ -26,7 +26,7 @@ BPMN shapes are used to represent the internal business procedure in a graphical
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/bpmn-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/bpmn-cs1" %}
 
 >Note : The default value for the property `shape` is “event”.
 
@@ -68,7 +68,7 @@ The event property of the node allows you to define the type of the event. The d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/event-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/event-cs1" %}
 
 Event triggers are notated as icons inside the circle and they represent the specific details of the process. The [`trigger`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#trigger) property of the node allows you to set the type of trigger and by default, it is set as **none**. The following table illustrates the type of event triggers.
 
@@ -104,7 +104,7 @@ Gateway is used to control the flow of a process and it is represented as a diam
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/gateway-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/gateway-cs1" %}
 
 >Note: By default, the `gateway` will be set as **none**.
 
@@ -143,7 +143,7 @@ To create a BPMN activity, set the shape as **activity**. You also need to set t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/activity-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/activity-cs1" %}
 
 The different activities of BPMN process are listed as follows.
 
@@ -164,7 +164,7 @@ The events property of tasks allow to represent these results as an event attach
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/task-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/task-cs1" %}
 
 The various types of BPMN tasks are tabulated as follows.
 
@@ -195,7 +195,7 @@ A [`sub-process`](https://ej2.syncfusion.com/angular/documentation/api/diagram/b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/subprocess-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/subprocess-cs1" %}
 
 The different types of subprocess are as follows:
 
@@ -218,7 +218,7 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/eventSubprocess-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/eventSubprocess-cs1" %}
 
 ## Transaction subprocess
 
@@ -244,7 +244,7 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/transitionSubprocess-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/transitionSubprocess-cs1" %}
 
 ## Process
 
@@ -268,7 +268,7 @@ You can define the loop property in subprocess BPMN shape as shown in the follow
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/loop-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/loop-cs1" %}
 
 The following table contains various types of BPMN loops.
 
@@ -294,7 +294,7 @@ The following table contains various types of BPMN loops.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/compensation-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/compensation-cs1" %}
 
 ## Call
 
@@ -312,7 +312,7 @@ A [`call`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/call-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/call-cs1" %}
 
 ## Adhoc
 
@@ -330,7 +330,7 @@ An adhoc subprocess is a group of tasks that are executed in any order or skippe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/adhoc-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/adhoc-cs1" %}
 
 ## Boundary
 
@@ -348,7 +348,7 @@ Boundary represents the type of task that is being processed. The [`boundary`](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/boundary-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/boundary-cs1" %}
 
 The following table contains various types of BPMN boundaries.
 
@@ -374,7 +374,7 @@ A data object represents information flowing through the process, such as data p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/data-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/data-cs1" %}
 
 The following table contains various representation of BPMN data object.
 
@@ -400,7 +400,7 @@ Datasource is used to store or access data associated with a business process. T
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/dataSource-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/dataSource-cs1" %}
 
 ## Artifact
 
@@ -439,7 +439,7 @@ Artifact is used to show additional information about a process in order to make
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/text-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/text-cs1" %}
 
 ## Group
 
@@ -457,7 +457,7 @@ A group is used to frame a part of the diagram, shows that elements included in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/group-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/group-cs1" %}
 
 ## BPMN flows
 
@@ -485,7 +485,7 @@ The association property allows you to define the type of association. The follo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/association-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/association-cs1" %}
 
 The following table demonstrates the visual representation of association flows.
 
@@ -519,7 +519,7 @@ The sequence property allows you to define the type of sequence. The following c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/sequence-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/sequence-cs1" %}
 
 The following table contains various representation of sequence flows.
 
@@ -553,7 +553,7 @@ The message property allows you to define the type of message. The following cod
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/bpmnShapes/message-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/bpmnShapes/message-cs1" %}
 
 The following table contains various representation of message flows.
 

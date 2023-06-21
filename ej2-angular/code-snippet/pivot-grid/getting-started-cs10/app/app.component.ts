@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, CalculatedFieldService, PivotView } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, CalculatedFieldService, PivotView, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
 
 @Component({
@@ -13,16 +13,16 @@ import { Button } from '@syncfusion/ej2-buttons';
   <div class="col-md-2"><button ej-button id='calculatedfield'>Calculated Field</button></div>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
-  public button: Button;
-  public width: string;
+  public dataSourceSettings?: IDataOptions;
+  public button?: Button;
+  public width?: string;
 
     @ViewChild('pivotview',{static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     ngOnInit(): void {
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
         this.button.appendTo('#calculatedfield');
 
         this.button.element.onclick = (): void => {
-            this.pivotGridObj.calculatedFieldModule.createCalculatedFieldDialog();
+            this.pivotGridObj?.calculatedFieldModule.createCalculatedFieldDialog();
         };
     }
 }

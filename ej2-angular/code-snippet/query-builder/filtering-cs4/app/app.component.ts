@@ -22,8 +22,8 @@ import { employeeData } from './datasource';
 
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
     public values: string[] = ['Mr.', 'Mrs.'];
     ngOnInit(): void {
         this.data = employeeData;

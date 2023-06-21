@@ -36,6 +36,6 @@ Refer to the following example.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/document-editor-container-cs5" %}
+{% previewsample "page.domainurl/samples/document-editor/document-editor-container-cs5" %}
 
 >Note: In above example, we have used setInterval to hide spinner, just for demo purpose.

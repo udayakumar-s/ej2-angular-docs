@@ -3,9 +3,10 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { closest } from '@syncfusion/ej2-base';
-import { IRow } from '@syncfusion/ej2-treegrid';
-import { EditSettingsModel,CommandModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { CommandModel } from '@syncfusion/ej2-angular-grids';
+
 @Component({
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data'  [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' childMapping='subtasks' >
@@ -19,15 +20,15 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
-    public commands: CommandModel[];
+    public data?: Object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
+    public commands?: CommandModel[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
     public onClick = (args: Event) => {
     let rowIndex: number = (<HTMLTableRowElement>closest(args.target as Element, '.e-row')).rowIndex;
-    let data: Object = this.treeGridObj.getCurrentViewRecords();
+    let data: Object[] = (this.treeGridObj as TreeGridComponent).getCurrentViewRecords();
     alert(JSON.stringify(data[rowIndex]));
 }
     ngOnInit(): void {

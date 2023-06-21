@@ -16,9 +16,9 @@ export class AppComponent {
                 type: 'SwimLane',
                 orientation: 'Horizontal',
                 // customize the swimlane header
-                 header: {
-                annotation: { content: 'SALES PROCESS FLOW CHART', },
-                height: 70, style: { fontSize: 11 }, style: { fill: 'pink' },
+                header: {
+                    annotation: { content: 'SALES PROCESS FLOW CHART', },
+                    height: 70, style: { fontSize: 11, fill: 'pink' }
                 },
                 lanes: [
                     {
@@ -28,7 +28,7 @@ export class AppComponent {
                 ],
                 phases: [{
                     id: 'phase1', offset: 170,
-                        header: { annotation: { content: 'Phase' } }
+                    header: { annotation: { content: 'Phase' } }
                 }
                 ],
                 phaseSize: 20,
@@ -39,7 +39,7 @@ export class AppComponent {
         },
       ]
     @ViewChild("diagram")
-    public diagram: DiagramComponent;  
+    public diagram?: DiagramComponent;  
 }
 
 

@@ -122,7 +122,7 @@ The following example shows a basic badge component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/badge/getting-started-cs1" %}
 
 ## See Also
 

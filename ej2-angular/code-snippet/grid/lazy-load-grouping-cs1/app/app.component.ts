@@ -19,8 +19,8 @@ import { ActionEventArgs, GridComponent, GroupSettingsModel } from '@syncfusion/
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public groupSettings: GroupSettingsModel = { enableLazyLoading: true, columns: ['ProductName', 'CustomerName' };
+    public data?: object[];
+    public groupSettings: GroupSettingsModel = { enableLazyLoading: true, columns: ['ProductName', 'CustomerName'] };
     ngOnInit(): void {
         this.data = data;
     }

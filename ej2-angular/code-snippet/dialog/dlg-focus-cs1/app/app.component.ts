@@ -24,11 +24,11 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('ejDialog') ejDialog: DialogComponent;
+  @ViewChild('ejDialog') ejDialog: DialogComponent | undefined;
   // Create element reference for dialog target element.
-  @ViewChild('container', { read: ElementRef }) container: ElementRef;
+  @ViewChild('container', { read: ElementRef }) container: ElementRef | undefined;
   // The Dialog shows within the target element.
-  public targetElement: HTMLElement;
+  public targetElement?: HTMLElement;
 
   // To get all element of the dialog component after component get initialized.
   ngOnInit() {
@@ -37,12 +37,12 @@ export class AppComponent implements OnInit {
 
   // Initialize the Dialog component target element.
   public initilaizeTarget: EmitType<object> = () => {
-    this.targetElement = this.container.nativeElement.parentElement;
+    this.targetElement = this.container!.nativeElement.parentElement;
   }
   // Sample level code to handle the button click action
-  public onOpenDialog = function(event: any): void {
+  public onOpenDialog = (event: any): void => {
     // Call the show method to open the Dialog
-    this.ejDialog.show();
+    this.ejDialog!.show();
   };
 
   public onOpen(args: any): void {
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
   }
     // Hide the Dialog when click the footer button.
     public hideDialog: EmitType<object> = () => {
-      this.ejDialog.hide();
+      this.ejDialog!.hide();
   }
 
   // Enables the footer buttons

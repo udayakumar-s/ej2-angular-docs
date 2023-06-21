@@ -32,4 +32,4 @@ By setting the chart `id` in the `content` property of dialog component, you can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs5" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs5" %}

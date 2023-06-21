@@ -14,7 +14,7 @@ import { scheduleData } from './datasource';
 })
 export class AppComponent {
   @ViewChild('scheduleObj')
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2018, 1, 15);
   public eventSettings: EventSettingsModel = { dataSource: scheduleData };
 
@@ -24,7 +24,7 @@ export class AppComponent {
         align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-print',
         text: 'Print', cssClass: 'e-print', click: this.onPrintIconClick.bind(this)
       };
-      args.items.push(exportItem);
+      args.items!.push(exportItem);
     }
   }
 
@@ -32,7 +32,7 @@ export class AppComponent {
     let printModel: ScheduleModel = {
       agendaDaysCount: 14,
       cssClass: 'e-print-schedule',
-      currentView: this.scheduleObj.currentView,
+      currentView: this.scheduleObj?.currentView,
       dateFormat: 'dd-MMM-yyyy',
       enableRtl: false,
       endHour: '18:00',
@@ -40,9 +40,9 @@ export class AppComponent {
       firstMonthOfYear: 0,
       group: {},
       height: 'auto',
-      locale: this.scheduleObj.locale,
-      maxDate: this.scheduleObj.selectedDate,
-      minDate: this.scheduleObj.getCurrentViewDates()[0],
+      locale: this.scheduleObj?.locale,
+      maxDate: this.scheduleObj?.selectedDate,
+      minDate: this.scheduleObj?.getCurrentViewDates()[0],
       readonly: true,
       resources: [],
       rowAutoHeight: false,
@@ -58,7 +58,7 @@ export class AppComponent {
       workDays: [1, 2, 3, 4, 5],
       workHours: { highlight: true, start: '10:00', end: '20:00' }
     };
-    this.scheduleObj.print(printModel);
+    this.scheduleObj?.print(printModel);
   }
  }
 

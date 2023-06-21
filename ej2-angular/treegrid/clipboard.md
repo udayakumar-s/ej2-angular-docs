@@ -31,7 +31,7 @@ Interaction keys |Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/clipboard-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/clipboard-cs1" %}
 
 ## Copy to clipboard by external buttons
 
@@ -49,7 +49,7 @@ To copy selected rows or cells data into clipboard with help of external buttons
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/copy-method-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/copy-method-cs1" %}
 
 ## Copy Hierarchy Modes
 
@@ -75,7 +75,7 @@ Tree Grid provides support for a set of copy modes with [`copyHierarchyMode`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/clipboard-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/clipboard-cs2" %}
 
 ### Limitations of Copy Functionality
 
@@ -97,7 +97,7 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs1" %}
 
 > * If `enableAutoFill` is set to true, then the autofill icon will be displayed on cell selection to copy cells.
 > * It requires the selection `mode` to be `Cell`, `cellSelectionMode` to be `Box` and also Batch Editing should be enabled.
@@ -125,7 +125,7 @@ Paste the cell programmatically by using the [`Paste`](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs2" %}
 
 > To perform paste functionality, it requires the selection `mode` to be `Cell`,  `cellSelectionMode` to be `Box` and also Batch Editing should be enabled.
 

@@ -82,4 +82,4 @@ In the below code sample, we replicate the older theme style.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/switch-theme-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/switch-theme-cs1" %}

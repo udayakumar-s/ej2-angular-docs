@@ -26,26 +26,24 @@ import { ProgressEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 })
 
 export class AppComponent {
-    private eventTrace: string = '';
-    @ViewChild('clear')
-
-    private begin(args: ProgressEventArgs): void {
+begin($event: any) {
+throw new Error('Method not implemented.');
+}
+    public eventTrace: string = '';
+    public end(args: ProgressEventArgs): void {
         this.updateEventLog(args);
     }
-    private end(args: ProgressEventArgs): void {
+    public progress(args: ProgressEventArgs): void {
         this.updateEventLog(args);
     }
-    private progress(args: ProgressEventArgs): void {
+    public fail(args: Event): void {
         this.updateEventLog(args);
     }
-    private fail(args: Event): void {
-        this.updateEventLog(args);
-    }
-    private updateEventLog(args: any): void {
+    public updateEventLog(args: any): void {
         this.eventTrace = this.eventTrace + args.name + ' Event triggered. <br />'
     }
 
-    private btnClick(): void {
+    public btnClick(): void {
         this.eventTrace = '';
     }
 }

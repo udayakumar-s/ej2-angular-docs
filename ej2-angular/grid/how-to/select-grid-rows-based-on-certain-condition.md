@@ -26,4 +26,4 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-column-cs5" %}
+{% previewsample "page.domainurl/samples/grid/custom-column-cs5" %}

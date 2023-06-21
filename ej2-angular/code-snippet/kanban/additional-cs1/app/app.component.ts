@@ -16,18 +16,18 @@ import { DataManager, ODataAdaptor, Query } from '@syncfusion/ej2-data';
             </ejs-kanban>`
 })
 export class AppComponent {
-    public cardSettings: CardSettingsModel = {
-        contentField: 'Summary',
-        headerField: 'Id'
-    };
-    private dataManager: DataManager = new DataManager({
-       url: 'https://ej2services.syncfusion.com/production/web-services/api/Kanban',
-       adaptor: new ODataAdaptor
-    });
-    public query: Query = new Query().addParams('ej2kanban', 'true');
-    public dialogOpen(args: DialogEventArgs): void {
-      args.cancel = true;
-    }
+  public cardSettings: CardSettingsModel = {
+      contentField: 'Summary',
+      headerField: 'Id'
+  };
+  public dataManager: DataManager = new DataManager({
+      url: 'https://ej2services.syncfusion.com/production/web-services/api/Kanban',
+      adaptor: new ODataAdaptor
+  });
+  public query: Query = new Query().addParams('ej2kanban', 'true');
+  public dialogOpen(args: DialogEventArgs): void {
+    args.cancel = true;
+  }
 }
 
 

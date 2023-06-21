@@ -26,4 +26,4 @@ In the following example, the first character in `File`, `Open`, and `Save` menu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs7" %}

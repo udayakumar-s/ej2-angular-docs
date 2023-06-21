@@ -19,14 +19,19 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent {
     // Data for Gantt
-    public data: object[];
-    public resources: object[];
-    public taskSettings: object;
-    public labelSettings: object;
-    public projectStartDate: Date;
-    public projectEndDate: Date;
+    public data?: object[];
+    public resources?: object[];
+    public taskSettings?: object;
+    public labelSettings?: object;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
+    resourceFields: { id: string; name: string; unit: string; group: string; } | undefined;
+    editSettings: { allowAdding: boolean; allowEditing: boolean; allowDeleting: boolean; allowTaskbarEditing: boolean; showDeleteConfirmDialog: boolean; } | undefined;
+    columns: ({ field: string; visible: boolean; headerText?: undefined; width?: undefined; } | { field: string; headerText: string; width: number; visible?: undefined; } | { field: string; headerText: string; visible?: undefined; width?: undefined; } | { field: string; visible?: undefined; headerText?: undefined; width?: undefined; })[] | undefined;
+    toolbar: (string | { text: string; tooltipText: string; id: string; })[] | undefined;
+splitterSettings: any;
     public ngOnInit(): void {
         this.data = [
             {
@@ -138,7 +143,7 @@ export class AppComponent {
     }
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'showhidebar') {
-            this.ganttObj.showOverAllocation = this.ganttObj.showOverAllocation ? false : true;
+            this.ganttObj!.showOverAllocation = this.ganttObj!.showOverAllocation ? false : true;
         }
 };
 }

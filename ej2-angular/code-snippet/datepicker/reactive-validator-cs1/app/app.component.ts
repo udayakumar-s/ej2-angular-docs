@@ -4,23 +4,25 @@ import { Component, ViewChild, OnInit, ElementRef, Inject } from '@angular/core'
 import { DatePickerComponent } from '@syncfusion/ej2-angular-calendars';
 import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ButtonComponent } from '@syncfusion/ej2-ng-buttons';
 import { FormsModule } from '@angular/forms';
 
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app/template.html'
+    templateUrl: './template.html'
 })
 export class AppComponent implements OnInit {
-    @ViewChild('ejDatePicker') ejDatePicker: DatePickerComponent;
-    public targetElement: HTMLElement;
+    @ViewChild('ejDatePicker') ejDatePicker?: DatePickerComponent;
+    public targetElement?: HTMLElement;
     public placeholder: String = 'Date of Birth';
-    skillForm: FormGroup;
+    skillForm?: FormGroup;
     build: FormBuilder;
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.build = builder;
         this.createForm();
+    }
+    ngOnInit(): void {
+        throw new Error('Method not implemented.');
     }
     createForm() {
         this.skillForm = this.build.group({
@@ -30,13 +32,13 @@ export class AppComponent implements OnInit {
         });
     }
     get username() {
-        return this.skillForm.get('username');
+        return (this.skillForm as FormGroup<any>).get('username');
     }
     get datepicker() {
-        return this.skillForm.get('datepicker');
+        return (this.skillForm as FormGroup<any>).get('datepicker');
     }
     get usermail() {
-        return this.skillForm.get('usermail');
+        return (this.skillForm as FormGroup<any>).get('usermail');
     }
 
     onSubmit() {

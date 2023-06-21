@@ -26,4 +26,4 @@ In the following sample, `height` of the list box is restricted to `290px`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs10" %}

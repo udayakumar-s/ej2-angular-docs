@@ -30,7 +30,7 @@ Excel Export provides an option to export hidden columns of TreeGrid by defining
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/excel-export-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/excel-export-cs4" %}
 
 ### Show or hide columns on exported excel
 
@@ -54,7 +54,7 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/excel-export-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/excel-export-cs5" %}
 
 ### File name for exported document
 
@@ -72,4 +72,4 @@ You can assign the file name for the exported document by defining `fileName` pr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/excel-export-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/excel-export-cs6" %}

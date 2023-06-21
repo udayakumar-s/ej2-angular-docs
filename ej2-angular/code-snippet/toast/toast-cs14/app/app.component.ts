@@ -18,17 +18,17 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-   @ViewChild('element') element;
+   @ViewChild('element') public element: any;
      public position = { X: 'Right', Y: 'Bottom' };
 
-    onCreate(){
+    onCreate(args: any){
          setTimeout(
         () => {
         this.element.show();
         }, 200);
     }
 
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
 

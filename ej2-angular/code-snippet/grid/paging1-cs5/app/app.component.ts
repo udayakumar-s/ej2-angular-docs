@@ -17,17 +17,18 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public Grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
     ngOnInit(): void {
         this.data = data;
     }
     load() {
-        const rowHeight: number = this.Grid.getRowHeight();  // height of the each row
-        const gridHeight: any = this.Grid.height;  // grid height
-        const pageSize: number = this.Grid.pageSettings.pageSize;   // initial page size
+        const rowHeight: number = (this.grid as any).getRowHeight();  // height of the each row
+        const gridHeight: any = (this.grid as any).height;  // grid height
+        const pageSize: number = (this.grid as any).pageSettings.pageSize;   // initial page size
         const pageResize: any = (gridHeight - (pageSize * rowHeight)) / rowHeight; // new page size is obtained here
-        this.Grid.pageSettings.pageSize = pageSize + Math.round(pageResize);
+        (this.grid as any).pageSettings.pageSize = pageSize + Math.round(pageResize);
     }
 }
 

@@ -30,7 +30,7 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/pdf-export-cs14" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs14" %}
 
 ## Exporting Gantt data as a blob object
 
@@ -54,5 +54,5 @@ step 2: Then , `pdfExpComplete` return as blob object.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/blobdata-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/blobdata-cs1" %}
 

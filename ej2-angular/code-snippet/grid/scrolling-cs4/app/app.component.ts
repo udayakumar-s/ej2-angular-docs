@@ -19,15 +19,15 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data.slice(0, 2);
     }
-    dataBound(): void {
-        this.grid.hideScroll();
+    dataBound(args: any): void {
+        (this.grid as any).hideScroll();
     }
 }
 

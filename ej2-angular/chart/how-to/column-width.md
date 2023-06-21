@@ -30,4 +30,4 @@ By setting [`columnWidth`](https://ej2.syncfusion.com/documentation/api/chart/se
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs2" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs2" %}

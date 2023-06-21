@@ -66,4 +66,4 @@ To render a moving average trendline, use trendline [`type`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/trendlines/movingaverage-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/trendlines/movingaverage-cs1" %}

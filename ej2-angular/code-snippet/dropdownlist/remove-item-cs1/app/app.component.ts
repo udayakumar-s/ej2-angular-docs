@@ -6,31 +6,31 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
     selector: 'control-content',
     // specifies the template path for DropDownList component
-    templateUrl: `./remove.html`
+    templateUrl: `remove.html`
 })
 export class AppComponent {
     constructor() {
     }
     ngAfterViewInit(){
-        document.getElementById('btn').onclick = () => {
+        document.getElementById('btn')!.onclick = () => {
             // create DropDownList object
             let obj: any = document.getElementById('ddlelement');
             if (obj.ej2_instances[0].list) {
                 // Remove the selected value if 0th index selected
-                if (this.dropDownListObject.index === 0) {
-                    this.dropDownListObject.value = null;
-                    this.dropDownListObject.dataBind();
+                if (((this.dropDownListObject as any) as any).index === 0) {
+                    ((this.dropDownListObject as any) as any).value = null;
+                    ((this.dropDownListObject as any) as any).dataBind();
                 }
                 // remove first item in list
                 (obj.ej2_instances[0].list.querySelectorAll('li')[0]).remove();
                 if (!obj.ej2_instances[0].list.querySelectorAll('li')[0]) {
-                    this.dropDownListObject.dataSource = [];
+                    (this.dropDownListObject as any).dataSource = [];
                     // enable the nodata template when no data source is empty.
                     obj.ej2_instances[0].list.classList.add('e-nodata');
                 }
             } else {
                 // remove first item in list
-                this.dropDownListObject.dataSource.splice(0, 1);
+                (this.dropDownListObject as any).dataSource.splice(0, 1);
             }
         }
     }

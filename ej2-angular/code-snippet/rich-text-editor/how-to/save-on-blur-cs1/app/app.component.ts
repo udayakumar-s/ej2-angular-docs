@@ -23,7 +23,7 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextE
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService ]
 })
 export class AppComponent  {
-@ViewChild('sample') public rteObj: RichTextEditorComponent;
+@ViewChild('sample') public rteObj?: RichTextEditorComponent;
 public fontFamily: Object = {
   default: "Noto Sans", // to define default font-family
   items: [

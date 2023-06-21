@@ -19,11 +19,11 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public orderIDRules: object;
-    public customerIDRules: object;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public orderIDRules?: object;
+    public customerIDRules?: object;
 
     ngOnInit(): void {
         this.data = data;

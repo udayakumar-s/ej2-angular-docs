@@ -2,7 +2,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+
 import { projectNewData } from './data';
 
 @Component({
@@ -32,10 +32,10 @@ import { projectNewData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public columns: object[];
-    public splitterSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public columns?: object[];
+    public splitterSettings?: object;
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {

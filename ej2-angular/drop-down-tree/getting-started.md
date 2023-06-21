@@ -205,4 +205,4 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/getting-started-cs1" %}

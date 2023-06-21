@@ -24,4 +24,4 @@ The following example demonstrate about how to disable the Fixed group header in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/disable-group-header-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/disable-group-header-cs1" %}

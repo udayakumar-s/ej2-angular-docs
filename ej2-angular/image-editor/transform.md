@@ -36,7 +36,7 @@ In the following example, the [`rotate`](https://ej2.syncfusion.com/angular/docu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs18" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs18" %}
 
 ## Flip
 
@@ -62,7 +62,7 @@ In the following example, the [`flip`](https://ej2.syncfusion.com/angular/docume
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs19" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs19" %}
 
 ## Zoom
 
@@ -98,4 +98,4 @@ In the following example, you can using the [`zoom`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs20" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs20" %}

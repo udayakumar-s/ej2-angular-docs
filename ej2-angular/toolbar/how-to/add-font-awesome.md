@@ -34,7 +34,7 @@ The following sample explains how to use font awesome in the toolbar component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/add-font-awesome-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/add-font-awesome-cs1" %}
 
 > We can also use templates for rendering icons based on the requirements.
 

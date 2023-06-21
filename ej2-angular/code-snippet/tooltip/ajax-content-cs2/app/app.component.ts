@@ -2,8 +2,7 @@
 
 import { Component, ViewChild, Inject } from '@angular/core';
 import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
     selector: 'my-app',
@@ -66,24 +65,24 @@ import 'rxjs/add/operator/map';
 
 export class AppComponent {
     @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent;
-    constructor( @Inject(Http) public http: Http) { }
+    public tooltipControl: TooltipComponent | any ;
+    constructor( @Inject(HttpClientModule) public http: HttpClient) { }
 
     onBeforeRender(args: TooltipEventArgs) {
-        this.http.get('tooltipdata.json')
-            .map(res => res.json())
+        (this as any).http.get('tooltipdata.json')
+            .map((res: { json: () => any; }) => res.json())
             .subscribe(
             (result: any) => {
                 for (let i: number = 0; i < result.length; i++) {
                     if (result[i].Id === args.target.getAttribute('data-content')) {
-                        this.tooltipControl.content = "<div class='contentWrap'><div class='def'>" + result[i].Sports + "</div></div>";
+                        this.tooltipControl!.content = "<div class='contentWrap'><div class='def'>" + result[i].Sports + "</div></div>";
                     }
                 }
-                this.tooltipControl.dataBind();
+                this.tooltipControl!.dataBind();
             },
             (err: Response) => {
-                this.tooltipControl.content = err.statusText;
-                this.tooltipControl.dataBind();
+                this.tooltipControl!.content = err.statusText;
+                this.tooltipControl!.dataBind();
             });
     }
 }

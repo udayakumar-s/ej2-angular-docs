@@ -28,4 +28,4 @@ If you wish to restore all these column properties, then you can achieve it by c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs8" %}
+{% previewsample "page.domainurl/samples/grid/grouping1-cs8" %}

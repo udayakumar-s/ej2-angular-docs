@@ -129,7 +129,7 @@ The below example shows a basic Circular Gauge.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/getting-started-cs1" %}
 
 ## Set Pointer Value
 
@@ -147,4 +147,4 @@ Pointer value is used to indicate the gauge value using [`value`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/getting-started-cs2" %}

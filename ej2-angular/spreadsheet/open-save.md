@@ -34,7 +34,7 @@ The following sample shows the `Open` option by using the [`openUrl`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/open-save-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs1" %}
 
 Please find the below table for the beforeOpen event arguments.
 
@@ -63,7 +63,7 @@ You can achieve to access the remote excel file by using the [`created`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/open-save-cs2" %}
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs2" %}
 
 ## Save
 
@@ -87,7 +87,7 @@ The following sample shows the `Save` option by using the [`saveUrl`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/open-save-cs3" %}
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs3" %}
 
 Please find the below table for the beforeSave event arguments.
 
@@ -121,7 +121,7 @@ Passing the custom parameters from client to server by using [`beforeSave`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/open-save-cs4" %}
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs4" %}
 
 Server side code snippets:
 
@@ -155,7 +155,7 @@ The possible values are:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/spreadsheet/open-save-cs6" %}
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs6" %}
 
 ### Methods
 
@@ -173,7 +173,7 @@ To save the Spreadsheet document as an `xlsx, xls, csv, or pdf` file, by using [
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/open-save-cs5" %}
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs5" %}
 
 ## Server Configuration
 

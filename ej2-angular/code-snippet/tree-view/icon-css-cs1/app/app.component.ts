@@ -2,7 +2,7 @@
 
 
 import { Component, Inject, ViewChild } from '@angular/core';
-import { TreeViewComponent, NodeCheckingEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { NodeCheckEventArgs, TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 /**
  * Icon css sample
  */
@@ -29,12 +29,12 @@ export class AppComponent {
 
     public field:Object ={  dataSource: this.treeData, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', expanded: 'expanded' };
 
-    @ViewChild ('treevalidate') tree: TreeViewComponent;
+    @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
     public onNodeCheck(args: NodeCheckEventArgs): void {
-      let nodeId = args.data[0].id;
+      let nodeId: any = args.data[0]['id'];
       // To get the iconCss
-      let iconClass = this.tree.getTreeData(nodeId)[0].icon;
+      let iconClass = this.tree?.getTreeData(nodeId)[0]['icon'];
       alert('Icon class is ' + iconClass);
     }
 }

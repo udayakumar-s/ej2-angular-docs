@@ -26,4 +26,4 @@ The following example illustrates how to enable ripple effect for labels in Swit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/switch/getting-started-cs2" %}

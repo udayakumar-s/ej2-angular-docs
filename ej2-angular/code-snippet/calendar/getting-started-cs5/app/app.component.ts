@@ -14,7 +14,7 @@ export class AppComponent {
     public dateValue: Date = new Date();
     constructor() {
     }
-    disabledDate(args): void {
+    disabledDate(args : any): void {
         if (args.date.getDay() === 0 || args.date.getDay() === 6) {
             //set 'true' to disable the weekends
             args.isDisabled = true;

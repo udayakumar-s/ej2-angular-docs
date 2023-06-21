@@ -34,7 +34,7 @@ The default items are displayed in the following table:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/columnmenu-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/columnmenu-cs1" %}
 
 > You can disable the column menu for a particular column by setting the [`columns.showColumnMenu`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showcolumnmenu) to false.
 
@@ -57,7 +57,7 @@ During the resizing action, the gantt component triggers the below two events.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/columnmenu-events-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/columnmenu-events-cs1" %}
 
 ## Custom Column Menu Item
 
@@ -76,7 +76,7 @@ Actions for this customized items can be defined in the [`columnMenuClick`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/columnmenu-cust-item-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/columnmenu-cust-item-cs1" %}
 
 ## Customize menu items for particular columns
 
@@ -96,4 +96,4 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/columnmenu-cust-action-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/columnmenu-cust-action-cs1" %}

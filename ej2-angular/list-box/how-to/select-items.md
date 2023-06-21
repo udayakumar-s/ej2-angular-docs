@@ -24,4 +24,4 @@ In the following example, `Bugatti Chiron` is selected using [`selectItems`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs12" %}

@@ -5,7 +5,7 @@ import { Component, ViewChild } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    styleUrls: ['index.css'],
+    styleUrls: ['./index.css'],
     template: `<label class="label">float label type auto</label>
                 <div class="multiline">
                 <ejs-textbox [multiline]='true' floatLabelType='Auto' placeholder='Enter your address' ></ejs-textbox>

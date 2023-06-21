@@ -26,7 +26,7 @@ The visibility of row, column, value and filter axis in Field List and Grouping 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/css-custom-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/css-custom-cs1" %}
 
 ## Text Alignment
 
@@ -44,7 +44,7 @@ The alignment of text inside row headers, column headers, value cells and summar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/text-align-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/text-align-cs1" %}
 
 ## Customize header, value and summary cell style
 
@@ -62,4 +62,4 @@ The elements in pivot table like header cell, value cell and summary cell style 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/summary-cell-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/summary-cell-cs1" %}

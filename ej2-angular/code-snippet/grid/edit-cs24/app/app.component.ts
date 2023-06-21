@@ -22,14 +22,15 @@ import { closest } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid') public grid?: GridComponent;
+    public editSettings: any;
 
     ngOnInit(): void {
         this.data = data;
     }
-    created(args) {
-        this.grid.element.addEventListener('keyup', function (e) { // Bind the keyup event for the grid.
+    created(args: any) {
+        (this.grid as any).element.addEventListener('keyup', function (e: any) { // Bind the keyup event for the grid.
             if ((e.target as any).classList.contains('custemp')) { // Based on this condition, you can find whether the target is an input element or not.
                 var row = parentsUntil(e.target as any, 'e-row');
                 var rowIndex = (row as any).rowIndex; // Get the row index.

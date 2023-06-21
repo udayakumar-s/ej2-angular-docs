@@ -32,7 +32,7 @@ To known about dateTime axis, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs10" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs10" %}
 
 >Note: To use datetime axis, we need to inject `DateTimeService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `DateTime`.
 
@@ -52,7 +52,7 @@ Date-time category axis is used to display the date-time values with non-linear 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs11" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs11" %}
 
 >Note: To use datetime axis, we need to inject `DateTimeCategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `DateTimeCategory`.
 
@@ -72,7 +72,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs12" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs12" %}
 
 ### Interval Customization
 
@@ -100,7 +100,7 @@ DateTime axis supports following interval types,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs13" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs13" %}
 
 **Applying Padding to the Range**
 
@@ -126,7 +126,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs14" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs14" %}
 
 **DateTime - Round**
 
@@ -144,7 +144,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs15" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs15" %}
 
 **DateTime - Additional**
 
@@ -162,7 +162,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs16" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs16" %}
 
 ## Label Format
 
@@ -180,7 +180,7 @@ You can format and parse the date to all globalize format using [`labelFormat`]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs17" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs17" %}
 
 The following table describes the result of applying some common date time formats to the labelFormat property
 

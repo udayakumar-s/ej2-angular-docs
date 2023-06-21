@@ -36,7 +36,7 @@ By default, the rows of the calendar Month view can hold only the limited appoin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs59" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs59" %}
 
 ## Timeline views
 
@@ -54,7 +54,7 @@ When the feature `RowAutoHeight` is enabled in Timeline views, the row height ge
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs60" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs60" %}
 
 ![Timeleine Month View](images/schedule-timeline-month.png)
 
@@ -74,7 +74,7 @@ The following example shows how the auto row adjustment feature works on timelin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs61" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs61" %}
 
 ![Timeline Views with Multiple Resources](images/schedule-timeline-resource.png)
 
@@ -94,7 +94,7 @@ By default, with the feature `rowAutoHeight`, there will be a space in the botto
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/ignore-whitespace-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/ignore-whitespace-cs1" %}
 
 ![Ignoring Whitespace](images/schedule-ignore-whitespace.png)
 

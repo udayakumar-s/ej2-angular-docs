@@ -24,4 +24,4 @@ You can customize the dialog appearance by providing dialog template as string o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-appearance-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-appearance-cs1" %}

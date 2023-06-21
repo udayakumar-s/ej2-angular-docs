@@ -26,4 +26,4 @@ By using the start and end properties in `striplines` object, you can mark the t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs20" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs20" %}

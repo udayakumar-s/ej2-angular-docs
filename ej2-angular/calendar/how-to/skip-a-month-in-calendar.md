@@ -24,4 +24,4 @@ The following example demonstrates how to skip a month in a Calendar while click
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs12" %}

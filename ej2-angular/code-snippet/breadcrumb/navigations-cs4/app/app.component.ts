@@ -23,7 +23,7 @@ enableRipple(true);
 export class AppComponent {
     public beforeItemRenderHandler(args: BreadcrumbBeforeItemRenderEventArgs): void {
         if (args.element.children[0]) {
-            args.element.children[0].target = "_blank";
+            (args.element.children[0] as any).target = "_blank";
         }
     }
 }

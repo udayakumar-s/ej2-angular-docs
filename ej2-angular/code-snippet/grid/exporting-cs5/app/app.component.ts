@@ -21,9 +21,9 @@ import { image } from './image';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    @ViewChild('grid') public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
+        if ((args as any).item.id === 'Grid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
             const pdfExportProperties: PdfExportProperties = {
                 header: {
                     fromTop: 0,
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
                     ]
                 }
             };
-            this.grid.pdfExport(pdfExportProperties);
+            (this.grid as any).pdfExport(pdfExportProperties);
         }
     }
 }

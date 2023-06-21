@@ -61,4 +61,4 @@ You can use the following key shortcuts to access the AutoComplete without inter
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs1" %}

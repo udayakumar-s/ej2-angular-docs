@@ -26,4 +26,4 @@ The following example illustrates how to create ButtonGroup with icons.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/icon-cs1" %}
+{% previewsample "page.domainurl/samples/button-group/icon-cs1" %}

@@ -15,7 +15,7 @@ import { EventSettingsModel, TimelineMonthService, TimelineYearService, GroupMod
       </e-resources>
       <e-views>
         <e-view option="TimelineMonth" [allowVirtualScrolling]="virtualscroll" isSelected=true></e-view>
-        <e-view option="TimelineYear" [allowVirtualScrolling]="virtualScroll" orientation="Vertical"></e-view>
+        <e-view option="TimelineYear" [allowVirtualScrolling]="virtualscroll" orientation="Vertical"></e-view>
       </e-views>
     </ejs-schedule>`
 })

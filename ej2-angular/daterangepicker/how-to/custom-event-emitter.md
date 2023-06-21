@@ -26,4 +26,4 @@ In the following example, **property binding** is used to share the data from th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/custom-binding-cs1" %}
+{% previewsample "page.domainurl/samples/daterangepicker/custom-binding-cs1" %}

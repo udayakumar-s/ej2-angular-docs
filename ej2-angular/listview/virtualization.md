@@ -61,7 +61,7 @@ It has two type of scroller
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/virtualization/flat-list-cs1" %}
+{% previewsample "page.domainurl/samples/listview/virtualization/flat-list-cs1" %}
 
 We can use `ng-template` property to customize list items in UI virtualization.
 
@@ -77,4 +77,4 @@ We can use `ng-template` property to customize list items in UI virtualization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/virtualization/template-cs1" %}
+{% previewsample "page.domainurl/samples/listview/virtualization/template-cs1" %}

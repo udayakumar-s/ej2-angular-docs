@@ -26,12 +26,12 @@ public data: { [key: string]: Object }[] = [
 ];
 
 created():void{
-   let listboxobj:ListBox = getInstance(document.getElementById("listbox"), ListBox) as ListBox;
+   let listboxobj:ListBox = getInstance((document as any).getElementById("listbox"), ListBox) as ListBox;
     listboxobj.enableItems(['Bugatti Veyron Super Sport', 'SSC Ultimate Aero'], false);
 }
 
 btnclick():void{
-  let listboxobj:ListBox = getInstance(document.getElementById("listbox"), ListBox) as ListBox;
+  let listboxobj:ListBox = getInstance((document as any).getElementById("listbox"), ListBox) as ListBox;
   listboxobj.enableItems(['Bugatti Veyron Super Sport', 'SSC Ultimate Aero'], true);
 }
 }

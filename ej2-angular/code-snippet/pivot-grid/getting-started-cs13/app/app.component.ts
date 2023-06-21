@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, CalculatedFieldService, PivotView, FieldListService, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, CalculatedFieldService, PivotView, FieldListService, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
 
 @Component({
@@ -12,12 +12,12 @@ import { Button } from '@syncfusion/ej2-buttons';
   allowCalculatedField='true' width=width></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
-  public button: Button;
-  public width: string;
+  public dataSourceSettings?: IDataOptions;
+  public button?: Button;
+  public width?: string;
 
     @ViewChild('pivotview',{static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     actionBegin(args: PivotActionBeginEventArgs): void {
         if (args.actionName == 'Open calculated field dialog') {
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],

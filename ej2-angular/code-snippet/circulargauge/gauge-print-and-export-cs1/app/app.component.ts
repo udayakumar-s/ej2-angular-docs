@@ -12,12 +12,14 @@ import { PrintService, CircularGaugeComponent } from '@syncfusion/ej2-angular-ci
 })
 export class AppComponent implements OnInit {
     @ViewChild('gauge')
-    public gaugeObj: CircularGaugeComponent;
+    public gaugeObj?: CircularGaugeComponent;
     ngOnInit(): void {
-        public print() {
-            this.gaugeObj.print();
-        };
-    }
+        // ngOnInit code here
+      }
+
+      public print(): void {
+        this.gaugeObj!.print();
+      }
 }
 
 

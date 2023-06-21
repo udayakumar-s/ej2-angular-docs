@@ -1,26 +1,25 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { ITextRenderEventArgs } from '@syncfusion/ej2-angular-charts';
+import { ITextRenderEventArgs, ITooltipRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [tooltip]='tooltip' (tooltipRender) = 'tooltipRender($event)'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [tooltip]='tooltip' (tooltipRender) = 'tooltipRender($event)'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' name='India' width=2 [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public marker: Object;
-    public tooltip: Object;
-    public primaryYAxis: Object;
-    public tooltipRender(args: ITooltipRenderEventArgs): void {
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public marker?: Object;
+    public tooltip?: Object;
+    public primaryYAxis?: Object;
+    public tooltipRender(args: ITooltipRenderEventArgs | any): void {
         let intl: Internationalization = new Internationalization();
         let formattedString: string = intl.formatDate(new Date((args.point.x).toString()), { skeleton: 'MMMEd'});
         args.textCollections = formattedString;

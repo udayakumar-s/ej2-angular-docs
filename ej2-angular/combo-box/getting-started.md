@@ -192,7 +192,7 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs11" %}
 
 ## Custom values
 
@@ -210,7 +210,7 @@ The ComboBox allows the user to give input as custom value which is not required
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs12" %}
 
 ## Configure the popup list
 
@@ -232,7 +232,7 @@ In the following sample, popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs13" %}
 
 ## Two-way binding
 
@@ -250,7 +250,7 @@ In ComboBox, the `value` property supports two-way binding functionality. The fo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs14" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs14" %}
 
 > You can refer to our [Angular ComboBox]( https://www.syncfusion.com/angular-ui-components/angular-combobox) feature tour page for its groundbreaking feature representations. You can also explore our [Angular ComboBox example](https://ej2.syncfusion.com/angular/demos/#/material/combo-box/default) that shows how to render the ComboBox in Angular.
 

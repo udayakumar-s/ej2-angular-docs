@@ -9,14 +9,14 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-    private content: string = 'Upload';
-    private cssClass: string = 'e-hide-spinner';
+    public content: string = 'Upload';
+    public cssClass: string = 'e-hide-spinner';
 
-    private begin(): void {
+    public begin(): void {
         this.content = 'Uploading...';
         this.cssClass = 'e-hide-spinner e-info';
     }
-    private end(): void {
+    public end(): void {
         this.content = 'Success';
         this.cssClass = 'e-hide-spinner e-success';
         setTimeout(() => {

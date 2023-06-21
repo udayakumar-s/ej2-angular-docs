@@ -2,7 +2,7 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { Maps, Selection, MapsComponent} from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 Maps.Inject(Selection);
 @Component({
     selector: 'app-container',
@@ -16,7 +16,7 @@ Maps.Inject(Selection);
 
 export class AppComponent {
     @ViewChild('maps')
-    public mapObj: MapsComponent;
+    public mapObj?: MapsComponent;
     public shapeData: object = world_map;
     public selectionSettings: object = {
         enable: true,
@@ -24,10 +24,10 @@ export class AppComponent {
         border: { color: 'white', width: 2 }
     };
     select(){
-        this.mapObj.shapeSelection(0, "continent", "Asia", true);
+        this.mapObj?.shapeSelection(0, "continent", "Asia", true);
     };
     unselect(){
-        this.mapObj.shapeSelection(0, "continent", "Asia", false);
+        this.mapObj?.shapeSelection(0, "continent", "Asia", false);
     }
 }
 

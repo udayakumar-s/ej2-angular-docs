@@ -26,4 +26,4 @@ The following example demonstrates the functionality of  `isMultiSelection` prop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs14" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs14" %}

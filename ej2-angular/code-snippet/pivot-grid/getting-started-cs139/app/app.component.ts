@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, GroupingBarSettings, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, GroupingBarSettings, GroupingBarService, FieldDroppedEventArgs, IFieldOptions  } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -12,13 +12,13 @@ import { Pivot_Data } from './datasource.ts';
   (onFieldDropped)='fieldDropped($event)' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public groupingSettings: GroupingBarSettings;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public groupingSettings?: GroupingBarSettings;
 
     fieldDropped(args: FieldDroppedEventArgs): void {
         //Triggers, whenever field is dropped in an axis.
-        args.droppedField.caption = args.droppedField.name + " --> " + args.droppedAxis;
+        (args.droppedField as IFieldOptions).caption = (args.droppedField as IFieldOptions).name + " --> " + args.droppedAxis;
     }
 
     ngOnInit(): void {
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
         this.width = "100%";
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],

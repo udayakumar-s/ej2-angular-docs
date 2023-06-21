@@ -33,4 +33,4 @@ In the following code example, you can see how to render only the last six month
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/year-customizations-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/year-customizations-cs1" %}

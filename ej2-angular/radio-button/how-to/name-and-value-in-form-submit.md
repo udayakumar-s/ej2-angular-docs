@@ -27,4 +27,4 @@ In the following code snippet, Credit and Debit card is in the checked state. No
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/form-cs1" %}
+{% previewsample "page.domainurl/samples/radio-button/form-cs1" %}

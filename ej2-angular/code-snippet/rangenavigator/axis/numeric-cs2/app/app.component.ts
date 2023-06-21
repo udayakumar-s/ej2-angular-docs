@@ -5,8 +5,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-rangenavigator id="rn-container" [value]='value' [minimum]='minimum' [maximum]='maximum' [interval]='interval'>
+    template: `<ejs-rangenavigator id="rn-container" [value]='value' [minimum]='minimum' [maximum]='maximum' [interval]='interval'>
             <e-rangenavigator-series-collection>
                 <e-rangenavigator-series [dataSource]='chartData' type='StepLine' xName='xData' yName='yData' width=2>
                 </e-rangenavigator-series>
@@ -14,11 +13,11 @@ import { Component, OnInit } from '@angular/core';
         </ejs-rangenavigator>`
 })
 export class AppComponent implements OnInit {
-    public value: Object[];
-    public chartData: Object[];
-    public minimum: number;
-    public maximum: number;
-    public interval: number;
+    public value?: Object[];
+    public chartData?: Object[];
+    public minimum?: number;
+    public maximum?: number;
+    public interval?: number;
     ngOnInit(): void {
         this.value = [60,100];
         this.chartData = [

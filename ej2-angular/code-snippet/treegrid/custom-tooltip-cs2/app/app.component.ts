@@ -15,7 +15,7 @@ import { sampleData } from './datasource';
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = sampleData;

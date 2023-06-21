@@ -15,40 +15,40 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
-    public gridLines: string;
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
+    public gridLines?: string;
     public queryCellInfoEvent: EmitType<QueryCellInfoEventArgs> = (args: QueryCellInfoEventArgs) => {
-        switch(args.data.TaskID) {
+        switch((args.data! as any).TaskID) {
             case 1:
-            if ((args.column.field == 'work1') && (args.data.taskData.work1 == 'support')) {
+            if ((args.column!.field == 'work1') && ((args.data!.taskData! as any).work1 == 'support')) {
                 args.colSpan = 2;
             }
             break;
             case 2:
-            if ((args.column.field == 'work1') && (args.data.taskData.work1 == 'support')) {
+            if ((args.column!.field == 'work1') && ((args.data!.taskData! as any) == 'support')) {
                 args.colSpan = 2;
             }
             break;
             case 3:
-            if ((args.column.field == 'work1') && (args.data.taskData.work1 == 'support')) {
+            if ((args.column!.field == 'work1') && ((args.data!.taskData! as any) == 'support')) {
                 args.colSpan = 2;
             }
             break;
             case 4:
-            if ((args.column.field == 'work1') && (args.data.taskData.work1 == 'support')) {
+            if ((args.column!.field == 'work1') && ((args.data!.taskData! as any) == 'support')) {
                 args.colSpan = 2;
             }
             break;
             case 5  :
-            if ((args.column.field == 'work1') && (args.data.taskData.work1 == 'support')) {
+            if ((args.column!.field == 'work1') && ((args.data!.taskData! as any) == 'support')) {
                 args.colSpan = 2;
             }
             break;
             case 7:
-            if ((args.column.field == 'work1') && (args.data.taskData.work1 == 'support')) {
+            if ((args.column!.field == 'work1') && ((args.data!.taskData! as any) == 'support')) {
                 args.colSpan = 2;
             }
             break;

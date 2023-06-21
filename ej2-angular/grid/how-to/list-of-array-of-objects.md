@@ -24,4 +24,4 @@ The following example shows how to set Complex field for datasource having Array
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/complex-data-cs1" %}
+{% previewsample "page.domainurl/samples/grid/complex-data-cs1" %}

@@ -23,10 +23,10 @@ import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public filterOption: FilterSettingsModel = { type: 'Excel' };
-    public dropdata: string[] = DataUtil.distinct(data, 'CustomerID') as string[];
-    public fields: object = { text: 'CustomerID', value: 'CustomerID' };
+    public data?: object[];
+    public filterOption?: FilterSettingsModel = { type: 'Excel' };
+    public dropdata?: string[] = DataUtil.distinct(data, 'CustomerID') as string[];
+    public fields?: object = { text: 'CustomerID', value: 'CustomerID' };
     public height = '220px';
     ngOnInit(): void {
         this.data = data;

@@ -20,10 +20,10 @@ import { FilterSettingsModel, IFilter, Filter } from '@syncfusion/ej2-angular-gr
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public filterOptions: FilterSettingsModel;
-    public filter: IFilter;
-    public dropInstance: DropDownList;
+    public data?: object[];
+    public filterOptions?: FilterSettingsModel;
+    public filter?: IFilter;
+    public dropInstance?: DropDownList;
 
     ngOnInit(): void {
         this.data = data;
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
             ui: {
                 create: (args: { target: Element, column: object }) => {
                     const flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
-                    args.target.appendChild(flValInput);
+                    (args as any).target.appendChild(flValInput);
                     this.dropInstance = new DropDownList({
                         dataSource: new DataManager(data),
                         fields: { text: 'OrderID', value: 'OrderID' },
@@ -47,10 +47,10 @@ export class AppComponent implements OnInit {
                     column: object, target: Element, parent: any,
                     filteredValue: number | string
                 }) => {
-                    this.dropInstance.value = args.filteredValue;
+                    this.dropInstance?.value = (args as any).filteredValue;
                 },
                 read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {
-                    args.fltrObj.filterByColumn(args.column.field, args.operator, this.dropInstance.value);
+                    (args as any).fltrObj.filterByColumn((args as any).column.field, (args as any).operator, this.dropInstance?.value);
 
                 }
             }

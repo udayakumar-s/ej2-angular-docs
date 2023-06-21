@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, ConnectorModel, DecoratorModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, ConnectorModel, DecoratorModel, PointModel, OrthogonalSegmentModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -15,15 +15,15 @@ import { DiagramComponent, Diagram, ConnectorModel, DecoratorModel, PointModel }
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public sourcePoint: PointModel;
-    public targetPoint: PointModel;
-    public segments: OrthogonalSegmentModel;
+    public diagram?: DiagramComponent;
+    public sourcePoint?: PointModel;
+    public targetPoint?: PointModel;
+    public segments?: OrthogonalSegmentModel;
     ngOnInit(): void {
         this.sourcePoint = { x: 100, y: 100 };
         this.targetPoint = { x: 200, y: 200 };
     }
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',

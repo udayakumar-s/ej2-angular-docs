@@ -30,4 +30,4 @@ The output will appear as follows,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs16" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs16" %}

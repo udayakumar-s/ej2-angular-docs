@@ -21,18 +21,18 @@ import { GridComponent, ContextMenuService, PageService, EditService, EditSettin
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public contextMenuItems: ContextMenuItem[] = ['Copy', 'Edit', 'Delete'];
+    public data?: object[];
+    public contextMenuItems?: ContextMenuItem[] = ['Copy', 'Edit', 'Delete'];
     @ViewChild('grid')
-    public grid: GridComponent;
-    public editing: EditSettingsModel = { allowAdding: true, allowDeleting: true, allowEditing: true };
+    public grid?: GridComponent;
+    public editing?: EditSettingsModel = { allowAdding: true, allowDeleting: true, allowEditing: true };
 
     ngOnInit(): void {
         this.data = data;
     }
-    rowSelected(args) {
-        var contextMenuObj = this.grid.contextMenuModule.contextMenu;
-        if (args.data.OrderID % 2 === 0) {
+    rowSelected(args: any) {
+        var contextMenuObj = (this.grid as any).contextMenuModule.contextMenu;
+        if ((args as any).data.OrderID % 2 === 0) {
             contextMenuObj.enableItems(['Copy'], false);
         } else {
             contextMenuObj.enableItems(['Copy'], true);

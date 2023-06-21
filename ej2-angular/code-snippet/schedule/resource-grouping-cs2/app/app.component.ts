@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import {
     TimelineViewsService, TimelineMonthService, AgendaService, EventSettingsModel, GroupModel
 } from '@syncfusion/ej2-angular-schedule';
-import { resourceData } from './datasource.ts';
+import { resourceData } from './datasource';
 
 @Component({
     selector: "app-root",
@@ -45,6 +45,7 @@ export class AppComponent {
         { OwnerText: 'Steven', Id: 2, OwnerGroupId: 2, OwnerColor: '#f8a398' },
         { OwnerText: 'Michael', Id: 3, OwnerGroupId: 1, OwnerColor: '#7499e1' }
     ];
+allowMultipleCategory: any;
 }
 
 

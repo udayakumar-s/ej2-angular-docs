@@ -1,8 +1,8 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, CellEditSettings, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, CellEditSettings, PivotActionBeginEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',  
@@ -11,9 +11,9 @@ import { Pivot_Data } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public editSettings: CellEditSettings
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public editSettings?: CellEditSettings
+    public dataSourceSettings?: IDataOptions;
 
     actionBegin(args: PivotActionBeginEventArgs): void {
         if (args.actionName == 'Add new record' || args.actionName == 'Save edited records') {
@@ -25,7 +25,7 @@ export class AppComponent {
 
         this.width = "100%";
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
@@ -35,7 +35,7 @@ export class AppComponent {
             formatSettings: [{ name: 'Amount', format: 'C0' }],
             filters: []
         };
-        this.editSettings= { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Dialog' }
+        this.editSettings = { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Dialog' } as CellEditSettings;
     }
  }
 

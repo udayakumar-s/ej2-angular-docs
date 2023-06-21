@@ -31,7 +31,7 @@ The following properties can be used to customize [`majorTicklines`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs1" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs1" %}
 
 ## Tick Placement
 
@@ -49,7 +49,7 @@ The major and the minor ticks can be placed **inside** or **outside** the ranges
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs2" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs2" %}
 
 ## Label Format
 
@@ -67,7 +67,7 @@ Axis numeric labels can be formatted by using the [`labelFormat`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs3" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs3" %}
 
 The following table describes the result of applying some commonly used formats to numeric axis labels.
 
@@ -145,7 +145,7 @@ To separate the groups of thousands, set the [`enableGroupSeparator`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs4" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs4" %}
 
 ## Custom Label Format
 
@@ -163,7 +163,7 @@ Using the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs5" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs5" %}
 
 ## Label Placement
 
@@ -181,7 +181,7 @@ Label can be placed **Inside** or **Outside** of the ranges using the [`labelPos
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs6" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs6" %}
 
 ## Opposed Position
 
@@ -199,7 +199,7 @@ To place an axis opposite to its original position, set the [`opposedPosition`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs7" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs7" %}
 
 ## Category Label
 
@@ -217,7 +217,7 @@ The Bullet Chart supports X-axis label by specifying the property from the data 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs8" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs8" %}
 
 ## Category Label Customization
 
@@ -235,4 +235,4 @@ The label color, opacity, font size, font family, font weight, and font style ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs9" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs9" %}

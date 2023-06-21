@@ -1,6 +1,4 @@
 
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { data } from './datasource';
@@ -23,13 +21,13 @@ import { GroupService, GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbar: string[];
-    public groupOptions: object;
-    public toolbarObj;
+    public data?: object[];
+    public toolbar?: string[];
+    public groupOptions?: object;
+    public toolbarObj?: any;
 
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -38,20 +36,20 @@ export class AppComponent implements OnInit {
     }
 
     clickHandler(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_Collapse') { // Grid_Collapse is control id + '_' + toolbar value.
-            this.grid.groupModule.collapseAll();
+        if ((args as any).item.id === 'Grid_Collapse') { // Grid_Collapse is control id + '_' + toolbar value.
+            (this.grid as any).groupModule.collapseAll();
         }
 
-        if (args.item.id === 'Grid_Expand') {
-            this.grid.groupModule.expandAll();
+        if ((args as any).item.id === 'Grid_Expand') {
+            (this.grid as any).groupModule.expandAll();
         }
     }
     enable() {
-        this.grid.toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], true); // Enable toolbar items.
+        (this.grid as any).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], true); // Enable toolbar items.
     }
 
     disable() {
-        this.grid.toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], false); // Disable toolbar items.
+        (this.grid as any).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], false); // Disable toolbar items.
     }
 }
 

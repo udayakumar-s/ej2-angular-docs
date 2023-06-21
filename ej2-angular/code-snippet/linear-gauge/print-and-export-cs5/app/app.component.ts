@@ -11,10 +11,10 @@ import { ImageExportService, LinearGaugeComponent } from '@syncfusion/ej2-angula
 })
 export class AppComponent {
   @ViewChild('gauge')
-  public gaugeObj: LinearGaugeComponent;
+  public gaugeObj: LinearGaugeComponent | any;
   public export(){
     const promise = this.gaugeObj.export('PNG', 'Gauge', null, false);
-    promise.then((data)=>{
+    promise.then((data: string)=>{
       document.writeln(data);
     })
   }

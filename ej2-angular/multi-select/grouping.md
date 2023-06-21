@@ -26,7 +26,7 @@ In the following sample, vegetables are grouped according on its category using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs14" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs14" %}
 
 ## Customization
 
@@ -51,7 +51,7 @@ Inject the `CheckBoxSelection` module in the MultiSelect to use the checkbox.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs15" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs15" %}
 
 ## See Also
 

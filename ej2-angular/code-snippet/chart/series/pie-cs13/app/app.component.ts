@@ -1,11 +1,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { pieData } from 'datasource.ts';
+import { pieData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [enableAnimation]='enableAnimation' [enableSmartLabels]='enableSmartLabels'
+    template: `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [enableAnimation]='enableAnimation' [enableSmartLabels]='enableSmartLabels'
     [title]='title'>
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' groupTo='11' [dataLabel]='datalabel' [explode]='explode' [explodeOffset]='explodeOffset'
@@ -14,15 +13,15 @@ import { pieData } from 'datasource.ts';
     </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
-    public piedata: Object[];
-    public legendSettings: Object;
-    public datalabel: Object;
-    public startAngle: number;
-    public endAngle: number;
-    public explode: boolean;
-    public explodeOffset: string;
-    public enableSmartLabels: boolean;
-    public enableAnimation: boolean;
+    public piedata?: Object[];
+    public legendSettings?: Object;
+    public datalabel?: Object;
+    public startAngle?: number;
+    public endAngle?: number;
+    public explode?: boolean;
+    public explodeOffset?: string;
+    public enableSmartLabels?: boolean;
+    public enableAnimation?: boolean;
     public title: Object = 'Project Cost Breakdown';
     ngOnInit(): void {
         this.datalabel = {   visible: true,

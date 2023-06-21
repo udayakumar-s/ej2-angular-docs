@@ -1,9 +1,9 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, DisplayOption, DrillThroughService, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, DisplayOption, DrillThroughService, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,17 +13,17 @@ import { Pivot_Data } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public chartSettings: ChartSettings;
-    public displayOption: DisplayOption;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public chartSettings?: ChartSettings;
+    public displayOption?: DisplayOption;
 
     ngOnInit(): void {
 
         this.width = "100%";
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
@@ -34,7 +34,7 @@ export class AppComponent {
             filters: []
         };
 
-        this.displayOption = { view: 'Chart' } as DisplayOPtion;
+        this.displayOption = { view: 'Chart' } as DisplayOption;
         this.chartSettings = { chartSeries: { type: 'Column' }} as ChartSettings;
     }
  }

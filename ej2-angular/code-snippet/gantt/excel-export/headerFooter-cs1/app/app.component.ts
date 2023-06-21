@@ -1,8 +1,8 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+
+import { GanttComponent, ToolbarItem ,ExcelExport} from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './data';
 
@@ -15,11 +15,11 @@ import { GanttData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.data = GanttData;
         this.taskSettings = {
@@ -34,7 +34,7 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault_excelexport') {
-                let excelExportProperties: ExcelExportProperties = {
+                let excelExportProperties: ExcelExport| any = {
                     header: {
                             headerRows: 7,
                             rows: [

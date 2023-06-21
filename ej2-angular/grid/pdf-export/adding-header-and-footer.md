@@ -131,7 +131,7 @@ The below code illustrates the pdf export customization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs5" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs5" %}
 
 ## Repeat column header on every page
 
@@ -151,4 +151,4 @@ In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQue
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs6" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs6" %}

@@ -30,7 +30,7 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/spanning-cs2" %}
+{% previewsample "page.domainurl/samples/grid/spanning-cs2" %}
 
 > To disable the spanning for particular grid page, you need to use **requestType** from `queryCellInfo` event argument.
 > The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.

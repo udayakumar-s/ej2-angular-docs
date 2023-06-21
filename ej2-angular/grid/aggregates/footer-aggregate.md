@@ -27,7 +27,7 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-footer-cs1" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-footer-cs1" %}
 
 > * Use the template reference variable name as **#footerTemplate** to specify the footer template.
 > * The aggregate values must be accessed inside the template using their corresponding [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name.
@@ -51,7 +51,7 @@ You can format the aggregate value result by using the [`format`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-footer-cs2" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-footer-cs2" %}
 
 ## How to place aggregates on top of the Grid
 
@@ -71,4 +71,4 @@ In the following, footer content is appended to the header content using the `da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-footer-cs3" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-footer-cs3" %}

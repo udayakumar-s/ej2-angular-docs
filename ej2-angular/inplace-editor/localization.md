@@ -37,7 +37,7 @@ To load translation object in an application use `load` function of `L10n` class
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/editable-on-cs2" %}
+{% previewsample "page.domainurl/samples/in-place-editor/editable-on-cs2" %}
 
 ## Right to left
 
@@ -57,7 +57,7 @@ Specifies the direction of the **In-place Editor** component using the enableRtl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/default-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/default-cs1" %}
 
 ## Format
 
@@ -82,4 +82,4 @@ Formatting is a way of representing the value in different format. You can forma
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/format-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/format-cs1" %}

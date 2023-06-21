@@ -38,17 +38,18 @@ export class AppComponent {
 
  public fields: Object = { text: "text", id: "id" };
    @ViewChild('list')
-   listObj: ListViewComponent;
+   listObj?: ListViewComponent;
    @ViewChild('textbox')textboxEle: any;
+Ascending: any;
     onkeyup(event: any){
       let value = this.textboxEle.nativeElement.value;
       let data = new DataManager(this.listData).executeLocal(new Query().where("text", "startswith", value, true));
   if (!value) {
-    (this.listObj.dataSource as any) = (this.listData as Object[]).slice();
+    ((this.listObj as ListViewComponent).dataSource as any) = (this.listData as Object[]).slice();
   } else {
-    this.listObj.dataSource = data as { [key: string]: Object }[];
+    (this.listObj as ListViewComponent).dataSource = data as { [key: string]: Object }[];
   }
-  this.listObj.dataBind();
+  this.listObj?.dataBind();
     }
 }
 

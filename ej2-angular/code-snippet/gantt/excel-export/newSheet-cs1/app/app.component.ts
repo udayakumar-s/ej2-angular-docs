@@ -2,7 +2,7 @@
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { ExcelExport, GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './data';
 
@@ -18,15 +18,15 @@ import { GanttData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public fData: object[];
-    public sData: object[];
-    public fTaskSettings: object;
-    public sTaskSettings: object;
-    public toolbar: ToolbarItem[];
-    public projectStartDate: Date;
-    public projectEndDate: Date;
-    @ViewChild('gantt1', {static: true}) public fGantt: GanttComponent;
-    @ViewChild('gantt2', {static: true}) public sGantt: GanttComponent;
+    public fData?: object[];
+    public sData?: object[];
+    public fTaskSettings?: object;
+    public sTaskSettings?: object;
+    public toolbar?: ToolbarItem[];
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    @ViewChild('gantt1', {static: true}) public fGantt?: GanttComponent;
+    @ViewChild('gantt2', {static: true}) public sGantt?: GanttComponent;
     public ngOnInit(): void {
         this.fData = [GanttData[0]];
         this.sData = [GanttData[1]];
@@ -52,13 +52,13 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault1_excelexport') {
-                const appendExcelExportProperties: ExcelExportProperties = {
+                const appendExcelExportProperties: ExcelExport| any = {
                 multipleExport: { type: 'NewSheet' }
             };
 
-            const firstGanttExport: Promise<any> = this.fGantt.excelExport(appendExcelExportProperties, true);
+            const firstGanttExport: Promise<any> = this.fGantt!.excelExport(appendExcelExportProperties, true);
             firstGanttExport.then((fData: any) => {
-                this.sGantt.excelExport(appendExcelExportProperties, false, fData);
+                this.sGantt!.excelExport(appendExcelExportProperties, false, fData);
             });
             }
     };

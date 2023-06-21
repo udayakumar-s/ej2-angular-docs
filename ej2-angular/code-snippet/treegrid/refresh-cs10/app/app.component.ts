@@ -22,7 +22,7 @@ import { RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public formatOptions: Object;
+    public formatOptions?: Object;
 
     ngOnInit(): void {
         this.data = projectData;
@@ -30,8 +30,8 @@ export class AppComponent implements OnInit {
     }
     rowSelected(args: RowSelectEventArgs) {
         alert("row index: "+ " " + (args.row as HTMLTableRowElement).getAttribute('aria-rowindex'));
-        alert("column index: "+ " " + args.target.closest('td').getAttribute('aria-colindex'));
+        alert("column index: "+ " " + ((args.target as Element).closest('td') as HTMLTableCellElement).getAttribute('aria-colindex'));
     }
 
 
-
+}

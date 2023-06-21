@@ -37,4 +37,4 @@ The following example illustrates how to move items from `Group A` to `Group B` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/dual-list-box-cs1" %}
+{% previewsample "page.domainurl/samples/listbox/dual-list-box-cs1" %}

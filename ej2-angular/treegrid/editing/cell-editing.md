@@ -26,7 +26,7 @@ To enable Cell edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs7" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs7" %}
 
 > Cell edit mode is the default mode of editing.
 > The following events are triggered for the cell edit mode.

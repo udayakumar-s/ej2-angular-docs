@@ -29,7 +29,7 @@ The value of matchMedia() can be any of the media features of CSS @media rule. F
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/autoclose-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/autoclose-cs1" %}
 
 * In the following sample,the Sidebar will be in expanded state only in resolution below `400px`.
 
@@ -47,4 +47,4 @@ The value of matchMedia() can be any of the media features of CSS @media rule. F
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/autoclose-cs2" %}
+{% previewsample "page.domainurl/samples/sidebar/autoclose-cs2" %}

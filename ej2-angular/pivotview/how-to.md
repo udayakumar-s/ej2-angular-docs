@@ -34,4 +34,4 @@ In the below example, the data in the member editor limits to 100. So, the membe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs154" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs154" %}

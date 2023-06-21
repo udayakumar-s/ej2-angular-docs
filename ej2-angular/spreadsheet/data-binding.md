@@ -32,7 +32,7 @@ Refer to the following code example for local data binding.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/local-data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/local-data-binding-cs1" %}
 
 > The local data source can also be provided as an instance of the [`DataManager`](../data). By default, [`DataManager`](../data) uses [`JsonAdaptor`](../data/adaptors/#json-adaptor) for local data-binding.
 
@@ -54,7 +54,7 @@ Refer to the following code example for remote data binding.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/remote-data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/remote-data-binding-cs1" %}
 
 > By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
@@ -74,7 +74,7 @@ Refer to the following code example for remote data binding.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/remote-data-binding-cs2" %}
+{% previewsample "page.domainurl/samples/spreadsheet/remote-data-binding-cs2" %}
 
 ### Web API
 
@@ -92,7 +92,7 @@ You can use WebApiAdaptor to bind spreadsheet with Web API created using OData e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/remote-data-binding-cs3" %}
+{% previewsample "page.domainurl/samples/spreadsheet/remote-data-binding-cs3" %}
 
 ## Cell data binding
 
@@ -112,7 +112,7 @@ Refer to the following code example for cell data binding.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/cell-data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/cell-data-binding-cs1" %}
 
 > The cell data binding also supports formula, style, number format, and more.
 
@@ -144,7 +144,7 @@ The following table defines the arguments of the `dataSourceChanged` event.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/dynamic-data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/dynamic-data-binding-cs1" %}
 
 ## Note
 

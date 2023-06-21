@@ -32,7 +32,7 @@ The following code example shows the sparkline with overall border.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs1" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs1" %}
 
 ## Sparkline padding
 
@@ -54,7 +54,7 @@ The following code example shows the sparkline with overall padding is set to 20
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs2" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs2" %}
 
 ## Sparkline area customization
 
@@ -74,7 +74,7 @@ The background color of the sparkline area can be customized using the `containe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs3" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs3" %}
 
 ## Sparkline theme
 
@@ -96,4 +96,4 @@ The following code example shows the color for datalabel and track line is set t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs4" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs4" %}

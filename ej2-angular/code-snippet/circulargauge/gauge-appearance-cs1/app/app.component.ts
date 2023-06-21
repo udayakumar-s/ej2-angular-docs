@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public titleStyle: Object;
+    public titleStyle?: Object;
     ngOnInit(): void {
         // Initialize objects.
         this.titleStyle = {

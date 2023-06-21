@@ -36,7 +36,7 @@ In the following sample, French culture is set to the ComboBox and no data is lo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/getting-started-cs17" %}
+{% previewsample "page.domainurl/samples/combobox/getting-started-cs17" %}
 
 ## See Also
 

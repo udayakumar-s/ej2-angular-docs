@@ -24,4 +24,4 @@ The excel export provides an option to include header and footer content for exp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs1" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs1" %}

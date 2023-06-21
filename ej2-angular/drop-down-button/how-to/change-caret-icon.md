@@ -28,4 +28,4 @@ In the following example, the up arrow is updated on popup close and down arrow 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/updown-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/updown-cs1" %}

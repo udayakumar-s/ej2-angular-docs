@@ -11,8 +11,7 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart style='display:block;' #chart [legendSettings]='legend' id='container' [primaryXAxis]='primaryXAxis'
+    template: `<ejs-chart style='display:block;' #chart [legendSettings]='legend' id='container' [primaryXAxis]='primaryXAxis'
             [tooltip]='tooltip' [height]='height' [width]='width' (scrollEnd)='scrollEnd($event)'
             [primaryYAxis]='primaryYAxis' [crosshair]='crosshair' [chartArea]='chartArea' [title]='title'>
             <e-series-collection>
@@ -22,9 +21,11 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
         </ejs-chart>`
 })
 export class AppComponent implements OnInit {
+    ngOnInit(): void {
+    }
     public intl: Internationalization = new Internationalization();
     @ViewChild('point')
-    private pointslength: NumericTextBoxComponent;
+    private pointslength?: NumericTextBoxComponent;
     public value: number = 1000;
     public step: number = 100;
     public enabled: boolean = false;
@@ -40,7 +41,7 @@ export class AppComponent implements OnInit {
     public fields: Object = { text: 'value', value: 'value' };
     public data: Object[] = this.GetNumericData(new Date(2009, 0, 1));
     @ViewChild('chart')
-    public chart: ChartComponent;
+    public chart?: ChartComponent;
     // Initializing Primary X Axis
     public primaryXAxis: Object = {
         title: 'Day',
@@ -78,9 +79,10 @@ export class AppComponent implements OnInit {
             width: 0
         }
     };
-    public scrollEnd(args: IScrollEventArgs): void {
-        this.chart.series[0].dataSource = this.GetNumericData(new Date(args.currentRange.maximum));
-        this.chart.dataBind();
+crosshair: any;
+    public scrollEnd(args: IScrollEventArgs | any): void {
+        (this.chart as ChartComponent).series[0].dataSource = this.GetNumericData(new Date(args.currentRange.maximum));
+        (this.chart as ChartComponent).dataBind();
     };
     public GetNumericData(date: Date): {x: Date, y: number}[] {
         var series1 = [];
@@ -101,7 +103,7 @@ export class AppComponent implements OnInit {
         }
         return series1;
     }
-    public getRandomInt(min, max) {
+    public getRandomInt(min: number, max: number) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 };

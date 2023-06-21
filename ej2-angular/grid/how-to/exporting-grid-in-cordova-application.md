@@ -24,4 +24,4 @@ Cordova application does not support direct file download. So we have to use the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs4" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs4" %}

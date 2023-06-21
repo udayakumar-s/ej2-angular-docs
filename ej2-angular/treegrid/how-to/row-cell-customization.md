@@ -26,6 +26,6 @@ In the below demo, we customize and show the command buttons only for the parent
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/refresh-cs15" %}
+{% previewsample "page.domainurl/samples/treegrid/refresh-cs15" %}
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

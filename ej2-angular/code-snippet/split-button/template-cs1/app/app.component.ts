@@ -1,5 +1,5 @@
 
- 
+
 import { Component } from '@angular/core';
 import { ItemModel, MenuEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 import { enableRipple, createElement } from '@syncfusion/ej2-base';
@@ -25,7 +25,7 @@ export class AppComponent {
 
       public addClass(args: MenuEventArgs) {
         let shortCutSpan: HTMLElement = createElement('span');
-        let text: string = args.item.text;
+        let text: string | any = args.item.text;
         args.element.appendChild(shortCutSpan);
         shortCutSpan.setAttribute('class','shortcut');
         let clsName: string = (text == 'Copy') ? 'e-icons' : 'e-sb-icons';

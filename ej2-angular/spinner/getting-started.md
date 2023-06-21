@@ -152,4 +152,4 @@ import { showSpinner, hideSpinner } from '@syncfusion/ej2-angular-popups';
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spinner/intro-cs1" %}
+{% previewsample "page.domainurl/samples/spinner/intro-cs1" %}

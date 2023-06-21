@@ -13,13 +13,13 @@ import { Component, OnInit } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-  public container: Object;
-  public line: Object;
-  public majorTicks: Object;
-  public minorTicks: Object;
-  public labelStyle: Object;
-  public pointers: Object[];
-  public ranges: Object[];
+  public container?: Object;
+  public line?: Object;
+  public majorTicks?: Object;
+  public minorTicks?: Object;
+  public labelStyle?: Object;
+  public pointers?: Object[];
+  public ranges?: Object[];
   ngOnInit(): void {
     this.container = { width: 30, offset: 30 }
     this.line= {

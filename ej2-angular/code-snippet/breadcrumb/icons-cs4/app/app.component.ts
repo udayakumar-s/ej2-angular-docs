@@ -1,6 +1,7 @@
 
 
 import { Component } from '@angular/core';
+import { BreadcrumbBeforeItemRenderEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { enableRipple } from '@syncfusion/ej2-base';
 
 enableRipple(true);

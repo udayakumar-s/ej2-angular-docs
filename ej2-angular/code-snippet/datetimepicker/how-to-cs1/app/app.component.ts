@@ -13,8 +13,8 @@ import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 export class AppComponent implements OnInit {
     @ViewChild('formElement') element: any;
-    @ViewChild('ejDateTime') ejDateTime: DateTimePickerComponent;
-    public formObject: FormValidator;
+    @ViewChild('ejDateTime') ejDateTime?: DateTimePickerComponent;
+    public formObject?: FormValidator;
     ngOnInit() {
         // custom validator function.
         let customFn: (args: {
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
         }) => boolean = (args: {
             [key: string]: string
         }) => {
-            return ((this.ejDateTime.value).getFullYear() > 1990 && (this.ejDateTime.value).getFullYear() < 2020);
+            return (((this.ejDateTime as DateTimePickerComponent ).value).getFullYear() > 1990 && ((this.ejDateTime as DateTimePickerComponent ).value).getFullYear() < 2020);
         };
         let options: FormValidatorModel = {
             rules: {
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
                 }
             },
             customPlacement: (inputElement: HTMLElement, errorElement: HTMLElement) => {
-                inputElement.parentElement.parentElement.appendChild(errorElement);
+                inputElement?.parentElement?.parentElement?.appendChild(errorElement);
             }
         };
         this.formObject = new FormValidator('#form-element', options);
@@ -42,12 +42,12 @@ export class AppComponent implements OnInit {
     }
     // Form validation takes place when focus() event of datetimepicker is triggered.
     public onFocusOut(): void {
-        this.formObject.validate("datetimepicker");
+        this.formObject?.validate("datetimepicker");
     }
     // Custom validation takes place when value is changed.
     public onChange(args: any) {
-        if (this.ejDateTime.value != null)
-            this.formObject.validate("datetimepicker");
+        if (this.ejDateTime?.value != null)
+            this.formObject?.validate("datetimepicker");
     }
 }
 

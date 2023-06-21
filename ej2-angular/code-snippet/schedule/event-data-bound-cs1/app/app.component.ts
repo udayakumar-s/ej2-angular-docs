@@ -10,21 +10,21 @@ import {
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
     // specifies the template string for the Schedule component
-    templateUrl: 'app/app.component.html',
-    styleUrls: ['app/index.css'],
+    templateUrl: './app.component.html',
+    styleUrls: ['./index.css'],
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public eventSettings: EventSettingsModel = {
         dataSource: eventsData
     };
     onClick() {
-        document.getElementById('EventLog').innerHTML = '';
+        (document.getElementById('EventLog') as any).innerHTML = '';
     }
     onDataBound(): void {
-        let event: Object[] = this.scheduleObj.getCurrentViewEvents();
+        let event: Object[] = (this.scheduleObj as any).getCurrentViewEvents();
         if (event.length > 0) {
             this.appendElement('Events present on current view <b>' + event.length + '<b><hr>');
         } else {
@@ -34,7 +34,7 @@ export class AppComponent {
     appendElement(html: string): void {
         let span: HTMLElement = document.createElement('span');
         span.innerHTML = html;
-        let log: HTMLElement = document.getElementById('EventLog');
+        let log: HTMLElement = document.getElementById('EventLog') as HTMLElement;
         log.insertBefore(span, log.firstChild);
     }
 }

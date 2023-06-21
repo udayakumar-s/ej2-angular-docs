@@ -6,7 +6,7 @@ import { Query, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
     // specifies the template url path
-    templateUrl: './app/template.html'
+    templateUrl: 'template.html'
 })
 export class AppComponent {
     constructor() {

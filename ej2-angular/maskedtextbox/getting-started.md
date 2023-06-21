@@ -191,7 +191,7 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/getting-started-cs1" %}
 
 ## Two way binding
 
@@ -210,7 +210,7 @@ The following example demonstrates two-way binding functionality with the Masked
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/getting-started-cs2" %}
 
 ## Reactive form
 
@@ -236,7 +236,7 @@ The following example demonstrates how to use the reactive forms.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/reactive-forms-cs1" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/reactive-forms-cs1" %}
 
 ## See Also
 

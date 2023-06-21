@@ -5,17 +5,16 @@ import { IPointRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [title]='title'>
+    template: `<ejs-chart id="chart-container" [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' name='Female' width=2 [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public chartData: Object[];
-    public title: string;
-    public marker: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData =[
                    { x: 10, y: 7000, color: 'red' },

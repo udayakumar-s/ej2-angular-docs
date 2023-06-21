@@ -26,4 +26,4 @@ The following example demonstrates how to open the DatePicker popup when the inp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/open-popup-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/open-popup-cs1" %}

@@ -13,7 +13,7 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextE
                     <ejs-richtexteditor #fromRTE #name='ngModel' [(value)]='value' required name="name"
                         [(ngModel)]="value" (created)="rteCreated()"></ejs-richtexteditor>
                     <div *ngIf="(name.invalid && name.touched)" class="alert alert-danger">
-                        <div *ngIf="name.errors.required">
+                        <div *ngIf="name.errors!['required']">
                             Value is required.
                         </div>
                     </div>
@@ -30,13 +30,13 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextE
 })
 export class AppComponent  {
 
-    public value: string = null;
+    public value: string |null = null;
 
     @ViewChild('fromRTE')
-    private rteEle: RichTextEditorComponent;
+    private rteEle: RichTextEditorComponent | undefined;
 
     rteCreated(): void {
-        this.rteEle.element.focus();
+        this.rteEle!.element.focus();
     }
 
     onSubmit(): void {

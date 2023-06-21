@@ -17,16 +17,16 @@ import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data?: DataManager;
 
     ngOnInit(): void {
         class SerialNoAdaptor extends WebApiAdaptor {
-            public processResponse(): Object[] {
+            public override processResponse(): Object[] {
                 let i: number = 0;
                 // calling base class processResponse function
-                let original: Object[] = super.processResponse.apply(this, arguments);
+                let original: Object[] | any = super.processResponse.apply(this, arguments as any);
                 // adding serial number
-                original.forEach((item: Object) => item['Sno'] = ++i);
+                original.forEach((item: Object | any) => item['Sno'] = ++i);
                 return original;
             }
 }

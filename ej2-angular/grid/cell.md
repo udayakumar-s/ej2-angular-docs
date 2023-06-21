@@ -28,7 +28,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs3" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs3" %}
 
 > * The [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property disables HTML encoding for the corresponding column in the grid. 
 > * If the property is set to **true**, any HTML tags in the column's data will be displayed. 
@@ -78,7 +78,7 @@ The following example demonstrates how to set the [allowTextWrap](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/autowrap-cs1" %}
+{% previewsample "page.domainurl/samples/grid/autowrap-cs1" %}
 
 ## Customize cell styles
 
@@ -102,7 +102,7 @@ The following example demonstrates how to add a [queryCellInfo](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs1" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs1" %}
 
 > * The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event is triggered for every cell of the grid, so it may impact the performance of the grid whether used to modify a large number of cells.
 
@@ -132,7 +132,7 @@ The following example demonstrates how to customize the appearance of a specific
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs12" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs12" %}
 
 ### Using property
 
@@ -166,7 +166,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs2" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs2" %}
 
 > Custom attributes can be used to customize any cell in the grid, including header and footer cells.
 
@@ -192,7 +192,7 @@ The following example demonstrates how to use [getColumnHeaderByIndex](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs13" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs13" %}
 
 > Make sure to pass the correct row and column indices to [getCellFromIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcellfromindex) method, or else the appearance of the wrong cell might get customized.
 
@@ -221,7 +221,7 @@ The following example demonstrates, how to set the [clipMode](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/clipmode-cs1" %}
+{% previewsample "page.domainurl/samples/grid/clipmode-cs1" %}
 
 > * By default, [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) value is **Ellipsis**.
 > * If you set the [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) property of a column, the clip mode feature will be automatically applied to that column if the content exceeds the specified width.
@@ -349,7 +349,7 @@ The following example demonstrates how to customize the tooltip content for the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/grid/custom-tooltip-cs1" %}
 
 ## Grid lines
 
@@ -377,7 +377,7 @@ The following example demonstrates how to set the [gridLines](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/autowrap-cs2" %}
+{% previewsample "page.domainurl/samples/grid/autowrap-cs2" %}
 
 >By default, the grid renders with **Default** mode.
 

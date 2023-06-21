@@ -27,7 +27,7 @@ export class AppComponent {
                         // customization of lane header
                          header: {
                         annotation: { content: 'Online Consumer' }, width: 30,
-                        style: { fontSize: 11 },style: { fill: 'red' }
+                        style: { fontSize: 11, fill: 'red' }
                     },
                     canMove: false ,
                     },
@@ -45,11 +45,11 @@ export class AppComponent {
         },
       ]
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
      public created(args: Object): void {
          let lane = [{id:"lane1",height:100,canMove: false}];
-        this.diagram.addLanes(this.diagram.nodes[0],lane,1);
-        this.diagram.dataBind();
+        (this.diagram as Diagram).addLanes((this.diagram as Diagram).nodes[0],lane,1);
+        (this.diagram as Diagram).dataBind();
     }
 }
 

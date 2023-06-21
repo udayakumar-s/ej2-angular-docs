@@ -35,7 +35,7 @@ You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documenta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/data-binding-cs1" %}
 
 > * If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 

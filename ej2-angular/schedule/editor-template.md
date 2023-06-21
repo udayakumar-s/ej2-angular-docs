@@ -36,7 +36,7 @@ You can change the header title and the text of buttons displayed at the footer 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs1" %}
 
 ![Editing Window with Custom Local Words](images/schedule-editing-local-word.png)
 
@@ -56,7 +56,7 @@ To change the default labels such as Subject, Location and other field names in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs2" %}
 
 ![Editor Window with Custom Label](images/schedule-custom-label.png)
 
@@ -76,7 +76,7 @@ It is possible to validate the required fields of the editor window from client-
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs3" %}
 
 ![Editor window with Validation](images/schedule-validation.png)
 
@@ -98,7 +98,7 @@ The additional fields can be added to the default event editor by making use of 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs4" %}
 
 ### How to prevent the default focus of the editor widow
 
@@ -116,7 +116,7 @@ When we open the editor window, by default it will be focus to the `Subject` fie
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs5" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs5" %}
 
 ### Customizing the default time duration in editor window
 
@@ -134,7 +134,7 @@ In default event editor window, start and end time duration are processed based 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs6" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs6" %}
 
 ### How to prevent the display of editor and quick popups
 
@@ -152,7 +152,7 @@ You prevent the display of editor and quick popup windows by passing the value `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs7" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs7" %}
 
 In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the `popupOpen` event are as follows.
 
@@ -221,7 +221,7 @@ By default, the timezone collections in the editor window have been loaded with 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs37" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs37" %}
 
 ## Customizing event editor using template
 
@@ -247,7 +247,7 @@ Learn the easiest way to customize the editor window of Angular Scheduler with y
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs8" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs8" %}
 
 ### How to add resource options within editor template
 
@@ -265,7 +265,7 @@ The resource field can be added within editor template with multiselect control 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-field-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/resource-field-cs1" %}
 
 ![Add Resource Options within Editor Template](images/schedule-custom-window-with-resource.png)
 
@@ -285,7 +285,7 @@ The following code example shows how to add recurrence options within the editor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-field-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/resource-field-cs2" %}
 
 ![Add Recurrence Options within Editor Template](images/schedule-custom-window-with-recurrence.png)
 
@@ -305,7 +305,7 @@ In the following code example, validation has been added to the status field.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-field-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/resource-field-cs3" %}
 
 ![Editor Template with Validation](images/schedule-custom-window-validation.png)
 
@@ -329,7 +329,7 @@ The following code example shows how to save the customized event editor using a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-field-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/resource-field-cs4" %}
 
 In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the `popupClose` event are as follows.
 
@@ -363,7 +363,7 @@ The following code example shows how to enable save button in customized event e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/resource-field-cs5" %}
+{% previewsample "page.domainurl/samples/schedule/resource-field-cs5" %}
 
 ## Quick popups
 
@@ -385,7 +385,7 @@ By default, these popups are displayed over cells and appointments of Scheduler 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs9" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs9" %}
 
 ### How to open QuickInfo popup on multiple cell selection
 
@@ -403,7 +403,7 @@ By default the `QuickInfo` popup will open on single click of the cell. To open 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs10" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs10" %}
 
 ### How to change the watermark text of quick popup subject
 
@@ -439,7 +439,7 @@ The look and feel of the built-in quick popup window, which opens when single cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/quick-popup-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/quick-popup-cs1" %}
 
 > The quick popup in adaptive mode can also be customized using `quickInfoTemplates` using `e-device` class.
 
@@ -465,7 +465,7 @@ The following code example shows how to disable the display of such popups while
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs11" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs11" %}
 
 ![More Event Popup](images/schedule-more-event-popup.png)
 
@@ -485,7 +485,7 @@ The following code example shows you how to customize the default more indicator
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs12" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs12" %}
 
 ### How to customize the appointments rendered on more indicator popup
 
@@ -503,7 +503,7 @@ The following code example shows you how to customize the details shown on the a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs13" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs13" %}
 
 ### How to prevent the display of popup when clicking on the more text indicator
 
@@ -521,7 +521,7 @@ It is possible to prevent the display of popup window by passing the value `true
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs14" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs14" %}
 
 ### How to navigate Day view when clicking on more text indicator
 
@@ -539,7 +539,7 @@ The following code example shows you how to customize the `moreEventsClick` prop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs15" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs15" %}
 
 ### How to close the editor window manually
 
@@ -557,7 +557,7 @@ You can close the editor window by using [closeEditor](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs16" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs16" %}
 
 ### How to open the quick info popup manually
 
@@ -575,7 +575,7 @@ You can open the quick info popup in scheduler by using the [openQuickInfoPopup]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs17" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs17" %}
 
 ### How to close the quick info popup manually
 
@@ -593,6 +593,6 @@ You can close the quick info popup in scheduler by using the [closeQuickInfoPopu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/editor-window-cs18" %}
+{% previewsample "page.domainurl/samples/schedule/editor-window-cs18" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

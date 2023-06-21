@@ -1,9 +1,9 @@
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { usa_map } from 'usa.ts';
-import { california } from 'california.ts';
-import { texas } from 'texas.ts';
+import { usa_map } from './usa';
+import { california } from './california';
+import { texas } from './texas';
 
 @Component({
     selector: 'app-container',

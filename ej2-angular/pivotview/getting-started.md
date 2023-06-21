@@ -319,7 +319,7 @@ The field list allows to add or remove fields and also rearrange the fields betw
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs105" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs105" %}
 
 ## Enable Grouping Bar
 
@@ -339,7 +339,7 @@ The grouping bar feature automatically populates fields from the bound data sour
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs106" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs106" %}
 
 ## Exploring Filter Axis
 
@@ -357,7 +357,7 @@ The filter axis contains collection of fields that would act as master filter ov
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs107" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs107" %}
 
 ## Calculated field
 
@@ -379,7 +379,7 @@ Also calculated fields can be added to the bound datasource at run time through 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs108" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs108" %}
 
 ## Run the application
 
@@ -407,7 +407,7 @@ ng serve --prod
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs109" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs109" %}
 
 <!-- markdownlint-disable MD028 -->
 > In Angular, the `ViewChild` method is used to access the instance of the component. It has following parameters.

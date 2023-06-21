@@ -25,4 +25,4 @@ Validation can be performed by adding custom validation in the rules collection 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/custom-validation-cs1" %}
+{% previewsample "page.domainurl/samples/numerictextbox/custom-validation-cs1" %}

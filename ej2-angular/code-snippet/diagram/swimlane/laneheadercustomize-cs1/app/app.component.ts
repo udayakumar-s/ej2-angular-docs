@@ -21,15 +21,15 @@ export class AppComponent {
                     height: 50, style: { fontSize: 11 },
                 },
                 lanes: [
-                  {
-                       id: 'stackCanvas1',
+                    {
+                        id: 'stackCanvas1',
                         height: 100,
                         // customization of lane header
-                         header: {
-                        annotation: { content: 'Online Consumer' }, width: 30,
-                        style: { fontSize: 11 },style: { fill: 'red' }
-                    },
-                    },
+                        header: {
+                            annotation: { content: 'Online Consumer' }, width: 30,
+                            style: { fontSize: 11, fill: 'red'  }
+                        }
+                    }
                 ],
                 phases: [{
                     id: 'phase1', offset: 170,
@@ -44,7 +44,7 @@ export class AppComponent {
         },
       ]
     @ViewChild("diagram")
-    public diagram: DiagramComponent;  
+    public diagram?: DiagramComponent;  
 }
 
 

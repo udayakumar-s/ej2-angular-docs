@@ -28,7 +28,7 @@ In below sample, Cars are grouped based on its category using groupBy field.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/grouping-cs1" %}
+{% previewsample "page.domainurl/samples/listview/grouping-cs1" %}
 
 ## Customization
 

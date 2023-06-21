@@ -1,4 +1,4 @@
-  <form [formGroup]="skillForm" novalidate id="formId" (ngSubmit)="onSubmit()">
+  <ejs-form [formGroup]="skillForm" novalidate id="formId" (ngSubmit)="onSubmit()">
       <div class="form-group" >
           <div class="e-float-input">
               <input type="text" formControlName="username" name="username" minlength="8" />
@@ -25,5 +25,5 @@
           <button ejs-button id="submitbutton" type="submit" [disabled]="!skillForm.valid">Submit</button>
           <button ejs-button type="reset">Reset</button>
       </div>
-  </form>
+  </ejs-form>
   <link href='https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css' rel='stylesheet' />

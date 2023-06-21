@@ -28,4 +28,4 @@ The background and border color of the RadioButton is customized through the cus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/howto-cs1" %}
+{% previewsample "page.domainurl/samples/radio-button/howto-cs1" %}

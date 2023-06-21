@@ -12,8 +12,8 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskFields: object;
+    public data?: object[];
+    public taskFields?: object;
 
     public ngOnInit(): void {
         this.data = [

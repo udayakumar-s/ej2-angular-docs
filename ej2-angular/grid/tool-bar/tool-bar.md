@@ -28,7 +28,7 @@ You can enable/disable toolbar items by using the **enableItems** method.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/toolbar-enable-cs1" %}
+{% previewsample "page.domainurl/samples/grid/toolbar-enable-cs1" %}
 
 ## Add toolbar at the bottom of Grid
 
@@ -46,7 +46,7 @@ You can add the Grid toolbar component at the bottom of Grid using the ['created
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/toolbar-enable-cs2" %}
+{% previewsample "page.domainurl/samples/grid/toolbar-enable-cs2" %}
 
 ## See Also
 

@@ -24,9 +24,9 @@ enableRipple(true);
 
 export class AppComponent {
     @ViewChild('toolbar')
-    private toolbarObj: ToolbarComponent;
+    public toolbarObj?: ToolbarComponent;
 
-    private menuItems: { [key: string]: Object }[] = [
+    public menuItems: { [key: string]: Object }[] = [
         {
             header: 'Events',
             subItems: [
@@ -60,15 +60,15 @@ export class AppComponent {
         { header: 'Services' }
     ];
 
-    private menuFields: Object = {
+    public menuFields: Object = {
         text: ['header', 'text', 'value'],
         children: ['subItems', 'options']
     };
 
-    private animationSettings: MenuAnimationSettingsModel = { effect: 'None' };
+    public animationSettings: MenuAnimationSettingsModel = { effect: 'None' };
 
-    private created(): void {
-        this.toolbarObj.refreshOverflow();
+    public created(): void {
+        this.toolbarObj?.refreshOverflow();
     }
 }
 

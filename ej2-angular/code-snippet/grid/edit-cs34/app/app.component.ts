@@ -19,17 +19,16 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public orderIDRules: object;
-    public customerIDRules: object;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public orderIDRules?: object;
+    public customerIDRules?: object;
     public value = 'value';
 
     public customFn: (args: { [key: string]: string }) => boolean = (args: { [key: string]: string }) => {
         return args[this.value].length >= 5;
     }
-
 
     ngOnInit(): void {
         this.data = data;

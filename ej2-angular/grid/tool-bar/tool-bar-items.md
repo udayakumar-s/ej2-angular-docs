@@ -40,7 +40,7 @@ Built-in Toolbar Items execute standard actions of the Grid and it can be added 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/grid/toolbar-cs1" %}
 
 > The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 
@@ -68,7 +68,7 @@ This is demonstrated in the following sample:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/toolbaricon-cs1" %}
+{% previewsample "page.domainurl/samples/grid/toolbaricon-cs1" %}
 
 ## Custom toolbar items
 
@@ -88,7 +88,7 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/grid/custom-toolbar-cs1" %}
 
 > * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 > * If a toolbar item does not match with built-in items, it will be treated as custom toolbar item.
@@ -111,7 +111,7 @@ In the below example, **Add**, **Edit**, **Delete**, **Update**, **Cancel** are 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs53" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs53" %}
 
 ## Custom toolbar component in a specific position
 
@@ -129,4 +129,4 @@ By default, Custom toolbar items are in the Left position. You can change the po
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-toolbar-cs2" %}
+{% previewsample "page.domainurl/samples/grid/custom-toolbar-cs2" %}

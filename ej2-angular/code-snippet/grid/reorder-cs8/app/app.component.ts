@@ -6,8 +6,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template:
-        `<button ejs-button id='reordersingle' cssClass="e-info" (click)='reorderSingleColumnByTargetIndex()'>Reorder single column</button>
+    template: `<button ejs-button id='reordersingle' cssClass="e-info" (click)='reorderSingleColumnByTargetIndex()'>Reorder single column</button>
      <button ejs-button id='reordermultiple' cssClass="e-info" (click)='reorderMultipleColumnByTargetIndex()'>Reorder Multiple columns</button>
     <ejs-grid #grid [dataSource]='data' [allowReordering]='true' height='280px'>
         <e-columns>
@@ -21,17 +20,17 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public gridObj: GridComponent;
+    public data?: object[];
+    @ViewChild('grid') public gridObj?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
     reorderSingleColumnByTargetIndex(): void {
-        this.gridObj.reorderColumnByTargetIndex("OrderID", 3); // move column with field name "OrderID" to index 3
+        (this.gridObj as any).reorderColumnByTargetIndex("OrderID", 3); // move column with field name "OrderID" to index 3
     }
     reorderMultipleColumnByTargetIndex(): void {
-        this.gridObj.reorderColumnByTargetIndex(['OrderID', 'CustomerID'], 3); // move columns with field name "OrderID" and "CustomerID" to index 3
+        (this.gridObj as any).reorderColumnByTargetIndex(['OrderID', 'CustomerID'], 3); // move columns with field name "OrderID" and "CustomerID" to index 3
     }
 }
 

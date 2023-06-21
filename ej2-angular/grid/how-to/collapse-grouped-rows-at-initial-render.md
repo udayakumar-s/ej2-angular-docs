@@ -26,4 +26,4 @@ In the below demo, all the grouped rows are collapsed at initial rendering.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/collapse-all-initial-cs1" %}
+{% previewsample "page.domainurl/samples/grid/collapse-all-initial-cs1" %}

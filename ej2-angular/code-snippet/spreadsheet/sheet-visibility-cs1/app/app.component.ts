@@ -65,7 +65,7 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
     openUrl = 'https://services.syncfusion.com/angular/production/api/spreadsheet/open';
@@ -73,11 +73,11 @@ export class AppComponent {
 
     created() {
         // Applies style formatting to active visible sheet
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'D2:H11');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'D2:H11');
         // Applies style formatting to active hidden sheet
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Hidden Sheet!A1:H1');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'Hidden Sheet!D2:H11');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Hidden Sheet!A1:H1');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'Hidden Sheet!D2:H11');
     }
 }
 

@@ -63,7 +63,7 @@ The following code example shows the finite scrolling with defined rows and colu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/scrolling-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/scrolling-cs1" %}
 
 ## Note
 

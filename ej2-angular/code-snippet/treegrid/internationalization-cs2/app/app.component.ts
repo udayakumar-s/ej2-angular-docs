@@ -1,8 +1,8 @@
 
 
 
-import { loadCldr, L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
-import { formatData } from './datasource.ts';
+import { loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
+import { formatData } from './datasource';
 import { L10n } from '@syncfusion/ej2-base';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ToolbarItems } from '@syncfusion/ej2-treegrid';
@@ -65,11 +65,11 @@ import { ToolbarItems } from '@syncfusion/ej2-treegrid';
 
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pager: Object;
-    public toolbarOptions: ToolbarItems[];
-    public filters: Object;
-    public formats: Object;
+    public data?: Object[];
+    public pager?: Object;
+    public toolbarOptions?: ToolbarItems[];
+    public filters?: Object;
+    public formats?: Object;
 
 
     ngOnInit(): void {

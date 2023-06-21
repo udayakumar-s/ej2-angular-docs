@@ -24,10 +24,10 @@ import { Query } from '@syncfusion/ej2-data';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('grid') public grid: GridComponent;
-    public queryClone: any;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    @ViewChild('grid') public grid?: GridComponent;
+    public queryClone?: any;
 
     ngOnInit(): void {
         this.data = data;
@@ -35,22 +35,22 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') {
-            this.queryClone = this.grid.query;
-            this.grid.query = new Query().addParams('recordcount', '12');
-            this.grid.pdfExport();
-        } else if (args.item.id === 'Grid_excelexport') {
-            this.queryClone = this.grid.query;
-            this.grid.query = new Query().addParams('recordcount', '12');
-            this.grid.excelExport();
+        if ((args as any).item.id === 'Grid_pdfexport') {
+            this.queryClone = (this.grid as any).query;
+            (this.grid as any).query = new Query().addParams('recordcount', '12');
+            (this.grid as any).pdfExport();
+        } else if ((args as any).item.id === 'Grid_excelexport') {
+            this.queryClone = (this.grid as any).query;
+            (this.grid as any).query = new Query().addParams('recordcount', '12');
+            (this.grid as any).excelExport();
         }
     }
 
     pdfExportComplete(): void {
-        this.grid.query = this.queryClone;
+        (this.grid as any).query = (this as any).queryClone;
     }
     excelExportComplete(): void {
-        this.grid.query = this.queryClone;
+        (this.grid as any).query = (this as any).queryClone;
     }
 }
 

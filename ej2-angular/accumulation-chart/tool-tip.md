@@ -24,7 +24,7 @@ Tooltip for the accumulation chart can be enabled by using the `enable` proper
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs31" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs31" %}
 
 >Note: To use tooltip feature, inject the `AccumulationTooltipService` into the `@NgModule.providers`.
 
@@ -44,7 +44,7 @@ We can specify header for the tooltip using `header` property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs32" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs32" %}
 
 ## Format
 
@@ -63,7 +63,7 @@ information in tooltip. For example the format `${series.name} ${point.x}` sho
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs33" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs33" %}
 
 ## Tooltip Template
 
@@ -81,7 +81,7 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs34" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs34" %}
 
 ## Customization
 
@@ -99,7 +99,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs35" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs35" %}
 
 ## Tooltip Mapping Name
 
@@ -118,7 +118,7 @@ You can use the `${point.tooltip}` as place holders to display the specified too
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs36" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs36" %}
 
 ## To customize individual tooltip
 
@@ -137,4 +137,4 @@ tooltip for particular point.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs37" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs37" %}

@@ -11,7 +11,7 @@ import { DiagramComponent, Diagram, NodeModel } from '@syncfusion/ej2-angular-di
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public node: NodeModel = {
         // Position of the node
         offsetX: 250,
@@ -26,7 +26,7 @@ export class AppComponent {
     };
     public created(args: Object): void {
         //Add Node
-        this.diagram.add(this.node);
+        (this.diagram as Diagram).add(this.node);
     }
 }
 

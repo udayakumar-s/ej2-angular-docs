@@ -26,6 +26,6 @@ In the following sample, the [`showButtons`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/how-to-cs4" %}
+{% previewsample "page.domainurl/samples/colorpicker/how-to-cs4" %}
 
 >> To render `Picker` alone specify the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#mode) property as 'Picker'.

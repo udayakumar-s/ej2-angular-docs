@@ -13,7 +13,7 @@ import { TooltipComponent, Position } from '@syncfusion/ej2-angular-popups';
         </ejs-tooltip>
     </div>
     <div>
-         <select id="positions" (change)="onChange($event.target.value)" class="form-control">
+         <select id="positions" (change)="onChange($event.target)" class="form-control">
              <option value="TopLeft">Top Left</option>
              <option value="TopCenter" selected>Top Center</option>
              <option value="TopRight">Top Right</option>
@@ -41,8 +41,9 @@ import { TooltipComponent, Position } from '@syncfusion/ej2-angular-popups';
     encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-    @ViewChild('tooltip') public control: TooltipComponent;
-    onChange(value: string) {
+    @ViewChild('tooltip') public control : TooltipComponent | any;
+
+    onChange(value: string | any) {
         this.control.position = value as Position;
     }
 }

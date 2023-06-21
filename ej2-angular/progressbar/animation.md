@@ -25,4 +25,4 @@ Progress Bar support to animate the progress by using `animation` property. Enab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/animation-cs1" %}
+{% previewsample "page.domainurl/samples/progressbar/animation-cs1" %}

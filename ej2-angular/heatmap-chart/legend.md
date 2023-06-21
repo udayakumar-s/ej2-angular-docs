@@ -24,7 +24,7 @@ The legend is used to provide the information about the heat map cell. You can e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/legend/legend-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/legend/legend-cs1" %}
 
 ## Legend types
 
@@ -47,7 +47,7 @@ You can change the legend type by using the [type](https://ej2.syncfusion.com/an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/legend/legendtype-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/legend/legendtype-cs1" %}
 
 ## Placement
 
@@ -65,7 +65,7 @@ You can place the legend at left, right, top, or bottom to the heat map layout b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/legend/legendplacement-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/legend/legendplacement-cs1" %}
 
 ## Alignment
 
@@ -83,7 +83,7 @@ You can align the legend as center, far, or near to the heat map using the [alig
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/legend/legendalignment-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/legend/legendalignment-cs1" %}
 
 ## Legend dimensions
 
@@ -101,7 +101,7 @@ You can change the legend dimensions with values in pixels or percentage by usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/legend/legenddimension-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/legend/legenddimension-cs1" %}
 
 ## Paging for legend
 
@@ -119,7 +119,7 @@ Paging is available only for the list type legend in the heat map, and it can be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/legend/legendpaging-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/legend/legendpaging-cs1" %}
 
 >Note: To use legend feature, we need to inject `Legend` using `HeatMap.Inject(Legend)`.
 
@@ -146,7 +146,7 @@ The following are the legend label display types:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/legend/smartlegend-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/legend/smartlegend-cs1" %}
 
 ## Legend Selection
 
@@ -164,7 +164,7 @@ In the HeatMap, the legend selection is used to toggle the visibility of cell fo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/legend/legendselection-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/legend/legendselection-cs1" %}
 
 ## Legend Title
 
@@ -182,4 +182,4 @@ The legend title displays a specific information about the legend. You can enabl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/legend/legend-title-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/legend/legend-title-cs1" %}

@@ -52,7 +52,7 @@ Component |Example
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs11" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs11" %}
 
 > If the edit type is not defined in the column, then it will be considered as the `stringedit` type (Textbox component).
 
@@ -74,7 +74,7 @@ In the following demo, while editing the row, the decimal point values have been
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs12" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs12" %}
 
 ### Provide custom data source and enabling filtering to DropDownList
 
@@ -113,7 +113,7 @@ In the following demo, the DropDownList is rendered with the custom Datasource f
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-cs1" %}
 
 ## Cell edit template
 
@@ -139,7 +139,7 @@ The cell edit template is used to add a custom component for a particular column
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs13" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs13" %}
 
 ### Render TimePicker component while editing
 
@@ -157,7 +157,7 @@ Use the cell edit template feature of the tree grid to render the TimePicker com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs14" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs14" %}
 
 ### Render MultiSelect DropDown component while editing
 
@@ -177,7 +177,7 @@ In the following sample, the MultiSelect DropDown component is rendered in the *
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs15" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs15" %}
 
 ### Render RichTextEditor component while editing
 
@@ -195,4 +195,4 @@ Use the cell edit template feature of the tree grid to render the RichTextEditor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs16" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs16" %}

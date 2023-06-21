@@ -189,7 +189,7 @@ The following example shows a basic `Mention` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs6" %}
 
 ## Display Mention character
 
@@ -211,4 +211,4 @@ The following example displays the text content along with the mention character
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs7" %}

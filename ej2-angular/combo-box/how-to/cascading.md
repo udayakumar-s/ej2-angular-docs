@@ -29,4 +29,4 @@ The following example, shows the cascade behavior of country, state, and city Co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/cascading-cs1" %}
+{% previewsample "page.domainurl/samples/combobox/cascading-cs1" %}

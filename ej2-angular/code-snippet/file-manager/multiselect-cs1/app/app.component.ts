@@ -6,13 +6,13 @@ import { FileSelectEventArgs } from '@syncfusion/ej2-filemanager';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='multi' [ajaxSettings]='ajaxSettings' [allowMultiSelection]='allowMultiSelection' (fileSelect)='onFileSelect($event)'>
     </ejs-filemanager>`
 })
 export class AppComponent {
-    public ajaxSettings: object;
-    public allowMultiSelection: boolean;
+    public ajaxSettings?: object;
+    public allowMultiSelection?: boolean;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {
@@ -24,7 +24,7 @@ export class AppComponent {
        this.allowMultiSelection = true;
        }
     // File Manager's file select event function
-    onFileSelect(args: FileSelectEventArgs) {
+    onFileSelect(args: FileSelectEventArgs | any) {
         console.log(args.fileDetails.name + " has been " + args.action + "ed");
     }
 }

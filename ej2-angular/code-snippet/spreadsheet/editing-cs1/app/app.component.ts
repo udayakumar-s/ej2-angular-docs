@@ -36,16 +36,16 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:E1');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'A2:A10');
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'C2:C10');
-        this.spreadsheetObj.numberFormat('$#,##0.00', 'D2:D10');
-        this.spreadsheetObj.numberFormat('$#,##0.00', 'E2:E11');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:E1');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'A2:A10');
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'C2:C10');
+        this.spreadsheetObj!.numberFormat('$#,##0.00', 'D2:D10');
+        this.spreadsheetObj!.numberFormat('$#,##0.00', 'E2:E11');
     }
 
     // Triggers before going to the editing mode.
@@ -60,7 +60,7 @@ export class AppComponent {
         if (args.address.includes('D')) {
             args.cancel = true;
             // Manually removes the editable state without saving the changes. Use `endEdit` method if you want to save the changes.
-            this.spreadsheetObj.closeEdit();
+            this.spreadsheetObj!.closeEdit();
         }
     }
 }

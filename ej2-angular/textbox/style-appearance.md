@@ -55,4 +55,4 @@ You can show text or hide text by showing `•` character instead of actual text
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/toggle-password-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/toggle-password-cs1" %}

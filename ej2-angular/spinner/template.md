@@ -50,4 +50,4 @@ setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rollin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spinner/set-spinner-cs1" %}
+{% previewsample "page.domainurl/samples/spinner/set-spinner-cs1" %}

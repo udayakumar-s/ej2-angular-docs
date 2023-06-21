@@ -5,7 +5,7 @@ import {
     IDataOptions, PivotView, ToolbarService, ToolbarItems, DisplayOption, IDataSet, PivotChartService
 } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -15,13 +15,13 @@ import { Pivot_Data } from './datasource.ts';
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
-    public toolbarOptions: ToolbarItems[];
-    public displayOption: DisplayOption;
-    public chartSettings: ChartSettings;
+    public dataSourceSettings?: IDataOptions;
+    public toolbarOptions?: ToolbarItems[];
+    public displayOption?: DisplayOption;
+    public chartSettings?: ChartSettings;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
     ngOnInit(): void {
         this.displayOption = { view: 'Both' } as DisplayOption;
 
@@ -31,7 +31,7 @@ export class AppComponent {
 
         this.toolbarOptions = ['Grid', 'Chart'] as ToolbarItems[];
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],

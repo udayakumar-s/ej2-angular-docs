@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
     public data: object[] = [{x: 'Mon', y: 3 },{x: 'Tue', y: 5 },{x: 'Wed', y: 2 },{x: 'Thu', y: 4 },{x: 'Fri', y: 6 },];
     public dataLabelSettings: object = {
-        format: '${x} : ${y}'
+        format: '${x} : ${y}',
         visible: ['All'],
         border: { color: 'blue', width: 1},
         fill: 'blue', opacity: 0.4,
@@ -20,7 +20,7 @@ export class AppComponent {
     };
     public axisSettings: object = {
         minX: -1, maxX: 7, maxY: 8, minY: -1
-    },
+    };
 };
 
 

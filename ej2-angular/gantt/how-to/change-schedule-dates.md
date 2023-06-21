@@ -23,4 +23,4 @@ In the Gantt component, you can change the schedule start and end dates by click
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/changescheduledates-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/changescheduledates-cs1" %}

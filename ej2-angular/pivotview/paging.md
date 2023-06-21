@@ -37,7 +37,7 @@ You can also change the position, visibility, compact view, and template of the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs201" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs201" %}
 
 ### Show pager UI at top or bottom
 
@@ -57,7 +57,7 @@ You can display the pager UI at top or bottom of the pivot table by using the [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs202" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs202" %}
 
 ### Inverse pager
 
@@ -77,7 +77,7 @@ Toggles and displays row and column pager. To show the column pager on the left 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs203" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs203" %}
 
 ### Compact view
 
@@ -95,7 +95,7 @@ By hiding all except the previous and next navigation buttons, the pager UI can 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs204" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs204" %}
 
 ### Show or hide paging option
 
@@ -115,7 +115,7 @@ In the following example, row pager has been disabled by setting the [`showRowPa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs205" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs205" %}
 
 ### Show or hide page size
 
@@ -133,7 +133,7 @@ By using the [`showRowPageSize`](https://ej2.syncfusion.com/angular/documentatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs206" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs206" %}
 
 ### Customize page size
 
@@ -155,7 +155,7 @@ In the following example, the "Rows per page" dropdown is set with user-defined 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs207" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs207" %}
 
 ### Template
 
@@ -173,4 +173,4 @@ The [`template`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/pagingTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/pagingTemplate-cs1" %}

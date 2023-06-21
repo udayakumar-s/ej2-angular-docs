@@ -12,12 +12,13 @@ import {PdfExportService, CircularGaugeComponent} from '@syncfusion/ej2-angular-
 })
 export class AppComponent implements OnInit {
     @ViewChild('gauge')
-    public gaugeObj: CircularGaugeComponent;
+    public gaugeObj?: CircularGaugeComponent;
     ngOnInit(): void {
-        public export() {
-            this.gaugeObj.export('PDF', 'Gauge', 0);
-        };
+
     }
+    public export() {
+        this.gaugeObj!.export('PDF', 'Gauge', 0);
+    };
 }
 
 

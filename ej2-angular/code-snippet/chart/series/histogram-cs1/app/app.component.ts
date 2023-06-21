@@ -1,11 +1,11 @@
 
 
 import { Component, OnInit } from '@angular/core';
+import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',
-    template:
-    ` <ejs-chart style='display:block;' align='center' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' (load)='load($event)'>
+    template: ` <ejs-chart style='display:block;' align='center' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' (load)='load($event)'>
             <e-series-collection>
                 <e-series [dataSource]='data' type='Histogram' yName='y' name='Score' width=2 [binInterval]='binInterval' showNormalDistribution='showNormalDistribution'
                 [columnWidth]='columnWidth'> </e-series>

@@ -12,6 +12,9 @@ import { MenuItemModel, ContextMenu } from '@syncfusion/ej2-navigations';
 })
 
 export class AppComponent {
+    menuOpen() {
+
+    }
     public menuItems: MenuItemModel[] = [
         {
             text: 'Cut',
@@ -38,7 +41,7 @@ export class AppComponent {
 
      ngAfterViewInit(): void{
          setTimeout(() => {
-            let contextmenuObj: ContextMenu = getInstance(document.getElementById("contextmenu_0"), ContextMenu) as ContextMenu;
+            let contextmenuObj: ContextMenu = getInstance(document.getElementById("contextmenu_0") as HTMLElement, ContextMenu) as ContextMenu;
             contextmenuObj.open(40, 20);
         }, 300);
      }

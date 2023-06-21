@@ -25,4 +25,4 @@ By default, it is horizontally aligned.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs6" %}

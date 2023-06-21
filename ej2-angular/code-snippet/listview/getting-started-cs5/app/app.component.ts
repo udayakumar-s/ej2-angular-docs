@@ -1,7 +1,7 @@
 
 
 
-import { Component, ViewChild, ngAfterViewInit, ViewEncapsulation } from "@angular/core";
+import { Component, ViewChild, ViewEncapsulation } from "@angular/core";
 import { DataManager, Query, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { createSpinner, showSpinner, setSpinner } from '@syncfusion/ej2-angular-popups';
 
@@ -39,7 +39,7 @@ export class AppComponent {
     });
     showSpinner(this.spinnerEle.nativeElement);
    }
-   onActionComplete(){
+   onActionComplete(args:any){
     this.spinnerEle.nativeElement.style.display = "none";
    }
 }

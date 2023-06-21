@@ -19,7 +19,7 @@ import {
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public eventSettings: EventSettingsModel = {
         dataSource: scheduleData,

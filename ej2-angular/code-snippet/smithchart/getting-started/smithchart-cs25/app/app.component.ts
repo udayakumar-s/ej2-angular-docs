@@ -15,7 +15,7 @@ import { Component, ViewChild } from '@angular/core';
 
 export class AppComponent {
      @ViewChild('smithchart')
-    public smithchart: SmithChart;
+    public smithchart?: any;
     public marker:object = {
          dataLabel: {
                     visible: true

@@ -28,7 +28,7 @@ In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documenta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/frozencolumns-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/frozencolumns-cs1" %}
 
 ### Freeze particular columns
 
@@ -49,7 +49,7 @@ the `isFrozen` property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/isfrozen-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/isfrozen-cs1" %}
 
 ### Freeze direction
 
@@ -74,7 +74,7 @@ In this demo, the **Task Name** column is frozen at the left and the **Priority*
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/isfrozen-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/isfrozen-cs2" %}
 
 > * Freeze Direction is not compatible with the [`isFrozen`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isfrozen) and [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#frozencolumns) properties.
 > * You can get the frozen right rows by using the [`getFrozenRightRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getfrozenrightrows) method in tree grid.
@@ -130,7 +130,7 @@ Validation rules for the 'duration' and 'taskID' columns can be added in the fol
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/isfrozen-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/isfrozen-cs3" %}
 
 > * This is applicable when a frozen column is enabled and the edit mode is set as "**Row**" in the tree grid.
 > * You can refer to Syncfusion [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.

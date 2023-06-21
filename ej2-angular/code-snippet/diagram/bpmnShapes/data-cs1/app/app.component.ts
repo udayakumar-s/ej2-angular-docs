@@ -14,7 +14,7 @@ import { DiagramComponent, Diagram, NodeModel, BpmnShapeModel } from '@syncfusio
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public shape: BpmnShapeModel = {
         type: 'Bpmn',
         shape: 'DataObject',
@@ -23,7 +23,7 @@ export class AppComponent {
             collection: true,
             type: 'Input'
         }
-    },
+    }
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;

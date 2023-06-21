@@ -16,11 +16,11 @@ import {TreeGridComponent} from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pageSettings: Object ;
-    public initialGridLoad: boolean;
+    public data?: Object[];
+    public pageSettings?: Object ;
+    public initialGridLoad?: boolean;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
         this.pageSettings = {pageSize: 7, pageSizes: true};
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
         this.initialGridLoad = false;
         var pager = document.getElementsByClassName('e-gridpager');
         var topElement;
-        if ( this.treeGridObj.toolbar) {
+        if ((this.treeGridObj as TreeGridComponent).toolbar) {
             topElement = document.getElementsByClassName('e-toolbar');
         } else {
             topElement = document.getElementsByClassName('e-gridheader');

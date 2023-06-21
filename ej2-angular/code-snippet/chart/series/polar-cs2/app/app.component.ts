@@ -1,11 +1,11 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<div class="col-md-8">
+    template: `<div class="col-md-8">
     <ejs-chart id='chart-container'  [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' (loaded)='loaded($event)'
             [title]='title' >
             <e-series-collection>
@@ -15,11 +15,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
     </div> `
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public title: string;
-    public primaryYAxis: Object;
-    public data: Object[];
-    public loaded;
+    public primaryXAxis?: Object;
+    public title?: string;
+    public primaryYAxis?: Object;
+    public data?: Object[];
+    public loaded: Function | any;
 
     ngOnInit(): void {
         this.data = [{ x: 2005, y: 28 }, { x: 2006, y: 25 },{ x: 2007, y: 26 }, { x: 2008, y: 27 },
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
             };
 
         this.title = 'Efficiency of oil-fired power production';
-        this.loaded = (args: ILoadedEventArgs): void {
+        this.loaded = (args: ILoadedEventArgs) => {
                 args.chart.exportModule.export('PNG', 'export');
         }
     }

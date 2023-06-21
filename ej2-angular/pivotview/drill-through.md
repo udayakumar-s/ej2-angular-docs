@@ -26,7 +26,7 @@ To use the drill through feature, inject the `DrillThroughService` module in the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs49" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs49" %}
 
 Users can also view the underlying raw data though the pivot chart. By clicking on any data point, user can view the detailed raw data in a data grid inside a new window.
 
@@ -42,7 +42,7 @@ Users can also view the underlying raw data though the pivot chart. By clicking 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs50" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs50" %}
 
 ## Maximum rows to retrieve
 
@@ -140,7 +140,7 @@ The event [`drillThrough`](https://ej2.syncfusion.com/vue/documentation/api/pivo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs51" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs51" %}
 
 ### BeginDrillThrough
 
@@ -163,4 +163,4 @@ The event [`beginDrillThrough`](https://ej2.syncfusion.com/angular/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs52" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs52" %}

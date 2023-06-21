@@ -19,9 +19,9 @@ import { DataManager, Query, DataResult } from '@syncfusion/ej2-data';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('Grid') public Grid: GridComponent;
-    public childGrid: object;
+    public data?: object[];
+    @ViewChild('Grid') public Grid?: GridComponent;
+    public childGrid?: object;
     public dataManger: object[] = [{Order: 100, ShipName: 'Berlin', EmployeeID: 2},
                                  {Order: 101, ShipName: 'Capte', EmployeeID: 3},
                                  {Order: 102, ShipName: 'Marlon', EmployeeID: 4},
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
       this.data = employeeData;
-      this.childGrid = {
+      (this as any).childGrid = {
           dataSource: new DataManager(this.dataManger),
           queryString: 'EmployeeID',
           allowPaging: true,
@@ -46,13 +46,13 @@ export class AppComponent implements OnInit {
     }
     public rowDataBound(args: RowDataBoundEventArgs) {
         const EmployeeID = 'EmployeeID';
-        const filter: string = args.data[EmployeeID];
-        const childrecord: any = new DataManager(this.Grid.childGrid.dataSource as JSON[]).
-        executeLocal(new Query().where('EmployeeID', 'equal', parseInt(filter, 10), true));
+        const filter: string = (args as any).data[EmployeeID];
+        const childrecord: any = new DataManager((this.Grid as any).childGrid.dataSource as JSON[]).
+            executeLocal(new Query().where('EmployeeID', 'equal', parseInt(filter, 10), true));
         if (childrecord.length === 0) {
             // here hide which parent row has no child records
-            args.row.querySelector('td').innerHTML = ' ';
-            args.row.querySelector('td').className = 'e-customizedExpandcell';
+            (args as any).row.querySelector('td').innerHTML = ' ';
+            (args as any).row.querySelector('td').className = 'e-customizedExpandcell';
         }
     }
 }

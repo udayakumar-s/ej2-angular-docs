@@ -1,6 +1,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
+import { AccordionComponent } from '@syncfusion/ej2-angular-navigations';
 import {ExpandEventArgs, AccordionClickArgs} from '@syncfusion/ej2-navigations';
 
 @Component({
@@ -49,18 +50,18 @@ import {ExpandEventArgs, AccordionClickArgs} from '@syncfusion/ej2-navigations';
 })
 
 export class AppComponent {
-    @ViewChild('element') acrdnInstance: AccordionComponent;
-    public clickEle: HTMLElement;
+    @ViewChild('element') acrdnInstance?: AccordionComponent;
+    public clickEle?: HTMLElement;
     public clicked(e: AccordionClickArgs) {
-    this.clickEle = (e.originalEvent.target as Element).closest(
+    this.clickEle = ((e.originalEvent as Event).target as Element).closest(
       '.e-acrdn-header'
-    );
+    ) as HTMLElement;
   }
   public beforeExpand(e: ExpandEventArgs): void {
-    let expandCount: number = this.acrdnInstance.element.querySelectorAll(
+    let expandCount: number = (this.acrdnInstance as AccordionComponent).element.querySelectorAll(
       '.e-selected'
     ).length;
-    let ele: Element = this.acrdnInstance.element.querySelectorAll(
+    let ele: Element = (this.acrdnInstance as AccordionComponent).element.querySelectorAll(
       '.e-selected'
     )[0];
     if (ele) {

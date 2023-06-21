@@ -24,55 +24,55 @@ import { getComponent } from '@syncfusion/ej2-base';
     </div>`
 })
 export class AppComponent{
-    @ViewChild('btn1') private defaultBtn: ButtonComponent;
-    @ViewChild('btn2') private infoBtn: ButtonComponent;
-    @ViewChild('btn3') private successBtn: ButtonComponent;
-    @ViewChild('btn4') private warningBtn: ButtonComponent;
-    @ViewChild('btn5') private errorBtn: ButtonComponent;
-    @ViewChild('msg_default_icon') private msgDefault: MessageComponent;
-    @ViewChild('msg_success_icon') private msgSuccess: MessageComponent;
-    @ViewChild('msg_warning_icon') private msgWarning: MessageComponent;
-    @ViewChild('msg_error_icon') private msgError: MessageComponent;
-    @ViewChild('msg_info_icon') private msgInfo: MessageComponent;
+    @ViewChild('btn1') private defaultBtn?: ButtonComponent;
+    @ViewChild('btn2') private infoBtn?: ButtonComponent;
+    @ViewChild('btn3') private successBtn?: ButtonComponent;
+    @ViewChild('btn4') private warningBtn?: ButtonComponent;
+    @ViewChild('btn5') private errorBtn?: ButtonComponent;
+    @ViewChild('msg_default_icon') private msgDefault?: MessageComponent;
+    @ViewChild('msg_success_icon') private msgSuccess?: MessageComponent;
+    @ViewChild('msg_warning_icon') private msgWarning?: MessageComponent;
+    @ViewChild('msg_error_icon') private msgError?: MessageComponent;
+    @ViewChild('msg_info_icon') private msgInfo?: MessageComponent;
 
     public defaultClick(): void {
-        this.show(this.msgDefault, this.defaultBtn);
+        this.show(this.msgDefault as MessageComponent, this.defaultBtn as ButtonComponent);
     }
 
     public defaultClosed(): void {
-        this.defaultBtn.element.classList.remove('msg-hidden');
+        this.defaultBtn?.element.classList.remove('msg-hidden');
     }
 
     public infoClick(): void {
-        this.show(this.msgInfo, this.infoBtn);
+        this.show(this.msgInfo as MessageComponent, this.infoBtn as ButtonComponent);
     }
 
     public infoClosed(): void {
-        this.infoBtn.element.classList.remove('msg-hidden');
+        this.infoBtn?.element.classList.remove('msg-hidden');
     }
 
     public successClick(): void {
-        this.show(this.msgSuccess, this.successBtn);
+        this.show(this.msgSuccess as MessageComponent, this.successBtn as ButtonComponent);
     }
 
     public successClosed(): void {
-        this.successBtn.element.classList.remove('msg-hidden');
+        this.successBtn?.element.classList.remove('msg-hidden');
     }
 
     public warningClick(): void {
-        this.show(this.msgWarning, this.warningBtn);
+        this.show(this.msgWarning as MessageComponent, this.warningBtn as ButtonComponent);
     }
 
     public warningClosed(): void {
-        this.warningBtn.element.classList.remove('msg-hidden');
+        this.warningBtn?.element.classList.remove('msg-hidden');
     }
 
     public errorClick(): void {
-        this.show(this.msgError, this.errorBtn);
+        this.show(this.msgError as MessageComponent, this.errorBtn as ButtonComponent );
     }
 
     public errorClosed(): void {
-        this.errorBtn.element.classList.remove('msg-hidden');
+        this.errorBtn?.element.classList.remove('msg-hidden');
     }
 
     public show(message: Message, btn: Button): void {

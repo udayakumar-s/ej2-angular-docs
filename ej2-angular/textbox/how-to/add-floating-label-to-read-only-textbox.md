@@ -26,4 +26,4 @@ In this sample, click the update value button to fill the read-only textbox with
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/read-only-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/read-only-cs1" %}

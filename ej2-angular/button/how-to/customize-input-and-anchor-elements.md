@@ -24,4 +24,4 @@ You can customize the appearance of the input and anchor elements using predefin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/custom-cs1" %}
+{% previewsample "page.domainurl/samples/button/custom-cs1" %}

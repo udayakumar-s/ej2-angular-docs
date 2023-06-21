@@ -2,7 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { SelectionSettingsModel, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { SelectionSettingsModel, EditSettingsModel, ToolbarItems, PageSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -18,10 +18,11 @@ import { SelectionSettingsModel, EditSettingsModel, ToolbarItems } from '@syncfu
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public selectionOptions: SelectionSettingsModel;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: Object[];
+    public selectionOptions?: SelectionSettingsModel;
+    public editSettings?: EditSettingsModel;
+    public pageSettings?: PageSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;

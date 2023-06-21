@@ -28,7 +28,7 @@ The excel export provides support to export multiple grids in same sheet. To exp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs12" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs12" %}
 
 >By default, **multipleExport.blankRows** value is 5.
 
@@ -48,4 +48,4 @@ Excel exporting provides support to export multiple grids in new sheet. To expor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs13" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs13" %}

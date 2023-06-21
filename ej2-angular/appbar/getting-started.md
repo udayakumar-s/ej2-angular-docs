@@ -148,4 +148,4 @@ The following example shows a basic `AppBar` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/getting-started-cs1" %}

@@ -2,7 +2,7 @@
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { SliderModule } from '@syncfusion/ej2-angular-inputs';
+import { SliderModule, SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 /**
  * Default sample
@@ -18,7 +18,7 @@ import { SliderModule } from '@syncfusion/ej2-angular-inputs';
                 (tooltipChange)='tooltipChangeHandler($event)' (renderingTicks)='renderingTicksHandler($event)'></ejs-slider>
         </div>
     </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {
@@ -31,19 +31,19 @@ export class AppComponent {
 
     tooltipChangeHandler(args: SliderTooltipEventArgs): void {
         let totalMilliSeconds = Number(args.text);
-        let custom = { hour: '2-digit', minute: '2-digit' };
+        let custom: any = { hour: '2-digit', minute: '2-digit' };
         args.text = new Date(totalMilliSeconds).toLocaleTimeString("en-us", custom);
     }
 
     renderingTicksHandler(args: SliderTickEventArgs): void {
         let totalMilliSeconds = Number(args.value);
-        let custom = { hour: '2-digit', minute: '2-digit' };
+        let custom: any = { hour: '2-digit', minute: '2-digit' };
         args.text = new Date(totalMilliSeconds).toLocaleTimeString("en-us", custom);
     }
     ngOnInit() {
-      document.getElementById('element').onclick = () => {
-        let slider = document.getElementById("wrap");
-        let ticks = document.getElementById("slider");
+      (document.getElementById('element') as HTMLElement).onclick = () => {
+        let slider: HTMLElement = document.getElementById("wrap") as HTMLElement;
+        let ticks: HTMLElement | any = document.getElementById("slider") as HTMLElement;
         slider.style.display = "block";
         ticks.ej2_instances[0].refresh();
     };

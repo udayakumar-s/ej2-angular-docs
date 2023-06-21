@@ -21,7 +21,7 @@ import { isNullOrUndefined, EmitType } from '@syncfusion/ej2-base';
                         <span class="e-float-line"></span>
                         <label class="e-float-text e-label-top" for="name">Name</label>
                         <div *ngIf="(nameval.invalid && (nameval.dirty || nameval.touched))">
-                            <div class="e-error" *ngIf="nameval.errors.required">
+                            <div class="e-error" *ngIf="nameval.errors!['required']">
                                 * Enter your name
                             </div>
                         </div>
@@ -34,7 +34,7 @@ import { isNullOrUndefined, EmitType } from '@syncfusion/ej2-base';
                         <span class="e-float-line"></span>
                         <label class="e-float-text e-label-top" for="email">Email</label>
                         <div *ngIf="(emailval.invalid && (emailval.dirty || emailval.touched))">
-                            <div class="e-error" *ngIf="emailval.errors.required">
+                            <div class="e-error" *ngIf="emailval.errors!['required']">
                                 * Enter your email address
                             </div>
                         </div>
@@ -47,7 +47,7 @@ import { isNullOrUndefined, EmitType } from '@syncfusion/ej2-base';
                         <span class="e-float-line"></span>
                         <label class="e-float-text e-label-top" for="contact">Contact No</label>
                         <div *ngIf="(contactval.invalid && (contactval.dirty || contactval.touched))">
-                            <div class="e-error" *ngIf="contactval.errors.required">
+                            <div class="e-error" *ngIf="contactval.errors!['required']">
                                 * Enter your contact number
                             </div>
                         </div>
@@ -70,7 +70,7 @@ import { isNullOrUndefined, EmitType } from '@syncfusion/ej2-base';
                   </div>
                 </div>
                 <span class='error-root' *ngIf="(uploadval.invalid && (uploadval.dirty || uploadval.touched))">
-                    <span class="e-error errorClass" *ngIf="uploadval.errors.required">
+                    <span class="e-error errorClass" *ngIf="uploadval.errors!['required']">
                         * Select a file
                     </span>
                 </span>
@@ -92,9 +92,9 @@ import { isNullOrUndefined, EmitType } from '@syncfusion/ej2-base';
 })
 export class AppComponent  {
   @ViewChild('formUpload')
-  public uploadObj: UploaderComponent;
+  public uploadObj?: UploaderComponent;
   @ViewChild('Dialog')
-  public dialogObj: DialogComponent;
+  public dialogObj?: DialogComponent;
   public width: string = '335px';
   public visible: boolean = false;
   public multiple: boolean = false;
@@ -108,13 +108,13 @@ export class AppComponent  {
   };
   public uploadInput: string = '';
   public dlgBtnClick: EmitType<object> = () => {
-    this.dialogObj.hide();
+    this.dialogObj!.hide();
   }
   public dlgButtons: Object[] = [{ click: this.dlgBtnClick.bind(this), buttonModel: { content: 'Ok', isPrimary: true } }];
     @ViewChild('formElement') element: any;
 
   public browseClick() {
-     document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button').click(); return false;
+     document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button')!.click(); return false;
    }
    public Submit(): void {
     this.onFormSubmit();
@@ -124,7 +124,7 @@ export class AppComponent  {
  }
 
  public onFormSubmit(): void {
-   this.dialogObj.show();
+   this.dialogObj!.show();
  }
 }
 

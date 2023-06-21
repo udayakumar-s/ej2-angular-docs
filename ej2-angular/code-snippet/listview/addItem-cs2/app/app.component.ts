@@ -15,7 +15,7 @@ import { ListViewComponent } from '@syncfusion/ej2-angular-lists';
 
 export class AppComponent {
    @ViewChild('list')
-   listviewInstance: ListViewComponent;
+   listViewInstance?: ListViewComponent;
     //define the array of string
     public data: object[] =  [{ text: "Hennessey Venom", id: "1", icon: "delete-icon" },
   { text: "Bugatti Chiron", id: "2", icon: "delete-icon" },
@@ -25,10 +25,10 @@ export class AppComponent {
   { text: "McLaren P1", id: "6", icon: "delete-icon" }];
 
 public fields: Object = {text: "text", iconCss: "icon" };
-deleteItem(args) {
+deleteItem(args: any) {
   args.stopPropagation();
   let liItem = args.target.parentElement.parentElement;
-  this.listviewInstance.removeItem(liItem);
+  this.listViewInstance?.removeItem(liItem);
 }
 
 addItem(){
@@ -37,7 +37,7 @@ addItem(){
     id: (Math.random() * 1000).toFixed(0).toString(),
     icon: "delete-icon"
   };
-  this.listviewInstance.addItem([data]);
+  this.listViewInstance?.addItem([data]);
 }
 }
 

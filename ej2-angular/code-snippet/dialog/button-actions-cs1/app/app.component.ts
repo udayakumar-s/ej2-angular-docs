@@ -17,33 +17,36 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
+    ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
     @ViewChild('Dialog')
-    public Dialog: DialogComponent;
+    public Dialog?: DialogComponent;
     BtnClick() {
-        this.Dialog.show();
+        this.Dialog!.show();
     }
     public header: string = 'Delete Multiple Items';
     public content: string = 'Are you sure you want to permanently delete these items ?'
     public showCloseIcon: Boolean = true;
     public width: string = '300px';
     public animationSettings: Object = { effect: 'None' };
-    public hide: any;
+    public hide?: any;
     ngAfterViewInit():void{
-      document.getElementById('dlgbtn').focus();
+      document.getElementById('dlgbtn')!.focus();
     }
 
     // On Dialog close, 'Open' Button will be shown
     dialogClose() {
-        document.getElementById('dlgbtn').style.display = '';
+        document.getElementById('dlgbtn')!.style.display = '';
     }
     // On Dialog open, 'Open' Button will be hidden
     dialogOpen() {
-        document.getElementById('dlgbtn').style.display = 'none';
+        document.getElementById('dlgbtn')!.style.display = 'none';
     }
 
     public dlgButtons: Object[] = [{ click: this.dlgBtnClick.bind(this), buttonModel: { content: 'Yes', isPrimary:'true' } }, { click: this.dlgBtnClick.bind(this), buttonModel: { content: 'No' } }];
     dlgBtnClick() {
-       this.Dialog.hide();
+       this.Dialog!.hide();
     }
     public target: string = '.control-section';
 }

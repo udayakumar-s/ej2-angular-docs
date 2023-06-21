@@ -30,4 +30,4 @@ In the following sample, toggle method has been used to show or hide the Sidebar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/openclose-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/openclose-cs1" %}

@@ -15,19 +15,19 @@ import { editingResources } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editDialogFields: object[];
-    public addDialogFields: object[];
-    public toolbar: ToolbarItem[];
-    public resourceNameMapping: string;
-    public resourceIdMapping: string;
-    public resources: object[];
-    public labelSettings: object;
-    public editSettings: EditSettingsModel;
-    public projectStartDate: Date;
-    public projectEndDate: Date;
-    public resourceFields: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public editDialogFields?: object[];
+    public addDialogFields?: object[];
+    public toolbar?: ToolbarItem[];
+    public resourceNameMapping?: string;
+    public resourceIdMapping?: string;
+    public resources?: object[];
+    public labelSettings?: object;
+    public editSettings?: EditSettingsModel;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    public resourceFields?: object;
     public ngOnInit(): void {
         this.data = [
             {

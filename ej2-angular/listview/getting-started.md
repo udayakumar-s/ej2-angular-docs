@@ -151,7 +151,7 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/listview/getting-started-cs1" %}
 
 ## See Also
 

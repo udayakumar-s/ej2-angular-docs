@@ -13,10 +13,10 @@ import { extend } from '@syncfusion/ej2-base';
 })
 export class AppComponent {
     public eventSettings: EventSettingsModel = {
-        dataSource: <Object[]>extend([], timeZoneData, null, true)
+        dataSource: <Object[]>extend([], timeZoneData, undefined, true)
     };
     public selectedDate: Date = new Date(2018, 1, 11);
-    private timeZones: { [key: string]: Object }[] = [
+    private timeZones:  { Text: string, Value: string }[] = [
         { Value: 'America/New_York', Text: '(UTC-05:00) Eastern Time' },
         { Value: 'UTC', Text: 'UTC' },
         { Value: 'Asia/Kolkata', Text: '(UTC+05:30) India Standard Time' }

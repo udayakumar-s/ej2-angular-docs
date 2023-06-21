@@ -26,4 +26,4 @@ In the sample, by clicking on the button, we can make the Slider visible from hi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/hidden-slider-cs1" %}
+{% previewsample "page.domainurl/samples/slider/hidden-slider-cs1" %}

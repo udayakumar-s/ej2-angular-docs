@@ -32,7 +32,7 @@ You can use the [`openIconCss`](https://ej2.syncfusion.com/angular/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs1" %}
+{% previewsample "page.domainurl/samples/speed-dial/styles-cs1" %}
 
 ### Text only
 
@@ -50,7 +50,7 @@ You can show only text in Speed Dial button by setting [`content`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs2" %}
+{% previewsample "page.domainurl/samples/speed-dial/styles-cs2" %}
 
 ### Icon with text
 
@@ -68,7 +68,7 @@ You show icon and text in SpeedDial button using [`openIconCss`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs3" %}
+{% previewsample "page.domainurl/samples/speed-dial/styles-cs3" %}
 
 ## Disabled
 
@@ -80,7 +80,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     template: `<!-- To Render SpeedDial component in disabled state -->
-        <button ejs-speeddial id="speeddial" content='Edit' [disbaled]='true'></button>`
+        <button ejs-speeddial id="speeddial" content='Edit' [disabled]='true'></button>`
 })
 
 export class AppComponent { }
@@ -111,7 +111,7 @@ The Angular Speed Dial supports the following predefined styles that can be defi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs4" %}
+{% previewsample "page.domainurl/samples/speed-dial/styles-cs4" %}
 
 ## Visible
 
@@ -145,7 +145,7 @@ You can show tooltip on hover to show additional details to end-user by setting 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs5" %}
+{% previewsample "page.domainurl/samples/speed-dial/styles-cs5" %}
 
 ## Opens on hover
 
@@ -163,4 +163,4 @@ You can use [`opensOnHover`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/styles-cs6" %}
+{% previewsample "page.domainurl/samples/speed-dial/styles-cs6" %}

@@ -16,7 +16,7 @@ import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data?: DataManager;
 
     ngOnInit(): void {
         this.data = new DataManager({

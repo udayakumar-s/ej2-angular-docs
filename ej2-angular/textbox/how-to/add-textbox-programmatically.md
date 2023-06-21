@@ -32,4 +32,4 @@ import {Input} from '@syncfusion/ej2-inputs';
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs5" %}

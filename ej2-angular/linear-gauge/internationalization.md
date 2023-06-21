@@ -33,4 +33,4 @@ The text in axis labels and tooltip can be displayed in the numeric format such 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/internationalization-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/internationalization-cs1" %}

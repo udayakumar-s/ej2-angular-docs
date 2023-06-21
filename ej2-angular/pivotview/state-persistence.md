@@ -24,7 +24,7 @@ State persistence allows user to maintain the current state of the component alo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs281" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs281" %}
 
 # Save and Load Pivot Layout
 
@@ -42,4 +42,4 @@ You can save the current layout of the pivot table by using [`getPersistData`](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs282" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs282" %}

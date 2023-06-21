@@ -26,4 +26,4 @@ In the following sample, editor opened at initial load and when toggling a check
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/dynamic-edit-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/dynamic-edit-cs1" %}

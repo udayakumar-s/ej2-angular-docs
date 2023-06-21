@@ -42,7 +42,7 @@ Allows to either expand or collapse all headers that are displayed in row and co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs41" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs41" %}
 
 ## Expand all headers for specific fields
 
@@ -62,7 +62,7 @@ Allows to expand or collapse all headers for specific fields (only) in row and c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs42" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs42" %}
 
 ## Expand all except specific member(s)
 
@@ -87,7 +87,7 @@ In addition to the previous topic, there is an enhancement to expand all headers
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs43" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs43" %}
 
 ## Expand specific member(s)
 
@@ -109,7 +109,7 @@ End user can also manually expand or collapse specific member(s) in each fields 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs44" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs44" %}
 
 ## Event
 
@@ -132,7 +132,7 @@ The event [`drill`](https://ej2.syncfusion.com/angular/documentation/api/pivotvi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs45" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs45" %}
 
 ### ActionBegin
 
@@ -163,7 +163,7 @@ In the below sample, drill down and drill up action can be restricted by setting
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs46" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs46" %}
 
 ### ActionComplete
 
@@ -192,7 +192,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs47" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs47" %}
 
 ### ActionFailure
 
@@ -219,4 +219,4 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs48" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs48" %}

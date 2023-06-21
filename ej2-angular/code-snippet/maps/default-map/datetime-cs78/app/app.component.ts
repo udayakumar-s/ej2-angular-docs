@@ -3,7 +3,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps , Marker, Bubble, MapsTooltip } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 Maps.Inject(Marker, Bubble, MapsTooltip);
 @Component({
     selector: 'app-container',
@@ -17,14 +17,14 @@ Maps.Inject(Marker, Bubble, MapsTooltip);
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-    public dataSource: object[];
-    public shapeData: object;
-    public shapePropertyPath: string;
-    public shapeDataPath: string;
-    public shapeSettings: object;
-    public tooltipSettings: object;
-    public bubbleSettings: object[];
-    public markerSettings: object[];
+    public dataSource?: object[];
+    public shapeData?: object;
+    public shapePropertyPath?: string;
+    public shapeDataPath?: string;
+    public shapeSettings?: object;
+    public tooltipSettings?: object;
+    public bubbleSettings?: object[];
+    public markerSettings?: object[];
     ngOnInit(): void {
         this.dataSource = [
 			{ "Continent": "North America", 'color': '#71B081',

@@ -3,8 +3,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps, Legend } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
-import{ Population_Density } from 'data.ts'
+import { world_map } from './world-map';
+import{ Population_Density } from './data'
 
 Maps.Inject(Legend);
 @Component({
@@ -18,12 +18,12 @@ Maps.Inject(Legend);
 })
 
 export class AppComponent implements OnInit {
-    public dataSource: object[];
-    public shapeData: object;
-    public shapePropertyPath: string;
-    public shapeDataPath: string;
-    public shapeSettings: object;
-    public legendSettings: object;
+    public dataSource?: object[];
+    public shapeData?: object;
+    public shapePropertyPath?: string;
+    public shapeDataPath?: string;
+    public shapeSettings?: object;
+    public legendSettings?: object;
     ngOnInit(): void {
         this.dataSource = Population_Density;
         this.shapeData = world_map;

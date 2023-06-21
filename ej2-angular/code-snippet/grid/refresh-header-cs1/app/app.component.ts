@@ -20,16 +20,18 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-  @ViewChild('grid') public grid: GridComponent;
-  public data: Object[];
+  @ViewChild('grid')
+  public grid?: GridComponent;
+  public data?: Object[];
 
   ngOnInit(): void {
     this.data = data;
   }
   public refreshHeader(): void {
-    const column = this.grid.getColumnByIndex(1);
+    const column = (this.grid as any).getColumnByIndex(1);
     column.headerText = 'New Header Text'; // update the header text of the column object
-    this.grid.refreshHeader(); // refresh the grid header
+    (this.grid as any).refreshHeader(); // refresh the grid header
   }
-
+  public onDataBound(args: any): void {
+  }
 }

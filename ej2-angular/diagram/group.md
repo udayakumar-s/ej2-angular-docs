@@ -42,7 +42,7 @@ The following code illustrates how to create a group node.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/groups/group-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/groups/group-cs1" %}
 
 The following code illustrates how a ungroup  at runtime.
 
@@ -58,7 +58,7 @@ The following code illustrates how a ungroup  at runtime.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/groups/ungroup-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/groups/ungroup-cs1" %}
 
 Connectors can be added to a group. The following code illustrates how to add connectors into a group.
 
@@ -74,7 +74,7 @@ Connectors can be added to a group. The following code illustrates how to add co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/groups/groupaddconnector-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/groups/groupaddconnector-cs1" %}
 
 ## Add group at runtime
 
@@ -94,7 +94,7 @@ The following code illustrates how a group node is added at runtime.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/groups/groupadd-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/groups/groupadd-cs1" %}
 
 ## Container
 
@@ -139,7 +139,7 @@ The following code illustrates how to add a stack panel.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/groups/stack-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/groups/stack-cs1" %}
 
 ## Difference between a basic group and containers
 

@@ -18,12 +18,16 @@ import { ToolbarItem, EditSettingsModel, SelectionSettingsModel } from '@syncfus
 })
 export class AppComponent {
     // Data for Gantt
-    public data: object[];
-    public resources: object[];
-    public taskSettings: object;
-    public labelSettings: object;
-    public projectStartDate: Date;
-    public projectEndDate: Date;
+    public data?: object[];
+    public resources?: object[];
+    public taskSettings?: object;
+    public labelSettings?: object;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    resourceFields: { id: string; name: string; unit: string; group: string; } | undefined;
+    editSettings: { allowAdding: boolean; allowEditing: boolean; allowDeleting: boolean; allowTaskbarEditing: boolean; showDeleteConfirmDialog: boolean; } | undefined;
+    columns: ({ field: string; ss: any; headerText?: undefined; width?: undefined; } | { field: string; headerText: string; width: number; ss?: undefined; } | { field: string; headerText: string; ss?: undefined; width?: undefined; } | { field: string; ss?: undefined; headerText?: undefined; width?: undefined; })[] | undefined;
+    toolbar: string[] | undefined;
     public ngOnInit(): void {
         this.data = [
             {
@@ -117,7 +121,7 @@ export class AppComponent {
             showDeleteConfirmDialog: true
         };
         this.columns = [
-            { field: 'TaskID' ss},
+            { field: 'TaskID' },
             { field: 'TaskName', headerText: 'Name', width: 250 },
             { field: 'work', headerText: 'Work' },
             { field: 'Progress' },

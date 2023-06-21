@@ -26,7 +26,7 @@ The ContextMenu items can be customized using the [`beforeItemRender`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/template-cs4" %}
+{% previewsample "page.domainurl/samples/context-menu/template-cs4" %}
 
 > To create span element, `createElement` utility function used from `ej2-base`.
 
@@ -46,7 +46,7 @@ The Multiple level nesting supports in ContextMenu. It can be achieved by mappin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/template-cs5" %}
+{% previewsample "page.domainurl/samples/context-menu/template-cs5" %}
 
 > To open sub menu items only on click, [`showItemOnClick`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#showitemonclick) property should be set as `true`.
 

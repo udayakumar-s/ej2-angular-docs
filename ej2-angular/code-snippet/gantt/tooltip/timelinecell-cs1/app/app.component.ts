@@ -13,10 +13,10 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public columns: object[];
-     public timelineSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public columns?: object[];
+     public timelineSettings?: object;
 
     public ngOnInit(): void {
         this.data = editingData;

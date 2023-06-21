@@ -1,8 +1,8 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, DrillThroughService, EditCompletedEventArgs, CellEditSettings } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, DrillThroughService, EditCompletedEventArgs, CellEditSettings } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,22 +13,22 @@ import { Pivot_Data } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-     public editSettings: CellEditSettings;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+     public editSettings?: CellEditSettings;
+    public dataSourceSettings?: IDataOptions;
 
     editCompleted(args:EditCompletedEventArgs) {
         //triggers when a value cell is edited
-    },
+    }
 
     ngOnInit(): void {
 
         this.width = "100%";
 
-        this.editSettings= { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Normal' }
+        this.editSettings = { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Normal' } as CellEditSettings;
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],

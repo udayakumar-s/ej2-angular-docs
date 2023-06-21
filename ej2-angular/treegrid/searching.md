@@ -26,7 +26,7 @@ To search records, inject the [`Filter`](https://ej2.syncfusion.com/angular/docu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/searching-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/searching-cs1" %}
 
 ## Initial search
 
@@ -44,7 +44,7 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/searching-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/searching-cs2" %}
 
 > By default, treegrid searches all the bound column values. To customize this behavior define the [`searchSettings.fields`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/searchSettingsModel/#fields) property.
 
@@ -80,7 +80,7 @@ To search treegrid records from an external button, invoke the [`search`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/searching-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/searching-cs3" %}
 
 ## Search specific columns
 
@@ -98,7 +98,7 @@ By default, treegrid searches all visible columns. You can search specific colum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/searching-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/searching-cs4" %}
 
 ## Clear search by external button
 
@@ -116,7 +116,7 @@ To clear the searched tree grid records from an external button, set the [`searc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/searching-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/searching-cs5" %}
 
 ## Search on each key stroke
 
@@ -134,7 +134,7 @@ Search the tree grid data on each keystroke by binding the `keyup` event for the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/searching-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/searching-cs6" %}
 
 ## Perform search operation in Tree Grid using multiple keywords
 
@@ -154,6 +154,6 @@ In the following sample, searching is performed with multiple keywords by using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/searching-cs7" %}
+{% previewsample "page.domainurl/samples/treegrid/searching-cs7" %}
 
 Refer to Syncfusion [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.

@@ -17,13 +17,13 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+        (this as any).editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
 }

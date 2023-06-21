@@ -30,7 +30,7 @@ The grid have an option to export the hierarchy grid to excel document. By defau
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs14" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs14" %}
 
 ## Limitations
 

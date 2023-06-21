@@ -1,21 +1,20 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { pieData } from 'datasource.ts';
+import { pieData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [title]='title' [titleStyle]='titleStyle'>
+    template: `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [title]='title' [titleStyle]='titleStyle'>
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' type='Pie'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
-    public piedata: Object[];
-    public legendSettings: Object;
-    public title: string;
-    public titleStyle: Object;
+    public piedata?: Object[];
+    public legendSettings?: Object;
+    public title?: string;
+    public titleStyle?: Object;
     ngOnInit(): void {
         this.piedata = [{ x: 'Saudi Arabia', y: 58, text: '58%' },
                         { x: 'Persian Gulf', y: 15, text: '15%' },

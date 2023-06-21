@@ -16,9 +16,9 @@ import { sampleData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public toolbarOption: string[];
-    public searchSettings: Object;
+    public data?: Object[];
+    public toolbarOption?: string[];
+    public searchSettings?: Object;
     ngOnInit(): void {
         this.data = sampleData;
         this.toolbarOption = ['Search'];

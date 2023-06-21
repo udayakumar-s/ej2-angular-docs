@@ -15,20 +15,20 @@ import { GridComponent, SelectionSettingsModel, FilterService, FilterSettingsMod
             <e-column field='EmployeeID' headerText='Employee ID' width=150></e-column>
             <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
         </e-columns>
-    </ejs-grid>`
+    </ejs-grid>`,
     providers: [FilterService, EditService, ToolbarService]
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
-    public editSettings: EditSettingsModel;
-    public pageOptions: PageSettingsModel;
-    public toolbar: ToolbarItems[] | object;
-    public filterOptions: FilterSettingsModel;
+    public data?: object[];
+    public selectionOptions?: SelectionSettingsModel;
+    public editSettings?: EditSettingsModel;
+    public pageOptions?: PageSettingsModel;
+    public toolbar?: ToolbarItems[] | object;
+    public filterOptions?: FilterSettingsModel;
 
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -37,12 +37,12 @@ export class AppComponent implements OnInit {
         this.selectionOptions = { type: 'Multiple', persistSelection: true };
         this.pageOptions = { pageSize: 5 };
         this.filterOptions = { type: 'CheckBox' };
-        for (let i = 0; i < data.length; i++) {
-            data[i]['List'] = i + 1;
+        for (let i: number = 0; i < data.length; i++) {
+            (data as any)[i as number]['List'] = i + 1;
         }
     }
-    public rowDataBound(args): void {
-    args.isSelectable = args.data.List % 5 === 0;
+    public rowDataBound(args: any): void {
+        (args as any).isSelectable = (args as any).data.List % 5 === 0;
     }
 }
 

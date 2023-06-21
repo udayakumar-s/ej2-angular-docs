@@ -36,7 +36,7 @@ By default, SortBy `Index` property support without any [`field`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/index-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/index-cs1" %}
 
 ### Index with field mapping
 
@@ -77,7 +77,7 @@ Consider, Column A has Card A with priority value `1`, Card B with priority valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/index-field-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/index-field-cs1" %}
 
 ## DataSource Order
 
@@ -95,7 +95,7 @@ The SortBy `DataSourceOrder` property does not require any [`field`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/data-source-order-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/data-source-order-cs1" %}
 
 ## Custom
 
@@ -115,7 +115,7 @@ The SortBy `Custom` property must require datasource [`field`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/custom-mapping-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/custom-mapping-cs1" %}
 
 ## Change the direction
 
@@ -137,4 +137,4 @@ In the following sample, cards are aligned in `Descending` order.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/sort-direction-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/sort-direction-cs1" %}

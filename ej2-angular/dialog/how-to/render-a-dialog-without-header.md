@@ -24,4 +24,4 @@ The dialog can be rendered without header by setting the header property value a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-header-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-header-cs1" %}

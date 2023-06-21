@@ -1,8 +1,8 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, GroupingBarService, FieldListService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, GroupingBarService, FieldListService } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,11 +13,11 @@ import { Pivot_Data } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public maxNodeLimitInMemberEditor: number;
-    public date1: number;
-    public date2: number;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public maxNodeLimitInMemberEditor?: number;
+    public date1?: number;
+    public date2?: number;
     data(count: number) {
         let result: Object[] = [];
         let dt: number = 0;

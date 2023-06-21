@@ -14,7 +14,7 @@ import { ContextMenuComponent, MenuEventArgs, MenuItemModel } from '@syncfusion/
 export class AppComponent {
 
     @ViewChild('contextmenu')
-    public contextmenu: ContextMenuComponent;
+    public contextmenu?: ContextMenuComponent;
 
     // ContextMenu items definition
     public menuItems: MenuItemModel[] = [
@@ -55,11 +55,11 @@ export class AppComponent {
     }];
 
     onCreated(): void {
-      this.contextmenu.enableItems(['Display Settings'], false);
+      (this.contextmenu as ContextMenuComponent).enableItems(['Display Settings'], false);
     }
 
     beforeOpen(): void {
-      this.contextmenu.enableItems(['Medium icons'], false);
+      (this.contextmenu as ContextMenuComponent).enableItems(['Medium icons'], false);
     }
 }
 

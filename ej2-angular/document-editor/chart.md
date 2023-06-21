@@ -26,7 +26,7 @@ The following example shows chart preservation in Document Editor.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/import-cs1" %}
+{% previewsample "page.domainurl/samples/document-editor/import-cs1" %}
 
 # Supported Chart Types
 

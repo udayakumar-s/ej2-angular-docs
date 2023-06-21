@@ -32,7 +32,7 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('signature')
-    public signature: SignatureComponent;
+    public signature?: SignatureComponent;
     onUndo(): void {
         if (!this.signature.disabled && !this.signature.isReadOnly) {
             this.signature.undo();

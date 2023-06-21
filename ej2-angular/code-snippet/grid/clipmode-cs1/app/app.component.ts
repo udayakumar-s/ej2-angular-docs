@@ -26,9 +26,9 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-  public data: object[];
+  public data?: object[];
   @ViewChild('grid')
-  public grid: GridComponent;
+  public grid?: GridComponent;
   public ddlData: Object[] = [
     { text: 'Ellipsis', value: 'Ellipsis' },
     { text: 'Clip', value: 'Clip' },
@@ -38,17 +38,17 @@ export class AppComponent implements OnInit {
     this.data = inventoryData;
   }
   valueChange(args: any): void {
-    if (args.value === 'Clip') {
-      this.grid.getColumnByField('Inventor').clipMode = 'Clip';
-      this.grid.refresh();
+    if ((args as any).value === 'Clip') {
+      (this.grid as any).getColumnByField('Inventor').clipMode = 'Clip';
+      (this.grid as any).refresh();
     }
-    else if (args.value === 'Ellipsis') {
-      this.grid.getColumnByField('NumberofPatentFamilies').clipMode = 'Ellipsis';
-      this.grid.refresh();
+    else if ((args as any).value === 'Ellipsis') {
+      (this.grid as any).getColumnByField('NumberofPatentFamilies').clipMode = 'Ellipsis';
+      (this.grid as any).refresh();
     }
     else {
-      this.grid.getColumnByField('MainFieldsofInvention').clipMode = 'EllipsisWithTooltip';
-      this.grid.refresh();
+      (this.grid as any).getColumnByField('MainFieldsofInvention').clipMode = 'EllipsisWithTooltip';
+      (this.grid as any).refresh();
     }
   }
 }

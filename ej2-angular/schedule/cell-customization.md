@@ -28,7 +28,7 @@ The height and width of the Scheduler cells can be customized either to increase
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs21" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs21" %}
 
 ![Cell Dimensions in Vertical Views](images/schedule-celldimension-verticalviews.png)
 
@@ -48,7 +48,7 @@ You can check whether the given time range slots are available for event creatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs22" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs22" %}
 
 ## Customizing cells in all the views
 
@@ -70,7 +70,7 @@ The `cellTemplate` option accepts the template string and is used to customize t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs23" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs23" %}
 
 ![Using CellTemplate](images/schedule-celldimension-celltemplate.png)
 
@@ -90,7 +90,7 @@ An alternative to `cellTemplate` is the `renderCell` event, which can also be us
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs24" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs24" %}
 
 You can customize cells such as work cells, month cells, all-day cells, header cells, resource header cells using `renderCell` event by checking the `elementType` option within the event. You can check elementType with any of the following.
 
@@ -124,7 +124,7 @@ The month header of each date cell in the month view can be customized using the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs25" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs25" %}
 
 ## Customizing the minimum and maximum date values
 
@@ -142,7 +142,7 @@ Providing the `minDate` and `maxDate` property with some date values, allows the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs26" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs26" %}
 
 >By default, the `minDate` property value is set to new Date(1900, 0, 1) and `maxDate` property value is set to new Date(2099, 11, 31). The user can also set the customized `minDate` and `maxDate` property values.
 

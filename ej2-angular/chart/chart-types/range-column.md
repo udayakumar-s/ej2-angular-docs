@@ -25,7 +25,7 @@ To render a range column series, use series [`type`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs19" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs19" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ The following properties can be used to customize the `range column` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/rangecolumn-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/rangecolumn-cs" %}
 
 ## See Also
 

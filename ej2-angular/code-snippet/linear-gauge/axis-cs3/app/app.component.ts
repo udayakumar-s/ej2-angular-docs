@@ -13,8 +13,8 @@ import { Component } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-    public major:Object;
-    public minor:Object;
+    public major?:Object;
+    public minor?:Object;
     ngOnInit(): void {
         this.major = {
             interval: 20,

@@ -11,8 +11,8 @@ import { tradeData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public tradeData: object[];
-    @ViewChild('spreadsheet') public spreadsheetObj: SpreadsheetComponent;
+    public tradeData?: object[];
+    @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
     ngOnInit(): void {
         this.tradeData = tradeData;
     }

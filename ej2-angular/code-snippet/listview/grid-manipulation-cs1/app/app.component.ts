@@ -60,24 +60,24 @@ public addButtons= [{
         ele.addEventListener('click', this.onDeleteBtnClick.bind(this));
     });
     }
-addItem() {
-    ((document.getElementById("name")) as HTMLInputElement).value = "";
-    ((document.getElementById("imgurl")) as HTMLInputElement).value = "";
+addItem(args:any) {
+    ((document.getElementById("name") as HTMLElement ) as HTMLInputElement).value = "";
+    ((document.getElementById("imgurl") as HTMLElement ) as HTMLInputElement).value = "";
     this.dialogObj.show();
 }
-sortItems() {
-    let ele = document.getElementById("sort").firstElementChild;
-    let des = ele.classList.contains('e-sort-icon-descending') ? true : false;
+sortItems(args:any) {
+    let ele = (document.getElementById("sort") as HTMLElement | any).firstElementChild;
+    let des = (ele as Element).classList.contains('e-sort-icon-descending') ? true : false;
     if (des) {
-        ele.classList.remove('e-sort-icon-descending');
-        ele.classList.add('e-sort-icon-ascending');
+        (ele as Element).classList.remove('e-sort-icon-descending');
+        (ele as Element).classList.add('e-sort-icon-ascending');
         this.listViewInstance.sortOrder = 'Ascending';
     } else {
         ele.classList.remove('e-sort-icon-ascending');
         ele.classList.add('e-sort-icon-descending');
         this.listViewInstance.sortOrder = 'Descending'
     }
-    this.listViewInstance.dataBind();
+    this.listViewInstance?.dataBind();
     this.wireEvents();
 }
 onKeyUp(e: any) {
@@ -89,23 +89,23 @@ onKeyUp(e: any) {
         this.listViewInstance.dataSource = this.fruitsdata.slice();
     } else {
         this.listViewInstance.dataSource = data;
-        this.listViewInstance.dataBind();
+        this.listViewInstance?.dataBind();
     }
 }
 onDeleteBtnClick(e: any) {
     e.stopPropagation();
     let li = closest(e.currentTarget, '.e-list-item');
-    let data = this.listViewInstance.findItem(li);
-    this.listViewInstance.removeItem(data);
+    let data = this.listViewInstance?.findItem(li);
+    this.listViewInstance?.removeItem(data);
     new DataManager(this.fruitsdata).remove('id', { id: data.id });
 }
  dlgButtonClick() {
-    let name = ((document.getElementById("name")) as HTMLInputElement).value;
-    let url = ((document.getElementById("imgurl")) as HTMLInputElement).value;
+    let name = ((document.getElementById("name") as HTMLElement ) as HTMLInputElement).value;
+    let url = ((document.getElementById("imgurl") as HTMLElement ) as HTMLInputElement).value;
     let id = `${Math.random() * 10000}`;
-    this.listViewInstance.addItem([{ text: name, id: id, imgUrl: url }]);
+    this.listViewInstance?.addItem([{ text: name, id: id, imgUrl: url }]);
     this.fruitsdata.push({ text: name, id: id, imgUrl: url });
-    this.listViewInstance.element.querySelector('[data-uid="'+ id + '"]').getElementsByClassName('e-delete-btn')[0].addEventListener('click', this.onDeleteBtnClick.bind(this));
+    this.listViewInstance?.element.querySelector('[data-uid="'+ id + '"]').getElementsByClassName('e-delete-btn')[0].addEventListener('click', this.onDeleteBtnClick.bind(this));
     this.dialogObj.hide();
 }
 }

@@ -35,4 +35,4 @@ In the below example, the data type of the `Country` column is set to `DropDownL
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs166" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs166" %}

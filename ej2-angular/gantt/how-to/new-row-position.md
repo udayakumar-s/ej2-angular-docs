@@ -26,4 +26,4 @@ The following code snippets demonstrate how to achieve this.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/newrow-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/newrow-cs1" %}

@@ -25,7 +25,7 @@ The [`childGrid`](https://ej2.syncfusion.com/angular/documentation/api/grid/#chi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs5" %}
+{% previewsample "page.domainurl/samples/grid/default-cs5" %}
 > * Grid supports n level of child grids.
 > * Hierarchical binding is not supported when [`DetailTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) is enabled.
 
@@ -45,7 +45,7 @@ By default, grid renders in collapsed state. You can expand all child grid rows 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs6" %}
+{% previewsample "page.domainurl/samples/grid/default-cs6" %}
 
 ## Expand child grid initially
 
@@ -63,7 +63,7 @@ You can expand a particular child grid at initial rendering by invoking the [`ex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs7" %}
+{% previewsample "page.domainurl/samples/grid/default-cs7" %}
 
 ## Dynamically load child grid data
 
@@ -81,7 +81,7 @@ You can dynamically load child grid dataSource by using the [`load`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs8" %}
+{% previewsample "page.domainurl/samples/grid/default-cs8" %}
 
 ## Bind hierarchy grid with different field
 
@@ -101,7 +101,7 @@ In the below sample, we have bound the child and parent grid with different fiel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs9" %}
+{% previewsample "page.domainurl/samples/grid/default-cs9" %}
 
 ## Adding Record in ChildGrid
 
@@ -121,7 +121,7 @@ In the below demo, **EmployeeID** field relates the parent and child grids. To a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs10" %}
+{% previewsample "page.domainurl/samples/grid/default-cs10" %}
 
 ## Template column in Child Grid
 
@@ -141,7 +141,7 @@ In the below sample, we have shown custom image in **Employee Image** column of 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs11" %}
+{% previewsample "page.domainurl/samples/grid/default-cs11" %}
 
 ## Dynamically bind data to child grid based on parent row Data
 
@@ -161,7 +161,7 @@ While expanding the child Grid, the `detailDataBound` event will be triggered. I
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs12" %}
+{% previewsample "page.domainurl/samples/grid/default-cs12" %}
 
 ## See Also
 

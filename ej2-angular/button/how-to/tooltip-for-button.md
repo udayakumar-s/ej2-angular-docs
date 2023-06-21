@@ -26,4 +26,4 @@ The following snippets illustrates how to show tooltip on button hover.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/block-cs4" %}
+{% previewsample "page.domainurl/samples/button/block-cs4" %}

@@ -1,6 +1,4 @@
 
-
-
 import { Component, OnInit } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
 import { ForeignKeyService, EditService, IEditCell, EditSettingsModel, ToolbarService, Column } from '@syncfusion/ej2-angular-grids';
@@ -24,10 +22,10 @@ import { data, employeeData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public employeeData: object[];
-    public editoption: EditSettingsModel = { allowEditing: true };
-    public autoComplete: AutoComplete;
+    public data?: object[];
+    public employeeData?: object[];
+    public editoption?: EditSettingsModel = { allowEditing: true };
+    public autoComplete?: AutoComplete;
     toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     public edit: IEditCell = {
         create: () => { // to create input element
@@ -35,20 +33,20 @@ export class AppComponent implements OnInit {
         },
         read: () => { // return edited value to update data source
             const EmployeeID = 'EmployeeID';
-            const value = new DataManager(employeeData).executeLocal(new Query().where('FirstName', 'equal', this.autoComplete.value));
+            const value: any = new DataManager(employeeData).executeLocal(new Query().where('FirstName', 'equal', (this as any).autoComplete.value));
             return value.length && value[0][EmployeeID]; // to convert foreign key value to local value.
         },
         destroy: () => { // to destroy the custom component.
-            this.autoComplete.destroy();
+            (this.autoComplete as AutoComplete).destroy();
         },
         write: (args: { rowData: object, column: Column, foreignKeyData: object,
              element: HTMLTableCellElement }) => { // to show the value for date picker
             this.autoComplete = new AutoComplete({
-                dataSource: employeeData,
-                fields: { value: args.column.foreignKeyValue },
-                value: args.foreignKeyData[0][args.column.foreignKeyValue]
+                dataSource: employeeData as any,
+                fields: { value: (args as any).column.foreignKeyValue },
+                value: (args as any).foreignKeyData[0][(args as any).column.foreignKeyValue]
             });
-            this.autoComplete.appendTo(args.element);
+            this.autoComplete.appendTo((args as any).element);
         }
     }
 

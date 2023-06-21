@@ -28,7 +28,7 @@ export let world_map = // paste the World map from WorldMap.json GeoJSON file.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs6" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs6" %}
 
 ## Bubble shapes
 
@@ -51,7 +51,7 @@ By default, bubbles are rendered in the **Circle** type. To change the type of t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs7" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs7" %}
 
 ## Customization
 
@@ -75,7 +75,7 @@ The following properties are available in [`bubbleSettings`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs8" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs8" %}
 
 ## Setting colors to the bubbles from the data source
 
@@ -93,7 +93,7 @@ The color for each bubble in the Maps can be set using the [`colorValuePath`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs9" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs9" %}
 
 ## Setting the range of the bubble size
 
@@ -111,7 +111,7 @@ The size of the bubbles is calculated from the values got from the [`valuePath`]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs10" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs10" %}
 
 ## Multiple bubble groups
 
@@ -129,7 +129,7 @@ Multiple groups of bubbles can be added to the Maps using the [`bubbleSettings`]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs11" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs11" %}
 
 ## Enable tooltip for bubble
 
@@ -147,4 +147,4 @@ The tooltip for the bubbles can be enabled by setting the [`visible`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs12" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs12" %}

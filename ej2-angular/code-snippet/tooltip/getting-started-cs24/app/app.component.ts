@@ -42,7 +42,7 @@ import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popu
 
 export class AppComponent {
     @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent;
+    public tooltipControl: TooltipComponent | any ;
     public Animation: Object = {
         open: { effect: 'ZoomIn', duration: 500 },
         close: { effect: 'ZoomOut', duration: 500 }

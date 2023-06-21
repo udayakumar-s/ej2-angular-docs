@@ -30,7 +30,7 @@ In the following example, minimum stroke width is set as 0.5, maximum stroke wid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/customization/strokewidth-cs1" %}
+{% previewsample "page.domainurl/samples/signature/customization/strokewidth-cs1" %}
 
 ## Stroke Color
 
@@ -48,7 +48,7 @@ Color of the stroke can be specified by using [`strokeColor`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/customization/strokecolor-cs1" %}
+{% previewsample "page.domainurl/samples/signature/customization/strokecolor-cs1" %}
 
 ## Background Color
 
@@ -66,7 +66,7 @@ Background color of a signature can be specified by using [`backgroundColor`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/customization/bgcolor-cs1" %}
+{% previewsample "page.domainurl/samples/signature/customization/bgcolor-cs1" %}
 
 ## Background Image
 
@@ -84,7 +84,7 @@ Background image of a signature can be specified by using [`backgroundImage`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/customization/bgimage-cs1" %}
+{% previewsample "page.domainurl/samples/signature/customization/bgimage-cs1" %}
 
 ## See Also
 

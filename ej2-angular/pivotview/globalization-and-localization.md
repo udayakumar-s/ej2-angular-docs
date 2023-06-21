@@ -57,7 +57,7 @@ By default, all the Essential JS 2 component are specific to English culture ('e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs110" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs110" %}
 
 > * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/internationalization/#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/internationalization/#manipulating-datetime).
 > * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
@@ -82,7 +82,7 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs111" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs111" %}
 
 ## Localization
 
@@ -221,7 +221,7 @@ The following example demonstrates the pivot table in `Deutsch` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs112" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs112" %}
 
 ## Right-to-left (RTL)
 
@@ -239,7 +239,7 @@ RTL provides an option to switch the text direction and layout of the pivot tabl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs113" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs113" %}
 
 ## See Also
 

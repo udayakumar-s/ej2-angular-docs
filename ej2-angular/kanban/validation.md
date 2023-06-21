@@ -38,4 +38,4 @@ The `maxCount` property is used to specify the maximum cards hold on particular 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/column-validation-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/column-validation-cs1" %}

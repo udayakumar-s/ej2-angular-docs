@@ -29,7 +29,7 @@ of label for RadioButton. You can customize the label position before or after t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/label-and-size-cs2" %}
+{% previewsample "page.domainurl/samples/radio-button/label-and-size-cs2" %}
 
 ## Size
 
@@ -47,7 +47,7 @@ The different RadioButton size are default and small. To reduce the size of the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/label-and-size-cs3" %}
+{% previewsample "page.domainurl/samples/radio-button/label-and-size-cs3" %}
 
 ## See Also
 

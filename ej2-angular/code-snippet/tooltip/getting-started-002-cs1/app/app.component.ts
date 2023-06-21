@@ -48,18 +48,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 export class AppComponent  { }
 
 
-import { Component, ViewEncapsulation } from '@angular/core';
 
-@Component({
-  selector: 'my-app',
-  template: `
-    <div id='container' >
-        <ejs-tooltip style="display: inline-block; position: relative; left: 50%;top: 100px;transform: translateX(-50%); padding: 60px 40px 40px 0" id='tooltip' width= '180px' height= '40px' content= 'This tooltip has 180px width and 40px height' target="#target">
-            <button ejs-button id="target">Show Tooltip</button>
-        </ejs-tooltip>
-    </div>`,
-  encapsulation: ViewEncapsulation.None
-})
-export class AppComponent  { }
 
 

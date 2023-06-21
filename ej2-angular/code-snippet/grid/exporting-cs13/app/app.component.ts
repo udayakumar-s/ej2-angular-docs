@@ -21,9 +21,9 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    @ViewChild('grid') public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -31,16 +31,16 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') {
-            (this.grid.columns[1] as Column).visible = true;
-            (this.grid.columns[2] as Column ).visible = false;
-            this.grid.pdfExport();
+        if ((args as any).item.id === 'Grid_pdfexport') {
+            ((this.grid as any).columns[1] as Column).visible = true;
+            ((this.grid as any).columns[2] as Column ).visible = false;
+            (this.grid as any).pdfExport();
         }
     }
 
     pdfExportComplete(): void {
-        (this.grid.columns[1] as Column).visible = false;
-        (this.grid.columns[2] as Column).visible = true;
+        ((this.grid as any).columns[1] as Column).visible = false;
+        ((this.grid as any).columns[2] as Column).visible = true;
     }
 }
 

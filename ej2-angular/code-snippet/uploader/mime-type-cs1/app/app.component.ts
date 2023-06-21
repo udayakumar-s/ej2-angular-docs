@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
 import { EmitType } from '@syncfusion/ej2-base';
 @Component({
     selector: 'app-root',
-    templateUrl: 'default.html',
-    styleUrls: ['index.css']
+    templateUrl: './default.html',
+    styleUrls: ['./index.css']
 })
 
 export class AppComponent {

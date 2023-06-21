@@ -53,7 +53,7 @@ In the following example, the Scheduler displays 4 views namely, Week, Month, Ti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs71" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs71" %}
 
 To configure Scheduler with simply 2 views, but with different configurations on each view, refer the following code example. Here, the Week view displays the dates in `dd-MM-yyyy` format whereas the Month view hides the weekend days and also displays it in readonly mode.
 
@@ -69,7 +69,7 @@ To configure Scheduler with simply 2 views, but with different configurations on
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs72" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs72" %}
 
 ## View specific configuration
 
@@ -113,7 +113,7 @@ Usually a day view displays a single day with all its related appointments. It i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs73" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs73" %}
 
 ![Displaying Day View](images/schedule-views-day.png)
 
@@ -135,7 +135,7 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs74" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs74" %}
 
 ![Displaying Week View](images/schedule-views-week.png)
 
@@ -159,7 +159,7 @@ The following code example depicts how to change the working days only on the `W
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs75" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs75" %}
 
 ![Displaying Work week View](images/schedule-views-workweek.png)
 
@@ -185,7 +185,7 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs76" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs76" %}
 
 ![Displaying Month View](images/schedule-views-month.png)
 
@@ -207,7 +207,7 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs77" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs77" %}
 
 > The year view also has module support. In that, you can get all the months of a particular year in a calendar view format. In that calendar view, appointment contained dates are highlighted with dots placed under the individual date. When you click on the date, the event popup will be displayed and the events will be listed.
 
@@ -229,7 +229,7 @@ The following code example depicts how to customize the display of events within
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs78" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs78" %}
 
 ![Displaying Agenda View](images/schedule-views-agenda.png)
 
@@ -253,7 +253,7 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs79" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs79" %}
 
 ![Displaying Month agenda View](images/schedule-views-monthagenda.png)
 
@@ -277,7 +277,7 @@ To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs80" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs80" %}
 
 Similar to the Week view, the timeline week view shows 7 days with its associated appointments with the time slots displayed horizontally.
 
@@ -293,7 +293,7 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs81" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs81" %}
 
 ![Displaying Timeline Week View](images/schedule-views-timelineweek.png)
 
@@ -311,7 +311,7 @@ The following code example depicts how to display the timeline work week view on
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs82" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs82" %}
 
 > Clicking on the dates in the date header bar of Timeline day, Timeline week and Timeline work week will allow you to navigate to the Agenda view.
 
@@ -331,7 +331,7 @@ A Timeline Month view displays the current month days along with its appointment
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs83" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs83" %}
 
 ![Displaying Timeline Month View](images/schedule-views-timelinemonth.png)
 
@@ -355,7 +355,7 @@ To make use of the timeline Year view on Scheduler, import and inject `TimelineY
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs84" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs84" %}
 
 ![Displaying Timeline Year View](images/schedule-views-timelineyear.png)
 
@@ -375,7 +375,7 @@ The following code example depicts how to group the multiple resources on Timeli
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs85" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs85" %}
 
 #### Auto row height
 
@@ -393,7 +393,7 @@ Timeline Year view supports Auto row height. When the feature `rowAutoHeight` is
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs86" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs86" %}
 
 ## Extending view intervals
 
@@ -413,7 +413,7 @@ You can provide the alternative display name for such customized views on the Sc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs87" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs87" %}
 
 ![Displaying Extending Intervals](images/schedule-views-interval.png)
 

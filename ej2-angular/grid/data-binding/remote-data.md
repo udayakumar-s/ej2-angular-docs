@@ -24,7 +24,7 @@ To bind remote data to grid component, assign service data as an instance of **D
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs2" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs2" %}
 
 > By default, **DataManager** uses **ODataAdaptor** for remote data-binding.
 
@@ -44,7 +44,7 @@ To bind remote data to grid component, assign service data as an instance of **D
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs3" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs3" %}
 
 ## OData v4 adaptor - Binding OData v4 service
 
@@ -64,7 +64,7 @@ To bind OData v4 service, use the **ODataV4Adaptor**.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs4" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs4" %}
 
 ## Web API adaptor
 
@@ -208,7 +208,7 @@ we are going to see how to add a serial number for the records by overriding the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs5" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs5" %}
 
 ## Offline mode
 

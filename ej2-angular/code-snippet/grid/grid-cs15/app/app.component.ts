@@ -16,7 +16,7 @@ import { data } from './datasource';
                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = data;

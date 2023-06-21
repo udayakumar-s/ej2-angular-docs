@@ -26,4 +26,4 @@ You can access the data grid options such as sort, group, filter on editing mode
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs160" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs160" %}

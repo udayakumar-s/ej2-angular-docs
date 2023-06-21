@@ -129,7 +129,7 @@ The below example shows a basic Heatmap.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/getting-started/initialize-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/initialize-cs1" %}
 
 ## Module injection
 
@@ -173,7 +173,7 @@ This section explains how to populate the following two-dimensional array data t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/getting-started/datasource-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/datasource-cs1" %}
 
 ## Enable axis labels
 
@@ -191,7 +191,7 @@ You can add axis labels to the heat map and format those labels using the [xAxis
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/getting-started/axis-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/axis-cs1" %}
 
 ## Add heat map title
 
@@ -209,7 +209,7 @@ Add a title using the [titleSettings](https://ej2.syncfusion.com/angular/documen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/getting-started/title-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/title-cs1" %}
 
 ## Enable legend
 
@@ -227,7 +227,7 @@ Use a legend for the heat map in the [legendSettings](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/getting-started/legend-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/legend-cs1" %}
 
 ## Add data label
 
@@ -245,7 +245,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/getting-started/datalabel-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/datalabel-cs1" %}
 
 ## Add custom cell palette
 
@@ -263,7 +263,7 @@ The default palette settings of the heat map cells can be customized by using th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/getting-started/palette-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/palette-cs1" %}
 
 ## Enable tooltip
 
@@ -281,6 +281,6 @@ The tooltip is used when you cannot display information by using the data labels
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/getting-started/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/tooltip-cs1" %}
 
 > You can refer to our [Angular Heatmap Chart]( https://www.syncfusion.com/angular-ui-components/angular-heatmap-chart)  feature tour page for its groundbreaking feature representations. You can also explore our [Angular Heatmap Chart example](https://ej2.syncfusion.com/angular/demos/#/material/heatmap-chart/default) that shows how to render the Heatmap Chart in Angular.

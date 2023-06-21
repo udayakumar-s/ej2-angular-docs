@@ -30,10 +30,10 @@ providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickT
 
 export class AppComponent {
     private hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-    private toolbarSettings: Object = {
+    public toolbarSettings: Object = {
         items: ['FileManager']
     };
-    private fileManagerSettings: object = {
+    public fileManagerSettings: object = {
         enable: true,
         path: '/Pictures/Food',
         ajaxSettings: {

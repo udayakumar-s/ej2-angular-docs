@@ -28,7 +28,7 @@ The following code shows how to enable collapsible behavior.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/expand-collapse-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/expand-collapse-cs1" %}
 
 ## Programmatically control the expand and collapse action
 
@@ -46,7 +46,7 @@ The Splitter provides public method to control the expand and collapse behavior 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/expand-collapse-method-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/expand-collapse-method-cs1" %}
 
 ## Specify initial state to panes
 
@@ -64,7 +64,7 @@ You can render specific panes with collapsed state on page load. Specify a Boole
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/collapsed-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/collapsed-cs1" %}
 
 > You can also explore our [Angular Splitter Expand and Collapse example](https://ej2.syncfusion.com/angular/demos/#/material/splitter/expand-and-collapse) that shows how to render the expand and collapse feature in Angular Splitter.
 

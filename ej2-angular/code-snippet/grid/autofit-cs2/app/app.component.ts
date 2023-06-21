@@ -17,17 +17,18 @@ import { ActionEventArgs, GridComponent, ToolbarItems } from '@syncfusion/ej2-an
 `,
 })
 export class AppComponent implements OnInit {
-  public data: object[];
-  @ViewChild('grid') public grid: GridComponent;
-  public toolbarItems: ToolbarItems[];
+  public data?: object[];
+  @ViewChild('grid')
+  public grid?: GridComponent;
+  public toolbarItems?: ToolbarItems[];
   ngOnInit(): void {
     this.data = data;
     this.toolbarItems = ['ColumnChooser'];
   }
 
   public onActionComplete(args: ActionEventArgs): void {
-    if (args.requestType === 'columnstate') {
-      this.grid.autoFitColumns();
+    if ((args as any).requestType === 'columnstate') {
+      (this.grid as any).autoFitColumns();
     }
   }
 }

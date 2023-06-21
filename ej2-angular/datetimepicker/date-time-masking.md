@@ -26,7 +26,7 @@ To use mask support, inject the MaskedDateTime module in the DateTimePicker.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/mask-module-cs1" %}
+{% previewsample "page.domainurl/samples/datetimepicker/mask-module-cs1" %}
 
 The mask pattern is defined based on the provided date format to the component. If the format is not specified, the mask pattern is formed based on the default format of the current culture.
 
@@ -49,7 +49,7 @@ The following example demonstrates default and custom format of DateTimePicker c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/mask-module-cs2" %}
+{% previewsample "page.domainurl/samples/datetimepicker/mask-module-cs2" %}
 
 # Configure Mask Placeholder
 
@@ -84,4 +84,4 @@ The following example demonstrates default and customized mask placeholder value
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/mask-module-cs3" %}
+{% previewsample "page.domainurl/samples/datetimepicker/mask-module-cs3" %}

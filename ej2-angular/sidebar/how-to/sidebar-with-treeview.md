@@ -26,4 +26,4 @@ On collapse, the LI elements of TreeView show icons only to represent the short 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/treeview-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/treeview-cs1" %}

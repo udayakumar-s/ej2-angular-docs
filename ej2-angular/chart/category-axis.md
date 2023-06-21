@@ -30,7 +30,7 @@ To known about category axis, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs21" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs21" %}
 
 >Note: To use category axis, we need to inject `CategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#valuetype-any) of axis to `Category`.
 
@@ -55,7 +55,7 @@ using [`labelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs22" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs22" %}
 
 ## Range
 
@@ -73,7 +73,7 @@ Range of the category axis can be customized using [`minimum`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs23" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs23" %}
 
 ## Indexed category axis
 
@@ -91,4 +91,4 @@ Category axis also can be rendered based on the index values of data source. Thi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs24" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs24" %}

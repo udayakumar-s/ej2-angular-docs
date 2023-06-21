@@ -26,6 +26,6 @@ In the below sample, the sub menu opens above the parent menu item.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/position-cs1" %}
+{% previewsample "page.domainurl/samples/menu/position-cs1" %}
 
 >> For custom positioning, set both `top` and `left` position in the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event.

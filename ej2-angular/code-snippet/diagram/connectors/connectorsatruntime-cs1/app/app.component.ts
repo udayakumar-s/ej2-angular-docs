@@ -11,7 +11,7 @@ import { DiagramComponent, Diagram, NodeModel, ConnectorModel } from '@syncfusio
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public connectors: ConnectorModel[] = [{
         id: "connector1",
         style: {
@@ -33,8 +33,8 @@ export class AppComponent {
             x: 200,
             y: 200
         }
-    }]
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    }] as ConnectorModel[];
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',
@@ -49,9 +49,9 @@ export class AppComponent {
     }
     public created(args: Object): void {
         // Adds to the Diagram
-        this.diagram.add(this.connectors);
+        (this.diagram as DiagramComponent).add(this.connectors as any);
         // Remove from the diagram
-        this.diagram.remove(this.connectors);
+        (this.diagram as DiagramComponent).remove(this.connectors as any);
     }
 }
 

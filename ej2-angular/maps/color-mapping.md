@@ -66,7 +66,7 @@ Bind the **population_density** data to the [`dataSource`](https://ej2.syncfusio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs13" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs13" %}
 
 ### Equal color mapping
 
@@ -108,7 +108,7 @@ Bind the **unCountries** data to the [`dataSource`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs14" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs14" %}
 
 ### Desaturation color mapping
 
@@ -130,7 +130,7 @@ Bind the **population_density** data to the [`dataSource`](https://ej2.syncfusio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs15" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs15" %}
 
 ## Multiple colors for a single shape
 
@@ -154,7 +154,7 @@ Bind the **population_density** data to the [`dataSource`](../api/maps/layerSett
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs16" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs16" %}
 
 ## Color for items excluded from color mapping
 
@@ -178,7 +178,7 @@ In the following example, color mapping is added for the ranges from 0 to 200. I
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs17" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs17" %}
 
 ## Color mapping for bubbles
 
@@ -196,4 +196,4 @@ The color mapping types such as range color mapping, equal color mapping and des
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs18" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs18" %}

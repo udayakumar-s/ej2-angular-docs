@@ -54,4 +54,4 @@ In the below sample, we have rendered draggable list items.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/reorder-cs2" %}
+{% previewsample "page.domainurl/samples/listview/reorder-cs2" %}

@@ -24,4 +24,4 @@ The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/load-html-cs6" %}
+{% previewsample "page.domainurl/samples/tooltip/load-html-cs6" %}

@@ -31,7 +31,7 @@ You can customize the style of a Skeleton control by using [`cssClass`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/skeleton/styles-cs1" %}
+{% previewsample "page.domainurl/samples/skeleton/styles-cs1" %}
 
 ## Visible
 

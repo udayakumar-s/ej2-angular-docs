@@ -1,7 +1,3 @@
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
@@ -36,23 +32,23 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
-    @ViewChild('rightToast') rightToast;
+    @ViewChild('element') public element: any;
+    @ViewChild('rightToast') rightToast: any;
     public position = { X: 'Left', Y: 'Bottom' };
     public position1 = { X: 'Right', Y: 'Bottom' };
 
 
-   onCreate1() {
+   onCreate1(args: any) {
      this.rightToast.show();
    }
 
-    onCreate() {
+    onCreate(args: any) {
       this.element.show();
     }
-    btnRightClick() {
+    btnRightClick(args: any) {
       this.element.show();
     }
-    btnClick() {
+    btnClick(args: any) {
       this.rightToast.show();
     }
 }

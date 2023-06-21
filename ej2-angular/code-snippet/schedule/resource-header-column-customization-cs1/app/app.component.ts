@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 import {
     TimelineViewsService, TimelineMonthService, EventSettingsModel, GroupModel, RenderCellEventArgs
 } from '@syncfusion/ej2-angular-schedule';
-import { roomData } from './datasource.ts';
+import { roomData } from './datasource';
 @Component({
     selector: "app-root",
     providers: [TimelineViewsService, TimelineMonthService],

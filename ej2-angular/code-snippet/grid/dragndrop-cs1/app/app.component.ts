@@ -24,15 +24,15 @@ import { RowDropSettingsModel, SelectionSettingsModel } from '@syncfusion/ej2-an
                     <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
                 </e-columns>
                 </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public destGridData: object[];
-    public rowDropOptions: RowDropSettingsModel;
-    public destRowDropOptions: RowDropSettingsModel;
-    public selectionOptions: SelectionSettingsModel;
+    public data?: object[];
+    public destGridData?: object[];
+    public rowDropOptions?: RowDropSettingsModel;
+    public destRowDropOptions?: RowDropSettingsModel;
+    public selectionOptions?: SelectionSettingsModel;
 
     ngOnInit(): void {
         this.data = data.slice(0, 5);

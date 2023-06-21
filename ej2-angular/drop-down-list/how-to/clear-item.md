@@ -31,4 +31,4 @@ The following example demonstrate about how to clear the selected item in DropDo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/clear-item-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/clear-item-cs1" %}

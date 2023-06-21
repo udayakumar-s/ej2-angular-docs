@@ -9,15 +9,15 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 @Component({
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data"[updateOffsetOnTaskbarEdit]="false"  [editSettings] = "editSettings" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
+       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data"   [editSettings] = "editSettings" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editSettings: EditSettingsModel;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: EditSettingsModel;
+    public columns?: object[];
     public ngOnInit(): void {
         this.data =   [
         {
@@ -68,7 +68,7 @@ export class AppComponent{
             allowDeleting: true,
             allowTaskbarEditing: true,
             showDeleteConfirmDialog: true
-        },
+        }
     }
 }
 

@@ -31,7 +31,7 @@ export class AppComponent {
         Updates: 13,
         Important: 2,
         Drafts: 7
-    }
+    } as any;
     // Datasource for listview, badge field is the class data for Badges
     public dataSource: { [key: string]: Object }[] = [
         { id: 'p_01', text: 'Primary', badge: 'e-badge e-badge-primary', icons: 'primary', type: 'Primary' },

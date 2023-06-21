@@ -27,7 +27,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/axis-cs7" %}
+{% previewsample "page.domainurl/samples/stock-chart/axis-cs7" %}
 
 ## Logarithmic Axis
 
@@ -47,7 +47,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing dat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/axis-cs8" %}
+{% previewsample "page.domainurl/samples/stock-chart/axis-cs8" %}
 
 ## See Also
 

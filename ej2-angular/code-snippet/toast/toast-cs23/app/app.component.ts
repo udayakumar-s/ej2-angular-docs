@@ -1,8 +1,6 @@
 
-
-
-
 import { Component, ViewChild } from '@angular/core';
+import { ToastComponent } from '@syncfusion/ej2-angular-notifications';
 import { closest} from '@syncfusion/ej2-base';
 import { ToastUtility } from '@syncfusion/ej2-notifications';
 
@@ -14,9 +12,9 @@ import { ToastUtility } from '@syncfusion/ej2-notifications';
 })
 
 export class AppComponent {
-    public toastObj;
-    public showToast(): void {
-        toastObj = ToastUtility.show({
+    public toastObj?: ToastComponent;
+    public showToast(args: any): void {
+        this.toastObj = ToastUtility.show({
             title: 'Toast Title',
             content: 'Toast shown using utility function with ToastModel',
             timeOut: 20000,
@@ -26,11 +24,11 @@ export class AppComponent {
             buttons:  [{
                 model: { content: 'Close' }, click: this.toastClose.bind(this)
             }]
-        });
+        }) as ToastComponent;
     }
 
     public toastClose(): void {
-        toastObj.hide();
+        this.toastObj?.hide();
     }
 
     public toastClick(): void {

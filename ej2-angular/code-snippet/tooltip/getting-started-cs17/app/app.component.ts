@@ -34,14 +34,14 @@ import { Draggable } from '@syncfusion/ej2-base';
 
 export class AppComponent {
     @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent;
+    public tooltipControl: TooltipComponent | any ;
     public tooltipAnimation: Object = {
         open: { effect: 'None' },
         close: { effect: 'None' }
     };
 
     ngOnInit(): void {
-        let ele: HTMLElement = document.getElementById('demoSmart');
+        let ele: HTMLElement = document.getElementById('demoSmart') as HTMLElement;
         let drag: Draggable = new Draggable(ele, {
             clone: false,
             dragArea: '#targetContainer',

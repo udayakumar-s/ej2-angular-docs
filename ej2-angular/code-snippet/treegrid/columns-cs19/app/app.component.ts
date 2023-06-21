@@ -20,18 +20,18 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
     }
  show() {
-        this.treeGridObj.showColumns(['Task ID', 'Duration']); //show by HeaderText
+        (this.treeGridObj as TreeGridComponent).showColumns(['Task ID', 'Duration']); //show by HeaderText
     }
 
     hide() {
-        this.treeGridObj.hideColumns(['Task ID', 'Duration']); //hide by HeaderText
+        (this.treeGridObj as TreeGridComponent).hideColumns(['Task ID', 'Duration']); //hide by HeaderText
     }
 }
 

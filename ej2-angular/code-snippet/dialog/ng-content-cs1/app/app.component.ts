@@ -19,21 +19,21 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 export class AppComponent {
   @ViewChild('Dialog')
-    public Dialog: DialogComponent;
+    public Dialog?: DialogComponent;
     public showCloseIcon: Boolean = true;
     public width: string = '250px';
     public height: string = '150px';
     public animationSettings: Object = { effect: 'None' };
     public header: string = 'Low Battery';
     BtnClick() {
-        this.Dialog.show();
+        this.Dialog!.show();
     }
     dialogClose() {
-        document.getElementById('dlgbtn').style.display = 'block';
+        document.getElementById('dlgbtn')!.style.display = 'block';
         }
     // On Dialog open, 'Open' Button will be hidden
     dialogOpen() {
-        document.getElementById('dlgbtn').style.display = 'none';
+        document.getElementById('dlgbtn')!.style.display = 'none';
     }
     public dlgButtons: Object[] = [{
         click: this.dlgBtnClick.bind(this),
@@ -42,7 +42,7 @@ export class AppComponent {
       }];
 
     dlgBtnClick() {
-    this.Dialog.hide();
+    this.Dialog!.hide();
     }
 }
 

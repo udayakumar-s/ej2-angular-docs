@@ -26,4 +26,4 @@ Here below sample demonstrates to playing audio background while opening toast. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs11" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs11" %}

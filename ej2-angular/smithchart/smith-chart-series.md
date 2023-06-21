@@ -28,7 +28,7 @@ For adding values in the smithchart, you can use either points or datasource in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs27" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs27" %}
 
 ## Series customization
 
@@ -52,4 +52,4 @@ Using following options in series settings, you can customize each series in smi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs28" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs28" %}

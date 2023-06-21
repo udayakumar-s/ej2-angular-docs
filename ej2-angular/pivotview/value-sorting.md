@@ -29,7 +29,7 @@ Value sorting can be configured using the `valueSortSettings` option through cod
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs299" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs299" %}
 
 ## See Also
 

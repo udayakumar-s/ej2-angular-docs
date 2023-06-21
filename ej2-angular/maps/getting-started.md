@@ -258,7 +258,7 @@ Elements in the maps will get rendered in the layers. So add a layer collection 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs34" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs34" %}
 
 <!-- markdownlint-disable MD022 -->
 ## Bind data source to map
@@ -287,7 +287,7 @@ The JSON object "electionData" is used as data source below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs35" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs35" %}
 
 ## Apply Color Mapping
 
@@ -309,7 +309,7 @@ Specify color and value in [`colorMapping`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs36" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs36" %}
 
 ## Add Title for Maps
 
@@ -327,7 +327,7 @@ You can add a title using [`titleSettings`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs37" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs37" %}
 
 ## Enable Legend
 
@@ -345,7 +345,7 @@ You can show legend for the maps by setting true to the [`visible`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs38" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs38" %}
 
 ## Add Data Label
 
@@ -363,7 +363,7 @@ You can add data labels to show additional information of the shapes in map. Thi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs39" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs39" %}
 
 ## Enable Tooltip
 
@@ -382,4 +382,4 @@ You can enable tooltip by setting the [`visible`](https://ej2.syncfusion.com/ang
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs40" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs40" %}

@@ -43,7 +43,7 @@ The MultiSelect has support to load array of primitive data such as strings and 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs3" %}
 
 ### 2. Array of object
 
@@ -64,7 +64,7 @@ In the following example, `id` column and `sports` column from complex data have
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs4" %}
 
 ### 2. Array of complex object
 
@@ -85,7 +85,7 @@ In the following example, `Code.Id` column and `Country.Name` column from comple
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs5" %}
 
 ## Binding remote data
 
@@ -106,7 +106,7 @@ The following sample displays the first 6 contacts from “Customers” table of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs6" %}
 
 ## Data binding using Async pipe
 

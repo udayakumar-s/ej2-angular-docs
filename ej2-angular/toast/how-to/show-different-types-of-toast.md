@@ -31,4 +31,4 @@ The Essential JS 2 Toast has the following predefined styles that can be defined
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs16" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs16" %}

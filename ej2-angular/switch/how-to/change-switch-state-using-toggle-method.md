@@ -24,6 +24,6 @@ This section explains about how to toggle between the switch states using [`togg
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/text-cs2" %}
+{% previewsample "page.domainurl/samples/switch/text-cs2" %}
 
 > Switch triggers [`change`](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event on every state stage to perform custom operations.

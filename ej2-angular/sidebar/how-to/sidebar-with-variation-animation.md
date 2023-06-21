@@ -26,4 +26,4 @@ Sidebar will automatically adjust expanding animation to match any custom size s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/animation-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/animation-cs1" %}

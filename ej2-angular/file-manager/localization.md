@@ -121,4 +121,4 @@ The below example shows adding the German culture locale(`de-DE`)
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/localization-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/localization-cs1" %}

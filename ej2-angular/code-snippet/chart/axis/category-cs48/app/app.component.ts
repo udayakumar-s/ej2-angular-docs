@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings' [enableAnimation]='enableAnimation'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings' [enableAnimation]='enableAnimation'>
         <e-series-collection>
             <e-series [dataSource]='chartData1' type='Column' xName='x' yName='y' name='Gold' [marker]='marker'></e-series>
             <e-series [dataSource]='chartData2' type='Column' xName='x' yName='y' name='Silver' [marker]='marker'></e-series>
@@ -14,14 +13,14 @@ import { Component, OnInit } from '@angular/core';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData1: Object[];
-    public chartData2: Object[];
-    public chartData3: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public legendSettings: Object;
-    public marker: Object;
+    public primaryXAxis?: Object;
+    public chartData1?: Object[];
+    public chartData2?: Object[];
+    public chartData3?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public legendSettings?: Object;
+    public marker?: Object;
     public enableAnimation: boolean = true;
     ngOnInit(): void {
         this.chartData1 =  [{ x: 'USA', y: 46 }, { x: 'GBR', y: 27 }, { x: 'CHN', y: 26 }];

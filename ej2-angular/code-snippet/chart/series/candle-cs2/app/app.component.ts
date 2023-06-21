@@ -1,11 +1,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { candleData } from 'datasource.ts';
+import { candleData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    ` <ejs-chart style='display:block;' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: ` <ejs-chart style='display:block;' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
                 [title]='title'>
                 <e-series-collection>
                     <e-series [dataSource]='data' type='Candle' xName='x' high='high' low='low' open='open' close='close' name='SHIRPUR-G' bearFillColor= '#e56590' bullFillColor= '#f8b883'
@@ -14,10 +13,10 @@ import { candleData } from 'datasource.ts';
      </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public title: string;
-    public primaryYAxis: Object;
-    public data: Object[];
+    public primaryXAxis?: Object;
+    public title?: string;
+    public primaryYAxis?: Object;
+    public data?: Object[];
     public enableSolidCandles: Object = { enable: true };
     ngOnInit(): void {
         this.data = candleData;

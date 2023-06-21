@@ -17,15 +17,15 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData.slice(0, 1);
     }
-    dataBound(): void {
-        this.treegrid.grid.hideScroll();
+    dataBound(args: any): void {
+        this.treegrid?.grid.hideScroll();
     }
 }
 

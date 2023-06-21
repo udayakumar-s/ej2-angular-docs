@@ -24,7 +24,7 @@ The data points those uses the `null` or `undefined` as value are considered as 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/radius-cs7" %}
+{% previewsample "page.domainurl/samples/chart/series/radius-cs7" %}
 
 ## Customization
 
@@ -43,4 +43,4 @@ border for an empty point can be set by using the `border` property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/radius-cs8" %}
+{% previewsample "page.domainurl/samples/chart/series/radius-cs8" %}

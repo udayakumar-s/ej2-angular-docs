@@ -1,8 +1,8 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, FieldListService, PivotViewComponent, EnginePopulatedEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,19 +13,19 @@ import { Pivot_Data } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotViewComponent;
+    public pivotGridObj?: PivotViewComponent;
 
     afterPopulate(arge: EnginePopulatedEventArgs): void {
-        Object.keys(this.pivotGridObj.engineModule.fieldList).forEach((key, index) => {
+        Object.keys((this.pivotGridObj as PivotViewComponent).engineModule.fieldList).forEach((key, index) => {
                 if (key === 'Quarter') {
-                    this.pivotGridObj.engineModule.fieldList[key].caption = 'Production Quarter Year';
+                    (this.pivotGridObj as PivotViewComponent).engineModule.fieldList[key].caption = 'Production Quarter Year';
                 }
                 else if (key === 'Year') {
-                    this.pivotGridObj.engineModule.fieldList[key].caption = 'Production Year';
+                    (this.pivotGridObj as PivotViewComponent).engineModule.fieldList[key].caption = 'Production Year';
                 }
         });  
     }
@@ -34,7 +34,7 @@ export class AppComponent {
 
         this.width = '100%';
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             columns: [{ name: 'Products' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
             rows: [{ name: 'Country' }],

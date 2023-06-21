@@ -4,17 +4,16 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [centerLabel]='centerLabel'>
+    template: `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings' [centerLabel]='centerLabel'>
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='centerLabelData' xName='x' yName='y' innerRadius='65%' ></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
-    public piedata: Object[];
-    public legendSettings: Object;
-    public centerLabel: Object;
+    public piedata?: Object[];
+    public legendSettings?: Object;
+    public centerLabel?: Object;
     public centerLabelData: Object= [
         { x: 'Chrome', y: 61.3, text: 'Chrome: 61.3%' },
         { x: 'Safari', y: 24.6, text: 'Safari: 24.6%' },

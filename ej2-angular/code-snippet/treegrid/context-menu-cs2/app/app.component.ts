@@ -5,6 +5,7 @@ import { sampleData } from './datasource';
 import { getValue, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { BeforeOpenCloseEventArgs } from '@syncfusion/ej2-inputs';
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -21,12 +22,12 @@ import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pager: Object;
-    public editSettings: Object;
-    public contextMenuItems: Object[];
+    public data?: Object[];
+    public pager?: Object;
+    public editSettings?: Object;
+    public contextMenuItems?: Object[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -38,20 +39,20 @@ export class AppComponent implements OnInit {
         this.pager = { pageSize: 8 }
     }
     contextMenuClick(args?: MenuEventArgs): void {
-        treeGridObj.getColumnByField('taskID');
-        if (args.item.id === 'collapserow') {
-            this.treeGridObj.collapseRow(<HTMLTableRowElement>(this.treeGridObj.getSelectedRows()[0]));
+        (this.treeGridObj as TreeGridComponent).getColumnByField('taskID');
+        if ((args as MenuEventArgs ).item.id === 'collapserow') {
+            (this.treeGridObj as TreeGridComponent).collapseRow(<HTMLTableRowElement>((this.treeGridObj as TreeGridComponent).getSelectedRows()[0]));
         } else {
-            this.treeGridObj.expandRow(<HTMLTableRowElement>(this.treeGridObj.getSelectedRows()[0]));
+            (this.treeGridObj as TreeGridComponent).expandRow(<HTMLTableRowElement>((this.treeGridObj as TreeGridComponent).getSelectedRows()[0]));
             }
-    },
+    }
     contextMenuOpen(arg?: BeforeOpenCloseEventArgs) : void {
-        let elem: Element = arg.event.target as Element;
-        let uid: string = elem.closest('.e-row').getAttribute('data-uid');
-        if (isNullOrUndefined(getValue('hasChildRecords', this.treeGridObj.grid.getRowObjectFromUID(uid).data))) {
-            arg.cancel = true;
+        let elem: Element = (arg as BeforeOpenCloseEventArgs ).event.target as Element;
+        let uid: string = (elem.closest('.e-row') as Element).getAttribute('data-uid') as string;
+        if (isNullOrUndefined(getValue('hasChildRecords', (this.treeGridObj as TreeGridComponent).grid.getRowObjectFromUID(uid).data))) {
+           ( arg as BeforeOpenCloseEventArgs ).cancel = true;
         } else {
-            let flag: boolean = getValue('expanded', this.treeGridObj.grid.getRowObjectFromUID(uid).data);
+            let flag: boolean = getValue('expanded', (this.treeGridObj as TreeGridComponent).grid.getRowObjectFromUID(uid).data);
             let val: string = flag ? 'none' : 'block';
             document.querySelectorAll('li#expandrow')[0].setAttribute('style', 'display: ' + val + ';');
             val = !flag ? 'none' : 'block';

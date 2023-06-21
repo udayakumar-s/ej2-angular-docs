@@ -12,16 +12,16 @@ import { scheduleData } from './datasource';
 })
 export class AppComponent {
   @ViewChild('scheduleObj')
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2018, 1, 15);
   public scheduleViews: View[] = ['Day', 'Week', 'TimelineWorkWeek'];
   public eventSettings: EventSettingsModel = { dataSource: scheduleData };
-  onCreated(): void {
+  onCreated(eventData: any): void {
     let currTime: Date = new Date();
     let hours: string = currTime.getHours() < 10 ? '0' +currTime.getHours().toString() : currTime.getHours().toString();
     let minutes: string = currTime.getMinutes().toString();
     let time: string = hours + ':' + minutes;
-    this.scheduleObj.scrollTo(time);
+    this.scheduleObj?.scrollTo(time);
   }
  }
 

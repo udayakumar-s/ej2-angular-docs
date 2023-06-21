@@ -32,12 +32,12 @@ let initialLoad = true;
   ],
 })
 export class AppComponent {
-  @ViewChild('scheduleObj') public scheduleObj: ScheduleComponent;
+  @ViewChild('scheduleObj') public scheduleObj?: ScheduleComponent;
 
-  dataBound() {
+  dataBound(eventData: any) {
 
     if (initialLoad) {
-      let elements:HTMLElement=this.scheduleObj.element.querySelector('.e-all-day-appointment-section');
+      let elements:HTMLElement=this.scheduleObj?.element.querySelector('.e-all-day-appointment-section') as HTMLElement;
       elements.click();
       initialLoad = false;
     }

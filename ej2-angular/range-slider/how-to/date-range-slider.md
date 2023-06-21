@@ -25,4 +25,4 @@ The process of formatting is explained in the below sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/how-to-01-cs2" %}
+{% previewsample "page.domainurl/samples/slider/how-to-01-cs2" %}

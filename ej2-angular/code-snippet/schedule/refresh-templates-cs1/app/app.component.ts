@@ -7,19 +7,19 @@ import {
     DragAndDropService, View, GroupModel, ResourceDetails
 } from "@syncfusion/ej2-angular-schedule";
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { webinarData } from './datasource.ts';
+import { webinarData } from './datasource';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.component.html',
+    templateUrl: './app.component.html',
     providers: [WeekService, MonthService, TimelineMonthService, ResizeService, DragAndDropService],
-    styleUrls: ['app/index.css'],
+    styleUrls: ['./index.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     @ViewChild('scheduleObj', { static: true })
-    public scheduleObj: ScheduleComponent;
-    public eventSettings: EventSettingsModel = { dataSource: extend([], webinarData, null, true) as Record<string, any>[] };
+    public scheduleObj?: ScheduleComponent;
+    public eventSettings: EventSettingsModel = { dataSource: extend([], webinarData, undefined, true) as Record<string, any>[] };
     public currentView: View = 'Week';
     public readonly = true;
     public selectedDate: Date = new Date(2021, 1, 15);
@@ -30,6 +30,7 @@ export class AppComponent {
         { text: 'Robson', id: 3, color: '#7fa900', startHour: '08:00', endHour: '16:00' }
     ];
     public group: GroupModel = { resources: ['Doctors'] };
+ImageName: any;
 
     constructor() {
 
@@ -37,8 +38,8 @@ export class AppComponent {
 
     public getDoctorName(value: ResourceDetails): string {
         return ((value as ResourceDetails).resourceData) ?
-            (value as ResourceDetails).resourceData[(value as ResourceDetails).resource.textField] as string
-            : value.resourceName;
+            (value as ResourceDetails).resourceData[(value as ResourceDetails).resource.textField!] as string
+            : value.resourceName as string;
     }
 
     public getDoctorImage(value: ResourceDetails): string {
@@ -68,7 +69,7 @@ export class AppComponent {
             case 6:
                 return '<img class="weather-image" src="https://ej2.syncfusion.com/demos/src/schedule/images/weather-clouds.svg"/><div class="weather-text">17°C</div>';
             default:
-                return null;
+                return '';
         }
     }
 
@@ -102,19 +103,19 @@ export class AppComponent {
         return this.instance.formatDate(value, { skeleton: 'hm' });
     }
     refreshCellTemplate(): void {
-        this.scheduleObj.refreshTemplates("cellTemplate");
+        this.scheduleObj?.refreshTemplates("cellTemplate");
     }
     refreshDateHeaderTemplate(): void {
-        this.scheduleObj.refreshTemplates("dateHeaderTemplate");
+        this.scheduleObj?.refreshTemplates("dateHeaderTemplate");
     }
     refreshEventTemplate(): void {
-        this.scheduleObj.refreshTemplates("eventTemplate");
+        this.scheduleObj?.refreshTemplates("eventTemplate");
     }
     refreshResHeaderTemplate(): void {
-        this.scheduleObj.refreshTemplates("resourceHeaderTemplate");
+        this.scheduleObj?.refreshTemplates("resourceHeaderTemplate");
     }
     refreshAllTemplate(): void {
-        this.scheduleObj.refreshTemplates();
+        this.scheduleObj?.refreshTemplates();
     }
 }
 

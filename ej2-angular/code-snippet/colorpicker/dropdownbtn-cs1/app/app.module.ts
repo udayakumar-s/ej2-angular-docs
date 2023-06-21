@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { ColorPickerComponent } from '@syncfusion/ej2-angular-inputs';
-import { DropDownButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
+import { ColorPickerComponent, ColorPickerModule } from '@syncfusion/ej2-angular-inputs';
+import { DropDownButtonComponent, DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons';
 import { enableRipple } from '@syncfusion/ej2-base';
 
 enableRipple(true);
@@ -13,9 +13,9 @@ enableRipple(true);
  */
 @NgModule({
     imports: [
-        BrowserModule,FormsModule
+        BrowserModule, FormsModule, ColorPickerModule, DropDownButtonModule
     ],
-    declarations: [AppComponent, ColorPickerComponent, DropDownButtonComponent],
+    declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

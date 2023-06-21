@@ -137,7 +137,7 @@ loadCldr(numberingSystems, gregorian, numbers, timeZoneNames);
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/localization-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/localization-cs1" %}
 
 ## Localizing the static Scheduler text
 
@@ -157,7 +157,7 @@ For example, the following code example lets you to define the French translatio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/localization-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/localization-cs2" %}
 
 The localized words for static text used in Scheduler and Recurrence Editor can be referred from the following code.
 
@@ -301,7 +301,7 @@ Scheduler can be used with all valid date formats and by default it follows the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs54" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs54" %}
 
 ![Date Format](images/schedule-dateformat.png)
 
@@ -325,7 +325,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs55" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs55" %}
 
 ![Time Format](images/schedule-timeformat.png)
 
@@ -362,7 +362,7 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs56" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs56" %}
 
 ![RTL Mode](images/schedule-rtl.png)
 

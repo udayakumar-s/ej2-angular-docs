@@ -9,7 +9,7 @@ import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `<div class="sample-container">
                     <div id='uploadFileManager' class="fileupload">
                         <ejs-uploader #uploadObj id='defaultfileupload'></ejs-uploader>
@@ -26,38 +26,38 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 export class AppComponent {
     @ViewChild('uploadObj')
-    public uploadObj: UploaderComponent;
+    public uploadObj?: UploaderComponent;
     @ViewChild('dialogObj')
-    public dialogObj: DialogComponent;
+    public dialogObj?: DialogComponent;
     @ViewChild('filemanagerObj')
-    public filemanagerObj: FileManagerComponent;
+    public filemanagerObj?: FileManagerComponent;
     public dialogHeader = 'Select a file';
     public animationSettings: Object = { effect: 'None' };
     public showCloseIcon = true;
     public target = '#target';
     public visible = false;
     public dialogWidth = '850px';
-    public ajaxSettings: object;
-    public contextMenuSettings: object;
-    public toolbarSettings: object;
+    public ajaxSettings?: object;
+    public contextMenuSettings?: object;
+    public toolbarSettings?: object;
     public hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
     public contextmenuItems: string[] = ['Open', '|', 'Cut', 'Copy', 'Delete', 'Rename', '|', 'Details'];
 
     public btnClick: EmitType<object> = () => {
-        this.dialogObj.show();
+        this.dialogObj?.show();
         this.dialogOpen();
-        this.filemanagerObj.path = '/';
-        this.filemanagerObj.selectedItems = [];
-        this.filemanagerObj.refresh();
+        (this.filemanagerObj as FileManagerComponent).path = '/';
+        (this.filemanagerObj as FileManagerComponent).selectedItems = [];
+        (this.filemanagerObj as FileManagerComponent).refresh();
     }
 
     // Uploader will be hidden, if Dialog is opened
     public dialogOpen: EmitType<object> = () => {
-        document.getElementById('uploadFileManager').style.display = 'none';
+        (document.getElementById('uploadFileManager') as HTMLElement).style.display = 'none';
     }
     // Uploader will be shown, if Dialog is closed
     public dialogClose: EmitType<object> = () => {
-        document.getElementById('uploadFileManager').style.display = 'block';
+        (document.getElementById('uploadFileManager') as HTMLElement).style.display = 'block';
     }
 
     // File Manager's fileOpen event function
@@ -66,8 +66,8 @@ export class AppComponent {
         if (file.isFile) {
             args.cancel = true;
             if (file.size <= 0 ) { file.size = 10000; }
-            this.uploadObj.files = [{name: file.name, size: file.size, type: file.type }];
-            this.dialogObj.hide();
+            (this.uploadObj as UploaderComponent).files = [{name: file.name, size: file.size, type: file.type }];
+            this.dialogObj?.hide();
         }
     }
 
@@ -85,12 +85,12 @@ export class AppComponent {
             file: this.contextmenuItems,
             folder: this.contextmenuItems
         };
-        this.uploadObj.autoUpload = true;
+        (this.uploadObj as UploaderComponent).autoUpload = true;
     }
 
     public ngOnDestroy(): void {
-        if (document.querySelector('.sb-demo-section').classList.contains('upload-dialog')) {
-            document.querySelector('.sb-demo-section').classList.remove('upload-dialog');
+        if ((document.querySelector('.sb-demo-section') as Element).classList.contains('upload-dialog')) {
+            (document.querySelector('.sb-demo-section') as Element).classList.remove('upload-dialog');
         }
     }
 }

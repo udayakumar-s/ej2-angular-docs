@@ -7,7 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './form-support.html'
+    templateUrl: 'form-support.html'
 })
 export class AppComponent {
     // defined the array of data
@@ -18,7 +18,7 @@ export class AppComponent {
                                       'J#' , 'Lisp' , 'Logo' , 'PHP'
                                   ];
     public placeholder: String = 'e.g: ActionScript';
-    skillForm: FormGroup;
+    skillForm: FormGroup| any;
     fb: FormBuilder;
 
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {

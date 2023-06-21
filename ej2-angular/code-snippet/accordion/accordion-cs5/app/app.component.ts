@@ -12,7 +12,7 @@ const SERVICE_URI: string = 'https://js.syncfusion.com/ejServices/Wcf/Northwind.
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('element') accordionObj: AccordionComponent;
+  @ViewChild('element') accordionObj?: AccordionComponent;
   public itemsData: any = [];
   public mapping =  { header: 'FirstName', content: 'Notes' };
 
@@ -24,8 +24,8 @@ export class AppComponent implements OnInit {
       for(let i: number = 0; i < result.length; i++) {
         this.itemsData.push({ header: result[i][this.mapping.header], content: result[i][this.mapping.content] });
       }
-      this.accordionObj.items = this.itemsData;
-      this.accordionObj.refresh();
+      (this.accordionObj as AccordionComponent).items = this.itemsData;
+      (this.accordionObj as AccordionComponent).refresh();
     });
   }
 }

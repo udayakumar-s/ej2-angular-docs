@@ -287,9 +287,10 @@ export class AppComponent {
     }
 ];
     public fields = { tooltip: 'text' };
-    @ViewChild('list')listviewInstance: ListViewComponent;
+    @ViewChild('list')listViewInstance?: ListViewComponent;
+Ascending: any;
     onSelect(args: any){
-       let normalElements: HTMLElement[] = Array.prototype.slice.call((this.listviewInstance as any).curUL.getElementsByClassName('e-checkbox-hidden'));
+       let normalElements: HTMLElement[] = Array.prototype.slice.call((this.listViewInstance as any).curUL.getElementsByClassName('e-checkbox-hidden'));
 
         // Looping through all the selected element and removing e-active class
         // to avoid behaviour interference  with getSelectedItems method

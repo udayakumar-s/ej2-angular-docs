@@ -31,4 +31,4 @@ The precision types of Rating are as follows:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/precision-modes-cs" %}
+{% previewsample "page.domainurl/samples/rating/precision-modes-cs" %}

@@ -1,7 +1,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { ScheduleComponent, EventSettingsModel, ActionEventArgs, DayService, WeekService, WorkWeekService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleComponent, EventSettingsModel, ActionEventArgs, DayService, WeekService, WorkWeekService, MonthService, EventFieldsMapping } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 
 @Component({
@@ -58,16 +58,16 @@ import { scheduleData } from './datasource';
 })
 export class AppComponent {
   @ViewChild('scheduleObj')
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2018, 1, 15);
   public eventSettings: EventSettingsModel = { dataSource: scheduleData };
   public onActionBegin(args: ActionEventArgs): void {
     if (args.requestType === 'eventCreate' && (<Object[]>args.data).length > 0) {
     let eventData: { [key: string]: Object } = (<Object[]>args.data)[0] as { [key: string]: Object };
-    let eventField: EventFieldsMapping = this.scheduleObj.eventFields;
-    let startDate: Date = eventData[eventField.startTime] as Date;
-    let endDate: Date = eventData[eventField.endTime] as Date;
-    args.cancel = !this.scheduleObj.isSlotAvailable(startDate, endDate); }
+    let eventField: EventFieldsMapping = this.scheduleObj?.eventFields as EventFieldsMapping;
+    let startDate: Date = eventData[eventField.startTime||''] as Date;
+    let endDate: Date = eventData[eventField.endTime ||''] as Date;
+    args.cancel = !this.scheduleObj?.isSlotAvailable(startDate, endDate); }
   }
 }
 

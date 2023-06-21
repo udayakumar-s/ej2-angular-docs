@@ -26,7 +26,7 @@ Splitter allows you to provide pane sizes either in pixel or percentage formats.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/pane-sizes-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/pane-sizes-cs1" %}
 
 `Pane size in percentage`
 
@@ -42,7 +42,7 @@ Splitter allows you to provide pane sizes either in pixel or percentage formats.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/pane-sizes-cs2" %}
+{% previewsample "page.domainurl/samples/splitter/pane-sizes-cs2" %}
 
 ## Auto-size panes
 
@@ -60,7 +60,7 @@ The splitter panes are automatically adjusted within its layout on resizing, whi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/template-cs2" %}
+{% previewsample "page.domainurl/samples/splitter/template-cs2" %}
 
 ## Fixed pane
 
@@ -78,4 +78,4 @@ You can render the split panes with fixed size for both horizontal and vertical 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/fixed-pane-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/fixed-pane-cs1" %}

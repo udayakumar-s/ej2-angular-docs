@@ -2,7 +2,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+
 import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { editingData } from './data';
@@ -19,15 +19,15 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public fData: object[];
-    public sData: object[];
-    public fTaskSettings: object;
-    public sTaskSettings: object;
-    public toolbar: ToolbarItem[];
-    public projectStartDate: Date;
-    public projectEndDate: Date;
-    @ViewChild('gantt1', {static: true}) public fGantt: GanttComponent;
-    @ViewChild('gantt2', {static: true}) public sGantt: GanttComponent;
+    public fData?: object[];
+    public sData?: object[];
+    public fTaskSettings?: object;
+    public sTaskSettings?: object;
+    public toolbar?: ToolbarItem[];
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    @ViewChild('gantt1', {static: true}) public fGantt?: GanttComponent;
+    @ViewChild('gantt2', {static: true}) public sGantt?: GanttComponent;
     public ngOnInit(): void {
         this.fData = [editingData[0]];
         this.sData = [editingData[1]];
@@ -53,9 +53,9 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault1_pdfexport') {
-            const firstGanttExport: Promise<any> = this.fGantt.pdfExport({}, true);
+            const firstGanttExport: Promise<any> = this.fGantt!.pdfExport({}, true);
             firstGanttExport.then((fData: any) => {
-                this.sGantt.pdfExport({}, false, fData);
+                this.sGantt?.pdfExport({}, false, fData);
             });
             }
     };

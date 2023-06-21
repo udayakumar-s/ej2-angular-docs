@@ -32,7 +32,7 @@ by adding custom class or directly selecting the avatar class from the CSS.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/color-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/color-cs1" %}
 
 ### Customize avatar sizes
 
@@ -52,7 +52,7 @@ designed in such a way that the width and height will be relative to font-size. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/custom-size-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/custom-size-cs1" %}
 
 ### Use various media in avatar
 
@@ -71,7 +71,7 @@ etc. Some of them are given below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/media-formats-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/media-formats-cs1" %}
 
 ### Dynamic avatar rendering from datasource
 
@@ -92,7 +92,7 @@ data-source from the server or remote data or AJAX. We have also rendered the av
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/angular-avatar-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/angular-avatar-cs1" %}
 
 ## Integrate avatars
 
@@ -116,7 +116,7 @@ used to match the size of the list item. Letters and images are also used as ava
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/listview-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/listview-cs1" %}
 
 ### Badge
 
@@ -136,4 +136,4 @@ badges (.`e-badge-notification`) in the following sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/badge-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/badge-cs1" %}

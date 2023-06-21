@@ -121,17 +121,17 @@ import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     created() {
-            this.spreadsheetObj.merge('B2:D2');
-            this.spreadsheetObj.merge('B11:D11');
-            this.spreadsheetObj.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B2');
-            this.spreadsheetObj.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B11');
-            this.spreadsheetObj.cellFormat({ fontWeight: 'bold' }, 'C3:C9');
-            this.spreadsheetObj.cellFormat({ fontWeight: 'bold' }, 'C12:C18');
-            this.spreadsheetObj.setBorder({ border: '1px solid #1167b1' }, 'B2:D9', 'Outer');
-            this.spreadsheetObj.setBorder({ border: '1px solid #1167b1' }, 'B11:D18', 'Outer');
+            this.spreadsheetObj!.merge('B2:D2');
+            this.spreadsheetObj!.merge('B11:D11');
+            this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B2');
+            this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', verticalAlign: 'middle', backgroundColor: '#1167b1', color: '#ffffff' }, 'B11');
+            this.spreadsheetObj!.cellFormat({ fontWeight: 'bold' }, 'C3:C9');
+            this.spreadsheetObj!.cellFormat({ fontWeight: 'bold' }, 'C12:C18');
+            this.spreadsheetObj!.setBorder({ border: '1px solid #1167b1' }, 'B2:D9', 'Outer');
+            this.spreadsheetObj!.setBorder({ border: '1px solid #1167b1' }, 'B11:D18', 'Outer');
         }
 }
 

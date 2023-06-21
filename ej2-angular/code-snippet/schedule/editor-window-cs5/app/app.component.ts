@@ -2,7 +2,7 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
-import { eventsData} from './datasource.ts';
+import { eventsData} from './datasource';
 @Component({
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService, MonthService],
@@ -13,7 +13,7 @@ import { eventsData} from './datasource.ts';
 
 export class AppComponent {
     @ViewChild("scheduleObj")
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public views: Array<string> = ['Day', 'Week', 'WorkWeek', 'Month'];
     public eventSettings: EventSettingsModel = {
@@ -21,8 +21,8 @@ export class AppComponent {
     };
     onPopupOpen(args: PopupOpenEventArgs): void {
         if (args.type === 'Editor') {
-            let dialog = args.element.ej2_instances[0];
-            dialog.open = function(args) {
+            let dialog = (args.element as any).ej2_instances[0];
+            dialog.open = function(args : any) {
                 this.scheduleObj.eventBase.focusElement();
             };
         }

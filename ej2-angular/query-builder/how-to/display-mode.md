@@ -24,7 +24,7 @@ Display options allow you to view the Query Builder in Vertically or Horizontall
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs7" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs7" %}
 
 > * The default view the query builder component is Horizontal.
 > * The default view the query builder component in Vertical.

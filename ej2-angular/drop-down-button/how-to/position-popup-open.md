@@ -26,4 +26,4 @@ In the following example, the `top` position of the popup element is changed in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/position-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/position-cs1" %}

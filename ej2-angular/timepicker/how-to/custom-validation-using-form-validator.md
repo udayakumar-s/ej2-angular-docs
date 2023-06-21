@@ -26,4 +26,4 @@ To achieve the client side validation in a TimePicker component by using `FormVa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/timepicker/getting-started-cs5" %}

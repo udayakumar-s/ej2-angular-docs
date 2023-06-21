@@ -14,7 +14,7 @@ import { Maps } from '@syncfusion/ej2-angular-maps';
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-    public urlTemplate: string;
+    public urlTemplate?: string;
     ngOnInit(): void {
         this.urlTemplate = 'https://tile.openstreetmap.org/level/tileX/tileY.png';
     }

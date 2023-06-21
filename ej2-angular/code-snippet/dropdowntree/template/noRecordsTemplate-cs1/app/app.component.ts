@@ -12,7 +12,7 @@ export class AppComponent {
   public fields: Object = { dataSource: this.data, text: 'name', value: 'id', parentValue: 'pid', hasChildren: 'hasChild' };
   public height: string = '300px';
   public watermark: string = 'Select an employee';
-  public noRecordsTemplate: Objet = '<span class="norecord"> NO DATA AVAILABLE</span>';
+  public noRecordsTemplate: Object = '<span class="norecord"> NO DATA AVAILABLE</span>';
 }
 
 

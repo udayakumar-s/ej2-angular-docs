@@ -20,25 +20,26 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
     add(): void {
         const rdata: object = { OrderID: 10247, CustomerID: 'ASDFG', Freight: 40.4, OrderDate: new Date(8367642e5) };
-        (this.grid.dataSource as object[]).unshift(rdata);
-        this.grid.refresh();
+        ((this.grid as any).dataSource as object[]).unshift(rdata);
+        (this.grid as any).refresh();
     }
     delete(): void {
-        const selectedRow: number = this.grid.getSelectedRowIndexes()[0];
-        if (this.grid.getSelectedRowIndexes().length) {
-            (this.grid.dataSource as object[]).splice(selectedRow, 1);
+        const selectedRow: number = (this.grid as any).getSelectedRowIndexes()[0];
+        if ((this.grid as any).getSelectedRowIndexes().length) {
+            ((this.grid as any).dataSource as object[]).splice(selectedRow, 1);
         } else {
             alert('No records selected for delete operation');
         }
-        this.grid.refresh();
+        (this.grid as any).refresh();
     }
 }
 

@@ -22,7 +22,7 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') element?: any;
     public templateEle: any = "<div><input type='checkbox' id='check1' checked=''>Accept</input></div>";
     public templateEleId: any = '#Template';
     ngAfterViewInit() {

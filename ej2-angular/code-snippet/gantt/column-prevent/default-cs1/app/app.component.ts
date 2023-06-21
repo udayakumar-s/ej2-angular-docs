@@ -12,11 +12,11 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public taskSettings: object;
-    public ganttChart: GanttComponent;
-    public splitterSettings: object;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public ganttChart?: GanttComponent;
+    public splitterSettings?: object;
+    public columns?: object[];
     public ngOnInit(): void {
         this.data = [
             {
@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
     }
 
     dataBound() {
-        let gantt = document.getElementsByClassName('e-gantt')[0].ej2_instances[0];
+        let gantt = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
         let cloned = gantt.addOnPersist;
         gantt.addOnPersist = function (key: any) {
             key = key.filter((item: string)  => item !== "columns");
@@ -69,14 +69,14 @@ export class AppComponent implements OnInit {
     }
 
     addColumn() {
-        let gantt = document.getElementsByClassName('e-gantt')[0].ej2_instances[0];
+        let gantt = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
         let obj = { field: "Progress", headerText: 'Progress', width: 100 };
         gantt.columns.push(obj as any); //you can add the columns by using the Gantt columns method
         gantt.refresh();
    }
 
     removeColumn() {
-         let gantt = document.getElementsByClassName('e-gantt')[0].ej2_instances[0];
+         let gantt = (document.getElementsByClassName('e-gantt')[0] as any).ej2_instances[0];
         gantt.columns.pop();
         gantt.refresh();
    }

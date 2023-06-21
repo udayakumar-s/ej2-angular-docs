@@ -1,11 +1,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { columnData } from 'datasource.ts';
+import { columnData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-annotations>
             <e-annotation  content='<div style="border: 1px solid black; padidng: 5px 5px 5px 5px, backgrund:#f5f5f5">Annotation in Pixel</div>'
              coordinateUnits='Pixel' x=150 y=75>
@@ -17,10 +16,10 @@ import { columnData } from 'datasource.ts';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
     ngOnInit(): void {
         this.chartData = columnData;
         this.primaryXAxis = {

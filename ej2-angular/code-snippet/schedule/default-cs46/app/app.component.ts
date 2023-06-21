@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
-import { generateObject } from './datasource.ts';
+import { generateObject } from './datasource';
 
 @Component({
     selector: 'app-root',
@@ -16,7 +16,7 @@ export class AppComponent {
     public eventSettings: EventSettingsModel = {
         dataSource: generateObject(),
     };
-    public enableAllDayScroll: true;
+    public enableAllDayScroll?: true;
 }
 
 

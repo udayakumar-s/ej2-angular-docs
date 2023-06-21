@@ -26,4 +26,4 @@ You can integrate menu component as toolbar item in Toolbar using **ng-template*
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/menu-component-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/menu-component-cs1" %}

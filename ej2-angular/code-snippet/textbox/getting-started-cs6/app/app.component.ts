@@ -27,7 +27,7 @@ export class AppComponent {
     public focusOut(target: any): void {
         target.parentElement.classList.remove('e-input-focus');
     }
-    public onKeyup(event): void {
+    public onKeyup(event: any): void {
     let str = event.target.value.match(/^[0-9]+$/);
     if (!((str && str.length > 0)) && event.target.value.length) {
        event.target.parentElement.classList.add('e-error');

@@ -24,4 +24,4 @@ The Range Selector supports right-to-left (RTL), which can be enabled with the [
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/rtl-cs1" %}

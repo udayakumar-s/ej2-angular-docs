@@ -13,7 +13,7 @@ import { UploaderComponent, SelectedEventArgs, FileInfo } from '@syncfusion/ej2-
 
 export class AppComponent {
    @ViewChild('defaultupload')
-    public uploadObj: UploaderComponent;
+    public uploadObj?: UploaderComponent;
 
     public path: Object = {
         saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
@@ -23,7 +23,7 @@ export class AppComponent {
   public onSelect(args: SelectedEventArgs): void {
     if (this.initial) { this.initial = false; return; }
     args.isModified = true;
-    let oldFiles: FileInfo[] = this.uploadObj.getFilesData();
+    let oldFiles: FileInfo[] = this.uploadObj?.getFilesData() as FileInfo[];
     let filesData: FileInfo[] = args.filesData.concat(oldFiles);
     let modifiedData: FileInfo[] = this.sortFileList(filesData);
     args.modifiedFilesData = modifiedData;

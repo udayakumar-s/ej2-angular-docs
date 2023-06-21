@@ -18,7 +18,7 @@ const SERVICE_URI = 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.sv
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data?: DataManager;
 
     public ngOnInit(): void {
         this.data = new DataManager({ url: SERVICE_URI });

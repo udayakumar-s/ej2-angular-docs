@@ -3,7 +3,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-import { ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { Column, ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -19,10 +19,10 @@ import { ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public toolbarOptions: ToolbarItems[];
+    public data?: Object[];
+    public toolbarOptions?: ToolbarItems[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     }
     toolbarClick(args: ClickEventArgs): void {
         if (args.item.text === 'Print') {
-            let cols: Column[] = this.treeGridObj.columns;
+            let cols: Column[] = (this.treeGridObj as TreeGridComponent).columns as Column[];
             for (var i = 0; i < cols.length; i++) {
                 if (cols[i].field == "duration") {
                     cols[i].visible = true;
@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
         }
     }
     printComplete(): void {
-        let cols: Column[] = this.treeGridObj.columns;
+        let cols: Column[] = (this.treeGridObj as TreeGridComponent).columns as Column[];
         for (var i = 0; i < cols.length; i++) {
             if (cols[i].field == "duration") {
                 cols[i].visible = false;

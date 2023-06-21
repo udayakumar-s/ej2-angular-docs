@@ -20,8 +20,9 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -32,13 +33,13 @@ export class AppComponent implements OnInit {
             { field: 'OrderDate', headerText: 'Order Date', width: 120, format: 'yMd' },
           ];
           newColumns.forEach((col) => {
-            this.grid.columns.push(col as any);
+            (this.grid as any).columns.push(col as any);
           });
-          this.grid.refreshColumns();
+          (this.grid as any).refreshColumns();
     }
     deleteColumns(): void {
-        this.grid.columns.pop();
-        this.grid.refreshColumns();
+        (this.grid as any).columns.pop();
+        (this.grid as any).refreshColumns();
     }
 }
 

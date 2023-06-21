@@ -20,14 +20,14 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('signature')
-    public signature: SignatureComponent;
+    public signature?: SignatureComponent;
     public items: ItemModel[] = [
     { text: 'Png'},
     { text: 'Jpeg'},
     { text: 'Svg'}
     ];
     onSelect(args: MenuEventArgs) {
-        this.signature.save(args.item.text as SignatureFileType, 'Signature');
+        this.signature?.save(args.item.text as SignatureFileType, 'Signature');
     }
 }
 

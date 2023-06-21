@@ -13,9 +13,9 @@ import { projectNewData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public columns?: object[];
     public ngOnInit(): void {
         this.data =   [
         {

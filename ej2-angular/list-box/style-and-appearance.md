@@ -38,4 +38,4 @@ You can use [cssClass](https://ej2.syncfusion.com/angular/documentation/api/list
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/horizontal-listbox-cs1" %}
+{% previewsample "page.domainurl/samples/listbox/horizontal-listbox-cs1" %}

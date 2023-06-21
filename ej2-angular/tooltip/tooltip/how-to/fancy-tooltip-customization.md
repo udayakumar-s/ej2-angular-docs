@@ -71,4 +71,4 @@ The arrow tip pointer can also be disabled by using the [`showTipPointer`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/tip-custom-cs3" %}
+{% previewsample "page.domainurl/samples/tooltip/tip-custom-cs3" %}

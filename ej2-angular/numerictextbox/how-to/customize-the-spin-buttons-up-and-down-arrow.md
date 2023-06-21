@@ -37,4 +37,4 @@ You can override the default icons of `e-spin-up` and `e-spin-down` classes usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/custom-icons-cs1" %}
+{% previewsample "page.domainurl/samples/numerictextbox/custom-icons-cs1" %}

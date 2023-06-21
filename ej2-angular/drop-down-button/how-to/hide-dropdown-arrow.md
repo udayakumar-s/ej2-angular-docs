@@ -25,4 +25,4 @@ to DropDownButton element using [`cssClass`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/hide-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/hide-cs1" %}

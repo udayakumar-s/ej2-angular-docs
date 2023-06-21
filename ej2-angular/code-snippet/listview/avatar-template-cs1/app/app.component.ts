@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
      // Listview datasource with avatar and image source fields
-     public data: { [key: string]: Object; }[] = [
+     public data?: { [key: string]: Object; }[] = [
   {
     text: "Jenifer",
     contact: "(206) 555-985774",

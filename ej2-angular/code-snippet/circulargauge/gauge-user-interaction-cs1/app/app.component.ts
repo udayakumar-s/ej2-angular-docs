@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public tooltip: Object;
+    public tooltip?: Object;
     ngOnInit(): void {
         // Initialize objects
         this.tooltip = {

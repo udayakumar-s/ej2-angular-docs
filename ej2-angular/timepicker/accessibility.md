@@ -69,4 +69,4 @@ The following sample use the `alt+t` keys to focus the TimePicker component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/timepicker/getting-started-cs1" %}

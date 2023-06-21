@@ -38,7 +38,7 @@ template: "#Template"
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs19" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs19" %}
 
 ## See Also
 

@@ -29,7 +29,7 @@ The following example disables the weekends of every month using `renderDayCell`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/daterangepicker/getting-started-cs2" %}
 
 ## First day of week
 
@@ -51,7 +51,7 @@ In below example, first day of the week in the pop-up calendar is customized to 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/daterangepicker/getting-started-cs3" %}
 
 ## Preset Ranges
 
@@ -71,7 +71,7 @@ Here in following sample, you can choose the mostly using options from pre-defin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/daterangepicker/getting-started-cs4" %}
 
 ## See Also
 

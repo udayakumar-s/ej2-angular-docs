@@ -11,12 +11,12 @@ import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2
     providers: [PagerService]
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
-    public remoteData: DataManager;
-    public width: string;
-    public gridSettings: GridSettings;
-    public pageSettings: PageSettings;
-    public pagerSettings: PagerSettings;
+    public dataSourceSettings?: IDataOptions;
+    public remoteData?: DataManager;
+    public width?: string;
+    public gridSettings?: GridSettings;
+    public pageSettings?: PageSettings;
+    public pagerSettings?: PagerSettings;
 
     ngOnInit(): void {
         this.remoteData = new DataManager({
@@ -30,11 +30,11 @@ export class AppComponent implements OnInit {
             columnPageSize: 5,
             currentColumnPage: 1,
             currentRowPage: 1
-        };
+        } as PageSettings;
         this.pagerSettings = {
             position: 'Top'
-        };
-        this.gridSettings = { columnWidth: 120 };
+        } as PagerSettings;
+        this.gridSettings = { columnWidth: 120 } as GridSettings;
         this.dataSourceSettings = {
             dataSource: this.remoteData,
             expandAll: true,

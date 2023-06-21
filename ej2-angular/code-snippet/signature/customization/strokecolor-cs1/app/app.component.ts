@@ -18,10 +18,10 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('signature')
-    public signature: SignatureComponent;
+    public signature?: SignatureComponent;
     setColor(): void {
-        let color = document.getElementById('text').value;
-        this.signature.strokeColor = color;
+        let color = (document.getElementById('text') as any).value;
+        this.signature!.strokeColor = color;
     }
 }
 

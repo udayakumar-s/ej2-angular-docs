@@ -118,15 +118,15 @@ import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     public experience: string[] =  ['0 - 1 year', '1 - 3 years', '3 - 5 years', '5 - 10 years'];
     public languages: string[] = ['JAVA', 'C#', 'SQL'];
     created() {
         // Applies format to specified range
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold' }, 'B2:B9');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold' }, 'B2:B9');
         // Merges B1 and C1 cells
-        this.spreadsheetObj.merge('B1:C1');
+        this.spreadsheetObj!.merge('B1:C1');
     }
   };
 

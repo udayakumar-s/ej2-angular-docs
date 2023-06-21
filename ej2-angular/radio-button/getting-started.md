@@ -144,7 +144,7 @@ The below example shows a basic RadioButton component,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/radio-button/getting-started-cs1" %}
 
 ## Change the RadioButton state
 
@@ -167,4 +167,4 @@ In the checked state an inner circle will be added to the visualization of Radio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/label-and-size-cs1" %}
+{% previewsample "page.domainurl/samples/radio-button/label-and-size-cs1" %}

@@ -26,4 +26,4 @@ In the following sample, the Shimmer indicator is displayed while the grid is lo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs6" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs6" %}

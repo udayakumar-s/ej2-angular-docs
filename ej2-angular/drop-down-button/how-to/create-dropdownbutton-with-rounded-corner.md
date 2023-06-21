@@ -27,4 +27,4 @@ property and added that class to button element using [`cssClass`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/rounded-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/rounded-cs1" %}

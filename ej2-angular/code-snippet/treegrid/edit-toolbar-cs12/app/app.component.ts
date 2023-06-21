@@ -2,7 +2,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angular-treegrid';
+import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { IEditCell } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-container',
@@ -17,10 +18,10 @@ import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angu
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
-    public numericParams: IEditCell;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
+    public numericParams?: IEditCell;
     ngOnInit(): void {
         this.data = sampleData;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };

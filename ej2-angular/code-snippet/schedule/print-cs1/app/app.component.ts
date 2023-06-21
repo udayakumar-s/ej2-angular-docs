@@ -14,7 +14,7 @@ import { scheduleData } from './datasource';
 })
 export class AppComponent {
   @ViewChild('scheduleObj')
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2018, 1, 15);
   public eventSettings: EventSettingsModel = { dataSource: scheduleData };
 
@@ -24,12 +24,12 @@ export class AppComponent {
         align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-print',
         text: 'Print', cssClass: 'e-print', click: this.onPrintIconClick.bind(this)
       };
-      args.items.push(exportItem);
+      args.items?.push(exportItem);
     }
   }
 
   public onPrintIconClick(): void {
-    this.scheduleObj.print();
+    this.scheduleObj?.print();
   }
  }
 

@@ -33,7 +33,7 @@ Splitter allows you to set the minimum and maximum sizes for each pane. Resizing
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/validation-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/validation-cs1" %}
 
 ## Prevent resizing
 
@@ -51,7 +51,7 @@ You can disable the resizing for the pane by setting `false` to the [resizable](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/fixed-pane-cs2" %}
+{% previewsample "page.domainurl/samples/splitter/fixed-pane-cs2" %}
 
 >Note: Splitter resizing will be enabled only when the target of the adjacent pane's `resizable` api is also in `true` state.
 
@@ -75,7 +75,7 @@ You can customize the resize gripper icon and cursor in CSS level.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/grip-customization-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/grip-customization-cs1" %}
 
 ## See Also
 

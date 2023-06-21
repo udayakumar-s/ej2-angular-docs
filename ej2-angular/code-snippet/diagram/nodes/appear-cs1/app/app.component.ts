@@ -14,10 +14,10 @@ import { DiagramComponent, Diagram, NodeModel, ShapeStyleModel } from '@syncfusi
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public style: ShapeStyleModel;
-    public borderColor: strng;
-    public borderWidth: number;
+    public diagram?: DiagramComponent;
+    public style?: ShapeStyleModel;
+    public borderColor?: string;
+    public borderWidth?: number;
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;

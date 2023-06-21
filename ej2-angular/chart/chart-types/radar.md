@@ -28,7 +28,7 @@ To render a line draw type, use series [`drawType`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs11" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs11" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ You can customize the start angle of the polar series using [`startAngle`](https
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs12" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs12" %}
 
 ### Radius
 
@@ -66,7 +66,7 @@ You can customize the radius of the polar series and radar series using [`coeffi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/polar-cs13" %}
+{% previewsample "page.domainurl/samples/chart/series/polar-cs13" %}
 
 ## See Also
 

@@ -29,4 +29,4 @@ By using Toolbar scrollStep property, pass a required value to customize toolbar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/scrollstep-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/scrollstep-cs1" %}

@@ -1,8 +1,8 @@
 
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TreeMap, IDrillStartEventArgs } from '@syncfusion/ej2-angular-treemap';
-import { CarSales } from './datasource.ts';
+import { CarSales } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -10,8 +10,11 @@ import { CarSales } from './datasource.ts';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   public drillStart = (args: IDrillStartEventArgs) => {
-    let labelElementGroup: HTMLElement = document.getElementById('container_Label_Template_Group');
+    let labelElementGroup: HTMLElement = document.getElementById('container_Label_Template_Group') as HTMLElement;
     labelElementGroup.remove();
   }
   public weightValuePath: string = "Sales";

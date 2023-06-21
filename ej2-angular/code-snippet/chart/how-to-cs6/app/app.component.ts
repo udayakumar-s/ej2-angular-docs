@@ -5,8 +5,7 @@ import { ITooltipRenderEventArgs, Series } from '@syncfusion/ej2-angular-charts'
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'
      [tooltip]='tooltip'>
      <e-annotations>
     <e-annotation visible = true
@@ -21,11 +20,11 @@ import { ITooltipRenderEventArgs, Series } from '@syncfusion/ej2-angular-charts'
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public marker: Object;
-    public primaryYAxis: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public marker?: Object;
+    public primaryYAxis?: Object;
     public tooltip: Object = {
         enable: true
     };

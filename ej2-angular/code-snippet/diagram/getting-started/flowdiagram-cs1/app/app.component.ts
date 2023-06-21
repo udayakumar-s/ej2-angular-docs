@@ -64,18 +64,18 @@ import {
 })
 export class AppComponent {
   @ViewChild("diagram")
-  public terminator: FlowShapeModel;
-  public process: FlowShapeModel;
-  public decision: FlowShapeModel;
-  public preDefinedProcess: FlowShapeModel;
-  public segment1: OrthogonalSegmentModel;
-  public segment2: OrthogonalSegmentModel;
+  public terminator?: FlowShapeModel;
+  public process?: FlowShapeModel;
+  public decision?: FlowShapeModel;
+  public preDefinedProcess?: FlowShapeModel;
+  public segment1?: OrthogonalSegmentModel;
+  public segment2?: OrthogonalSegmentModel;
   public nodeDefaults(node: NodeModel): NodeModel {
     node.height = 50;
     node.width = 140;
     node.offsetX = 300;
     return node;
-  },
+  }
 
   public connectorDefaults(obj: ConnectorModel): ConnectorModel {
     obj.type = "Orthogonal";

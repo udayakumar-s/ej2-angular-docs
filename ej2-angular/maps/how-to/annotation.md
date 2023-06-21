@@ -47,4 +47,4 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs41" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs41" %}

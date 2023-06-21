@@ -38,7 +38,7 @@ In the following demo, the `showHeader` property is disabled on Kanban board.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/card-header-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/card-header-cs1" %}
 
 ## Content
 
@@ -60,7 +60,7 @@ You can customize the default card layout using template as per your application
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/card-template-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/card-template-cs1" %}
 
 ## Selection
 
@@ -86,4 +86,4 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/multiple-selection-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/multiple-selection-cs1" %}

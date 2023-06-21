@@ -19,12 +19,12 @@ import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncf
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public selectionOptions: SelectionSettingsModel;
-    public pageOptions: PageSettingsModel;
+    public data?: Object[];
+    public selectionOptions?: SelectionSettingsModel;
+    public pageOptions?: PageSettingsModel;
 
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     }
 
     click(): void{
-        this.grid.clearSelection();
+        (this.grid as any).clearSelection();
     }
 }
 

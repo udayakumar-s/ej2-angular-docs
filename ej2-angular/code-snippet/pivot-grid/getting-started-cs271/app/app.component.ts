@@ -1,10 +1,10 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
-import { Pivot_Data } from './datasource.ts';
-import { Observable } from 'rxjsObservable';
+import { Pivot_Data } from './datasource';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-container',
@@ -13,9 +13,9 @@ import { Observable } from 'rxjsObservable';
   [gridSettings]='gridSettings' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public gridSettings?: GridSettings;
     public observable = new Observable();
 
     ngOnInit(): void {
@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
 
         this.gridSettings = {
             columnWidth: 140,
-            columnRender: this.observable.subscribe(args => {
+            columnRender: this.observable.subscribe((args: any) => {
                 // Here you can customize the specific columns.
                 for (var i = 0; i < (args as any).columns.length; i++) {
                     (args as any).columns[i].autoFit = true;

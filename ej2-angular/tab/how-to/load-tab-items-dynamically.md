@@ -38,4 +38,4 @@ In the following demo, you can add the tab content by clicking the **+**.  This 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/dynamic-tab-cs1" %}
+{% previewsample "page.domainurl/samples/tab/dynamic-tab-cs1" %}

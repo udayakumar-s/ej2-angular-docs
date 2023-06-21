@@ -20,23 +20,24 @@ import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-g
                </div>`
 })
 export class AppComponent implements OnInit {
-    public data: object[];
-    @ViewChild('Grid') public grid: GridComponent;
-    public selectionOptions: SelectionSettingsModel;
-    public selIndex: number[] = [];
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public selectionOptions?: SelectionSettingsModel;
+    public selIndex?: number[] = [];
     ngOnInit(): void {
         this.data = data;
         this.selectionOptions = { type: 'Multiple' };
     }
-    public rowDataBound(args): void {
+    public rowDataBound(args : any): void {
         const EmployeeID = 'EmployeeID';
-        if (args.data[EmployeeID] > 3) {
-            this.selIndex.push(parseInt(args.row.getAttribute('aria-rowindex'), 10));
+        if ((args as any).data[EmployeeID] > 3) {
+            this.selIndex?.push(parseInt((args as any).row.getAttribute('aria-rowindex'), 10));
         }
     }
-    public dataBound(args): void {
-        if (this.selIndex.length) {
-            this.grid.selectRows(this.selIndex);
+    public dataBound(args: any): void {
+        if (this.selIndex?.length) {
+            (this.grid as any).selectRows(this.selIndex);
             this.selIndex = [];
         }
     }

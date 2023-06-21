@@ -1,8 +1,8 @@
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { IDataOptions, PivotView, IAxisSet, IFieldOptions, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
-import { renewableEnergy } from './datasource.ts';
+import { IDataOptions, PivotView, IAxisSet, IFieldOptions, PivotViewComponent, IDataSet } from '@syncfusion/ej2-angular-pivotview';
+import { renewableEnergy } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -12,29 +12,29 @@ import { renewableEnergy } from './datasource.ts';
 
 export class AppComponent implements OnInit {
 
-    public width: string;
-    public height: number;
-    public dataSourceSettings: IDataOptions;
-    public cellTemplate: string;
+    public width?: string;
+    public height?: number;
+    public dataSourceSettings?: IDataOptions;
+    public cellTemplate?: string;
 
     @ViewChild('pivotview',{static: false})
-    public pivotGridObj: PivotViewComponent;
+    public pivotGridObj?: PivotViewComponent;
 
     trend(): void {
         let cTable: HTMLElement[] = [].slice.call(document.getElementsByClassName("e-table"));
-        let colLen: number = this.pivotGridObj.pivotValues[3].length;
+        let colLen: number = this.pivotGridObj?.pivotValues[3].length as number;
         let cLen: number = cTable[3].children[0].children.length;
         let rLen: number = cTable[3].children[1].children.length;
         let rowIndx: number;
 
         for (let k: number = 0; k < rLen; k++) {
-            if (this.pivotGridObj.pivotValues[k] && this.pivotGridObj.pivotValues[k][0] !== undefined) {
-                rowIndx = ((this.pivotGridObj.pivotValues[k][0]) as IAxisSet).rowIndex;
+            if (this.pivotGridObj?.pivotValues[k] && this.pivotGridObj?.pivotValues[k][0] !== undefined) {
+                rowIndx = ((this.pivotGridObj?.pivotValues[k][0]) as IAxisSet).rowIndex as number;
                 break;
             }
         }
         let rowHeaders: HTMLElement[] = [].slice.call(cTable[2].children[1].querySelectorAll('td'));
-        let rows: IFieldOptions[] = this.pivotGridObj.dataSourceSettings.rows as IFieldOptions[];
+        let rows: IFieldOptions[] = this.pivotGridObj?.dataSourceSettings.rows as IFieldOptions[];
         if (rowHeaders.length > 1) {
             for (let i: number = 0, Cnt = rows; i < Cnt.length; i++) {
                 let fields: any = {};
@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
                     let header: any = rowHeaders[j];
                     if (header.className.indexOf('e-gtot') === -1 && header.className.indexOf('e-rowsheader') > -1 && header.getAttribute('fieldname') === rows[i].name) {
                         var headerName = rowHeaders[j].getAttribute('fieldname') + '_' + rowHeaders[j].textContent;
-                        fields[rowHeaders[j].textContent] = j;
+                        fields[rowHeaders[j as number].textContent as string] = j;
                         fieldHeaders.push(rowHeaders[j].textContent);
                     }
                 }
@@ -63,14 +63,14 @@ export class AppComponent implements OnInit {
                                 if (prevNode) {
                                     prevRi = prevNode.getAttribute("index");
                                 }
-                                if (ri && ri < [].slice.call(this.pivotGridObj.pivotValues).length) {
-                                    if ((this.pivotGridObj.pivotValues[prevRi][ci] as IAxisSet).value > (this.pivotGridObj.pivotValues[ri][ci]  as IAxisSet).value &&
-                                     node.querySelector('.tempwrap')) {
-                                        let trendElement: HTMLElement = node.querySelector('.tempwrap');
+                                if (ri && ri < [].slice.call(this.pivotGridObj?.pivotValues).length) {
+                                    if (((this.pivotGridObj?.pivotValues[prevRi][ci] as IAxisSet).value as number) > ((this.pivotGridObj?.pivotValues[ri][ci]  as IAxisSet).value as number) &&
+                                    node.querySelector('.tempwrap')) {
+                                        let trendElement: HTMLElement = node.querySelector('.tempwrap') as HTMLElement;
                                         trendElement.className = trendElement.className.replace('sb-icon-neutral', 'sb-icon-loss');
-                                    } else if ((this.pivotGridObj.pivotValues[prevRi][ci]  as IAxisSet).value < (this.pivotGridObj.pivotValues[ri][ci]  as IAxisSet).value &&
-                                     node.querySelector('.tempwrap')) {
-                                        let trendElement: HTMLElement = node.querySelector('.tempwrap');
+                                    } else if (((this.pivotGridObj?.pivotValues[prevRi][ci]  as IAxisSet).value as number) < ((this.pivotGridObj?.pivotValues[ri][ci]  as IAxisSet).value as number) &&
+                                    node.querySelector('.tempwrap')) {
+                                        let trendElement: HTMLElement = node.querySelector('.tempwrap') as HTMLElement;
                                         trendElement.className = trendElement.className.replace('sb-icon-neutral', 'sb-icon-profit');
                                     }
                                 }
@@ -90,7 +90,7 @@ export class AppComponent implements OnInit {
         this.cellTemplate = '<span class="tempwrap sb-icon-neutral e-icons"></span>';
 
         this.dataSourceSettings = {
-            dataSource: renewableEnergy,
+            dataSource: renewableEnergy as IDataSet[],
             expandAll: true,
             enableSorting: true,
             drilledMembers: [{ name: 'Year', items: ['FY 2015', 'FY 2017', 'FY 2018'] }],

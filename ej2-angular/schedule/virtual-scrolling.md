@@ -24,7 +24,7 @@ To achieve better performance in the Scheduler when loading a large number of re
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs88" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs88" %}
 
 ![Displaying Virtual Scrolling in Schedule](images/schedule-virtualscrolling.gif)
 

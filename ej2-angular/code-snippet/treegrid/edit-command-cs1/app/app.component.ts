@@ -18,10 +18,10 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegri
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
-    public commands: CommandModel;
+    public data?: Object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
+    public commands?: CommandModel;
     ngOnInit(): void {
         this.data = sampleData;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row' };
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
         this.commands = [{ type: 'Edit', buttonOption: { iconCss: ' e-icons e-edit', cssClass: 'e-flat' } },
                 { type: 'Delete', buttonOption: { iconCss: 'e-icons e-delete', cssClass: 'e-flat' } },
                 { type: 'Save', buttonOption: { iconCss: 'e-icons e-update', cssClass: 'e-flat' } },
-                { type: 'Cancel', buttonOption: { iconCss: 'e-icons e-cancel-icon', cssClass: 'e-flat' } }];
+                { type: 'Cancel', buttonOption: { iconCss: 'e-icons e-cancel-icon', cssClass: 'e-flat' } }] as CommandModel;
     }
 }
 

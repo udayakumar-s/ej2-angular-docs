@@ -43,7 +43,7 @@ The appointments can be created dynamically by using `addEvent` method. Either y
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs27" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs27" %}
 
 ### Inserting events into database at server-side
 
@@ -94,7 +94,7 @@ Additionally, the regex condition has been added to the Location field, so that 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs28" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs28" %}
 
 You can also dynamically prevent the creation of appointments on Scheduler. For example, say if you want to decline the creation of appointments on weekend days, you can check for its appropriate condition within the `actionBegin` event.
 
@@ -110,7 +110,7 @@ You can also dynamically prevent the creation of appointments on Scheduler. For 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs29" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs29" %}
 
 ## Edit
 
@@ -143,7 +143,7 @@ The appointments can be edited and updated manually using the `saveEvent` method
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs30" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs30" %}
 
 **Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely `RecurrenceID` mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the `RecurrenceID` field value. The `saveEvent` method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
 
@@ -163,7 +163,7 @@ In case of modifying the single occurrence, it is also necessary to update the `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs31" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs31" %}
 
 ### Updating events in database at server-side
 
@@ -400,7 +400,7 @@ You can also dynamically prevent the editing of appointments on Scheduler. For e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs32" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs32" %}
 
 ## Delete
 
@@ -435,7 +435,7 @@ The appointments can be removed manually using the `deleteEvent` method. The fol
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs33" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs33" %}
 
 **Recurring Event** - The recurring events can be removed as an entire series or simply removing single occurrence by using the deleteEvent method which takes in either the `DeleteSeries` or `DeleteOccurrence` parameters. The following code example shows how to delete entire series.
 
@@ -451,7 +451,7 @@ The appointments can be removed manually using the `deleteEvent` method. The fol
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs34" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs34" %}
 
 ### Removing events from database at server-side
 
@@ -615,7 +615,7 @@ When you drag and drop a normal event on the Scheduler, the event editing action
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs35" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs35" %}
 
 ## Resize
 
@@ -635,6 +635,6 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs36" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs36" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

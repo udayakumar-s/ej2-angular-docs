@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { VirtualScrollService } from '@syncfusion/ej2-angular-grids';
 import { PageSettingsModel, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
-let virtualData = [];
+let virtualData: any = [];
 let names: string[] = ['hardire', 'abramjo01', 'aubucch01', 'Hook', 'Rumpelstiltskin', 'Belle', 'Emma', 'Regina', 'Aurora', 'Elsa', 'Anna',
                       'Snow White', 'Prince Charming', 'Cora', 'Zelena', 'August', 'Mulan', 'Graham', 'Discord', 'Will', 'Robin Hood',
                       'Jiminy Cricket', 'Henry', 'Neal', 'Red', 'Aaran', 'Aaren', 'Aarez', 'Aarman', 'Aaron', 'Aaron-James', 'Aarron',
@@ -77,10 +77,10 @@ dataSource();
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public options: PageSettingsModel;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public options?: PageSettingsModel;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
     public rules: object = { required: true };
     ngOnInit(): void {
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };

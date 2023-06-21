@@ -26,4 +26,4 @@ The following example illustrates how to disable a radio button and the selected
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/radio-button/getting-started-cs3" %}

@@ -13,9 +13,9 @@ import { editingData} from './data';
 
 export class AppComponent{
     // Data for Gantt
-    public editingData: object[];
-    public taskSettings: object;
-    public editSettings: object;
+    public editingData?: object[];
+    public taskSettings?: object;
+    public editSettings?: object;
     public ngOnInit(): void {
         this.editingData = editingData;
         this.taskSettings = {

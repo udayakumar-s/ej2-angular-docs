@@ -18,15 +18,14 @@ import { GroupSettingsModel, FilterSettingsModel } from '@syncfusion/ej2-angular
             <e-column field='ShipCountry' headerText='Ship Country' [visible]='false' width='150'></e-column>
             <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
         </e-columns>
-    </ejs-grid>
-                `,
+    </ejs-grid>`,
     providers: [SortService, GroupService, ColumnMenuService, PageService, FilterService]
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public groupOptions: GroupSettingsModel;
-    public filterSettings: FilterSettingsModel;
+    public data?: object[];
+    public groupOptions?: GroupSettingsModel;
+    public filterSettings?: FilterSettingsModel;
     ngOnInit(): void {
         this.data = data;
         this.groupOptions = { showGroupedColumn: true };

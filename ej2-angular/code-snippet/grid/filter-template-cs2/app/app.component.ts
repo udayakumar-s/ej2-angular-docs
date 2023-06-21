@@ -23,13 +23,14 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    @ViewChild('grid') public grid: GridComponent;
-    public data: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public data?: object[];
     public fields: object = { text: 'Name', value: 'Name' };
     public height = '220px';
     public dropdata: string[] = DataUtil.distinct(data, 'Name') as string[];
     public onChange(args: any): void {
-        this.grid.filterByColumn('Name', 'equal', args.value);
+        (this.grid as any).filterByColumn('Name', 'equal', (args as any).value);
     }
     ngOnInit(): void {
         this.data = data;

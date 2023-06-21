@@ -5,7 +5,7 @@ import { data } from './datasource';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.template.html',
+    templateUrl: './app.template.html',
     styles: [`
             .e-table {
                 border: solid 1px #e0e0e0;
@@ -30,7 +30,7 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
 })
 export class AppComponent implements OnInit {
 
-    public items: object[];
+    public items?: object[] | any;
 
     public ngOnInit(): void {
         this.items = new DataManager(data as JSON[]).executeLocal(new Query().page(1, 8));

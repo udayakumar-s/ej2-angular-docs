@@ -19,34 +19,34 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public isAddable: boolean = true;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public isAddable?: boolean = true;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
-    cellEdit(args) {
-        if (args.rowData['Role'] == 'Employee') {
-            args.cancel = true;
+    cellEdit(args: any) {
+        if ((args as any).rowData['Role'] == 'Employee') {
+            (args as any).cancel = true;
         }
     }
-    beforeBatchAdd(args) {
+    beforeBatchAdd(args: any) {
         if (!this.isAddable) {
-            args.cancel = true;
+            (args as any).cancel = true;
         }
     }
-    beforeBatchDelete(args) {
-        if (args.rowData['Role'] == 'Employee') {
-            args.cancel = true;
+    beforeBatchDelete(args: any) {
+        if ((args as any).rowData['Role'] == 'Employee') {
+            (args as any).cancel = true;
         }
     }
-    btnClick(args) {
-        args.target.innerText == 'Grid is Addable' ? (args.target.innerText = 'Grid is Not Addable') : (args.target.innerText = 'Grid is Addable');
-        this.isAddable = !this.isAddable;
+    btnClick(args: any) {
+        (args as any).target.innerText == 'Grid is Addable' ? ((args as any).target.innerText = 'Grid is Not Addable') : ((args as any).target.innerText = 'Grid is Addable');
+        (this as any).isAddable = !(this as any).isAddable;
     }
 }
 

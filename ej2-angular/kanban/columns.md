@@ -30,7 +30,7 @@ Kanban columns are categorized by mapping the **key** from the datasource using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/single-key-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/single-key-cs1" %}
 
 ## Multi-key mapping
 
@@ -48,7 +48,7 @@ Kanban board allows to render a single column by mapping multiple keys using `ke
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/multiple-keys-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/multiple-keys-cs1" %}
 
 ## Header text
 
@@ -70,7 +70,7 @@ You can customize the column header with any HTML or CSS element using the `temp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/header-template-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/header-template-cs1" %}
 
 ## Toggle columns
 
@@ -90,7 +90,7 @@ Kanban allows to expand or collapse its columns using `allowToggle` inside the `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/toggle-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/toggle-cs1" %}
 
 ### Initially collapsed column
 
@@ -112,7 +112,7 @@ In the following example, the backlog column is collapsed on initialization of K
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/expanded-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/expanded-cs1" %}
 
 ## Stacked headers
 
@@ -134,4 +134,4 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/stacked-headers-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/stacked-headers-cs1" %}

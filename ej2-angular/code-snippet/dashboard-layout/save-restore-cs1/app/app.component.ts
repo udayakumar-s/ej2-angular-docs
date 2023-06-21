@@ -6,7 +6,7 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/default-style.css'],
+    styleUrls: ['./default-style.css'],
     template: `
     <div class="control-section">
         <div class="inline" id="control">
@@ -22,9 +22,9 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    @ViewChild('defaultLayout') dashboard: DashboardLayoutComponent;
-    @ViewChild('saveBtn') saveBtn: ButtonComponent;
-    @ViewChild('restoreBtn') restoreBtn: ButtonComponent;
+    @ViewChild('defaultLayout') dashboard?: DashboardLayoutComponent;
+    @ViewChild('saveBtn') saveBtn?: ButtonComponent;
+    @ViewChild('restoreBtn') restoreBtn?: ButtonComponent;
     public restoreModel: any = [];
     public cellSpacing: number[] = [10, 10];
     public panels: any = [{ "sizeX": 1, "sizeY": 1, "row": 0, "col": 0, content: '<div class="content">0</div>' },
@@ -36,8 +36,8 @@ export class AppComponent {
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 3, content: '<div class="content">6</div>' }
     ];
 
-    onSaveClick() {
-      this.restoreModel= this.dashboard.serialize();
+    onSaveClick(args: any) {
+      this.restoreModel= this.dashboard?.serialize();
       this.restoreModel[0].content = '<div class="content">0</div>';
       this.restoreModel[1].content = '<div class="content">1</div>';
       this.restoreModel[2].content = '<div class="content">2</div>';
@@ -47,8 +47,8 @@ export class AppComponent {
       this.restoreModel[6].content = '<div class="content">6</div>';
     }
 
-    onrestoreClick() {
-      this.dashboard.panels = this.restoreModel;
+    onrestoreClick(args: any) {
+      this.dashboard!.panels = this.restoreModel;
     }
 }
 

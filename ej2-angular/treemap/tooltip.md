@@ -28,7 +28,7 @@ The tooltip is not visible by default, to make it visible, set the [`visible`](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs53" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs53" %}
 
 ## Format tooltip
 
@@ -46,7 +46,7 @@ The tooltip content is displayed by default based on the [`weightValuePath`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs54" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs54" %}
 
 ## Tooltip template
 
@@ -64,4 +64,4 @@ Tooltip can be rendered as a custom component using the [`template`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/getting-started/treemap-cs55" %}
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs55" %}

@@ -16,12 +16,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = [
     {
@@ -66,7 +66,7 @@ export class AppComponent{
             };
     }
     filter(): void {
-        this.ganttObj.filterByColumn('TaskName','startswith','Iden','and');
+        this.ganttObj!.filterByColumn('TaskName','startswith','Iden','and');
         };
 }
 

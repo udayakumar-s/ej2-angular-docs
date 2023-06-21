@@ -1,5 +1,4 @@
 
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
@@ -20,28 +19,29 @@ import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, 
 })
 
 export class AppComponent implements OnInit {
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public element: HTMLElement;
-    public dropdownobj: DropDownList;
-    public params: IEditCell;
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public element?: HTMLElement;
+    public dropdownobj?: DropDownList;
+    public params?: IEditCell;
 
     public create = () => {
         this.element = document.createElement('input');
         return this.element;
     };
     public read = () => {
-        return this.dropdownobj.value;
+        return (this.dropdownobj as any).value;
     };
     public destroy = () => {
-        this.dropdownobj.destroy();
+        (this.dropdownobj as any).destroy();
     };
-    public write = (args) => {
+    public write = (args: any) => {
         this.dropdownobj = new DropDownList({
-            dataSource:data,
-            value: args.rowData[args.column.field],
+            dataSource: data as any,
+            value: (args as any).rowData[(args as any).column.field],
             query: new Query().select(['EmployeeID', 'ShipCountry']).take(10),
             fields: { text: 'ShipCountry', value: 'ShipCountry' },
             placeholder: 'Select a Country',

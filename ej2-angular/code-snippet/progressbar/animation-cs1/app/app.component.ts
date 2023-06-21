@@ -11,7 +11,7 @@ import { AnimationModel } from '@syncfusion/ej2-progressbar';
     `
 })
 export class AppComponent implements OnInit {
-    public animation: AnimationModel;
+    public animation?: AnimationModel;
     ngOnInit(): void {
         this.animation = { enable: true, duration: 2000, delay: 0 };
     }

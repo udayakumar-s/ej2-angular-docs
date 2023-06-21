@@ -113,7 +113,7 @@ You can start adding Essential JS 2 barcode-generator component to the applicati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/getting-started/initialize-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/getting-started/initialize-cs1" %}
 
 ## Adding QR Generator control
 
@@ -131,7 +131,7 @@ You can add the QR code in our Angular Barcode Generator component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/getting-started/qrcode-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/getting-started/qrcode-cs1" %}
 
 ## Adding Datamatrix Generator control
 
@@ -149,6 +149,6 @@ You can add the datamatrix code in our Angular Barcode Generator component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/getting-started/datamatrix-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/getting-started/datamatrix-cs1" %}
 
 > You can refer to our [Angular Barcode Generator](https://www.syncfusion.com/angular-ui-components/angular-barcode) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Barcode Generator example](https://ej2.syncfusion.com/angular/demos/#/material/barcode/default-functionalities) that shows how to render the Barcode in Angular.

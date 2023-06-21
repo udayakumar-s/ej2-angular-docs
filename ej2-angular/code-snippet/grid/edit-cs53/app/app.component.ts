@@ -19,12 +19,12 @@ import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[] | object;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[] | object;
 
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     }
 
     clickHandler(args: ClickEventArgs): void {
-        if (args.item.id === 'Click') {
+        if ((args as any).item.id === 'Click') {
             alert('Custom Toolbar Click...');
         }
     }

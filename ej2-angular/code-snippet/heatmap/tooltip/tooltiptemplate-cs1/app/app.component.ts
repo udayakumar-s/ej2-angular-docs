@@ -2,6 +2,7 @@
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
+import { ITooltipEventArgs } from '@syncfusion/ej2-angular-heatmap';
 
 @Component({
     selector: 'my-app',

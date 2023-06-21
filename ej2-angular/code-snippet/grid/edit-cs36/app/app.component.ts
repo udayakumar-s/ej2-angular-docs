@@ -21,10 +21,10 @@ import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('Grid') public Grid: GridComponent;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    @ViewChild('Grid') public Grid?: GridComponent;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;
@@ -32,12 +32,12 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
     public btnClick(): void {
-        if (this.Grid.element.classList.contains('disablegrid')) {
-            this.Grid.element.classList.remove('disablegrid');
-            document.getElementById('GridParent').classList.remove('wrapper');
+        if ((this.Grid as any).element.classList.contains('disablegrid')) {
+            (this.Grid as any).element.classList.remove('disablegrid');
+            (document.getElementById('GridParent') as any).classList.remove('wrapper');
         } else {
-            this.Grid.element.classList.add('disablegrid');
-            document.getElementById('GridParent').classList.add('wrapper');
+            (this.Grid as any).element.classList.add('disablegrid');
+            (document.getElementById('GridParent') as any).classList.add('wrapper');
         }
     }
 }

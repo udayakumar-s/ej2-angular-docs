@@ -28,7 +28,7 @@ You can allow the specific types of files alone to upload using the `allowedExte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs12" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs12" %}
 
 ## File size
 
@@ -46,7 +46,7 @@ The uploader component allows you to validate the files based on its size. The v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs13" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs13" %}
 
 ## Maximum files count
 
@@ -64,7 +64,7 @@ You can restrict uploading the maximum number of files using the **selected** ev
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs14" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs14" %}
 
 ## Duplicate files
 
@@ -82,7 +82,7 @@ You can validate the duplicate files before uploading to server using the select
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs15" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs15" %}
 
 > You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
 

@@ -38,7 +38,7 @@ Category axis are used to represent, the string values instead of numbers.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs28" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs28" %}
 
 <!-- markdownlint-disable MD036 -->
 **Positioning Axis Labels**
@@ -59,7 +59,7 @@ using [`labelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs29" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs29" %}
 
 >Note: To use category axis, we need to inject `CategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `Category`.
 
@@ -83,7 +83,7 @@ You can use the numeric axis to represent numeric values of data in chart. By de
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs1" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs1" %}
 
 **Customize Numeric Range**
 
@@ -101,7 +101,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs2" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs2" %}
 
 **Apply Padding to the Range**
 
@@ -129,7 +129,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs3" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs3" %}
 
 **Numeric - Round**
 
@@ -147,7 +147,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs4" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs4" %}
 
 **Numeric - Additional**
 
@@ -165,7 +165,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs5" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs5" %}
 
 **Numeric - Normal**
 
@@ -183,7 +183,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs6" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs6" %}
 
 **Numeric - Auto**
 
@@ -201,7 +201,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs7" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs7" %}
 
 ## DateTime Axis
 
@@ -219,7 +219,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs2" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs2" %}
 
 **Customizing Date Time Range**
 
@@ -237,7 +237,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs3" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs3" %}
 
 **Date Time Intervals**
 
@@ -265,7 +265,7 @@ DateTime axis supports following interval types,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs4" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs4" %}
 
 **Applying Padding to the Range**
 
@@ -291,7 +291,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs5" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs5" %}
 
 **DateTime - Round**
 
@@ -309,7 +309,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs6" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs6" %}
 
 **DateTime - Additional**
 
@@ -327,7 +327,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs7" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs7" %}
 
 >Note: To use datetime axis, we need to inject `DateTimeService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `DateTime`.
 
@@ -350,7 +350,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing dat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/log-cs1" %}
+{% previewsample "page.domainurl/samples/chart/axis/log-cs1" %}
 
 **Customize Logarithmic Range**
 
@@ -368,7 +368,7 @@ Range of an axis, will be calculated automatically based on the provided data, y
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/log-cs2" %}
+{% previewsample "page.domainurl/samples/chart/axis/log-cs2" %}
 
 **Logarithmic Base**
 
@@ -386,7 +386,7 @@ Logarithmic base can be customized by using the [`logBase`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/log-cs3" %}
+{% previewsample "page.domainurl/samples/chart/axis/log-cs3" %}
 
 **Logarithmic Interval**
 
@@ -404,7 +404,7 @@ Logarithmic axis interval can be customized by using the [`interval`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/log-cs4" %}
+{% previewsample "page.domainurl/samples/chart/axis/log-cs4" %}
 
 >Note: To use log axis, we need to inject `LogarithmicService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `Logarithmic`.
 
@@ -426,7 +426,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs30" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs30" %}
 
 ## Label Format
 
@@ -446,7 +446,7 @@ Numeric labels can be formatted by using the [`labelFormat`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs8" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs8" %}
 
 The following table describes the result of applying some commonly used label formats on numeric values.
 
@@ -523,7 +523,7 @@ You can format and parse the date to all globalize format using [`labelFormat`]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs8" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs8" %}
 
 The following table describes the result of applying some common date time formats to the labelFormat property
 
@@ -586,7 +586,7 @@ Axis also supports custom label format using placeholder like {value}°C, in w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs31" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs31" %}
 
 ## Common Axis Features
 
@@ -606,7 +606,7 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs32" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs32" %}
 
 **Label Customization**
 
@@ -624,7 +624,7 @@ The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs33" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs33" %}
 
 **Edge Label Placement**
 
@@ -642,7 +642,7 @@ Labels with long text at the edges of an axis may appear partially in the chart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs9" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs9" %}
 
 **Grid Lines Customization**
 
@@ -660,7 +660,7 @@ You can customize the `width`, `color` and `dashArray` of the minor and maj
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs34" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs34" %}
 
 **Tick Lines Customization**
 
@@ -678,7 +678,7 @@ You can customize the  `width`, `color` and `size` of the minor and major 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs35" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs35" %}
 
 **Place Axes at the Opposite Side**
 
@@ -698,7 +698,7 @@ To place an axis opposite from its original position, set [`opposedPosition`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs36" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs36" %}
 
 ## Multiple Axis
 
@@ -716,7 +716,7 @@ In addition to primary X and Y axis, we can add n number of axis to the chart. S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-panes-cs1" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-panes-cs1" %}
 
 ## Smart Axis Labels
 
@@ -736,7 +736,7 @@ When setting `labelIntersectAction` as `Hide`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-cs4" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-cs4" %}
 
 When setting `labelIntersectAction` as `Rotate45`
 
@@ -752,7 +752,7 @@ When setting `labelIntersectAction` as `Rotate45`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-cs5" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-cs5" %}
 
 When setting `labelIntersectAction` as `Rotate90`
 
@@ -768,7 +768,7 @@ When setting `labelIntersectAction` as `Rotate90`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-cs6" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-cs6" %}
 
 ## Strip Lines
 
@@ -792,7 +792,7 @@ Striplines are rendered in the specified start to end range and you can add more
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs1" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs1" %}
 
 **Vertical Striplines**
 
@@ -811,7 +811,7 @@ Striplines are rendered in the specified start to end range and you can add more
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs2" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs2" %}
 
 **Customize the strip line**
 
@@ -829,7 +829,7 @@ Starting value in specific strip line can be customized by <code>start</code> pr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs3" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs3" %}
 
 **Customize the stripline text**
 
@@ -848,4 +848,4 @@ Horizontal and vertical alignment of stripline text can be changed by `horizonta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/strip-line-cs4" %}
+{% previewsample "page.domainurl/samples/chart/axis/strip-line-cs4" %}

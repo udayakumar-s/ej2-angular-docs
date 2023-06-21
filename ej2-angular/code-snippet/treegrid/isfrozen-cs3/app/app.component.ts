@@ -1,6 +1,6 @@
 
 
-import { TreeGrid, Selection, Edit, Toolbar, DialogEditEventArgs, EditSettingsModel, FreezeService } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGrid, Selection, Edit, Toolbar, EditSettingsModel, FreezeService } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 
@@ -22,10 +22,10 @@ import { sampleData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbar: string[];
-    public editSettings: EditSettingsModel;
-    public validationrules: Object;
+    public data?: object[];
+    public toolbar?: string[];
+    public editSettings?: EditSettingsModel;
+    public validationrules?: Object;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         this.validationrules = { required: true };
     }
 
-    actionComplete(args) {
+    actionComplete(args: any) {
         if (args.requestType === 'beginEdit' || args.requestType === 'add') {
             // Add Validation Rules
             args.movableForm.ej2_instances[0].addRules('duration', { max: 200 });

@@ -150,7 +150,7 @@ Refer the below sample for more information.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/quickstart-cs1" %}
+{% previewsample "page.domainurl/samples/common/quickstart-cs1" %}
 
 >Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
 
@@ -254,7 +254,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/quickstart1-cs1" %}
+{% previewsample "page.domainurl/samples/common/quickstart1-cs1" %}
 
 By using the Syncfusion Angular Grid component, you can easily add a robust data Grid to your Angular application that supports paging and sorting of data. For more details refer [Syncfusion Angular Grid](../grid/getting-started/).
 

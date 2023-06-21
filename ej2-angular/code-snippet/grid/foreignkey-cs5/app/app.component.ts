@@ -1,8 +1,7 @@
 
-
 import { Component, OnInit } from '@angular/core';
 import { ForeignKeyService, EditService, EditSettingsModel, ToolbarService } from '@syncfusion/ej2-angular-grids';
-import { orderDetails, customerData, employeeData } from './datasource.ts';
+import { orderDetails, customerData, employeeData } from './datasource';
 
 @Component({
     selector: 'app-root',
@@ -21,9 +20,9 @@ import { orderDetails, customerData, employeeData } from './datasource.ts';
 })
 export class AppComponent implements OnInit {
 
-    public orderDetails: object[];
-    public customerData: object[];
-    public employeeData: object[];
+    public orderDetails?: object[];
+    public customerData?: object[];
+    public employeeData?: object[];
     public editoption: EditSettingsModel = { allowEditing: true, allowAdding: true, allowDeleting: true };
     toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     // public edit = 'dropdownedit';

@@ -22,12 +22,13 @@ MultiSelect.Inject(CheckBoxSelection);
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public filteredValue: object[];
-    public filterOptions: FilterSettingsModel;
-    public filter: IFilter;
-    public dropInstance: MultiSelect;
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public filteredValue?: object[];
+    public filterOptions?: FilterSettingsModel;
+    public filter?: IFilter;
+    public dropInstance?: MultiSelect;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -38,7 +39,7 @@ export class AppComponent implements OnInit {
             ui: {
                 create: (args: { target: Element, column: object }) => {
                     let flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
-                    args.target.appendChild(flValInput);
+                    (args as any).target.appendChild(flValInput);
                     this.dropInstance = new MultiSelect({
                         dataSource: new DataManager(data),
                         fields: { text: 'OrderID', value: 'OrderID' },
@@ -53,22 +54,22 @@ export class AppComponent implements OnInit {
                     column: object, target: Element, parent: any,
                     filteredValue: number[] | string[]
                 }) => {
-                    let filteredValue = [];
-                    this.grid.filterSettings.columns.map((item) => {
+                    let filteredValue: any = [];
+                    (this.grid as any).filterSettings.columns.map((item: any) => {
                         if (item.field === 'OrderID' && item.value){
                             filteredValue.push((item as any).value);
                         }
                     });
                     if (filteredValue.length > 0){
-                        this.dropInstance.value = filteredValue;
+                        this.dropInstance?.value = filteredValue;
                     }
                 },
                 read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {
-                    this.grid.removeFilteredColsByField(args.column.field);
-                    args.fltrObj.filterByColumn(
-                        args.column.field,
+                    (this.grid as any).removeFilteredColsByField((args as any).column.field);
+                    (args as any).fltrObj.filterByColumn(
+                        (args as any).column.field,
                         'contains',
-                        this.dropInstance.value
+                        this.dropInstance?.value
                     );
                 },
             },

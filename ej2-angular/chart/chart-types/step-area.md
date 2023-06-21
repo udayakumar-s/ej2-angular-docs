@@ -25,7 +25,7 @@ To render a step area series, use series [`type`](https://ej2.syncfusion.com/ang
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/area-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs6" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ The following properties can be used to customize the `step area` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/steparea-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/steparea-cs" %}
 
 ## See Also
 

@@ -28,7 +28,7 @@ When setting `labelIntersectAction` as `Hide`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-cs1" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-cs1" %}
 
 When setting `labelIntersectAction` as `Rotate45`
 
@@ -44,7 +44,7 @@ When setting `labelIntersectAction` as `Rotate45`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-cs2" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-cs2" %}
 
 When setting `labelIntersectAction` as `Rotate90`
 
@@ -60,7 +60,7 @@ When setting `labelIntersectAction` as `Rotate90`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-cs3" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-cs3" %}
 
 ## Axis Labels Positioning
 
@@ -78,7 +78,7 @@ By default, the axis labels can be placed at `outside` the axis line and this al
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs9" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs9" %}
 
 ## Multilevel Labels
 
@@ -108,7 +108,7 @@ Using the categories property, you can configure the `start`, `end`, `text`, and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs10" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs10" %}
 
 ### Overflow
 
@@ -126,7 +126,7 @@ Using the `overflow` property, you can `trim` or `wrap` the multilevel labels.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs11" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs11" %}
 
 ### Alignment
 
@@ -144,7 +144,7 @@ The `alignment` property provides option to position the multilevel labels at `f
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs12" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs12" %}
 
 ### Text customization
 
@@ -162,7 +162,7 @@ The `textStyle` property of multilevel labels provides options to customize the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs13" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs13" %}
 
 ### Border customization
 
@@ -181,7 +181,7 @@ are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBot
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs14" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs14" %}
 
 ## Edge Label Placement
 
@@ -199,7 +199,7 @@ Labels with long text at the edges of an axis may appear partially in the chart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/datetime-cs1" %}
+{% previewsample "page.domainurl/samples/chart/axis/datetime-cs1" %}
 
 ## Trim using maximum label width
 
@@ -217,7 +217,7 @@ You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs15" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs15" %}
 
 ## Labels Customization
 
@@ -239,7 +239,7 @@ To known more about labels customization, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs16" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs16" %}
 
 ### Label Rotation
 
@@ -257,7 +257,7 @@ The axis labels can be rotated based on the `labelRotation` property in `primary
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs17" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs17" %}
 
 ## Customizing Specific Point
 
@@ -275,7 +275,7 @@ You can customize the specific text in the axis labels using `axisLabelRender` e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs18" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs18" %}
 
 ## Line break support
 
@@ -293,7 +293,7 @@ Line break feature used to customize the long axis label text into multiple line
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs19" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs19" %}
 
 ## Maximum Labels
 
@@ -311,4 +311,4 @@ Line break feature used to customize the long axis label text into multiple line
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs20" %}
+{% previewsample "page.domainurl/samples/chart/axis/category-cs20" %}

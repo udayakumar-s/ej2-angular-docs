@@ -1,9 +1,9 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, DisplayOption, PivotChartService, ChartSeriesCreatedEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, DisplayOption, PivotChartService, ChartSeriesCreatedEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,14 +13,14 @@ import { Pivot_Data } from './datasource.ts';
   [chartSettings]='chartSettings' [displayOption]='displayOption' (chartSeriesCreated)='chartSeriesCreated($event)'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
-    public chartSettings: ChartSettings;
-    public displayOption: DisplayOption;
+    public dataSourceSettings?: IDataOptions;
+    public chartSettings?: ChartSettings;
+    public displayOption?: DisplayOption;
 
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
@@ -29,9 +29,9 @@ export class AppComponent implements OnInit {
             filters: []
         };
 
-        this.displayOption = { view: 'Chart' } as DisplayOPtion;
+        this.displayOption = { view: 'Chart' } as DisplayOption;
         this.chartSettings = { chartSeries: { type: 'Column' }} as ChartSettings;
-    },
+    }
 
     chartSeriesCreated(args: ChartSeriesCreatedEventArgs){
         for (let pos:number = 0; pos < args.series.length; pos++) {
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
                 args.series[pos].visible = false;
             }
         }
-    },
+    }
 }
 
 

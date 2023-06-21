@@ -18,11 +18,12 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editSettings: EditSettingsModel;
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: EditSettingsModel;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
+toolbar: any;
     public ngOnInit(): void {
         this.data =  [
             {
@@ -68,7 +69,7 @@ export class AppComponent{
             Duration: 3,
             Progress: 50
             };
-            this.ganttObj.editModule.addRecord(record,'Below',2);
+            this.ganttObj!.editModule.addRecord(record,'Below',2);
         };
 }
 

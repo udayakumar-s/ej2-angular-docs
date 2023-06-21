@@ -28,7 +28,7 @@ To load a translation object in your application use [`load`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/locale-cs2" %}
+{% previewsample "page.domainurl/samples/common/locale-cs2" %}
 
 ## Changing current locale
 

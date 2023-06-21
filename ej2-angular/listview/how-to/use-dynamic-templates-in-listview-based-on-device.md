@@ -28,4 +28,4 @@ In the ListView component, template support is being used. In some cases, the co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/dynamic-template-cs2" %}
+{% previewsample "page.domainurl/samples/listview/dynamic-template-cs2" %}

@@ -4,16 +4,15 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ej-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
+    template: `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y'></e-accumulation-series>
         </e-accumulation-series-collection>
-    </ej-accumulationchart>`
+    </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
-    public piedata: Object[];
-    public legendSettings: Object;
+    public piedata?: Object[];
+    public legendSettings?: Object;
     ngOnInit(): void {
         this.legendSettings = {
             position: 'Right',

@@ -30,4 +30,4 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs48" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs48" %}

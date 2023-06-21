@@ -29,11 +29,11 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('ejDialog') ejDialog: DialogComponent;
+    @ViewChild('ejDialog') ejDialog: DialogComponent | any;
     // Create element reference for dialog target element.
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef }) container: ElementRef |any;
 
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
 
     //To get all element of the dialog component after component get initialized.
     ngOnInit() {
@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
         }
     ];
     // Sample level code to handle the button click action
-    public onOpenDialog = function (event: any): void {
+    public onOpenDialog =  (event: any): void => {
         // Call the show method to open the Dialog
         this.ejDialog.show();
     }

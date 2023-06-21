@@ -1,6 +1,7 @@
 
 
 import { Component, ViewChild, Inject } from '@angular/core';
+import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { TimelineViewsService , EventSettingsModel} from '@syncfusion/ej2-angular-schedule';
 
 @Component({
@@ -8,7 +9,7 @@ import { TimelineViewsService , EventSettingsModel} from '@syncfusion/ej2-angula
   providers: [TimelineViewsService ],
   // specifies the template string for the Schedule component
   template: `<div id="container">
-  <button (click)="onOpenDialog($event)">Open dialog</button>
+  <button (click)="onOpenDialog()">Open dialog</button>
   <ejs-dialog id="modalDialog" #modalDialog [closeOnEscape]="'false'" [visible]='false'
     [position]='position' [animationSettings]="animationSettings" height='94%' width='100%' [showCloseIcon]="'true'">
     <ng-template #content>
@@ -26,7 +27,7 @@ import { TimelineViewsService , EventSettingsModel} from '@syncfusion/ej2-angula
 })
 
 export class AppComponent {
-  @ViewChild('modalDialog') modalDialog: DialogComponent;
+  @ViewChild('modalDialog') modalDialog: DialogComponent | undefined;
   public animationSettings: Object = { effect: 'SlideTop', duration: 400, delay: 0 };
   public renderSchedule: boolean = false;
   public selectedDate: Date = new Date(2022, 1, 3);
@@ -45,10 +46,11 @@ export class AppComponent {
         Description: 'Knowledge sharing on JSP topics.',
         StartTime: new Date(2022, 1, 4, 15, 0),
         EndTime: new Date(2022, 1, 4, 17, 0),
-    }];
+    }],
   };
+position: any;
   public onOpenDialog() {
-    this.modalDialog.show();
+    this.modalDialog!.show();
     this.renderSchedule = true;
   }
 }

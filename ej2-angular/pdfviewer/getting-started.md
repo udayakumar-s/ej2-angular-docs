@@ -140,7 +140,7 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pdfviewer/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/pdfviewer/getting-started-cs1" %}
 
 > For PDF Viewer serviceUrl creation, follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/how-to/create-pdfviewer-service/)
 

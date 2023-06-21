@@ -28,7 +28,7 @@ In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documenta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/frozenrows-cs1" %}
+{% previewsample "page.domainurl/samples/grid/frozenrows-cs1" %}
 
 > * Frozen rows and columns should not be set outside the grid view port.
 > * Frozen Grid will support row and column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
@@ -65,7 +65,7 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/frozenrows-cs2" %}
+{% previewsample "page.domainurl/samples/grid/frozenrows-cs2" %}
 
 > * Freeze Direction is not compatible with the [`isFrozen`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isfrozen) and [`frozenColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozencolumns) properties.
 
@@ -105,6 +105,6 @@ Validation rules for the 'EmployeeID' and 'Freight' columns can be added in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/frozenrows-cs3" %}
+{% previewsample "page.domainurl/samples/grid/frozenrows-cs3" %}
 
 > This is applicable when a frozen column is enabled and the edit mode is set as "**Normal**" in the Grid.

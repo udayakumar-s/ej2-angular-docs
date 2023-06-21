@@ -30,7 +30,7 @@ The following code example demonstrates editing in the Gantt component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/celledit-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/celledit-cs2" %}
 
 ## Troubleshoot: Editing works only when primary key column is defined
 
@@ -52,4 +52,4 @@ You can set default values when new task dialog opens using [actionBegin](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/addrow-toolbar-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/addrow-toolbar-cs2" %}

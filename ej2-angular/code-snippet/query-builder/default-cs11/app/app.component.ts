@@ -1,7 +1,8 @@
 
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
+import { RuleModel } from '@syncfusion/ej2-angular-querybuilder';
 
 @Component({
     selector: 'app-root',
@@ -21,8 +22,8 @@ import { employeeData } from './datasource';
 
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
     public values: string[] = ['Mr.', 'Mrs.'];
     ngOnInit(): void {
     this.data = employeeData;

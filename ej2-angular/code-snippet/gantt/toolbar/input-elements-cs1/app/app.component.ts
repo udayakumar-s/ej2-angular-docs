@@ -21,8 +21,8 @@ import { ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
      public templateEle: any = new NumericTextBox({ format: 'c2', value: 1, width: 150 });
     public ngOnInit(): void {
         this.data = [

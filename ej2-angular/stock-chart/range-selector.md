@@ -28,7 +28,7 @@ The left and right thumb of RangeNavigator are used to indicate the selected ran
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/range-selector-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/range-selector-cs1" %}
 
 ## Visibility of range selector
 
@@ -46,4 +46,4 @@ The [`enableSelector`](https://ej2.syncfusion.com/angular/documentation/api/stoc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/range-selector-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/range-selector-cs2" %}

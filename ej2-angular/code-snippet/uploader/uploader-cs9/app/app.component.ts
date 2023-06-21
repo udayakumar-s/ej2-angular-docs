@@ -15,6 +15,7 @@ import { Component } from '@angular/core';
               `
 })
 export class AppComponent {
+    public dropEle?: any;
      public path: Object = {
       saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
       removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove' };

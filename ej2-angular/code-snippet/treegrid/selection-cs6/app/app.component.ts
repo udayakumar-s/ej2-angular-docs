@@ -18,11 +18,11 @@ import { SelectionSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angul
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public selectionOptions: SelectionSettingsModel;
+    public data?: Object[];
+    public selectionOptions?: SelectionSettingsModel;
 
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     }
 
     click(): void{
-        this.treegrid.clearSelection();
+        (this.treegrid as TreeGridComponent).clearSelection();
     }
 }
 

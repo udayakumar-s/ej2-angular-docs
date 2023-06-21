@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 
 @Component({
   selector: 'app-container',

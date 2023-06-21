@@ -9,7 +9,7 @@ import { NG_VALIDATORS, FormControl, Validator, ValidationErrors } from '@angula
 
 
 export class SliderValidaton implements Validator {
-    validate(c: FormControl): ValidationErrors {
+    validate(c: FormControl): ValidationErrors | any {
         const isValid = c.value > 10;
         return isValid ? null : 'not valid';
     }

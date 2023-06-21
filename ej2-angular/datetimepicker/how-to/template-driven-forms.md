@@ -39,4 +39,4 @@ The following example  demonstrates template driven forms with DateTimePicker co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/template-driven-cs1" %}
+{% previewsample "page.domainurl/samples/datetimepicker/template-driven-cs1" %}

@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { toolData } from 'datasource.ts';
+import { toolData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title' [tooltip]='tooltip'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title' [tooltip]='tooltip'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' width=2 name='China' [marker]='marker' [tooltipFormat]="tooltipFormat"></e-series>
             <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y1' width=2 name='China' [marker]='marker'></e-series>
@@ -11,12 +10,12 @@ import { toolData } from 'datasource.ts';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public marker: Object;
-    public tooltip: Object;
-    public tooltipFormat: string;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public marker?: Object;
+    public tooltip?: Object;
+    public tooltipFormat?: string;
     ngOnInit(): void {
       this.chartData = toolData;
         this.primaryXAxis = {

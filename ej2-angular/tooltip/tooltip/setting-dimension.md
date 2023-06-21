@@ -29,7 +29,7 @@ The following sample explains how to set dimensions for the Tooltip.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-002-cs2" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-002-cs2" %}
 
 ### Scroll mode
 
@@ -47,6 +47,6 @@ When `height` is specified with a certain pixel value and the Tooltip content ov
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs39" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs39" %}
 
 > The scrolling mode can best be seen when the sticky mode of the Tooltip is enabled. To enable sticky mode, set the `isSticky` property to true.

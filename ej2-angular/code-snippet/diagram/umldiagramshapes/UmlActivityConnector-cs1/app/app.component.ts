@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
-import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { BpmnFlows, DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
 import { ConnectorModel } from '@syncfusion/ej2-diagrams';
 @Component({
   selector: "app-container",
@@ -10,7 +10,7 @@ import { ConnectorModel } from '@syncfusion/ej2-diagrams';
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
 
     public connectors: ConnectorModel[] = [
     {
@@ -19,7 +19,7 @@ export class AppComponent {
      //Define connector start and end points
      sourcePoint: { x: 100, y: 100 },
      targetPoint: { x: 200, y: 200 },
-     shape: { type: 'UmlActivity', flow: 'Exception' }
+     shape: { type: 'UmlActivity', flow: 'Exception' as BpmnFlows }
   }
  ];
 }

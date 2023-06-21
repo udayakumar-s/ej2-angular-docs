@@ -5,7 +5,7 @@ import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/default-style.css'],
+    styleUrls: ['./default-style.css'],
     template: `
     <div class="control-section">
         <ejs-dashboardlayout id='defaultLayout' #defaultLayout [columns]='columns' [cellSpacing]='cellSpacing' [panels]='panels' 
@@ -15,7 +15,7 @@ import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    @ViewChild('defaultLayout') dashboardLayout: DashboardLayoutComponent;
+    @ViewChild('defaultLayout') dashboardLayout?: DashboardLayoutComponent;
     public cellSpacing: number[] = [10, 10];
     public columns: number = 5;
     public panels: any = [
@@ -27,12 +27,12 @@ export class AppComponent {
     {'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 2, content:'<div class="content">5</div>'},
     {'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 3, content:'<div class="content">6</div>'},
     ];
+    $this: any;
 
     //Dashboard Layout's created event function
     onCreated(args: any) {
        // movePanel("id", row, col)
-        this.dashboardLayout.movePanel("layout_0", 1, 0);
-
+        this.dashboardLayout?.movePanel("layout_0", 1, 0);
     }
     //Dashboard Layout's change event function
     onChange(args: any) {

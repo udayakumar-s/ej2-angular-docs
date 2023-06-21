@@ -47,17 +47,17 @@ import { Component, OnInit } from '@angular/core';
 `
 })
 export class AppComponent implements OnInit {
-    public ranges: Object[];
-    public titleStyle: Object;
-    public title: string;
-    public animation1: Object;
-    public animation2: Object;
-    public animation3: Object;
-    public animation4: Object;
-    public lineStyle: Object;
-    public labelStyle: Object;
-    public majorTicks: Object;
-    public minorTicks: Object;
+    public ranges?: Object[];
+    public titleStyle?: Object;
+    public title?: string;
+    public animation1?: Object;
+    public animation2?: Object;
+    public animation3?: Object;
+    public animation4?: Object;
+    public lineStyle?: Object;
+    public labelStyle?: Object;
+    public majorTicks?: Object;
+    public minorTicks?: Object;
     public rangeRadialGradient: Object = {
         radius: '50%', innerPosition: { x: '50%', y: '50%' },
         outerPosition: { x: '50%', y: '50%' },

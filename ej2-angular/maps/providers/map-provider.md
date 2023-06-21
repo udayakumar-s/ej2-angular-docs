@@ -28,7 +28,7 @@ The OSM Maps can be rendered using the [urlTemplate](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs84" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs84" %}
 
 ### Changing the tile server of the OpenStreetMap
 
@@ -50,7 +50,7 @@ The OSM Maps layer can be zoomed and panned. Zooming helps to get a closer look 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs85" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs85" %}
 
 ## Adding markers and navigation line
 
@@ -68,7 +68,7 @@ Markers can be added to the layers of OSM Maps by setting the corresponding loca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs86" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs86" %}
 
 ## Adding sublayer
 
@@ -86,7 +86,7 @@ Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs87" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs87" %}
 
 ## Enabling legend
 
@@ -104,4 +104,4 @@ The legend can be added to the tile Maps by setting the [visible](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs88" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs88" %}

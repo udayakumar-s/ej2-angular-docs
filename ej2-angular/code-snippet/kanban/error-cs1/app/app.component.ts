@@ -1,7 +1,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
+import { CardSettingsModel, KanbanComponent } from '@syncfusion/ej2-angular-kanban';
 import { DataManager } from '@syncfusion/ej2-data';
 
 @Component({
@@ -16,19 +16,19 @@ import { DataManager } from '@syncfusion/ej2-data';
             </ejs-kanban>`
 })
 export class AppComponent {
-    @ViewChild('Kanban') public kanban: KanbanComponent;
+    @ViewChild('Kanban') public kanban?: KanbanComponent;
     public cardSettings: CardSettingsModel = {
         contentField: 'Summary',
         headerField: 'Id'
     };
-    private dataManager: DataManager = new DataManager({
+    public dataManager: DataManager = new DataManager({
        url: 'http://some.com/invalidUrl'
     });
     onActionFailure(e: Error): void {
-       let span: HTMLElement = document.createElement('span');
-       this.kanban.element.parentNode.insertBefore(span, this.kanban.element);
-       span.style.color = '#FF0000'
-       span.innerHTML = 'Server exception: 404 Not found';
+      let span: HTMLElement = document.createElement('span');
+      ((this.kanban as KanbanComponent).element.parentNode as ParentNode).insertBefore(span, (this.kanban as KanbanComponent).element);
+      span.style.color = '#FF0000'
+      span.innerHTML = 'Server exception: 404 Not found';
     }
 }
 

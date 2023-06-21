@@ -3,6 +3,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { ToolbarItems } from '@syncfusion/ej2-treegrid';
+import { Column, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -17,27 +18,27 @@ import { ToolbarItems } from '@syncfusion/ej2-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pager: Object;
+    public data?: Object[];
+    public pager?: Object;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
-    public toolbarOptions: ToolbarItems[];
+    public treeGridObj?: TreeGridComponent;
+    public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;
         this.pager = { pageSize: 7 };
         this.toolbarOptions = ['ExcelExport'];
     }
-    toolbarClick(args: Object) : void {
+    toolbarClick(args: Object | any) : void {
         if (args['item'].text === 'Excel Export') {
-            let cols: Column[] = this.treeGridObj.grid.columns;
+            let cols: Column[] = this.treeGridObj?.grid.columns as Column[];
             cols[2].visible = false;
             cols[3].visible = true;
-            this.treeGridObj.excelExport();
+            this.treeGridObj?.excelExport();
         }
     }
-    excelExportComplete(): void {
-        let cols: Column[] = this.treeGridObj.grid.columns;
+    excelExportComplete(ars: any): void {
+        let cols: Column[] = this.treeGridObj?.grid.columns as Column[];
         cols[3].visible = false;
         cols[2].visible = true;
     }

@@ -28,7 +28,7 @@ The following sample illustrates how to query the data source and pass the data 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs7" %}
 
 ## Limit the minimum filter character
 
@@ -48,7 +48,7 @@ In the following example, the remote request does not fetch the search data unti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs8" %}
 
 ## Change the filter type
 
@@ -68,7 +68,7 @@ In the following examples, data filtering is done with `endsWith` type.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs9" %}
 
 ## Case sensitive filtering
 
@@ -88,7 +88,7 @@ The following example shows how to perform case-sensitive filter.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs10" %}
 
 ## Diacritics Filtering
 
@@ -108,7 +108,7 @@ In the following sample,data with diacritics are bound as dataSource for MultiSe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs11" %}
 
 ## See Also
 

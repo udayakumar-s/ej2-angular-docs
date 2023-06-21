@@ -35,6 +35,6 @@ The following are the standard keys that works on uploader component:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/uploader/uploader-cs16" %}
+{% previewsample "page.domainurl/samples/uploader/uploader-cs16" %}
 
 > You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.

@@ -85,7 +85,7 @@ The following example demonstrates the DateTimePicker in `German` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/localization-cs1" %}
+{% previewsample "page.domainurl/samples/datetimepicker/localization-cs1" %}
 
 ## Right-To-Left
 
@@ -105,4 +105,4 @@ The following code example initialize the DateTimePicker component in `Arabic` c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/datetimepicker/rtl-cs1" %}

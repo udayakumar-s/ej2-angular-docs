@@ -92,4 +92,4 @@ Use the below list of shortcut keys to interact with the TimePicker after the Ti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/accessibility-cs1" %}
+{% previewsample "page.domainurl/samples/datetimepicker/accessibility-cs1" %}

@@ -28,7 +28,7 @@ To enable this feature, you have to set the [enableImmutableMode](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/immutable-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/immutable-cs1" %}
 
 ## Limitations
 

@@ -33,13 +33,13 @@ import { SplitterComponent} from '@syncfusion/ej2-angular-layouts';
       </div>`
 })
 export class AppComponent {
-  @ViewChild('remove') splitterObj: SplitterComponent;
+  @ViewChild('remove') splitterObj?: SplitterComponent;
     constructor() {
     }
 
     removePane(): void {
-      if (this.splitterObj.allPanes.length > 1) {
-          this.splitterObj.removePane(1);
+      if ((this.splitterObj as any).allPanes.length > 1) {
+          this.splitterObj?.removePane(1);
       }
     }
 }

@@ -39,7 +39,7 @@ The following example shows enabling sparkline data label for all points.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs11" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs11" %}
 
 ## Customize data label
 
@@ -59,7 +59,7 @@ Data labels can be customized using the fill, border, opacity, and textStyle. Th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs12" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs12" %}
 
 ## Format data label text
 
@@ -79,4 +79,4 @@ The text of data labels can be formatted using the `format` API in the sparkline
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sparkline/getting-started/sparkline-cs13" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs13" %}

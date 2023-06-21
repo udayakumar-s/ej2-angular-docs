@@ -42,4 +42,4 @@ The below styles changes the Calendar's other month dates to visible state from 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/how-to-othermonth-cs1" %}
+{% previewsample "page.domainurl/samples/calendar/how-to-othermonth-cs1" %}

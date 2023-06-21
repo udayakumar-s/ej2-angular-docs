@@ -61,4 +61,4 @@ In the following sample, the `actionSuccess` event will trigger once the value s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/server-actions-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/server-actions-cs1" %}

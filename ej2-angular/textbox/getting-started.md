@@ -181,7 +181,7 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/icon-support-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/icon-support-cs1" %}
 
 ## Floating label
 
@@ -200,7 +200,7 @@ You can create the floating label TextBox by using the [floatLabelType](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/textbox-component-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/textbox-component-cs1" %}
 
 ## See Also
 

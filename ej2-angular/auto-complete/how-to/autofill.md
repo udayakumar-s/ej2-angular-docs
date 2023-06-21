@@ -26,4 +26,4 @@ In the below sample, showcase that how to work `autofill` with AutoComplete.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs15" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs15" %}

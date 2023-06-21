@@ -1,6 +1,7 @@
 
 
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 
@@ -11,6 +12,8 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('samples')
+    public tree?: TreeViewComponent;
+
     constructor() {
     }
     // defined the array of data

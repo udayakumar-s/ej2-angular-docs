@@ -298,6 +298,6 @@ The output will display the Scheduler with the specified view configuration.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/views-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/views-cs1" %}
 
 > You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) that shows how to use the toolbar buttons to play with Scheduler functionalities.

@@ -29,7 +29,7 @@ The process of formatting is explained in the below sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/how-to-01-cs1" %}
+{% previewsample "page.domainurl/samples/slider/how-to-01-cs1" %}
 
 ### Time Format
 
@@ -47,7 +47,7 @@ The time formatting can be achieved same as the date formatting using `rendering
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/how-to-02-cs1" %}
+{% previewsample "page.domainurl/samples/slider/how-to-02-cs1" %}
 
 ### Numeric Value Customization
 
@@ -66,7 +66,7 @@ The Numeric processing is demonstrated below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/how-to-03-cs1" %}
+{% previewsample "page.domainurl/samples/slider/how-to-03-cs1" %}
 
 ## Slider with ngModel
 
@@ -120,7 +120,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/ngmodel-cs1" %}
+{% previewsample "page.domainurl/samples/slider/ngmodel-cs1" %}
 
 ## Slider in Angular reactive form
 
@@ -186,7 +186,7 @@ Slider value choosen as: {{value}}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/reactiveform-cs1" %}
+{% previewsample "page.domainurl/samples/slider/reactiveform-cs1" %}
 
 ## Slider validation using Template-driven Forms
 
@@ -212,7 +212,7 @@ Slider can be validated in Angular using [Template-driven](https://angular.io/gu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/templateform-cs1" %}
+{% previewsample "page.domainurl/samples/slider/templateform-cs1" %}
 
 ## Slider validation using FormValidator
 
@@ -308,7 +308,7 @@ this.formObject.validate();
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/how-to-04-cs1" %}
+{% previewsample "page.domainurl/samples/slider/how-to-04-cs1" %}
 
 ## Customize the bar
 
@@ -360,7 +360,7 @@ change(args: SliderChangeEventArgs) => {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/bar-customization-cs1" %}
+{% previewsample "page.domainurl/samples/slider/bar-customization-cs1" %}
 
 ## Customize the limits
 
@@ -386,7 +386,7 @@ Slider appearance can be customized via CSS. By overriding the slider CSS classe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/limits-customization-cs1" %}
+{% previewsample "page.domainurl/samples/slider/limits-customization-cs1" %}
 
 ## Customize the ticks
 
@@ -425,7 +425,7 @@ applied to the value of the `child_number` in the slider.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/ticks-customization-cs1" %}
+{% previewsample "page.domainurl/samples/slider/ticks-customization-cs1" %}
 
 ## Customize the thumb
 
@@ -474,4 +474,4 @@ Slider appearance can be customized through CSS. By overriding the slider CSS cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/thumb-customization-cs1" %}
+{% previewsample "page.domainurl/samples/slider/thumb-customization-cs1" %}

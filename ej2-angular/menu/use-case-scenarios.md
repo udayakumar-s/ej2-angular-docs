@@ -26,7 +26,7 @@ The menu component supports horizontal and vertical scrolling to render large me
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/scroll-cs1" %}
+{% previewsample "page.domainurl/samples/menu/scroll-cs1" %}
 
 ## Menu in toolbar
 
@@ -44,7 +44,7 @@ The following example demonstrates how to integrate Menu with Toolbar component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/toolbar-menu-cs1" %}
+{% previewsample "page.domainurl/samples/menu/toolbar-menu-cs1" %}
 
 ## Hamburger menu
 
@@ -62,7 +62,7 @@ The following example demonstrates the use case of menu with Accordion component
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/sidebar-menu-cs1" %}
+{% previewsample "page.domainurl/samples/menu/sidebar-menu-cs1" %}
 
 ## Mobile view
 
@@ -80,4 +80,4 @@ The following example demonstrates the use case of Menu in Mobile mode by using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/listview-cs1" %}
+{% previewsample "page.domainurl/samples/menu/listview-cs1" %}

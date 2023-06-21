@@ -20,9 +20,9 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids'
 })
 export class AppComponent implements OnInit {
 
-  public data: object[] = employeeData;
+  public data?: object[] = employeeData;
   @ViewChild('grid')
-  grid: GridComponent;
+  grid?: GridComponent;
 
   public lineData: object[] = [
     [0, 6, -4, 1, -3, 2, 5],
@@ -37,6 +37,9 @@ export class AppComponent implements OnInit {
     [6, 4, 0, -3, 2, -5, 1],
   ];
 
+  ngOnInit(): void {
+  }
+
   public getSparkData(type: string, count: number): any {
     if (type === 'line') {
       return this.lineData[count] as number[];
@@ -44,7 +47,7 @@ export class AppComponent implements OnInit {
   }
   public renderGridSparkline(): void {
     setTimeout(() => {
-      const length = this.grid.dataSource.length
+      const length = (this.grid as any).dataSource.length
       for (let i: number = 1; i <= length; i++) {
         let line: Sparkline = new Sparkline({
           height: '50px',

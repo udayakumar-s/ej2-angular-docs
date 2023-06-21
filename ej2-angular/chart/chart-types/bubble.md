@@ -26,7 +26,7 @@ To render a bubble series, use series [`type`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/bubble-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/bubble-cs1" %}
 
 ## Size mapping
 
@@ -44,7 +44,7 @@ To render a bubble series, use series [`type`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/bubble-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/bubble-cs2" %}
 
 ## Series customization
 
@@ -65,7 +65,7 @@ The following properties can be used to customize the `bubble` series.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/bubble-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/bubble-cs" %}
 
 ## See Also
 

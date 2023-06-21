@@ -24,4 +24,4 @@ SortDirection allows you to sort the columns bounded to the Query Builder to vie
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs9" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs9" %}

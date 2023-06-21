@@ -22,11 +22,12 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    public selectionSettings: SelectionSettingsModel;
-    public initialPage: object;
-    @ViewChild('treegrid') public treegrid: TreeGridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    public selectionSettings?: SelectionSettingsModel;
+    public initialPage?: object;
+    @ViewChild('treegrid') public treegrid?: TreeGridComponent;
+pager: any;
     ngOnInit(): void {
         this.data = sampleData;
         this.toolbarOptions = ['PdfExport'];
@@ -35,11 +36,11 @@ export class AppComponent implements OnInit {
 
     toolbarClick(args: ClickEventArgs) {
         if (args.item.id === 'TreeGrid_gridcontrol_pdfexport') {
-            const selectedRecords = this.treegrid.getSelectedRecords();
+            const selectedRecords = (this.treegrid as TreeGridComponent).getSelectedRecords();
             const exportProperties = {
                 dataSource: selectedRecords
             };
-            this.treegrid.pdfExport(exportProperties);
+            this.treegrid?.pdfExport(exportProperties);
         }
     }
 }

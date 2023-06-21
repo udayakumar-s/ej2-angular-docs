@@ -26,7 +26,7 @@ The Code 39 character set includes the digits 0-9, the letters A-Z (upper case o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/code39-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/code39-cs1" %}
 
 ## Code39 Extended
 
@@ -44,7 +44,7 @@ Code 39 Extended is an extended version of Code 39 that supports ASCII character
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/code39extd-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/code39extd-cs1" %}
 
 ## Code 11
 
@@ -62,7 +62,7 @@ Code 11 is used primarily for labeling the telecommunication equipment’s. The 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/code11-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/code11-cs1" %}
 
 ## Codabar
 
@@ -84,7 +84,7 @@ The characters, A, B, C and D are used as start and stop characters. Codabar is 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/code11-cs2" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/code11-cs2" %}
 
 ## Code 32
 
@@ -107,7 +107,7 @@ The value to be encoded must be 8 digits Pharmacode (prefix it with ‘0’ if n
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/code32-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/code32-cs1" %}
 
 ## Code 93
 
@@ -125,7 +125,7 @@ Code 93 is designed to complement and improve upon Code 39. It can represent the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/code93-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/code93-cs1" %}
 
 ## Code 93 Extended
 
@@ -157,7 +157,7 @@ The last seven characters of Code Sets A and B (character values 96 - 102) and t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/code128-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/code128-cs1" %}
 
 ## Customizing the Barcode color
 
@@ -175,7 +175,7 @@ A page or printed media with barcode often appears colorful in the background an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/color-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/color-cs1" %}
 
 ## Customizing the Barcode dimension
 
@@ -193,7 +193,7 @@ The dimension of the barcode can be changed using the height and width property 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/dimension-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/dimension-cs1" %}
 
 ## Customizing the text
 
@@ -211,4 +211,4 @@ In barcode generators you can customize the barcode text by using display text p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/barcodegenerator/text-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/barcodegenerator/text-cs1" %}

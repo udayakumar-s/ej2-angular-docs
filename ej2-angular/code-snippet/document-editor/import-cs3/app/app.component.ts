@@ -18,11 +18,11 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public onFileOpenClick(): void {
         //Open file picker.
-        document.getElementById('open_sfdt').click();
+        (document.getElementById('open_sfdt') as HTMLElement).click();
     }
 
     public onFileChange(e: any): void {
@@ -34,11 +34,11 @@ export class AppComponent {
                 fileReader.onload = (e: any) => {
                     let contents: string = e.target.result;
                     //Open the sfdt document in Document Editor.
-                    this.documentEditor.open(contents);
+                    (this.documentEditor as DocumentEditorComponent).open(contents);
                 };
                 //Read the input file.
                 fileReader.readAsText(file);
-                this.documentEditor.documentName = file.name.substr(0, file.name.lastIndexOf('.'));
+                (this.documentEditor as DocumentEditorComponent).documentName = file.name.substr(0, file.name.lastIndexOf('.'));
             }
         }
     }

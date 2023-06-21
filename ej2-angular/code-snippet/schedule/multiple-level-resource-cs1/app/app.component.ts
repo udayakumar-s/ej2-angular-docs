@@ -39,6 +39,8 @@ export class AppComponent {
     { OwnerText: "Steven", Id: 2, OwnerGroupId: 2, OwnerColor: "#f8a398" },
     { OwnerText: "Michael", Id: 3, OwnerGroupId: 1, OwnerColor: "#7499e1" }
   ];
+currentView: any;
+allowMultipleCategory: any;
 }
 
 

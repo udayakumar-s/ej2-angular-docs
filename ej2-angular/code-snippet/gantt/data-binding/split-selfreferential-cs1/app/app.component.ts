@@ -2,6 +2,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { EditSettingsModel, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
@@ -12,10 +13,11 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItem[];
+    segmentData: { segmentId: number; StartDate: Date; Duration: number; }[] | undefined;
     public ngOnInit(): void {
         this.data =  [
             {

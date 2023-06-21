@@ -9,14 +9,17 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app/template.html'
+    templateUrl: './template.html'
 })
 export class AppComponent implements OnInit {
-    skillForm: FormGroup;
+    skillForm?: FormGroup;
     build: FormBuilder;
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.build = builder;
         this.createForm();
+    }
+    ngOnInit(): void {
+        throw new Error('Method not implemented.');
     }
     createForm() {
         this.skillForm = this.build.group({
@@ -26,13 +29,13 @@ export class AppComponent implements OnInit {
         });
     }
     get username() {
-        return this.skillForm.get('username');
+        return this.skillForm?.get('username');
     }
     get daterangepicker() {
-        return this.skillForm.get('daterangepicker');
+        return this.skillForm?.get('daterangepicker');
     }
     get usermail() {
-        return this.skillForm.get('usermail');
+        return this.skillForm?.get('usermail');
     }
 
     onSubmit() {

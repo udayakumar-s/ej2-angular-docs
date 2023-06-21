@@ -31,7 +31,7 @@ To bind local JSON data to the Scheduler, you can simply assign a JavaScript obj
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/data-bind-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/data-bind-cs1" %}
 
 > By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
@@ -57,7 +57,7 @@ Any kind of remote data services can be bound to the Scheduler. To do so, create
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/data-bind-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/data-bind-cs2" %}
 
 ### Filter events using the in-built query
 
@@ -77,7 +77,7 @@ This method greatly improves the component's performance by reducing the data th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/data-bind-cs7" %}
+{% previewsample "page.domainurl/samples/schedule/data-bind-cs7" %}
 
 The following image represents how the parameters are passed using ODataV4 filter.
 
@@ -99,7 +99,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/data-bind-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/data-bind-cs3" %}
 
 ## Loading data via AJAX post
 
@@ -156,7 +156,7 @@ To send an additional custom parameter to the server-side post, you need to make
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/data-bind-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/data-bind-cs4" %}
 
 > The parameters added using the [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#query) property will be sent along with the data request sent to the server on every scheduler actions.
 
@@ -178,7 +178,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/data-bind-cs5" %}
+{% previewsample "page.domainurl/samples/schedule/data-bind-cs5" %}
 
 > The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionfailure) event will be triggered not only on server returning errors, but also when there is an exception while processing any of the Scheduler CRUD actions.
 
@@ -330,6 +330,6 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/data-bind-cs6" %}
+{% previewsample "page.domainurl/samples/schedule/data-bind-cs6" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

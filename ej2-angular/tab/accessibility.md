@@ -60,4 +60,4 @@ you can use the following key combination for interacting with the Tab.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs1" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs1" %}

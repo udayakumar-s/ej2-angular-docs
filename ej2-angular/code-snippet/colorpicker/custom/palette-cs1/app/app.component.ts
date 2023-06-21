@@ -8,7 +8,7 @@ import { addClass } from '@syncfusion/ej2-base';
     selector: 'app-root',
     template: `<div id="preview"></div>
                <h4>Select Color</h4>
-               <input ejs-colorpicker type="color" id="element" value="#ba68c8" mode="Palette" [columns]="colCount" [inline]="true" [modeSwitcher]="false" [showButtons]="false" [presetColors]="customColors" (beforeTileRender)="tileRender($event)" (change)="onChange($event)" />`
+               <ejs-input ejs-colorpicker type="color" id="element" value="#ba68c8" mode="Palette" [columns]="colCount" [inline]="true" [modeSwitcher]="false" [showButtons]="false" [presetColors]="customColors" (beforeTileRender)="tileRender($event)" (change)="onChange($event)" />`
 })
 
 export class AppComponent {
@@ -21,7 +21,7 @@ export class AppComponent {
 
         // Triggers while selecting colors from palette.
         public onChange(args: ColorPickerEventArgs): void {
-            document.getElementById('preview').style.backgroundColor = args.currentValue.hex;
+            (document.getElementById('preview') as HTMLElement).style.backgroundColor = args.currentValue.hex;
         }
 
         // Triggers before rendering each palette tile.

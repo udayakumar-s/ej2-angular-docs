@@ -32,7 +32,7 @@ Using the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/gantt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/default-cs1" %}
 
 ## Custom column header
 
@@ -50,7 +50,7 @@ The column header text can be defined using the [`headerText`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/headertemplate-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/headertemplate-cs1" %}
 
 ## Format
 
@@ -68,7 +68,7 @@ To format the cell values based on a specific culture, use the [`columns.format`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/format-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/format-cs1" %}
 
 > By default, the number and date values are formatted in `en-US` culture.
 
@@ -110,4 +110,4 @@ Format | Formatted value
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/dateformat-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/dateformat-cs1" %}

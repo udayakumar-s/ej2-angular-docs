@@ -25,7 +25,7 @@ To render a spline series, use series [`type`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/line-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/line-cs5" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ The following properties can be used to customize the `spline` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/spline-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/spline-cs" %}
 
 ## See Also
 

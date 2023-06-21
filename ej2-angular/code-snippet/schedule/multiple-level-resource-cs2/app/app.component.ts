@@ -44,6 +44,7 @@ export class AppComponent {
     { OwnerText: 'Steven', Id: 2, OwnerColor: '#f8a398' },
     { OwnerText: 'Michael', Id: 3, OwnerColor: '#7499e1' }
   ];
+currentView: any;
 }
 
 

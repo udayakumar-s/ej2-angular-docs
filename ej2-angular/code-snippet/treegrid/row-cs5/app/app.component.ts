@@ -17,16 +17,16 @@ import { sampleData } from './datasource';
     `
 })
 export class AppComponent implements OnInit {
-    public data: Object[];
+    public data?: Object[];
      @ViewChild('treegrid')
-    public treegridObj: TreeGridComponent;
+    public treegridObj?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
     }
     public rowDrop(args: any) {
         if (args.dropPosition == 'middleSegment') {
           args.cancel = true;
-          treegridObj.reorderRows([args.fromIndex], args.dropIndex, 'above');
-       }
+          this.treegridObj?.reorderRows([args.fromIndex], args.dropIndex, 'above');
+        }
     };
 }

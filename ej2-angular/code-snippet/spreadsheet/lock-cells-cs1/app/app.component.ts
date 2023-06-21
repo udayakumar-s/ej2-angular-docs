@@ -42,42 +42,42 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
-    dialogObj: Dialog;
+    dialogObj: Dialog | undefined;
 
     budgetData: object[] = dataSource1;
 
     salaryData: object[] = dataSource2;
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold'}, 'A11:D11');
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Salary!A1:D1');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold'}, 'A11:D11');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Salary!A1:D1');
 
         // Creating dialog component,
         this.dialogObj = new Dialog({
             header: 'Spreadsheet',
-            target: document.getElementById('spreadsheet'),
+            target: document.getElementById('spreadsheet') as any,
             content: '"A1:F3" range of cells has been unlocked.',
             showCloseIcon: true,
-            isModel: true,
+            
             visible: false,
             width: '500px',
             buttons: [{
                 click: this.lockCells.bind(this), buttonModel: { content: 'Ok', isPrimary: true }
-            }];
+            }],
         });
         this.dialogObj.appendTo('#dialog');
     }
 
     btnClick (): void {
-        this.dialogObj.show();
+        this.dialogObj!.show();
     }
 
     lockCells(): void {
-        this.spreadsheetObj.lockCells('A1:F3', false);
-        this.dialogObj.hide();
+        this.spreadsheetObj!.lockCells('A1:F3', false);
+        this.dialogObj!.hide();
     }
 }
 

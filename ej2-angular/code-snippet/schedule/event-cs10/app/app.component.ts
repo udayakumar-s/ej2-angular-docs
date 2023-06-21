@@ -14,7 +14,7 @@ import {
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public data = [{
         Id: 13,
@@ -31,10 +31,10 @@ export class AppComponent {
         dataSource: this.data,
     };
     setMinimumHeight(args: EventRenderedArgs): void {
-        if (this.scheduleObj.currentView !== 'Month') {
-            let cellHeight: number = (this.scheduleObj.element.querySelector('.e-work-cells') as HTMLElement).offsetHeight;
-            let appHeight: number = (args.data.EndTime.getTime() - args.data.StartTime.getTime())
-            / (60 * 1000) * (cellHeight * this.scheduleObj.timeScale.slotCount) / this.scheduleObj.timeScale.interval;
+        if (this.scheduleObj?.currentView !== 'Month') {
+            let cellHeight: number = (this.scheduleObj?.element.querySelector('.e-work-cells') as HTMLElement).offsetHeight;
+            let appHeight: number = (args.data['EndTime'].getTime() - args.data['StartTime'].getTime())
+            / (60 * 1000) * (cellHeight * (this.scheduleObj as any).timeScale.slotCount) / (this.scheduleObj as any).timeScale.interval;
             args.element.style.height = appHeight + 'px';
         }
     }

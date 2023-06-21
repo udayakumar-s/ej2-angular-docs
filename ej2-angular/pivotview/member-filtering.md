@@ -35,7 +35,7 @@ It can be configured using the `filterSettings` option through code-behind. The 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs183" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs183" %}
 
 ## See Also
 

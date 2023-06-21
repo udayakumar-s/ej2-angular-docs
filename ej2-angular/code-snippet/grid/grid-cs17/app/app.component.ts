@@ -19,8 +19,8 @@ import { data } from './datasource';
     </ejs-grid>`,
 })
 export class AppComponent implements OnInit {
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid') public grid?: GridComponent;
     public alignmentData: Object[] = [
         { text: 'Left', value: 'Left' },
         { text: 'Right', value: 'Right' },
@@ -28,10 +28,10 @@ export class AppComponent implements OnInit {
         { text: 'Justify', value: 'Justify' },
     ];
     public changeAlignment(args: any): void {
-        this.grid.columns.forEach((col) => {
-            col.textAlign = args.value;
+        (this.grid as any).columns.forEach((col: any) => {
+            col.textAlign = (args as any).value;
         });
-        this.grid.refreshColumns();
+        (this.grid as any).refreshColumns();
     }
     ngOnInit(): void {
         this.data = data;

@@ -19,11 +19,11 @@ import {
 })
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public btnClick(): void {
         //Open page setup dialog.
-        this.documentEditor.showDialog('PageSetup');
+        (this.documentEditor as DocumentEditorComponent).showDialog('PageSetup');
     }
 }
 

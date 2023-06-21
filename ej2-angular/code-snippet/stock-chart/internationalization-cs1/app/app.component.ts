@@ -1,8 +1,9 @@
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { chartData } from 'datasource.ts';
+import { chartData } from './datasource';
 import { setCurrencyCode, L10n, setCulture  } from '@syncfusion/ej2-base';
+import { ITooltipRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 setCurrencyCode("EUR");
 
 @Component({
@@ -32,8 +33,8 @@ export class AppComponent implements OnInit {
     public crosshair: Object = {
         enable: true
     };
-    public tooltipRender(args: ITooltipRenderEventArgs): void {
-        if (args.text.split('<br/>')[4]) {
+    public tooltipRender(args: ITooltipRenderEventArgs | any): void {
+        if (args.text.split('<br/>')[4]) {
         let target: number = parseInt(args.text.split('<br/>')[4].split('<b>')[1].split('</b>')[0], 10);
         let value: string = (target / 100000000).toFixed(1) + 'B';
         args.text = args.text.replace(args.text.split('<br/>')[4].split('<b>')[1].split('</b>')[0], value);
@@ -43,6 +44,9 @@ export class AppComponent implements OnInit {
     public tooltip: object = { enable: true };
     constructor() {
         //code
+    }
+    ngOnInit(): void {
+        throw new Error('Method not implemented.');
     }
 }
 

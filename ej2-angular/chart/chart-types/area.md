@@ -26,7 +26,7 @@ To render a area series, use series [`type`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/area-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs1" %}
 
 ## Multicolored area
 
@@ -45,7 +45,7 @@ The required `segments` of the series can be customized using the `value`, `colo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/area-cs8" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs8" %}
 
 ## Series customization
 
@@ -67,7 +67,7 @@ The following properties can be used to customize the `area` series.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/area-cs9" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs9" %}
 
 ## Area border
 
@@ -88,7 +88,7 @@ The following properties in the [bordermodel](https://ej2.syncfusion.com/angular
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/area-cs10" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs10" %}
 
 ## See Also
 

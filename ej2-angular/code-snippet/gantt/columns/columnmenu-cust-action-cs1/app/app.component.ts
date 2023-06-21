@@ -15,13 +15,14 @@ import { ColumnMenuOpenEventArgs, ColumnMenuItemModel } from '@syncfusion/ej2-gr
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
+sortSettings: any;
     public columnMenuOpen(args: ColumnMenuOpenEventArgs) {
         for (const item of args.items) {
-            if (item.text === 'Filter' && args.column.field === 'TaskName') {
+            if (item.text === 'Filter' && args.column!.field === 'TaskName') {
                 (item as ColumnMenuItemModel).hide = true;
             } else {
                 (item as ColumnMenuItemModel).hide = false;

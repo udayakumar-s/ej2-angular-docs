@@ -4,6 +4,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
 import { closest } from '@syncfusion/ej2-base';
 import { RecordClickEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
     selector: 'app-root',
@@ -32,16 +33,16 @@ import { RecordClickEventArgs, GridComponent } from '@syncfusion/ej2-angular-gri
             </e-column>
         </e-columns>
     </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['./app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public header: string; 
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public header?: string; 
+    @ViewChild('grid') public grid?: GridComponent;
     @ViewChild('Dialog')
-    public dialog: DialogComponent;
-    public selectedRecord: any;
+    public dialog?: DialogComponent;
+    public selectedRecord?: any;
 
     ngOnInit(): void {
         this.data = employeeData;
@@ -51,7 +52,7 @@ export class AppComponent implements OnInit {
         if (this.selectedRecord === data) {
             this.selectedRecord = null;
         } else {
-            this.dialog.visible = true;
+            (this as any).dialog.visible = true;
             this.selectedRecord = data;
         }
     }

@@ -32,7 +32,7 @@ The following sample illustrates how to achieve an Outline ButtonGroup,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs11" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs11" %}
 
 > ButtonGroup does not have support for `flat` and `round` types.
 
@@ -62,7 +62,7 @@ The following example illustrates how to achieve predefined styles in ButtonGrou
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs12" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs12" %}
 
 > Predefined ButtonGroup styles provide only the visual indication. So,
 ButtonGroup content should define the ButtonGroup style for the users of assistive technologies such as screen readers.

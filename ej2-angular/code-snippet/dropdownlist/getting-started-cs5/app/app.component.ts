@@ -20,7 +20,7 @@ export class AppComponent {
     // maps the appropriate column to fields property
     public fields: Object = { text: 'ContactName', value: 'CustomerID' };
     //bind the Query instance to query property
-    public query: Query = new Query().from('Customers').select(['ContactName', 'CustomerID']).take(6),
+    public query: Query = new Query().from('Customers').select(['ContactName', 'CustomerID']).take(6);
     //set the placeholder to DropDownList input
     public text: string = "Select a customer";
     //sort the result items

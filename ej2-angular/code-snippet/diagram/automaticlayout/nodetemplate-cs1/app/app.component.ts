@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, SnapSettingsModel, LayoutModel, DataSourceModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, SnapSettingsModel, LayoutModel, DataSourceModel, TextModel, DecoratorModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 @Component({
@@ -12,11 +12,11 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public snapSettings: SnapSettingsModel;
-    public items: DataManager;
-    public layout: LayoutModel;
-    public dataSourceSettings: DataSourceModel;
+    public diagram?: DiagramComponent;
+    public snapSettings?: SnapSettingsModel;
+    public items?: DataManager;
+    public layout?: LayoutModel;
+    public dataSourceSettings?: DataSourceModel;
     //Initializes data source
     public data: object[] = [{
             Name: "Steve-Ceo"
@@ -72,13 +72,13 @@ export class AppComponent {
             strokeColor: '#6BA5D7',
             strokeWidth: 2
         };
-        connector.targetDecorator.style.fill  =  '#6BA5D7';
-        connector.targetDecorator.style.strokeColor  =  '#6BA5D7';
-        connector.targetDecorator.shape = 'None';
+        (((connector as ConnectorModel).targetDecorator as DecoratorModel).style as ShapeStyleModel).fill  =  '#6BA5D7';
+        (((connector as ConnectorModel).targetDecorator as DecoratorModel).style as ShapeStyleModel).strokeColor  =  '#6BA5D7';
+        ((connector as ConnectorModel).targetDecorator as DecoratorModel).shape = 'None';
         connector.type = 'Orthogonal';
         return connector;
     }
-    public setNodeTemplate(obj, diagram): void {
+    public setNodeTemplate(obj: any): void {
         obj.style.borderColor = (obj.data as {
             color: 'string'
         }).color;

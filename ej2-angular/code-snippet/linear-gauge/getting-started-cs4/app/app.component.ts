@@ -23,7 +23,7 @@ import { Component, OnInit } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent implements OnInit {
-    public Label: Object;
+    public Label?: Object;
     ngOnInit(): void {
       this.Label = {
            format: '{value}°C'

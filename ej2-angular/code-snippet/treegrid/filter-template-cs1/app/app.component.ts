@@ -22,13 +22,13 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    @ViewChild('treegrid') public treegrid: TreeGridComponent;
-    public data: Object[];
+    @ViewChild('treegrid') public treegrid?: TreeGridComponent;
+    public data?: Object[];
     public fields: object = { text: 'Priority', value: 'priority' };
     public height = '220px';
     public dropdata: string[] = DataUtil.distinct(sampleData, 'priority') as string[];
     public onChange(args: any): void {
-        this.treegrid.filterByColumn('priority', 'equal', args.value);
+        this.treegrid?.filterByColumn('priority', 'equal', args.value);
     }
     ngOnInit(): void {
         this.data = sampleData;

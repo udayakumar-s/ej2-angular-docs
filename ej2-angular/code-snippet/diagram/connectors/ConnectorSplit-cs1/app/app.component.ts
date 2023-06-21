@@ -11,8 +11,8 @@ import { Diagram, DiagramComponent, NodeModel, ConnectorModel,ConnectorConstrain
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public constraints: ConnectorConstraints;
+    public diagram?: DiagramComponent;
+    public constraints?: ConnectorConstraints;
     public nodes: NodeModel[] = [
     { id: 'node1', offsetX: 150, offsetY: 150, width: 100, height: 100, annotations: [{ content: 'node1' }] },
     { id: 'node2', offsetX: 650, offsetY: 150, width: 100, height: 100, annotations: [{ content: 'node2' }] },

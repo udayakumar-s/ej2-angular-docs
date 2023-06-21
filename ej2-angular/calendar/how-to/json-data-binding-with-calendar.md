@@ -25,4 +25,4 @@ Also our Calendar component supports the ISO formatted date value, so parsed JSO
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/json-bind-cs1" %}
+{% previewsample "page.domainurl/samples/calendar/json-bind-cs1" %}

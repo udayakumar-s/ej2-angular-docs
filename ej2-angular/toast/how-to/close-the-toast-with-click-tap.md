@@ -24,4 +24,4 @@ In default, toast gets expired based on timeOut value. You can customize toast h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs9" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs9" %}

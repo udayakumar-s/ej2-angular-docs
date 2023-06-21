@@ -15,10 +15,10 @@ import { DiagramComponent, Diagram, ConnectorModel, OrthogonalSegmentModel, Poin
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public sourcePoint: PointModel;
-    public targetPoint: PointModel;
-    public style: StrokeStyleModel;
+    public diagram?: DiagramComponent;
+    public sourcePoint?: PointModel;
+    public targetPoint?: PointModel;
+    public style?: StrokeStyleModel;
     ngOnInit(): void {
         this.sourcePoint = { x: 100, y: 100 };
         this.targetPoint = { x: 200, y: 200 };
@@ -32,7 +32,7 @@ export class AppComponent {
             strokeDashArray: '2,2'
         }
     }
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.targetDecorator = {
             style: {
                 fill: '#6BA5D7',

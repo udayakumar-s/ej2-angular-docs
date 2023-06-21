@@ -41,7 +41,7 @@ export class AppComponent {
         RankId: '9'
     }];
     public comparerFun: SortComparerFunction = (args: Record<string, any>[]) => {
-        args.sort((event1: Record<string, any>, event2: Record<string, any>) => event1.RankId.localeCompare(event2.RankId, undefined, { numeric: true }));
+        args.sort((event1: Record<string, any>, event2: Record<string, any>) => event1['RankId'].localeCompare(event2['RankId'], undefined, { numeric: true }));
         return args;
     }
     public selectedDate: Date = new Date(2017, 9, 29);

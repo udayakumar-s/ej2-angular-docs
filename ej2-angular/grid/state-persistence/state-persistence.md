@@ -30,7 +30,7 @@ You can achieve this by destroying the grid after disabling the [`enablePersiste
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs10" %}
+{% previewsample "page.domainurl/samples/grid/grouping1-cs10" %}
 
 ## Maintaining custom query in a persistent state
 
@@ -48,7 +48,7 @@ Grid does not maintain the query params after page load event when [`enablePersi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs11" %}
+{% previewsample "page.domainurl/samples/grid/grouping1-cs11" %}
 
 ## Add a new column in persisted columns list
 
@@ -66,4 +66,4 @@ The Grid columns can be persisted when the [enablePersistence](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs12" %}
+{% previewsample "page.domainurl/samples/grid/grouping1-cs12" %}

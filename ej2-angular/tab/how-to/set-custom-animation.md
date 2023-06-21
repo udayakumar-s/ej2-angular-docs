@@ -38,4 +38,4 @@ The sample demonstrates some types of animation that suits Tab. You can check al
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/animation-cs1" %}
+{% previewsample "page.domainurl/samples/tab/animation-cs1" %}

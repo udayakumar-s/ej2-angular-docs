@@ -2,7 +2,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
-import { DiagramComponent, Diagram, NodeModel } from "@syncfusion/ej2-angular-diagrams";
+import { DiagramComponent, Diagram, NodeModel, ShapeStyleModel } from "@syncfusion/ej2-angular-diagrams";
 @Component({
     selector: "app-container",
     template: `<ejs-diagram  #diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='getNodeDefaults' (created)='created($event)'>
@@ -15,26 +15,26 @@ import { DiagramComponent, Diagram, NodeModel } from "@syncfusion/ej2-angular-di
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height =  100;
         node.width =  100;
-        node.style.fill =  '#6BA5D7';
-        node.style.strokeColor =  'white';
+        ((node as NodeModel).style as ShapeStyleModel).fill =  '#6BA5D7';
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor =  'white';
         return  node;
     };
     public created(args: Object): void {
         //Start to group the changes
-        this.diagram.startGroupAction();
+        (this.diagram as Diagram).startGroupAction();
         //Makes the changes
         let color: string[] = ['black', 'red', 'green', 'yellow'];
         for (var i = 0; i < color.length; i++) {
             // Updates the fillColor for all the child elements.
-            this.diagram.nodes[0].style.fill = color[i];
-            this.diagram.dataBind();
+            ((this.diagram as Diagram).nodes[0].style as ShapeStyleModel).fill = color[i];
+            (this.diagram as Diagram).dataBind();
         }
         //Ends grouping the changes
-        this.diagram.endGroupAction();
+        (this.diagram as Diagram).endGroupAction();
     }
 }
 

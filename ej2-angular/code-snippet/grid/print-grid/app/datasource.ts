@@ -11549,7 +11549,7 @@
   ];  
   
   type cType = { CustomerID: string; ContactName: string; CustomerName: string };
-  export const data: Object[] = orderData.map((item: cType) => {
+  export const data: Object[] = orderData.map((item: any) => {
     let name: cType = (<cType[]>customerData).filter((cItem: cType) => {
       return cItem.CustomerID === item.CustomerID;
     })[0];

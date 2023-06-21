@@ -26,4 +26,4 @@ In the following sample, the searching operation starts as soon as you start typ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/search-cards-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/search-cards-cs1" %}

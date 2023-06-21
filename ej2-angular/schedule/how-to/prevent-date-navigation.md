@@ -24,4 +24,4 @@ We can prevent navigation while clicking on the date header by simply removing `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs50" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs50" %}

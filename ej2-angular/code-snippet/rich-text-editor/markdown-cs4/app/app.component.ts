@@ -25,9 +25,9 @@ import * as Marked from 'marked';
     })
     export class AppComponent  {
     @ViewChild('mdCustom')
-    public rteObj: RichTextEditorComponent;
-    public textArea: HTMLTextAreaElement;
-    public mdsource: HTMLElement;
+    public rteObj?: RichTextEditorComponent;
+    public textArea?: HTMLTextAreaElement;
+    public mdsource?: HTMLElement;
     public tools: object = {
         items:  ['Bold', 'Italic', 'StrikeThrough', '|',
         'Formats', 'OrderedList', 'UnorderedList', '|',
@@ -48,40 +48,40 @@ import * as Marked from 'marked';
 
     });
     public onCreate(): void {
-        this.textArea = this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement;
-        this.textArea.addEventListener('keyup', (e: KeyboardEventArgs) => {
+        this.textArea = (this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement;
+        this.textArea.addEventListener('keyup', () => {
             this.markDownConversion();
         });
-        this.mdsource = document.getElementById('preview-code');
-        this.mdsource.addEventListener('click', (e: MouseEvent) => {
+        this.mdsource = document.getElementById('preview-code') as any;
+        this.mdsource?.addEventListener('click', (e: MouseEvent) => {
             this.fullPreview();
         });
     }
     public markDownConversion(): void {
-        if (this.mdsource.classList.contains('e-active')) {
-            let id: string = this.rteObj.getID() + 'html-view';
-            let htmlPreview: Element = this.rteObj.element.querySelector('#' + id);
-            htmlPreview.innerHTML = marked((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value);
+        if (this.mdsource?.classList.contains('e-active')) {
+            let id: string = this.rteObj?.getID() + 'html-view';
+            let htmlPreview: Element = this.rteObj!.element.querySelector('#' + id) as Element;
+            htmlPreview.innerHTML = Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
         }
     }
     public fullPreview(): void {
-        let id: string = this.rteObj.getID() + 'html-preview';
-        let htmlPreview: HTMLElement = this.rteObj.element.querySelector('#' + id) as HTMLElement;
-        if (this.mdsource.classList.contains('e-active')) {
-            this.mdsource.classList.remove('e-active');
-            this.textArea.style.display = 'block';
+        let id: string = this.rteObj!.getID() + 'html-preview';
+        let htmlPreview: HTMLElement = this.rteObj!.element.querySelector('#' + id) as HTMLElement;
+        if (this.mdsource!.classList.contains('e-active')) {
+            this.mdsource!.classList.remove('e-active');
+            this.textArea!.style.display = 'block';
             htmlPreview.style.display = 'none';
         } else {
-            this.mdsource.classList.add('e-active');
+            this.mdsource!.classList.add('e-active');
             if (!htmlPreview) {
                 htmlPreview = createElement('div', { className: 'e-content e-pre-source' });
                 htmlPreview.id = id;
-                this.textArea.parentNode.appendChild(htmlPreview);
+                this.textArea!.parentNode!.appendChild(htmlPreview);
             }
-            this.textArea.style.display = 'none';
+            this.textArea!.style.display = 'none';
             htmlPreview.style.display = 'block';
-            htmlPreview.innerHTML = marked((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value);
-            this.mdsource.parentElement.title = 'Code View';
+            htmlPreview.innerHTML = Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
+            this.mdsource!.parentElement!.title = 'Code View';
         }
     }
     }

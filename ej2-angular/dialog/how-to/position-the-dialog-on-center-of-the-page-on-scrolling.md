@@ -25,4 +25,4 @@ When a user expects to display the Dialog in the same position without scrolling
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/scrolling-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/scrolling-cs1" %}

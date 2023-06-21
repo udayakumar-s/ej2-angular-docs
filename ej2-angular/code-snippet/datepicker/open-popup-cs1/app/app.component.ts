@@ -10,10 +10,10 @@ import { CalendarComponent, FocusEventArgs } from '@syncfusion/ej2-angular-calen
 })
 export class AppComponent {
     @ViewChild('default')
-    public datepickerObj: CalendarComponent;
+    public datepickerObj?: CalendarComponent;
 
     onFocus(args: FocusEventArgs): void {
-        this.datepickerObj.show();
+        (this.datepickerObj as any).show();
     }
 }
 

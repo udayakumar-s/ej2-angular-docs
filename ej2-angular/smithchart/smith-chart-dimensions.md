@@ -28,7 +28,7 @@ You can render smithchart to it's container size. To achieve this, you need to s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs11" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs11" %}
 
 ## Size for Smithchart
 
@@ -52,7 +52,7 @@ In smithchart's width and height property, you can directly give values in pixel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs12" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs12" %}
 
 **In percentage**
 
@@ -70,4 +70,4 @@ You can also specify the width and height of the smithchart in percentage. If yo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs13" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs13" %}

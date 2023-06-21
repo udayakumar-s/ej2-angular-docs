@@ -39,4 +39,4 @@ The following example  demonstrates template driven forms with DateRangePicker c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/template-driven-cs1" %}
+{% previewsample "page.domainurl/samples/daterangepicker/template-driven-cs1" %}

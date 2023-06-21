@@ -13,12 +13,12 @@ enableRipple(true);
 
 export class AppComponent {
     //Menu datasource
-    private data: { [key: string]: Object }[] = [
+    public data: { [key: string]: Object }[] = [
         { id: 'parent1', text: 'Events' },
         { id: 'parent2', text: 'Movies' },
         { id: 'parent3', text: 'Directory' },
-        { id: 'parent4', text: 'Queries', pId: null },
-        { id: 'parent5', text: 'Services', pId: null },
+        { id: 'parent4', text: 'Queries', pId: null as any },
+        { id: 'parent5', text: 'Services', pId: null as any },
 
         { id: 'parent6', text: 'Conferences', pId: 'parent1' },
         { id: 'parent7', text: 'Music', pId: 'parent1' },
@@ -38,7 +38,7 @@ export class AppComponent {
     ];
 
     //Menu fields definition
-    private menuFields: FieldSettingsModel = {
+    public menuFields: FieldSettingsModel = {
         itemId: 'id',
         text: 'text',
         parentId: 'pId'

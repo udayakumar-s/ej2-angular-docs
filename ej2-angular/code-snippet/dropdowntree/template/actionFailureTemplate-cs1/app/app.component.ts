@@ -21,7 +21,7 @@ export class AppComponent {
       child: { dataSource: this.data, query: this.query1, value: 'OrderID', parentValue: 'EmployeeID', text: 'ShipName' }
     };
     public actionFailureTemplate: Object = '<span class="action-failure"> Data fetch request fails<span>';
-    public placeholder: string ='Select an employee',
+    public placeholder: string ='Select an employee';
 }
 
 

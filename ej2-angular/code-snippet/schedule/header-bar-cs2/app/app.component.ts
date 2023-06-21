@@ -27,7 +27,7 @@ export class AppComponent {
     public userContentEle: HTMLElement = createElement('div', {
         className: 'e-profile-wrapper'
     });
-    public profilePopup: Popup;
+    public profilePopup?: Popup;
     onActionBegin(args: ActionEventArgs & ToolbarActionArgs):void {
         if (args.requestType === 'toolbarItemRendering') {
             let userIconItem: ItemModel = {

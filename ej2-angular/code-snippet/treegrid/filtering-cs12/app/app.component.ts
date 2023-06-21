@@ -16,12 +16,12 @@ import { diacritics } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public filterSettings: Object:
+    public data?: Object[];
+    public filterSettings?: Object;
 
     ngOnInit(): void {
         this.data = diacritics;
-        this.filterSetings = { ignoreAccent: true };
+        this.filterSettings = { ignoreAccent: true };
     }
 }
 

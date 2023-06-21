@@ -28,4 +28,4 @@ Here, Bold, Italic, Underline, and Anchor tags are used.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/load-html-cs5" %}
+{% previewsample "page.domainurl/samples/tooltip/load-html-cs5" %}

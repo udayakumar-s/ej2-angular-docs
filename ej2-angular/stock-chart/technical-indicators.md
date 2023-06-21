@@ -74,7 +74,7 @@ Moving average indicators are used to define the direction of the trend. To rend
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/technical-indicators/tma-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/technical-indicators/tma-cs1" %}
 
 **Module Dependencies**
 To render a Indicator, it is mandatory to inject `LineSeriesService` module..

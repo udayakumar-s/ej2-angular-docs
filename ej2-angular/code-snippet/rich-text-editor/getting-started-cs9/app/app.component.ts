@@ -29,10 +29,10 @@ providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickT
 })
 
 export class AppComponent {
-    private toolbarSettings: Object = {
+    public toolbarSettings: Object = {
         items: ['Image']
     };
-    private insertImageSettings: Object = {
+    public insertImageSettings: Object = {
         saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
         removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
     };

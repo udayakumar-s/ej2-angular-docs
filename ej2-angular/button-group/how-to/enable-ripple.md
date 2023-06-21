@@ -28,4 +28,4 @@ The following example illustrates how to enable ripple for ButtonGroup.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs5" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs5" %}

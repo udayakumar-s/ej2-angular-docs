@@ -3,11 +3,11 @@
 import { Component } from '@angular/core';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService, DragAndDropService, DragEventArgs } from
     '@syncfusion/ej2-angular-schedule';
-import { scheduleData } from './datasource.ts';
+import { scheduleData } from './datasource';
 
 @Component({
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, , MonthService, AgendaService, DragAndDropService],
+    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, DragAndDropService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule width='100%' height='550px' [selectedDate]="selectedDate"
   [eventSettings]="eventSettings" (dragStart) = "onDragStart($event)" ></ejs-schedule>`

@@ -19,18 +19,18 @@ import { ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
         this.toolbarOptions = ['Search'];
     }
-    created(): void {
-        document.getElementById(this.grid.element.id + "_searchbar").addEventListener('keyup', () => {
-                this.grid.search((event.target as HTMLInputElement).value)
+    created(args: any): void {
+        (document.getElementById((this.grid as any).element.id + "_searchbar") as any).addEventListener('keyup', () => {
+            (this.grid as any).search(((event as any).target as HTMLInputElement).value)
         });
     }
 }

@@ -26,4 +26,4 @@ The following example illustrates how to create ButtonGroup with rounded corner.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs3" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs3" %}

@@ -13,9 +13,9 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent {
     @ViewChild("scheduleObj")
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     @ViewChild("editButton")
-    public editButton: ButtonComponent;
+    public editButton?: ButtonComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public scheduleViews: View[] = ['Day', 'Week', 'WorkWeek', 'Month'];
     public eventSettings: EventSettingsModel = {
@@ -41,8 +41,8 @@ export class AppComponent {
             EndTime: new Date(2018, 1, 11, 11, 0),
             IsAllDay: false
         };
-        this.scheduleObj.saveEvent(data);
-        this.editButton.element.setAttribute('disabled','true');
+        this.scheduleObj?.saveEvent(data);
+        this.editButton?.element.setAttribute('disabled','true');
     }
 }
 

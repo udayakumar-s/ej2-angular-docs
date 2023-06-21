@@ -31,7 +31,7 @@ Interaction keys |Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs1" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs1" %}
 
 ## Copy to clipboard by external buttons
 
@@ -49,7 +49,7 @@ To copy selected rows or cells data into clipboard with help of external buttons
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs2" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs2" %}
 
 ## AutoFill
 
@@ -67,7 +67,7 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs1" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs1" %}
 
 > * If [`enableAutoFill`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableautofill)  is set to true, then the autofill icon will be displayed on cell selection to copy cells.
 > * It requires the selection **mode** to be **Cell**,  **cellSelectionMode** to be **Box** and also Batch Editing should be enabled.
@@ -93,7 +93,7 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs2" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs2" %}
 
 > To perform paste functionality, it requires the selection **mode** to be **Cell**,  **cellSelectionMode** to be **Box** and also Batch Editing should be enabled.
 

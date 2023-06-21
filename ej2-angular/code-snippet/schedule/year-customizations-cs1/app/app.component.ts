@@ -4,13 +4,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import {
   ScheduleComponent, EventSettingsModel, EventRenderedArgs, YearService, TimelineYearService, GroupModel, ResizeService, DragAndDropService
 } from '@syncfusion/ej2-angular-schedule';
-import { resourceData } from './datasource.ts';
+import { resourceData } from './datasource';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.component.html',
+    templateUrl: './app.component.html',
     providers: [YearService, TimelineYearService, ResizeService, DragAndDropService],
-    styleUrls: ['app/index.css'],
+    styleUrls: ['./index.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
@@ -30,6 +30,10 @@ export class AppComponent {
         { OwnerText: 'Smith', Id: 4, OwnerColor: '#f8a398' },
         { OwnerText: 'Michael', Id: 5, OwnerColor: '#f8a398' }
     ];
+currentView: any;
+isSelected: any;
+groupSettings: any;
+views: any;
     public getMonthHeaderText(date: Date): string {
         return date.toLocaleString('en-us', { month: 'long' }) + ' ' + date.getFullYear();
   }

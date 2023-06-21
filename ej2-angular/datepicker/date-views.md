@@ -36,7 +36,7 @@ The following example demonstrates how to create a DatePicker with `decade` as i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs5" %}
 
 ## Depth view restriction
 
@@ -58,6 +58,6 @@ The following example demonstrates how to create a DatePicker that allows users 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs6" %}
 
 > To know more about Calendar views refer the Calendar's [Calendar Views](../calendar/calendar-views/) section.

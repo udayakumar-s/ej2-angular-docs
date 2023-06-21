@@ -26,4 +26,4 @@ The following sample demonstrates chip-customization with the MultiSelect compon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/chip-customization-cs1" %}
+{% previewsample "page.domainurl/samples/multiselect/chip-customization-cs1" %}

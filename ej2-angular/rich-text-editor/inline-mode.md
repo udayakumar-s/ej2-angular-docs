@@ -32,4 +32,4 @@ Enabling the [`onSelection`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs12" %}

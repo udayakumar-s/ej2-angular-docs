@@ -33,30 +33,30 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent {
-    @ViewChild('ejDialog') ejDialog: DialogComponent;
+    @ViewChild('ejDialog') ejDialog: DialogComponent | undefined;
    // The Dialog shows within the target element.
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef }) container: ElementRef | undefined;
     // The Dialog shows within the target element.
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
 
     //To get all element of the dialog component after component get initialized.
     ngOnInit() {
       this.initilaizeTarget();
     }
 
-    public focusIn(target: HTMLElement): void {
+    public focusIn(target: HTMLElement| any): void {
         let parent: HTMLElement = target.parentElement;
-        if (parent.classList.contains('e-input-in-wrap') {
-            parent.parentElement.classList.add('e-input-focus');
+        if (parent.classList.contains('e-input-in-wrap')) {
+            parent.parentElement!.classList.add('e-input-focus');
         } else {
             parent.classList.add('e-input-focus');
         }
     }
 
-    public focusOut(target: HTMLElement): void {
+    public focusOut(target: HTMLElement |any): void {
         let parent: HTMLElement = target.parentElement;
-        if (parent.classList.contains('e-input-in-wrap') {
-            parent.parentElement.classList.remove('e-input-focus');
+        if (parent.classList.contains('e-input-in-wrap')) {
+            parent.parentElement!.classList.remove('e-input-focus');
         } else {
             parent.classList.remove('e-input-focus');
         }
@@ -64,7 +64,7 @@ export class AppComponent {
     public visible: Boolean = false;
     // Hide the Dialog when click the footer button.
     public hideDialog: EmitType<object> = () => {
-        this.ejDialog.hide();
+        this.ejDialog!.hide();
     }
     // Enables the footer buttons
     public buttons: Object = [
@@ -81,33 +81,33 @@ export class AppComponent {
 
     // Initialize the Dialog component target element.
     public initilaizeTarget: EmitType<object> = () => {
-      this.targetElement = this.container.nativeElement.parentElement;
+      this.targetElement = this.container!.nativeElement.parentElement;
     }
     public validation (event: any): void {
         let text = document.getElementById('textvalue');
         let text1 = document.getElementById('textvalue2');
-        if (text.value === "" && text1.value === "") {
+        if ((text as any).value === "" && (text1 as any).value === "") {
             event.cancel= true;
             alert("Enter the username and password")
-        } else if (text.value === "") {
+        } else if ((text as any).value === "") {
             event.cancel= true;
             alert("Enter the username")
-        } else if (text1.value === "") {
+        } else if ((text1 as any).value === "") {
             event.cancel= true;
             alert("Enter the password")
-        } else if (text.value.length < 4) {
+        } else if ((text as any).value.length < 4) {
             event.cancel= true;
             alert("Username must be minimum 4 characters")
         } else {
             event.cancel= false;
-            document.getElementById("textvalue").value = "";
-            document.getElementById("textvalue2").value = "";
+            (document.getElementById("textvalue")! as any).value = "";
+            (document.getElementById("textvalue2")! as any).value = "";
         }
     }
     // Sample level code to handle the button click action
-    public onOpenDialog = function(event: any): void {
+    public onOpenDialog = (event: any): void => {
         // Call the show method to open the Dialog
-        this.ejDialog.show();
+        this.ejDialog!.show();
     }
 }
 

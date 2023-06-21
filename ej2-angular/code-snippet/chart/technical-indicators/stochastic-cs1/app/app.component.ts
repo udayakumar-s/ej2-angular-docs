@@ -1,6 +1,6 @@
 
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 let chartData: any[] = [
     {x: new Date('2012-10-15'), open: 90.3357, high: 93.2557, low: 87.0885,close: 87.12,volume: 646996264},
@@ -92,9 +92,13 @@ export class AppComponent implements OnInit {
     public chartArea : Object = {
       border: { width : 0}
     };
+period: any;
     constructor() {
         //code
-    };
+    }ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
+;
 }
 
 

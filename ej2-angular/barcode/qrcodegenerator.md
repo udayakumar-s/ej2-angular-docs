@@ -26,7 +26,7 @@ A QR Code is a two-dimensional barcode that consists of a grid of dark and light
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/qrcode/qrcode-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/qrcode/qrcode-cs1" %}
 
 ## Customizing the Barcode color
 
@@ -44,7 +44,7 @@ A page or printed media with barcode often appears colorful in the background an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/qrcode/color-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/qrcode/color-cs1" %}
 
 ## Customizing the Barcode dimension
 
@@ -62,7 +62,7 @@ The dimension of the barcode can be changed using the height and width propertie
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/qrcode/dimension-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/qrcode/dimension-cs1" %}
 
 ## Customizing the text
 
@@ -80,4 +80,4 @@ In barcode generators You can customize the barcode text by using display text p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/qrcode/text-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/qrcode/text-cs1" %}

@@ -8,6 +8,6 @@ import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
   styles: [`h1 { font-family: Lato; }`]
 })
 export class DatePickerComponent  {
-  target: string = document.querySelector('.e-toolbar-item.e-active .e-tab-text').innerHTML;
+  target: string = (document.querySelector('.e-toolbar-item.e-active .e-tab-text') as Element).innerHTML;
      
 }

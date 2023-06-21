@@ -142,4 +142,4 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/asterisk-cs1" %}
+{% previewsample "page.domainurl/samples/combobox/asterisk-cs1" %}

@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
      </ejs-progressbar>`
 })
 export class AppComponent implements OnInit {
-    public trackThickness: number;
+    public trackThickness?: number;
     ngOnInit(): void {
         this.trackThickness = 80;
     }

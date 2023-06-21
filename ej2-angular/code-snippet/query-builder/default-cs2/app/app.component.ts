@@ -1,6 +1,6 @@
 
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
@@ -21,8 +21,9 @@ import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
 
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data?: DataManager;
     public values: string[] = ['Mr.', 'Mrs.'];
+    importRules: { condition: string; rules: ({ label: string; field: string; type: string; operator: string; value: number; } | { label: string; field: string; type: string; operator: string; value: string; })[]; } | undefined;
     ngOnInit(): void {
         this.data = new DataManager({
         url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/',

@@ -6124,15 +6124,15 @@ export let renewableEnergy: Object[] = getClassDate(rData);
 function getClassDate(data: Object[]): Object[] {
     let date: Date;
     for (let ln: number = 0, lt: number = data.length; ln < lt; ln++) {
-        date = new Date(data[ln]['Date'].toString());
+        date = new Date((data[ln] as any)['Date'].toString());
         let dtYr: number = date.getFullYear();
         let dtMn: number = date.getMonth();
         let dtdv: number = (dtMn + 1) / 3;
-        data[ln]['Year'] = 'FY ' + dtYr;
-        data[ln]['Quarter'] = dtdv <= 1 ? 'Q1 ' + ('FY ' + dtYr) : dtdv <= 2 ? 'Q2 ' + ('FY ' + dtYr) :
+        (data[ln] as any)['Year'] = 'FY ' + dtYr;
+        (data[ln] as any)['Quarter'] = dtdv <= 1 ? 'Q1 ' + ('FY ' + dtYr) : dtdv <= 2 ? 'Q2 ' + ('FY ' + dtYr) :
             dtdv <= 3 ? 'Q3 ' + ('FY ' + dtYr) : 'Q4 ' + ('FY ' + dtYr);
-        data[ln]['HalfYear'] = (dtMn + 1) / 6 <= 1 ? 'H1 ' + ('FY ' + dtYr) : 'H2' + ('FY ' + dtYr);
-        delete (data[ln]['Date']);
+        (data[ln] as any)['HalfYear'] = (dtMn + 1) / 6 <= 1 ? 'H1 ' + ('FY ' + dtYr) : 'H2' + ('FY ' + dtYr);
+        delete ((data[ln] as any)['Date']);
     }
     return data;
 }

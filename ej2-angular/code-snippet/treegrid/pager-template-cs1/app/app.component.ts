@@ -33,15 +33,15 @@ import { ChangeEventArgs } from '@syncfusion/ej2-inputs';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
     }
-       change(args:ChangeEventArgs){
-            this.treeGridObj.goToPage(args.value);
-            }
+        change(args:ChangeEventArgs){
+            (this.treeGridObj as TreeGridComponent).goToPage(args.value as number);
+        }
 }
 
 

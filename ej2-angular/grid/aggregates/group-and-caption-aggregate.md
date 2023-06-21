@@ -28,7 +28,7 @@ If [`groupFooterTemplate`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-group-cs1" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-group-cs1" %}
 
 > * Use the template reference variable name as **#groupFooterTemplate** to specify the group footer template and as **#groupCaptionTemplate** to specify the group caption template.
 > * The aggregate values must be accessed inside the template using their corresponding [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name.

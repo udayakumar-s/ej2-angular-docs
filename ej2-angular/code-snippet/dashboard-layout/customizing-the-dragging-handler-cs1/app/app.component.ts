@@ -4,7 +4,7 @@ import { Component,ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/default-style.css'],
+    styleUrls: ['./default-style.css'],
     template: `
         <div class="control-section">
             <ejs-dashboardlayout [columns]="6" #editLayout [cellSpacing]='cellSpacing' [draggableHandle]='draggableHandle'>
@@ -116,6 +116,7 @@ export class AppComponent {
     public legendSettings: Object = {
         visible: false
     };
+    tooltip: any;
 }
 
 

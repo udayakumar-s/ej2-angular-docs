@@ -34,7 +34,7 @@ The following code example shows the insert sheet operation in spreadsheet.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/insert/sheet-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/insert/sheet-cs1" %}
 
 ## Delete sheet
 
@@ -77,7 +77,7 @@ The following code example shows the headers and gridlines operation in spreadsh
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/headers-gridlines-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/headers-gridlines-cs1" %}
 
 ## Sheet visibility
 
@@ -105,7 +105,7 @@ The following code example shows the three types of sheet visibility state.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/sheet-visibility-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/sheet-visibility-cs1" %}
 
 ## Note
 

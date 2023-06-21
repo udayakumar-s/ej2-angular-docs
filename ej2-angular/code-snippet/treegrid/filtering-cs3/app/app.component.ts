@@ -2,6 +2,7 @@
 
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -15,11 +16,11 @@ import { sampleData } from './datasource';
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public data: Object[];
-    public filterSettings: Object;
+    public data?: Object[];
+    public filterSettings?: Object;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
-    actionBegin(e) {
+    public treeGridObj?: TreeGridComponent;
+    actionBegin(e: any) {
      if(e.requestType === 'filtersearchbegin' && e.column.type === "string")
      {
         e.operator = 'contains';

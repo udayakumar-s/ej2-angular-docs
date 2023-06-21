@@ -47,7 +47,7 @@ To map the user defined JSON data with diagram, configure the fields of [`dataSo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/dataBinding/localBinding-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/dataBinding/localBinding-cs1" %}
 
 ## Remote Data
 

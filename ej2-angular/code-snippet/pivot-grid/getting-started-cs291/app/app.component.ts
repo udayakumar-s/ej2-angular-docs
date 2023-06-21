@@ -2,7 +2,7 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { IDataOptions, IDataSet, PivotView, FieldListService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
 
 @Component({
@@ -10,34 +10,36 @@ import { Button } from '@syncfusion/ej2-buttons';
   providers: [FieldListService],
   // specifies the template string for the pivot table component
   template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width showFieldList='true' (dataBound)='ondataBound($event)'></ejs-pivotview></div><a id="save" class="btn btn-primary">Save</a><div class="fileUpload btn btn-primary"><span>Load</span><input id="files" type="file" class="upload" /></div>`,
-  styleUrls: ['app/app.component.css'],
+  styleUrls: ['./app.component.css']
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
-    public button: Button;
+    public dataSourceSettings?: IDataOptions;
+    public button?: Button;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
+    public width?: string;
 
     ondataBound(args: any) {
-       var dataSource = JSON.parse(this.pivotGridObj.getPersistData()).dataSourceSettings.dataSource;
-        var a = document.getElementById('save');
+       var dataSource = JSON.parse(this.pivotGridObj!.getPersistData()).dataSourceSettings.dataSource;
+        var a = document.getElementById('save') as HTMLElement ;
         var mime_type = 'application/octet-stream'; // text/html, image/png, et c
         a.setAttribute('download', 'pivot.JSON');
-        a.href = 'data:'+ mime_type +';base64,'+ btoa(JSON.stringify(dataSource) || '');
-        document.getElementById('files').addEventListener('change', this.readBlob, false);
+        (a as any).href = 'data:'+ mime_type +';base64,'+ btoa(JSON.stringify(dataSource) || '');
+        (document.getElementById('files') as HTMLElement).addEventListener('change', this.readBlob, false);
     }
 
     readBlob(args: any) {
-        var files = document.getElementById('load').files;
+        var files = (document.getElementById('load') as any).files;
         var file = files[0];
         var start = 0;
         var stop = file.size - 1;
         var reader = new FileReader();
-        reader.onloadend = function(evt) {
-            if (evt.target.readyState == FileReader.DONE) {
-                this.pivotGridObj.dataSource = JSON.parse(evt.target.result);
+        var $this = this;
+        reader.onloadend = function(evt: any) {
+            if (evt!.target.readyState == FileReader.DONE) {
+                $this.pivotGridObj!.dataSourceSettings.dataSource = JSON.parse(evt.target.result);
             }
         };
         var blob = file.slice(start, stop + 1);
@@ -46,7 +48,7 @@ export class AppComponent {
 
     ngOnInit(): void {
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],

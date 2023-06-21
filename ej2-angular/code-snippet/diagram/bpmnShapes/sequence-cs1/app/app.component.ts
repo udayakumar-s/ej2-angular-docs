@@ -15,9 +15,11 @@ import { DiagramComponent, BpmnFlowModel, PointModel } from '@syncfusion/ej2-ang
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public sourcePoint: PointModel;
-    public targetPoint:PointModel;
-    public shape: BpmnFlowModel;
+    public sourcePoint?: PointModel;
+    public targetPoint?:PointModel;
+    public shape?: BpmnFlowModel;
+diagramConstraints: any;
+connectorConstraints: any;
     ngOnInit(): void {
         this.sourcePoint = { x: 100, y: 100 };
         this.targetPoint = { x: 200, y: 200 };

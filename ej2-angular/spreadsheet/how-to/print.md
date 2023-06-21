@@ -24,4 +24,4 @@ You can use the `print` method by importing from ej2-base package. Here, the `Se
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/print-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/print-cs1" %}

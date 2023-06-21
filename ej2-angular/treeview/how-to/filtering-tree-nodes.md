@@ -26,4 +26,4 @@ The following code example demonstrates how to filter the tree nodes in a TreeVi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/filtering-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/filtering-cs1" %}

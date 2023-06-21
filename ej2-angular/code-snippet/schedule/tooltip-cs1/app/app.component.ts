@@ -10,8 +10,8 @@ import {
     selector: 'app-root',
     providers: [DayService, TimelineViewsService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
-    templateUrl: 'app/app.component.html',
-    styleUrls: ['app/index.css'],
+    templateUrl: './app.component.html',
+    styleUrls: ['./index.css'],
 })
 export class AppComponent {
     public selectedDate: Date = new Date(2018, 1, 15);
@@ -19,6 +19,7 @@ export class AppComponent {
         dataSource: eventsData,
         enableTooltip: true,
     };
+currentView: any;
 }
 
 

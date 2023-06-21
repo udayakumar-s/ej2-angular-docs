@@ -12,6 +12,9 @@ enableRipple(true);
             <!-- To Render Signature. -->
             <canvas ejs-signature #signature id="signature" [maxStrokeWidth]="3" [minStrokeWidth]="0.5" [velocity]="0.7"></canvas>`
 })
-export class AppComponent {}
+export class AppComponent {
+
+    
+}
 
 

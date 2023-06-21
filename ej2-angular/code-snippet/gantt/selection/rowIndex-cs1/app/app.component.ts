@@ -4,6 +4,7 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
     selector: 'app-root',
@@ -13,11 +14,11 @@ import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public selectionSettings: SelectionSettingsModel;
+    public data?: object[];
+    public taskSettings?: object;
+    public selectionSettings?: SelectionSettingsModel;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.data =  [
             {

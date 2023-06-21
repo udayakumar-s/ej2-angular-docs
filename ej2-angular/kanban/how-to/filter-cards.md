@@ -26,4 +26,4 @@ In the below sample, you can filter the cards based on the `where` query and dis
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/filter-cards-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/filter-cards-cs1" %}

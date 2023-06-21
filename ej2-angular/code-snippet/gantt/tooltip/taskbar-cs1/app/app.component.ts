@@ -15,10 +15,11 @@ import { editingData } from './data';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public tooltipSettings: object;
+   
+    public data?: object[];
+    public taskSettings?: object;
+    public tooltipSettings?: object;
+columns: any;
 
     public ngOnInit(): void {
         this.data = editingData;

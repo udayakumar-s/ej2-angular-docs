@@ -16,22 +16,22 @@ import {StockChart, StockChartAxisModel } from '@syncfusion/ej2-charts';
     </ejs-stockchart>`
 })
 export class AppComponent implements OnInit, OnDestroy {
-  public chartData: Object[];
-  public title: string;
-  public point1: Object;
-  public range: boolean;
-  public period: boolean;
+  public chartData?: Object[];
+  public title?: string;
+  public point1?: Object;
+  public range?: boolean;
+  public period?: boolean;
   public primaryXAxis: StockChartAxisModel = { valueType: 'DateTime' };
   public series1: Object[] = [];
   public value: number = 10;
-  public intervalId: any;
-  public setTimeoutValue: number;
+  public intervalId?: any;
+  public setTimeoutValue?: number;
   public i: number = 0;
   public date: Date = new Date('2019-09-16');
-  public periods: PeriodsModel[];
+  public periods?: PeriodsModel[];
 
   @ViewChild('chart', {  static: true })
-  public stock: StockChartComponent | StockChartComponent;
+  public stock?: StockChartComponent | StockChartComponent;
 
   ngOnInit() {
     this.title = 'Efficiency of oil-fired power production';
@@ -64,8 +64,8 @@ export class AppComponent implements OnInit, OnDestroy {
             open: Math.floor(Math.random() * (99 - 51 + 1) + 51)
           });
           this.i++;
-          this.stock.series[0].dataSource = this.series1;
-          this.stock.refresh();
+          (this.stock as StockChartComponent ).series[0].dataSource = this.series1;
+          this.stock?.refresh();
         }
       },
       3000);

@@ -30,7 +30,7 @@ An annotation can be added to a node/connector by defining the annotation object
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/annotation-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/annotation-cs1" %}
 
 ## Add annotations at runtime
 
@@ -50,7 +50,7 @@ An annotation can be added to a node/connector by defining the annotation object
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/run-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/run-cs1" %}
 
 ## Remove annotation
 
@@ -68,7 +68,7 @@ A collection of annotations can be removed from the node by using client-side me
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/remove-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/remove-cs1" %}
 
 ## Update annotation at runtime
 
@@ -88,7 +88,7 @@ The following code example illustrates how to change the annotation properties.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/update-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/update-cs1" %}
 
 ## Alignment
 
@@ -114,7 +114,7 @@ The following code shows the relationship between the annotation position (black
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/offset-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/offset-cs1" %}
 
 ## Horizontal and vertical alignment
 
@@ -148,7 +148,7 @@ The following codes illustrates how to align annotations.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/offset-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/labels/offset-cs2" %}
 
 ## Annotation alignment with respect to segments
 
@@ -168,7 +168,7 @@ The following code example illustrates how to align connector annotations.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/segment-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/segment-cs1" %}
 
 ## Margin
 
@@ -188,7 +188,7 @@ The following code example illustrates how to align a annotation based on its `o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/margin-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/margin-cs1" %}
 
 ## Text align
 
@@ -206,7 +206,7 @@ The [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/diagram/t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/textalign-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/textalign-cs1" %}
 
 ## Hyperlink
 
@@ -226,7 +226,7 @@ A User can open the hyperlink in the new window, the same tab and the new tab by
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/hyperlink-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/hyperlink-cs1" %}
 
 ## Template Support for Annotation
 
@@ -246,7 +246,7 @@ The following code illustrates how to define a template in node's annotation. si
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/labeltemplate-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/labeltemplate-cs1" %}
 
 ## Wrapping
 
@@ -263,7 +263,7 @@ When text overflows node boundaries, you can control it by using [`text wrapping
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/wrapping-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/wrapping-cs1" %}
 
 | Value | Description | Image |
 | -------- | -------- | -------- |
@@ -287,7 +287,7 @@ The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/overflow-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/overflow-cs1" %}
 
 ## Appearance
 
@@ -311,7 +311,7 @@ The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/appear-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/appear-cs1" %}
 
 The fill, border, and opacity appearances of the text can also be customized with appearance specific properties of annotation. The following code illustrates how to customize background, opacity, and border of the annotation.
 
@@ -327,7 +327,7 @@ The fill, border, and opacity appearances of the text can also be customized wit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/opacity-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/opacity-cs1" %}
 
 ## Interaction
 
@@ -345,7 +345,7 @@ Diagram allows annotation to be interacted by selecting, dragging, rotating, and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/interaction-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/interaction-cs1" %}
 
 ## Edit
 
@@ -377,7 +377,7 @@ Diagram allows to create read-only annotations. You have to set the read-only pr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/read-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/read-cs1" %}
 
 ## Drag Limit
 
@@ -439,7 +439,7 @@ You can add any number of annotations to a node or connector. The following code
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/labels/read-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/labels/read-cs2" %}
 
 ## Constraints
 

@@ -91,10 +91,10 @@ export class AppComponent {
    onSelect(args: SelectEventArgs){
     this.appendElement(args.text + "<b>&nbsp;&nbsp;is selected</b><hr>");
    }
-   onActionBegin(){
+   onActionBegin(args: any){
      this.appendElement("<b>actionBegin </b> event is triggered<hr>");
    }
-   onActionComplete(){
+   onActionComplete(args: any){
      this.appendElement("<b>actionComplete</b> is triggered <hr>");
    }
   appendElement(html: string): void {

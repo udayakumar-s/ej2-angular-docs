@@ -28,4 +28,4 @@ Property | Purpose
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/accessibility-cs6" %}
+{% previewsample "page.domainurl/samples/datetimepicker/accessibility-cs6" %}

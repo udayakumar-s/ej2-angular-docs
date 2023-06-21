@@ -33,4 +33,4 @@ You can hide the sorting options on the excel filter dialog by setting display a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/hide-sort-excel-cs1" %}
+{% previewsample "page.domainurl/samples/grid/hide-sort-excel-cs1" %}

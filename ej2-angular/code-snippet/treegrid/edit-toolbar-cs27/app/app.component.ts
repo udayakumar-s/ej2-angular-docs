@@ -19,18 +19,18 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegri
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
     public isAddable: boolean = true;
 
     ngOnInit(): void {
         this.data = sampleData;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
         this.toolbarOptions = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
 
-    actionBegin(args) {
+    actionBegin(args: any) {
         if (args.requestType == 'beginEdit') {
             if (args.rowData['priority'] == 'Low') {
                 args.cancel = true;
@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
             }
         }
     }
-    btnClick(args) {
+    btnClick(args: any) {
         args.target.innerText == 'TreeGrid is Addable' ? (args.target.innerText = 'TreeGrid is Not Addable') : (args.target.innerText = 'TreeGrid is Addable');
         this.isAddable = !this.isAddable;
     }

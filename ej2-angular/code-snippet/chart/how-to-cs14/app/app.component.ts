@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart style='display:block;' [chartArea]='chartArea' align='center' [title]='title' [primaryXAxis]='primaryXAxis'
+    template: `<ejs-chart style='display:block;' [chartArea]='chartArea' align='center' [title]='title' [primaryXAxis]='primaryXAxis'
         [primaryYAxis]='primaryYAxis'>
         <e-series-collection>
             <e-series [dataSource]='data' type='Area' xName='x' yName='y' [marker]='marker' name='Product A' opacity=0.5 width=2
@@ -64,7 +63,10 @@ export class AppComponent implements OnInit {
     public title: string = 'Average Sales Comparison';
     constructor() {
         // code
-    };
+    }ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
+;
 }
 
 

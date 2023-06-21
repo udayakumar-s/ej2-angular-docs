@@ -25,4 +25,4 @@ In the following sample, the dialog is closed when you enter the username value 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-validation-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-validation-cs1" %}

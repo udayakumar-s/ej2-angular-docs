@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Query, DataManager } from '@syncfusion/ej2-data';
 import { sampleData } from './datasource';
-import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angular-treegrid';
+import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { IEditCell } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-container',
@@ -21,10 +22,10 @@ import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angu
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public priorityParams: IEditCell;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public priorityParams?: IEditCell;
 
     public prior: object[] = [
         { priorityType: 'Normal', Id: '1' },

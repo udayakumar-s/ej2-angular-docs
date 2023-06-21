@@ -2,7 +2,7 @@
 
 
 import { Component, Inject, ViewChild } from '@angular/core';
-import { TreeViewComponent, NodeExpandEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { TreeViewComponent, NodeExpandEventArgs, FieldsSettingsModel } from '@syncfusion/ej2-angular-navigations';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 /**
  * Treeview Disable check box of parent nodes sample
@@ -42,40 +42,40 @@ export class AppComponent {
    ]
 
     public field:Object ={  dataSource: this.Countries, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' };
-    public newData;
-    @ViewChild ('treevalidate') tree: TreeViewComponent;
+    public newData?: any;
+    @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
-    public onNodeExpand(args: NodeExpandEventArgs): void {
+    public onNodeExpand(args: NodeExpandEventArgs | any): void {
         if (args.isInteracted){
-            let childData =  new DataManager(this.newData).executeLocal(new Query().where(this.tree.fields.parentID, 'equal', parseInt(args.nodeData.id), false));
-            this.tree.addNodes(childData, args.node,null)
+            let childData: any =  new DataManager(this.newData).executeLocal(new Query().where(((this.tree as TreeViewComponent ).fields as FieldsSettingsModel).parentID as string, 'equal', parseInt(args.nodeData['id']), false));
+            this.tree?.addNodes(childData, args.node, null as any)
         }
     }
 
-    public onCreate(){
-        this.newData = this.tree.fields.dataSource;
+    public onCreate(args: any){
+        this.newData = this.tree?.fields.dataSource;
         // Selects the first level nodes alone
-        let resultData = new DataManager(this.newData).executeLocal(new Query().where(this.tree.fields.parentID, 'equal', undefined, false));
+        let resultData = new DataManager(this.newData).executeLocal(new Query().where(((this.tree as TreeViewComponent ).fields as FieldsSettingsModel).parentID as string, 'equal', undefined, false));
         let name = [];
         for (let i = 0; i < resultData.length; i++){
-            name.push(resultData[i][this.tree.fields.text]);
+            name.push(((resultData)[i] as Object | any)[(this.tree as any).fields.text as any]);
         }
         name.sort();
         let arr = [];
         for (let j = 0; j < name.length; j++) {
-            let sortedData = new DataManager(this.newData).executeLocal(new Query().where(this.tree.fields.text, 'equal', name[j], false));
-            let childData =  new DataManager(this.newData).executeLocal(new Query().where(this.tree.fields.parentID, 'equal', parseInt(sortedData[0][this.tree.fields.id]), false));
+            let sortedData = new DataManager(this.newData).executeLocal(new Query().where(((this.tree as TreeViewComponent ).fields as FieldsSettingsModel).text as string, 'equal', name[j], false));
+            let childData =  new DataManager(this.newData).executeLocal(new Query().where(((this.tree as TreeViewComponent ).fields as FieldsSettingsModel).parentID as string, 'equal', parseInt((sortedData[0] as Object[] | any)[((this.tree as TreeViewComponent ).fields as FieldsSettingsModel).id as string]), false));
             arr.push(sortedData[0]);
         }
         // Renders treeview with sorted Nodes
         this.changeDataSource(arr);
-        this.tree.dataBind();
+        this.tree?.dataBind();
     }
 
-    public changeDataSource(data){
-        this.tree.fields = {
+    public changeDataSource(data: Object[]){
+        (this.tree as TreeViewComponent).fields = {
             dataSource: data, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild'
-        }
+        } as FieldsSettingsModel;
     }
 }
 

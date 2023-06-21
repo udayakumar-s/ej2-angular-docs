@@ -2,12 +2,11 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps, Bubble, Legend } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 Maps.Inject(Bubble, Legend);
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-maps id='rn-container'  [legendSettings] ='legendSettings'  >
+    template: `<ejs-maps id='rn-container'  [legendSettings] ='legendSettings'  >
     <e-layers>
     <e-layer  [shapeData]= 'shapeData' [bubbleSettings] = 'bubbleSettings'></e-layer>
     </e-layers>
@@ -15,11 +14,11 @@ Maps.Inject(Bubble, Legend);
 })
 
 export class AppComponent implements OnInit {
-    public shapeData: object;
-    public shapeDataPath: object;
-    public shapePropertyPath: object;
-    public bubbleSettings: object;
-    public legendSettings: object;
+    public shapeData?: object;
+    public shapeDataPath?: object | any;
+    public shapePropertyPath?: object | any;
+    public bubbleSettings?: object;
+    public legendSettings?: object;
     ngOnInit(): void {
         this.shapeData = world_map;
         this.shapeDataPath = 'name',

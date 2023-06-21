@@ -57,4 +57,4 @@ Here, the data is fetched from `Northwind` Service URL; it takes a few seconds t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/listview/getting-started-cs5" %}

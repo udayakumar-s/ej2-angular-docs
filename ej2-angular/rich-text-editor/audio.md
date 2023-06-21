@@ -41,7 +41,7 @@ To configure the `Audio` toolbar item, refer to the below code.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/audio-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/audio-cs1" %}
 
 ## Insert audio from the web
 

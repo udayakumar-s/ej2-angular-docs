@@ -13,7 +13,7 @@ import { EventSettingsModel, ScheduleComponent, DayService, WeekService, WorkWee
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2023, 2, 5);
     public eventSettings: EventSettingsModel = {
         dataSource: [{
@@ -29,7 +29,7 @@ export class AppComponent {
             StartTime: new Date(2023, 2, 5, 9, 0, 0),
             EndTime: new Date(2023, 2, 5, 10, 0, 0)
         };
-        this.scheduleObj.openQuickInfoPopup(cellData, 'Add');
+        this.scheduleObj?.openQuickInfoPopup(cellData);
     }
     eventClick(): void {
         let eventData: Object = {
@@ -38,7 +38,7 @@ export class AppComponent {
             StartTime: new Date(2023, 2, 5, 9, 0, 0),
             EndTime: new Date(2023, 2, 5, 10, 0, 0)
         };
-        this.scheduleObj.openQuickInfoPopup(eventData, 'Save');
+        this.scheduleObj?.openQuickInfoPopup(eventData);
     }
 }
 

@@ -26,4 +26,4 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/spanning-cs1" %}
+{% previewsample "page.domainurl/samples/grid/spanning-cs1" %}

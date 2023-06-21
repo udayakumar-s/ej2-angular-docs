@@ -11,21 +11,21 @@ import { scheduleData } from './datasource';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.component.html',
+    templateUrl: './app.component.html',
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
-    styleUrls: ['app/index.css'],
+    styleUrls: ['./index.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     @ViewChild('menuObj')
-    public menuObj: ContextMenuComponent;
+    public menuObj?: ContextMenuComponent;
     public allowResizing: Boolean = false;
     public allowDragDrop: Boolean = false;
     public selectedDate: Date = new Date(2018, 1, 15);
-    public eventSettings: EventSettingsModel = { dataSource: <Object[]>extend([], scheduleData, null, true) };
-    public selectedTarget: Element;
+    public eventSettings: EventSettingsModel = { dataSource: <Object[]>extend([], scheduleData, undefined, true) };
+    public selectedTarget?: Element;
     public menuItems: MenuItemModel[] = [
         {
             text: 'New Event',
@@ -76,9 +76,9 @@ export class AppComponent {
         const newEventElement: HTMLElement = document.querySelector('.e-new-event') as HTMLElement;
         if (newEventElement) {
             remove(newEventElement);
-            removeClass([document.querySelector('.e-selected-cell')], 'e-selected-cell');
+            removeClass([document.querySelector('.e-selected-cell') as Element], 'e-selected-cell');
         }
-        this.scheduleObj.closeQuickInfoPopup();
+        this.scheduleObj?.closeQuickInfoPopup();
         const targetElement: HTMLElement = <HTMLElement>args.event.target;
         if (closest(targetElement, '.e-contextmenu')) {
             return;
@@ -90,55 +90,57 @@ export class AppComponent {
             return;
         }
         if (this.selectedTarget.classList.contains('e-appointment')) {
-            const eventObj: { [key: string]: Object } = <{ [key: string]: Object }>this.scheduleObj.getEventDetails(this.selectedTarget);
-            if (eventObj.RecurrenceRule) {
-                this.menuObj.showItems(['EditRecurrenceEvent', 'DeleteRecurrenceEvent'], true);
-                this.menuObj.hideItems(['Add', 'AddRecurrence', 'Today', 'Save', 'Delete'], true);
+            const eventObj: { [key: string]: Object } = <{ [key: string]: Object }>this.scheduleObj?.getEventDetails(this.selectedTarget);
+            if (eventObj['RecurrenceRule']) {
+                this.menuObj?.showItems(['EditRecurrenceEvent', 'DeleteRecurrenceEvent'], true);
+                this.menuObj?.hideItems(['Add', 'AddRecurrence', 'Today', 'Save', 'Delete'], true);
             } else {
-                this.menuObj.showItems(['Save', 'Delete'], true);
-                this.menuObj.hideItems(['Add', 'AddRecurrence', 'Today', 'EditRecurrenceEvent', 'DeleteRecurrenceEvent'], true);
+                this.menuObj?.showItems(['Save', 'Delete'], true);
+                this.menuObj?.hideItems(['Add', 'AddRecurrence', 'Today', 'EditRecurrenceEvent', 'DeleteRecurrenceEvent'], true);
             }
             return;
         }
-        this.menuObj.hideItems(['Save', 'Delete', 'EditRecurrenceEvent', 'DeleteRecurrenceEvent'], true);
-        this.menuObj.showItems(['Add', 'AddRecurrence', 'Today'], true);
+        this.menuObj?.hideItems(['Save', 'Delete', 'EditRecurrenceEvent', 'DeleteRecurrenceEvent'], true);
+        this.menuObj?.showItems(['Add', 'AddRecurrence', 'Today'], true);
     }
 
     onMenuItemSelect(args: MenuEventArgs): void {
-        const selectedMenuItem: string = args.item.id;
-        let eventObj: { [key: string]: Object };
+        const selectedMenuItem: string | undefined = args.item.id;
+        let eventObj: { [key: string]: Object } = {};
         if (this.selectedTarget && this.selectedTarget.classList.contains('e-appointment')) {
-            eventObj = <{ [key: string]: Object }>this.scheduleObj.getEventDetails(this.selectedTarget);
+            eventObj = <{ [key: string]: Object }>this.scheduleObj?.getEventDetails(this.selectedTarget);
         }
+
         switch (selectedMenuItem) {
             case 'Today':
-                this.scheduleObj.selectedDate = new Date();
+                this.scheduleObj!.selectedDate = new Date();
                 break;
             case 'Add':
             case 'AddRecurrence':
-                const selectedCells: Element[] = this.scheduleObj.getSelectedElements();
-                const activeCellsData: CellClickEventArgs = this.scheduleObj.getCellDetails(selectedCells.length > 0 ? selectedCells : this.selectedTarget);
+                const selectedCells: Element[] = this.scheduleObj!.getSelectedElements();
+                const activeCellsData: CellClickEventArgs = this.scheduleObj!.getCellDetails(selectedCells.length > 0 ? selectedCells : this.selectedTarget as any);
                 if (selectedMenuItem === 'Add') {
-                    this.scheduleObj.openEditor(activeCellsData, 'Add');
+                    this.scheduleObj?.openEditor(activeCellsData, 'Add');
                 } else {
-                    this.scheduleObj.openEditor(activeCellsData, 'Add', null, 1);
+                    this.scheduleObj?.openEditor(activeCellsData, 'Add', undefined, 1);
                 }
                 break;
             case 'Save':
             case 'EditOccurrence':
             case 'EditSeries':
+
                 if (selectedMenuItem === 'EditSeries') {
-                    eventObj = <{ [key: string]: Object }>new DataManager(this.scheduleObj.eventsData).executeLocal(new Query().
-                        where(this.scheduleObj.eventFields.id, 'equal', eventObj[this.scheduleObj.eventFields.recurrenceID] as string | number))[0];
+                    eventObj = <{ [key: string]: Object }>new DataManager(this.scheduleObj?.eventsData).executeLocal(new Query().
+                        where(this.scheduleObj?.eventFields.id as any, 'equal', eventObj[this.scheduleObj?.eventFields.recurrenceID as any] as string | number))[0];
                 }
-                this.scheduleObj.openEditor(eventObj, selectedMenuItem);
+                this.scheduleObj?.openEditor(eventObj, selectedMenuItem);
                 break;
             case 'Delete':
-                this.scheduleObj.deleteEvent(eventObj);
+                this.scheduleObj?.deleteEvent(eventObj);
                 break;
             case 'DeleteOccurrence':
             case 'DeleteSeries':
-                this.scheduleObj.deleteEvent(eventObj, selectedMenuItem);
+                this.scheduleObj?.deleteEvent(eventObj, selectedMenuItem);
                 break;
         }
     }

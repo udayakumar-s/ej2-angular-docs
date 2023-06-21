@@ -45,4 +45,4 @@ The event `cellSelected` fires on every cell/row/column on selected/deselected o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs168" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs168" %}

@@ -3,7 +3,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps, Highlight, Legend } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 Maps.Inject(Highlight, Legend);
 @Component({
     selector: 'app-container',
@@ -15,13 +15,13 @@ Maps.Inject(Highlight, Legend);
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-    public highlightSettings: object;
-    public shapeData: object;
-    public shapePropertyPath: string;
-    public shapeDataPath: string;
-    public dataSource: object;
-    public shapeSettings: object;
-    public legendSettings: object;
+    public highlightSettings?: object;
+    public shapeData?: object;
+    public shapePropertyPath?: string;
+    public shapeDataPath?: string;
+    public dataSource?: object;
+    public shapeSettings?: object;
+    public legendSettings?: object;
     ngOnInit(): void {
         this.highlightSettings = {
             enable: true,

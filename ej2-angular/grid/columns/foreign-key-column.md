@@ -59,7 +59,7 @@ In this example, **data** is the local data source for the Grid, and **employeeD
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs19" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs19" %}
 
 ## Binding remote data
 
@@ -79,7 +79,7 @@ This example demonstrates how to use the foreign key column with remote data bin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs12" %}
+{% previewsample "page.domainurl/samples/grid/foreignkey-cs12" %}
 
 > * For remote data, the sorting and grouping is done based on [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) instead of [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyvalue).
 > * If [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#foreignkeyfield) is not defined, then the column uses [column.field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field).
@@ -102,7 +102,7 @@ In this example, an [AutoComplete](https://ej2.syncfusion.com/angular/demos/#/bo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs1" %}
+{% previewsample "page.domainurl/samples/grid/foreignkey-cs1" %}
 
 ## Customize filter UI of foreign key column
 
@@ -122,7 +122,7 @@ In this example, a [DropDownList](https://ej2.syncfusion.com/angular/demos/#/boo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs2" %}
+{% previewsample "page.domainurl/samples/grid/foreignkey-cs2" %}
 
 ## Use filter bar template in foreign key column
 
@@ -142,7 +142,7 @@ In this example, the **"EmployeeID"** column is a foreign key column, and the **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs3" %}
+{% previewsample "page.domainurl/samples/grid/foreignkey-cs3" %}
 
 ## Perform aggregation in foreign key column
 
@@ -170,7 +170,7 @@ In the provided example, the `customAggregateFn` function is used to filter the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs4" %}
+{% previewsample "page.domainurl/samples/grid/foreignkey-cs4" %}
 
 ## Enable multiple foreign key columns
 
@@ -190,4 +190,4 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs5" %}
+{% previewsample "page.domainurl/samples/grid/foreignkey-cs5" %}

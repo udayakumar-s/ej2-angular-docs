@@ -2,23 +2,23 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { AutoCompleteComponent, OpenEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { AutoCompleteComponent, DropEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
     selector: 'app-root',
     // specifies the template url path
-    templateUrl: './app/footerTemplate.html'
+    templateUrl: `footerTemplate.html`
 })
 export class AppComponent {
     @ViewChild('sample')
-    public AutoCompleteObj : AutoCompleteComponent;
+    public AutoCompleteObj : AutoCompleteComponent | any;
     constructor() {
     }
     // defined the array of data
     public data: Object[] = ['Badminton', 'Basketball', 'Cricket', 'Football', 'Golf', 'Gymnastics', 'Hockey'];
     // set placeholder text to AutoComplete input element
     public text: string = 'Find a game';
-    public onOpen(e : OpenEventArgs) : void{
+    public onOpen(e : DropEventArgs) : void{
       let count=this.AutoCompleteObj.getItems().length;
       //set the value to footerTemplate property
       let ele = document.getElementsByClassName('foot')[0];

@@ -32,4 +32,4 @@ Following is an example that demonstrates the above cases to set cursor position
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maskedtextbox/cursor-position-cs1" %}
+{% previewsample "page.domainurl/samples/maskedtextbox/cursor-position-cs1" %}

@@ -2,6 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
+import { PageSettingsModel, SortSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -18,9 +19,9 @@ import { sampleData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public sortSettings: SortSettingsModel;
-    public pageSettings: PageSettingsModel;
+    public data?: Object[];
+    public sortSettings?: SortSettingsModel;
+    public pageSettings?: PageSettingsModel;
 
     ngOnInit(): void {
         this.data = sampleData;

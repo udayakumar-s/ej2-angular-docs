@@ -24,7 +24,7 @@ DatePicker has `enableMask` property that provides the option to enable the buil
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/mask-module-cs1" %}
+{% previewsample "page.domainurl/samples/timepicker/mask-module-cs1" %}
 
 The mask pattern is defined based on the provided time format to the component. If the format is not specified, the mask pattern is formed based on the default format of the current culture.
 
@@ -47,7 +47,7 @@ The following example demonstrates default and custom format of TimePicker compo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/mask-module-cs2" %}
+{% previewsample "page.domainurl/samples/timepicker/mask-module-cs2" %}
 
 # Configure Mask Placeholder
 
@@ -82,4 +82,4 @@ The following example demonstrates default and customized mask placeholder value
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/mask-module-cs3" %}
+{% previewsample "page.domainurl/samples/timepicker/mask-module-cs3" %}

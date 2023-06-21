@@ -17,7 +17,7 @@ import { foodInformation } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     public totalCalories = (field: string, data: { Protein: number, Fat: number, Carbohydrate: number }, column: Object): number => {
         return data.Protein * 4 + data.Fat * 9 + data.Carbohydrate * 4;

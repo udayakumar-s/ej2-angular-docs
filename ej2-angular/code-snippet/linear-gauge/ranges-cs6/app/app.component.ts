@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent {
-  public container: Object;
-  public axes: Object[];
+  public container?: Object;
+  public axes?: Object[];
     ngOnInit(): void {
       // Initialize objects
       this.container = { width: 30, offset: 30 }

@@ -26,4 +26,4 @@ Here below sample demonstrates restrict toast displaying up to 3. You can restri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs15" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs15" %}

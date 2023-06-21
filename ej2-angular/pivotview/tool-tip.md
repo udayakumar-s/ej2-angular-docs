@@ -24,7 +24,7 @@ The tooltip can be enabled or disabled by setting the [`showTooltip`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs297" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs297" %}
 
 ## Tooltip Template
 
@@ -60,4 +60,4 @@ In the below sample, the pivot table and pivot chart shows customized tooltip la
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/tooltipTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/tooltipTemplate-cs1" %}

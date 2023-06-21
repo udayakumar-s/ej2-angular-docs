@@ -21,39 +21,39 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('tab') tab: TabComponent;
-    @ViewChild('pass_name1') input1: ElementRef;
-    @ViewChild('pass_name2') input2: ElementRef;
-    @ViewChild('pass_name3') input3: ElementRef;
-    @ViewChild('alertDialog') alertDlg: DialogComponent;
-    @ViewChild('date') journeyDate: DatePickerComponent;
-    @ViewChild('quota') ticketType: DropDownListComponent;
-    @ViewChild('endPoint') endPoint: DropDownListComponent;
-    @ViewChild('startPoint') startPoint: DropDownListComponent;
-    @ViewChild('availableTrain') availTrainGrid: GridComponent;
-    @ViewChild('pass_age1') passage1: NumericTextBoxComponent;
-    @ViewChild('ticketDetailGrid') ticketDetailGrid: GridComponent;
-    @ViewChild('pass_gender1') passgender1: DropDownListComponent;
-    @ViewChild('pass_gender2') passgender2: DropDownListComponent;
-    @ViewChild('pass_gender3') passgender3: DropDownListComponent;
-    @ViewChild('pass_berth1') passBerth1: DropDownListComponent;
-    @ViewChild('pass_berth2') passBerth2: DropDownListComponent;
-    @ViewChild('pass_berth3') passBerth3: DropDownListComponent;
+    @ViewChild('tab') tab?: TabComponent;
+    @ViewChild('pass_name1') input1?: ElementRef;
+    @ViewChild('pass_name2') input2?: ElementRef;
+    @ViewChild('pass_name3') input3?: ElementRef;
+    @ViewChild('alertDialog') alertDlg?: DialogComponent;
+    @ViewChild('date') journeyDate?: DatePickerComponent;
+    @ViewChild('quota') ticketType?: DropDownListComponent;
+    @ViewChild('endPoint') endPoint?: DropDownListComponent;
+    @ViewChild('startPoint') startPoint?: DropDownListComponent;
+    @ViewChild('availableTrain') availTrainGrid?: GridComponent;
+    @ViewChild('pass_age1') passage1?: NumericTextBoxComponent;
+    @ViewChild('ticketDetailGrid') ticketDetailGrid?: GridComponent;
+    @ViewChild('pass_gender1') passgender1?: DropDownListComponent;
+    @ViewChild('pass_gender2') passgender2?: DropDownListComponent;
+    @ViewChild('pass_gender3') passgender3?: DropDownListComponent;
+    @ViewChild('pass_berth1') passBerth1?: DropDownListComponent;
+    @ViewChild('pass_berth2') passBerth2?: DropDownListComponent;
+    @ViewChild('pass_berth3') passBerth3?: DropDownListComponent;
 
     public fields: Object = {};
     public quotas: Object[] = [];
     public gender: Object[] = [];
     public berths: Object[] = [];
     public today: Date = new Date();
-    public cities: any;
-    public locations: any;
+    public cities?: any;
+    public locations?: any;
     public headerText: Object[] = [];
     public dlgButtons: Object[] = [];
-    public selectedTrain: any;
+    public selectedTrain?: any;
     public autoCompleteFields: Object = {};
-    public dlgTarget: HTMLElement = document.querySelector('#container');
-    public dateMin: Date;
-    public dateMax: Date;
+    public dlgTarget: HTMLElement = document.querySelector('#container') as HTMLElement;
+    public dateMin?: Date;
+    public dateMax?: Date;
     public result: Object[] = [];
     public reserved: Object[] = [];
 
@@ -99,12 +99,12 @@ export class AppComponent implements OnInit {
         this.dlgButtons = [{
             buttonModel: { content: 'Ok', isPrimary: true },
             click: (() => {
-                this.alertDlg.hide();
-                this.tab.enableTab(0, true);
-                this.tab.enableTab(1, false);
-                this.tab.enableTab(2, false);
-                this.tab.enableTab(3, false);
-                this.tab.select(0);
+                (this.alertDlg as DialogComponent).hide();
+                (this.tab as TabComponent).enableTab(0, true);
+                (this.tab as TabComponent).enableTab(1, false);
+                (this.tab as TabComponent).enableTab(2, false);
+                (this.tab as TabComponent).enableTab(3, false);
+                (this.tab as TabComponent).select(0);
             })
         }];
     }
@@ -114,7 +114,7 @@ export class AppComponent implements OnInit {
     }
 
     public showDate(): void {
-        this.journeyDate.show();
+        (this.journeyDate as DatePickerComponent).show();
     }
 
     public trainSelected(args: RowSelectEventArgs): void {
@@ -128,80 +128,80 @@ export class AppComponent implements OnInit {
     }
 
     public dlgCreated(): void {
-        this.alertDlg.hide();
+        (this.alertDlg as DialogComponent).hide();
     }
 
        public btnClicked(e: any): void {
         switch (e.target.id) {
             case 'searchNext':
                 /* Validate the Source, Destination, Date and Class chosen and proceed only if all the fields are selected */
-                if (!isNOU(this.startPoint.value) && !isNOU(this.endPoint.value) &&
-                    !isNOU(this.ticketType.value) && !isNOU(this.journeyDate.value)) {
-                    if (!isNOU(this.startPoint.value) && this.startPoint.value == this.endPoint.value) {
-                        document.getElementById('err1').innerText = '* Arrival point cannot be same as Departure';
+                if (!isNOU((this.startPoint as DropDownListComponent).value) && !isNOU((this.endPoint as DropDownListComponent).value) &&
+                    !isNOU((this.ticketType as DropDownListComponent).value) && !isNOU((this.journeyDate  as DatePickerComponent ).value)) {
+                    if (!isNOU((this.startPoint as DropDownListComponent).value) && (this.startPoint as DropDownListComponent).value == (this.endPoint as DropDownListComponent).value) {
+                        (document.getElementById('err1') as HTMLElement).innerText = '* Arrival point cannot be same as Departure';
                     } else {
-                        this.tab.enableTab(0, false);
-                        this.tab.enableTab(1, true);
+                        (this.tab as TabComponent).enableTab(0, false);
+                        (this.tab as TabComponent).enableTab(1, true);
                         this.filterTrains(e);
-                        this.tab.select(1);
-                        document.getElementById('err1').innerText = '';
-                        document.getElementById('err2').innerText = '';
+                        (this.tab as TabComponent).select(1);
+                        (document.getElementById('err1') as HTMLElement).innerText = '';
+                        (document.getElementById('err2') as HTMLElement).innerText = '';
                     }
                 } else {
-                    document.getElementById('err1').innerText = '* Please fill all the details before proceeding';
+                    (document.getElementById('err1') as HTMLElement).innerText = '* Please fill all the details before proceeding';
                 }
                 break;
             case 'bookTickets':
                 /* Based on the selected station generate Grid content to display trains available */
-                if (this.availTrainGrid.getSelectedRecords() === undefined || this.availTrainGrid.getSelectedRecords().length === 0) {
-                    document.getElementById('err2').innerText = '* Select your convenient train';
+                if ((this.availTrainGrid as GridComponent).getSelectedRecords() === undefined || (this.availTrainGrid as GridComponent).getSelectedRecords().length === 0) {
+                    (document.getElementById('err2') as HTMLElement).innerText = '* Select your convenient train';
                 } else {
-                    this.tab.enableTab(2, true);
-                    this.tab.select(2);
-                    this.tab.enableTab(1, false);
-                    document.getElementById('err2').innerText = '';
+                    (this.tab as TabComponent).enableTab(2, true);
+                    (this.tab as TabComponent).select(2);
+                    (this.tab as TabComponent).enableTab(1, false);
+                    (document.getElementById('err2') as HTMLElement).innerText = '';
                 }
                 break;
             case 'confirmTickets':
                 /* Get the Passenger details and validate the fields must not be left empty */
-                if (this.input1.nativeElement.value === '' || isNOU(this.passgender1.value) || isNOU(this.passage1.value)) {
-                    document.getElementById('err3').innerText = '* Please enter passenger details';
+                if ((this.input1 as any).nativeElement.value === '' || isNOU((this.passgender1 as DropDownListComponent).value) || isNOU((this.passage1 as NumericTextBoxComponent).value)) {
+                    (document.getElementById('err3') as HTMLElement).innerText = '* Please enter passenger details';
                 } else {
-                    this.tab.enableTab(3, true);
-                    this.tab.select(3);
-                    this.tab.enableTab(2, false);
-                    document.getElementById('err3').innerText = '';
+                    (this.tab as TabComponent).enableTab(3, true);
+                    (this.tab as TabComponent).select(3);
+                    (this.tab as TabComponent).enableTab(2, false);
+                    (document.getElementById('err3') as HTMLElement).innerText = '';
                     this.finalizeDetails(e);
                 }
                 break;
             case 'makePayment':
-                this.alertDlg.show();
+                this.alertDlg?.show();
                 break;
             case 'goToSearch':
                 /* Go back to change class, date or boarding places */
                 this.selectedTrain = [];
-                this.tab.enableTab(0, true);
-                this.tab.select(0);
-                this.tab.enableTab(1, false);
+                (this.tab as TabComponent).enableTab(0, true);
+                (this.tab as TabComponent).select(0);
+                (this.tab as TabComponent).enableTab(1, false);
                 break;
             case 'goBackToBook':
                 /* Change the preferred train chosen already */
-                this.tab.enableTab(1, true);
-                this.tab.select(1);
-                this.tab.enableTab(2, false);
+                (this.tab as TabComponent).enableTab(1, true);
+                (this.tab as TabComponent).select(1);
+                (this.tab as TabComponent).enableTab(2, false);
                 break;
             case 'goBackDetails':
                 /* Update passenger detail before confirming the payment */
-                this.tab.enableTab(2, true);
-                this.tab.select(2);
-                this.tab.enableTab(3, false);
+                (this.tab as TabComponent).enableTab(2, true);
+                (this.tab as TabComponent).select(2);
+                (this.tab as TabComponent).enableTab(3, false);
                 break;
         }
     }
     public filterTrains(args: any): void {
         /* Generating trains based on source and destination chosen */
-        let fromCity: string = <string>this.startPoint.value;
-        let toCity: string = <string>this.endPoint.value;
+        let fromCity: string = <string>this.startPoint?.value;
+        let toCity: string = <string>this.endPoint?.value;
         let count: number = Math.floor((Math.random() * 3) + 2);
 
         for (let i: number = 0; i < count; i++) {
@@ -216,22 +216,22 @@ export class AppComponent implements OnInit {
     }
 
     public availableTrainGridcreated(): void {
-        this.availTrainGrid.dataSource = this.result;
-      }
+        (this.availTrainGrid as GridComponent).dataSource = this.result;
+    }
 
     public finalizeDetails(args: any): void {
         /* Get the passenger details and update table with name and other details for confirmation */
         let passCount: any = 0;
         for (let i: number = 1; i <= 3; i++) {
-            if (this.input1.nativeElement.value !== '') {
+            if ((this.input1 as any).nativeElement.value !== '') {
                 let details = <Details>{};
-                let gender: any = (i === 1) ? this.passgender1.value : (i === 2) ?
-                    this.passgender2.value : this.passgender3.value;
-                let berth: any = (i === 1) ? this.passBerth1.value : (i === 2) ?
-                    this.passBerth2.value : this.passBerth3.value;
+                let gender: any = (i === 1) ? (this.passgender1 as DropDownListComponent).value : (i === 2) ?
+                    (this.passgender2 as DropDownListComponent).value : (this.passgender3 as DropDownListComponent).value;
+                let berth: any = (i === 1) ? (this.passBerth1 as DropDownListComponent).value : (i === 2) ?
+                    (this.passBerth2 as DropDownListComponent).value : (this.passBerth3 as DropDownListComponent).value;
                 details.TrainNo = this.selectedTrain.TrainNo.toString();
-                details.PassName = (i === 1) ? this.input1.nativeElement.value : (i === 2) ?
-                    this.input2.nativeElement.value : this.input3.nativeElement.value;
+                details.PassName = (i === 1) ? (this.input1 as any).nativeElement.value : (i === 2) ?
+                    (this.input2 as any).nativeElement.value : (this.input3 as any).nativeElement.value;
                 details.Gender = (gender === '') ? 'Male' : gender;
                 details.Berth = (berth === '') ? 'Any' : berth;
                 if (details.PassName !== '') { this.reserved.push(details); }
@@ -239,21 +239,21 @@ export class AppComponent implements OnInit {
             }
             let calcFare: any = 0;
             for (let i: number = 0; i < this.cities; i++) {
-                if (this.startPoint.value === this.cities[i].name) { calcFare = calcFare + this.cities[i].fare; }
-                if (this.endPoint.value === this.cities[i].name) { calcFare = calcFare + this.cities[i].fare; }
+                if ((this.startPoint as DropDownListComponent).value === this.cities[i].name) { calcFare = calcFare + this.cities[i].fare; }
+                if ((this.endPoint as DropDownListComponent).value === this.cities[i].name) { calcFare = calcFare + this.cities[i].fare; }
             }
             let displayAmt: any = document.getElementById('amount');
-            if (this.ticketType.value === 'Economy Class') {
+            if ((this.ticketType as DropDownListComponent).value === 'Economy Class') {
                 displayAmt.innerText = "Total payable amount: $" + passCount * (300 + calcFare)
-            } else if (this.ticketType.value === 'Business Class') {
+            } else if ((this.ticketType as DropDownListComponent).value === 'Business Class') {
                 displayAmt.innerText = "Total payable amount: $" + passCount * (500 + calcFare)
-            } else if (this.ticketType.value === 'Common Class') {
+            } else if ((this.ticketType as DropDownListComponent).value === 'Common Class') {
                 displayAmt.innerText = "Total payable amount: $" + passCount * (150 + calcFare)
             }
         }
     }
     public ticketDetailGridcreated(): void {
-        this.ticketDetailGrid.dataSource = this.reserved;
+        (this.ticketDetailGrid as GridComponent).dataSource = this.reserved;
       }
 }
 interface Details {

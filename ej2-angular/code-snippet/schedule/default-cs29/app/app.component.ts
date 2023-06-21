@@ -15,7 +15,7 @@ export class AppComponent {
     public eventSettings: EventSettingsModel = { dataSource: scheduleData };
     public onActionBegin(args: ActionEventArgs): void {
         const weekEnds: number[] = [0, 6];
-        if(args.requestType == 'eventCreate' && weekEnds.indexOf((args.data[0].StartTime).getDay()) >= 0) {
+        if(args.requestType == 'eventCreate' && Array.isArray(args.data) && args.data.length > 0 &&  weekEnds.indexOf((args.data[0].StartTime).getDay()) >= 0) {
             args.cancel = true;
         }
     }

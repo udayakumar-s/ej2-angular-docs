@@ -38,7 +38,7 @@ An array of objects that allows the users to specify pre-defined time intervals.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/periodselector/periods-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/periodselector/periods-cs1" %}
 
 >To use the period selector feature, inject the `PeriodSelectorService` into the `@NgModule.providers`.
 
@@ -58,7 +58,7 @@ The [`position`](https://ej2.syncfusion.com/angular/documentation/api/range-navi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/periodselector/position-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/periodselector/position-cs1" %}
 
 ## Height
 
@@ -76,7 +76,7 @@ The [`height`](https://ej2.syncfusion.com/angular/documentation/api/range-naviga
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/periodselector/position-cs2" %}
+{% previewsample "page.domainurl/samples/rangenavigator/periodselector/position-cs2" %}
 
 ## Visibility of range navigator
 
@@ -94,7 +94,7 @@ The [`disableRangeSelector`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/periodselector/position-cs3" %}
+{% previewsample "page.domainurl/samples/rangenavigator/periodselector/position-cs3" %}
 
 ## See Also
 

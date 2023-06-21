@@ -17,16 +17,16 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 export class AppComponent{
     // Data for Gantt
     @ViewChild('gantt')
-    public gantt: GanttComponent;
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
+    public gantt?: GanttComponent;
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
     public columnMenuItems: any = [{ text: 'Clear Sorting', id: 'ganttclearsorting' }];
     public sortSettings: any =  {columns: [{direction: 'Ascending', field: 'TaskID'}]};
     public columnMenuClick(args: MenuEventArgs) {
         if (args.item.id === 'ganttclearsorting') {
-            this.gantt.clearSorting();
+            this.gantt!.clearSorting();
         }
     }
     public ngOnInit(): void {

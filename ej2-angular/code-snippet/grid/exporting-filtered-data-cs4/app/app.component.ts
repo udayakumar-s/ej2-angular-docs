@@ -22,11 +22,12 @@ import {DataManager} from '@syncfusion/ej2-data';
 })
 export class AppComponent implements OnInit {
 
-  public data: object[];
-  public toolbarOptions: ToolbarItems[];
-  public initialPage: object;
+  public data?: object[];
+  public toolbarOptions?: ToolbarItems[];
+  public initialPage?: object;
   @ViewChild('grid')
-  public grid: GridComponent;
+  public grid?: GridComponent;
+
   ngOnInit(): void {
     this.data = data;
     this.toolbarOptions = ['PdfExport'];
@@ -34,9 +35,9 @@ export class AppComponent implements OnInit {
   }
 
   toolbarClick(args: ClickEventArgs) {
-    if (args.item.id === 'Grid_pdfexport') {
+    if ((args as any).item.id === 'Grid_pdfexport') {
       let pdfdata;
-      const query = this.grid.renderModule.data.generateQuery(); // get grid corresponding query
+      const query = (this.grid as any).renderModule.data.generateQuery(); // get grid corresponding query
       for (let i = 0; i < query.queries.length; i++) {
         if (query.queries[i].fn === 'onPage') {
           query.queries.splice(i, 1);       // remove page query to get all records
@@ -48,8 +49,8 @@ export class AppComponent implements OnInit {
         const exportProperties = {
           dataSource: pdfdata,
         };
-        this.grid.pdfExport(exportProperties);
-      }).catch((e) => true);
+        (this.grid as any).pdfExport(exportProperties);
+      }).catch((e: any) => true);
     }
   }
 }

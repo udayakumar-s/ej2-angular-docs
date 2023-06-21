@@ -5,11 +5,11 @@ import { data } from './datasource';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.template.html'
+    templateUrl: 'app.template.html'
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = data;

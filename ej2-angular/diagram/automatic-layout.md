@@ -41,7 +41,7 @@ The following example shows how to arrange the nodes in a hierarchical structure
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/hierarchicallayout-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/hierarchicallayout-cs1" %}
 
 ## Radial tree layout
 
@@ -65,7 +65,7 @@ The following code illustrates how to arrange the nodes in a radial tree structu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/radiallayout-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/radiallayout-cs1" %}
 
 ## Organizational Chart
 
@@ -85,7 +85,7 @@ The following code example illustrates how to create an organizational chart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/organizationalchart-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/organizationalchart-cs1" %}
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. The `getLayoutInfo` method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. The arrangements can be customized by overriding this function as explained.
 
@@ -106,7 +106,7 @@ Organizational chart layout starts parsing from root and iterate through all its
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/getlayoutinfo-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/getlayoutinfo-cs1" %}
 
 The following table illustrates the properties that “options” argument takes.
 
@@ -147,7 +147,7 @@ The following code example illustrates how to set the vertical right arrangement
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/illustration-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/illustration-cs1" %}
 
 ### Assistant
 
@@ -167,7 +167,7 @@ The following code example illustrates how to add assistants to layout.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/assistant-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/assistant-cs1" %}
 
 ## Symmetric layout
 
@@ -197,7 +197,7 @@ The following code example illustrates how to create an organizational chart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/mindmap-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/mindmap-cs1" %}
 
 ## Complex hierarchical tree
 
@@ -217,7 +217,7 @@ The following code example illustrates how to create a complex hierarchical tree
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/complexhiertree-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/complexhiertree-cs1" %}
 
 >Note: If you want to use Complex hierarchical layout in diagram, you need to inject ComplexHierarchicalTree in the diagram.
 
@@ -241,7 +241,7 @@ The following code example illustrates how to create a complex hierarchical tree
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/linedistribution-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/linedistribution-cs1" %}
 
 ### Linear Arrangement
 
@@ -318,7 +318,7 @@ The following code illustrates how to align the layout at the top-left of the la
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/alignment-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/alignment-cs1" %}
 
 ### Layout spacing
 
@@ -342,7 +342,7 @@ The following code illustrates how to set the layout margin.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/spacing-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/spacing-cs1" %}
 
 ### Layout orientation
 
@@ -373,7 +373,7 @@ The following code illustrates how to arrange the nodes in a BottomToTop orienta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/spacing-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/spacing-cs2" %}
 
 ### Fixed node
 
@@ -391,7 +391,7 @@ Layout provides support to arrange the nodes with reference to the position of a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/fixed-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/fixed-cs1" %}
 
 ### Expand and collapse
 
@@ -409,7 +409,7 @@ Diagram allows to expand/collapse the subtrees of a layout. The node’s isExpan
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/expandandcollapse-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/expandandcollapse-cs1" %}
 
 In the previous example, while expanding/collapsing a node, it is set as fixed node in order to prevent it from repositioning.
 
@@ -433,4 +433,4 @@ Diagram allows to refresh the layout at runtime. To refresh the layout, refer to
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/automaticlayout/nodetemplate-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/automaticlayout/nodetemplate-cs1" %}

@@ -41,7 +41,7 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/data-binding-cs4" %}
 
 > By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
 > Based on the RESTful web services, set the corresponding adaptor to DataManager. Refer [`here`](https://ej2.syncfusion.com/documentation/data/adaptors/?no-cache=1) for more details.
@@ -177,7 +177,7 @@ On remote data binding, all treegrid actions such as paging, loading child on-de
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/data-binding-cs5" %}
 
 ## Custom adaptor
 
@@ -195,7 +195,7 @@ You can create your own adaptor by extending the built-in adaptors. The followin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/data-binding-cs6" %}
 
 ## Sending additional parameters to the server
 
@@ -213,7 +213,7 @@ To add a custom parameter to the data request, use the `addParams` method of `Qu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs7" %}
+{% previewsample "page.domainurl/samples/treegrid/data-binding-cs7" %}
 
 ## Handling HTTP error
 
@@ -233,7 +233,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs8" %}
+{% previewsample "page.domainurl/samples/treegrid/data-binding-cs8" %}
 
 > The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the treegrid actions.
 

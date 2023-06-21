@@ -81,7 +81,7 @@ import { TabComponent } from '@syncfusion/ej2-angular-navigations';
                 </ejs-tab>`
 })
 export class AppComponent {
-    @ViewChild('adaptiveTab');
+    @ViewChild('adaptiveTab')
     public headerText: Object = [{ text: 'HTML' }, { text: 'C Sharp(C#)' }, { text: 'Java' }, { text: 'VB.Net' },
         { text: 'Xamarin' }, { text: 'ASP.NET' }, { text: 'ASP.NET MVC' }, { text: 'JavaScript' }];
 }

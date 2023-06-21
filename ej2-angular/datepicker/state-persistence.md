@@ -32,4 +32,4 @@ Select or enter a date value and then refresh the page by clicking the button (R
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/state-persistence-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/state-persistence-cs1" %}

@@ -18,11 +18,11 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 export class AppComponent{
     // Data for Gantt
     @ViewChild('gantt')
-    public gantt: GanttComponent;
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
+    public gantt?: GanttComponent;
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {
@@ -45,11 +45,11 @@ export class AppComponent{
         };
     }
      show(): void {
-        this.gantt.showColumn(['Duration']); // show by HeaderText
+        this.gantt!.showColumn(['Duration']); // show by HeaderText
     }
 
     hide(): void {
-        this.gantt.hideColumn(['Duration']); // hide by HeaderText
+        this.gantt!.hideColumn(['Duration']); // hide by HeaderText
     }
 }
 

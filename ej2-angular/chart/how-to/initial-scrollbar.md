@@ -24,4 +24,4 @@ By setting `zoomFactor` in primaryXAxis and `isZoomed` value as `true` in [`load
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs10" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs10" %}

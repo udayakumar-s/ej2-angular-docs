@@ -33,7 +33,7 @@ The available built-in command buttons are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/command-column-cs1" %}
+{% previewsample "page.domainurl/samples/grid/command-column-cs1" %}
 
 ## Custom command column
 
@@ -51,4 +51,4 @@ The custom command buttons can be added in a column by using the [`column.comman
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/command-column-cs2" %}
+{% previewsample "page.domainurl/samples/grid/command-column-cs2" %}

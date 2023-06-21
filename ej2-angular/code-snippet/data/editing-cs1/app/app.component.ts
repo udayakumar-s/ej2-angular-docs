@@ -6,7 +6,7 @@ import { data } from './datasource';
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.template.html',
+    templateUrl: './app.template.html',
     styles: [`
             .e-table {
                 border: solid 1px #e0e0e0;
@@ -38,26 +38,26 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public items: object[];
-    public edit: { OrderID: string, CustomerID: string, EmployeeID: string };
-    public dm: DataManager;
-    public text: string;
+    public items?: object[] | any;
+    public edit?: { OrderID: string, CustomerID: string, EmployeeID: string } | any;
+    public dm?: DataManager;
+    public text?: string;
     public show = true;
     public ngOnInit(): void {
       this.text = 'Insert';
-      this.edit = { OrderID: null, CustomerID: null, EmployeeID: null };
+      this.edit = { OrderID: null, CustomerID: null, EmployeeID: null } as any;
       this.dm = new DataManager(data.slice(0, 5));
       this.dm.executeQuery(new Query())
         .then((e: ReturnOption) => this.items = e.result as object[]).catch((e) => true);
     }
 
     public insert(): void {
-        this.dm.insert({
-          OrderID: this.edit.OrderID,
-          CustomerID: this.edit.CustomerID,
-          EmployeeID: this.edit.EmployeeID
+        (this.dm as DataManager).insert({
+          OrderID: this.edit?.OrderID,
+          CustomerID: this.edit?.CustomerID,
+          EmployeeID: this.edit?.EmployeeID
         });
-        this.dm.executeQuery(new Query())
+        (this.dm as DataManager).executeQuery(new Query())
         .then((e: ReturnOption) => this.items = e.result as object[]).catch((e) => true);
     }
 }

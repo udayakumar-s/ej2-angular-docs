@@ -26,4 +26,4 @@ In the following sample, the Message component content is customized with HTML e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/template-cs1" %}
+{% previewsample "page.domainurl/samples/message/template-cs1" %}

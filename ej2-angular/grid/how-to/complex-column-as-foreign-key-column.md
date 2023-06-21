@@ -26,4 +26,4 @@ In the following example, **Employee.EmployeeID** is a complex column and also d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/foreignkey-cs11" %}
+{% previewsample "page.domainurl/samples/grid/foreignkey-cs11" %}

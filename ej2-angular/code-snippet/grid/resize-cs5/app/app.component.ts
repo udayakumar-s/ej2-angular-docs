@@ -19,14 +19,14 @@ import { data } from './datasource';
             <e-column field='Freight' headerText='Freight' width=80></e-column>
         </e-columns>
     </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['./app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public message: string;
+    public data?: object[];
+    public message?: string;
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -34,21 +34,21 @@ export class AppComponent implements OnInit {
 
     resizeStart(args: ResizeArgs) {
         this.message = `resizeStart event triggered`;
-        if (args.column.field == 'OrderID') {
-            args.cancel = true;
+        if ((args as any).column.field == 'OrderID') {
+            (args as any).cancel = true;
         }
     }
 
-    resizing() {
+    resizing(args: any) {
         this.message = `resizing event triggered`;
     }
     resizeStop(args: ResizeArgs) {
         this.message = `resizeStop event triggered`;
-        const headerCell = this.grid.getColumnHeaderByField(args.column.field);
+        const headerCell = (this.grid as any).getColumnHeaderByField((args as any).column.field);
         headerCell.classList.add('customcss');
-        const columnCells = this.grid
+        const columnCells = (this.grid as any)
             .getContentTable()
-            .querySelectorAll(`[data-colindex="${args.column.index}"]`);
+            .querySelectorAll(`[data-colindex="${(args as any).column.index}"]`);
         for (let i = 0; i < columnCells.length; i++) {
             const cell = columnCells[i] as HTMLElement;
             cell.style.backgroundColor = 'rgb(43, 195, 226)';

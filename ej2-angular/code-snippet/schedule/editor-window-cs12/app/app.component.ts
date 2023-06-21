@@ -3,13 +3,13 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Internationalization } from '@syncfusion/ej2-base';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs } from '@syncfusion/ej2-angular-schedule';
-import { scheduleData } from './datasource.ts';
+import { scheduleData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [currentView]='currentView' [cssClass]='cssClass' [eventSettings]='eventSettings' (popupOpen)='onPopupOpen($event)'></ejs-schedule>`,
-    styleUrls: ['app/index.css'],
+    styleUrls: ['./index.css'],
     encapsulation: ViewEncapsulation.None
 })
 

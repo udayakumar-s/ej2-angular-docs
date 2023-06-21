@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban';
-import { AppComponent } from './app.component';
+// import { AppComponent } from './app.component';
 
 /**
  * Module
@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
         BrowserModule,
         KanbanModule
     ],
-    declarations: [AppComponent],
-    bootstrap: [AppComponent]
+    // declarations: [AppComponent],
+    // bootstrap: [AppComponent]
 })
 export class AppModule { }

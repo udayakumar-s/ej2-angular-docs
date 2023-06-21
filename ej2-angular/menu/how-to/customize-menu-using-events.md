@@ -26,4 +26,4 @@ The available events are [`beforeOpen`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/handle-event-cs1" %}
+{% previewsample "page.domainurl/samples/menu/handle-event-cs1" %}

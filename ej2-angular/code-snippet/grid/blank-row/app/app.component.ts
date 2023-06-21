@@ -17,9 +17,9 @@ import { RowDataBoundEventArgs, GridComponent } from '@syncfusion/ej2-angular-gr
 
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -27,16 +27,16 @@ export class AppComponent implements OnInit {
 
     rowDataBound(args: RowDataBoundEventArgs) {
         let count = 0;
-        let keys = Object.keys(args.data);
+        let keys = Object.keys((args as any).data);
         for (let i = 0; i < keys.length; i++) {
-            if (args.data[keys[i]] == null || args.data[keys[i]] == '' || args.data[keys[i]] == undefined) {
+            if ((args as any).data[keys[i]] == null || (args as any).data[keys[i]] == '' || (args as any).data[keys[i]] == undefined) {
                 count++;
             }
         }
         if (count == keys.length) {
-            for (let i = 0; i < this.grid.columns.length; i++) {
-                if (this.grid.columns[i].displayAsCheckBox) {
-                    args.row.children[i].innerHTML = '';
+            for (let i = 0; i < (this.grid as any).columns.length; i++) {
+                if ((this.grid as any).columns[i].displayAsCheckBox) {
+                    (args as any).row.children[i].innerHTML = '';
                 }
             }
         }

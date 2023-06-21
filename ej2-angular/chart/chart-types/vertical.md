@@ -27,7 +27,7 @@ You can use `isTransposed` property in chart to render a chart in vertical manne
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/line-cs9" %}
+{% previewsample "page.domainurl/samples/chart/series/line-cs9" %}
 
 ## See Also
 

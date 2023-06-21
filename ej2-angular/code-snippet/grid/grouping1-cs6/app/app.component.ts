@@ -18,18 +18,16 @@ import { ActionEventArgs, GridComponent, GroupSettingsModel } from '@syncfusion/
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public groupSettings: GroupSettingsModel;
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public groupSettings?: GroupSettingsModel;
+    @ViewChild('grid')
+    public grid?: GridComponent;
     ngOnInit(): void {
         this.data = data;
     }
 
     actionHandler(args: ActionEventArgs) {
-        alert(args.requestType + ' ' + args.type); // custom Action
+        alert((args as any).requestType + ' ' + (args as any).type); // custom Action
     }
 }
-
-
-
 

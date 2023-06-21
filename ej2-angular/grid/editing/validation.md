@@ -26,7 +26,7 @@ Column validation allows you to validate the edited or added row data and it dis
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs33" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs33" %}
 
 ## Custom validation
 
@@ -46,7 +46,7 @@ In the below demo, custom validation applied for **CustomerID** column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs34" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs34" %}
 
 ### Custom validation based on dropdown change
 
@@ -66,4 +66,4 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs35" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs35" %}

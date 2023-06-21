@@ -1,5 +1,4 @@
 
-
 import { Component, OnInit } from '@angular/core';
 import { InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
 import { PageSettingsModel, InfiniteScrollSettingsModel } from '@syncfusion/ej2-angular-grids';
@@ -9,7 +8,7 @@ const names = ['TOM', 'Hawk', 'Jon', 'Chandler', 'Monica', 'Rachel', 'Phoebe', '
 const hours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const designation = ['Manager', 'Engineer 1', 'Engineer 2', 'Developer', 'Tester'];
 const status = ['Completed', 'Open', 'In Progress', 'Review', 'Testing']
-const data = (count) => {
+const data = (count: any) => {
     const result = [];
     for (let i = 0; i < count; i++) {
         result.push({
@@ -38,9 +37,9 @@ const data = (count) => {
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public options: PageSettingsModel;
-    public infiniteOptions: InfiniteScrollSettingsModel;
+    public data?: object[];
+    public options?: PageSettingsModel;
+    public infiniteOptions?: InfiniteScrollSettingsModel | any;
     ngOnInit(): void {
         this.data = data(1000);
         this.options = { pageSize: 50 };

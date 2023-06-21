@@ -24,7 +24,7 @@ In Dialog edit mode, when you start editing the currently selected row data will
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs7" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs7" %}
 
 ## Customize edit dialog
 
@@ -48,7 +48,7 @@ You can refer the Grid [`Default text`](../global-local/) list for more localiza
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs8" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs8" %}
 
 > The Grid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog's height up to 658px.
 
@@ -72,7 +72,7 @@ In the following example, the CustomerID column is rendered as a hidden column, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs9" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs9" %}
 
 ## Use wizard like dialog editing
 
@@ -95,7 +95,7 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/wizardtemplate-cs1" %}
+{% previewsample "page.domainurl/samples/grid/wizardtemplate-cs1" %}
 
 ## Customize Add/Edit Dialog footer
 
@@ -115,4 +115,4 @@ In the following sample, using the `dialog` argument of the `actionComplete` eve
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs10" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs10" %}

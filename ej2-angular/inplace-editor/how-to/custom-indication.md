@@ -30,4 +30,4 @@ But `actionSuccess` event will trigger the handler function with `null` argument
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/custom-indication-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/custom-indication-cs1" %}

@@ -49,7 +49,7 @@ The appearance of the user handle can be customized by using the [`size`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/interaction/userhandle-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/interaction/userhandle-cs2" %}
 
 ## Fixed user handles
 
@@ -71,7 +71,7 @@ To create fixed user handles, define and add them to the collection of nodes and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/interaction/fixeduserhandle-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/interaction/fixeduserhandle-cs1" %}
 
 ## Customization
 
@@ -113,7 +113,7 @@ The following code explains how to customize the appearance of the fixed user ha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/interaction/customizingfixeduserhandle-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/interaction/customizingfixeduserhandle-cs1" %}
 
 >Note: Fixed user handle id should need to be unique.
 
@@ -156,7 +156,7 @@ The following code explains how to customize the node fixed user handle.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/interaction/nodefixeduserhandle-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/interaction/nodefixeduserhandle-cs1" %}
 
 ## Customizing connector fixed user handle
 
@@ -209,4 +209,4 @@ The following code explains how to customize the connector fixed user handle.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/interaction/connectorfixeduserhandle-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/interaction/connectorfixeduserhandle-cs1" %}

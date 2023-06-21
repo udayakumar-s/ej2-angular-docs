@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
-import { scheduleData } from './datasource.ts';
+import { scheduleData } from './datasource';
 
 @Component({
     selector: 'app-root',
@@ -16,7 +16,7 @@ export class AppComponent {
     public eventSettings: EventSettingsModel = {
         dataSource: scheduleData,
     };
-    public enableAdaptiveUI: true;
+    public enableAdaptiveUI?: true;
 }
 
 

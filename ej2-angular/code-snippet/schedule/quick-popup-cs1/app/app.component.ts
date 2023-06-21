@@ -3,7 +3,7 @@
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { ScheduleComponent, CurrentAction, EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs } from '@syncfusion/ej2-angular-schedule';
-import { scheduleData } from './datasource.ts';
+import { scheduleData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService],
@@ -17,7 +17,7 @@ import { scheduleData } from './datasource.ts';
         <div class="e-popup-header">
           <div class="e-header-icon-wrapper">
             <div *ngIf="data.elementType == 'event'" class="subject">{{data.Subject}}</div>
-            <button class="e-close e-close-icon e-icons" title="Close" (click)="onCloseClick($event)"></button>
+            <button class="e-close e-close-icon e-icons" title="Close" (click)="onCloseClick()"></button>
           </div>
         </div>
       </div>
@@ -66,64 +66,64 @@ import { scheduleData } from './datasource.ts';
       </div>
     </ng-template>
   </ejs-schedule>`,
-    styleUrls: ['app/index.css'],
+    styleUrls: ['./index.css'],
     encapsulation: ViewEncapsulation.None,
 })
 
 
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public eventSettings: EventSettingsModel = {
         dataSource: scheduleData
     };
     public selectedDate: Date = new Date(2018, 1, 15);
-    private selectionTarget: Element;
+    private selectionTarget: Element | undefined;
     public onPopupOpen(args: PopupOpenEventArgs): void {
-        this.selectionTarget = null;
+        this.selectionTarget = undefined;
         this.selectionTarget = args.target;
     }
-    public onDetailsClick(): void {
+    public onDetailsClick(Data: any): void {
         this.onCloseClick();
-        const data: Object = this.scheduleObj.getCellDetails(this.scheduleObj.getSelectedElements()) as Object;
-        this.scheduleObj.openEditor(data, 'Add');
+        const data: Object = this.scheduleObj?.getCellDetails(this.scheduleObj.getSelectedElements()) as Object;
+        this.scheduleObj?.openEditor(data, 'Add');
     }
-    public onAddClick(): void {
+    public onAddClick(Data: any): void {
         this.onCloseClick();
-        const data: Object = this.scheduleObj.getCellDetails(this.scheduleObj.getSelectedElements()) as Object;
-        const eventData: { [key: string]: Object } = this.scheduleObj.eventWindow.getObjectFromFormData('e-quick-popup-wrapper');
-        this.scheduleObj.eventWindow.convertToEventData(data as { [key: string]: Object }, eventData);
-        eventData.Id = this.scheduleObj.eventBase.getEventMaxID() as number + 1;
-        this.scheduleObj.addEvent(eventData);
+        const data: Object = this.scheduleObj?.getCellDetails(this.scheduleObj.getSelectedElements()) as Object;
+        const eventData: { [key: string]: Object } | undefined= this.scheduleObj?.eventWindow.getObjectFromFormData('e-quick-popup-wrapper');
+        this.scheduleObj?.eventWindow.convertToEventData(data as { [key: string]: Object }, eventData as any);
+        (eventData as any)['Id'] = this.scheduleObj?.eventBase.getEventMaxID() as number + 1;
+        this.scheduleObj?.addEvent(eventData as any);
     }
     public onEditClick(args: any): void {
         if (this.selectionTarget) {
-        let eventData: { [key: string]: Object } = this.scheduleObj.getEventDetails(this.selectionTarget) as { [key: string]: Object };
+        let eventData: { [key: string]: Object } = this.scheduleObj?.getEventDetails(this.selectionTarget) as { [key: string]: Object };
         let currentAction: CurrentAction = 'Save';
-        if (!isNullOrUndefined(eventData.RecurrenceRule) && eventData.RecurrenceRule !== '') {
+        if (!isNullOrUndefined(eventData['RecurrenceRule']) && eventData['RecurrenceRule'] !== '') {
             if (args.target.classList.contains('e-edit-series')) {
             currentAction = 'EditSeries';
-            eventData = this.scheduleObj.eventBase.getParentEvent(eventData, true);
+            eventData  = this.scheduleObj?.eventBase.getParentEvent(eventData, true) as any;
             } else {
             currentAction = 'EditOccurrence';
             }
         }
-        this.scheduleObj.openEditor(eventData, currentAction);
+        this.scheduleObj?.openEditor(eventData, currentAction);
         }
     }
     public onDeleteClick(args: any): void {
         this.onCloseClick();
         if (this.selectionTarget) {
-        const eventData: { [key: string]: Object } = this.scheduleObj.getEventDetails(this.selectionTarget) as { [key: string]: Object };
-        let currentAction: CurrentAction;
-        if (!isNullOrUndefined(eventData.RecurrenceRule) && eventData.RecurrenceRule !== '') {
+        const eventData: { [key: string]: Object } = this.scheduleObj?.getEventDetails(this.selectionTarget) as { [key: string]: Object };
+        let currentAction: CurrentAction = 'Delete';
+        if (!isNullOrUndefined(eventData['RecurrenceRule']) && eventData['RecurrenceRule'] !== '') {
             currentAction = args.target.classList.contains('e-delete-series') ? 'DeleteSeries' : 'DeleteOccurrence';
         }
-        this.scheduleObj.deleteEvent(eventData, currentAction);
+        this.scheduleObj?.deleteEvent(eventData, currentAction);
         }
     }
     public onCloseClick(): void {
-        this.scheduleObj.quickPopup.quickPopupHide();
+        this.scheduleObj?.quickPopup.quickPopupHide();
     }
 }
 

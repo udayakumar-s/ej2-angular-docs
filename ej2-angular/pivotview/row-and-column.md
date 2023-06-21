@@ -34,7 +34,7 @@ Allows end user to set the pivot table's height and width by using [`height`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs250" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs250" %}
 
 
 ## Row Height
@@ -58,7 +58,7 @@ In the below code sample, the [`rowHeight`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs251" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs251" %}
 
 ## Column Width
 
@@ -80,7 +80,7 @@ In the below example, the [`columnWidth`](https://ej2.syncfusion.com/angular/doc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs252" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs252" %}
 
 ### Adjust width based on columns
 
@@ -98,7 +98,7 @@ By default, if the component width set in code-behind is more than the width of 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs253" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs253" %}
 
 ## Reorder
 
@@ -116,7 +116,7 @@ Allows end user to reorder a particular column header from one index to another 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs254" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs254" %}
 
 ## Column Resizing
 
@@ -137,7 +137,7 @@ Allows end user to resize the columns by clicking and dragging the right edge of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs255" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs255" %}
 
 ## Text Wrap
 
@@ -155,7 +155,7 @@ Allows end user to wrap the cell content to the next line when it exceeds the bo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs256" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs256" %}
 
 ## Text Align
 
@@ -178,7 +178,7 @@ Allows end user to align the content of the pivot table's row and column headers
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs257" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs257" %}
 
 ## AutoFit
 
@@ -196,7 +196,7 @@ Allows the user to fit the Pivot Table columns as wide as the content of the cel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs258" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs258" %}
 
 > The minimum width of 250 pixels is set by default with the grouping bar UI for the first column and cannot be reduced further. So, when the grouping bar is enabled, one can auto fit the Pivot Table columns by calling the [`autoFitColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) method from the grid instance with the parameter contained pivot table columns field name excluding first column.
 
@@ -212,7 +212,7 @@ Allows the user to fit the Pivot Table columns as wide as the content of the cel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs259" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs259" %}
 
 ### Autofit specific columns
 
@@ -230,7 +230,7 @@ During initial rendering, the parameter `autoFit` in the [`columnRender`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs260" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs260" %}
 
 ## Grid Lines
 
@@ -260,7 +260,7 @@ Available mode of grid lines are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs261" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs261" %}
 
 ## Selection
 
@@ -284,7 +284,7 @@ To perform multi-selection, press and hold "CTRL" key and click the desired rows
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs262" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs262" %}
 
 ### Selection Mode
 
@@ -307,7 +307,7 @@ The pivot table supports four types of selection mode that can be set using [`mo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs263" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs263" %}
 
 ### Cell Selection Mode
 
@@ -328,7 +328,7 @@ The pivot table supports two types of cell selection mode that can be set using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs264" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs264" %}
 
 > Cell selection requires [`mode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSelectionSettings/#mode) property in [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSelectionSettings/) to be **Cell** or **Both**, and [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSelectionSettings/#type) property should be **Multiple**.
 
@@ -348,7 +348,7 @@ The background-color of the selected cell can be changed using built-in CSS name
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/background-css-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/background-css-cs1" %}
 
 ### Event
 
@@ -368,7 +368,7 @@ The event `cellSelected` is triggered when cell selection gets completed. It pro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs265" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs265" %}
 
 #### CellSelecting
 
@@ -386,7 +386,7 @@ The event `cellSelecting` triggers before cell gets selected gets completed. It 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs266" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs266" %}
 
 
 ## Clip Mode
@@ -411,7 +411,7 @@ The clip mode provides options to display its overflow cell content in the pivot
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs267" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs267" %}
 
 ## Cell Template
 
@@ -431,7 +431,7 @@ In this demo, the revenue cost for each year is represented with trend icons.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs268" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs268" %}
 
 
 ## Events
@@ -457,7 +457,7 @@ The event `queryCellInfo` triggers while rendering row and value cells in the pi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs269" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs269" %}
 
 ### HeaderCellInfo
 
@@ -477,7 +477,7 @@ The event `headerCellInfo` triggers while rendering the header cells in the pivo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs270" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs270" %}
 
 ### ColumnRender
 
@@ -500,7 +500,7 @@ The event [`columnRender`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs271" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs271" %}
 
 ### CellClick
 
@@ -521,4 +521,4 @@ The event [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/piv
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs272" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs272" %}

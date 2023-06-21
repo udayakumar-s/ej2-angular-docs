@@ -25,10 +25,10 @@ import { data, itemData } from './datasource';
                <div style="height:173px;overflow: auto;min-width: 250px;">
                   <span #EventLog class="EventLog" id="EventLog" style="word-break: normal;"></span>
                 </div>
-                <button class='e-btn' (click)='clearTrace($event)'>Clear</button>
+                <button class='e-btn' (click)='clearTrace()'>Clear</button>
                 </div>
             </div>
-        </div>`
+        </div>`,
         styles: [`
        #EventLog b {
          color: #388e3c;
@@ -43,7 +43,7 @@ import { data, itemData } from './datasource';
 })
 export class AppComponent {
     public data: object[] = data;
-    @ViewChild('spreadsheet') public spreadsheetObj: SpreadsheetComponent;
+    @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
     @ViewChild('EventLog') EventLogEle: any;
 
     dataSourceChanged(args: DataSourceChangedEventArgs): void {
@@ -56,7 +56,7 @@ export class AppComponent {
       // this.spreadsheetObj.sheets[0].ranges[0].dataSource = itemData;
     }
 
-    clearTrace(event): void {
+    clearTrace(): void {
       this.EventLogEle.nativeElement.innerHTML = "";
     }
 
@@ -67,6 +67,6 @@ export class AppComponent {
      log.insertBefore(span, log.firstChild);
    }
   };
-}
+
 
 

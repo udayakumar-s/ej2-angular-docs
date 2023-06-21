@@ -6,7 +6,7 @@ import {
     DayService, WeekService, MonthService, DragAndDropService, View
 } from '@syncfusion/ej2-angular-schedule';
 import { extend } from '@syncfusion/ej2-base';
-import { resourceData, timelineResourceData } from './datasource.ts';
+import { resourceData,  resourceConferenceData } from './datasource';
 
 @Component({
     selector: "app-root",
@@ -32,7 +32,7 @@ import { resourceData, timelineResourceData } from './datasource.ts';
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 3, 4);
     public currentView: View = 'Month';
     public group: GroupModel = {
@@ -53,7 +53,7 @@ export class AppComponent {
     ];
     public allowMultiple: Boolean = true;
     public eventSettings: EventSettingsModel = {
-        dataSource: <Object[]>extend([], resourceData.concat(timelineResourceData), null, true)
+        dataSource: <Object[]>extend([], resourceData.concat( resourceConferenceData), undefined, true)
     };
 }
 

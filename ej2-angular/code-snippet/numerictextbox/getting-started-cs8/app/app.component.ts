@@ -8,12 +8,13 @@ import { Component } from '@angular/core';
     // input element for checking the two-way binding support using value property
     template: `
      <div class='e-input-group' style='margin-bottom:30px'>
-        <input class='e-input' type='text' [(ngModel)]='value' placeholder='Enter a number'  />
+        <ejs-input class='e-input' type='text' [(ngModel)]='value' placeholder='Enter a number'  />
      </div>
     <ejs-numerictextbox [(value)]='value'></ejs-numerictextbox>
     `
 })
 export class AppComponent {
+    value: any;
     constructor() {
     }
 }

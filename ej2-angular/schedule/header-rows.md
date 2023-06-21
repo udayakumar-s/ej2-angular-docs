@@ -38,7 +38,7 @@ The following example shows the Scheduler displaying all the available header ro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs39" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs39" %}
 
 ![Timeline Header Rows](images/schedule-headerrow-default.png)
 
@@ -58,7 +58,7 @@ To display the timeline Scheduler simply with year and month names alone, define
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs40" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs40" %}
 
 ![Display Year and Month rows in timeline views](images/schedule-headerrow-month-year.png)
 
@@ -78,7 +78,7 @@ The week number can be displayed in a separate header row of the timeline Schedu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs41" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs41" %}
 
 ![Display Week numbers in timeline views](images/schedule-headerrow-weeknumber.png)
 
@@ -98,7 +98,7 @@ It is possible to display a complete year in a timeline view by setting `interva
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs42" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs42" %}
 
 ![Display dates of a complete year in timeline views](images/schedule-headerrow-dates.png)
 
@@ -118,7 +118,7 @@ You can customize the text of the header rows and display any images or formatte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs43" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs43" %}
 
 ![Display customize header rows using template](images/schedule-headerrow-custom-header.png)
 

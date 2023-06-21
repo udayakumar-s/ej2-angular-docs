@@ -33,6 +33,6 @@ The custom aggregate function will be invoked with different arguments for Total
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/aggregates-custom-cs1" %}
+{% previewsample "page.domainurl/samples/grid/aggregates-custom-cs1" %}
 
 > To access the custom aggregate value inside template, use the key as **Custom**

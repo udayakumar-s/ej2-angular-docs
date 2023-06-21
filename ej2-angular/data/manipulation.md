@@ -33,7 +33,7 @@ The [`insert`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/editing-cs1" %}
+{% previewsample "page.domainurl/samples/data/editing-cs1" %}
 
 > In remote data sources, when the primary key field is an identity field, then it is advised to return the created data in the response.
 
@@ -56,7 +56,7 @@ The [`update`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#up
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/editing-cs2" %}
+{% previewsample "page.domainurl/samples/data/editing-cs2" %}
 
 > Primary key name is required by the [`update`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#update) method to find the record to be updated.
 
@@ -79,7 +79,7 @@ The [`remove`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#re
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/editing-cs3" %}
+{% previewsample "page.domainurl/samples/data/editing-cs3" %}
 
 > Primary key name and its value are required to find the record to be removed.
 
@@ -102,4 +102,4 @@ The [`remove`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#re
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/batchediting-cs1" %}
+{% previewsample "page.domainurl/samples/data/batchediting-cs1" %}

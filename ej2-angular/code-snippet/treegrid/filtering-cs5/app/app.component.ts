@@ -16,11 +16,11 @@ import { sampleData } from './datasource';
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
-    dataBound(args) {
-    Object.assign((this.treeGridObj.grid.filterModule as any).filterOperators, { startsWith: 'contains' });
+    public treeGridObj?: TreeGridComponent;
+    dataBound(args: any) {
+    Object.assign((this.treeGridObj?.grid.filterModule as any).filterOperators, { startsWith: 'contains' });
     }
     ngOnInit(): void {
         this.data = sampleData;

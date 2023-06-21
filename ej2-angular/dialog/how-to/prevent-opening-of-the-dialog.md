@@ -25,4 +25,4 @@ In the following sample, the success dialog is opened when you enter the usernam
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-check-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-check-cs1" %}

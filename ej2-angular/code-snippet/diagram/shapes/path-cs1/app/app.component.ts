@@ -2,7 +2,7 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { Diagram, NodeModel, PathModel , TextStyleModel } from '@syncfusion/ej2-diagrams';
-import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 
 @Component({
@@ -18,7 +18,7 @@ import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
 export class AppComponent {
 
     @ViewChild('diagram')
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
 
     public shape: PathModel = {
          type:'Path',
@@ -27,7 +27,7 @@ export class AppComponent {
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill =  'none';
+        ((node as NodeModel).style as ShapeStyleModel).fill =  'none';
         return node;
     }
 }

@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, PivotView, ConditionalFormattingService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, ConditionalFormattingService } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -11,16 +11,16 @@ import { Pivot_Data } from './datasource.ts';
   template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings allowConditionalFormatting='true' width=width height='350'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public height: number;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public height?: number;
+    public dataSourceSettings?: IDataOptions;
 
     ngOnInit(): void {
 
         this.width = '100%';
 
         this.dataSourceSettings = {
-        dataSource: Pivot_Data,
+        dataSource: Pivot_Data as IDataSet[],
         expandAll: false,
         enableSorting: true,
         drilledMembers: [{ name: 'Country', items: ['France', 'Germany'] }],

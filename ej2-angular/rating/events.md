@@ -126,4 +126,4 @@ Below example demonstrates the valueChanged event of the Rating component.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rating/events-cs" %}
+{% previewsample "page.domainurl/samples/rating/events-cs" %}

@@ -33,7 +33,7 @@ In the Gantt component, you can enable or disable the mouse hover tooltip for th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/tooltip/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/tooltip/default-cs1" %}
 
 > The default value of the [`tooltipSettings.showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#showtooltip) property is `true`.
 
@@ -53,7 +53,7 @@ In the Gantt component, you can enable or disable the mouse hover tooltip of tim
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/tooltip/timelinecell-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/tooltip/timelinecell-cs1" %}
 
 ## Cell tooltip
 
@@ -71,7 +71,7 @@ You can enable or disable the Grid cell tooltip using the [`columns.clipMode`](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/tooltip/cell-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/tooltip/cell-cs1" %}
 
 ### Clip mode
 
@@ -104,7 +104,7 @@ The default tooltip in the Gantt component can be customized using the [`tooltip
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/tooltip/taskbar-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/tooltip/taskbar-cs1" %}
 
 ### Connector line tooltip
 
@@ -122,7 +122,7 @@ The default connector line tooltip in the Gantt component can be customized usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/tooltip/dependency-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/tooltip/dependency-cs1" %}
 
 ### Taskbar editing tooltip
 
@@ -140,7 +140,7 @@ The taskbar editing tooltip can be customized using the [`tooltipSettings.editin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/tooltip/taskbar-edit-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/tooltip/taskbar-edit-cs1" %}
 
 ### Baseline tooltip
 
@@ -158,4 +158,4 @@ A baseline tooltip can be customized using the [`tooltipSettings.baseline`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/tooltip/baseline-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/tooltip/baseline-cs1" %}

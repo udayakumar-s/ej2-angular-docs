@@ -11,7 +11,7 @@ import { L10n,setCulture } from '@syncfusion/ej2-base';
     // specifies the template string for the MultiSelect component
     template: `<ejs-multiselect id='multiselectelement' [dataSource]='customerData' [query]='query' [fields]='fields' [placeholder]='text' [locale]='locale'></ejs-multiselect>`
 })
-export class AppComponent implements onInit {
+export class AppComponent implements OnInit {
     constructor() {
     }
     //set the placeholder text in french to MultiSelect input

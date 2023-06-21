@@ -29,7 +29,7 @@ added using the iconCss property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/popup-icon-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/popup-icon-cs1" %}
 
 ## Template
 
@@ -49,7 +49,7 @@ Popup items can be customized by using the [`beforeItemRender`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/template-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/template-cs1" %}
 
 ### Popup Templating
 
@@ -67,7 +67,7 @@ The whole popup can be customized as per the requirement. In the following examp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/split-button/popup-template-cs1" %}
+{% previewsample "page.domainurl/samples/split-button/popup-template-cs1" %}
 
 ## See Also
 

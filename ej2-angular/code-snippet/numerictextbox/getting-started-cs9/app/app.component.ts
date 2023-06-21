@@ -9,7 +9,7 @@ import { L10n } from '@syncfusion/ej2-base';
     // sets `German` culture using the culture value 'de'
     template: `<ejs-numerictextbox locale='de' value='10'></ejs-numerictextbox>`
 })
-export class AppComponent implements onInit {
+export class AppComponent implements OnInit {
     constructor() {
     }
     ngOnInit(): void {

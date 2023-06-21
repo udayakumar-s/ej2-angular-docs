@@ -31,7 +31,7 @@ To bind local JSON data to the Kanban, you can simply assign a JavaScript object
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/local-data-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/local-data-cs1" %}
 
 > By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
@@ -51,7 +51,7 @@ To bind remote data to kanban component, assign service data as an instance of [
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/remote-data-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/remote-data-cs1" %}
 
 > By default, [`DataManager`](../data) uses **ODataAdaptor** for remote data-binding.
 
@@ -71,7 +71,7 @@ To bind remote data to kanban component, assign service data as an instance of [
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/odata-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/odata-cs1" %}
 
 ### OData v4 services
 
@@ -89,7 +89,7 @@ The ODataV4 is an improved version of OData protocols, and the [`DataManager`](.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/odataV4-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/odataV4-cs1" %}
 
 ### Web API
 
@@ -230,7 +230,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/custom-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/custom-cs1" %}
 
 ### Sending additional parameters to the server
 
@@ -248,7 +248,7 @@ To add a custom parameter to the data request, use the **addParams** method of *
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/additional-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/additional-cs1" %}
 
 > The parameters added using the [`query`](https://ej2.syncfusion.com/angular/documentation/api/kanban#query) property will be sent along with the data request for every kanban action.
 
@@ -270,7 +270,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/error-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/error-cs1" %}
 
 > The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
@@ -290,6 +290,6 @@ You can use Kanban [`dataSource`](https://ej2.syncfusion.com/angular/documentati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/ajax-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/ajax-cs1" %}
 
 > * If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server-side crud actions.

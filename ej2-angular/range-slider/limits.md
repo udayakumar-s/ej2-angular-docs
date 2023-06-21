@@ -50,7 +50,7 @@ Refer to the following snippet to enable the limits in the Slider.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/default-limit-cs1" %}
+{% previewsample "page.domainurl/samples/slider/default-limit-cs1" %}
 
 ## Range Slider limits
 
@@ -78,7 +78,7 @@ In the range slider, both handles can be restricted and locked from the limit's 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/range-limit-cs1" %}
+{% previewsample "page.domainurl/samples/slider/range-limit-cs1" %}
 
 ## Handle lock
 
@@ -106,4 +106,4 @@ In this sample, the movement of both slider handles has been locked.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/handle-lock-cs1" %}
+{% previewsample "page.domainurl/samples/slider/handle-lock-cs1" %}

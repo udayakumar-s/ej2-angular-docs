@@ -14,7 +14,7 @@ export class AppComponent {
     @ViewChild('droppable',{static: false})element: any ;
 
     ngAfterViewInit() {
-        let droppable: Droppable = new Droppable(document.getElementById('droppable'));
+        let droppable: Droppable = new Droppable(document.getElementById('droppable') as HTMLElement);
      }
 }
 

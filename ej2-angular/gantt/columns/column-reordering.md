@@ -26,7 +26,7 @@ To reorder the columns, inject the `ReorderService` in the provider section of `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/reorder-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/reorder-cs1" %}
 
 > You can disable the reordering of a particular column by setting the [`columns.allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowreordering) property to `false`.
 
@@ -46,7 +46,7 @@ Multiple columns can be reordered at a time by using the [`reorderColumns`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/reordermultiple-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/reordermultiple-cs1" %}
 
 ## Reorder Events
 
@@ -68,4 +68,4 @@ During the reorder action, the gantt component triggers the below three events.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/reorder-events-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/reorder-events-cs1" %}

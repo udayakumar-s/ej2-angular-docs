@@ -134,7 +134,7 @@ Output will be as follows:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card-header-cs2" %}
+{% previewsample "page.domainurl/samples/card/card-header-cs2" %}
 
 ## See Also
 

@@ -55,7 +55,7 @@ Meanwhile filtering can also be configured at code behind using the [`filterSett
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs92" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs92" %}
 
 ### Option to select and unselect all members
 
@@ -97,7 +97,7 @@ The data limit can be set using the [`maxNodeLimitInMemberEditor`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs93" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs93" %}
 
 Meanwhile, end user can utilize the search option to refine the members from the exceeded limit. For example, consider that there are 5000 members in the name "Node 1", "Node 2", "Node 3", and so on... and user has set the property [`maxNodeLimitInMemberEditor`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#maxnodelimitinmembereditor) to **500**. In this case, only the initial 500 members will be displayed by default leaving a message "4500 more items. Search to refine further.". To get the member(s) between 501 to 5000, enter the starting character(s) in search option to bring the desired member(s) from the exceeded limit to the UI. Now, end user can either check or uncheck to continue with the filtering process.
 
@@ -124,7 +124,7 @@ This will help to avoid performance lags when opening a member editor whose hier
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs94" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs94" %}
 
 ![output](images/ondemand_member.png)
 
@@ -157,7 +157,7 @@ Allows user to load the members on the basis of the level number set in the [`le
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs95" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs95" %}
 
 ![output](images/level-count.png)
 
@@ -216,7 +216,7 @@ For example, in a "Country" field, to show countries names that contains "United
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs96" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs96" %}
 
 ### Filtering number data type through code
 
@@ -240,7 +240,7 @@ For example, in a "Sold" field, to show the values less than "40000", set [`valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs97" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs97" %}
 
 ### Filtering date data type through code
 
@@ -264,7 +264,7 @@ For example, in a "Delivery Date" field, to show the delivery records of the fir
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs98" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs98" %}
 
 ### Clearing the existing label filter
 
@@ -315,7 +315,7 @@ For example, to show the data where total sum of units sold for each country exc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs99" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs99" %}
 
 ### Clearing the existing value filter
 
@@ -345,7 +345,7 @@ The event [`memberFiltering`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs100" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs100" %}
 
 ### MemberEditorOpen
 
@@ -371,7 +371,7 @@ In the below sample, the member editor of field "Country" shows only the selecte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs101" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs101" %}
 
 ### ActionBegin
 
@@ -401,7 +401,7 @@ In the below sample, filter action can be restricted by setting the **args.cance
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs102" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs102" %}
 
 ### ActionComplete
 
@@ -429,7 +429,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs103" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs103" %}
 
 ### ActionFailure
 
@@ -451,4 +451,4 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs104" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs104" %}

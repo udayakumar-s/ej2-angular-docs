@@ -6,7 +6,7 @@ import { Component, ViewChild } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default-sidebar" #sidebar [type]='type' [enablePersistence]='enablePersistence' (created)="onCreated($event)" style="visibility: hidden" [target]='target'>
                         <div class="title"> Sidebar content</div>
                         <div class="sub-title">
@@ -38,33 +38,33 @@ import { Component, ViewChild } from '@angular/core';
                     </div>`
 })
 export class AppComponent {
-    @ViewChild('sidebar') sidebar: SidebarComponent;
+    @ViewChild('sidebar') sidebar?: SidebarComponent;
     public type: string = 'Push';
     public target: string = 'content';
     public enablePersistence: boolean = true;
     @ViewChild('togglebtn')
-    public togglebtn: ButtonComponent;
+    public togglebtn?: ButtonComponent;
     public onCreated(args: any) {
-         this.sidebar.element.style.visibility = '';
+        (this.sidebar as SidebarComponent).element.style.visibility = '';
     }
     btnClick() {
-        if (this.togglebtn.element.classList.contains('e-active')) {
-            this.togglebtn.content = 'Open';
-            this.sidebar.hide();
+        if ((this.togglebtn as ButtonComponent).element.classList.contains('e-active')) {
+            (this.togglebtn as ButtonComponent).content = 'Open';
+            this.sidebar?.hide();
         } else {
-            this.togglebtn.content = 'Close';
-            this.sidebar.show();
+            (this.togglebtn as ButtonComponent).content = 'Close';
+            this.sidebar?.show();
         }
     }
     closeClick() {
-        this.sidebar.hide();
-        this.togglebtn.element.classList.remove('e-active');
-        this.togglebtn.content = 'Open'
+        this.sidebar?.hide();
+        (this.togglebtn as ButtonComponent).element.classList.remove('e-active');
+        (this.togglebtn as ButtonComponent).content = 'Open'
     }
     @ViewChild('radio')
-    public radiobutton: RadioButtonComponent;
+    public radiobutton?: RadioButtonComponent;
     public changeHandler(args: any): void {
-        this.sidebar.position = (args.event.target.ej2_instances[0].label == "Left") ? "Left" : "Right";
+        (this.sidebar as SidebarComponent).position = (args.event.target.ej2_instances[0].label == "Left") ? "Left" : "Right";
     }
 }
 

@@ -27,7 +27,7 @@ To place the icon on a menu item, set the [`iconCss`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs11" %}
 
 ## Navigation
 
@@ -46,7 +46,7 @@ It can be achieved by providing a link to the menu item using the [`url`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs12" %}
 
 ## Multilevel nesting
 
@@ -65,7 +65,7 @@ In the following sample, three-level nesting of menu has been provided.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs13" %}
 
 > You can achieve multi level nesting with data source by mapping `name` of the child items to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel#children) sub-property of [`fields`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel) property. Also, we can specify [`id`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#id) property for menu items. For more information, refer to the [`data source binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
 The below table represents the MenuItem properties and it's description.

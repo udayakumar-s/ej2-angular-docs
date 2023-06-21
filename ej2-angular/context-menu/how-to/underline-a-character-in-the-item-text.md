@@ -24,4 +24,4 @@ To underline a particular character in a text, it can be handled in `beforeItemR
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/separators-cs2" %}
+{% previewsample "page.domainurl/samples/context-menu/separators-cs2" %}

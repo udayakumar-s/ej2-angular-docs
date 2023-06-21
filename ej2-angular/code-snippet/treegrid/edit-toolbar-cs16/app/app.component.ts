@@ -18,14 +18,15 @@ import { TreeGridComponent, Column, EditSettingsModel, ToolbarItems } from '@syn
 })
 
 export class AppComponent implements OnInit {
-    public data: Object[];
-    public editSettings: EditSettingsModel;
-    public editOptions: Object;
-    public toolbarOptions: ToolbarItems[];
-    public elem: HTMLElement;
-    public textEditor;
+    public data?: Object[];
+    public editSettings?: EditSettingsModel;
+    public editOptions?: Object;
+    public toolbarOptions?: ToolbarItems[];
+    public elem?: HTMLElement;
+    public textEditor?: TextBox;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
+    treegrid: any;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -43,23 +44,26 @@ export class AppComponent implements OnInit {
             return this.elem;
         },
         read: () => {
-            return this.textEditor.value;
+            return (this.textEditor as TextBox).value;
         },
         destroy: () => {
-            this.textEditor.destroy();
+            (this.textEditor as TextBox).destroy();
         },
-        write: (args: { rowData: Object; column: Column }) => {
+        write: (args: { rowData: Object; column: Column } | any) => {
             this.textEditor = new TextBox({
             multiline: true,
             value: args.rowData[args.column.field],
             floatLabelType: 'Auto'
             });
             this.textEditor.appendTo(this.elem);
-        };
+            }
+        }
     }
-
-    public valueAccessor = (field: string, sdata: object, column: object) => {
-        var value = sdata[field];
+    created (args: any) {
+        this.treegrid.keyConfigs.enter = '';
+    };
+    public valueAccessor (field: string | any, sdata: object | any, column: object): string {
+        var value = sdata[field]; 
         if (value != undefined) {
             return value.split('\n').join('<br>');
         }
@@ -67,11 +71,6 @@ export class AppComponent implements OnInit {
             return '';
         }
     };
-
-    created = (args) => {
-        this.treegrid.keyConfigs.enter = '';
-    };
 }
-
 
 

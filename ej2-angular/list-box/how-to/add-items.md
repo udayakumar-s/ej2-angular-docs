@@ -24,4 +24,4 @@ To add an item or multiple items, [`addItems`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs8" %}

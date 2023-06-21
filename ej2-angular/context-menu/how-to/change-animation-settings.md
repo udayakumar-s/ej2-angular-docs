@@ -34,4 +34,4 @@ The following sample illustrates how to open ContextMenu with `FadeIn` effect wi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/template-cs2" %}
+{% previewsample "page.domainurl/samples/context-menu/template-cs2" %}

@@ -25,4 +25,4 @@ Refer the below sample with preventing swipe selection.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs8" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs8" %}

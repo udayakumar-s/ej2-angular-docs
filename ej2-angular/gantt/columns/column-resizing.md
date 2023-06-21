@@ -26,7 +26,7 @@ To resize the column, inject the `ResizeService` in the provider section of `App
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/resize-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/resize-cs1" %}
 
 > You can disable resizing for a particular column by setting the [`columns.allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowresizing) to `false`.
 
@@ -48,4 +48,4 @@ In the following example, the minimum and maximum widths are defined for the `Du
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/min-max-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/min-max-cs1" %}

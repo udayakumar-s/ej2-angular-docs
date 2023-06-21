@@ -5,8 +5,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-rangenavigator id="rn-container" [value]='value' [majorTickLines]='majorTick'>
+    template: `<ejs-rangenavigator id="rn-container" [value]='value' [majorTickLines]='majorTick'>
             <e-rangenavigator-series-collection>
                 <e-rangenavigator-series [dataSource]='chartData' type='StepLine' xName='xData' yName='yData' width=2>
                 </e-rangenavigator-series>
@@ -14,9 +13,9 @@ import { Component, OnInit } from '@angular/core';
         </ejs-rangenavigator>`
 })
 export class AppComponent implements OnInit {
-    public value: Object[];
-    public chartData: Object[];
-    public majorTick: Object[];
+    public value?: Object[];
+    public chartData?: Object[];
+    public majorTick?: Object[];
     ngOnInit(): void {
         this.value = [25, 40];
         this.chartData = [
@@ -24,7 +23,7 @@ export class AppComponent implements OnInit {
                             { xData: 30, yData: 34 }, { xData: 40, yData: 32 },
                             { xData: 50, yData: 40 }
                          ];
-        this.majorTick = { width: 3, color: 'Red' };
+        this.majorTick = [{ width: 3, color: 'Red' }];
     }
 }
 

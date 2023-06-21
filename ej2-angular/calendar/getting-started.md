@@ -171,7 +171,7 @@ The following example illustrates the output in your browser
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs8" %}
 
 ## Setting the value, min and max dates
 
@@ -189,7 +189,7 @@ The following example demonstrates how to set the value,  min and max dates on i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs9" %}
 
 > You can refer to our [Angular Calendar](https://www.syncfusion.com/angular-ui-components/angular-calendar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Calendar example](https://ej2.syncfusion.com/angular/demos/#/material/calendar/default) that shows how to render the Calendar in Angular.
 

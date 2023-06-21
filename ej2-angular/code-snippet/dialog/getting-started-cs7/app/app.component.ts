@@ -18,12 +18,13 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('ejDialog') ejDialog: DialogComponent;
-    @ViewChild('ejInnerDialog') ejInnerDialog: DialogComponent;
+    @ViewChild('ejDialog') ejDialog: DialogComponent | any;
+    @ViewChild('ejInnerDialog') ejInnerDialog: DialogComponent | any;
    // Create element reference for dialog target element.
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef }) container: ElementRef |any;
     // The Dialog shows within the target element.
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
+content: any;
 
     //To get all element of the dialog component after component get initialized.
     ngOnInit() {
@@ -43,10 +44,10 @@ export class AppComponent implements OnInit {
     // Dialog footer template content
     public footerTemplate: string='<span style="float: left;font-size: 14px;padding-left: 15px;color: rgba(0, 0, 0, 0.54);">Click the close button to Exit</span>';
     // Sample level code to handle the button click action
-    public onOpenDialog = function(event: any): void {
+    public onOpenDialog = (event: any): void => {
         this.ejDialog.show();
     }
-    public onOpenInnerDialog = function(event: any): void {
+    public onOpenInnerDialog = (event: any): void => {
         this.ejInnerDialog.show();
     }
 }

@@ -16,8 +16,8 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public customAttributes: object;
+    public data?: object[];
+    public customAttributes?: object;
 
     ngOnInit(): void {
         this.data = data;

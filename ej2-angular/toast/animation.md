@@ -28,4 +28,4 @@ The sample demonstrates some types of animation that suits Toast. You can check 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs3" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs3" %}

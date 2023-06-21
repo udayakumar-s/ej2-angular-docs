@@ -26,7 +26,7 @@ import { BasicShapeModel } from "@syncfusion/ej2-angular-diagrams";
 })
 export class AppComponent {
   @ViewChild("diagram")
-  public shape: BasicShapeModel;
+  public shape?: BasicShapeModel;
   ngOnInit(): void {
     this.shape = { type: "Basic", shape: "Rectangle" };
   }

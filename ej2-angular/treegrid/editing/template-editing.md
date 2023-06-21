@@ -28,7 +28,7 @@ In the below sample, We have created the `FormGroup` with `FormControls` for eac
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-dlg-react-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-dlg-react-cs1" %}
 
 ## Template-driven forms
 
@@ -54,7 +54,7 @@ In the following sample, treegrid enabled with dialog template editing.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-dlg-temp-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-dlg-temp-cs1" %}
 
 > The template form editors should have **name** attribute.
 

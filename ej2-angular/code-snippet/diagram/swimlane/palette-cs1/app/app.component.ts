@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
- import { SymbolPaletteComponent, SymbolPalette, SymbolPreviewModel, NodeModel, ConnectorModel, ExpandMode, PaletteModel, SwimLaneModel, LaneModel, HeaderModel, MarginModel } from '@syncfusion/ej2-angular-diagrams';
+ import { SymbolPaletteComponent, SymbolPalette, SymbolPreviewModel, NodeModel, ConnectorModel, PaletteModel, SwimLaneModel, LaneModel, HeaderModel, MarginModel, ExpandTool, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -10,10 +10,10 @@ import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    public expandMode: ExpandMode;
-    public palettes: PaletteModel[];
-    public symbolMargin: MarginModel;
-    public symbolPreview: SymbolPreviewModel;
+    public expandMode?: ExpandTool;
+    public palettes?: PaletteModel[];
+    public symbolMargin?: MarginModel;
+    public symbolPreview?: SymbolPreviewModel;
     public getswimlaneShapes(): NodeModel[] {
        let swimlaneShapes : NodeModel[]= [
             {
@@ -78,24 +78,24 @@ export class AppComponent {
     public getPaletteNodeDefaults(node: NodeModel): void {
         node.width = 100;
         node.height = 100;
-        node.style.strokeColor = '#3A3A3A';
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = '#3A3A3A';
     }
-    public getSymbolInfo(symbol) {
+    public getSymbolInfo() {
         // Enables to fit the content into the specified palette item size
         return {
             fit: true
         };
         // When it is set as false, the element is rendered with actual node size
-    },
+    }
     ngOnInit(): void {
-        this.expandMode = 'Multiple'
+        this.expandMode = 'Multiple' as any
         this.palettes = [{
             id: 'swimlane',
             expanded: true,
             symbols: this.getswimlaneShapes(),
             title: 'Swimlane Shapes',
             iconCss: 'e-ddb-icons e-basic'
-        }],
+        } as any] ,
         this.symbolMargin = {
             left: 15,
             right: 15,

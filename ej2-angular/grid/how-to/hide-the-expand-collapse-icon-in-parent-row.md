@@ -58,4 +58,4 @@ In the below demo, the expand/collapse icon in the row with **EmployeeID** as **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/template-cs4" %}
+{% previewsample "page.domainurl/samples/grid/template-cs4" %}

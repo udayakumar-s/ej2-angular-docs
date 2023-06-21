@@ -26,18 +26,18 @@ import { conditionalFormatData } from './datasource';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = conditionalFormatData;
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:N1');
-        this.spreadsheetObj.conditionalFormat({ type: 'RYGColorScale', range: 'E2:E9' });
-        this.spreadsheetObj.conditionalFormat({ type: 'ThreeArrows', range: 'H2:H9' });
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:N1');
+        this.spreadsheetObj!.conditionalFormat({ type: 'RYGColorScale', range: 'E2:E9' });
+        this.spreadsheetObj!.conditionalFormat({ type: 'ThreeArrows', range: 'H2:H9' });
         //Custom Format
-        this.spreadsheetObj.conditionalFormat({ type: 'Top10Items', value: '1',
+        this.spreadsheetObj!.conditionalFormat({ type: 'Top10Items', value: '1',
             format: { style: { color: '#ffffff', backgroundColor: '#009999', fontWeight: 'bold'}}, range: 'F2:F9' });
-        this.spreadsheetObj.conditionalFormat({ type: 'Bottom10Items', value: '1',
+        this.spreadsheetObj!.conditionalFormat({ type: 'Bottom10Items', value: '1',
             format: { style: { color: '#ffffff', backgroundColor: '#c68d53', fontWeight: 'bold'}}, range: 'G2:G9' });
     }
 }

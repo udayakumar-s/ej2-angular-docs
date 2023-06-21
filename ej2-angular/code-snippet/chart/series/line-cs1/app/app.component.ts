@@ -1,12 +1,11 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { lineData } from 'datasource.ts';
+import { lineData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'
     [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y'></e-series>
@@ -14,10 +13,10 @@ import { lineData } from 'datasource.ts';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public chartData: Object[];
-    public title: string;
-     public primaryXAxis: Object;
-      public primaryYAxis: Object;
+    public chartData?: Object[];
+    public title?: string;
+     public primaryXAxis?: Object;
+      public primaryYAxis?: Object;
     ngOnInit(): void {
         this.chartData = lineData;
         this.primaryXAxis = {

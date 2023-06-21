@@ -6,8 +6,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template:
-    `<div class="e-float-input" style="width: 200px; display: inline-block;">
+    template: `<div class="e-float-input" style="width: 200px; display: inline-block;">
             <input type="text" class="searchtext"/>
             <span class="e-float-line"></span>
             <label class="e-float-text">Search text</label>
@@ -24,9 +23,9 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
-    @ViewChild('grid') public gridObj: GridComponent;
+    @ViewChild('grid') public gridObj?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -34,7 +33,7 @@ export class AppComponent implements OnInit {
 
     search() {
         const searchText: string = (document.getElementsByClassName('searchtext')[0] as any).value;
-        this.gridObj.search(searchText);
+        (this.gridObj as any).search(searchText);
     }
 }
 

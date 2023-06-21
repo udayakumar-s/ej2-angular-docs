@@ -2,8 +2,8 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { Gantt, Toolbar, PdfExport, Selection, Filter, PdfExportProperties } from '@syncfusion/ej2-angular-gantt';
+
+import { Gantt, Toolbar, PdfExport, Selection, Filter, PdfExportProperties, ToolbarItem, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { editingData } from './data';
@@ -17,11 +17,11 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public ganttChart: GanttComponent;
+    public ganttChart?: GanttComponent;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -39,7 +39,7 @@ export class AppComponent{
                 let exportProperties: PdfExportProperties = {
                   exportType: 'CurrentViewData'
                 };
-                this.ganttChart.pdfExport(exportProperties);
+                this.ganttChart!.pdfExport(exportProperties);
             }
     };
 }

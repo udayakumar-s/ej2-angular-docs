@@ -6,7 +6,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default-sidebar" #sidebar (open)="open($event)" (close)="close($event)">
                         <div class="title"> Sidebar content</div>
                         <div class="sub-title">
@@ -35,21 +35,21 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
                     </div>`
 })
 export class AppComponent {
-    @ViewChild('sidebar') sidebar: SidebarComponent;
-    public open() {
+    @ViewChild('sidebar') sidebar?: SidebarComponent;
+    public open(args: any) {
        console.log("Sidebar Opened");
     }
-    public close() {
+    public close(args: any) {
         console.log("Sidebar Closed");
     }
     openClick() {
-        this.sidebar.show();
+        this.sidebar?.show();
     }
     toggleClick() {
-        this.sidebar.toggle();
+        this.sidebar?.toggle();
     }
     closeClick() {
-        this.sidebar.hide();
+        this.sidebar?.hide();
     }
 }
 

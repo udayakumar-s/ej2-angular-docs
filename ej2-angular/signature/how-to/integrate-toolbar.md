@@ -25,4 +25,4 @@ In that, [`canUndo`](https://ej2.syncfusion.com/angular/documentation/api/signat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/signature/toolbar-cs1" %}

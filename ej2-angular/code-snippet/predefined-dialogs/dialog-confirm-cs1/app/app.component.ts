@@ -10,9 +10,12 @@ import { DialogUtility } from '@syncfusion/ej2-popups';
 })
 
 export class AppComponent implements OnInit {
-    public dialogObj;
+    ngOnInit(): void {
+      throw new Error('Method not implemented.');
+    }
+    public dialogObj :any;
     public confirmBtnClick = (): void => {
-    document.getElementById('statusText').style.display = 'none';
+    document.getElementById('statusText')!.style.display = 'none';
     this.dialogObj = DialogUtility.confirm({
       title: 'Delete Multiple Items',
       content: 'Are you sure you want to permanently delete these items?',
@@ -23,15 +26,15 @@ export class AppComponent implements OnInit {
   };
   private confirmOkAction(): void {
     this.dialogObj.hide();
-    document.getElementById('statusText').innerHTML =
+    document.getElementById('statusText')!.innerHTML =
       'The user confirmed the dialog box';
-    document.getElementById('statusText').style.display = 'block';
+    document.getElementById('statusText')!.style.display = 'block';
   }
   private confirmCancelAction(): void {
     this.dialogObj.hide();
-    document.getElementById('statusText').innerHTML =
+    document.getElementById('statusText')!.innerHTML =
       'The user canceled the dialog box.';
-    document.getElementById('statusText').style.display = 'block';
+    document.getElementById('statusText')!.style.display = 'block';
   }
 }
 

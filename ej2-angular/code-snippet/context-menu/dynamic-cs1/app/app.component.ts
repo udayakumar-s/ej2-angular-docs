@@ -17,7 +17,7 @@ import { ContextMenuComponent } from '@syncfusion/ej2-angular-navigations';
 
 export class AppComponent {
     @ViewChild('contextmenu')
-    public cmenu: ContextMenuComponent;
+    public cmenu?: ContextMenuComponent;
     // Initialize menu items.
     public menuItems: MenuItemModel[] = [
     {
@@ -41,13 +41,13 @@ export class AppComponent {
 
     public beforeOpen (args: BeforeOpenCloseMenuEventArgs) {
        // To hide/show items on right click.
-       if ((args.event.target as HTMLElement).id === 'right') {
-          this.cmenu.hideItems(['Cut', 'Copy', 'Paste']);
-          this.cmenu.showItems(['Add', 'Edit', 'Delete']);
-       } else if ((args.event.target as HTMLElement).id === 'left') {
-          this.cmenu.showItems(['Cut', 'Copy', 'Paste']);
-          this.cmenu.hideItems(['Add','Edit','Delete']);
-       }
+        if ((args.event.target as HTMLElement).id === 'right') {
+                (this.cmenu as ContextMenuComponent).hideItems(['Cut', 'Copy', 'Paste']);
+                (this.cmenu as ContextMenuComponent).showItems(['Add', 'Edit', 'Delete']);
+        } else if ((args.event.target as HTMLElement).id === 'left') {
+            (this.cmenu as ContextMenuComponent).showItems(['Cut', 'Copy', 'Paste']);
+            (this.cmenu as ContextMenuComponent).hideItems(['Add','Edit','Delete']);
+        }
     }
 }
 

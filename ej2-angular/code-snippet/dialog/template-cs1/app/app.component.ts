@@ -29,11 +29,11 @@ import { EmitType, isNullOrUndefined } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('template') template: DialogComponent;
+    @ViewChild('template') template: DialogComponent | any;
     // Create element reference for dialog target element.
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef }) container: ElementRef | any;
     // The Dialog shows within the target element.
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
     public proxy: any = this;
 
     //To get all element of the dialog component after component get initialized.
@@ -53,7 +53,7 @@ export class AppComponent implements OnInit {
         (document.getElementById('inVal')as HTMLElement).onkeydown = (e: any) => {
             if (e.keyCode === 13) { this.updateTextValue(); }
         };
-        document.getElementById('sendButton').onclick = (): void => {
+        document.getElementById('sendButton')!.onclick = (): void => {
             this.updateTextValue();
         };
     }
@@ -72,11 +72,15 @@ export class AppComponent implements OnInit {
     }
 
     // Sample level code to handle the button click action
-    public onOpenDialog = function(event: any): void {
+    public onOpenDialog = (event: any): void => {
         // Call the show method to open the Dialog
         this.template.show();
     }
 }
 
 
+
+function detach(arg0: Element) {
+    throw new Error('Function not implemented.');
+}
 

@@ -24,4 +24,4 @@ RTL provides an option to switch the text direction and layout of the Query Buil
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs8" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs8" %}

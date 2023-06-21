@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView, ConditionalFormattingService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, ConditionalFormattingService } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
 
 @Component({
@@ -12,19 +12,19 @@ import { Button } from '@syncfusion/ej2-buttons';
   template: `<div class="col-md-2"><button ej-button id='formatting'>Apply Formatting</button></div><div class="col-md-8"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings allowConditionalFormatting='true' [width]=width  height='350'></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public height: number;
-    public dataSourceSettings: IDataOptions;
-    public button: Button;
+    public width?: string;
+    public height?: number;
+    public dataSourceSettings?: IDataOptions;
+    public button?: Button;
     @ViewChild('pivotview',{static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     ngOnInit(): void {
 
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France', 'Germany'] }],
@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
         this.button = new Button({ isPrimary: true });
         this.button.appendTo('#formatting');
         this.button.element.onclick = (): void => {
-            this.pivotGridObj.conditionalFormattingModule.showConditionalFormattingDialog();
+            this.pivotGridObj?.conditionalFormattingModule.showConditionalFormattingDialog();
         };
     }
 }

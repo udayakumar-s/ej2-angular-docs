@@ -10,13 +10,13 @@ export let ddlObject: DropDownListComponent;
   styles: [`h1 { font-family: Lato; }`]
 })
 export class DropDownComponent  {
-  target: string = document.querySelector('.e-toolbar-item.e-active .e-tab-text').innerHTML;
-  @ViewChild('samples') ddlObj: DropDownListComponent;
+  target: string = (document.querySelector('.e-toolbar-item.e-active .e-tab-text') as Element).innerHTML;
+  @ViewChild('samples') ddlObj?: DropDownListComponent;
 
   public height: string = '220px';
      // defined the array of data
-  @Input() data: string[];
+  @Input() data?: string[];
    public changed(e: any){
-    ddlObject = this.ddlObj;   
+    ddlObject = this.ddlObj as DropDownListComponent;   
   }
 }

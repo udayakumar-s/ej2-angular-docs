@@ -24,7 +24,7 @@ Using [`centerLabel`](https://ej2.syncfusion.com/angular/documentation/api/accum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/centerlable-cs1" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/centerlable-cs1" %}
 
 ## Hover text
 
@@ -42,7 +42,7 @@ The default text in the center label can be changed when the mouse pointer hover
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/centerlable-cs2" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/centerlable-cs2" %}
 
 ## Customization
 
@@ -60,4 +60,4 @@ Customize the center label text using the [`textStyle`](https://ej2.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/centerlable-cs3" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/centerlable-cs3" %}

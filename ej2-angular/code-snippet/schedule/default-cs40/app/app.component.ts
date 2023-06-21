@@ -20,7 +20,7 @@ import { scheduleData } from './datasource';
 })
 export class AppComponent {
     public selectedDate: Date = new Date(2018, 11, 31);
-    public viewInterval: Boolean = 24;
+    public viewInterval: Boolean | Number = 24;
     public eventSettings: EventSettingsModel = { dataSource: scheduleData };
 }
 

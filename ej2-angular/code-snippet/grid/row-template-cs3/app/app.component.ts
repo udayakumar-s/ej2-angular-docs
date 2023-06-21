@@ -44,8 +44,8 @@ import { orderDatas } from './datasource';
 
 export class AppComponent {
 
-    public data: Object[];
-    public dropData: string[];
+    public data?: Object[];
+    public dropData?: string[];
 
     ngOnInit(): void {
         this.data = orderDatas;

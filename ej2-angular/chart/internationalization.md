@@ -39,4 +39,4 @@ In the below example axis, point  and tooltip labels are globalized to EUR.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/number-format-cs1" %}
+{% previewsample "page.domainurl/samples/chart/number-format-cs1" %}

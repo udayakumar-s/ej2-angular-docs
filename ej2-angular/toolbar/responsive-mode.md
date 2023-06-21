@@ -49,7 +49,7 @@ The default overflow mode of the Toolbar is `Scrollable`. Scrollable display mod
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs7" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs7" %}
 
 ## Popup
 
@@ -89,7 +89,7 @@ If primary priority commands also exceed available space, they are moved to the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs8" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs8" %}
 
 ### Text mode for buttons
 
@@ -119,7 +119,7 @@ In the following code sample, text is only visible in the popup container and no
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs9" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs9" %}
 
 ## Render toolbar with a less than minimum height
 
@@ -140,4 +140,4 @@ By default, the toolbar renders with a minimum height to render items properly. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/minimum-height-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/minimum-height-cs1" %}

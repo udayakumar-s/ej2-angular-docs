@@ -15,9 +15,9 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 export class AppComponent {
   @ViewChild('dialog')
-  public alertDialog: DialogComponent;
+  public alertDialog?: DialogComponent;
   @ViewChild('dropdownbutton')
-  public dropdownbutton: DropDownButtonComponent;
+  public dropdownbutton?: DropDownButtonComponent;
 
   public position: any = {X: 100, Y: 100};
 
@@ -28,7 +28,7 @@ export class AppComponent {
         cssClass: 'e-flat',
     },
     click: function () {
-        this.hide();
+        (this as any).hide();
     }
   }];
    // Initialize action items.
@@ -54,7 +54,7 @@ export class AppComponent {
     // To open dialog on selecting `Other Folder...` item.
     public select (args: MenuEventArgs) {
        if (args.item.text === 'Other Folder...') {
-        this.alertDialog.show();
+        this.alertDialog!.show();
       }
     }
 

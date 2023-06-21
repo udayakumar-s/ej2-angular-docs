@@ -36,7 +36,7 @@ The following example depicts the code to show/hide the navigators in the carous
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs8" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs8" %}
 
 ### Show previous and next button on hover
 
@@ -54,7 +54,7 @@ In the carousel, you can show the previous and next buttons only on mouse hover 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs9" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs9" %}
 
 ### Previous and next button template
 
@@ -72,7 +72,7 @@ Template options are provided to customize the previous button using [`previousB
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs10" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs10" %}
 
 ## Indicators
 
@@ -92,7 +92,7 @@ In indicators, the total slides and current slide state have been depicted. You 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs11" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs11" %}
 
 ### Indicators Template
 
@@ -110,7 +110,7 @@ Template option is provided to customize the indicators by using the [`indicator
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/indicator-cs1" %}
+{% previewsample "page.domainurl/samples/carousel/indicator-cs1" %}
 
 ### Showing preview of slide in indicator
 
@@ -128,7 +128,7 @@ You can customize the indicators by showing the preview image of each slide usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/indicator-template-cs1" %}
+{% previewsample "page.domainurl/samples/carousel/indicator-template-cs1" %}
 
 ## Play button
 
@@ -148,7 +148,7 @@ In the carousel, [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs12" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs12" %}
 
 ### Play button template
 
@@ -166,4 +166,4 @@ Template option is provided to customize the play button by using the [`playButt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs13" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs13" %}

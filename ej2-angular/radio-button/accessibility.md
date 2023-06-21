@@ -50,4 +50,4 @@ Move and select the next options.</td></tr>
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/accessibility-cs1" %}
+{% previewsample "page.domainurl/samples/radio-button/accessibility-cs1" %}

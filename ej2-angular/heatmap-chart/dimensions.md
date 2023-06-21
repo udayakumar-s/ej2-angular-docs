@@ -40,7 +40,7 @@ You can set the size for heat map in a pixel.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/dimension/pixel-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/dimension/pixel-cs1" %}
 
 ## In percentage
 
@@ -58,4 +58,4 @@ By setting value in percentage, heat map gets its dimension with respect to its 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/dimension/percentage-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/dimension/percentage-cs1" %}

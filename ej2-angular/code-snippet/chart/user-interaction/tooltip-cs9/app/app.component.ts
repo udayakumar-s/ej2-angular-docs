@@ -4,22 +4,21 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ej-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [tooltip]='tooltip'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [tooltip]='tooltip'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' width=2 name='China' [marker]='marker'></e-series>
             <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y1' width=2 name='Australia' [marker]='marker'></e-series>
             <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y2' width=2 name='Japan' [marker]='marker'></e-series>
         </e-series-collection>
-    </ej-chart>`
+    </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public marker: Object;
-    public tooltip: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public marker?: Object;
+    public tooltip?: Object;
     ngOnInit(): void {
         this.chartData = [
                 { x: new Date(1975, 0, 1), y: 16, y1: 10, y2: 4.5 },
@@ -47,7 +46,7 @@ export class AppComponent implements OnInit {
         this.tooltip = { enable: true, template: '<div>${x}</div><div>${y}</div>' };
         this.marker = { visible: true, width: 10, height: 10 };
         this.title = 'Unemployment Rates 1975-2010';
-
+    }
 }
 
 

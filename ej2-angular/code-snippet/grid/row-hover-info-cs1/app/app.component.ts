@@ -20,17 +20,17 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-  @ViewChild('grid', { static: true }) public grid: GridComponent;
-  public data: object[];
+  @ViewChild('grid', { static: true }) public grid?: GridComponent;
+  public data?: object[];
 
   ngOnInit(): void {
     this.data = data;
   }
   rowDataBound(args: RowDataBoundEventArgs): void {
-    args.row.addEventListener('mouseover', (e: MouseEvent) => {
-      const rowInformation = this.grid.getRowInfo(e.target as HTMLElement);
+    (args as any).row.addEventListener('mouseover', (e: MouseEvent) => {
+      const rowInformation = (this.grid as any).getRowInfo(e.target as HTMLElement);
       console.log(rowInformation);
-      document.getElementById('show').innerHTML = `
+      (document.getElementById('show') as any).innerHTML = `
         <table style="border-collapse: collapse; width: 600px;">
           <tr style="border: 2px solid;">
             <td style="padding: 2px;"><b>Row Information:</b></td>

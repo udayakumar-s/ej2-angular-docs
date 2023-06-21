@@ -17,12 +17,12 @@ export class AppComponent implements OnInit {
     private SERVICE_URI: string = 'https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/';
 
     // Menu fields definition.
-    private menuFields: FieldSettingsModel = {
+    public menuFields: FieldSettingsModel = {
         text: ['FirstName', 'ShipName'],
         children: ['Orders']
     };
 
-    private menuItems: { [key: string]: Object }[];
+    public menuItems?: { [key: string]: Object }[];
 
     public ngOnInit(): void {
         // Getting remote data using DataManager.
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
             .then((e: ReturnOption) => {
                 //Assign result data to menu items
                 this.menuItems = e.result as { [key: string]: Object }[];
-                document.getElementById('loader').style.display = "none";
+                (document.getElementById('loader') as HTMLElement).style.display = "none";
             });
     }
 }

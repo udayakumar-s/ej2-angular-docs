@@ -37,4 +37,4 @@ The following example demonstrates how to use the reactive forms.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/reactive-validator-cs1" %}
+{% previewsample "page.domainurl/samples/daterangepicker/reactive-validator-cs1" %}

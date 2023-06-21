@@ -34,7 +34,7 @@ The size of the Linear Gauge can be set in pixel as demonstrated below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/dimensions-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/dimensions-cs1" %}
 
 ### In Percentage
 
@@ -52,6 +52,6 @@ By setting value in percentage, Linear Gauge receives its dimension matching to 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/dimensions-cs2" %}
+{% previewsample "page.domainurl/samples/linear-gauge/dimensions-cs2" %}
 
 > Note: When the component's size is not specified, the height will be **450px** and the width will be the same as the parent element's width.

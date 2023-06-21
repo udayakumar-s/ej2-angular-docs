@@ -2,9 +2,9 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
-import { Gantt, Toolbar, PdfExport, Selection, PdfQueryTimelineCellInfoEventArgs } from '@syncfusion/ej2-angular-gantt';
+import { Gantt, Toolbar, PdfExport, Selection, PdfQueryTimelineCellInfoEventArgs, ToolbarItem, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { editingData } from './data';
@@ -18,11 +18,12 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public ganttChart: GanttComponent;
+    public ganttChart?: GanttComponent;
+    columns: ({ field: string; headerText: string; textAlign: string; width: string; visible?: undefined; } | { field: string; headerText: string; width: string; visible: boolean; textAlign?: undefined; } | { field: string; headerText: string; width: string; textAlign?: undefined; visible?: undefined; })[] | undefined;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -44,11 +45,11 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'ganttDefault_pdfexport') {
-            this.ganttChart.pdfExport();
+            this.ganttChart!.pdfExport();
         }
 };
 
-    public pdfQueryTimelineCellInfo(args): void {
+    public pdfQueryTimelineCellInfo(args: any): void {
     args.timelineCell.backgroundColor = new PdfColor(240, 248, 255);
 };
 }

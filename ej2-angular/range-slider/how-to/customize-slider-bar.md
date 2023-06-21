@@ -58,4 +58,4 @@ change(args: SliderChangeEventArgs) => {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/bar-customization-cs2" %}
+{% previewsample "page.domainurl/samples/slider/bar-customization-cs2" %}

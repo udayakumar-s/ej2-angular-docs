@@ -30,7 +30,7 @@ The rendered Range Selector can be exported to **JPEG**, **PNG**, **SVG**, or **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/export-print/default-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/export-print/default-cs1" %}
 
 ## Print
 
@@ -48,4 +48,4 @@ The rendered Range Selector can be printed directly from the browser by calling 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/export-print/default-cs2" %}
+{% previewsample "page.domainurl/samples/rangenavigator/export-print/default-cs2" %}

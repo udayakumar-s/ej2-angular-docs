@@ -20,32 +20,29 @@ import { FilterService, PageService, GridComponent } from '@syncfusion/ej2-angul
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
     dataBound() {
-        let cloned = this.grid.addOnPersist;
-        this.grid.addOnPersist = function (key: any) {
+        let cloned = (this.grid as any).addOnPersist;
+        (this.grid as any).addOnPersist = function (key: any) {
             key = key.filter((item: string)  => item !== "columns");
             return cloned.call(this, key);
         };
     }
 
     addColumn() {
-        let obj = { field: "Freight", headerText: 'Freight', width: 120 }
-        this.grid.columns.push(obj as any); //you can add the columns by using the Grid columns method
-        this.grid.refreshColumns();
+        let obj = { field: "Freight", headerText: 'Freight', width: 120 };
+        (this.grid as any).columns.push(obj as any); //you can add the columns by using the Grid columns method
+        (this.grid as any).refreshColumns();
    }
 
     removeColumn() {
-        this.grid.columns.pop();
-        this.grid.refreshColumns();
+        (this.grid as any).columns.pop();
+        (this.grid as any).refreshColumns();
    }
 }
-
-
-

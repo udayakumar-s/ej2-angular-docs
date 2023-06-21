@@ -21,8 +21,8 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public pData?: object[];
+    @ViewChild('grid') public grid?: GridComponent;
     public childGrid: GridModel = {
         dataSource: data,
         queryString: 'EmployeeID',
@@ -40,11 +40,11 @@ export class AppComponent implements OnInit {
 
     toolbarClick(args: ClickEventArgs) {
 
-        if (args.item.text === 'PDF Export') {
+        if ((args as any).item.text === 'PDF Export') {
             const exportProperties: PdfExportProperties = {
                 hierarchyExportMode: 'Expanded'
             };
-            this.grid.pdfExport(exportProperties);
+            (this.grid as any).pdfExport(exportProperties);
         }
     }
 }

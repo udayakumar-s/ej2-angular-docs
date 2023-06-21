@@ -3,7 +3,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps } from '@syncfusion/ej2-angular-maps';
-import { africa_continent } from 'africa-continent.ts';
+import { africa_continent } from './africa-continent';
 
 @Component({
     selector: 'app-container',
@@ -16,10 +16,10 @@ import { africa_continent } from 'africa-continent.ts';
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-    public type: string;
-    public shapeData: object;
-    public shapeSettings: object;
-    public urlTemplate: string;
+    public type?: string;
+    public shapeData?: object;
+    public shapeSettings?: object;
+    public urlTemplate?: string;
     ngOnInit(): void {
            this.urlTemplate = 'https://tile.openstreetmap.org/level/tileX/tileY.png';
            this.type = 'SubLayer';

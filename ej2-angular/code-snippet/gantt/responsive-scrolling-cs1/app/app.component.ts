@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+
 import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
@@ -13,9 +13,9 @@ import { projectNewData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editSettings: EditSettingsModel;
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: EditSettingsModel;
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {

@@ -24,4 +24,4 @@ TreeView control allows you to set tooltip option to tree nodes using the [`tool
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/tooltip-cs1" %}

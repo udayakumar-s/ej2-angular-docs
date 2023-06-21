@@ -16,11 +16,11 @@ export class AppComponent {
     public path: Object = {
       saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
       removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove' };
-    public ele: HTMLElement;
+    public ele?: HTMLElement;
     ngOnInit() {
-        this.ele = document.getElementById('droparea');
-        document.getElementById('browse').onclick = function() {
-        document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button').click();
+        this.ele = document.getElementById('droparea') as HTMLElement;
+        (document.getElementById('browse') as HTMLElement).onclick = function() {
+        (document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button') as HTMLButtonElement).click();
     return false;
 }
         }

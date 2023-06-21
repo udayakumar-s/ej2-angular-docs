@@ -28,7 +28,7 @@ import { SplitterComponent, PanePropertiesModel } from '@syncfusion/ej2-angular-
       </div>`
 })
 export class AppComponent {
-  @ViewChild('add') splitterObj: SplitterComponent;
+  @ViewChild('add') splitterObj?: SplitterComponent;
     constructor() {
     }
     public paneDetails: PanePropertiesModel = {
@@ -38,8 +38,8 @@ export class AppComponent {
         max: '250px',
     }
     addPane(): void {
-      if (this.splitterObj.allPanes.length >= 1) {
-          this.splitterObj.addPane(this.paneDetails, 1);
+      if ((this.splitterObj as any).allPanes.length >= 1) {
+          this.splitterObj!.addPane(this.paneDetails, 1);
       }
     }
 }

@@ -20,24 +20,24 @@ import { data } from './datasource';
 
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public toolbar?: ToolbarItems[];
     @ViewChild('grid')
-    public grid: GridComponent;
-    public editSettings: EditSettingsModel;
+    public grid?: GridComponent;
+    public editSettings?: EditSettingsModel;
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
-    load(args){
-        this.grid.element.addEventListener('mouseup', (e: MouseEventArgs) => {
+    load(args: any){
+        (this.grid as any).element.addEventListener('mouseup', (e: MouseEventArgs) => {
         if ((e.target as HTMLElement).classList.contains("e-rowcell")) {
-        if (this.grid.isEdit)
-            this.grid.endEdit();
-            let index: number = parseInt((e.target as HTMLElement).getAttribute("Index"));
-            this.grid.selectRow(index);
-            this.grid.startEdit();
+        if ((this.grid as any).isEdit)
+            (this.grid as any).endEdit();
+            let index: number = parseInt(((e.target as HTMLElement) as any).getAttribute("Index"));
+            (this.grid as any).selectRow(index);
+            (this.grid as any).startEdit();
         };
         });
     }

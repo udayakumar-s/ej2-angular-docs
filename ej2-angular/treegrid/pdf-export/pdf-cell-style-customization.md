@@ -28,7 +28,7 @@ In the below sample, we have set the background color for `Duration` column in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs2" %}
 
 ## Theme
 
@@ -48,6 +48,6 @@ To apply theme in exported PDF, define the `theme` in `exportProperties` .
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs3" %}
 
 > By default, material theme is applied to exported PDF document.

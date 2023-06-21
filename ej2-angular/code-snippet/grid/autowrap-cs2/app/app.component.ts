@@ -30,9 +30,9 @@ import {
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
     public ddlData: Object[] = [
         { text: 'Default', value: 'Default' },
         { text: 'Both', value: 'Both' },
@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     }
 
     valueChange(args: any): void {
-        this.grid.gridLines = args.value
+        (this.grid as any).gridLines = (args as any).value
     }
 }
 

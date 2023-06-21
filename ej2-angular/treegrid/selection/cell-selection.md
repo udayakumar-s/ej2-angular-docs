@@ -30,7 +30,7 @@ Select range of cells between the start index and end index which includes in be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs1" %}
 
 > Cell Selection requires the [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to be `Cell` or  `Both`.
 
@@ -52,7 +52,7 @@ To clear the selected rows or cells, by calling the [`clearSelection`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs11" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs11" %}
 
 ## How to get selected row cell in tree grid
 
@@ -70,4 +70,4 @@ To get the selected row cell index, Use [`getSelectedRowCellIndexes`](https://ej
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs12" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs12" %}

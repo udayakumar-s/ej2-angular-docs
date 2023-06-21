@@ -18,8 +18,8 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('treegrid') public treegridObj: TreeGridComponent;
+    public data?: object[];
+    @ViewChild('treegrid') public treegridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;

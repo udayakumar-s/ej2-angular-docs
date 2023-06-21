@@ -77,4 +77,4 @@ You can enable sorting in one ListView; in the same order, data can be transferr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/dual-list-cs2" %}
+{% previewsample "page.domainurl/samples/listview/dual-list-cs2" %}

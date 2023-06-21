@@ -33,7 +33,7 @@ Tooltip can be customized using the following properties:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started/tooltip-cs2" %}
+{% previewsample "page.domainurl/samples/rangenavigator/getting-started/tooltip-cs2" %}
 
 ## Label Format
 
@@ -51,7 +51,7 @@ The `labelFormat` property in the tooltip is used to format and parse the date t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/getting-started/tooltip-cs3" %}
+{% previewsample "page.domainurl/samples/rangenavigator/getting-started/tooltip-cs3" %}
 
 The following table shows the results of applying some common date and time formats to the `labelFormat` property.
 

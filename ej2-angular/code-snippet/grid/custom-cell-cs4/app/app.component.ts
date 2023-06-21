@@ -67,11 +67,11 @@ import { employeeData } from './datasource';
                     </table>
         </ng-template>
     </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = employeeData;

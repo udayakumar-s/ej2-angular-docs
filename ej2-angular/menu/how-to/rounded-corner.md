@@ -24,4 +24,4 @@ The rounded corner can be achieved by using the [`cssClass`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/rounded-cs1" %}
+{% previewsample "page.domainurl/samples/menu/rounded-cs1" %}

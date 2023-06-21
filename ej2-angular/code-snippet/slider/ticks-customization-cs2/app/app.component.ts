@@ -15,7 +15,7 @@ import { SliderTickRenderedEventArgs, SliderTickEventArgs, Placement } from '@sy
             <div class="slider_labelText userselect">Ticks with legends</div>
             <ejs-slider id='slider' [value]='value' [min]='min' [max]='max' [type]='type' [ticks]='slider_ticks' (renderedTicks)='renderedTicks($event)'></ejs-slider>
         </div>`,
-    styleUrls : ["app/app.component.css"],
+    styleUrls : ["./app.component.css"],
     encapsulation: ViewEncapsulation.None
 })
 
@@ -28,12 +28,12 @@ export class AppComponent {
     public type: string = 'MinRange';
     public ticks: Object = { placement: 'Before', largeStep: 20 };
     public slider_ticks: Object = { placement: 'Both', largeStep: 20, smallStep: 5 };
-    private renderingTicks(args: SliderTickEventArgs) {
+    public renderingTicks(args: SliderTickEventArgs) {
         if (args.tickElement.classList.contains('e-large')) {
             args.tickElement.classList.add('e-custom');
         }
     }
-    private renderedTicks(args: SliderTickRenderedEventArgs) {
+    public renderedTicks(args: SliderTickRenderedEventArgs) {
         let li: any = args.ticksWrapper.getElementsByClassName('e-large');
         let remarks: any = ['Very Poor', 'Poor', 'Average', 'Good', 'Very Good', 'Excellent'];
         for (let i: number = 0; i < li.length; ++i) {

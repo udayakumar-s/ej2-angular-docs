@@ -114,7 +114,7 @@ The following sample demonstrate the TimePicker component in `German` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/internationalization-cs1" %}
+{% previewsample "page.domainurl/samples/timepicker/internationalization-cs1" %}
 
 ## Right-To-Left
 
@@ -177,4 +177,4 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/timepicker/rtl-cs1" %}

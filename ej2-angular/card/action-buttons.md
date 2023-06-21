@@ -48,7 +48,7 @@ By default, action buttons positioned in horizontal alignment , and also it can 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card-action-btn-cs1" %}
+{% previewsample "page.domainurl/samples/card/card-action-btn-cs1" %}
 
 ## See Also
 

@@ -4,13 +4,13 @@ import { Component, OnInit } from '@angular/core';
 import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
 
 class SerialNoAdaptor extends ODataAdaptor {
-    processResponse() {
+    processResponse() { 
         let i = 0;
         const Sno = 'Sno';
         // calling base class processResponse function
-        const original = super.processResponse.apply(this, arguments);
+        const original: any = super.processResponse.apply(this, arguments as any);
         // Adding serial number
-        original.result.forEach((item) => item[Sno] = ++i);
+        original.result.forEach((item: any) => item[Sno] = ++i);
         return { result: original.result, count: original.count };
     }
 }
@@ -28,7 +28,7 @@ class SerialNoAdaptor extends ODataAdaptor {
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data?: DataManager;
 
     ngOnInit(): void {
         this.data = new DataManager({

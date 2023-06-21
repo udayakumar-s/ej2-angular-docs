@@ -26,4 +26,4 @@ In the following example, ListView element is given as `target` to DropDownButto
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/header-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/header-cs1" %}

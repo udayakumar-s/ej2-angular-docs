@@ -37,7 +37,7 @@ In the following sample, each list item is split into two columns to display rel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/template-cs1" %}
+{% previewsample "page.domainurl/samples/combobox/template-cs1" %}
 
 ## Group template
 
@@ -62,7 +62,7 @@ In the following sample, employees are grouped according to their city.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/group-template-cs1" %}
+{% previewsample "page.domainurl/samples/combobox/group-template-cs1" %}
 
 ## Header template
 
@@ -87,7 +87,7 @@ In the following sample, the list items and its headers are designed and display
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/header-template-cs1" %}
+{% previewsample "page.domainurl/samples/combobox/header-template-cs1" %}
 
 ## Footer template
 
@@ -111,7 +111,7 @@ In the following sample, footer element displays the total number of list items 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/footer-template-cs1" %}
+{% previewsample "page.domainurl/samples/combobox/footer-template-cs1" %}
 
 ## No records template
 
@@ -131,7 +131,7 @@ In the following sample, popup list content displays the notification of no data
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/norecords-cs1" %}
+{% previewsample "page.domainurl/samples/combobox/norecords-cs1" %}
 
 ## Action failure template
 
@@ -152,7 +152,7 @@ In the following sample, when the data fetch request fails, the ComboBox display
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/combobox/norecords-cs2" %}
+{% previewsample "page.domainurl/samples/combobox/norecords-cs2" %}
 
 ## See Also
 

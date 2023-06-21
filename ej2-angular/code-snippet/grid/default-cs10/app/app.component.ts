@@ -19,7 +19,7 @@ import { DetailRowService, EditService, ToolbarService, AddEventArgs, GridModel,
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
+    public pData?: object[];
     public childGrid: GridModel = {
         dataSource: data,
         queryString: 'EmployeeID',
@@ -32,14 +32,15 @@ export class AppComponent implements OnInit {
             { field: 'ShipName', headerText: 'Ship Name', width: 150 }
         ],
         actionBegin(args: AddEventArgs) {
-            if (args.requestType === 'add') {
+            if ((args as any).requestType === 'add') {
                 // `parentKeyFieldValue` refers to the queryString field value of the parent record.
                 const EmployeeID = 'EmployeeID';
-                (args.data as object)[EmployeeID] = this.parentDetails.parentKeyFieldValue;
+                ((args as any).data as any)[EmployeeID] = (this as any).parentDetails.parentKeyFieldValue;
             }
         }
     };
-    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.pData = employeeData;

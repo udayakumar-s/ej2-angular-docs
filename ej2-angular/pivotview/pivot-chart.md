@@ -33,7 +33,7 @@ The below sample displays the pivot chart component based on the pivot report bo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs222" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs222" %}
 
 ## Data Binding
 
@@ -82,7 +82,7 @@ In the below code sample, the pivot chart type is set as **Bar**.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs223" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs223" %}
 
 ## Accumulation Charts
 
@@ -109,7 +109,7 @@ In the below code sample, the **Pie** chart is rendered, and the other accumulat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs224" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs224" %}
 
 ### Drill Down/Up
 
@@ -132,7 +132,7 @@ In the accumulation charts, drill down and drill up operations can be performed 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs225" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs225" %}
 
 ![output](images/expand_collapse.png)
 
@@ -154,7 +154,7 @@ If the column has more than one header, then need to mention all the headers sep
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs226" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs226" %}
 
 ### Label Customization
 
@@ -177,7 +177,7 @@ In the following code sample, the data labels are placed inside.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs227" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs227" %}
 
 The **Connector Line** will be visible when the data label is placed outside the chart. It can be customized using the `connectorStyle` property in `dataLabel` for its color, length, width etc. In the following code sample, the connector line is customized.
 
@@ -193,7 +193,7 @@ The **Connector Line** will be visible when the data label is placed outside the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs228" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs228" %}
 
 ### Pie and Doughnut Customization
 
@@ -211,7 +211,7 @@ User can draw pie and doughnut charts within the specified range using the `star
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs229" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs229" %}
 
 Users can get doughnut chart from pie chart and vice-versa using the `innerRadius` property in [`chartSeries`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel/). If the property is greater than **0** percent, the doughnut chart will appear from the pie chart.
 > It takes the value only in percentage.
@@ -228,7 +228,7 @@ Users can get doughnut chart from pie chart and vice-versa using the `innerRadiu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs230" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs230" %}
 
 ### Exploding Series Points
 
@@ -246,7 +246,7 @@ Exploding can be enabled by setting the `explode` property in [`chartSeries`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs231" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs231" %}
 
 ## Field List
 
@@ -267,7 +267,7 @@ In the following sample, the `Popup` mode of field list is enabled in the pivot 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs232" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs232" %}
 
 ## Grouping Bar
 
@@ -287,7 +287,7 @@ User can enable the grouping bar by setting the property [`showGroupingBar`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs233" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs233" %}
 
 For accumulation charts alone, a drop-down list will be placed in the column axis instead of the buttons. The drop-down list shows the column headers available in the pivot table. Users can dynamically switch column headers with the help of the drop-down list, and the accumulation chart will be updated accordingly.
 
@@ -303,7 +303,7 @@ For accumulation charts alone, a drop-down list will be placed in the column axi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs234" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs234" %}
 
 ## Single Axis
 
@@ -321,7 +321,7 @@ By default, the pivot chart will be drawn with the value field (measure) which i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs235" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs235" %}
 
 ## Multiple Axis
 
@@ -341,7 +341,7 @@ User can draw the pivot chart with multiple value fields by setting the property
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs236" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs236" %}
 
 If the user binds more value fields, the result will be multiple pivot charts, and each chart will shrink within the parent container height. To avoid this, set the [`enableScrollOnMultiAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/#enablescrollonmultiaxis) property in [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/) to **true**. By doing so, each pivot chart will only shrink to a minimal "160px" - "180px" height showing a vertical scroll bar for a clear view.
 
@@ -357,7 +357,7 @@ If the user binds more value fields, the result will be multiple pivot charts, a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs237" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs237" %}
 
 Meanwhile, there is another way to display multiple values in a chart. In this approach, the series drawn from multiple values are grouped and displayed in a single chart. And, based on the values, multiple Y axis scales will be framed with different ranges. This can be achieved by setting the properties [`enableMultipleAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/#enablemultipleaxis) as **true** and [`multipleAxisMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/#multipleaxismode) as `Single` in [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/).
 
@@ -375,7 +375,7 @@ In the following code sample, the pivot chart can be seen as a single chart with
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs238" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs238" %}
 
 Additionally, to display chart series for multiple values within a single y-axis, set the properties [`enableMultipleAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#enablemultipleaxis) to **true** and the [`multipleAxisMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#multipleaxismode) to **Combined**, in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/).
 
@@ -395,7 +395,7 @@ The pivot chart in the following code sample can be seen as a single chart with 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs305" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs305" %}
 
 ### Show point color based on members
 
@@ -415,7 +415,7 @@ Furthermore, end user can see or hide specific members across different measur
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs239" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs239" %}
 
 ## Series customization
 
@@ -433,7 +433,7 @@ User can customize series of the pivot chart using [`chartSeries`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs240" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs240" %}
 
 User can also customize the pivot chart series individually using the [`chartSeriesCreated`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#chartseriescreated) event, which occurs after the pivot chart series has been created. You can customize each series individually by iterating them.
 
@@ -451,7 +451,7 @@ In the following sample, the even series are hidden in the pivot chart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs241" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs241" %}
 
 ## Axis Customization
 
@@ -473,7 +473,7 @@ In the following sample, title of y-axis and x-axis are customized.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs242" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs242" %}
 
 One can also customize multi-level labels of primary x-axis by using the [`multiLevelLabelRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#multilevellabelrender) event in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/), which fires on rendering each multi-level label in the pivot chart. It has the following parameters:
 
@@ -497,7 +497,7 @@ One can also customize multi-level labels of primary x-axis by using the [`multi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs243" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs243" %}
 
 ## Legend customization
 
@@ -543,7 +543,7 @@ In the below code sample, the legend shape and its position can be customized.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs244" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs244" %}
 
 ## User interaction
 
@@ -569,7 +569,7 @@ In the below code sample, the marker and crosshair can be enabled and customized
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs245" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs245" %}
 
 ### Zooming and panning
 
@@ -606,7 +606,7 @@ In the below code sample, all the four types of zooming are enabled with toolbar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs246" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs246" %}
 
 ### Tooltip
 
@@ -628,7 +628,7 @@ In the below code sample, the default appearance of tooltip is modified.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs247" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs247" %}
 
 ## Export
 
@@ -655,7 +655,7 @@ In the following code sample, exporting can be done using an external button nam
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs248" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs248" %}
 
 ## Print
 
@@ -675,4 +675,4 @@ In the following code sample, printing can be done using an external button name
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs249" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs249" %}

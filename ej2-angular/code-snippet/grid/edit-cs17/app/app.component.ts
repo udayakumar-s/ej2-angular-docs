@@ -24,23 +24,23 @@ import { EditSettingsModel, ToolbarItems, SaveEventArgs } from '@syncfusion/ej2-
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public orderData: object;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public orderData?: object | any;
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
     actionBegin(args: SaveEventArgs) {
-        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-            this.orderData = Object.assign({}, args.rowData);
+        if ((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add') {
+            this.orderData = Object.assign({}, (args as any).rowData);
         }
-        if (args.requestType === 'save') {
+        if ((args as any).requestType === 'save') {
             // cast string to integer value.
             const OrderDate = 'OrderDate';
-            args.data[OrderDate] = this.orderData[OrderDate];
+            (args as any).data[OrderDate] = (this.orderData as any)[OrderDate];
         }
     }
 }

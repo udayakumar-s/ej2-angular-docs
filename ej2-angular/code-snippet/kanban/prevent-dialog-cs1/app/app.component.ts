@@ -21,6 +21,7 @@ export class AppComponent {
         contentField: 'Summary',
         headerField: 'Id'
     };
+dialogSettings: any;
     dialogOpen(args: DialogEventArgs): void {
         args.cancel = true;
     }

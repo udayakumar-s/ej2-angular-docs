@@ -28,7 +28,7 @@ The signature component opens a pre-drawn signature as either base64 or hosted/ 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/open-save/open-base-cs1" %}
+{% previewsample "page.domainurl/samples/signature/open-save/open-base-cs1" %}
 
 ## Save Signature
 
@@ -50,7 +50,7 @@ The `getSignature` method is used to get the signature as base64 with the PNG, J
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/open-save/save-base-cs1" %}
+{% previewsample "page.domainurl/samples/signature/open-save/save-base-cs1" %}
 
 ### Save as Blob
 
@@ -72,7 +72,7 @@ The [`save`](https://ej2.syncfusion.com/angular/documentation/api/signature/#sav
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/open-save/save-image-cs1" %}
+{% previewsample "page.domainurl/samples/signature/open-save/save-image-cs1" %}
 
 ## Save With Background
 
@@ -92,4 +92,4 @@ In the following sample, the background color is set as ‘rgb(103 58 183)’ an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/open-save/save-image-cs2" %}
+{% previewsample "page.domainurl/samples/signature/open-save/save-image-cs2" %}

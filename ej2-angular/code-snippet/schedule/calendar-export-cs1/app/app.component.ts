@@ -14,16 +14,16 @@ import { scheduleData } from './datasource';
 <ejs-schedule #scheduleObj width='100%' height='550px' [views]="scheduleViews" [selectedDate]="selectedDate" [eventSettings]="eventSettings" [currentView]="currentView" >
   </ejs-schedule>`
 })
-export class AppComponent {  
+export class AppComponent {
   @ViewChild('scheduleObj', { static: true })
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2018, 1, 15);
   public scheduleViews: View[] = ['Day', 'Week', 'WorkWeek', 'Month', 'Agenda'];
   public eventSettings: EventSettingsModel = { dataSource: scheduleData };
   public currentView: View = 'Week';
 
   public onExportClick(): void {
-    this.scheduleObj.exportToICalendar();
+    this.scheduleObj?.exportToICalendar();
   }
  }
 

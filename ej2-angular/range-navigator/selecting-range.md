@@ -28,4 +28,4 @@ The Range Selector's left and right thumbs are used to indicate the selected ran
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/selecting-range/default-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/selecting-range/default-cs1" %}

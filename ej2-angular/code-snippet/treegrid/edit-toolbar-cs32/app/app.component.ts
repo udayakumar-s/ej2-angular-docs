@@ -19,13 +19,13 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegri
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
-    public editing: Object;
-    public formatOptions: Object;
-    public editOptions: Object;
-    public customrule: Object;
+    public data?: Object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
+    public editing?: Object;
+    public formatOptions?: Object;
+    public editOptions?: Object;
+    public customrule?: Object;
     public customFn: (args: { [key: string]: string }) => boolean = (args: { [key: string]: string }) => {
     return args['value'].length <= 8;
 };

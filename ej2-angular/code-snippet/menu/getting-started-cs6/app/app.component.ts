@@ -13,7 +13,7 @@ enableRipple(true);
 })
 
 export class AppComponent {
-    private menuItems: MenuItemModel[] = [
+    public menuItems: MenuItemModel[] = [
         {
             text: 'File',
             items: [

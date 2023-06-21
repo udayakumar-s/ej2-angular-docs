@@ -34,7 +34,7 @@ The following example demonstrates how to disable weekends of every month.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/calendar/getting-started-cs5" %}
 
 ## Day Cell Format
 
@@ -70,7 +70,7 @@ The following example highlights the world health date (7th April every year) an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/highlight-cs1" %}
+{% previewsample "page.domainurl/samples/calendar/highlight-cs1" %}
 
 ## Highlight Weekends
 
@@ -88,7 +88,7 @@ You can highlight the weekends of every month in a Calendar by using the [`rende
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/highlight-weekend-cs1" %}
+{% previewsample "page.domainurl/samples/calendar/highlight-weekend-cs1" %}
 
 ## See Also
 

@@ -26,4 +26,4 @@ You can customize the appearance of the loading indicator in the pivot table by 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs165" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs165" %}

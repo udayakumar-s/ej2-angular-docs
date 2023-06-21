@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
     <!--Element which is the Mention component's target to list the suggestions-->
     <div id="mentionElement" placeholder = "Type @ and select your comments"></div>
     <ejs-mention [dataSource]='userData' [target]='mentionTarget' [showMentionChar]="true" [mentionChar]="mentionCharacter"></ejs-mention>`,
-    styleUrls: ['index.css']
+
 })
 export class AppComponent {
     constructor() {

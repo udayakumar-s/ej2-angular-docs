@@ -37,7 +37,7 @@ You can customize header styles by adding predefined classes in the Tab root ele
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/header-cs1" %}
+{% previewsample "page.domainurl/samples/tab/header-cs1" %}
 
 ## Icon positions
 
@@ -60,7 +60,7 @@ You can customize the position of the Tab header icons using the [`iconPosition`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/icon-position-cs1" %}
+{% previewsample "page.domainurl/samples/tab/icon-position-cs1" %}
 
 ## See Also
 

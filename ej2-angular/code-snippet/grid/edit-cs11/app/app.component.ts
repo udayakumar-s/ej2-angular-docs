@@ -20,13 +20,13 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public numericParams: IEditCell;
-    public ddParams: IEditCell;
-    public dpParams: IEditCell;
-    public boolParams: IEditCell;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public numericParams?: IEditCell;
+    public ddParams?: IEditCell;
+    public dpParams?: IEditCell;
+    public boolParams?: IEditCell;
 
     ngOnInit(): void {
         this.data = data;

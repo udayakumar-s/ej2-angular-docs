@@ -6,21 +6,21 @@ import { TimePickerComponent } from '@syncfusion/ej2-angular-calendars';
 
 class User {
     constructor() {
-        public time: Date
+        
     }
 }
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app/template.html'
+    templateUrl: './template.html'
 })
 export class DefaultTimePickerComponent {
-
-    user: User;
+    public time?: Date
+    user?: User | any;
     ngOnInit() {
-        this.user = new User(null);
+        this.user = new User();
     }
-    onSubmit(userForm) {
+    onSubmit(userForm:any) {
         (userForm.valid) ? alert("submitted"): alert("form is invalid");
     }
 }

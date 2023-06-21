@@ -43,7 +43,7 @@ export class AppComponent {
         },
       ]
     @ViewChild("diagram")
-    public diagram: DiagramComponent;  
+    public diagram?: DiagramComponent;  
 }
 
 

@@ -172,7 +172,7 @@ The below example shows a basic `Slider` example.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/getting-started-01-cs1" %}
+{% previewsample "page.domainurl/samples/slider/getting-started-01-cs1" %}
 
 ## Types
 
@@ -199,7 +199,7 @@ In Min-Range Slider, a shadow is considered from the start value to current hand
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/getting-started-02-cs1" %}
+{% previewsample "page.domainurl/samples/slider/getting-started-02-cs1" %}
 
 ## Customization
 
@@ -219,7 +219,7 @@ The Slider can be displayed, either in horizontal or vertical orientation. By de
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/getting-started-03-cs1" %}
+{% previewsample "page.domainurl/samples/slider/getting-started-03-cs1" %}
 
 ### Tooltip
 
@@ -237,7 +237,7 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/getting-started-04-cs1" %}
+{% previewsample "page.domainurl/samples/slider/getting-started-04-cs1" %}
 
 ### Buttons
 
@@ -258,7 +258,7 @@ and not to the button.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/getting-started-05-cs1" %}
+{% previewsample "page.domainurl/samples/slider/getting-started-05-cs1" %}
 
 ## See Also
 

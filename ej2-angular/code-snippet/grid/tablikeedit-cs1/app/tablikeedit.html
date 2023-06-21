@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)="nextBtn($event)" >next</button>
+        <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)="nextBtn()" >next</button>
     </div>
             </ng-template></e-tabitem>
             <e-tabitem [header]="{ 'text': 'Verify' }">
@@ -52,7 +52,7 @@
                 <ejs-checkbox #Verified name="Verified" id="Verified" label="Verified" [checked]="data.Verified" ></ejs-checkbox>
             </div>
         </div>
-        <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)='submitBtn($event)'>submit</button>
+        <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)='submitBtn()'>submit</button>
     </div>
             </ng-template>
             </e-tabitem>

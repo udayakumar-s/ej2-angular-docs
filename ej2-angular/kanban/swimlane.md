@@ -28,7 +28,7 @@ Cards can be grouped based on `keyField` and displayed in rows, which are separa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/swimlane-key-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/swimlane-key-cs1" %}
 
 ## Custom row text
 
@@ -49,7 +49,7 @@ Customize the swimlane row header text by using the `textField` property mapped 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/swimlane-text-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/swimlane-text-cs1" %}
 
 ## Template
 
@@ -67,7 +67,7 @@ You can customize the Kanban swimlane row by using the `template` property, whic
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/swimlane-template-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/swimlane-template-cs1" %}
 
 ## Sorting
 
@@ -85,7 +85,7 @@ Swimlane rows are rendered on descending order when using the `sortBy` property 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/swimlane-sort-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/swimlane-sort-cs1" %}
 
 ## Drag-and-drop
 
@@ -103,7 +103,7 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/swimlane-drag-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/swimlane-drag-cs1" %}
 
 ## Create empty row
 
@@ -121,7 +121,7 @@ You can render the empty swimlane row by enabling the `showEmptyRow` property. I
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/swimlane-empty-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/swimlane-empty-cs1" %}
 
 ## Calculate cards count
 
@@ -143,7 +143,7 @@ In below demo, disabled on `showItemCount` property on rendering swimlane row wi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/swimlane-total-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/swimlane-total-cs1" %}
 
 ## Enable frozen rows
 
@@ -165,4 +165,4 @@ By default, the `enableFrozenRows` property is set as `false`. If you wish to sh
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/swimlane-enable-frozen-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/swimlane-enable-frozen-cs1" %}

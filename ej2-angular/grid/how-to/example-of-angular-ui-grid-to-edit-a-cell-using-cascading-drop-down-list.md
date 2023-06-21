@@ -26,4 +26,4 @@ In the below demo, Cascading DropDownList rendered for `ShipCountry` and `ShipSt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs50" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs50" %}

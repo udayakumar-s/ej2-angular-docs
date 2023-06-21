@@ -54,13 +54,13 @@ export class AppComponent {
     public field:Object ={ dataSource: this.continents,  id: "code", text: "name", child: "countries" };
     public cssClass="accordiontree";
 
-    @ViewChild ('treevalidate') tree: TreeViewComponent;
+    @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
     public nodeSelect(args: NodeSelectEventArgs): void {
       if (args.node.classList.contains('e-level-1')) {
-        this.tree.collapseAll();
-        this.tree.expandAll([args.node]);
-        this.tree.expandOn = 'none'
+        this.tree?.collapseAll();
+        this.tree?.expandAll([args.node]);
+        (this.tree as TreeViewComponent).expandOn = 'None';
       }
     }
 }

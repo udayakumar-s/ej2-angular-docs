@@ -24,4 +24,4 @@ You can hide spinner in the ProgressButton by setting the `e-hide-spinner` prope
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs6" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs6" %}

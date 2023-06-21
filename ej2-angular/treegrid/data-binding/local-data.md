@@ -39,7 +39,7 @@ The following code example shows you how to bind the hierarchical local data int
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/data-binding-cs2" %}
 
 > * Remote data binding is not supported for Hierarchy Data.
 
@@ -62,7 +62,7 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/data-binding-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/data-binding-cs3" %}
 
 > Herewith we have provided list of reserved properties and the purpose used in TreeGrid. We recommend to avoid these reserved properties for Internal purpose(To get rid of conflicts).
 
@@ -122,7 +122,7 @@ Refresh the tree grid after changing the datasource by using the `refresh` metho
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/refresh-datasource-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/refresh-datasource-cs1" %}
 
 > Get the content of the tree grid by using the [`getContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontent) method.
 > Get the table content by using the [`getContentTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontenttable) method in the tree grid.

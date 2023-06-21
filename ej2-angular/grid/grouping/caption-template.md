@@ -24,4 +24,4 @@ You can customize the group caption by using the groupSettings.captionTemplate p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs1" %}
+{% previewsample "page.domainurl/samples/grid/grouping1-cs1" %}

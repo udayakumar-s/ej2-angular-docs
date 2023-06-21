@@ -17,7 +17,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 export class AppComponent {
     tooltipContent: HTMLElement = document.createElement('div');
     constructor() {
-        this.tooltipContent =
+        (this as any).tooltipContent =
             '<div id="tooltipContent"><p><b>Environmentally friendly</b> or environment-friendly, (also referred to as eco-friendly, nature-friendly, and green) are marketing and sustainability terms referring to goods and services, laws, guidelines and policies that inflict reduced, minimal, or no harm upon ecosystems or the environment.</p></div>';
     }
 }

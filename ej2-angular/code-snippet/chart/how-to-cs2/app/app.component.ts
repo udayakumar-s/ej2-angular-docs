@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart style="display:block;" [chartArea]="chartArea" [width]="width" align="center"
+    template: `<ejs-chart style="display:block;" [chartArea]="chartArea" [width]="width" align="center"
       id="chartcontainer" [primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis"
       [title]="title" [tooltip]="tooltip" >
       <e-series-collection>

@@ -140,4 +140,4 @@ The following example shows a basic `Signature` component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/getting-started/default-cs2" %}
+{% previewsample "page.domainurl/samples/signature/getting-started/default-cs2" %}

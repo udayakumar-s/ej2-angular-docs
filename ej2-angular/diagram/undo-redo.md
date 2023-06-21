@@ -66,7 +66,7 @@ The client-side method [`startGroupAction`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/undoRedo/groupAction-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/undoRedo/groupAction-cs1" %}
 
 ### Track custom changes
 
@@ -115,7 +115,7 @@ canLog in the history list, which takes a history entry as argument and returns 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/undoRedo/canLog-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/undoRedo/canLog-cs1" %}
 
 ### Track undo/redo actions
 
@@ -179,7 +179,7 @@ The [`stackLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram)
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/undoRedo/canLog-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/undoRedo/canLog-cs2" %}
 
 ## Retain selection
 

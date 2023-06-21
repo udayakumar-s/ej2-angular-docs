@@ -152,7 +152,7 @@ Here, we have defined it for the conversion of numeric values to currency.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging-cs1" %}
+{% previewsample "page.domainurl/samples/grid/paging-cs1" %}
 
 ## Module Injection
 
@@ -183,7 +183,7 @@ The paging feature enables users to view the Grid record in a paged view. It can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging-cs2" %}
+{% previewsample "page.domainurl/samples/grid/paging-cs2" %}
 
 ## Enable Sorting
 
@@ -201,7 +201,7 @@ The sorting feature enables the user to order the records. It can be enabled by 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/sorting-cs1" %}
+{% previewsample "page.domainurl/samples/grid/sorting-cs1" %}
 
 ## Enable Filtering
 
@@ -219,7 +219,7 @@ The filtering feature enables the user to view the reduced amount of records bas
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering-cs1" %}
+{% previewsample "page.domainurl/samples/grid/filtering-cs1" %}
 
 ## Enable Grouping
 
@@ -237,7 +237,7 @@ The grouping feature enables users to view the Grid record in a grouped view. It
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping-cs2" %}
+{% previewsample "page.domainurl/samples/grid/grouping-cs2" %}
 
 ## Run the application
 
@@ -261,7 +261,7 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping-cs3" %}
+{% previewsample "page.domainurl/samples/grid/grouping-cs3" %}
 
 ## See Also
 

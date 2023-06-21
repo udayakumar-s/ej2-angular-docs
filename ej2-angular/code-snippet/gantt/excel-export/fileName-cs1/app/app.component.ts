@@ -2,7 +2,7 @@
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, ToolbarItem,ExcelExport } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './data';
 
@@ -15,11 +15,11 @@ import { GanttData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = GanttData;
         this.taskSettings = {
@@ -34,15 +34,15 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault_excelexport') {
-                let excelExportProperties: ExcelExportProperties = {
+                let excelExportProperties: ExcelExport| any = {
                    fileName:"Gantt.xlsx"
                 };
-                this.ganttObj.excelExport(excelExportProperties);
+                this.ganttObj!.excelExport(excelExportProperties);
             } else if (args.item.id === 'ganttDefault_csvexport'){
-                let excelExportProperties: ExcelExportProperties = {
+                let excelExportProperties: ExcelExport| any = {
                    fileName:"Gantt.csv"
                 };
-                this.ganttObj.csvExport(excelExportProperties);
+                this.ganttObj!.csvExport(excelExportProperties);
             }
     };
 }

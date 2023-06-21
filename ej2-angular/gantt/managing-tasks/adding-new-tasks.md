@@ -28,7 +28,7 @@ A row can be added to the Gantt component from the toolbar while the  [`editSett
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/addrow-toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/addrow-toolbar-cs1" %}
 
 > By default, the new row will be added to the top most row in the Gantt component.
 
@@ -48,7 +48,7 @@ A row can also be added above, below or child of the selected row by using conte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/contextmenu-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/contextmenu-cs1" %}
 
 ## Using method
 
@@ -72,4 +72,4 @@ You can add rows to the Gantt component dynamically using the [`addRecord`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/addrow-dynamic-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/addrow-dynamic-cs1" %}

@@ -11,18 +11,18 @@ import { SpreadsheetComponent, CellModel } from '@syncfusion/ej2-angular-spreads
 })
 export class AppComponent implements OnInit {
 
-    public tradeData: object[];
-    @ViewChild('spreadsheet') public spreadsheetObj: SpreadsheetComponent;
+    public tradeData?: object[];
+    @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
     ngOnInit(): void {
         this.tradeData = tradeData;
     }
     dataBound(){
-        if (this.spreadsheetObj.activeSheetIndex === 0) {
-            this.spreadsheetObj.sort({sortDescriptors: { field: 'F',  sortComparer: this.mySortComparer }, containsHeader: true}, 'A1:H20');
+        if (this.spreadsheetObj!.activeSheetIndex === 0) {
+            this.spreadsheetObj!.sort({sortDescriptors: { field: 'F',  sortComparer: this.mySortComparer }, containsHeader: true}, 'A1:H20');
         }
     };
-    sortComplete (args) {
-        this.spreadsheetObj.selectRange(args.range);
+    sortComplete (args : any) {
+        this.spreadsheetObj!.selectRange(args.range);
         // code here.
     }
 
@@ -31,7 +31,7 @@ mySortComparer(x: CellModel, y: CellModel): number {
 // custom sort comparer to sort based on the custom list.
    let customList: string[] = ['Perfect', 'Sufficient', 'Insufficient'];
     let comparer: Function = DataUtil.fnSort('Ascending');
-    return comparer(x ? customList.indexOf(x.value) : x, y ? customList.indexOf(y.value) : y);
+    return comparer(x ? customList.indexOf((x as any).value) : x, y ? customList.indexOf((y as any).value) : y);
 };
 
 }

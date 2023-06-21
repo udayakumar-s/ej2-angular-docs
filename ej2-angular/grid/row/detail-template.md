@@ -26,7 +26,7 @@ Here's an example of using the `detailTemplate` property in the grid component:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs4" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs4" %}
 
 ## Rendering custom component
 
@@ -50,7 +50,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs5" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs5" %}
 
 ## Expand by external button
 
@@ -72,7 +72,7 @@ Here is an example of how to use the `expand` method to expand a detail row:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-cell-cs6" %}
+{% previewsample "page.domainurl/samples/grid/custom-cell-cs6" %}
 
 ## Customize detail template icon
 
@@ -104,7 +104,7 @@ Here is an example of how to customize the detail template icon:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/row-detail-icon-cs1" %}
+{% previewsample "page.domainurl/samples/grid/row-detail-icon-cs1" %}
 
 ## Limitations
 

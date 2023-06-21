@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import {
     WeekService, MonthService, AgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel
 } from '@syncfusion/ej2-angular-schedule';
-import { resourceData } from './datasource.ts';
+import { resourceData } from './datasource';
 
 @Component({
     selector: "app-root",

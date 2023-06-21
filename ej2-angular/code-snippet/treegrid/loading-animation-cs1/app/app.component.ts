@@ -12,9 +12,9 @@ import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public data: DataManager;
-    public loadingIndicator;
-    public pageSettings: Object;
+    public data?: DataManager;
+    public loadingIndicator?: any;
+    public pageSettings?: Object;
     ngOnInit(): void {
         this.data = new DataManager({
                 url: 'https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData',

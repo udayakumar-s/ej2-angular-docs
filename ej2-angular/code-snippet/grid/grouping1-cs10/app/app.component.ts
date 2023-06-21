@@ -20,22 +20,21 @@ import { FilterService, PageService, GridComponent } from '@syncfusion/ej2-angul
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
 
     clickHandler() {
-        this.grid.enablePersistence = false;
+        (this.grid as any).enablePersistence = false;
         window.localStorage.setItem("gridGrid", "");
-        this.grid.destroy();
+        (this.grid as any).destroy();
         //reloads the page
         location.reload();
-   }
+    }
+    actionHandler(args: any) {
+    }
 }
-
-
-

@@ -8,15 +8,15 @@ import { FormGroup, AbstractControl, FormControl, Validators } from '@angular/fo
 
 @Component({
     selector: 'app-root',
-    templateUrl: `app/reactive-form.html`
+    templateUrl: `reactive-form.html`
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public shipCountryDistinctData: object[];
-    public orderForm: FormGroup;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public shipCountryDistinctData?: object[];
+    public orderForm?: FormGroup | any;
 
     ngOnInit(): void {
         this.data = data;
@@ -37,40 +37,40 @@ export class AppComponent implements OnInit {
 
 
     actionBegin(args: SaveEventArgs): void {
-        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-            this.orderForm = this.createFormGroup(args.rowData);
+        if ((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add') {
+            this.orderForm = this.createFormGroup((args as any).rowData);
         }
-        if (args.requestType === 'save') {
-            if (this.orderForm.valid) {
-                args.data = this.orderForm.value;
+        if ((args as any).requestType === 'save') {
+            if ((this as any).orderForm.valid) {
+                (args as any).data = (this as any).orderForm.value;
             } else {
-                args.cancel = true;
+                (args as any).cancel = true;
             }
         }
     }
 
     actionComplete(args: DialogEditEventArgs): void {
-        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+        if ((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add') {
             // Set initail Focus
-            if (args.requestType === 'beginEdit') {
-                (args.form.elements.namedItem('CustomerID') as HTMLInputElement).focus();
-            } else if (args.requestType === 'add') {
-                (args.form.elements.namedItem('OrderID') as HTMLInputElement).focus();
+            if ((args as any).requestType === 'beginEdit') {
+                ((args as any).form.elements.namedItem('CustomerID') as HTMLInputElement).focus();
+            } else if ((args as any).requestType === 'add') {
+                ((args as any).form.elements.namedItem('OrderID') as HTMLInputElement).focus();
             }
         }
     }
 
-    public focusIn(target: HTMLElement): void {
-        target.parentElement.classList.add('e-input-focus');
+    public focusIn(target: HTMLElement | any): void {
+        (target as any).parentElement.classList.add('e-input-focus');
     }
 
-    public focusOut(target: HTMLElement): void {
-        target.parentElement.classList.remove('e-input-focus');
+    public focusOut(target: HTMLElement | any): void {
+        (target as any).parentElement.classList.remove('e-input-focus');
     }
 
-    get OrderID(): AbstractControl  { return this.orderForm.get('OrderID'); }
+    get OrderID(): AbstractControl  { return (this as any).orderForm.get('OrderID'); }
 
-    get CustomerID(): AbstractControl { return this.orderForm.get('CustomerID'); }
+    get CustomerID(): AbstractControl { return (this as any).orderForm.get('CustomerID'); }
 
 }
 

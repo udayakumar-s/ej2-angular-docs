@@ -17,7 +17,7 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public pointerBorder: Object;
+    public pointerBorder?: Object;
     ngOnInit(): void {
         // Initialize objects
         this.pointerBorder = {

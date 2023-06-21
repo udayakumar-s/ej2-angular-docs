@@ -1,12 +1,11 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { columnData } from 'datasource.ts';
+import { columnData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template:
-    ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [title]='title' >
             <e-series-collection>
                 <e-series [dataSource]='data' type='Polar' xName='country' yName='gold' drawType='Column' pointColorMapping='color' name='Gold'> </e-series>
@@ -14,9 +13,9 @@ import { columnData } from 'datasource.ts';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public title: string;
-    public data: Object[];
+    public primaryXAxis?: Object;
+    public title?: string;
+    public data?: Object[];
     ngOnInit(): void {
         this.data = [{ country: "USA", gold: 60, color: 'url(#chess)'},
       { country: "China", gold: 50, color:  'url(#cross)'},

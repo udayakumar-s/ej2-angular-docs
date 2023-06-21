@@ -72,4 +72,4 @@ Slider value choosen as: {{value}}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/reactiveform-cs2" %}
+{% previewsample "page.domainurl/samples/slider/reactiveform-cs2" %}

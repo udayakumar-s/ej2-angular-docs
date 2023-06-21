@@ -27,7 +27,7 @@ Title can be customized by using [`titleStyle`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-appearance-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-appearance-cs1" %}
 
 ## Gauge Position
 
@@ -52,7 +52,7 @@ You can set the mid point of the gauge in pixel as demonstrated below,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-appearance-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-appearance-cs2" %}
 <!-- markdownlint-disable MD036 -->
 
 **In Percentage**
@@ -72,7 +72,7 @@ For example, when the [`centerX`](https://ej2.syncfusion.com/angular/documentati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-appearance-cs3" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-appearance-cs3" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Area Customization
@@ -93,7 +93,7 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/circul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-appearance-cs4" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-appearance-cs4" %}
 
 **Gauge Margin**
 
@@ -111,7 +111,7 @@ You can set margin for gauge from its container through [`margin`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-appearance-cs5" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-appearance-cs5" %}
 
 ## Radius calculation based on angles
 
@@ -129,4 +129,4 @@ Render semi or quarter circular gauges by modifying the start and end angles. By
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-appearance-cs6" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-appearance-cs6" %}

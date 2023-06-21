@@ -28,28 +28,28 @@ import { EditSettingsModel, IEditCell, GridComponent } from '@syncfusion/ej2-ang
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: string[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: string[];
     public selectedRecord: object = {};
-    public numericParams: IEditCell;
-    @ViewChild('grid') public gridObj: GridComponent;
+    public numericParams?: IEditCell;
+    @ViewChild('grid') public gridObj?: GridComponent;
 
-    actionBegin(args): void {
-        if (args.requestType === 'beginEdit') {
+    actionBegin(args: any): void {
+        if ((args as any).requestType === 'beginEdit') {
             this.selectedRecord = {};
-            this.selectedRecord = args.rowData;
+            this.selectedRecord = (args as any).rowData;
         }
     }
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowDeleting: true, mode: 'Normal' };
         this.toolbar = ['Delete', 'Update', 'Cancel'];
-        this.numericParams = { params: { change: function(args) {
+        this.numericParams = { params: { change: ((args: any) => {
               const Freight = 'Freight';
-              this.selectedRecord[Freight] = args.value;
-        this.gridObj.aggregateModule.refresh(this.selectedRecord);
-        }.bind(this)}
+              (this.selectedRecord as any)[Freight] = (args as any).value;
+        (this.gridObj as any).aggregateModule.refresh(this.selectedRecord);
+        }).bind(this)}
         };
     }
   

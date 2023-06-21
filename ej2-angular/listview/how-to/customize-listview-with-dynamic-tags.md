@@ -80,4 +80,4 @@ You can customize the ListView items using the [`template`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/dynamic-tag-cs2" %}
+{% previewsample "page.domainurl/samples/listview/dynamic-tag-cs2" %}

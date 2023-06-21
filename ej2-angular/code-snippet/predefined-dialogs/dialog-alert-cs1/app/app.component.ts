@@ -10,9 +10,12 @@ import { DialogUtility } from '@syncfusion/ej2-popups';
 })
 
 export class AppComponent implements OnInit {
-  public dialogObj;
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  public dialogObj : any;
   public alertBtnClick = (): void => {
-    document.getElementById('statusText').style.display = 'none';
+    document.getElementById('statusText')!.style.display = 'none';
     this.dialogObj = DialogUtility.alert({
       title: 'Low Battery',
       content: '10% of battery remaining',
@@ -22,9 +25,9 @@ export class AppComponent implements OnInit {
   };
   private alertOkAction(): void {
     this.dialogObj.hide();
-    document.getElementById('statusText').innerHTML =
+    document.getElementById('statusText')!.innerHTML =
       'The user closed the Alert dialog.';
-    document.getElementById('statusText').style.display = 'block';
+    document.getElementById('statusText')!.style.display = 'block';
   }
 }
 

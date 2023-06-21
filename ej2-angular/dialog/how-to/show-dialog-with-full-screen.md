@@ -24,4 +24,4 @@ You can show the dialog in fullscreen by passing `true` as argument to the dialo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-fullscreen-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-fullscreen-cs1" %}

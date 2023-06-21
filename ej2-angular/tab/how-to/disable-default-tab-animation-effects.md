@@ -26,4 +26,4 @@ The sample demonstrates Tab without the default animation effects. You can check
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/disable-animation-cs1" %}
+{% previewsample "page.domainurl/samples/tab/disable-animation-cs1" %}

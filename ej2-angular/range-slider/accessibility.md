@@ -74,4 +74,4 @@ Decreases the Slider by `largeStep` value.</td></tr>
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/accessibility-01-cs1" %}
+{% previewsample "page.domainurl/samples/slider/accessibility-01-cs1" %}

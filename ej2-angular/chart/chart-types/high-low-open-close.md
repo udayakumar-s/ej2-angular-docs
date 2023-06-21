@@ -29,7 +29,7 @@ HiloOpenClose series requires 5 fields (x, high, low, open and close) to show th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/hiloopenclose-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/hiloopenclose-cs1" %}
 
 ## Series customization
 
@@ -49,7 +49,7 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/hiloopenclose-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/hiloopenclose-cs2" %}
 
 ## See Also
 

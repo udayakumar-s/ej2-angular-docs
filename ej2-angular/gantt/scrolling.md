@@ -34,7 +34,7 @@ We can even set pixel values to width and height of gantt container using [width
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/scrolling-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/scrolling-cs1" %}
 
 ## Responsive with the parent container
 
@@ -53,4 +53,4 @@ Setting the `height` to `100%` requires the gantt parent element to have explici
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/responsive-scrolling-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/responsive-scrolling-cs1" %}

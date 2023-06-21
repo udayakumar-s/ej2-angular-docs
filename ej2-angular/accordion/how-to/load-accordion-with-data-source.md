@@ -26,4 +26,4 @@ In the below demo, Data is fetched from an `OData` service using `DataManager`. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs5" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-cs5" %}

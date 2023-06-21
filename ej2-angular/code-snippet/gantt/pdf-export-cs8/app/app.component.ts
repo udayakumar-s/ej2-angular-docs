@@ -2,7 +2,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+
 import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
@@ -17,11 +17,12 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public ganttChart: GanttComponent;
+    public ganttChart?: GanttComponent;
+    columns: ({ field: string; headerText: string; textAlign: string; width: string; visible?: undefined; } | { field: string; headerText: string; width: string; textAlign?: undefined; visible?: undefined; } | { field: string; headerText: string; width: string; visible: boolean; textAlign?: undefined; })[] | undefined;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {
@@ -43,12 +44,12 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault_pdfexport') {
-                this.ganttChart.pdfExport();
+                this.ganttChart!.pdfExport();
             }
     };
     public beforePdfExport(): void {
-        this.ganttChart.treeGrid.columns[2].visible = false;
-        this.ganttChart.treeGrid.columns[3].visible = true;
+        (this.ganttChart!.treeGrid.columns[2] as any).visible = false;
+        (this.ganttChart!.treeGrid.columns[3] as any).visible = true;
     };
 }
 

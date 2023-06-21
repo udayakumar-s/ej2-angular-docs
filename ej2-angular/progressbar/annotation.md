@@ -27,7 +27,7 @@ For example, you can include add, start, or pause button to control the progress
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/annotation-cs1" %}
+{% previewsample "page.domainurl/samples/progressbar/annotation-cs1" %}
 
 ## Label
 
@@ -45,4 +45,4 @@ You can show the progress value in both linear and cicular progress bar using **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/annotation-cs2" %}
+{% previewsample "page.domainurl/samples/progressbar/annotation-cs2" %}

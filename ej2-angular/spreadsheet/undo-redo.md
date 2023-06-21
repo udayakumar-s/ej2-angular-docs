@@ -50,7 +50,7 @@ The following code example shows `How to update and customize your own actions f
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/undo-redo-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/undo-redo-cs1" %}
 
 ## Note
 

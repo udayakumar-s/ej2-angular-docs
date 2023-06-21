@@ -11,7 +11,7 @@ import { UploadingEventArgs } from '@syncfusion/ej2-angular-inputs';
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService ]
 })
 export class AppComponent  {
-@ViewChild('sample') public rteObj: RichTextEditorComponent;
+@ViewChild('sample') public rteObj?: RichTextEditorComponent;
 
 public toolbarSettings: Object = {
   items: ['Bold', 'Italic', 'Underline', 'StrikeThrough','|',
@@ -38,4 +38,4 @@ public onImageUploading = (args: UploadingEventArgs) => {
 }
 
 
-
+}

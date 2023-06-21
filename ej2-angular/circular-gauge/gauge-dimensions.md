@@ -33,7 +33,7 @@ You can set width and height to the element of the container. It determines the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-dimensions-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-dimensions-cs1" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Size for Circular Gauge
@@ -58,7 +58,7 @@ You can set the size of the gauge in pixel as demonstrated below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-dimensions-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-dimensions-cs2" %}
 
 **In Percentage**
 
@@ -76,6 +76,6 @@ By setting value in percentage, gauge gets its dimension with respect to its con
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-dimensions-cs3" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-dimensions-cs3" %}
 
 >Note: When you do not specify the size, it takes `450px` as the height and window size as its width.

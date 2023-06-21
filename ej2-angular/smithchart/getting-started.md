@@ -129,7 +129,7 @@ The below example shows a basic Smithchart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs1" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs1" %}
 
 ## Module Injection
 
@@ -181,7 +181,7 @@ Below sample demonstrate adding two series to smithchart both ways.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs2" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs2" %}
 
 ## Add title to SmithChart
 
@@ -200,7 +200,7 @@ API `visible` used to toggle the title.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs3" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs3" %}
 
 ## Enable Marker to Smithchart
 
@@ -218,7 +218,7 @@ To use series marker and it's customization in smithchart, use series `marker`. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs4" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs4" %}
 
 ## Enable DataLabel to Smithchart Marker
 
@@ -236,7 +236,7 @@ To use marker dataLabel and it's customization in smithchart, use marker `dataLa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs5" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs5" %}
 
 ## Enable Legend for Smithchart
 
@@ -254,7 +254,7 @@ Smithchart had a legend feature, which is used to denote the correspond series. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs6" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs6" %}
 
 ## Enable Tooltip for Smithchart Series
 
@@ -272,4 +272,4 @@ Smithchart had a tooltip feature, which is used to show the current point's valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs7" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs7" %}

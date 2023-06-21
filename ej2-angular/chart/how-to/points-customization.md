@@ -29,4 +29,4 @@ Customize the point colors to set the color value by using the `pointColorMappin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/pattern-point-cs1" %}
+{% previewsample "page.domainurl/samples/chart/pattern-point-cs1" %}

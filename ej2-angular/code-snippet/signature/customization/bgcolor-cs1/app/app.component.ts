@@ -18,10 +18,10 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('signature')
-    public signature: SignatureComponent;
+    public signature?: SignatureComponent;
     setBgColor(): void {
-        let bgColor = document.getElementById('text').value;
-        this.signature.backgroundColor = bgColor;
+        let bgColor = (document.getElementById('text') as any).value;
+        this.signature!.backgroundColor = bgColor;
     }
 }
 

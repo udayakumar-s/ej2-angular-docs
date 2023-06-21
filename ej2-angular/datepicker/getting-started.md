@@ -173,7 +173,7 @@ The following example illustrates the output in your browser
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs7" %}
 
 ## Setting the selected date
 
@@ -193,7 +193,7 @@ The below example demonstrates the DatePicker with current date as selected one.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs8" %}
 
 ## Setting the date range to restrict selection
 
@@ -213,7 +213,7 @@ The below example demonstrates the DatePicker to select a date within a range fr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs9" %}
 
 ## See Also
 

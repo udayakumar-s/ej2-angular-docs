@@ -24,4 +24,4 @@ You can achieve this behavior by using `ej2-tooltip` component. When the mouse h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs19" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs19" %}

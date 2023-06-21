@@ -26,7 +26,7 @@ To use reordering, inject the [`Reorder`](https://ej2.syncfusion.com/angular/doc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs6" %}
 
 > You can disable reordering a particular column by setting the [`columns.allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#reordermodule) to false.
 
@@ -46,7 +46,7 @@ The tree grid have an option to reorder Columns either by interaction or by usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs7" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs7" %}
 
 ## Reorder multiple columns
 
@@ -64,7 +64,7 @@ Multiple columns can be reordered at a time by using the [`reorderColumns`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs8" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs8" %}
 
 ## Reorder events
 
@@ -86,7 +86,7 @@ During the reorder action, the tree grid component triggers the following three 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/reorder-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/reorder-cs1" %}
 
 ## Lock columns
 
@@ -106,4 +106,4 @@ In the below example, duration column is locked and its reordering functionality
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs9" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs9" %}

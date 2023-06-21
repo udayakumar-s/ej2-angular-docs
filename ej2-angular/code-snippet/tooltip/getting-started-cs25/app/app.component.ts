@@ -29,7 +29,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
     tooltipContent: HTMLElement = document.createElement('div');
     constructor() {
-        this.tooltipContent = '<h3>HTML Content</h3><p><strong>Environmentally friendly</strong> or <strong>environment-friendly</strong>, <i>(also referred to as eco-friendly, nature-friendly, and green)</i> are marketing and sustainability terms referring to goods and services, laws, guidelines and policies that inflict reduced, minimal, or no harm upon ecosystems or the environment.</p>'
+        (this as any).tooltipContent = '<h3>HTML Content</h3><p><strong>Environmentally friendly</strong> or <strong>environment-friendly</strong>, <i>(also referred to as eco-friendly, nature-friendly, and green)</i> are marketing and sustainability terms referring to goods and services, laws, guidelines and policies that inflict reduced, minimal, or no harm upon ecosystems or the environment.</p>'
     }
 }
 

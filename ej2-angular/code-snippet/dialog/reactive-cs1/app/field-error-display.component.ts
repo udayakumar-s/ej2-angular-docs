@@ -12,7 +12,7 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 })
 export class FieldErrorDisplayComponent {
 
-  @Input() errorMsg: string;
-  @Input() displayError: boolean;
+  @Input() errorMsg: string | any;
+  @Input() displayError: boolean | any;
 
 }

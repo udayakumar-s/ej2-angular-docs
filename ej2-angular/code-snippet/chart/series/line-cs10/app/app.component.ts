@@ -1,24 +1,23 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { splineData } from 'datasource.ts';
+import { splineData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [tooltip]='tooltip'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [tooltip]='tooltip'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Pareto' xName='x' yName='y' name='Defect' width=2 [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public marker: Object;
-    public tooltip: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public marker?: Object;
+    public tooltip?: Object;
     ngOnInit(): void {
         this.chartData = [
                     { x: 'Traffic', y: 56 }, { x: 'Child Care', y: 44.8 },

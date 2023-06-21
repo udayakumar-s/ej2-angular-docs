@@ -20,23 +20,23 @@ import { data } from './datasource';
 
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public toolbar?: ToolbarItems[];
     @ViewChild('grid')
-    public grid: GridComponent;
-    public editSettings: EditSettingsModel;
+    public grid?: GridComponent;
+    public editSettings?: EditSettingsModel;
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
-    load(args){
-        this.grid.element.addEventListener('mouseup', (e: MouseEventArgs) => {
+    load(args: any){
+        (this.grid as any).element.addEventListener('mouseup', (e: MouseEventArgs) => {
         if ((e.target as HTMLElement).classList.contains("e-rowcell")) {
-            let index: number = parseInt((e.target as HTMLElement).getAttribute("Index"));
-            let colindex: number = parseInt((e.target as HTMLElement).getAttribute("aria-colindex"));
-            let field: string = this.grid.getColumns()[colindex].field;
-            this.grid.editModule.editCell(index, field);
+            let index: number = parseInt(((e.target as HTMLElement) as any).getAttribute("Index"));
+            let colindex: number = parseInt(((e.target as HTMLElement) as any).getAttribute("aria-colindex"));
+            let field: string = (this.grid as any).getColumns()[colindex].field;
+            (this.grid as any).editModule.editCell(index, field);
         };
         });
     }

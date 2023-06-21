@@ -32,7 +32,7 @@ When height and width of the Kanban are set to `auto`, it will try as hard as po
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/auto-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/auto-cs1" %}
 
 ## Height and width in pixel
 
@@ -50,7 +50,7 @@ The Kanban height and width will be rendered exactly as per the given pixel valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/pixel-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/pixel-cs1" %}
 
 ## Height and width in percentage
 
@@ -68,4 +68,4 @@ When height and width of the Kanban are given in percentage, it will make the Ka
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/percentage-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/percentage-cs1" %}

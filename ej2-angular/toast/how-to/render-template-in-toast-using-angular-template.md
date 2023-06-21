@@ -24,4 +24,4 @@ You can also render the template support in Toast using the Angular **ng-templat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs14" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs14" %}

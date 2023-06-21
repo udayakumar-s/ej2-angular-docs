@@ -19,7 +19,7 @@ import { DetailRowService, GridModel, GridComponent } from '@syncfusion/ej2-angu
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
+    public pData?: object[];
     public childGrid: GridModel = {
         queryString: 'EmployeeID',
         columns: [
@@ -29,14 +29,15 @@ export class AppComponent implements OnInit {
             { field: 'ShipName', headerText: 'Ship Name', width: 150 }
         ],
     };
-    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.pData = employeeData;
     }
 
-    onLoad(): void {
-        this.grid.childGrid.dataSource = data; // assign data source for child grid.
+    onLoad(args: any): void {
+        (this.grid as any).childGrid.dataSource = data; // assign data source for child grid.
     }
 
 }

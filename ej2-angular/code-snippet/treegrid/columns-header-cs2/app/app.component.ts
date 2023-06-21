@@ -15,10 +15,10 @@ import { stackedData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public orderColumns: Object[];
-    public shipColumns: Object[];
-    public priceColumns: Object[];
+    public data?: Object[];
+    public orderColumns?: Object[];
+    public shipColumns?: Object[];
+    public priceColumns?: Object[];
 
     ngOnInit(): void {
         this.data = stackedData;

@@ -15,12 +15,12 @@ enableRipple(true);
 })
 
 export class AppComponent {
-    private menuFields: FieldSettingsModel = {
+    public menuFields: FieldSettingsModel = {
         text: ['continent', 'country', 'language'],
         children: ['countries', 'languages']
     };
 
-    private data: { [key: string]: Object }[] = dataSource;
+    public data: { [key: string]: Object }[] = dataSource;
 }
 
 

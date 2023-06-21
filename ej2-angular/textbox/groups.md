@@ -84,7 +84,7 @@ For the floating label enabled TextBox add the icon element as first or last ele
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs1" %}
 
 > To place the icon on left side of the TextBox, create a div element with the class `e-input-in-wrap` as wrapper to the input element and place the `floating line`, `floating text`, and right side icon element within it.
 Add the `e-float-icon-left` class to the TextBox container element.
@@ -108,7 +108,7 @@ You can add the clear button to the TextBox by `showClearButton` API in textbox
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/textbox-component-clearicons-cs1" %}
+{% previewsample "page.domainurl/samples/textbox/textbox-component-clearicons-cs1" %}
 
 ## Floating Label without required attribute
 
@@ -132,7 +132,7 @@ Class Name        | Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs2" %}
 
 ## Multi-line Input with Floating Label
 
@@ -152,7 +152,7 @@ Add the floating label support to the `multi-line input` by creating the floatin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs3" %}
 
 ## See Also
 

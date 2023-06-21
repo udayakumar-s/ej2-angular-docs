@@ -75,4 +75,4 @@ To focus the DatePicker component use the `alt+t` keys.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs1" %}

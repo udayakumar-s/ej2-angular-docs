@@ -12,6 +12,8 @@ import { TreeViewComponent, NodeEditEventArgs } from '@syncfusion/ej2-angular-na
 })
 export class AppComponent {
     @ViewChild('samples')
+    public tree?: TreeViewComponent;
+
     constructor() {
     }
     // Hierarchical data source for TreeView component
@@ -63,7 +65,7 @@ export class AppComponent {
     // Mapping TreeView fields property with data source properties
     public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'child' };
     public allowEditing: boolean =  true;
-    @ViewChild ('treevalidate') treevalidate: TreeViewComponent;
+    @ViewChild ('treevalidate') treevalidate?: TreeViewComponent;
     public onNodeEdited(args: NodeEditEventArgs): void {
         let displayContent:string = "";
         if (args.newText.trim() == "") {
@@ -74,7 +76,7 @@ export class AppComponent {
                 } else {
                     displayContent = "";
                     }
-                    document.getElementById("display").innerHTML = displayContent;
+                    (document.getElementById("display") as HTMLElement).innerHTML = displayContent;
                   }
                 }
 

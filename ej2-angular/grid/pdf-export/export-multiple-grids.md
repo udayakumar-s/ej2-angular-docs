@@ -24,4 +24,4 @@ PDF export provides an option for exporting multiple grids to same file. In this
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs7" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs7" %}

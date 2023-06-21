@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, PivotView, VirtualScrollService } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, VirtualScrollService } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -12,9 +12,9 @@ import { Pivot_Data } from './datasource.ts';
 })
 
 export class AppComponent implements OnInit  {
-public dataSourceSettings: IDataOptions;
-public date1: number;
-public date2: number;
+public dataSourceSettings?: IDataOptions;
+public date1?: number;
+public date2?: number;
 data(count: number) {
   let result: Object[] = [];
   let dt: number = 0;

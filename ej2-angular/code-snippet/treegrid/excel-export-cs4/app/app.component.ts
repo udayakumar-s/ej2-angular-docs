@@ -2,7 +2,9 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ToolbarItems, ExcelExportProperties } from '@syncfusion/ej2-treegrid';
+import { ToolbarItems } from '@syncfusion/ej2-treegrid';
+import { ExcelExportProperties } from '@syncfusion/ej2-grids';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -17,23 +19,23 @@ import { ToolbarItems, ExcelExportProperties } from '@syncfusion/ej2-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pager: Object;
+    public data?: Object[];
+    public pager?: Object;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
-    public toolbarOptions: ToolbarItems[];
+    public treeGridObj?: TreeGridComponent;
+    public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;
         this.pager = { pageSize: 7 };
         this.toolbarOptions = ['ExcelExport'];
     }
-    toolbarClick(args: Object) : void {
+    toolbarClick(args: Object | any) : void {
         if (args['item'].text === 'Excel Export') {
             let exportProperties: ExcelExportProperties = {
                 includeHiddenColumn: true
             };
-            this.treeGridObj.excelExport(exportProperties);
+            (this.treeGridObj as TreeGridComponent).excelExport(exportProperties);
         }
     }
 }

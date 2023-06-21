@@ -30,7 +30,7 @@ To enable Right-To-Left (RTL) support for all components, users can set the `ena
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/right-to-left-cs1" %}
+{% previewsample "page.domainurl/samples/common/right-to-left-cs1" %}
 
 ## Enable RTL for an individual component
 
@@ -48,4 +48,4 @@ To enable Right-To-Left (RTL) support for an individual component, users can set
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/individual-rtl-cs1" %}
+{% previewsample "page.domainurl/samples/common/individual-rtl-cs1" %}

@@ -24,4 +24,4 @@ By using the `chartMouseClick` event, you can show the series based on respectiv
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs18" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs18" %}

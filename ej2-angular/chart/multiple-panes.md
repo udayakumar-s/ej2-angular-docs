@@ -32,7 +32,7 @@ To split the chart area vertically into number of rows, use [`rows`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-panes-cs2" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-panes-cs2" %}
 
 For spanning the vertical axis along multiple row, you can use [`span`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#span) property of an axis.
 
@@ -48,7 +48,7 @@ For spanning the vertical axis along multiple row, you can use [`span`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-panes-cs3" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-panes-cs3" %}
 
 ## Columns
 
@@ -71,7 +71,7 @@ property. The given width can be either in percentage or in pixel.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-panes-cs4" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-panes-cs4" %}
 
 For spanning the horizontal axis along multiple column, you can use [`span`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#span) property of an axis.
 
@@ -87,4 +87,4 @@ For spanning the horizontal axis along multiple column, you can use [`span`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/multiple-panes-cs5" %}
+{% previewsample "page.domainurl/samples/chart/axis/multiple-panes-cs5" %}

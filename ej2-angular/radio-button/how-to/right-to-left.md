@@ -26,4 +26,4 @@ The following example illustrates how to enable right-to-left support in RadioBu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/radio-button/getting-started-cs2" %}

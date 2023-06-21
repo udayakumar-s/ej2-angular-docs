@@ -27,10 +27,11 @@ export class AppComponent implements OnInit, AfterViewInit {
     constructor(@Inject(ViewContainerRef) private viewContainerRef?: ViewContainerRef) {
 
     }
-    public pData: object[];
-    @ViewChild('childtemplate') public childtemplate: any;
-    @ViewChild('grid') public grid: GridComponent;
-    public childGrid: any;
+    public pData?: object[];
+    @ViewChild('childtemplate') public childtemplate?: any;
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public childGrid?: any;
 
     ngAfterViewInit() {
         this.childtemplate.elementRef.nativeElement._viewContainerRef = this.viewContainerRef;

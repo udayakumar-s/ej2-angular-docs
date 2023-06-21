@@ -17,13 +17,13 @@ import { DatePickerComponent } from '@syncfusion/ej2-angular-calendars';
 })
 export class ParentComponent {
     @ViewChild('date')
-    public Date: DatePickerComponent;
+    public Date?: DatePickerComponent;
     value: Date;
     constructor() {
         this.value = new Date("2/1/2020");
     }
     deposit() {
-        this.value = this.Date.value;
+        this.value = this.Date?.value as Date;
     }
     valuecheck(args: any) {
         this.value = args;

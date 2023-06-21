@@ -18,7 +18,7 @@ export let defaultData: Object[] = [
 * Grid datasource
 */
 
-export function getTradeData(dataCount?: number): object {
+export function getTradeData(dataCount: number): object {
   let employees: string[] = [
       'Michael', 'Kathryn', 'Tamer', 'Martin', 'Davolio', 'Nancy', 'Fuller', 'Leverling', 'Peacock',
       'Margaret', 'Buchanan', 'Janet', 'Andrew', 'Callahan', 'Laura', 'Dodsworth', 'Anne',
@@ -28,7 +28,7 @@ export function getTradeData(dataCount?: number): object {
   let location: string[] = ['UK', 'USA', 'Sweden', 'France', 'Canada', 'Argentina', 'Austria', 'Germany', 'Mexico'];
   let status: string[] = ['Active', 'Inactive'];
   let trustworthiness: string[] = ['Perfect', 'Sufficient', 'Insufficient'];
-  let tradeData: Object[] = [];
+  let tradeData: any[] = [];
   let address: string[] = ['59 rue de lAbbaye', 'Luisenstr. 48', 'Rua do Paço, 67', '2, rue du Commerce', 'Boulevard Tirou, 255',
       'Rua do mailPaço, 67', 'Hauptstr. 31', 'Starenweg 5', 'Rua do Mercado, 12',
       'Carrera 22 con Ave. Carlos Soublette #8-35', 'Kirchgasse 6',

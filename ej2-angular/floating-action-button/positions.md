@@ -52,7 +52,7 @@ Below example demonstrates different supported positions of FAB.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/floating-action-button/all-positions-cs1" %}
+{% previewsample "page.domainurl/samples/floating-action-button/all-positions-cs1" %}
 
 ## Custom position
 
@@ -73,4 +73,4 @@ You can define the custom position of the Floating Action Button by override the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/floating-action-button/position-cs1" %}
+{% previewsample "page.domainurl/samples/floating-action-button/position-cs1" %}

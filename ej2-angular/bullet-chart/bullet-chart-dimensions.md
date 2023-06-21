@@ -50,7 +50,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs10" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs10" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Size for Bullet Chart
@@ -75,7 +75,7 @@ Can set the size of the Bullet Chart in pixels as shown below.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs11" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs11" %}
 
 ### Percentage
 
@@ -93,6 +93,6 @@ By setting a value in percentage, the Bullet Chart gets its dimension with respe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs12" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs12" %}
 
 >If the size is not specified, the Bullet Chart will be rendered with a height of **126px** and a width of the window.

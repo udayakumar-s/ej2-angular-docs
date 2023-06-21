@@ -32,7 +32,7 @@ The number of records displayed in the Grid is determined implicitly by height o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging1-cs8" %}
+{% previewsample "page.domainurl/samples/grid/paging1-cs8" %}
 
 ## Column Virtualization
 
@@ -52,7 +52,7 @@ To setup the column virtualization, set the [`enableVirtualization`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging1-cs9" %}
+{% previewsample "page.domainurl/samples/grid/paging1-cs9" %}
 
 > Column's [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 

@@ -39,7 +39,7 @@ In the following sample, the types of Sidebar are demonstrated.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/Types-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/Types-cs1" %}
 
 ## See Also
 

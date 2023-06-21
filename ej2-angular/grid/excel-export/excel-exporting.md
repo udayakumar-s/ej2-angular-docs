@@ -26,7 +26,7 @@ To use excel export, inject **ExcelExportService** in the provider section of **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs10" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs10" %}
 
 ## Show spinner while exporting
 
@@ -50,7 +50,7 @@ In the below demo, we have rendered the default spinner component when exporting
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs1" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs1" %}
 
 ## Custom data source
 
@@ -69,7 +69,7 @@ To export data dynamically, define the [`dataSource`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs11" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs11" %}
 
 ## Passing additional parameters to the server when exporting
 
@@ -89,7 +89,7 @@ In the below example, we have passed **recordcount** as **12** using **addParams
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs2" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs2" %}
 
 ## See Also
 

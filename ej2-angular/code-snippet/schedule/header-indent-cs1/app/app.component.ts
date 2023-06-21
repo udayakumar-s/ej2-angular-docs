@@ -3,7 +3,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Internationalization } from '@syncfusion/ej2-base';
 import { EventSettingsModel, DayService, WeekService, GroupModel, TimelineViewsService, TimelineMonthService } from '@syncfusion/ej2-angular-schedule';
-import { resourceData } from './datasource.ts';
+import { resourceData } from './datasource';
 @Component({
     selector: 'app-root',
     providers: [DayService, WeekService, TimelineViewsService, TimelineMonthService],
@@ -22,7 +22,7 @@ import { resourceData } from './datasource.ts';
       </div>
     </ng-template>
     </ejs-schedule>`,
-    styleUrls: ['app/index.css'],
+    styleUrls: ['./index.css'],
     encapsulation: ViewEncapsulation.None
 })
 

@@ -17,21 +17,21 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public eventSettings: EventSettingsModel = {
         dataSource: scheduleData,
     };
     onActionBegin(args: ActionEventArgs) {
         if ((args.requestType === 'eventCreate' || args.requestType === 'eventChange') && (<Object[]>args.data).length > 0
-            || !isNullOrUndefined(args.data)) {
+            || !isNullOrUndefined((args as any).data)) {
             let eventData: any = args.data as any;
-            let eventField: EventFieldsMapping = this.scheduleObj.eventFields;
+            let eventField: EventFieldsMapping | undefined = this.scheduleObj?.eventFields;
             let startDate: Date = (((<Object[]>args.data).length > 0)
-                ? eventData[0][eventField.startTime] : eventData[eventField.startTime]) as Date;
+                ? eventData[0][(eventField as any).startTime] : eventData[(eventField as any).startTime]) as Date;
             let endDate: Date = (((<Object[]>args.data).length > 0)
-                ? eventData[0][eventField.endTime] : eventData[eventField.endTime]) as Date;
-            args.cancel = !this.scheduleObj.isSlotAvailable(startDate, endDate);
+                ? eventData[0][(eventField as any).endTime] : eventData[(eventField as any).endTime]) as Date;
+            args.cancel = !this.scheduleObj?.isSlotAvailable(startDate, endDate);
         }
     }
 }

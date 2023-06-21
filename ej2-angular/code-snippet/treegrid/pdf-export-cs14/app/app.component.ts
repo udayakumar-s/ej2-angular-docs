@@ -19,9 +19,9 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('treegrid')  public treegrid: TreeGridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    @ViewChild('treegrid')  public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -29,14 +29,14 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args['item'].text === 'PDF Export')) {
-            this.treegrid.showSpinner();
-            this.treegrid.pdfExport();
+        if (args['item'].text === 'PDF Export') {
+            (this.treegrid as TreeGridComponent).showSpinner();
+            (this.treegrid as TreeGridComponent).pdfExport();
         }
     }
 
     pdfExportComplete(): void {
-        this.treegrid.hideSpinner();
+        (this.treegrid as TreeGridComponent).hideSpinner();
     }
 }
 

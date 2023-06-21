@@ -28,7 +28,7 @@ To display data labels in the Maps, the [`labelPath`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs28" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs28" %}
 
 In the following example, the value of [`labelPath`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel/#labelpath) property is set from the field name in the data source of the layer settings.
 
@@ -44,7 +44,7 @@ In the following example, the value of [`labelPath`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs29" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs29" %}
 
 ## Customization
 
@@ -67,7 +67,7 @@ The following properties are available in the [`dataLabelSettings`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs30" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs30" %}
 
 ## Smart labels
 
@@ -89,7 +89,7 @@ The Maps component provides an option to handle the labels when they intersect w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs31" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs31" %}
 
 ## Intersect action
 
@@ -111,7 +111,7 @@ The Maps component provides an option to handle the labels when a label intersec
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs32" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs32" %}
 
 ## Adding data label as a template
 
@@ -131,4 +131,4 @@ The data label can be added as a template in the Maps component. The [`template`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs33" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs33" %}

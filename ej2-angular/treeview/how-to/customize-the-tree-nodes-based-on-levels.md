@@ -24,4 +24,4 @@ You can customize the tree nodes level wise by adding custom cssClass to the com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/customize-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/customize-cs1" %}

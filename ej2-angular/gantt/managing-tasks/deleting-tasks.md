@@ -24,7 +24,7 @@ A task delete option in the Gantt component can be enabled by enabling the [`edi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/taskdelete-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/taskdelete-cs1" %}
 
 > NOTE: You should select any one of the rows in the Gantt component to perform task delete action.
 > You should set the [`ediSettings.allowDeleting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings/#allowdeleting) value to `true` to delete the record dynamically.
@@ -47,4 +47,4 @@ The following code snippet explains how to enable the delete confirmation messag
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/managing-tasks/delete-confirmation-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/delete-confirmation-cs1" %}

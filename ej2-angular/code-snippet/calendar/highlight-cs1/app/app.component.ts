@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template: `
         <!-- To customize day calendar appearance -->
         <!-- Refer the "special,highlight-day" class details in "styles.css"-->
@@ -16,7 +16,7 @@ export class AppComponent {
     public dateValue: Date = new Date('3/7/2017');
     constructor() {
     }
-    customDates(args): void {
+    customDates(args: any): void {
          let span: HTMLElement;
     //defines the custom HTML element to be added.
     span = document.createElement('span');

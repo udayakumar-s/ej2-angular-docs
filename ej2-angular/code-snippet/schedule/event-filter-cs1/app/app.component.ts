@@ -13,22 +13,22 @@ import { scheduleData } from './datasource';
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
     // specifies the template string for the Schedule component
-    templateUrl: 'app/app.component.html'
+    templateUrl: './app.component.html'
 })
 export class AppComponent {
     @ViewChild('confirmObj')
-    public confirmObj: CheckBox;
+    public confirmObj?: CheckBox;
     @ViewChild('requestedObj')
-    public requestedObj: CheckBox;
+    public requestedObj?: CheckBox;
     @ViewChild('freshObj')
-    public freshObj: CheckBox;
+    public freshObj?: CheckBox;
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public eventSettings: EventSettingsModel = { dataSource: scheduleData };
     public selectedDate: Date = new Date(2018, 1, 15);
     public isChecked: Boolean = true;
     public onEventRendered(args: EventRenderedArgs): void {
-        switch (args.data.EventType) {
+        switch (args.data['EventType']) {
             case 'Requested':
                 (args.element as HTMLElement).style.backgroundColor = '#F57F17';
                 break;
@@ -41,8 +41,8 @@ export class AppComponent {
         }
     }
     public onCheckBoxChange(): void {
-        let predicate: Predicate;
-        const checkBoxes: CheckBox[] = [this.confirmObj, this.requestedObj, this.freshObj];
+        let predicate: Predicate | undefined;
+        const checkBoxes: CheckBox[] = [this.confirmObj as any, this.requestedObj, this.freshObj];
         checkBoxes.forEach((checkBoxObj: CheckBox) => {
             if (checkBoxObj.checked) {
                 if (predicate) {
@@ -52,7 +52,7 @@ export class AppComponent {
                 }
             }
         });
-        this.scheduleObj.eventSettings.query = new Query().where(predicate);
+        (this.scheduleObj as any).eventSettings.query = new Query().where(predicate || '');
     }
 }
 

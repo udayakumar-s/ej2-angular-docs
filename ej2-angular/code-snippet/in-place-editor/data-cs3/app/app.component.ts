@@ -16,12 +16,12 @@ import { DataManager, WebApiAdaptor, Query } from '@syncfusion/ej2-data';
 
 export class AppComponent implements OnInit {
     public fields: object = { text: 'ContactName', value: 'CustomerID' };
-    public model: object;
+    public model?: object;
     ngOnInit(): void {
         new DataManager({
             url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Customers/',
             adaptor: new WebApiAdaptor
-        }).executeQuery(new Query().take(8)).then((e) => {
+        }).executeQuery(new Query().take(8)).then((e: any) => {
         this.model = { dataSource: e.result.d,  placeholder: 'Select a customer', fields: this.fields };
         });
     }

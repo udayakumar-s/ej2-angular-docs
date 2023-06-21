@@ -34,7 +34,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/tooltip-cs7" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/tooltip-cs7" %}
 
 **Format the Tooltip**
 
@@ -52,7 +52,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/tooltip-cs8" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/tooltip-cs8" %}
 
 <!-- markdownlint-disable MD013 -->
 
@@ -72,7 +72,7 @@ Any HTML elements can be displayed in the tooltip by using the ‘template’ pr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/tooltip-cs9" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/tooltip-cs9" %}
 
 **Customize the Appearance of Tooltip**
 
@@ -90,7 +90,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipS
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/tooltip-cs10" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/tooltip-cs10" %}
 
 ## Zooming  and Panning
 
@@ -116,7 +116,7 @@ Chart can be zoomed in three ways.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/zoom-cs2" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs2" %}
 
 After zooming the chart, a zooming toolbar will appear with `zoom`,`zoomin`, `zoomout`, `pan` and `reset` buttons.
 Selecting the Pan option will allow to pan the chart and selecting the Reset option will reset the zoomed chart.
@@ -143,7 +143,7 @@ There are three types of mode.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/zoom-cs3" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs3" %}
 
 **Customizing Zooming Toolbar**
 
@@ -161,7 +161,7 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/zoom-cs4" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs4" %}
 
 >Note: To use zooming feature, we need to inject `ZoomService` into the `NgModule.providers`.
 
@@ -187,7 +187,7 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/crosshair-cs7" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-cs7" %}
 
 **Customization**
 
@@ -206,7 +206,7 @@ Color and width of the crosshair line can be customized by using the [`line`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/crosshair-cs8" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-cs8" %}
 
 >Note: To use crosshair feature, we need to inject `CrosshairService` into the `NgModule.providers`.
 
@@ -228,7 +228,7 @@ Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/trackball-cs3" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/trackball-cs3" %}
 
 ## Selection
 
@@ -262,7 +262,7 @@ We have different type of selection mode for selecting the data. They are,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs8" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs8" %}
 
 **Series**
 
@@ -280,7 +280,7 @@ We have different type of selection mode for selecting the data. They are,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs9" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs9" %}
 
 **Cluster**
 
@@ -298,7 +298,7 @@ You can select the points that corresponds to the same index in all the series, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs10" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs10" %}
 
 **DragXY, DragX and DragY**
 
@@ -323,7 +323,7 @@ The selected data’s are returned as an array collection in the [`dragComplete`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/drag-cs4" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/drag-cs4" %}
 
 **Selection Type**
 
@@ -341,7 +341,7 @@ You can select multiple points or series, by enabling the [`isMultiSelect`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs11" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs11" %}
 
 **Customizing Selection Style**
 
@@ -359,7 +359,7 @@ You can apply custom style to selected points or series with [`selectionStyle`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs12" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs12" %}
 
 **Selection on Load**
 
@@ -377,7 +377,7 @@ You can able to select a point or series programmatically on a chart using [`sel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/selection-cs13" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs13" %}
 
 >Note: To use select feature, we need to Inject `SelectionService` into the `NgModule.providers`.
 
@@ -397,6 +397,6 @@ We can use the data editing support using `DataEditingService` in the angular ch
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/data-editing-cs2" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/data-editing-cs2" %}
 
 

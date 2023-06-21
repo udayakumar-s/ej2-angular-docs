@@ -2,7 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { sortData } from './datasource';
-import { SortEventArgs } from '@syncfusion/ej2-treegrid';
+import { SortEventArgs } from '@syncfusion/ej2-grids';
 @Component({
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1'  [allowSorting]='true' childMapping='subtasks'  (actionBegin)='actionHandler($event)' (actionComplete)='actionHandler($event)'>
@@ -16,7 +16,7 @@ import { SortEventArgs } from '@syncfusion/ej2-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = sortData;

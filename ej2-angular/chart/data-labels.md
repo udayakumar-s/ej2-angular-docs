@@ -24,7 +24,7 @@ Data label can be added to a chart series by enabling the [`visible`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs1" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs1" %}
 
 >Note: To use datalabel feature, we need to inject `DataLabelService` into the `@NgModule.providers`.
 
@@ -45,7 +45,7 @@ Using [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs2" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs2" %}
 
 >Note: The position `Outer` is applicable for column and bar type series.
 
@@ -66,7 +66,7 @@ Using [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs3" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs3" %}
 
 ## Format
 
@@ -84,7 +84,7 @@ Data label for the chart can be formatted using [`format`](https://ej2.syncfusio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs4" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs4" %}
 
 <table>
   <tr>
@@ -159,7 +159,7 @@ Text from the data source can be mapped using `name` property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs5" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs5" %}
 
 ## Margin
 
@@ -177,7 +177,7 @@ Text from the data source can be mapped using `name` property.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs6" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs6" %}
 
 ## DataLabel Rotation
 
@@ -195,7 +195,7 @@ Using `angle` property, you can rotate the data label by its given angle.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs7" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs7" %}
 
 ## Customization
 
@@ -213,7 +213,7 @@ Using `angle` property, you can rotate the data label by its given angle.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs8" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs8" %}
 
 >Note: `rx` and `ry` properties requires `border` values not to be null.
 
@@ -233,7 +233,7 @@ You can also customize the specific marker and label using [`pointRender`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs9" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs9" %}
 
 ## Show percentage based on each series points
 
@@ -251,7 +251,7 @@ You can calculate the percentage value based on the sum for each series using th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/data-marker/datalabel-cs10" %}
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs10" %}
 
 ## See Also
 

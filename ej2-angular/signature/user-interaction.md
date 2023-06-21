@@ -53,4 +53,4 @@ The following sample explains about user interactions available in signature.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/signature/user-action-cs1" %}
+{% previewsample "page.domainurl/samples/signature/user-action-cs1" %}

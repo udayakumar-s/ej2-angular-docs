@@ -28,7 +28,7 @@ In the following sample, icon classes are mapped with `iconCss` field.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/icons-and-template-cs1" %}
+{% previewsample "page.domainurl/samples/listbox/icons-and-template-cs1" %}
 
 ## Templates
 
@@ -51,4 +51,4 @@ In the following sample, the items in the cart are displayed using list box temp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/template-cs1" %}
+{% previewsample "page.domainurl/samples/listbox/template-cs1" %}

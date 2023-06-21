@@ -6,8 +6,8 @@ import { DiagramComponent, Diagram, ConnectorModel, DecoratorModel, PointModel }
 @Component({
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getConnectorDefaults] ='getConnectorDefaults'>
-        <e-connectors>
-                <e-connector id='connector' type='Bezier' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint'[targetDecorator]='targetDecorator'>
+            <e-connectors>
+                <e-connector id='connector' type='Bezier' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint' [targetDecorator]='targetDecorator'>
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,
@@ -15,9 +15,10 @@ import { DiagramComponent, Diagram, ConnectorModel, DecoratorModel, PointModel }
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public sourcePoint: PointModel;
-    public targetPoint: PointModel;
+    public diagram?: DiagramComponent;
+    public sourcePoint?: PointModel;
+    public targetPoint?: PointModel;
+    public targetDecorator?: DecoratorModel;
     ngOnInit(): void {
         this.sourcePoint = { x: 100, y: 100 };
         this.targetPoint = { x: 200, y: 200 };
@@ -28,8 +29,9 @@ export class AppComponent {
                 // Stroke color of the decorator
                 strokeColor: '#6BA5D7'
             }
+        }
     }
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',

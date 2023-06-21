@@ -28,7 +28,7 @@ Here's an example for column reordering in your Grid component:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/reorder-cs1" %}
+{% previewsample "page.domainurl/samples/grid/reorder-cs1" %}
 
 >* You can customize the appearance of the column headers during drag and drop by using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#columndrop) events.
 >* When columns are reordered, the position of the corresponding column data will also be changed. As a result, you should ensure that any additional code or logic that relies on the order of the column data is updated accordingly.
@@ -51,7 +51,7 @@ In this example, the **ShipCity** column is prevented from being reordered by se
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/reorder-cs6" %}
+{% previewsample "page.domainurl/samples/grid/reorder-cs6" %}
 
 ## Reorder columns externally
 
@@ -82,7 +82,7 @@ In this example, we are moving the column at index **1** to index **3**.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/reorder-cs7" %}
+{% previewsample "page.domainurl/samples/grid/reorder-cs7" %}
 
 ### Reorder column based on target index
 
@@ -105,7 +105,7 @@ Here is an example of how to use the `reorderColumnByTargetIndex` method to reor
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/reorder-cs8" %}
+{% previewsample "page.domainurl/samples/grid/reorder-cs8" %}
 
 ### Reorder column based on field names
 
@@ -128,7 +128,7 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/reorder-cs9" %}
+{% previewsample "page.domainurl/samples/grid/reorder-cs9" %}
 
 ## Reorder events
 
@@ -157,4 +157,4 @@ In the following example, we have implemented the `columnDragStart`, `columnDrag
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/reorder-cs4" %}
+{% previewsample "page.domainurl/samples/grid/reorder-cs4" %}

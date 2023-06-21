@@ -26,4 +26,4 @@ In the following sample, the icon classes are mapped with `iconCss` field.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/icon-class-cs1" %}
+{% previewsample "page.domainurl/samples/autocomplete/icon-class-cs1" %}

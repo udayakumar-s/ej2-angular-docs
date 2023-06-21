@@ -25,9 +25,9 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-  public data: object[];
+  public data?: object[];
   @ViewChild('grid')
-  public grid: GridComponent;
+  public grid?: GridComponent;
   public ddlData: Object[] = [
     { text: 'Normal', value: 'Normal' },
     { text: 'Auto', value: 'Auto' },
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
   }
 
   valueChange(args: any): void {
-    this.grid.resizeSettings.mode = args.value;
+    (this.grid as any).resizeSettings.mode = (args as any).value;
   }
 }
 

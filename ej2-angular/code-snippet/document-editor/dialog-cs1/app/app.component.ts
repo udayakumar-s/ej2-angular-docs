@@ -21,11 +21,11 @@ import {
 
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public btnClick(): void {
         //Open font dialog
-        this.documentEditor.showDialog('Font');
+        (this.documentEditor as DocumentEditorComponent).showDialog('Font');
     }
 }
 

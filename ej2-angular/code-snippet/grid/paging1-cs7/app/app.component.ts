@@ -18,11 +18,12 @@ import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public pageSettings: object;
-    @ViewChild('grid') public grid: GridComponent;
-    public toolbar: ToolbarItems[];
-    public initialGridLoad = true;
+    public data?: object[];
+    public pageSettings?: object;
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public toolbar?: ToolbarItems[];
+    public initialGridLoad: boolean = true;
 
     ngOnInit(): void {
         this.data = data;
@@ -33,13 +34,13 @@ export class AppComponent implements OnInit {
             this.initialGridLoad = false;
             const pager = document.getElementsByClassName('e-gridpager');
             let topElement;
-            if (this.grid.allowGrouping || this.grid.toolbar) {
-                topElement = this.grid.allowGrouping ? document.getElementsByClassName('e-groupdroparea') :
+            if ((this.grid as any).allowGrouping || (this.grid as any).toolbar) {
+                topElement = (this.grid as any).allowGrouping ? document.getElementsByClassName('e-groupdroparea') :
                     document.getElementsByClassName('e-toolbar');
             } else {
                 topElement = document.getElementsByClassName('e-gridheader');
             }
-            this.grid.element.insertBefore(pager[0], topElement[0]);
+            (this.grid as any).element.insertBefore(pager[0], topElement[0]);
         }
     }
 }

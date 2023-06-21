@@ -31,7 +31,7 @@ domainurl: ##DomainURL##
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs4" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs4" %}
 
 ## Remote data binding
 
@@ -54,7 +54,7 @@ When querying data, the [`DataManager`](https://ej2.syncfusion.com/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/data/getting-started/default-cs5" %}
+{% previewsample "page.domainurl/samples/data/getting-started/default-cs5" %}
 
 > The queried data will not be cached locally unless offline mode is enabled.
 

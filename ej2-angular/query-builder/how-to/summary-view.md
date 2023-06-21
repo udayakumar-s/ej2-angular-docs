@@ -24,4 +24,4 @@ Summary view allows you to show or hide the filtered query. By default, the valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs11" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs11" %}

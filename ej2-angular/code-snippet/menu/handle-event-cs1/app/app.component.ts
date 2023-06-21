@@ -27,8 +27,8 @@ template: `<div class="control-section">
 })
 
 export class AppComponent {
-    private eventTrace: string = '';
-    private menuItems: MenuItemModel[] = [
+    public eventTrace: string = '';
+    public menuItems: MenuItemModel[] = [
         {
             text: 'Events',
             items: [
@@ -61,31 +61,31 @@ export class AppComponent {
         { text: 'Services' }
     ];
 
-    private beforeOpen(args: BeforeOpenCloseMenuEventArgs): void {
+    public beforeOpen(args: BeforeOpenCloseMenuEventArgs): void {
         this.updateEventLog(args);
     }
 
-    private beforeClose(args: BeforeOpenCloseMenuEventArgs): void {
+    public beforeClose(args: BeforeOpenCloseMenuEventArgs): void {
         this.updateEventLog(args);
     }
 
-    private onClose(args: OpenCloseMenuEventArgs): void {
+    public onClose(args: OpenCloseMenuEventArgs): void {
         this.updateEventLog(args);
     }
 
-    private onOpen(args: OpenCloseMenuEventArgs): void {
+    public onOpen(args: OpenCloseMenuEventArgs): void {
         this.updateEventLog(args);
     }
 
-    private select(args: MenuEventArgs): void {
+    public select(args: MenuEventArgs): void {
         this.updateEventLog(args);
     }
 
-    private updateEventLog(args: any): void {
+    public updateEventLog(args: any): void {
         this.eventTrace = this.eventTrace + args.name + ' Event triggered. <br />'
     }
 
-    private btnClick(): void {
+    public btnClick(): void {
         this.eventTrace = '';
     }
 }

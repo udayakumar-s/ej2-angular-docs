@@ -57,4 +57,4 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs49" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs49" %}

@@ -32,4 +32,4 @@ Slider can be validated in Angular using [Template-driven](https://angular.io/gu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/templateform-cs2" %}
+{% previewsample "page.domainurl/samples/slider/templateform-cs2" %}

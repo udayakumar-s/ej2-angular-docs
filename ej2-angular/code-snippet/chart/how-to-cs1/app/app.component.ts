@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { IAccTooltipRenderEventArgs, IPointEventArgs } from '@syncfusion/ej2-angular-charts';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-accumulationchart id="chart-container" [tooltip]='tooltip' [title]='title' (pointClick)='pointClick($event)'>
+    template: `<ejs-accumulationchart id="chart-container" [tooltip]='tooltip' [title]='title' (pointClick)='pointClick($event)'>
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y' [dataLabel]='datalabel' radius="70%"></e-accumulation-series>
         </e-accumulation-series-collection>
@@ -13,13 +12,13 @@ import { IAccTooltipRenderEventArgs, IPointEventArgs } from '@syncfusion/ej2-ang
      <label id="lbl"></label>  `
 })
 export class AppComponent implements OnInit {
-    public piedata: Object[];
-    public datalabel: Object;
-    public tooltip: Object;
-    public title: String;
+    public piedata?: Object[];
+    public datalabel?: Object;
+    public tooltip?: Object;
+    public title?: String;
     public pointClick(args: IPointEventArgs): void {
-          document.getElementById("lbl").innerText = "X : "+ args.point.x + "\nY : "+ args.point.y;
-        };
+        (document.getElementById("lbl") as HTMLElement ).innerText = "X : "+ args.point.x + "\nY : "+ args.point.y;
+    };
     ngOnInit(): void {
         this.datalabel = { visible: true };
         this.tooltip = {enable: true};

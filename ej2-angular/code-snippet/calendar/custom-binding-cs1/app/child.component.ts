@@ -13,12 +13,12 @@ import { CalendarComponent } from '@syncfusion/ej2-angular-calendars';
 })
 export class ChildComponent {
   @ViewChild('child')
-  public DateValue: CalendarComponent;
-  @Input() xvalue: Date;
+  public DateValue?: CalendarComponent;
+  @Input() xvalue?: Date;
   @Output() valueChange = new EventEmitter();
 
   ValueChange() {
-  this.xvalue = this.DateValue.value;
-  this.valueChange.emit(this.DateValue.value);
+  this.xvalue = ((this.DateValue) as CalendarComponent).value;
+  this.valueChange.emit(((this.DateValue) as CalendarComponent).value);
   }
 }

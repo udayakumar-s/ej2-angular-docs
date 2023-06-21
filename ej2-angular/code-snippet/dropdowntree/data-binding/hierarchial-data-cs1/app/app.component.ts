@@ -13,7 +13,7 @@ export class AppComponent {
     constructor() {
 
     }
-    public data: { [key: string]: Object; }[] = [
+    public data?: { [key: string]: Object; }[] = [
         {
             code: 'AF', name: 'Africa', countries: [
                 { code: 'NGA', name: 'Nigeria' },

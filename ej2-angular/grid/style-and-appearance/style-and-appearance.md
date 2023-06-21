@@ -43,7 +43,7 @@ In the following sample, the font family of grid content is changed to **cursive
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/style-appearance-cs1" %}
+{% previewsample "page.domainurl/samples/grid/style-appearance-cs1" %}
 
 ## See Also
 

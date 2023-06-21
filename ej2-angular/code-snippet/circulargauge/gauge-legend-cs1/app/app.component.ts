@@ -20,10 +20,10 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public lineStyle: Object;
-    public majorTicks: Object;
-    public minorTicks: Object;
-    public legendSettings: object;
+    public lineStyle?: Object;
+    public majorTicks?: Object;
+    public minorTicks?: Object;
+    public legendSettings?: object;
     ngOnInit(): void {
         // Initialize objects.
         this.lineStyle = {

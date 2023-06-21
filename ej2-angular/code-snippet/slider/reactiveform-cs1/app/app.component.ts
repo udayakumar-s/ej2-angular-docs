@@ -3,6 +3,7 @@
 
 import { Component, Inject } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { SliderComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'my-app',
@@ -41,11 +42,13 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
         </form>
 
     </div>`,
-    styleUrls:['index.css']
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {
-  value; slidervalue; validated = false;
+  value; 
+  slidervalue?: SliderComponent;
+  validated = false;
   sliderForm: FormGroup;
   constructor(@Inject(FormBuilder) public fb: FormBuilder) {
     this.value = 30;

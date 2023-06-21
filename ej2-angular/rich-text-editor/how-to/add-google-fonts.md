@@ -24,7 +24,7 @@ To use web fonts in RTE, it is not needed for the web fonts to be present in loc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/cursor-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/cursor-cs1" %}
 
 The below font style links are referred in the page.
 

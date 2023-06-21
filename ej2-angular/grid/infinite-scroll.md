@@ -28,7 +28,7 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging1-cs2" %}
+{% previewsample "page.domainurl/samples/grid/paging1-cs2" %}
 
 ## InitialBlocks
 
@@ -48,7 +48,7 @@ In the below demo, we have changed this property value to load five page records
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging1-cs3" %}
+{% previewsample "page.domainurl/samples/grid/paging1-cs3" %}
 
 ## Cache Mode
 
@@ -68,7 +68,7 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging1-cs4" %}
+{% previewsample "page.domainurl/samples/grid/paging1-cs4" %}
 
 ## Limitations for Infinite Scrolling
 

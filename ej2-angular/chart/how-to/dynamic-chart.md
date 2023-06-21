@@ -34,4 +34,4 @@ The following code sample demonstrates the output.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs7" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs7" %}

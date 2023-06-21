@@ -24,7 +24,7 @@ The Gantt Component provides the menu filtering support for each column. You can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/filtering/filtermenu-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/filtering/filtermenu-cs2" %}
 
 >[`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering) must be set as `true` to enable filter menu.
 >Setting [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#allowfiltering) as `false` will prevent filter menu rendering for a particular column.

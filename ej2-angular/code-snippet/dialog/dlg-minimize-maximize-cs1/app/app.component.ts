@@ -21,27 +21,27 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('Dialog') dialogObj: DialogComponent;
+    @ViewChild('Dialog') dialogObj: DialogComponent | undefined;
     // Create element reference for dialog target element.
-    @ViewChild('container', { read: ElementRef }) container: ElementRef;
+    @ViewChild('container', { read: ElementRef }) container: ElementRef | undefined;
     // The Dialog shows within the target element.
-    public targetElement: HTMLElement;
+    public targetElement?: HTMLElement;
     public width: string = '350px';
-    public hide: any;
-    public isFullScreen: Boolean;
-    public dialogOldPositions: any;
+    public hide?: any;
+    public isFullScreen?: Boolean;
+    public dialogOldPositions?: any;
     //To get all the elements of the dialog component after the component is initialized.
     ngOnInit() {
       this.initilaizeTarget();
     }
     // Initialize the Dialog component's target element.
     public initilaizeTarget: EmitType<object> = () => {
-      this.targetElement = this.container.nativeElement.parentElement;
+      this.targetElement = this.container!.nativeElement.parentElement;
     }
     public visible: Boolean = false;
     // Hide the Dialog when click the footer button.
     public hideDialog: EmitType<object> = () => {
-        this.dialogObj.hide();
+        this.dialogObj!.hide();
     }
     // Enables the footer buttons
     public buttons: Object = [
@@ -61,73 +61,73 @@ export class AppComponent implements OnInit {
             }
         }
     ];
-    public onOpenDialog = function(event: any): void {
+    public onOpenDialog = (event: any): void => {
         // Call the show method to open the Dialog
-        this.dialogObj.show();
+        this.dialogObj!.show();
     }
     public maximize(): void {
     var maximizeIcon;
-    if (this.dialogObj.element.classList.contains('dialog-minimized')) {
-      this.dialogObj.element.querySelector('#min-btn').classList.add('sf-icon-Minimize');
-      this.dialogObj.element.querySelector('#min-btn').classList.remove('sf-icon-Restore');
-      this.dialogObj.element.querySelector('#min-btn').setAttribute('title', 'Minimize');
+    if (this.dialogObj!.element.classList.contains('dialog-minimized')) {
+      this.dialogObj!.element.querySelector('#min-btn')!.classList.add('sf-icon-Minimize');
+      this.dialogObj!.element.querySelector('#min-btn')!.classList.remove('sf-icon-Restore');
+      this.dialogObj!.element.querySelector('#min-btn')!.setAttribute('title', 'Minimize');
     }
-    if (!this.dialogObj.element.classList.contains('dialog-maximized') && !this.isFullScreen) {
-      maximizeIcon = this.dialogObj.element.querySelector(".e-dlg-header-content .sf-icon-Maximize");
+    if (!this.dialogObj!.element.classList.contains('dialog-maximized') && !this.isFullScreen) {
+      maximizeIcon = this.dialogObj!.element.querySelector(".e-dlg-header-content .sf-icon-Maximize");
     } else {
-      maximizeIcon = this.dialogObj.element.querySelector(".e-dlg-header-content .sf-icon-Restore");
+      maximizeIcon = this.dialogObj!.element.querySelector(".e-dlg-header-content .sf-icon-Restore");
     }
-    if (!this.dialogObj.element.classList.contains('dialog-maximized')) {
-      this.dialogObj.element.classList.add('dialog-maximized');
-      this.dialogObj.show(true);
-      maximizeIcon.classList.add('sf-icon-Restore');
-      maximizeIcon.setAttribute('title', 'Restore');
-      maximizeIcon.classList.remove('sf-icon-Maximize');
-      this.dialogObj.element.querySelector('.e-dlg-content').classList.remove('hide-content');
+    if (!this.dialogObj!.element.classList.contains('dialog-maximized')) {
+      this.dialogObj!.element.classList.add('dialog-maximized');
+      this.dialogObj!.show(true);
+      maximizeIcon!.classList.add('sf-icon-Restore');
+      maximizeIcon!.setAttribute('title', 'Restore');
+      maximizeIcon!.classList.remove('sf-icon-Maximize');
+      this.dialogObj!.element.querySelector('.e-dlg-content')!.classList.remove('hide-content');
       this.isFullScreen = true;
     } else {
-      this.dialogObj.element.classList.remove('dialog-maximized');
-      this.dialogObj.show(false);
-      maximizeIcon.classList.remove('sf-icon-Restore');
-      maximizeIcon.classList.add('sf-icon-Maximize');
-      maximizeIcon.setAttribute('title', 'Maximize');
-      this.dialogObj.element.querySelector('.e-dlg-content').classList.remove('hide-content');
-      this.dialogObj.position = this.dialogOldPositions;
-      this.dialogObj.dataBind();
+      this.dialogObj!.element.classList.remove('dialog-maximized');
+      this.dialogObj!.show(false);
+      maximizeIcon!.classList.remove('sf-icon-Restore');
+      maximizeIcon!.classList.add('sf-icon-Maximize');
+      maximizeIcon!.setAttribute('title', 'Maximize');
+      this.dialogObj!.element.querySelector('.e-dlg-content')!.classList.remove('hide-content');
+      this.dialogObj!.position = this.dialogOldPositions;
+      this.dialogObj!.dataBind();
       this.isFullScreen = false;
     }
   }
 
   public minimize(): void {
-    var minimizeIcon = this.dialogObj.element.querySelector(".e-dlg-header-content .sf-icon-Minimize");
-    if (!this.dialogObj.element.classList.contains('e-dlg-fullscreen')) {
-      if (!this.dialogObj.element.classList.contains('dialog-minimized')) {
-        this.dialogOldPositions = { X: this.dialogObj.position.X, Y: this.dialogObj.position.Y }
-        this.dialogObj.element.classList.add('dialog-minimized');
-        this.dialogObj.element.classList.remove('dialog-maximized');
-        this.dialogObj.element.querySelector('.e-dlg-content').classList.add('hide-content');
-        this.dialogObj.position = { X: 'center', Y: 'bottom' };
-        this.dialogObj.dataBind();
-        minimizeIcon.classList.add('sf-icon-Restore');
-        minimizeIcon.setAttribute('title', 'Restore');
+    var minimizeIcon = this.dialogObj!.element.querySelector(".e-dlg-header-content .sf-icon-Minimize");
+    if (!this.dialogObj!.element.classList.contains('e-dlg-fullscreen')) {
+      if (!this.dialogObj!.element.classList.contains('dialog-minimized')) {
+        this.dialogOldPositions = { X: this.dialogObj!.position.X, Y: this.dialogObj!.position.Y }
+        this.dialogObj!.element.classList.add('dialog-minimized');
+        this.dialogObj!.element.classList.remove('dialog-maximized');
+        this.dialogObj!.element.querySelector('.e-dlg-content')!.classList.add('hide-content');
+        this.dialogObj!.position = { X: 'center', Y: 'bottom' };
+        this.dialogObj!.dataBind();
+        minimizeIcon!.classList.add('sf-icon-Restore');
+        minimizeIcon!.setAttribute('title', 'Restore');
       } else {
-        this.dialogObj.element.classList.remove('dialog-minimized');
-        this.dialogObj.element.querySelector('.e-dlg-content').classList.remove('hide-content');
-        minimizeIcon.classList.add('sf-icon-Minimize');
-        minimizeIcon.setAttribute('title', 'Minimize');
-        minimizeIcon.classList.remove('sf-icon-Restore');
-        this.dialogObj.position = this.dialogOldPositions;
-        this.dialogObj.dataBind();
+        this.dialogObj!.element.classList.remove('dialog-minimized');
+        this.dialogObj!.element.querySelector('.e-dlg-content')!.classList.remove('hide-content');
+        minimizeIcon!.classList.add('sf-icon-Minimize');
+        minimizeIcon!.setAttribute('title', 'Minimize');
+        minimizeIcon!.classList.remove('sf-icon-Restore');
+        this.dialogObj!.position = this.dialogOldPositions;
+        this.dialogObj!.dataBind();
       }
     } else {
-      this.dialogObj.show(false);
-      this.dialogObj.element.classList.remove('dialog-maximized');
-      this.dialogObj.element.classList.add('dialog-minimized');
-      this.dialogObj.element.querySelector('.e-dlg-content').classList.add('hide-content');
-      minimizeIcon.classList.remove('sf-icon-Minimize');
-      minimizeIcon.removeAttribute('title');
-      this.dialogObj.position = { X: 'center', Y: 'bottom' };
-      this.dialogObj.dataBind();
+      this.dialogObj!.show(false);
+      this.dialogObj!.element.classList.remove('dialog-maximized');
+      this.dialogObj!.element.classList.add('dialog-minimized');
+      this.dialogObj!.element.querySelector('.e-dlg-content')!.classList.add('hide-content');
+      minimizeIcon!.classList.remove('sf-icon-Minimize');
+      minimizeIcon!.removeAttribute('title');
+      this.dialogObj!.position = { X: 'center', Y: 'bottom' };
+      this.dialogObj!.dataBind();
       this.isFullScreen = true;
     }
   }

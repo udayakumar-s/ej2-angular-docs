@@ -30,7 +30,7 @@ To known about numeric axis, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs9" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs9" %}
 
 ## Range
 
@@ -48,7 +48,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs10" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs10" %}
 
 ## Range Padding
 
@@ -76,7 +76,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs11" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs11" %}
 
 **Numeric - Round**
 
@@ -94,7 +94,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs12" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs12" %}
 
 **Numeric - Additional**
 
@@ -112,7 +112,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs13" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs13" %}
 
 **Numeric - Normal**
 
@@ -130,7 +130,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs14" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs14" %}
 
 **Numeric - Auto**
 
@@ -148,7 +148,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs15" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs15" %}
 
 ## Label Format
 
@@ -169,7 +169,7 @@ Numeric labels supports all globalize format.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs16" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs16" %}
 
 The following table describes the result of applying some commonly used label formats on numeric values.
 
@@ -248,7 +248,7 @@ To separate groups of thousands, use [`useGroupingSeparator`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs17" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs17" %}
 
 ## Custom Label Format
 
@@ -266,4 +266,4 @@ Axis also supports custom label format using placeholder like {value}°C, in w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/axis/double-cs18" %}
+{% previewsample "page.domainurl/samples/chart/axis/double-cs18" %}

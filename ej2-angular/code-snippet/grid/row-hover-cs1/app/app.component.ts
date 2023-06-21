@@ -18,12 +18,12 @@ import { data } from './datasource';
                   <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
               </e-columns>
             </ejs-grid>`,
-  styleUrls:['./app/app.component.css']
+  // styleUrls:['./app.component.css']
 })
 export class AppComponent implements OnInit {
 
-  public data: object[];
-  public enableRowHover = true;
+  public data?: object[];
+  public enableRowHover: boolean = true;
 
   ngOnInit(): void {
     this.data = data;

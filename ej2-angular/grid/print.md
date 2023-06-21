@@ -24,7 +24,7 @@ To print the Grid, use the [`print`](https://ej2.syncfusion.com/angular/document
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/print-cs2" %}
+{% previewsample "page.domainurl/samples/grid/print-cs2" %}
 
 ## Page Setup
 
@@ -51,7 +51,7 @@ To print the grid from an external button, invoke the [`Print`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging-api-cs1" %}
+{% previewsample "page.domainurl/samples/grid/paging-api-cs1" %}
 
 ## Print visible Page
 
@@ -69,7 +69,7 @@ By default, the grid prints all the pages. To print the current page alone, set 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/print-api-cs1" %}
+{% previewsample "page.domainurl/samples/grid/print-api-cs1" %}
 
 ## Print the hierarchy grid
 
@@ -93,7 +93,7 @@ By default, the grid will be print the master and expanded child grids alone. yo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/default-cs14" %}
+{% previewsample "page.domainurl/samples/grid/default-cs14" %}
 
 ## Print the master detail grid
 
@@ -113,7 +113,7 @@ In the following sample, the detail grid is added to the `element` argument of t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/print-grid" %}
+{% previewsample "page.domainurl/samples/grid/print-grid" %}
 
 ## Print large number of columns
 
@@ -145,7 +145,7 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/print-api-cs2" %}
+{% previewsample "page.domainurl/samples/grid/print-api-cs2" %}
 
 ## Limitations of Printing Large Data
 

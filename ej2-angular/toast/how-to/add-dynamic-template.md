@@ -24,4 +24,4 @@ Toast can support to change templates in dynamically, with displaying in multipl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs8" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs8" %}

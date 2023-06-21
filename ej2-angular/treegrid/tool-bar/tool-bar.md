@@ -32,7 +32,7 @@ You can also use the [`enableToolbarItems`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs39" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs39" %}
 
 ## Add toolbar at the bottom of tree grid
 
@@ -50,7 +50,7 @@ Add the toolbar component at the bottom of the tree grid using the [created](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs40" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs40" %}
 
 ## See also
 

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     // specifies the template url path
-    templateUrl: './app/template.html'
+    templateUrl: 'template.html'
 })
 export class AppComponent {
     // create a object for MultiSelect

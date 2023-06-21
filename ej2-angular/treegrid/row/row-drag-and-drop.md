@@ -30,7 +30,7 @@ The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/row-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/row-cs3" %}
 
 > * Selection feature must be enabled for row drag and drop.
 > * For multiple row selection, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type) property must be set to `multiple`.
@@ -51,7 +51,7 @@ To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/row-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/row-cs4" %}
 
 ## Drag and drop events
 
@@ -80,4 +80,4 @@ In the below example drop action is cancelled and dropped above to target row.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/row-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/row-cs5" %}

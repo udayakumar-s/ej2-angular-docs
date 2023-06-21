@@ -2,8 +2,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps } from '@syncfusion/ej2-angular-maps';
-import { world_map } from 'world-map.ts';
-import { Population_Density } from 'data.ts';
+import { world_map } from './world-map';
+import { Population_Density } from './data';
 
 @Component({
     selector: 'app-container',
@@ -16,11 +16,11 @@ import { Population_Density } from 'data.ts';
 })
 
 export class AppComponent implements OnInit {
-    public shapeData: object;
-    public shapeDataPath: string;
-    public shapePropertyPath : string;
-    public dataSource : object[];
-    public shapeSettings: object;
+    public shapeData?: object;
+    public shapeDataPath?: string;
+    public shapePropertyPath ?: string;
+    public dataSource ?: object[];
+    public shapeSettings?: object;
     ngOnInit(): void {
         this.shapeData = world_map;
         this.shapeDataPath = 'name';

@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, memberEditorOpenEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, MemberEditorOpenEventArgs, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -10,15 +10,15 @@ import { Pivot_Data } from './datasource.ts';
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings (memberEditorOpen)='memberEditorOpen($event)' showGroupingBar='true' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
 
     @ViewChild('pivotview', { static: false })
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
-    memberEditorOpen(args: memberEditorOpenEventArgs): void {
+    memberEditorOpen(args: MemberEditorOpenEventArgs | any): void {
        if (args.fieldName == 'Country') {
-            args.fieldMembers = args.fieldMembers.filter((key) => {
+            args.fieldMembers = args.fieldMembers.filter((key: any) => {
                 return (key.actualText == 'France' || key.actualText == 'Germany')
             });
        }
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],

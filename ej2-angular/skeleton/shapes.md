@@ -47,7 +47,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: `<ejs-skeleton shape= 'Rectangle' width= "50px"></ejs-skeleton>`
+    template: `<ejs-skeleton shape= 'Rectangle' width= "50px" height="25px"></ejs-skeleton>`
 })
 
 export class AppComponent { }
@@ -60,7 +60,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: `<ejs-skeleton shape= 'Text' width= "15px"></ejs-skeleton>`
+    template: `<ejs-skeleton shape= 'Text' width= "50%" height="15px"></ejs-skeleton>`
 })
 
 export class AppComponent { }
@@ -83,4 +83,4 @@ Below example demonstrates the above functionalities of a Skeleton component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/skeleton/shapes-cs1" %}
+{% previewsample "page.domainurl/samples/skeleton/shapes-cs1" %}

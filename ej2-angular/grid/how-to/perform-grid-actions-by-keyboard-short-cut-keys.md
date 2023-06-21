@@ -28,4 +28,4 @@ The following example demonstrates on **Adding** a new row when Enter key is pre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs51" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs51" %}

@@ -1,11 +1,10 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { columnData } from 'datasource.ts';
+import { columnData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-annotations>
             <e-annotation content='<div id="text" style="transform: rotate(-90deg);">Speed</div>'
            verticalAlignment='Top' horizontalAlignment='Near' x=18 y=180 coordinateUnits='Pixel'>
@@ -18,12 +17,12 @@ import { columnData } from 'datasource.ts';
     <style></style>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public border: Object;
-    public margin: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public border?: Object;
+    public margin?: Object;
     ngOnInit(): void {
         this.chartData = columnData;
         this.primaryXAxis = {

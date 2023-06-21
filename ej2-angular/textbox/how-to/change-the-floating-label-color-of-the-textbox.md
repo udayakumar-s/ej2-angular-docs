@@ -42,4 +42,4 @@ You can change the floating label color of the TextBox for both `success` and `w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs7" %}

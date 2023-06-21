@@ -29,4 +29,4 @@ You can apply conditions for specific row or column using `label` option to show
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs155" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs155" %}

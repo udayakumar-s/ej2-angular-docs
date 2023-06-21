@@ -3,7 +3,7 @@
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { EditSettingsModel, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
     selector: 'app-root',
@@ -13,11 +13,11 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public columns: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public columns?: object[];
+    public editSettings?: EditSettingsModel| any;
+    public toolbar?: ToolbarItem[];
     public ngOnInit(): void {
         this.data = [
             {

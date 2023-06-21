@@ -39,7 +39,7 @@ In the following code example, you can see how to use the refreshTemplates metho
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/refresh-templates-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/refresh-templates-cs1" %}
 
 ## Refresh Layout
 
@@ -57,4 +57,4 @@ In Scheduler, we can able to refresh the layout manually without re-render the D
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs47" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs47" %}

@@ -3,7 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Query } from '@syncfusion/ej2-data';
-import { cascadeData } from './datasource.ts';
+import { cascadeData } from './datasource';
 import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -19,17 +19,17 @@ import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angu
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public countryParams : IEditCell;
-    public stateParams : IEditCell;
+    public data?: Object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public countryParams?: IEditCell;
+    public stateParams?: IEditCell;
 
-    public countryElem : HTMLElement;
-    public countryObj : DropDownList;
+    public countryElem?: HTMLElement;
+    public countryObj?: DropDownList;
 
-    public stateElem : HTMLElement;
-    public stateObj : DropDownList;
+    public stateElem?: HTMLElement;
+    public stateObj?: DropDownList;
 
     public country: { [key: string]: Object }[] = [
         { countryName: 'United States', countryId: '1' },
@@ -54,21 +54,21 @@ export class AppComponent implements OnInit {
                 return this.countryElem;
             },
             read:()=>{
-                return this.countryObj.text;
+                return (this.countryObj as any).text;
             },
             destroy:()=>{
-                this.countryObj.destroy();
+                (this.countryObj as any).destroy();
             },
             write:()=>{
                 this.countryObj = new DropDownList({
                 dataSource: this.country,
                 fields: { value: 'countryId', text: 'countryName' },
                 change: () => {
-                this.stateObj.enabled = true;
-                let tempQuery: Query = new Query().where('countryId', 'equal', this.countryObj.value);
-                this.stateObj.query = tempQuery;
-                this.stateObj.text = null;
-                this.stateObj.dataBind();
+                (this.stateObj as any).enabled = true;
+                let tempQuery: Query = new Query().where('countryId', 'equal', (this.countryObj as any).value);
+                (this.stateObj as any).query = tempQuery;
+                (this.stateObj as any).text = null;
+                (this.stateObj as any).dataBind();
             },
             placeholder: 'Select a country',
             floatLabelType: 'Never'
@@ -81,10 +81,10 @@ export class AppComponent implements OnInit {
                 return this.stateElem;
             },
             read:()=>{
-                return this.stateObj.text;
+                return (this.stateObj as any).text;
             },
             destroy:()=>{
-                this.stateObj.destroy();
+                (this.stateObj as any).destroy();
             },
             write:()=>{
                 this.stateObj = new DropDownList({

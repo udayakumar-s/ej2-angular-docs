@@ -19,7 +19,7 @@ import { ListView } from '@syncfusion/ej2-lists';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
+    @ViewChild('element') element: any;
 
 ngAfterViewInit () {
 //define the array of JSON

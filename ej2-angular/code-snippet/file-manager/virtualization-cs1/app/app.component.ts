@@ -6,15 +6,15 @@ import { FileManagerComponent, NavigationPaneService, ToolbarService, DetailsVie
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
-    templateUrl: 'app/app.component.html',
+    styleUrls: ['./app.component.css'],
+    templateUrl: './default.html',
     encapsulation: ViewEncapsulation.None,
     providers: [ NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService]
 })
 
 export class AppComponent {
-    public ajaxSettings: object;
-    public view: string;
+    public ajaxSettings?: object;
+    public view?: string;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {
@@ -26,15 +26,15 @@ export class AppComponent {
         this.view = "Details";
     }
 
-    onBeforeSend(args) {
-        args.ajaxSettings.beforeSend = function (args) {
+    onBeforeSend(args: any) {
+        args.ajaxSettings.beforeSend = function (args: any) {
             args.httpRequest.setRequestHeader('Authorization', 'FileBrowser');
         };
     }
-    beforeImageLoad(args) {
+    beforeImageLoad(args: any) {
         args.imageUrl = args.imageUrl + '&rootName=' + 'FileBrowser';
     }
-    beforeDownload(args) {
+    beforeDownload(args: any) {
         args.data.rootFolderName = 'FileBrowser';
     }
 }

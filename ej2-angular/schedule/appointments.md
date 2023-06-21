@@ -41,7 +41,7 @@ The following example depicts how to define a normal event on the Scheduler, wit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs1" %}
 
 ## Spanned events
 
@@ -85,7 +85,7 @@ When you have larger number of appointments in all-day view, you can show all al
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs2" %}
 
 ## Customize the rendering of the spanned events
 
@@ -103,7 +103,7 @@ By default, Scheduler will renders the spanned events (appointment with more tha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs3" %}
 
 ## Recurring events
 
@@ -125,7 +125,7 @@ The following example depicts how to create a recurring event on Scheduler with 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs4" %}
 
 ### Adding exceptions
 
@@ -144,7 +144,7 @@ For example, 22nd February 2018 can be represented as 20180222. Also, the time p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs5" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs5" %}
 
 ### Editing an occurrence from a series
 
@@ -164,7 +164,7 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 is
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs6" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs6" %}
 
 ### Edit only the current and following events
 
@@ -184,7 +184,7 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs7" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs7" %}
 
 ![Editing Events](images/schedule-editing-events.png)
 
@@ -318,7 +318,7 @@ When the fields of event instances has the default mapping name, it is not manda
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs8" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs8" %}
 
 > The mapper field `id` is of string type and has no additional validation options, whereas all other fields are of `Object` type and has additional options.
 
@@ -347,7 +347,7 @@ In following example, the Subject field in event editor will display its appropr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs9" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs9" %}
 
 ## Adding Custom fields
 
@@ -365,7 +365,7 @@ Apart from the default Scheduler fields, the user can include 'n' number of cust
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs10" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs10" %}
 
 ## Customize the order of the overlapping events
 
@@ -383,7 +383,7 @@ By default, the scheduler will render the overlapping events based on the start 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs11" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs11" %}
 
 ![Overlapping Events](images/schedule-overlapping-events.png)
 
@@ -409,7 +409,7 @@ Learn how to drag an external item into the Angular Scheduler and the other adva
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs12" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs12" %}
 
 ### Drag and drop multiple appointments
 
@@ -431,7 +431,7 @@ We can also drag multiple events from one resource to another resource. In this 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs13" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs13" %}
 
 ### Disable the drag action
 
@@ -449,7 +449,7 @@ By default, you can drag and drop the events within any of the applicable schedu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs14" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs14" %}
 
 ### Preventing drag and drop on specific targets
 
@@ -467,7 +467,7 @@ It is possible to prevent the drag action on particular target, by passing the t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs15" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs15" %}
 
 ### Disable scrolling on drag action
 
@@ -485,7 +485,7 @@ By default, while dragging an appointment to the edges, either top or bottom of 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs16" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs16" %}
 
 ### Controlling scroll speed while dragging an event
 
@@ -503,7 +503,7 @@ The speed of the scrolling action while dragging an appointment to the Scheduler
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs17" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs17" %}
 
 ### Auto navigation of date ranges on dragging an event
 
@@ -523,7 +523,7 @@ By default, the navigation delay is set to 2000ms. The navigation delay decides 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs18" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs18" %}
 
 ### Setting drag time interval
 
@@ -541,7 +541,7 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs19" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs19" %}
 
 ### Drag and drop items from external source
 
@@ -564,7 +564,7 @@ In this example, we have used the tree view control as an external source and th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/external-drag-drop-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/external-drag-drop-cs1" %}
 
 ### Opening the editor window on drag stop
 
@@ -582,7 +582,7 @@ There are scenarios where you want to open the editor filled with data on newly 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs1" %}
 
 ## Inline Appointment
 
@@ -617,7 +617,7 @@ While editing the occurrence from the recurrence series, it is only possible to 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs20" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs20" %}
 
 ## Appointment Resizing
 
@@ -635,7 +635,7 @@ Another way of rescheduling an appointment can be done by resizing it through ei
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs2" %}
 
 ### Disable the resize action
 
@@ -653,7 +653,7 @@ By default, resizing of events is allowed on all Scheduler views except Agenda a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs3" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs3" %}
 
 ### Disable scrolling on resize action
 
@@ -671,7 +671,7 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs4" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs4" %}
 
 ### Controlling scroll speed while resizing an event
 
@@ -689,7 +689,7 @@ The speed of the scrolling action while resizing an appointment to the Scheduler
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs5" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs5" %}
 
 ### Setting resize time interval
 
@@ -707,7 +707,7 @@ By default, while resizing an appointment, it extends or shrinks at an interval 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs6" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs6" %}
 
 ## Appointment customization
 
@@ -740,7 +740,7 @@ Learn how easily you can customize the basic look and feel of Angular Scheduler 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs7" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs7" %}
 
 > All the built-in fields that are mapped to the appropriate field properties within the `eventSettings`, as well as custom mapped fields from the Scheduler dataSource can be accessed within the template code.
 
@@ -760,7 +760,7 @@ The `eventRendered` event triggers before the appointment renders on the Schedul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs8" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs8" %}
 
 ### Using cssClass
 
@@ -778,7 +778,7 @@ The customization of events can also be achieved using `cssClass` property of th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs9" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs9" %}
 
 ## Setting minimum height
 
@@ -796,7 +796,7 @@ It is possible to set minimal height for appointments on Scheduler using `eventR
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs10" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs10" %}
 
 ## Block Dates and Times
 
@@ -814,7 +814,7 @@ It is possible to block a set of dates or a particular time ranges on the Schedu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs11" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs11" %}
 
 ![Block Date and Time](images/schedule-block-events.png)
 
@@ -832,7 +832,7 @@ Block events can also be defined to repeat on several days as shown in the follo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs12" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs12" %}
 
 ![Block Several Date and Time](images/schedule-multiple-block-events.png)
 
@@ -852,7 +852,7 @@ An interaction with the appointments of Scheduler can be enabled/disabled using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs13" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs13" %}
 
 ## Make specific events readonly
 
@@ -870,7 +870,7 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs14" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs14" %}
 
 > By default, the event editor is prevented to open on the read-only events when `isReadonly` field is set to `true`.
 
@@ -890,7 +890,7 @@ You can restrict the users to create and update more than one appointment on spe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs15" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs15" %}
 
 ## Differentiate the past time events
 
@@ -908,7 +908,7 @@ To differentiate the appearance of the appointments based on specific criteria s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs16" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs16" %}
 
 ## Appointments occupying entire cell
 
@@ -928,7 +928,7 @@ We can show more indicator if more than one appointment is available in a same c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs17" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs17" %}
 
 ![Differentiate Past Time Events](images/schedule-appointments-entirecell.png)
 
@@ -952,7 +952,7 @@ The tooltip can be displayed for appointments by setting `true` to the `enableTo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-cs18" %}
+{% previewsample "page.domainurl/samples/schedule/event-cs18" %}
 
 ![Built-in Tooltip](images/schedule-appointments-tooltip.png)
 
@@ -975,7 +975,7 @@ After enabling the default tooltip, it is possible to customize the display of n
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/tooltip-cs1" %}
 
 ![Tooltip](images/schedule-appointments-tooltip-template.png)
 
@@ -1000,7 +1000,7 @@ The appointments can be filtered by passing the predicate value to `query` optio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-filter-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/event-filter-cs1" %}
 
 ## Appointment selection
 
@@ -1036,7 +1036,7 @@ In the following example, the subject of the appointment clicked has been displa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-template-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/event-template-cs1" %}
 
 ## Get the current view appointments
 
@@ -1057,7 +1057,7 @@ To retrieve the appointments present in the current view of the Scheduler, you c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-data-bound-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/event-data-bound-cs1" %}
 
 ## Get the entire appointment collections
 
@@ -1078,7 +1078,7 @@ The entire collection of appointments rendered on the Scheduler can be accessed 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/event-data-bound-cs2" %}
+{% previewsample "page.domainurl/samples/schedule/event-data-bound-cs2" %}
 
 ## Refresh appointments
 

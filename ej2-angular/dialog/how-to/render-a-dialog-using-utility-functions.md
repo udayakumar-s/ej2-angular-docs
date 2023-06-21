@@ -46,7 +46,7 @@ An alert dialog box is used to display warning like messages to the users. Use t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dialog-utility-alert-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dialog-utility-alert-cs1" %}
 
 ### Render an alert Dialog with options
 
@@ -62,7 +62,7 @@ An alert dialog box is used to display warning like messages to the users. Use t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dialog-utility-alert1-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dialog-utility-alert1-cs1" %}
 
 ## Confirm Dialog
 
@@ -80,7 +80,7 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dialog-utility-confirm-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dialog-utility-confirm-cs1" %}
 
 ### Render a confirmation Dialog with options
 
@@ -96,4 +96,4 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dialog-utility-confirm1-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dialog-utility-confirm1-cs1" %}

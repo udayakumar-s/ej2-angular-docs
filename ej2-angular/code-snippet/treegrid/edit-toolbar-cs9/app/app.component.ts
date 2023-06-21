@@ -28,9 +28,9 @@ L10n.load({
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
 
-    actionComplete(args) {
+    actionComplete(args: any) {
         if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
             const dialog = args.dialog;
             const taskName = 'taskName';

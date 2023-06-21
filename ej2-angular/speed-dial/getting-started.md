@@ -150,4 +150,4 @@ The below example shows a basic SpeedDial component,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/speed-dial/getting-started-cs1" %}

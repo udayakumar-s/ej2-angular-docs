@@ -133,7 +133,7 @@ The below example demonstrates the Grid in **Deutsch** culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/localization-cs1" %}
+{% previewsample "page.domainurl/samples/grid/localization-cs1" %}
 
 ## Internationalization
 
@@ -162,7 +162,7 @@ You need to load culture format files in **ngOnInit** function.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/localization-cs2" %}
+{% previewsample "page.domainurl/samples/grid/localization-cs2" %}
 
 > * In the above sample, **Freight** column is formatted by [`NumberFormatOptions`](../common/globalization/internationalization#manipulating-numbers).
 > * By default, [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value is **en-US**. If you want to change **en-US** culture, then set the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale).
@@ -183,7 +183,7 @@ RTL provides an option to switch the text direction and layout of Grid component
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/paging1-cs1" %}
+{% previewsample "page.domainurl/samples/grid/paging1-cs1" %}
 
 ## See Also
 

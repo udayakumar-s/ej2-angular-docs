@@ -24,4 +24,4 @@ You can use the [`modal`](https://ej2.syncfusion.com/angular/documentation/api/s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/speed-dial/modal-cs1" %}
+{% previewsample "page.domainurl/samples/speed-dial/modal-cs1" %}

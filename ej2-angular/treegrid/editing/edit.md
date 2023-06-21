@@ -32,7 +32,7 @@ You can check this video to learn about editing modes and editing types in Angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-cs2" %}
 
 > * You can disable editing for a particular column, by specifying [`columns.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#allowediting) to `false`.
 
@@ -53,7 +53,7 @@ You can define this by using the [`toolbar`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs17" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs17" %}
 
 ## Adding row position
 
@@ -73,7 +73,7 @@ The following examples shows how to set new row position as `Child` in tree grid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs18" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs18" %}
 
 ## Confirmation messages
 
@@ -93,7 +93,7 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs19" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs19" %}
 
 > The `showDeleteConfirmDialog` supports all type of edit modes.
 
@@ -114,7 +114,7 @@ To set a default value for the particular column by defining the [`columns.defau
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs20" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs20" %}
 
 ## Disable editing for particular column
 
@@ -134,7 +134,7 @@ In the following demo, editing is disabled for the `Start Date` column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs21" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs21" %}
 
 ## Disable editing for a particular row
 
@@ -154,7 +154,7 @@ In the following demo, the rows which have the value for the **priority** column
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs22" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs22" %}
 
 For batch mode of editing, use the [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#celledit) event of the tree grid. In the following demo, the cells which have the value as "Normal" are prevented from editing.
 
@@ -170,7 +170,7 @@ For batch mode of editing, use the [cellEdit](https://ej2.syncfusion.com/angular
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs23" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs23" %}
 
 ## Editing template column
 
@@ -190,7 +190,7 @@ In the following demo, the **priority** column is rendered with the template.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-toolbar-cs24" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs24" %}
 
 ## Troubleshoot: Editing works only for first row
 

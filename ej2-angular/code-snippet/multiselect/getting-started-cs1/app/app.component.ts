@@ -10,7 +10,7 @@ import { MultiSelectComponent } from '@syncfusion/ej2-angular-dropdowns';
 })
 export class AppComponent {
     @ViewChild('samples')
-    public sports: MultiSelectComponent;
+    public sports?: MultiSelectComponent;
     constructor() {
     }
     //set the data to dataSource property
@@ -31,7 +31,7 @@ export class AppComponent {
     handleKeyboardEvent(event: KeyboardEvent) {
         if (event.altKey && event.keyCode === 84 /* t */) {
             // press alt+t to focus the control.
-            this.sports.focusIn();
+            this.sports!.focusIn();
         }
     }
 }

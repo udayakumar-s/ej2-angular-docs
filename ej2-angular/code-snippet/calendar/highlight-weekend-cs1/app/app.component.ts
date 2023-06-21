@@ -14,7 +14,7 @@ export class AppComponent {
     public dateValue: Date = new Date();
     constructor() {
     }
-    highlightWeekend(args): void {
+    highlightWeekend(args : any): void {
         if (args.date.getDay() === 0 || args.date.getDay() === 6) {
             // To highlight the week end of every month
            args.element.classList.add('e-highlightweekend');

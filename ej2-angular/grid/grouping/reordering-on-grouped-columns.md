@@ -26,4 +26,4 @@ To enable this feature, you have to set the [`groupSettings.allowReordering`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping-anim-cs1" %}
+{% previewsample "page.domainurl/samples/grid/grouping-anim-cs1" %}

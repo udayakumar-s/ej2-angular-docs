@@ -46,7 +46,7 @@ swimlaneSettings.keyField(If applicable) | DropDown | -
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/getting-started-key-field-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/getting-started-key-field-cs1" %}
 
 ## Custom Fields
 
@@ -75,7 +75,7 @@ The following types are available in dialog fields.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/custom-dialog-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/custom-dialog-cs1" %}
 
 ### Custom Fields label
 
@@ -93,7 +93,7 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/label-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/label-cs1" %}
 
 ### Fields Validation
 
@@ -111,7 +111,7 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/fields-validation-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/fields-validation-cs1" %}
 
 ## Dialog Template
 
@@ -129,7 +129,7 @@ Using the dialog template, you can render your own dialog by defining the `templ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/dialog-template-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/dialog-template-cs1" %}
 
 ## Prevent Dialog
 
@@ -147,7 +147,7 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/prevent-dialog-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/prevent-dialog-cs1" %}
 
 ## Persisting data in server
 

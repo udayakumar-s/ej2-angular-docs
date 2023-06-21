@@ -40,7 +40,7 @@ The user can enable touch mode (bigger) for a component by adding the `e-bigger`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/size-modes" %}
+{% previewsample "page.domainurl/samples/common/size-modes" %}
 
 ## Change size mode for application at runtime
 
@@ -58,7 +58,7 @@ The user can change the size mode of the application between touch and normal (m
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/size-modes-app" %}
+{% previewsample "page.domainurl/samples/common/size-modes-app" %}
 
 ## Change size mode for a component at runtime
 
@@ -76,7 +76,7 @@ The user can change the size mode of a component between touch and normal (mouse
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/size-modes-cp" %}
+{% previewsample "page.domainurl/samples/common/size-modes-cp" %}
 
 ## See also
 

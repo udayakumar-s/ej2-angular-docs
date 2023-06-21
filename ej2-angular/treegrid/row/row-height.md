@@ -26,7 +26,7 @@ In the below example, the `rowHeight` is set as '60px'.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/row-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/row-cs6" %}
 
 ## Customize row height for particular row
 
@@ -47,4 +47,4 @@ In the below example, the row height for the row with Task ID as '3' is set as '
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/row-cs7" %}
+{% previewsample "page.domainurl/samples/treegrid/row-cs7" %}

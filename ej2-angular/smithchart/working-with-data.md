@@ -28,4 +28,4 @@ You can bind simple JSON data to smithchart using point property in series. JSON
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs32" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs32" %}

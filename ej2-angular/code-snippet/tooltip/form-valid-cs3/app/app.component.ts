@@ -2,7 +2,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-
+import { TooltipComponent, TooltipModule } from '@syncfusion/ej2-angular-popups';
 @Component({
     selector: 'my-app',
     template: `
@@ -47,28 +47,28 @@ import { Component, ViewChild } from '@angular/core';
 
 export class AppComponent {
   @ViewChild('tooltip')
-  tooltip: TooltipComponent
+  tooltip: TooltipComponent| any
   @ViewChild('tooltippwd')
-  tooltipcontrol: TooltipComponent
-  submitdata(event){
-  let name = document.getElementById('uname').value;
-  let pwd = document.getElementById('pwd').value;
-  let cpwd = document.getElementById('cpwd').value;
-  if(name.length > 0 & name.length < 4){
-    document.getElementById('uname').title = 'Required Minimum 4 Characters';
-    document.getElementById('uname').style.backgroundColor = 'red';
+  tooltipcontrol: TooltipComponent | any
+  submitdata(event : any){
+  let name = (document.getElementById('uname')! as any).value;
+  let pwd = (document.getElementById('pwd')! as any).value;
+  let cpwd = (document.getElementById('cpwd')! as any).value;
+  if(name.length > 0 && name.length < 4){
+    document.getElementById('uname')!.title = 'Required Minimum 4 Characters';
+    document.getElementById('uname')!.style.backgroundColor = 'red';
     let target = document.getElementById('uname');
     this.tooltip.open(target);
   } else {
-     document.getElementById('uname').style.backgroundColor = 'white';
+     document.getElementById('uname')!.style.backgroundColor = 'white';
   }
   if(pwd !== '' && pwd.length < 8){
-     document.getElementById('pwd').title = 'Required Minimum 8 Characters';
-    document.getElementById('pwd').style.backgroundColor = 'red';
+     document.getElementById('pwd')!.title = 'Required Minimum 8 Characters';
+    document.getElementById('pwd')!.style.backgroundColor = 'red';
     let pwdtarget = document.getElementById('pwd');
     this.tooltipcontrol.open(pwdtarget);
   } else {
-     document.getElementById('pwd').style.backgroundColor = 'white';
+     document.getElementById('pwd')!.style.backgroundColor = 'white';
   }
   if(name.length >= 4 && pwd !== '' && pwd.length >= 8  &&  pwd == cpwd ){
      alert('Form Submitted');
@@ -76,12 +76,12 @@ export class AppComponent {
      alert('Details are not Valid');
   }
 }
-cleardata(event){
-  document.getElementById('uname').style.backgroundColor = 'white';
-  document.getElementById('pwd').style.backgroundColor = 'white';
+cleardata(event: any){
+  document.getElementById('uname')!.style.backgroundColor = 'white';
+  document.getElementById('pwd')!.style.backgroundColor = 'white';
   let target = document.getElementById('uname');
   this.tooltip.close(target);
-  document.getElementById('uname').title = 'Please enter your name';
+  document.getElementById('uname')!.title = 'Please enter your name';
   let pwdtarget = document.getElementById('pwd');
   this.tooltipcontrol.close(pwdtarget);
 }

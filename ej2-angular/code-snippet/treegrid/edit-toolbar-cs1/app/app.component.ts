@@ -18,11 +18,11 @@ import { SelectionSettingsModel, EditSettingsModel, ToolbarItems } from '@syncfu
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public selectionOptions: SelectionSettingsModel;
-    public editSettings: EditSettingsModel;
-    public pageSettings: Object ;
-    public toolbar: ToolbarItems[];
+    public data?: Object[];
+    public selectionOptions?: SelectionSettingsModel;
+    public editSettings?: EditSettingsModel;
+    public pageSettings?: Object ;
+    public toolbar?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;

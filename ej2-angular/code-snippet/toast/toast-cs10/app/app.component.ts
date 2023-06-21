@@ -41,28 +41,28 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('element') element;
-    @ViewChild('dropDown') dropDownListObj;
+    @ViewChild('element') public element: any;
+    @ViewChild('dropDown') public dropDownListObj: any;
     public position = { X: 'Right', Y: 'Bottom' };
     public progressBarColor = ['Red', 'Cyan', 'Blue', 'Yellow', 'Pink'];
 
-    onBeforeOpen(e) {
+    onBeforeOpen(e: any) {
   const progress = e.element.querySelector('.e-toast-progress');
   progress.style.height = (document.getElementById('progressHeight') as any).value + 'px';
   progress.style.backgroundColor =  this.dropDownListObj.value;
    }
 
-   dropDownChange() {
+   dropDownChange(e: any) {
     const progressEles: NodeList = this.element.element.querySelectorAll('.e-toast-progress');
-    progressEles.forEach((ele: HTMLElement) => {
+    progressEles.forEach((ele: HTMLElement | any) => {
       ele.style.backgroundColor = this.dropDownListObj.value;
     });
    }
 
-    onCreate() {
+    onCreate(args: any) {
       this.element.show();
     }
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
     toastShow() {

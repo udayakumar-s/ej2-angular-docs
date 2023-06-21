@@ -24,4 +24,4 @@ To customize default values of pager dropdown, you need to define [`pageSizes`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-column-cs4" %}
+{% previewsample "page.domainurl/samples/grid/custom-column-cs4" %}

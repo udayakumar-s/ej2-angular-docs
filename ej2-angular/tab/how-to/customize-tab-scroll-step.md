@@ -26,4 +26,4 @@ Tab supports to customize the scrolling distance when you click the left and rig
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/scrollstep-cs1" %}
+{% previewsample "page.domainurl/samples/tab/scrollstep-cs1" %}

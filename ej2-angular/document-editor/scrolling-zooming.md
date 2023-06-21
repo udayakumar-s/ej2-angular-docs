@@ -24,7 +24,7 @@ The Document Editor renders the document as page by page. You can scroll through
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/find-replace-cs3" %}
+{% previewsample "page.domainurl/samples/document-editor/find-replace-cs3" %}
 
 > Calling this method brings the specified page into view but doesn’t move selection. Hence this method will work by default. That is, it works even if selection is not enabled.
 
@@ -42,7 +42,7 @@ In case, if you wish to move the selection to any page in document editor and br
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/find-replace-cs4" %}
+{% previewsample "page.domainurl/samples/document-editor/find-replace-cs4" %}
 
 ## Zooming
 

@@ -28,4 +28,4 @@ Accordion supports to load external contents through `AJAX` library. Refer the b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-ajax-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-ajax-cs1" %}

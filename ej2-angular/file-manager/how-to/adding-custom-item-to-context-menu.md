@@ -28,4 +28,4 @@ The [contextMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/f
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/contextmenu-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/contextmenu-cs1" %}

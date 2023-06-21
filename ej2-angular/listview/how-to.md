@@ -38,7 +38,7 @@ The `getSelectedItems` method returns the following items from the selected list
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/checklist-cs3" %}
+{% previewsample "page.domainurl/samples/listview/checklist-cs3" %}
 
 ## Use dynamic templates of ListView based on device
 
@@ -60,7 +60,7 @@ In the ListView component, template support is being used. In some cases, the co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/dynamic-template-cs1" %}
+{% previewsample "page.domainurl/samples/listview/dynamic-template-cs1" %}
 
 ## Load list items in child list dynamically
 
@@ -84,7 +84,7 @@ Refer to the following steps to load list item into the child list:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/checklist-cs4" %}
+{% previewsample "page.domainurl/samples/listview/checklist-cs4" %}
 
 ## List Items Count in Group Header
 
@@ -102,7 +102,7 @@ The ListView component supports wrapping list items into a group based on the ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/item-count-cs2" %}
+{% previewsample "page.domainurl/samples/listview/item-count-cs2" %}
 
 ## Customize ListView as mobile contact layout
 
@@ -159,7 +159,7 @@ let data: any = [
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/avatar-template-cs2" %}
+{% previewsample "page.domainurl/samples/listview/avatar-template-cs2" %}
 
 ## Filter list items in the ListView component
 
@@ -183,7 +183,7 @@ The filtered data can be displayed in the ListView component depending upon on u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/listview/getting-started-cs2" %}
 
 > In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](https://ej2.syncfusion.com/documentation/data/api-query.html?lang=typescript#where) clause instead of `startswith`.
 
@@ -213,7 +213,7 @@ The ListView component triggers events based on its actions. The events can be u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/listview/getting-started-cs3" %}
 
 ## Load the spinner until list items are loaded
 
@@ -264,7 +264,7 @@ Here, the data is fetched from `Northwind` Service URL; it takes a few seconds t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/listview/getting-started-cs4" %}
 
 ## Add and remove list items from the ListView component
 
@@ -290,7 +290,7 @@ Refer to the following steps to add or remove a list item.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/addItem-cs1" %}
+{% previewsample "page.domainurl/samples/listview/addItem-cs1" %}
 
 ## Customize dual list
 
@@ -353,7 +353,7 @@ You can enable sorting in one ListView; in the same order, data can be transferr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/dual-list-cs1" %}
+{% previewsample "page.domainurl/samples/listview/dual-list-cs1" %}
 
 ## Hide checkbox in listview
 
@@ -387,7 +387,7 @@ Even though we have hidden the checkbox the functionality will be same for the l
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/hide-checkbox-cs1" %}
+{% previewsample "page.domainurl/samples/listview/hide-checkbox-cs1" %}
 
 ## Customize ListView with dynamic tags
 
@@ -461,7 +461,7 @@ removeTag() {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/dynamic-tag-cs1" %}
+{% previewsample "page.domainurl/samples/listview/dynamic-tag-cs1" %}
 
 ## ListView manipulation in grid layout
 
@@ -507,7 +507,7 @@ In the below sample, we have rendered List items in grid layout.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/grid-layout-cs1" %}
+{% previewsample "page.domainurl/samples/listview/grid-layout-cs1" %}
 
 ### Data manipulation
 
@@ -586,7 +586,7 @@ In the below sample, we can filter fruit items with the help of search text box.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/grid-manipulation-cs1" %}
+{% previewsample "page.domainurl/samples/listview/grid-manipulation-cs1" %}
 
 ## ListView with hyper-link navigation
 
@@ -618,7 +618,7 @@ In the below sample, we have rendered `ListView` with search engines URL.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/navigation-cs1" %}
+{% previewsample "page.domainurl/samples/listview/navigation-cs1" %}
 
 ## Load HTML content via AJAX
 
@@ -648,7 +648,7 @@ In the below sample, we have rendered smartphone settings template from external
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/ajax-cs1" %}
+{% previewsample "page.domainurl/samples/listview/ajax-cs1" %}
 
 ## ListView with Drag and Drop feature (Reorder)
 
@@ -695,7 +695,7 @@ In the below sample, we have rendered draggable list items.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/reorder-cs1" %}
+{% previewsample "page.domainurl/samples/listview/reorder-cs1" %}
 
 ## Customize ListView as Chat Window
 
@@ -764,4 +764,4 @@ public btnClick() {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/chat-window-cs1" %}
+{% previewsample "page.domainurl/samples/listview/chat-window-cs1" %}

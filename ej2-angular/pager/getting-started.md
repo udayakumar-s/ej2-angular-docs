@@ -134,7 +134,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pager/pager-cs1" %}
+{% previewsample "page.domainurl/samples/pager/pager-cs1" %}
 
 ## Page Count
 
@@ -154,7 +154,7 @@ and [`pageSize`](#page-size) values.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pager/pager-cs2" %}
+{% previewsample "page.domainurl/samples/pager/pager-cs2" %}
 
 ## Run the application
 
@@ -178,4 +178,4 @@ Output will be appears as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pager/pager-cs3" %}
+{% previewsample "page.domainurl/samples/pager/pager-cs3" %}

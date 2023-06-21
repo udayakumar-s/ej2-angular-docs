@@ -51,4 +51,4 @@ Column B having Card D with field value `5`. Dropped Card D between Card A and C
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/priority-cs2" %}
+{% previewsample "page.domainurl/samples/kanban/priority-cs2" %}

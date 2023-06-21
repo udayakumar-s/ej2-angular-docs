@@ -40,4 +40,4 @@ In the following example, two-way binding for RadioButton is illustrated with Dr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/radio-button/binding-cs1" %}
+{% previewsample "page.domainurl/samples/radio-button/binding-cs1" %}

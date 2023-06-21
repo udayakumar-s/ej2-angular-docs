@@ -24,7 +24,7 @@ You can club/group few points of the series based on [`groupTo`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/clubpoint-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/clubpoint-cs2" %}
 
 ## Broken slice
 
@@ -42,7 +42,7 @@ You can visualize all points available in club/group points by clicking on the g
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/clubpoint-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/clubpoint-cs3" %}
 
 ## Group Mode
 
@@ -60,7 +60,7 @@ Slice can also be grouped based on number of points by specifying the `groupMode
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/clubpoint-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/clubpoint-cs4" %}
 
 ## Customization
 
@@ -78,4 +78,4 @@ You can customize the grouped point and its data label using `pointRender` and `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/clubpoint-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/clubpoint-cs5" %}

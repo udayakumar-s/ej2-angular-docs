@@ -34,21 +34,21 @@ import { dataSource } from './datasource';
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
         // Unhide the 2nd index hidden column
-        this.spreadsheetObj.hideColumn(1, 1, false);
+        this.spreadsheetObj!.hideColumn(1, 1, false);
         // Unhide the 3rd index hidden row
-        this.spreadsheetObj.hideRow(3, 3, false);
+        this.spreadsheetObj!.hideRow(3, 3, false);
         // Hiding the 6th index column
-        this.spreadsheetObj.hideColumn(6);
+        this.spreadsheetObj!.hideColumn(6);
         // Hiding the 8th and 9th index row
-        this.spreadsheetObj.hideRow(8, 9);
-        this.spreadsheetObj.cellFormat({ textAlign: 'center' }, 'D2:H11');
+        this.spreadsheetObj!.hideRow(8, 9);
+        this.spreadsheetObj!.cellFormat({ textAlign: 'center' }, 'D2:H11');
     }
 }
 

@@ -34,7 +34,7 @@ A task assigned to one or more resources are termed as resource task and it is a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/resourceview/resource-view-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/resourceview/resource-view-cs1" %}
 
 ## Resource OverAllocation
 
@@ -58,7 +58,7 @@ The range of overallocation dates can be highlighted by a square bracket. It can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/resourceview/show-hide-overallocation-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/resourceview/show-hide-overallocation-cs1" %}
 
 ## Resource Multi Taskbar
 
@@ -82,7 +82,7 @@ When a resource has multiple tasks scheduled on the same date, then the tasks wi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/resourceview/multitaskbar-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/resourceview/multitaskbar-cs1" %}
 
 ### Enable taskbar drag and drop
 
@@ -100,7 +100,7 @@ In Gantt, you can enable taskbar drag and drop between resources by using the [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/resourceview/multitaskbar-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/resourceview/multitaskbar-cs2" %}
 
 ### Disable taskbar overlap
 
@@ -122,4 +122,4 @@ It's important to note that when `allowTaskbarOverlap` is disabled, task depende
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/resourceview/multitaskbar-cs3" %}
+{% previewsample "page.domainurl/samples/gantt/resourceview/multitaskbar-cs3" %}

@@ -44,4 +44,4 @@ Class   | Description
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card-horizontal-cs1" %}
+{% previewsample "page.domainurl/samples/card/card-horizontal-cs1" %}

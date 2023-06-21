@@ -32,7 +32,7 @@ If you need to enable snapping, then inject snapping module into the diagram.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/gridLines/gridLines-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/gridLines/gridLines-cs1" %}
 
 To show only horizontal/vertical gridlines or to hide gridlines, refer to [`Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings#constraints-SnapConstraints).
 
@@ -60,7 +60,7 @@ The following code example illustrates how to customize the appearance of gridli
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/gridLines/gridlinesAppearance-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/gridLines/gridlinesAppearance-cs1" %}
 
 ## Line intervals
 
@@ -80,7 +80,7 @@ The following code example illustrates how to customize the thickness of lines a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/gridLines/gridlinesAppearance-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/gridLines/gridlinesAppearance-cs2" %}
 
 ## Snapping
 
@@ -102,7 +102,7 @@ Snapping to gridlines can be enabled/disabled with the [`snapSettings.snapConstr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/gridLines/snapping-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/gridLines/snapping-cs1" %}
 
 ## Customization of snap intervals
 
@@ -120,7 +120,7 @@ By default, the objects are snapped towards the nearest gridline. The gridline o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/gridLines/snapintervals-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/gridLines/snapintervals-cs1" %}
 
 ## Snap to objects
 
@@ -146,4 +146,4 @@ The [`snapLineColor`](https://ej2.syncfusion.com/angular/documentation/api/diagr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/gridLines/snapobjects-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/gridLines/snapobjects-cs1" %}

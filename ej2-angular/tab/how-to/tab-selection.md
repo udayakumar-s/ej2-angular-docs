@@ -24,4 +24,4 @@ We can able to find the tab selection whether it is selected by user interaction
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/animation-cs2" %}
+{% previewsample "page.domainurl/samples/tab/animation-cs2" %}

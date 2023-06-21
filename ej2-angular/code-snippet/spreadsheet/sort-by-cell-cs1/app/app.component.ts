@@ -10,19 +10,19 @@ import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 })
 export class AppComponent implements OnInit {
 
-    public defaultData: object[];
-    @ViewChild('spreadsheet') public spreadsheetObj: SpreadsheetComponent;
+    public defaultData?: object[];
+    @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
     ngOnInit(): void {
         this.defaultData = defaultData;
     }
     dataBound(){
-        if (this.spreadsheetObj.activeSheetIndex === 0) {
-            this.spreadsheetObj.cellFormat({ fontWeight: 'bold' }, 'A1:H1');
-            this.spreadsheetObj.sort({ containsHeader: true }, 'A1:H11');
+        if (this.spreadsheetObj!.activeSheetIndex === 0) {
+            this.spreadsheetObj!.cellFormat({ fontWeight: 'bold' }, 'A1:H1');
+            this.spreadsheetObj!.sort({ containsHeader: true }, 'A1:H11');
         }
     };
-    sortComplete (args) {
-        this.spreadsheetObj.selectRange(args.range);
+    sortComplete (args : any) {
+        this.spreadsheetObj!.selectRange(args.range);
         // code here.
     }
 }

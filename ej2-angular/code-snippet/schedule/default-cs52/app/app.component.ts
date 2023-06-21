@@ -1,7 +1,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { EventSettingsModel, ScheduleComponent, DayService, WeekService, WorkWeekService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, ScheduleComponent, DayService, WeekService, WorkWeekService, MonthService, WorkHoursModel } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 
 @Component({
@@ -13,13 +13,13 @@ import { scheduleData } from './datasource';
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public workHours: WorkHoursModel = { start: '9:00', end: '11:00' };
     public selectedDate: Date = new Date(2018, 1, 15);
     public eventSettings: EventSettingsModel = { dataSource: scheduleData };
     workHour(): void {
     let dates: Date[] = [new Date(2018, 1, 15), new Date(2018, 1, 17)];
-    this.scheduleObj.setWorkHours(dates, '11:00','20:00');
+    this.scheduleObj?.setWorkHours(dates, '11:00','20:00');
     }
 }
 

@@ -1,22 +1,22 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { series1 } from 'datasource.ts';
+import { series1 } from './datasource';
+import { PeriodsModel } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-stockchart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title' [periods]='periods' [exportType]='exportType' [seriesType]='seriesType' [indicatorType]='indicatorType' [trendlineType]='trendlineType'>
+    template: `<ejs-stockchart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title' [periods]='periods' [exportType]='exportType' [seriesType]='seriesType' [indicatorType]='indicatorType' [trendlineType]='trendlineType'>
         <e-stockchart-series-collection>
             <e-stockchart-series [dataSource]='chartData' type='Line' xName='x' yName='y' name='India' width=2 ></e-stockchart-series>
         </e-stockchart-series-collection>
     </ejs-stockchart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public periods: PeriodsModel[];
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public periods?: PeriodsModel[];
     public seriesType: string[] = [];
     public indicatorType: string[] = [];
     public trendlineType: string[] = [];

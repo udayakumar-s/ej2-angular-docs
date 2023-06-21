@@ -1,6 +1,3 @@
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, ToolbarItems, ExcelQueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
@@ -25,12 +22,13 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    public degree: number[];
-    public customAttributes: object;
-    @ViewChild('grid') public grid: GridComponent;
-    @ViewChild('ddlelement') public dropDownListObject: DropDownListComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    public degree?: number[];
+    public customAttributes?: object;
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    @ViewChild('ddlelement') public dropDownListObject?: DropDownListComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -38,44 +36,41 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['ExcelExport'];
         this.degree = [90, 180, 45, 135];
     }
-    setHeaderHeight(args) {
-        const textWidth = document.querySelector('.orientationcss > div').scrollWidth;
+    setHeaderHeight(args: any) {
+        const textWidth = (document.querySelector('.orientationcss > div') as any).scrollWidth;
         const headerCell: NodeList = document.querySelectorAll('.e-headercell');
         for (let i = 0; i < headerCell.length; i++) {
             (headerCell.item(i) as HTMLElement).style.height = textWidth + 'px';
         }
     }
     excelQueryCellInfo(args: ExcelQueryCellInfoEventArgs): void {
-        if (args.column.field == 'Freight') {
-            if (args.value < 30) {
-                args.style = { backColor: '#99ffcc' };
+        if ((args as any).column.field == 'Freight') {
+            if ((args as any).value < 30) {
+                (args as any).style = { backColor: '#99ffcc' };
             }
-            else if (args.value < 60) {
-                args.style = { backColor: '#ffffb3' };
+            else if ((args as any).value < 60) {
+                (args as any).style = { backColor: '#ffffb3' };
             }
             else {
-                args.style = { backColor: '#ff704d' };
+                (args as any).style = { backColor: '#ff704d' };
             }
         }
     }
 
-    excelHeaderQueryCellInfo(args): void {
-        let textWidth = document.querySelector(".orientationcss > div").scrollWidth;
-        if (args.gridCell.column.field == 'Freight') {
-            args.style = { backColor: '#99ffcc', vAlign: 'Bottom' };
+    excelHeaderQueryCellInfo(args: any): void {
+        let textWidth = (document.querySelector(".orientationcss > div") as any).scrollWidth;
+        if ((args as any).gridCell.column.field == 'Freight') {
+            (args as any).style = { backColor: '#99ffcc', vAlign: 'Bottom' };
         }
         else {
-            args.style = { vAlign: 'Center', rotation: this.dropDownListObject.value };
+            (args as any).style = { vAlign: 'Center', rotation: (this as any).dropDownListObject .value };
         }
-        args.cell.cellHeight = textWidth;
+        (args as any).cell.cellHeight = textWidth;
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_excelexport') {
-            this.grid.excelExport();
+        if ((args as any).item.id === 'Grid_excelexport') {
+            (this.grid as any).excelExport();
         }
     }
 }
-
-
-

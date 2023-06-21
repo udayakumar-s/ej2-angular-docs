@@ -85,16 +85,16 @@ export class AppComponent {
   { text: "McLaren P1", id: "list-09" },
   { text: "Ferrari LaFerrari", id: "list-10" }
 ];
-   onclick(event){
+   onclick(event: any){
     this.EventLogEle.nativeElement.innerHTML = "";
    }
    onSelect(args: SelectEventArgs){
     this.appendElement(args.text + "<b>&nbsp;&nbsp;is selected</b><hr>");
    }
-   onActionBegin(){
+   onActionBegin(args:any){
      this.appendElement("<b>actionBegin </b> event is triggered<hr>");
    }
-   onActionComplete(){
+   onActionComplete(args:any){
      this.appendElement("<b>actionComplete</b> is triggered <hr>");
    }
   appendElement(html: string): void {

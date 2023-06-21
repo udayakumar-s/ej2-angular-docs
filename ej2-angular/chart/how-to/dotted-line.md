@@ -33,4 +33,4 @@ in the chart based on point x and y values.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/how-to-cs6" %}
+{% previewsample "page.domainurl/samples/chart/how-to-cs6" %}

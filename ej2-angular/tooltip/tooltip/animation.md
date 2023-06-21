@@ -31,7 +31,7 @@ The default `duration` is set to 150 ms and `delay` is set to 0.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs22" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs22" %}
 
 ## Animation effects
 
@@ -76,7 +76,7 @@ Refer to the code snippet below to apply animations using public methods.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs23" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs23" %}
 
 ## Apply transition
 
@@ -94,4 +94,4 @@ The transition effect can be applied on Tooltips by using the `beforeOpen` event
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs24" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs24" %}

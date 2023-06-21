@@ -42,7 +42,7 @@ The AutoComplete has support to load array of primitive data such as strings and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs2" %}
 
 ### Array of object
 
@@ -62,7 +62,7 @@ In the following example, `Game` column from complex data have been mapped to 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs3" %}
 
 ### Array of complex object
 
@@ -82,7 +82,7 @@ In the following example, `Country.Name` column from complex data have been ma
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs4" %}
 
 ## Bind to remote data
 
@@ -102,7 +102,7 @@ The following sample displays the first 6 contacts from the `Customers` table of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs5" %}
 
 ## Data binding using Async pipe
 

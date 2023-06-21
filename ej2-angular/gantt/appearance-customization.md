@@ -28,7 +28,7 @@ The height of child taskbars and parent taskbars can be customized by using [`ta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/appearance-customization/taskbar-height-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/taskbar-height-cs1" %}
 
 > NOTE
 The [`taskbarHeight`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#taskbarheight) value should be lower than [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowheight) property value and these properties accept only pixel values.
@@ -49,7 +49,7 @@ The default taskbar UI can be replaced with custom templates by using the [`quer
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/appearance-customization/formatting-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/formatting-cs1" %}
 
 ### Change gripper icon in taskbar
 
@@ -67,7 +67,7 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/appearance-customization/change-gripper-icon-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/change-gripper-icon-cs1" %}
 
 ## Task labels
 
@@ -85,7 +85,7 @@ The Gantt component maps any data source fields to task labels using the [`label
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/tasklabeltemplate-cs1" %}
 
 ## Connector lines
 
@@ -103,7 +103,7 @@ The width and background color of connector lines in Gantt can be customized usi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/appearance-customization/dependency-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/dependency-cs1" %}
 
 ## Customize rows and cells
 
@@ -121,7 +121,7 @@ While rendering the TreeGrid part in Gantt, the [`rowDataBound`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/appearance-customization/customize-row-cells-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/customize-row-cells-cs1" %}
 
 ## Grid lines
 
@@ -150,7 +150,7 @@ The following code example shows how to change the gridlines rendering mode in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/appearance-customization/gridlines-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/gridlines-cs1" %}
 
 ## Splitter
 
@@ -172,7 +172,7 @@ In the Gantt component, the Splitter separates the TreeGrid section from the Cha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/appearance-customization/changesplitter/initial-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/changesplitter/initial-cs1" %}
 
 ### Change splitter position dynamically
 
@@ -190,7 +190,7 @@ In Gantt, we can change the splitter position dynamically by using [`setSplitter
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/changesplitter/dynamic-cs1" %}
 
 ## See also
 

@@ -26,7 +26,7 @@ Candle series are similar to Hilo Open Close series, are used to represent the l
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/candle-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/candle-cs1" %}
 
 ## Hollow Candles
 
@@ -76,7 +76,7 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/candle-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/candle-cs2" %}
 
 ## See Also
 

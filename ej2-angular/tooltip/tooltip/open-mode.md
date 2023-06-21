@@ -46,7 +46,7 @@ The following code example shows how to set the open mode for Tooltips.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs30" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs30" %}
 
 ## Custom open mode
 
@@ -66,7 +66,7 @@ The following code example shows how to define custom open mode for the Tooltip.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs31" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs31" %}
 
 ## Sticky mode
 
@@ -84,7 +84,7 @@ With this mode set to `true`, Tooltips can be made to show up on the screen as l
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs32" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs32" %}
 
 ## Open/Close Tooltip with delay
 
@@ -102,4 +102,4 @@ The Tooltips can be opened or closed after some delay by using the `openDelay` a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs33" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs33" %}

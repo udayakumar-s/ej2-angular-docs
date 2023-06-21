@@ -2,7 +2,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { FilterSettingsModel, IFilter } from '@syncfusion/ej2-angular-treegrid';
+import { FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';
+import { IFilter } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-container',
@@ -17,9 +18,9 @@ import { FilterSettingsModel, IFilter } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public filterOptions: FilterSettingsModel;
-    public filter : IFilter;
+    public data?: Object[];
+    public filterOptions?: FilterSettingsModel;
+    public filter?: IFilter;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -27,11 +28,11 @@ export class AppComponent implements OnInit {
            type: 'Menu'
         };
         this.filter = {
-            type : 'Excel';
+            type : 'Excel'
         }
     }
-    }
 }
+
 
 
 

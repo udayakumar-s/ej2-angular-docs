@@ -2,7 +2,9 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ToolbarItems, ExcelExportProperties, RowDataBoundEventArgs, ExcelQueryCellInfoEventArgs } from '@syncfusion/ej2-treegrid';
+import { ToolbarItems } from '@syncfusion/ej2-treegrid';
+import { ExcelExportProperties, RowDataBoundEventArgs, ExcelQueryCellInfoEventArgs } from '@syncfusion/ej2-grids';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
@@ -17,23 +19,23 @@ import { ToolbarItems, ExcelExportProperties, RowDataBoundEventArgs, ExcelQueryC
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pager: Object;
+    public data?: Object[];
+    public pager?: Object;
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
-    public toolbarOptions: ToolbarItems[];
+    public treeGridObj?: TreeGridComponent;
+    public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = sampleData;
         this.pager = { pageSize: 7 };
         this.toolbarOptions = ['ExcelExport'];
     }
-    toolbarClick(args: Object) : void {
+    toolbarClick(args: Object | any) : void {
         if (args['item'].text === 'Excel Export') {
-            this.treeGridObj.excelExport();
+            (this.treeGridObj as TreeGridComponent).excelExport();
         }
     }
-    excelQueryCellInfo(args: ExcelQueryCellInfoEventArgs): void {
+    excelQueryCellInfo(args: ExcelQueryCellInfoEventArgs | any): void {
         if(args.column.field == 'duration'){
             if(args.value === 0 || args.value === "") {
                 args.style = {backColor: '#336c12'};
@@ -43,7 +45,7 @@ export class AppComponent implements OnInit {
             }
         }
     }
-    queryCellInfo(args: RowDataBoundEventArgs): void {
+    queryCellInfo(args: RowDataBoundEventArgs | any): void {
         if (args.data['duration'] == 0 && args.column.field === 'duration' ) {
             args.cell.style.background= '#336c12';
         } else if (args.data['duration'] < 3 && args.column.field === 'duration') {

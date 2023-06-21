@@ -3,7 +3,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Maps } from '@syncfusion/ej2-angular-maps';
-import { markerDataSource } from 'markerdata.ts';
+import { markerDataSource } from './markerdata';
 @Component({
     selector: 'app-container',
     template:
@@ -23,12 +23,12 @@ import { markerDataSource } from 'markerdata.ts';
     </ejs-maps>`
 })
 export class AppComponent implements OnInit {
-  public shapeDataPath: string;
-  public shapePropertyPath: string;
-  public shapeSettings: object;
-  public markerSettings: object;
-  public legendSettings: object;
-  public urlTemplate: string;
+  public shapeDataPath?: string;
+  public shapePropertyPath?: string;
+  public shapeSettings?: object;
+  public markerSettings?: object;
+  public legendSettings?: object;
+  public urlTemplate?: string;
   ngOnInit(): void {
     this.urlTemplate = 'https://tile.openstreetmap.org/level/tileX/tileY.png';
     this.shapeDataPath = 'name';

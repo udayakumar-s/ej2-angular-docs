@@ -56,4 +56,4 @@ To load translation object in the application, use `load` function of **L10n** c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs62" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs62" %}

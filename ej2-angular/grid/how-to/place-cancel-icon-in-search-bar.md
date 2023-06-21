@@ -24,4 +24,4 @@ By default, the search bar in the grid doesn't have a **cancel** icon. If you wa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/print-cs1" %}
+{% previewsample "page.domainurl/samples/grid/print-cs1" %}

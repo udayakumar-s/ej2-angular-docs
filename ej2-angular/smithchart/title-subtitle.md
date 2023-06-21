@@ -26,7 +26,7 @@ Title and subtitle is used to depicts the information about the data plotted in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs30" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs30" %}
 
 ## Title trim
 
@@ -44,4 +44,4 @@ Both title and subtitle of the smithchart can be trimmed if it exceeds the certa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/smithchart/getting-started/smithchart-cs31" %}
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs31" %}

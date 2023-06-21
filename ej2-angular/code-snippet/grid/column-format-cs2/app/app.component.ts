@@ -14,9 +14,9 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public numberFormatOptions: object;
-    public dateFormatOptions: object;
+    public data?: object[];
+    public numberFormatOptions?: object;
+    public dateFormatOptions?: object;
 
     ngOnInit(): void {
         this.data = data;

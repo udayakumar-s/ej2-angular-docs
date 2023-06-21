@@ -5,7 +5,7 @@ import {
     IDataOptions, PivotView, FieldListService, CalculatedFieldService, NumberFormattingService,
     ToolbarService, ConditionalFormattingService, ToolbarItems, DisplayOption, IDataSet, PivotActionCompleteEventArgs
 } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -15,12 +15,12 @@ import { Pivot_Data } from './datasource.ts';
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
-    public toolbarOptions: ToolbarItems[];
-    public displayOption: DisplayOption;
+    public dataSourceSettings?: IDataOptions;
+    public toolbarOptions?: ToolbarItems[];
+    public displayOption?: DisplayOption;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     actionComplete(args: PivotActionCompleteEventArgs): void {
         if (args.actionName == 'New report added' || args.actionName == 'Report saved') {
@@ -34,7 +34,7 @@ export class AppComponent {
         this.toolbarOptions = ['New', 'Save', 'SaveAs', 'Rename', 'Remove', 'Load',
             'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'NumberFormatting', 'FieldList'] as ToolbarItems[];
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],

@@ -26,4 +26,4 @@ The following example demonstrate about how to close the popup on scroll.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs15" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs15" %}

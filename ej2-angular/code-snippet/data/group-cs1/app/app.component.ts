@@ -7,7 +7,7 @@ const SERVICE_URI =  'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.s
 
 @Component({
     selector: 'app-root',
-    templateUrl: 'app/app.template.html',
+    templateUrl: './app.template.html',
     styles: [`
             .e-table {
                 border: solid 1px #e0e0e0;
@@ -32,7 +32,7 @@ const SERVICE_URI =  'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.s
 })
 export class AppComponent implements OnInit {
 
-    public items: object[];
+    public items?: object[];
 
     public ngOnInit(): void {
         new DataManager({ url: SERVICE_URI, adaptor: new ODataAdaptor()})

@@ -20,16 +20,16 @@ import { editingData , editingResources } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editDialogFields: object[];
-    public resourceNameMapping: string;
-    public resourceIdMapping: string;
-    public resources: object[];
-    public labelSettings: object;
-    public editSettings: EditSettingsModel;
+    public data?: object[];
+    public taskSettings?: object;
+    public editDialogFields?: object[];
+    public resourceNameMapping?: string;
+    public resourceIdMapping?: string;
+    public resources?: object[];
+    public labelSettings?: object;
+    public editSettings?: EditSettingsModel;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.data = editingData;
         this.taskSettings = {

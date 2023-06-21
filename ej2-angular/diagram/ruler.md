@@ -34,7 +34,7 @@ The following code shows how to add a ruler to the diagram.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/ruler/ruler-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/ruler/ruler-cs1" %}
 
 ## Customizing the Ruler
 
@@ -62,5 +62,5 @@ The following code shows how the diagram ruler can be customized.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/ruler/ruler-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/ruler/ruler-cs2" %}
 >Note : The MarkerColor property can be customized using the [`marker`](./style/#customizing-the-ruler) CSS style.

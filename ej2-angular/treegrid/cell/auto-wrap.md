@@ -36,4 +36,4 @@ In the following example, the `textWrapSettings.wrapMode` is set to `Content`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/cell-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/cell-cs1" %}

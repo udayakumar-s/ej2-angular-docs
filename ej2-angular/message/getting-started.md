@@ -132,4 +132,4 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/message/getting-started-cs1" %}

@@ -22,19 +22,20 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('Grid') public grid: GridComponent;
+    public data?: object[];
+    @ViewChild('Grid') public grid?: GridComponent;
+    public toolbar?: any;
 
     ngOnInit(): void {
         this.data = data;
     }
     public SingleSort(): void {
-        this.grid.sortColumn('OrderID', 'Descending');
+        (this.grid as any).sortColumn('OrderID', 'Descending');
     }
     public MultiSort(): void {
-        this.grid.sortSettings.columns.push({ field: 'CustomerID', direction: 'Ascending' },
+        (this.grid as any).sortSettings.columns.push({ field: 'CustomerID', direction: 'Ascending' },
             { field: 'ShipName', direction: 'Descending' });
-        this.grid.refresh();
+        (this.grid as any).refresh();
     }
 }
 

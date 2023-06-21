@@ -48,7 +48,7 @@ The following code example shows `filter` functionality in the Spreadsheet contr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/filter-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/filter-cs1" %}
 
 ## Filter by cell value
 

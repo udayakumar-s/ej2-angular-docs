@@ -122,7 +122,7 @@ The following example demonstrates the TreeGrid in `Deutsch` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/internationalization-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/internationalization-cs1" %}
 
 ## Internationalization
 
@@ -140,7 +140,7 @@ The [`Internationalization`](../common/internationalization/) library is used to
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/internationalization-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/internationalization-cs2" %}
 
 > * In the above sample, `Price` column is formatted by `NumberFormatOptions`.
 > * By default, [`locale`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#locale) value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#locale) accordingly.
@@ -161,7 +161,7 @@ RTL provides an option to switch the text direction and layout of the TreeGrid c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/internationalization-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/internationalization-cs3" %}
 
 ## See Also
 

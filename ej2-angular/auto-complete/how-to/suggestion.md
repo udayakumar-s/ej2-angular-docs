@@ -26,4 +26,4 @@ In the below sample, showcase that how to show `suggestion list` with AutoComple
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs16" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs16" %}

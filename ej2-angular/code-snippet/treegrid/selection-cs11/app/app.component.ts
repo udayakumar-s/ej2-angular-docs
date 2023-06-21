@@ -17,20 +17,20 @@ import { EditSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-tr
             </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public editSettings: EditSettingsModel;
+    public editSettings?: EditSettingsModel;
     public data: Object[] = [];
-    public selectionOptions: SelectionSettingsModel;
+    public selectionOptions?: SelectionSettingsModel;
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: "Batch" };
         this.selectionOptions = { cellSelectionMode: 'Flow', type: 'Multiple', mode: 'Cell' };
     }
     selectCell() {
-        this.treegrid.selectCell({ rowIndex: 3, cellIndex: 1 });
+        this.treegrid?.selectCell({ rowIndex: 3, cellIndex: 1 });
     }
     clear() {
-        this.treegrid.clearSelection();
+        this.treegrid?.clearSelection();
     }
 }

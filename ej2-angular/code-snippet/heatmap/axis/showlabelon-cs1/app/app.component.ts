@@ -2,6 +2,7 @@
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
+import { ITooltipEventArgs } from '@syncfusion/ej2-angular-heatmap';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 @Component({

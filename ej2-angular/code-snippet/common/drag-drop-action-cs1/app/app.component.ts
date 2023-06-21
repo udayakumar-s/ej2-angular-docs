@@ -16,10 +16,10 @@ export class AppComponent {
     @ViewChild('draggable',{static: false})element1: any;
 
     ngAfterViewInit() {
-        let draggable: Draggable = new Draggable(document.getElementById('draggable'), {clone: false});
-        let droppable: Droppable = new Droppable(document.getElementById('droppable'), {
+        let draggable: Draggable = new Draggable(document.getElementById('draggable') as HTMLElement , {clone: false});
+        let droppable: Droppable = new Droppable(document.getElementById('droppable') as HTMLElement , {
             drop: (e: DropEventArgs) => {
-                e.droppedElement.querySelector('.drag').textContent = 'Dropped';
+                ((e.droppedElement as HTMLElement).querySelector('.drag') as Element).textContent = 'Dropped';
             }
         });
     }

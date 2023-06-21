@@ -28,8 +28,8 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public formatOptions: Object;
-    public dropData: string[];
+    public formatOptions?: Object;
+    public dropData?: string[];
 
     ngOnInit(): void {
         this.data = projectData;

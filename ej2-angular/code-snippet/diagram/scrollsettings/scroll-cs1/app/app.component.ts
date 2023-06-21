@@ -11,8 +11,8 @@ import { DiagramComponent, Diagram, ScrollSettingsModel } from '@syncfusion/ej2-
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public scrollSettings: ScrollSettingsModel;
+    public diagram?: DiagramComponent;
+    public scrollSettings?: ScrollSettingsModel;
     ngOnInit(): void {
         // Defines the pageSettings for the diagram
         this.scrollSettings = {

@@ -1,6 +1,4 @@
 
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
 import { GridComponent, ForeignKeyService, FilterService, IFilterUI, Column } from '@syncfusion/ej2-angular-grids';
@@ -23,9 +21,10 @@ import { data, fEmployeeData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-    public employeeData: object[];
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public employeeData?: object[];
     public filter: IFilterUI = {
         create: (args: { element: Element, column: Column }) => {
             return createElement('input', { className: 'flm-input' });
@@ -38,15 +37,15 @@ export class AppComponent implements OnInit {
                 placeholder: 'Select a value',
                 popupHeight: '200px',
                 index: 0,
-                change: (e) => {
+                change: (e: any) => {
                     if (e.value !== 'All') {
-                        this.grid.filterByColumn('EmployeeID', 'equal', e.value);
+                        (this.grid as any).filterByColumn('EmployeeID', 'equal', e.value);
                     } else {
-                        this.grid.removeFilteredColsByField('EmployeeID');
+                        (this.grid as any).removeFilteredColsByField('EmployeeID');
                     }
                 }
             });
-            dropInstance.appendTo(args.element as HTMLTableCellElement);
+            dropInstance.appendTo((args as any).element as HTMLTableCellElement);
         }
     };
     ngOnInit(): void {

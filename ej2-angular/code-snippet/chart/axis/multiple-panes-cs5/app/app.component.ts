@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-axes>
             <e-axis columnIndex=1 name='xAxis1' opposedPosition='true' [majorGridLines]='majorGridLines'
                   valueType='Category' [lineStyle]='lineStyle'>
@@ -22,14 +21,14 @@ import { Component, OnInit } from '@angular/core';
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public majorGridLines: Object;
-    public primaryYAxis: Object;
-    public lineStyle: Object;
-    public marker: Object;
-    public rows: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public majorGridLines?: Object;
+    public primaryYAxis?: Object;
+    public lineStyle?: Object;
+    public marker?: Object;
+    public rows?: Object;
     ngOnInit(): void {
         this.chartData = [
                 { x: 'Jan', y: 15, y1: 33 }, { x: 'Feb', y: 20, y1: 31 }, { x: 'Mar', y: 35, y1: 30 },

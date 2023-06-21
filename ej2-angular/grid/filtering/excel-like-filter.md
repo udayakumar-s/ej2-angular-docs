@@ -26,7 +26,7 @@ The following example demonstrates the way to use filter template for a column w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filter-template-cs1" %}
+{% previewsample "page.domainurl/samples/grid/filter-template-cs1" %}
 
 > * By default, while opening the excel/checkbox filter in the Grid, the filter dialog will get and display the distinct data from the first 1000 records bound to the Grid to optimize performance. The remaining records will be returned as a result of the search option of the filter dialog.
 > * However, we can increase the excel/checkbox filter count by modifying the `filterChoiceCount` argument value(as per our need) in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionBegin) event when the [`requestType`](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#requesttype) is `filterchoicerequest` or `filtersearchbegin`. This is demonstrated in the below code snippet,

@@ -6,13 +6,13 @@ import { UploaderComponent, SelectedEventArgs } from '@syncfusion/ej2-angular-in
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 @Component({
     selector: 'app-root',
-    templateUrl: 'default.html',
-    styleUrls: ['index.css']
+    templateUrl: './default.html',
+    styleUrls: ['./index.css']
 })
 
 export class AppComponent {
-  @ViewChild('defaultupload') uploadObj: UploaderComponent;
-  @ViewChild('dialog') dialog: DialogComponent;
+  @ViewChild('defaultupload') uploadObj?: UploaderComponent;
+  @ViewChild('dialog') dialog?: DialogComponent;
 
    public path: Object = {
        saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
@@ -24,15 +24,15 @@ export class AppComponent {
    public visible: boolean = false;
    public target: string = '#container';
    public buttons: Object = [{'click': this.onClick.bind(this), buttonModel: { content: 'OK', cssClass: 'e-flat', isPrimary: true}},
-   {'click': () => {this.dialog.hide(); }, buttonModel: { content: 'Cancel', cssClass: 'e-flat'} }];
+   {'click': () => {this.dialog?.hide(); }, buttonModel: { content: 'Cancel', cssClass: 'e-flat'} }];
    public onremoving: EmitType<SelectedEventArgs> = (args: any) =>  {
     args.cancel = true;
     this.removeFile.push(args.filesData);
-    this.dialog.show();
+    this.dialog?.show();
    };
    onClick() {
-    this.dialog.hide();
-    this.uploadObj.remove(this.removeFile, true);
+    this.dialog?.hide();
+    this.uploadObj?.remove(this.removeFile, true);
     this.removeFile = [];
    }
 }

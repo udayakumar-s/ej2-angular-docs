@@ -19,13 +19,13 @@ import { Component, ViewChild } from '@angular/core';
 })
 
 export class AppComponent {
-    @ViewChild('toastObj') element;
+    @ViewChild('toastObj') element: any;
     public position = { X: 'Right' };
 
-    onCreate() {
+    onCreate(args: any) {
       this.toastShow();
     }
-    btnClick() {
+    btnClick(args: any) {
       this.toastShow();
     }
     toastShow() {
@@ -34,7 +34,7 @@ export class AppComponent {
             this.element.show();
         }, 700);
     }
-    onBeforeClose(e){
+    onBeforeClose(e: any){
         if (e.type === "swipe") {
             e.cancel = true;
         }

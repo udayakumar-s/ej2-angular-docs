@@ -1,15 +1,15 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
   selector: 'app-container',
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-  public dataSourceSettings: IDataOptions;
-  public width: string;
+  public dataSourceSettings?: IDataOptions;
+  public width?: string;
 
   ngOnInit(): void {
     this.width = '100%';

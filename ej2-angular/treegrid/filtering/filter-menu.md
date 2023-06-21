@@ -25,7 +25,7 @@ You can filter the records with different operators.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs6" %}
 
 > * [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) must be set as true to enable filter menu.
 > * Setting [`columns.allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#allowfiltering) as false will prevent filter menu rendering for a particular column.
@@ -52,7 +52,7 @@ In the following sample, the string filter operators are customized.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs7" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs7" %}
 
 ## Enable different filter dialog for a column
 
@@ -72,4 +72,4 @@ In the following sample menu filter is enabled by default and excel filter is en
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs8" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs8" %}

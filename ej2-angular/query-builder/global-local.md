@@ -60,4 +60,4 @@ The following list of properties and its values are used in the Query Builder.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs6" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs6" %}

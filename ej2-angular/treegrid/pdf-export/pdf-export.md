@@ -30,7 +30,7 @@ You can check this video to learn about how to perform Exporting and its customi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs12" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs12" %}
 
 <!-- Multiple exporting
 
@@ -48,7 +48,7 @@ PDF export provides an option for exporting multiple treegrids to same file. In 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs13" %} -->
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs13" %} -->
 
 ## Show spinner while exporting
 
@@ -68,7 +68,7 @@ In the following demo, the default spinner component is rendered when exporting 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs14" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs14" %}
 
 ## Custom data source
 
@@ -86,6 +86,6 @@ PDF export provides an option to define datasource dynamically before exporting.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/pdf-export-cs15" %}
+{% previewsample "page.domainurl/samples/treegrid/pdf-export-cs15" %}
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

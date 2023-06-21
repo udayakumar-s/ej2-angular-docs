@@ -4,7 +4,7 @@
 import { Tooltip } from '@syncfusion/ej2-popups';
 import { Component, ViewChild } from '@angular/core';
 import { enableRipple, createElement } from '@syncfusion/ej2-base';
-import { TabComponent, selectEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { SelectEventArgs, TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 enableRipple(true);
 
@@ -23,9 +23,9 @@ enableRipple(true);
 })
 
 export class AppComponent {
-      @ViewChild('element') tabInstance: TabComponent;
+      @ViewChild('element') tabInstance?: TabComponent;
 
-    public totalItems: number;
+    public totalItems?: number;
     public headerText: Object = [{ 'text': 'Tab1' }, { 'iconCss': 'e-add-icon' }];
 
     public tabCreated(): void {
@@ -34,13 +34,13 @@ export class AppComponent {
         });
         tooltip.appendTo('.e-ileft.e-icon');
 
-        document.getElementById('btn-add').onclick = (e : Event) => {
+        (document.getElementById('btn-add') as HTMLElement).onclick = (e : Event) => {
             let title: string = (document.getElementById('tab-title') as any).value;
             let content: string = (document.getElementById('tab-content') as any).value;
             let item: Object =  { header: { text: title }, content: createElement('pre', { innerHTML: content.replace(/\n/g, '<br>\n') }).outerHTML };
 
             this.totalItems = document.querySelectorAll('#element .e-toolbar-item').length;
-            this.tabInstance.addTab([item], this.totalItems-1);
+            this.tabInstance?.addTab([item], this.totalItems-1);
         };
     }
 

@@ -14,10 +14,10 @@ import { DiagramComponent, Diagram, NodeModel, BpmnShapeModel } from '@syncfusio
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public shape: BpmnShapeModel = {
         type: 'Bpmn',
-        shape: 'Event',,
+        shape: 'Event',
         //Sets activity as Task
         activity: {
             activity: 'SubProcess',
@@ -25,7 +25,7 @@ export class AppComponent {
                 collapsed: true
             }
         },
-    },
+    }
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;

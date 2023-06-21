@@ -26,7 +26,7 @@ DataMatrix Barcode is a two dimensional barcode that consists of a grid of dark 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/datamatrix/datamatrix-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/datamatrix/datamatrix-cs1" %}
 
 ## Customizing the Barcode color
 
@@ -44,7 +44,7 @@ A page or printed media with barcode often appears colorful in the background an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/datamatrix/color-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/datamatrix/color-cs1" %}
 
 ## Customizing the Barcode dimension
 
@@ -62,7 +62,7 @@ The dimension of the barcode can be changed using the height and width property 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/datamatrix/dimension-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/datamatrix/dimension-cs1" %}
 
 ## Customizing the text
 
@@ -80,4 +80,4 @@ In barcode generators you can customize the barcode text by using the display te
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/barcode/datamatrix/text-cs1" %}
+{% previewsample "page.domainurl/samples/barcode/datamatrix/text-cs1" %}

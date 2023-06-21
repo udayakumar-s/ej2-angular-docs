@@ -28,7 +28,7 @@ export class AppComponent {
             { key: 'Estimate', type: 'Numeric', validationRules: { range: [0, 1000] } },
             { key: 'Summary', type: 'TextArea', validationRules: { required: true } }
         ]
-    };
+    } as DialogSettingsModel;
 }
 
 

@@ -1,11 +1,11 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChartComponent } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<div class="col-md-8">
+    template: `<div class="col-md-8">
     <button ej-button id='print' (click)='print()'>Print</button>
     <ejs-accumulationchart #chart id="chart-container">
         <e-accumulation-series-collection>
@@ -15,9 +15,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
     </div> `
 })
 export class AppComponent implements OnInit {
-    public piedata: Object[];
+    public piedata?: Object[];
     @ViewChild('chart')
-    public chartObj: ChartComponent;
+    public chartObj?: ChartComponent;
     ngOnInit(): void {
         this.piedata = [
                 { x: 'Jan', y: 3, text: 'Jan: 3' }, { x: 'Feb', y: 3.5, text: 'Feb: 3.5' },
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
                 { x: 'Sep', y: 21, text: 'Sep: 21' }, { x: 'Oct', y: 15, text: 'Oct: 15' }];
         }
         print() {
-            this.chartObj.print();
+            this.chartObj?.print();
        }
     }
 

@@ -32,7 +32,8 @@ public data: Object = new DataManager({
     adaptor: new JsonAdaptor
 });
 public query = new Query().range(0,this.pagesize);
-public clickevent(args) {
+  templatecheck: boolean;
+public clickevent(args: any) {
   this.query = new Query().range((args.currentPage - 1) * this.pagesize, (args.currentPage * this.pagesize));
 }
 constructor(){

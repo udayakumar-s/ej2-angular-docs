@@ -26,7 +26,7 @@ You can show mention character as prefix of selected item in mention component u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/customization-cs1" %}
+{% previewsample "page.domainurl/samples/mention/customization-cs1" %}
 
 ## Adding the suffix character after selection
 
@@ -44,7 +44,7 @@ You can add suffix character while selecting an item in Mention component using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/suffixText-cs1" %}
+{% previewsample "page.domainurl/samples/mention/suffixText-cs1" %}
 
 ## Configure the popup list
 
@@ -64,7 +64,7 @@ By default, the popup list width value is set as `auto`. Depending on the mentio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs1" %}
 
 ## Trigger character
 

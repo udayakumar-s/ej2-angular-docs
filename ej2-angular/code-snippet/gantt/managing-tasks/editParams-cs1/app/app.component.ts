@@ -13,10 +13,10 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editSettings: EditSettingsModel;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: EditSettingsModel;
+    public columns?: object[];
     public ngOnInit(): void {
         this.data =  [
             {
@@ -62,7 +62,7 @@ export class AppComponent{
         ];
     }
     public durationFormat = (field: string, data: Object, column: Object)=> {
-      return data[field];
+      return (data as any)[field];
     }
 }
 

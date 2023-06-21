@@ -4,6 +4,7 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { ganttData } from './data';
 import { Gantt } from '@syncfusion/ej2-gantt';
+import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
     selector: 'app-root',
@@ -15,10 +16,10 @@ import { Gantt } from '@syncfusion/ej2-gantt';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
-    public data: object[];
-    public taskSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
     @ViewChild('gantt')
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = ganttData;
         this.taskSettings = {
@@ -32,7 +33,7 @@ export class AppComponent{
         };
     }
     dynamicDrag(): void {
-        this.ganttObj.reorderRows([1,2,3], 4, 'child');
+        this.ganttObj!.reorderRows([1,2,3], 4, 'child');
         };
     }
 

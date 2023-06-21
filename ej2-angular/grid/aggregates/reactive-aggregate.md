@@ -28,7 +28,7 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/reactive-aggregates-batchedit-cs1" %}
+{% previewsample "page.domainurl/samples/grid/reactive-aggregates-batchedit-cs1" %}
 
 ## Refresh aggregate values in inline editing
 
@@ -48,4 +48,4 @@ In the following code, the input event for the Freight column editor has been re
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/reactive-aggregates-inlineedit-cs1" %}
+{% previewsample "page.domainurl/samples/grid/reactive-aggregates-inlineedit-cs1" %}

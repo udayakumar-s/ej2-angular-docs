@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
     </ejs-lineargauge>`
 })
 export class AppComponent implements OnInit {
-    public Title: string;
+    public Title?: string;
     ngOnInit(): void {
         // Title for linear gauge
         this.Title = 'linear gauge';

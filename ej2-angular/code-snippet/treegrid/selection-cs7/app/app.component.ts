@@ -20,12 +20,12 @@ import { TreeGridComponent, SelectionSettingsModel, PageSettingsModel } from '@s
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public selectionOptions: SelectionSettingsModel;
-    public pageOptions: PageSettingsModel;
+    public data?: object[];
+    public selectionOptions?: SelectionSettingsModel;
+    public pageOptions?: PageSettingsModel;
 
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     }
 
     click(): void{
-        let selectedrecords: Object[] = this.treegrid.getSelectedRecords(); // get the selected records.
+        let selectedrecords: Object[] = (this.treegrid as TreeGridComponent).getSelectedRecords(); // get the selected records.
         let selectedRecordsCount: number = selectedrecords.length
         alert(selectedRecordsCount); // to alert the selected records count.
     }

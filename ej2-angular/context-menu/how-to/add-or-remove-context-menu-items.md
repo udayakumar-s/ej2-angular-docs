@@ -26,4 +26,4 @@ In the following example, the **Display Settings** menu items are added before t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/template-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/template-cs1" %}

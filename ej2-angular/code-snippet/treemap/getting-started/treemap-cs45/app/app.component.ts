@@ -34,7 +34,7 @@ export class AppComponent {
         { groupPath: 'JobDescription',headerHeight:45, headerStyle:{ size:'15px' }, border: { color: 'black', width: 0.5 } },
         { groupPath: 'JobGroup',headerHeight:40, headerStyle:{ size:'15px' }, border: { color: 'black', width: 0.5 } },
     ]
-    public palette: object =["#f44336", "#29b6f6", "#ab47bc", "#ffc107", "#5c6bc0", "#009688"],
+    public palette: object =["#f44336", "#29b6f6", "#ab47bc", "#ffc107", "#5c6bc0", "#009688"];
 }
 
 

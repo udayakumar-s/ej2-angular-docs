@@ -37,7 +37,7 @@ To use calculated field option, you need to inject the `GroupingService` module 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs147" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs147" %}
 
 ## Number Grouping
 
@@ -55,7 +55,7 @@ Number grouping allows users to organize data, which is in number format into di
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs148" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs148" %}
 
 ![output](images/number-group-option.png "Context-menu options for number grouping")
 
@@ -96,7 +96,7 @@ Number grouping can also be configured using the [`groupSettings`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs149" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs149" %}
 
 ![output](images/number-group-updated.png "Applied grouping settings updated in pivot table for number grouping")
 
@@ -122,7 +122,7 @@ Date grouping allows users to organize data, which is in date format into differ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs150" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs150" %}
 
 ![output](images/date-group-option.png "Context-menu options for date grouping")
 
@@ -166,7 +166,7 @@ Date grouping can also be configured using the [`groupSettings`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs151" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs151" %}
 
 Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
 
@@ -194,7 +194,7 @@ Custom grouping can group any data type, such as date, time, number and string, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs152" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs152" %}
 
 In order to create custom grouping in the pivot table, a minimum of two headers belonging to a specific field should be chosen. To select more than one header, press and hold the CTRL key or hold the SHIFT key and click the appropriate row or column headers. Once selection is done, right-click and select "**Group**".
 
@@ -244,7 +244,7 @@ The available custom group properties in [`customGroups`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs153" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs153" %}
 
 ![output](images/custom-group-updated.png "Applied grouping settings updated in pivot table for custom grouping")
 

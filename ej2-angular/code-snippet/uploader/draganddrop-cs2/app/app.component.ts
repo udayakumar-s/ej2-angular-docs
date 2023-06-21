@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
               `
 })
 export class AppComponent {
-    public dropEle: HTMLElement ;
+    public dropEle?: HTMLElement ;
     ngOnInit() {
           this.dropEle = document.getElementById('droparea');
     }

@@ -20,7 +20,7 @@ import { DetailRowService, GridModel, GridComponent, DetailDataBoundEventArgs } 
 })
 export class AppComponent implements OnInit {
 
-    public pData: object[];
+    public pData?: object[];
     public childGrid: GridModel = {
         columns: [
             { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
@@ -29,7 +29,8 @@ export class AppComponent implements OnInit {
             { field: 'ShipName', headerText: 'Ship Name', width: 150 }
         ],
     };
-    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.pData = employeeData;
@@ -37,13 +38,13 @@ export class AppComponent implements OnInit {
 
     detailDataBound(args:DetailDataBoundEventArgs) {
         var orderData = data;
-        var empIdValue = args.childGrid.parentDetails.parentRowData.EmployeeID;
+        var empIdValue = (args as any).childGrid.parentDetails.parentRowData.EmployeeID;
         var matchedData = new DataManager(orderData).executeLocal(
             new Query().where('EmployeeID', 'equal', empIdValue, true)
         );
-        args.childGrid.query = new Query();
-        args.childGrid.dataSource = matchedData;
+        (args as any).childGrid.query = new Query();
+        (args as any).childGrid.dataSource = matchedData;
 }
 
 
-
+}

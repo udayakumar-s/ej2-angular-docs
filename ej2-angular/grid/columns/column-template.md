@@ -32,7 +32,7 @@ The following example demonstrates how to define a [template](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/template-cs1" %}
+{% previewsample "page.domainurl/samples/grid/template-cs1" %}
 
 > The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) option allows to define any HTML content within a column.
 
@@ -54,7 +54,7 @@ The following example demonstrates, hot to render hyperlink column in the Grid u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/template-cs5" %}
+{% previewsample "page.domainurl/samples/grid/template-cs5" %}
 
 >The window.open() method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
 
@@ -80,7 +80,7 @@ In the following example, we rendered the Sparkline Chart component in the Grid 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/template-cs8" %}
+{% previewsample "page.domainurl/samples/grid/template-cs8" %}
 
 ### Render ColorPicker component in a column
 
@@ -106,7 +106,7 @@ In the following code, we rendered the ColorPicker component in the Grid column 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/template-cs6" %}
+{% previewsample "page.domainurl/samples/grid/template-cs6" %}
 
 ### Render DropDownList component in a column
 
@@ -130,7 +130,7 @@ To render a custom component in a grid column, you need to define a [template](h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/column-sync-comp-cs1" %}
+{% previewsample "page.domainurl/samples/grid/column-sync-comp-cs1" %}
 
 ### Render Chip component in a column
 
@@ -156,7 +156,7 @@ In the following code, we rendered the Chips component in the Grid **First Name*
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/template-cs7" %}
+{% previewsample "page.domainurl/samples/grid/template-cs7" %}
 
 ## Using condition template
 
@@ -188,7 +188,7 @@ The following example demonstrates how to use the `template` property with an `n
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/condition-template-cs1" %}
+{% previewsample "page.domainurl/samples/grid/condition-template-cs1" %}
 
 >You can use any template element or custom component instead of the checkbox in the conditional template based on your requirement.
 
@@ -210,7 +210,7 @@ In the following code, the button element is rendered in the **Employee Data** c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/template-cs2" %}
+{% previewsample "page.domainurl/samples/grid/template-cs2" %}
 
 ## Use custom helper inside the template
 
@@ -232,6 +232,6 @@ The following example demonstrates how to use a custom helper function inside th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/custom-helper-template" %}
+{% previewsample "page.domainurl/samples/grid/custom-helper-template" %}
 
 > Custom helpers can only be used inside the ng-template directive of a column.

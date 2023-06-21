@@ -2,7 +2,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { projectNewData } from './data';
@@ -17,12 +17,12 @@ import { projectNewData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = projectNewData;
         this.taskSettings = {
@@ -45,7 +45,7 @@ export class AppComponent{
             };
     };
     reorderColumns(): void {
-        this.ganttObj.reorderColumns('TaskName'  ,'Progress');
+        this.ganttObj!.reorderColumns('TaskName'  ,'Progress');
         };
 }
 

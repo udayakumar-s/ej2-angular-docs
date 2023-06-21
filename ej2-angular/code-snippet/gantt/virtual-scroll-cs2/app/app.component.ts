@@ -2,7 +2,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
+
 import { GanttComponent, VirtualScrollService } from '@syncfusion/ej2-angular-gantt';
 import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 
@@ -16,13 +16,13 @@ import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public splitterSettings: object;
-    public columns: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItem[];
-    public labelSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public splitterSettings?: object;
+    public columns?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItem[];
+    public labelSettings?: object;
     public ngOnInit(): void {
         let tempData: any[] = [
     {

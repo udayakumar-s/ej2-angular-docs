@@ -29,4 +29,4 @@ You can also expand or collapse the accordion items through external button clic
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-checkbox-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-checkbox-cs1" %}

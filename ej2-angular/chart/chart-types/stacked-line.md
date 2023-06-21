@@ -26,7 +26,7 @@ To render a 100% stacked line series, use series [`type`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/line-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/line-cs4" %}
 
 ## Series customization
 
@@ -49,7 +49,7 @@ The following properties can be used to customize the `100% stacked line` series
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/100-stackedline-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/100-stackedline-cs" %}
 
 ## See Also
 

@@ -30,7 +30,7 @@ In the following sample, the first tile of the color palette represents the no c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/no-color/default-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/no-color/default-cs1" %}
 
 ## Custom no color
 
@@ -48,4 +48,4 @@ The following sample show the color palette with custom no color option.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/no-color/custom-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/no-color/custom-cs1" %}

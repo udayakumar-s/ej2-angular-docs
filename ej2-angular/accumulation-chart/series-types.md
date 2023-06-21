@@ -28,7 +28,7 @@ To render a pyramid series, use series [`type`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pyramid-cs7" %}
+{% previewsample "page.domainurl/samples/chart/series/pyramid-cs7" %}
 
 ## Funnel Chart
 
@@ -46,7 +46,7 @@ To render a funnel series, use series [`type`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs8" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs8" %}
 
 ## Customization of Accumulation Chart
 
@@ -66,7 +66,7 @@ Accumulation chart provides options to customize the size of the funnel or pyram
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs9" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs9" %}
 
 ## Neck Size
 
@@ -84,7 +84,7 @@ The funnel neck size can be customized by using the `neckWidth` and `neckHeight`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs10" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs10" %}
 
 ## Gap between the segments
 
@@ -103,7 +103,7 @@ it is applicable for pyramid and funnel chart. It ranges from 0 to 1.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs11" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs11" %}
 
 ## Pyramid mode
 
@@ -121,4 +121,4 @@ Pyramid chart supports linear and surface modes of rendering. The default `pyram
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pyramid-cs8" %}
+{% previewsample "page.domainurl/samples/chart/series/pyramid-cs8" %}

@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
-import { categoryData } from 'datasource.ts';
+import { categoryData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="charts" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings' (loaded)='onChartLoaded($event)' >
+    template: `<ejs-chart id="charts" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings' (loaded)='onChartLoaded($event)' >
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' ></e-series>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver'></e-series>
@@ -18,11 +17,11 @@ import { categoryData } from 'datasource.ts';
 
 export class AppComponent implements OnInit {
     public color: string[] = ['#00BDAE', '#404041', '#357CD2'];
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public legendSettings: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public legendSettings?: Object;
     ngOnInit(): void {
         this.chartData = categoryData;
         this.primaryXAxis = {

@@ -29,31 +29,32 @@ type carType = { CustomerID: string, CustomerName: string, ContactName: string }
 })
 export class AppComponent implements OnInit {
 
-    public names: string[] = ['AROUT', 'BERGS', 'BLONP', 'CHOPS', 'ERNSH'];
-    public toolbar: ToolbarItems[];
+    public names?: string[] = ['AROUT', 'BERGS', 'BLONP', 'CHOPS', 'ERNSH'];
+    public toolbar?: ToolbarItems[];
 
-    @ViewChild('mastergrid') public mastergrid: GridComponent;
-    @ViewChild('detailgrid') public detailgrid: GridComponent;
+    @ViewChild('mastergrid') public mastergrid?: GridComponent;
+    @ViewChild('detailgrid') public detailgrid?: GridComponent;
 
-    public masterdata: Object[];
+    public masterdata?: Object[];
+    public data?: any;
 
     ngOnInit(): void {
-        this.masterdata = customerData.filter((e: carType) => this.names.indexOf(e.CustomerID) !== -1);
+        this.masterdata = customerData.filter((e: carType | any) => (this as any).names.indexOf(e.CustomerID) !== -1);
         this.toolbar = ['ExcelExport'];
     }
     public onRowSelected(args: RowSelectEventArgs): void {
-        let selectedRecord: carType = args.data as carType;
-        this.detailgrid.dataSource = data.filter((record: carType) => record.CustomerName === selectedRecord.ContactName).slice(0, 5);
-        document.getElementById('key').innerHTML = selectedRecord.ContactName;
+        let selectedRecord: carType = (args as any).data as carType;
+        (this.detailgrid as any).dataSource = data.filter((record: carType | any) => record.CustomerName === selectedRecord.ContactName).slice(0, 5);
+        (document.getElementById('key') as any).innerHTML = selectedRecord.ContactName;
     }
-    public toolbarClick(args): void {
-        if (args.item.id === 'mastergrid_excelexport') {
+    public toolbarClick(args: any): void {
+        if ((args as any).item.id === 'mastergrid_excelexport') {
             const appendExcelExportProperties: ExcelExportProperties = {
                 multipleExport: { type: 'AppendToSheet', blankRows: 2 },
             };
-            const firstGridExport: Promise<any> = this.mastergrid.excelExport(appendExcelExportProperties, true);
+            const firstGridExport: Promise<any> = (this.mastergrid as any).excelExport(appendExcelExportProperties, true);
             firstGridExport.then((fData: any) => {
-                this.detailgrid.excelExport(appendExcelExportProperties, false, fData);
+                (this.detailgrid as any).excelExport(appendExcelExportProperties, false, fData);
             });
         }
     }

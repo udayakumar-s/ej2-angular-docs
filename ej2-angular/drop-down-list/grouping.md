@@ -30,7 +30,7 @@ In the following sample, vegetables are grouped according on its category using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs14" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs14" %}
 
 ## Customization
 

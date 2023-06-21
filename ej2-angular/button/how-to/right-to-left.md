@@ -26,4 +26,4 @@ The following example illustrates how to enable right-to-left support in Button 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button/block-cs2" %}
+{% previewsample "page.domainurl/samples/button/block-cs2" %}

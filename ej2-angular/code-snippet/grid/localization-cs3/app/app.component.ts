@@ -10,7 +10,7 @@ import timeZoneNames from './timeZoneNames.json';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [locale]='es-AR' height='315px'>
+    template: `<ejs-grid [dataSource]='data' [locale]='locale' height='315px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
@@ -22,8 +22,9 @@ import timeZoneNames from './timeZoneNames.json';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public formatOptions: object;
+    public data?: object[];
+    public formatOptions?: object;
+    public locale: any = 'es-AR';
 
     ngOnInit(): void {
         setCulture('es-AR');

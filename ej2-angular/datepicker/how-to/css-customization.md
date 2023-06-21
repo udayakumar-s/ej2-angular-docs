@@ -48,4 +48,4 @@ Following is the list of classes that provides flexible way to customize the Dat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/customization-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/customization-cs1" %}

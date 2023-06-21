@@ -24,7 +24,7 @@ The row selection in the Gantt component can be enabled or disabled using the [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/disableselect-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/disableselect-cs1" %}
 
 > `Row` Selection is default type of gantt selection.
 
@@ -44,7 +44,7 @@ You can select a row at the time of loading by setting the index of the row to t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/selectrow-initial-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/selectrow-initial-cs1" %}
 
 ## Selecting a row dynamically
 
@@ -62,7 +62,7 @@ You can also select a row dynamically using the [`selectRow`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/selectrow-dynamic-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/selectrow-dynamic-cs1" %}
 
 ## Multiple row selection
 
@@ -80,7 +80,7 @@ You can select multiple rows by setting the [`selectionSettings.type`](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/multiplerow-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/multiplerow-cs1" %}
 
 ## Selecting multiple rows dynamically
 
@@ -98,7 +98,7 @@ You can also select rows dynamically using the [`selectRows`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/multiplerow-dynamic-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/multiplerow-dynamic-cs1" %}
 
 ## Customize row selection action
 
@@ -116,6 +116,6 @@ While selecting a row in Gantt, the [`rowSelecting`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/selection/customize-rowselection-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/selection/customize-rowselection-cs1" %}
 
 In the Gantt component, when you click an already selected row, selection will be cleared. While deselecting a row in Gantt, the [`rowDeselecting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdeselecting) and [`rowDeselected`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdeselected) events will occur. The [`rowDeselecting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdeselecting) event will occur on initialization of deselecting row, and you can get the current deselecting row’s information to prevent the deselection of particular row. The [`rowDeselected`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdeselected) event will occur on completion of row deselection action, and you can get the current deselected row’s information.

@@ -17,13 +17,13 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     public currencyFormatter = (field: string, valueAccessordata: object, column: object) => {
-        return '€' + valueAccessordata["Freight"];
+        return '€' + (valueAccessordata as any)["Freight"];
     }
 
     public concatenateFields = (field: string, valueAccessordata: object, column: object) => {
-        return valueAccessordata[field] + ' - ' + valueAccessordata["ShipRegion"];
+        return (valueAccessordata as any)[field] + ' - ' + (valueAccessordata as any)["ShipRegion"];
     }
 
     ngOnInit(): void {

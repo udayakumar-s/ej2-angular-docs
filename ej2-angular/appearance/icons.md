@@ -109,7 +109,7 @@ The following steps explain the direct rendering of the Syncfusion icon in the H
     {% endhighlight %}
     {% endtabs %}
   
-    {% previewsample "page.domainurl/code-snippet/common/icons" %}
+    {% previewsample "page.domainurl/samples/common/icons" %}
 
 ### Icon size
 
@@ -140,7 +140,7 @@ The pre-defined icon size is present in the available classes listed below.
     {% endhighlight %}
     {% endtabs %}
   
-    {% previewsample "page.domainurl/code-snippet/common/icons-size" %}
+    {% previewsample "page.domainurl/samples/common/icons-size" %}
 
 ### Icon appearance customization
 
@@ -158,7 +158,7 @@ The Syncfusion Angular icons can be customized with custom color and size by ove
     {% endhighlight %}
     {% endtabs %}
   
-    {% previewsample "page.domainurl/code-snippet/common/icons-customization" %}
+    {% previewsample "page.domainurl/samples/common/icons-customization" %}
 
 ## Available Icons
 

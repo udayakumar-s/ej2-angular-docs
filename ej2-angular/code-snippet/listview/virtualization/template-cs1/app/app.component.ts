@@ -39,7 +39,7 @@ export class AppComponent {
 public ngOnInit() {
     for (let i: number = 10; i <= 1010; i++) {
         let index: number = parseInt((Math.random() * 10).toString());
-        this.listData.push({ name: this.listData[index].name, icon: this.listData[index].icon, imgUrl: this.listData[index].imgUrl, id: i.toString() });
+        this.listData.push({ name: (this.listData[index] as any).name, icon: (this.listData[index] as any).icon, imgUrl: (this.listData[index] as any).imgUrl, id: i.toString() });
     }
 }
 }

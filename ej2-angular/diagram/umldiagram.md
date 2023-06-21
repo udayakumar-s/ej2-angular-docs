@@ -43,7 +43,7 @@ The UML class diagram shapes are explained as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/class-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/class-cs1" %}
 
 ## Interface
 
@@ -71,7 +71,7 @@ The UML class diagram shapes are explained as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/interface-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/interface-cs1" %}
 
 ## Enumeration
 
@@ -93,7 +93,7 @@ The UML class diagram shapes are explained as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/enumeration-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/enumeration-cs1" %}
 
 ## Connector shapes
 
@@ -138,7 +138,7 @@ The association property allows you to define the type of association. The defau
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/association-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/association-cs1" %}
 
 ## Aggregation
 
@@ -160,7 +160,7 @@ The following code example illustrates how to create an aggregation.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/aggregation-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/aggregation-cs1" %}
 
 ## Composition
 
@@ -180,7 +180,7 @@ The following code example illustrates how to create a composition.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/composition-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/composition-cs1" %}
 
 ## Dependency
 
@@ -200,7 +200,7 @@ The following code example illustrates how to create an dependency.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/dependency-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/dependency-cs1" %}
 
 ## Inheritance
 
@@ -222,7 +222,7 @@ The following code example illustrates how to create an inheritance.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/inheritance-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/inheritance-cs1" %}
 
 ## Multiplicity
 
@@ -257,7 +257,7 @@ The following code example illustrates how to customize the multiplicity.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/multiplicity-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/multiplicity-cs1" %}
 
 ## UmlActivity diagram
 
@@ -301,7 +301,7 @@ The following code illustrates how to create a UmlActivity shapes.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/UmlActivity-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/UmlActivity-cs1" %}
 
 ### UmlActivity connector
 
@@ -321,7 +321,7 @@ The following code illustrates how to create a UmlActivity connector.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/umldiagramshapes/UmlActivityConnector-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/UmlActivityConnector-cs1" %}
 
 ### Editing
 

@@ -44,7 +44,7 @@ The built-in toolbar can be customized using the [`toolbar`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs15" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs15" %}
 
 ## Toolbar template
 
@@ -64,7 +64,7 @@ The toolbar of the Image Editor can be replaced with the user specific UI using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs16" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs16" %}
 
 ## Customize Contextual Toolbar
 
@@ -84,4 +84,4 @@ In the following example, the contextual toolbar for rectangle will be rendered 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs17" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs17" %}

@@ -104,12 +104,12 @@ export class AppComponent {
     // Mapping TreeView fields property with data source properties
     public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'subChild', htmlAttributes: 'hasAttribute' };
 
-    @ViewChild ('treevalidate') treevalidate: TreeViewComponent;
-    @ViewChild ('contentmenutree') contentmenutree: ContextMenuComponent;
+    @ViewChild ('treevalidate') treevalidate?: TreeViewComponent;
+    @ViewChild ('contentmenutree') contentmenutree?: ContextMenuComponent;
 
     public nodeclicked(args: NodeClickEventArgs) {
         if (args.event.which === 3) {
-            this.treevalidate.selectedNodes = [args.node.getAttribute('data-uid')];
+            (this.treevalidate as TreeViewComponent).selectedNodes = [args.node.getAttribute('data-uid') as string];
         }
     }
 
@@ -122,37 +122,37 @@ public menuItems: MenuItemModel[] = [
 
 public index: number = 1;
 public menuclick(args: MenuEventArgs) {
-    let targetNodeId: string = this.treevalidate.selectedNodes[0];
+    let targetNodeId: string = this.treevalidate?.selectedNodes[0] as string;
     if (args.item.text == "Add New Item") {
     let nodeId: string = "tree_" + this.index;
     let item: { [key: string]: Object } = { id: nodeId, name: "New Folder" };
-        this.treevalidate.addNodes([item], targetNodeId, null);
+        this.treevalidate?.addNodes([item], targetNodeId, null as any);
         this.index++;
         this.hierarchicalData.push(item);
-        this.treevalidate.beginEdit(nodeId);
+        this.treevalidate?.beginEdit(nodeId);
     }
     else if (args.item.text == "Remove Item") {
-        this.treevalidate.removeNodes([targetNodeId]);
+        this.treevalidate?.removeNodes([targetNodeId]);
     }
     else if (args.item.text == "Rename Item") {
-        this.treevalidate.beginEdit(targetNodeId);
+        this.treevalidate?.beginEdit(targetNodeId);
     }
 }
 
 public beforeopen(args: BeforeOpenCloseMenuEventArgs) {
-    let targetNodeId: string = this.treevalidate.selectedNodes[0];
-    let targetNode: Element = document.querySelector('[data-uid="' + targetNodeId + '"]');
+    let targetNodeId: string = this.treevalidate?.selectedNodes[0] as string;
+    let targetNode: Element = document.querySelector('[data-uid="' + targetNodeId + '"]') as Element;
     if (targetNode.classList.contains('remove')) {
-        this.contentmenutree.enableItems(['Remove Item'], false);
+        this.contentmenutree?.enableItems(['Remove Item'], false);
     }
     else {
-        this.contentmenutree.enableItems(['Remove Item'], true);
+        this.contentmenutree?.enableItems(['Remove Item'], true);
     }
     if (targetNode.classList.contains('rename')) {
-        this.contentmenutree.enableItems(['Rename Item'], false);
+        this.contentmenutree?.enableItems(['Rename Item'], false);
     }
     else {
-        this.contentmenutree.enableItems(['Rename Item'], true);
+        this.contentmenutree?.enableItems(['Rename Item'], true);
     }
 }
 }

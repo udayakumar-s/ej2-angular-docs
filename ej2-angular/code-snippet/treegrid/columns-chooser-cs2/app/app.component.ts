@@ -21,11 +21,11 @@ export class AppComponent implements OnInit {
     public data: object[] = [];
     @ViewChild('treegrid')
 
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
     }
     show() {
-        this.treegrid.columnChooserModule.openColumnChooser(200, 50); // give X and Y axis
+        (this.treegrid as TreeGridComponent).columnChooserModule.openColumnChooser(200, 50); // give X and Y axis
     }
 }

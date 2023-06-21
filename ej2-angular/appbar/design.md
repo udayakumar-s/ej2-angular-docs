@@ -28,7 +28,7 @@ The following example depicts the code to provide spacing between the home and p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/spacer-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/spacer-cs1" %}
 
 ## Separator
 
@@ -48,7 +48,7 @@ The following example depicts the code to provide a vertical line between a grou
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/separator-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/separator-cs1" %}
 
 ## Media Query
 
@@ -66,7 +66,7 @@ Media Query is used to adjusting the AppBar for different screen sizes. Resize t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/media-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/media-cs1" %}
 
 ## Designing AppBar with Menu
 
@@ -84,7 +84,7 @@ AppBar is rendered with a Menu component in its AppBar header area. Menu compone
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/menu-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/menu-cs1" %}
 
 ## Designing AppBar with Buttons
 
@@ -102,7 +102,7 @@ The AppBar is rendered with a Button and DropDownButton component in its AppBar 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/buttons-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/buttons-cs1" %}
 
 ## Designing AppBar with SideBar
 
@@ -120,4 +120,4 @@ The AppBar is rendered with the SideBar component below the AppBar. Click on the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/sidebar-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/sidebar-cs1" %}

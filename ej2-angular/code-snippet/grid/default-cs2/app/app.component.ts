@@ -22,17 +22,18 @@ import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
     public contextMenuItems: ContextMenuItemModel[] = [{ text: 'Copy with headers', target: '.e-content', id: 'copywithheader' }];
-    @ViewChild('grid') public grid: GridComponent;
+    @ViewChild('grid')
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = employeeData;
     }
 
     contextMenuClick(args: MenuEventArgs): void {
-        if (args.item.id === 'copywithheader') {
-            this.grid.copy(true);
+        if ((args as any).item.id === 'copywithheader') {
+            (this.grid as any).copy(true);
         }
     }
 }

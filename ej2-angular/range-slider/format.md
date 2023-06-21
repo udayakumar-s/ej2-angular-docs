@@ -28,7 +28,7 @@ The `format` feature used to customize the units of Slider values to desired for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/format-01-cs1" %}
+{% previewsample "page.domainurl/samples/slider/format-01-cs1" %}
 
 ## Using format API
 
@@ -46,7 +46,7 @@ In this method, we have different predefined formatting styles like Numeric (N),
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/format-02-cs1" %}
+{% previewsample "page.domainurl/samples/slider/format-02-cs1" %}
 
 ## Using Events
 
@@ -65,4 +65,4 @@ In this sample we have customized the `ticks` values into weekdays as one format
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/format-03-cs1" %}
+{% previewsample "page.domainurl/samples/slider/format-03-cs1" %}

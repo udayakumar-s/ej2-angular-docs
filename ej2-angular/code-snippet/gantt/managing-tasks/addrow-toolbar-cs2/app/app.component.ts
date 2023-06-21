@@ -11,10 +11,10 @@ encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
 // Data for Gantt
-public data: object[];
-public taskSettings: object;
-public editSettings: object;
-public toolbar: string[];
+public data?: object[];
+public taskSettings?: object;
+public editSettings?: object;
+public toolbar?: string[];
 public ngOnInit(): void {
     this.data =  [
         {

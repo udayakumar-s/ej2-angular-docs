@@ -33,9 +33,9 @@ import { GridComponent, TextWrapSettingsModel } from '@syncfusion/ej2-angular-gr
 })
 export class AppComponent {
 
-  public data: Object[] = inventoryData;
+  public data?: Object[] = inventoryData;
   @ViewChild('grid')
-  public grid: GridComponent;
+  public grid?: GridComponent;
   public wrapSettings: TextWrapSettingsModel = { wrapMode: 'Header' };
   public dropdownData: Object[] = [
     { text: 'Header', value: 'Header' },
@@ -43,7 +43,7 @@ export class AppComponent {
   ];
 
   valueChange(args: any): void {
-    this.grid.textWrapSettings.wrapMode = args.value;
+    (this.grid as any).textWrapSettings.wrapMode = (args as any).value;
   }
 
 }

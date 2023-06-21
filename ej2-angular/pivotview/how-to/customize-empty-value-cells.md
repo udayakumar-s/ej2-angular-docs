@@ -24,4 +24,4 @@ You can show the custom string in the empty value cells using the `emptyCellsTex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs162" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs162" %}

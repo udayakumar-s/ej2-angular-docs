@@ -17,13 +17,13 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextE
       <li>actionBegin - Triggers before command execution using toolbar items or executeCommand method.</li>
       <li>actionComplete - Triggers after command execution using toolbar items or executeCommand method.</li>
       <li>destroyed – Triggers when the component is destroyed.</li>
-      </ul>
+      </ul> 
     </ng-template>
     </ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService ]
 })
 export class AppComponent  {
-@ViewChild('sample') public rteObj: RichTextEditorComponent;
+@ViewChild('sample') public rteObj?: RichTextEditorComponent;
 public fontFamily: Object = {
   items: [
     {text: "Segoe UI", value: "Segoe UI", class: "e-segoe-ui",  command: "Font", subCommand: "FontName"},

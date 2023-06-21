@@ -17,8 +17,8 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public cap: Object;
-    public needleTail: Object;
+    public cap?: Object;
+    public needleTail?: Object;
     ngOnInit(): void {
         // Initialize objects
         this.cap= {

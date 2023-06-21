@@ -31,7 +31,7 @@ When rendering the Carousel component using items binding, you can assign templa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs14" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs14" %}
 
 ## Populating items using data source
 
@@ -49,7 +49,7 @@ When rendering the Carousel component using data binding, you can assign a commo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs15" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs15" %}
 
 ## Selection
 
@@ -74,7 +74,7 @@ Using the [`selectedIndex`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs16" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs16" %}
 
 ### Select an item using the method
 
@@ -92,7 +92,7 @@ Using the [`prev`](https://ej2.syncfusion.com/angular/documentation/api/carousel
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/default-cs17" %}
+{% previewsample "page.domainurl/samples/carousel/default-cs17" %}
 
 ## Partial visible slides
 
@@ -110,7 +110,7 @@ The Carousel component supports to show one complete slide and a partial view of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/partial-visible-cs1" %}
+{% previewsample "page.domainurl/samples/carousel/partial-visible-cs1" %}
 
 > Slide animation only applicable if the `partialVisible` is enabled.
 
@@ -132,7 +132,7 @@ The following example code depicts the functionality of `partialVisible` and wit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/carousel/partial-visible-cs2" %}
+{% previewsample "page.domainurl/samples/carousel/partial-visible-cs2" %}
 
 ## See Also
 

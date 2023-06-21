@@ -193,7 +193,7 @@ Run the `ng serve` command in command window, it will serve your application and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/getting-started-form-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/getting-started-form-cs1" %}
 
 ## Add the In-place Editor with Textbox
 
@@ -266,7 +266,7 @@ Once you have configured Textbox, DatePicker and DropDownList you will get follo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/getting-started-form-cs2" %}
+{% previewsample "page.domainurl/samples/in-place-editor/getting-started-form-cs2" %}
 
 ## Two-way binding
 
@@ -284,7 +284,7 @@ In In-place Editor, the `value` property supports two-way binding functionality.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/two-way-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/two-way-cs1" %}
 
 ## Submitting data to the server (save)
 
@@ -314,7 +314,7 @@ The edited data is submitted to the server and you can see the new values gettin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/getting-started-cs1" %}
 
 ## See Also
 

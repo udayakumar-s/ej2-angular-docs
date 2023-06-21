@@ -12,14 +12,14 @@ import { conditionalFormatData } from './datasource';
                 <e-rows>
                     <e-row>
                         <e-cells>
-                            <e-cell value="Seller Name" [style]="styles"></e-cell>
-                            <e-cell value="Customer Id" [style]="styles"></e-cell>
-                            <e-cell value="Customer Name" [style]="styles"></e-cell>
-                            <e-cell value="Product Name" [style]="styles"></e-cell>
-                             <e-cell value="Product Price" [style]="styles"></e-cell>
-                            <e-cell value="Sales Date" [style]="styles"></e-cell>
-                            <e-cell value="Billing Time" [style]="styles"></e-cell>
-                            <e-cell value="Total Price" [style]="styles"></e-cell>
+                            <e-cell value="Seller Name" [style]="style"></e-cell>
+                            <e-cell value="Customer Id" [style]="style"></e-cell>
+                            <e-cell value="Customer Name" [style]="style"></e-cell>
+                            <e-cell value="Product Name" [style]="style"></e-cell>
+                             <e-cell value="Product Price" [style]="style"></e-cell>
+                            <e-cell value="Sales Date" [style]="style"></e-cell>
+                            <e-cell value="Billing Time" [style]="style"></e-cell>
+                            <e-cell value="Total Price" [style]="style"></e-cell>
                         </e-cells>
                     </e-row>
                     <e-row>
@@ -86,9 +86,9 @@ import { conditionalFormatData } from './datasource';
 })
 export class AppComponent {
     @ViewChild('default')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
-    public style: CellStyleModel = { fontWeight: "bold", textAlign: "center" };
+    public style: any = { fontWeight: "bold", textAlign: "center" };
     public validation = { type: 'WholeNumber', operator: 'NotEqualTo', value1: '1' };
     public listValidation = { type: 'List', value1: 'Digger, Digger, Cherrypicker' };
     public listValidation1 = { type: 'List', value1: '50000,50000,45000' };
@@ -98,15 +98,17 @@ export class AppComponent {
     public validation4 = { type: 'List', value1: '450, 95' };
     public validation5 = { type: 'List', value1: 'JCB, Ropes, scaffolding' };
     public validation6 = { type: 'List', value1: '90000, 95, 10000' };
+openUrl: any;
+saveUrl: any;
     created() {
       //Add Data validation to range.
-      this.spreadsheetObj.addDataValidation({ type: 'TextLength', operator: 'LessThanOrEqualTo', value1: '4' }, 'A2:A5');
-      this.spreadsheetObj.addDataValidation({ type: 'WholeNumber', operator: 'NotEqualTo', value1: '1' }, 'B2:B5');
-      this.spreadsheetObj.addDataValidation({ type: 'Date', operator: 'NotEqualTo', value1: '04/11/2019' }, 'F2:F5');
-      this.spreadsheetObj.addDataValidation({ type: 'Time', operator: 'Between', value1: '10:00:00 AM', value2: '11:00:00 AM' }, 'G2:G5');
-      this.spreadsheetObj.addDataValidation({ type: 'Decimal', operator: 'LessThan', value1: '100000.00' }, 'H2:H5');
+      this.spreadsheetObj!.addDataValidation({ type: 'TextLength', operator: 'LessThanOrEqualTo', value1: '4' }, 'A2:A5');
+      this.spreadsheetObj!.addDataValidation({ type: 'WholeNumber', operator: 'NotEqualTo', value1: '1' }, 'B2:B5');
+      this.spreadsheetObj!.addDataValidation({ type: 'Date', operator: 'NotEqualTo', value1: '04/11/2019' }, 'F2:F5');
+      this.spreadsheetObj!.addDataValidation({ type: 'Time', operator: 'Between', value1: '10:00:00 AM', value2: '11:00:00 AM' }, 'G2:G5');
+      this.spreadsheetObj!.addDataValidation({ type: 'Decimal', operator: 'LessThan', value1: '100000.00' }, 'H2:H5');
       //Highlight Invalid Data.
-      this.spreadsheetObj.addInvalidHighlight('A1:H5');
+      this.spreadsheetObj!.addInvalidHighlight('A1:H5');
     }
 }
 

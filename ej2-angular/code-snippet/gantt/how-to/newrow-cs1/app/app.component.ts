@@ -2,25 +2,25 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
+import { ToolbarItem, EditSettingsModel, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { MenuItemModel, ContextMenu } from '@syncfusion/ej2-navigations';
 import { Gantt } from '@syncfusion/ej2-gantt';
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    template:
-    `<ejs-contextmenu id='contextmenu' [items]= 'menuItems' (select)="select($event)"></ejs-contextmenu>`
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)"></ejs-gantt>`,
+    template:`<ejs-contextmenu id='contextmenu' [items]= 'menuItems' (select)="select($event)"></ejs-contextmenu>
+       <ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.data =  [
             {
@@ -77,32 +77,32 @@ export class AppComponent{
         }];
         public select(args: any) {
             if (args.item.text === "Bottom") {
-            ganttObj.editSettings.newRowPosition = "Bottom";
-            ganttObj.openAddDialog();
+            this.ganttObj.editSettings.newRowPosition = "Bottom";
+            this.ganttObj.openAddDialog();
         } else if (args.item.text === "Above") {
-            if (ganttObj.selectedRowIndex == -1) {
+            if (this.ganttObj.selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                ganttObj.editSettings.newRowPosition = "Above";
-                ganttObj.openAddDialog();
+                this.ganttObj.editSettings.newRowPosition = "Above";
+                this.ganttObj.openAddDialog();
             }
         } else if (args.item.text === "Below") {
-            if (ganttObj.selectedRowIndex == -1) {
+            if (this.ganttObj.selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                ganttObj.editSettings.newRowPosition = "Below";
-                ganttObj.openAddDialog();
+                this.ganttObj.editSettings.newRowPosition = "Below";
+                this.ganttObj.openAddDialog();
             }
         } else if (args.item.text === "Child") {
-            if (ganttObj.selectedRowIndex == -1) {
+            if (this.ganttObj.selectedRowIndex == -1) {
                 alert("Please select any row");
             } else {
-                ganttObj.editSettings.newRowPosition = "Child";
-                ganttObj.openAddDialog();
+                this.ganttObj.editSettings.newRowPosition = "Child";
+                this.ganttObj.openAddDialog();
             }
         } else if (args.item.text === "Top") {
-            ganttObj.editSettings.newRowPosition = "Top";
-            ganttObj.openAddDialog();
+            this.ganttObj.editSettings.newRowPosition = "Top";
+            this.ganttObj.openAddDialog();
         }
         }
     public toolbarClick(args: ClickEventArgs): void {
@@ -114,4 +114,9 @@ export class AppComponent{
 }
 
 
+
+
+function getInstance(arg0: HTMLElement | null, ContextMenu: any): ContextMenu {
+    throw new Error('Function not implemented.');
+}
 

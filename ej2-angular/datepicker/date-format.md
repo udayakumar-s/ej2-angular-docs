@@ -34,7 +34,7 @@ The following example demonstrates the DatePicker with the custom format (`yyyy-
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs3" %}
 
 ## Parse and Format Date value based on culture-specific formats
 
@@ -56,4 +56,4 @@ The following example demonstrates how to parse the date value and format the da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datepicker/parse-format-date-cs1" %}
+{% previewsample "page.domainurl/samples/datepicker/parse-format-date-cs1" %}

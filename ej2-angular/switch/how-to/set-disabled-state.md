@@ -26,4 +26,4 @@ The following example illustrates how to disable support in Switch component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/switch/getting-started-cs3" %}

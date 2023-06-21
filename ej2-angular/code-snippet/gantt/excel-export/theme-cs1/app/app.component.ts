@@ -15,11 +15,11 @@ import { GanttData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public toolbar: ToolbarItem[];
+    public data?: object[];
+    public taskSettings?: object;
+    public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = GanttData;
         this.taskSettings = {
@@ -34,14 +34,14 @@ export class AppComponent{
     }
     public toolbarClick(args: ClickEventArgs): void {
             if (args.item.id === 'ganttDefault_excelexport') {
-                let excelExportProperties: ExcelExportProperties = {
+                let excelExportProperties: any = {
                     theme:
                         {
                             header: { fontName: 'Segoe UI', fontColor: '#666666' },
                             record: { fontName: 'Segoe UI', fontColor: '#666666' }
                         }
                 };
-                this.ganttObj.excelExport(excelExportProperties);
+                this.ganttObj!.excelExport(excelExportProperties);
             }
     };
 }

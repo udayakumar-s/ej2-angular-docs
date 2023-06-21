@@ -18,10 +18,10 @@ import { EditSettingsModel, ToolbarItems, GridComponent, Column, SaveEventArgs, 
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    @ViewChild('grid') grid: GridComponent;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    @ViewChild('grid') grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -30,8 +30,8 @@ export class AppComponent implements OnInit {
     }
 
     actionBegin(args: EditEventArgs) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            for (const cols of this.grid.columns) {
+        if (((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add')) {
+            for (const cols of (this.grid as any).columns) {
                 if ((cols as Column).field === 'CustomerID') {
                     (cols as Column).visible = true;
                 } else if ((cols as Column).field === 'ShipCountry') {
@@ -39,8 +39,8 @@ export class AppComponent implements OnInit {
                 }
             }
         }
-        if (args.requestType === 'save') {
-            for (const cols of this.grid.columns) {
+        if ((args as any).requestType === 'save') {
+            for (const cols of (this.grid as any).columns) {
                 if ((cols as Column).field === 'CustomerID') {
                     (cols as Column).visible = false;
                 } else if ((cols as Column).field === 'ShipCountry') {

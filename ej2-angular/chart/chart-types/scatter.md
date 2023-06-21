@@ -26,7 +26,7 @@ To render a scatter series, use series [`type`](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/scatter-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/scatter-cs1" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ The following properties can be used to customize the `scatter` series.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/scatter-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/scatter-cs" %}
 
 ## See Also
 

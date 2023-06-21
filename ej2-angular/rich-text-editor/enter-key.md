@@ -30,7 +30,7 @@ When the enter key is customized with any of the possible values, pressing the e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/enter-key-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/enter-key-cs1" %}
 
 ## Shift-Enter key customization
 
@@ -50,4 +50,4 @@ When the shift + enter key is customized with any of the possible values, pressi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/shift-enter-key-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/shift-enter-key-cs1" %}

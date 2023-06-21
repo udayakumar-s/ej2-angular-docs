@@ -24,4 +24,4 @@ This section explains about how to open a sub menu on Context Menu item click. T
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/context-menu/getting-started-cs2" %}

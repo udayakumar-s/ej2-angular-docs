@@ -30,4 +30,4 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/tooltip-template-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/tooltip-template-cs1" %}

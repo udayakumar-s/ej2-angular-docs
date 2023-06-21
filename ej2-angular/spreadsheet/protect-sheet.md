@@ -57,7 +57,7 @@ The following example shows `Protect Sheet` functionality with password in the S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/protect-sheet-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/protect-sheet-cs1" %}
 
 ### Limitations of Protect sheet
 
@@ -91,7 +91,7 @@ In protected spreadsheet, to make some particular cell or range of cells are edi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/lock-cells-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/lock-cells-cs1" %}
 
 ## Protect Workbook
 
@@ -119,7 +119,7 @@ The following example shows `Protect Workbook` by using the [`isProtected`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/local-data-binding-cs4" %}
+{% previewsample "page.domainurl/samples/spreadsheet/local-data-binding-cs4" %}
 
 The following example shows `Protect Workbook` by using the [`password`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#password) property in the Spreadsheet control. To unprotect the workbook, click the unprotect workbook button in the data tab and provide the password as syncfusion in the dialog box.
 
@@ -135,7 +135,7 @@ The following example shows `Protect Workbook` by using the [`password`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/local-data-binding-cs5" %}
+{% previewsample "page.domainurl/samples/spreadsheet/local-data-binding-cs5" %}
 
 ## Unprotect Workbook
 

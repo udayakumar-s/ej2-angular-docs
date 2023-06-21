@@ -10,8 +10,11 @@ import { DialogUtility } from '@syncfusion/ej2-popups';
 })
 
 export class AppComponent implements OnInit {
-    public DialogObj;
-    public onOpenDialog = function(event: any): void {
+    ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
+    public DialogObj: any;
+    public onOpenDialog = (event: any): void => {
         this.DialogObj = DialogUtility.confirm({
         title: 'Confirmation Dialog',
         content: "This is a Confirmation Dialog!",

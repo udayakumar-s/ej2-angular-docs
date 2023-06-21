@@ -24,6 +24,6 @@ It can be achieved by using [`formatter`](https://ej2.syncfusion.com/angular/doc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/cut-copy-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/cut-copy-cs1" %}
 
 > You need to import `IHtmlFormatterModel` and `HTMLFormatter` to configure the shortcut key.

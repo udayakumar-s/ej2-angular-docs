@@ -18,13 +18,13 @@ import { CalendarComponent } from '@syncfusion/ej2-angular-calendars';
 })
 export class ParentComponent {
     @ViewChild('calendar')
-    public calendar: CalendarComponent;
+    public calendar?: CalendarComponent;
     value: Date;
     constructor() {
         this.value = new Date("2/1/2020");
     }
     deposit() {
-        this.value = this.calendar.value;
+        this.value = ((this.calendar) as CalendarComponent).value;
     }
     valuecheck(args: any) {
         this.value = args;

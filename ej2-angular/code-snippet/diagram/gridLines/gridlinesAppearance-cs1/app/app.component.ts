@@ -10,7 +10,7 @@ import { DiagramComponent, SnapSettingsModel, SnapConstraints, NodeModel } from 
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public snapSettings: SnapSettingsModel = {
         // Define the Constraints for gridlines and snapping
         constraints: SnapConstraints.ShowLines,

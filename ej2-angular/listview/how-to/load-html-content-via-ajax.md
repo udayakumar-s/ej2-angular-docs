@@ -36,4 +36,4 @@ In the below sample, we have rendered smartphone settings template from external
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/ajax-cs2" %}
+{% previewsample "page.domainurl/samples/listview/ajax-cs2" %}

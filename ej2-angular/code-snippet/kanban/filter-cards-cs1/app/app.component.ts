@@ -20,7 +20,7 @@ import { kanbanData } from './datasource';
             </ejs-kanban>`
 })
 export class AppComponent {
-    @ViewChild('kanban') kanbanObj: KanbanComponent;
+    @ViewChild('kanban') kanbanObj?: KanbanComponent;
     public data: Object[] = kanbanData;
     public cardSettings: CardSettingsModel = {
         contentField: 'Summary',
@@ -32,7 +32,7 @@ export class AppComponent {
         if (args.value !== 'None') {
             filterQuery = new Query().where('Priority', 'equal', args.value);
         }
-        this.kanbanObj.query = filterQuery;
+        (this.kanbanObj as KanbanComponent).query = filterQuery;
     }
 }
 

@@ -17,7 +17,7 @@ import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = new DataManager(data as JSON[]).executeLocal(new Query().take(8));
@@ -25,8 +25,8 @@ export class AppComponent implements OnInit {
 
     public rowDataBound(args: RowDataBoundEventArgs) {
         const OrderID = 'OrderID';
-        if (args.data[OrderID] === 10249) {
-            args.rowHeight = 90;
+        if ((args as any).data[OrderID] === 10249) {
+            (args as any).rowHeight = 90;
         }
     }
 }

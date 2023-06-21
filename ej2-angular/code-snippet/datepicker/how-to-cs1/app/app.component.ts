@@ -11,8 +11,8 @@ import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 })
 export class AppComponent implements OnInit {
     @ViewChild('formElement') element: any;
-    @ViewChild('ejDate') ejDate: DatePickerComponent;
-    public formObject: FormValidator;
+    @ViewChild('ejDate') ejDate?: DatePickerComponent;
+    public formObject?: FormValidator;
     ngOnInit() {
         // custom validator function.
         let customFn: (args: {
@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
         }) => boolean = (args: {
             [key: string]: string
         }) => {
-            return ((this.ejDate.value).getFullYear() > 1990 && (this.ejDate.value).getFullYear() < 2020);
+            return (((this.ejDate as DatePickerComponent ).value).getFullYear() > 1990 && ((this.ejDate as DatePickerComponent ).value).getFullYear() < 2020);
         };
         let options: FormValidatorModel = {
             rules: {
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
                 }
             },
             customPlacement: (inputElement: HTMLElement, errorElement: HTMLElement) => {
-                inputElement.parentElement.parentElement.appendChild(errorElement);
+                inputElement.parentElement?.parentElement?.appendChild(errorElement);
             }
         };
         this.formObject = new FormValidator('#form-element', options);
@@ -40,12 +40,12 @@ export class AppComponent implements OnInit {
     }
     // Form validation takes place when focus() event of DatePicker is triggered.
     public onFocusOut(): void {
-        this.formObject.validate("datepicker");
+        this.formObject?.validate("datepicker");
     }
     // Custom validation takes place when value is changed.
     public onChange(args: any) {
-        if (this.ejDate.value != null)
-            this.formObject.validate("datepicker");
+        if (this.ejDate?.value != null)
+            this.formObject?.validate("datepicker");
     }
 }
 

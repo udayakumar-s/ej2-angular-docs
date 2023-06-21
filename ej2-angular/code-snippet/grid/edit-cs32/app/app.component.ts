@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, IEditCell } from '@syncfusion/ej2-angular-grids';
+import { EditSettingsModel, IEditCell, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -17,13 +17,13 @@ import { EditSettingsModel, IEditCell } from '@syncfusion/ej2-angular-grids';
     </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public formatOptions: object;
-    public params: IEditCell;
-    public fieldName;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public formatOptions?: object;
+    public params?: IEditCell;
+    public fieldName?: any;
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -35,15 +35,15 @@ export class AppComponent implements OnInit {
             }
         };
     }
-    actionComplete(e) {
+    actionComplete(e: any) {
         if (e.requestType === "beginEdit") {
             // focus the column
-            e.form.elements[this.grid.element.getAttribute("id") + this.fieldName].focus();
+            e.form.elements[(this.grid as any).element.getAttribute("id") + this.fieldName].focus();
         }
     }
-    recordDoubleClick(e) {
+    recordDoubleClick(e: any) {
         var clickedColumnIndex = e.cell.getAttribute("data-colindex");
-        this.fieldName = this.grid.columnModel[parseInt(clickedColumnIndex)].field;
+        this.fieldName = (this.grid as any).columnModel[parseInt(clickedColumnIndex)].field;
     }
 }
 

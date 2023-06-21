@@ -16,13 +16,13 @@ import { editingData} from './data';
 
 export class AppComponent{
     // Data for Gantt
-    public copiedRecord: any;
-    public editingData: object[];
-    public taskSettings: object;
-    public editSettings: object;
-    public contextMenuItems: (string | ContextMenuItemModel)[];
+    public copiedRecord?: any;
+    public editingData?: object[];
+    public taskSettings?: object;
+    public editSettings?: object;
+    public contextMenuItems?: (string | ContextMenuItemModel)[];
     @ViewChild('customcontextmenu', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent| any;
     public ngOnInit(): void {
         this.editingData = editingData;
         this.taskSettings = {
@@ -49,9 +49,9 @@ export class AppComponent{
             this.copiedRecord.taskData.TaskID = this.ganttObj.currentViewData.length + 1;
         }
         if (args.item.id === 'paste') {
-            this.ganttObj.addRecord(this.copiedRecord.taskData,'Below',args.rowData.index);
+            this.ganttObj.addRecord(this.copiedRecord.taskData,'Below',args.rowData!.index);
             if(this.copiedRecord.hasChildRecords) {
-                addChildRecords(this.copiedRecord, args.rowData.index + 1);
+                addChildRecords(this.copiedRecord, args.rowData!.index! + 1);
             }
             this.copiedRecord = undefined;
         }
@@ -59,15 +59,15 @@ export class AppComponent{
     public contextMenuOpen (args: ContextMenuOpenEventArgs) {
         if (args.type !== 'Header') {
             if (this.copiedRecord) {
-                args.hideItems.push('Copy');
+                args.hideItems!.push('Copy');
             } else {
-                args.hideItems.push('Paste');
+                args.hideItems!.push('Paste');
              }
         }
     }
 }
 
-function addChildRecords(record, index): void {
+function addChildRecords(this: any, record: any, index: any): void {
     for(var i=0; i<record.childRecords.length; i++) {
           var childRecord = record.childRecords[i];
           childRecord.taskData.TaskID = this.ganttObj.currentViewData.length + 1;

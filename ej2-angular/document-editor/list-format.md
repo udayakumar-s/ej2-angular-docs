@@ -70,7 +70,7 @@ The following sample demonstrates how to create bullet and numbering lists in do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/list-cs1" %}
+{% previewsample "page.domainurl/samples/document-editor/list-cs1" %}
 
 ## Editing numbered list
 

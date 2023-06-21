@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<div style="width:650px; height:350px;">
+    template: `<div style="width:650px; height:350px;">
         <ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'>
             <e-series-collection>
                 <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales' name='Sales'></e-series>
@@ -14,8 +13,8 @@ import { Component, OnInit } from '@angular/core';
     </div>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
     ngOnInit(): void {
         this.chartData = [
             { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },

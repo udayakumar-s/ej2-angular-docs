@@ -28,7 +28,7 @@ To bind local data to the Essential JS 2 components, you can assign a JavaScript
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/data-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/data-cs1" %}
 
 ## Remote Data Binding
 
@@ -52,7 +52,7 @@ In the following sample, **In-place Editor** renders a `DropDownList` component 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/data-cs2" %}
+{% previewsample "page.domainurl/samples/in-place-editor/data-cs2" %}
 
 ### Web API
 
@@ -72,4 +72,4 @@ In the following sample, **In-place Editor** render a `DropDownList` component a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/data-cs3" %}
+{% previewsample "page.domainurl/samples/in-place-editor/data-cs3" %}

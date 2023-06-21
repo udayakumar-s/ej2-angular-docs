@@ -43,7 +43,7 @@ The Mention has provided support to load an array of primitive data such as stri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs10" %}
 
 ### Array of JSON data
 
@@ -63,7 +63,7 @@ In the following example, `ID` column and `Game` column from complex data have b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/mention/data-binding-cs1" %}
 
 ### Array of Complex data
 
@@ -83,7 +83,7 @@ In the following example, `Code.ID` column and `Country.Name` column from comple
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/data-binding-cs2" %}
+{% previewsample "page.domainurl/samples/mention/data-binding-cs2" %}
 
 ## Binding remote data
 
@@ -107,7 +107,7 @@ The following sample displays the first 6 contacts from `Customers` table of the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/data-binding-cs3" %}
+{% previewsample "page.domainurl/samples/mention/data-binding-cs3" %}
 
 ### Web API adaptor
 
@@ -125,7 +125,7 @@ You can use `WebApiAdaptor` to bind mention with Web API created using OData end
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/data-binding-cs4" %}
+{% previewsample "page.domainurl/samples/mention/data-binding-cs4" %}
 
 ## See Also
 

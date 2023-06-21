@@ -48,4 +48,4 @@ Starts the progress.</td></tr>
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs1" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs1" %}

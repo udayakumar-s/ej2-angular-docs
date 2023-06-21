@@ -25,18 +25,18 @@ import { IEditCell } from '@syncfusion/ej2-angular-grids';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public priorityParams : IEditCell;
-    public durationParams : IEditCell;
-    public priorityElem : HTMLElement;
-    public priorityObj : DropDownList;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public priorityParams ?: IEditCell;
+    public durationParams ?: IEditCell;
+    public priorityElem ?: HTMLElement;
+    public priorityObj ?: DropDownList;
 
-    public durationElem : HTMLElement;
-    public durationObj : DropDownList;
+    public durationElem ?: HTMLElement;
+    public durationObj ?: DropDownList;
 
     @ViewChild('treegridObj')
-    public treegridObj: TreeGridComponent;
+    public treegridObj?: TreeGridComponent;
 
     public priorityData: { [key: string]: Object }[] = [
       { priorityName: 'Normal', priorityId: '1' },
@@ -61,21 +61,21 @@ export class AppComponent implements OnInit {
                 return this.priorityElem;
             },
             read:()=>{
-                return this.priorityObj.text;
+                return this.priorityObj?.text;
             },
             destroy:()=>{
-                this.priorityObj.destroy();
+                this.priorityObj?.destroy();
             },
             write:()=>{
                 this.priorityObj = new DropDownList({
                 dataSource: new DataManager(this.priorityData),
                 fields: { value: 'priorityId', text: 'priorityName' },
                 change: () => {
-                this.durationObj.enabled = true;
-                let tempQuery: Query = new Query().where('priorityId', 'equal', this.priorityObj.value);
-                this.durationObj.query = tempQuery;
-                this.durationObj.text = null;
-                this.durationObj.dataBind();
+                (this.durationObj as DropDownList).enabled = true;
+                let tempQuery: Query = new Query().where('priorityId', 'equal', this.priorityObj?.value);
+                (this.durationObj as DropDownList).query = tempQuery;
+                (this.durationObj as any).text = undefined;
+                this.durationObj?.dataBind();
             },
             placeholder: 'Select a priority',
             floatLabelType: 'Never'
@@ -88,10 +88,10 @@ export class AppComponent implements OnInit {
                 return this.durationElem;
             },
             read:()=>{
-                return this.durationObj.text;
+                return this.durationObj?.text;
             },
             destroy:()=>{
-                this.durationObj.destroy();
+                this.durationObj?.destroy();
             },
             write:()=>{
                 this.durationObj = new DropDownList({
@@ -106,4 +106,4 @@ export class AppComponent implements OnInit {
     }
 
 
-
+}

@@ -1,9 +1,7 @@
 
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems, SearchSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { ToolbarItems, SearchSettingsModel, GridComponent, SearchEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Predicate, Query } from '@syncfusion/ej2-data';
 
 @Component({
@@ -20,15 +18,15 @@ import { Predicate, Query } from '@syncfusion/ej2-data';
                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public values;
+    public values: any;
     public key = '';
     public refresh = false;
     public removeQuery = false;
     public valueAssign = false;
-    public data: Object[];
-    public toolbarOptions: ToolbarItems[];
-    public searchOptions: SearchSettingsModel;
-    @ViewChild('Grid') public grid: GridComponent;
+    public data?: Object[];
+    public toolbarOptions?: ToolbarItems[];
+    public searchOptions?: SearchSettingsModel;
+    @ViewChild('Grid') public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -47,16 +45,16 @@ export class AppComponent implements OnInit {
         };
         this.toolbarOptions = ['Search'];
     }
-    actionBegin(args:SearchEventArgs) {
+    actionBegin(args: SearchEventArgs | any) {
         if (args.requestType == 'searching') {
             const keys = args.searchString.split(',');
             var flag = true;
-            var predicate;
+            var predicate: any;
             if (keys.length > 1) {
-                if (this.grid.searchSettings.key !== '') {
+                if ((this.grid as any).searchSettings.key !== '') {
                     this.values = args.searchString;
-                    keys.forEach((key) => {
-                        this.grid.getColumns().forEach((col) => {
+                    keys.forEach((key: any) => {
+                        (this.grid as any).getColumns().forEach((col: any) => {
                             if (flag) {
                                 predicate = new Predicate(col.field, 'contains', key, true);
                                 flag = false;
@@ -67,12 +65,12 @@ export class AppComponent implements OnInit {
                             }
                         });
                     });
-                    this.grid.query = new Query().where(predicate);
-                    this.grid.searchSettings.key = '';
+                    (this.grid as any).query = new Query().where(predicate);
+                    (this.grid as any).searchSettings.key = '';
                     this.refresh = true;
                     this.valueAssign = true;
                     this.removeQuery = true;
-                    this.grid.refresh();
+                    (this.grid as any).refresh();
                 }
             }
         }
@@ -80,16 +78,16 @@ export class AppComponent implements OnInit {
     actionComplete(args:SearchEventArgs) {
         if (args.requestType === 'refresh' && this.valueAssign) {
             (
-                document.getElementById(this.grid.element.id + '_searchbar') as any
+                document.getElementById((this.grid as any).element.id + '_searchbar') as any
             ).value = this.values;
             this.valueAssign = false;
         }
         else if (
-            (document.getElementById(this.grid.element.id + '_searchbar') as any).value === '' && args.requestType === 'refresh' &&
+            (document.getElementById((this.grid as any).element.id + '_searchbar') as any).value === '' && args.requestType === 'refresh' &&
             this.removeQuery) {
-                this.grid.query = new Query();
+                (this.grid as any).query = new Query();
                 this.removeQuery = false;
-                this.grid.refresh();
+                (this.grid as any).refresh();
             }
     }
 }

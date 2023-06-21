@@ -26,4 +26,4 @@ You can enable column selection by setting the [`selectionSettings.allowColumnSe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs6" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs6" %}

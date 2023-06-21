@@ -17,13 +17,13 @@ import { TimePickerComponent } from '@syncfusion/ej2-angular-calendars';
 })
 export class ParentComponent {
     @ViewChild('time')
-    public Time: TimePickerComponent;
-    value: Date;
+    public Time?: TimePickerComponent;
+    value: Date | any;
     constructor() {
         this.value = new Date("2/1/2020");
     }
     deposit() {
-        this.value = this.Time.value;
+        this.value = this.Time?.value;
     }
     valuecheck(args: any) {
         this.value = args;

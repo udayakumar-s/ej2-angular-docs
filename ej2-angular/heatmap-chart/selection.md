@@ -24,7 +24,7 @@ In the HeatMap, the cell selection is used to select the single or multiple heat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/selection/cellSelection-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/selection/cellSelection-cs1" %}
 
 ## Enable single cell selection
 
@@ -42,4 +42,4 @@ In the HeatMap, the [enableMultiSelect](https://helpej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/selection/singleCellSelection-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/selection/singleCellSelection-cs1" %}

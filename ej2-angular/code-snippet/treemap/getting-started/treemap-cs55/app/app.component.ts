@@ -23,7 +23,7 @@ export class AppComponent {
     public tooltipSettings: object = {
             visible: true,
             template:'<div><p>Name: ${fruit}</p><p>Total Count: ${count}</p></div>'
-    },
+    };
 }
 
 

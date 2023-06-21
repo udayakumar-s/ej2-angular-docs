@@ -17,9 +17,9 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: DataManager;
+    public data?: DataManager;
     @ViewChild('treegrid')
-    public treegrid: TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = new DataManager({
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
 }
  onActionFailure(e: any): any {
        let span: HTMLElement = document.createElement('span');
-       this.treegrid.element.parentNode.insertBefore(span, this.treegrid.element);
+       ((this.treegrid?.element as HTMLElement).parentNode as ParentNode).insertBefore(span, (this.treegrid as TreeGridComponent).element);
        span.style.color = '#FF0000'
        span.innerHTML = 'Server exception: 404 Not found';
     }

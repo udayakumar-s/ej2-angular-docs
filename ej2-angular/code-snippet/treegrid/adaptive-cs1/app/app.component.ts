@@ -27,15 +27,15 @@ import { sampleData } from './datasource';
 
 export class AppComponent implements OnInit {
     @ViewChild('adaptive')
-    public treegrid: TreeGridComponent;
-    public data: object[];
-    public editSettings: Object;
-    public toolbar: string[];
-    public orderidrules: Object;
-    public customeridrules: Object;
-    public filterSettings: Object;
-    public menuFilter: Object;
-    public checkboxFilter: Object;
+    public treegrid?: TreeGridComponent;
+    public data?: object[];
+    public editSettings?: Object;
+    public toolbar?: string[];
+    public orderidrules?: Object;
+    public customeridrules?: Object;
+    public filterSettings?: Object;
+    public menuFilter?: Object;
+    public checkboxFilter?: Object;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -46,8 +46,8 @@ export class AppComponent implements OnInit {
         this.filterSettings = { type: 'Excel' };
     }
 
-    public onLoad(): void {
-        this.treegrid.grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
+    public onLoad(args: any): void {
+        (this.treegrid as TreeGridComponent).grid.adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
     }
 }
 

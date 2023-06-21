@@ -29,7 +29,7 @@ You can customize this, by using [`radius`](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/radius-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/radius-cs4" %}
 
 **Doughnut Series**
 
@@ -47,7 +47,7 @@ In order, to achieve a doughnut in pie, you need to customize the [`innerRadius`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/doughnut-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/doughnut-cs1" %}
 
 **Smart Labels**
 
@@ -66,7 +66,7 @@ without overlapping with each other. You can enable or disable this feature usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs1" %}
 
 ## Datalabel template
 
@@ -84,7 +84,7 @@ As like in chart, you can use datalabel template for the points in accumulation 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/smartlabel-cs2" %}
 
 ## Grouping
 
@@ -102,7 +102,7 @@ You can club/group few points of the series based on [`groupTo`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/clubpoint-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/clubpoint-cs1" %}
 
 **Start and End angles**
 
@@ -120,7 +120,7 @@ You can customize the start and end angle of the pie series using [`startAngle`]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/startangle-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/startangle-cs1" %}
 
 **Explode**
 
@@ -140,7 +140,7 @@ Points can also be exploded on load, by using [`explodeIndex`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/explode-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/explode-cs1" %}
 
 **Legend**
 
@@ -162,7 +162,7 @@ Points can also be exploded on load, by using [`explodeIndex`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/legend-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/legend-cs1" %}
 
 ## Annotation
 
@@ -185,7 +185,7 @@ By using the <code>content</code> option of annotation object, you can specify t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/accumulationAnnotation-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/accumulationAnnotation-cs1" %}
 
 >Note: To use annotation feature in accumulation chart, we need to inject `AccumulationAnnotationService` into the `@NgModule.providers`.
 
@@ -207,7 +207,7 @@ Default mode of the empty point is Gap. Others mode supported here are 'Average'
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/radius-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/radius-cs5" %}
 
 **Customizing empty point**
 
@@ -225,4 +225,4 @@ Specific color for empty point can be set by `fill` property in `emptyPointSetti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/radius-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/radius-cs6" %}

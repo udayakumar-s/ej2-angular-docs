@@ -28,7 +28,7 @@ The Image Editor control opens an image by using base64, Image Data, or a hosted
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs8" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs8" %}
 
 ## Save
 
@@ -56,4 +56,4 @@ In the following example, the [`export`](https://ej2.syncfusion.com/angular/docu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs9" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs9" %}

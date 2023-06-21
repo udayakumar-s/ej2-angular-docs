@@ -41,14 +41,14 @@ export class AppComponent implements OnInit {
 
   public data: Object[] = [];
   public dropdownData: string[] = [];
-  public headerText = 'Order Date';
+  public headerText: string = 'Order Date';
 
   ngOnInit() {
     this.data = data;
     this.dropdownData = ['Freight', 'Shipment', 'Cargo'];
   }
   onSwitchToggle(args: any) {
-    this.headerText = args.checked ? 'Purchase Date' : 'Order Date';
+    this.headerText = (args as any).checked ? 'Purchase Date' : 'Order Date';
   }
 
 }

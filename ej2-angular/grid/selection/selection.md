@@ -33,7 +33,7 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs13" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs13" %}
 
 ## Selection mode
 
@@ -55,7 +55,7 @@ Grid supports three types of selection mode which can be set by using [`selectio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/selection-cs14" %}
+{% previewsample "page.domainurl/samples/grid/selection-cs14" %}
 
 ## Touch interaction
 

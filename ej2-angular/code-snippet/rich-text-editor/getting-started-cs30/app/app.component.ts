@@ -44,11 +44,11 @@ import { Dialog } from '@syncfusion/ej2-popups';
 })
 export class AppComponent  {
 @ViewChild('customRTE')
-public rteObj: RichTextEditorComponent;
+public rteObj?: RichTextEditorComponent;
 @ViewChild('Dialog')
-public dialogObj: Dialog;
+public dialogObj?: Dialog;
 public selection: NodeSelection = new NodeSelection();
-public ranges: Range;
+public ranges?: Range;
 public tools: object = {
     items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'OrderedList',
     'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode',
@@ -64,17 +64,17 @@ public tools: object = {
 public dlgButtons: any = [{ buttonModel: { content: "Insert", isPrimary: true }, click: this.onInsert.bind(this) },
 { buttonModel: { content: 'Cancel' }, click: this.dialogOverlay.bind(this) }];
 public header: string = 'Special Characters';
-public target: HTMLElement = document.getElementById('rteSection');
+public target: HTMLElement = document.getElementById('rteSection') as HTMLElement;
 public height: any = '350px';
 public onCreate(): void {
     let customBtn: HTMLElement = document.getElementById('custom_tbar') as HTMLElement;
-    this.dialogObj.target = document.getElementById('rteSection');
+    (this.dialogObj as any).target = document.getElementById('rteSection');
 }
 public dialogCreate(): void {
-    let dialogCtn: HTMLElement = document.getElementById('rteSpecial_char');
+    let dialogCtn: HTMLElement = document.getElementById('rteSpecial_char') as HTMLElement;
     dialogCtn.onclick = (e: Event) => {
         let target: HTMLElement = e.target as HTMLElement;
-        let activeEle: Element = this.dialogObj.element.querySelector('.char_block.e-active');
+        let activeEle: Element = this.dialogObj!.element.querySelector('.char_block.e-active') as Element;
         if (target.classList.contains('char_block')) {
             target.classList.add('e-active');
             if (activeEle) {
@@ -85,28 +85,28 @@ public dialogCreate(): void {
 }
 
 public onClick() {
-    this.rteObj.focusIn();
+    this.rteObj!.focusIn();
     this.ranges = this.selection.getRange(document);
-    this.dialogObj.width = this.rteObj.element.offsetWidth * 0.5;
-    this.dialogObj.dataBind();
-    this.dialogObj.show();
-    this.dialogObj.element.style.maxHeight = 'none';
+    this.dialogObj!.width = this.rteObj!.element.offsetWidth * 0.5;
+    this.dialogObj!.dataBind();
+    this.dialogObj!.show();
+    this.dialogObj!.element.style.maxHeight = 'none';
 }
 
 public onInsert(): void {
-    let activeEle: Element = this.dialogObj.element.querySelector('.char_block.e-active');
+    let activeEle: Element = this.dialogObj!.element.querySelector('.char_block.e-active') as Element;
     if (activeEle) {
-        this.ranges.insertNode(document.createTextNode(activeEle.textContent));
+        this.ranges!.insertNode(document.createTextNode((activeEle as any).textContent));
     }
     this.dialogOverlay();
 }
 
 public dialogOverlay(): void {
-    let activeEle: Element = this.dialogObj.element.querySelector('.char_block.e-active');
+    let activeEle: Element = this.dialogObj!.element.querySelector('.char_block.e-active') as Element;
     if (activeEle) {
         activeEle.classList.remove('e-active');
     }
-    this.dialogObj.hide();
+    this.dialogObj!.hide();
 }
 }
 

@@ -1,21 +1,20 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { toolData } from 'datasource.ts';
+import { toolData } from './datasource';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title' [tooltip]='tooltip'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title' [tooltip]='tooltip'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' width=2 tooltipMappingName='country'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public tooltip: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public tooltip?: Object;
     ngOnInit(): void {
         this.chartData =  [
                     { x: 'Germany', y: 72, country: 'GER: 72'},
@@ -38,3 +37,4 @@ export class AppComponent implements OnInit {
 }
 
 
+}

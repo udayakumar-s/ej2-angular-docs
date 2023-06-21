@@ -7,15 +7,15 @@ import {FileManagerComponent} from '@syncfusion/ej2-angular-filemanager';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='files' #fileManager [ajaxSettings]='ajaxSettings' [toolbarSettings]='toolbarSettings'
     (toolbarClick)='toolbarClick($event)' (toolbarCreate)='toolbarCreate($event)'></ejs-filemanager>`
 })
 export class AppComponent {
     @ViewChild('fileManager')
-    public fileManagerInstance: FileManagerComponent;
-    public ajaxSettings: object;
-    public toolbarSettings: object;
+    public fileManagerInstance?: FileManagerComponent;
+    public ajaxSettings?: object;
+    public toolbarSettings?: object;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {
@@ -33,7 +33,7 @@ export class AppComponent {
     }
     toolbarCreate(args: ToolbarCreateEventArgs) {
         for(var i=0;i<args.items.length;i++) {
-            if(args.items[i].id === this.fileManagerInstance.element.id +'_tb_custom') {
+            if(args.items[i].id === (this.fileManagerInstance as FileManagerComponent).element.id +'_tb_custom') {
                 args.items[i].prefixIcon= 'e-icons e-fe-tick';
             }
         }

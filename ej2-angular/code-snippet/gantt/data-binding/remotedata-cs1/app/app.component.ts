@@ -13,9 +13,9 @@ import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: DataManager;
-    public taskSettings: object;
-    public columns: object[];
+    public data?: DataManager;
+    public taskSettings?: object;
+    public columns?: object[];
     public ngOnInit(): void {
         this.data = new DataManager({
             url: 'https://ej2services.syncfusion.com/production/web-services/api/GanttData',

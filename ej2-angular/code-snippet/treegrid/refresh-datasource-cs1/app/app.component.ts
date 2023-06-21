@@ -23,7 +23,8 @@ import { sampleData } from './datasource';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    @ViewChild('treegrid') public treegrid: TreeGridComponent;
+    @ViewChild('treegrid') public treegrid?: TreeGridComponent;
+    pageSettings: any;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -38,17 +39,17 @@ export class AppComponent implements OnInit {
       progress: 100,
       priority: 'Normal',
     };
-    (this.treegrid.dataSource as object[]).unshift(rdata);
-    this.treegrid.refresh();
+    (this.treegrid?.dataSource as object[]).unshift(rdata);
+    this.treegrid?.refresh();
   }
   delete(): void {
-    const selectedRow: number = this.treegrid.getSelectedRowIndexes()[0];
-    if (this.treegrid.getSelectedRowIndexes().length) {
-      (this.treegrid.dataSource as object[]).splice(selectedRow, 1);
+    const selectedRow: number = this.treegrid?.getSelectedRowIndexes()[0] as number;
+    if (this.treegrid?.getSelectedRowIndexes().length) {
+      (this.treegrid?.dataSource as object[]).splice(selectedRow, 1);
     } else {
       alert('No records selected for delete operation');
     }
-    this.treegrid.refresh();
+    this.treegrid?.refresh();
   }
 }
 

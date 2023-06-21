@@ -9,7 +9,7 @@ import { L10n } from '@syncfusion/ej2-base';
     template: `<label id="comment" >Comments</label>
     <div id="mentionElement" placeholder = "Type @ and tag user"></div>
     <ejs-mention [dataSource]='customerData' [fields]='fields' [query]= 'query' [locale]='locale' [target]='mentionTarget'></ejs-mention>`,
-    styleUrls: ['index.css']
+
 
 })
 export class AppComponent implements OnInit {

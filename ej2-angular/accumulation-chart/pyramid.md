@@ -28,7 +28,7 @@ To known about pyramid, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pyramid-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/pyramid-cs1" %}
 
 ## Mode
 
@@ -46,7 +46,7 @@ The Pyramid chart supports linear and surface modes of rendering. The default ty
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pyramid-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/pyramid-cs2" %}
 
 ## Size
 
@@ -64,7 +64,7 @@ The size of the pyramid chart can be customized by using the  `width` and `heigh
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pyramid-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/pyramid-cs3" %}
 
 ## Gap Between the Segments
 
@@ -82,7 +82,7 @@ Pyramid chart provides options to customize the space between the segments by us
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pyramid-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/pyramid-cs4" %}
 
 ## Explode
 
@@ -100,7 +100,7 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pyramid-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/pyramid-cs5" %}
 
 ## Customization
 
@@ -118,4 +118,4 @@ Individual points can be customized using the `pointRender` event.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pyramid-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/pyramid-cs6" %}

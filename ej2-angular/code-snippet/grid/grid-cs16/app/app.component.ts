@@ -17,16 +17,16 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    @ViewChild('grid') public grid?: GridComponent;
     ngOnInit(): void {
         this.data = data;
     }
     show() {
-        this.grid.showColumns('Customer ID', 'headerText'); // show by HeaderText
+        (this.grid as any).showColumns('Customer ID', 'headerText'); // show by HeaderText
     }
     hide() {
-        this.grid.hideColumns('Customer ID', 'headerText'); // hide by HeaderText
+        (this.grid as any).hideColumns('Customer ID', 'headerText'); // hide by HeaderText
     }
 }
 

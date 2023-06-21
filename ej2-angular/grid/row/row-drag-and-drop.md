@@ -26,7 +26,7 @@ To use Row Drag and Drop, you need to inject **RowDDService** in the provider se
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dragndrop-cs1" %}
+{% previewsample "page.domainurl/samples/grid/dragndrop-cs1" %}
 
 ## Drag and drop rows without drag icons
 
@@ -46,7 +46,7 @@ By setting the [targetID](https://ej2.syncfusion.com/angular/documentation/api/g
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dragndrop-cs2" %}
+{% previewsample "page.domainurl/samples/grid/dragndrop-cs2" %}
 
 > Selection feature must be enabled for row drag and drop.
 

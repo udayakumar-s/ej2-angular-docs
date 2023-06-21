@@ -28,7 +28,7 @@ Styling the tip pointer's size, background, and border colors can be done using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/tooltip/getting-started-cs6" %}
 
 ## Tooltip customization
 
@@ -47,4 +47,4 @@ The following code example shows the way to achieve it.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/custom-css-cs1" %}
+{% previewsample "page.domainurl/samples/tooltip/custom-css-cs1" %}

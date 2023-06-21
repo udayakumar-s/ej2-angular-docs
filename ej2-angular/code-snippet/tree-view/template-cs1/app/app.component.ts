@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
     selector: 'app-container',
     // specifies the template url path
-    templateUrl: './app/template.html',
+    templateUrl: './template.html',
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

@@ -13,15 +13,15 @@ import { ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public columns: object[];
-    public timelineSettings: object;
-    public labelSettings: object;
-    public projectStartDate: Date;
-    public projectEndDate: Date;
-    public toolbar: ToolbarItem[];
-    public splitterSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public columns?: object[];
+    public timelineSettings?: object;
+    public labelSettings?: object;
+    public projectStartDate?: Date;
+    public projectEndDate?: Date;
+    public toolbar?: ToolbarItem[];
+    public splitterSettings?: object;
     public ngOnInit(): void {
         this.data = [
             {

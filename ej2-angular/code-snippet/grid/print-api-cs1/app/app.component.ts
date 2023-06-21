@@ -18,9 +18,9 @@ import { ToolbarItems, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    public pageOptions: PageSettingsModel;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    public pageOptions?: PageSettingsModel;
 
     ngOnInit(): void {
         this.data = data;

@@ -26,4 +26,4 @@ If you render the Schedule before the dialog is opened it will cause wrong calcu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/schedule-inside-dialog-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/schedule-inside-dialog-cs1" %}

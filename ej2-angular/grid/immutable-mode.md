@@ -31,7 +31,7 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/immutable-cs1" %}
+{% previewsample "page.domainurl/samples/grid/immutable-cs1" %}
 
 ## Limitations
 

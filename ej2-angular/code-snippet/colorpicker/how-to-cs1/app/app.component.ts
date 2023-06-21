@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `<h4>Choose Color</h4>
                <!-- To hide the value area. -->
-               <input ejs-colorpicker type="color" id="element" cssClass="e-hide-value" [modeSwitcher]="false" />`
+               <ejs-input ejs-colorpicker type="color" id="element" cssClass="e-hide-value" [modeSwitcher]="false" />`
 })
 
 export class AppComponent { }

@@ -147,7 +147,7 @@ The following example shows a basic ButtonGroup component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs1" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs1" %}
 
 ## Orientation
 
@@ -171,6 +171,6 @@ The following example illustrates how to achieve vertical orientation in ButtonG
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/button-group/default-cs2" %}
+{% previewsample "page.domainurl/samples/button-group/default-cs2" %}
 
 > ButtonGroup does not support SplitButton component nesting in a vertical orientation.

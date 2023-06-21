@@ -30,7 +30,7 @@ To known about circular and triangular charts, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs19" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs19" %}
 
 ## Radius Customization
 
@@ -49,7 +49,7 @@ You can customize this using [`radius`](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs20" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs20" %}
 
 ## Pie Center
 
@@ -67,7 +67,7 @@ The center position of the pie can be changed by Center X and Center Y. By defau
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs21" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs21" %}
 
 ## Various Radius Pie Chart
 
@@ -85,7 +85,7 @@ You can use radius mapping to render the slice with different [`radius`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs22" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs22" %}
 
 ## Doughnut Chart
 
@@ -103,7 +103,7 @@ To achieve a doughnut in pie series, customize the [`innerRadius`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs23" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs23" %}
 
 ## Start and End angles
 
@@ -121,7 +121,7 @@ You can customize the start and end angle of the pie series using the [`startAng
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs24" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs24" %}
 
 ## Color & Text Mapping
 
@@ -139,7 +139,7 @@ The fill color and the text in the data source can be mapped to the chart using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs25" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs25" %}
 
 ## Hide pie or doughnut border
 
@@ -157,7 +157,7 @@ By default, the border will appear in the pie/doughnut chart while mouse hover o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/pie-cs26" %}
+{% previewsample "page.domainurl/samples/chart/series/pie-cs26" %}
 
 ## Multi-level pie chart
 
@@ -177,4 +177,4 @@ You can also achieve drill-up (back to the initial state) by using [chartMouseCl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/grid-visual-cs1" %}
+{% previewsample "page.domainurl/samples/chart/grid-visual-cs1" %}

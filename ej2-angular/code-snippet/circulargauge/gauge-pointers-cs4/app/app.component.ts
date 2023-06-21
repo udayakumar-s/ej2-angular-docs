@@ -27,15 +27,15 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public cap: Object;
-    public needleTail: Object;
-	public animation: Object;
-    public labelStyle: Object;
-	public lineStyle: Object;
-	public majorTicks: Object;
-	public minorTicks: Object;
-	public needleStartWidth: Number;
-	public needleEndWidth: Number;
+    public cap?: Object;
+    public needleTail?: Object;
+	public animation?: Object;
+    public labelStyle?: Object;
+	public lineStyle?: Object;
+	public majorTicks?: Object;
+	public minorTicks?: Object;
+	public needleStartWidth?: Number;
+	public needleEndWidth?: Number;
     ngOnInit(): void {
         // Initialize objects
 		this.needleStartWidth = 4;

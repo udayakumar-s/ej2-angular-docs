@@ -129,7 +129,7 @@ In the below example, both **name** fields contain the same value as **Afghanist
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs77" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs77" %}
 
 <!-- markdownlint-disable MD010 -->
 
@@ -153,4 +153,4 @@ Data from data source can be bind to the Maps in two different ways.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs78" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs78" %}

@@ -3,11 +3,11 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { CalendarComponent } from '@syncfusion/ej2-angular-calendars';
-import moment from 'moment';
+import * as moment from 'moment';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     template: `
         <!-- Rendering the Calendar with Multi selection option--->
         <div class="wrapelement">
@@ -22,40 +22,40 @@ import moment from 'moment';
         `
 })
 export class AppComponent {
-    @ViewChild('ejCalendar') CalendarInstance: CalendarComponent;
+    @ViewChild('ejCalendar') CalendarInstance?: CalendarComponent;
     /*selected current week dates when click the button*/
     workWeek() {
-        if (this.CalendarInstance.element.classList.contains('week')) {
+        if (this.CalendarInstance?.element.classList.contains('week')) {
             this.CalendarInstance.element.classList.remove('week')
         }
-        this.CalendarInstance.element.classList.add('workweek');
+        this.CalendarInstance?.element.classList.add('workweek');
     }
 
     week() {
-        if (this.CalendarInstance.element.classList.contains('workweek')) {
+        if (this.CalendarInstance?.element.classList.contains('workweek')) {
             this.CalendarInstance.element.classList.remove('workweek')
         }
-        this.CalendarInstance.element.classList.add('week');
+        this.CalendarInstance?.element.classList.add('week');
     }
 
-    onChange(args) {
+    onChange(args: any) {
         var startOfWeek = moment(args.value).startOf('week');
-        var endOfWeek = moment(args.value).endOf('week');
-        if (this.CalendarInstance.element.classList.contains('workweek')) {
+        var endOfWeek: any = moment(args.value).endOf('week');
+        if (this.CalendarInstance?.element.classList.contains('workweek')) {
             this.getWeekArray(startOfWeek.day(1), endOfWeek.day(5), this);
-        } else if (this.CalendarInstance.element.classList.contains("week")) {
+        } else if (this.CalendarInstance?.element.classList.contains("week")) {
             this.getWeekArray(startOfWeek, endOfWeek, this);
         }
     }
 
-    getWeekArray(startOfWeek, endOfWeek, obj) {
+    getWeekArray(startOfWeek: any, endOfWeek: number, obj: this) {
         var days = [];
         var day = startOfWeek;
         while (day <= endOfWeek) {
             days.push(day.toDate());
             day = day.clone().add(1, 'd');
         }
-        obj.CalendarInstance.values = days;
+        (obj.CalendarInstance as CalendarComponent ).values = days;
     }
 }
 

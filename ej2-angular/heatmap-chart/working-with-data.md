@@ -39,7 +39,7 @@ This data type is a collection of one dimensional array objects, at which each i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/working-with-data/arraytable-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/working-with-data/arraytable-cs1" %}
 
 ### Array - cell binding
 
@@ -57,7 +57,7 @@ This data type is a collection of array objects that contain information about t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/working-with-data/arraycell-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/working-with-data/arraycell-cs1" %}
 
 ### JSON data - table binding
 
@@ -75,7 +75,7 @@ In JSON table data binding, each JSON object contains an X-axis data point as ro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/working-with-data/jsontable-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/working-with-data/jsontable-cs1" %}
 
 ### JSON data - Cell binding
 
@@ -93,7 +93,7 @@ In JSON cell data binding, each JSON object consists a value for each cell along
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/working-with-data/jsoncell-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/working-with-data/jsoncell-cs1" %}
 
 ## Empty points
 
@@ -111,7 +111,7 @@ The data points that use the `null` or `""` or `undefined` as value are consider
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/working-with-data/emptypoint-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/working-with-data/emptypoint-cs1" %}
 
 ## Binding nested JSON data
 
@@ -129,7 +129,7 @@ In complex data binding, you can bind the nested JSON data to the data points in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/working-with-data/nestedJsonCell-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/working-with-data/nestedJsonCell-cs1" %}
 
 ## See Also
 

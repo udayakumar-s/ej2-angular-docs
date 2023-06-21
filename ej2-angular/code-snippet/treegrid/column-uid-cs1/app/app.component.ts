@@ -17,14 +17,14 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
     }
     geColumnUid() {
-        var columnUid:string = this.treeGridObj.getUidByColumnField('taskName'); //get column by uid
+        var columnUid:string = (this.treeGridObj as TreeGridComponent).getUidByColumnField('taskName'); //get column by uid
         alert('Column Uid : ' + columnUid);
     }
 }

@@ -41,7 +41,7 @@ N/A |N/A |`Equal` operator will always be used for Boolean filter. |Boolean
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs4" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs4" %}
 
 ## Filter bar template with custom component
 
@@ -67,7 +67,7 @@ Access the column information inside the NgTemplate and bind the attributes, val
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filter-template-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/filter-template-cs1" %}
 
 ## Change default filter bar operator
 
@@ -85,4 +85,4 @@ You can change the default filter operator by extending [`filterModule.filterOpe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/filtering-cs5" %}
+{% previewsample "page.domainurl/samples/treegrid/filtering-cs5" %}

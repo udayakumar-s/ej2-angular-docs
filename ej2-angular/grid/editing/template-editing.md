@@ -31,7 +31,7 @@ In the below sample, We have created the **FormGroup** with **FormControls** for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/reactive-form-cs1" %}
+{% previewsample "page.domainurl/samples/grid/reactive-form-cs1" %}
 
 ## Template-driven forms
 
@@ -56,7 +56,7 @@ In the below sample, We have created the **FormGroup** by using **ngForm** direc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dialogTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/grid/dialogTemplate-cs1" %}
 
 > The form editors should have **name** attribute.
 
@@ -216,4 +216,4 @@ The following example, we have rendered tab control inside the edit dialog. The 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/tablikeedit-cs1" %}
+{% previewsample "page.domainurl/samples/grid/tablikeedit-cs1" %}

@@ -18,8 +18,8 @@ enableRipple(true);
 
 export class AppComponent {
     @ViewChild('menu')
-    private menuObj: MenuComponent;
-    private menuItems: MenuItemModel[] = [
+    public menuObj?: MenuComponent;
+    public menuItems: MenuItemModel[] = [
         {
             text: 'Events',
             items: [
@@ -52,25 +52,25 @@ export class AppComponent {
         { text: 'Services' }
     ];
 
-    private hiddenItems: string[] = ['Workshops', 'Music', 'Movies'];
+    public hiddenItems: string[] = ['Workshops', 'Music', 'Movies'];
 
-    private beforeOpen(args: BeforeOpenCloseMenuEventArgs): void {
+    public beforeOpen(args: BeforeOpenCloseMenuEventArgs): void {
         //Handling sub menu items
         for (let i: number = 0; i < args.items.length; i++) {
-            if (this.hiddenItems.indexOf(args.items[i].text) > -1) {
-                this.menuObj.hideItems([args.items[i].text], false);
+            if (this.hiddenItems.indexOf(args.items[i].text as string) > -1) {
+                this.menuObj?.hideItems([args.items[i].text as string], false);
             }
         }
     }
 
-    private created(): void {
+    public created(): void {
         // Disable menu items
-        this.menuObj.hideItems(this.hiddenItems, false);
+        this.menuObj?.hideItems(this.hiddenItems, false);
     }
 
-    private btnClick(): void {
+    public btnClick(): void {
         // Show menu items
-        this.menuObj.showItems(this.hiddenItems, false);
+        this.menuObj?.showItems(this.hiddenItems, false);
         this.hiddenItems = [];
     }
 }

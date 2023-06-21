@@ -26,11 +26,11 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public groupOptions: object;
+    public data?: object[];
+    public groupOptions?: object;
 
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
@@ -38,10 +38,10 @@ export class AppComponent implements OnInit {
     }
 
     clickHandler(args: ClickEventArgs): void {
-        const target: HTMLElement = (args.originalEvent.target as HTMLElement).closest('button'); // find clicked button
-        if (target.id === 'collapse') {
+        const target: HTMLElement | any = ((args as any).originalEvent.target as HTMLElement).closest('button'); // find clicked button
+        if (target?.id === 'collapse') {
             // collapse all expanded grouped row
-            this.grid.groupModule.collapseAll();
+            (this.grid as any).groupModule.collapseAll();
         }
     }
 }

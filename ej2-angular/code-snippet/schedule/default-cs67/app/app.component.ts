@@ -13,7 +13,7 @@ import { extend } from '@syncfusion/ej2-base';
 })
 export class AppComponent {
     public eventSettings: EventSettingsModel = {
-        dataSource: <Object[]>extend([], timeZoneData, null, true)
+        dataSource: <Object[]>extend([], timeZoneData,undefined, true)
     };
     public selectedDate: Date = new Date(2018, 1, 17);
 }

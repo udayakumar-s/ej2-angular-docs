@@ -56,4 +56,4 @@ To refresh the chart, invoke the `refresh` method.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/how-to-cs1" %}

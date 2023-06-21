@@ -16,11 +16,12 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
     value: Date;
+    Date: any;
     constructor() {
         this.value = new Date("2/1/2020");
     }
     deposit() {
-        this.value = this.Date.value;
+        this.value = this.Date.value as Date;
     }
     valuecheck(args: any) {
         this.value = args;

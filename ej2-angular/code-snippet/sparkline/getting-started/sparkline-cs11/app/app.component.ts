@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
     </ejs-sparkline>`
 })
 export class AppComponent {
-    public data: object[] = [0, 6, 4, 1, 3, 2, 5];
+    public data: object[] = [0, 6, 4, 1, 3, 2, 5] as any;
     public axisSettings: object ={
         minX: -1, maxX: 7, maxY: 7, minY: -1
     };
     public dataLabelSettings: object ={
         visible: ['All']
-    },
+    };
 };
 
 

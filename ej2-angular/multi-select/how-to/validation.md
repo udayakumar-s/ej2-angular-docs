@@ -27,4 +27,4 @@ MultiSelect. Here, the `dataBind` method is used to reflect the property changes
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/cascading-cs2" %}
+{% previewsample "page.domainurl/samples/multiselect/cascading-cs2" %}

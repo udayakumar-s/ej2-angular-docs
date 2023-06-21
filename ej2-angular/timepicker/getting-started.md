@@ -178,7 +178,7 @@ The following example illustrates the output in your browser
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/timepicker/getting-started-cs2" %}
 
 ## Setting the selected, min, and max time
 
@@ -196,7 +196,7 @@ The following example demonstrates how to set the value, min and max time on ini
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/timepicker/getting-started-cs3" %}
 
 ## Setting the time format
 
@@ -216,7 +216,7 @@ The following example demonstrates the TimePicker component in 24 hours format w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/timepicker/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/timepicker/getting-started-cs4" %}
 
 > Once the format property is defined, it will be applicable to all the cultures.
 

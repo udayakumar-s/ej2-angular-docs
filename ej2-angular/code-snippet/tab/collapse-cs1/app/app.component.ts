@@ -2,7 +2,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { TabComponent, selectEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { SelectEventArgs, TabComponent } from '@syncfusion/ej2-angular-navigations';
 import { enableRipple, isNullOrUndefined } from '@syncfusion/ej2-base';
 
 enableRipple(true);
@@ -49,9 +49,9 @@ enableRipple(true);
 
 export class AppComponent {
 
-  @ViewChild('element') tabInstance: TabComponent;
-  public trgIndex: number;
-  public actLine: HTMLElement;
+  @ViewChild('element') tabInstance?: TabComponent;
+  public trgIndex?: number;
+  public actLine?: HTMLElement;
 
   public headerText: Object = [
     { text: 'Twitter' },
@@ -61,19 +61,19 @@ export class AppComponent {
 
   public tabCreated(): void {
     // Custom click event binding for each tab item to make collapse/expand
-    document.getElementById('e-item-element_0').onclick = (e: Event) => {
+    (document.getElementById('e-item-element_0') as HTMLElement).onclick = (e: Event) => {
       this.updateCollapseClass(0);
     };
-    document.getElementById('e-item-element_1').onclick = (e: Event) => {
+    (document.getElementById('e-item-element_1') as HTMLElement).onclick = (e: Event) => {
       this.updateCollapseClass(1);
     };
-    document.getElementById('e-item-element_2').onclick = (e: Event) => {
+    (document.getElementById('e-item-element_2') as HTMLElement).onclick = (e: Event) => {
       this.updateCollapseClass(2);
     };
 
     // After tab created first tab content and active line are hidden by adding custom class to make it collapse state
-    this.actLine = document.querySelector('.e-indicator');
-    document.getElementById('e-content-element_0').classList.add('collapse');
+    this.actLine = document.querySelector('.e-indicator') as HTMLElement;
+    (document.getElementById('e-content-element_0') as HTMLElement).classList.add('collapse');
     this.actLine.classList.add('collapse');
   }
 
@@ -95,13 +95,13 @@ export class AppComponent {
     // Custom classes are added/removed from tab content and active line element, when the same tab item again clicked
     let cntEle: HTMLElement = document.getElementById(
       'e-content-element_' + index
-    );
+    ) as HTMLElement;
     if (!isNullOrUndefined(cntEle) && cntEle.classList.contains('collapse')) {
       cntEle.classList.remove('collapse');
-      this.actLine.classList.remove('collapse');
+      (this.actLine as HTMLElement).classList.remove('collapse');
     } else if (!isNullOrUndefined(cntEle)) {
       cntEle.classList.add('collapse');
-      this.actLine.classList.add('collapse');
+      (this.actLine as HTMLElement).classList.add('collapse');
     }
   }
 }

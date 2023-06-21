@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
         `
 })
 
-export  class  AppComponent  {
-    refresh():void {
+export  class  AppComponent  {
+    refresh(args: any):void {
         document.location.reload();
     }
     constructor() {

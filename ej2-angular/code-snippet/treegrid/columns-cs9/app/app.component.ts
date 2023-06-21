@@ -17,11 +17,12 @@ import { ReorderService } from '@syncfusion/ej2-angular-treegrid';
                 </ejs-treegrid>`,
                 providers: [ReorderService],
                 encapsulation: ViewEncapsulation.None,
-                styleUrls: ['app/custom-column.style.css']
+                styleUrls: ['./custom-column.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
+    public customAttributes?: Object;
 
     ngOnInit(): void {
         this.data = sampleData;

@@ -182,7 +182,7 @@ The following samples shows the sidebar component in browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/getting-started-cs1" %}
 
 >Note: The ViewChild property need two parameters in **Angular 7+**, use this @ViewChild(ChildDirective,{static: false}) syntax in **Angular 7+**.
 
@@ -203,7 +203,7 @@ Here, DOM elements will not get changed. It only close the main content by cover
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/showBackDrop-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/showBackDrop-cs1" %}
 
 ## Position
 
@@ -223,7 +223,7 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/position-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/position-cs1" %}
 
 ## Animate
 
@@ -241,7 +241,7 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/animate-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/animate-cs1" %}
 
 ## Close on document click
 
@@ -259,7 +259,7 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/document-click-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/document-click-cs1" %}
 
 ## Enable gestures
 
@@ -277,7 +277,7 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/gestures-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/gestures-cs1" %}
 
 > You can refer to our [Angular Sidebar](https://www.syncfusion.com/angular-ui-components/angular-sidebar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Sidebar example](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/default) that shows how to render the Sidebar in Angular.
 

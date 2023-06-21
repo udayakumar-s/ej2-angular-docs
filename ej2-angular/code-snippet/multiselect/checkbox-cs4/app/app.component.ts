@@ -11,7 +11,7 @@ import { CheckBoxSelectionService } from '@syncfusion/ej2-angular-dropdowns';
     providers: [CheckBoxSelectionService]
 })
 export class AppComponent {
-    public mode: string;
+    public mode?: string;
     constructor() {
     }
     //set the data to dataSource property

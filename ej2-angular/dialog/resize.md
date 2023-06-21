@@ -26,4 +26,4 @@ The resizable dialog can be created by setting the [enableResize](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/dialog/getting-started-cs9" %}

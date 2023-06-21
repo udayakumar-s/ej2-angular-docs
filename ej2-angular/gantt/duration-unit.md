@@ -39,7 +39,7 @@ The below code snippet explains the mapping of duration unit data source field t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/scheduling-tasks/mapping-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/scheduling-tasks/mapping-cs1" %}
 
 > NOTE
 The default value of the [`durationUnit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#durationunit) property is `day`.
@@ -60,7 +60,7 @@ Duration units for the tasks can also be defined along with the duration values,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/scheduling-tasks/durationfield-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/scheduling-tasks/durationfield-cs1" %}
 
 >NOTE:
 The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.

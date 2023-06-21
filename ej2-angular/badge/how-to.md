@@ -30,7 +30,7 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/color-cs1" %}
+{% previewsample "page.domainurl/samples/badge/color-cs1" %}
 
 ### Customize badge size
 
@@ -49,7 +49,7 @@ adjust the `font size` of the badge.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/size-cs1" %}
+{% previewsample "page.domainurl/samples/badge/size-cs1" %}
 
 ### Custom position
 
@@ -68,7 +68,7 @@ This can be done by adding a custom class to the badge element to override the d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/custom-position-cs1" %}
+{% previewsample "page.domainurl/samples/badge/custom-position-cs1" %}
 
 ## Integration
 
@@ -91,7 +91,7 @@ badge size. The component will automatically adjust the size based on the contai
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/listview-cs1" %}
+{% previewsample "page.domainurl/samples/badge/listview-cs1" %}
 
 ## Dynamic Content
 
@@ -109,4 +109,4 @@ Badges in real-time needs to be updated dynamically based on the requirements. I
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/badge/dynamic-badge-cs1" %}
+{% previewsample "page.domainurl/samples/badge/dynamic-badge-cs1" %}

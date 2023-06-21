@@ -26,7 +26,7 @@ The rendered Maps can be printed directly from the browser by calling the [`prin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs79" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs79" %}
 
 ## Export
 
@@ -50,7 +50,7 @@ To use the image export functionality in Maps, **ImageExport** module must be in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs80" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs80" %}
 
 ### Exporting Maps as base64 string of the file
 
@@ -68,7 +68,7 @@ We can get the image file as base64 string for the JPEG and PNG formats. The ren
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs81" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs81" %}
 
 ### PDF Export
 
@@ -86,7 +86,7 @@ To use the PDF export functionality, **PdfExport** module must be injected into 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs82" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs82" %}
 
 >The exporting of the map as base64 string is not supported in the PDF export.
 
@@ -110,4 +110,4 @@ The rendered Maps with providers such as OSM, Bing and Google static maps can be
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs83" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs83" %}

@@ -31,7 +31,7 @@ To add the markers, the [`dataSource`](https://ej2.syncfusion.com/angular/docume
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs63" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs63" %}
 
 ## Adding marker template
 
@@ -49,7 +49,7 @@ The Marker can be added as a template in the Maps component. The [`template`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs64" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs64" %}
 
 ## Customization
 
@@ -77,7 +77,7 @@ The following properties are available in [`markerSettings`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs65" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs65" %}
 
 ## Marker shapes
 
@@ -110,7 +110,7 @@ To render a marker as an image in Maps, set the [`shape`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs66" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs66" %}
 
 ## Multiple marker groups
 
@@ -128,7 +128,7 @@ Multiple groups of markers can be added to the Maps using the [`markerSettings`]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs67" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs67" %}
 
 ## Customize marker shapes from data source
 
@@ -148,7 +148,7 @@ Using the [`shapeValuePath`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs68" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs68" %}
 
 ### Setting value path from the data source
 
@@ -166,7 +166,7 @@ The latitude and longitude values are used to determine the location of each mar
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs69" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs69" %}
 
 ## Repositioning the marker using drag and drop
 
@@ -184,7 +184,7 @@ The markers on the map can be dragged and dropped to change their position. To e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs103" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs103" %}
 
 The data of the drag and dropped marker in the marker data source can be customized using the [markerDragStart](https://helpej2.syncfusion.com/angular/documentation/api/maps/#markerdragstart) and [markerDragEnd](https://helpej2.syncfusion.com/angular/documentation/api/maps/#markerdragend) events. When you change the appropriate marker data, the tooltip and legend item text of that marker are automatically updated. The following properties are available in the event argument of the marker drag events.
 
@@ -213,7 +213,7 @@ The following example shows how to use marker drag events to customize the data 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs104" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs104" %}
 
 ## Marker zooming
 
@@ -231,7 +231,7 @@ The Maps can be initially scaled to the center value based on the marker distanc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs70" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs70" %}
 
 ## Marker clustering
 
@@ -251,7 +251,7 @@ To enable clustering in markers, set the [`allowClustering`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs71" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs71" %}
 
 ## Customization of marker cluster
 
@@ -281,7 +281,7 @@ The following properties are available to customize the marker clustering in the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs72" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs72" %}
 
 ## Expanding the marker cluster
 
@@ -299,7 +299,7 @@ The cluster is formed by grouping an identical and non-identical marker from the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs73" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs73" %}
 
 ## Tooltip for marker
 
@@ -317,4 +317,4 @@ Tooltip is used to display more information about a marker on mouse over or touc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs74" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs74" %}

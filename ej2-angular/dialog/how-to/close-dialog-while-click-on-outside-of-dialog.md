@@ -28,7 +28,7 @@ In the following sample, dialog is closed when clicking outside the dialog area 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dlg-close-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dlg-close-cs1" %}
 
 In the following sample, the dialog is rendered based on the target container. It can also be closed by clicking outside of the dialog.
 
@@ -44,4 +44,4 @@ In the following sample, the dialog is rendered based on the target container. I
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dialog/dialog-close-cs1" %}
+{% previewsample "page.domainurl/samples/dialog/dialog-close-cs1" %}

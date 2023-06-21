@@ -9,7 +9,7 @@ enableRipple(true);
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-spreadsheet #spreadsheet (created)="created()"  (cellEdit)="cellEdit()" [selectionSettings]="{ mode: 'Multiple' }">
+    template: `<ejs-spreadsheet #spreadsheet (created)="created()"  (cellEdit)="cellEdit($event)" [selectionSettings]="{ mode: 'Multiple' }">
                 <e-sheets>
                   <e-sheet name="Price Details">
                     <e-ranges>
@@ -26,16 +26,16 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     priceData: object[] = dataSource1;
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        var colCount = this.spreadsheetObj.getActiveSheet().colCount;
-        this.spreadsheetObj.selectRange(getRangeAddress([4, 0, 4, colCount]));
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        var colCount = this.spreadsheetObj!.getActiveSheet().colCount;
+        this.spreadsheetObj!.selectRange(getRangeAddress([4, 0, 4, colCount as any]));
     }
-    cellEdit(args) {
+    cellEdit(args : any) {
         args.cancel = true;
     }
 }

@@ -24,4 +24,4 @@ The detail template provides additional information about a particular row. By e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/row-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/row-cs2" %}

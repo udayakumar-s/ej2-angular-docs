@@ -26,7 +26,7 @@ The multi-level labels for the Range Selector can be enabled by setting the [`en
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/labels/default-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/labels/default-cs1" %}
 
 ## Grouping
 
@@ -54,7 +54,7 @@ The multi-level labels can be grouped using the [`groupBy`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/labels/default-cs2" %}
+{% previewsample "page.domainurl/samples/rangenavigator/labels/default-cs2" %}
 
 ## Smart labels
 
@@ -72,7 +72,7 @@ The [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/datetime-cs4" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/datetime-cs4" %}
 
 ## Label positioning
 
@@ -90,7 +90,7 @@ By default, the labels can be placed outside the Range Selector. It can also be 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/datetime-cs5" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/datetime-cs5" %}
 
 ## Labels customization
 
@@ -108,4 +108,4 @@ The font size, color, family, etc. can be customized using the [`labelStyle`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/lightweight/default-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/lightweight/default-cs1" %}

@@ -42,7 +42,7 @@ The following code example shows the usage of ribbon customization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/ribbon/cutomization-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/ribbon/cutomization-cs1" %}
 
 ## Note
 

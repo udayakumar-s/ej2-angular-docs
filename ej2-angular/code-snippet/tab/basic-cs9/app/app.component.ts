@@ -16,7 +16,8 @@ import { Tab, TabComponent} from '@syncfusion/ej2-angular-navigations';
         </ejs-tab>`,
 })
 export class AppComponent implements OnInit {
-  public tabItems: Object[];
+  public tabItems?: Object[];
+  reorderActiveTab?: boolean;
 
   public ngOnInit(): void {
     this.reorderActiveTab = false;

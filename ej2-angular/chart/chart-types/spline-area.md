@@ -26,7 +26,7 @@ inject `SplineAreaSeriesService` into the `@NgModule.providers`.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/line-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/line-cs6" %}
 
 ## Series customization
 
@@ -49,7 +49,7 @@ The following properties can be used to customize the `spline area` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/splinearea-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/splinearea-cs" %}
 
 ## See Also
 

@@ -16,14 +16,14 @@ import { ToolbarItem, SearchSettingsModel } from '@syncfusion/ej2-angular-gantt'
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public columns: object[];
-    public splitterSettings: object;
-    public toolbar: ToolbarItem[];
-    public searchSettings: SearchSettingsModel;
+    public data?: object[];
+    public taskSettings?: object;
+    public columns?: object[];
+    public splitterSettings?: object;
+    public toolbar?: ToolbarItem[];
+    public searchSettings?: SearchSettingsModel;
     @ViewChild('gantt', {static: true})
-    public ganttObj: GanttComponent;
+    public ganttObj?: GanttComponent;
     public ngOnInit(): void {
         this.data = [
     {
@@ -71,7 +71,7 @@ export class AppComponent{
         this.searchSettings = { fields: ['TaskName'], operator: 'contains', key: 'Perform', ignoreCase: true }
     }
     clearSearch(): void {
-        this.ganttObj.searchSettings.key='';
+        this.ganttObj!.searchSettings.key='';
         };
 }
 

@@ -17,7 +17,7 @@ export class AppComponent  {
             e.cancel = true;
             let temp: HTMLElement = document.createElement('div');
             temp.innerHTML = value;
-            let scriptTag: HTMLElement = temp.querySelector('script');
+            let scriptTag: HTMLElement = temp.querySelector('script') as HTMLElement;
             if (scriptTag) {
                 detach(scriptTag);
             }

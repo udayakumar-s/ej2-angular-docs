@@ -31,7 +31,7 @@ To select range of rows or cells, press and hold the SHIFT key and click the row
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs8" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs8" %}
 
 ## Selection mode
 
@@ -53,7 +53,7 @@ TreeGrid supports three types of selection mode which can be set by using [`sele
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs9" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs9" %}
 
 ## Toggle selection
 
@@ -71,7 +71,7 @@ The Toggle selection allows to perform selection and unselection of the particul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/selection-cs10" %}
+{% previewsample "page.domainurl/samples/treegrid/selection-cs10" %}
 
 >If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
 

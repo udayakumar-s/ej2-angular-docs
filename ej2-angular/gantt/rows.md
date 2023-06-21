@@ -28,7 +28,7 @@ It is possible to change the height of the row in Gantt by setting row height in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/rowheight-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/rowheight-cs1" %}
 
 ## Expand/Collapse Row
 
@@ -50,7 +50,7 @@ All tasks available in Gantt was rendered in collapsed state by setting [`collap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/collapseall-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/collapseall-cs1" %}
 
 ### Define expand/collapse status of tasks
 
@@ -68,7 +68,7 @@ In Gantt, you can render some tasks in collapsed state and some tasks in expande
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/expand-status-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/expand-status-cs1" %}
 
 ### Customize expand/collapse action
 
@@ -86,7 +86,7 @@ On expand action [`expanding`](https://ej2.syncfusion.com/angular/documentation/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/expand-customize-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/expand-customize-cs1" %}
 
 ## Drag and drop
 
@@ -106,7 +106,7 @@ To use row drag and drop feature, inject the `RowDDService` and `EditService` in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/deafultdrag-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/deafultdrag-cs1" %}
 
 ### Multiple row drag and drop
 
@@ -124,7 +124,7 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/multidrag-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/multidrag-cs1" %}
 
 ### Drag and drop events
 
@@ -157,7 +157,7 @@ You can prevent drag action of the particular record by setting the `cancel` pro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/preventdrag-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/preventdrag-cs1" %}
 
 #### Validating drop position
 
@@ -177,7 +177,7 @@ In the following sample, we have prevented the drop action based on the position
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/preventdrop-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/preventdrop-cs1" %}
 
 ### Prevent reordering a row as child to another row
 
@@ -197,7 +197,7 @@ In the below example drop action is cancelled and dropped above to target row.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/preventdrop-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/rows/preventdrop-cs2" %}
 
 ### Perform row drag and drop action programmatically
 
@@ -222,7 +222,7 @@ The following code example shows how to drag and drop a row on button click acti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/dynamicdrag-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/dynamicdrag-cs1" %}
 
 ## Customize rows
 
@@ -240,7 +240,7 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/customizeRows-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/customizeRows-cs1" %}
 
 ## Styling alternate rows
 
@@ -264,7 +264,7 @@ You can change the background colour of alternative rows in Gantt chart, by over
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/alternateRows-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/alternateRows-cs1" %}
 
 ## Row spanning
 
@@ -284,4 +284,4 @@ In the following demo, **Soil test approval** cell is spanned to two rows in the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/rows/rowSpanning-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/rows/rowSpanning-cs1" %}

@@ -24,4 +24,4 @@ You can get the specific row and cell index of the grid by using [`rowSelected`]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/collapse-all-initial-cs2" %}
+{% previewsample "page.domainurl/samples/grid/collapse-all-initial-cs2" %}

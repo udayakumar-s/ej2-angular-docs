@@ -24,6 +24,6 @@ In the Gantt component, add and edit dialogs can be opened dynamically by using 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/how-to/dynamicopen-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/how-to/dynamicopen-cs1" %}
 
 >NOTE: You should select any one of the row in the Gantt to open the edit dialog.

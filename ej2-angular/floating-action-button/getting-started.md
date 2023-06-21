@@ -144,7 +144,7 @@ The below example shows a basic Floating Action Button component,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/floating-action-button/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/floating-action-button/getting-started-cs1" %}
 
 ## Click event
 
@@ -162,4 +162,4 @@ The floating action button control triggers the `onclick` event when you click o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/floating-action-button/events-cs2" %}
+{% previewsample "page.domainurl/samples/floating-action-button/events-cs2" %}

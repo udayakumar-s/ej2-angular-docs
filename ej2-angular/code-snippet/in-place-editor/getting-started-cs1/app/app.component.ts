@@ -36,8 +36,8 @@ export class AppComponent {
   public model: Object = {  dataSource: this.frameWorkList, placeholder: 'Select employee',  popupHeight: '200px' };
   public url: String = "https://ej2services.syncfusion.com/development/web-services/api/Editor/UpdateData";
   public actionSuccess(e: any): void {
-      let newEle: HTMLElement = document.getElementById('newValue');
-      let oldEle: HTMLElement = document.getElementById('oldValue');
+      let newEle: HTMLElement = document.getElementById('newValue') as HTMLElement;
+      let oldEle: HTMLElement = document.getElementById('oldValue') as HTMLElement;
       oldEle.textContent = newEle.textContent;
       newEle.textContent = e.value;
     }

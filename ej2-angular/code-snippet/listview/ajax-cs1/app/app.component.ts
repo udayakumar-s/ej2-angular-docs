@@ -13,7 +13,7 @@ import { Ajax } from '@syncfusion/ej2-base';
 })
 
 export class AppComponent {
-  public listtemplate: any;
+  public listtemplate?: any;
   public data =  [
     { name: 'Network & Internet', id: '0', description: 'Wi-Fi, mobile, data usage, hotspot' },
     { name: 'Connected devices', id: '1', description: 'Bluetooth, cast, NFC' },

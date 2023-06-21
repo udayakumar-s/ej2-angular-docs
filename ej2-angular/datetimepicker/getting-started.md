@@ -172,7 +172,7 @@ The following example illustrates the output in your browser
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/accessibility-cs4" %}
+{% previewsample "page.domainurl/samples/datetimepicker/accessibility-cs4" %}
 
 ## Setting the min and max
 
@@ -190,7 +190,7 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/datetimepicker/accessibility-cs5" %}
+{% previewsample "page.domainurl/samples/datetimepicker/accessibility-cs5" %}
 
 > If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range.
 

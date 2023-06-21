@@ -29,7 +29,7 @@ Customize the dialog position by using the `position` property. The position can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/alert-position-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/alert-position-cs1" %}
 
 ## Confirm position
 
@@ -45,7 +45,7 @@ Customize the dialog position by using the `position` property. The position can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/confirm-position-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/confirm-position-cs1" %}
 
 ## Prompt position
 
@@ -61,4 +61,4 @@ Customize the dialog position by using the `position` property. The position can
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/prompt-position-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/prompt-position-cs1" %}

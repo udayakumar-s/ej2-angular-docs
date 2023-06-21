@@ -60,4 +60,4 @@ You can use the following key shortcuts to access the MultiSelect without interr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/multiselect/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/multiselect/getting-started-cs1" %}

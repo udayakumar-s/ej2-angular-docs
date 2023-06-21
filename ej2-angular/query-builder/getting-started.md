@@ -139,7 +139,7 @@ The following example shows a basic Query Builder component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs4" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs4" %}
 
 ## Rendering with rule
 
@@ -157,6 +157,6 @@ To render the Angular Query Builder component with rule, use the [`rule`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/default-cs5" %}
+{% previewsample "page.domainurl/samples/query-builder/default-cs5" %}
 
 > You can also explore our [Angular Query Builder example](https://ej2.syncfusion.com/angular/demos/#/material/query-builder/default.html) that shows how to render the Query Builder in Angular.

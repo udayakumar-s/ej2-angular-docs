@@ -74,19 +74,19 @@ import { employeeData } from './datasource';
             </ng-template>
           </ejs-grid>
         </div>`,
-  styleUrls: ['./app/app.style.css'],
+  // styleUrls: ['./app.style.css'],
 })
 export class AppComponent implements OnInit {
 
-  public data: object[];
-  @ViewChild('grid') public grid: GridComponent;
-  @ViewChild('textbox') public textbox: any;
+  public data?: object[];
+  @ViewChild('grid') public grid?: GridComponent;
+  @ViewChild('textbox') public textbox?: any;
 
   ngOnInit(): void {
     this.data = employeeData;
   }
   public btnClick(): void {
-    this.grid.detailRowModule.expand(this.textbox.value); 
+    (this.grid as any).detailRowModule.expand(this.textbox.value); 
     // Expand the detail row of the specified row index
   }
 }

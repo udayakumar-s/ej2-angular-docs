@@ -28,7 +28,7 @@ The following code shows how to enable RTL behavior.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/splitter/rtl-cs1" %}
+{% previewsample "page.domainurl/samples/splitter/rtl-cs1" %}
 
 ## See Also
 

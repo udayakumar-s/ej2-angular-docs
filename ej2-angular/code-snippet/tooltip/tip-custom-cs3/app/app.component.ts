@@ -45,9 +45,10 @@ import { RadioButtonComponent, ChangeArgs, ButtonComponent } from '@syncfusion/e
 
 export class AppComponent {
     @ViewChild('tooltip')
-    public tooltipCustom: TooltipComponent;
+    public tooltipControl: TooltipComponent | any ;
     @ViewChild('tooltipcurve')
-    public tooltipCurve: TooltipComponent;
+    public tooltipCurve: TooltipComponent | any;
+    tooltipCustom: any;
     constructor() { }
     onChange(args: ChangeArgs): void {
         this.tooltipCurve.position = args.value as any;

@@ -28,7 +28,7 @@ In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `Zo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/alert-animation-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/alert-animation-cs1" %}
 
 ## Confirm animation
 
@@ -44,7 +44,7 @@ In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `Zo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/confirm-animation-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/confirm-animation-cs1" %}
 
 ## Prompt animation
 
@@ -60,4 +60,4 @@ In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `Zo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/predefined-dialogs/prompt-animation-cs1" %}
+{% previewsample "page.domainurl/samples/predefined-dialogs/prompt-animation-cs1" %}

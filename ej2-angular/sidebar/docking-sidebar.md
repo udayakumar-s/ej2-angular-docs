@@ -24,7 +24,7 @@ Dock state of the Sidebar reserves some space on the page that always remains in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/dock-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/dock-cs1" %}
 
 ## See Also
 

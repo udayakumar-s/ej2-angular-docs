@@ -26,4 +26,4 @@ Heat map can be displayed using **Canvas** or **Scalable Vector Graphics (SVG)**
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/rendering-mode/rendermode-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/rendering-mode/rendermode-cs1" %}

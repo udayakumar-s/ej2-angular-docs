@@ -23,20 +23,20 @@ import { MessageComponent } from '@syncfusion/ej2-angular-notifications';
     </div>`
 })
 export class AppComponent{
-    @ViewChild('showBtn') private showBtn: ButtonComponent;
-    @ViewChild('msg_template') private msgTemplate: MessageComponent;
+    @ViewChild('showBtn') private showBtn?: ButtonComponent;
+    @ViewChild('msg_template') private msgTemplate?: MessageComponent;
 
     public showClick(): void {
-        this.msgTemplate.visible = true;
-        this.showBtn.element.classList.add('msg-hidden');
+        this.msgTemplate!.visible = true;
+        this.showBtn?.element.classList.add('msg-hidden');
     }
 
     public dismissClick(): void {
-        this.msgTemplate.visible = false;
+        this.msgTemplate!.visible = false;
     }
 
     public closed(): void {
-        this.showBtn.element.classList.remove('msg-hidden');
+        this.showBtn?.element.classList.remove('msg-hidden');
     }
 }
 

@@ -34,4 +34,4 @@ Below is the code example.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/calendar/how-to-cs1" %}
+{% previewsample "page.domainurl/samples/calendar/how-to-cs1" %}

@@ -47,7 +47,7 @@ Card image is supported to include a title or caption for the image. By default,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card-img-cs1" %}
+{% previewsample "page.domainurl/samples/card/card-img-cs1" %}
 
 ## Divider
 
@@ -67,7 +67,7 @@ Divider used to separate the elements inside the card. You can add divider insid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/card/card-header-cs1" %}
+{% previewsample "page.domainurl/samples/card/card-header-cs1" %}
 
 ## See Also
 

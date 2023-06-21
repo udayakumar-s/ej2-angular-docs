@@ -141,7 +141,7 @@ The below example shows a basic Linear Gauge.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs1" %}
 
 ## Module Injection
 
@@ -186,7 +186,7 @@ The title can be added to the Linear Gauge component using the [`title`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs2" %}
 
 ## Axis Range
 
@@ -204,7 +204,7 @@ The range of the axis can be set using the [`minimum`](https://ej2.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs3" %}
 
 To denote the axis labels with temperature units, add the °C as suffix to each label. This can be achieved by setting the **{value}°C** to the [`format`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/labelModel/#format-string) property in the [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#labelstyle-labelmodel) object of the axis. Here, **{value}** acts as a placeholder for each axis label.
 
@@ -222,7 +222,7 @@ To change the pointer value from the default value of the gauge, set the [`value
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs4" %}
 
 ## Setting the value of pointer
 
@@ -240,4 +240,4 @@ The pointer value is changed in the below sample using the [`value`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs5" %}

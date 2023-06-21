@@ -150,7 +150,7 @@ The following example shows a default ColorPicker component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/getting-started/default-cs2" %}
+{% previewsample "page.domainurl/samples/colorpicker/getting-started/default-cs2" %}
 
 ## Inline type
 
@@ -170,7 +170,7 @@ The following sample shows the inline type rendering of ColorPicker.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/getting-started/inline-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/getting-started/inline-cs1" %}
 
 >> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) sample.
 

@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-    public onfocus(args): void {
+    public onfocus(args: any): void {
         //sets cursor position at start of MaskedTextBox
         args.selectionEnd= args.selectionStart;
     }

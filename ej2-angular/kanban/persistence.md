@@ -26,4 +26,4 @@ State persistence stores Kanban datasource, column and swimlane expand/collapse 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/kanban/persistence-cs1" %}
+{% previewsample "page.domainurl/samples/kanban/persistence-cs1" %}

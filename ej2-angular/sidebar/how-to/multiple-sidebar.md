@@ -26,4 +26,4 @@ Two Sidebars can be initialized in a web page with same main content. Sidebars c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/multiple-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/multiple-cs1" %}

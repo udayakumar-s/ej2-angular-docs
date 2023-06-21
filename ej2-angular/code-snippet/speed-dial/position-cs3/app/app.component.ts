@@ -13,7 +13,7 @@ import { SpeedDialComponent,SpeedDialItemModel } from '@syncfusion/ej2-angular-b
 
 export class AppComponent {
     @ViewChild('speeddial')
-    public speeddialObj:SpeedDialComponent;
+    public speeddialObj:SpeedDialComponent | any;
 
     public items: SpeedDialItemModel[] = [
         { iconCss: 'e-icons e-cut' },
@@ -21,7 +21,7 @@ export class AppComponent {
         { iconCss: 'e-icons e-paste' }
     ];
     public refresh() {
-        document.getElementById("targetElement").style.minHeight = "300px";
+        document.getElementById("targetElement")!.style.minHeight = "300px";
         this.speeddialObj.refreshPosition();
     }
 }

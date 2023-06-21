@@ -28,4 +28,4 @@ The following example demonstrate about how to remove an item from DropDownList.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/remove-item-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/remove-item-cs1" %}

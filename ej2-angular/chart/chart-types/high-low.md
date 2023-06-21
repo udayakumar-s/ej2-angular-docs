@@ -29,7 +29,7 @@ Hilo series requires 3 fields (x, high and low) to show the high and low price i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/hilo-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/hilo-cs1" %}
 
 ## Series customization
 
@@ -50,7 +50,7 @@ The following properties can be used to customize the `hilo` series.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/hilo-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/hilo-cs" %}
 
 ## See Also
 

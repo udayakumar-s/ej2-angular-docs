@@ -14,31 +14,33 @@ import { ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids';
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
                 </e-columns>
     </ejs-grid>`
-
 })
 export class AppComponent implements OnInit {
 
-  public data: Object[];
-  public pageSettings: Object;
-  public toolbar: string[];
+  public data?: Object[];
+  public pageSettings?: Object;
+  public toolbar?: string[];
   @ViewChild("grid", { static: true })
-  public grid: GridComponent;
+  public grid?: GridComponent;
+
   public ngOnInit(): void {
     this.data = data;
     this.pageSettings = { pageCount: 5 };
     this.toolbar = ['Search'];
   }
-  public created(args) {
-    var gridElement = this.grid.element;
+
+  public created(args: any) {
+    var gridElement = (this.grid as any).element;
     var span = document.createElement("span");
     span.className = "e-clear-icon";
     span.id = gridElement.id + "clear";
     span.onclick = this.cancelBtnClick.bind(this);
     gridElement.querySelector(".e-toolbar-item .e-input-group").appendChild(span);
   }
-  public cancelBtnClick(args) {
-    this.grid.searchSettings.key = "";
-    (this.grid.element.querySelector(".e-input-group.e-search .e-input") as any).value = "";
+
+  public cancelBtnClick(args: any) {
+    (this.grid as any).searchSettings.key = "";
+    ((this.grid as any).element.querySelector(".e-input-group.e-search .e-input") as any).value = "";
   }
 }
 

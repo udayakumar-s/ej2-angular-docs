@@ -169,7 +169,7 @@ The following example illustrates the output in your browser
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/daterangepicker/getting-started-cs5" %}
 
 ## Setting the start and end date
 
@@ -189,7 +189,7 @@ The below example demonstrates the DateRangePicker with startDate and endDate.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/daterangepicker/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/daterangepicker/getting-started-cs6" %}
 
 > You can refer to our [Angular Date Range Picker](https://www.syncfusion.com/angular-ui-components/angular-daterangepicker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Date Range Picker example](https://ej2.syncfusion.com/angular/demos/#/material/daterangepicker/default) that shows how to render the Date Range Picker in Angular.
 

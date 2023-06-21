@@ -7,7 +7,7 @@ import { Query, DataManager } from '@syncfusion/ej2-data';
 @Component({
     selector: 'app-root',
     // specifies the template path for DropDownList component
-    templateUrl: `./app/cascading.html`
+    templateUrl: `cascading.html`
 })
 export class AppComponent {
     constructor() {
@@ -45,11 +45,11 @@ export class AppComponent {
     //set the placeholder to city DropDownList input
     public cityWatermark: string = "Select a city";
     @ViewChild('country')
-    public countryObj: DropDownListComponent;
+    public countryObj?: DropDownListComponent | any;
     @ViewChild('state')
-    public stateObj: DropDownListComponent;
+    public stateObj?: DropDownListComponent | any;
     @ViewChild('city')
-    public cityObj: DropDownListComponent;
+    public cityObj?: DropDownListComponent | any;
     public countryChange(): void {
         let tempQuery: Query = new Query().where('CountryId', 'equal', this.countryObj.value);
         //Query the data source based on country DropDownList selected value

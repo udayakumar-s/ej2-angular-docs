@@ -11,7 +11,7 @@ import { ItemModel, OpenCloseMenuEventArgs, DropDownButtonComponent  } from '@sy
 
 export class AppComponent {
    @ViewChild('dropdownbutton')
-   public dropdownbutton: DropDownButtonComponent;
+   public dropdownbutton?: DropDownButtonComponent;
    // Initialize action items.
    public items: ItemModel[] = [
     {
@@ -25,7 +25,7 @@ export class AppComponent {
     }];
     // To open popup in particular position.
     public onOpen (args: OpenCloseMenuEventArgs) {
-       args.element.parentElement.style.top = this.dropdownbutton.element.getBoundingClientRect().top - args.element.parentElement.offsetHeight +'px';
+       args.element.parentElement!.style.top = this.dropdownbutton!.element.getBoundingClientRect().top - args.element.parentElement!.offsetHeight +'px';
     }
 
 }

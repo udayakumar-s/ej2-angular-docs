@@ -32,7 +32,7 @@ To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/series-types/line-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/series-types/line-cs1" %}
 
 ## Area
 
@@ -50,7 +50,7 @@ To render an area series, use series [`type`](https://ej2.syncfusion.com/angular
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/series-types/area-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/series-types/area-cs1" %}
 
 ## StepLine
 
@@ -68,4 +68,4 @@ To render a Step line series, use series [Type](https://ej2.syncfusion.com/angul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/series-types/stepline-cs1" %}
+{% previewsample "page.domainurl/samples/rangenavigator/series-types/stepline-cs1" %}

@@ -14,12 +14,12 @@ import { scheduleData } from './datasource';
   // specifies the template string for the Schedule component
   template: `<ejs-schedule #scheduleObj width='100%' height='550px' [views]="scheduleViews" [selectedDate]="selectedDate" cssClass='schedule-excel-export'  [eventSettings]="eventSettings" [currentView]="currentView" (actionBegin)="onActionBegin($event)">
   <e-views><e-view option='Week'></e-view></e-views></ejs-schedule>`,
-  styleUrls: ['app/index.css'],
+  styleUrls: ['./index.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   @ViewChild('scheduleObj')
-  public scheduleObj: ScheduleComponent;
+  public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2019, 0, 10);
   public scheduleViews: View[] = ['Week'];
   public currentView: View = 'Week';
@@ -30,7 +30,7 @@ export class AppComponent {
         align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-excel-export',
         text: 'Excel Export', cssClass: 'e-excel-export', click: this.onExportClick.bind(this)
       };
-      args.items.push(exportItem);
+      args.items?.push(exportItem);
     }
   }
 
@@ -43,7 +43,7 @@ export class AppComponent {
         { name: 'OwnerId', text: 'Owners' }
     ];
     const exportValues: ExportOptions = { fieldsInfo: customFields };
-    this.scheduleObj.exportToExcel(exportValues);
+    this.scheduleObj?.exportToExcel(exportValues);
   }
  }
 

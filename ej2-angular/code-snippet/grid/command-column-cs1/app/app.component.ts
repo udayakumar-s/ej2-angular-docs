@@ -19,9 +19,9 @@ import { CommandModel, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public commands: CommandModel[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public commands?: CommandModel[];
 
     ngOnInit(): void {
         this.data = data;

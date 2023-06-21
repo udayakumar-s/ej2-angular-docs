@@ -181,4 +181,4 @@ The following samples shows the file manager component in browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/file-manager/getting-started-cs3" %}

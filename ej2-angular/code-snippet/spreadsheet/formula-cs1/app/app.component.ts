@@ -70,7 +70,7 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     data: object[] = dataSource;
 
@@ -80,15 +80,15 @@ export class AppComponent {
     }
 
     created() {
-        this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:E2');
-        this.spreadsheetObj.numberFormat('$#,##0', 'B3:D12');
-        this.spreadsheetObj.numberFormat('0%', 'E3:E12');
+        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:E2');
+        this.spreadsheetObj!.numberFormat('$#,##0', 'B3:D12');
+        this.spreadsheetObj!.numberFormat('0%', 'E3:E12');
 
         // Adding custom function for calculating the percentage between two cells.
-        this.spreadsheetObj.addCustomFunction(this.calculatePercentage, 'PERCENTAGE');
+        this.spreadsheetObj!.addCustomFunction(this.calculatePercentage, 'PERCENTAGE');
         // Calculate percentage using custom added formula in E12 cell.
-        this.spreadsheetObj.updateCell({ formula: '=PERCENTAGE(C12,D12)' }, 'E12');
-        this.spreadsheetObj.setRowHeight(30,1);
+        this.spreadsheetObj!.updateCell({ formula: '=PERCENTAGE(C12,D12)' }, 'E12');
+        this.spreadsheetObj!.setRowHeight(30,1);
     }
 }
 

@@ -9,19 +9,19 @@ import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } f
 
 @Component({
     selector: 'app-root',
-    templateUrl: `app/wizardtemplate.html`
+    templateUrl: `wizardtemplate.html`
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public shipCountryDistinctData: object;
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public shipCountryDistinctData?: object;
     public next = 'Next';
     public currentTab = 0;
     public hidden = true;
-    @ViewChild('grid') grid: GridComponent;
-    @ViewChild('orderForm') orderForm: FormGroup;
+    @ViewChild('grid') grid?: GridComponent;
+    @ViewChild('orderForm') orderForm?: FormGroup;
 
     ngOnInit(): void {
         this.data = data;
@@ -31,11 +31,11 @@ export class AppComponent implements OnInit {
     }
 
     actionComplete(args: DialogEditEventArgs) {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            args.form.ej2_instances[0].rules = {}; // Disable deafault valdation.
+        if (((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add')) {
+            (args as any).form.ej2_instances[0].rules = {}; // Disable deafault valdation.
             // Set initail Focus
-            if (args.requestType === 'beginEdit') {
-                (args.form.elements.namedItem('CustomerID') as HTMLInputElement).focus();
+            if ((args as any).requestType === 'beginEdit') {
+                (args?.form?.elements.namedItem('CustomerID') as HTMLInputElement).focus();
             }
             this.currentTab = 0;
             this.hidden = true;
@@ -43,25 +43,25 @@ export class AppComponent implements OnInit {
         }
     }
 
-    nextBtn(args) {
-        if (this.orderForm.valid) {
+    nextBtn() {
+        if ((this as any).orderForm.valid) {
             if (this.next !== 'SUBMIT') {
                 this.currentTab++;
                 this.nextpre(this.currentTab);
             } else {
-                this.grid.endEdit();
+                (this.grid as any).endEdit();
             }
         }
     }
 
-    previousBtn(args) {
-        if (this.orderForm.valid) {
+    previousBtn() {
+        if ((this as any).orderForm.valid) {
             this.currentTab--;
             this.nextpre(this.currentTab);
         }
     }
 
-    nextpre(current) {
+    nextpre(current: any) {
         if (current) {
             this.hidden = false;
             this.next = 'SUBMIT';

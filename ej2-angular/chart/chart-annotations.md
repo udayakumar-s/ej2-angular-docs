@@ -34,7 +34,7 @@ To known more about annotations, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs7" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs7" %}
 
 >Note: To use annotation feature in chart, we need to inject `ChartAnnotationService` into the `@NgModule.providers`.
 
@@ -54,7 +54,7 @@ Annotations can be placed either with respect to `Series` or `Chart`. by default
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs8" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs8" %}
 
 ## Co-ordinate Units
 
@@ -72,7 +72,7 @@ Specified the coordinates units of the annotation either `Pixel` or `Point`.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs9" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs9" %}
 
 ## Alignment
 
@@ -90,7 +90,7 @@ Annotation provides `verticalAlignment` and `horizontalAlignment`. The `vertical
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs10" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs10" %}
 
 ## Adding y-axis sub title through on annotation
 
@@ -108,7 +108,7 @@ By setting text div in the `content` option of annotation object you can add sub
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs11" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs11" %}
 
 ## See Also
 

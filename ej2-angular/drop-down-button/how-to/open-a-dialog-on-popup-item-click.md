@@ -27,4 +27,4 @@ In the following example, Dialog will open while selecting `Other Folder...` ite
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/drop-down-button/dialog-cs1" %}
+{% previewsample "page.domainurl/samples/drop-down-button/dialog-cs1" %}

@@ -9,11 +9,10 @@ import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
     template: `<div id='treeparent'><ejs-treeview #treeview="" id='treeelement' [fields]='field' [showCheckBox]='showCheckBox' (nodeChecked)='nodeChecked($event)'></ejs-treeview></div>`
 })
 export class AppComponent {
-    @ViewChild('samples')
     constructor() {
     }
     @ViewChild('treeview')
-    public tree: TreeViewComponent;
+    public tree?: TreeViewComponent;
     // defined the array of data
     public countries: Object[] = [
         { id: 1, name: 'Australia', hasChild: true, expanded: true },
@@ -47,8 +46,8 @@ export class AppComponent {
     public showCheckBox: boolean = true;
     //set the checknodes to the TreeView
     public checkedNodes: string[] = ['2','6'];
-    public nodeChecked(args): void{
-      alert("The checked node's id is: "+this.tree.checkedNodes);
+    public nodeChecked(args: any): void{
+      alert("The checked node's id is: "+this.tree?.checkedNodes);
 
     }
 

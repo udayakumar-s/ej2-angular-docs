@@ -50,8 +50,8 @@ L10n.load({
 })
 
 export class AppComponent implements OnInit {
-    public data: Object[];
-    public importRules: RuleModel;
+    public data?: Object[];
+    public importRules?: RuleModel;
     ngOnInit(): void {
         this.data = hardwareData;
         this.importRules = {

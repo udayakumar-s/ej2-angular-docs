@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 import { ContextMenuSettingsModel,DiagramBeforeMenuOpenEventArgs, Diagram, NodeModel, ConnectorModel } from '@syncfusion/ej2-diagrams';
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 
@@ -31,10 +31,12 @@ import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public contextMenuSettings: ContextMenuSettingsModel
+    public diagram?: DiagramComponent;
+    public contextMenuSettings?: ContextMenuSettingsModel
+horizontalAlignment: any;
     ngOnInit(): void {
         //Enables the context menu
+        let $this = this as any;
         this.contextMenuSettings = {
             //Enables the context menu
             show: true,
@@ -48,7 +50,7 @@ export class AppComponent {
                 //do your custom action here.
                 for (let item of args.items) {
                     if (item.text === 'delete') {
-                        if (!diagram.selectedItems.nodes.length && !diagram.selectedItems.connectors.length) {
+                        if (!$(this.diagram as Diagram).selectedItems.nodes.length && !$(this.diagram as Diagram).selectedItems.connectors.length) {
                             args.hiddenItems.push(item.text);
                         }
                     }
@@ -57,21 +59,21 @@ export class AppComponent {
             contextMenuClick: function(args: MenuEventArgs) {
                 //do your custom action here.
                 if (args.item.id === 'delete') {
-                    if ((diagram.selectedItems.nodes.length + diagram.selectedItems.connectors.length) > 0) {
-                        diagram.cut();
+                    if (($(this.diagram as Diagram).selectedItems.nodes.length + $this.ddiagram.selectedItems.connectors.length) > 0) {
+                        $(this.diagram as Diagram).cut();
                     }
                 }
             }
-        }
+        } as ContextMenuSettingsModel;
     }
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel ).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel ).strokeColor = "White";
         return node;
     }
-    public getConnectorDefaults(obj: ConnectorModel): ConnectorModel {
+    public getConnectorDefaults(obj: ConnectorModel): void {
         obj.style = {
             strokeColor: '#6BA5D7',
             fill: '#6BA5D7',

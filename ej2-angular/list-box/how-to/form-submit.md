@@ -24,4 +24,4 @@ In the following code snippet, the value that is in selected state will be sent 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs11" %}

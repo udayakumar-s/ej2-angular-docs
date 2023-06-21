@@ -36,7 +36,7 @@ In this example, the United States map shape is used as shape data by utilizing 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs47" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs47" %}
 
 [`app.module.ts`]
 
@@ -72,7 +72,7 @@ Multiple shape files and map providers can be loaded simultaneously in Maps. The
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs48" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs48" %}
 
 ## Rendering custom shapes
 

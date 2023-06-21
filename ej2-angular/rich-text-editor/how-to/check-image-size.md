@@ -26,4 +26,4 @@ In the following, we have validated the image size before uploading and determin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/check-image-size-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/check-image-size-cs1" %}

@@ -4,19 +4,18 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='month' yName='sales' name='Sales' [emptyPointSettings]='emptySeries1'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public marker: Object;
-    public emptySeries1: Object;
-    public emptySeries2: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public marker?: Object;
+    public emptySeries1?: Object;
+    public emptySeries2?: Object;
         ngOnInit(): void {
         this.chartData = [
             { month: 'Jan', sales: 35 }, { month: 'Feb', sales: null },
@@ -29,7 +28,7 @@ export class AppComponent implements OnInit {
         this.primaryXAxis = {
             valueType: 'Category'
         }
-        this.marker: {
+        this.marker = {
             visible : true
         }
         this.emptySeries1 = {

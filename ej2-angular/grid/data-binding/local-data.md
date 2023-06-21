@@ -24,7 +24,7 @@ To bind local data to the grid, you can assign a JavaScript object array to the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/databinding-cs1" %}
+{% previewsample "page.domainurl/samples/grid/databinding-cs1" %}
 
 > By default, **DataManager** uses **JsonAdaptor** for local data-binding.
 
@@ -57,4 +57,4 @@ this.grid.dataSource.splice(selectedRow, 1); // Delete a record.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/change-headertext-cs2" %}
+{% previewsample "page.domainurl/samples/grid/change-headertext-cs2" %}

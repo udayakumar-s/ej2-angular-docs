@@ -25,4 +25,4 @@ Following is an example which demonstrates the above cases which are used to man
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/context-menu-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/context-menu-cs1" %}

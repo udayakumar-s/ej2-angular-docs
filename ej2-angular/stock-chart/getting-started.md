@@ -208,7 +208,7 @@ Since the JSON contains datetime data, set the [`valueType`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started/datasource-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/getting-started/datasource-cs1" %}
 
 ## Add Stock Chart Title
 
@@ -226,7 +226,7 @@ You can add a title using [`title`](https://ej2.syncfusion.com/angular/documenta
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started/title-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/getting-started/title-cs1" %}
 
 ## Add Stock Chart Crosshair
 
@@ -246,7 +246,7 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started/crosshair-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/getting-started/crosshair-cs1" %}
 
 ## Trackball
 
@@ -266,6 +266,6 @@ Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/getting-started/trackball-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/getting-started/trackball-cs1" %}
 
 > You can refer to our [Angular Stock Chart](https://www.syncfusion.com/angular-ui-components/angular-stock-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Stock Chart example](https://ej2.syncfusion.com/angular/demos/#/material/stock-chart) that shows you how to present and manipulate data.

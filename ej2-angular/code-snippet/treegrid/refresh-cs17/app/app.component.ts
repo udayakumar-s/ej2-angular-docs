@@ -25,12 +25,12 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public formatOptions: Object;
-    public toolbarOptions: ToolbarItems[];
-    public initialPage: object;
+    public formatOptions?: Object;
+    public toolbarOptions?: ToolbarItems[];
+    public initialPage?: object;
 
     @ViewChild('treegridObj')
-    public treegridObj: TreeGridComponent;
+    public treegridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = projectData;

@@ -12,7 +12,7 @@ enableRipple(true);
 })
 
 export class AppComponent {
-    private menuItems: MenuItemModel[] = [
+    public menuItems: MenuItemModel[] = [
         {
             text: 'File',
             iconCss: 'em-icons e-file',
@@ -40,11 +40,11 @@ export class AppComponent {
         { text: 'Help' }
     ];
 
-    private beforeItemRender(args: MenuEventArgs): void {
-        if (['File', 'Open', 'Save'].indexOf(args.item.text) > -1) {
+    public beforeItemRender(args: MenuEventArgs): void {
+        if (['File', 'Open', 'Save'].indexOf(args.item.text as string ) > -1) {
             // To underline a First character.
-            let underlinedText: string = '<u>' + args.item.text.slice(0, 1) + '</u>' + args.item.text.slice(1);
-            args.element.innerHTML = args.element.innerHTML.replace(args.item.text, underlinedText);
+            let underlinedText: string = '<u>' + (args.item.text as string).slice(0, 1) + '</u>' + (args.item.text as string).slice(1);
+            args.element.innerHTML = args.element.innerHTML.replace(args.item.text as string, underlinedText);
         }
     }
 }

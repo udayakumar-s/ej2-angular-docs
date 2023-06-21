@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { SpreadsheetComponent, BeforeSaveEventArgs } from '@syncfusion/ej2-angular-spreadsheet';
+import { SpreadsheetComponent, BeforeSaveEventArgs, BeforeOpenEventArgs } from '@syncfusion/ej2-angular-spreadsheet';
 
 @Component({
     selector: 'app-container',

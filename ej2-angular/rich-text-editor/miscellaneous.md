@@ -36,7 +36,7 @@ Through the `e-rte-placeholder` class to define our custom font family, font col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs18" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs18" %}
 
 ## Character count
 
@@ -64,7 +64,7 @@ To use quick `Character Count` feature, inject `CountService` in the provider se
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs19" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs19" %}
 
 ## Code view
 
@@ -107,7 +107,7 @@ Customize the undo/redo step count using the [`undoRedoSteps`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs21" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs21" %}
 
 ## Prevention of cross-site scripting (XSS)
 
@@ -127,7 +127,7 @@ In the following sample, removed `script` tag and `onmouseover` attribute from c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs22" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs22" %}
 
 > It's only applicable to editorMode as HTML.
 
@@ -149,7 +149,7 @@ The following sample demonstrate how to filter `script` tag from value.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs23" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs23" %}
 
 ## Resizable support
 
@@ -171,7 +171,7 @@ To render the Rich Text Editor in the resizable mode, set the `enableResize` pro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/toolbar/multirow-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/toolbar/multirow-cs1" %}
 
 ### Specifying the Minimum and Maximum width and height for Resize
 
@@ -189,7 +189,7 @@ To have a restricted resizable area for the Rich Text Editor, you need to specif
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/rename-image-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/rename-image-cs1" %}
 
 ## Number and Bullet Format Lists
 
@@ -207,4 +207,4 @@ This feature allows the user to change the appearance of the Numbered and Bullet
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/format-lists-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/format-lists-cs1" %}

@@ -133,7 +133,7 @@ The below example shows a basic Charts.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/initialize-cs1" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/initialize-cs1" %}
 
 ## Module Injection
 
@@ -206,7 +206,7 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/datasource-cs4" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs4" %}
 
 The sales data are in thousands, so format the vertical axis label by adding
 <b>$</b> as a prefix and `K` as a suffix to each label. This can be achieved by setting the
@@ -226,7 +226,7 @@ for each axis label.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/datasource-cs5" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs5" %}
 
 ## Add Chart Title
 
@@ -245,7 +245,7 @@ quick information to the user about the data plotted in the chart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/tooltip-cs1" %}
 
 ## Enable Legend
 
@@ -263,7 +263,7 @@ You can use legend for the chart by setting the `visible` property to true in [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/legend-cs1" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/legend-cs1" %}
 
 ## Add Data Label
 
@@ -282,7 +282,7 @@ This can be achieved by setting the visible property to true in the `dataLabel` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/datalabel-cs1" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/datalabel-cs1" %}
 
 ## Enable Tooltip
 
@@ -300,6 +300,6 @@ The tooltip is useful when you cannot display information by using the data labe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/getting-started/tooltip-cs2" %}
+{% previewsample "page.domainurl/samples/chart/getting-started/tooltip-cs2" %}
 
 > You can also explore our [Angular Charts example](https://ej2.syncfusion.com/angular/demos/#/material/chart/line) that shows various chart types and how to represent time-dependent data, showing trends in data at equal intervals.

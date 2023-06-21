@@ -18,9 +18,9 @@ import { SelectionSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public selectionOptions: SelectionSettingsModel;
-    public pageSettings: Object ;
+    public data?: Object[];
+    public selectionOptions?: SelectionSettingsModel;
+    public pageSettings?: Object ;
 
     ngOnInit(): void {
         this.data = sampleData;

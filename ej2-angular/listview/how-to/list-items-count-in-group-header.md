@@ -24,4 +24,4 @@ The ListView component supports wrapping list items into a group based on the ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/item-count-cs4" %}
+{% previewsample "page.domainurl/samples/listview/item-count-cs4" %}

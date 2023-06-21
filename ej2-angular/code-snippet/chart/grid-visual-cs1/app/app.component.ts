@@ -91,10 +91,10 @@ export class AppComponent {
   ];
 
   @ViewChild('pie')
-  public pie: AccumulationChartComponent | AccumulationChart;
+  public pie?: AccumulationChartComponent | AccumulationChart;
 
   @ViewChild('grid')
-  public grid: GridComponent;
+  public grid?: GridComponent;
 
   public pointIndex: number = -1;
   //Initializing Legend
@@ -122,62 +122,62 @@ export class AppComponent {
   }
   public onChartMouseClick(args: IMouseEventArgs): void {
     if (args.target.indexOf('back') > -1) {
-      if (this.pie.series[0].name === 'Level 3') {
+      if (this.pie?.series[0].name === 'Level 3') {
         this.pie.series[0].dataSource = this.data[this.pointIndex].z;
         this.pie.series[0].name = 'Level 2';
-        this.pie.title = this.data[this.pointIndex].z[0].title;
+        this.pie.title = this.data[this.pointIndex].z[0].title as any;
         this.pie.series[0].innerRadius = '30%';
-        this.grid.dataSource = this.pie.series[0].dataSource;
-        this.grid.columns[0].headerText = this.data[this.pointIndex].x;
-        this.grid.refresh();
+        (this.grid as GridComponent ).dataSource = this.pie.series[0].dataSource;
+        ((this.grid as GridComponent ).columns[0] as any).headerText = this.data[this.pointIndex].x;
+        (this.grid as GridComponent ).refresh();
         this.pie.refresh();
-      } else if (this.pie.series[0].name === 'Level 2') {
+      } else if (this.pie?.series[0].name === 'Level 2') {
         this.pie.series[0].dataSource = this.data;
         this.pie.series[0].name = 'Level 1';
         this.pie.series[0].innerRadius = '0%';
         this.pie.title = 'Automobile Sales by Category';
-        this.pie.annotations = null;
+        this.pie.annotations = null as any;
         this.pie.pointClick = this.onPointClick;
-        this.grid.dataSource = this.pie.series[0].dataSource;
-        this.grid.columns[0].headerText = 'Vehicle';
-        this.grid.refresh();
+        (this.grid as GridComponent ).dataSource = this.pie.series[0].dataSource;
+        ((this.grid as GridComponent ).columns[0] as any).headerText = 'Vehicle';
+        (this.grid as GridComponent ).refresh();
         this.pie.refresh();
       }
     }
-    this.grid.dataSource = this.pie.series[0].dataSource;
+    (this.grid as GridComponent ).dataSource = this.pie?.series[0].dataSource as any;
   }
-  public click(args: IMouseEventArgs) {
-    if (this.pie.series[0].name !== 'Level 3') {
+  public click(args: IMouseEventArgs | any) {
+    if (this.pie?.series[0].name !== 'Level 3') {
       switch (args.pointIndex) {
         case 0:
-          this.pie.series[0].dataSource = this.data[0].z[0].z;
-          this.pie.title = 'SUV Sales by Years';
-          this.pie.series[0].name = 'Level 3';
-          this.grid.columns[0].headerText = 'Year';
-          this.grid.refresh();
-          this.pie.refresh();
+          this.pie!.series[0].dataSource = (this.data[0].z[0] as any).z;
+          this.pie!.title = 'SUV Sales by Years';
+          this.pie!.series[0].name = 'Level 3';
+          ((this.grid as GridComponent ).columns[0] as any).headerText = 'Year';
+          (this.grid as GridComponent ).refresh();
+          this.pie?.refresh();
           break;
       }
-      this.grid.dataSource = this.pie.series[0].dataSource;
+      (this.grid as GridComponent ).dataSource = this.pie?.series[0].dataSource as any;
     }
   }
-  public onPointClick(args: IMouseEventArgs) {
+  public onPointClick(args: IMouseEventArgs | any) {
     if (
       getElement(
-        this.pie.element.id +
+        this.pie?.element.id +
           '_Series_' +
           args.seriesIndex +
           '_Point_' +
           args.pointIndex
       )
     ) {
-      this.pie.series[0].dataSource = this.data[args.pointIndex].z;
-      this.pie.title = this.data[args.pointIndex].z[0].title;
+      this.pie!.series[0].dataSource = this.data[args.pointIndex].z;
+      this.pie!.title = this.data[args.pointIndex].z[0].title as any;
       this.pointIndex = args.pointIndex;
 
-      this.pie.series[0].name = 'Level 2';
-      this.pie.series[0].innerRadius = '30%';
-      this.pie.annotations = [
+      this.pie!.series[0].name = 'Level 2';
+      this.pie!.series[0].innerRadius = '30%';
+      this.pie!.annotations = [
         {
           content:
             '<div id="back" style="cursor:pointer;padding:3px;width:30px; height:30px;">' +
@@ -188,10 +188,10 @@ export class AppComponent {
         },
       ];
     }
-    this.grid.dataSource = this.pie.series[0].dataSource;
-    this.grid.columns[0].headerText = this.data[args.pointIndex].x;
-    this.grid.refresh();
-    this.pie.refresh();
+    (this.grid as GridComponent ).dataSource = this.pie?.series[0].dataSource as any;
+    ((this.grid as GridComponent ).columns[0] as any).headerText = this.data[args.pointIndex].x;
+    (this.grid as GridComponent ).refresh();
+    this.pie?.refresh();
   }
   constructor() {
     //code

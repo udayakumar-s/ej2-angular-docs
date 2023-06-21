@@ -52,7 +52,7 @@ Step 2:  The corresponding name specified in the name property should bind with 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/validation-sample-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/validation-sample-cs1" %}
 
 In the following sample, first editor value submitted without select any date, so the default error message will be displayed below the `DatePicker` element. Second editor configured with the [validating](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#validating) event with the handler. In handler event [errorMessage](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/validateEventArgs/#errormessage) argument value modified and it will show below the `DatePicker` element.
 
@@ -68,7 +68,7 @@ In the following sample, first editor value submitted without select any date, s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/validation-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/validation-cs1" %}
 
 * For more details about validation configuration, refer this documentation [section](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#validating).
 

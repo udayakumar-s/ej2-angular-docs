@@ -46,4 +46,4 @@ You can use the following key shortcuts to access the Mention without interrupti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/accessibility-cs1" %}
+{% previewsample "page.domainurl/samples/mention/accessibility-cs1" %}

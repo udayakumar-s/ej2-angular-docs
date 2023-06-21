@@ -6,7 +6,7 @@ import { FileManager } from '@syncfusion/ej2-filemanager';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: ` <button ejs-button id="enable" cssClass="e-success">Enable New Folder toolbar item</button>
                 <button ejs-button id="disable" cssClass="e-danger">Disable New Folder toolbar item</button>
                 <br />
@@ -16,9 +16,9 @@ import { FileManager } from '@syncfusion/ej2-filemanager';
 })
 export class AppComponent {
     @ViewChild('fileManager')
-    public fileManagerInstance: FileManager;
-    public ajaxSettings: object;
-    public height: number;
+    public fileManagerInstance?: FileManager;
+    public ajaxSettings?: object;
+    public height?: number;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {
@@ -27,18 +27,18 @@ export class AppComponent {
             uploadUrl: this.hostUrl + 'api/FileManager/Upload',
             downloadUrl: this.hostUrl + 'api/FileManager/Download'
         };
-        this.height = "330px";
+        this.height = 330;
        };
     onCreated(args: any) {
         // Click event for enable button
-        document.getElementById("enable").addEventListener('click', (event) => {
+        (document.getElementById("enable") as HTMLElement).addEventListener('click', (event) => {
             // Enable new folder toolbar item
-            this.fileManagerInstance.enableToolbarItems(["newfolder"]);
-        });
+            (this.fileManagerInstance as FileManager).enableToolbarItems(["newfolder"]);
+        }); 
         // Click event for disable button
-        document.getElementById("disable").addEventListener('click', (event) => {
+        (document.getElementById("disable") as HTMLElement).addEventListener('click', (event) => {
             // Disable new folder toolbar item
-            this.fileManagerInstance.disableToolbarItems(["newfolder"]);
+            (this.fileManagerInstance as FileManager).disableToolbarItems(["newfolder"]);
         });
     }
 }

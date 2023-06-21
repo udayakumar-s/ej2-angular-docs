@@ -26,4 +26,4 @@ In the below sample, we have overridden the default **generateQuery** to display
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/filtering1-cs13" %}
+{% previewsample "page.domainurl/samples/grid/filtering1-cs13" %}

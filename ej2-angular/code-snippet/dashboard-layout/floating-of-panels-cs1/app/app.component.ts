@@ -6,7 +6,7 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/default-style.css'],
+    styleUrls: ['./default-style.css'],
     template: `
     <div class="control-section">
         <div class="inline" id="control">
@@ -21,8 +21,8 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    @ViewChild('defaultLayout') dashboard: DashboardLayoutComponent;
-    @ViewChild('toggleBtn') toggleBtn: ButtonComponent;
+    @ViewChild('defaultLayout') dashboard?: DashboardLayoutComponent;
+    @ViewChild('toggleBtn') toggleBtn?: ButtonComponent;
     public cellSpacing: any = [10, 10];
     public allowFloating: boolean = false;
     public cellAspectRatio: number = 100/75;
@@ -32,14 +32,14 @@ export class AppComponent {
     {'sizeX': 2, 'sizeY': 2, 'row': 3, 'col': 4, content:'<div class="content">2</div>'}
     ];
 
-    btnClick() {
-        if (this.toggleBtn.content == "Disable Floating and Reset") {
-            this.toggleBtn.content = 'Enable Floating';
-            this.dashboard.allowFloating = false;
-            this.dashboard.panels = this.panels;
+    btnClick(args: any) {
+        if (this.toggleBtn?.content == "Disable Floating and Reset") {
+            this.toggleBtn!.content = 'Enable Floating';
+            this.dashboard!.allowFloating = false;
+            this.dashboard!.panels = this.panels;
         } else {
-            this.toggleBtn.content = 'Disable Floating and Reset';
-            this.dashboard.allowFloating = true;
+            this.toggleBtn!.content = 'Disable Floating and Reset';
+            this.dashboard!.allowFloating = true;
         }
     }
 }

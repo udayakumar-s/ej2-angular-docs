@@ -3,8 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart style='display:block;' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'>
+    template: `<ejs-chart style='display:block;' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'>
 	    <e-series-collection>
 	        <e-series stackingGroup="A" [dataSource]='data' type='StackingColumn' xName='x' yName='y' name='UK' width='2'> </e-series>
 		    <e-series stackingGroup="B" [dataSource]='data1' type='StackingColumn' xName='x' yName='y' name='Germany' width='2'> </e-series>
@@ -14,12 +13,12 @@ import { Component, OnInit } from '@angular/core';
 	</ejs-chart>`
 })
 export class AppComponent implements OnInit {
-  public data: Object[];
-  public data1: Object[];
-  public data2: Object[];
-  public data3: Object[];
-  public primaryXAxis: Object;
-  public primaryYAxis: Object;
+  public data?: Object[];
+  public data1?: Object[];
+  public data2?: Object[];
+  public data3?: Object[];
+  public primaryXAxis?: Object;
+  public primaryYAxis?: Object;
     ngOnInit(): void {
         this.primaryXAxis = {
             majorGridLines: { width: 0 },

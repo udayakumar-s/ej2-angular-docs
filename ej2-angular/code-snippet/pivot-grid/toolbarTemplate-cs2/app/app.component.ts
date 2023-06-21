@@ -6,7 +6,7 @@ import {
     ToolbarService,  IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 enableRipple(false);
 
 @Component({
@@ -26,23 +26,23 @@ enableRipple(false);
 })
 
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
-    public toolbarOptions: any;
+    public dataSourceSettings?: IDataOptions;
+    public gridSettings?: GridSettings;
+    public toolbarOptions?: any;
 
     @ViewChild('btnenablertl', {static:true})
-    public enableRtl: any;
+    public enableRtl?: any;
     @ViewChild('btndisablertl', {static:true})
-    public disableRTL: any;
+    public disableRTL?: any;
     @ViewChild('pivotview')
-    public pivotObj: PivotView;
+    public pivotObj?: PivotView;
 
        enablertl() {
-              this.pivotObj.enableRtl=true;
+            this.pivotObj!.enableRtl=true;
         };
 
          disableRtl(){
-              this.pivotObj.enableRtl=false;
+            this.pivotObj!.enableRtl=false;
         };
 
     ngOnInit(): void {
@@ -57,7 +57,7 @@ export class AppComponent {
             columns: [{ name: 'Year' }, { name: 'Order_Source', caption: 'Order Source' }],
             rows: [{ name: 'Country' }, { name: 'Products' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             values: [{ name: 'Sold', caption: 'Units Sold' },
             { name: 'Amount', caption: 'Sold Amount' }],

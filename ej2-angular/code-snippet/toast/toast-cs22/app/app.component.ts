@@ -3,6 +3,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
+import { ToastComponent } from '@syncfusion/ej2-angular-notifications';
 import { closest} from '@syncfusion/ej2-base';
 import { ToastUtility } from '@syncfusion/ej2-notifications';
 
@@ -21,21 +22,21 @@ import { ToastUtility } from '@syncfusion/ej2-notifications';
 })
 
 export class AppComponent {
-    public toastObj;
-    public infoToast(): void {
-        toastObj = ToastUtility.show('Please read the comments carefully', 'Information', 20000);
+    public toastObj?: ToastComponent;
+    public infoToast(args: any): void {
+        this.toastObj = ToastUtility.show('Please read the comments carefully', 'Information', 20000) as ToastComponent;
     }
-    public successToast(): void {
-        toastObj = ToastUtility.show('Your message has been sent successfully', 'Success', 20000);
+    public successToast(args: any): void {
+        this.toastObj = ToastUtility.show('Your message has been sent successfully', 'Success', 20000) as ToastComponent;
     }
-    public warningToast(): void {
-       toastObj = ToastUtility.show('There was a problem with your network connection', 'Warning', 20000);
+    public warningToast(args: any): void {
+        this.toastObj = ToastUtility.show('There was a problem with your network connection', 'Warning', 20000) as ToastComponent;
     }
-    public dangerToast(): void {
-        toastObj = ToastUtility.show('A problem has been occurred while submitting the data', 'Error', 20000);
+    public dangerToast(args: any): void {
+        this.toastObj = ToastUtility.show('A problem has been occurred while submitting the data', 'Error', 20000) as ToastComponent;
     }
-    public hideToast(): void {
-        toastObj.hide('All');
+    public hideToast(args: any): void {
+        this.toastObj?.hide('All');
     }
 }
 

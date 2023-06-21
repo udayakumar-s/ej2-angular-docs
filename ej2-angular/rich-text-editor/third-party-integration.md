@@ -52,7 +52,7 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/getting-started-cs29" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs29" %}
 
 ## Integrate `embedly`
 
@@ -80,7 +80,7 @@ The above script is added to the page.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/embedly-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/embedly-cs1" %}
 
 ## `At.js` Integration
 
@@ -131,4 +131,4 @@ Populate the employee’s email id from local or remote data and set the result 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/atjs-integration-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/atjs-integration-cs1" %}

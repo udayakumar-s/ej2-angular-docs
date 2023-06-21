@@ -29,4 +29,4 @@ You can create or delete conditions by interacting through the user interface an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs6" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs6" %}

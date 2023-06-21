@@ -31,4 +31,4 @@ The event triggered in drag and drop support are
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/file-manager/drag-and-drop-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/drag-and-drop-cs1" %}

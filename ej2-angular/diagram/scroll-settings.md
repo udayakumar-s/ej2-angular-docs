@@ -34,7 +34,7 @@ In the following example, the vertical scroll bar is scrolled down by 50px and h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/scrollsettings/scroll-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/scrollsettings/scroll-cs1" %}
 
 ## Update scroll status
 
@@ -52,7 +52,7 @@ You can programmatically change the scroll offsets at runtime by using the clien
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/scrollsettings/update-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/scrollsettings/update-cs1" %}
 
 ## AutoScroll
 
@@ -83,7 +83,7 @@ The autoscroll border is used to specify the maximum distance between the object
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/scrollsettings/autoscroll-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/scrollsettings/autoscroll-cs1" %}
 
 ## Scroll limit
 
@@ -110,7 +110,7 @@ The following code example illustrates how to specify the scroll limit.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/scrollsettings/scrolllimit-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/scrollsettings/scrolllimit-cs1" %}
 
 ## Scroll padding
 
@@ -130,7 +130,7 @@ The following code example illustrates how to set scroll padding to diagram regi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/scrollsettings/scrolllimit-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/scrollsettings/scrolllimit-cs2" %}
 
 ## Scrollable Area
 
@@ -148,7 +148,7 @@ Scrolling beyond any particular rectangular area can be restricted by using the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/scrollsettings/scrollablearea-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/scrollsettings/scrollablearea-cs1" %}
 
 ## UpdateViewport
 

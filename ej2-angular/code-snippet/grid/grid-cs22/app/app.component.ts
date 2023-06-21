@@ -20,30 +20,30 @@ import { Column, EditSettingsModel, ToolbarItems, IEditCell, GridComponent } fro
 })
 
 export class AppComponent implements OnInit {
-    public data: object[];
-    @ViewChild('grid') public grid: GridComponent;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
-    public element: HTMLElement;
-    public maskObj: MaskedTextBox;
-    public params: IEditCell;
+    public data?: object[];
+    @ViewChild('grid') public grid?: GridComponent;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public element?: HTMLElement;
+    public maskObj?: MaskedTextBox;
+    public params?: IEditCell;
 
     public create = () => {
-        this.element = document.createElement('input');
-        return this.element;
+        (this as any).element = document.createElement('input');
+        return (this as any).element;
     };
     public read = () => {
-        return this.maskObj.value;
+        return ((this as any).maskObj as any).value;
     };
     public destroy = () => {
-        this.maskObj.destroy();
+        ((this as any).maskObj as any).destroy();
     };
     public write = (args: { rowData: Object, column: Column }) => {
-        this.maskObj = new MaskedTextBox({
+        (this as any).maskObj = new MaskedTextBox({
             mask: "0-0-0-0",
-            value: args.rowData.Mask
+            value: ((args as any).rowData as any).Mask
         });
-        this.maskObj.appendTo((args as any).element);
+        (this as any).maskObj.appendTo((args as any).element);
     };
 
     ngOnInit(): void {

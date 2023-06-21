@@ -30,7 +30,7 @@ To draw a shape, set the JSON of that shape to the drawType property of the diag
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tools/rectangle-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tools/rectangle-cs1" %}
 
 The following code example illustrates how to draw a path.
 
@@ -46,7 +46,7 @@ The following code example illustrates how to draw a path.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tools/path-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tools/path-cs1" %}
 
 ## Connectors
 
@@ -64,7 +64,7 @@ To draw connectors, set the JSON of the connector to the drawType property. The 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tools/connector-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tools/connector-cs1" %}
 
 ## Text
 
@@ -82,7 +82,7 @@ Diagram allows you to create a textNode, when you click on the diagram page. The
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tools/text-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tools/text-cs1" %}
 
 Once you activate the TextTool, perform label editing of a node/connector.
 
@@ -104,7 +104,7 @@ The following code illustrates how to draw a polygon shape.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tools/polygon-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tools/polygon-cs1" %}
 
 ## Polyline Connector
 
@@ -124,7 +124,7 @@ The following code illustrates how to draw a polyline connector.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tools/polyline-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tools/polyline-cs1" %}
 
 ## Tool selection
 

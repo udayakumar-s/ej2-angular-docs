@@ -27,7 +27,7 @@ Waterfall chart helps to understand the cumulative effect of the sequentially in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/waterfall-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/waterfall-cs1" %}
 
 ## Series customization
 
@@ -47,7 +47,7 @@ By default, the negativeFillColor as ‘#E94649’ and the summaryFillColor as �
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/waterfall-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/waterfall-cs2" %}
 
 ## See Also
 

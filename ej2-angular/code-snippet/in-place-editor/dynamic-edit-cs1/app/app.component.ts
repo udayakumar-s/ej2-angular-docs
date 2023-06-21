@@ -27,11 +27,11 @@ import {  ChangeEventArgs } from '@syncfusion/ej2-buttons';
 })
 
 export class AppComponent {
-    @ViewChild('element') editObj: InPlaceEditorComponent;
+    @ViewChild('element') editObj?: InPlaceEditorComponent;
     public model: object = { placeholder: 'Enter some text' };
     public onChange(e: ChangeEventArgs): void {
-        this.editObj.enableEditMode = e.checked;
-        this.editObj.dataBind();
+        (this.editObj as InPlaceEditorComponent).enableEditMode = e.checked as boolean;
+        this.editObj?.dataBind();
     }
 }
 

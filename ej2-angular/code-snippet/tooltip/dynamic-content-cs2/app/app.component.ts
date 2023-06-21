@@ -2,8 +2,8 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { Ajax } from '@syncfusion/ej2-base';
-import {TooltipEventArgs } from '@synfusion/ej2-popus';
+import { Fetch } from '@syncfusion/ej2-base';
+import { TooltipComponent, TooltipEventArgs, TooltipModule } from '@syncfusion/ej2-angular-popups';
 @Component({
     selector: 'my-app',
     template: `
@@ -25,15 +25,14 @@ import {TooltipEventArgs } from '@synfusion/ej2-popus';
 
 export class AppComponent  {
    @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent;
+    public tooltipControl: TooltipComponent | any;
   constructor(){}
   onBeforeRender(args: TooltipEventArgs): void {
     this.tooltipControl.content = 'Loading...';
     this.tooltipControl.dataBind();
-    let ajax: Ajax = new Ajax('./tooltipdata.json', 'GET', true);
-    ajax.send().then(
+    let fetchApi: Fetch = new Fetch('./tooltipdata.json', 'GET');
+    fetchApi.send().then(
         (result: any) => {
-            result = JSON.parse(result);
             for (let i: number = 0; i < result.length; i++) {
                 if (result[i].Id == args.target.id) {
                     /* tslint:disable */

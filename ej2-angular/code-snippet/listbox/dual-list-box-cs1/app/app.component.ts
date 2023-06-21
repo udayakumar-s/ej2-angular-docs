@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
                <h4>Group B</h4>
                <ejs-listbox [dataSource]="groupB" [fields]="setfield" height="330px" id="listbox"></ejs-listbox>
                </div></div>`,
-    styleUrls: ['duallistbox.css']
+   
 })
 
 export class AppComponent {

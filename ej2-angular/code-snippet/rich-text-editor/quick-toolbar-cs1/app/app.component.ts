@@ -6,7 +6,7 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService,
 QuickToolbarService, RichTextEditorComponent, QuickToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
     selector: 'app-root',
-    template: `<ejs-richtexteditor #imageRTE id='imageRTE' [(quickToolbarSettings)]='quickToolbarSettings'>
+    template: `<ejs-richtexteditor #imageRTE id='imageRTE' [quickToolbarSettings]='quickToolbarSettings' (quickToolbarSettingsChange)=' quickToolbarSettingsChange'>
             <ng-template #valueTemplate>
                 <p>RichTextEditor allows to insert images from online source as well as local
                     computer where you want to insert the image in your content.</p>
@@ -18,13 +18,14 @@ QuickToolbarService, RichTextEditorComponent, QuickToolbarSettingsModel } from '
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService]
 })
 export class AppComponent  {
-    @ViewChild('imageRTE') rteObj: RichTextEditorComponent;
+    @ViewChild('imageRTE') rteObj: RichTextEditorComponent | undefined;
     quickToolbarSettings: QuickToolbarSettingsModel = {
         image: [
             'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'OpenImageLink', '-',
             'EditImageLink', 'RemoveImageLink', 'Display', 'AltText', 'Dimension'
         ]
     };
+    quickToolbarSettingsChange: QuickToolbarSettingsModel={}
 }
 
 

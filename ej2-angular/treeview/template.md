@@ -28,7 +28,7 @@ The template expression should be provided inside the `${...}` interpolation syn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tree-view/template-cs1" %}
+{% previewsample "page.domainurl/samples/tree-view/template-cs1" %}
 
 ## See Also
 

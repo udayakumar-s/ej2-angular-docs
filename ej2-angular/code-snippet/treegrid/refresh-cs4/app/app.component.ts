@@ -23,16 +23,16 @@ export class AppComponent implements OnInit {
 
     public data: Object[] = [];
     @ViewChild('treegridObj')
-    public treegridObj: TreeGridComponent;
+    public treegridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = projectData;
     }
-    tooltip(args: QueryCellInfoEventArgs) {
+    tooltip(args: QueryCellInfoEventArgs | any) {
         const tooltip: Tooltip = new Tooltip({
             content: args.data[args.column.field].toString()
         }, args.cell as HTMLTableCellElement);  
     }
 
-
+}
 

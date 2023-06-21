@@ -65,15 +65,15 @@ import { AccordionComponent} from '@syncfusion/ej2-angular-navigations';
         `
 })
 export class AppComponent {
-    @ViewChild('acrdnInstance') acrdnInstance: AccordionComponent;
-    @ViewChild('expandAnimation') expandInstance: DropDownListComponent;
-    @ViewChild('collapseAnimation') collapseInstance: DropDownListComponent;
+    @ViewChild('acrdnInstance') acrdnInstance?: AccordionComponent;
+    @ViewChild('expandAnimation') expandInstance?: DropDownListComponent;
+    @ViewChild('collapseAnimation') collapseInstance?: DropDownListComponent;
     public expandAni: string[] = ['SlideDown', 'SlideUp', 'FadeIn', 'FadeOut', 'FadeZoomIn', 'FadeZoomOut', 'ZoomIn', 'ZoomOut', 'None'];
     public expandAnimationChange(): void {
-      this.acrdnInstance.animation.expand = { effect: this.expandInstance.value as Effect}
+      (this.acrdnInstance as AccordionComponent).animation.expand = { effect: this.expandInstance?.value as Effect}
     }
     public collapseAnimationChange(): void {
-      this.acrdnInstance.animation.collapse = { effect: this.collapseInstance.value as Effect}
+      (this.acrdnInstance as AccordionComponent).animation.collapse = { effect: this.collapseInstance?.value as Effect}
     }
 }
 

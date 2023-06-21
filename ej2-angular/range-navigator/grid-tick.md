@@ -26,7 +26,7 @@ The gridlines indicate axis divisions by drawing the chart plot. Gridlines inclu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/numeric-cs5" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/numeric-cs5" %}
 
 ## Tick line customization
 
@@ -44,4 +44,4 @@ Ticklines are the small lines which is drawn on the axis line representing the a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rangenavigator/axis/numeric-cs6" %}
+{% previewsample "page.domainurl/samples/rangenavigator/axis/numeric-cs6" %}

@@ -10,7 +10,8 @@ import { IDataOptions, IDataSet, PivotView, FieldListService, CalculatedFieldSer
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width allowCalculatedField='true' showFieldList='true'></ejs-pivotview>`
 })
 export class AppComponent {
-    public dataSourceSettings: IDataOptions;
+    public dataSourceSettings?: IDataOptions;
+    public width?: string;
     ngOnInit(): void {
         this.dataSourceSettings = {
             catalog: 'Adventure Works DW 2008 SE',

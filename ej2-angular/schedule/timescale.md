@@ -32,7 +32,7 @@ The `interval` and `slotCount` properties can be used together on the Scheduler 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs63" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs63" %}
 
 ![Time Slot Duration](images/schedule-timeslot.png)
 
@@ -58,7 +58,7 @@ The `timeScale` property also provides template option to allow customization of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/timescale-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/timescale-cs1" %}
 
 ![Customizing Time Cells](images/schedule-custom-timecell.png)
 
@@ -78,7 +78,7 @@ The grid lines which indicates the exact time duration can be enabled or disable
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs64" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs64" %}
 
 ![Hide Time Scale](images/schedule-hide-timecell.png)
 
@@ -98,7 +98,7 @@ By default, Scheduler indicates current date with a highlighted date header on a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs65" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs65" %}
 
 ![Highlight current Time](images/schedule-highlight.png)
 

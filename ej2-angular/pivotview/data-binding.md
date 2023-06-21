@@ -29,7 +29,7 @@ In-order to bind local JSON data to the pivot table user can assign the local va
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs21" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs21" %}
 
 Using local variable, the JSON data can also be bound to the pivot table using [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) option with the help of `JsonAdaptor`. Here the instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) holding JSON data is assigned to [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/). The use of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) is optional here.
 
@@ -45,7 +45,7 @@ Using local variable, the JSON data can also be bound to the pivot table using [
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs22" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs22" %}
 
 In the meantime, the JSON data from the local *.json file type can also be connected to the pivot table via the file uploader option. Here, the resulting string after uploading the file needs to be converted to JSON data that can be assigned to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/). The following code example illustrates the same.
 
@@ -106,7 +106,7 @@ In-order to bind remote JSON data, mention the endpoint [`URL`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs23" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs23" %}
 
 ## CSV
 
@@ -130,7 +130,7 @@ In-order to bind local CSV data to the pivot table, user needs to convert it as 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs24" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs24" %}
 
 In the meantime, the CSV data from the local *.csv file type can also be connected to the pivot table via the file uploader option. Here, the resulting string after uploading the file needs to be converted to string array that can be assigned to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/). The following code example illustrates the same.
 
@@ -192,7 +192,7 @@ In-order to bind remote CSV data, mention the endpoint [`URL`](https://ej2.syncf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs25" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs25" %}
 
 ## Remote Data Binding
 
@@ -214,7 +214,7 @@ OData is a standardized protocol for creating and consuming data. User can retri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs26" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs26" %}
 
 ### Binding with OData V4 services
 
@@ -232,7 +232,7 @@ The OData V4 is an improved version of OData protocols, and the `DataManager` ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs27" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs27" %}
 
 ### Web API
 
@@ -250,7 +250,7 @@ User can use [`WebApiAdaptor`](https://ej2.syncfusion.com/documentation/data/ada
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs28" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs28" %}
 
 ### Querying in Data Manager
 
@@ -268,7 +268,7 @@ By default, the data manager retrieves all the data from the provider which is m
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs29" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs29" %}
 
 ## Mapping
 
@@ -311,7 +311,7 @@ In the below code sample, visibility of the field button icons are configured.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs30" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs30" %}
 
 ## Values in row axis
 
@@ -329,7 +329,7 @@ By default, the value fields are plotted in column axis. To plot those fields in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs31" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs31" %}
 
 ## Values at different positions
 
@@ -349,7 +349,7 @@ By default, the value fields are placed at the end of the row or column axis. To
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs32" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs32" %}
 
 ## Show 'no data' items
 
@@ -367,7 +367,7 @@ By default, the pivot table only shows the field item if it has data in its row 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs33" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs33" %}
 
 ## Show value headers always
 
@@ -385,7 +385,7 @@ To show value header always in pivot table, even if it holds a single value, use
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs34" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs34" %}
 
 ## Customize empty value cells
 
@@ -403,7 +403,7 @@ User can show custom string in empty value cells using the [`emptyCellsTextConte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs35" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs35" %}
 
 ## Event
 
@@ -423,7 +423,7 @@ The event [`load`](https://ej2.syncfusion.com/angular/documentation/api/pivotvie
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs36" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs36" %}
 
 ### EnginePopulated
 
@@ -441,7 +441,7 @@ The event [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs37" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs37" %}
 
 ### EnginePopulating
 
@@ -459,7 +459,7 @@ The event [`enginePopulating`](https://ej2.syncfusion.com/angular/documentation/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs38" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs38" %}
 
 ## See Also
 

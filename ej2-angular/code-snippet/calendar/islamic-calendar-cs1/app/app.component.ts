@@ -15,7 +15,7 @@ import { addClass } from '@syncfusion/ej2-base';
 export class AppComponent {
     constructor() {
     }
-
+    onValueChange(args: any){}
     onLoad(args: any) {
          /*Date need to be disabled*/
          if (args.date.getDate() === 12 || args.date.getDate() === 17 || args.date.getDate() === 22) {

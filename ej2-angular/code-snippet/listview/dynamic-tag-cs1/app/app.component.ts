@@ -23,9 +23,9 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 export class AppComponent {
     parentNode:any;
-    @ViewChild('list') listviewInstance: ListViewComponent;
-    @ViewChild('List') listObj: ListViewComponent;
-    @ViewChild('ejDialog') dialog: DialogComponent;
+    @ViewChild('list') listViewInstance?: ListViewComponent;
+    @ViewChild('List') listObj?: ListViewComponent;
+    @ViewChild('ejDialog') dialog?: DialogComponent;
     //define the array of string
 public data: Object[] =  [{ "Id": "Brooke", "Name": "Brooke" },
 { "Id": "Claire", "Name": "Claire" },
@@ -34,7 +34,7 @@ public data: Object[] =  [{ "Id": "Brooke", "Name": "Brooke" },
 { "Id": "Jacob", "Name": "Jacob" }];
 
 public fields: Object = {text: "Name"};
-public position: Object;
+public position?: Object;
 public animation: Object = {effect: 'None'};
 
 public brookeTag : Object = [{ "id": "list11", "Name": "Discover Music" },
@@ -72,7 +72,7 @@ public datasource: any = { "Brooke": this.brookeTag, "Claire": this.claireTag, "
 
 ngAfterViewChecked(){
 setTimeout(()=>{
-  this.position =  { X: document.querySelector('.e-add-icon').getBoundingClientRect().left + 50, Y: document.querySelector('.e-add-icon').getBoundingClientRect().top - 5 };
+  this.position =  { X: (document.querySelector('.e-add-icon') as Element).getBoundingClientRect().left + 50, Y: (document.querySelector('.e-add-icon') as any).getBoundingClientRect().top - 5 };
 },1000);
 }
 onClick(e: any){
@@ -80,12 +80,12 @@ onClick(e: any){
 }
 renderDialog(id: any) {
     if (document.getElementsByClassName('e-popup-open').length != 0) {
-        this.dialog.hide();
+        (this.dialog as DialogComponent).hide();
     }
     else {
-        this.listObj.dataSource = this.datasource[id];
-        this.listObj.dataBind();
-        this.dialog.show();
+        (this.listObj as ListViewComponent).dataSource = this.datasource[id];
+        this.listObj?.dataBind();
+        (this.dialog as DialogComponent).show();
     }
 
 }
@@ -103,7 +103,7 @@ addTag(e: any) {
     let tag = document.createElement('span');
     tag.className = 'advanced-option-list';
     tag.appendChild(listTag);
-    this.listviewInstance.element.querySelector('.e-active').appendChild(tag);
+    (this.listViewInstance?.element.querySelector('.e-active') as any).appendChild(tag);
 }
 removeTag() {
     this.parentNode.parentNode.remove();

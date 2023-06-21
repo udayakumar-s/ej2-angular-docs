@@ -17,8 +17,8 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public editSettings: EditSettingsModel;
+    public data?: Object[];
+    public editSettings?: EditSettingsModel;
     ngOnInit(): void {
         this.data = sampleData;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Cell' };

@@ -9,8 +9,8 @@ import { SpinSettingsModel, AnimationSettingsModel } from '@syncfusion/ej2-angul
 })
 
 export class AppComponent {
-    private spinSettings : SpinSettingsModel = { position: 'Center' };
-    private animationSettings : AnimationSettingsModel = { effect:'SlideLeft', duration: 500, easing: 'linear' };
+    public spinSettings : SpinSettingsModel = { position: 'Center' };
+    public animationSettings : AnimationSettingsModel = { effect:'SlideLeft', duration: 500, easing: 'linear' };
 }
 
 

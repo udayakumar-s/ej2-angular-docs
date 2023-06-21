@@ -28,7 +28,7 @@ In the below sample, we have set the background color for **Freight** column in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs9" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs9" %}
 
 ## Theme
 
@@ -48,6 +48,6 @@ To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-cs10" %}
+{% previewsample "page.domainurl/samples/grid/exporting-cs10" %}
 
 > By default, material theme is applied to exported PDF document.

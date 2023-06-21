@@ -21,7 +21,7 @@ export class AppComponent {
         contentField: 'Summary',
         headerField: 'Id',
         priority: 'RankId'
-    };
+    } as CardSettingsModel;
 }
 
 

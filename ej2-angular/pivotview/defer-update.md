@@ -33,7 +33,7 @@ To enable deferred updates in the pivot table, set the property [`allowDeferLayo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs39" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs39" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -55,4 +55,4 @@ To enable deferred updates in the static fieldlist, set the property [`allowDefe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs40" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs40" %}

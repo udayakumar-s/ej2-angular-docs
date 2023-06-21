@@ -15,14 +15,14 @@ import {
 })
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2018, 1, 15);
     public eventSettings: EventSettingsModel = {
         dataSource: scheduleData,
     };
     onTreeDragStop(event: DragEventArgs): void {
         event.cancel = true; // cancels the drop action
-        this.scheduleObj.openEditor(event.data, 'Save'); // open the event window with updated start and end time
+        this.scheduleObj?.openEditor(event.data, 'Save'); // open the event window with updated start and end time
     }
 }
 

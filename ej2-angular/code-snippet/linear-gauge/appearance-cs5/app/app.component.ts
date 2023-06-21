@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppComponent implements OnInit {
-    public container: Object;
+    public container?: Object;
     ngOnInit(): void {
       this.container = {
         width:30,

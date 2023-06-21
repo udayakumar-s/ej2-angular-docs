@@ -69,7 +69,7 @@ This sample demonstrates how to preview markdown changes in Rich Text Editor. Ty
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/markdown-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/markdown-cs1" %}
 
 ## Table
 
@@ -93,7 +93,7 @@ Please refer the below sample and code snippets to add the table in Markdown edi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/markdown-cs2" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/markdown-cs2" %}
 
 ### Changing table constants
 
@@ -111,7 +111,7 @@ The Markdown table constants can be changed for the table heading and the column
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/markdown-cs3" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/markdown-cs3" %}
 
 ## Custom formation
 
@@ -133,4 +133,4 @@ For example, apply ‘+’ to Unordered list, apply ‘1., 2., 3.’ to Ordered 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/markdown-cs4" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/markdown-cs4" %}

@@ -6,8 +6,7 @@ import { getElement } from '@syncfusion/ej2-charts';
 
 @Component({
     selector: 'app-container',
-    template:
-            `<ejs-chart #chart id='chart-container' [chartArea]='chartArea' [width]='width' align='center'  [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' (loaded)='loaded($event)'>
+    template: `<ejs-chart #chart id='chart-container' [chartArea]='chartArea' [width]='width' align='center'  [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' (loaded)='loaded($event)'>
         <e-series-collection>
             <e-series [dataSource]='series1' type='Line' xName='x' yName='y' width=2 [animation]='animation1'>
             </e-series>
@@ -18,8 +17,8 @@ import { getElement } from '@syncfusion/ej2-charts';
 export class AppComponent {
     public series1: Object[] = [];
     public value: number = 10;
-    public intervalId: any;
-    public setTimeoutValue: number;
+    public intervalId?: any;
+    public setTimeoutValue?: number;
     public i: number = 0;
     //Initializing Primary Y Axis
     public primaryYAxis: Object = {
@@ -27,7 +26,7 @@ export class AppComponent {
         maximum: 50
     };
     @ViewChild('chart')
-    public chart: ChartComponent;
+    public chart?: ChartComponent;
 
     public marker: Object = {
         visible: true
@@ -35,6 +34,10 @@ export class AppComponent {
     public animation1: Object = {
         enable: false
     };
+    chartArea: any;
+    width: any;
+primaryXAxis: any;
+title: any;
     public loaded(args: ILoadedEventArgs): void {
         this.setTimeoutValue = 100;
         this.intervalId = setInterval(

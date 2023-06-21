@@ -19,10 +19,10 @@ import { ToolbarItems, RowDD } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pager: Object;
-    public editSettings: Object;
-    public contextMenuItems: Object[];
+    public data?: Object[];
+    public pager?: Object;
+    public editSettings?: Object;
+    public contextMenuItems?: Object[];
 
     ngOnInit(): void {
         this.data = sampleData;

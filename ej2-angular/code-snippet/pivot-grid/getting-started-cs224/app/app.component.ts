@@ -4,7 +4,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDataOptions, IDataSet, DisplayOption, PivotChartService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
 import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 @Component({
     selector: 'app-container',
     providers: [PivotChartService],
@@ -33,20 +33,20 @@ import { Pivot_Data } from './datasource.ts';
   [chartSettings]='chartSettings' [displayOption]='displayOption'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public pivotData: IDataSet[];
-    public dataSourceSettings: IDataOptions;
-    public chartSettings: ChartSettings;
-    public displayOption: DisplayOption;
-    public chartTypesDropDown: DropDownList;
+    public pivotData?: IDataSet[];
+    public dataSourceSettings?: IDataOptions;
+    public chartSettings?: ChartSettings;
+    public displayOption?: DisplayOption;
+    public chartTypesDropDown?: DropDownList;
     @ViewChild('pivotview', { static: false })
-    public pivotGridObj: PivotViewComponent;
+    public pivotGridObj?: PivotViewComponent;
 
     onChange(args: ChangeEventArgs): void {
         this.chartSettings = { chartSeries: { type: args.value } } as ChartSettings;
     }
     ngOnInit(): void {
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             columns: [{ name: 'Year' }, { name: 'Products' }],
             rows: [{ name: 'Country' }, { name: 'Quarter' }],

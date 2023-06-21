@@ -1,33 +1,34 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
-import { Pivot_Data } from './datasource.ts';
+import { Grid } from '@syncfusion/ej2-angular-grids';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
+  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]='dataSourceSettings'
   [gridSettings]='gridSettings' (enginePopulated)='enginePopulated($event)' width=width></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public gridSettings: GridSettings;
-    public columnGrandTotalIndex;
-    public rowGrandTotalIndex;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public gridSettings?: GridSettings;
+    public columnGrandTotalIndex?: number;
+    public rowGrandTotalIndex?: number;
 
     @ViewChild('pivotview', { static: false })
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
     excelQueryCellInfo(args: any): void {
-        (this.pivotGridObj.renderModule as any).columnCellBoundEvent(args);
+        (this.pivotGridObj?.renderModule as any).columnCellBoundEvent(args);
         //triggers for every cell while exporting
     }
 
     enginePopulated(args: any): void {
-       this.pivotGridObj.grid.excelQueryCellInfo = this.excelQueryCellInfo.bind(this);
+       (this.pivotGridObj?.grid as Grid).excelQueryCellInfo = this.excelQueryCellInfo.bind(this);
     }
 
     ngOnInit(): void {
@@ -35,7 +36,7 @@ export class AppComponent implements OnInit {
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             drilledMembers: [{ name: 'Country', items: ['France'] }],
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],

@@ -30,7 +30,7 @@ The start value and end value for the Linear Gauge can be set using the [`minimu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs1" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs1" %}
 
 ## Line Customization
 
@@ -53,7 +53,7 @@ The following properties in the [`line`](https://ej2.syncfusion.com/angular/doc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs2" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs2" %}
 
 ## Ticks Customization
 
@@ -76,7 +76,7 @@ Ticks are used to specify the interval in the axis. Ticks are of two types, majo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs3" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs3" %}
 
 ### Positioning the ticks
 
@@ -94,7 +94,7 @@ The minor and major ticks can be positioned by using the [`offset`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs4" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs4" %}
 
 ## Labels Customization
 
@@ -119,7 +119,7 @@ The style of the labels can be customized using the following properties in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs5" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs5" %}
 
 ### Positioning the axis label
 
@@ -137,7 +137,7 @@ Labels can be positioned by using [`offset`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs6" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs6" %}
 
 ### Customizing the display of the last label
 
@@ -155,7 +155,7 @@ If the last label is not in the visible range, it will be hidden by default. The
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs7" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs7" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -175,7 +175,7 @@ Axis labels in the Linear Gauge control can be formatted using the [`format`](ht
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs8" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs8" %}
 
 ### Displaying numeric format in labels
 
@@ -251,7 +251,7 @@ The numeric formats such as currency, percentage, and so on can be displayed in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs9" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs9" %}
 
 ## Orientation
 
@@ -269,7 +269,7 @@ By default, the Linear Gauge is rendered vertically. To change its orientation, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs10" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs10" %}
 
 ## Inverted Axis
 
@@ -287,7 +287,7 @@ The axis of the Linear Gauge component can be inversed by setting the [`isInvers
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs11" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs11" %}
 
 ## Opposed Axis
 
@@ -305,7 +305,7 @@ To place an axis opposite from its original position, [`opposedPosition`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs12" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs12" %}
 
 ## Multiple Axes
 
@@ -323,4 +323,4 @@ Multiple axes can be added to the Linear Gauge by adding multiple [`e-axis`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/linear-gauge/axis-cs13" %}
+{% previewsample "page.domainurl/samples/linear-gauge/axis-cs13" %}

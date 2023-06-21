@@ -5,8 +5,7 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-stockchart id="stockChartSpline" [enablePeriodSelector]="enable" [chartArea]="chartArea"[primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [seriesType]="seriesType"
+    template: `<ejs-stockchart id="stockChartSpline" [enablePeriodSelector]="enable" [chartArea]="chartArea"[primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [seriesType]="seriesType"
       [indicatorType]="indicatorType">
       <e-stockchart-series-collection>
         <e-stockchart-series [dataSource]="dataManager" [query]="query" type="Spline" xName="ShippedDate"
@@ -16,6 +15,10 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
     </ejs-stockchart>`
 })
 export class AppComponent implements OnInit {
+  chartArea: any;
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   public dataManager: DataManager = new DataManager({
     url: "https://ej2services.syncfusion.com/production/web-services/api/Orders"
   });

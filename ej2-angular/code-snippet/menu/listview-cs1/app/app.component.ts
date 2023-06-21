@@ -29,11 +29,11 @@ enableRipple(true);
 
 export class AppComponent {
   @ViewChild('listview')
-  private listObj: ListViewComponent;
-  private listViewDisplay: string = 'none';
-  private closeSpanDisplay: string = 'none';
+  public listObj?: ListViewComponent;
+  public listViewDisplay: string = 'none';
+  public closeSpanDisplay: string = 'none';
 
-  private dataSource: { [key: string]: Object }[] = [
+  public dataSource: { [key: string]: Object }[] = [
     {
       text: 'Appliances',
       id: 'list1',
@@ -117,22 +117,22 @@ export class AppComponent {
     }
   ];
 
-  private onSelect(e: SelectEventArgs): void {
+  public onSelect(e: SelectEventArgs): void {
     if (e.data && !(e.data as { child: object }).child) {
       this.listViewDisplay = 'none';
       this.closeSpanDisplay = 'none';
-      this.listObj.refresh();
+      this.listObj?.refresh();
     }
   }
 
-  private onClick = (): void => {
+  public onClick = (args: any): void => {
     this.listViewDisplay = 'none';
     this.closeSpanDisplay = 'none';
   };
 
-  private hamburgerClick = (): void => {
+  public hamburgerClick = () => {
     let animation: Animation = new Animation({ duration: 500 });
-    animation.animate(this.listObj.element, {
+    animation.animate((this.listObj as ListViewComponent).element, {
       name: 'SlideDown',
       begin: (args: AnimationOptions) => {
         this.listViewDisplay = 'block';

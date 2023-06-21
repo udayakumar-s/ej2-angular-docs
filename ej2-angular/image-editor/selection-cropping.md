@@ -36,7 +36,7 @@ In the following example, the [`select`](https://ej2.syncfusion.com/angular/docu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs10" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs10" %}
 
 ## Square
 
@@ -56,7 +56,7 @@ In the following example, the [`select`](https://ej2.syncfusion.com/angular/docu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs11" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs11" %}
 
 ## Circle
 
@@ -76,7 +76,7 @@ In the following example, the [`select`](https://ej2.syncfusion.com/angular/docu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs12" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs12" %}
 
 ## Ratio
 
@@ -96,7 +96,7 @@ In the following example, the [`select`](https://ej2.syncfusion.com/angular/docu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs13" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs13" %}
 
 ## Cropping
 
@@ -118,4 +118,4 @@ In the following example, the [`select`](https://ej2.syncfusion.com/angular/docu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/image-editor/default-cs14" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs14" %}

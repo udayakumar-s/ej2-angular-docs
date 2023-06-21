@@ -24,9 +24,9 @@ import {  GroupSettingsModel, FilterSettingsModel } from '@syncfusion/ej2-angula
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public groupOptions: GroupSettingsModel;
-    public filterSettings: FilterSettingsModel;
+    public data?: object[];
+    public groupOptions?: GroupSettingsModel;
+    public filterSettings?: FilterSettingsModel;
     ngOnInit(): void {
         this.data = data;
         this.groupOptions = { showGroupedColumn: true };

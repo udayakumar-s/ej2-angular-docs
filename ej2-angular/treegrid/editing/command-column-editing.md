@@ -33,7 +33,7 @@ The available built-in command buttons are:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-command-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-command-cs1" %}
 
 ## Custom command
 
@@ -51,4 +51,4 @@ The custom command buttons can be added in a column by using the [`column.comman
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/edit-command-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/edit-command-cs2" %}

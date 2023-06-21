@@ -50,7 +50,7 @@ Component |Example
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs11" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs11" %}
 
 > If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component) .
 
@@ -72,7 +72,7 @@ In the below demo, while editing the row we have restricted to type the decimal 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/prevent-decimalpoint-cs1" %}
+{% previewsample "page.domainurl/samples/grid/prevent-decimalpoint-cs1" %}
 
 ### Provide custom data source and enabling filtering to DropDownList
 
@@ -111,7 +111,7 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs12" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs12" %}
 
 ## Custom editors using template
 
@@ -141,7 +141,7 @@ Use the cell edit template feature of the Grid to render the TimePicker componen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs13" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs13" %}
 
 ### Render AutoComplete component while editing
 
@@ -159,7 +159,7 @@ Use the cell edit template feature of the Grid to render the AutoComplete compon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs14" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs14" %}
 
 ### Render MultiSelect DropDown component while editing
 
@@ -177,7 +177,7 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs15" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs15" %}
 
 ### Render MaskedTextBox component while editing
 
@@ -195,7 +195,7 @@ Use the cell edit template feature of the Grid to render the MaskedTextBox compo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grid-cs22" %}
+{% previewsample "page.domainurl/samples/grid/grid-cs22" %}
 
 ### Render RichTextEditor component while editing
 
@@ -213,7 +213,7 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs16" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs16" %}
 
 ### Render multiple columns in DropDownList component while editing
 
@@ -235,7 +235,7 @@ This is demonstrated in the following sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/multicolumn-dropdown-cs1" %}
+{% previewsample "page.domainurl/samples/grid/multicolumn-dropdown-cs1" %}
 
 ### Using template
 
@@ -253,4 +253,4 @@ The cell editor for a particular column can be specified using the content of th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/edit-cs17" %}
+{% previewsample "page.domainurl/samples/grid/edit-cs17" %}

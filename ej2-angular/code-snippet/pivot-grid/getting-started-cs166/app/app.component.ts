@@ -1,9 +1,9 @@
 
 
 import { Component } from '@angular/core';
-import { IDataOptions, PivotView, DrillThroughService, DrillThroughEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, DrillThroughService, DrillThroughEventArgs } from '@syncfusion/ej2-angular-pivotview';
 import { CellEditSettings } from '@syncfusion/ej2-pivotview/src/pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,11 +13,11 @@ import { Pivot_Data } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public editSettings: CellEditSettings;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public editSettings?: CellEditSettings;
 
-    drillThrough(args:DrillThroughEventArgs) {
+    drillThrough(args:DrillThroughEventArgs | any) {
         for (var i = 0; i < args.gridColumns.length; i++) {
             if (args.gridColumns[i].field === 'Country') {
                 args.gridColumns[i].editType = 'dropdownedit';
@@ -35,7 +35,7 @@ export class AppComponent {
         this.width = "100%";
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             drilledMembers: [{ name: 'Country', items: ['France'] }],

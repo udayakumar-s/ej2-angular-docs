@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, TextElement, StackPanel, PointModel, VerticalAlignment } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, TextElement, StackPanel, PointModel, VerticalAlignment, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -19,9 +19,9 @@ import { DiagramComponent, Diagram, NodeModel, TextElement, StackPanel, PointMod
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public offset: PointModel
-    public verticalAlignment: VerticalAlignment
+    public diagram?: DiagramComponent;
+    public offset?: PointModel
+    public verticalAlignment?: VerticalAlignment
     public getTextElement(text: string): TextElement {
         let textElement: TextElement = new TextElement();
         textElement.width = 50;
@@ -39,14 +39,14 @@ export class AppComponent {
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = '#6BA5D7';
-        node.style.strokeColor = 'white';
+        ((node as NodeModel).style as ShapeStyleModel).fill = '#6BA5D7';
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = 'white';
         return node;
     }
     ngOnInit(): void {
         this.verticalAlignment = 'Top';
         this.offset = {y: 1};
-        this.diagram.setNodeTemplate = (obj: NodeModel, diagram: Diagram): StackPanel => {
+        (this.diagram as DiagramComponent).setNodeTemplate = (obj: NodeModel | any, diagram: Diagram): StackPanel | any => {
             if (obj.id.indexOf('node1') !== -1) {
                 // It will be replaced with grid panel
                 let table: StackPanel = new StackPanel();
@@ -62,7 +62,7 @@ export class AppComponent {
                 table.children = [column1, column2];
                 return table;
             }
-            return null
+            return undefined;
         }
     }
 }

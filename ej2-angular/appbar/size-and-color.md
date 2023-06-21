@@ -34,7 +34,7 @@ This mode is the default one in which the AppBar is displayed with the default h
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/regular-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/regular-cs1" %}
 
 ### Prominent AppBar
 
@@ -52,7 +52,7 @@ This height mode can be set to the AppBar by setting `Prominent` to the property
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/prominent-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/prominent-cs1" %}
 
 ### Dense AppBar
 
@@ -70,7 +70,7 @@ This height mode can be set to the AppBar by setting `Dense` to the property [mo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/dense-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/dense-cs1" %}
 
 ## Color
 
@@ -97,7 +97,7 @@ This color mode is the default one in which the AppBar can be displayed with a l
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/light-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/light-cs1" %}
 
 ### Dark AppBar
 
@@ -115,7 +115,7 @@ This color mode can be set to the AppBar by setting `Dark` to the property [colo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/dark-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/dark-cs1" %}
 
 ### Primary AppBar
 
@@ -133,7 +133,7 @@ This color mode can be set to the AppBar by setting `Primary` to the property [c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/primary-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/primary-cs1" %}
 
 ### Inherit AppBar
 
@@ -151,4 +151,4 @@ This color mode can be set to the AppBar by setting `Inherit` to the property [c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/appbar/inherit-cs1" %}
+{% previewsample "page.domainurl/samples/appbar/inherit-cs1" %}

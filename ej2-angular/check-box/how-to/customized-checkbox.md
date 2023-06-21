@@ -28,7 +28,7 @@ The background and border color of the CheckBox is customized through the custom
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/howto-cs1" %}
+{% previewsample "page.domainurl/samples/check-box/howto-cs1" %}
 
 ## Customize CheckBox frame
 
@@ -48,7 +48,7 @@ In the following example, to-do list is displayed with round checkbox by changin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/custom-frame-cs1" %}
+{% previewsample "page.domainurl/samples/check-box/custom-frame-cs1" %}
 
 ## Customize check icon
 
@@ -68,4 +68,4 @@ In the following example, the check icon can be customized by changing check ico
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/custom-icon-cs1" %}
+{% previewsample "page.domainurl/samples/check-box/custom-icon-cs1" %}

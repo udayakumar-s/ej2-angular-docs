@@ -208,7 +208,7 @@ Output will be as follows:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs4" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-cs4" %}
 
 ## Initialize the Accordion using HTML elements
 
@@ -240,7 +240,7 @@ You need to follow the below structure of HTML elements to render the Accordion 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-container-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-container-cs1" %}
 
 > You can add the custom class into Accordion component using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#cssclass) property which is used to customize the Accordion component.
 

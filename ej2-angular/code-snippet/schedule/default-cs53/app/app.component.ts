@@ -13,13 +13,13 @@ import { scheduleData } from './datasource';
 })
 
 export class AppComponent {
-  @ViewChild('scheduleObj') public scheduleObj: ScheduleComponent;
+  @ViewChild('scheduleObj') public scheduleObj?: ScheduleComponent;
   public selectedDate: Date = new Date(2018, 1, 15);
   public eventSettings: EventSettingsModel = { dataSource: scheduleData, enableTooltip: true };
 
-  public onCreated(): void {
+  public onCreated(eventData: any): void {
     // Assigning the tooltip object to the tooltipObj variable.
-    let tooltipObj = this.scheduleObj.element.ej2_instances[2];
+    let tooltipObj =(this.scheduleObj?.element as any).ej2_instances[2];
     // Disable the tooltip to follow the mouse pointer position
     tooltipObj.mouseTrail = false;
     // Setting tooltip open delay

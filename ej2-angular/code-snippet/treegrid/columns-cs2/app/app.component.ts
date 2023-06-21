@@ -19,8 +19,8 @@ import { ResizeService,FilterService,SortService,PageService,ColumnMenuService  
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public filterSettings: Object;
+    public data?: Object[];
+    public filterSettings?: Object;
     ngOnInit(): void {
         this.data = sampleData;
          this.filterSettings = { type: 'Menu'};

@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { L10n } from '@syncfusion/ej2-base';
+import { L10n } from '@syncfusion/ej2-base';
 
 L10n.load({
     'ar-AR': {
@@ -17,8 +17,7 @@ L10n.load({
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' locale='ar-AR' [zoomSettings]='zoom'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' locale='ar-AR' [zoomSettings]='zoom'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product X' ></e-series>
             <e-series [dataSource]='chartData' type='Area' xName='x' yName='y1' name='Product Y'></e-series>
@@ -26,12 +25,13 @@ L10n.load({
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public marker: Object;
-    public primaryYAxis: Object;
-    public zoom: Object;
+    public primaryXAxis?: Object;
+   
+    public chartData?: Object[];
+    public title?: string;
+    public marker?: Object;
+    public primaryYAxis?: Object;
+    public zoom?: Object;
     ngOnInit(): void {
         this.chartData = [
                 { x: 1900, y: 4, y1: 2.6, y2: 2.8 }, { x: 1920, y: 3.0, y1: 2.8, y2: 2.5 },

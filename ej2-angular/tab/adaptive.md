@@ -44,7 +44,7 @@ The default overflow mode is Scrollable. Scrollable display mode supports displa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs2" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs2" %}
 
 ## Popup
 
@@ -68,7 +68,7 @@ The Popup is the another type of [`overflowMode`](https://ej2.syncfusion.com/ang
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/basic-cs3" %}
+{% previewsample "page.domainurl/samples/tab/basic-cs3" %}
 
 ## See Also
 

@@ -24,4 +24,4 @@ The Sidebar does not require any specific style to make it as a fixed one. By de
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/sidebar/fixed-position-cs1" %}
+{% previewsample "page.domainurl/samples/sidebar/fixed-position-cs1" %}

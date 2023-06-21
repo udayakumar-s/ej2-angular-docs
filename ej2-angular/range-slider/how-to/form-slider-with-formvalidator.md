@@ -102,4 +102,4 @@ If user selects the value less than the minimum value, form will not submit.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/how-to-04-cs2" %}
+{% previewsample "page.domainurl/samples/slider/how-to-04-cs2" %}

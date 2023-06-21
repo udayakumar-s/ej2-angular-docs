@@ -41,4 +41,4 @@ The following steps describe how to show the table tooltip.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/how-to/tooltip-template-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/how-to/tooltip-template-cs1" %}

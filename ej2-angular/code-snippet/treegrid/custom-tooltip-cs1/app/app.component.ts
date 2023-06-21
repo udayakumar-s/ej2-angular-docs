@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-treegrid';
+import { QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Tooltip } from '@syncfusion/ej2-popups';
 import { sampleData } from './datasource';
 
@@ -18,12 +18,12 @@ import { sampleData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = sampleData;
     }
-    tooltip(args: QueryCellInfoEventArgs) {
+    tooltip(args: QueryCellInfoEventArgs | any) {
         const tooltip: Tooltip = new Tooltip({
             content: args.data[args.column.field].toString()
         }, args.cell as HTMLTableCellElement);

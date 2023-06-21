@@ -26,4 +26,4 @@ The following example demonstrates about how to highlight the matched character 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs16" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs16" %}

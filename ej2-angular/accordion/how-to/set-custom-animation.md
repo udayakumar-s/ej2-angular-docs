@@ -29,4 +29,4 @@ The sample demonstrates some types of animation that suits for Accordion. You ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-custom-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-custom-cs1" %}

@@ -28,7 +28,7 @@ Sample link: [`Cell template`](https://ej2.syncfusion.com/angular/demos/#/materi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/spreadsheet/template-cs1" %} -->
+{% previewsample "page.domainurl/samples/spreadsheet/template-cs1" %} -->
 
 ## Note
 

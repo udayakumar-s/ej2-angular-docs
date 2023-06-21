@@ -25,7 +25,7 @@ We can divide a progress bar into multiple segments using a `segmentCount` to vi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/customization-cs1" %}
+{% previewsample "page.domainurl/samples/progressbar/customization-cs1" %}
 
 ## Thickness
 
@@ -43,7 +43,7 @@ Customize the thickness of the track using [`trackThickness`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/customization-cs2" %}
+{% previewsample "page.domainurl/samples/progressbar/customization-cs2" %}
 
 ## Min, Max, and Value
 
@@ -61,7 +61,7 @@ The progress bar value is set by using the `value` property in progress bar. The
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/customization-cs3" %}
+{% previewsample "page.domainurl/samples/progressbar/customization-cs3" %}
 
 ## Radius
 
@@ -79,7 +79,7 @@ The  radius of the progress bar can be customized using `radius` property and  c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/customization-cs4" %}
+{% previewsample "page.domainurl/samples/progressbar/customization-cs4" %}
 
 ## InnerRadius
 
@@ -97,7 +97,7 @@ The inner radius of the progress bar can be customized using `innerRadius` prope
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/customization-cs5" %}
+{% previewsample "page.domainurl/samples/progressbar/customization-cs5" %}
 
 ## Progress color and track color
 
@@ -115,4 +115,4 @@ Customize the color of progress, secondary progress, and track by using the [`pr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progressbar/customization-cs6" %}
+{% previewsample "page.domainurl/samples/progressbar/customization-cs6" %}

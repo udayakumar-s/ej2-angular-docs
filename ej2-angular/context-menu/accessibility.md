@@ -42,4 +42,4 @@ The web accessibility makes web content and web applications more accessible for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/aria-and-keyboard-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/aria-and-keyboard-cs1" %}

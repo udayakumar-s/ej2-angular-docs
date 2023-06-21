@@ -42,4 +42,4 @@ template: "#Template"
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-items-cs3" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs3" %}

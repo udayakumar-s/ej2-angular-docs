@@ -1,8 +1,8 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { IDataOptions, IDataSet, PivotView, FieldListService, PivotViewComponent } from '@syncfusion/ej2-angular-pivotview';
-import { Pivot_Data } from './datasource.ts';
+import { IDataOptions, IDataSet, PivotView, FieldListService, PivotViewComponent, FieldDroppedEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -13,13 +13,13 @@ import { Pivot_Data } from './datasource.ts';
 
 export class AppComponent {
 
-    public width: string;
-    public dataSourceSettings: IDataOptions;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotViewComponent;
+    public pivotGridObj?: PivotViewComponent;
 
-    fieldDropped(args: FieldDroppedEventArgs): void {
+    fieldDropped(args: FieldDroppedEventArgs | any): void {
         //Triggers, whenever field list get refreshed.
         args.droppedField.caption = args.droppedField.name + " --> " + args.droppedAxis;
     }
@@ -29,7 +29,7 @@ export class AppComponent {
         this.width = '100%';
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             allowLabelFilter: true,
             allowValueFilter: true,

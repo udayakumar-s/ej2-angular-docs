@@ -25,7 +25,7 @@ To render a 100% stacked area series, use series [`type`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/area-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs5" %}
 
 ## Series customization
 
@@ -48,7 +48,7 @@ The following properties can be used to customize the `100% stacked area` series
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/100-stackedarea-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/100-stackedarea-cs" %}
 
 ## See Also
 

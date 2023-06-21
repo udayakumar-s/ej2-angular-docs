@@ -24,6 +24,6 @@ To calculate the aggregate value with your own aggregate functions, use the cust
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/aggregate-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/aggregate-cs2" %}
 
 > To access the custom aggregate value inside the template, use the key as `Custom`.

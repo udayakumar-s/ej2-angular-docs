@@ -1,5 +1,4 @@
 
-
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 
@@ -13,15 +12,18 @@ import { data } from './datasource';
                         <e-column field='ShipName' headerText='Ship Name' textAlign='Right' width=80></e-column>
                     </e-columns>
                 </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['./app.style.css']
 })
 export class AppComponent implements OnInit {
 
-    public data=data;
-    public selectOptions= {
+    public data: any;
+    public selectOptions: any= {
         mode: 'Cell',
         type: 'Multiple',
-      };
+    };
+    ngOnInit(): void {
+        this.data = data;
+    }
 }
 
 

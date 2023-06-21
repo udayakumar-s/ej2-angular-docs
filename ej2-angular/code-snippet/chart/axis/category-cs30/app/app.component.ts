@@ -15,12 +15,12 @@ import { Component, OnInit } from '@angular/core';
        })
 
  export class AppComponent {
-    public primaryXAxis: Object;
-    public primaryYAxis: Object;
-    public data: Object[];
-    public marker: Object;
-    public legend: Object;
-    public title: string
+    public primaryXAxis?: Object;
+    public primaryYAxis?: Object;
+    public data?: Object[];
+    public marker?: Object;
+    public legend?: Object;
+    public title?: string
 
     ngOnInit(): void {
     this.primaryXAxis = {

@@ -5,24 +5,23 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ej-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'
             [chartArea]="chartArea">
         <e-series-collection>
             <e-series [dataSource]='columnData' type='Column' xName='x' yName='y' width="2" [marker]="marker" [dragSettings]="dragSettings"></e-series>
             <e-series [dataSource]='lineData' type='Line' xName='x' yName='y' width="2" [marker]="marker" [dragSettings]="dragSettings"></e-series>
         </e-series-collection>
-    </ej-chart>`
+    </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public columnData: Object[];
-    public lineData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public chartArea: Object;
-    public marker: Object;
-    public dragSettings: Object;
+    public primaryXAxis?: Object;
+    public columnData?: Object[];
+    public lineData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public chartArea?: Object;
+    public marker?: Object;
+    public dragSettings?: Object;
     ngOnInit(): void {
         this.columnData = [
                  { x: '2005', y: 21 }, { x: '2006', y: 60 },
@@ -54,7 +53,7 @@ export class AppComponent implements OnInit {
             majorTickLines: { width: 0 },
             minorTickLines: { width: 0 }
         };
-        this.chartArea: {
+        this.chartArea= {
             border: {
                 width: 0
             }

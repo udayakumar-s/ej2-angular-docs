@@ -24,4 +24,4 @@ You can make the TextBox as `read-only` by setting the `readonly` attribute to t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/textbox/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/textbox/getting-started-cs9" %}

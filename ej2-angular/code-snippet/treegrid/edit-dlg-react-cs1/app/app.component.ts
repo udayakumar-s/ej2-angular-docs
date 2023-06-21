@@ -67,12 +67,13 @@ import { Browser } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
     public data: Object[] = [];
-    public editSettings: EditSettingsModel;
-    public toolbarOptions: ToolbarItems[];
-    public taskForm: FormGroup;
-    public progressDistinctData: Object;
-    public priorityDistinctData: Object;
+    public editSettings?: EditSettingsModel;
+    public toolbarOptions?: ToolbarItems[];
+    public taskForm?: FormGroup | any;
+    public progressDistinctData?: Object;
+    public priorityDistinctData?: Object;
     public submitClicked: boolean = false;
+toolbar: any;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -93,22 +94,22 @@ export class AppComponent implements OnInit {
         });
     }
 
-    dateValidator() {
+    dateValidator(): Object {
         return (control: FormControl): null | Object  => {
             return control.value && control.value.getFullYear &&
             (1900 <= control.value.getFullYear() && control.value.getFullYear() <=  2099) ? null : { OrderDate: { value : control.value}};
         };
     }
 
-    actionBegin(args: SaveEventArgs): void {
+    actionBegin(args: SaveEventArgs | any): void {
         if (args.requestType === 'beginEdit' || args.requestType === 'add') {
             this.submitClicked = false;
             this.taskForm = this.createFormGroup(args.rowData);
         }
         if (args.requestType === 'save') {
             this.submitClicked = true;
-            if (this.taskForm.valid) {
-                args.data = this.taskForm.value;
+            if ((this.taskForm as FormGroup).valid) {
+                args.data = (this.taskForm as FormGroup).value;
             } else {
                 args.cancel = true;
             }
@@ -119,18 +120,18 @@ export class AppComponent implements OnInit {
         if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
             // Set initial Focus
             if (args.requestType === 'beginEdit') {
-                (args.form.elements.namedItem('taskName') as HTMLInputElement).focus();
+                ((args.form as HTMLFormElement ).elements.namedItem('taskName') as HTMLInputElement).focus();
             } else if (args.requestType === 'add') {
-                (args.form.elements.namedItem('taskID') as HTMLInputElement).focus();
+                ((args.form as HTMLFormElement).elements.namedItem('taskID') as HTMLInputElement).focus();
             }
         }
     }
 
-    get taskID(): AbstractControl  { return this.taskForm.get('taskID'); }
+    get taskID(): AbstractControl  { return (this.taskForm as FormGroup).get('taskID') as AbstractControl; }
 
-    get taskName(): AbstractControl { return this.taskForm.get('taskName'); }
+    get taskName(): AbstractControl { return (this.taskForm as FormGroup).get('taskName') as AbstractControl; }
 
-    get startDate(): AbstractControl { return this.taskForm.get('startDate'); }
+    get startDate(): AbstractControl { return (this.taskForm as FormGroup).get('startDate') as AbstractControl; }
 }
 export interface ITaskModel {
     taskID?: number;

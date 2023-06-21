@@ -7,7 +7,7 @@ import {
 
 @Component({
       selector: 'app-container',
-      styleUrls: ['styles.css'],
+      styleUrls: ['./style.css'],
       //specifies the template string for the Document Editor component
       template: `<div>
       <div>
@@ -27,21 +27,21 @@ import {
 })
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public toolbarButtonClick(args: any) {
         switch (args.item.id) {
             case 'Bullets':
                 //To create bullet list
-                this.documentEditor.editor.applyBullet('\uf0b7', 'Symbol');
+                (this.documentEditor as DocumentEditorComponent).editor.applyBullet('\uf0b7', 'Symbol');
                 break;
             case 'Numbering':
                 //To create numbering list
-                this.documentEditor.editor.applyNumbering('%1)', 'UpRoman');
+                (this.documentEditor as DocumentEditorComponent).editor.applyNumbering('%1)', 'UpRoman');
                 break;
             case 'clearlist':
                 //To clear list
-                this.documentEditor.editor.clearList();
+                (this.documentEditor as DocumentEditorComponent).editor.clearList();
                 break;
         }
     }

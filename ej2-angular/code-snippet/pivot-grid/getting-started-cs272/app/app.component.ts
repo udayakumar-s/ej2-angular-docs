@@ -1,17 +1,17 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, CellClickEventArgs } from '@syncfusion/ej2-angular-pivotview';
-import { noData } from './datasource.ts';
+import { IDataOptions,IDataSet, CellClickEventArgs } from '@syncfusion/ej2-angular-pivotview';
+import { noData } from './datasource';
 
 @Component({
   selector: 'app-container',
   template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings width=width height='350' (cellClick)='cellClick($event)'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
-    public width: string;
-    public height: number;
+    public dataSourceSettings?: IDataOptions;
+    public width?: string;
+    public height?: number;
     cellClick(args: CellClickEventArgs) {
         //trigger for evey cell click in pivot table
     }
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
         this.width = '100%';
 
         this.dataSourceSettings = {
-        dataSource: noData,
+        dataSource: noData as IDataSet[],
         expandAll: true,
         formatSettings: [{ name: 'Amount', format: 'C0' }],
         columns: [{ name: 'Date', showNoDataItems: true}],

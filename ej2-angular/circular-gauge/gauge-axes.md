@@ -32,7 +32,7 @@ You can customize the width and color of an axis line by using [`lineStyle`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs1" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Angles and Direction
@@ -51,7 +51,7 @@ Circular gauge axis can sweep from 0 to 360 degrees. By default start angle of a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs2" %}
 <!-- markdownlint-disable MD036 -->
 
 The [`direction`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axis/#direction-string) property enables you to render the gauge axis either in `ClockWise` or in `AntiClockWise` direction.
@@ -68,7 +68,7 @@ The [`direction`](https://ej2.syncfusion.com/angular/documentation/api/circular-
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs3" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs3" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Axis Radius
@@ -92,7 +92,7 @@ You can set the radius of the gauge in pixel as demonstrated below,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs4" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs4" %}
 <!-- markdownlint-disable MD036 -->
 
 **In Percentage**
@@ -112,7 +112,7 @@ For example, when the radius is ‘50%’, gauge renders to half of the availabl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs5" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs5" %}
 <!-- markdownlint-disable MD036 -->
 
 ## Ticks
@@ -132,7 +132,7 @@ By default, [`interval`](https://ej2.syncfusion.com/angular/documentation/api/ci
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs6" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs6" %}
 
 **Tick Position**
 
@@ -152,7 +152,7 @@ By default, ticks will be placed `inside` the axis.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs7" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs7" %}
 
 ## Labels
 
@@ -170,7 +170,7 @@ Labels of an axis can be customized by using [`font`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs8" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs8" %}
 
 **Label Position**
 
@@ -192,7 +192,7 @@ By default, labels will be placed `inside` the axis.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs9" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs9" %}
 
 **Auto Angle**
 
@@ -210,7 +210,7 @@ Labels can be swept along the axis angle by enabling [`autoAngle`](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs10" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs10" %}
 
 **Smart Labels**
 
@@ -230,7 +230,7 @@ When `hiddenLabel` value is `First`, then the 1st label will be hidden and when 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs11" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs11" %}
 
 **Label Format**
 
@@ -248,7 +248,7 @@ Axis labels can be formatted by using [`format`](https://ej2.syncfusion.com/angu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs12" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs12" %}
 
 The following table describes the result of applying some commonly used label formats on numeric values.
 
@@ -326,7 +326,7 @@ Axis labels support custom label format using placeholder like {value}°C, in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs13" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs13" %}
 
 **Hide intersecting axis labels**
 
@@ -344,7 +344,7 @@ When the axis labels overlap with each other, you can hide the intersected label
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs14" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs14" %}
 
 ## Minimum and Maximum
 
@@ -362,7 +362,7 @@ The [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/circular-ga
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs15" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs15" %}
 
 ## Multiple Axes
 
@@ -381,4 +381,4 @@ Each axis will have its own ranges, pointers, annotations and customization opti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-axes-cs16" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-axes-cs16" %}

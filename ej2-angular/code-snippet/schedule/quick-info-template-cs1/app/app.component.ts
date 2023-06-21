@@ -2,7 +2,7 @@
 
 import { Component, ViewChild, ViewEncapsulation, Inject } from '@angular/core';
 import { extend, Internationalization } from '@syncfusion/ej2-base';
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService,CurrentAction,EventSettingsModel,ResourcesModel,CellClickEventArgs,EJ2Instance} from '@syncfusion/ej2-angular-schedule';
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService,CurrentAction,EventSettingsModel,ResourcesModel,CellClickEventArgs,EJ2Instance, ScheduleComponent} from '@syncfusion/ej2-angular-schedule';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
@@ -91,19 +91,19 @@ providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaServic
         </ng-template>
     </ejs-schedule>
 </div>`,
-styleUrls: ['app/index.css'],
+styleUrls: ['./index.css'],
 })
 
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     @ViewChild('eventTypeObj')
-    public eventTypeObj: DropDownListComponent;
+    public eventTypeObj?: DropDownListComponent;
     @ViewChild('titleObj')
-    public titleObj: TextBoxComponent;
+    public titleObj?: TextBoxComponent;
     @ViewChild('notesObj')
-    public notesObj: TextBoxComponent;
-    public eventSettings: EventSettingsModel = { dataSource: <Object[]>extend([], scheduleData, null, true) };
+    public notesObj?: TextBoxComponent;
+    public eventSettings: EventSettingsModel = { dataSource: <Object[]>extend([], scheduleData, undefined, true) };
     public selectedDate: Date = new Date(2020, 0, 9);
     public intl: Internationalization = new Internationalization();
     public roomFields: Object = { text: 'Name', value: 'Id' };
@@ -122,71 +122,71 @@ export class AppComponent {
 
     public getResourceData(data: { [key: string]: Object }): { [key: string]: Object } {
         // tslint:disable-next-line: deprecation
-        const resources: ResourcesModel = this.scheduleObj.getResourceCollections()[0];
-        const resourceData: { [key: string]: Object } = (resources.dataSource as Object[]).filter((resource: { [key: string]: Object }) =>
-            resource.Id === data.RoomId)[0] as { [key: string]: Object };
+        const resources: ResourcesModel = this.scheduleObj!.getResourceCollections()[0];
+       const resourceData: { [key: string]: Object } = (resources.dataSource as Object[]).filter((resource: Object) =>
+    (resource as { [key: string]: Object; })['Id'] === data['RoomId'])[0] as { [key: string]: Object };
         return resourceData;
     }
 
 
     public getHeaderStyles(data: { [key: string]: Object }): Object {
-        if (data.elementType === 'cell') {
+        if (data['elementType'] === 'cell') {
             return { 'align-items': 'center', 'color': '#919191' };
         } else {
             const resourceData: { [key: string]: Object } = this.getResourceData(data);
-            return { 'background': resourceData.Color, 'color': '#FFFFFF' };
+            return { 'background': resourceData['Color'], 'color': '#FFFFFF' };
         }
     }
 
     public getHeaderTitle(data: { [key: string]: Object }): string {
-        return (data.elementType === 'cell') ? 'Add Appointment' : 'Appointment Details';
+        return (data['elementType'] === 'cell') ? 'Add Appointment' : 'Appointment Details';
     }
 
     public getHeaderDetails(data: { [key: string]: Date }): string {
-        return this.intl.formatDate(data.StartTime, { type: 'date', skeleton: 'full' }) + ' (' +
-            this.intl.formatDate(data.StartTime, { skeleton: 'hm' }) + ' - ' +
-            this.intl.formatDate(data.EndTime, { skeleton: 'hm' }) + ')';
+        return this.intl.formatDate(data['StartTime'], { type: 'date', skeleton: 'full' }) + ' (' +
+            this.intl.formatDate(data['StartTime'], { skeleton: 'hm' }) + ' - ' +
+            this.intl.formatDate(data['EndTime'], { skeleton: 'hm' }) + ')';
     }
 
     public getEventType(data: { [key: string]: string }): string {
         const resourceData: { [key: string]: Object } = this.getResourceData(data);
-        return resourceData.Name as string;
+        return resourceData['Name'] as string;
     }
 
     public buttonClickActions(e: Event) {
-        const quickPopup: HTMLElement = this.scheduleObj.element.querySelector('.e-quick-popup-wrapper') as HTMLElement;
+        const quickPopup: HTMLElement = this.scheduleObj?.element.querySelector('.e-quick-popup-wrapper') as HTMLElement;
         const getSlotData: Function = (): { [key: string]: Object } => {
-            const cellDetails: CellClickEventArgs = this.scheduleObj.getCellDetails(this.scheduleObj.getSelectedElements());
+            const cellDetails: CellClickEventArgs = this.scheduleObj!.getCellDetails(this.scheduleObj!.getSelectedElements());
             const addObj: { [key: string]: Object } = {};
-            addObj.Id = this.scheduleObj.getEventMaxID();
-            addObj.Subject = ((quickPopup.querySelector('#title') as EJ2Instance).ej2_instances[0] as TextBoxComponent).value;
-            addObj.StartTime = new Date(+cellDetails.startTime);
-            addObj.EndTime = new Date(+cellDetails.endTime);
-            addObj.Description = ((quickPopup.querySelector('#notes') as EJ2Instance).ej2_instances[0] as TextBoxComponent).value;
-            addObj.RoomId = ((quickPopup.querySelector('#eventType') as EJ2Instance).ej2_instances[0] as DropDownListComponent).value;
+            addObj['Id'] = this.scheduleObj!.getEventMaxID();
+            addObj['Subject'] = ((quickPopup.querySelector('#title') as EJ2Instance).ej2_instances[0] as TextBoxComponent).value;
+            addObj['StartTime'] = new Date(+cellDetails.startTime);
+            addObj['EndTime'] = new Date(+cellDetails.endTime);
+            addObj['Description'] = ((quickPopup.querySelector('#notes') as EJ2Instance).ej2_instances[0] as TextBoxComponent).value;
+            addObj['RoomId'] = ((quickPopup.querySelector('#eventType') as EJ2Instance).ej2_instances[0] as DropDownListComponent).value;
             return addObj;
         };
         if ((e.target as HTMLElement).id === 'add') {
             const addObj: { [key: string]: Object } = getSlotData();
-            this.scheduleObj.addEvent(addObj);
+            this.scheduleObj!.addEvent(addObj);
         } else if ((e.target as HTMLElement).id === 'delete') {
-            const eventDetails: { [key: string]: Object } = this.scheduleObj.activeEventData.event as { [key: string]: Object };
-            let currentAction: CurrentAction;
-            if (eventDetails.RecurrenceRule) {
+            const eventDetails: { [key: string]: Object } = this.scheduleObj!.activeEventData.event as { [key: string]: Object };
+            let currentAction: CurrentAction='Delete';
+            if (eventDetails['RecurrenceRule']) {
                 currentAction = 'DeleteOccurrence';
             }
-            this.scheduleObj.deleteEvent(eventDetails, currentAction);
+            this.scheduleObj!.deleteEvent(eventDetails, currentAction);
         } else {
-            const isCellPopup: boolean = quickPopup.firstElementChild.classList.contains('e-cell-popup');
+            const isCellPopup: boolean = quickPopup.firstElementChild!.classList.contains('e-cell-popup');
             const eventDetails: { [key: string]: Object } = isCellPopup ? getSlotData() :
-                this.scheduleObj.activeEventData.event as { [key: string]: Object };
+                this.scheduleObj!.activeEventData.event as { [key: string]: Object };
             let currentAction: CurrentAction = isCellPopup ? 'Add' : 'Save';
-            if (eventDetails.RecurrenceRule) {
+            if (eventDetails['RecurrenceRule']) {
                 currentAction = 'EditOccurrence';
             }
-            this.scheduleObj.openEditor(eventDetails, currentAction, true);
+            this.scheduleObj?.openEditor(eventDetails, currentAction, true);
         }
-        this.scheduleObj.closeQuickInfoPopup();
+        this.scheduleObj?.closeQuickInfoPopup();
     }
 }
 

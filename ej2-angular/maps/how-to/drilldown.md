@@ -24,4 +24,4 @@ By clicking a continent, all the countries available in that continent can be vi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs42" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs42" %}

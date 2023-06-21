@@ -30,4 +30,4 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/grouping1-cs9" %}
+{% previewsample "page.domainurl/samples/grid/grouping1-cs9" %}

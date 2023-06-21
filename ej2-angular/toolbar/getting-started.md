@@ -161,7 +161,7 @@ The following code example depicts the way to initialize The Toolbar on a single
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-cs1" %}
 
 ## Initialize the Toolbar using HTML elements
 
@@ -189,7 +189,7 @@ You need to follow the below structure of HTML elements to render the Toolbar in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toolbar-container-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/toolbar-container-cs1" %}
 
 ## See Also
 

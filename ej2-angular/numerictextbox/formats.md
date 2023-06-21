@@ -31,7 +31,7 @@ The below example demonstrates percentage and currency formats.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs2" %}
 
 ## Custom formats
 
@@ -51,4 +51,4 @@ The below examples demonstrate format the value by using currency format string 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/numerictextbox/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/numerictextbox/getting-started-cs3" %}

@@ -34,4 +34,4 @@ Refer to the following sample.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/content-reuse-cs1" %}
+{% previewsample "page.domainurl/samples/tab/content-reuse-cs1" %}

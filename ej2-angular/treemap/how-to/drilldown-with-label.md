@@ -56,4 +56,4 @@ Add the label template in the `leafItemSettings` options, and then set the `show
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treemap/how-to/label-template-cs1" %}
+{% previewsample "page.domainurl/samples/treemap/how-to/label-template-cs1" %}

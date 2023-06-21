@@ -159,4 +159,4 @@ The following example shows a basic Skeleton component.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/skeleton/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/skeleton/getting-started-cs1" %}

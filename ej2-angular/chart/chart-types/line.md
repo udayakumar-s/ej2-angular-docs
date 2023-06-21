@@ -25,7 +25,7 @@ To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/line-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/line-cs1" %}
 
 ## Multicolored Line
 
@@ -44,7 +44,7 @@ Here, the individual colors to the data can be mapped by using `pointColorMappin
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/line-cs7" %}
+{% previewsample "page.domainurl/samples/chart/series/line-cs7" %}
 
 ## Series customization
 
@@ -67,7 +67,7 @@ The following properties can be used to customize the `line` series.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/series/line-cs8" %}
+{% previewsample "page.domainurl/samples/chart/series/line-cs8" %}
 
 ## See Also
 

@@ -5,14 +5,14 @@ import { CardSettingsModel, DialogEventArgs } from '@syncfusion/ej2-angular-kanb
 import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
 
 class TaskIdAdaptor extends ODataAdaptor {
-    processResponse() {
-        let i = 0;
-        // calling base class processResponse function
-        let original = super.processResponse.apply(this, arguments);
-        // adding Task Id
-        original.forEach((item) => item['Id'] = 'Task - ' + ++i);
-        return original;
-    }
+  override processResponse(): Object {
+    let i = 0;
+    // calling base class processResponse function
+    let original: any = super.processResponse.apply(this, arguments as any);
+    // adding Task Id
+    original.forEach((item: any) => item['Id'] = 'Task - ' + ++i);
+    return original;
+  }
 }
 
 @Component({
@@ -31,7 +31,7 @@ export class AppComponent {
         contentField: 'Summary',
         headerField: 'Id'
     };
-    private dataManager: DataManager = new DataManager({
+    public dataManager: DataManager = new DataManager({
        url: 'https://ej2services.syncfusion.com/production/web-services/api/Kanban',
        adaptor: new TaskIdAdaptor
     });

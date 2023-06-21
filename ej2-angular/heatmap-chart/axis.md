@@ -32,7 +32,7 @@ Category axis type is used to represent the string values in axis labels.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/categoryaxis-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/categoryaxis-cs1" %}
 
 ### Numeric axis
 
@@ -50,7 +50,7 @@ Numeric axis type is used to represent the numeric values in axis labels.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/numericaxis-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/numericaxis-cs1" %}
 
 ### Date-time axis
 
@@ -68,7 +68,7 @@ Date-time axis type is used to represent the date-time values in axis labels wit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/datetimeaxis-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/datetimeaxis-cs1" %}
 
 ## Inversed axis
 
@@ -86,7 +86,7 @@ HeatMap supports inversing the axis origin for both axes, where the axis labels 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/inversedaxis-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/inversedaxis-cs1" %}
 
 ## Opposed axis
 
@@ -104,7 +104,7 @@ In HeatMap, you can place the axis label in an opposite position of its default 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/opposedaxis-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/opposedaxis-cs1" %}
 
 ## Label formatting
 
@@ -122,7 +122,7 @@ HeatMap supports formatting the axis labels by using the [labelFormat](https://e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/labelformat-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/labelformat-cs1" %}
 
 ## Axis intervals
 
@@ -146,7 +146,7 @@ In HeatMap, you can define an interval between the axis labels using the [interv
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/axisinterval-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/axisinterval-cs1" %}
 
 ## Axis label increment
 
@@ -164,7 +164,7 @@ Axis label increment in the HeatMap is used to display the axis labels with regu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/increment-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/increment-cs1" %}
 
 ## Limiting labels in date-time axis
 
@@ -188,7 +188,7 @@ You can display the axis labels at specific time intervals along with the date-t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/showlabelon-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/showlabelon-cs1" %}
 
 ## Multilevel Labels
 
@@ -215,5 +215,5 @@ The multilevel labels can be customized by using the following properties.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/axis/multilevellabels-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/axis/multilevellabels-cs1" %}
 

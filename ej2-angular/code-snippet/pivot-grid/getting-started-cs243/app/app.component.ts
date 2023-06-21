@@ -1,26 +1,26 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IDataOptions, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, DisplayOption, PivotChartService } from '@syncfusion/ej2-angular-pivotview';
 import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
   providers: [PivotChartService],
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings
-  [chartSettings]='chartSettings' (multiLevelLabelRender)='multiLevelLabelRender($event)' [displayOption]='displayOption'></ejs-pivotview>`
+  [chartSettings]='chartSettings' (multiLevelLabelRender)='this.chartSettings?.multiLevelLabelRender' [displayOption]='displayOption'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public dataSourceSettings: IDataOptions;
-    public chartSettings: ChartSettings;
-    public displayOption: DisplayOption;
+    public dataSourceSettings?: IDataOptions;
+    public chartSettings?: ChartSettings;
+    public displayOption?: DisplayOption;
 
     ngOnInit(): void {
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
             filters: []
         };
 
-        this.displayOption = { view: 'Chart' } as DisplayOPtion;
+        this.displayOption = { view: 'Chart' } as DisplayOption;
         this.chartSettings = {
             chartSeries: { type: 'Column' },
             multiLevelLabelRender(e) {

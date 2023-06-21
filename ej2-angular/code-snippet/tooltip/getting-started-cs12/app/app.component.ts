@@ -28,7 +28,7 @@ import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 
 export class AppComponent {
     @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent;
+    public tooltipControl: TooltipComponent | any ;
     constructor() { }
     customOpen(args: any): void {
         if (args.target.getAttribute("data-tooltip-id")) {

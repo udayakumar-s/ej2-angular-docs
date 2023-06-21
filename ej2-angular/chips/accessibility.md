@@ -31,4 +31,4 @@ The following shortcut keys are used to access the Chip control without any inte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chips/accessibility-cs1" %}
+{% previewsample "page.domainurl/samples/chips/accessibility-cs1" %}

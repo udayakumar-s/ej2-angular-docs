@@ -42,7 +42,7 @@ To render a bubble HeatMap with size series, set the [bubbleType](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/bubble-heatmap/sizeBubble-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/bubble-heatmap/sizeBubble-cs1" %}
 
 ### Bubble color
 
@@ -62,7 +62,7 @@ To represent the data points with variations in bubble colors, set the [bubbleTy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/bubble-heatmap/colorBubble-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/bubble-heatmap/colorBubble-cs1" %}
 
 ### Bubble sector
 
@@ -82,7 +82,7 @@ To render the data points with bubble sector, set the [bubbleType](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/bubble-heatmap/sectorBubble-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/bubble-heatmap/sectorBubble-cs1" %}
 
 ### Combining size and color bubble types
 
@@ -112,7 +112,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/bubble-heatmap/sizeAndColorTable-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/bubble-heatmap/sizeAndColorTable-cs1" %}
 
 <!-- markdownlint-disable MD036 -->
 **Cell**
@@ -131,7 +131,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/bubble-heatmap/sizeAndColorCell-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/bubble-heatmap/sizeAndColorCell-cs1" %}
 
 <!-- markdownlint-disable MD036 -->
 **JSON binding**
@@ -155,7 +155,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonTable-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/bubble-heatmap/sizeAndColorJsonTable-cs1" %}
 
 <!-- markdownlint-disable MD036 -->
 **Cell**
@@ -174,7 +174,7 @@ The following example illustrates how to render a bubble HeatMap with different 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs1" %}
 
 <!-- markdownlint-disable MD036 -->
 **Binding size and color values from datasource**
@@ -195,4 +195,4 @@ The size and color of the bubbles in the **SizeAndColor** bubble HeatMap type ca
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/bubble-heatmap/sizeAndColorJSONCell-cs2" %}
+{% previewsample "page.domainurl/samples/heatmap/bubble-heatmap/sizeAndColorJSONCell-cs2" %}

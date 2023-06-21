@@ -32,4 +32,4 @@ You can change the Tab content height by using the [`heightAdjustMode`](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tab/height-cs1" %}
+{% previewsample "page.domainurl/samples/tab/height-cs1" %}

@@ -26,4 +26,4 @@ The events available in ProgressButton are [`fail`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/progress-button/default-cs7" %}
+{% previewsample "page.domainurl/samples/progress-button/default-cs7" %}

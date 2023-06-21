@@ -37,7 +37,7 @@ In the following sample, the **In-place Editor** renders with `Inline` mode. You
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/modes-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/modes-cs1" %}
 
 ### Pop-up customization
 
@@ -74,7 +74,7 @@ In the following sample, popup [title](https://ej2.syncfusion.com/angular/docume
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/popup-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/popup-cs1" %}
 
 ## Event actions for editing
 
@@ -100,7 +100,7 @@ In the following sample, when switching drop-down item, the selected value assig
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/editable-on-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/editable-on-cs1" %}
 
 ## Action on focus out
 
@@ -124,7 +124,7 @@ In the following sample, when switching drop-down item, the selected value assig
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/action-on-blur-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/action-on-blur-cs1" %}
 
 ## Display modes
 
@@ -144,7 +144,7 @@ The following sample, denotes intractable and normal display modes with differen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/under-line-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/under-line-cs1" %}
 
 ## See Also
 

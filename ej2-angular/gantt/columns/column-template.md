@@ -24,4 +24,4 @@ A column template is used to customize the column’s look. The following code e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/gantt/columns/columntemplate-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/columns/columntemplate-cs1" %}

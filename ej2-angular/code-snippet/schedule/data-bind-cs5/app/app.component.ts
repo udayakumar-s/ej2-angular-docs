@@ -13,15 +13,16 @@ import { DataManager } from '@syncfusion/ej2-data';
 
 export class AppComponent {
     @ViewChild('scheduleObj')
-    public scheduleObj: ScheduleComponent;
+    public scheduleObj?: ScheduleComponent;
     public selectedDate: Date = new Date(2017, 5, 11);
     private dataManager: DataManager = new DataManager({
         url: 'http://some.com/invalidUrl'
     });
     public eventSettings: EventSettingsModel = { dataSource: this.dataManager };
-    onActionFailure(): void {
+readonly: any;
+    onActionFailure(eventData: any): void {
        let span: HTMLElement = document.createElement('span');
-       this.scheduleObj.element.parentNode.insertBefore(span, this.scheduleObj.element);
+       this.scheduleObj?.element?.parentNode?.insertBefore(span, this.scheduleObj.element);
        span.style.color = '#FF0000'
        span.innerHTML = 'Server exception: 404 Not found';
     }

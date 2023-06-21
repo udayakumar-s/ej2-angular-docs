@@ -25,4 +25,4 @@ In the `keydown` event handler, the `updateValue` method is called to update the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/how-to/save-cs1" %}
+{% previewsample "page.domainurl/samples/rich-text-editor/how-to/save-cs1" %}

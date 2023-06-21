@@ -33,7 +33,7 @@ To enable single selection in the list box, [`mode`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs13" %}
 
 ## Multiple selection
 
@@ -55,7 +55,7 @@ To select multiple items, use the SHIFT, CTRL, and arrow keys to make selections
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs14" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs14" %}
 
 ### Checkbox selection
 
@@ -77,6 +77,6 @@ To select all the items in the list box, [`showSelectAll`](https://ej2.syncfusio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs15" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs15" %}
 
 > To select all the items in the list box, [`selectAll`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#selectall) method can also be used.

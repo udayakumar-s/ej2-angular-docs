@@ -1,36 +1,35 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
+import { ChartComponent, ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart #roundcol id="column-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' (loaded)='loaded($event)'>
+    template: `<ejs-chart #roundcol id="column-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' (loaded)='loaded($event)'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Tiger' width='2' [cornerRadius]='radius'> </e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public chartData: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public border: Object;
-    public radius: Object;
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public border?: Object;
+    public radius?: Object;
     public execute: boolean = false;
     public count: number = 0;
     @ViewChild('roundcol')
-    public chart: ChartComponent;
+    public chart?: ChartComponent;
     public loaded(args: ILoadedEventArgs): void {
         if (this.execute) {
             return;
         }
-        let columninterval: number = setInterval(
+        let columninterval = setInterval(
             () => {
                 if (document.getElementById('column-container')) {
                     if (this.count === 0) {
-                        this.chart.series[0].dataSource = [
+                        (this.chart as ChartComponent).series[0].dataSource = [
                             { x: 'Egg', y: 206, text: 'Bangaladesh' },
                             { x: 'Fish', y: 123, text: 'Bhutn' },
                             { x: 'Misc', y: 48, text: 'Nepal' },
@@ -38,10 +37,10 @@ export class AppComponent implements OnInit {
                             { x: 'Fruits', y: 170, text: 'Malaysia' }
                         ];
                         this.execute = true;
-                        this.chart.animate();
+                        (this.chart as ChartComponent).animate();
                         this.count++;
                     } else if (this.count === 1) {
-                        this.chart.series[0].dataSource = [
+                        (this.chart as ChartComponent).series[0].dataSource = [
                             { x: 'Egg', y: 86, text: 'Bangaladesh' },
                             { x: 'Fish', y: 173, text: 'Bhutn' },
                             { x: 'Misc', y: 188, text: 'Nepal' },
@@ -49,10 +48,10 @@ export class AppComponent implements OnInit {
                             { x: 'Fruits', y: 100, text: 'Malaysia' }
                         ];
                         this.execute = true;
-                        this.chart.animate();
+                        (this.chart as ChartComponent).animate();
                         this.count++;
                     } else if (this.count === 2) {
-                        this.chart.series[0].dataSource = [
+                        (this.chart as ChartComponent).series[0].dataSource = [
                             { x: 'Egg', y: 156, text: 'Bangaladesh' },
                             { x: 'Fish', y: 33, text: 'Bhutn' },
                             { x: 'Misc', y: 260, text: 'Nepal' },
@@ -60,7 +59,7 @@ export class AppComponent implements OnInit {
                             { x: 'Fruits', y: 30, text: 'Malaysia' }
                         ];
                         this.execute = true;
-                        this.chart.animate();
+                        (this.chart as ChartComponent).animate();
                         this.count = 0;
                     }
                 } else {

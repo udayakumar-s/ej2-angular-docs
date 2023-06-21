@@ -32,7 +32,7 @@ Here is an example code snippet using the `FadeOut` and `ZoomOut` animation effe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/animation-multiple-cs1" %}
+{% previewsample "page.domainurl/samples/common/animation-multiple-cs1" %}
 
 ## Animation duration
 
@@ -56,7 +56,7 @@ Here is an example code snippet using the animation effects with a duration of `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/animation-multiple-cs2" %}
+{% previewsample "page.domainurl/samples/common/animation-multiple-cs2" %}
 
 ## Animation delay
 
@@ -78,4 +78,4 @@ Here is an example code snippet using the animation effects with a delay of `200
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/common/animation-multiple-cs3" %}
+{% previewsample "page.domainurl/samples/common/animation-multiple-cs3" %}

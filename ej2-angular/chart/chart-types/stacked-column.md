@@ -26,7 +26,7 @@ To render a 100% stacked column series, use series [`type`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/column-cs21" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs21" %}
 
 ## Series customization
 
@@ -49,7 +49,7 @@ The following properties can be used to customize the `100% stacked column` seri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/100-stackedcolumn-cs" %}
+{% previewsample "page.domainurl/samples/chart/series/100-stackedcolumn-cs" %}
 
 ## See Also
 

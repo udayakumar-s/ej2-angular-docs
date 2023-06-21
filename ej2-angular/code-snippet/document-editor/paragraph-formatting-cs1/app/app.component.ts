@@ -7,7 +7,7 @@ import {
 
 @Component({
     selector: 'app-container',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./style.css'],
     //specifies the template string for the Document Editor component
     template: `<div>
     <div>
@@ -33,49 +33,49 @@ import {
 })
 export class AppComponent {
     @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+    public documentEditor?: DocumentEditorComponent;
 
     public toolbarButtonClick(arg: any) {
         switch (arg.item.id) {
             case 'AlignLeft':
                 //Toggle the Left alignment for selected or current paragraph
-                this.documentEditor.editor.toggleTextAlignment('Left');
+                (this.documentEditor as DocumentEditorComponent).editor.toggleTextAlignment('Left');
                 break;
             case 'AlignRight':
                 //Toggle the Right alignment for selected or current paragraph
-                this.documentEditor.editor.toggleTextAlignment('Right');
+                (this.documentEditor as DocumentEditorComponent).editor.toggleTextAlignment('Right');
                 break;
             case 'AlignCenter':
                 //Toggle the Center alignment for selected or current paragraph
-                this.documentEditor.editor.toggleTextAlignment('Center');
+                (this.documentEditor as DocumentEditorComponent).editor.toggleTextAlignment('Center');
                 break;
             case 'Justify':
                 //Toggle the Justify alignment for selected or current paragraph
-                this.documentEditor.editor.toggleTextAlignment('Justify');
+                (this.documentEditor as DocumentEditorComponent).editor.toggleTextAlignment('Justify');
                 break;
             case 'IncreaseIndent':
                 //Increase the left indent of selected or current paragraph
-                this.documentEditor.editor.increaseIndent();
+                (this.documentEditor as DocumentEditorComponent).editor.increaseIndent();
                 break;
             case 'DecreaseIndent':
                 //Decrease the left indent of selected or current paragraph
-                this.documentEditor.editor.decreaseIndent();
+                (this.documentEditor as DocumentEditorComponent).editor.decreaseIndent();
                 break;
             case 'ClearFormat':
                 //Clear formatting for selected paragraph or content.
-                this.documentEditor.editor.clearFormatting();
+                (this.documentEditor as DocumentEditorComponent).editor.clearFormatting();
                 break;
             case 'ShowParagraphMark':
                 //Show or hide the hidden characters like spaces, tab, paragraph marks, and breaks.
-                this.documentEditor.documentEditorSettings.showHiddenMarks = !this.documentEditor.documentEditorSettings.showHiddenMarks;
+                (this.documentEditor as DocumentEditorComponent).documentEditorSettings.showHiddenMarks = !(this.documentEditor as DocumentEditorComponent).documentEditorSettings.showHiddenMarks;
                 break;
         }
     }
 
     // Selection change to retrieve formatting
     public onSelectionChange() {
-        if (this.documentEditor.selection) {
-            var paragraphFormat = this.documentEditor.selection.paragraphFormat;
+        if ((this.documentEditor as DocumentEditorComponent).selection) {
+            var paragraphFormat = (this.documentEditor as DocumentEditorComponent).selection.paragraphFormat;
             var toggleBtnId = ['AlignLeft', 'AlignCenter', 'AlignRight', 'Justify', 'ShowParagraphMark'];
             //Remove toggle state.
             for (var i = 0; i < toggleBtnId.length; i++) {
@@ -92,7 +92,7 @@ export class AppComponent {
             } else {
                 document.getElementById('Justify').classList.add('e-btn-toggle');
             }
-            if(this.documentEditor.documentEditorSettings.showHiddenMarks) {
+            if((this.documentEditor as DocumentEditorComponent).documentEditorSettings.showHiddenMarks) {
                 document.getElementById('ShowParagraphMark').classList.add('e-btn-toggle');
             }
             // #endregion

@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, PathModel, DiagramTools } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, PathModel, DiagramTools, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
@@ -11,13 +11,13 @@ import { DiagramComponent, Diagram, NodeModel, PathModel, DiagramTools } from '@
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public node: NodeModel;
+    public diagram?: DiagramComponent;
+    public node?: NodeModel;
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
     public created(args: Object): void {
@@ -33,10 +33,10 @@ export class AppComponent {
                 data: 'M13.560 67.524 L 21.941 41.731 L 0.000 25.790 L 27.120 25.790 L 35.501 0.000 L 43.882 25.790 L 71.000 25.790 L 49.061 41.731 L 57.441 67.524 L 35.501 51.583 z'
             } as PathModel
         };
-        this.diagram.drawingObject = this.node;
+        (this.diagram as Diagram).drawingObject = this.node;
         //To draw an object once, activate draw once
-        this.diagram.tool = DiagramTools.DrawOnce;
-        this.diagram.dataBind();
+        (this.diagram as Diagram).tool = DiagramTools.DrawOnce;
+        (this.diagram as Diagram).dataBind();
     }
 }
 

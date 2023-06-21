@@ -26,4 +26,4 @@ In the following sample, popup animation can be customized by passing animation 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/in-place-editor/custom-animation-cs1" %}
+{% previewsample "page.domainurl/samples/in-place-editor/custom-animation-cs1" %}

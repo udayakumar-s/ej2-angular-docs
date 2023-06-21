@@ -28,7 +28,7 @@ The excel export provides an option to export the current page into excel. To ex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs4" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs4" %}
 
 ## Export the selected records only
 
@@ -48,7 +48,7 @@ In the below exporting demo, We can get the selected records using [`getSelected
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/exporting-filtered-data-cs1" %}
+{% previewsample "page.domainurl/samples/grid/exporting-filtered-data-cs1" %}
 
 ## Export hidden columns
 
@@ -66,7 +66,7 @@ The excel export provides an option to export hidden columns of grid by defining
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs5" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs5" %}
 
 ## Show or hide columns
 
@@ -90,7 +90,7 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs6" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs6" %}
 
 ## Export with filter options
 
@@ -108,7 +108,7 @@ The excel export provides an option to export with filter option in excel by def
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs7" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs7" %}
 
 ## Exporting grouped records
 
@@ -126,7 +126,7 @@ The excel export provides outline option for grouped records which hides the det
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs8" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs8" %}
 
 ## Define file name
 
@@ -144,7 +144,7 @@ You can assign the file name for the exported document by defining [`fileName`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/excel-exporting-cs9" %}
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs9" %}
 
 ## Export the master detail grid
 
@@ -164,4 +164,4 @@ To export the master-detail grid on the same sheet in the following sample, you 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/export-masterdetail-grid %}
+{% previewsample "page.domainurl/samples/grid/export-masterdetail-grid %}

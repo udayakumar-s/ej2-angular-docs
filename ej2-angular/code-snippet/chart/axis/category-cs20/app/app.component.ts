@@ -2,12 +2,11 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { series1 } from 'datasource.ts';
+import { series1 } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-chart style='display:block' align='center' id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: `<ejs-chart style='display:block' align='center' id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [tooltip]='tooltip'  [chartArea]='chartArea' [width]='width'>
             <e-series-collection>
                 <e-series [dataSource]='series1' type='Line' xName='x' yName='y' name='Germany' width=2 > </e-series>
@@ -43,8 +42,9 @@ export class AppComponent implements OnInit {
     public title: string = 'Inflation - Consumer Price';
     constructor() {
        //code
-    };
-
+    }ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
 }
 
 

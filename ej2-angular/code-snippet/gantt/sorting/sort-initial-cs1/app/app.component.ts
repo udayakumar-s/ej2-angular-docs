@@ -13,11 +13,11 @@ import { editingData } from './data';
 })
 export class AppComponent{
     // Data for Gantt
-    public data: object[];
-    public taskSettings: object;
-    public columns: object[];
-    public splitterSettings: object;
-    public sortSettings: object;
+    public data?: object[];
+    public taskSettings?: object;
+    public columns?: object[];
+    public splitterSettings?: object;
+    public sortSettings?: object;
     public ngOnInit(): void {
         this.data = [
             {

@@ -35,4 +35,4 @@ Toolbar supports to add a toggle Button by using the [`template`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toolbar/toggle-button-cs1" %}
+{% previewsample "page.domainurl/samples/toolbar/toggle-button-cs1" %}

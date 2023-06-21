@@ -28,6 +28,6 @@ The following sample demonstrates the usage of the `mediaQuery` property to turn
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dashboard-layout/responsive-adaptive-cs1" %}
+{% previewsample "page.domainurl/samples/dashboard-layout/responsive-adaptive-cs1" %}
 
 > You can refer to our [Angular Dashboard Layout](https://www.syncfusion.com/angular-ui-components/angular-dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dashboard Layout example](https://ej2.syncfusion.com/angular/demos/#/material/dashboard-layout/default) to knows how to present and manipulate data.

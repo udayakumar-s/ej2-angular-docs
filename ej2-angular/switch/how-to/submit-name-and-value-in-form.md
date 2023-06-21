@@ -26,4 +26,4 @@ In the following code snippet, USB and Wi-Fi in the [`checked`](../../switch#che
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/switch/form-cs1" %}
+{% previewsample "page.domainurl/samples/switch/form-cs1" %}

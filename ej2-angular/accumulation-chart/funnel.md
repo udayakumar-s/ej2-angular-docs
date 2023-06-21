@@ -28,7 +28,7 @@ To known about funnel charts, you can check on this video:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs1" %}
 
 ## Size
 
@@ -46,7 +46,7 @@ The size of the funnel chart can be customized by using the  `width` and `height
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs2" %}
 
 ## Neck Size
 
@@ -64,7 +64,7 @@ The funnel's neck size can be customized by using the `neckWidth` and `neckHeigh
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs3" %}
 
 ## Gap between the segments
 
@@ -82,7 +82,7 @@ Funnel chart provides options to customize the space between the segments by usi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs4" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs4" %}
 
 ## Explode
 
@@ -100,7 +100,7 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs5" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs5" %}
 
 ## Smart Data Label
 
@@ -118,7 +118,7 @@ It provides the data label smart arrangement of the funnel and pyramid series. T
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs6" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs6" %}
 
 ## Customization
 
@@ -136,7 +136,7 @@ Individual points can be customized using the `pointRender` event.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/funnel-cs7" %}
+{% previewsample "page.domainurl/samples/chart/series/funnel-cs7" %}
 
 ## See Also
 

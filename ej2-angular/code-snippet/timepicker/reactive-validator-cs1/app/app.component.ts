@@ -9,18 +9,21 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app/template.html'
+    templateUrl: './template.html'
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('ejTimePicker') ejTimePicker: TimePickerComponent;
-    public targetElement: HTMLElement;
+    @ViewChild('ejTimePicker') ejTimePicker?: TimePickerComponent;
+    public targetElement?: HTMLElement;
     public placeholder: String = 'Select a time';
-    skillForm: FormGroup;
+    skillForm?: FormGroup | any;
     build: FormBuilder;
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.build = builder;
         this.createForm();
+    }
+    ngOnInit(): void {
+        
     }
     createForm() {
         this.skillForm = this.build.group({
@@ -30,13 +33,13 @@ export class AppComponent implements OnInit {
         });
     }
     get username() {
-        return this.skillForm.get('username');
+        return this.skillForm?.get('username');
     }
     get timepicker() {
-        return this.skillForm.get('timepicker');
+        return this.skillForm?.get('timepicker');
     }
     get usermail() {
-        return this.skillForm.get('usermail');
+        return this.skillForm?.get('usermail');
     }
 
     onSubmit() {

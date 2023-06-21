@@ -20,8 +20,8 @@ import { Tab, TabComponent, SelectingEventArgs, SelectEventArgs} from '@syncfusi
 })
 export class AppComponent implements OnInit {
   @ViewChild('tabObj')
-  public tabObj: TabComponent;
-  public tabItems: Object[];
+  public tabObj?: TabComponent;
+  public tabItems?: Object[];
   public dropdownData: Object[] = [
     { text: 'India', Id: 0 },
     { text: 'Canada', Id: 1 },
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
   public waterMark: string = 'Select Tab Item using dropdown';
   public value: number = 0;
   public onChange(args: any): void {
-    this.tabObj.select(args.value);
+    (this.tabObj as TabComponent).select(args.value);
   }
   public ngOnInit(): void {
     this.tabItems = [
@@ -78,18 +78,18 @@ export class AppComponent implements OnInit {
   }
 
   public selecting(args: SelectingEventArgs) {
-    this.getInteractionDetail(args.isInteracted);
+    this.getInteractionDetail(args.isInteracted as boolean);
   }
   public selected(args: SelectEventArgs) {
-    this.getInteractionDetail(args.isInteracted);
+    this.getInteractionDetail(args.isInteracted as boolean);
   }
   public getInteractionDetail(interact: boolean): void {
     let eventlog = interact
       ? 'Tab Item selected by user interaction'
       : 'Tab Item selected by programmatically';
-    document.getElementById('EventLog').innerHTML = document.getElementById(
+    (document.getElementById('EventLog') as HTMLElement).innerHTML = (document.getElementById(
       'EventLog'
-    ).innerHTML = '<b>' + eventlog + '</b></span>';
+    ) as HTMLElement).innerHTML = '<b>' + eventlog + '</b></span>';
   }
 }
 

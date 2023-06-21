@@ -28,7 +28,7 @@ export class AppComponent {
             { key: 'Estimate', type: 'Numeric' },
             { key: 'Summary', type: 'TextArea' }
         ]
-    };
+    } as DialogSettingsModel;
 }
 
 

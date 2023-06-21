@@ -32,7 +32,7 @@ The smooth transition between the given palette colors can be applied for the he
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/palette/palettegradient-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/palette/palettegradient-cs1" %}
 
 ### Fixed
 
@@ -50,7 +50,7 @@ In fixed palette type, solid colors are applied to the heat map cells. The data 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/palette/palettefixed-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/palette/palettefixed-cs1" %}
 
 ## Defining color stops
 
@@ -68,7 +68,7 @@ You can define the colors ranges or color stops for data values in both gradient
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/heatmap/palette/palettevalue-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/palette/palettevalue-cs1" %}
 
 ## See Also
 

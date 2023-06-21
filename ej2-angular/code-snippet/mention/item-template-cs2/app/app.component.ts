@@ -16,7 +16,7 @@ import { Query, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
           <span>{{data.FirstName}} - {{data.City}}</span>
       </ng-template>
   </ejs-mention>`,
-  styleUrls: ['index.css']
+
 })
 export class AppComponent {
   constructor() {}

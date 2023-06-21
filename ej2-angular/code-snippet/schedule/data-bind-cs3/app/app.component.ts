@@ -5,12 +5,12 @@ import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthServ
 import { DataManager, ODataV4Adaptor, Query } from '@syncfusion/ej2-data';
 
 class CustomAdaptor extends ODataV4Adaptor {
-    processResponse(): Object {
+    override processResponse(): Object {
         let i: number = 0;
         // calling base class processResponse function
-        let original: Object[] = super.processResponse.apply(this, arguments);
+        let original: any = super.processResponse.apply(this, arguments as any);
         // adding employee id
-        original.forEach((item: Object) => item['EventID'] = ++i);
+        original.forEach((item: any) => item['EventID'] = ++i);
         return  original;
     }
 }

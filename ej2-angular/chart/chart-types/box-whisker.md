@@ -26,7 +26,7 @@ To render a box and whisker chart, use series[`type`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/box-cs1" %}
+{% previewsample "page.domainurl/samples/chart/series/box-cs1" %}
 
 
 ## Box plot
@@ -48,7 +48,7 @@ To render a box and whisker chart, use series[`type`](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/box-cs2" %}
+{% previewsample "page.domainurl/samples/chart/series/box-cs2" %}
 
 ## Show mean
 
@@ -66,7 +66,7 @@ In Box and Whisker series `showMean` property is used to show the box and whiske
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/box-cs3" %}
+{% previewsample "page.domainurl/samples/chart/series/box-cs3" %}
 
 ## See Also
 

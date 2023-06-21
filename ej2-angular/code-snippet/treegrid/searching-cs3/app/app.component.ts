@@ -22,16 +22,16 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('treegrid')
-    public treeGridObj: TreeGridComponent;
+    public treeGridObj?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
     }
-    btnClick(e: any){
-    let searchText: string = (<HTMLInputElement>document.getElementsByClassName('searchtext')[0]).value;
-    this.treeGridObj.search(searchText);
-});
+    btnClick(){
+        let searchText: string = (<HTMLInputElement>document.getElementsByClassName('searchtext')[0]).value;
+        this.treeGridObj?.search(searchText);
+    }
 }
 
 

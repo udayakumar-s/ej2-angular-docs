@@ -14,27 +14,27 @@ import { QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
                         <e-column field='ShipCity' headerText='Ship City' width=130 ></e-column>
                     </e-columns>
                 </ejs-grid>`,
-    styleUrls: ['./app/app.style.css']
+    styleUrls: ['app.style.css']
 })
 export class AppComponent implements OnInit {
 
-  public data: object[];
+  public data?: object[];
 
   ngOnInit(): void {
     this.data = data;
   }
 
   customizeCell(args: QueryCellInfoEventArgs) {
-    if (args.column.field === 'Freight') {
-      if (args.data[args.column.field] <= 30) {
-        args.cell.classList.add('below-30');
+    if ((args as any).column.field === 'Freight') {
+      if ((args as any).data[(args as any).column.field] <= 30) {
+        (args as any).cell.classList.add('below-30');
       } else if (
-        args.data[args.column.field] > 30 &&
-        args.data[args.column.field] < 80
+        (args as any).data[(args as any).column.field] > 30 &&
+        (args as any).data[(args as any).column.field] < 80
       ) {
-        args.cell.classList.add('below-80');
+        (args as any).cell.classList.add('below-80');
       } else {
-        args.cell.classList.add('above-80');
+        (args as any).cell.classList.add('above-80');
       }
     }
   }

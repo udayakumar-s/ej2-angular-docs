@@ -4,8 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { ILoadedEventArgs, ChartTheme, ITextRenderEventArgs, IPointRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 @Component({
     selector: 'app-container',
-    template:
-    `
+    template: `
     <ejs-chart style='display:block;' [chartArea]='chartArea'  align='center' id='chartcontainer' [title]='title'
             [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' (textRender)='textRender($event)'
             (pointRender)='pointRender($event)' [tooltip]='tooltip' >
@@ -70,7 +69,7 @@ export class AppComponent {
     public textRender(args: ITextRenderEventArgs): void {
       args.text = args.point.x + '';
     };
-    public pointRender(args: IPointRenderEventArgs): void {
+    public pointRender(args: IPointRenderEventArgs | any): void {
       if (args.point.y > 80) {
         args.fill='red'
       } else if(args.point.y < 40) {

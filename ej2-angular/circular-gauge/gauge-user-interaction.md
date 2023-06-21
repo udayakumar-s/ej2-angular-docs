@@ -33,7 +33,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-user-interaction-cs1" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-user-interaction-cs1" %}
 
 <!-- markdownlint-disable MD036 -->
 
@@ -53,7 +53,7 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-user-interaction-cs2" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-user-interaction-cs2" %}
 
 ## Tooltip for ranges
 
@@ -100,7 +100,7 @@ The following code example shows the tooltip for the pointers, ranges and annota
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-user-interaction-cs3" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-user-interaction-cs3" %}
 
 ## Pointer Drag
 
@@ -119,4 +119,4 @@ To enable or disable the pointer drag, you can use [`enablePointerDrag`](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/circulargauge/gauge-user-interaction-cs4" %}
+{% previewsample "page.domainurl/samples/circulargauge/gauge-user-interaction-cs4" %}

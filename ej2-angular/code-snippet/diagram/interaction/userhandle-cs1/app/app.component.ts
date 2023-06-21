@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SelectorModel, IElement, randomId, cloneObject, UserHandleModel, SelectorConstraints, ToolBase, NodeModel, Diagram, MoveTool } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, SelectorModel, IElement, randomId, cloneObject, UserHandleModel, SelectorConstraints, ToolBase, NodeModel, Diagram, MoveTool, ShapeStyleModel, MouseEventArgs, ConnectorModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
   selector: "app-container",
@@ -14,7 +14,7 @@ import { DiagramComponent, SelectorModel, IElement, randomId, cloneObject, UserH
 })
 export class AppComponent {
   @ViewChild("diagram")
-  public diagram: DiagramComponent;
+  public diagram?: DiagramComponent;
 
   public handles: UserHandleModel[] = [
     {
@@ -33,16 +33,16 @@ export class AppComponent {
   public getNodeDefaults(node: NodeModel): NodeModel {
     node.height = 100;
     node.width = 100;
-    node.style.fill = "#6BA5D7";
-    node.style.strokeColor = "#6BA5D7";
+    ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+    ((node as NodeModel).style as ShapeStyleModel).strokeColor = "#6BA5D7";
     return node;
   }
   public getCustomTool: Function = this.getTool.bind(this);
   public getTool(action: string): ToolBase {
-    let tool: ToolBase;
+    let tool: ToolBase = new ToolBase({} as any);
     if (action === "clone") {
-      let cloneTool: CloneTool = new CloneTool(this.diagram.commandHandler);
-      cloneTool.diagram = this.diagram;
+      let cloneTool: CloneTool = new CloneTool((this.diagram as DiagramComponent).commandHandler);
+      cloneTool.diagram = this.diagram as Diagram;
       return cloneTool;
     }
     return tool;
@@ -51,17 +51,17 @@ export class AppComponent {
 
 //Defines the clone tool used to copy Node/Connector
 class CloneTool extends MoveTool {
-  public diagram: Diagram = null;
-  public mouseDown(args: MouseEventArgs): void {
+  public diagram?: Diagram = undefined;
+  public override mouseDown(args: MouseEventArgs): void {
     let newObject: NodeModel | ConnectorModel;
-    if (this.diagram.selectedItems.nodes.length > 0) {
-      newObject = cloneObject(this.diagram.selectedItems.nodes[0]) as NodeModel;
+    if (((this.diagram as Diagram).selectedItems.nodes as NodeModel[]).length > 0) {
+      newObject = cloneObject(((this.diagram as Diagram).selectedItems.nodes as NodeModel[])[0]) as NodeModel;
     } else {
-      newObject = cloneObject(this.diagram.selectedItems.connectors[0]) as ConnectorModel;
+      newObject = cloneObject((((this.diagram as Diagram).selectedItems as SelectorModel).connectors as ConnectorModel[])[0]) as ConnectorModel;
     }
     newObject.id += randomId();
-    this.diagram.paste([newObject]);
-    args.source = this.diagram.nodes[this.diagram.nodes.length - 1] as IElement;
+    (this.diagram as Diagram).paste([newObject]);
+    args.source = (this.diagram as Diagram).nodes[(this.diagram as Diagram).nodes.length - 1] as IElement;
     args.sourceWrapper = args.source.wrapper;
     super.mouseDown(args);
     this.inAction = true;

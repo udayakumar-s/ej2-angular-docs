@@ -10,13 +10,13 @@ import { Component } from '@angular/core';
               `
 })
 export class AppComponent {
-    public ele: HTMLElement;
+    public ele?: HTMLElement;
     public path: Object = {
       saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
       removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove' };
     ngOnInit() {
-        this.ele = document.getElementById('droparea');
-        }
+        this.ele = document.getElementById('droparea') as HTMLElement;
+    }
     constructor() {
     }
 }

@@ -24,4 +24,4 @@ You can render Accordion components inside the parent Accordion content using An
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-cs6" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-cs6" %}

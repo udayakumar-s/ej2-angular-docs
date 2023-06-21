@@ -10,7 +10,7 @@ import { SpinSettingsModel } from '@syncfusion/ej2-angular-splitbuttons';
 })
 
 export class AppComponent {
-    private spinSettings : SpinSettingsModel = { position: 'Right', width: 20, template: '<div class="template"></div>'  };
+    public spinSettings : SpinSettingsModel = { position: 'Right', width: 20, template: '<div class="template"></div>'  };
 }
 
 

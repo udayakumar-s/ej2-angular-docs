@@ -52,4 +52,4 @@ Note: When `pageSize` isn't mentioned, it defaults to 12 records per page.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/paging-cs1" %}
+{% previewsample "page.domainurl/samples/listview/paging-cs1" %}

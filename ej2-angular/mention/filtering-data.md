@@ -30,7 +30,7 @@ The remote request does not fetch the search data until the search key contains 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs2" %}
 
 ## Change the filter type
 
@@ -52,7 +52,7 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs3" %}
 
 ## Allow spacing between search
 
@@ -72,7 +72,7 @@ While filtering the data in the data source, you can allow the space in the midd
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs4" %}
 
 ## Customize the suggestion item count
 
@@ -90,7 +90,7 @@ While filtering, you can customize the number of list items to be displayed in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/mention/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/mention/getting-started-cs5" %}
 
 ## See Also
 

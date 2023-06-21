@@ -37,7 +37,7 @@ class to change the appearance of the avatar.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/size-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/size-cs1" %}
 
 ## Avatar types
 
@@ -63,7 +63,7 @@ adding the modifier class `.e-avatar` to the target element.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/default-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/default-cs1" %}
 
 ### Circle
 
@@ -81,4 +81,4 @@ The circle avatar style can be applied by adding the modifier class `.e-avatar-c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/avatar/circle-cs1" %}
+{% previewsample "page.domainurl/samples/avatar/circle-cs1" %}

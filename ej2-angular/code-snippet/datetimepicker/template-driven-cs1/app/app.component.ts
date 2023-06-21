@@ -5,23 +5,23 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DateTimePickerComponent } from '@syncfusion/ej2-angular-calendars';
 
 class User {
+    public datetime?: Date;
     constructor() {
-        public datetime: Date
     }
 }
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app/template.html'
+    templateUrl: './template.html'
 })
 export class DefaultDateTimePickerComponent {
     constructor() {}
-    user: User;
+    user?: User;
     ngOnInit() {
-        this.user = new User(null);
+        this.user = new User();
     }
 
-    onSubmit(userForm) {
+    onSubmit(userForm: any) {
         (userForm.valid) ? alert("submitted"): alert("form is invalid");
     }
 

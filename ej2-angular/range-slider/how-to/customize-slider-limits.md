@@ -32,4 +32,4 @@ Slider appearance can be customized via CSS. By overriding the slider CSS classe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/slider/limits-customization-cs2" %}
+{% previewsample "page.domainurl/samples/slider/limits-customization-cs2" %}

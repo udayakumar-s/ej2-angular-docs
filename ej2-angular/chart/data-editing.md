@@ -28,4 +28,4 @@ We can use the data editing through inject the `DataEditingService` module. It p
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/data-editing-cs1" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/data-editing-cs1" %}

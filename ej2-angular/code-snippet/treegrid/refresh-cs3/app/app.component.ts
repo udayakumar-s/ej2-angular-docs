@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { projectData } from './datasource';
-import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { Column, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
@@ -24,15 +24,15 @@ export class AppComponent implements OnInit {
 
     public data: Object[] = [];
     @ViewChild('treegridObj')
-    public treegridObj: TreeGridComponent;
+    public treegridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = projectData;
     }
     click() {
-        const column = this.treegridObj.getColumnByField('Duration'); // get the JSON object of the column corresponding to the field name
-        column.headerText = 'Changed Text'; // assign a new header text to the column
-        this.treegridObj.refreshColumns();
+        const column = this.treegridObj?.getColumnByField('Duration'); // get the JSON object of the column corresponding to the field name
+        (column as Column).headerText = 'Changed Text'; // assign a new header text to the column
+        this.treegridObj?.refreshColumns();
     }
 }
 

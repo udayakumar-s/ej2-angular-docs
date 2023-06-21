@@ -34,7 +34,7 @@ To use calculated field option, you need to inject the `CalculatedFieldService` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs9" %}
 
 Meanwhile, user can also view calculated field dialog in UI by invoking `createCalculatedFieldDialog` method on an external button click which is shown in the below code sample.
 
@@ -50,7 +50,7 @@ Meanwhile, user can also view calculated field dialog in UI by invoking `createC
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs10" %}
 
 ## Editing through the field list and the grouping bar
 
@@ -244,7 +244,7 @@ Below is a list of operators and functions that can be used in the formula to cr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs11" %}
 
 ## Event
 
@@ -272,7 +272,7 @@ In the below sample, creating a calculated field without setting the format is r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs12" %}
 
 ### ActionBegin
 
@@ -308,7 +308,7 @@ In the below sample, the calculated field button click action, that is, opening 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs13" %}
 
 ### ActionComplete
 
@@ -341,7 +341,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs14" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs14" %}
 
 ### ActionFailure
 
@@ -369,4 +369,4 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs15" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs15" %}

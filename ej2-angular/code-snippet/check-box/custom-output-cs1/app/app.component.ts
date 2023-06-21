@@ -1,12 +1,12 @@
 
 
 
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
     templateUrl: 'app.component.html',
-    styleUrls: ['app.component.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
@@ -28,15 +28,15 @@ export class AppComponent {
   private addCheckboxes() {
     this.testData.forEach((o, i) => {
       const control = new FormControl(i === 0); // if first item set to true, else false
-      (this.form.controls.tests as FormArray).push(control);
+      (this.form.controls['tests'] as FormArray).push(control);
     });
   }
 
   submit() {
     // Filtering the selected value based on the selected checkbox
     const selectedValues: string[] = this.form.value.tests
-      .map((v, i) => v ? this.testData[i].value : null)
-      .filter(v => v !== null);
+      .map((v: any, i: any) => v ? this.testData[i].value : null)
+      .filter((v: null) => v !== null);
     console.log(selectedValues);
   }
 }

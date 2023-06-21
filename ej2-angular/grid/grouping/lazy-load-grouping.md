@@ -30,7 +30,7 @@ To enable this feature, you have to set the [`groupSettings.enableLazyLoading`](
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/lazy-load-grouping-cs1" %}
+{% previewsample "page.domainurl/samples/grid/lazy-load-grouping-cs1" %}
 
 ## Handling the lazy load grouping at server-side
 
@@ -112,7 +112,7 @@ This is demonstrated in the following sample:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/lazy-load-grouping-cs2" %}
+{% previewsample "page.domainurl/samples/grid/lazy-load-grouping-cs2" %}
 
 ## Limitations for lazy load grouping
 

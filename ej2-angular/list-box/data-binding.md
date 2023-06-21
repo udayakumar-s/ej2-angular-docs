@@ -42,7 +42,7 @@ The ListBox has support to load array of primitive data such as strings or numbe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs2" %}
 
 ### Array of object
 
@@ -63,7 +63,7 @@ In the following example, `id` and `sports` column from complex data have been m
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs3" %}
 
 ### Array of complex object
 
@@ -84,7 +84,7 @@ In the following example, `Sports.Name` column from complex data have been mappe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs4" %}
 
 ## Remote Data
 
@@ -104,4 +104,4 @@ The following sample displays the first 10 products from `Products` table of the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listbox/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/listbox/getting-started-cs5" %}

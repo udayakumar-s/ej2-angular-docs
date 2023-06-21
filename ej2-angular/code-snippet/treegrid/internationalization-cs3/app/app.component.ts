@@ -4,6 +4,7 @@ import { L10n } from '@syncfusion/ej2-base';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { ToolbarItems } from '@syncfusion/ej2-treegrid';
+import { Filter } from '@syncfusion/ej2-angular-treegrid';
 
 
     L10n.load({
@@ -59,9 +60,10 @@ import { ToolbarItems } from '@syncfusion/ej2-treegrid';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
-    public pager: Object;
-    public toolbarOptions: ToolbarItems[];
+    public data?: Object[];
+    public pager?: Object;
+    public toolbarOptions?: ToolbarItems[];
+    public filters?: Filter | any;
 
     ngOnInit(): void {
         this.data = sampleData;

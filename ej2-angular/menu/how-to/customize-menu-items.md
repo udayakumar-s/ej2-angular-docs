@@ -28,7 +28,7 @@ In the following example, the **Europe** menu items are added before the **Ocean
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/menu/getting-started-cs8" %}
 
 > To process items with `ID` values, set `isUnique` to `true`.
 
@@ -50,7 +50,7 @@ In the following example, the **Directory** header item, **Conferences**, and **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/enable-disable-cs1" %}
+{% previewsample "page.domainurl/samples/menu/enable-disable-cs1" %}
 
 > To disable sub menu items, use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu#beforeopen) event.
 
@@ -72,6 +72,6 @@ In the following example, the **Movies** header item, **Workshops**, and **Music
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/menu/enable-disable-cs2" %}
+{% previewsample "page.domainurl/samples/menu/enable-disable-cs2" %}
 
 > Using the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu#beforeopen) event, you can hide the sub menu items as in the above example since the menu supports to hide items only for headers initially.

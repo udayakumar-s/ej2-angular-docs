@@ -193,7 +193,7 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs11" %}
 
 ## Configure the popup list
 
@@ -215,7 +215,7 @@ In the following sample, popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs12" %}
 
 ## Two-way binding
 
@@ -233,7 +233,7 @@ In DropDownList, the `value` property supports two-way binding functionality. Th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs13" %}
 
 ## See Also
 

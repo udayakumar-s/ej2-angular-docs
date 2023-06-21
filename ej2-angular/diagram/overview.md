@@ -47,4 +47,4 @@ The following image shows how the Diagram is zoomed/panned with overview.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/overview/overview-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/overview/overview-cs1" %}

@@ -30,7 +30,7 @@ The following example demonstrates the message with different content alignments
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/content-alignment-cs1" %}
+{% previewsample "page.domainurl/samples/message/content-alignment-cs1" %}
 
 ## Rounded and Square
 
@@ -50,7 +50,7 @@ The following example shows the rounded and squared appearance of the message, w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/custom-appearance-cs1" %}
+{% previewsample "page.domainurl/samples/message/custom-appearance-cs1" %}
 
 ## CSS Message
 
@@ -106,4 +106,4 @@ The following example shows the message which renders without any script referen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/message/css-message-cs1" %}
+{% previewsample "page.domainurl/samples/message/css-message-cs1" %}

@@ -37,4 +37,4 @@ To render the Accordion contents using ng-content, we need to use ng-template in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/accordion/accordion-ng-content-cs1" %}
+{% previewsample "page.domainurl/samples/accordion/accordion-ng-content-cs1" %}

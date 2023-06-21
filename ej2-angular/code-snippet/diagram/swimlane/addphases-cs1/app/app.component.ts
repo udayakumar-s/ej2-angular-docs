@@ -56,14 +56,14 @@ export class AppComponent {
         },
       ]
     @ViewChild("diagram")
-    public diagram: DiagramComponent;
+    public diagram?: DiagramComponent;
     public created(args: Object): void {
-         let phase = [{
-       id: 'phase3', offset: 220,
-       header: { annotation: { content: 'Phase' } }
-         }]
-        this.diagram.addPhases(this.diagram.nodes[0],phase);
-        this.diagram.dataBind();
+        let phase = [{
+            id: 'phase3', offset: 220,
+            header: { annotation: { content: 'Phase' } }
+        }] as any
+        (this.diagram as Diagram).addPhases((this.diagram as Diagram).nodes[0],phase);
+        (this.diagram as Diagram).dataBind();
     }
 }
 

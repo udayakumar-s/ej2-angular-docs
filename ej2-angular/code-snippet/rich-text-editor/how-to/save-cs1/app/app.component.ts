@@ -5,11 +5,11 @@ import { Component, ViewChild } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
   selector: 'app-root',
-  template: `<ejs-richtexteditor id='defaultRTE' #sample [(value)]='value' (created)="onCreate($event)"></ejs-richtexteditor>`,
+  template: `<ejs-richtexteditor id='defaultRTE' #sample [(value)]='value' (created)="onCreate()"></ejs-richtexteditor>`,
   providers: [ToolbarService, LinkService, ImageService, HtmlEditorService ]
 })
 export class AppComponent  {
-@ViewChild('sample') public rteObj: RichTextEditorComponent;
+@ViewChild('sample') public rteObj?: RichTextEditorComponent;
 public value: string = `
 <p>The Rich Text Editor triggers events based on its actions. </p>
 <p> The events can be used as an extension point to perform custom operations.</p>

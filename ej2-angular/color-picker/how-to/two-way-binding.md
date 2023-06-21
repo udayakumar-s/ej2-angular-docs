@@ -46,6 +46,6 @@ The steps to perform two-way binding.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/colorpicker/ng-model-cs1" %}
+{% previewsample "page.domainurl/samples/colorpicker/ng-model-cs1" %}
 
 >> By default, the selected color value returns 8 digit hex code in [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property. Some browser like IE won't support the 8 digit hex code. In such case, you can use getter setter method to change the value to supported format as like the above sample.

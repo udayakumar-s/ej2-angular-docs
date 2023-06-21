@@ -117,7 +117,7 @@ Source and target points of the selected connectors are represented with two han
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/interaction/connectoredit-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/interaction/connectoredit-cs1" %}
 
 ![orthogonal Segment Edit](images/orthogonal-segment-edit.gif)
 
@@ -198,7 +198,7 @@ The appearance of the user handle can be customized by using the [`size`](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/interaction/userhandle-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/interaction/userhandle-cs1" %}
 
 ## Zoom pan
 

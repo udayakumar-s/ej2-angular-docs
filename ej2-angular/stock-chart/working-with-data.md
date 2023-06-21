@@ -29,7 +29,7 @@ You can bind a simple JSON data to the chart using [`dataSource`](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/datasource-cs1" %}
+{% previewsample "page.domainurl/samples/stock-chart/datasource-cs1" %}
 
 ## Remote Data
 
@@ -47,7 +47,7 @@ You can also bind remote data to the chart using `DataManager`. The DataManager 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/stock-chart/datasource-cs2" %}
+{% previewsample "page.domainurl/samples/stock-chart/datasource-cs2" %}
 
 ## See Also
 

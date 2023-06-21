@@ -26,7 +26,7 @@ export class AppComponent {
     // map the appropriate columns to fields property
     public fields: { [key: string]: string } = { text: 'Color', value: 'Code' };
     // set the value to MultiSelect
-    public colorValues: [number | string] = ['#75523C', '#4CD242', '#FF745C'];
+    public colorValues: [number | string] | any = ['#75523C', '#4CD242', '#FF745C'];
     // set the placeholder to MultiSelect input element
     public waterMark: string = 'Favorite Colors';
     // set the type of mode for how to visualized the selected items in input element.
@@ -34,7 +34,7 @@ export class AppComponent {
     // bind the tagging event
     public onTagging = (e: TaggingEventArgs) => {
         // set the current selected item text as class to chip element.
-        e.setClass((e.itemData as any)[this.fields.text].toLowerCase());
+        e.setClass((e.itemData as any)[this.fields['text']].toLowerCase());
       }
 
 }

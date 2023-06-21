@@ -26,7 +26,7 @@ The width and height of the Maps can be set using the [`width`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs19" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs19" %}
 
 ## Maps title
 
@@ -50,7 +50,7 @@ The title for the Maps can be set using the [`titleSettings`](https://ej2.syncfu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs20" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs20" %}
 
 ## Setting theme
 
@@ -81,7 +81,7 @@ By default, the Maps are rendered by the **Material** theme. The theme of the Ma
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs21" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs21" %}
 
 ## Customizing Maps container
 
@@ -103,7 +103,7 @@ The following properties are available to customize the container in the Maps.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs22" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs22" %}
 
 ## Customizing Maps area
 
@@ -121,7 +121,7 @@ By default, the background color of the shape maps is set as **white**. To modif
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs23" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs23" %}
 
 ## Customizing the shapes
 
@@ -146,7 +146,7 @@ The following properties are available in [`shapeSettings`](https://ej2.syncfusi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs24" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs24" %}
 
 ## Setting color to the shapes from the data source
 
@@ -164,7 +164,7 @@ The color for each shape in the Maps can be set using the [`colorValuePath`](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs25" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs25" %}
 
 ## Applying border to individual shapes
 
@@ -182,7 +182,7 @@ The border of each shape in the Maps can be customized using the [`borderColorVa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs26" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs26" %}
 
 ## Projection type
 
@@ -211,4 +211,4 @@ By default, the Maps are rendered by the **Mercator** projection type in which t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/maps/default-map/datetime-cs27" %}
+{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs27" %}

@@ -26,7 +26,7 @@ export class AppComponent {
     public selectedDate: Date = new Date(2020, 1, 15);
     public eventSettings: EventSettingsModel = {
         dataSource: this.data};
-    public timezoneDataSource : [
+    public timezoneDataSource : { Value: string, Text: string }[] = [
                     { Value: 'Pacific/Niue', Text: 'Niue' },
                     { Value: 'Pacific/Pago_Pago', Text: 'Pago Pago' },
                     { Value: 'Pacific/Honolulu', Text: 'Hawaii Time' },

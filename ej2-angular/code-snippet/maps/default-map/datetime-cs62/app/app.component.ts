@@ -1,9 +1,9 @@
 
 
 
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { Maps } from '@syncfusion/ej2-maps';
-import { world_map } from 'world-map.ts';
+import { world_map } from './world-map';
 import { L10n } from '@syncfusion/ej2-base';
 
 L10n.load({
@@ -20,8 +20,7 @@ L10n.load({
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-maps id='container' [locale]="Locale" [zoomSettings]='zoom'>
+    template: `<ejs-maps id='container' [locale]="Locale" [zoomSettings]='zoom'>
     <e-layers>
     <e-layer [shapeData]="mapData" [tooltipSettings]='tooltipSettings'></e-layer>
     </e-layers>
@@ -29,7 +28,7 @@ L10n.load({
 })
 
 export class AppComponent implements OnInit {
-    public mapData: object[] = world_map;
+    public mapData: object[] = world_map as any;
 	public Locale: string = 'ar-AR';
     public zoom: object = {
         enable: true

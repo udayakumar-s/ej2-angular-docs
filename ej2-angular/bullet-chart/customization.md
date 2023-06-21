@@ -27,7 +27,7 @@ The Bullet Chart can be rendered in different orientations such as **Horizontal*
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs16" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs16" %}
 
 ## Right-to-left (RTL)
 
@@ -45,7 +45,7 @@ The Bullet Chart supports the right-to-left rendering that can be enabled by set
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs17" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs17" %}
 
 ## Animation
 
@@ -63,7 +63,7 @@ The actual and the target bar supports the linear animation via the [`animation`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs18" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs18" %}
 
 ## Theme
 
@@ -81,4 +81,4 @@ The Bullet Chart supports different type of themes via the [`theme`](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/bullet-chart/getting-started/range-cs19" %}
+{% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs19" %}

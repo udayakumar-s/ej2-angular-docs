@@ -29,7 +29,7 @@ export class AppComponent {
 
 public fields = { dataSource: this.data, id: 'id', text: 'text' };
 
-onDragStop(args) {
+onDragStop(args: any) {
     //Block the Child Drop operation in TreeView
     let draggingItem = document.getElementsByClassName("e-drop-in");
     if (draggingItem.length == 1) {

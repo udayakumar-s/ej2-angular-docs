@@ -5,13 +5,13 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
+    styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [enableRtl]='enableRtl'>
     </ejs-filemanager>`
 })
 export class AppComponent {
-    public ajaxSettings: object;
-    public enableRtl: boolean;
+    public ajaxSettings?: object;
+    public enableRtl?: boolean;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {

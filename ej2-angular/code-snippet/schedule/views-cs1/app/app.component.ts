@@ -2,7 +2,7 @@
 
 import { Component } from '@angular/core';
 import { WeekService, MonthService, WorkWeekService, EventSettingsModel } from '@syncfusion/ej2-angular-schedule';
-import { defaultData } from './datasource.ts';
+import { defaultData } from './datasource';
 
 @Component({
   selector: 'app-root',

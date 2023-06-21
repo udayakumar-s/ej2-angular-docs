@@ -24,7 +24,7 @@ The Excel export allows pivot table data to export as Excel document. To enable 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs63" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs63" %}
 
 ## Multiple pivot table exporting
 
@@ -48,7 +48,7 @@ The Excel export provides support to export multiple pivot tables in same sheet.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs64" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs64" %}
 
 ### New WorkSheet
 
@@ -66,7 +66,7 @@ Excel export provides support to export multiple pivot tables into new sheets. T
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs65" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs65" %}
 
 ## Changing the pivot table style while exporting
 
@@ -86,7 +86,7 @@ The Excel export provides an option to change colors for headers, caption and re
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs66" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs66" %}
 
 ## Add header and footer while exporting
 
@@ -104,7 +104,7 @@ The Excel export provides an option to include header and footer content for the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs67" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs67" %}
 
 ## Changing the file name while exporting
 
@@ -122,7 +122,7 @@ The Excel export provides an option to change file name of the document before e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs68" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs68" %}
 
 ## CSV Export
 
@@ -140,7 +140,7 @@ Also, the Excel export allows pivot table data to be exported in `CSV` file form
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs69" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs69" %}
 
 ## Virtual Scroll Data
 
@@ -163,7 +163,7 @@ You can export the pivot table virtual scroll data as Excel/CSV document by usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs70" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs70" %}
 
 ### Virtual Scroll Data CSV Export
 
@@ -179,7 +179,7 @@ You can export the pivot table virtual scroll data as Excel/CSV document by usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs71" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs71" %}
 
 ### Export all pages
 
@@ -199,7 +199,7 @@ The pivot engine exports the entire virtual data of the pivot table (i.e. the da
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs72" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs72" %}
 
 ## Events
 
@@ -224,7 +224,7 @@ The event `excelQueryCellInfo` triggers while framing each row and value cell du
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs73" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs73" %}
 
 ### ExcelHeaderQueryCellInfo
 
@@ -245,7 +245,7 @@ The event `excelHeaderQueryCellInfo` triggers on framing each header cell during
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs74" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs74" %}
 
 ### ExportComplete
 
@@ -266,7 +266,7 @@ The event [`exportComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs75" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs75" %}
 
 ## See Also
 

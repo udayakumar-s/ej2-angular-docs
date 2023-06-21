@@ -34,4 +34,4 @@ The component implements the keyboard navigation support by following the [WAI-A
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/toast/toast-cs1" %}
+{% previewsample "page.domainurl/samples/toast/toast-cs1" %}

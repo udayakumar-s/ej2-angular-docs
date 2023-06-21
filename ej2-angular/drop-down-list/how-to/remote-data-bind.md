@@ -26,4 +26,4 @@ The following example demonstrate how to get the total items count.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdownlist/get-item-cs1" %}
+{% previewsample "page.domainurl/samples/dropdownlist/get-item-cs1" %}

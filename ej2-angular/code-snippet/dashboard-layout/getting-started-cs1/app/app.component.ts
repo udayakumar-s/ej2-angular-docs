@@ -4,7 +4,7 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/default-style.css'],
+    styleUrls: ['./default-style.css'],
     template: `
     <div class="control-section">
         <ejs-dashboardlayout id='defaultLayout' #defaultLayout [columns]="5" [cellSpacing]='cellSpacing'>

@@ -24,4 +24,4 @@ You can achieve complex data binding in the treegrid by using the dot(.) operato
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/treegrid/columns-cs24" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-cs24" %}

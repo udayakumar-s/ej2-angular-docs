@@ -1,5 +1,4 @@
 
-
 import { Grid, Freeze, Selection, Edit, Toolbar, DialogEditEventArgs, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
@@ -20,10 +19,10 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbar: string[];
-    public editSettings: EditSettingsModel;
-    public validationrules: Object;
+    public data?: object[];
+    public toolbar?: string[];
+    public editSettings?: EditSettingsModel;
+    public validationrules?: Object;
 
     ngOnInit(): void {
         this.data = data;
@@ -32,11 +31,11 @@ export class AppComponent implements OnInit {
         this.validationrules = { required: true };
     }
 
-    actionComplete(args) {
-        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+    actionComplete(args: any) {
+        if ((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add') {
             // Add Validation Rules
-            args.movableForm.ej2_instances[0].addRules('Freight', { max: 200 });
-            args.movableForm.ej2_instances[0].addRules('EmployeeID', { max: 20 });
+            (args as any).movableForm.ej2_instances[0].addRules('Freight', { max: 200 });
+            (args as any).movableForm.ej2_instances[0].addRules('EmployeeID', { max: 20 });
         }
     }
 }

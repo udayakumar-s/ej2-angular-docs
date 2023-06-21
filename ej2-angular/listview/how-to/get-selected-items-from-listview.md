@@ -36,4 +36,4 @@ The `getSelectedItems` method returns the following items from the selected list
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/listview/checklist-cs5" %}
+{% previewsample "page.domainurl/samples/listview/checklist-cs5" %}

@@ -11,6 +11,9 @@ import { DialogUtility } from '@syncfusion/ej2-popups';
 })
 
 export class AppComponent implements OnInit {
+    ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
     public onOpenDialog = function(event: any): void {
         DialogUtility.alert('This is an Alert Dialog!');
     }

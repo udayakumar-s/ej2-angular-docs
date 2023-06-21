@@ -13,15 +13,15 @@ import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 export class AppComponent implements OnInit {
     @ViewChild('formElement') element: any;
-    @ViewChild('ejDateRange') ejDateRange: DateRangePickerComponent;
-    public formObject: FormValidator;
+    @ViewChild('ejDateRange') ejDateRange?: DateRangePickerComponent;
+    public formObject?: FormValidator;
     ngOnInit() {
         let customFn: (args: {
             [key: string]: string
         }) => boolean = (args: {
             [key: string]: string
         }) => {
-            return ((this.ejDateRange.value[0]).getFullYear() > 1990 && (this.ejDateRange.value[1]).getFullYear( < 2020);
+            return ((this.ejDateRange as any ).value[0]).getFullYear() > 1990 && ((this.ejDateRange as DateRangePickerComponent | any).value[1]).getFullYear() < 2020;
             };
             let options: FormValidatorModel = {
                 rules: {
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
                     }
                 },
                 customPlacement: (inputElement: HTMLElement, errorElement: HTMLElement) => {
-                    inputElement.parentElement.parentElement.appendChild(errorElement);
+                    inputElement?.parentElement?.parentElement?.appendChild(errorElement);
                 }
             };
             this.formObject = new FormValidator('#form-element', options);
@@ -40,12 +40,12 @@ export class AppComponent implements OnInit {
             this.formObject = new FormValidator('#form-element', options);
         }
         public onFocusOut(): void {
-            this.formObject.validate("daterangepicker");
+            this.formObject?.validate("daterangepicker");
         }
 
         public onChange(args: any) {
-            if (this.ejDateRange.value != null)
-                this.formObject.validate("daterangepicker");
+            if (this.ejDateRange?.value != null)
+                this.formObject?.validate("daterangepicker");
         }
     }
 

@@ -17,15 +17,16 @@ import { ContextMenuItem, EditSettingsModel, } from '@syncfusion/ej2-angular-gri
         </e-columns>
     </ejs-grid>
                 `,
-    providers: [[PageService, EditService, ContextMenuService]
+    providers: [PageService, EditService, ContextMenuService]
 })
 export class AppComponent implements OnInit {
 
-    public values;
-    public data: Object[];
-    public contextMenuItems: ContextMenuItem[];
-    public editing: EditSettingsModel;
-    @ViewChild('Grid') public grid: GridComponent;
+    public values?: any;
+    public data?: Object[];
+    public contextMenuItems?: ContextMenuItem[];
+    public editOptions?: EditSettingsModel;
+    @ViewChild('grid')
+    public grid?: GridComponent;
     ngOnInit(): void {
         this.data = employeeData;
         this.contextMenuItems = ['Copy', 'Edit', 'Delete','Save', 'Cancel'];
@@ -36,20 +37,20 @@ export class AppComponent implements OnInit {
         };
     }
     ngAfterViewInit(args: any): void {
-        document.getElementById('Grid').onclick = (event) => {
+        (document.getElementById('Grid') as any).onclick = (event: any) => {
             this.values = event;
-            this.grid.contextMenuModule.contextMenu.open(
+            (this.grid as GridComponent).contextMenuModule.contextMenu.open(
                 this.values.pageY + pageYOffset,
                 this.values.pageX + pageXOffset
             );
         };
     }
-    created(): void {
-        this.grid.contextMenuModule.contextMenu.beforeOpen = (args) => {
-            if (args.event && args.event.which === 3)
-            args.cancel = true;
-            args.event = this.values;
-            this.grid.contextMenuModule.contextMenuBeforeOpen(args);
+    created(args: any): void {
+        (this.grid as GridComponent).contextMenuModule.contextMenu.beforeOpen = (args: any) => {
+            if ((args as any).event && (args as any).event.which === 3)
+            (args as any).cancel = true;
+            (args as any).event = this.values;
+            (this.grid as any).contextMenuModule.contextMenuBeforeOpen(args);
         };
     }
 }

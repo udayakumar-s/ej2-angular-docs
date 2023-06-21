@@ -28,20 +28,20 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent;
+    spreadsheetObj: SpreadsheetComponent | undefined;
 
     budgetData: object[] = defaultData;
     onclick(): void {
-        var showFillOptions = this.spreadsheetObj.autoFillSettings.showFillOptions;
-        this.spreadsheetObj.autoFillSettings.showFillOptions = !showFillOptions; //To change whether fill options need to be shown or not.
+        var showFillOptions = this.spreadsheetObj!.autoFillSettings.showFillOptions;
+        this.spreadsheetObj!.autoFillSettings.showFillOptions = !showFillOptions; //To change whether fill options need to be shown or not.
     }
 
     created() {
-        this.spreadsheetObj.cellFormat({ backgroundColor: '#357cd2', color: '#fff', fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        this.spreadsheetObj.autoFill('D4:D11','D2:D3', 'Down','CopyCells');
-        this.spreadsheetObj.autoFill('E4:E11','E2:E3','Down','FillSeries');
-        this.spreadsheetObj.autoFill('B4:B11','B2:B3','Down','FillFormattingOnly');
-        this.spreadsheetObj.autoFill('C4:C11','C2:C3','Down','FillWithoutFormatting');
+        this.spreadsheetObj!.cellFormat({ backgroundColor: '#357cd2', color: '#fff', fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+        this.spreadsheetObj!.autoFill('D4:D11','D2:D3', 'Down','CopyCells');
+        this.spreadsheetObj!.autoFill('E4:E11','E2:E3','Down','FillSeries');
+        this.spreadsheetObj!.autoFill('B4:B11','B2:B3','Down','FillFormattingOnly');
+        this.spreadsheetObj!.autoFill('C4:C11','C2:C3','Down','FillWithoutFormatting');
     }
 }
 

@@ -1,6 +1,6 @@
 
 
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { IAxisLabelRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 
 
@@ -99,6 +99,7 @@ export class AppComponent implements OnInit {
     public chartArea : Object = {
       border: { width : 0}
     };
+crosshair: any;
     public axisLabelRender(args: IAxisLabelRenderEventArgs): void {
        if (args.axis.name === 'secondary') {
                 let value: number = parseInt(args.text) / 1000000000;
@@ -107,7 +108,10 @@ export class AppComponent implements OnInit {
     };
     constructor() {
         //code
-    };
+    }ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
+;
 }
 
 

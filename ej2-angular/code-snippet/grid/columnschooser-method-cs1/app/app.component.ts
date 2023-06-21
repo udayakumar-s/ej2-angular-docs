@@ -20,16 +20,16 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
     @ViewChild('grid')
-    public grid: GridComponent;
+    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
 
     show() {
-        this.grid.columnChooserModule.openColumnChooser(200, 50); // give X and Y axis
+        (this.grid as any).columnChooserModule.openColumnChooser(200, 50); // give X and Y axis
     }
 }
 

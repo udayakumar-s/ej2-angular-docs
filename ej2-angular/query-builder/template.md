@@ -32,7 +32,7 @@ In the following sample dropdown, splitbutton and button are used as the custom 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/header-template-cs1" %}
+{% previewsample "page.domainurl/samples/query-builder/header-template-cs1" %}
 
 ## Column Template
 
@@ -56,7 +56,7 @@ In the following sample, dropdown is used as the custom component in the Payment
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/filtering-cs11" %}
+{% previewsample "page.domainurl/samples/query-builder/filtering-cs11" %}
 
 ### Using Template
 
@@ -74,7 +74,7 @@ The value template for a particular column can be specified using the content of
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/template-cs1" %}
+{% previewsample "page.domainurl/samples/query-builder/template-cs1" %}
 
 ## Rule Template
 
@@ -96,4 +96,4 @@ In the following sample, dropdown and slider are used as the custom component an
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/query-builder/rule-template-cs1" %}
+{% previewsample "page.domainurl/samples/query-builder/rule-template-cs1" %}

@@ -10,7 +10,7 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextE
         providers: [ToolbarService, LinkService, ImageService, HtmlEditorService ]
 })
 export class AppComponent  {
-  @ViewChild('sample') public rteObj: RichTextEditorComponent;
+  @ViewChild('sample') public rteObj?: RichTextEditorComponent;
   // Build data to be used in At.JS config.
   public employeeList: { [key: string]: Object }[] = [
       { id: 'emp01', name: 'Jacob', email: 'jacob@mail.com' },
@@ -22,28 +22,36 @@ export class AppComponent  {
       { id: 'emp07', name: 'Jeniffer', email: 'jeniffer@mail.com' }
   ];
 
-  public config: Object = {
-      at: "@",
-       callbacks: {
-        beforeReposition: function (offset) {
-            offset.left = this.rect().left - (leftBarWdith + leftPadding);
-        }
-      },
-      data: this.employeeList,
-      displayTpl: '<li>${name} <small>${email}</small></li>',
-      limit: 200
-  };
+  public config: Object | undefined;
 public placeholder: String = "Type @ to get the e-mail list";
-public leftBarWdith : number = window.parent.document.getElementById('doc-left-toc').offsetWidth;
-public leftPadding : number = +getComputedStyle(window.parent.document.getElementById('md-cnt')).paddingRight.match(/\d/g).join('');
+public leftBarWidth: number | undefined;
+public leftPadding: number | undefined;
+
+public initializeConfig(): void {
+  this.leftBarWidth = window.parent.document.getElementById('doc-left-toc')!.offsetWidth;
+  this.leftPadding = +getComputedStyle((window.parent.document as any).getElementById('md-cnt'))!.paddingRight.match(/\d/g)!.join('');
+
+  this.config = {
+    at: "@",
+    callbacks: {
+      beforeReposition:  (offset: { left: number; }) => {
+        offset.left = (this as any).rect().left - (this.leftBarWidth! + this.leftPadding!);
+      }
+    },
+    data: this.employeeList,
+    displayTpl: '<li>${name} <small>${email}</small></li>',
+    limit: 200
+  };
+}
 
 public oncreate(e: any): void {
-    const textArea: HTMLElement = this.rteObj.contentModule.getEditPanel() as HTMLElement;
-    $(textArea).atwho(this.config);
+    const textArea: HTMLElement = (this.rteObj!.contentModule as any).getEditPanel() as HTMLElement;
+    ($(textArea) as any).atwho(this.config);
     $(textArea).on('keydown', function(e: any) {
-    if (e.keyCode === 13 && $(textArea).atwho('isSelecting')) {
+    if (e.keyCode === 13 && ($(textArea) as any).atwho('isSelecting')) {
         return false;
       }
+      return undefined
     });
     }
 }

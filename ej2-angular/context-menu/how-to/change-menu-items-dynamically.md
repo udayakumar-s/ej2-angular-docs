@@ -26,4 +26,4 @@ In the following example, the datasource for Clipboard div is `Cut`, `Copy`, `Pa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/dynamic-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/dynamic-cs1" %}

@@ -1,10 +1,10 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataOptions, PivotView, VirtualScrollService, ExportCompleteEventArgs, ExcelExportService } from '@syncfusion/ej2-angular-pivotview';
+import { IDataOptions, IDataSet, PivotView, VirtualScrollService, ExportCompleteEventArgs, ExcelExportService } from '@syncfusion/ej2-angular-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { ExcelExportProperties } from '@syncfusion/ej2-grids';
-import { Pivot_Data } from './datasource.ts';
+import { Pivot_Data } from './datasource';
 
 @Component({
   selector: 'app-container',
@@ -14,14 +14,14 @@ import { Pivot_Data } from './datasource.ts';
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
-    public width: string;
-    public dataSourceSettings: IDataOptions;
-    public button: Button;
+    public width?: string;
+    public dataSourceSettings?: IDataOptions;
+    public button?: Button;
 
     @ViewChild('pivotview', {static: false})
-    public pivotGridObj: PivotView;
+    public pivotGridObj?: PivotView;
 
-    exportComplete(args: ExportCompleteEventArgs): void {
+    exportComplete(args: ExportCompleteEventArgs | any): void {
         args.promise.then((e: { blobData: Blob }) => {
             console.log(e.blobData);
         });
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.dataSourceSettings = {
-            dataSource: Pivot_Data,
+            dataSource: Pivot_Data as IDataSet[],
             expandAll: true,
             columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
             rows: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
 
         this.button.element.onclick = (): void => {
             let excelExportProperties: ExcelExportProperties = { };
-            this.pivotGridObj.excelExport(excelExportProperties, false, null, true);
+            this.pivotGridObj?.excelExport(excelExportProperties, false, null, true);
         };
     }
 }

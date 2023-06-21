@@ -24,7 +24,7 @@ export class AppComponent {
         headerField: 'Id'
     };
     OnDataBound(): void {
-        let headerEle: HTMLElement = document.querySelector('.e-header-row');
+        let headerEle: HTMLElement = document.querySelector('.e-header-row') as HTMLElement;
         headerEle.addEventListener("dblclick", function (e: Event) {
             let target = closest((<HTMLElement>e.target), '.e-header-cells');
             DialogUtility.alert({

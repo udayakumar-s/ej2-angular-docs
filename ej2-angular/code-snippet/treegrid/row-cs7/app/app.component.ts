@@ -15,7 +15,7 @@ import {RowDataBoundEventArgs} from '@syncfusion/ej2-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 }
     }
  onRowBound(args: RowDataBoundEventArgs) {
-   if((args.data as TasKDetails).taskID === 3){
+   if((args.data as any).taskID === 3){
         args.rowHeight = 90;
     }
 }

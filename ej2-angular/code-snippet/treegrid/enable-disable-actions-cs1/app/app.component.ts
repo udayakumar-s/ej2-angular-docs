@@ -7,7 +7,7 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-container',
-    styleUrls: ['./app/app.disable.css'],
+    styleUrls: ['./app.disable.css'],
     encapsulation: ViewEncapsulation.None,
     providers: [ToolbarService, EditService],
     template: `<button ejs-button (click)="click()"  cssClass="e-flat e-primary" iconCss="e-icons e-play-icon" [isToggle]="true">Enable/Disable Grid</button>
@@ -27,12 +27,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 export class AppComponent implements OnInit {
 
     public data: Object[] = [];
-    public editOptions: Object;
-    public formatOptions: Object;
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public editOptions?: Object;
+    public formatOptions?: Object;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
     @ViewChild('treegridObj')
-    public treegridObj: TreeGridComponent;
+    public treegridObj?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = projectData;

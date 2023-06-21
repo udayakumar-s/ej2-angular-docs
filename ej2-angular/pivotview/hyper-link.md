@@ -40,7 +40,7 @@ The pivot table has an option to show hyperlink option for all cells that are cu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs172" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs172" %}
 
 ## Hyperlink for row headers
 
@@ -58,7 +58,7 @@ The pivot table has an option to show hyperlink option for row header cells alon
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs173" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs173" %}
 
 ## Hyperlink for column headers
 
@@ -76,7 +76,7 @@ The pivot table has an option to show hyperlink option for column header cells a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs174" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs174" %}
 
 ## Hyperlink for value cells
 
@@ -94,7 +94,7 @@ The pivot table has an option to show hyperlink option for value cells alone tha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs175" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs175" %}
 
 ## Hyperlink for summary cells
 
@@ -112,7 +112,7 @@ The pivot table has an option to show hyperlink option for summary cells alone t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs176" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs176" %}
 
 ## Condition based hyperlink
 
@@ -135,7 +135,7 @@ The pivot table has an option to show hyperlink in the cells based on specific c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs177" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs177" %}
 
 ## Header based hyperlink
 
@@ -153,7 +153,7 @@ The pivot table has an option to show hyperlink in the cells based on specific r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs178" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs178" %}
 
 ## Event
 
@@ -173,7 +173,7 @@ It has following parameters - `cancel` and `currentCell`. The parameter `current
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/pivot-grid/getting-started-cs179" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs179" %}
 
 ## See Also
 

@@ -187,7 +187,7 @@ The following example illustrates the output in your browser.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs11" %}
 
 ## Configure the popup list
 
@@ -210,7 +210,7 @@ In the following sample, popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs12" %}
 
 ## Two-way binding
 
@@ -230,7 +230,7 @@ The following example demonstrates how to work with the two-way binding function
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/autocomplete/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/autocomplete/getting-started-cs13" %}
 
 ## See Also
 

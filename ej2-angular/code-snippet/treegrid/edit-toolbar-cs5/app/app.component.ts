@@ -18,9 +18,9 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegri
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public editSettings: EditSettingsModel;
-    public toolbar: ToolbarItems[];
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
     public isAddable: boolean = true;
 
     ngOnInit(): void {
@@ -28,22 +28,22 @@ export class AppComponent implements OnInit {
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
-    cellEdit(args) {
+    cellEdit(args: any) {
         if (args.rowData['Priority'] == 'Normal') {
             args.cancel = true;
         }
     }
-    beforeBatchAdd(args) {
+    beforeBatchAdd(args: any) {
         if (!this.isAddable) {
             args.cancel = true;
         }
     }
-    beforeBatchDelete(args) {
+    beforeBatchDelete(args: any) {
         if (args.rowData['Priority'] == 'Normal') {
             args.cancel = true;
         }
     }
-    btnClick(args) {
+    btnClick(args: any) {
         args.target.innerText == 'TreeGrid is Addable' ? (args.target.innerText = 'TreeGrid is Not Addable') : (args.target.innerText = 'TreeGrid is Addable');
         this.isAddable = !this.isAddable;
     }

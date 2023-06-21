@@ -61,4 +61,4 @@ For more information about localization, refer this [`localization`](http://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/user-interaction/zoom-cs1" %}
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs1" %}

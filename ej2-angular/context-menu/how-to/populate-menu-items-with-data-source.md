@@ -27,4 +27,4 @@ The below example demonstrates how to bind local data source to the ContextMenu.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/context-menu/data-binding-cs1" %}
+{% previewsample "page.domainurl/samples/context-menu/data-binding-cs1" %}

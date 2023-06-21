@@ -51,4 +51,4 @@ Tooltip is not triggered by any default action. So, bind your own events and use
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/tooltip/open-mode-cs3" %}
+{% previewsample "page.domainurl/samples/tooltip/open-mode-cs3" %}

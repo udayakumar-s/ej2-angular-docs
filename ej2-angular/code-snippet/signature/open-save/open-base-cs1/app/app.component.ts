@@ -18,10 +18,10 @@ enableRipple(true);
 })
 export class AppComponent {
     @ViewChild('signature')
-    public signature: SignatureComponent;
+    public signature?: SignatureComponent;
     open(): void {
-        let sign = document.getElementById('text').value;
-        this.signature.load(sign);
+        let sign = (document.getElementById('text') as any).value;
+        this.signature!.load(sign);
     }
 }
 

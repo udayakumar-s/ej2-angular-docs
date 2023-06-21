@@ -42,7 +42,7 @@ In the following example, **code**, **name**, and **countries** columns from the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/data-binding/hierarchial-data-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/data-binding/hierarchial-data-cs1" %}
 
 ### Self-referential data
 
@@ -66,7 +66,7 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/data-binding/self-referential-data-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/data-binding/self-referential-data-cs1" %}
 
 ## Remote data
 
@@ -110,4 +110,4 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/dropdowntree/data-binding/remote-data-cs1" %}
+{% previewsample "page.domainurl/samples/dropdowntree/data-binding/remote-data-cs1" %}

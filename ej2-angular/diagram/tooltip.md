@@ -40,7 +40,7 @@ To show tooltip on mouse over, the [`tooltip`](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tooltip/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tooltip/tooltip-cs1" %}
 
 ### Disable tooltip at runtime
 
@@ -80,7 +80,7 @@ The tooltip can be customized for each node and connector. Remove the **InheritT
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tooltip/tooltipnodes-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tooltip/tooltipnodes-cs1" %}
 
 ## Tooltip template content
 
@@ -100,7 +100,7 @@ The following code example illustrates how to add formatted HTML content to the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tooltip/tooltiptemplate-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tooltip/tooltiptemplate-cs1" %}
 
 ## Tooltip alignments
 
@@ -124,7 +124,7 @@ The following code example illustrates how to position the tooltip around object
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tooltip/tooltipobject-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tooltip/tooltipobject-cs1" %}
 
 ### Tooltip relative to mouse position
 
@@ -144,7 +144,7 @@ The following code example illustrates how to show tooltip at mouse position.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tooltip/tooltipmouse-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tooltip/tooltipmouse-cs1" %}
 
 ## Tooltip animation
 
@@ -162,4 +162,4 @@ To animate the tooltip, a set of specific animation effects are available, and i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/diagram/tooltip/tooltipanimation-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tooltip/tooltipanimation-cs1" %}

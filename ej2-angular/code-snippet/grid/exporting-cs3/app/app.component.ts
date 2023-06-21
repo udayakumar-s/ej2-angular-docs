@@ -23,9 +23,9 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public toolbarOptions: ToolbarItems[];
-    @ViewChild('grid') public grid: GridComponent;
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+    @ViewChild('grid') public grid?: GridComponent;
     public exportBlob = (blob: Blob) => {
         const a: HTMLAnchorElement = document.createElement('a');
         document.body.appendChild(a);
@@ -44,27 +44,27 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs) {
-        if (args.item.id === 'Grid_pdfexport') {
-            this.grid.pdfExport(null, null, null, true);
+        if ((args as any).item.id === 'Grid_pdfexport') {
+            (this.grid as any).pdfExport(null, null, null, true);
         }
-        if (args.item.id === 'Grid_excelexport') {
-            this.grid.excelExport(null, null, null, true);
+        if ((args as any).item.id === 'Grid_excelexport') {
+            (this.grid as any).excelExport(null, null, null, true);
         }
     }
 
     excelExpComplete(args: ExcelExportCompleteArgs) {
         // This event will be triggered when excel exporting.
-        args.promise.then((e: { blobData: Blob }) => {
+        (args as any).promise.then((e: { blobData: Blob }) => {
             // In this `then` function, we can get blob data through the arguments after promise resolved.
-            this.exportBlob(e.blobData);
+            this.exportBlob((e as any).blobData);
         });
     }
 
     pdfExpComplete(args: PdfExportCompleteArgs) {
         // This event will be triggered when pdf exporting.
-        args.promise.then((e: { blobData: Blob }) => {
+        (args as any).promise.then((e: { blobData: Blob }) => {
             // In this `then` function, we can get blob data through the arguments after promise resolved.
-            this.exportBlob(e.blobData);
+            this.exportBlob((e as any).blobData);
         });
     }
 }

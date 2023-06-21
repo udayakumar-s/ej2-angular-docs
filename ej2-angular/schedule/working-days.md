@@ -41,7 +41,7 @@ The following example code depicts how to set the Scheduler to display Monday, W
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs89" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs89" %}
 
 ![Set Working Days](images/schedule-workdays.png)
 
@@ -63,7 +63,7 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs90" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs90" %}
 
 ![Hiding Weekend Days](images/schedule-hide-weekend.png)
 
@@ -85,7 +85,7 @@ It is possible to show the week number count of a week in the header bar of the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs91" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs91" %}
 
 ![Week Numbers](images/schedule-weeknumber.png)
 
@@ -113,7 +113,7 @@ For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/ap
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs92" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs92" %}
 
  **Note**: Enable the `showWeekNumber` property to configure the `weekRule` property. Also, the weekRule property depends on the value of the `firstDayOfWeek` property.
 
@@ -137,7 +137,7 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs93" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs93" %}
 
 ![Set Working Hours](images/schedule-workhours.png)
 
@@ -159,7 +159,7 @@ The following code example displays the Scheduler starting from the time range 7
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs94" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs94" %}
 
 ![Displaying Custom Hours](images/schedule-displayhours.png)
 
@@ -181,7 +181,7 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs95" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs95" %}
 
 ![Start Day of Week](images/schedule-week-firstday.png)
 
@@ -204,7 +204,7 @@ You can manually scroll to a specific time on Scheduler by making use of the `sc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/scroll-to-cs1" %}
+{% previewsample "page.domainurl/samples/schedule/scroll-to-cs1" %}
 
 ### How to scroll to current time on initial load
 
@@ -222,7 +222,7 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/schedule/default-cs96" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs96" %}
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
 

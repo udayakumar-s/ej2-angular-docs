@@ -9,7 +9,7 @@ import { L10n } from '@syncfusion/ej2-base';
     // specifies the template string for the DropDownList component
     template: `<ejs-dropdownlist id='ddlelement' #samples [dataSource]='data' [query]='query' [fields]='fields' [placeholder]='text' [locale]='locale'></ejs-dropdownlist>`
 })
-export class AppComponent implements onInit {
+export class AppComponent implements OnInit {
     constructor() {
     }
     //set the placeholder text in french to DropDownList input
@@ -21,7 +21,7 @@ export class AppComponent implements onInit {
         crossDomain: true
     });
     // map appropriate column
-    public fields: Object = { text: 'ContactName', value: 'CustomerID' },
+    public fields: Object = { text: 'ContactName', value: 'CustomerID' };
     // take 0 item to showcase noRecordsTemplate property
     public query: Query = new Query().select(['ContactName', 'CustomerID']).take(0);
     //set culture to DropDownList component

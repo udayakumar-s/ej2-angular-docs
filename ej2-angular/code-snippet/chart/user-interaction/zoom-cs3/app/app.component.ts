@@ -6,22 +6,22 @@ import { series1 } from './chartdata';
 
 @Component({
     selector: 'app-container',
-    template:
-    `<ej-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [zoomSettings]='zoom' [legendSettings]='legend'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [zoomSettings]='zoom' [legendSettings]='legend'>
         <e-series-collection>
             <e-series [dataSource]='series1' type='Area' xName='x' yName='y' name='Product X' [border]='border' [animation]='animation'></e-series>
         </e-series-collection>
-    </ej-chart>`
+    </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public primaryXAxis: Object;
-    public series1: Object[];
-    public title: string;
-    public primaryYAxis: Object;
-    public border: Object;
-    public zoom: Object;
-    public animation: Object;
-    public legend: Object;
+    public primaryXAxis?: Object;
+    public series1?: Object[];
+    public title?: string;
+    public primaryYAxis?: Object;
+    public border?: Object;
+    public zoom?: Object;
+    public animation?: Object;
+    public legend?: Object;
+    chartData: { x: Date; y: number; }[] | undefined;
     ngOnInit(): void {
         this.chartData = [
               { x: new Date(2016, 0, 1), y: -7.1 }, { x: new Date(2016, 1, 1), y: -3.7 },

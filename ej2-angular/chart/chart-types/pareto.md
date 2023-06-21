@@ -28,7 +28,7 @@ To render a pareto chart, use series [`type`](https://ej2.syncfusion.com/angular
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/chart/series/line-cs10" %}
+{% previewsample "page.domainurl/samples/chart/series/line-cs10" %}
 
 ## See Also
 

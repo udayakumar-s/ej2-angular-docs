@@ -44,4 +44,4 @@ In this following example, two way binding for Checkbox is illustrated with Swit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/check-box/binding-cs1" %}
+{% previewsample "page.domainurl/samples/check-box/binding-cs1" %}

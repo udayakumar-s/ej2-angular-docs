@@ -166,4 +166,4 @@ The following is the output of custom context menu with customization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/document-editor/customize-context-menu-cs1" %}
+{% previewsample "page.domainurl/samples/document-editor/customize-context-menu-cs1" %}
