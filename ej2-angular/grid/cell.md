@@ -112,8 +112,7 @@ You can apply styles to the cells using CSS selectors. The Grid provides a class
 
 ```CSS
 .e-grid td.e-cellselectionbackground {
-  background-color: #235481;
-  color: white;
+  background: #9ac5ee;
   font-style: italic;
 }
 ```
@@ -124,8 +123,8 @@ The following example demonstrates how to customize the appearance of a specific
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs12/app/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.style.css" %}
-{% include code-snippet/grid/custom-cell-cs12/app/app.style.css %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs12/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs12/app/main.ts %}

@@ -19,7 +19,6 @@ import { data } from './datasource';
             <e-column field='Freight' headerText='Freight' width=80></e-column>
         </e-columns>
     </ejs-grid>`,
-    styleUrls: ['./app.style.css']
 })
 export class AppComponent implements OnInit {
 

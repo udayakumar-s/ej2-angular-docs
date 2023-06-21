@@ -5,7 +5,7 @@ import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService} from '@syncfusion/ej2-angular-richtexteditor';
 import { RichTextEditorComponent, CountService} from '@syncfusion/ej2-angular-richtexteditor';
 import { createElement } from '@syncfusion/ej2-base';
-import * as CodeMirror from 'codemirror';
+// import * as CodeMirror from 'codemirror';
 
 
 @Component({
@@ -73,6 +73,7 @@ export class AppComponent implements AfterViewInit  {
     let rteObj: RichTextEditorComponent = this.rteObj as any;
     setTimeout(() => { this.textArea = (rteObj.contentModule as any).getEditPanel() as HTMLElement; }, 600);
 }
+
 public mirrorConversion(e?: any): void {
     let id: string = this.rteObj!.getID() + 'mirror-view';
     let mirrorView: HTMLElement = this.rteObj!.element.querySelector('#' + id) as HTMLElement;
@@ -98,13 +99,13 @@ public mirrorConversion(e?: any): void {
 }
 
 public renderCodeMirror(mirrorView: HTMLElement, content: string): void {
-    this.myCodeMirror = CodeMirror(mirrorView, {
-        value: content,
-        lineNumbers: true,
-        mode: 'text/html',
-        lineWrapping: true,
+    // this.myCodeMirror = CodeMirror(mirrorView, {
+    //     value: content,
+    //     lineNumbers: true,
+    //     mode: 'text/html',
+    //     lineWrapping: true,
 
-    });
+    // });
 }
 public actionCompleteHandler(e: any): void {
     if (e.targetItem && (e.targetItem === 'SourceCode' || e.targetItem === 'Preview')) {
