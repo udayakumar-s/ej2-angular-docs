@@ -127,6 +127,21 @@ The available arguments in the `ChartModel` are:
 * isSeriesInRows: Specifies to switch the row or a column.
 * range: Specifies the selected range or specified range.
 * id: Specifies the chart element id.
+* markerSettings: Specifies the marker settings. The marker is used to provide information about the data points in the series and is currently only applicable to the line chart.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/chart-cs2/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/spreadsheet/chart-cs2/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/chart-cs2/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/chart-cs2" %}
 
 ### Delete Chart
 
@@ -160,6 +175,24 @@ Chart feature allows you to view and insert a chart in a spreadsheet, and you ca
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/spreadsheet/chart-cs1" %}
+
+#### Customization of line chart markers
+
+Using the [`actionBegin`](../api/spreadsheet/#actionbegin) event, you can change the shape, size, fill color, and border of the line chart marker. In the following example, you can see the modified marker appearance, such as shape and size, while creating the line chart with UI interaction.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/chart-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/spreadsheet/chart-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/chart-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/chart-cs3" %}
 
 ### Limitations of Chart
 
