@@ -1,4 +1,3 @@
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, SortService, GroupService, ColumnMenuService, PageService, FilterService } from '@syncfusion/ej2-angular-grids';
@@ -15,7 +14,8 @@ import { ColumnMenuItemModel, ColumnMenuOpenEventArgs, FilterSettingsModel } fro
             <e-column field='ShipCountry' headerText='Ship Country' [visible]='false' width='150'></e-column>
             <e-column field='ShipCity' headerText='Ship City' width='150'></e-column>
         </e-columns>
-    </ejs-grid>`,
+    </ejs-grid>
+                `,
     providers: [SortService, ColumnMenuService, PageService, GroupService, ColumnMenuService, FilterService]
 })
 export class AppComponent implements OnInit {
@@ -28,8 +28,6 @@ export class AppComponent implements OnInit {
         for (const item of (args as any).items) {
             if (item.text === 'Filter' && (args as any).column.field === 'OrderID') {
                 (item as ColumnMenuItemModel).hide = true;
-            } else {
-                (item as ColumnMenuItemModel).hide = false;
             }
         }
     }

@@ -184,8 +184,8 @@ The following is an example of using the resizing events, the [resizeStart](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/resize-cs5/app/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.style.css" %}
-{% include code-snippet/grid/resize-cs5/app/app.style.css %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/resize-cs5/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/resize-cs5/app/main.ts %}

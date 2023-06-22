@@ -8,7 +8,7 @@ import { GroupSettingsModel, FilterSettingsModel } from '@syncfusion/ej2-angular
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' id="gridcomp" allowPaging='true' allowGrouping='true' allowSorting='true' showColumnMenu='true'
+    template: `<p id='message'>{{ message }}</p><ejs-grid [dataSource]='data' id="gridcomp" allowPaging='true' allowGrouping='true' allowSorting='true' showColumnMenu='true'
                [groupSettings]='groupOptions' allowFiltering='true' [filterSettings]='filterSettings'
          (columnMenuOpen)="columnMenuOpen()" (columnMenuClick)="columnMenuClick()">
         <e-columns>
@@ -26,18 +26,16 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public groupOptions?: GroupSettingsModel;
     public filterSettings?: FilterSettingsModel;
+    public message?: string;
     ngOnInit(): void {
         this.data = data;
         this.groupOptions = { showGroupedColumn: true };
         this.filterSettings = { type: 'CheckBox' };
     }
     columnMenuOpen() {
-        alert('columnMenuOpen event is Triggered');
+        this.message = `columnMenuOpen event triggered`;
     }
     columnMenuClick() {
-        alert('columnMenuClick event is Triggered');
+        this.message = `columnMenuClick event triggered`;
     }
 }
-
-
-

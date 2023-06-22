@@ -1,11 +1,7 @@
-
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { SortService, GroupService, ColumnMenuService, PageService, FilterService } from '@syncfusion/ej2-angular-grids';
-import {  GroupSettingsModel, FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GroupSettingsModel, FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -24,7 +20,7 @@ import {  GroupSettingsModel, FilterSettingsModel } from '@syncfusion/ej2-angula
 })
 export class AppComponent implements OnInit {
 
-    public data?: object[];
+    public data: object[]=[];
     public groupOptions?: GroupSettingsModel;
     public filterSettings?: FilterSettingsModel;
     ngOnInit(): void {
@@ -33,6 +29,3 @@ export class AppComponent implements OnInit {
         this.filterSettings = { type: 'CheckBox' };
     }
 }
-
-
-
