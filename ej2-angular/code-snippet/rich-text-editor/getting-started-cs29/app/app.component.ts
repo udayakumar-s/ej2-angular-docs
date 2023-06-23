@@ -90,13 +90,13 @@ if (e.targetItem === 'Preview') {
 }
 
 public renderCodeMirror(mirrorView: HTMLElement, content: string): void {
-this.myCodeMirror = CodeMirror(mirrorView, {
-    value: content,
-    lineNumbers: true,
-    mode: 'text/html',
-    lineWrapping: true,
+// this.myCodeMirror = CodeMirror(mirrorView, {
+//     value: content,
+//     lineNumbers: true,
+//     mode: 'text/html',
+//     lineWrapping: true,
 
-});
+// });
 }
 public actionCompleteHandler(e: any): void {
 if (e.targetItem && (e.targetItem === 'SourceCode' || e.targetItem === 'Preview')) {

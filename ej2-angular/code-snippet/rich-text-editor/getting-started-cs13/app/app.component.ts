@@ -1,11 +1,11 @@
 
 
     import { Component, ViewChild } from '@angular/core';
-    import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent} from '@syncfusion/ej2-angular-richtexteditor';
+    import { RichTextEditorComponent, ToolbarService, HtmlEditorService, ImageService, QuickToolbarService, LinkService, FormatPainterService } from '@syncfusion/ej2-angular-richtexteditor';
     @Component({
     selector: 'app-root',
     template:`<ejs-richtexteditor #defaultRTE id='defaultRTE' [toolbarSettings]='tools' (create)='onCreate($event)'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
+    providers: [ToolbarService, HtmlEditorService, ImageService, QuickToolbarService, LinkService, FormatPainterService ]
     })
     export class AppComponent  {
         @ViewChild('defaultRTE') rteObj: RichTextEditorComponent | undefined;
@@ -15,7 +15,7 @@
         'LowerCase', 'UpperCase', '|',
         'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
         'Outdent', 'Indent', '|',
-        'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
+        'CreateLink', 'Image', '|', 'FormatPainter', 'ClearFormat', 'Print',
         'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
         };
         onCreate(e: any) {

@@ -97,6 +97,32 @@ To enable search box in the pivot table's built-in popup field list UI, set the 
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs79" %}
 
+## Option to sort fields
+
+End user can sort fields in the field list UI to ascending (or) descending (or) default order (as obtained from the data source) using the built-in sort icons.
+
+> By default, fields are displayed in the default order.
+
+![Field list with sorting options](images/fieldlist-default-sort.png)
+
+### Sort fields in a desired order
+
+To display the fields in descending order by default, set the [defaultFieldListOrder](https://ej2.syncfusion.com/angular/documentation/api/pivotview/loadEventArgs/#defaultfieldlistorder) property to **Descending** in the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview#load) event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs309/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs309/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs309/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs309" %}
+
 ## Group fields under desired folder name
 
 In the field list UI, you can display fields by grouping them under the desired folder name. It can only be configured via code-behind by setting the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptionsModel/#groupname) property in [`fieldMapping`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#fieldmapping).
