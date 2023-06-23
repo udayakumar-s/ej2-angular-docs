@@ -10,7 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Sidebar component
 
-This section briefly explains how to create a simple **Sidebar** component, and configure its available functionalities.
+This section briefly explains the steps required to create a simple **Sidebar** component, and demonstrates the basic usage of the [`Angular Sidebar control`](https://www.syncfusion.com/angular-components/angular-sidebar) in a Angular CLI application.
+
+To get start quickly with Angular Sidebar using CLI and Schematics, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=CL7Cc2efZ9Q" %}
 
 ## Prerequisites
 
