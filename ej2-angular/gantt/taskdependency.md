@@ -170,3 +170,21 @@ The following code example shows how to enable the predecessor validation dialog
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/taskdependency/validation-dialog-cs1" %}
+
+## Show/Hide dependency line by dynamic
+
+By default, the dependency line is rendered in the Gantt Chart. However, if you want to show or hide the dependency line, add a dynamic button by using the change event and getting the class `.e-gantt-dependency-view-container.` Then, set the `visibility` style to `hidden.`
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/taskdependency/showhide-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/taskdependency/showhide-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/taskdependency/showhide-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/taskdependency/showhide-cs1" %}
