@@ -2,7 +2,7 @@
  * Rich Text Editor Custom-Toolbar Sample
  */
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { RichTextEditorComponent, ToolbarService, HtmlEditorService, ImageService, QuickToolbarService, LinkService, EmojiPickerService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorComponent, ToolbarService, HtmlEditorService, ImageService, QuickToolbarService, LinkService } from '@syncfusion/ej2-angular-richtexteditor';
 @Component( {
     selector: 'app-root',
     template: `<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings'>
@@ -11,7 +11,7 @@ import { RichTextEditorComponent, ToolbarService, HtmlEditorService, ImageServic
     <p>Typically, it is a small window or panel that displays a variety of emojis, arranged in different categories, such as smileys, animals, food, and so on. Users can select the desired emoji by clicking on it or by typing its name in a search bar.</p>
     </ng-template>
 </ejs-richtexteditor>`,
-providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, EmojiPickerService]
+providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService]
 } )
 export class AppComponent {
     public toolbarSettings: object = {

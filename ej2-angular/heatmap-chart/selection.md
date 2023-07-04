@@ -1,16 +1,24 @@
 ---
 layout: post
-title: Selection in Angular Heatmap chart component | Syncfusion
-description: Learn here all about Selection in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
+title: Selection in Angular HeatMap chart component | Syncfusion
+description: Learn here all about Selection in Syncfusion Angular HeatMap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular Heatmap chart component
+# Selection in Angular HeatMap chart component
 
-In the HeatMap, the cell selection is used to select the single or multiple heat map cells at runtime and get the selected cell details using the [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellselected) event. You can enable the cell selection using the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#allowselection) property.
+In the HeatMap, the cell selection is used to select single or multiple HeatMap cells at runtime and get the selected cell details using the [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellselected) event. You can enable the cell selection using the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#allowselection) property.
+
+The HeatMap cells can be selected using the following interactions, as shown in the table below.
+
+|   Modes of Interactions |   Description                                                                                                      |
+|------------------------ | -------------------------------------------------------------------------------------------------------------------|
+|   Mouse                 |  HeatMap cells can be selected by clicking or dragging and dropping over them.                                     |
+|   Touch                 |  HeatMap cells can be selected by tapping or dragging and dropping over them.                                      |
+|   Keyboard              |  The **Ctrl** key on the keyboard can be used to enable multiple cell selection with mouse and touch interaction. The **Ctrl** key can only be used if the `enableMultiSelect` property is set to **true** in order to enable multiple cell selection.                                                                                                                                     |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -43,3 +51,21 @@ In the HeatMap, the [enableMultiSelect](https://helpej2.syncfusion.com/angular/d
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/heatmap/selection/singleCellSelection-cs1" %}
+
+### Clearing cell selection
+
+The [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#clearselection) method can be used to clear all the selected cells. The below example illustrates the same.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/heatmap/selection/clearSelection-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/heatmap/selection/clearSelection-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/heatmap/selection/clearSelection-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/heatmap/selection/clearSelection-cs1" %}

@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 stockchart will display details about the points through tooltip, when the mouse is moved over the point.
 
-## Default Tooltip
+## Default tooltip
 
 By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/) property to true and by injecting `TooltipService` into the `NgModule.providers`.
 
@@ -34,7 +34,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 
 <!-- markdownlint-disable MD013 -->
 
-## Format the Tooltip
+## Format the tooltip
 
 <!-- markdownlint-disable MD013 -->
 
@@ -56,7 +56,25 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 <!-- markdownlint-disable MD013 -->
 
-## Tooltip Template
+## Position the tooltip
+
+By default, the tooltip is positioned at the left side of the stock chart. You can move the tooltip along with the mouse by setting **Nearest** to the [`position`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockTooltipSettingsModel/#position) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/stock-chart/tooltip-cs5/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/stock-chart/tooltip-cs5/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/stock-chart/tooltip-cs5/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/stock-chart/tooltip-cs5" %}
+
+## Tooltip template
 
 Any HTML elements can be displayed in the tooltip by using the ‘template’ property of the tooltip. You can use the ${x} and ${y} as place holders in the HTML element to display the x and y values of the corresponding data point.
 
@@ -74,7 +92,7 @@ Any HTML elements can be displayed in the tooltip by using the ‘template’ pr
   
 {% previewsample "page.domainurl/samples/stock-chart/tooltip-cs3" %}
 
-## Customize the Appearance of Tooltip
+## Customize the appearance of the tooltip
 
 The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#textstyle) property in the tooltip is used to customize the font of the tooltip text.
 

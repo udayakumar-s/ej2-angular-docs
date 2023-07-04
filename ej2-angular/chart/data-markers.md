@@ -18,7 +18,7 @@ Data markers are used to provide information about the data points in the series
 
 <!-- markdownlint-disable MD036 -->
 
-Markers can be added to the points by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel/#visible) option of the marker property.
+Markers can be added to points by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel/#visible) option of the marker property. By default, distinct markers will be enabled for each series in the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ Markers can be added to the points by enabling the [`visible`](https://ej2.sync
 
 ## Shape
 
-Markers can be assigned with different shapes such as Rectangle, Circle, Diamond etc using the `shape` property.
+Markers can be assigned with different shapes such as Rectangle, Circle, Diamond, etc. using the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettings/#shape) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,6 +126,6 @@ Marker can be filled with the series color by setting the [`isFilled`](https://e
   
 {% previewsample "page.domainurl/samples/chart/data-marker/marker-cs6" %}
 
-## See Also
+## See also
 
 * [Customize the marker with different shape](./how-to/marker-customization/#customize-the-marker-with-different-shape)

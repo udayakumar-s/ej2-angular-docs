@@ -19,20 +19,30 @@ export class AppComponent implements OnInit {
     public zoom?: Object;
     public animation?: Object;
     public legend?: Object;
-title: any;
-border: any;
+    title: any;
+    border: any;
     ngOnInit(): void {
         this.chartData = series1;
         this.primaryXAxis = {
             valueType: 'DateTime',
             labelFormat: 'yMMM',
-            zoomFactor: 0.2, zoomPosition: 0.6
+            zoomFactor: 0.2, zoomPosition: 0.6,
+            scrollbarSettings: {
+                enable: true,
+                enableZoom: false,
+                height: 14,
+                trackRadius: 8,
+                scrollbarRadius: 8,
+                gripColor: 'transparent',
+                trackColor: 'yellow',
+                scrollbarColor: 'red'
+            }
         };
         this.zoom = {
             enableSelectionZooming: true,
             enableScrollbar: true
         };
-        this.animation = { enable: false};
+        this.animation = { enable: false };
         this.legend = { visible: false };
 
     }

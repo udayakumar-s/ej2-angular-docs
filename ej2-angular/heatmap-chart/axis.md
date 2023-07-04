@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis in Angular Heatmap chart component | Syncfusion
-description: Learn here all about Axis in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
+title: Axis in Angular HeatMap chart component | Syncfusion
+description: Learn here all about axis in Syncfusion Angular HeatMap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Axis 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis in Angular Heatmap chart component
+# Axis in Angular HeatMap chart component
 
 HeatMap consists of two axes namely, X-axis and Y-axis that displays the row headers and column headers to plot the data points respectively. You can define the type, format, and other customizing options for both axes in the HeatMap.
 
@@ -106,7 +106,78 @@ In HeatMap, you can place the axis label in an opposite position of its default 
   
 {% previewsample "page.domainurl/samples/heatmap/axis/opposedaxis-cs1" %}
 
-## Label formatting
+## Axis labels customization
+
+### Customizing the text style
+
+The text style of the axis labels can be customized using the following options available in the [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/axis/#textstyle) property.
+
+* [color](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#color) - It is used to change the text color of the axis labels.
+* [fontFamily](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#fontfamily) - It is used to change the font family of the axis labels.
+* [fontStyle](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#fontstyle) - It is used to change the font style of the axis labels.
+* [fontWeight](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#fontweight) - It is used to change the font weight of the axis labels.
+* [size](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#size) - It is used to change the font size of the axis labels.
+* [textAlignment](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#textalignment) - It is used to position and align the axis labels. This property allows you to specify values such as **Near**, **Center**, and **Far**.
+* [textOverflow](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#textoverflow) - When the axis label exceeds the intended space, this property is used to trim or wrap it. This property takes values such as **None**, **Trim**, and **Wrap**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/heatmap/axis/textstyle-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/heatmap/axis/textstyle-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/heatmap/axis/textstyle-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/heatmap/axis/textstyle-cs1" %}
+
+### Customizing labels when intersecting with other labels
+
+When the axis labels intersect, [labelIntersectAction](https://ej2.syncfusion.com/angular/documentation/api/heatmap/axis/#labelintersectaction) property is used to handle the intersection. The `labelIntersectAction` property can take the following values.
+
+* **None** - It specifies that no action is taken when the axis labels intersect.
+* **Trim** - It specifies to trim the axis labels when they intersect.
+* **Rotate45** - When the axis labels intersect, they are rotated to 45 degrees.
+* **MultipleRows** - It specifies to show all the axis labels as multiple rows when they intersect.
+
+The below example demonstrates to trim the axis labels by using the `labelIntersectAction` property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/heatmap/axis/labelintersectaction-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/heatmap/axis/labelintersectaction-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/heatmap/axis/labelintersectaction-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/heatmap/axis/labelintersectaction-cs1" %}
+
+### Rotating labels
+
+The axis labels can be rotated to the desired angles by using the [labelRotation](https://ej2.syncfusion.com/angular/documentation/api/heatmap/axis/#labelrotation) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/heatmap/axis/rotatinglabels-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/heatmap/axis/rotatinglabels-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/heatmap/axis/rotatinglabels-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/heatmap/axis/rotatinglabels-cs1" %}
+
+### Label formatting
 
 HeatMap supports formatting the axis labels by using the [labelFormat](https://ej2.syncfusion.com/angular/documentation/api/heatmap/axis/#labelformat) property. Using this property, you can customize the axis label by global string format ('P', 'C', etc) or customized format like '{value}°C'.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Zooming in Angular Chart component
 
-## Enable Zooming
+## Enable zooming
 
 Chart can be zoomed in three ways.
 
@@ -103,9 +103,9 @@ Using [`enablePan`](https://ej2.syncfusion.com/angular/documentation/api/chart/z
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs8" %}
 
-## Enable Scrollbar
+## Enable scrollbar
 
-Using `enableScrollbar` property, you can able to add scrollbar for zoomed chart. Using this scrollbar, you can pan or zoom the chart.
+Using the [`enableScrollbar`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#enablescrollbar) property, you can add a scrollbar to a zoomed chart. This scrollbar allows you to zoom or pan the chart. The appearance of the scrollbar can be customized using properties in [`scrollbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/). For example, you can use [`trackColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#trackcolor) and [`trackRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#trackradius) properties to customize the track of the scrollbar, and [`scrollbarRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#scrollbarradius) and [`scrollbarColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#scrollbarcolor) properties to customize the scroller. The ability to zoom through the scrollbar can be enabled or disabled using the [`enableZoom`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#enablezoom) property in [`scrollbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/). Additionally, you can change the color of the grip and height of the scrollbar using the [`gripColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#gripcolor) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettingsModel/#height) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

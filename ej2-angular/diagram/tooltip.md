@@ -82,6 +82,58 @@ The tooltip can be customized for each node and connector. Remove the **InheritT
   
 {% previewsample "page.domainurl/samples/diagram/tooltip/tooltipnodes-cs1" %}
 
+## Tooltip for Ports
+
+The tooltip feature has been implemented to support Ports, providing the ability to display information or descriptions when the mouse hovers over them.
+
+To display tooltips on mouseover, set the desired tooltip [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip/#content) by utilizing the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram#tooltip) property.
+
+Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#constraints-portconstraints) Tooltip property.
+
+
+```ts
+let ports: [{
+        offset: {x: 1,y: 0.5},
+        tooltip: {content: 'Port Tootip'},
+        
+        //enable Port Tooltip Constraints
+        constraints: PortConstraints.Default | PortConstraints.ToolTip,
+        
+        //disable Port Tooltip Constraints
+        constraints: PortConstraints.Default ~& PortConstraints.ToolTip
+    }]
+```
+
+Dynamic modification of tooltip content is supported, allowing you to change the displayed tooltip content during runtime.
+
+```js
+{
+    //change tooltip content at run time
+    diagram.nodes[0].ports[0].tooltip.content = 'New Tooltip Content';
+    diagram.databind;
+}
+```
+
+The following image illustrates how the diagram displays tooltips during an interaction with ports:
+
+![Tooltip](../diagram/images/PortTooltip.gif)
+
+Here, the code provided below demonstrates the port tooltip Interaction.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/tooltip/tooltipports-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/diagram/tooltip/tooltipports-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/tooltip/tooltipports-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/tooltip/tooltipports-cs1" %}
+
 ## Tooltip template content
 
 Any text or image can be added to the tooltip, by default. To customize the tooltip layout or to create your own visualized element on the tooltip, template can be used.

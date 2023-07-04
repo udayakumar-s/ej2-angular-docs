@@ -108,7 +108,8 @@ export class AppComponent {
         //Uses layout to auto-arrange nodes on the Diagram page
         this.layout = {
             //Sets layout type
-            type: 'MindMap'
+            type: 'MindMap',
+            orientation: 'Horizontal'
         }
         //Configures data source for Diagram
         this.dataSourceSettings = {
