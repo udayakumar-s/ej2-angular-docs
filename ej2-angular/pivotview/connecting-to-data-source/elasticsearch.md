@@ -8,7 +8,7 @@ control: Elasticsearch Data Binding
 documentation: ug
 ---
 
-# Elasticsearch in EJ2 Angular Pivotview control
+# Elasticsearch in EJ2 Angular Pivotview Component
 
 This section describes how to retrieve data from Elasticsearch database using [Nest](https://www.nuget.org/packages/Nest) library and bind it to the Pivot Table via a Web API controller.
 

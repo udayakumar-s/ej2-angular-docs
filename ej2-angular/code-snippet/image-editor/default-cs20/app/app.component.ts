@@ -1,7 +1,7 @@
 
 
 import { Component,ViewChild } from '@angular/core';
-import { Browser } from '@syncfusion/ej2-angular-base';
+import { Browser } from '@syncfusion/ej2-base';
 import { ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular-image-editor';
 
 @Component({

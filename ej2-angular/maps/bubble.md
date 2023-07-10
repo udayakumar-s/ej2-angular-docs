@@ -8,6 +8,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
+This section shows how to add and customize bubbles in the Maps component using the video below.
+
+{% youtube "https://www.youtube.com/watch?v=xx3KmBK0If8" %}
+
 # Bubble in Angular Maps component
 
 Bubbles in the Maps component represent the underlying data values of the Maps. It can be scattered throughout the Maps shapes that contain values in the data source. Bubbles are enabled by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel/#visible) property of [`bubbleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel) to **true**. To add bubbles to the Maps, bind the data source to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel/#datasource) property of [`bubbleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel) and set the field name, that contains the numerical data, in the data source to the [`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel/#valuepath) property.

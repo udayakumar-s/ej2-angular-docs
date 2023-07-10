@@ -19,27 +19,27 @@ export class AppComponent {
     public tooltip?: DiagramTooltipModel;
     public constraints?: NodeConstraints;
     public port?: PointPortModel;
-    public getNodeDefaults(node: NodeModel): NodeModel {
+    public getNodeDefaults(node: NodeModel | any): NodeModel {
         node.height = 100;
         node.width = 100;
         node.ports[0]={
-                offset: {
-                    x: 0.5,
-                    y: 0
-                },
-                visibility: PortVisibility.Visible,
-                //Set the style for the port
-                style: {
-                    fill: '#FFFFFF',
-                    strokeWidth: 1,
-                    strokeColor: 'black'
-                },
-                tooltip:{
-                    content:'Port Tooltip',
-                },
-                // Sets the shape of the port as Circle
-                shape: 'Circle',
-                constraints: PortConstraints.Default | PortConstraints.Tooltip
+            offset: {
+                x: 0.5,
+                y: 0
+            },
+            visibility: PortVisibility.Visible,
+            //Set the style for the port
+            style: {
+                fill: '#FFFFFF',
+                strokeWidth: 1,
+                strokeColor: 'black'
+            },
+            tooltip:{
+                content:'Port Tooltip',
+            },
+            // Sets the shape of the port as Circle
+            shape: 'Circle',
+            constraints: PortConstraints.Default
         },
         ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
         ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";

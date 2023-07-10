@@ -6,7 +6,7 @@ platform: ej2-angular
 description: "Learn how to bind data from a Snowflake database in the Syncfusion Angular Pivot Table of Syncfusion Essential JS 2 and more."
 ---
 
-# Snowflake in EJ2 Angular Pivotview control
+# Snowflake in EJ2 Angular Pivotview Component
 
 This section describes how to retrieve data from a Snowflake database using [Snowflake Data](https://www.nuget.org/packages/Snowflake.Data/#readme-body-tab) and bind it to the Pivot Table via a Web API controller.
 

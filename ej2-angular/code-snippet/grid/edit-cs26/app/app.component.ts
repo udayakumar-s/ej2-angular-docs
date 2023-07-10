@@ -55,13 +55,12 @@ export class AppComponent implements OnInit {
         this.priceObj?.destroy();
       },
       write: (args: any) => {
-        this.priceObj? = new NumericTextBox({
+        this.priceObj = new NumericTextBox({
           value: (args as any).rowData[(args as any).column.field],
           change: ((args: any) => {
-            var formEle = this.grid?.element.querySelector('form')
-              .ej2_instances[0];
+            var formEle = (this.grid?.element.querySelector('form') as HTMLFormElement | any).ej2_instances[0];
             var totalCostFieldEle = formEle.getInputElement('TotalCost');
-            totalCostFieldEle.value = this.priceObj?.value * (this as any).stockObj.value;
+            totalCostFieldEle.value = (this.priceObj as NumericTextBox).value * (this as any).stockObj.value;
           }).bind(this)
         });
         this.priceObj?.appendTo((this as any).priceElem);
@@ -85,7 +84,7 @@ export class AppComponent implements OnInit {
             var formEle = (this.grid as any).element.querySelector('form')
               .ej2_instances[0];
             var totalCostFieldEle = formEle.getInputElement('TotalCost');
-            totalCostFieldEle.value = this.priceObj?.value * (this as any).stockObj.value;
+            totalCostFieldEle.value = (this.priceObj as NumericTextBox).value * (this as any).stockObj.value;
           }).bind(this)
         });
         (this as any).stockObj.appendTo((this as any).stockElem);

@@ -99,3 +99,41 @@ In the following example, you can using the [`zoom`](https://ej2.syncfusion.com/
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs20" %}
+
+## Zooming event 
+
+The [`Zooming`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#zoom) event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the [`zooming`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#zoom) event, such as the amount of zooming performed. 
+
+The parameter available in the Zooming event is, 
+
+* ZoomEventArgs.ZoomPoint - The x and y coordinates as [`ImageEditorPoint`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#imageeditorpoint) for the zoom point. 
+
+* ZoomEventArgs.PreviousZoomFactor - The previous zoom factor applied in the image editor. 
+
+* ZoomEventArgs.CurrentZoomFactor - The current zoom factor to be applied in the image editor. 
+
+* ZoomEventArgs.Cancel – Specify a boolean value to cancel the zooming action. 
+
+* ZoomEventArgs.ZoomTrigger - The type of zooming performed in the image editor. 
+
+## Rotating event 
+
+The [`Rotating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotating) event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. 
+
+The parameter available in the [`Rotating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotating) event is, 
+
+* RotateEventArgs.PreviousDegree: The degree of rotation before the recent rotation action was applied in the Image Editor. 
+
+* RotateEventArgs.CurrentDegree: The current degree of rotation after the rotation action has been performed in the Image Editor. 
+
+* RotateEventArgs.Cancel – Specifies a boolean value to cancel the rotating action. 
+
+## Flipping event 
+
+The [`Flipping`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#flipping) event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. 
+
+The parameter available in the [`Flipping`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#flipping) event is, 
+
+* FlipEventArgs.Direction - The flip direction as ImageEditorDirection to be applied in the image editor. 
+
+* FlipEventArgs.Cancel - Specifies a boolean value to cancel the flip action. 

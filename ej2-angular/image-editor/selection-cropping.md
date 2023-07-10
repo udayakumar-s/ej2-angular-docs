@@ -119,3 +119,15 @@ In the following example, the [`select`](https://ej2.syncfusion.com/angular/docu
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs14" %}
+
+## Cropping event 
+
+The [`Cropping`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#croppingevent) event is triggered when performing cropping on the image. This event is passed an object that contains information about the cropping event, such as the start and end point of the selection region. 
+
+The parameter available in the Cropping event is, 
+
+CroppingEventArgs.startPoint – The x and y coordinates of a start point as [`ImageEditorPoint`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#imageeditorpoint) of the selection region. 
+
+CroppingEventArgs.endPoint - The x and y coordinates of an end point as [`ImageEditorPoint`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#imageeditorpoint) of the selection region. 
+
+CroppingEventArgs.cancel - To cancel the cropping action. 
