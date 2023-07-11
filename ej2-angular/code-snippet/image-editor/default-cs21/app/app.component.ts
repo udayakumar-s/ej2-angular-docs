@@ -2,21 +2,22 @@
 
 import { Component,ViewChild } from '@angular/core';
 import { Browser } from '@syncfusion/ej2-base';
-import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
+import { ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular-image-editor';
 
 @Component({
     selector: 'app-root',
     template: `<!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
-                <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" ></ejs-imageeditor>
+                <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
               </div>
-              <button class="e-btn e-primary" (click)="btnClick()">Click</button>`
+              <button class="e-btn e-primary" (click)="panClick()">Pan</button>`
 })
 
 export class AppComponent {
     @ViewChild('imageEditor')
     public imageEditorObj?: ImageEditorComponent;
     public toolbar: string[] = [];
+    public zoomLevel: number = 1;
       public created(): void {
         if (Browser.isDevice) {
             this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
@@ -24,9 +25,9 @@ export class AppComponent {
             this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
         }
     }
-    btnClick(): void {
-        let dimension: any = this.imageEditorObj?.getImageDimension();
-        this.imageEditorObj?.drawArrow(dimension?.x, dimension?.y+10, dimension?.x+50, dimension?.y+10, 10,);
+    panClick(): void {
+        this.imageEditorObj?.zoom(this.zoomLevel) // zoom in
+        this.imageEditorObj?.pan(true);
     }
 }
 

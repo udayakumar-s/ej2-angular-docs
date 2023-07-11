@@ -10,8 +10,8 @@ import { ImageEditorComponent, ImageFinetuneOption, } from '@syncfusion/ej2-angu
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" ></ejs-imageeditor>
               </div>
-              <button class="e-btn e-primary" (click)="btn1Click()">Brightness</button>
-              <button class="e-btn e-primary" (click)="btn2Click()">Contrast</button>`
+              <button class="e-btn e-primary" (click)="brightnessClick()">Brightness</button>
+              <button class="e-btn e-primary" (click)="contrastClick()">Contrast</button>`
 })
 
 export class AppComponent {
@@ -26,10 +26,10 @@ export class AppComponent {
         }
         
     }
-    btn1Click(): void {
+    brightnessClick(): void {
         this.imageEditorObj?.finetuneImage(ImageFinetuneOption.Brightness,10);    
     }
-    btn2Click(): void {
+    contrastClick(): void {
         this.imageEditorObj?.finetuneImage(ImageFinetuneOption.Contrast,10);    
     }
    

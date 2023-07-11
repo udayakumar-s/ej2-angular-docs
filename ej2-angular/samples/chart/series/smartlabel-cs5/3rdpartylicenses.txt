@@ -1,2 +1,0 @@
-@syncfusion/ej2-angular-base
-SEE LICENSE IN license

@@ -10,19 +10,13 @@ domainurl: ##DomainURL##
 
 # Transform in Angular Image editor component
 
-The Image Editor has the rotate, flip, and zoom transformation options and it transforms the image editor with annotations.
+The Image Editor provides a range of transformation options for manipulating both the image and its annotations. These options include rotation, flipping, zooming, and panning. These transformations offer flexibility in adjusting the image and enhancing its visual appearance. 
 
-## Rotate
+## Rotate an image
 
-Rotate images with annotation to 90, 180, 270, and 360 degrees clockwise and anti-clockwise. Rotating the image can be done by either using a toolbar or [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotate) method.
+The Image Editor allows to rotate the image and its annotations by a specific number of degrees clockwise or anti-clockwise using [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotate) method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it anti-clockwise. 
 
-In the [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotate) method, the image can be rotated left or right. The rotate method has the following parameters. A Positive integer value for clockwise and a negative integer value for anti-clockwise rotation.
-
-     * degree - Specifies a degree to rotate an image.
-
-In the toolbar, rotate the image by clicking the Transform dropdown button and picking the RotateLeft/ RotateRight option from that popup.
-
-In the following example, the [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotate) method is used to rotate the image.
+Here is an example of rotating an image in a button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,17 +32,13 @@ In the following example, the [`rotate`](https://ej2.syncfusion.com/angular/docu
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs18" %}
 
-## Flip
+## Flip an image
 
-Flip images with annotations horizontally/vertically. Flipping the image can be done by either using a toolbar or the flip method.
+The Image Editor provides the [`flip`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#flip) method, which allows you to flip both the image and its annotations either horizontally or vertically. This method takes a single parameter of type ImageEditorDirection, which specifies the direction in which the flip operation should be applied. 
 
-In the flip method, the image can be flipped horizontally or vertically. The [`flip`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#flip) method has the following parameters:
+The [`Direction`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/direction/) parameter accepts two values: 'Horizontal' and 'Vertical'. When you choose 'Horizontal', the image and annotations will be flipped along the horizontal axis, resulting in a mirror effect. On the other hand, selecting 'Vertical' will flip them along the vertical axis, producing a vertical mirror effect. 
 
-    * direction - Specifies the direction to flip the image.
-
-In the toolbar, flip the image by clicking the Transform dropdown button and picking the Horizontal Flip/Vertical Flip  option from that popup.
-
-In the following example, the [`flip`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#flip) method is used to flip the image.
+Here is an example of flipping an image in a button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,27 +54,15 @@ In the following example, the [`flip`](https://ej2.syncfusion.com/angular/docume
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs19" %}
 
-## Zoom
+## Zoom in or out an image 
 
-Magnify the image using zooming, and panning to see the hidden zones of an image. To Zoom the image can be done by either using a toolbar or the [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#zoom) method.
+The Image Editor allows to magnify an image using the [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#zoom) method. This method allows one to zoom in and out of the image and provides a more detailed view of the image's hidden areas. This method takes two parameters to perform zooming. 
 
-In [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#zoom)  method, the image can be zoom in and zoom out. The zoom method has the following parameters.
+* zoomFactor - Specifies a value to controlling the level of magnification applied to the image. 
 
-    * value - Specifies a value to be zoomed on the image.
+* zoomPoint - Specifies x and y coordinates of a point as ImageEditorPoint on image to perform zooming. 
 
-### Zoom in
-
-To perform the Zoom in the image. In toolbar, you can clicking the Zoom In button in toolbar.
-
-### Zoom out
-
-To perform the Zoom out the image, In toolbar, you can clicking the Zoom out button in toolbar.
-
-### Panning
-
-To Perform the panning. Enabled or disables the panning option. In toolbar, you can clicking the Zoom in button in toolbar, then pan button enabled
-
-In the following example, you can using the [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#zoom) method and [`pan`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#pan) method in the button click event.
+Here is an example of zooming an image in a button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,23 +76,49 @@ In the following example, you can using the [`zoom`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/image-editor/default-cs20" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs20" %} 
 
-## Zooming event 
+### Maximum and Minimum zoom level 
 
-The [`Zooming`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#zoom) event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the [`zooming`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#zoom) event, such as the amount of zooming performed. 
+The [`maxZoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/zoomSettingsModel/#maxzoomfactor) property is a useful feature in the Image Editor that allows you to define the maximum level of zoom permitted for an image. This property sets a limit on how much the image can be magnified, preventing excessive zooming that may result in a loss of image quality or visibility. 
 
-The parameter available in the Zooming event is, 
+By default, the [`minZoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/zoomSettingsModel/#minzoomfactor) value is set to 10, meaning that the image can be zoomed in up to 10 times its original size. This ensures that the zooming functionality remains within reasonable bounds and maintains the integrity of the image. 
 
-* ZoomEventArgs.ZoomPoint - The x and y coordinates as [`ImageEditorPoint`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#imageeditorpoint) for the zoom point. 
+The [`maxZoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/zoomSettingsModel/#maxzoomfactor) property allows you to specify the minimum level of zoom that is allowed for an image. By setting this property, you can prevent the image from being zoomed out beyond a certain point, ensuring that it remains visible and usable even at the smallest zoom level. 
 
-* ZoomEventArgs.PreviousZoomFactor - The previous zoom factor applied in the image editor. 
+By default, the [`maxZoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/zoomSettingsModel/#maxzoomfactor) value is set to 0.1, meaning that the image can be zoomed out up to 10 times its original size. 
 
-* ZoomEventArgs.CurrentZoomFactor - The current zoom factor to be applied in the image editor. 
+Here is an example of specifying [`minZoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/zoomSettingsModel/#minzoomfactor) and [`maxZoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/zoomSettingsModel/#maxzoomfactor) property in [`zoomSettings`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/zoomSettings/) options in an image editor.
 
-* ZoomEventArgs.Cancel – Specify a boolean value to cancel the zooming action. 
+## Panning an image
 
-* ZoomEventArgs.ZoomTrigger - The type of zooming performed in the image editor. 
+The Image Editor allows to pan an image when the image exceeds the canvas size or selection range. When zooming in on an image or applying a selection for cropping, it is common for the image to exceed the size of the canvas or exceed the selection range. So, the panning is used to view the entire image, by clicking on the canvas and dragging it in the direction they want to move.
+
+### Pan event 
+
+The [`panEventArgs`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/panEventArgs/) event is activated when the user begins dragging the image within the canvas, and the OnPanEnd event is triggered once the panning action is completed. These events provide an opportunity to perform specific actions, such as updating the image's position, in response to the panning gesture. And these event uses [`panEventArgs`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/panEventArgs/) to handle the action the panning action when the user starts dragging the image. 
+
+The parameter available in the [`panEventArgs`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/panEventArgs/) events are, 
+
+* PanEventArgs.startPoint - The x and y coordinates as ImageEditorPoint for the start point. 
+
+* PanEventArgs.endpoint - The x and y coordinates as ImageEditorPoint for the end point. 
+
+* PanEventArgs.cancel – Specifies the boolean value to cancel the panning action.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs21/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/image-editor/default-cs21/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs21/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/image-editor/default-cs21" %} 
 
 ## Rotating event 
 

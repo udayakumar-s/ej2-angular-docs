@@ -1,6 +1,6 @@
 
-
-import { Component } from "@angular/core";
+import {  Component, ViewChild } from "@angular/core";
+import { CarouselComponent } from "@syncfusion/ej2-angular-navigations";
 
 @Component({
   selector: "app-root",
@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
     <button ejs-button cssClass="e-info" (click)="prevBtnClick()">Previous</button>
     <button ejs-button cssClass="e-info" (click)="nextBtnClick()">Next</button>
     <div class="control-container">
-      <ejs-carousel>
+      <ejs-carousel #carousel>
         <e-carousel-items>
           <e-carousel-item>
             <ng-template #template>
@@ -55,14 +55,13 @@ import { Component } from "@angular/core";
     </div>`,
 })
 export class AppComponent {
+  @ViewChild("carousel") carousel!: CarouselComponent;
   public prevBtnClick() {
-    let carouselObj = (document.querySelector(".e-carousel") as any).ej2_instances[0];
-    carouselObj.prev();
+    this.carousel.prev();
   }
 
   public nextBtnClick() {
-    let carouselObj = (document.querySelector(".e-carousel") as any).ej2_instances[0];
-    carouselObj.next();
+    this.carousel.next();
   }
 }
 

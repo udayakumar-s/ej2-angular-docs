@@ -11,8 +11,7 @@ import { ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" [zoomSettings]="zoomSettings"></ejs-imageeditor>
               </div>
               <button class="e-btn e-primary" (click)="zoomInClick()">Zoom In</button>
-              <button class="e-btn e-primary" (click)="zoomOutClick()">Zoom Out</button>
-              <button class="e-btn e-primary" (click)="panClick()">Pan</button>`
+              <button class="e-btn e-primary" (click)="zoomOutClick()">Zoom Out</button>`
 })
 
 export class AppComponent {
@@ -53,10 +52,6 @@ export class AppComponent {
             this.zoomLevel = value;
         }
         this.imageEditorObj?.zoom(this.zoomLevel) // zoom out
-    }
-    panClick(): void {
-        this.imageEditorObj?.zoom(this.zoomLevel) // zoom in
-        this.imageEditorObj?.pan(true);
     }
 }
 
