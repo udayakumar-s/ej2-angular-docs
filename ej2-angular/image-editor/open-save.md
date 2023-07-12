@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open save in Angular Image editor component
+# Open save in the Angular Image Editor component
 
 The Image Editor control supports opening the image by using a hosted/online URL, Image Data, or base64. It also supports save options like image and base64.
 
@@ -38,7 +38,7 @@ The Image Editor control component saves the edited image as Image Data or image
 
 The getImageData method is used to get the image as ImageData and this can be loaded to our Image Editor control using the open method.
 
-### Save as Image
+### Save as image
 
 The [`export`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#export) method is used to save the modified image as an image, and it accepts a file name and file type as parameters. The file type parameter supports PNG, JPEG, and SVG and the default file type is PNG. It also saves an image by clicking the save button from the toolbar and the supported file types are PNG, JPEG, and SVG.
 
@@ -70,7 +70,7 @@ By accessing these arguments within the FileOpened event handler, you can retrie
 
 ## Saving event 
 
-The [`saved`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#saved) event is triggered in the Image Editor component when an image is being saved to the local disk. It provides the SaveEventArgs as the event argument, which includes the following specific arguments: 
+The [`saving`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#saving) event is triggered in the Image Editor component when an image is being saved to the local disk. It provides the [`SaveEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/saveEventArgs/) as the event argument, which includes the following specific arguments: 
 
 * FileName: This argument is a string that holds the file name of the saved image. It represents the name of the file that will be used when saving the image to the local disk. 
 
