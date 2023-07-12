@@ -5,7 +5,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-data';
 
-const SERVICE_URI: string = 'https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Employees';
+const SERVICE_URI: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/Employees';
 
 /**
  * Load tab with DataSource

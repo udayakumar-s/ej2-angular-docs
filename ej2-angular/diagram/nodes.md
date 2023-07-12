@@ -291,6 +291,8 @@ The following code example illustrates how to create an icon of various shapes.
 
 * The expand icon can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 
+* The [`iconColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#iconColor-string) property can be used to set the strokeColor of the Icon.
+
 ## Customizing collapse icon
 
 * Set the [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#borderColor-string), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#borderWidth-number), background color for an collapseIcon using borderColor, borderWidth, and [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#fill-string) properties.
@@ -298,6 +300,8 @@ The following code example illustrates how to create an icon of various shapes.
 * Set a size for collapseIcon by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#height-number) properties.
 
 * Like expand icon, collapse icon also can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
+
+* The [`iconColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#iconColor-string) property can be used to set the strokeColor of the Icon.
 
 ## Interaction
 

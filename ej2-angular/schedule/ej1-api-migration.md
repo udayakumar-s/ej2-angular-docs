@@ -16,8 +16,8 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 
 ## Properties
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
-| --- | --- | --- |
+|   Behavior   | API in Essential JS 1 | API in Essential JS 2 |
+|--------------|-----------------------|-----------------------|
 | To change the display of days count in agenda view | **Property:** *agendaViewSettings.daysInAgenda* <br/> <br/> `<ej-schedule id="Schedule" currentview="currentview" [agendaViewSettings]="AgendaSettings">`<br>`</ej-schedule>`<br>**TS**<br>`this.AgendaSettings = {`<br>`daysInAgenda: 5};`| **Property:** *agendaDaysCount* <br/><br/> `<ejs-schedule [(currentView)]="currentView" [agendaDaysCount]= "agendaDaysCount">`<br>`</ejs-schedule>`<br>**TS**<br>`this.currentView = ['Agenda'];`<br>`this.agendaDaysCount=7;`|
 | Preventing deletion of appointment | **Property:** *allowDelete* <br/> <br/> `<ej-schedule id="Schedule" [allowDelete]="false">`<br>`</ej-schedule>` | Not applicable |
 | Allows dragging and dropping of appointments | **Property:** *allowDragAndDrop* <br/> <br/>`<ej-schedule id="Schedule" [allowDragAndDrop]="false">`<br>`</ej-schedule>`| **Property:**  *allowDragAndDrop* <br/><br/> `<ejs-schdule [allowDragAndDrop]="false">`<br>`</ejs-schedule>` |

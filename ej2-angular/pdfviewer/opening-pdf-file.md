@@ -89,7 +89,7 @@ N> The **Azure.Storage.Blobs** NuGet package must be installed in your applicati
 
 N> Replace **Here Place Your Connection string** with the actual connection string for your Azure Blob Storage account and **Here Place Your container string** with the actual container name 
 
-[View sample in GitHub]().
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Save%20and%20Load/Load%20PDF%20from%20Azure%20Blob%20Storage).
 
 ## Opening a PDF from AWS S3
 
@@ -163,6 +163,8 @@ The following steps are used to load a PDF from AWS S3 in the PDF Viewer.
 N> The **AWSSDK.S3** NuGet package must be installed in your application to use the previous code example.
 
 N>  Replace **your-access-key** and **your-secret-key** with your actual AWS access key and secret key. Also, make sure to specify the correct document name.
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Save%20and%20Load/Load%20PDF%20from%20AWS%20S3%20Storage)
 
 ## Opening a PDF from Google Cloud Storage
 
@@ -258,3 +260,5 @@ N>  Replace **path/to/service-account-key.json** with the actual file path to yo
 N> The **Google.Cloud.Storage.V1** NuGet package must be installed in your application to use the previous code example.
 
 N>  Replace **your-bucket-name** with the actual name of your Google Cloud Storage bucket, and **path/to/your/pdf/document.pdf** with the actual path to your PDF document within the bucket.
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Save%20and%20Load/Load%20PDF%20from%20Google%20Cloud%20Storage)

@@ -8,7 +8,7 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
     selector: 'app-root',
     template: `<!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
-                <ejs-imageeditor #imageEditor (created)="created()"></ejs-imageeditor>
+                <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
               </div>
               <button class="e-btn e-primary" (click)="btnClick()">Click</button>`
 })
@@ -16,7 +16,7 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
 export class AppComponent {
     @ViewChild('imageEditor')
     public imageEditorObj?: ImageEditorComponent;
-
+    public toolbar: string[] = [];
       public created(): void {
         if (Browser.isDevice) {
             this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
@@ -25,7 +25,8 @@ export class AppComponent {
         }
     }
     btnClick(): void {
-        this.imageEditorObj?.drawText(500, 500, 'Syncfusion', 'Arial', 100, true, true, '#000');
+        let dimension: any = this.imageEditorObj?.getImageDimension();
+        this.imageEditorObj?.drawText(dimension?.x, dimension?.y);
     }
 }
 

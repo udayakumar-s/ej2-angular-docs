@@ -13932,6 +13932,40 @@ This article describes the API migration process of Diagram component from Essen
 </tr>
 </table>
 
+## How to load EJ1 diagram in EJ2 diagram
+
+To load EJ1 JSON data in an EJ2 diagram, follow these steps.
+
+1.	Import and inject the EJ1SerializationModule as shown in the following code example.
+
+
+```typescript
+
+import { Diagram, DiagramComponent } from '@syncfusion/ej2-diagrams';
+import { EJ1SerializationModule } from '@syncfusion/ej2-diagrams';
+Diagram.Inject(EJ1SerializationModule);
+
+```
+
+2.	Load the EJ1 JSON data using the diagram loadDiagram method and set the second parameter to true.
+
+```typescript
+
+@Component({
+    selector: "app-container",
+    template: `<ejs-diagram id="diagram"width="100%" height="700px">
+    </ejs-diagram>`,
+    encapsulation: ViewEncapsulation.None
+})
+export class AppComponent {
+    public diagram : DiagramComponent;
+    let ej1data = {"JSONData"};  // Replace JSONData with your EJ1 JSON data
+//Load the EJ1 JSON and pass boolean value as true
+this.diagram.loadDiagram(ej1data, true);
+}
+
+```
+
 ## Tooltip
 
 <!-- markdownlint-disable MD033 -->

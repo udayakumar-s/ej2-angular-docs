@@ -16,14 +16,14 @@ The [Angular Toolbar](https://www.syncfusion.com/angular-ui-components/angular-t
 
 The Toolbar element is assigned the role of `toolbar`.
 
-| **Property** | **Functionalities** |
-| --- | --- |
-| role="toolbar" | Attribute is set to the ToolBar element describes the actual role of the element. |
-| aria-orientation |  Attribute is set to the ToolBar element to indicates the ToolBar orientation. Default value is `horizontal`. |
-| aria-label | Attribute is set to ToolBar element describes the purpose of the set of toolbar. |
-| aria-expanded | Attribute is set to the ToolBar Popup  element to indicates the expanded state of the popup.|
-| aria-haspopup | Attribute is set to the popup element to indicates the popup mode of the Toolbar. Default value is false. When popup mode is enabled, attribute value has to be changed to `true`. |
-| aria-disabled | Attribute set to the ToolBar element to indicates the disabled state of the ToolBar. |
+|   **Property**  | **Functionalities** |
+|-----------------| ------------------- |
+|   role="toolbar"   | Attribute is set to the ToolBar element describes the actual role of the element. |
+|  aria-orientation |  Attribute is set to the ToolBar element to indicates the ToolBar orientation. Default value is `horizontal`. |
+|    aria-label    | Attribute is set to ToolBar element describes the purpose of the set of toolbar. |
+|   aria-expanded  | Attribute is set to the ToolBar Popup  element to indicates the expanded state of the popup.|
+|   aria-haspopup  | Attribute is set to the popup element to indicates the popup mode of the Toolbar. Default value is false. When popup mode is enabled, attribute value has to be changed to `true`. |
+|  aria-disabled   | Attribute set to the ToolBar element to indicates the disabled state of the ToolBar. |
 
 ## Keyboard interaction
 

@@ -165,3 +165,29 @@ In the carousel, you can swipe the carousel slides using touch actions by defaul
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/carousel/default-cs7" %}
+
+## Swipe Modes
+
+In the carousel, the [`swipeMode`](../api/carousel/#swipemode) property allows specifying whether the slide transition should occur while performing swiping via touch or mouse. The slide swiping is enabled or disabled using the bitwise operator.
+
+The following are the different swipe modes available in the carousel:
+
+* CarouselSwipeMode.Touch - Allows the user to slide the slides using touch actions.
+* CarouselSwipeMode.Mouse - Allows the user to slide the slides using mouse actions.
+* CarouselSwipeMode.Touch & CarouselSwipeMode.Mouse - Allows the user to slide the slides using both touch and mouse actions.
+* ~CarouselSwipeMode.Touch & ~CarouselSwipeMode.Mouse - Disables both touch and mouse actions.
+
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/carousel/swipe-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/carousel/swipe-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/carousel/swipe-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/carousel/swipe-cs1" %}

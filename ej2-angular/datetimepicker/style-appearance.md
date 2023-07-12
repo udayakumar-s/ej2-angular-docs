@@ -52,3 +52,20 @@ Use the following CSS to customize the time picker popup in the DateTimePicker
 Please check the below section, to customize the style and appearance of the Calendar component in the DateTimePicker
 
 [Customizing Calendar's style and appearance](../calendar/style-appearance/)
+
+## Full screen mode support in mobiles and tablets
+
+The DateTimePicker component's full-screen mode feature enables users to view the component popup element in full-screen mode on mobile devices with improved visibility and a better user experience. It is important to mention that this feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the DateTimePicker component, simply set the [fullScreenMode](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker#fullScreenMode) API value to `true`. This action will extend the calendar and time popup element to occupy the entire screen on mobile devices.
+
+```javascript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `<!-- To Render datetimepicker -->
+             <ejs-datetimepicker [fullScreenMode]="true"></ejs-datetimepicker>`
+})
+export class AppComponent  { }
+```
+
+![DateTimePickerFullScreen](../images/DateTimePickerFullScreen.gif)

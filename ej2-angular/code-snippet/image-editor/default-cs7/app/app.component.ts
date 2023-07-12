@@ -62,11 +62,7 @@ export class AppComponent {
     public imageEditorObj?: ImageEditorComponent;
 
       public created(): void {
-        if (Browser.isDevice) {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
-        } else {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
-        }
+
     }
 }
 

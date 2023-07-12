@@ -8,6 +8,7 @@ import { markerData } from './datasource';
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' name='December 2007' width=2 [marker]='marker'></e-series>
+            <e-series [dataSource]='chartData' type='Line' xName='x' yName='y1' name='December 2008' width=2 [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

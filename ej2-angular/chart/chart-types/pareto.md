@@ -30,7 +30,25 @@ To render a pareto chart, use series [`type`](https://ej2.syncfusion.com/angular
   
 {% previewsample "page.domainurl/samples/chart/series/line-cs10" %}
 
-## See Also
+## Pareto customization
+
+The pareto line series can be customized by using the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#marker), [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#width), [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#dasharray), and [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#fill) properties in the [`paretoOptions`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/). The secondary axis for the pareto series can be shown or hidden using the [`showAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel/#showaxis) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/line-cs11/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/line-cs11/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/line-cs11/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/line-cs11" %}
+
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)
