@@ -15,11 +15,6 @@ import { chartData } from './datasource';
                             <e-cell value="Book Sales 2016-2020" [style]="{ backgroundColor: '#357cd2', color: '#fff', fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }"></e-cell>
                         </e-cells>
                     </e-row>
-                    <e-row>
-                        <e-cells>
-                            <e-cell [index]="7" [chart]="chart"></e-cell>
-                        </e-cells>
-                    </e-row>
                 </e-rows>
                 <e-ranges>
                     <e-range [dataSource]="data" startCell="A3"></e-range>
@@ -46,7 +41,7 @@ export class AppComponent {
         this.spreadsheetObj!.merge('A1:F1');
     }
     onActionBegin(args: BeforeChartEventArgs){
-        if (args.action === 'beforeInsertChart' && args.type.includes('Line')) {
+        if (args.action === 'beforeInsertChart' && args.args.eventArgs.type.includes('Line')) {
             args.args.eventArgs.markerSettings.shape = 'Triangle';
             args.args.eventArgs.markerSettings.isFilled = false;
             args.args.eventArgs.markerSettings.size = 10;

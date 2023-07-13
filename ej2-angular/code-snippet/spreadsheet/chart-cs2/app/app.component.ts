@@ -15,11 +15,6 @@ import { chartData } from './datasource';
                             <e-cell value="Book Sales 2016-2020" [style]="{ backgroundColor: '#357cd2', color: '#fff', fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }"></e-cell>
                         </e-cells>
                     </e-row>
-                    <e-row>
-                        <e-cells>
-                            <e-cell [index]="7" [chart]="chart"></e-cell>
-                        </e-cells>
-                    </e-row>
                 </e-rows>
                 <e-ranges>
                     <e-range [dataSource]="data" startCell="A3"></e-range>

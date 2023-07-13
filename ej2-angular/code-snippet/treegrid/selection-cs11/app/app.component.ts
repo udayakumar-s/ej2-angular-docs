@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     public treegrid?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: "Batch" };
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: "Cell" };
         this.selectionOptions = { cellSelectionMode: 'Flow', type: 'Multiple', mode: 'Cell' };
     }
     selectCell() {

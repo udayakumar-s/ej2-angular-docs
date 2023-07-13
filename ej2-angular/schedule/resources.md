@@ -24,8 +24,8 @@ Learn how to add appointments of multiple resources to the Angular Scheduler fro
 
 The default options available within the `resources` collection are as follows,
 
-| Field name | Type | Description |
-|-------|---------| --------------- |
+| Field name |  Type   |   Description   |
+|------------|---------|---------------- |
 | `field` | String | A value that binds to the resource field of event object. |
 | `title` | String | It holds the title of the resource field to be displayed on the event editor window. |
 | `name` | String | A unique resource name used for differentiating various resource objects while grouping. |

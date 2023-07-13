@@ -1,18 +1,21 @@
 
 
-import { Component } from "@angular/core";
+import { CarouselComponent } from "@syncfusion/ej2-angular-navigations";
+import { ButtonComponent } from "@syncfusion/ej2-angular-buttons";
+import { Component, ViewChild } from "@angular/core";
 
 @Component({
   selector: "app-root",
   template: `<!-- To Render Carousel. -->
     <div class="control-container">
-      <ejs-carousel [showPlayButton]="showPlayButton">
+      <ejs-carousel [showPlayButton]="showPlayButton" #carousel>
         <ng-template #playButtonTemplate let-data>
           <button
             ejs-button
             cssClass="e-info playBtn"
             [content]="content"
             (click)="btnClick()"
+            #playButton
           ></button>
         </ng-template>
         <e-carousel-items>
@@ -61,17 +64,17 @@ import { Component } from "@angular/core";
     </div>`,
 })
 export class AppComponent {
+  @ViewChild("carousel") carousel!: CarouselComponent;
+  @ViewChild("playButton") playButton!: ButtonComponent;
   public showPlayButton: Boolean = true;
   public content: string = "Pause";
   public btnClick() {
-    let buttonObj = (document.querySelector(".playBtn") as any).ej2_instances[0];
-    let carouselObj = (document.querySelector(".e-carousel") as any).ej2_instances[0];
-    if (carouselObj.autoPlay) {
-      buttonObj.content = "Play";
-      carouselObj.autoPlay = false;
+    if (this.carousel.autoPlay) {
+      this.playButton.content = "Play";
+      this.carousel.autoPlay = false;
     } else {
-      buttonObj.content = "Pause";
-      carouselObj.autoPlay = true;
+      this.playButton.content = "Pause";
+      this.carousel.autoPlay = true;
     }
   }
 }

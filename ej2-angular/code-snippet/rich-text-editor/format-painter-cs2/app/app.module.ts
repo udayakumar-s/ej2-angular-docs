@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorAllModule  } from '@syncfusion/ej2-angular-richtexteditor';
 import { AppComponent } from './app.component';
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 
@@ -10,7 +10,7 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups';
 @NgModule({
     imports: [
         BrowserModule,
-        RichTextEditorModule,
+        RichTextEditorAllModule ,
         DialogModule
     ],
     declarations: [AppComponent],

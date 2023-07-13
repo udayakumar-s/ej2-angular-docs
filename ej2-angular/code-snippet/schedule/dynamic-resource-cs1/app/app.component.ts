@@ -2,15 +2,15 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { holidayData, birthdayData, companyData, personalData } from './datasource';
+import { holidayData, birthdayData, companyData, personalData } from './data';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 import { ScheduleComponent, EventSettingsModel, GroupModel, MonthService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
-  selector: "app-root",
-  providers: [MonthService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService],
-  // specifies the template string for the Schedule component
-  template: `<div class="control-section">
+    selector: "app-root",
+    providers: [MonthService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService],
+    // specifies the template string for the Schedule component
+    template: `<div class="control-section">
   <div class="col-lg-12 property-section">
     <table id="property" title="Show / Hide Resource">
         <tbody>
@@ -67,13 +67,13 @@ export class AppComponent {
         return [...personalData, ...companyData, ...birthdayData, ...holidayData];
     }
     onChange(args: ChangeEventArgs): void {
-        let value: number = parseInt((<Element>args.event?.target).getAttribute('value')!, 10);
-        let resourceData: Object[] =
-            this.calendarCollections.filter((calendar) => (calendar as { [key: string]: Object })['CalendarId'] === value);
+        const value: number = parseInt((args.event.currentTarget as Element).querySelector('input').getAttribute('value'), 10);
+        const resourceData: Record<string, any>[] =
+            this.calendarCollections.filter((calendar: Record<string, any>) => calendar.CalendarId === value);
         if (args.checked) {
-            this.scheduleObj?.addResource(resourceData[0], 'Calendars', value - 1);
+            this.scheduleObj.addResource(resourceData[0], 'Calendars', value - 1);
         } else {
-            this.scheduleObj?.removeResource(value, 'Calendars');
+            this.scheduleObj.removeResource(value, 'Calendars');
         }
     }
 }

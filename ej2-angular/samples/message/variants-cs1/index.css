@@ -1,0 +1,26 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+.msg-variant-section .content-section {
+  margin: 0 auto;
+  max-width: 520px;
+  padding: 10px;
+}
+
+.msg-variant-section .e-message {
+  margin: 10px 0;
+}
+
+.msg-variant-section {
+  display: flex;
+} 

@@ -89,6 +89,10 @@ timelineSettings: any;
           var index = this.ganttObj.treeGrid.getRows().indexOf(gridEle);
           this.ganttObj.selectRow(index);
         }
+        if (chartEle) {
+            var index = chartEle.ariaRowIndex;
+            this.ganttObj.selectRow(Number(index));
+        }
         let record: any = args.draggedNodeData;
         let selectedData = this.ganttObj.flatData[this.ganttObj.selectedRowIndex];
         let selectedDataResource = selectedData.taskData.resources;
