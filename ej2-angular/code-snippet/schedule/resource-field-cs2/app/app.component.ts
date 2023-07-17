@@ -31,6 +31,7 @@ import { eventData } from './datasource';
                         </td>
                     </tr>
                     <tr>
+                        <td class="e-textlabel">Recurrence</td>
                         <td colspan="4">
                             <div id='RecurrenceEditor'></div>
                         </td>
