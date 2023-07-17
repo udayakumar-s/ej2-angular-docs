@@ -138,9 +138,9 @@ The parameter available in the Zooming event is,
 
 ## Rotating event 
 
-The [`Rotating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotating) event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. And this event uses [`RotateEventArgs`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/rotateEventArgs/) to handle the rotating action in the image.
+The [`rotating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotating) event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. And this event uses [`RotateEventArgs`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/rotateEventArgs/) to handle the rotating action in the image.
 
-The parameter available in the [`Rotating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotating) event is, 
+The parameter available in the [`rotating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#rotating) event is, 
 
 * RotateEventArgs.PreviousDegree: The degree of rotation before the recent rotation action was applied in the Image Editor. 
 
@@ -150,9 +150,9 @@ The parameter available in the [`Rotating`](https://ej2.syncfusion.com/angular/d
 
 ## Flipping event 
 
-The [`Flipping`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#flipping) event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. And this event uses [`FlipEventArgs`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/flipEventArgs/) to handle the flipping action in the image.
+The [`flipping`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#flipping) event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. And this event uses [`FlipEventArgs`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/flipEventArgs/) to handle the flipping action in the image.
 
-The parameter available in the [`Flipping`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#flipping) event is, 
+The parameter available in the [`flipping`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#flipping) event is, 
 
 * FlipEventArgs.Direction - The flip direction as ImageEditorDirection to be applied in the image editor. 
 

@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open save in the Angular Image Editor component
+# Open and save in the Angular Image Editor component
 
-The Image Editor control supports opening the image by using a hosted/online URL, Image Data, or base64. It also supports save options like image and base64.
+The Image Editor component supports opening the image by using a hosted/online URL, Image Data, or base64. It also supports save options like image and base64.
 
 ## Open
 
-The Image Editor control opens an image by using base64, Image Data, or a hosted/online URL using the [`open`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#open) method. It also opens an image by clicking the open button from the toolbar. The supported file types are PNG, JPEG, SVG, and base64.
+The Image Editor component opens an image by using base64, Image Data, or a hosted/online URL using the [`open`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#open) method. It also opens an image by clicking the open button from the toolbar. The supported file types are PNG, JPEG, SVG, and base64.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,11 +32,11 @@ The Image Editor control opens an image by using base64, Image Data, or a hosted
 
 ## Save
 
-The Image Editor control component saves the edited image as Image Data or images like PNG, JPEG, and SVG.
+The Image Editor component component saves the edited image as Image Data or images like PNG, JPEG, and SVG.
 
 ### Save as ImageData
 
-The getImageData method is used to get the image as ImageData and this can be loaded to our Image Editor control using the open method.
+The [`getImageData`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#getimagedata) method is used to get the image as ImageData and this can be loaded to our Image Editor component using the open method.
 
 ### Save as image
 
@@ -60,13 +60,13 @@ In the following example, the [`export`](https://ej2.syncfusion.com/angular/docu
 
 ## File opened event 
 
-The FileOpened event is triggered in the Image Editor component after an image is successfully loaded. It provides the FileOpenEventArgs as the event argument, which contains two specific arguments: 
+The [`fileOpened`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#fileopened) event is triggered in the Image Editor component after an image is successfully loaded. It provides the [`OpenEventArgs`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/openeventargs/) as the event argument, which contains two specific arguments: 
 
 * FileName: This argument is a string that contains the file name of the opened image. It represents the name of the file that was selected or provided when loading the image into the Image Editor. 
 
 * FileType: This argument is a string that contains the type of the opened image. It specifies the format or file type of the image that was loaded, such as PNG, JPEG, or SVG. 
 
-By accessing these arguments within the FileOpened event handler, you can retrieve information about the loaded image, such as its file name and file type. This can be useful for performing additional actions or implementing logic based on the specific image that was opened in the Image Editor component.
+By accessing these arguments within the [`fileOpened`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#fileopened) event handler, you can retrieve information about the loaded image, such as its file name and file type. This can be useful for performing additional actions or implementing logic based on the specific image that was opened in the Image Editor component.
 
 ## Saving event 
 
