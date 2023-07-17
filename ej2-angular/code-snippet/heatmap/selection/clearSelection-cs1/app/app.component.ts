@@ -12,11 +12,11 @@ import { HeatMapComponent } from '@syncfusion/ej2-angular-heatmap';
 })
 export class AppComponent {
     @ViewChild('heatmap')
-    public heatmapObj: HeatMapComponent;
+    public heatmapObj?: HeatMapComponent;
 
     public allowSelection: boolean = true;
     public clearSelection() {
-        this.heatmapObj.clearSelection();
+        this.heatmapObj?.clearSelection();
     }
     public dataSource: Object[] = [
         [73, 39, 26, 39, 94, 0],
