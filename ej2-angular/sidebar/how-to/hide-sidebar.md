@@ -159,6 +159,6 @@ export class AppComponent implements AfterViewInit { {
 
 ```
 
-The following Sample demonstrates how to Hide  the sidebar using angular service in routing application. Refer this sample.
+The following Sample demonstrates how to Hide the sidebar using angular service in routing application. Refer to this sample.
 
-[Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/sidebar_CLI-900748619.zip)
+[Sample](https://github.com/SyncfusionExamples/how-to-hide-angular-sidebar-using-angular-service-in-routing-application)
