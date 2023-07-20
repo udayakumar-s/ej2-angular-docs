@@ -15,7 +15,7 @@ Filters are pre-defined effects that can be applied to an image to alter its app
 
 ## Apply filter effect
 
-The [`applyImageFilter`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#applyimagefilter) method is utilized to apply filters to an image. By passing the desired filter type as the first parameter of the method, specified as [`ImageFilterOption`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/imageFilterOption/) the method applies the corresponding filter to the image. This allows for easy and convenient application of various filters to enhance or modify the image based on the chosen filter type.
+The [`applyImageFilter`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#applyimagefilter) method is utilized to apply filters to an image. By passing the desired filter type as the first parameter of the method, specified as [`ImageFilterOption`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/imageFilterOption/) the method applies the corresponding filter to the image. This allows for easy and convenient application of various filters to enhance or modify the image based on the chosen filter type.
 
 * filterOption - Specifies the filter options to the image.
 

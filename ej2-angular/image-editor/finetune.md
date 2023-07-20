@@ -57,10 +57,10 @@ Here is an example of hue, exposure, and blur fine-tuning using the [`finetuneIm
 {% include code-snippet/image-editor/default-cs29/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-c29/app/main.ts %}
+{% include code-snippet/image-editor/default-cs29/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-        
+  
 {% previewsample "page.domainurl/samples/image-editor/default-cs29" %}
 
 ## Finetune value changing event 

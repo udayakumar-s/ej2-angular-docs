@@ -60,7 +60,7 @@ In the following example, the [`export`](https://ej2.syncfusion.com/angular/docu
 
 ## File opened event 
 
-The [`fileOpened`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#fileopened) event is triggered in the Image Editor component after an image is successfully loaded. It provides the [`OpenEventArgs`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/openeventargs/) as the event argument, which contains two specific arguments: 
+The [`fileOpened`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#fileopened) event is triggered in the Image Editor component after an image is successfully loaded. It provides the [`OpenEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/openeventargs/) as the event argument, which contains two specific arguments: 
 
 * FileName: This argument is a string that contains the file name of the opened image. It represents the name of the file that was selected or provided when loading the image into the Image Editor. 
 
@@ -70,7 +70,7 @@ By accessing these arguments within the [`fileOpened`](https://ej2.syncfusion.co
 
 ## Saving event 
 
-The [`saving`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#saving) event is triggered in the Image Editor component when an image is being saved to the local disk. It provides the [`SaveEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/saveEventArgs/) as the event argument, which includes the following specific arguments: 
+The [`saving`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#saving) event is triggered in the Image Editor component when an image is being saved to the local disk. It provides the [`SaveEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/saveEventArgs/) as the event argument, which includes the following specific arguments: 
 
 * FileName: This argument is a string that holds the file name of the saved image. It represents the name of the file that will be used when saving the image to the local disk. 
 
@@ -82,15 +82,15 @@ By accessing these arguments within the Saving event handler, you can retrieve i
 
 ## Created event 
 
-The [`created`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#created) event is triggered once the Image Editor component is created. This event serves as a notification that the component has been fully initialized and is ready to be used. It provides a convenient opportunity to render the Image Editor with a predefined set of initial settings, including the image, annotations, and transformations. 
+The [`created`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#created) event is triggered once the Image Editor component is created. This event serves as a notification that the component has been fully initialized and is ready to be used. It provides a convenient opportunity to render the Image Editor with a predefined set of initial settings, including the image, annotations, and transformations. 
 
 ## Destroyed event 
 
-The [`destroyed`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#destroyed) event is triggered once the Image Editor component is destroyed or removed from the application. This event serves as a notification that the component and its associated resources have been successfully cleaned up and are no longer active. 
+The [`destroyed`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#destroyed) event is triggered once the Image Editor component is destroyed or removed from the application. This event serves as a notification that the component and its associated resources have been successfully cleaned up and are no longer active. 
 
 
 ## Reset an image 
 
-The [`reset`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#reset) method in the Image Editor component provides the capability to undo all the changes made to an image and revert it back to its original state. This method is particularly useful when multiple adjustments, annotations, or transformations have been applied to an image and you want to start over with the original, unmodified version of the image. 
+The [`reset`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#reset) method in the Image Editor component provides the capability to undo all the changes made to an image and revert it back to its original state. This method is particularly useful when multiple adjustments, annotations, or transformations have been applied to an image and you want to start over with the original, unmodified version of the image. 
 
-By invoking the [`reset`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#reset) method, any modifications or edits made to the image will be undone, and the image will be restored to its initial state. This allows you to easily discard any changes and begin again with the fresh, unaltered image. 
+By invoking the [`reset`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#reset) method, any modifications or edits made to the image will be undone, and the image will be restored to its initial state. This allows you to easily discard any changes and begin again with the fresh, unaltered image. 
