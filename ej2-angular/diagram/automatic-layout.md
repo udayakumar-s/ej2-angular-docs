@@ -187,8 +187,8 @@ An [`Orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/
 
 <table>
 <tr>
-<td><b>Orientation Type<b></td>
-<td><b>Description<b></td>
+<td><b>Orientation Type</b></td>
+<td><b>Description</b></td>
 </tr>
 <tr>
 <td>Horizontal</td>
