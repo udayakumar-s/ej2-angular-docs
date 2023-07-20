@@ -87,7 +87,7 @@ export class AppComponent implements OnInit {
         this.width = "100%";
         this.height = 350;
 
-        this.cellTemplate = '<span class="tempwrap sb-icon-neutral e-icons"></span>';
+        this.cellTemplate = '<span class="tempwrap sb-icon-neutral pv-icons"></span>';
 
         this.dataSourceSettings = {
             dataSource: renewableEnergy as IDataSet[],
