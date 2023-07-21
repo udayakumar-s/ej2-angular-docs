@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Query builder component | Syncfusion
+title: Getting started with Angular Query Builder component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Query builder component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
@@ -23,11 +23,11 @@ The list of dependencies required to use the Query Builder module in your applic
     |-- @syncfusion/ej2-querybuilder
     |-- @syncfusion/ej2-datamanager
     |-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-calenders
+    |-- @syncfusion/ej2-calendars
     |-- @syncfusion/ej2-inputs
 ```
 
-## Setup Angular environment
+## Set up Angular environment
 
 You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
