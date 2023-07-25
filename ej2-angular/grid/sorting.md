@@ -79,6 +79,28 @@ To clear multi-column sorting for a particular column, press the "Shift + mouse 
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs3" %}
 
+## Prevent sorting for particular column
+
+The Grid component provides the ability to prevent sorting for a particular column. This can be useful when you have certain columns that you do not want to be included in the sorting process. 
+
+It can be achieved by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property of the particular column to **false**. 
+
+The following example demonstrates, how to disable sorting for **CustomerID** column.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/sorting1-cs11/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/sorting1-cs11/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/sorting1-cs11/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/sorting1-cs11" %}
+
 ## Sort order
 
 By default, the sorting order will be as **ascending -> descending -> none**.
@@ -140,6 +162,8 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs10" %}
+
+> Make sure to inject the **ForeignKeyService** in the provider section of the **AppModule** to ensure its availability throughout your application.
 
 **Sort foreign key column based on text for remote data**
 
@@ -254,11 +278,11 @@ To customize the sort icon in the Grid, you can override the default grid classe
 
 ```css
 .e-grid .e-icon-ascending::before {
-  content: '\e87a';
+  content: '\e306';
 }
-
+	
 .e-grid .e-icon-descending::before {
-  content: '\e70d';
+  content: '\e304';
 }
 ```
 In the below sample, grid is rendered with a customized sort icon.
@@ -267,8 +291,8 @@ In the below sample, grid is rendered with a customized sort icon.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/sorting1-cs7/app/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.style.css" %}
-{% include code-snippet/grid/sorting1-cs7/app/app.style.css %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/sorting1-cs7/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/sorting1-cs7/app/main.ts %}
