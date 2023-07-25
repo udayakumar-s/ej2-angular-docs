@@ -26,7 +26,7 @@ The TextBox supports three types of validation styles namely `error`, `warning`,
   
 {% previewsample "page.domainurl/samples/textbox/getting-started-cs11" %}
 
-# Adding mandatory asterisk to placeholder and float label
+## Adding mandatory asterisk to placeholder and float label
 
 You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e-float-input.e-control-wrapper .e-float-text::after</b> class.
 
