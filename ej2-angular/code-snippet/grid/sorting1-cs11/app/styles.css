@@ -9,12 +9,3 @@
 @import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
-
-.e-grid .e-icon-ascending::before {
-    content: '\e306';
-  }
-  
-  .e-grid .e-icon-descending::before {
-    content: '\e304';
-  }

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GridModule, SortService, ForeignKeyService } from '@syncfusion/ej2-angular-grids';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridModule, SortService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
 
 /**
@@ -10,11 +9,10 @@ import { AppComponent } from './app.component';
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule,
-        ButtonModule
+        GridModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: [SortService,ForeignKeyService]
+    providers: [SortService]
 })
 export class AppModule { }
