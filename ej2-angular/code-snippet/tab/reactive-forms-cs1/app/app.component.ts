@@ -57,15 +57,15 @@ import { FormBuilder, FormsModule,FormGroup, Validators } from '@angular/forms';
                                     <table id="property" class="box-table" title="Properties" style="width: 100%;">
                                         <tr>
                                             <td style="width:50%">Selected Language: </td>
-                                            <td class="formtext">{{ skillForm.get('skillname').value }}</td>
+                                            <td class="formtext">{{ skillForm.get('skillname')?.value }}</td>
                                         </tr>
                                         <tr>
                                             <td style="width:50%">Buyer Name: </td>
-                                            <td class="formtext">{{ skillForm.get('sname').value }}</td>
+                                            <td class="formtext">{{ skillForm.get('sname')?.value }}</td>
                                         </tr>
                                         <tr>
                                             <td style="width:50%">Buyer Mail ID: </td>
-                                            <td class="formtext">{{ skillForm.get('smail').value }}</td>
+                                            <td class="formtext">{{ skillForm.get('smail')?.value }}</td>
                                         </tr>
                                     </table>
                                 </div>
@@ -157,7 +157,7 @@ public skillset: string[] = [
 
 
     public placeholder: String = 'Select a language';
-    skillForm?: FormGroup;
+    public skillForm!: FormGroup;
 
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.createForm();
@@ -178,8 +178,9 @@ public skillset: string[] = [
             parentNode = (parentNode.parentNode as HTMLElement);
         }
         parentNode.classList.add('e-input-focus');
-        (parentNode.querySelector('.e-float-text') as Element).classList.add('e-label-top');
-        (parentNode.querySelector('.e-float-text') as Element).classList.remove('e-label-bottom');
+        ( parentNode.children[2] as Element ).classList.add('e-label-top');
+        ( parentNode.children[2] as Element ).classList.remove('e-label-bottom');
+        
     }
     onblur(element: FocusEvent) : void {
         let target: HTMLInputElement = element.target as HTMLInputElement;
@@ -189,11 +190,11 @@ public skillset: string[] = [
         }
         parentNode.classList.remove('e-input-focus');
         if (target.value === null || target.value === '') {
-            (parentNode.querySelector('.e-float-text') as Element ).classList.remove('e-label-top');
-            (parentNode.querySelector('.e-float-text') as Element).classList.add('e-label-bottom');
+            (parentNode.children[2] as Element ).classList.remove('e-label-top');
+            (parentNode.children[2] as Element ).classList.add('e-label-bottom');
         }else {
-            (parentNode.querySelector('.e-float-text') as Element).classList.add('e-label-top');
-            (parentNode.querySelector('.e-float-text') as Element).classList.remove('e-label-bottom');
+            (parentNode.children[2] as Element).classList.add('e-label-top');
+            (parentNode.children[2] as Element).classList.remove('e-label-bottom');
         }
     }
     onreset(element: MouseEvent) : void {
