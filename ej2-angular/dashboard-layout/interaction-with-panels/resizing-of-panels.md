@@ -35,7 +35,7 @@ The following sample demonstrates how to enable and disable the resizing of pane
   
 {% previewsample "page.domainurl/samples/dashboard-layout/resizing-of-panels-cs1" %}
 
-# Resizing panels programmatically
+## Resizing panels programmatically
 
 The Dashboard Layout panels can also be resized programmatically by using [resizePanel](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#resizepanel) method. The method is invoked as follows,
 
