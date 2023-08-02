@@ -22,7 +22,7 @@ Modern bundlers, such as Webpack, combine all application scripts into a single 
 
 ## Using Syncfusion with Tree Shaking
 
-By default, Syncfusion Angular components supports Tree Shaking and it dose not require any special changes in application level.
+By default, Syncfusion Angular components support Tree Shaking and it does not require any special changes at the application level.
 
 ## Implementing Tree Shaking in an Angular Application
 
